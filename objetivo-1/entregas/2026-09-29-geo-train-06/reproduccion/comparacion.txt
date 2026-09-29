@@ -1,0 +1,36 @@
+# Reproducción de una vista de la campaña con el código A0 (P-02) — geo-train-06, vista 0
+fecha_utc: 2026-09-29T08:36Z (actualizado 2026-09-29T08:50Z)
+
+## Ejecución
+- Trabajo SLURM 30464 (oe1-reproduccion): partición legacy, guane01, 24 CPU, --mem=16G; COMPLETED, código de salida 0:0, 00:18:26 (sacct-30464.txt). Las horas absolutas de sacct están en hora local del clúster (UTC−5); entorno.txt registra el inicio en UTC.
+- Bloque histórico de la campaña: trabajo SLURM 29628 (b-09-0), partición legacy, guane03, 24 CPU, 00:17:50, COMPLETED (sacct-29628.txt, consultado el 2026-09-29). Log histórico: b-09-0-29628.out, copia byte a byte de ~/muography-sim/logs/b-09-0-29628.out en SC3; su sha256 (b42b9b88c2fe1939466c414c951dbe4c564adb3eebddd8ff43133998e670d727, 1907 bytes) coincide con la entrada de ese archivo en objetivo-1/inventario/archivos.json.
+- Script: reproducir_vista_campana.sbatch (mismos parámetros que el bloque histórico b-09-0: --view 0, --days 30, semilla 20260805090000, 24 hilos).
+- Binario: build-A0/muography_sim, sha256 3b582b87890981ed4b6431d93bc50fc35f1513494611ef25296808b51a4a8db7 (igual a codigo/binarios.sha256); compilado desde la copia byte a byte de las fuentes del bundle, en Release (-O3 -DNDEBUG).
+- Entradas: geo-train-06.json y tablas del generador con las huellas de entradas.sha256 (iguales a entorno/fuentes.sha256).
+- Módulos: gnu14/14.2.0, geant4/11.4.2 (entorno.txt).
+
+## Resultado
+| Magnitud | Campaña (originales/.../geo-train-06_view0.meta.json) | Reproducción (geo-train-06_view0.meta.json) |
+|---|---|---|
+| events_transported | 36174382 | 36174382 |
+| detected_in_bins | 27209253 | 27209253 |
+| semilla | 20260805090000 | 20260805090000 |
+| hilos | 24 (sacct-29628.txt) | 24 |
+| tiempo de pared (s) | 1064,67 | 1101,30 |
+| hist_sha256 | 78bd394ec73d09a8167d5fd2122386db2778956853c75bdcb54e11d61f33ed14 | ver abajo |
+
+- sha256 del CSV reproducido (finales de línea LF): 4fbd3f3670c1af0273c5d1516fc64867670351ae876d3a32c8a53b98e40c1125.
+- sha256 del mismo CSV con finales de línea convertidos a CRLF: 78bd394ec73d09a8167d5fd2122386db2778956853c75bdcb54e11d61f33ed14, idéntico al hist_sha256 de la campaña (originales/data/campaign-geant4/geo-train-06/geo-train-06_view0.meta.json y originales/results/dataset/campaign-manifest.csv, línea 56). El CSV fusionado de la campaña está guardado con CRLF; al quitar los CR su sha256 es 4fbd3f36…, el mismo que el del CSV reproducido.
+- Comparación elemento a elemento contra el CSV fusionado de la campaña (256 × 256): 0 celdas distintas, diferencia absoluta máxima 0, misma suma (27209253).
+- run.log y el log histórico b-09-0-29628.out contienen la misma advertencia GeomVol1002 (anomaly_1 con anomaly_0, punto local (1087.52,1032.69,-67723.2), 19,5003 m, máximo de 91 casos) y la misma línea final de conteos: events=36174382 detected=27209253.
+
+## Interpretación
+- Con la misma semilla y el mismo número de hilos, el binario A0 recompilado reproduce bit a bit el histograma de la campaña para esta vista. Las fuentes del bundle, las tablas, el catálogo y el entorno de SC3 (Geant4 11.4.2 del módulo, gnu14 14.2.0) son, por tanto, equivalentes a los de la campaña para este caso, y la diferencia de tipo de compilación (campaña sin CMAKE_BUILD_TYPE, A0 en Release) no altera el histograma.
+- Solo la duración difiere (1101,30 s frente a 1064,67 s), lo que no afecta a los conteos.
+- Alcance: una vista, una semilla y 24 hilos. No se verifica la reproducibilidad con otro número de hilos ni en otras vistas o geometrías. La meta fusionada de la campaña no registra mean_ekin_detected_gev, por lo que esa magnitud no se compara.
+
+## Verificación
+- Huellas de la corrida: descomprimir el histograma (gunzip -k geo-train-06_view0_hist.csv.gz; comprimido con gzip -n -9) y ejecutar sha256sum -c SHA256SUMS.
+- Contra el manifiesto de la campaña: sed 's/$/\r/' geo-train-06_view0_hist.csv | sha256sum debe dar 78bd394ec73d09a8167d5fd2122386db2778956853c75bdcb54e11d61f33ed14.
+- Elemento a elemento (Python con NumPy): numpy.array_equal(numpy.loadtxt(reproducido, delimiter=","), numpy.loadtxt(campaña, delimiter=",")) devuelve True. Requiere el CSV fusionado de la campaña, que no forma parte de este repositorio; la comprobación por huella de la línea anterior se basa solo en archivos de este repositorio y establece la misma igualdad.
+- Log histórico: sha256sum b-09-0-29628.out debe dar b42b9b88c2fe1939466c414c951dbe4c564adb3eebddd8ff43133998e670d727 (objetivo-1/inventario/archivos.json).

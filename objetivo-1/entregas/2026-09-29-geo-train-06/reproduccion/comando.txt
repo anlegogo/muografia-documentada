@@ -1,0 +1,1 @@
+/home/dapintoo/oe1-trabajo/build-A0/muography_sim --geometry /home/dapintoo/oe1-trabajo/catalogo/geo-train-06.json --view 0 --tables /home/dapintoo/oe1-trabajo/tablas --days 30 --seed 20260805090000 --threads 24 --out /home/dapintoo/oe1-trabajo/salidas/reproduccion-geo-train-06-v0 

@@ -1,0 +1,14 @@
+Tue Sep 29 08:13:49 AM UTC 2026
+binary=/home/dapintoo/oe1-trabajo/build-A0/muography_sim
+geometry=/home/dapintoo/oe1-trabajo/catalogo/geo-train-06.json
+tables=/home/dapintoo/oe1-trabajo/tablas
+threads=24
+job=30464
+node=guane01.sc3.uis.edu.co
+
+Currently Loaded Modules:
+  1) gnu14/14.2.0   2) geant4/11.4.2
+
+ 
+
+11.4.2
