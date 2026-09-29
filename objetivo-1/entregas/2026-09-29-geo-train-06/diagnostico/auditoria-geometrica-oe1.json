@@ -1,0 +1,2575 @@
+{
+  "metadata": {
+    "generated_utc": "2026-09-29T05:58:30.257986+00:00",
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "script_sha256": "d6f92664096b800d0860acd0f585d97c1f6d6616df1bb7f89786d76e7c22382c",
+    "seed": 20260929,
+    "mc_samples": 4000000,
+    "catalog_dir": "scripts\\simulation\\geometry_catalog\\geometries",
+    "catalog_sha256": {
+      "geo-gen-01": "f171aa214fda5243db6c5790f29e31cb68601d2b771bf36ca291a1673fd1166a",
+      "geo-test-01": "66a46bb729eedf508ffb8e15bd8cf8c602e0f63141a3f8a2d9594597bd32c5e8",
+      "geo-test-02": "a61c7363caaffe807627f5235c58439e3c41838f1b82fa03e81c3298d9f6c723",
+      "geo-test-03": "c9db0081eb9bb0e6db9a8bc409f2e9f782bcbfc151057b6127cd5827555c6b8c",
+      "geo-train-01": "ff3c69ab7e37b51c5d4e1318d298a9ddc35446367e6ea4abf5c322e3b86f07b1",
+      "geo-train-02": "abe49537a4e692a6df6ebf928342e8338b383b2b9e1f4e4ab2b8f0ba95d67526",
+      "geo-train-03": "757ff851126ae659d21fbaeaee1c4d60292e2b4d70b7fac04c0d1c88912f3a72",
+      "geo-train-04": "a7d30817a40e8d4a71d2e85e571b65c7459ce88eeb549c05e56211ed60a6a440",
+      "geo-train-05": "09322cce8d7f40e4f68a6ef5400aa2aa722d3a68d107b1c3cce3977ef03b723c",
+      "geo-train-06": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+      "geo-train-07": "f8e3a804871a6744e101384cbcc5b360063e9ba017122ea5a022119dc6d457d1",
+      "geo-train-08": "df859ca1ead6e4fca4cad0d877131167a47a4d6443ebed1ee3379189600f7601",
+      "geo-train-09": "35bf7e33e0b864f486fb881e29613b5687e40ef4794d91f05d6a9fa7dbf75288",
+      "geo-train-10": "218c427d76f134eeafd211f5c2ae778a113fd3dedb6f2cc93bedca83a795a448",
+      "geo-train-11": "201b8e4e65de4538a44acae09c1e69ddd1179459bd8be645bdeac669ac43d77f",
+      "geo-train-12": "269a8f3959347c2713a4f8f563cf82092dc638f9633afbeafe5b26ca4fbcdc8d",
+      "geo-val-01": "71d4daf62362f81473403d57261fd293cfd687fb6f2998d46a142dfcbf29d6d7",
+      "geo-val-02": "f8376b4fe3262acb7523b605e2c2f9c8d9e5c36532c34e8bcc70d041f695b3bb",
+      "geo-val-03": "4a5eb9a461d4a084bd966a5cc48508556d279ffb8d9fda202e76e64619f0716d"
+    },
+    "n_geometries": 19
+  },
+  "geometries": [
+    {
+      "geometry_id": "geo-gen-01",
+      "edifice": {
+        "base_radius_m": 619.2,
+        "height_m": 425.4,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 3,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "conduit",
+          "density_g_cm3": 1.831,
+          "volume_m3": 827142.5941448106
+        },
+        {
+          "index": 1,
+          "kind": "cavity",
+          "density_g_cm3": 0.242,
+          "volume_m3": 286588.3508269707
+        },
+        {
+          "index": 2,
+          "kind": "cavity",
+          "density_g_cm3": 0.048,
+          "volume_m3": 319290.6338908075
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "conduit",
+          "state": "lateral_protrusion",
+          "max_radial_excess_m": 15.149416564910098,
+          "excess_height_m": 386.5,
+          "margin_m": -15.149416564910098,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": true,
+          "witness_m": [
+            -55.59011717289165,
+            -45.5399264975666,
+            386.5
+          ],
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "conduit",
+          "state": "lateral_protrusion",
+          "max_radial_excess_m": 15.240272230166397,
+          "excess_height_m": 386.5,
+          "margin_m": -15.240272230166397,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": true,
+          "witness_m": [
+            -55.59011717289165,
+            -45.5399264975666,
+            386.5
+          ],
+          "index": 0
+        },
+        {
+          "against": "geant4_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 134.0171234007725,
+          "inside_flag": true,
+          "margin_m": 93.1171234007725,
+          "min_z_m": 146.4,
+          "max_z_m": 228.20000000000002,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 1
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 133.97748831590695,
+          "inside_flag": true,
+          "margin_m": 93.07748831590695,
+          "min_z_m": 146.4,
+          "max_z_m": 228.20000000000002,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 1
+        },
+        {
+          "against": "geant4_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 109.08347763476755,
+          "inside_flag": true,
+          "margin_m": 66.68347763476754,
+          "min_z_m": 118.69999999999999,
+          "max_z_m": 203.5,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 2
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 109.05006559135018,
+          "inside_flag": true,
+          "margin_m": 66.65006559135017,
+          "min_z_m": 118.69999999999999,
+          "max_z_m": 203.5,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 2
+        }
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "kinds": [
+            "conduit",
+            "cavity"
+          ],
+          "bbox_disjoint": true,
+          "k": 0,
+          "n_samples": 0,
+          "volume_m3": 0.0,
+          "se_m3": 0.0,
+          "certificate": {
+            "kind": "disjoint_bounding_boxes"
+          },
+          "note": "bounding boxes disjoint \u2014 exact zero"
+        },
+        {
+          "indices": [
+            0,
+            2
+          ],
+          "kinds": [
+            "conduit",
+            "cavity"
+          ],
+          "bbox_disjoint": true,
+          "k": 0,
+          "n_samples": 0,
+          "volume_m3": 0.0,
+          "se_m3": 0.0,
+          "certificate": {
+            "kind": "disjoint_bounding_boxes"
+          },
+          "note": "bounding boxes disjoint \u2014 exact zero"
+        },
+        {
+          "indices": [
+            1,
+            2
+          ],
+          "kinds": [
+            "cavity",
+            "cavity"
+          ],
+          "bbox_disjoint": true,
+          "k": 0,
+          "n_samples": 0,
+          "volume_m3": 0.0,
+          "se_m3": 0.0,
+          "certificate": {
+            "kind": "disjoint_bounding_boxes"
+          },
+          "note": "bounding boxes disjoint \u2014 exact zero"
+        }
+      ],
+      "consistency_b1_vs_analytic": {
+        "n_points": 4000000,
+        "n_mismatch": 467,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 467,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [
+          0
+        ],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "professor_defects": {
+        "protrusions": [
+          0
+        ],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-test-01",
+      "edifice": {
+        "base_radius_m": 671.1,
+        "height_m": 428.0,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 2,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "conduit",
+          "density_g_cm3": 2.151,
+          "volume_m3": 1038623.7542402648
+        },
+        {
+          "index": 1,
+          "kind": "cavity",
+          "density_g_cm3": 0.454,
+          "volume_m3": 203688.82488692342
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 42.58513989662855,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            -63.84099312803153,
+            -3.990062070501965,
+            360.1
+          ],
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 42.50100438260982,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            -63.84099312803153,
+            -3.990062070501965,
+            360.1
+          ],
+          "index": 0
+        },
+        {
+          "against": "geant4_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 155.4,
+          "inside_flag": true,
+          "margin_m": 118.9,
+          "min_z_m": 118.9,
+          "max_z_m": 191.9,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 1
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 155.4,
+          "inside_flag": true,
+          "margin_m": 118.9,
+          "min_z_m": 118.9,
+          "max_z_m": 191.9,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 1
+        }
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "kinds": [
+            "conduit",
+            "cavity"
+          ],
+          "bbox_disjoint": false,
+          "k": 625092,
+          "n_samples": 4000000,
+          "bbox_volume_m3": 44081.78,
+          "volume_m3": 6888.792005939999,
+          "se_m3": 8.003354896081126,
+          "volume_inside_g4cone_m3": 6888.792005939999,
+          "se_inside_g4cone_m3": 8.003354896081126,
+          "certificate": null,
+          "z_min_m": 130.70729936841946,
+          "z_max_m": 180.05110436636141,
+          "centroid_m": [
+            -28.378601529208527,
+            -27.698624299678755,
+            155.39833476694693
+          ],
+          "fraction_of_a": 0.006632615495087565,
+          "fraction_of_b": 0.033820176486188035,
+          "witness_m": [
+            -28.715810362050647,
+            -27.510609651108453,
+            155.77699668342063
+          ],
+          "witness_margin_a": 0.270709417093686,
+          "witness_margin_b": 0.27025645710595025,
+          "witness_min_margin": 0.27025645710595025,
+          "material_assignment": {
+            "analytic_engine_density_g_cm3": 0.454,
+            "geant4_as_built": "undefined (overlapping G4PVPlacement siblings; navigator/overlap resolution is not deterministic by design)",
+            "b1_density_g_cm3": 0.454,
+            "b2_density_g_cm3": 2.151,
+            "b2_rule": "conduit priority"
+          }
+        }
+      ],
+      "consistency_b1_vs_analytic": {
+        "n_points": 4625092,
+        "n_mismatch": 2,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 2,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "professor_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-test-02",
+      "edifice": {
+        "base_radius_m": 642.2,
+        "height_m": 415.9,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 1,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "dense_body",
+          "density_g_cm3": 3.09,
+          "volume_m3": 363495.89196608495
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "dense_body",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "min_z_m": 142.5,
+          "max_z_m": 221.7,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "surface_resolution": {
+            "n_theta": 1440,
+            "n_phi": 721,
+            "approx_deg_step": 0.25
+          },
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "dense_body",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "min_z_m": 142.5,
+          "max_z_m": 221.7,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "surface_resolution": {
+            "n_theta": 1440,
+            "n_phi": 721,
+            "approx_deg_step": 0.25
+          },
+          "index": 0
+        }
+      ],
+      "pairs": [],
+      "consistency_b1_vs_analytic": {
+        "n_points": 4000000,
+        "n_mismatch": 0,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 0,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "professor_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-test-03",
+      "edifice": {
+        "base_radius_m": 518.5,
+        "height_m": 385.8,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 3,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "conduit",
+          "density_g_cm3": 1.914,
+          "volume_m3": 988227.540687734
+        },
+        {
+          "index": 1,
+          "kind": "cavity",
+          "density_g_cm3": 0.222,
+          "volume_m3": 58632.678856091814
+        },
+        {
+          "index": 2,
+          "kind": "dense_body",
+          "density_g_cm3": 3.244,
+          "volume_m3": 1115481.4246903982
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "conduit",
+          "state": "lateral_protrusion",
+          "max_radial_excess_m": 10.359086170711564,
+          "excess_height_m": 344.9,
+          "margin_m": -10.359086170711564,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": true,
+          "witness_m": [
+            60.18472416548533,
+            -25.634234366780788,
+            344.9
+          ],
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "conduit",
+          "state": "lateral_protrusion",
+          "max_radial_excess_m": 10.448484822862994,
+          "excess_height_m": 344.9,
+          "margin_m": -10.448484822862994,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": true,
+          "witness_m": [
+            60.18472416548533,
+            -25.634234366780788,
+            344.9
+          ],
+          "index": 0
+        },
+        {
+          "against": "geant4_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 119.31579060348159,
+          "inside_flag": true,
+          "margin_m": 95.2157906034816,
+          "min_z_m": 169.0,
+          "max_z_m": 217.2,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 1
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 119.27110114147688,
+          "inside_flag": true,
+          "margin_m": 95.17110114147687,
+          "min_z_m": 169.0,
+          "max_z_m": 217.2,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 1
+        },
+        {
+          "against": "geant4_cone",
+          "kind": "dense_body",
+          "state": "crosses_base",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "min_z_m": -5.1000000000000085,
+          "max_z_m": 124.7,
+          "below_base": true,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "surface_resolution": {
+            "n_theta": 1440,
+            "n_phi": 721,
+            "approx_deg_step": 0.25
+          },
+          "index": 2
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "dense_body",
+          "state": "crosses_base",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "min_z_m": -5.1000000000000085,
+          "max_z_m": 124.7,
+          "below_base": true,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "surface_resolution": {
+            "n_theta": 1440,
+            "n_phi": 721,
+            "approx_deg_step": 0.25
+          },
+          "index": 2
+        }
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "kinds": [
+            "conduit",
+            "cavity"
+          ],
+          "bbox_disjoint": true,
+          "k": 0,
+          "n_samples": 0,
+          "volume_m3": 0.0,
+          "se_m3": 0.0,
+          "certificate": {
+            "kind": "disjoint_bounding_boxes"
+          },
+          "note": "bounding boxes disjoint \u2014 exact zero"
+        },
+        {
+          "indices": [
+            0,
+            2
+          ],
+          "kinds": [
+            "conduit",
+            "dense_body"
+          ],
+          "bbox_disjoint": true,
+          "k": 0,
+          "n_samples": 0,
+          "volume_m3": 0.0,
+          "se_m3": 0.0,
+          "certificate": {
+            "kind": "disjoint_bounding_boxes"
+          },
+          "note": "bounding boxes disjoint \u2014 exact zero"
+        },
+        {
+          "indices": [
+            1,
+            2
+          ],
+          "kinds": [
+            "cavity",
+            "dense_body"
+          ],
+          "bbox_disjoint": true,
+          "k": 0,
+          "n_samples": 0,
+          "volume_m3": 0.0,
+          "se_m3": 0.0,
+          "certificate": {
+            "kind": "disjoint_bounding_boxes"
+          },
+          "note": "bounding boxes disjoint \u2014 exact zero"
+        }
+      ],
+      "consistency_b1_vs_analytic": {
+        "n_points": 4000000,
+        "n_mismatch": 497,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 497,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [
+          0
+        ],
+        "base_crossings": [
+          2
+        ],
+        "intersecting_pairs": []
+      },
+      "professor_defects": {
+        "protrusions": [
+          0
+        ],
+        "base_crossings": [
+          2
+        ],
+        "intersecting_pairs": []
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-train-01",
+      "edifice": {
+        "base_radius_m": 656.2,
+        "height_m": 359.1,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 0,
+      "volumes": [],
+      "containment": [],
+      "pairs": [],
+      "consistency_b1_vs_analytic": {
+        "n_points": 0,
+        "n_mismatch": 0,
+        "classification": {}
+      },
+      "our_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "professor_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-train-02",
+      "edifice": {
+        "base_radius_m": 549.7,
+        "height_m": 409.8,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 1,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "conduit",
+          "density_g_cm3": 1.92,
+          "volume_m3": 449245.27074673667
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 38.1257885713375,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            21.053633389628008,
+            -17.36001349671081,
+            361.1
+          ],
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 38.03767241711589,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            21.053633389628008,
+            -17.36001349671081,
+            361.1
+          ],
+          "index": 0
+        }
+      ],
+      "pairs": [],
+      "consistency_b1_vs_analytic": {
+        "n_points": 4000000,
+        "n_mismatch": 0,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 0,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "professor_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-train-03",
+      "edifice": {
+        "base_radius_m": 573.7,
+        "height_m": 356.2,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 1,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "cavity",
+          "density_g_cm3": 0.267,
+          "volume_m3": 192193.05459463494
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 94.0,
+          "inside_flag": true,
+          "margin_m": 58.2,
+          "min_z_m": 58.2,
+          "max_z_m": 129.8,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 94.0,
+          "inside_flag": true,
+          "margin_m": 58.2,
+          "min_z_m": 58.2,
+          "max_z_m": 129.8,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 0
+        }
+      ],
+      "pairs": [],
+      "consistency_b1_vs_analytic": {
+        "n_points": 4000000,
+        "n_mismatch": 0,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 0,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "professor_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-train-04",
+      "edifice": {
+        "base_radius_m": 679.8,
+        "height_m": 387.2,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 1,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "dense_body",
+          "density_g_cm3": 3.022,
+          "volume_m3": 836168.2945435967
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "dense_body",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "min_z_m": 128.89999999999998,
+          "max_z_m": 210.3,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "surface_resolution": {
+            "n_theta": 1440,
+            "n_phi": 721,
+            "approx_deg_step": 0.25
+          },
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "dense_body",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "min_z_m": 128.89999999999998,
+          "max_z_m": 210.3,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "surface_resolution": {
+            "n_theta": 1440,
+            "n_phi": 721,
+            "approx_deg_step": 0.25
+          },
+          "index": 0
+        }
+      ],
+      "pairs": [],
+      "consistency_b1_vs_analytic": {
+        "n_points": 4000000,
+        "n_mismatch": 0,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 0,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "professor_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-train-05",
+      "edifice": {
+        "base_radius_m": 565.7,
+        "height_m": 386.0,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 2,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "conduit",
+          "density_g_cm3": 2.013,
+          "volume_m3": 813952.7022117154
+        },
+        {
+          "index": 1,
+          "kind": "cavity",
+          "density_g_cm3": 0.335,
+          "volume_m3": 106446.30742142943
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 39.569464118066094,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            -5.694923181400602,
+            48.40684704190511,
+            325.8
+          ],
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 39.485059972988324,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            -5.694923181400602,
+            48.40684704190511,
+            325.8
+          ],
+          "index": 0
+        },
+        {
+          "against": "geant4_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 104.74353053614423,
+          "inside_flag": true,
+          "margin_m": 75.34353053614424,
+          "min_z_m": 180.0,
+          "max_z_m": 238.8,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 1
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 104.70032096913631,
+          "inside_flag": true,
+          "margin_m": 75.30032096913632,
+          "min_z_m": 180.0,
+          "max_z_m": 238.8,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 1
+        }
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "kinds": [
+            "conduit",
+            "cavity"
+          ],
+          "bbox_disjoint": true,
+          "k": 0,
+          "n_samples": 0,
+          "volume_m3": 0.0,
+          "se_m3": 0.0,
+          "certificate": {
+            "kind": "disjoint_bounding_boxes"
+          },
+          "note": "bounding boxes disjoint \u2014 exact zero"
+        }
+      ],
+      "consistency_b1_vs_analytic": {
+        "n_points": 4000000,
+        "n_mismatch": 90,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 90,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "professor_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-train-06",
+      "edifice": {
+        "base_radius_m": 509.7,
+        "height_m": 416.3,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 2,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "conduit",
+          "density_g_cm3": 1.832,
+          "volume_m3": 471050.4024792536
+        },
+        {
+          "index": 1,
+          "kind": "dense_body",
+          "density_g_cm3": 3.285,
+          "volume_m3": 1215148.5354013385
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 40.682853230213794,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            33.698375159756786,
+            -40.67045277901681,
+            340.0
+          ],
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 40.60118135896707,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            33.698375159756786,
+            -40.67045277901681,
+            340.0
+          ],
+          "index": 0
+        },
+        {
+          "against": "geant4_cone",
+          "kind": "dense_body",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "min_z_m": 73.20000000000002,
+          "max_z_m": 202.4,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "surface_resolution": {
+            "n_theta": 1440,
+            "n_phi": 721,
+            "approx_deg_step": 0.25
+          },
+          "index": 1
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "dense_body",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "min_z_m": 73.20000000000002,
+          "max_z_m": 202.4,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "surface_resolution": {
+            "n_theta": 1440,
+            "n_phi": 721,
+            "approx_deg_step": 0.25
+          },
+          "index": 1
+        }
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "kinds": [
+            "conduit",
+            "dense_body"
+          ],
+          "bbox_disjoint": false,
+          "k": 1868350,
+          "n_samples": 4000000,
+          "bbox_volume_m3": 179071.2,
+          "volume_m3": 83641.91913000001,
+          "se_m3": 44.670706825509825,
+          "volume_inside_g4cone_m3": 83641.91913000001,
+          "se_inside_g4cone_m3": 44.670706825509825,
+          "certificate": null,
+          "z_min_m": 81.26555712991347,
+          "z_max_m": 194.22824367905037,
+          "centroid_m": [
+            21.36104110162573,
+            -30.707463859304713,
+            137.8082486843588
+          ],
+          "fraction_of_a": 0.17756469093280064,
+          "fraction_of_b": 0.06883267081614414,
+          "witness_m": [
+            22.606161160150553,
+            -37.16825771978425,
+            137.51016926601216
+          ],
+          "witness_margin_a": 0.624029176980816,
+          "witness_margin_b": 0.6232108576484912,
+          "witness_min_margin": 0.6232108576484912,
+          "material_assignment": {
+            "analytic_engine_density_g_cm3": 3.285,
+            "geant4_as_built": "undefined (overlapping G4PVPlacement siblings; navigator/overlap resolution is not deterministic by design)",
+            "b1_density_g_cm3": 3.285,
+            "b2_density_g_cm3": 1.832,
+            "b2_rule": "conduit priority"
+          }
+        }
+      ],
+      "consistency_b1_vs_analytic": {
+        "n_points": 5868350,
+        "n_mismatch": 355,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 355,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "professor_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-train-07",
+      "edifice": {
+        "base_radius_m": 678.7,
+        "height_m": 429.2,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 2,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "cavity",
+          "density_g_cm3": 0.169,
+          "volume_m3": 463246.6863277365
+        },
+        {
+          "index": 1,
+          "kind": "dense_body",
+          "density_g_cm3": 3.015,
+          "volume_m3": 899058.2042476309
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 154.9,
+          "inside_flag": true,
+          "margin_m": 106.9,
+          "min_z_m": 106.9,
+          "max_z_m": 202.9,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 154.9,
+          "inside_flag": true,
+          "margin_m": 106.9,
+          "min_z_m": 106.9,
+          "max_z_m": 202.9,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 0
+        },
+        {
+          "against": "geant4_cone",
+          "kind": "dense_body",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "min_z_m": 142.6,
+          "max_z_m": 235.4,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "surface_resolution": {
+            "n_theta": 1440,
+            "n_phi": 721,
+            "approx_deg_step": 0.25
+          },
+          "index": 1
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "dense_body",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "min_z_m": 142.6,
+          "max_z_m": 235.4,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "surface_resolution": {
+            "n_theta": 1440,
+            "n_phi": 721,
+            "approx_deg_step": 0.25
+          },
+          "index": 1
+        }
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "kinds": [
+            "cavity",
+            "dense_body"
+          ],
+          "bbox_disjoint": true,
+          "k": 0,
+          "n_samples": 0,
+          "volume_m3": 0.0,
+          "se_m3": 0.0,
+          "certificate": {
+            "kind": "disjoint_bounding_boxes"
+          },
+          "note": "bounding boxes disjoint \u2014 exact zero"
+        }
+      ],
+      "consistency_b1_vs_analytic": {
+        "n_points": 4000000,
+        "n_mismatch": 0,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 0,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "professor_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-train-08",
+      "edifice": {
+        "base_radius_m": 588.2,
+        "height_m": 413.4,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 3,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "conduit",
+          "density_g_cm3": 1.991,
+          "volume_m3": 1260601.2235771816
+        },
+        {
+          "index": 1,
+          "kind": "cavity",
+          "density_g_cm3": 0.468,
+          "volume_m3": 34525.71789425298
+        },
+        {
+          "index": 2,
+          "kind": "dense_body",
+          "density_g_cm3": 3.256,
+          "volume_m3": 643811.5587829197
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 53.54965338922662,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            67.3097312720462,
+            -41.61623170045868,
+            320.2
+          ],
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 53.472198140073175,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            67.3097312720462,
+            -41.61623170045868,
+            320.2
+          ],
+          "index": 0
+        },
+        {
+          "against": "geant4_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 119.31934524965737,
+          "inside_flag": true,
+          "margin_m": 99.11934524965737,
+          "min_z_m": 197.10000000000002,
+          "max_z_m": 237.5,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 1
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 119.27554234187238,
+          "inside_flag": true,
+          "margin_m": 99.07554234187238,
+          "min_z_m": 197.10000000000002,
+          "max_z_m": 237.5,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 1
+        },
+        {
+          "against": "geant4_cone",
+          "kind": "dense_body",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "min_z_m": 103.7,
+          "max_z_m": 218.10000000000002,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "surface_resolution": {
+            "n_theta": 1440,
+            "n_phi": 721,
+            "approx_deg_step": 0.25
+          },
+          "index": 2
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "dense_body",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "min_z_m": 103.7,
+          "max_z_m": 218.10000000000002,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "surface_resolution": {
+            "n_theta": 1440,
+            "n_phi": 721,
+            "approx_deg_step": 0.25
+          },
+          "index": 2
+        }
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "kinds": [
+            "conduit",
+            "cavity"
+          ],
+          "bbox_disjoint": true,
+          "k": 0,
+          "n_samples": 0,
+          "volume_m3": 0.0,
+          "se_m3": 0.0,
+          "certificate": {
+            "kind": "disjoint_bounding_boxes"
+          },
+          "note": "bounding boxes disjoint \u2014 exact zero"
+        },
+        {
+          "indices": [
+            0,
+            2
+          ],
+          "kinds": [
+            "conduit",
+            "dense_body"
+          ],
+          "bbox_disjoint": false,
+          "k": 1524588,
+          "n_samples": 4000000,
+          "bbox_volume_m3": 293040.17600000004,
+          "volume_m3": 111691.38396187202,
+          "se_m3": 71.16020229480843,
+          "volume_inside_g4cone_m3": 111691.38396187202,
+          "se_inside_g4cone_m3": 71.16020229480843,
+          "certificate": null,
+          "z_min_m": 108.042536341446,
+          "z_max_m": 213.73106889443244,
+          "centroid_m": [
+            46.62706990512348,
+            -5.665547909892903,
+            160.88894725147242
+          ],
+          "fraction_of_a": 0.08860167820948779,
+          "fraction_of_b": 0.1734845894550522,
+          "witness_m": [
+            46.7482777308891,
+            -3.6287842724285966,
+            160.96067746233194
+          ],
+          "witness_margin_a": 0.6278100111794963,
+          "witness_margin_b": 0.6271035570788632,
+          "witness_min_margin": 0.6271035570788632,
+          "material_assignment": {
+            "analytic_engine_density_g_cm3": 3.256,
+            "geant4_as_built": "undefined (overlapping G4PVPlacement siblings; navigator/overlap resolution is not deterministic by design)",
+            "b1_density_g_cm3": 3.256,
+            "b2_density_g_cm3": 1.991,
+            "b2_rule": "conduit priority"
+          }
+        },
+        {
+          "indices": [
+            1,
+            2
+          ],
+          "kinds": [
+            "cavity",
+            "dense_body"
+          ],
+          "bbox_disjoint": true,
+          "k": 0,
+          "n_samples": 0,
+          "volume_m3": 0.0,
+          "se_m3": 0.0,
+          "certificate": {
+            "kind": "disjoint_bounding_boxes"
+          },
+          "note": "bounding boxes disjoint \u2014 exact zero"
+        }
+      ],
+      "consistency_b1_vs_analytic": {
+        "n_points": 5524588,
+        "n_mismatch": 0,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 0,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "professor_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-train-09",
+      "edifice": {
+        "base_radius_m": 549.4,
+        "height_m": 373.2,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 1,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "conduit",
+          "density_g_cm3": 1.884,
+          "volume_m3": 357481.87831746496
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 22.435357003091127,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            -21.869330691749575,
+            -23.73055032508996,
+            336.1
+          ],
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 22.34529805346628,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            -21.869330691749575,
+            -23.73055032508996,
+            336.1
+          ],
+          "index": 0
+        }
+      ],
+      "pairs": [],
+      "consistency_b1_vs_analytic": {
+        "n_points": 4000000,
+        "n_mismatch": 0,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 0,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "professor_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-train-10",
+      "edifice": {
+        "base_radius_m": 648.7,
+        "height_m": 449.6,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 2,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "cavity",
+          "density_g_cm3": 0.464,
+          "volume_m3": 90970.63351428688
+        },
+        {
+          "index": 1,
+          "kind": "cavity",
+          "density_g_cm3": 0.068,
+          "volume_m3": 399794.8629841009
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 98.74791293115257,
+          "inside_flag": true,
+          "margin_m": 70.84791293115256,
+          "min_z_m": 217.2,
+          "max_z_m": 273.0,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 98.70657635301238,
+          "inside_flag": true,
+          "margin_m": 70.80657635301239,
+          "min_z_m": 217.2,
+          "max_z_m": 273.0,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 0
+        },
+        {
+          "against": "geant4_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 136.6665533483155,
+          "inside_flag": true,
+          "margin_m": 90.96655334831549,
+          "min_z_m": 128.89999999999998,
+          "max_z_m": 220.3,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 1
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 136.6302005484407,
+          "inside_flag": true,
+          "margin_m": 90.93020054844071,
+          "min_z_m": 128.89999999999998,
+          "max_z_m": 220.3,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 1
+        }
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "kinds": [
+            "cavity",
+            "cavity"
+          ],
+          "bbox_disjoint": false,
+          "k": 0,
+          "n_samples": 4000000,
+          "bbox_volume_m3": 7230.564000000058,
+          "volume_m3": 0.0,
+          "se_m3": 0.0,
+          "volume_inside_g4cone_m3": 0.0,
+          "se_inside_g4cone_m3": 0.0,
+          "certificate": {
+            "kind": "sphere_sphere_distance",
+            "separation_m": 5.337506927949015
+          },
+          "note": "no intersection detected at N \u2014 separation certificate below"
+        }
+      ],
+      "consistency_b1_vs_analytic": {
+        "n_points": 4000000,
+        "n_mismatch": 0,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 0,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "professor_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-train-11",
+      "edifice": {
+        "base_radius_m": 623.0,
+        "height_m": 419.8,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 3,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "conduit",
+          "density_g_cm3": 1.972,
+          "volume_m3": 634258.0949038739
+        },
+        {
+          "index": 1,
+          "kind": "cavity",
+          "density_g_cm3": 0.327,
+          "volume_m3": 321555.09806430526
+        },
+        {
+          "index": 2,
+          "kind": "cavity",
+          "density_g_cm3": 0.157,
+          "volume_m3": 489795.94655121723
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 5.257038723887099,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            7.443004400305835,
+            -35.62009248717792,
+            391.8
+          ],
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 5.1637085666694205,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            7.443004400305835,
+            -35.62009248717792,
+            391.8
+          ],
+          "index": 0
+        },
+        {
+          "against": "geant4_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 133.0,
+          "inside_flag": true,
+          "margin_m": 90.5,
+          "min_z_m": 90.5,
+          "max_z_m": 175.5,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 1
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 133.0,
+          "inside_flag": true,
+          "margin_m": 90.5,
+          "min_z_m": 90.5,
+          "max_z_m": 175.5,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 1
+        },
+        {
+          "against": "geant4_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 108.12407491636982,
+          "inside_flag": true,
+          "margin_m": 59.22407491636982,
+          "min_z_m": 154.29999999999998,
+          "max_z_m": 252.1,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 2
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 108.08509073861654,
+          "inside_flag": true,
+          "margin_m": 59.185090738616545,
+          "min_z_m": 154.29999999999998,
+          "max_z_m": 252.1,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 2
+        }
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "kinds": [
+            "conduit",
+            "cavity"
+          ],
+          "bbox_disjoint": false,
+          "k": 1212821,
+          "n_samples": 4000000,
+          "bbox_volume_m3": 95317.29999999999,
+          "volume_m3": 28900.705775824994,
+          "se_m3": 21.905972064172587,
+          "volume_inside_g4cone_m3": 28900.705775824994,
+          "se_inside_g4cone_m3": 21.905972064172587,
+          "certificate": null,
+          "z_min_m": 96.77825593527753,
+          "z_max_m": 169.30212391410163,
+          "centroid_m": [
+            -9.436265038404695,
+            -7.7716852945014505,
+            132.995815992677
+          ],
+          "fraction_of_a": 0.04556615990877514,
+          "fraction_of_b": 0.0898779274525617,
+          "witness_m": [
+            -11.445535872670868,
+            -7.210587717708112,
+            132.73242545537278
+          ],
+          "witness_margin_a": 0.5318284525223889,
+          "witness_margin_b": 0.5316909133328088,
+          "witness_min_margin": 0.5316909133328088,
+          "material_assignment": {
+            "analytic_engine_density_g_cm3": 0.327,
+            "geant4_as_built": "undefined (overlapping G4PVPlacement siblings; navigator/overlap resolution is not deterministic by design)",
+            "b1_density_g_cm3": 0.327,
+            "b2_density_g_cm3": 1.972,
+            "b2_rule": "conduit priority"
+          }
+        },
+        {
+          "indices": [
+            0,
+            2
+          ],
+          "kinds": [
+            "conduit",
+            "cavity"
+          ],
+          "bbox_disjoint": true,
+          "k": 0,
+          "n_samples": 0,
+          "volume_m3": 0.0,
+          "se_m3": 0.0,
+          "certificate": {
+            "kind": "disjoint_bounding_boxes"
+          },
+          "note": "bounding boxes disjoint \u2014 exact zero"
+        },
+        {
+          "indices": [
+            1,
+            2
+          ],
+          "kinds": [
+            "cavity",
+            "cavity"
+          ],
+          "bbox_disjoint": true,
+          "k": 0,
+          "n_samples": 0,
+          "volume_m3": 0.0,
+          "se_m3": 0.0,
+          "certificate": {
+            "kind": "disjoint_bounding_boxes"
+          },
+          "note": "bounding boxes disjoint \u2014 exact zero"
+        }
+      ],
+      "consistency_b1_vs_analytic": {
+        "n_points": 5212821,
+        "n_mismatch": 430,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 430,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "professor_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-train-12",
+      "edifice": {
+        "base_radius_m": 534.5,
+        "height_m": 411.9,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 1,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "dense_body",
+          "density_g_cm3": 3.159,
+          "volume_m3": 546091.5318004505
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "dense_body",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "min_z_m": 61.3,
+          "max_z_m": 140.3,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "surface_resolution": {
+            "n_theta": 1440,
+            "n_phi": 721,
+            "approx_deg_step": 0.25
+          },
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "dense_body",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "min_z_m": 61.3,
+          "max_z_m": 140.3,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "surface_resolution": {
+            "n_theta": 1440,
+            "n_phi": 721,
+            "approx_deg_step": 0.25
+          },
+          "index": 0
+        }
+      ],
+      "pairs": [],
+      "consistency_b1_vs_analytic": {
+        "n_points": 4000000,
+        "n_mismatch": 0,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 0,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "professor_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-val-01",
+      "edifice": {
+        "base_radius_m": 698.7,
+        "height_m": 427.6,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 1,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "conduit",
+          "density_g_cm3": 2.071,
+          "volume_m3": 727142.1782556828
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 57.62281269363448,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            42.850428517659196,
+            -26.354019416964103,
+            361.6
+          ],
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 57.538247679602684,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            42.850428517659196,
+            -26.354019416964103,
+            361.6
+          ],
+          "index": 0
+        }
+      ],
+      "pairs": [],
+      "consistency_b1_vs_analytic": {
+        "n_points": 4000000,
+        "n_mismatch": 0,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 0,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "professor_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-val-02",
+      "edifice": {
+        "base_radius_m": 664.0,
+        "height_m": 367.3,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 1,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "cavity",
+          "density_g_cm3": 0.208,
+          "volume_m3": 244671.72624467255
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 131.69839106478761,
+          "inside_flag": true,
+          "margin_m": 92.89839106478762,
+          "min_z_m": 104.3,
+          "max_z_m": 181.89999999999998,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "cavity",
+          "state": "contained",
+          "boundary_distance_m": 131.66434603287937,
+          "inside_flag": true,
+          "margin_m": 92.86434603287937,
+          "min_z_m": 104.3,
+          "max_z_m": 181.89999999999998,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "index": 0
+        }
+      ],
+      "pairs": [],
+      "consistency_b1_vs_analytic": {
+        "n_points": 4000000,
+        "n_mismatch": 0,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 0,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "professor_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    },
+    {
+      "geometry_id": "geo-val-03",
+      "edifice": {
+        "base_radius_m": 610.9,
+        "height_m": 425.4,
+        "rock_density_g_cm3": 2.65
+      },
+      "n_anomalies": 2,
+      "volumes": [
+        {
+          "index": 0,
+          "kind": "conduit",
+          "density_g_cm3": 1.85,
+          "volume_m3": 588936.7033098021
+        },
+        {
+          "index": 1,
+          "kind": "dense_body",
+          "density_g_cm3": 3.014,
+          "volume_m3": 648394.8785707242
+        }
+      ],
+      "containment": [
+        {
+          "against": "geant4_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 18.21188546262571,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            -60.998785728258596,
+            0.633753617955933,
+            370.3
+          ],
+          "index": 0
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "conduit",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "margin_m": 18.124837977905408,
+          "above_apex": false,
+          "below_base": false,
+          "lateral_protrusion": false,
+          "witness_m": [
+            -60.998785728258596,
+            0.633753617955933,
+            370.3
+          ],
+          "index": 0
+        },
+        {
+          "against": "geant4_cone",
+          "kind": "dense_body",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "min_z_m": 42.2,
+          "max_z_m": 111.2,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "surface_resolution": {
+            "n_theta": 1440,
+            "n_phi": 721,
+            "approx_deg_step": 0.25
+          },
+          "index": 1
+        },
+        {
+          "against": "analytic_cone",
+          "kind": "dense_body",
+          "state": "contained",
+          "max_radial_excess_m": 0.0,
+          "excess_height_m": null,
+          "min_z_m": 42.2,
+          "max_z_m": 111.2,
+          "below_base": false,
+          "above_apex": false,
+          "lateral_protrusion": false,
+          "surface_resolution": {
+            "n_theta": 1440,
+            "n_phi": 721,
+            "approx_deg_step": 0.25
+          },
+          "index": 1
+        }
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "kinds": [
+            "conduit",
+            "dense_body"
+          ],
+          "bbox_disjoint": true,
+          "k": 0,
+          "n_samples": 0,
+          "volume_m3": 0.0,
+          "se_m3": 0.0,
+          "certificate": {
+            "kind": "disjoint_bounding_boxes"
+          },
+          "note": "bounding boxes disjoint \u2014 exact zero"
+        }
+      ],
+      "consistency_b1_vs_analytic": {
+        "n_points": 4000000,
+        "n_mismatch": 325,
+        "classification": {
+          "expected_apex_sliver_m_0_1": 325,
+          "expected_air_density_mapping": 0,
+          "unexplained": 0
+        }
+      },
+      "our_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "professor_defects": {
+        "protrusions": [],
+        "base_crossings": [],
+        "intersecting_pairs": []
+      },
+      "audit_agreement": {
+        "protrusions": true,
+        "base_crossings": true,
+        "intersecting_pairs": true
+      }
+    }
+  ],
+  "detail": {
+    "geometry_id": "geo-train-06",
+    "view": 0,
+    "conduit_index": 0,
+    "body_index": 1,
+    "pair_intersection": {
+      "indices": [
+        0,
+        1
+      ],
+      "kinds": [
+        "conduit",
+        "dense_body"
+      ],
+      "bbox_disjoint": false,
+      "k": 1868350,
+      "n_samples": 4000000,
+      "bbox_volume_m3": 179071.2,
+      "volume_m3": 83641.91913000001,
+      "se_m3": 44.670706825509825,
+      "volume_inside_g4cone_m3": 83641.91913000001,
+      "se_inside_g4cone_m3": 44.670706825509825,
+      "certificate": null,
+      "z_min_m": 81.26555712991347,
+      "z_max_m": 194.22824367905037,
+      "centroid_m": [
+        21.36104110162573,
+        -30.707463859304713,
+        137.8082486843588
+      ],
+      "fraction_of_a": 0.17756469093280064,
+      "fraction_of_b": 0.06883267081614414,
+      "witness_m": [
+        22.606161160150553,
+        -37.16825771978425,
+        137.51016926601216
+      ],
+      "witness_margin_a": 0.624029176980816,
+      "witness_margin_b": 0.6232108576484912,
+      "witness_min_margin": 0.6232108576484912,
+      "material_assignment": {
+        "analytic_engine_density_g_cm3": 3.285,
+        "geant4_as_built": "undefined (overlapping G4PVPlacement siblings; navigator/overlap resolution is not deterministic by design)",
+        "b1_density_g_cm3": 3.285,
+        "b2_density_g_cm3": 1.832,
+        "b2_rule": "conduit priority"
+      }
+    },
+    "line_of_sight": {
+      "detector_pos_m": [
+        1000.0,
+        0.0,
+        1.5
+      ],
+      "target_centroid_m": [
+        21.36104110162573,
+        -30.707463859304713,
+        137.8082486843588
+      ],
+      "direction_unit": [
+        -0.9899609956474114,
+        -0.031062723611763515,
+        0.1378852214655553
+      ],
+      "chord_rock_total_m": 698.9499224384648,
+      "chord_conduit_total_m": 40.49118990581803,
+      "chord_body_total_m": 102.42991379326577,
+      "chord_conduit_only_m": 0.0,
+      "chord_body_only_m": 61.938723887447736,
+      "chord_intersection_m": 40.49118990581803,
+      "chord_rock_only_m": 596.520008645199,
+      "column_density_b1_g_cm2": 191726.0289720655,
+      "column_density_b2_g_cm2": 185842.65907875018,
+      "column_density_diff_g_cm2": 5883.3698933153355,
+      "column_density_rel_diff": 0.030686338859980993,
+      "note": "straight-line estimate: no scattering, no detection efficiency."
+    },
+    "b3_displacement": {
+      "direction_unit_xy": [
+        0.2332988030017076,
+        -0.97240509486426
+      ],
+      "s_star_m": 32.114035461036806,
+      "gap_at_s_star_m": 1.4210854715202004e-14,
+      "gap_before_s_star_m": -0.049930493257328123,
+      "new_body_center_xy_m": [
+        39.69216603261428,
+        -105.3278516989637
+      ],
+      "cross_section_z_m": 137.8
+    },
+    "b3_mc_verification": {
+      "overlap_count_at_s_star": 0,
+      "overlap_count_before_s_star": 19,
+      "n_samples": 200000
+    }
+  },
+  "audit_comparison_summary": {
+    "n_geometries_compared": 19,
+    "n_geometries_fully_agree": 19,
+    "professor_audit_path": "muografia-documentada\\objetivo-1\\evidencias\\auditoria-oe1.json"
+  }
+}

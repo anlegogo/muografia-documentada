@@ -1,0 +1,5 @@
+OE1 geometry audit — 19 geometries, N=4000000, seed=20260929
+defective geometries (this audit): ['geo-gen-01', 'geo-test-01', 'geo-test-03', 'geo-train-06', 'geo-train-08', 'geo-train-11']
+agreement with professor's audit: 19/19 geometries
+detail geo-train-06 view 0: intersection volume = 83641.9 m3, chord_intersection=40.49 m, X_b1=191726.0 g/cm2, X_b2=185842.7 g/cm2, B3 s*=32.114 m
+wrote muografia-documentada\objetivo-1\entregas\2026-09-29-geo-train-06\diagnostico\auditoria-geometrica-oe1.json
