@@ -1,0 +1,18 @@
+{
+ "engine": "geant4 (merged blocks)",
+ "geometry_id": "geo-train-05",
+ "view_index": 1,
+ "blocks_merged": 1,
+ "blocks_expected": 1,
+ "events_transported": 36169103,
+ "ecomug_draws_total": 36169103,
+ "detected_in_bins": 27061843,
+ "wall_seconds_total": 1097.458039205987,
+ "block_seeds": [
+  20260805081000
+ ],
+ "hist_sha256": "814432348fc8d4d570c24731e36a5add9c91911e81e654836dd93bf901f7e2d6",
+ "merged_at": "2026-08-31T21:37:10.462432+00:00",
+ "npz_contract": "counts_ref only (real transported events); subsample with binomial thinning",
+ "npz_sha256": "3478c538b30f6854128b7b9bedf475a5a247fc734f8022ea4b772d23afb2b21d"
+}

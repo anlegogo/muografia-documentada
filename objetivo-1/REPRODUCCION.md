@@ -1,0 +1,34 @@
+# Verificación y reproducción del OE1
+
+## Verificar la copia recibida
+
+Desde la raíz de esta réplica, con Python 3.9 o superior:
+
+```powershell
+python herramientas/verificar_integridad.py
+```
+
+Usa solo la biblioteca estándar. Comprueba presencia, tamaños y SHA-256 de todos los archivos incorporados, las huellas de los 19 shards contra el manifiesto de autores, 114 vistas contra sus metadatos, totales de campaña y ausencia de geometrías repetidas entre particiones. Escribe únicamente `objetivo-1/evidencias/verificacion-local.json`. No ejecuta simulaciones ni modifica datos. No verifica la corrección física.
+
+## Entorno científico
+
+El transporte requiere Geant4 y compilador C++17/CMake; SC3 declara Geant4 11.4.2. Docker recibido usa v11.3.2 y no se ha validado como reproducción exacta. Los análisis Python importan NumPy, SciPy, Matplotlib y scikit-image; el módulo de datos incluye soporte opcional de PyTorch. No se copia el requirements global de entrenamiento como requisito obligatorio del OE1.
+
+El entorno de auditoría existente está fuera de esta réplica, en `../tmp/muography-audit-venv/`. La verificación de integridad no depende de él. No se ha creado ni probado una instalación científica autónoma nueva.
+
+## Regeneración futura en una copia de trabajo
+
+Crear una copia separada del contenido de `originales/`. Los siguientes comandos son los puntos de entrada recibidos y **sobrescriben resultados en esa copia**; no ejecutarlos dentro de los originales preservados.
+
+```powershell
+# En la raíz de la copia de trabajo:
+$env:MUOGRAPHY_ENGINE = 'geant4'
+python scripts/analysis/build_dataset.py
+python scripts/analysis/partition_freeze.py
+```
+
+La construcción calcula además estadísticas base sobre las geometrías disponibles. `partition_freeze.py` escribe un nuevo manifiesto; conservar el recibido para comparar, y no presentar el nuevo sello como el congelamiento histórico.
+
+Para Geant4 consultar CMake, Docker y scripts SC3 incluidos. El script histórico `make_sc3_bundle.sh` presupone que las rutas `scripts/…` están en la raíz del historial Git original: no se puede ejecutar directamente desde esta selección anidada. Requiere preparación de un entorno de ejecución independiente. Los scripts SC3 dependen de módulos y rutas del clúster.
+
+En esta incorporación se ha verificado la copia, no se han regenerado geometrías, figuras, pares ni campañas. Los faltantes y diferencias de entorno están en [pendientes](PENDIENTES.md).

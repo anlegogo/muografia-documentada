@@ -1,0 +1,917 @@
+{
+  "ok": true,
+  "views": [
+    {
+      "geometry": "geo-gen-01",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-gen-01",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-gen-01",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-gen-01",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-gen-01",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-gen-01",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-01",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-01",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-01",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-01",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-01",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-01",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-02",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-02",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-02",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-02",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-02",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-02",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-03",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-03",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-03",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-03",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-03",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-test-03",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-01",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-01",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-01",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-01",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-01",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-01",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-02",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-02",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-02",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-02",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-02",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-02",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-03",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-03",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-03",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-03",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-03",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-03",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-04",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-04",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-04",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-04",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-04",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-04",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-06",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-06",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-06",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-06",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-06",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-06",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-08",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-08",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-08",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-08",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-08",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-08",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-09",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-09",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-09",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-09",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-09",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-09",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-11",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-11",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-11",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-11",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-11",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-11",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-12",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-12",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-12",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-12",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-12",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-train-12",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "npz_sha256_matches": true,
+      "hist_manifest_matches": true,
+      "events_match": true,
+      "detected_match": true
+    }
+  ]
+}

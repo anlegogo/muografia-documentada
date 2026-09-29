@@ -1,0 +1,5 @@
+# Conservar los bytes recibidos, incluidos finales de línea.
+objetivo-1/originales/** -text
+*.md text eol=lf
+*.json text eol=lf
+objetivo-1/originales/** -text

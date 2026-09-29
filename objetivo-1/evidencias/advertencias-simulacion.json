@@ -1,0 +1,694 @@
+{
+  "simulation_logs": 199,
+  "overlap_warning_logs": 68,
+  "geometries": [
+    "geo-gen-01",
+    "geo-test-01",
+    "geo-test-03",
+    "geo-train-06",
+    "geo-train-08",
+    "geo-train-11"
+  ],
+  "details": [
+    {
+      "file": "b-09-0-29628.out",
+      "runs": [
+        [
+          "geo-train-06",
+          "0"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "b-09-1-29629.out",
+      "runs": [
+        [
+          "geo-train-06",
+          "1"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "b-09-2-29631.out",
+      "runs": [
+        [
+          "geo-train-06",
+          "2"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "b-09-3-29635.out",
+      "runs": [
+        [
+          "geo-train-06",
+          "3"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "b-09-4-29636.out",
+      "runs": [
+        [
+          "geo-train-06",
+          "4"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "b-09-5-29637.out",
+      "runs": [
+        [
+          "geo-train-06",
+          "5"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "b-11-0-29647.out",
+      "runs": [
+        [
+          "geo-train-08",
+          "0"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "b-11-1-29648.out",
+      "runs": [
+        [
+          "geo-train-08",
+          "1"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "b-11-2-29649.out",
+      "runs": [
+        [
+          "geo-train-08",
+          "2"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "b-11-3-29650.out",
+      "runs": [
+        [
+          "geo-train-08",
+          "3"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "b-11-4-29651.out",
+      "runs": [
+        [
+          "geo-train-08",
+          "4"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "b-11-5-29652.out",
+      "runs": [
+        [
+          "geo-train-08",
+          "5"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "b-14-0-29665.out",
+      "runs": [
+        [
+          "geo-train-11",
+          "0"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "b-14-1-29666.out",
+      "runs": [
+        [
+          "geo-train-11",
+          "1"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "b-14-2-29667.out",
+      "runs": [
+        [
+          "geo-train-11",
+          "2"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "b-14-3-29668.out",
+      "runs": [
+        [
+          "geo-train-11",
+          "3"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "b-14-4-29669.out",
+      "runs": [
+        [
+          "geo-train-11",
+          "4"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "b-14-5-29670.out",
+      "runs": [
+        [
+          "geo-train-11",
+          "5"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29485.out",
+      "runs": [
+        [
+          "geo-gen-01",
+          "0"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29486.out",
+      "runs": [
+        [
+          "geo-gen-01",
+          "1"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29487.out",
+      "runs": [
+        [
+          "geo-gen-01",
+          "2"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29488.out",
+      "runs": [
+        [
+          "geo-gen-01",
+          "0"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29489.out",
+      "runs": [
+        [
+          "geo-gen-01",
+          "2"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29490.out",
+      "runs": [
+        [
+          "geo-gen-01",
+          "3"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29491.out",
+      "runs": [
+        [
+          "geo-gen-01",
+          "3"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29492.out",
+      "runs": [
+        [
+          "geo-gen-01",
+          "3"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29493.out",
+      "runs": [
+        [
+          "geo-gen-01",
+          "4"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29494.out",
+      "runs": [
+        [
+          "geo-gen-01",
+          "4"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29495.out",
+      "runs": [
+        [
+          "geo-gen-01",
+          "4"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29496.out",
+      "runs": [
+        [
+          "geo-gen-01",
+          "5"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29497.out",
+      "runs": [
+        [
+          "geo-gen-01",
+          "5"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29498.out",
+      "runs": [
+        [
+          "geo-gen-01",
+          "5"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29499.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "0"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29500.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "0"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29501.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "0"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29502.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "1"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29503.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "1"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29504.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "1"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29505.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "2"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29506.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "2"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29507.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "2"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29508.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "3"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29509.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "3"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29510.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "3"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29511.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "4"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29512.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "4"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29513.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "4"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29514.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "5"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29515.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "5"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29516.out",
+      "runs": [
+        [
+          "geo-test-01",
+          "5"
+        ]
+      ],
+      "warning_count": 1
+    },
+    {
+      "file": "muo-block-29536.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "0"
+        ]
+      ],
+      "warning_count": 2
+    },
+    {
+      "file": "muo-block-29537.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "0"
+        ]
+      ],
+      "warning_count": 2
+    },
+    {
+      "file": "muo-block-29538.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "0"
+        ]
+      ],
+      "warning_count": 2
+    },
+    {
+      "file": "muo-block-29539.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "1"
+        ]
+      ],
+      "warning_count": 2
+    },
+    {
+      "file": "muo-block-29540.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "1"
+        ]
+      ],
+      "warning_count": 2
+    },
+    {
+      "file": "muo-block-29542.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "1"
+        ]
+      ],
+      "warning_count": 2
+    },
+    {
+      "file": "muo-block-29543.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "2"
+        ]
+      ],
+      "warning_count": 2
+    },
+    {
+      "file": "muo-block-29544.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "2"
+        ]
+      ],
+      "warning_count": 2
+    },
+    {
+      "file": "muo-block-29545.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "2"
+        ]
+      ],
+      "warning_count": 2
+    },
+    {
+      "file": "muo-block-29546.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "3"
+        ]
+      ],
+      "warning_count": 2
+    },
+    {
+      "file": "muo-block-29547.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "3"
+        ]
+      ],
+      "warning_count": 2
+    },
+    {
+      "file": "muo-block-29548.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "3"
+        ]
+      ],
+      "warning_count": 2
+    },
+    {
+      "file": "muo-block-29549.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "4"
+        ]
+      ],
+      "warning_count": 2
+    },
+    {
+      "file": "muo-block-29550.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "4"
+        ]
+      ],
+      "warning_count": 2
+    },
+    {
+      "file": "muo-block-29551.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "4"
+        ]
+      ],
+      "warning_count": 2
+    },
+    {
+      "file": "muo-block-29552.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "5"
+        ]
+      ],
+      "warning_count": 2
+    },
+    {
+      "file": "muo-block-29553.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "5"
+        ]
+      ],
+      "warning_count": 2
+    },
+    {
+      "file": "muo-block-29554.out",
+      "runs": [
+        [
+          "geo-test-03",
+          "5"
+        ]
+      ],
+      "warning_count": 2
+    }
+  ]
+}

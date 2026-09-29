@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+objetivo-1/originales/**/*.npz
+objetivo-1/originales/logs/
+trabajo/

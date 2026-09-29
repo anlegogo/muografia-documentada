@@ -1,0 +1,4542 @@
+{
+  "revision_fuente": "b88fa576494cb8a664c46b8c94c5918c5097d616",
+  "registrado_utc": "2026-09-29T03:08:48.514624+00:00",
+  "archivos": [
+    {
+      "destino": "objetivo-1/originales/bitacora-simulacion.md",
+      "ruta_fuente": "bitacora-simulacion.md",
+      "origen": "git",
+      "bytes": 24644,
+      "sha256": "607680ca46ba98e0ec2e0992869f21c6f51d36ec59611a80568f254be02b8cfe",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-gen-01/geo-gen-01_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-gen-01/geo-gen-01_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 640,
+      "sha256": "0277201d8295fdd114f2e6f4412575845930438b576288a56fffdfaf747c65dd",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-gen-01/geo-gen-01_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-gen-01/geo-gen-01_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79956,
+      "sha256": "d96b2982b55de8c624c902698e1f31ab3ed8802aee10354035d0fb01485ea9d5",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-gen-01/geo-gen-01_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-gen-01/geo-gen-01_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "62e77c520d1a4f9f438007f1216d0d4023422639b2b0ae40ecf308720ea1cb57",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-gen-01/geo-gen-01_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-gen-01/geo-gen-01_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79903,
+      "sha256": "7add6187139ab2330b5e96b10f40f693041dcc37f716a6319bbd95471d466a89",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-gen-01/geo-gen-01_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-gen-01/geo-gen-01_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "af67d05ced1fa103bfcb165639c902eeb1d7757971bbe225e804b509d41f117c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-gen-01/geo-gen-01_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-gen-01/geo-gen-01_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80033,
+      "sha256": "333fb74dabd41d653c2d46342928ded06a336bc7e9183f2ce926d00e09f2e56b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-gen-01/geo-gen-01_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-gen-01/geo-gen-01_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "e562366fe4f5f592de0df1c43d0fd87e586739c00294cb4f0d05316bc8509d74",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-gen-01/geo-gen-01_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-gen-01/geo-gen-01_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79815,
+      "sha256": "5516d211e2844f5f51f29d4712cb194331e113567538b1b21c596ac4a2e5cfb9",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-gen-01/geo-gen-01_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-gen-01/geo-gen-01_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "dd08bcd7dc9355d0c6ef668fff4906919870b0fe07b2cf35f6a93aeee7f77b1c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-gen-01/geo-gen-01_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-gen-01/geo-gen-01_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79997,
+      "sha256": "c7556e78fa9c67ccaaa249e24b0a63cea5f9c01dcb0b8f50c7d0bd88ef24cf61",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-gen-01/geo-gen-01_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-gen-01/geo-gen-01_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "6be9cec30a4b19b7e9708e08f46cd543d834b3ea8f2de5e80af7fd7bf1af30e8",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-gen-01/geo-gen-01_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-gen-01/geo-gen-01_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80001,
+      "sha256": "9ce712f5c4bf083a5819f64c1474dba466db45ca1dcfb8df22f3ceed77982761",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-01/geo-test-01_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-01/geo-test-01_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "b0341c3abed2881cbcc2a6af56a4b6c09ce9519e02760479fdcf1b7229b335e5",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-01/geo-test-01_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-01/geo-test-01_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78708,
+      "sha256": "cc9e9dd7bb00956bb068bb3d72f5f51d34c4dbad2a21178e4a863f4ea62cbc6d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-01/geo-test-01_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-01/geo-test-01_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "ce758052b8806797a00fe7f10f77f98deba3d5cd25909757a1e45ca9fe1bf852",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-01/geo-test-01_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-01/geo-test-01_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78594,
+      "sha256": "14df2135f0a54bde978aab32cb883947c5cccb736da9ad584e14f482407e1237",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-01/geo-test-01_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-01/geo-test-01_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "22940428448f01a91d920121efbb3b1965b2d389ce699ce9face59649ece9620",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-01/geo-test-01_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-01/geo-test-01_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78614,
+      "sha256": "4b68ba975085dc8ab331d0945c33b0cdbbdc9d240d02f461e15ab4db649c66ba",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-01/geo-test-01_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-01/geo-test-01_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "8bd2845843d0908c52105251579ab8a38e9335a13eac268381eed33da955f266",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-01/geo-test-01_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-01/geo-test-01_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78524,
+      "sha256": "d8350b11ca5d0b190e3c78b62dff93432486a66ebfaa63c2dee1301612f0152f",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-01/geo-test-01_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-01/geo-test-01_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "1da543e0576c943ef9440e71091be5c2c134fb65d83ea4699ebc47c457e1c9db",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-01/geo-test-01_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-01/geo-test-01_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78505,
+      "sha256": "2a35c0bf0cc19518a495822bf876141e99bad95f3c3faa4eae909c53c6051cd4",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-01/geo-test-01_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-01/geo-test-01_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "e6bfb7907fa0a9a8d9effdb2a9bcc4d2151a776423dfe5efcc6267a32a2ae5b4",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-01/geo-test-01_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-01/geo-test-01_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78690,
+      "sha256": "c1fda4e2c0a03812ec8f72734b767747466e502cb4e7bfea495692f2fad2b02b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-02/geo-test-02_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-02/geo-test-02_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "6aced3ecf06cdcb605c7ddad55076fbf11c6ea938c9c69642c76f79ccdee09bc",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-02/geo-test-02_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-02/geo-test-02_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79439,
+      "sha256": "ade58cce9b7d4d9a3664950f9204bc6e3c71d8f568f7b7413997ad797986f437",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-02/geo-test-02_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-02/geo-test-02_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "0c82bb14eed2d43fb079eceb29e50b88e7dc157909966809101fdcc3cef56bdc",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-02/geo-test-02_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-02/geo-test-02_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79610,
+      "sha256": "237a432c2857ad9f4a25df9fbe21c459db8c619e8a49c6b0a6fd34b93431cf51",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-02/geo-test-02_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-02/geo-test-02_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "805126cca144a0925e17e6217795e876beb40684c94a4f3f353a430b89ec2593",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-02/geo-test-02_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-02/geo-test-02_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79715,
+      "sha256": "6f12dacb0b36c40dfffb50afca2e780e58a61cacda6ab1a7c310815a8e2e8328",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-02/geo-test-02_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-02/geo-test-02_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "1ed10c0a5d904f6c94e0eb08e2f17d6f8c03dacf521e865479214c6a57941bbc",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-02/geo-test-02_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-02/geo-test-02_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79666,
+      "sha256": "346cb7f95109ac25bf3df131305ccabc651c7f31c76073494b0c4f5ee028643b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-02/geo-test-02_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-02/geo-test-02_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "bad527a5385a255bcfd7910210b6b681c2384f7db2bc7de08d0fbd63d11c4554",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-02/geo-test-02_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-02/geo-test-02_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79655,
+      "sha256": "c8ec9d5f6338e504863ecebc9b7c84bd920e2dbfbd276ab3c05e5d7763d78938",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-02/geo-test-02_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-02/geo-test-02_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "ceb6569860b6ede8fa49cc870bd8ad78b17d360a4591f1da1bf32ff835f5794f",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-02/geo-test-02_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-02/geo-test-02_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79662,
+      "sha256": "a0c34adec0c0ff1c8a850a7898a62c00186cc1d4ed837b003a240c3fa3959269",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-03/geo-test-03_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-03/geo-test-03_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "c9af497dd4e41d71ec3ec286d480c92e48dedb9ddedf6abc5302e91a5ed5da60",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-03/geo-test-03_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-03/geo-test-03_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82967,
+      "sha256": "48ffe8ff4eda22f402cfb272f9191d7d9e44120c7c5d65c0db5bbd8e4bccdec5",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-03/geo-test-03_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-03/geo-test-03_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "227636bdc9325158c824c61a0ac977d87b8b6dec9419f9c097ec9a4cbdac8a3a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-03/geo-test-03_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-03/geo-test-03_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82920,
+      "sha256": "19a6161318780360aba974bf62997cd63ee928c2c352bfee46c8a5aefb6aa3b0",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-03/geo-test-03_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-03/geo-test-03_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "814300a2fb2203f243a40c5a93cfa1b761d6459b1b0fa7299d3e7cacceb92bae",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-03/geo-test-03_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-03/geo-test-03_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 83086,
+      "sha256": "89594def524055ad946701acd29f8ea6c0f2448e8a81ac67a4e7b38b8a6c3e03",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-03/geo-test-03_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-03/geo-test-03_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "ef2fc6fdc6e958e82027a119bafc7e319bb0917415fe670ee3bd51391dbebb2d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-03/geo-test-03_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-03/geo-test-03_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 83035,
+      "sha256": "6da6910f8477456534b6e4559bb407adb3486d82fa06336316ee695bfe834aaa",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-03/geo-test-03_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-03/geo-test-03_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "b341d222afdc0245cf41ac2af8da4420d05d57cb2a82ca539b45cef959606a43",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-03/geo-test-03_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-03/geo-test-03_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82976,
+      "sha256": "b6879af253aa49654e7254479d321681c578f3b57133f56dee545d7a67a967df",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-03/geo-test-03_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-test-03/geo-test-03_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "25da0bbda15c87ea72af6b89ab49d346f35f801d6b0fcb317ce279ade905884c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-test-03/geo-test-03_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-test-03/geo-test-03_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82966,
+      "sha256": "8ee30dcd8e472b1200146560e20dff619afb385452de5e6f3c09a7ebc2fa4b59",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-01/geo-train-01_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-01/geo-train-01_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "eb639ae1ddf55bdedd2ee71ca67181dd4f3b412d4b069a25c5c32ba87abd7542",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-01/geo-train-01_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-01/geo-train-01_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80823,
+      "sha256": "84e6b7e88f6bc8cfba726d4d1721b6c01747deba9af630e90ea3142b2a544830",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-01/geo-train-01_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-01/geo-train-01_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "67c1c774c00ff8d055e476e4ec842e11906e2b31ca4998d827e0834458eaacdf",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-01/geo-train-01_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-01/geo-train-01_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80823,
+      "sha256": "109f10cbec512767b02dab71527ae6a1e5c0193ceb9b4792225f4a79806d4131",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-01/geo-train-01_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-01/geo-train-01_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "aede2accd2071c2894cb21b6c7e560dab35de4b548861e6809dbc99182d82830",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-01/geo-train-01_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-01/geo-train-01_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80740,
+      "sha256": "89a1cb570415c7b06b0dc3b2540848b45152913e9b04f7c8f1452deffb8bc6c5",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-01/geo-train-01_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-01/geo-train-01_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "9fb3a03e359f1a0138d6e7691b1f3055fb9bc5132c76ce18c2e6555e318d7ecd",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-01/geo-train-01_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-01/geo-train-01_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80710,
+      "sha256": "e338164feb5ca986a452cfc10d438e37292c76669f495fb62583f857585cab96",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-01/geo-train-01_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-01/geo-train-01_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "0c9b2d02b5cee533a89d2110c2dd62a2bf20627ce70a3e124eb32dbf885a51e7",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-01/geo-train-01_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-01/geo-train-01_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80773,
+      "sha256": "87a280c8ec25f8efe9516e825492491dd29678dfbc9fdd65c3579a1b119f0b35",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-01/geo-train-01_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-01/geo-train-01_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "6647e4a5aa0785f2868ea3ce413cc9fdd3f6eac49ae73942ca514b8965272cc2",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-01/geo-train-01_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-01/geo-train-01_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80912,
+      "sha256": "d6ea21f3971a9c3934bb6b50187a8f0c87400144ed992b9bfaa97374db70b940",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-02/geo-train-02_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-02/geo-train-02_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "2df6381e87b211368d7fbef75213770b6b83cd0b967ac61503aa5aeab417137e",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-02/geo-train-02_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-02/geo-train-02_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 81886,
+      "sha256": "324e08e837281fea6b760b5d0aaf93566293b66badf28d5dcf33acca7b073064",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-02/geo-train-02_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-02/geo-train-02_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "4796870350a5f686bb4dfaebc19fb4108c686c10c80500660cfa0aad14136988",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-02/geo-train-02_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-02/geo-train-02_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82034,
+      "sha256": "1f70b5e8dbfc65ab84d7826fce8010449d459a8cc1f10f044b7a36a2a67e0281",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-02/geo-train-02_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-02/geo-train-02_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "907b3645a55a1fb63b1195139552fbc0f590498d7cac49fd6010edeb1a7bcefc",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-02/geo-train-02_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-02/geo-train-02_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 81950,
+      "sha256": "247f15d6110026d92d987c8e080ad8b9331c447aef2bf67ad5ea60c04b064407",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-02/geo-train-02_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-02/geo-train-02_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "bac275f14876ed353fe03178fe69334eba342d186b4b36956217e03e056cda0f",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-02/geo-train-02_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-02/geo-train-02_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 81932,
+      "sha256": "717ef87fb1c2df5519f183ea05e66878f8b31a3f4e33f6eac193e43de10e6643",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-02/geo-train-02_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-02/geo-train-02_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "2bbe1e794ccab5ffcc1f10131a8c6fa3e151b8078f10c01ac0435b941cd9702a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-02/geo-train-02_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-02/geo-train-02_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 81887,
+      "sha256": "5903022396631ee1f5a49955ec503a2ed8552983172adfca0938b7b8b97a4e30",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-02/geo-train-02_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-02/geo-train-02_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "5d83755106ede7f39a8263d22a59d4b8996b434c2c648193c61f0b06e5014da9",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-02/geo-train-02_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-02/geo-train-02_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 81975,
+      "sha256": "e6e1dd3837f34866c8dd4a9c991ab82eaf1882affe0396d124cfddacb63b13e1",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-03/geo-train-03_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-03/geo-train-03_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "fa1765187bfaefafa8340b1e393f39b088bfe696db8400a283ec9cf0e815c930",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-03/geo-train-03_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-03/geo-train-03_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82454,
+      "sha256": "d40bf3599e9fcfaf02f3855efa4771409cb7224cda4031106bf26cb4ba4a6777",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-03/geo-train-03_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-03/geo-train-03_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "13fcb8f342b695ea632b04878a0f8ba6f9e31a4a123dedfc732113b1d58f2f17",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-03/geo-train-03_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-03/geo-train-03_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82375,
+      "sha256": "81f96899848d10af7c1ffbd54d92fbc244c9e130bae82e324f93da5f860871b6",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-03/geo-train-03_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-03/geo-train-03_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "77b318219b82ba747a27c2f9cbb72ab385fc0c9c0ab6e6d7dfa986299fe388bd",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-03/geo-train-03_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-03/geo-train-03_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82604,
+      "sha256": "66039d195a455ed0fa2e70536e81f4279a485de264e94f072e0999eacc402975",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-03/geo-train-03_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-03/geo-train-03_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "494acad1d67fb9f72e65b3baade770a44ee8cdad97b27b6b9855292625e35017",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-03/geo-train-03_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-03/geo-train-03_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82441,
+      "sha256": "898d0f938759244ae349c5d1d444de6a616596506c21c68167ea693bd95099c8",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-03/geo-train-03_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-03/geo-train-03_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "320340ea8da2838590244defea654d4ec47cb8019ba3649cb619b4e2244f89bc",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-03/geo-train-03_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-03/geo-train-03_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82361,
+      "sha256": "799229a5d986f652b98e850f718145f8f57cb2ed42561414eedea49c19c45e37",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-03/geo-train-03_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-03/geo-train-03_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "70d89bf0c8248262dea88bf41f5acb749849184f91f99d331bc89b6fb8fa1a0c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-03/geo-train-03_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-03/geo-train-03_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82428,
+      "sha256": "2b46ce7f952fb4758fb813ca748d9c1c94fec7355de35efda88c0008878445ef",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-04/geo-train-04_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-04/geo-train-04_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "231dcc0461bccb7806acbf4e3c0e6c292b01d95141752e0b377c751ec851cfb1",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-04/geo-train-04_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-04/geo-train-04_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79447,
+      "sha256": "8fc6344e303ec5be1413d58b0f0d6c2882f0244bf8ad288c95fb97040b69d03c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-04/geo-train-04_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-04/geo-train-04_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "49ff01b84cefdbe212c47518bf0c1a7c898095a945d976b6b695237dbb73c793",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-04/geo-train-04_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-04/geo-train-04_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79501,
+      "sha256": "90c7d60cb3b8e136eb11202e601c5bd2809281c86cece95f321054619b3a408f",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-04/geo-train-04_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-04/geo-train-04_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "736bc8277bb97c41ffa26bd00b40b074068e8fba2c518a65eee3a53a4c7463c9",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-04/geo-train-04_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-04/geo-train-04_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79440,
+      "sha256": "aa90a834696c0217df48c8dc56a0b996cf4a0d6b4dd1865556ce7ac5d68b0c3e",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-04/geo-train-04_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-04/geo-train-04_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "ee43797c2c9f72b7b4217ad783fe0a7c647182a98b490ec5153a3296864feec2",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-04/geo-train-04_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-04/geo-train-04_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79842,
+      "sha256": "56e45ec1353b540e031153fc481917bb81e757f26f5f09d688468cf2c1a81614",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-04/geo-train-04_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-04/geo-train-04_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "00cc4e8753da90b68cd20e6298a124194e124d5bb2dff6de9b8bd2ffd5453499",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-04/geo-train-04_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-04/geo-train-04_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79567,
+      "sha256": "f989bfda28f1e61b8eb99f3ca29eb9b7f6eb8714db7c47d7575dc6476a1c9759",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-04/geo-train-04_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-04/geo-train-04_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "b481c72e6ee0641628f78e21c063d12b540b123dfde2f3333f1c62b49fdd4711",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-04/geo-train-04_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-04/geo-train-04_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79688,
+      "sha256": "24130609efa4bf119f37d44c6a5e169507a48b383de1425c2c5b047172ab4be3",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-05/geo-train-05_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-05/geo-train-05_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "4b8f810e582595e85aaa80cd457dff7100f850e2ae17b80969df5fba50ef8201",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-05/geo-train-05_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-05/geo-train-05_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82117,
+      "sha256": "8cc9fae9aa620b74bbd5ce4e95d759fea0f6ad8d61037ba976b811a08310d1b3",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-05/geo-train-05_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-05/geo-train-05_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "6ffbcbc218a10e6d7ed52cb2a9d7d5efa4cff0ec89242788b16fe854024d6deb",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-05/geo-train-05_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-05/geo-train-05_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 81842,
+      "sha256": "3478c538b30f6854128b7b9bedf475a5a247fc734f8022ea4b772d23afb2b21d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-05/geo-train-05_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-05/geo-train-05_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "423e1d73891a9395f55fc2e4693fed5224b5316c8f0d0150b307595a441c501a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-05/geo-train-05_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-05/geo-train-05_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 81886,
+      "sha256": "f93f10252e18bcc4b50a3fcbbed3c9cef64bfae54830bdb196da226e3df0bec1",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-05/geo-train-05_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-05/geo-train-05_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "f168d252ef9844945bb10852c8ee12e5a960810ffa0e8a69cbf0b4f71e1e6345",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-05/geo-train-05_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-05/geo-train-05_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 81891,
+      "sha256": "172381fe600bcd0279c30c08e62a4695963a433658cef14b43064362c267993d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-05/geo-train-05_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-05/geo-train-05_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "e27148f5c4b85781f5718e1455e9af2240d65186e59579ac7e7e0feb706fc589",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-05/geo-train-05_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-05/geo-train-05_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82139,
+      "sha256": "320b5760bce1c46a89ea631d5a436983f68c6a2e20f15d654e409b02dd8f15ce",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-05/geo-train-05_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-05/geo-train-05_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "647af0204d8ec933344d70b6bf8b105c2ddc0dba9408cda9ad037d413336d61a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-05/geo-train-05_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-05/geo-train-05_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 81920,
+      "sha256": "08a1a727cfc2bba6525b356335d0cc8536a73ad659b1a22ec9a47971d2474de0",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-06/geo-train-06_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-06/geo-train-06_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "dec51d5402c0b74c07c0ebe824f307cabe4c225caf1d47b2686c409c8565f62d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-06/geo-train-06_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-06/geo-train-06_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82586,
+      "sha256": "7f5c4d9c209ede4139b54dee6680d48980b8efff262f1f0de935fa0430924fdd",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-06/geo-train-06_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-06/geo-train-06_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "0eb331819636e30ab446acce828c628ee4dd856adf60d048ab5bc24e040c648b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-06/geo-train-06_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-06/geo-train-06_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82631,
+      "sha256": "ac57bcf38568990085978625c469f3dc53bc7d66ce7e5eb8bd55cb397cf5aca1",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-06/geo-train-06_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-06/geo-train-06_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "1cd2c92fc13ca0bc50f03fccc41f3a6a367e70f3e62f09294f4eb2753ef1b46e",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-06/geo-train-06_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-06/geo-train-06_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82478,
+      "sha256": "f80e467c910746a289cc9e01fcfe2715d821803061c0b5b1f2005e6957454cbf",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-06/geo-train-06_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-06/geo-train-06_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "86a78512ed5eaef9ab58153c443be9071c9c0844c53e099785c5fb2440fee8ca",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-06/geo-train-06_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-06/geo-train-06_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82752,
+      "sha256": "5f8f63814471828a53905e84ca7fc1fbb965291ca56afc3ef6527712715222e0",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-06/geo-train-06_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-06/geo-train-06_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "12242ed34ba9c5aeabeafc9294e1a9269226a9d0148a1881a26ff8416e17534a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-06/geo-train-06_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-06/geo-train-06_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82809,
+      "sha256": "87204606c7d9f4f2c4158739c3287f4e2a2d895f4ef10e0a5c55b8c60e36e3dd",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-06/geo-train-06_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-06/geo-train-06_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "7feb9a9fcf6a9abf2f92b561d90555dbc5adb9fdc155c8fc45da3b032f15ee85",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-06/geo-train-06_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-06/geo-train-06_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82658,
+      "sha256": "fe166f1dfc542edbda1103861914dfd2f58da684a513c68db40794a5899dfde7",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-07/geo-train-07_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-07/geo-train-07_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "560507184d9150d9696bf6a140af231b2efdb07391a80d4ff21fb6594ffecec5",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-07/geo-train-07_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-07/geo-train-07_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78496,
+      "sha256": "b297ca49c5835177770c7a3c54ecf71c45c14782522ac76ce11f64c122735cc6",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-07/geo-train-07_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-07/geo-train-07_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "a511c89ac4a484a9eecdd9926a24d45318e77814b7c1a3b62a00105016111e17",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-07/geo-train-07_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-07/geo-train-07_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78470,
+      "sha256": "a2d22f8a07198557f8f67ff6303d472190e03ebc780faaa9cd1728552107414d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-07/geo-train-07_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-07/geo-train-07_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "b714cced625055e5f35838e505476264ca2ad7a420376c54d5447296ada8fd9f",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-07/geo-train-07_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-07/geo-train-07_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78461,
+      "sha256": "be620c0c9012a819b392b01a5f2867ecb8a5d9edc4422619324f5bd489bad59a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-07/geo-train-07_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-07/geo-train-07_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "c63d95566d5ed9802209a2abd6768a3d9ace0726eb8478d581191f2963186791",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-07/geo-train-07_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-07/geo-train-07_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78547,
+      "sha256": "90c95ba2ff2b49b869e5c9b282d021270571ea77e6ba44aae98e53ba504dd2be",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-07/geo-train-07_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-07/geo-train-07_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "df56b38d74ad7307569f92e7827f566db793ed9c0f461e3ef1504d690b4be8fa",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-07/geo-train-07_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-07/geo-train-07_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78420,
+      "sha256": "43033c7fe228cce7a7d1b2f72a775e5462a5afe6d0e1839b48c1fd4ff9f4001d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-07/geo-train-07_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-07/geo-train-07_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "7f9ef55f1d3a5286e6b5dffd9dc23042d62f486f52cb31bf25437408fc1cc37d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-07/geo-train-07_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-07/geo-train-07_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78448,
+      "sha256": "6081fbc5099c47289a30d0009b7c3e6865f8c4c309ffb6d1028162a0bb348886",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-08/geo-train-08_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-08/geo-train-08_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "80fc06add8f24761964a208547a0f3c0a7a3e1f4c1c909b9e3fd0f3d48e1acdf",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-08/geo-train-08_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-08/geo-train-08_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80949,
+      "sha256": "de0058f3f8917f0a38f4bdb3130c259ea524257881574eddfa0c54d1423e78ff",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-08/geo-train-08_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-08/geo-train-08_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "416aa49fe861a48bbae5a69c436450f09c321cd1f4fcb7a586796d5003e9210b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-08/geo-train-08_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-08/geo-train-08_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80883,
+      "sha256": "f352d1af31edca770953c3a2253fe0c05bff6af83c6f19f4ef237e4e7476d154",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-08/geo-train-08_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-08/geo-train-08_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "dfae6310df7bce4718a1b4f3a66b5b591240839e23e6a30f1fb02cdcec8431d7",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-08/geo-train-08_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-08/geo-train-08_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80898,
+      "sha256": "45cea009e729cf322b58cc4c3b0c271db82037be1344d071932dd8c1a0182aa4",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-08/geo-train-08_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-08/geo-train-08_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "f6e8d741291d946fdb85448a35922b8819bd98aa33895bd3db55e326da1cef23",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-08/geo-train-08_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-08/geo-train-08_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80928,
+      "sha256": "d4079a93d8e7e69fcee86616437de2acc26acb00278343975ba94911c579de65",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-08/geo-train-08_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-08/geo-train-08_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "d677b21983ca649e6b49ccf44c799b44de9f7d9e4a0199350b1af75471995b21",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-08/geo-train-08_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-08/geo-train-08_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80854,
+      "sha256": "25cec8f6559e0b90862c3e5a675fdaee0ac5802140b1b034da8ddf39f889d920",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-08/geo-train-08_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-08/geo-train-08_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "e7ca131a8d06a8633ed0f03279c765bd0da0c75484799fa54772e08c98b39895",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-08/geo-train-08_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-08/geo-train-08_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80939,
+      "sha256": "a46b3de499ea6e1a0fc8064d7252a153134e6b51b55e8b9f81be5452548c0d6a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-09/geo-train-09_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-09/geo-train-09_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "14dab6c204615f5c6e1cbe7484e18f5f8d02c74ff53c2ac3924c012dabf927ba",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-09/geo-train-09_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-09/geo-train-09_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82539,
+      "sha256": "cfd5cdfa5e48aea6d56a98e8fc74e68bf88f6677eee951e1a387041166697000",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-09/geo-train-09_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-09/geo-train-09_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "f208bd468d5deb9e34b041f715c37ffb6d59c5d8309a2706230a19e7e100c6a9",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-09/geo-train-09_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-09/geo-train-09_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82677,
+      "sha256": "9096def0d239ddaa4ac9613acd749df528827f73e6a6e7b27da5f9e78e497a29",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-09/geo-train-09_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-09/geo-train-09_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "e73497e7404434c2b023eb2ef8783038f5ff6e25dbc382d36511681becb6f60b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-09/geo-train-09_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-09/geo-train-09_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82561,
+      "sha256": "307e35e011593cd95df1dcbaf2ba481b39878282bad0826e6f83bd671358fae3",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-09/geo-train-09_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-09/geo-train-09_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "abdbbcca5c24461bd1132e861f01f79338bd8251811a46254506e156c8e8e41e",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-09/geo-train-09_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-09/geo-train-09_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82453,
+      "sha256": "817d796e3fc7df56b89eeb4e319cc090a5b9d8e1a0772c845400ac506e5f7962",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-09/geo-train-09_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-09/geo-train-09_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "1936d521fa320db48fa30364c0cbc35c76cc0b47cb9282b57f3c93240df43d55",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-09/geo-train-09_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-09/geo-train-09_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82417,
+      "sha256": "ec56a332261882e3817c175fa146c44efa1558b345610028fa7777b29c44203d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-09/geo-train-09_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-09/geo-train-09_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "f2092ef6e875d1764d8f72e21f58e36283317de284e997c1e0c21b6d7c33b890",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-09/geo-train-09_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-09/geo-train-09_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82590,
+      "sha256": "2301ad945f8627632ec114abc95c817fecd323198540ecd08353c458aa130209",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-10/geo-train-10_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-10/geo-train-10_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "02af98b781961545d0f2ffd6ead425755260f27ca9ae1340b1dafa08d4ef6837",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-10/geo-train-10_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-10/geo-train-10_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78729,
+      "sha256": "4ba670a930ffc0e40541efbd97c40b4eb199cec086db781f10d5b03c879dfeaa",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-10/geo-train-10_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-10/geo-train-10_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "0e57cb429c0d6cfd56c6fc62d6b30f2f5bae710c9f10d9d1feedfc77bf249514",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-10/geo-train-10_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-10/geo-train-10_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78511,
+      "sha256": "e5d4c0578c4cc95a1feaef18064eef15c2d9ff0ef228df4b220361fc6536c02a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-10/geo-train-10_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-10/geo-train-10_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "a1d2e39abcebba83cb818745dccd897a33ab7f318bac2f50efe5a156ce8b65e2",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-10/geo-train-10_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-10/geo-train-10_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78564,
+      "sha256": "1a620938009f616ecf6af95826b03e436af8cc3f5f0223865ffea3f5dcdf91e3",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-10/geo-train-10_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-10/geo-train-10_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "c67a2f0a97217d1889b90098a97471f2e9803f68c13e430a4c0c01c8370c1a1e",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-10/geo-train-10_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-10/geo-train-10_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78702,
+      "sha256": "4bb0676d635f91e2a7692a38425ca203c874074b969fa06cfd8c2a9f8b0c119f",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-10/geo-train-10_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-10/geo-train-10_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "3b379a9f7ab07f66164225f90c1d7269d8fe5873bc15b730b3b3d70112e160c6",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-10/geo-train-10_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-10/geo-train-10_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78620,
+      "sha256": "c90c7edabb0a2df3dba3087c383b1df46118294091bd79279cf281201acb51ca",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-10/geo-train-10_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-10/geo-train-10_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "d5e86ae885ecc47ad8f0f3bc3f0fc8ec3a7817afaddb29e343431b0570a128ac",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-10/geo-train-10_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-10/geo-train-10_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78538,
+      "sha256": "0f2c63665648a0eb2fe0b329ddb08e0036eafa722fbcfd5b6bac4128192fe360",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-11/geo-train-11_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-11/geo-train-11_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "dfc13bff14e0c2632523b2d4a4100c859f269adca947b794a147ebcc75fbe6f5",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-11/geo-train-11_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-11/geo-train-11_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79921,
+      "sha256": "915e91b9afbe00c0461f726f3161736adad652b658fa0ad3b7c3bc5edcff1120",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-11/geo-train-11_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-11/geo-train-11_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "d5e7cc94b627237187b9ab0558046480976e8c40a5f7a53e9eea3dbcf0f1ee8a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-11/geo-train-11_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-11/geo-train-11_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79890,
+      "sha256": "79e42e915c357ca7b4f5b32202ba5698c63d051e1870d153b8934677eca556d3",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-11/geo-train-11_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-11/geo-train-11_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "b3211aaccf84ae4d8f07180cd3a03bac9d0dcd771d6fa409837e32b97bccc439",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-11/geo-train-11_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-11/geo-train-11_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79983,
+      "sha256": "9b8ebb3f9c626b4ea307aa9a595383e241f40536dcbbd768dfb43278c9c1a6ae",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-11/geo-train-11_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-11/geo-train-11_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "4f2a1168ca0223ec72d1b47727ae3fac176812093a7416085f565889b451b734",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-11/geo-train-11_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-11/geo-train-11_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79953,
+      "sha256": "81440f05c4a1e33a7b0c9a4e730f1cbe250dc827daed43a03f3a901365424609",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-11/geo-train-11_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-11/geo-train-11_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "1f13e620ff5050d199e49fdb14c7b2aabe640bccd67711961f19c94ac5c40571",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-11/geo-train-11_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-11/geo-train-11_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79900,
+      "sha256": "a74ab20bd9ecf84c1b7295ac723e40f67b5fc79487371b56b06335070a4fa377",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-11/geo-train-11_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-11/geo-train-11_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "fd16ea877db8ea29797f3e06c761eb3159b9ea13122636e4236a437f3da46d32",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-11/geo-train-11_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-11/geo-train-11_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79903,
+      "sha256": "900baa33a78ba50d8e09df71c100465417e1d92be69ca6cba9eea6f5a117fbc1",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-12/geo-train-12_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-12/geo-train-12_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "1cb6c648423f0b6cfc40aed17a94905f72cdde7d4f37ec421d9f7da6a2b560a3",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-12/geo-train-12_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-12/geo-train-12_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82184,
+      "sha256": "5ebb9cbcada1ab44a25cbe9b7f16c8568fd267b4e4845616b1f776b7beda26de",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-12/geo-train-12_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-12/geo-train-12_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "c0f1c2d70f4f0be0ce40708d6eb8e0da826a097cc3cba1b69ced832efcc140e1",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-12/geo-train-12_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-12/geo-train-12_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82214,
+      "sha256": "d4e18662ec43ff37eae0c37d8bae1276e261298169fc607ece8c0943b930bfcd",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-12/geo-train-12_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-12/geo-train-12_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 643,
+      "sha256": "d1cd67d41f46ff0c1bb441538343d4120109f6e1f79e5ed0740083133dc5cc6a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-12/geo-train-12_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-12/geo-train-12_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82095,
+      "sha256": "79b0a74fe4fd1f34e4eb6c3b59ac84577ec912c814439ea2c89934b53f43bf07",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-12/geo-train-12_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-12/geo-train-12_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "80db5d4080ee385f19625694e7267fbf60cd061096fef6a561853aa322cb149d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-12/geo-train-12_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-12/geo-train-12_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82262,
+      "sha256": "8f3bad333e6863b78067896b90b45073aef2203fa9ccae39c6d79cec20dc4955",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-12/geo-train-12_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-12/geo-train-12_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "3690cdeb6abad85f5e4547519659fb34b991c8251ef6fb859529f53de9c9a870",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-12/geo-train-12_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-12/geo-train-12_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82258,
+      "sha256": "f7ddd9120c210369b84c69e2e7a07ec9bb449388be4e63bab4d9f07151690275",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-12/geo-train-12_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-train-12/geo-train-12_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 644,
+      "sha256": "06c3440e5de466196d3373aacb6a799ed1236ddf406df075157169dffb774e89",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-train-12/geo-train-12_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-train-12/geo-train-12_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 82106,
+      "sha256": "00040f13f7deb92c8b3a805725c75649028fde7f0b0fbadd730f176eefd3ab75",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-01/geo-val-01_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-01/geo-val-01_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 641,
+      "sha256": "165d09f2872083c57327159c1826821088f67bd2cfae773c44a26f19aeab4b54",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-01/geo-val-01_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-01/geo-val-01_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78003,
+      "sha256": "4c505789b352d0b0c877a782c35d6ed7a5b7d5ab1d6246239b72d54513fa3fef",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-01/geo-val-01_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-01/geo-val-01_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 641,
+      "sha256": "ccd78f6cf9eb2c8fe26384aa80e202a845bd10964f4194fc3cb3c966f4728d8d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-01/geo-val-01_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-01/geo-val-01_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78031,
+      "sha256": "d395982262b99075fb4817f6a9e05c1c307ee47c80fa1d2be83ce8d0c2276963",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-01/geo-val-01_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-01/geo-val-01_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "2e2d3ffb39596f37caf764789116b2ca8fd267c067bde617e998be34bc3b270b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-01/geo-val-01_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-01/geo-val-01_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78095,
+      "sha256": "f21019e450e4bd154863768998534e40dd481086a594540aead00fc8c1e7f56b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-01/geo-val-01_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-01/geo-val-01_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "fc9b7cb651ee627adcb6483c1db330f4e61034cd69926027570f7e3a6e29907b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-01/geo-val-01_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-01/geo-val-01_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78132,
+      "sha256": "156b18a52ec44d9bc80be4c28b9fd0b7c01fefeabc19ff52370f903cb8996b31",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-01/geo-val-01_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-01/geo-val-01_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "6ad37e1d655c4b35e7b225dbecfe08b3b8ab75f21be5fac09b519827ffa397d7",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-01/geo-val-01_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-01/geo-val-01_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 78107,
+      "sha256": "4dfb73c1f776b9795dbe282e47a08fb19de61e562247631a4a2e1c320b310c25",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-01/geo-val-01_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-01/geo-val-01_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "d0122d3f585cbe33797e1d273c73ca6530d194005077aa35d4c0394d35ff4c60",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-01/geo-val-01_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-01/geo-val-01_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 77998,
+      "sha256": "ec1936d17a28f61e863088408eeaaab9184a5e2d68647c9d9e967202280dac2d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-02/geo-val-02_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-02/geo-val-02_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 640,
+      "sha256": "8121d00945e3cf621046ec0548459f1861f326349b4311dca275be96726f79d0",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-02/geo-val-02_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-02/geo-val-02_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80564,
+      "sha256": "647e8b3ac90363590ac7908e3835677c923c98f2ce1142f530cca5ac69717043",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-02/geo-val-02_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-02/geo-val-02_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "51c5b2e5a297bace30b1427dbc27a11ddcbcea9fe80d82dec89278e3f5536461",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-02/geo-val-02_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-02/geo-val-02_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80367,
+      "sha256": "3dc6c5ceeb1967ddeed2b1b1c6b9d029f0dee7b994950f0530fbc09b4a5fec71",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-02/geo-val-02_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-02/geo-val-02_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "634df76082802744ee030bba21dfccfa67dc9ccbffe7e0aac283b054ae389706",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-02/geo-val-02_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-02/geo-val-02_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80427,
+      "sha256": "6932236920fe18fc210faf894c2760da638fac49de6b9c3862ecc020882f56e3",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-02/geo-val-02_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-02/geo-val-02_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "66d7fc46ffdbff85396e8cef37ad648b2e955bf97b5bed97e31663627e74cf8c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-02/geo-val-02_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-02/geo-val-02_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80613,
+      "sha256": "f2523afe2a94238fbfae60e0a2840d114a75116f025c500ff6cf6c03b27a5d8b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-02/geo-val-02_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-02/geo-val-02_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 641,
+      "sha256": "741d997916ccb8dacfa5dc08e5928c3b238438e3266db93761be7a59e90db440",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-02/geo-val-02_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-02/geo-val-02_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80304,
+      "sha256": "81caac51005bd28c674e18fbeba6f79ed94109c86123d28e6b1c18faad47ef63",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-02/geo-val-02_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-02/geo-val-02_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "088902f98807b9b4b29421a8650986d52404d58547e511ed7a0e3fc0bb8357d1",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-02/geo-val-02_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-02/geo-val-02_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80425,
+      "sha256": "14efe08aac5b839d99dc0c63e46f0ee98fc3a8ec66899bd1837a960ea8f9e6d5",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-03/geo-val-03_view0.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-03/geo-val-03_view0.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "de944fd4b8e30f19dfa8fd812de6eadeee1cd63a2a8a1f7488e1a8a590c132d8",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-03/geo-val-03_view0.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-03/geo-val-03_view0.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79912,
+      "sha256": "b573dfed021aab41a929afd6aab96fc22c271dd11c5b00e4d1477a57ada7ce63",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-03/geo-val-03_view1.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-03/geo-val-03_view1.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "214443ba4b2b1dd233e130de4c4671e096d9fa5080bf93ba86cae4f92c4b740d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-03/geo-val-03_view1.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-03/geo-val-03_view1.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80090,
+      "sha256": "372fde847e290e2e66df06254ba47beaaf005ef7fb4a307808ed0944e10c31e6",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-03/geo-val-03_view2.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-03/geo-val-03_view2.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 641,
+      "sha256": "6f586a5f649af8f5eb3866b793c1df13240a9da0a4e4c1b16642f30f85d9135a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-03/geo-val-03_view2.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-03/geo-val-03_view2.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80291,
+      "sha256": "a9cb94589ea3d0af8666fdf54f40cb6d53d422e7d2f67b5e90e526af362bfe49",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-03/geo-val-03_view3.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-03/geo-val-03_view3.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "8191fa05914b8d36d26d7905d4be3da464d29bb6714c513d5226b07b14a7b4b4",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-03/geo-val-03_view3.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-03/geo-val-03_view3.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80178,
+      "sha256": "a7fbf0c87b9fe563b77ef54c462b4f2e89193bf99df5515f2c5701217f310e28",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-03/geo-val-03_view4.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-03/geo-val-03_view4.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "de6b3294306b581597bb19a8348e5ad797a5cf8d3029192b7616ce064bb8608b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-03/geo-val-03_view4.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-03/geo-val-03_view4.npz",
+      "origen": "paquete-compartido",
+      "bytes": 79927,
+      "sha256": "80b17779418b1cf9bf0b4c440bbcf3d5706d7743a47f8032ff645ded9d63c2d1",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-03/geo-val-03_view5.meta.json",
+      "ruta_fuente": "data/campaign-geant4/geo-val-03/geo-val-03_view5.meta.json",
+      "origen": "paquete-compartido",
+      "bytes": 642,
+      "sha256": "eccbb94c66cf4ee524dff5c50d994d7a3899b2e0d0cdbd2ee87ec3b6dd85765f",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/data/campaign-geant4/geo-val-03/geo-val-03_view5.npz",
+      "ruta_fuente": "data/campaign-geant4/geo-val-03/geo-val-03_view5.npz",
+      "origen": "paquete-compartido",
+      "bytes": 80021,
+      "sha256": "9497c3f9f441f041a18ad6eae09763ed7854e950423609c7128ac2685bc3325a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-gen-01.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-gen-01.meta.json",
+      "origen": "git",
+      "bytes": 9809,
+      "sha256": "b120ca8ccd2004dea73cb5fe943f90cf2eefeb5fce0cbbdb391682dee554c885",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-gen-01.npz",
+      "ruta_fuente": "dataset/shards/geo-gen-01.npz",
+      "origen": "paquete-compartido",
+      "bytes": 22064832,
+      "sha256": "388b65167e2d0a3c1b23fe569a922e1ae1398a78dcf3444dc916d4d6e18c00ce",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-test-01.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-test-01.meta.json",
+      "origen": "git",
+      "bytes": 9797,
+      "sha256": "ab5cfb4f564f04b97aa03a51612ef0a6069cd91d7359c1109923fe97ffc22590",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-test-01.npz",
+      "ruta_fuente": "dataset/shards/geo-test-01.npz",
+      "origen": "paquete-compartido",
+      "bytes": 21644210,
+      "sha256": "0db8d0926696c0e71710857db83dad040dd9ac88e75835004a015e4dad43a98b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-test-02.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-test-02.meta.json",
+      "origen": "git",
+      "bytes": 9808,
+      "sha256": "20c0e255f8d6823b9561630fb11ac7452dd2696d986f704a99f72781c843ef04",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-test-02.npz",
+      "ruta_fuente": "dataset/shards/geo-test-02.npz",
+      "origen": "paquete-compartido",
+      "bytes": 21977405,
+      "sha256": "b3d2f603b22d5e2d02c67ee290930e22bd70dc7022ddc50f31b41acd4a1d5175",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-test-03.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-test-03.meta.json",
+      "origen": "git",
+      "bytes": 9815,
+      "sha256": "c20d36dceb3df3170197cbfcb4d9aa0c576162df29816cf861d291af814c65e2",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-test-03.npz",
+      "ruta_fuente": "dataset/shards/geo-test-03.npz",
+      "origen": "paquete-compartido",
+      "bytes": 23175531,
+      "sha256": "d6320712f146c226ac3b05f2d9d095949a8841e4902ca4d75a3fd2ebc8a9782a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-01.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-01.meta.json",
+      "origen": "git",
+      "bytes": 9791,
+      "sha256": "e70c15f603e6f647b1aaff172e498124bdeff042f9b0944977ce6dffa3ed8c7b",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-01.npz",
+      "ruta_fuente": "dataset/shards/geo-train-01.npz",
+      "origen": "paquete-compartido",
+      "bytes": 22460907,
+      "sha256": "3769b6da986fa66f73cf0337ec1c70aff92e13b5dbbd203f99084f1b304a3a25",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-02.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-02.meta.json",
+      "origen": "git",
+      "bytes": 9811,
+      "sha256": "14b6c341e340125b9a683ae37a3a8de677e09038c66cf80d381a450908e576f4",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-02.npz",
+      "ruta_fuente": "dataset/shards/geo-train-02.npz",
+      "origen": "paquete-compartido",
+      "bytes": 22757599,
+      "sha256": "e58ed375c282fd04bbff9fd7ffdb01dd14ee4b9315dfee510ee84400dafa2d7c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-03.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-03.meta.json",
+      "origen": "git",
+      "bytes": 9808,
+      "sha256": "3e07275df92caa3902a0d67a587e1cecdf19eb6fb7c396f65309765ab7fbce9f",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-03.npz",
+      "ruta_fuente": "dataset/shards/geo-train-03.npz",
+      "origen": "paquete-compartido",
+      "bytes": 23017910,
+      "sha256": "b2671e092662a2cd35c608d5ee77fde062315e69bd460adb8e0d7d3c668df307",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-04.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-04.meta.json",
+      "origen": "git",
+      "bytes": 9797,
+      "sha256": "24c8107b2685db68dfedd4c7aaa36fa9ab26bcb004fd197d7ad25097f9663a8c",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-04.npz",
+      "ruta_fuente": "dataset/shards/geo-train-04.npz",
+      "origen": "paquete-compartido",
+      "bytes": 22025737,
+      "sha256": "e390d232493670e978f166f5e61ba53c47e924a6c2adee8ebc7d81e14f0b8b40",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-05.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-05.meta.json",
+      "origen": "git",
+      "bytes": 9789,
+      "sha256": "0b5b517df99d4ba94bcd09fe34f0b47e16be44cb084dd5de9b0cab7af26cc3ca",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-05.npz",
+      "ruta_fuente": "dataset/shards/geo-train-05.npz",
+      "origen": "paquete-compartido",
+      "bytes": 22826276,
+      "sha256": "7c9b524fff507bd58091e55fb5f3dcd08015223c231d11e74e9d1fdc51f6b60a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-06.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-06.meta.json",
+      "origen": "git",
+      "bytes": 9802,
+      "sha256": "65b526cea94b97b206f2352cd0d51d21f98159db4816827630df99efe744f7ba",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-06.npz",
+      "ruta_fuente": "dataset/shards/geo-train-06.npz",
+      "origen": "paquete-compartido",
+      "bytes": 23022512,
+      "sha256": "d74c5b04be5c453b7b8d5dac24de7775ada4c695b5a1598b2776f661a7bde7d3",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-07.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-07.meta.json",
+      "origen": "git",
+      "bytes": 9779,
+      "sha256": "ec77f6b7c90ae7eb1051ad5d1dfa27bccba5f537efe4faea70da405bd0f35999",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-07.npz",
+      "ruta_fuente": "dataset/shards/geo-train-07.npz",
+      "origen": "paquete-compartido",
+      "bytes": 21585294,
+      "sha256": "1e8f83226788cee61b075e3313b15c0556e40112f757b31545f6c04310c450dd",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-08.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-08.meta.json",
+      "origen": "git",
+      "bytes": 9807,
+      "sha256": "315e7d560245bca98895fe1f20eb9a51a617347ea61b3c9d091af1d4acc85e16",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-08.npz",
+      "ruta_fuente": "dataset/shards/geo-train-08.npz",
+      "origen": "paquete-compartido",
+      "bytes": 22413569,
+      "sha256": "ffbee8bb2ccd5fb4eb85d1d08d6e0da8055f71e901d348507e9e2c7d4930ee39",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-09.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-09.meta.json",
+      "origen": "git",
+      "bytes": 9783,
+      "sha256": "e38ab32e335f2432a6910519316386af72fc2311f8d1d2aca0f528e30f0a58d7",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-09.npz",
+      "ruta_fuente": "dataset/shards/geo-train-09.npz",
+      "origen": "paquete-compartido",
+      "bytes": 23057619,
+      "sha256": "2382ccd45295280840b50350d48575e2cbe12d0bcc61ca34f9654a0697cb031e",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-10.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-10.meta.json",
+      "origen": "git",
+      "bytes": 9804,
+      "sha256": "c3474bbbd52fdd87532e01acc04a9e630735ae8aa84ef036ed374bb74432e094",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-10.npz",
+      "ruta_fuente": "dataset/shards/geo-train-10.npz",
+      "origen": "paquete-compartido",
+      "bytes": 21589945,
+      "sha256": "1dbf1304cacc862c7e36883e7d136c805f6f9ca49fae9af8b955fc9270e4451a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-11.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-11.meta.json",
+      "origen": "git",
+      "bytes": 9803,
+      "sha256": "954df142d0aa77913b188ef1826d16fddf1fde1999cfe89b3a38e38baaf636a0",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-11.npz",
+      "ruta_fuente": "dataset/shards/geo-train-11.npz",
+      "origen": "paquete-compartido",
+      "bytes": 22087417,
+      "sha256": "9f379c1746a1c9d997eb48aaf1090d52851ab6750ba7647fd4f7cba89d6f9540",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-12.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-12.meta.json",
+      "origen": "git",
+      "bytes": 9786,
+      "sha256": "7061392aa9b67788871eae3287d812160bf4542a64e0eae50cf08b7330a5e4e1",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-train-12.npz",
+      "ruta_fuente": "dataset/shards/geo-train-12.npz",
+      "origen": "paquete-compartido",
+      "bytes": 22861801,
+      "sha256": "12d4e9cead0863dea36a28edbc11a150c0a0c94e271a445868047a8e78e0b791",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-val-01.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-val-01.meta.json",
+      "origen": "git",
+      "bytes": 9799,
+      "sha256": "deb9b22a2a94cd7581e116ab1f3ebcaee965546b6cdfc15a8ddecefc7f9f9d6d",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-val-01.npz",
+      "ruta_fuente": "dataset/shards/geo-val-01.npz",
+      "origen": "paquete-compartido",
+      "bytes": 21456955,
+      "sha256": "0588b8fafcb206721e09dd3d48ea3f01f2bd16bf791aaf8a23d6c94db04997fd",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-val-02.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-val-02.meta.json",
+      "origen": "git",
+      "bytes": 9799,
+      "sha256": "27a780607f0a6a6b06c227eb07ed2d2d610dff4e478213b34e4ec06a3bfc1cdd",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-val-02.npz",
+      "ruta_fuente": "dataset/shards/geo-val-02.npz",
+      "origen": "paquete-compartido",
+      "bytes": 22334539,
+      "sha256": "6cf53ab2002ddf4993f1a08f76b98896a892d7ba1c1c9ca479c0a6773823119e",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-val-03.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-val-03.meta.json",
+      "origen": "git",
+      "bytes": 9792,
+      "sha256": "fcc7e7f6fb58c9c143e7ab02e47bf5170943a414982be665bd7af05c8df11b34",
+      "nota": "Copia de metadatos junto al shard para compatibilidad del código original."
+    },
+    {
+      "destino": "objetivo-1/originales/dataset/shards/geo-val-03.npz",
+      "ruta_fuente": "dataset/shards/geo-val-03.npz",
+      "origen": "paquete-compartido",
+      "bytes": 22121184,
+      "sha256": "c43ad84e89603c66bc2140fc1541bcbf2720c90ea8f608ef1a019aa4858d0af5",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/figures/results/stage06_ecomug_spectrum.png",
+      "ruta_fuente": "figures/results/stage06_ecomug_spectrum.png",
+      "origen": "git",
+      "bytes": 98940,
+      "sha256": "3fdd1bbbfa12200a4f9fd119ffb99a9c25f952ec6094982e8c1e5fa8dccb1c4d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/figures/results/stage07_catalog_cross_sections.png",
+      "ruta_fuente": "figures/results/stage07_catalog_cross_sections.png",
+      "origen": "git",
+      "bytes": 380848,
+      "sha256": "eb689e3bde81e729e73f5de8dde11c5855195991221b22e8a6acbcb7b538e0cf",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/figures/results/stage07_geometry_detail.png",
+      "ruta_fuente": "figures/results/stage07_geometry_detail.png",
+      "origen": "git",
+      "bytes": 114282,
+      "sha256": "62d19b6c0b77d0003a68f474c87d76a8239ea8deb3c241d446aeac47acd85268",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/figures/results/stage08_pilot_muogram_geant4.png",
+      "ruta_fuente": "figures/results/stage08_pilot_muogram_geant4.png",
+      "origen": "git",
+      "bytes": 439567,
+      "sha256": "50ee473a3711ef101e9e01fac9c66b0dc953db683981bf9d243963070a707fba",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/figures/results/stage09_engine_comparison.png",
+      "ruta_fuente": "figures/results/stage09_engine_comparison.png",
+      "origen": "git",
+      "bytes": 688430,
+      "sha256": "b391924f0f6c820c531945824bb19b229db114ec5efd3ef61e83755407f169eb",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/figures/results/stage09_vv_physics.png",
+      "ruta_fuente": "figures/results/stage09_vv_physics.png",
+      "origen": "git",
+      "bytes": 159481,
+      "sha256": "473b5b0ea201fc1986ec6c71e1e6c6d325bba713581a599b0942871c65e0b25c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/figures/results/stage11_example_pairs.png",
+      "ruta_fuente": "figures/results/stage11_example_pairs.png",
+      "origen": "git",
+      "bytes": 2506158,
+      "sha256": "073cb9ca61478b5b04b724bbc0501d14bdb6ae264f6df240588464832887c6e9",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-06-5-29613.out",
+      "ruta_fuente": "logs/simulation/b-06-5-29613.out",
+      "origen": "paquete-compartido",
+      "bytes": 1344,
+      "sha256": "4d6c0e91a20a8ea9c7fa940175b42f0b0c2afb0ebad2cb5dd5e40c5cebbf97a1",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-07-0-29614.out",
+      "ruta_fuente": "logs/simulation/b-07-0-29614.out",
+      "origen": "paquete-compartido",
+      "bytes": 1308,
+      "sha256": "7266e579061d26e38dd48ad39a775559228ada5a2bd3827847693b0116c64e32",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-07-1-29615.out",
+      "ruta_fuente": "logs/simulation/b-07-1-29615.out",
+      "origen": "paquete-compartido",
+      "bytes": 1306,
+      "sha256": "1b17097284095e013d102db3f739e5d6ce3570c0e2f8543a8ff8e442b0b19603",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-07-2-29616.out",
+      "ruta_fuente": "logs/simulation/b-07-2-29616.out",
+      "origen": "paquete-compartido",
+      "bytes": 1308,
+      "sha256": "bf2e7c55113d8143de1042248fdebcbea50533733bb9950f847f7d0497b2ac46",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-07-3-29617.out",
+      "ruta_fuente": "logs/simulation/b-07-3-29617.out",
+      "origen": "paquete-compartido",
+      "bytes": 1308,
+      "sha256": "2e75465aa07b134415e4d0d0e027b686ddea328a58e971b70217658d465b26dd",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-07-4-29618.out",
+      "ruta_fuente": "logs/simulation/b-07-4-29618.out",
+      "origen": "paquete-compartido",
+      "bytes": 1307,
+      "sha256": "6198b44207937605930f3533bd819faf41515d8fb1ab34e31bbfad8f6b9a7f29",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-07-5-29619.out",
+      "ruta_fuente": "logs/simulation/b-07-5-29619.out",
+      "origen": "paquete-compartido",
+      "bytes": 1308,
+      "sha256": "b77987ee50b0130b7e14744b06580d1c0d35e7c8f8fa3d6d6137860d2d0b3bc3",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-08-0-29620.out",
+      "ruta_fuente": "logs/simulation/b-08-0-29620.out",
+      "origen": "paquete-compartido",
+      "bytes": 1361,
+      "sha256": "aab1045ad14808b1cdc670577dda2c65ae1fbc08f8a44630e77822a54c2ec884",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-08-1-29621.out",
+      "ruta_fuente": "logs/simulation/b-08-1-29621.out",
+      "origen": "paquete-compartido",
+      "bytes": 1361,
+      "sha256": "2cf73e6981ba9165709f77cd9eba00bd14c3e9b123af8473042702ea06ba621d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-08-2-29622.out",
+      "ruta_fuente": "logs/simulation/b-08-2-29622.out",
+      "origen": "paquete-compartido",
+      "bytes": 1360,
+      "sha256": "cdd04ef030f93fe80aefd48faf47c03739551a442d345a16164f9bfbca43e7d5",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-08-3-29623.out",
+      "ruta_fuente": "logs/simulation/b-08-3-29623.out",
+      "origen": "paquete-compartido",
+      "bytes": 1361,
+      "sha256": "70bf012d1c5f5a73de32462c23bbeaba7e21e33832311f3ec1e38a8fe3c7c497",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-08-4-29624.out",
+      "ruta_fuente": "logs/simulation/b-08-4-29624.out",
+      "origen": "paquete-compartido",
+      "bytes": 1361,
+      "sha256": "033db412be340059678dc228be56ef1ebea125be16beb706e391a43668f359ba",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-08-5-29625.out",
+      "ruta_fuente": "logs/simulation/b-08-5-29625.out",
+      "origen": "paquete-compartido",
+      "bytes": 1361,
+      "sha256": "a8e541f6fdeab0d736f9abcf187d0663c3cf9a5103b0e65377dcb8fdcc687983",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-09-0-29628.out",
+      "ruta_fuente": "logs/simulation/b-09-0-29628.out",
+      "origen": "paquete-compartido",
+      "bytes": 1907,
+      "sha256": "b42b9b88c2fe1939466c414c951dbe4c564adb3eebddd8ff43133998e670d727",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-09-1-29629.out",
+      "ruta_fuente": "logs/simulation/b-09-1-29629.out",
+      "origen": "paquete-compartido",
+      "bytes": 1906,
+      "sha256": "c11b78c886a9860f6b49c8bfdf193d52df3d1bb768f54d947f1b01047a58b774",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-09-2-29631.out",
+      "ruta_fuente": "logs/simulation/b-09-2-29631.out",
+      "origen": "paquete-compartido",
+      "bytes": 1907,
+      "sha256": "3d03a41fc1d14be022e068f39554600599f7baa2cd9398a17973605fc40437f4",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-09-3-29635.out",
+      "ruta_fuente": "logs/simulation/b-09-3-29635.out",
+      "origen": "paquete-compartido",
+      "bytes": 1907,
+      "sha256": "d594432ac4a95e981677384e6b58420374599f7741889c7b164df8de0683ccbd",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-09-4-29636.out",
+      "ruta_fuente": "logs/simulation/b-09-4-29636.out",
+      "origen": "paquete-compartido",
+      "bytes": 1907,
+      "sha256": "aff7304eec2b6b2cb5d063bee17eb5961d5b1613a9265888bfbc546ccc9a7661",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-09-5-29637.out",
+      "ruta_fuente": "logs/simulation/b-09-5-29637.out",
+      "origen": "paquete-compartido",
+      "bytes": 1907,
+      "sha256": "a839b0339887896fa64d9991930dfd63d6a3d9bb4c178411a4bfad8f4797401a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-10-0-29641.out",
+      "ruta_fuente": "logs/simulation/b-10-0-29641.out",
+      "origen": "paquete-compartido",
+      "bytes": 1366,
+      "sha256": "aa163ecd678c2a31c4ff9bf5f46a7daa33ca605ca2880f6146f6f931331d9820",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-10-1-29642.out",
+      "ruta_fuente": "logs/simulation/b-10-1-29642.out",
+      "origen": "paquete-compartido",
+      "bytes": 1366,
+      "sha256": "bdbe1be433bca6a1b6b6e7708797e51a788be0499856fb6f83e557617f467862",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-10-2-29643.out",
+      "ruta_fuente": "logs/simulation/b-10-2-29643.out",
+      "origen": "paquete-compartido",
+      "bytes": 1365,
+      "sha256": "0d3afc47ca360a579e3c8c7d8180cfacb050dc1ab6c39a21af9d08d31bf09f9f",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-10-3-29644.out",
+      "ruta_fuente": "logs/simulation/b-10-3-29644.out",
+      "origen": "paquete-compartido",
+      "bytes": 1366,
+      "sha256": "2b2f43421adfac4213866a0af58259f342461172adb911028420c44c8fcb5a0d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-10-4-29645.out",
+      "ruta_fuente": "logs/simulation/b-10-4-29645.out",
+      "origen": "paquete-compartido",
+      "bytes": 1366,
+      "sha256": "52de19e08f434332b73d0ce54146c5b485da0819691148ebeaf26c71ff52169a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-10-5-29646.out",
+      "ruta_fuente": "logs/simulation/b-10-5-29646.out",
+      "origen": "paquete-compartido",
+      "bytes": 1366,
+      "sha256": "ae05eb7bc1cc5f3a7e3cf4ab625999777f46a625254741f2ad02ad3ad2fa09ec",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-11-0-29647.out",
+      "ruta_fuente": "logs/simulation/b-11-0-29647.out",
+      "origen": "paquete-compartido",
+      "bytes": 1966,
+      "sha256": "7d693e1cf2c6b6529397f95b84c81db57d4c9822cda9841ff0e45056bc4f2ba4",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-11-1-29648.out",
+      "ruta_fuente": "logs/simulation/b-11-1-29648.out",
+      "origen": "paquete-compartido",
+      "bytes": 1967,
+      "sha256": "fde6bea5aff5c131fe2113b046ea517fd66366d1275badfdd1eaa7c3a3c02479",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-11-2-29649.out",
+      "ruta_fuente": "logs/simulation/b-11-2-29649.out",
+      "origen": "paquete-compartido",
+      "bytes": 1966,
+      "sha256": "39dc41e7bbb65bcd581eb0526a037c8c33f2347b4ef22c9675997bc980715022",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-11-3-29650.out",
+      "ruta_fuente": "logs/simulation/b-11-3-29650.out",
+      "origen": "paquete-compartido",
+      "bytes": 1966,
+      "sha256": "ddaada9bc4d360aae0057f9b2cf1648f979e9d643d4fd6b7a2d357aa4d7cf027",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-11-4-29651.out",
+      "ruta_fuente": "logs/simulation/b-11-4-29651.out",
+      "origen": "paquete-compartido",
+      "bytes": 1967,
+      "sha256": "6b233cb7ec3a9097e5727780c5ca1596d54a3bf3b92005142a3487ce8138bc18",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-11-5-29652.out",
+      "ruta_fuente": "logs/simulation/b-11-5-29652.out",
+      "origen": "paquete-compartido",
+      "bytes": 1967,
+      "sha256": "fe6ab126d9e7f40ff3642b0627ad38f479869a7b50f343864ab90ba4083543b9",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-12-0-29653.out",
+      "ruta_fuente": "logs/simulation/b-12-0-29653.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "b9bb941da3a9005c62fa45f7e0cabdb78f5d3ec0f942d62d2c79244e16fae0d1",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-12-1-29654.out",
+      "ruta_fuente": "logs/simulation/b-12-1-29654.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "82b185e049629cef04755d61bef1ab1cfe1a406e337b79ad2f115206a65e812a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-12-2-29655.out",
+      "ruta_fuente": "logs/simulation/b-12-2-29655.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "2540a585c086bb13a5f5bfc43ce19b63395ea4ab085dfdd83f5fc7429865a350",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-12-3-29656.out",
+      "ruta_fuente": "logs/simulation/b-12-3-29656.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "4c09d71a6e0c3a5e7dff652a5275efe2a7bc102eadeb9b97f8c24a06fad2e0d6",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-12-4-29657.out",
+      "ruta_fuente": "logs/simulation/b-12-4-29657.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "b352c11ad74ce547afc28489010e228ab6669d83b62ee26ffab56f23e90c9197",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-12-5-29658.out",
+      "ruta_fuente": "logs/simulation/b-12-5-29658.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "ca53c6728385e678fee2e168d37a1d4c8d348b1ce9a8480ee05e4188cd034126",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-13-0-29659.out",
+      "ruta_fuente": "logs/simulation/b-13-0-29659.out",
+      "origen": "paquete-compartido",
+      "bytes": 1359,
+      "sha256": "f6511b999356d75ef72687dd7c8344e3e3590eb945770fb90690689a9095ee77",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-13-1-29660.out",
+      "ruta_fuente": "logs/simulation/b-13-1-29660.out",
+      "origen": "paquete-compartido",
+      "bytes": 1360,
+      "sha256": "a12abab2d84a2b7e57597b057a2023fa99fbad17ca5e442a35016ae009b48434",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-13-2-29661.out",
+      "ruta_fuente": "logs/simulation/b-13-2-29661.out",
+      "origen": "paquete-compartido",
+      "bytes": 1360,
+      "sha256": "8b2e9dc6343c83ee16f9a25a2d239acbe1de18f4e91ef5a03b77cbf2758e66da",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-13-3-29662.out",
+      "ruta_fuente": "logs/simulation/b-13-3-29662.out",
+      "origen": "paquete-compartido",
+      "bytes": 1360,
+      "sha256": "f61a601d4f5c78fe71436a67c34aa6d654b6fd548e6a7a65c539e269d1db9450",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-13-4-29663.out",
+      "ruta_fuente": "logs/simulation/b-13-4-29663.out",
+      "origen": "paquete-compartido",
+      "bytes": 1360,
+      "sha256": "ae977da28cd61ab34f43818cd602a846cc23ae73c3366c82f6e20a55d9f38f24",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-13-5-29664.out",
+      "ruta_fuente": "logs/simulation/b-13-5-29664.out",
+      "origen": "paquete-compartido",
+      "bytes": 1360,
+      "sha256": "2a395ec59c362893f7f07ac490a35a736ebcf38d9ce10966c62e3fc4124c33b0",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-14-0-29665.out",
+      "ruta_fuente": "logs/simulation/b-14-0-29665.out",
+      "origen": "paquete-compartido",
+      "bytes": 1955,
+      "sha256": "d4427a946faedbf169b05f16ed10fe323a5b28cf5b7411538779109f54426bea",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-14-1-29666.out",
+      "ruta_fuente": "logs/simulation/b-14-1-29666.out",
+      "origen": "paquete-compartido",
+      "bytes": 1955,
+      "sha256": "98e1d13a8748bb8a1a336daef8b002b45f33d7af678b3f0cd60f09da8b80d034",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-14-2-29667.out",
+      "ruta_fuente": "logs/simulation/b-14-2-29667.out",
+      "origen": "paquete-compartido",
+      "bytes": 1955,
+      "sha256": "5f9d0fabe8e6bb2ef9c5387eca7ceda6fb4a1d586af31cb2f46fe7b6bc51f7f2",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-14-3-29668.out",
+      "ruta_fuente": "logs/simulation/b-14-3-29668.out",
+      "origen": "paquete-compartido",
+      "bytes": 1955,
+      "sha256": "640264fc79f4e100d995e34fd9a6baaaa90bad208b5c4044d275bb44c88e095d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-14-4-29669.out",
+      "ruta_fuente": "logs/simulation/b-14-4-29669.out",
+      "origen": "paquete-compartido",
+      "bytes": 1955,
+      "sha256": "b8b278b8fc9d56c5d06746aacc90a83be2007d55c24069e7cdad0fafd56fbcdc",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-14-5-29670.out",
+      "ruta_fuente": "logs/simulation/b-14-5-29670.out",
+      "origen": "paquete-compartido",
+      "bytes": 1955,
+      "sha256": "0f937d877b30b93af1af1af4ff829deccfa1234630e5a73801adc8e067c31dd0",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-15-0-29679.out",
+      "ruta_fuente": "logs/simulation/b-15-0-29679.out",
+      "origen": "paquete-compartido",
+      "bytes": 1307,
+      "sha256": "3e5504a5610bba4538cabef4b4c7cae49d989d9543d1314cc39281b2014806b7",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-15-1-29680.out",
+      "ruta_fuente": "logs/simulation/b-15-1-29680.out",
+      "origen": "paquete-compartido",
+      "bytes": 1307,
+      "sha256": "3e91e311d70c70bf19c4fd04936e2552f97a1cf9a5fb4f9329d29595271a087d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-15-2-29682.out",
+      "ruta_fuente": "logs/simulation/b-15-2-29682.out",
+      "origen": "paquete-compartido",
+      "bytes": 1308,
+      "sha256": "7166bf2ed8482a31f32a73a6adca44f62868a920f29074a190a38df25e8cb462",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-15-3-29688.out",
+      "ruta_fuente": "logs/simulation/b-15-3-29688.out",
+      "origen": "paquete-compartido",
+      "bytes": 1308,
+      "sha256": "d4308bbd4b27d0a69eb4b3665e34f696eba3be75fec9e174a36f80ad501a1f8f",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-15-4-29689.out",
+      "ruta_fuente": "logs/simulation/b-15-4-29689.out",
+      "origen": "paquete-compartido",
+      "bytes": 1308,
+      "sha256": "dd92b9ad004c4899ed8f33c12a5c8a7b83716eb50c3015ca6fc450069cbd92ce",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-15-5-29690.out",
+      "ruta_fuente": "logs/simulation/b-15-5-29690.out",
+      "origen": "paquete-compartido",
+      "bytes": 1308,
+      "sha256": "c19949cc83b64f8337db9b9badce2fe7a7fcb2118f35a015d8320914da28f0aa",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-16-0-29691.out",
+      "ruta_fuente": "logs/simulation/b-16-0-29691.out",
+      "origen": "paquete-compartido",
+      "bytes": 1298,
+      "sha256": "1b670f252cbed108190acd920458b1725326220495daaf8a7084363be87a4b47",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-16-1-29692.out",
+      "ruta_fuente": "logs/simulation/b-16-1-29692.out",
+      "origen": "paquete-compartido",
+      "bytes": 1299,
+      "sha256": "c153d625b361a4c3ef4cbb85722842719e59f8f27e5cda8544899c22185c6b9c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-16-2-29693.out",
+      "ruta_fuente": "logs/simulation/b-16-2-29693.out",
+      "origen": "paquete-compartido",
+      "bytes": 1299,
+      "sha256": "ffdf2f354dd3b10284577d0dcbdab2358dc41a7d45abb982d85c5bb44429572f",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-16-3-29694.out",
+      "ruta_fuente": "logs/simulation/b-16-3-29694.out",
+      "origen": "paquete-compartido",
+      "bytes": 1300,
+      "sha256": "e5ae9804795b3916cf0dbed46a52391519cae6a818f425c4f01395b1b6a350d3",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-16-4-29695.out",
+      "ruta_fuente": "logs/simulation/b-16-4-29695.out",
+      "origen": "paquete-compartido",
+      "bytes": 1299,
+      "sha256": "1cc443e98390ae05935eea841d8b0a6b5cc24e8ee08955d82b48777ffa029f91",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-16-5-29696.out",
+      "ruta_fuente": "logs/simulation/b-16-5-29696.out",
+      "origen": "paquete-compartido",
+      "bytes": 1299,
+      "sha256": "1325e9b5d7d9c895dbd62454ed9e88a2eb6d3448ea64668a7686c541301ac9ff",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-17-0-29697.out",
+      "ruta_fuente": "logs/simulation/b-17-0-29697.out",
+      "origen": "paquete-compartido",
+      "bytes": 1298,
+      "sha256": "52c5c81e46fe1c28c8f9ebe03bf8320ef4e5115a1a126aecd9346e933405f1b8",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-17-1-29698.out",
+      "ruta_fuente": "logs/simulation/b-17-1-29698.out",
+      "origen": "paquete-compartido",
+      "bytes": 1298,
+      "sha256": "17a72c07413712ed0a31b47ddb58dd49894818b57c94ba45780b3e26fd057200",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-17-2-29699.out",
+      "ruta_fuente": "logs/simulation/b-17-2-29699.out",
+      "origen": "paquete-compartido",
+      "bytes": 1298,
+      "sha256": "b75cd77634731b95d618847be3e27e55ebd8dd17d6ac65969967772d16766de0",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-17-3-29700.out",
+      "ruta_fuente": "logs/simulation/b-17-3-29700.out",
+      "origen": "paquete-compartido",
+      "bytes": 1298,
+      "sha256": "bc65c99c1730eff25c69fd94824e7935eb5c183677b0d70c21e330e27af073cd",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-17-4-29701.out",
+      "ruta_fuente": "logs/simulation/b-17-4-29701.out",
+      "origen": "paquete-compartido",
+      "bytes": 1295,
+      "sha256": "0ac435dff5ba7102922c101809205e838c85ae4036ca7b583bb506579a1a37e3",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-17-5-29702.out",
+      "ruta_fuente": "logs/simulation/b-17-5-29702.out",
+      "origen": "paquete-compartido",
+      "bytes": 1298,
+      "sha256": "7f6b9aecf4cc73b35bd03dd2303d910a6e5e7b22cd784ea5c459861fbd1f1467",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-18-0-29703.out",
+      "ruta_fuente": "logs/simulation/b-18-0-29703.out",
+      "origen": "paquete-compartido",
+      "bytes": 1362,
+      "sha256": "655e84638f8a4c385ab97377a0cb4f173a4ff151a0fab4e8806b68bf1e139514",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-18-1-29704.out",
+      "ruta_fuente": "logs/simulation/b-18-1-29704.out",
+      "origen": "paquete-compartido",
+      "bytes": 1363,
+      "sha256": "8394d78de90a7b5dd1759d1272f9aa61833bd21e665ab866567e7bfcf990f79c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-18-2-29705.out",
+      "ruta_fuente": "logs/simulation/b-18-2-29705.out",
+      "origen": "paquete-compartido",
+      "bytes": 1140,
+      "sha256": "4621e010f575a899f675d672b91164b4a3be1ecc0655305f3ef4b725d449abb0",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-18-3-29706.out",
+      "ruta_fuente": "logs/simulation/b-18-3-29706.out",
+      "origen": "paquete-compartido",
+      "bytes": 1114,
+      "sha256": "a160b61d6e0be15488748978f8fa64ecb59ad654ce53fdf92bc375730087f577",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-18-4-29707.out",
+      "ruta_fuente": "logs/simulation/b-18-4-29707.out",
+      "origen": "paquete-compartido",
+      "bytes": 1114,
+      "sha256": "594c17b73b690e420d477ffe61efcfb496266ecdb8e7188596be76daab321604",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/b-18-5-29708.out",
+      "ruta_fuente": "logs/simulation/b-18-5-29708.out",
+      "origen": "paquete-compartido",
+      "bytes": 1114,
+      "sha256": "2d05c13673ed49fbef2560214491cd558d4681d0de0efe9ba335986b25323e23",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29485.out",
+      "ruta_fuente": "logs/simulation/muo-block-29485.out",
+      "origen": "paquete-compartido",
+      "bytes": 1969,
+      "sha256": "b1164cf660237271769b4991ab3e3ee5c843045996a0578a2a4967137dc076f4",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29486.out",
+      "ruta_fuente": "logs/simulation/muo-block-29486.out",
+      "origen": "paquete-compartido",
+      "bytes": 1969,
+      "sha256": "a87ea4e343a2d8befd0150cff5257191e893858eb26df71b4f78fcc706390b6f",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29487.out",
+      "ruta_fuente": "logs/simulation/muo-block-29487.out",
+      "origen": "paquete-compartido",
+      "bytes": 1969,
+      "sha256": "2628710a205c4486e4656a9cb2fb9e81e42133550b9d959e0d359d6573d38847",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29488.out",
+      "ruta_fuente": "logs/simulation/muo-block-29488.out",
+      "origen": "paquete-compartido",
+      "bytes": 1969,
+      "sha256": "32dc7890d2c12b0fdf7ce107f64a39e9505ea73a3bed1008620d7ccf75f11176",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29489.out",
+      "ruta_fuente": "logs/simulation/muo-block-29489.out",
+      "origen": "paquete-compartido",
+      "bytes": 1969,
+      "sha256": "0da0a6a78164568077c102421dfc4a01483962394cb607c46b157b66da3109f3",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29490.out",
+      "ruta_fuente": "logs/simulation/muo-block-29490.out",
+      "origen": "paquete-compartido",
+      "bytes": 1968,
+      "sha256": "e1a2b6782b531d6a91c595c6d9fd049f9c89072c15cc604a2870cb13b7739ff6",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29491.out",
+      "ruta_fuente": "logs/simulation/muo-block-29491.out",
+      "origen": "paquete-compartido",
+      "bytes": 1943,
+      "sha256": "7cffe79a2f6edebb47fd6f78be12321caba62482b34bc6fd5a4b42f2eb928dbc",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29492.out",
+      "ruta_fuente": "logs/simulation/muo-block-29492.out",
+      "origen": "paquete-compartido",
+      "bytes": 1969,
+      "sha256": "463ada82764548200041b95fae34f923b3b102ce5b136c01227186cb620c51ce",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29493.out",
+      "ruta_fuente": "logs/simulation/muo-block-29493.out",
+      "origen": "paquete-compartido",
+      "bytes": 1968,
+      "sha256": "527ac3af6953e213b5d06865957b942efdc0f5370add25790195e4058f5cf559",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29494.out",
+      "ruta_fuente": "logs/simulation/muo-block-29494.out",
+      "origen": "paquete-compartido",
+      "bytes": 1969,
+      "sha256": "1dcfd3ed5fddc7b5fc4a9d4c1b80b54e5c1c6c243ae438d8c62407054d98d50d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29495.out",
+      "ruta_fuente": "logs/simulation/muo-block-29495.out",
+      "origen": "paquete-compartido",
+      "bytes": 1969,
+      "sha256": "5f4efa53ffb1473ba63fd0f3144c70e62dd4355f5afe8e4e54e6a8a11834fca4",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29496.out",
+      "ruta_fuente": "logs/simulation/muo-block-29496.out",
+      "origen": "paquete-compartido",
+      "bytes": 1969,
+      "sha256": "891e599409f94d7ca26d0c5af4734fd067ec03a7e28dd38d6fc195ab2e827cd8",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29497.out",
+      "ruta_fuente": "logs/simulation/muo-block-29497.out",
+      "origen": "paquete-compartido",
+      "bytes": 1968,
+      "sha256": "112da8e215db9eb366e04251fb4d0c7f594e7bc50303c38a5d8e335a1dbe4c7c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29498.out",
+      "ruta_fuente": "logs/simulation/muo-block-29498.out",
+      "origen": "paquete-compartido",
+      "bytes": 1968,
+      "sha256": "d85f8e40e6c7e184a185dcd5e2eeaf004ddb90380e12dc9b2ab95b909e2788b5",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29499.out",
+      "ruta_fuente": "logs/simulation/muo-block-29499.out",
+      "origen": "paquete-compartido",
+      "bytes": 1891,
+      "sha256": "d097eced92f81bb781b51e95506340e6bd0758668fbe3189c168aaf211a5e108",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29500.out",
+      "ruta_fuente": "logs/simulation/muo-block-29500.out",
+      "origen": "paquete-compartido",
+      "bytes": 1891,
+      "sha256": "aa96918520578df4cb7f141a513f827cc0df7158ab88f18d5acc82802150d488",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29501.out",
+      "ruta_fuente": "logs/simulation/muo-block-29501.out",
+      "origen": "paquete-compartido",
+      "bytes": 1891,
+      "sha256": "e08de56d4c3dbf09387c2c5eb6be84b76572797973729d36415be92822102c4c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29502.out",
+      "ruta_fuente": "logs/simulation/muo-block-29502.out",
+      "origen": "paquete-compartido",
+      "bytes": 1891,
+      "sha256": "ca6f5937d44b8efcbe0182843e27b194863b840822951c6c61e00759c2365657",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29503.out",
+      "ruta_fuente": "logs/simulation/muo-block-29503.out",
+      "origen": "paquete-compartido",
+      "bytes": 1891,
+      "sha256": "a07dfb7276998cf62c43057f8570ff9554a91cdb634db10e1e6d514da7a80ec7",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29504.out",
+      "ruta_fuente": "logs/simulation/muo-block-29504.out",
+      "origen": "paquete-compartido",
+      "bytes": 1891,
+      "sha256": "8fdc37f96883389521b92a176d2a7830f65f9015dbd9cded52951e8deba26de1",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29505.out",
+      "ruta_fuente": "logs/simulation/muo-block-29505.out",
+      "origen": "paquete-compartido",
+      "bytes": 1891,
+      "sha256": "70684ea83f63a9eb1a8d4bda746469d6f2b38d5b604c777d3cfabc31d6e51296",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29506.out",
+      "ruta_fuente": "logs/simulation/muo-block-29506.out",
+      "origen": "paquete-compartido",
+      "bytes": 1891,
+      "sha256": "e1ab515be36f8434af4859a501989b32a88bca3ea9c37d0b6c8f3c76311f6357",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29507.out",
+      "ruta_fuente": "logs/simulation/muo-block-29507.out",
+      "origen": "paquete-compartido",
+      "bytes": 1891,
+      "sha256": "fd3072f7800f23925b9579a65e8f79db372c49515837fa26af0b495db7cbdc47",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29508.out",
+      "ruta_fuente": "logs/simulation/muo-block-29508.out",
+      "origen": "paquete-compartido",
+      "bytes": 1891,
+      "sha256": "ea80a19c0718ad692eaecd3f2be1e869ed7fb785ce9c6f8dbfcd981d789fdd74",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29509.out",
+      "ruta_fuente": "logs/simulation/muo-block-29509.out",
+      "origen": "paquete-compartido",
+      "bytes": 1892,
+      "sha256": "3f3b22584628034ce9b5957e501f3388489fdf212346c5083fbb1c37f2b20b7e",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29510.out",
+      "ruta_fuente": "logs/simulation/muo-block-29510.out",
+      "origen": "paquete-compartido",
+      "bytes": 1892,
+      "sha256": "c3b5e940b2c898b3edeaa0740366727156f88a325aeb8d9dd43881de4d7d91d6",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29511.out",
+      "ruta_fuente": "logs/simulation/muo-block-29511.out",
+      "origen": "paquete-compartido",
+      "bytes": 1892,
+      "sha256": "9037a642d10033d4e8b5adb7f69531650d9598b48c2220b82571752a560a6591",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29512.out",
+      "ruta_fuente": "logs/simulation/muo-block-29512.out",
+      "origen": "paquete-compartido",
+      "bytes": 1892,
+      "sha256": "eae1a6636979743ff1057648c7f5b8a50701192011c912fe01c473bf3bcdd63b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29513.out",
+      "ruta_fuente": "logs/simulation/muo-block-29513.out",
+      "origen": "paquete-compartido",
+      "bytes": 1892,
+      "sha256": "0b0036853c36ed5ccec51a32cd16a4781744b83360fad15f88e165911a48b9c4",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29514.out",
+      "ruta_fuente": "logs/simulation/muo-block-29514.out",
+      "origen": "paquete-compartido",
+      "bytes": 1893,
+      "sha256": "4821939ce40bc38c525b05c834f8c37d409c0bfbc7ba42a2d79768a9c3c56dba",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29515.out",
+      "ruta_fuente": "logs/simulation/muo-block-29515.out",
+      "origen": "paquete-compartido",
+      "bytes": 1893,
+      "sha256": "0ca827ef1a767ea2508582e98d1296360f4615eeb8c2313db402b3f438a2ead2",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29516.out",
+      "ruta_fuente": "logs/simulation/muo-block-29516.out",
+      "origen": "paquete-compartido",
+      "bytes": 1892,
+      "sha256": "7cd9adf78218984e5eaaeb8e436573a6da0de89082241a8777b6097b062a7a0c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29517.out",
+      "ruta_fuente": "logs/simulation/muo-block-29517.out",
+      "origen": "paquete-compartido",
+      "bytes": 1306,
+      "sha256": "6baba5e32fb9a7cab0029e445307003caeee172ceb39e17c8c57c635265e529b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29518.out",
+      "ruta_fuente": "logs/simulation/muo-block-29518.out",
+      "origen": "paquete-compartido",
+      "bytes": 1306,
+      "sha256": "4e5fb377a9b1c07fcfbb66fa157e1c98d16d11e6cb888643fa5b38a79d69a035",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29519.out",
+      "ruta_fuente": "logs/simulation/muo-block-29519.out",
+      "origen": "paquete-compartido",
+      "bytes": 1306,
+      "sha256": "f6aaf1528224bcce64292bfa99296c64a9e2760cc32c43be45412c59df50261d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29520.out",
+      "ruta_fuente": "logs/simulation/muo-block-29520.out",
+      "origen": "paquete-compartido",
+      "bytes": 1307,
+      "sha256": "8eb5eebbf120104ec56e49d2aae480d504eade414721f55de4d6a57066038ebd",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29521.out",
+      "ruta_fuente": "logs/simulation/muo-block-29521.out",
+      "origen": "paquete-compartido",
+      "bytes": 1307,
+      "sha256": "e22342f3dfcc1e6c0df825f3327f450a9f7bf23f6cea1da0eaa3d601931c80fa",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29522.out",
+      "ruta_fuente": "logs/simulation/muo-block-29522.out",
+      "origen": "paquete-compartido",
+      "bytes": 1307,
+      "sha256": "ef915201b01da6d76c053e7bb265d15ce095d0c8a56850279dfce0eda16bc587",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29523.out",
+      "ruta_fuente": "logs/simulation/muo-block-29523.out",
+      "origen": "paquete-compartido",
+      "bytes": 1306,
+      "sha256": "246e6e2c13d78c1eca726ea52a36a0445b9f08691cf81b28a4c52ede38d8c536",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29524.out",
+      "ruta_fuente": "logs/simulation/muo-block-29524.out",
+      "origen": "paquete-compartido",
+      "bytes": 1306,
+      "sha256": "79b26517bfa39332bfd55180bb35d2036376023bcb3164bf3ed6f5695f668375",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29525.out",
+      "ruta_fuente": "logs/simulation/muo-block-29525.out",
+      "origen": "paquete-compartido",
+      "bytes": 1305,
+      "sha256": "8dd36dd2d618827c4ce1d9fefe1639c04c3c3643b1824eed58fa34e11e433d1e",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29526.out",
+      "ruta_fuente": "logs/simulation/muo-block-29526.out",
+      "origen": "paquete-compartido",
+      "bytes": 1306,
+      "sha256": "76f60c313ba16b6924c93cb71972b665eaa11226e82eea18e0624c0aef8e329e",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29529.out",
+      "ruta_fuente": "logs/simulation/muo-block-29529.out",
+      "origen": "paquete-compartido",
+      "bytes": 1306,
+      "sha256": "7e7cd593bccca8158e8fb02fa59ae1817cd975455433befdea508d939930b642",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29530.out",
+      "ruta_fuente": "logs/simulation/muo-block-29530.out",
+      "origen": "paquete-compartido",
+      "bytes": 1306,
+      "sha256": "812e99fa73150e48d7c1760d5aebd9cd4d8f95e7cae928764d3a45cc07e6c045",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29531.out",
+      "ruta_fuente": "logs/simulation/muo-block-29531.out",
+      "origen": "paquete-compartido",
+      "bytes": 1306,
+      "sha256": "e9441014e62837f5d489e0a03f67f30b6608df882a15a2a17762970a0d26ddeb",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29532.out",
+      "ruta_fuente": "logs/simulation/muo-block-29532.out",
+      "origen": "paquete-compartido",
+      "bytes": 1306,
+      "sha256": "5976f4b27d7ea9be69348a0ca5c93153bd819082d1027086ae238a547e0ba172",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29533.out",
+      "ruta_fuente": "logs/simulation/muo-block-29533.out",
+      "origen": "paquete-compartido",
+      "bytes": 1306,
+      "sha256": "b22475c8980021a22e791eacc9e35ce8272320977b7c206e0004e006d8f44104",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29534.out",
+      "ruta_fuente": "logs/simulation/muo-block-29534.out",
+      "origen": "paquete-compartido",
+      "bytes": 1306,
+      "sha256": "c8a6a5fa7c514558dec8ede743a5fa7222dc6f7fd9a91b52372fce5fdc739c47",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29535.out",
+      "ruta_fuente": "logs/simulation/muo-block-29535.out",
+      "origen": "paquete-compartido",
+      "bytes": 1306,
+      "sha256": "30e8c9732eac3d378a0baa108b3cb3a345b350cbd558391fa6f0d5770bc65ec2",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29536.out",
+      "ruta_fuente": "logs/simulation/muo-block-29536.out",
+      "origen": "paquete-compartido",
+      "bytes": 2534,
+      "sha256": "2da8b994189284d1fd0c6efdaec5bc495cae2e07c7c3404ca1b5b0ddbbe9a788",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29537.out",
+      "ruta_fuente": "logs/simulation/muo-block-29537.out",
+      "origen": "paquete-compartido",
+      "bytes": 2534,
+      "sha256": "0e69176db3e0883d65ac8c1ebe385b1474749f3bb196ea987ba85e8d0e89a037",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29538.out",
+      "ruta_fuente": "logs/simulation/muo-block-29538.out",
+      "origen": "paquete-compartido",
+      "bytes": 2534,
+      "sha256": "b508e9ce2bf9884d1ca937efe71cd84ec4ef031d0fcc361cfed56b783abce82a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29539.out",
+      "ruta_fuente": "logs/simulation/muo-block-29539.out",
+      "origen": "paquete-compartido",
+      "bytes": 2533,
+      "sha256": "51613c17e7ce610ea628cb4c3eab389d339a2fe11f1cdc023b419f8637011c0e",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29540.out",
+      "ruta_fuente": "logs/simulation/muo-block-29540.out",
+      "origen": "paquete-compartido",
+      "bytes": 2534,
+      "sha256": "0a79873c6af3334b21f62bec60b63f4ca77a3e2db4b3b90e9e18b6076e8e6e04",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29542.out",
+      "ruta_fuente": "logs/simulation/muo-block-29542.out",
+      "origen": "paquete-compartido",
+      "bytes": 2533,
+      "sha256": "5e15ea1e91c969124ddf84be6959373a4c4d85c942a07757cf34c96637b620d8",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29543.out",
+      "ruta_fuente": "logs/simulation/muo-block-29543.out",
+      "origen": "paquete-compartido",
+      "bytes": 2534,
+      "sha256": "11db085f1f55f7249ed11b92920a2b1b81772e08df7a523af82fe14f85b44592",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29544.out",
+      "ruta_fuente": "logs/simulation/muo-block-29544.out",
+      "origen": "paquete-compartido",
+      "bytes": 2534,
+      "sha256": "f42d3f20e50cd02faea0e684bd6b37de61ae9c5a3c572ecd11152b90653bd9c4",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29545.out",
+      "ruta_fuente": "logs/simulation/muo-block-29545.out",
+      "origen": "paquete-compartido",
+      "bytes": 2534,
+      "sha256": "298f3164215521dffef09d4ae83b6f3b18733ef9483314fc65edcfeb7a6f0c83",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29546.out",
+      "ruta_fuente": "logs/simulation/muo-block-29546.out",
+      "origen": "paquete-compartido",
+      "bytes": 2533,
+      "sha256": "7e4eac98ea68e2b7e83029d21b3eb8658606ae6f2dbb0a715144c177cb565bd8",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29547.out",
+      "ruta_fuente": "logs/simulation/muo-block-29547.out",
+      "origen": "paquete-compartido",
+      "bytes": 2533,
+      "sha256": "b5e2f4adbd53254abf547d74d7d57ce27f3ff654050f86499cdb9f0c32c9f6b0",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29548.out",
+      "ruta_fuente": "logs/simulation/muo-block-29548.out",
+      "origen": "paquete-compartido",
+      "bytes": 2533,
+      "sha256": "f69577a694e145cb06bc3c690d2d373122cab437fe8b66ae1bc2b4143a5f9269",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29549.out",
+      "ruta_fuente": "logs/simulation/muo-block-29549.out",
+      "origen": "paquete-compartido",
+      "bytes": 2534,
+      "sha256": "4129ca473c589a8476bd6ae51362a9d431a8a906c4d9eba7170e9af2359effd2",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29550.out",
+      "ruta_fuente": "logs/simulation/muo-block-29550.out",
+      "origen": "paquete-compartido",
+      "bytes": 2534,
+      "sha256": "6781f4235303998813b786fee5d33d6e69a3eee999765a652f4404a2714fe347",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29551.out",
+      "ruta_fuente": "logs/simulation/muo-block-29551.out",
+      "origen": "paquete-compartido",
+      "bytes": 2534,
+      "sha256": "7cb5b733e96a58f9176509a9605279adfceb70cc3292bc0823483b28c5061906",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29552.out",
+      "ruta_fuente": "logs/simulation/muo-block-29552.out",
+      "origen": "paquete-compartido",
+      "bytes": 2534,
+      "sha256": "66c4ca6fd272f7a71e4e1c51836c5614c1bb35d80e520a23a197858a2a63be45",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29553.out",
+      "ruta_fuente": "logs/simulation/muo-block-29553.out",
+      "origen": "paquete-compartido",
+      "bytes": 2534,
+      "sha256": "8a73e88daf662dee6925dc5ce3c01622c30f25f4247aae98e476db0d6bbf43f3",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29554.out",
+      "ruta_fuente": "logs/simulation/muo-block-29554.out",
+      "origen": "paquete-compartido",
+      "bytes": 2534,
+      "sha256": "e7bccaf5ac16360712d29e1aa8d84bf8244834126163e9ea79a1c947c4aa22dc",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29555.out",
+      "ruta_fuente": "logs/simulation/muo-block-29555.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "a323807436e54d99cac86484b225859cdc587a9660191bd8f155397be9538d16",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29556.out",
+      "ruta_fuente": "logs/simulation/muo-block-29556.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "f62b11cdbc3c43ca08a86b6bf2bb77272470e02e8c6a81f4497d8bf6f84f1010",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29557.out",
+      "ruta_fuente": "logs/simulation/muo-block-29557.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "898c42c4b875c4295e749ff705074d3edeeb54d55e6272136a35a807dc7f673a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29558.out",
+      "ruta_fuente": "logs/simulation/muo-block-29558.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "15a654440f0c7b1c2717ad353dd44a9b957b54c1dd13ab70730a154825bf9b14",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29559.out",
+      "ruta_fuente": "logs/simulation/muo-block-29559.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "31024122993b408e109070e24d1b5ff6320052e1b8dba10b7de825f18c242d22",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29560.out",
+      "ruta_fuente": "logs/simulation/muo-block-29560.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "68c2a3c31693da522eac882b5125698a5e3ca9689ce7e763dfcb9a4c5a0de662",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29561.out",
+      "ruta_fuente": "logs/simulation/muo-block-29561.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "3a3af837ab3fd940793871de4e3623b0d916019dbec5735e70cb0c41fef1dbba",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29562.out",
+      "ruta_fuente": "logs/simulation/muo-block-29562.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "e02dd49c0445ce5aa5e3d5bd2e194b01af33fe60573514af6b8cec7fde68f5bf",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29563.out",
+      "ruta_fuente": "logs/simulation/muo-block-29563.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "b8e9cf1454beef0e651a69c0d36d59fde5cb29f35e3fa02d7b3ab9033fc0829e",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29564.out",
+      "ruta_fuente": "logs/simulation/muo-block-29564.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "4096ce60a85fd93a4a88c939c43f70b9faf42b41abf576cd04e3ed887c98c826",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29565.out",
+      "ruta_fuente": "logs/simulation/muo-block-29565.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "ce74aa54357aece575d319cf3b98087c00f4c559802ce5cea05bb3c4a75b8758",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29566.out",
+      "ruta_fuente": "logs/simulation/muo-block-29566.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "2fe15be166c738370cbd98b8c1b438569f124fdca1ea3483c5bd484fee014298",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29567.out",
+      "ruta_fuente": "logs/simulation/muo-block-29567.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "bc0f5c28896ebb8d14eb3bc00b827acdf9e21dbe1bb68fbf1c8ce842a79d64ce",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29568.out",
+      "ruta_fuente": "logs/simulation/muo-block-29568.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "b4db513912e3ee0a9e0578bcaf375da6c80712efa8a40ed10c0bbf0c39bb11f2",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29569.out",
+      "ruta_fuente": "logs/simulation/muo-block-29569.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "251cc1dcd47151a78fba3e5d42109940b66649b2ffd0f911841f3c942e9c5a47",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29570.out",
+      "ruta_fuente": "logs/simulation/muo-block-29570.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "4f4579d5f0db0ef9925252fd0ed46cc8460afbf6fad7f50660d82fa32ad92513",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29571.out",
+      "ruta_fuente": "logs/simulation/muo-block-29571.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "f49a8bf45d9631175b467c4a6521b512e5a2095df3e09767c62b84afe5cb7d93",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29572.out",
+      "ruta_fuente": "logs/simulation/muo-block-29572.out",
+      "origen": "paquete-compartido",
+      "bytes": 1244,
+      "sha256": "2222f7d9940c6e415d5009ac9ed330efedf55b4b0e53a10e15a93df7f24173ec",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29573.out",
+      "ruta_fuente": "logs/simulation/muo-block-29573.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "3cba750ca868a59eebf65b1c00dfe0b1b92d7ac8af497b8c45a6a2e1f0637fc0",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29574.out",
+      "ruta_fuente": "logs/simulation/muo-block-29574.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "298ef9732ccbc1879bb5f4fb93ae7d604128cde2110dde2b31ea0e607db6c373",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29575.out",
+      "ruta_fuente": "logs/simulation/muo-block-29575.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "2463225e73ef5cb5fd96e0609b171388fa6fb008c466a070e9413d2093151ee2",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29576.out",
+      "ruta_fuente": "logs/simulation/muo-block-29576.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "42e7ff29fd2ef0689a4f898b0bd83bcee8a26b0712b93585e4d463b70065d19a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29577.out",
+      "ruta_fuente": "logs/simulation/muo-block-29577.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "3c4340ea9d9b7b2cbdccfabd42b1a09263e8802097fe6d014dd716e5ea1d767e",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29578.out",
+      "ruta_fuente": "logs/simulation/muo-block-29578.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "a1ffb363080af5fae134b33ecda0c1a5895a61929de45402d02ff0f47b42c7db",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29579.out",
+      "ruta_fuente": "logs/simulation/muo-block-29579.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "7f1ffc87688a79480beacaa64067641c90640fe73c4d4998c63791158c613f6c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29580.out",
+      "ruta_fuente": "logs/simulation/muo-block-29580.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "f915b2522df6b63709585b94a8efdae65af4c7cdb0de05bb9b9448ed43088627",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29581.out",
+      "ruta_fuente": "logs/simulation/muo-block-29581.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "de2d063c26dee48773bffd866534c5c7b3a153eb35a0ab21964807144e628ea6",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29582.out",
+      "ruta_fuente": "logs/simulation/muo-block-29582.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "ce791d3ac5369fb8c57db37a51e8b234073e6bbd05e63816a37152dc614ae297",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29583.out",
+      "ruta_fuente": "logs/simulation/muo-block-29583.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "4f98f2bc50ad156cc622262a6cd5d683e6b3fee89ab66cb55371acf84f49e33f",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29584.out",
+      "ruta_fuente": "logs/simulation/muo-block-29584.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "e29bbfeec324c168a4b4c33e0f6f0968c8f4983d33e590fc40e2e86549e7b4f3",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29585.out",
+      "ruta_fuente": "logs/simulation/muo-block-29585.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "b2d2c41d61ed95a6714261c3f6d3df194f7cfbf296eb8ebbf2457ccec17f4ebb",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29586.out",
+      "ruta_fuente": "logs/simulation/muo-block-29586.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "8f534cfe844721241dc1fb34a26d00744d09588272d71c8ee04eee45d69eaef0",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29587.out",
+      "ruta_fuente": "logs/simulation/muo-block-29587.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "95f30ee62134c3c35f911145c93d3b7a16265782f0674fcb924f4999a2d18638",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29588.out",
+      "ruta_fuente": "logs/simulation/muo-block-29588.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "df9921f1b97904920f75e183cdf1e4549925e99a097a4088ea22e63838deb631",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29589.out",
+      "ruta_fuente": "logs/simulation/muo-block-29589.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "2ffd1481c8379fdf59051a36249fd05468e8ab7ea17d272d4c47b66cab77940b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29590.out",
+      "ruta_fuente": "logs/simulation/muo-block-29590.out",
+      "origen": "paquete-compartido",
+      "bytes": 1303,
+      "sha256": "72a041740a19d386f96cf809d14fb1829b492330fb0fa0bdb47a9d5f34a9f39a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29591.out",
+      "ruta_fuente": "logs/simulation/muo-block-29591.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "bf5268704a59d080c8d16bb418c93c7be3dedc439740d206baf5e6b75afcaf53",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29592.out",
+      "ruta_fuente": "logs/simulation/muo-block-29592.out",
+      "origen": "paquete-compartido",
+      "bytes": 1301,
+      "sha256": "125ffa8bf9217d547a425b7872725816ff53ee4f02e74ea98561d6050055d4f4",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29593.out",
+      "ruta_fuente": "logs/simulation/muo-block-29593.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "24b511f8671e5f72fb35cdb10559aa26f855ff94ab0880c72782873eee4137b7",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29594.out",
+      "ruta_fuente": "logs/simulation/muo-block-29594.out",
+      "origen": "paquete-compartido",
+      "bytes": 1301,
+      "sha256": "171e81ff69ed251608b58f039274ea1e84e94d2897f9f17ad47f696de3a1ad9d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29595.out",
+      "ruta_fuente": "logs/simulation/muo-block-29595.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "d7a4e9b483119a1530ac45d23a6ed9db00ec8b8e2a8c6f40ee95d2147d2c6b5e",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29596.out",
+      "ruta_fuente": "logs/simulation/muo-block-29596.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "02e9e163127e9626b55a62aaf56817ab2b9aebe3d992636e3c399a98bbe18b70",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29601.out",
+      "ruta_fuente": "logs/simulation/muo-block-29601.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "dc8abac7e75c90176f1d7663b69197eb92e5200b0ba350643eb61ff6ae8b3e18",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29602.out",
+      "ruta_fuente": "logs/simulation/muo-block-29602.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "73363321c0fbf1dcda5f6b64332f0bcbd3468c77bd3d43b14ed2ff4f31a10c57",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29603.out",
+      "ruta_fuente": "logs/simulation/muo-block-29603.out",
+      "origen": "paquete-compartido",
+      "bytes": 1301,
+      "sha256": "3a2381ffe180a3235a396502e8c62d5c99664c91a4cfb4ad444584ef27a50424",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29604.out",
+      "ruta_fuente": "logs/simulation/muo-block-29604.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "12af103d82f63166a9cce8f6dfd628a35c3a7c89f71cce3665992ceb392436ec",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29605.out",
+      "ruta_fuente": "logs/simulation/muo-block-29605.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "0363ac9e4b2e3bbe2d6025ed998ec25a6f15431e6c98003ad3341718e80b0fd7",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29606.out",
+      "ruta_fuente": "logs/simulation/muo-block-29606.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "487a0cdfa0bbbe361f201f96826c22c7f5adf5dd9af1a4d2c9d03f029f9b60cb",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29607.out",
+      "ruta_fuente": "logs/simulation/muo-block-29607.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "0aff3a331abc5188893c4ceba24d6a5c4619b7e516cf7c2eee0ac4d8341caefe",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29608.out",
+      "ruta_fuente": "logs/simulation/muo-block-29608.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "1aa9d92c5080bc39a64b6a59773a9af320ec5117f8634ceca23b28f3695c2fc0",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29609.out",
+      "ruta_fuente": "logs/simulation/muo-block-29609.out",
+      "origen": "paquete-compartido",
+      "bytes": 1299,
+      "sha256": "b077b6b2e7d909594eb87e54b4b01deae11570dd807989ea9055ef9f500bf9e3",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29610.out",
+      "ruta_fuente": "logs/simulation/muo-block-29610.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "c6f6cce844c4c83a48e79fa2a4dac879ecf629bedfdca7de3596df9965391a46",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29611.out",
+      "ruta_fuente": "logs/simulation/muo-block-29611.out",
+      "origen": "paquete-compartido",
+      "bytes": 1276,
+      "sha256": "270018feb7063c4e647488c136586102a581e8e5f0309b910b8440f59c252201",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-block-29612.out",
+      "ruta_fuente": "logs/simulation/muo-block-29612.out",
+      "origen": "paquete-compartido",
+      "bytes": 1302,
+      "sha256": "9a9cbda708cb65e2becf1aa608c6ca171c92ed9984fbae7b53a71d38645b18fe",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-smoke-29474.out",
+      "ruta_fuente": "logs/simulation/muo-smoke-29474.out",
+      "origen": "paquete-compartido",
+      "bytes": 74,
+      "sha256": "37d938df747c4888577da512da9d46eee89f4c38bcf7d97b39b3aeabba94d73b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-smoke-29475.out",
+      "ruta_fuente": "logs/simulation/muo-smoke-29475.out",
+      "origen": "paquete-compartido",
+      "bytes": 14205817,
+      "sha256": "f96434674660149036cb0283e9c0f15e4ff4e1aeb69e7b24cc06686485cd25fe",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-smoke-29477.out",
+      "ruta_fuente": "logs/simulation/muo-smoke-29477.out",
+      "origen": "paquete-compartido",
+      "bytes": 1178,
+      "sha256": "dac5ce56aa847248dd203149879e1fe3fa817f768d35b225f5fe6717995eb468",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-smoke-29480.out",
+      "ruta_fuente": "logs/simulation/muo-smoke-29480.out",
+      "origen": "paquete-compartido",
+      "bytes": 1246,
+      "sha256": "86fab53fab660925030e463ecb1070b9012e35543ff90982c30332dc775abb16",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/logs/simulation/muo-smoke-29484.out",
+      "ruta_fuente": "logs/simulation/muo-smoke-29484.out",
+      "origen": "paquete-compartido",
+      "bytes": 1247,
+      "sha256": "ef48a5046c13409142ea80e48abb0831138834535b8a26f03b2661b6119726a7",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/campaign-manifest.csv",
+      "ruta_fuente": "results/dataset/campaign-manifest.csv",
+      "origen": "git",
+      "bytes": 11395,
+      "sha256": "6064120953c1adef4c5e1cabe61f5e3df39664421ba4f076da15ef9d6a1babfd",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-gen-01.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-gen-01.meta.json",
+      "origen": "git",
+      "bytes": 9809,
+      "sha256": "b120ca8ccd2004dea73cb5fe943f90cf2eefeb5fce0cbbdb391682dee554c885",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-test-01.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-test-01.meta.json",
+      "origen": "git",
+      "bytes": 9797,
+      "sha256": "ab5cfb4f564f04b97aa03a51612ef0a6069cd91d7359c1109923fe97ffc22590",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-test-02.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-test-02.meta.json",
+      "origen": "git",
+      "bytes": 9808,
+      "sha256": "20c0e255f8d6823b9561630fb11ac7452dd2696d986f704a99f72781c843ef04",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-test-03.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-test-03.meta.json",
+      "origen": "git",
+      "bytes": 9815,
+      "sha256": "c20d36dceb3df3170197cbfcb4d9aa0c576162df29816cf861d291af814c65e2",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-train-01.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-01.meta.json",
+      "origen": "git",
+      "bytes": 9791,
+      "sha256": "e70c15f603e6f647b1aaff172e498124bdeff042f9b0944977ce6dffa3ed8c7b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-train-02.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-02.meta.json",
+      "origen": "git",
+      "bytes": 9811,
+      "sha256": "14b6c341e340125b9a683ae37a3a8de677e09038c66cf80d381a450908e576f4",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-train-03.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-03.meta.json",
+      "origen": "git",
+      "bytes": 9808,
+      "sha256": "3e07275df92caa3902a0d67a587e1cecdf19eb6fb7c396f65309765ab7fbce9f",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-train-04.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-04.meta.json",
+      "origen": "git",
+      "bytes": 9797,
+      "sha256": "24c8107b2685db68dfedd4c7aaa36fa9ab26bcb004fd197d7ad25097f9663a8c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-train-05.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-05.meta.json",
+      "origen": "git",
+      "bytes": 9789,
+      "sha256": "0b5b517df99d4ba94bcd09fe34f0b47e16be44cb084dd5de9b0cab7af26cc3ca",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-train-06.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-06.meta.json",
+      "origen": "git",
+      "bytes": 9802,
+      "sha256": "65b526cea94b97b206f2352cd0d51d21f98159db4816827630df99efe744f7ba",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-train-07.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-07.meta.json",
+      "origen": "git",
+      "bytes": 9779,
+      "sha256": "ec77f6b7c90ae7eb1051ad5d1dfa27bccba5f537efe4faea70da405bd0f35999",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-train-08.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-08.meta.json",
+      "origen": "git",
+      "bytes": 9807,
+      "sha256": "315e7d560245bca98895fe1f20eb9a51a617347ea61b3c9d091af1d4acc85e16",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-train-09.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-09.meta.json",
+      "origen": "git",
+      "bytes": 9783,
+      "sha256": "e38ab32e335f2432a6910519316386af72fc2311f8d1d2aca0f528e30f0a58d7",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-train-10.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-10.meta.json",
+      "origen": "git",
+      "bytes": 9804,
+      "sha256": "c3474bbbd52fdd87532e01acc04a9e630735ae8aa84ef036ed374bb74432e094",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-train-11.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-11.meta.json",
+      "origen": "git",
+      "bytes": 9803,
+      "sha256": "954df142d0aa77913b188ef1826d16fddf1fde1999cfe89b3a38e38baaf636a0",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-train-12.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-train-12.meta.json",
+      "origen": "git",
+      "bytes": 9786,
+      "sha256": "7061392aa9b67788871eae3287d812160bf4542a64e0eae50cf08b7330a5e4e1",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-val-01.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-val-01.meta.json",
+      "origen": "git",
+      "bytes": 9799,
+      "sha256": "deb9b22a2a94cd7581e116ab1f3ebcaee965546b6cdfc15a8ddecefc7f9f9d6d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-val-02.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-val-02.meta.json",
+      "origen": "git",
+      "bytes": 9799,
+      "sha256": "27a780607f0a6a6b06c227eb07ed2d2d610dff4e478213b34e4ec06a3bfc1cdd",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/shards/geo-val-03.meta.json",
+      "ruta_fuente": "results/dataset/shards/geo-val-03.meta.json",
+      "origen": "git",
+      "bytes": 9792,
+      "sha256": "fcc7e7f6fb58c9c143e7ab02e47bf5170943a414982be665bd7af05c8df11b34",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/splits.json",
+      "ruta_fuente": "results/dataset/splits.json",
+      "origen": "git",
+      "bytes": 2772,
+      "sha256": "54479d92164a59343f150a282bba99b5ccfe6c85422324d48c7fcf3fea0d5828",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/dataset/stats/stage11_baseline.json",
+      "ruta_fuente": "results/dataset/stats/stage11_baseline.json",
+      "origen": "git",
+      "bytes": 852,
+      "sha256": "11dbf94d52be713378101206ff6a8ede17a034f2920b7a774a49954f6e698438",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/results/simulation/stage-09-engine-comparison.json",
+      "ruta_fuente": "results/simulation/stage-09-engine-comparison.json",
+      "origen": "git",
+      "bytes": 684,
+      "sha256": "ce1bc7b45eb784ff574c9c1723e30612435ca888cccf5545b69f0a39e41f41c2",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/analysis/build_dataset.py",
+      "ruta_fuente": "scripts/analysis/build_dataset.py",
+      "origen": "git",
+      "bytes": 10826,
+      "sha256": "075576df6ffe5da6d109f5e337de110740f2f189f4c45bda0dc2de2dadd5fbc6",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/analysis/build_generator_tables.py",
+      "ruta_fuente": "scripts/analysis/build_generator_tables.py",
+      "origen": "git",
+      "bytes": 5141,
+      "sha256": "ded413f60ad9e129743661abb244f927a32b9b286f2f15f5a69ebddc6e33d9f7",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/analysis/compare_engines.py",
+      "ruta_fuente": "scripts/analysis/compare_engines.py",
+      "origen": "git",
+      "bytes": 5378,
+      "sha256": "145fabfc1425b1b41317a495ca1c5f40fd1d6068006b3f714d162007a8a892f3",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/analysis/partition_freeze.py",
+      "ruta_fuente": "scripts/analysis/partition_freeze.py",
+      "origen": "git",
+      "bytes": 3776,
+      "sha256": "75523681c79637b9f5dbfefa161b2e4605bff4a45ebc2d3cd69960a1edac3910",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/analysis/plotting_style.py",
+      "ruta_fuente": "scripts/analysis/plotting_style.py",
+      "origen": "git",
+      "bytes": 920,
+      "sha256": "e4eb61afe1d72685ffdcd89c2a6b777b243161ce2b551b20e059faa9eadc2bdc",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/analysis/render_pilot_muogram.py",
+      "ruta_fuente": "scripts/analysis/render_pilot_muogram.py",
+      "origen": "git",
+      "bytes": 3165,
+      "sha256": "db14d21f635e831311144da1804b27c0e93a5a2767e27fc6626c3718a21baf5f",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/analysis/validate_ecomug.py",
+      "ruta_fuente": "scripts/analysis/validate_ecomug.py",
+      "origen": "git",
+      "bytes": 4068,
+      "sha256": "9949f376e697a470ff1db88fa803ef9dd64fcda4c55bd53accd7e017d1747d93",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/analysis/validate_flux_sampler.py",
+      "ruta_fuente": "scripts/analysis/validate_flux_sampler.py",
+      "origen": "git",
+      "bytes": 9157,
+      "sha256": "a695384f91e01bf3a34367d3e6053c97a2c3293d9216155e1652dff66ad46bcb",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/analysis/vv_physics.py",
+      "ruta_fuente": "scripts/analysis/vv_physics.py",
+      "origen": "git",
+      "bytes": 10322,
+      "sha256": "26c04c4ad700bbc64a1c30ca5978ce097c2ca5841c8ccf60ecc706b3a0e5c68a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/cluster/campaign_block.sbatch",
+      "ruta_fuente": "scripts/cluster/campaign_block.sbatch",
+      "origen": "git",
+      "bytes": 2754,
+      "sha256": "28df98c23747f3c292e815acbda95e03d7bb0c2db976a8f115426fa7d53a64fe",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/cluster/env.sh",
+      "ruta_fuente": "scripts/cluster/env.sh",
+      "origen": "git",
+      "bytes": 890,
+      "sha256": "b00e94a76e0638852ff42f40fe4df37234a68cc058a478b2cf49fd72fc4e8d09",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/cluster/make_sc3_bundle.sh",
+      "ruta_fuente": "scripts/cluster/make_sc3_bundle.sh",
+      "origen": "git",
+      "bytes": 932,
+      "sha256": "6ff7c7337318cced6437f3e731d8313d1517925deb21e48c8f8e8943e3f256a2",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/cluster/merge_blocks.py",
+      "ruta_fuente": "scripts/cluster/merge_blocks.py",
+      "origen": "git",
+      "bytes": 4529,
+      "sha256": "ec9d9b97d743144632a79ad828013e25b98234b006007fbc0d4f63015c4c6181",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/cluster/queue_worker.sbatch",
+      "ruta_fuente": "scripts/cluster/queue_worker.sbatch",
+      "origen": "git",
+      "bytes": 3790,
+      "sha256": "faa55cebab4b0656916a138b5554174cd64968c420040991cb8de707b5eed354",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/cluster/submit_missing.py",
+      "ruta_fuente": "scripts/cluster/submit_missing.py",
+      "origen": "git",
+      "bytes": 5438,
+      "sha256": "20183a5453a117a444e511891faddccd851b925ecba1a9aead66bbccc0dc0f07",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/docker/Dockerfile",
+      "ruta_fuente": "scripts/simulation/docker/Dockerfile",
+      "origen": "git",
+      "bytes": 4547,
+      "sha256": "f16f7e230bd62262cca6bd607a5c5263c8edd8e9a92796dfe69d2cffd8b014bd",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/docker/check_versions.sh",
+      "ruta_fuente": "scripts/simulation/docker/check_versions.sh",
+      "origen": "git",
+      "bytes": 535,
+      "sha256": "ae957bf9cd67e84d9635c7f7306b003550e0bb5e7e0183184ebb21c7f6a6eb11",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/docker/docker-compose.yml",
+      "ruta_fuente": "scripts/simulation/docker/docker-compose.yml",
+      "origen": "git",
+      "bytes": 1238,
+      "sha256": "1fcd35ea31d345ce91d875d43c47eba45174cd4feb8c9822bccb31ad491c8b8a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/ecomug_standalone/Makefile",
+      "ruta_fuente": "scripts/simulation/ecomug_standalone/Makefile",
+      "origen": "git",
+      "bytes": 727,
+      "sha256": "9702eef7d43a0666eb75b39710138bfea58c709837532e80e4588f660f006f61",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/ecomug_standalone/main.cc",
+      "ruta_fuente": "scripts/simulation/ecomug_standalone/main.cc",
+      "origen": "git",
+      "bytes": 1183,
+      "sha256": "aa900be5b9f2ad69af7d6ba323d5379e9fa154171248e6b25a36be2c04dfa1c8",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/CMakeLists.txt",
+      "ruta_fuente": "scripts/simulation/geant4_app/CMakeLists.txt",
+      "origen": "git",
+      "bytes": 987,
+      "sha256": "47bd7b076edb1ff3355952a05d219c0d6fbbf3acb89d851b57377145273d1bb8",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/include/ActionInitialization.hh",
+      "ruta_fuente": "scripts/simulation/geant4_app/include/ActionInitialization.hh",
+      "origen": "git",
+      "bytes": 853,
+      "sha256": "eaa438452e103fa4642023c004dbeacdc022ba09858bed99de6c8408f91b9cc7",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/include/DetectorConstruction.hh",
+      "ruta_fuente": "scripts/simulation/geant4_app/include/DetectorConstruction.hh",
+      "origen": "git",
+      "bytes": 943,
+      "sha256": "8cf6e711ed3de3e20f7958f25b61c7ad8c2518afdf40427bc4c9c80d14afebd8",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/include/FluxTables.hh",
+      "ruta_fuente": "scripts/simulation/geant4_app/include/FluxTables.hh",
+      "origen": "git",
+      "bytes": 1764,
+      "sha256": "96a5c716ef6ebc03ab72c8206f0d8b0c7ee18ff07468362ddb7b85326a728515",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/include/GeometryConfig.hh",
+      "ruta_fuente": "scripts/simulation/geant4_app/include/GeometryConfig.hh",
+      "origen": "git",
+      "bytes": 1358,
+      "sha256": "f4ae53cd1ffa6186eb5a517e3b05bf12c1abe6a2b5a17aec9b72542a3bcc8f37",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/include/PrimaryGeneratorAction.hh",
+      "ruta_fuente": "scripts/simulation/geant4_app/include/PrimaryGeneratorAction.hh",
+      "origen": "git",
+      "bytes": 1497,
+      "sha256": "c79f31d4bc134711f1099cf1b82b25b1f8a41db5bf9804c0cf742b13db65d6cd",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/include/RunAction.hh",
+      "ruta_fuente": "scripts/simulation/geant4_app/include/RunAction.hh",
+      "origen": "git",
+      "bytes": 820,
+      "sha256": "b15450571a8d5d771efd61fda4fc1dc029fbc5c821bcb2512a01ca8558ab1af1",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/include/RunData.hh",
+      "ruta_fuente": "scripts/simulation/geant4_app/include/RunData.hh",
+      "origen": "git",
+      "bytes": 1320,
+      "sha256": "b5580622facd0ee16fffd9b88f390690215a1b25fefef6f7939e9804458440f6",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/include/StackingAction.hh",
+      "ruta_fuente": "scripts/simulation/geant4_app/include/StackingAction.hh",
+      "origen": "git",
+      "bytes": 529,
+      "sha256": "cc7a9fdc44d886318497a43f38ff5853e8d19d392c88a3b5b79535cdbe4727d5",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/include/SteppingAction.hh",
+      "ruta_fuente": "scripts/simulation/geant4_app/include/SteppingAction.hh",
+      "origen": "git",
+      "bytes": 536,
+      "sha256": "86ad44fc3aa4544848c1eea848707fccf8158b9f80055054be847fdcfd950da5",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/muography_sim.cc",
+      "ruta_fuente": "scripts/simulation/geant4_app/muography_sim.cc",
+      "origen": "git",
+      "bytes": 3388,
+      "sha256": "a3b3c5bafe763d5fcc8178389e64136a0d8dabbf5e2e6f5e8ea06badbb3cd2ee",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/src/ActionInitialization.cc",
+      "ruta_fuente": "scripts/simulation/geant4_app/src/ActionInitialization.cc",
+      "origen": "git",
+      "bytes": 1416,
+      "sha256": "dde7087ae5f891598af51103c60b1dd5fe8ab44f30726b9cab3e59bf187d39d4",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/src/DetectorConstruction.cc",
+      "ruta_fuente": "scripts/simulation/geant4_app/src/DetectorConstruction.cc",
+      "origen": "git",
+      "bytes": 5543,
+      "sha256": "4e2da35ec7db37d26e96389261ef7d74eb5f9c55941b6b03ebba0069f21d1bd3",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/src/FluxTables.cc",
+      "ruta_fuente": "scripts/simulation/geant4_app/src/FluxTables.cc",
+      "origen": "git",
+      "bytes": 2873,
+      "sha256": "fa4626b2b9e9ba5d337106acf26cc30c971786a8b072094352823bd10564ba46",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/src/GeometryConfig.cc",
+      "ruta_fuente": "scripts/simulation/geant4_app/src/GeometryConfig.cc",
+      "origen": "git",
+      "bytes": 1686,
+      "sha256": "944244dfe4bda218fabf10d69165b89044a7666b4df6973ff11e3db5417f8321",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/src/PrimaryGeneratorAction.cc",
+      "ruta_fuente": "scripts/simulation/geant4_app/src/PrimaryGeneratorAction.cc",
+      "origen": "git",
+      "bytes": 3348,
+      "sha256": "80d0daef546f625ab0b003d676e5c83f4637661a997810121c922d32016f0fd9",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/src/RunAction.cc",
+      "ruta_fuente": "scripts/simulation/geant4_app/src/RunAction.cc",
+      "origen": "git",
+      "bytes": 3276,
+      "sha256": "301e7249691ec49d833ca05110702ab621e71ab318db87ff29bc2e6fd4d7b777",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/src/StackingAction.cc",
+      "ruta_fuente": "scripts/simulation/geant4_app/src/StackingAction.cc",
+      "origen": "git",
+      "bytes": 198,
+      "sha256": "5bdf870ee2ebcf22e89953692233bf31582cfe3eec043f9dbb6f96f05436d39d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/src/SteppingAction.cc",
+      "ruta_fuente": "scripts/simulation/geant4_app/src/SteppingAction.cc",
+      "origen": "git",
+      "bytes": 2035,
+      "sha256": "d27d90be1bb5847b410f8fade2c4d7f71e760524eee3463315a33e88cb583de5",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/tables/meta.json",
+      "ruta_fuente": "scripts/simulation/geant4_app/tables/meta.json",
+      "origen": "git",
+      "bytes": 413,
+      "sha256": "7ac4b6a9353af701b56e5a97ee783ed59072d58df52d80ddbdc0f5f70147d35d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/tables/p_cdf.txt",
+      "ruta_fuente": "scripts/simulation/geant4_app/tables/p_cdf.txt",
+      "origen": "git",
+      "bytes": 53665,
+      "sha256": "7161c8adf11711139840007dff26178221c4cfbff8fc3253cabdda50c533f6ae",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/tables/row_weights_30d.txt",
+      "ruta_fuente": "scripts/simulation/geant4_app/tables/row_weights_30d.txt",
+      "origen": "git",
+      "bytes": 5894,
+      "sha256": "93ce67abe51c59ea3ac5c07dc99fd1615ae147df82c16d1bad64f5c0712d2c0c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geant4_app/tools/csv_to_npz.py",
+      "ruta_fuente": "scripts/simulation/geant4_app/tools/csv_to_npz.py",
+      "origen": "git",
+      "bytes": 2087,
+      "sha256": "b6a1aa486baf9edbd1e17ff35f394850de3f34eb2b61532a8b75ef0e68e65a9b",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-gen-01.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-gen-01.json",
+      "origen": "git",
+      "bytes": 900,
+      "sha256": "f171aa214fda5243db6c5790f29e31cb68601d2b771bf36ca291a1673fd1166a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-test-01.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-test-01.json",
+      "origen": "git",
+      "bytes": 689,
+      "sha256": "66a46bb729eedf508ffb8e15bd8cf8c602e0f63141a3f8a2d9594597bd32c5e8",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-test-02.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-test-02.json",
+      "origen": "git",
+      "bytes": 495,
+      "sha256": "a61c7363caaffe807627f5235c58439e3c41838f1b82fa03e81c3298d9f6c723",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-test-03.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-test-03.json",
+      "origen": "git",
+      "bytes": 942,
+      "sha256": "c9db0081eb9bb0e6db9a8bc409f2e9f782bcbfc151057b6127cd5827555c6b8c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-train-01.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-train-01.json",
+      "origen": "git",
+      "bytes": 275,
+      "sha256": "ff3c69ab7e37b51c5d4e1318d298a9ddc35446367e6ea4abf5c322e3b86f07b1",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-train-02.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-train-02.json",
+      "origen": "git",
+      "bytes": 476,
+      "sha256": "abe49537a4e692a6df6ebf928342e8338b383b2b9e1f4e4ab2b8f0ba95d67526",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-train-03.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-train-03.json",
+      "origen": "git",
+      "bytes": 456,
+      "sha256": "757ff851126ae659d21fbaeaee1c4d60292e2b4d70b7fac04c0d1c88912f3a72",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-train-04.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-train-04.json",
+      "origen": "git",
+      "bytes": 498,
+      "sha256": "a7d30817a40e8d4a71d2e85e571b65c7459ce88eeb549c05e56211ed60a6a440",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-train-05.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-train-05.json",
+      "origen": "git",
+      "bytes": 689,
+      "sha256": "09322cce8d7f40e4f68a6ef5400aa2aa722d3a68d107b1c3cce3977ef03b723c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-train-06.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-train-06.json",
+      "origen": "git",
+      "bytes": 732,
+      "sha256": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-train-07.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-train-07.json",
+      "origen": "git",
+      "bytes": 712,
+      "sha256": "f8e3a804871a6744e101384cbcc5b360063e9ba017122ea5a022119dc6d457d1",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-train-08.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-train-08.json",
+      "origen": "git",
+      "bytes": 942,
+      "sha256": "df859ca1ead6e4fca4cad0d877131167a47a4d6443ebed1ee3379189600f7601",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-train-09.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-train-09.json",
+      "origen": "git",
+      "bytes": 479,
+      "sha256": "35bf7e33e0b864f486fb881e29613b5687e40ef4794d91f05d6a9fa7dbf75288",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-train-10.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-train-10.json",
+      "origen": "git",
+      "bytes": 671,
+      "sha256": "218c427d76f134eeafd211f5c2ae778a113fd3dedb6f2cc93bedca83a795a448",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-train-11.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-train-11.json",
+      "origen": "git",
+      "bytes": 900,
+      "sha256": "201b8e4e65de4538a44acae09c1e69ddd1179459bd8be645bdeac669ac43d77f",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-train-12.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-train-12.json",
+      "origen": "git",
+      "bytes": 499,
+      "sha256": "269a8f3959347c2713a4f8f563cf82092dc638f9633afbeafe5b26ca4fbcdc8d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-val-01.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-val-01.json",
+      "origen": "git",
+      "bytes": 475,
+      "sha256": "71d4daf62362f81473403d57261fd293cfd687fb6f2998d46a142dfcbf29d6d7",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-val-02.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-val-02.json",
+      "origen": "git",
+      "bytes": 452,
+      "sha256": "f8376b4fe3262acb7523b605e2c2f9c8d9e5c36532c34e8bcc70d041f695b3bb",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-val-03.json",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/geometries/geo-val-03.json",
+      "origen": "git",
+      "bytes": 725,
+      "sha256": "4a5eb9a461d4a084bd966a5cc48508556d279ffb8d9fda202e76e64619f0716d",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/make_catalog.py",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/make_catalog.py",
+      "origen": "git",
+      "bytes": 5241,
+      "sha256": "780efd19f7fbf4e51e79975795277b108999e41873d9a8cd6e191dc1dd2e971c",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/geometry_catalog/make_catalog_figures.py",
+      "ruta_fuente": "scripts/simulation/geometry_catalog/make_catalog_figures.py",
+      "origen": "git",
+      "bytes": 3485,
+      "sha256": "e2ac5906f1eefc953f7b7ccd3fdf8564e622d8872b2f0cd8c7e583a26128aece",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/surrogate/__init__.py",
+      "ruta_fuente": "scripts/simulation/surrogate/__init__.py",
+      "origen": "git",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/surrogate/flux_model.py",
+      "ruta_fuente": "scripts/simulation/surrogate/flux_model.py",
+      "origen": "git",
+      "bytes": 5135,
+      "sha256": "40a75dd3684697f84b0c40566701ff412bcb4c5f7ee1e662217652943261ef4a",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/surrogate/geometry.py",
+      "ruta_fuente": "scripts/simulation/surrogate/geometry.py",
+      "origen": "git",
+      "bytes": 3843,
+      "sha256": "3809cca7e96ac7592a42d6a86108c0866901e63f7c44c12960bb71553cb555ad",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/surrogate/imaging.py",
+      "ruta_fuente": "scripts/simulation/surrogate/imaging.py",
+      "origen": "git",
+      "bytes": 8512,
+      "sha256": "968631d1ae68914326a1e453339d44714ded508910149b2e009be47512963d36",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/third_party/ecomug/EcoMug.h",
+      "ruta_fuente": "scripts/simulation/third_party/ecomug/EcoMug.h",
+      "origen": "git",
+      "bytes": 46058,
+      "sha256": "6085f2977a29ddca6ac94ed76f83f085e6a867ca11dcc07cafb4fd52f08eba1f",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/simulation/third_party/json/json.hpp",
+      "ruta_fuente": "scripts/simulation/third_party/json/json.hpp",
+      "origen": "git",
+      "bytes": 919975,
+      "sha256": "9bea4c8066ef4a1c206b2be5a36302f8926f7fdc6087af5d20b417d0cf103ea6",
+      "nota": ""
+    },
+    {
+      "destino": "objetivo-1/originales/scripts/training/muography_dataset.py",
+      "ruta_fuente": "scripts/training/muography_dataset.py",
+      "origen": "git",
+      "bytes": 10693,
+      "sha256": "a8121c05e887faf0a153bdbd1b813b851dc7ed3847b9bd49f154ba91b8537f3f",
+      "nota": ""
+    }
+  ]
+}

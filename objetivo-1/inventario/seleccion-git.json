@@ -1,0 +1,957 @@
+{
+  "revision": "b88fa576494cb8a664c46b8c94c5918c5097d616",
+  "incluidos": [
+    "bitacora-simulacion.md",
+    "figures/results/stage06_ecomug_spectrum.png",
+    "figures/results/stage07_catalog_cross_sections.png",
+    "figures/results/stage07_geometry_detail.png",
+    "figures/results/stage08_pilot_muogram_geant4.png",
+    "figures/results/stage09_engine_comparison.png",
+    "figures/results/stage09_vv_physics.png",
+    "figures/results/stage11_example_pairs.png",
+    "results/dataset/campaign-manifest.csv",
+    "results/dataset/shards/geo-gen-01.meta.json",
+    "results/dataset/shards/geo-test-01.meta.json",
+    "results/dataset/shards/geo-test-02.meta.json",
+    "results/dataset/shards/geo-test-03.meta.json",
+    "results/dataset/shards/geo-train-01.meta.json",
+    "results/dataset/shards/geo-train-02.meta.json",
+    "results/dataset/shards/geo-train-03.meta.json",
+    "results/dataset/shards/geo-train-04.meta.json",
+    "results/dataset/shards/geo-train-05.meta.json",
+    "results/dataset/shards/geo-train-06.meta.json",
+    "results/dataset/shards/geo-train-07.meta.json",
+    "results/dataset/shards/geo-train-08.meta.json",
+    "results/dataset/shards/geo-train-09.meta.json",
+    "results/dataset/shards/geo-train-10.meta.json",
+    "results/dataset/shards/geo-train-11.meta.json",
+    "results/dataset/shards/geo-train-12.meta.json",
+    "results/dataset/shards/geo-val-01.meta.json",
+    "results/dataset/shards/geo-val-02.meta.json",
+    "results/dataset/shards/geo-val-03.meta.json",
+    "results/dataset/splits.json",
+    "results/dataset/stats/stage11_baseline.json",
+    "results/simulation/stage-09-engine-comparison.json",
+    "scripts/analysis/build_dataset.py",
+    "scripts/analysis/build_generator_tables.py",
+    "scripts/analysis/compare_engines.py",
+    "scripts/analysis/partition_freeze.py",
+    "scripts/analysis/plotting_style.py",
+    "scripts/analysis/render_pilot_muogram.py",
+    "scripts/analysis/validate_ecomug.py",
+    "scripts/analysis/validate_flux_sampler.py",
+    "scripts/analysis/vv_physics.py",
+    "scripts/cluster/campaign_block.sbatch",
+    "scripts/cluster/env.sh",
+    "scripts/cluster/make_sc3_bundle.sh",
+    "scripts/cluster/merge_blocks.py",
+    "scripts/cluster/queue_worker.sbatch",
+    "scripts/cluster/submit_missing.py",
+    "scripts/simulation/docker/Dockerfile",
+    "scripts/simulation/docker/check_versions.sh",
+    "scripts/simulation/docker/docker-compose.yml",
+    "scripts/simulation/ecomug_standalone/Makefile",
+    "scripts/simulation/ecomug_standalone/main.cc",
+    "scripts/simulation/geant4_app/CMakeLists.txt",
+    "scripts/simulation/geant4_app/include/ActionInitialization.hh",
+    "scripts/simulation/geant4_app/include/DetectorConstruction.hh",
+    "scripts/simulation/geant4_app/include/FluxTables.hh",
+    "scripts/simulation/geant4_app/include/GeometryConfig.hh",
+    "scripts/simulation/geant4_app/include/PrimaryGeneratorAction.hh",
+    "scripts/simulation/geant4_app/include/RunAction.hh",
+    "scripts/simulation/geant4_app/include/RunData.hh",
+    "scripts/simulation/geant4_app/include/StackingAction.hh",
+    "scripts/simulation/geant4_app/include/SteppingAction.hh",
+    "scripts/simulation/geant4_app/muography_sim.cc",
+    "scripts/simulation/geant4_app/src/ActionInitialization.cc",
+    "scripts/simulation/geant4_app/src/DetectorConstruction.cc",
+    "scripts/simulation/geant4_app/src/FluxTables.cc",
+    "scripts/simulation/geant4_app/src/GeometryConfig.cc",
+    "scripts/simulation/geant4_app/src/PrimaryGeneratorAction.cc",
+    "scripts/simulation/geant4_app/src/RunAction.cc",
+    "scripts/simulation/geant4_app/src/StackingAction.cc",
+    "scripts/simulation/geant4_app/src/SteppingAction.cc",
+    "scripts/simulation/geant4_app/tables/meta.json",
+    "scripts/simulation/geant4_app/tables/p_cdf.txt",
+    "scripts/simulation/geant4_app/tables/row_weights_30d.txt",
+    "scripts/simulation/geant4_app/tools/csv_to_npz.py",
+    "scripts/simulation/geometry_catalog/geometries/geo-gen-01.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-test-01.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-test-02.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-test-03.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-train-01.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-train-02.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-train-03.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-train-04.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-train-05.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-train-06.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-train-07.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-train-08.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-train-09.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-train-10.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-train-11.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-train-12.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-val-01.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-val-02.json",
+    "scripts/simulation/geometry_catalog/geometries/geo-val-03.json",
+    "scripts/simulation/geometry_catalog/make_catalog.py",
+    "scripts/simulation/geometry_catalog/make_catalog_figures.py",
+    "scripts/simulation/surrogate/__init__.py",
+    "scripts/simulation/surrogate/flux_model.py",
+    "scripts/simulation/surrogate/geometry.py",
+    "scripts/simulation/surrogate/imaging.py",
+    "scripts/simulation/third_party/ecomug/EcoMug.h",
+    "scripts/simulation/third_party/json/json.hpp",
+    "scripts/training/muography_dataset.py"
+  ],
+  "excluidos": [
+    {
+      "ruta": ".gitattributes",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": ".gitignore",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "README.md",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "bitacora-evaluacion.md",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "docs/protocol/protocol-v1.1.md",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "figures/architecture/fig_arch_generator.pdf",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "figures/results/stage13_baselines.png",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "figures/results/stage13_equivalence_grid.png",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "figures/results/stage20_per_sample.png",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "figures/results/stage20_quality_vs_level.png",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "figures/results/stage21_detectability.png",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "figures/results/stage21_gallery_01.png",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "figures/results/stage21_gallery_02.png",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "figures/results/stage21_gallery_03.png",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "figures/results/stage21_gallery_04.png",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "figures/results/stage21_gallery_05.png",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "figures/results/stage21_gallery_06.png",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "figures/results/stage21_gallery_07.png",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "figures/results/stage21_gallery_08.png",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "figures/results/stage21_gallery_09.png",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "figures/results/stage21_gallery_10.png",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "figures/results/stage22_equivalence.png",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "models/__init__.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "models/patch_critic.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "models/unet_generator.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "models/weights-manifest-e19.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "models/weights-manifest.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "requirements.txt",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/dataset/stats/stage13_baselines.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/evaluation/fragments/01_levels.md",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/evaluation/fragments/02_primary.md",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/evaluation/fragments/03_verdicts.md",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/evaluation/fragments/04_detectability.md",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/evaluation/fragments/05_generalization.md",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/evaluation/fragments/06_detector_diagnostic.txt",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/evaluation/fragments/factor_tables.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/evaluation/fragments/factor_tables.md",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/evaluation/fragments/z_thr_calibration.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/evaluation/golden_metrics.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/evaluation/protocol_thresholds.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/evaluation/test/metrics.csv.gz",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/evaluation/test/octiles.csv.gz",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/evaluation/test/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/evaluation/test/test_access_log.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/bench-felix.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/e16_results.csv",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-ab-corrected/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-ab-corrected/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-ab-corrected/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-ab-shared/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-ab-shared/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-ab-shared/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-unetl1c-f1/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-unetl1c-f1/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-unetl1c-f1/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-unetl1c-f10/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-unetl1c-f10/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-unetl1c-f10/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-unetl1c-f5/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-unetl1c-f5/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-unetl1c-f5/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-unetl1c-f50/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-unetl1c-f50/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e13-unetl1c-f50/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e14-overfit10-ext/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e14-overfit10-ext/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e14-overfit10-ext/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e14-overfit10/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e14-overfit10/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e14-overfit10/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e15-c0-attempt1/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e15-c0-attempt1/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e15-c0-attempt1/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e15-c0-attempt2/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e15-c0-attempt2/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e15-c0-attempt2/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c01/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c01/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c01/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c02/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c02/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c02/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c03/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c03/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c03/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c04/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c04/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c04/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c05/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c05/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c05/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c06/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c06/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c06/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c07/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c07/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c07/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c08/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c08/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c08/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c09/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c09/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c09/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c10/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c10/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c10/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c11/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c11/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c11/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c12/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c12/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e16-c12/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f1/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f1/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f1/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f10/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f10/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f10/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f5-s1/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f5-s1/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f5-s1/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f5-s2/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f5-s2/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f5-s2/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f5/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f5/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f5/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f50/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f50/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e17-final-f50/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e18-abl-depth4/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e18-abl-depth4/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e18-abl-depth4/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e18-abl-noL1/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e18-abl-noL1/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e18-abl-noL1/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e18-abl-noskip/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e18-abl-noskip/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e18-abl-noskip/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e19-unetl1-f1-shared/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e19-unetl1-f1-shared/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e19-unetl1-f1-shared/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e19-unetl1-f1/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e19-unetl1-f1/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e19-unetl1-f1/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e19-unetl1-f10/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e19-unetl1-f10/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e19-unetl1-f10/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e19-unetl1-f5/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e19-unetl1-f5/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e19-unetl1-f5/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e19-unetl1-f50/config.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e19-unetl1-f50/metrics.jsonl",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "results/training/records/e19-unetl1-f50/summary.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/cluster/chain_driver.sbatch",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/cluster/classical_cpu.sbatch",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/cluster/e13_unetl1_corrected.sbatch",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/cluster/e14_overfit_ext.sbatch",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/cluster/e15_initial.sbatch",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/cluster/e19_dryrun.sbatch",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/cluster/e19_unetl1_retrain.sbatch",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/cluster/e20_test_pass.sbatch",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/cluster/env_gpu.sh",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/cluster/install_train_env.sh",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/blind_panels.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/cache.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/calibrate_thresholds.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/ceiling.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/detectability.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/diagnose_detector.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/equivalence.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/factor_analysis.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/metrics.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/predict.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/predict_benchmark.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/report_figures.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/report_tables.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/roi.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/run_evaluation.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/stats.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/test_blind_panels.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/test_cache.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/test_ceiling.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/test_detectability.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/test_equivalence.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/test_factor_analysis.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/test_metrics.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/test_predict.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/test_report_figures.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/test_report_tables.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/test_roi.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/test_roi_cluster.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/test_run_evaluation.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/test_single_callsite.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/test_stats.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/test_texture.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/evaluation/texture.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/training/benchmark_throughput.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/training/chain_driver.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/training/classical_baselines.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/training/configs/e15_reference.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/training/configs/e16_grid.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/training/configs/e17_final.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/training/configs/e17_runs.json",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/training/engine.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/training/losses.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/training/run_queue.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/training/test_chain_units.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/training/test_dataset.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/training/test_model_units.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/training/train_cwgan_gp.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    },
+    {
+      "ruta": "scripts/training/train_unet_l1.py",
+      "motivo": "Fuera del OE1 o documento transversal que incorpora OE2/OE3; permanece en el clon fuente."
+    }
+  ]
+}

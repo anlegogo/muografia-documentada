@@ -1,0 +1,16 @@
+{
+  "fecha_utc": "2026-09-29T03:09:35.188378+00:00",
+  "revision_fuente": "b88fa576494cb8a664c46b8c94c5918c5097d616",
+  "ok": true,
+  "archivos_verificados": 567,
+  "archivos_esperados": 567,
+  "shards": 19,
+  "vistas": 114,
+  "geometrias": 19,
+  "totales": {
+    "transportados": 4124005421,
+    "detectados": 3025131757
+  },
+  "errores": [],
+  "limite": "Integridad y consistencia documental; no valida física ni ejecuta Geant4."
+}
