@@ -1,0 +1,26 @@
+SLURM_JOB_ID=30461
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/ohpc/pub/compiler/gcc/14.2.0/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found EXPAT: /usr/lib64/libexpat.so (found suitable version "2.5.0", minimum required is "2.5.0") 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found Geant4: /opt/ohpc/pub/apps/geant4/11.4.2/lib64/cmake/Geant4/Geant4Config.cmake (found version "11.4.2") 
+-- Configuring done (1.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/dapintoo/oe1-trabajo/build-A0
+[ 80%] Building CXX object CMakeFiles/muography_sim.dir/src/DetectorConstruction.cc.o
+[ 80%] Building CXX object CMakeFiles/muography_sim.dir/src/ActionInitialization.cc.o
+[ 80%] Building CXX object CMakeFiles/muography_sim.dir/src/FluxTables.cc.o
+[ 80%] Building CXX object CMakeFiles/muography_sim.dir/src/GeometryConfig.cc.o
+[ 80%] Building CXX object CMakeFiles/muography_sim.dir/src/PrimaryGeneratorAction.cc.o
+[ 80%] Building CXX object CMakeFiles/muography_sim.dir/muography_sim.cc.o
+[ 80%] Building CXX object CMakeFiles/muography_sim.dir/src/RunAction.cc.o
+[ 80%] Building CXX object CMakeFiles/muography_sim.dir/src/StackingAction.cc.o
+[ 90%] Building CXX object CMakeFiles/muography_sim.dir/src/SteppingAction.cc.o
+[100%] Linking CXX executable muography_sim
+[100%] Built target muography_sim

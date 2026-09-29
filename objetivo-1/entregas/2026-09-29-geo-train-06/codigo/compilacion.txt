@@ -1,0 +1,45 @@
+Compilacion de simuladores A0 / A / B - OE1 (work unit U5)
+Generado: 2026-09-29T08:10:13Z
+
+== A0 ==
+source: ~/oe1-trabajo/A0/simulation/geant4_app
+configure command: cmake -S ~/oe1-trabajo/A0/simulation/geant4_app -B ~/oe1-trabajo/build-A0 -DCMAKE_BUILD_TYPE=Release
+build command: cmake --build ~/oe1-trabajo/build-A0 -j8
+srun: srun -p legacy -N1 -c 8 --mem=8G -t 00:30:00 (job id 30461)
+CMAKE_BUILD_TYPE: Release
+CMAKE_CXX_COMPILER: /opt/ohpc/pub/compiler/gcc/14.2.0/bin/c++
+CMAKE_CXX_FLAGS: 
+CMAKE_CXX_FLAGS_RELEASE: -O3 -DNDEBUG
+warning count: 0
+binary size (bytes): 272832
+binary sha256: 3b582b87890981ed4b6431d93bc50fc35f1513494611ef25296808b51a4a8db7
+build UTC (binary mtime): 2026-09-29 08:06:47.553061054 +0000
+
+== A ==
+source: ~/oe1-trabajo/A/simulation/geant4_app
+configure command: cmake -S ~/oe1-trabajo/A/simulation/geant4_app -B ~/oe1-trabajo/build-A -DCMAKE_BUILD_TYPE=Release
+build command: cmake --build ~/oe1-trabajo/build-A -j8
+srun: srun -p legacy -N1 -c 8 --mem=8G -t 00:30:00 (job id 30462)
+CMAKE_BUILD_TYPE: Release
+CMAKE_CXX_COMPILER: /opt/ohpc/pub/compiler/gcc/14.2.0/bin/c++
+CMAKE_CXX_FLAGS: 
+CMAKE_CXX_FLAGS_RELEASE: -O3 -DNDEBUG
+warning count: 0
+binary size (bytes): 304896
+binary sha256: 935e8ceca0d4010929d6791c4cf3e78cd0a47d43def96cd3fdbb8bb5d3b8d7b1
+build UTC (binary mtime): 2026-09-29 08:08:04.535799620 +0000
+
+== B ==
+source: ~/oe1-trabajo/B/simulation/geant4_app
+configure command: cmake -S ~/oe1-trabajo/B/simulation/geant4_app -B ~/oe1-trabajo/build-B -DCMAKE_BUILD_TYPE=Release
+build command: cmake --build ~/oe1-trabajo/build-B -j8
+srun: srun -p legacy -N1 -c 8 --mem=8G -t 00:30:00 (job id 30463)
+CMAKE_BUILD_TYPE: Release
+CMAKE_CXX_COMPILER: /opt/ohpc/pub/compiler/gcc/14.2.0/bin/c++
+CMAKE_CXX_FLAGS: 
+CMAKE_CXX_FLAGS_RELEASE: -O3 -DNDEBUG
+warning count: 0
+binary size (bytes): 313368
+binary sha256: 7c5416a90563ec8b17446f1d20ec8986aafb5401d5e833bff36ec512413d41f6
+build UTC (binary mtime): 2026-09-29 08:08:26.689012163 +0000
+

@@ -1,0 +1,535 @@
+diff --git a/include/GeometryDiagnostics.hh b/include/GeometryDiagnostics.hh
+new file mode 100644
+index 0000000..ef44991
+--- /dev/null
++++ b/include/GeometryDiagnostics.hh
+@@ -0,0 +1,60 @@
++#ifndef GEOMETRY_DIAGNOSTICS_HH
++#define GEOMETRY_DIAGNOSTICS_HH
++
++#include <string>
++
++#include "G4ThreeVector.hh"
++
++// Post-Initialize() geometry diagnostics: overlap checking, a volume/material
++// dump, point probes and 2D material slices. Read-only against the already
++// constructed geometry; never touches the run loop (no BeamOn). Intended to
++// run once, on the master thread, right after G4RunManager::Initialize().
++namespace geomdiag {
++
++// A generic axis-aligned scan spec for --slice-y / --slice-z:
++//   coord            fixed plane coordinate (metres)
++//   min1/max1, step  first free axis range (metres, inclusive)
++//   min2/max2        second free axis range (metres, inclusive)
++struct SliceSpec {
++  double coord = 0.0;
++  double min1 = 0.0, max1 = 0.0;
++  double min2 = 0.0, max2 = 0.0;
++  double step = 0.0;
++};
++
++// Parses "X,Y,Z" (metres). Returns false on malformed input.
++bool ParseProbe(const std::string& arg, G4ThreeVector& outPointM);
++
++// Parses "COORD:MIN1:MAX1:MIN2:MAX2:STEP" (metres). Returns false on
++// malformed input (wrong token count, non-numeric, empty range or step<=0)
++// or when the resulting grid would exceed the point-count cap enforced in
++// GeometryDiagnostics.cc (guards the cluster's tight per-user quota against
++// an oversized CSV from a single flag).
++bool ParseSlice(const std::string& arg, SliceSpec& outSpec);
++
++// --check-geometry: CheckOverlaps() on every physical volume that has a
++// mother logical volume. Prints one OVERLAP-CHECK line per volume plus an
++// OVERLAP-CHECK-SUMMARY line. Returns 1 if any overlap was found, 0
++// otherwise.
++int RunCheckGeometry(const std::string& geometryId, int view, long seed,
++                     int resolution, double tolerance, int maxErr);
++
++// --dump-geometry: one DUMP-VOLUME line per physical volume (material,
++// density, cubic volume). volumeStatN is the MC point budget used for
++// Boolean solids (G4BooleanSolid), whose volume has no closed form.
++void RunDumpGeometry(long volumeStatN);
++
++// --probe: material lookup at a single world-frame point (metres).
++void RunProbe(const G4ThreeVector& pointM);
++
++// --slice-y / --slice-z: material lookup on a regular grid over the plane
++// y=coord (resp. z=coord); writes a CSV under outDir named
++// "<geometryId>_view<view>_slice_y<coord>.csv" (resp. "..._slice_z...csv").
++void RunSliceY(const std::string& geometryId, int view,
++               const std::string& outDir, const SliceSpec& spec);
++void RunSliceZ(const std::string& geometryId, int view,
++               const std::string& outDir, const SliceSpec& spec);
++
++}  // namespace geomdiag
++
++#endif
+diff --git a/muography_sim.cc b/muography_sim.cc
+index 8460104..3347624 100644
+--- a/muography_sim.cc
++++ b/muography_sim.cc
+@@ -10,22 +10,32 @@
+ // Output: <out>/<geometry_id>_view<k>_hist.csv + .meta.json
+ // (tools/csv_to_npz.py converts to the NPZ schema shared with the
+ // surrogate pipeline.)
++//
++// Diagnostic mode (no BeamOn; runs on the master thread after
++// runManager->Initialize() and exits): --check-geometry, --dump-geometry,
++// --probe X,Y,Z, --slice-y Y:XMIN:XMAX:ZMIN:ZMAX:STEP,
++// --slice-z Z:XMIN:XMAX:YMIN:YMAX:STEP, --volume-stat N. Any one of them
++// switches the run into diagnostic mode.
+ 
++#include <cstddef>
+ #include <cstdint>
+ #include <cstdlib>
+ #include <iostream>
+ #include <random>
+ #include <string>
++#include <vector>
+ 
+ #include "FTFP_BERT.hh"
+ #include "G4RunManagerFactory.hh"
+ #include "G4SystemOfUnits.hh"
++#include "G4ThreeVector.hh"
+ #include "Randomize.hh"
+ 
+ #include "ActionInitialization.hh"
+ #include "DetectorConstruction.hh"
+ #include "FluxTables.hh"
+ #include "GeometryConfig.hh"
++#include "GeometryDiagnostics.hh"
+ 
+ namespace {
+ void usage(const char* prog)
+@@ -34,6 +44,17 @@ void usage(const char* prog)
+             << " --geometry FILE.json --view 0-5 --tables DIR --seed S"
+                " --out DIR [--days D | --events N] [--threads T]\n";
+ }
++// Same as usage(), plus the diagnostic-flag summary. Only shown for a
++// diagnostic-context error, so the plain validation-failure message stays
++// byte-identical to the base (no-diagnostics) build when no diagnostic
++// flag was given at all.
++void usageDiag(const char* prog)
++{
++  usage(prog);
++  std::cerr << "   diagnostics (no BeamOn): [--check-geometry] [--dump-geometry]"
++               " [--probe X,Y,Z]... [--slice-y Y:XMIN:XMAX:ZMIN:ZMAX:STEP]..."
++               " [--slice-z Z:XMIN:XMAX:YMIN:YMAX:STEP]... [--volume-stat N]\n";
++}
+ }  // namespace
+ 
+ int main(int argc, char** argv)
+@@ -45,25 +66,82 @@ int main(int argc, char** argv)
+   uint64_t seed = 0;
+   bool haveSeed = false;
+ 
++  // consumedAsValue[i] marks argv[i] as already claimed by a normal flag's
++  // value (e.g. "--out foo"), so the diagnostic-flag pass below can never
++  // reinterpret that same token as a diagnostic flag.
++  std::vector<bool> consumedAsValue(static_cast<std::size_t>(argc), false);
+   for (int i = 1; i < argc - 1; ++i) {
+     const std::string a = argv[i];
+-    if (a == "--geometry") geomFile = argv[++i];
+-    else if (a == "--view") view = std::atoi(argv[++i]);
+-    else if (a == "--events") events = std::atoll(argv[++i]);
+-    else if (a == "--days") days = std::atof(argv[++i]);
+-    else if (a == "--seed") { seed = std::strtoull(argv[++i], nullptr, 10); haveSeed = true; }
+-    else if (a == "--out") outDir = argv[++i];
+-    else if (a == "--tables") tablesDir = argv[++i];
+-    else if (a == "--threads") threads = std::atoi(argv[++i]);
++    if (a == "--geometry") { geomFile = argv[++i]; consumedAsValue[i] = true; }
++    else if (a == "--view") { view = std::atoi(argv[++i]); consumedAsValue[i] = true; }
++    else if (a == "--events") { events = std::atoll(argv[++i]); consumedAsValue[i] = true; }
++    else if (a == "--days") { days = std::atof(argv[++i]); consumedAsValue[i] = true; }
++    else if (a == "--seed") {
++      seed = std::strtoull(argv[++i], nullptr, 10);
++      haveSeed = true;
++      consumedAsValue[i] = true;
++    }
++    else if (a == "--out") { outDir = argv[++i]; consumedAsValue[i] = true; }
++    else if (a == "--tables") { tablesDir = argv[++i]; consumedAsValue[i] = true; }
++    else if (a == "--threads") { threads = std::atoi(argv[++i]); consumedAsValue[i] = true; }
++  }
++
++  // Separate pass for diagnostic flags: boolean flags (--check-geometry,
++  // --dump-geometry) must work in any position, including last, so they
++  // cannot share the argc-1-bounded loop above. Tokens already consumed as
++  // a normal flag's value are skipped so a malformed normal flag (missing
++  // its value) can never be silently reinterpreted as a diagnostic flag.
++  bool diag = false;
++  bool checkGeometry = false;
++  bool dumpGeometry = false;
++  std::vector<G4ThreeVector> probes;
++  std::vector<geomdiag::SliceSpec> slicesY, slicesZ;
++  long volumeStatN = 10000000;
++  bool diagParseError = false;
++  for (int i = 1; i < argc; ++i) {
++    if (consumedAsValue[i]) continue;
++    const std::string a = argv[i];
++    if (a == "--check-geometry") { checkGeometry = true; diag = true; }
++    else if (a == "--dump-geometry") { dumpGeometry = true; diag = true; }
++    else if (a == "--probe") {
++      diag = true;
++      G4ThreeVector p;
++      if (i + 1 >= argc || !geomdiag::ParseProbe(argv[++i], p)) { diagParseError = true; break; }
++      probes.push_back(p);
++    }
++    else if (a == "--slice-y") {
++      diag = true;
++      geomdiag::SliceSpec spec;
++      if (i + 1 >= argc || !geomdiag::ParseSlice(argv[++i], spec)) { diagParseError = true; break; }
++      slicesY.push_back(spec);
++    }
++    else if (a == "--slice-z") {
++      diag = true;
++      geomdiag::SliceSpec spec;
++      if (i + 1 >= argc || !geomdiag::ParseSlice(argv[++i], spec)) { diagParseError = true; break; }
++      slicesZ.push_back(spec);
++    }
++    else if (a == "--volume-stat") {
++      diag = true;
++      if (i + 1 >= argc) { diagParseError = true; break; }
++      volumeStatN = std::atol(argv[++i]);
++      // EstimateCubicVolume takes a G4int and the SE divides by N.
++      if (volumeStatN < 1 || volumeStatN > 2000000000L) { diagParseError = true; break; }
++    }
+   }
++  if (diagParseError) {
++    usageDiag(argv[0]);
++    return 2;
++  }
++
+   if (geomFile.empty() || view < 0 || view > 5 || tablesDir.empty() ||
+-      !haveSeed || (events <= 0 && days <= 0)) {
+-    usage(argv[0]);
++      !haveSeed || (!diag && (events <= 0 && days <= 0))) {
++    if (diag) usageDiag(argv[0]); else usage(argv[0]);
+     return 2;
+   }
+ 
+   FluxTables tables(tablesDir);
+-  if (events <= 0) {
++  if (!diag && events <= 0) {
+     // Exposure-calibrated event count: Poisson around the protocol rate.
+     std::mt19937_64 rng(seed);
+     const double mean = tables.TotalCounts30d() * days / 30.0;
+@@ -99,6 +177,22 @@ int main(int argc, char** argv)
+       days > 0 ? days : -1.0));
+ 
+   runManager->Initialize();
++
++  if (diag) {
++    int exitCode = 0;
++    if (checkGeometry) {
++      exitCode = geomdiag::RunCheckGeometry(
++          cfg.geometry_id, view, static_cast<long>(seed % 2147483647ULL),
++          100000, 0.0, 100);
++    }
++    if (dumpGeometry) geomdiag::RunDumpGeometry(volumeStatN);
++    for (const auto& p : probes) geomdiag::RunProbe(p);
++    for (const auto& s : slicesY) geomdiag::RunSliceY(cfg.geometry_id, view, outDir, s);
++    for (const auto& s : slicesZ) geomdiag::RunSliceZ(cfg.geometry_id, view, outDir, s);
++    delete runManager;
++    return exitCode;
++  }
++
+   runManager->BeamOn(static_cast<G4int>(events));
+ 
+   delete runManager;
+diff --git a/src/GeometryDiagnostics.cc b/src/GeometryDiagnostics.cc
+new file mode 100644
+index 0000000..846fadb
+--- /dev/null
++++ b/src/GeometryDiagnostics.cc
+@@ -0,0 +1,291 @@
++#include "GeometryDiagnostics.hh"
++
++#include <cmath>
++#include <filesystem>
++#include <fstream>
++#include <functional>
++#include <iostream>
++#include <sstream>
++#include <vector>
++
++#include "G4BooleanSolid.hh"
++#include "G4LogicalVolume.hh"
++#include "G4Material.hh"
++#include "G4Navigator.hh"
++#include "G4PhysicalVolumeStore.hh"
++#include "G4SystemOfUnits.hh"
++#include "G4VPhysicalVolume.hh"
++#include "G4VSolid.hh"
++#include "G4Version.hh"
++
++namespace {
++
++// Splits arg on delim into exactly nTokens numeric fields. Returns false on
++// any parse failure or wrong token count (malformed --probe/--slice-* value).
++bool SplitNumbers(const std::string& arg, char delim, std::size_t nTokens,
++                   std::vector<double>& out)
++{
++  out.clear();
++  std::stringstream ss(arg);
++  std::string tok;
++  while (std::getline(ss, tok, delim)) {
++    try {
++      std::size_t pos = 0;
++      const double v = std::stod(tok, &pos);
++      if (pos != tok.size()) return false;
++      out.push_back(v);
++    }
++    catch (const std::exception&) {
++      return false;
++    }
++  }
++  return out.size() == nTokens;
++}
++
++// Hard cap on total slice grid points (min1..max1 x min2..max2 at spec.step):
++// guards the cluster's tight per-user /home quota against an accidental
++// multi-hundred-MB CSV from a single --slice-y/--slice-z flag.
++constexpr long kMaxSlicePoints = 2000000;
++
++// Inclusive point count along one axis, from an integer step index rather
++// than accumulated floating point, so it matches the loop in WriteSliceCsv
++// exactly (see ParseSlice / WriteSliceCsv).
++long AxisPointCount(double lo, double hi, double step)
++{
++  return static_cast<long>(std::floor((hi - lo) / step + 0.5)) + 1;
++}
++
++// Navigator used by --probe/--slice-*; lazily bound to the "world" physical
++// volume, which by construction time (called after Initialize()) exists.
++G4Navigator& DiagNavigator()
++{
++  static G4Navigator navigator;
++  static bool bound = false;
++  if (!bound) {
++    auto* world = G4PhysicalVolumeStore::GetInstance()->GetVolume("world");
++    navigator.SetWorldVolume(world);
++    bound = true;
++  }
++  return navigator;
++}
++
++void DescribeLocation(const G4ThreeVector& pointM, std::string& volumeName,
++                      std::string& materialName, double& densityGcm3)
++{
++  const G4ThreeVector pointInternal(pointM.x() * m, pointM.y() * m, pointM.z() * m);
++  auto* pv = DiagNavigator().LocateGlobalPointAndSetup(pointInternal, nullptr, false, true);
++  if (pv == nullptr) {
++    volumeName = "outside-world";
++    materialName = "none";
++    densityGcm3 = 0.0;
++    return;
++  }
++  volumeName = pv->GetName();
++  auto* mat = pv->GetLogicalVolume()->GetMaterial();
++  materialName = mat->GetName();
++  densityGcm3 = mat->GetDensity() / (g / cm3);
++}
++
++// Regular inclusive grid scan over a plane; writes the shared CSV schema and
++// reports the point count back to the caller.
++long WriteSliceCsv(const std::string& path, const geomdiag::SliceSpec& spec,
++                   const std::function<G4ThreeVector(double, double)>& toPointM)
++{
++  const std::filesystem::path fsPath(path);
++  if (fsPath.has_parent_path()) {
++    std::filesystem::create_directories(fsPath.parent_path());
++  }
++  std::ofstream csv(path);
++  csv << "x_m,y_m,z_m,volume,material,density_g_cm3\n";
++
++  // Grid points are computed from an integer step index, not by
++  // accumulating spec.step in a float loop counter: at fine resolution over
++  // a wide range, accumulated rounding error can exceed a fixed epsilon and
++  // silently drop the last, documented-inclusive grid point.
++  const long n1 = AxisPointCount(spec.min1, spec.max1, spec.step);
++  const long n2 = AxisPointCount(spec.min2, spec.max2, spec.step);
++  long n = 0;
++  for (long k1 = 0; k1 < n1; ++k1) {
++    const double a1 = spec.min1 + static_cast<double>(k1) * spec.step;
++    for (long k2 = 0; k2 < n2; ++k2) {
++      const double a2 = spec.min2 + static_cast<double>(k2) * spec.step;
++      const G4ThreeVector pointM = toPointM(a1, a2);
++      std::string volumeName, materialName;
++      double densityGcm3 = 0.0;
++      DescribeLocation(pointM, volumeName, materialName, densityGcm3);
++      csv << pointM.x() << ',' << pointM.y() << ',' << pointM.z() << ','
++          << volumeName << ',' << materialName << ',' << densityGcm3 << '\n';
++      ++n;
++    }
++  }
++  return n;
++}
++
++}  // namespace
++
++namespace geomdiag {
++
++bool ParseProbe(const std::string& arg, G4ThreeVector& outPointM)
++{
++  std::vector<double> v;
++  if (!SplitNumbers(arg, ',', 3, v)) return false;
++  outPointM.set(v[0], v[1], v[2]);
++  return true;
++}
++
++bool ParseSlice(const std::string& arg, SliceSpec& outSpec)
++{
++  std::vector<double> v;
++  if (!SplitNumbers(arg, ':', 6, v)) return false;
++  if (v[2] <= v[1] || v[4] <= v[3] || v[5] <= 0.0) return false;
++  const double n1 = static_cast<double>(AxisPointCount(v[1], v[2], v[5]));
++  const double n2 = static_cast<double>(AxisPointCount(v[3], v[4], v[5]));
++  if (n1 * n2 > static_cast<double>(kMaxSlicePoints)) {
++    std::cerr << "slice too large: " << static_cast<long long>(n1 * n2)
++              << " points (max " << kMaxSlicePoints
++              << "); narrow the range or coarsen the step\n";
++    return false;
++  }
++  outSpec.coord = v[0];
++  outSpec.min1 = v[1];
++  outSpec.max1 = v[2];
++  outSpec.min2 = v[3];
++  outSpec.max2 = v[4];
++  outSpec.step = v[5];
++  return true;
++}
++
++int RunCheckGeometry(const std::string& geometryId, int view, long seed,
++                     int resolution, double tolerance, int maxErr)
++{
++  // CheckOverlaps() samples random points on each solid's surface via
++  // G4VSolid::GetPointOnSurface(), which draws from G4UniformRand() i.e. the
++  // process-wide CLHEP::HepRandom engine (see G4QuickRand.hh / the various
++  // solids' GetPointOnSurface implementations under
++  // $(geant4-config --prefix)/include/Geant4). That engine is the same one
++  // seeded above via CLHEP::HepRandom::setTheSeed(), and it is never
++  // reseeded per call, so fixing --seed makes the whole scan reproducible.
++  // Verified empirically: two runs with the same --seed produce
++  // byte-identical OVERLAP-CHECK lines (see T-c).
++  std::cout << "OVERLAP-CHECK-HEADER resolution=" << resolution
++            << " tolerance=" << tolerance << " maxErr=" << maxErr
++            << " seed=" << seed << " g4version=" << G4Version
++            << " geometry=" << geometryId << " view=" << view
++            << " rng-note=CLHEP::HepRandom_process_engine_via_GetPointOnSurface\n";
++
++  auto* store = G4PhysicalVolumeStore::GetInstance();
++  int nVolumes = 0;
++  int nOverlapping = 0;
++  for (auto* pv : *store) {
++    if (pv->GetMotherLogical() == nullptr) continue;
++    ++nVolumes;
++    const G4bool overlap = pv->CheckOverlaps(resolution, tolerance, true, maxErr);
++    if (overlap) ++nOverlapping;
++    std::cout << "OVERLAP-CHECK volume=" << pv->GetName()
++              << " copy=" << pv->GetCopyNo()
++              << " solid=" << pv->GetLogicalVolume()->GetSolid()->GetEntityType()
++              << " result=" << (overlap ? "overlap" : "ok") << "\n";
++  }
++  std::cout << "OVERLAP-CHECK-SUMMARY geometry=" << geometryId
++            << " view=" << view << " volumes=" << nVolumes
++            << " overlapping=" << nOverlapping
++            << " status=" << (nOverlapping > 0 ? "OVERLAPS" : "OK") << "\n";
++  std::cout.flush();
++  return nOverlapping > 0 ? 1 : 0;
++}
++
++void RunDumpGeometry(long volumeStatN)
++{
++  auto* store = G4PhysicalVolumeStore::GetInstance();
++  for (auto* pv : *store) {
++    auto* lv = pv->GetLogicalVolume();
++    auto* solid = lv->GetSolid();
++    auto* mat = lv->GetMaterial();
++    const auto* motherLv = pv->GetMotherLogical();
++
++    double volumeM3 = 0.0;
++    std::string method = "analytic";
++    long nStat = 0;
++    double seM3 = 0.0;
++
++    const auto* boolSolid = dynamic_cast<const G4BooleanSolid*>(solid);
++    if (boolSolid != nullptr) {
++      method = "mc";
++      nStat = volumeStatN;
++      const double vEst = solid->EstimateCubicVolume(static_cast<G4int>(volumeStatN), 0.001);
++      G4ThreeVector pMin, pMax;
++      solid->BoundingLimits(pMin, pMax);
++      const double vBbox = (pMax.x() - pMin.x()) * (pMax.y() - pMin.y()) * (pMax.z() - pMin.z());
++      const double p = vBbox > 0.0 ? vEst / vBbox : 0.0;
++      volumeM3 = vEst / (m * m * m);
++      seM3 = (vBbox / (m * m * m)) * std::sqrt(p * (1.0 - p) / static_cast<double>(volumeStatN));
++    }
++    else {
++      volumeM3 = solid->GetCubicVolume() / (m * m * m);
++    }
++
++    std::cout << "DUMP-VOLUME name=" << pv->GetName()
++              << " copy=" << pv->GetCopyNo()
++              << " mother=" << (motherLv != nullptr ? motherLv->GetName() : G4String("none"))
++              << " logical=" << lv->GetName()
++              << " solid=" << solid->GetName()
++              << " type=" << solid->GetEntityType()
++              << " material=" << mat->GetName()
++              << " density_g_cm3=" << mat->GetDensity() / (g / cm3)
++              << " volume_m3=" << volumeM3
++              << " method=" << method;
++    if (method == "mc") {
++      std::cout << " n=" << nStat << " se_m3=" << seM3;
++    }
++    std::cout << "\n";
++  }
++  std::cout.flush();
++}
++
++void RunProbe(const G4ThreeVector& pointM)
++{
++  std::string volumeName, materialName;
++  double densityGcm3 = 0.0;
++  DescribeLocation(pointM, volumeName, materialName, densityGcm3);
++  std::cout << "PROBE x_m=" << pointM.x() << " y_m=" << pointM.y()
++            << " z_m=" << pointM.z() << " volume=" << volumeName
++            << " material=" << materialName
++            << " density_g_cm3=" << densityGcm3 << "\n";
++  std::cout.flush();
++}
++
++void RunSliceY(const std::string& geometryId, int view,
++               const std::string& outDir, const SliceSpec& spec)
++{
++  // Clear the sign bit on zero so a -0.0 coord (numerically identical to
++  // 0.0) does not produce a filename with a spurious "-0".
++  const double coordForName = (spec.coord == 0.0) ? 0.0 : spec.coord;
++  std::ostringstream nameStream;
++  nameStream << outDir << "/" << geometryId << "_view" << view
++             << "_slice_y" << coordForName << ".csv";
++  const std::string path = nameStream.str();
++  const double y = spec.coord;
++  const long points = WriteSliceCsv(
++      path, spec, [y](double x, double z) { return G4ThreeVector(x, y, z); });
++  std::cout << "SLICE file=" << path << " points=" << points << "\n";
++  std::cout.flush();
++}
++
++void RunSliceZ(const std::string& geometryId, int view,
++               const std::string& outDir, const SliceSpec& spec)
++{
++  // Clear the sign bit on zero so a -0.0 coord (numerically identical to
++  // 0.0) does not produce a filename with a spurious "-0".
++  const double coordForName = (spec.coord == 0.0) ? 0.0 : spec.coord;
++  std::ostringstream nameStream;
++  nameStream << outDir << "/" << geometryId << "_view" << view
++             << "_slice_z" << coordForName << ".csv";
++  const std::string path = nameStream.str();
++  const double z = spec.coord;
++  const long points = WriteSliceCsv(
++      path, spec, [z](double x, double y) { return G4ThreeVector(x, y, z); });
++  std::cout << "SLICE file=" << path << " points=" << points << "\n";
++  std::cout.flush();
++}
++
++}  // namespace geomdiag
