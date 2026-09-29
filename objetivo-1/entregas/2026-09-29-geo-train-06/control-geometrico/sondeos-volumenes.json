@@ -1,0 +1,120 @@
+{
+  "probes": [
+    {
+      "x_m": 21.354,
+      "y_m": -30.722,
+      "z_m": 137.795,
+      "analytic_material_class": "anomaly_1",
+      "analytic_density_g_cm3": 3.285,
+      "a_material_class": "anomaly_1",
+      "a_density_g_cm3": 3.285,
+      "b_material_class": "anomaly_1",
+      "b_density_g_cm3": 3.285,
+      "b_matches_analytic": true
+    },
+    {
+      "x_m": 20.3,
+      "y_m": -24.5,
+      "z_m": 300.0,
+      "analytic_material_class": "anomaly_0",
+      "analytic_density_g_cm3": 1.832,
+      "a_material_class": "anomaly_0",
+      "a_density_g_cm3": 1.832,
+      "b_material_class": "anomaly_0",
+      "b_density_g_cm3": 1.832,
+      "b_matches_analytic": true
+    },
+    {
+      "x_m": 20.3,
+      "y_m": -24.5,
+      "z_m": 40.0,
+      "analytic_material_class": "anomaly_0",
+      "analytic_density_g_cm3": 1.832,
+      "a_material_class": "anomaly_0",
+      "a_density_g_cm3": 1.832,
+      "b_material_class": "anomaly_0",
+      "b_density_g_cm3": 1.832,
+      "b_matches_analytic": true
+    },
+    {
+      "x_m": 21.35,
+      "y_m": -30.7,
+      "z_m": 90.0,
+      "analytic_material_class": "anomaly_0",
+      "analytic_density_g_cm3": 1.832,
+      "a_material_class": "anomaly_0",
+      "a_density_g_cm3": 1.832,
+      "b_material_class": "anomaly_0",
+      "b_density_g_cm3": 1.832,
+      "b_matches_analytic": true
+    },
+    {
+      "x_m": 32.2,
+      "y_m": -130.0,
+      "z_m": 137.8,
+      "analytic_material_class": "anomaly_1",
+      "analytic_density_g_cm3": 3.285,
+      "a_material_class": "anomaly_1",
+      "a_density_g_cm3": 3.285,
+      "b_material_class": "anomaly_1",
+      "b_density_g_cm3": 3.285,
+      "b_matches_analytic": true
+    },
+    {
+      "x_m": 200.0,
+      "y_m": 0.0,
+      "z_m": 50.0,
+      "analytic_material_class": "rock",
+      "analytic_density_g_cm3": 2.65,
+      "a_material_class": "rock",
+      "a_density_g_cm3": 2.65,
+      "b_material_class": "rock",
+      "b_density_g_cm3": 2.65,
+      "b_matches_analytic": true
+    },
+    {
+      "x_m": 0.0,
+      "y_m": 0.0,
+      "z_m": 420.0,
+      "analytic_material_class": "air",
+      "analytic_density_g_cm3": 0.001225,
+      "a_material_class": "air",
+      "a_density_g_cm3": 0.00120479,
+      "b_material_class": "air",
+      "b_density_g_cm3": 0.00120479,
+      "b_matches_analytic": true
+    }
+  ],
+  "all_b_probes_match_analytic": true,
+  "volumes": [
+    {
+      "name": "anomaly_0",
+      "expected_m3": 387408.5,
+      "expected_se_m3": 44.7,
+      "observed_m3": 387492.0,
+      "observed_se_mc_m3": 90.6929,
+      "observed_print_precision_floor_m3": 0.5,
+      "observed_se_m3": 90.69427826720933,
+      "combined_se_m3": 101.11153302373572,
+      "diff_m3": 83.5,
+      "n_combined_se": 0.8258207298706326,
+      "within_3_se": true,
+      "note": "471050.4 - 83641.9 (raw conduit minus audited MC overlap volume, both analytic/audit exact up to the stated SE)"
+    },
+    {
+      "name": "anomaly_1",
+      "expected_m3": 1215148.5,
+      "expected_se_m3": 0.0,
+      "observed_m3": 1215150.0,
+      "observed_se_mc_m3": 0.0,
+      "observed_print_precision_floor_m3": 5.0,
+      "observed_se_m3": 5.0,
+      "combined_se_m3": 5.0,
+      "diff_m3": 1.5,
+      "n_combined_se": 0.3,
+      "within_3_se": true,
+      "note": "unclipped ellipsoid, exact analytic volume"
+    }
+  ],
+  "all_volumes_within_3_se": true
+}

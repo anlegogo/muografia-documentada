@@ -1,0 +1,25 @@
+=== oe1-ctrl-t2t4 (T2, T4) — 2026-09-29T08:19:19Z ===
+job_id=30466 node=guane03.sc3.uis.edu.co
+--- module list ---
+
+Currently Loaded Modules:
+  1) gnu14/14.2.0   2) geant4/11.4.2
+
+ 
+
+--- geant4-config --version ---
+11.4.2
+--- binary sha256 ---
+935e8ceca0d4010929d6791c4cf3e78cd0a47d43def96cd3fdbb8bb5d3b8d7b1  /home/dapintoo/oe1-trabajo/build-A/muography_sim
+7c5416a90563ec8b17446f1d20ec8986aafb5401d5e833bff36ec512413d41f6  /home/dapintoo/oe1-trabajo/build-B/muography_sim
+--- geometry ---
+c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed  /home/dapintoo/oe1-trabajo/catalogo/geo-train-06.json
+--- fixed parameters ---
+geometry=geo-train-06 view=0 seed_diag=20260929 seed_t4=2026092900  events_t4=10000 threads_t4=8 volume_stat_n=10000000
+probes: 21.354,-30.722,137.795 20.3,-24.5,300 20.3,-24.5,40 21.35,-30.7,90 32.2,-130,137.8 200,0,50 0,0,420
+slice-y: -30.7:-150:150:0:420:1
+slice-z: 137.8:-150:150:-200:150:1
+t2 variant=A exit_code=0
+t2 variant=B exit_code=0
+t4 variant=A exit_code=0
+t4 variant=B exit_code=0

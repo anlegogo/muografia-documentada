@@ -1,0 +1,49 @@
+{
+  "per_variant": {
+    "A": {
+      "y": {
+        "plane": "y",
+        "plane_coord": -30.7,
+        "n_points": 126721,
+        "n_mismatch_total": 20,
+        "n_mismatch_boundary": 20,
+        "n_mismatch_air_pair": 0,
+        "n_mismatch_unexplained": 0,
+        "half_step_m": 0.5
+      },
+      "z": {
+        "plane": "z",
+        "plane_coord": 137.8,
+        "n_points": 105651,
+        "n_mismatch_total": 0,
+        "n_mismatch_boundary": 0,
+        "n_mismatch_air_pair": 0,
+        "n_mismatch_unexplained": 0,
+        "half_step_m": 0.5
+      }
+    },
+    "B": {
+      "y": {
+        "plane": "y",
+        "plane_coord": -30.7,
+        "n_points": 126721,
+        "n_mismatch_total": 20,
+        "n_mismatch_boundary": 20,
+        "n_mismatch_air_pair": 0,
+        "n_mismatch_unexplained": 0,
+        "half_step_m": 0.5
+      },
+      "z": {
+        "plane": "z",
+        "plane_coord": 137.8,
+        "n_points": 105651,
+        "n_mismatch_total": 0,
+        "n_mismatch_boundary": 0,
+        "n_mismatch_air_pair": 0,
+        "n_mismatch_unexplained": 0,
+        "half_step_m": 0.5
+      }
+    }
+  },
+  "b_zero_unexplained_mismatches": true
+}

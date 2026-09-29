@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "generated_utc": "2026-09-29T09:15:05.644374+00:00",
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "script_sha256": "2acc8d6d62e667fc154ab5c81f35da5dea279286b1df5ceba37f60bdbfa23e09",
+    "entrega_dir": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/control-geometrico",
+    "detail_geometry": "geo-train-06",
+    "detail_view": 0
+  },
+  "T1": {
+    "pass": true,
+    "detail": {
+      "n_runs": 228,
+      "expected_n_runs": 228,
+      "a_defective_geometries": [
+        "geo-gen-01",
+        "geo-test-01",
+        "geo-test-03",
+        "geo-train-06",
+        "geo-train-08",
+        "geo-train-11"
+      ],
+      "a_clean_geometries": [
+        "geo-test-02",
+        "geo-train-01",
+        "geo-train-02",
+        "geo-train-03",
+        "geo-train-04",
+        "geo-train-05",
+        "geo-train-07",
+        "geo-train-09",
+        "geo-train-10",
+        "geo-train-12",
+        "geo-val-01",
+        "geo-val-02",
+        "geo-val-03"
+      ],
+      "a_partial_geometries": [],
+      "b_geometries_with_overlaps": [],
+      "expected_defective_geometries": [
+        "geo-gen-01",
+        "geo-test-01",
+        "geo-test-03",
+        "geo-train-06",
+        "geo-train-08",
+        "geo-train-11"
+      ],
+      "pass": true,
+      "n_anomalies": 0
+    }
+  },
+  "T2": {
+    "pass": true,
+    "probes_pass": true,
+    "volumes_pass": true,
+    "slices_pass": true
+  },
+  "T3": {
+    "png_files": [
+      "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/control-geometrico/t3_corte_y-30.7_materiales.png",
+      "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/control-geometrico/t3_corte_y-30.7_discrepancias.png",
+      "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/control-geometrico/t3_corte_z137.8_materiales.png",
+      "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/control-geometrico/t3_corte_z137.8_discrepancias.png"
+    ],
+    "n_files": 4
+  },
+  "T4": {
+    "pass": true,
+    "variant_B": {
+      "variant": "B",
+      "run_done": true,
+      "n_GeomVol1002": 0,
+      "n_GeomNav": 0,
+      "hist_non_empty": true,
+      "hist_sum": 7601.0,
+      "events_transported": 10000,
+      "detected_in_bins": 7601,
+      "events_transported_matches_expected": true,
+      "hist_sum_matches_detected": true,
+      "pass": true
+    },
+    "variant_A_reference": {
+      "variant": "A",
+      "run_done": true,
+      "n_GeomVol1002": 1,
+      "n_GeomNav": 0,
+      "hist_non_empty": true,
+      "hist_sum": 7601.0,
+      "events_transported": 10000,
+      "detected_in_bins": 7601,
+      "events_transported_matches_expected": true,
+      "hist_sum_matches_detected": true,
+      "pass": null,
+      "reference_note": "variant A is expected to print GeomVol1002 at construction; not a locked criterion"
+    }
+  },
+  "overall_pass": true
+}

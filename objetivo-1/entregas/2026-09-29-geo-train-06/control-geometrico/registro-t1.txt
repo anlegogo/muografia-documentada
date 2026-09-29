@@ -1,0 +1,39 @@
+=== oe1-ctrl-t1 (T1) — 2026-09-29T08:22:20Z ===
+job_id=30467 node=guane02.sc3.uis.edu.co
+--- module list ---
+
+Currently Loaded Modules:
+  1) gnu14/14.2.0   2) geant4/11.4.2
+
+ 
+
+--- geant4-config --version ---
+11.4.2
+--- binary sha256 ---
+935e8ceca0d4010929d6791c4cf3e78cd0a47d43def96cd3fdbb8bb5d3b8d7b1  /home/dapintoo/oe1-trabajo/build-A/muography_sim
+7c5416a90563ec8b17446f1d20ec8986aafb5401d5e833bff36ec512413d41f6  /home/dapintoo/oe1-trabajo/build-B/muography_sim
+--- fixed parameters ---
+seed=20260929 resolution=100000 tolerance=0 threads=1
+--- catalog (19 geometries) ---
+/home/dapintoo/oe1-trabajo/catalogo/geo-gen-01.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-test-01.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-test-02.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-test-03.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-train-01.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-train-02.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-train-03.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-train-04.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-train-05.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-train-06.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-train-07.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-train-08.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-train-09.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-train-10.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-train-11.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-train-12.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-val-01.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-val-02.json
+/home/dapintoo/oe1-trabajo/catalogo/geo-val-03.json
+n_tasks=228 (expected 228)
+n_status_files=228 (expected 228)
+resumen_tsv=/home/dapintoo/oe1-trabajo/salidas/control-geometrico/resultados-t1.tsv

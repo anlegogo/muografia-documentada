@@ -1,0 +1,34 @@
+=== T2 diagnostic variant=B — 2026-09-29T08:19:24Z ===
+command: /home/dapintoo/oe1-trabajo/build-B/muography_sim --geometry /home/dapintoo/oe1-trabajo/catalogo/geo-train-06.json --view 0 --tables /home/dapintoo/oe1-trabajo/tablas --seed 20260929 --dump-geometry --volume-stat 10000000 --probe 21.354,-30.722,137.795 --probe 20.3,-24.5,300 --probe 20.3,-24.5,40 --probe 21.35,-30.7,90 --probe 32.2,-130,137.8 --probe 200,0,50 --probe 0,0,420 --slice-y -30.7:-150:150:0:420:1 --slice-z 137.8:-150:150:-200:150:1 --out /home/dapintoo/oe1-trabajo/salidas/control-geometrico/t2/B
+
+**************************************************************
+ Geant4 version Name: geant4-11-04-patch-02 [MT]   (12-June-2026)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+Checking overlaps for volume edifice:0 (G4Cons) ... OK! 
+Checking overlaps for volume anomaly_0:0 (G4SubtractionSolid) ... OK! 
+ANOMALY-CSG name=anomaly_0 kind=conduit clipped=no minus=[1] solid=G4SubtractionSolid placed=yes
+Checking overlaps for volume anomaly_1:0 (G4Ellipsoid) ... OK! 
+ANOMALY-CSG name=anomaly_1 kind=dense_body clipped=no minus=[] solid=G4Ellipsoid placed=yes
+Checking overlaps for volume detector:0 (G4Box) ... OK! 
+DUMP-VOLUME name=world copy=0 mother=none logical=world_log solid=world_solid type=G4Box material=G4_AIR density_g_cm3=0.00120479 volume_m3=5.14486e+11 method=analytic
+DUMP-VOLUME name=edifice copy=0 mother=world_log logical=edifice_log solid=edifice_solid type=G4Cons material=standard_rock density_g_cm3=2.65 volume_m3=1.13279e+08 method=analytic
+DUMP-VOLUME name=anomaly_0 copy=0 mother=edifice_log logical=anomaly_0_log solid=anomaly_0_minus_1 type=G4SubtractionSolid material=anomaly_0_mat density_g_cm3=1.832 volume_m3=387492 method=mc n=10000000 se_m3=90.6929
+DUMP-VOLUME name=anomaly_1 copy=0 mother=edifice_log logical=anomaly_1_log solid=anomaly_1_prim type=G4Ellipsoid material=anomaly_1_mat density_g_cm3=3.285 volume_m3=1.21515e+06 method=analytic
+DUMP-VOLUME name=detector copy=0 mother=world_log logical=detector_log solid=detector_solid type=G4Box material=G4_AIR density_g_cm3=0.00120479 volume_m3=3600 method=analytic
+PROBE x_m=21.354 y_m=-30.722 z_m=137.795 volume=anomaly_1 material=anomaly_1_mat density_g_cm3=3.285
+PROBE x_m=20.3 y_m=-24.5 z_m=300 volume=anomaly_0 material=anomaly_0_mat density_g_cm3=1.832
+PROBE x_m=20.3 y_m=-24.5 z_m=40 volume=anomaly_0 material=anomaly_0_mat density_g_cm3=1.832
+PROBE x_m=21.35 y_m=-30.7 z_m=90 volume=anomaly_0 material=anomaly_0_mat density_g_cm3=1.832
+PROBE x_m=32.2 y_m=-130 z_m=137.8 volume=anomaly_1 material=anomaly_1_mat density_g_cm3=3.285
+PROBE x_m=200 y_m=0 z_m=50 volume=edifice material=standard_rock density_g_cm3=2.65
+PROBE x_m=0 y_m=0 z_m=420 volume=world material=G4_AIR density_g_cm3=0.00120479
+SLICE file=/home/dapintoo/oe1-trabajo/salidas/control-geometrico/t2/B/geo-train-06_view0_slice_y-30.7.csv points=126721
+SLICE file=/home/dapintoo/oe1-trabajo/salidas/control-geometrico/t2/B/geo-train-06_view0_slice_z137.8.csv points=105651
+exit_code=0
