@@ -5,7 +5,7 @@ dacc372cd6aed2c53117e15f4f26651b3f60d97100f5ce117e8e2b9423548d76  ./analisis/PRE
 7e0fc4516d1e92caa61e0eafe6ceb2e52d8872e9eb2451c66ae7f8363b04d8eb  ./analisis/registro-orientacion-suma.png
 1e1ad3d94e7e34bfdb859a403ebf12fb17424fe3005158de003f2e26c1f4a620  ./analisis/registro-orientacion.json
 32dd88105e0e386a3d4762cd82b89fff0a4b141688494160d5a49d7b3fd9474d  ./analisis/registro-orientacion.png
-657bdf2460aeb2e58e43c948cef5a5f62b5010f0972217f30037c213345f887d  ./analisis/RESULTADOS_PILOTO.md
+f78771f8e41b7bbf0398d30210d9417fe963e68cea74f55eea21fcff8ae9e0bc  ./analisis/RESULTADOS_PILOTO.md
 2618770676a8e50eb01f599669ab5adf006eef1a19d0ac214cf41b77a2a7e644  ./analisis/resumen-piloto.json
 7546773bc4a5e4e13c8a1ada843c0b6f9559d238c5b6f1a6bcbbbac6d0907d8c  ./analisis/roi-mascaras.npz
 8f8fd6c1ee58a083e3f9d540cc7c296b9c4d451877de0676730eac8b396b04ac  ./analisis/roi-preregistro.json
@@ -20,7 +20,7 @@ e022b1b8a4f8b04ba4f526013a0f4270bf8af7b1f0cd1f1e5983f8690149b74e  ./codigo/binar
 c965daa1deada110b079ac1fde2ea61ea14c16edd0653930f882d3163d606846  ./codigo/build-A0.log
 dfc40516aabaee5bd434a0225d393c87146358cd1ee0ca4f6241758b20d0024f  ./codigo/build-B.log
 56c61ea06261893e93eac97b3d7acb8bd848e81719adeb1ffff1b05d1dded2ea  ./codigo/compilacion.txt
-82b544de721c56abd887271bdf36d7afcc668f0943bc497eab29aa48006a8e47  ./codigo/correspondencia-commits.txt
+63d4158f1b69c60b4e0c74d2bdebad53f6b4dea855c565c33606e2eab14dabe4  ./codigo/correspondencia-commits.txt
 dbb1576bae72c3425b074610a82717faa85f97a2ef1cb79bdcd2ce8aae1cc673  ./codigo/diff-A-B.txt
 af1db9c99efa2d97b395f11b2b758bb0cbe0d67cb94d96f076953f3f0e374acc  ./codigo/P0.diff
 fb464c010986d0807a1bffb34cc56f2fb92f0211a77e680ddb6a09f2ea7df03f  ./codigo/P1.diff

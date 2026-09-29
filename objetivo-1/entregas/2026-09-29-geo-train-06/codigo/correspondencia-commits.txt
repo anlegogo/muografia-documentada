@@ -6,7 +6,7 @@ Repositorio de código: muography-dl-reconstruction, rama fix/oe1-geometry-csg (
 - 18dd1fc (18dd1fc109f29171b5e1bab8ce79a3e254546822) feat(analysis): add OE1 geometry audit for anomaly overlaps and containment
 - 9520170 (95201700ce090aea5bdce9b0d3816a55f389b4fc) feat(sim): add geometry diagnostic modes to muography_sim -> código A (A0 + P0)
 - f1edc80 (f1edc8008e3742aa4cdeaa55edcb2057af3b0238) fix(sim): resolve anomaly overlaps with ordered CSG priority -> código B (A + P1)
-- 992dc08, fa21f57, 0c8fd33: scripts de análisis (control geométrico T1–T4, pre-registro de ROI y verificaciones de registro, análisis del piloto).
+- 992dc08, fa21f57, e771376: scripts de análisis (control geométrico T1–T4, pre-registro de ROI y verificaciones de registro, análisis del piloto).
 
 P0.diff y P1.diff de esta carpeta son los diffs del directorio scripts/simulation/geant4_app entre 18dd1fc y 9520170, y entre 18dd1fc y f1edc80, respectivamente.
 

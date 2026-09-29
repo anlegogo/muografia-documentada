@@ -20,7 +20,7 @@ Fuente: `../piloto/envio.txt`, `../piloto/sacct-30468-30469.txt`. El script de e
 
 **Trazabilidad de código y pre-registro frente al envío del piloto.** El pre-registro de ROI (`PREREGISTRO_ROI.md`, `roi-preregistro.json`, `roi-mascaras.npz`) quedó fijado en el commit `cc7dc76` del repositorio de la entrega documentada (`docs(oe1): añade el pre-registro de ROI y las verificaciones de registro en azimut del piloto`), con fecha de commit `2026-09-29T10:57:07Z` (huso `-05:00` reportado como `05:57:07 -0500`; verificado con `git show -s --format="%ci" cc7dc76`). El envío del piloto (`envio.txt`) quedó registrado con `fecha_utc: 2026-09-29T10:57:45Z`. El commit del pre-registro precede al envío por 38 s: las cinco ROI, sus máscaras y el efecto esperado (`Δ_max`) de la sección 4 de `PREREGISTRO_ROI.md` quedaron fijados antes de que existiera cualquier dato del piloto real, de modo que la interpretación de la sección 5 de este documento no pudo ajustarse a lo que el piloto terminara mostrando.
 
-El subcomando `analyze` de `scripts/analysis/oe1_pilot_roi.py`, que produjo los resultados de la sección 4, quedó versionado en el commit `0c8fd33` del repositorio de código (`feat(analysis): add pre-registered OE1 pilot ROI analysis`; sha-256 del archivo `5b82b05f9975…30a5a42468`, el mismo que registra `metadata.script_sha256` de `roi-resultados.json`). Se escribió mientras corría el piloto, implementando literalmente las secciones 6 y 7 del pre-registro, y se probó solo con datos sintéticos. Antes de terminarlo ya se conocían la validación de las seis corridas y la salida del comparador del revisor (eficiencias globales idénticas entre A y B); a partir del diseño de semillas comunes se le añadió el tratamiento de varianza nula entre réplicas. Ninguna cifra por ROI del piloto se calculó antes de ejecutar `analyze`.
+El subcomando `analyze` de `scripts/analysis/oe1_pilot_roi.py`, que produjo los resultados de la sección 4, quedó versionado en el commit `e771376` del repositorio de código (`feat(analysis): add pre-registered OE1 pilot ROI analysis`; sha-256 del archivo `5b82b05f9975…30a5a42468`, el mismo que registra `metadata.script_sha256` de `roi-resultados.json`). Se escribió mientras corría el piloto, implementando literalmente las secciones 6 y 7 del pre-registro, y se probó solo con datos sintéticos. Antes de terminarlo ya se conocían la validación de las seis corridas y la salida del comparador del revisor (eficiencias globales idénticas entre A y B); a partir del diseño de semillas comunes se le añadió el tratamiento de varianza nula entre réplicas. Ninguna cifra por ROI del piloto se calculó antes de ejecutar `analyze`.
 
 ## 2. Validación de las 6 corridas
 
@@ -164,7 +164,7 @@ Como referencia de escala, la exposición de campaña por vista es de ≈3,6×10
 **Limitaciones:**
 
 - Las cinco ROI son inconcluyentes por potencia insuficiente (sección 5); ninguna cifra de este documento demuestra ni descarta un efecto de la corrección B1 sobre los conteos detectados.
-- El subcomando `analyze` se versionó (commit `0c8fd33`) después de ejecutarse sobre los datos del piloto; el archivo versionado es idéntico (mismo sha-256 `5b82b05f…`) al que produjo `roi-resultados.json`.
+- El subcomando `analyze` se versionó (commit `e771376`) después de ejecutarse sobre los datos del piloto; el archivo versionado es idéntico (mismo sha-256 `5b82b05f…`) al que produjo `roi-resultados.json`.
 - Los conteos de `GeomVol1002`/`GeomNav` se obtuvieron por coincidencia de texto (`grep -c`) sobre `run.log`; no se auditó el resto del registro de Geant4 en busca de otras clases de aviso.
 - `Δ_max` (sección 4 de `PREREGISTRO_ROI.md`) proviene de un motor analítico sin dispersión múltiple ni fluctuaciones de pérdida de energía; la sección 5.2 de ese documento indica que puede sobreestimar el efecto real en Geant4 en, aproximadamente, un orden de magnitud.
 - El presupuesto de la sección 6 es una propuesta con supuestos explícitos, no una medición ni una recomendación de ejecución.
@@ -211,5 +211,5 @@ python scripts/analysis/test_oe1_pilot_roi.py
 | `build-B/muography_sim` | `7c5416a90563ec8b17446f1d20ec8986aafb5401d5e833bff36ec512413d41f6` |
 | `ejecutar_piloto_oe1.sbatch` | `8178a3b2f377f8f06870eb27088c117a5086d33b524a304b058268bf93732de9` |
 | `comparar_piloto_oe1.py` | `16ccee3028bc8233f25ff668b7ebdb9abaa3805a84e6c20e9cacfd718f69fd46` |
-| `oe1_pilot_roi.py` (commit `0c8fd33`, con `analyze`) | `5b82b05f997514b20aad61804817c9478ead057fd8f57db070ba2230a5a42468` |
+| `oe1_pilot_roi.py` (commit `e771376`, con `analyze`) | `5b82b05f997514b20aad61804817c9478ead057fd8f57db070ba2230a5a42468` |
 | `oe1_pilot_roi.py` (commit `fa21f57`, pre-registro, sin `analyze`) | `5204191864c83fa09d3107bb9004f2009f83fb9453f779a66dd438cf9bc8435b` |
