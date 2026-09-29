@@ -1,0 +1,29 @@
+# Registro complementario del entorno — OE1, primera entrega geo-train-06 (U1)
+fecha_utc: 2026-09-29T05:20Z (actualizado 2026-09-29T06:30Z)
+
+## Revisiones de los repositorios usados
+- Código publicado (PUB): github.com/Dp100131/muography-dl-reconstruction, commit b88fa576494cb8a664c46b8c94c5918c5097d616 (base de la rama fix/oe1-geometry-csg).
+- Repositorio de revisión: github.com/anlegogo/muografia-documentada, commit 1a2153220244db2b3167b12080bb6579e1fad13d (base de la rama oe1/geo-train-06-piloto).
+- Cambios sin confirmar al inicio: ninguno en el código; solo la entrada del clon anidado en .gitignore de PUB.
+
+## Código de la campaña (A0) en SC3
+- Copia exacta de ~/muography-sim/simulation/geant4_app y ~/muography-sim/third_party en ~/oe1-trabajo/A0 (25 archivos; A0-fuentes.sha256 idéntico a bundle-fuentes.sha256).
+- El archivo VERSION del bundle declara commit=30fd245021404a8771190190af71f62e89a19f05, pero src/DetectorConstruction.cc fue editado el 2026-08-30T20:03 (-0500) y contiene kScoringHalfM = 300.0 (plano de registro de 600 × 600 m). Su contenido, normalizando fines de línea, coincide con muography-thesis@653f0fd (sha256 sin CR: 4e2da35ec7db37d26e96389261ef7d74eb5f9c55941b6b03ebba0069f21d1bd3). El archivo del bundle tiene fines de línea CRLF.
+- El resto de fuentes de A0 coincide byte a byte con PUB, salvo CMakeLists.txt: la ruta de third_party (../../third_party en el bundle, ../third_party en PUB) y el texto de un mensaje de error. Ninguna diferencia afecta al binario.
+- Catálogo (19 JSON) y tablas del generador (row_weights_30d.txt, p_cdf.txt, meta.json) copiados a ~/oe1-trabajo/catalogo y ~/oe1-trabajo/tablas: sha256 idénticos a PUB (fuentes.sha256).
+- El binario de la campaña ya no existe (no hay ~/muography-sim/build_sc3). A0 se recompila desde estas fuentes.
+- Compilación documentada en el bundle (cluster/sc3/README.md, línea 33): cmake -S simulation/geant4_app -B build_sc3 && cmake --build build_sc3 -j4 (sin CMAKE_BUILD_TYPE).
+
+## Física y transporte (código de A0)
+- Lista de física FTFP_BERT (muography_sim.cc de A0, idéntico a PUB@b88fa57, línea 93), corte de producción por defecto 1 m (línea 94).
+- Gestor de ejecución: G4RunManagerType::Default crea un G4TaskRunManager (modo por tareas, PTL) en el módulo geant4/11.4.2; comprobado con entorno/rmtype.cc (salida en entorno/rmtype.out). G4RUN_MANAGER_TYPE no está definido.
+- Secundarios eliminados al crearse: StackingAction devuelve fKill para todo track con ParentID distinto de 0.
+- Generador dirigido por tablas (row_weights_30d.txt, p_cdf.txt, meta.json); detector virtual de 1,2 × 1,2 m a 1000 m y 1,5 m de altura; plano auxiliar de registro de 600 × 600 m.
+
+## Diferencias respecto del entorno de campaña
+- La campaña corrió con 24 hilos por vista (sacct 29628: AllocCPUS 24, legacy). El piloto usa 8 hilos en ambas variantes.
+- scripts/simulation/docker/Dockerfile declara Geant4 v11.3.2 con una nota TODO; no se usa en esta entrega. Todo se ejecuta con el módulo geant4/11.4.2 de SC3, el mismo que declaran los datos de la campaña (P-02).
+- /scratch no es escribible para esta cuenta; todo el trabajo va en $HOME/oe1-trabajo (cuota de /home: 18628M usados de 20480M en la comprobación inicial, 05:12Z; 18630M en el registro de entorno, 05:15Z).
+
+## Registros históricos
+- ~/muography-sim/logs contiene 194 logs de bloques; la raíz del bundle contiene 5 logs muo-smoke-*.out (29474, 29475, 29477, 29480, 29484). Total 199, coherente con advertencias-simulacion.json.

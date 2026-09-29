@@ -1,0 +1,95 @@
+# Entorno efectivo de trabajo — OE1, primera entrega geo-train-06 (registro U1)
+fecha_utc (bloque Geant4 regenerado 2026-09-29T06:28:03Z): 2026-09-29T05:15:22Z
+
+## Host
+guane.sc3.uis.edu.co
+Linux guane.sc3.uis.edu.co 5.14.0-687.39.1.el9_8.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Aug 13 13:06:27 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+NAME="Rocky Linux"
+VERSION="9.8 (Blue Onyx)"
+CPU(s):                                  16
+Model name:                              Intel(R) Xeon(R) CPU           E5640  @ 2.67GHz
+Thread(s) per core:                      2
+Core(s) per socket:                      4
+Socket(s):                               2
+
+## Modulos (module purge; module load gnu14/14.2.0 geant4/11.4.2)
+Currently Loaded Modules:
+  1) gnu14/14.2.0   2) geant4/11.4.2
+ 
+
+## Geant4
+version: 11.4.2
+prefix: /opt/ohpc/pub/apps/geant4/11.4.2
+features (geant4-config --features, verbatim):
+Known Features:
+ staticlibs[no]
+ multithreading[yes]
+ smartstack[no]
+ php_as_hp[no]
+ clhep[yes]
+ expat[no]
+ zlib[yes]
+ gdml[no]
+ ptl[yes]
+ usolids[no]
+ freetype[no]
+ hdf5[no]
+ g3tog4[no]
+ qt[no]
+ motif[no]
+ raytracer-x11[no]
+ opengl-x11[no]
+ openinventor[no]
+ vtk[no]
+gestor de ejecucion por defecto (G4RunManagerType::Default, programa rmtype.cc): RUN-MANAGER class=G4TaskRunManager factory_default=Tasking G4RUN_MANAGER_TYPE=(unset)
+cflags: -DG4UI_USE_TCSH -W -Wall -pedantic -Wno-non-virtual-dtor -Wno-long-long -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-variadic-macros -Wshadow -pipe -pthread -ftls-model=initial-exec -std=c++17 -I/opt/ohpc/pub/apps/geant4/11.4.2/include/Geant4
+libs: -L/opt/ohpc/pub/apps/geant4/11.4.2/lib64 -lG4Tree -lG4FR -lG4GMocren -lG4RayTracer -lG4VRML -lG4ToolsSG -lG4vis_management -lG4modeling -lG4interfaces -lG4geomtext -lG4mctruth -lG4analysis -lG4error_propagation -lG4readout -lG4physicslists -lG4run -lG4event -lG4tracking -lG4parmodels -lG4processes_hadronic -lG4processes_core -lG4digits_hits -lG4track -lG4particles -lG4geometry -lG4materials -lG4graphics_reps -lG4intercoms -lG4global -lG4clhep -lG4zlib -lG4ptl
+
+## Datos de fisica (G4*DATA)
+G4ABLADATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4ABLA3.3
+G4CHANNELINGDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4CHANNELING2.0
+G4ENSDFSTATEDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4ENSDFSTATE3.0
+G4INCLDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4INCL1.3
+G4LEDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4EMLOW8.8
+G4LEVELGAMMADATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/PhotonEvaporation6.1.2
+G4NEUTRONHPDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4NDL4.7.1
+G4PARTICLEXSDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4PARTICLEXS4.2
+G4PIIDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4PII1.3
+G4RADIOACTIVEDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/RadioactiveDecay6.1.2
+G4REALSURFACEDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/RealSurface2.2
+G4SAIDXSDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4SAIDDATA2.0
+
+## Compilador y CMake
+gcc (GCC) 14.2.0
+g++ (GCC) 14.2.0
+cmake version 3.31.8
+GNU ld version 2.35.2-72.el9
+
+## Python del sistema
+Python 3.9.25
+numpy 1.23.5
+
+## Bundle de campana (~/muography-sim, solo lectura)
+commit=30fd245021404a8771190190af71f62e89a19f05
+bundled_at=2026-08-31T00:22:18Z
+-rw-r--r--. 1 dapintoo SIMON 5669 2026-08-30T20:03:11-0500 /home/dapintoo/muography-sim/simulation/geant4_app/src/DetectorConstruction.cc
+/home/dapintoo/muography-sim/simulation/geant4_app/src/DetectorConstruction.cc: C source, UTF-8 Unicode text, with CRLF line terminators
+109:  const double kScoringHalfM = 300.0;
+compilacion documentada en el bundle: 33:          'source cluster/sc3/env.sh && cmake -S simulation/geant4_app -B build_sc3 && cmake --build build_sc3 -j4'
+binario de campana presente: no
+
+## Logs historicos
+bloques en ~/muography-sim/logs: 194
+muo-smoke en raiz del bundle: 5 (muo-smoke-29474.out muo-smoke-29475.out muo-smoke-29477.out muo-smoke-29480.out muo-smoke-29484.out )
+
+## SLURM
+legacy* up infinite 8 24 95500
+gpu_titan up infinite 2 6+ 48000+
+fat up infinite 1 128 708851
+amd up infinite 2 256 385000
+simon||normal
+normal|21-00:00:00|4|node=4
+students|01:00:00||
+
+## Cuota /home
+ ioserver:/home  18630M  20480M  20480M           32485       0       0        
