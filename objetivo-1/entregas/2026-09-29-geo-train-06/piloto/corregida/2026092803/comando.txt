@@ -1,0 +1,1 @@
+/home/dapintoo/oe1-trabajo/build-B/muography_sim --geometry /home/dapintoo/oe1-trabajo/catalogo/geo-train-06.json --view 0 --tables /home/dapintoo/oe1-trabajo/tablas --events 1000000 --seed 2026092803 --threads 8 --out /home/dapintoo/oe1-trabajo/salidas/piloto-geo-train-06-v0/corregida/2026092803 

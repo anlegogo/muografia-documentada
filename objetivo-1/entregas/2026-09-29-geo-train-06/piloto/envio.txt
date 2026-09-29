@@ -1,0 +1,18 @@
+fecha_utc: 2026-09-29T10:57:45Z
+host: guane.sc3.uis.edu.co
+cwd: /home/dapintoo/oe1-trabajo/herramientas
+8178a3b2f377f8f06870eb27088c117a5086d33b524a304b058268bf93732de9  ejecutar_piloto_oe1.sbatch
+935e8ceca0d4010929d6791c4cf3e78cd0a47d43def96cd3fdbb8bb5d3b8d7b1  /home/dapintoo/oe1-trabajo/build-A/muography_sim
+7c5416a90563ec8b17446f1d20ec8986aafb5401d5e833bff36ec512413d41f6  /home/dapintoo/oe1-trabajo/build-B/muography_sim
+
+Currently Loaded Modules:
+  1) gnu14/14.2.0   2) geant4/11.4.2
+
+ 
+
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+ ioserver:/home  18648M  20480M  20480M           33420       0       0        
+sbatch --parsable --partition=legacy --mem=16G --time=00:55:00 --output=/home/dapintoo/oe1-trabajo/salidas/piloto-geo-train-06-v0/slurm/%x-%j.out --export=ALL\,VARIANT=original\,BIN=/home/dapintoo/oe1-trabajo/build-A/muography_sim\,GEOMETRY=/home/dapintoo/oe1-trabajo/catalogo/geo-train-06.json\,TABLES=/home/dapintoo/oe1-trabajo/tablas\,OUTROOT=/home/dapintoo/oe1-trabajo/salidas/piloto-geo-train-06-v0 ejecutar_piloto_oe1.sbatch 
+variant=original job=30468
+sbatch --parsable --partition=legacy --mem=16G --time=00:55:00 --output=/home/dapintoo/oe1-trabajo/salidas/piloto-geo-train-06-v0/slurm/%x-%j.out --export=ALL\,VARIANT=corregida\,BIN=/home/dapintoo/oe1-trabajo/build-B/muography_sim\,GEOMETRY=/home/dapintoo/oe1-trabajo/catalogo/geo-train-06.json\,TABLES=/home/dapintoo/oe1-trabajo/tablas\,OUTROOT=/home/dapintoo/oe1-trabajo/salidas/piloto-geo-train-06-v0 ejecutar_piloto_oe1.sbatch 
+variant=corregida job=30469

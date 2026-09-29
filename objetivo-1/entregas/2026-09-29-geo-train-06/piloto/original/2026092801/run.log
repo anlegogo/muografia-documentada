@@ -1,0 +1,26 @@
+
+**************************************************************
+ Geant4 version Name: geant4-11-04-patch-02 [MT]   (12-June-2026)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+Checking overlaps for volume edifice:0 (G4Cons) ... OK! 
+Checking overlaps for volume anomaly_0:0 (G4Tubs) ... OK! 
+Checking overlaps for volume anomaly_1:0 (G4Ellipsoid) ... 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomVol1002
+      issued by : G4PVPlacement::CheckOverlaps()
+Overlap with volume already placed !
+          Overlap is detected for volume anomaly_1:0 (G4Ellipsoid) with anomaly_0:0 (G4Tubs)
+          overlap at local point (1087.52,1032.69,-67723.2) by 19.5003 m   (max of 91 cases)
+NOTE: Reached maximum fixed number -1- of overlaps reports for this volume !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+Checking overlaps for volume detector:0 (G4Box) ... OK! 
+RUN DONE geo-train-06 view 0: events=1000000 detected=752098 wall_s=81.4951
