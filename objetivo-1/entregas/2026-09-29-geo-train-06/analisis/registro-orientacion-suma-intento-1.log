@@ -1,0 +1,18 @@
+09:31:00Z
+SYMMETRY CHECK FAILED: max relative difference 9.154e-03 in the homogeneous field's azimuth mirror exceeds the floating-point tolerance 1.0e-09 -- this indicates a real azimuth-symmetry bug, not rounding. Stopping without computing region sums.
+  geo-train-12 view1: 9.154e-03
+  geo-train-12 view2: 9.154e-03
+  geo-train-12 view4: 9.154e-03
+  geo-train-12 view5: 9.154e-03
+  geo-train-03 view1: 9.013e-03
+  geo-train-03 view2: 9.013e-03
+  geo-train-03 view4: 9.013e-03
+  geo-train-03 view5: 9.013e-03
+  geo-train-04 view1: 7.484e-03
+  geo-train-04 view2: 7.484e-03
+
+real	14m46.647s
+user	0m0.016s
+sys	0m0.016s
+exit=1
+09:45:47Z

@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "generated_utc": "2026-09-29T10:22:28.775259+00:00",
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "script_sha256": "5204191864c83fa09d3107bb9004f2009f83fb9453f779a66dd438cf9bc8435b",
+    "geometry_id": "geo-train-06",
+    "geometry_path": "scripts/simulation/geometry_catalog/geometries/geo-train-06.json",
+    "geometry_sha256": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+    "view": 0,
+    "min_path_m": 20.0,
+    "seed": 20260929,
+    "seed_used": false,
+    "campaign_hist_path": "../muography-thesis/data/campaign-geant4-merged/geo-train-06/geo-train-06_view0_hist.csv",
+    "campaign_hist_sha256": "78bd394ec73d09a8167d5fd2122386db2778956853c75bdcb54e11d61f33ed14",
+    "tables_meta_path": "scripts/simulation/geant4_app/tables/meta.json",
+    "tables_meta_sha256": "7ac4b6a9353af701b56e5a97ee783ed59072d58df52d80ddbdc0f5f70147d35d",
+    "campaign_exposure_days": 30.0,
+    "pilot_events_per_run": 1000000,
+    "pilot_n_seeds": 3
+  },
+  "notes": {
+    "seed_usage": "This subcommand is fully deterministic (no sampling); --seed is accepted for interface consistency with a future randomized check and is not otherwise used."
+  },
+  "angular_grid": {
+    "n_az": 256,
+    "n_el": 256,
+    "az_half_deg": 29.999999999999996,
+    "el_range_deg": [
+      2.0,
+      47.0
+    ]
+  },
+  "roi_definitions": {
+    "priority_order": [
+      "R_int",
+      "R_cond",
+      "R_body"
+    ],
+    "R_int": "L_int(p) >= 20.0 m (path length inside conduit AND body)",
+    "R_cond": "not R_int; L_cond_only(p) >= 20.0 m",
+    "R_body": "not R_int, not R_cond; L_body_only(p) >= 20.0 m",
+    "R_rock": "L_rock(p) >= 20.0 m (total cone chord) AND L_int+L_cond_only+L_body_only < 1.0 m",
+    "R_sky": "L_rock(p) == 0"
+  },
+  "pixel_counts": {
+    "R_int": 195,
+    "R_cond": 769,
+    "R_body": 830,
+    "R_rock": 12849,
+    "R_sky": 50842,
+    "unclassified": 51,
+    "total": 65536
+  },
+  "material_fields": {
+    "B1": {
+      "description": "overlap assigned to the dense body (received-geometry proxy)",
+      "rho_overlap_g_cm3": 3.285,
+      "lam_sum_30d": 34480336.66560575,
+      "consistency_vs_imaging_opacity_map_max_abs_diff_g_cm2": 8.731149137020111e-11
+    },
+    "conduit_wins": {
+      "description": "overlap assigned to the conduit (upper-bound envelope, not a proposed fix)",
+      "rho_overlap_g_cm3": 1.832,
+      "lam_sum_30d": 34480341.12478068
+    },
+    "homogeneous": {
+      "description": "no anomalies (reference for the sky/rock control)",
+      "lam_sum_30d": 34480310.65395274
+    }
+  },
+  "scale_factor": {
+    "definition": "campaign_detected_total / lambda_B1_sum_30d -- an APPROXIMATE correction of the idealized surrogate flux integral to the Geant4-detected scale for this view; not a claim of exact physical equivalence.",
+    "campaign_detected_total": 27209253.0,
+    "lambda_b1_sum_30d": 34480336.66560575,
+    "value": 0.7891237624469403
+  },
+  "open_sky_normalisation": {
+    "s0_muons_per_view_30d": 36175379.91628132,
+    "source": "scripts/simulation/geant4_app/tables/meta.json"
+  },
+  "roi_effect_table": {
+    "R_int": {
+      "n_pixels": 195,
+      "expected_b1_per_1e6_events": 1.1169479900910462,
+      "expected_conduit_wins_per_1e6_events": 1.2102538615490366,
+      "delta_max_b1_minus_conduit_wins": -0.09330587145799041,
+      "poisson_se_per_run": 1.056857601614828,
+      "predicted_se_mean_3seeds": 0.8629206182459837,
+      "ratio_abs_delta_max_over_se_mean": 0.10812798939449224
+    },
+    "R_cond": {
+      "n_pixels": 769,
+      "expected_b1_per_1e6_events": 15.871365259840157,
+      "expected_conduit_wins_per_1e6_events": 15.874145937400314,
+      "delta_max_b1_minus_conduit_wins": -0.0027806775601568745,
+      "poisson_se_per_run": 3.983888208752871,
+      "predicted_se_mean_3seeds": 3.2528311012450017,
+      "ratio_abs_delta_max_over_se_mean": 0.0008548484300622269
+    },
+    "R_body": {
+      "n_pixels": 830,
+      "expected_b1_per_1e6_events": 5.33409724384313,
+      "expected_conduit_wins_per_1e6_events": 5.334834824240334,
+      "delta_max_b1_minus_conduit_wins": -0.0007375803972031747,
+      "poisson_se_per_run": 2.309566462313464,
+      "predicted_se_mean_3seeds": 1.8857531199042874,
+      "ratio_abs_delta_max_over_se_mean": 0.0003911330647781779
+    },
+    "R_rock": {
+      "n_pixels": 12849,
+      "expected_b1_per_1e6_events": 722.2230066945394,
+      "expected_conduit_wins_per_1e6_events": 722.2230066945394,
+      "delta_max_b1_minus_conduit_wins": 0.0,
+      "poisson_se_per_run": 26.874207089596883,
+      "predicted_se_mean_3seeds": 21.942698203799512,
+      "ratio_abs_delta_max_over_se_mean": 0.0
+    },
+    "R_sky": {
+      "n_pixels": 50842,
+      "expected_b1_per_1e6_events": 751338.0707658178,
+      "expected_conduit_wins_per_1e6_events": 751338.0707658178,
+      "delta_max_b1_minus_conduit_wins": 0.0,
+      "poisson_se_per_run": 866.7975950392444,
+      "predicted_se_mean_3seeds": 707.7372727059186,
+      "ratio_abs_delta_max_over_se_mean": 0.0
+    }
+  },
+  "registration_check": {
+    "orientation": {
+      "B1": {
+        "n_pixels_expected_gt0": 65536,
+        "corr_true": 0.9878830544909446,
+        "corr_az_mirror": 0.9878843510189731,
+        "corr_el_mirror": -0.5434272232334657,
+        "corr_true_vs_az_mirror_map": 0.9999957553666855,
+        "corr_true_vs_el_mirror_map": -0.5588438369477755,
+        "steiger_z_true_vs_az_mirror": -0.7340321392309013,
+        "steiger_z_true_vs_el_mirror": 455.88706539764576,
+        "azimuth_verdict": "inconclusive",
+        "elevation_verdict": "resolved"
+      },
+      "conduit_wins": {
+        "n_pixels_expected_gt0": 65536,
+        "corr_true": 0.987879795042013,
+        "corr_az_mirror": 0.9878817624530779,
+        "corr_el_mirror": -0.5434339107343784,
+        "corr_true_vs_az_mirror_map": 0.9999959053693525,
+        "corr_true_vs_el_mirror_map": -0.5588581267965503,
+        "steiger_z_true_vs_az_mirror": -1.1339352499956181,
+        "steiger_z_true_vs_el_mirror": 455.8669856057024,
+        "azimuth_verdict": "inconclusive",
+        "elevation_verdict": "resolved"
+      },
+      "homogeneous": {
+        "n_pixels_expected_gt0": 65536,
+        "corr_true": 0.9878354752294736,
+        "corr_az_mirror": 0.9878354752294736,
+        "corr_el_mirror": -0.5434417383339385,
+        "corr_true_vs_az_mirror_map": 1.0,
+        "corr_true_vs_el_mirror_map": -0.5588712108639871,
+        "steiger_z_true_vs_az_mirror": 0.0,
+        "steiger_z_true_vs_el_mirror": 455.60218946368803,
+        "azimuth_verdict": "inconclusive",
+        "elevation_verdict": "resolved"
+      }
+    },
+    "independent_code_level_check": {
+      "note": "Pixel registration is additionally guaranteed by exact equivalence of the binning formula, independent of the statistical correlation above: both the surrogate angular grid and the Geant4 histogram bin index use numpy.linspace(min, max, N) CENTER binning over the same [az_half, el_min, el_max] parameters, azimuth measured relative to the same look direction.",
+      "surrogate_file": "scripts/simulation/surrogate/imaging.py",
+      "surrogate_function": "angular_grid, ray_directions",
+      "geant4_file": "scripts/simulation/geant4_app/src/SteppingAction.cc",
+      "geant4_function": "binIndex (line 24), relAz/iAz/iEl (lines 47-58)"
+    },
+    "sky_vs_rock_control": {
+      "mean_counts_per_event_R_sky": 1.4733265909399061e-05,
+      "mean_counts_per_event_R_rock": 2.2491625159098668e-07,
+      "sky_much_higher_than_rock": true
+    },
+    "campaign_to_expected_b1_ratio_per_roi": {
+      "R_int": 1.9139260130419755,
+      "R_cond": 3.7315354159456584,
+      "R_body": 2.498689557488138,
+      "R_rock": 3.157649841227575,
+      "R_sky": 0.7867402679421182
+    },
+    "any_orientation_contradicted": false
+  },
+  "outputs": {
+    "masks_npz": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/analisis/roi-mascaras.npz",
+    "figure_png": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/analisis/roi-preregistro.png"
+  }
+}

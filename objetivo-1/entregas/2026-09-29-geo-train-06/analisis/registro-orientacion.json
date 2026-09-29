@@ -1,0 +1,1794 @@
+{
+  "metadata": {
+    "generated_utc": "2026-09-29T10:21:53.807211+00:00",
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "script_sha256": "5204191864c83fa09d3107bb9004f2009f83fb9453f779a66dd438cf9bc8435b",
+    "campaign_dir": "../muography-thesis/data/campaign-geant4-merged",
+    "geometries": [
+      "geo-train-03",
+      "geo-train-05",
+      "geo-train-07",
+      "geo-train-10",
+      "geo-val-02"
+    ],
+    "views": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "min_counts": 20,
+    "block_px": 16,
+    "n_bootstrap": 2000,
+    "seed": 20260929,
+    "campaign_exposure_days": 30.0
+  },
+  "criterion": {
+    "confirmed": "azimuth registration CONFIRMED if EVERY (geometry, view) case with signal_size >= 50 has delta_r > 0 with its 95% block-bootstrap CI excluding 0, AND no evaluated case (any signal_size) has delta_r < 0 with its 95% CI excluding 0.",
+    "contradicted": "CONTRADICTED if ANY evaluated case has delta_r < 0 with its 95% CI excluding 0 (the mirrored azimuth orientation fits the campaign statistically better than the true one -- a registration bug, not a symmetry artefact).",
+    "unresolved": "otherwise (no case reaches signal_size, or a qualifying case's CI includes 0 -- inconclusive at this sample size, not evidence either way).",
+    "delta_r_definition": "delta_r = corr(c, m) - corr(c, m_mirrored_in_azimuth)",
+    "min_signal_pixels": 50,
+    "signal_definition": "number of evaluated pixels with |m| > 0.05",
+    "exit_code_on_contradicted": 1
+  },
+  "per_case": [
+    {
+      "geometry": "geo-train-03",
+      "view": 0,
+      "seed": 389789499,
+      "azimuth": {
+        "geometry": "geo-train-03",
+        "view": 0,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1176,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.009689328657336,
+        "r_true": 0.0197214956877178,
+        "r_mirror": 0.0197214956877178,
+        "r12_true_vs_mirror": 0.9999999999999999,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 31,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-03",
+        "view": 0,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1176,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.009689328657336,
+        "r_true": 0.0197214956877178,
+        "r_mirror": NaN,
+        "r12_true_vs_mirror": NaN,
+        "steiger_z": NaN,
+        "delta_r": NaN,
+        "delta_r_ci95": [
+          NaN,
+          NaN
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 31,
+        "delta_r_ci95_n_failed_resamples": 2000,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-03",
+      "view": 1,
+      "seed": 1532234516,
+      "azimuth": {
+        "geometry": "geo-train-03",
+        "view": 1,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1189,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.042325565194815,
+        "r_true": 0.0198328658235868,
+        "r_mirror": 0.0198328658235868,
+        "r12_true_vs_mirror": 0.9999999999999999,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-03",
+        "view": 1,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1189,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.042325565194815,
+        "r_true": 0.0198328658235868,
+        "r_mirror": NaN,
+        "r12_true_vs_mirror": NaN,
+        "steiger_z": NaN,
+        "delta_r": NaN,
+        "delta_r_ci95": [
+          NaN,
+          NaN
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 2000,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-03",
+      "view": 2,
+      "seed": 477966397,
+      "azimuth": {
+        "geometry": "geo-train-03",
+        "view": 2,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1182,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.0001301509943246,
+        "r_true": 0.039029982030185366,
+        "r_mirror": 0.039029982030185366,
+        "r12_true_vs_mirror": 1.0,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 30,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-03",
+        "view": 2,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1182,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.0001301509943246,
+        "r_true": 0.039029982030185366,
+        "r_mirror": NaN,
+        "r12_true_vs_mirror": NaN,
+        "steiger_z": NaN,
+        "delta_r": NaN,
+        "delta_r_ci95": [
+          NaN,
+          NaN
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 30,
+        "delta_r_ci95_n_failed_resamples": 2000,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-03",
+      "view": 3,
+      "seed": 356165066,
+      "azimuth": {
+        "geometry": "geo-train-03",
+        "view": 3,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1182,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.032915937601016,
+        "r_true": 0.03060930563789587,
+        "r_mirror": 0.03060930563789587,
+        "r12_true_vs_mirror": 1.0,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-03",
+        "view": 3,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1182,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.032915937601016,
+        "r_true": 0.03060930563789587,
+        "r_mirror": NaN,
+        "r12_true_vs_mirror": NaN,
+        "steiger_z": NaN,
+        "delta_r": NaN,
+        "delta_r_ci95": [
+          NaN,
+          NaN
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 2000,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-03",
+      "view": 4,
+      "seed": 1756264463,
+      "azimuth": {
+        "geometry": "geo-train-03",
+        "view": 4,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1182,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.0273650996271746,
+        "r_true": 0.047222823884718164,
+        "r_mirror": 0.047222823884718164,
+        "r12_true_vs_mirror": 0.9999999999999999,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 31,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-03",
+        "view": 4,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1182,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.0273650996271746,
+        "r_true": 0.047222823884718164,
+        "r_mirror": NaN,
+        "r12_true_vs_mirror": NaN,
+        "steiger_z": NaN,
+        "delta_r": NaN,
+        "delta_r_ci95": [
+          NaN,
+          NaN
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 31,
+        "delta_r_ci95_n_failed_resamples": 2000,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-03",
+      "view": 5,
+      "seed": 754335997,
+      "azimuth": {
+        "geometry": "geo-train-03",
+        "view": 5,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1170,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.026508237962577,
+        "r_true": 0.05550495419642342,
+        "r_mirror": 0.05550495419642342,
+        "r12_true_vs_mirror": 1.0,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 31,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-03",
+        "view": 5,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1170,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.026508237962577,
+        "r_true": 0.05550495419642342,
+        "r_mirror": NaN,
+        "r12_true_vs_mirror": NaN,
+        "steiger_z": NaN,
+        "delta_r": NaN,
+        "delta_r_ci95": [
+          NaN,
+          NaN
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 31,
+        "delta_r_ci95_n_failed_resamples": 2000,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 0,
+      "seed": 705851710,
+      "azimuth": {
+        "geometry": "geo-train-05",
+        "view": 0,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1366,
+        "signal_size": 13,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.35441266436365,
+        "r_true": 0.10845358891591354,
+        "r_mirror": 0.1258573501775207,
+        "r12_true_vs_mirror": 0.0008682169640043457,
+        "steiger_z": -0.4592957066950439,
+        "delta_r": -0.017403761261607156,
+        "delta_r_ci95": [
+          -0.19179159230651124,
+          0.16457872608800225
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-05",
+        "view": 0,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1366,
+        "signal_size": 13,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.35441266436365,
+        "r_true": 0.10845358891591354,
+        "r_mirror": 0.03555703105909231,
+        "r12_true_vs_mirror": -0.10368555294488156,
+        "steiger_z": 1.8195708144227338,
+        "delta_r": 0.07289655785682123,
+        "delta_r_ci95": [
+          -0.08576710221692088,
+          0.2433801151712189
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 1,
+      "seed": 2112843453,
+      "azimuth": {
+        "geometry": "geo-train-05",
+        "view": 1,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1346,
+        "signal_size": 20,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.3195046116163227,
+        "r_true": 0.11731898418500823,
+        "r_mirror": 0.10829430004057194,
+        "r12_true_vs_mirror": 0.3070807021673362,
+        "steiger_z": 0.28338033471389296,
+        "delta_r": 0.009024684144436287,
+        "delta_r_ci95": [
+          -0.09529946393209979,
+          0.0975455627601178
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-05",
+        "view": 1,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1346,
+        "signal_size": 20,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.3195046116163227,
+        "r_true": 0.11731898418500823,
+        "r_mirror": 0.031373862455396175,
+        "r12_true_vs_mirror": -0.04959763622434316,
+        "steiger_z": 2.1844683103898777,
+        "delta_r": 0.08594512172961205,
+        "delta_r_ci95": [
+          -0.05200046240768267,
+          0.24021533576375328
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 2,
+      "seed": 165904444,
+      "azimuth": {
+        "geometry": "geo-train-05",
+        "view": 2,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1360,
+        "signal_size": 24,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.342160091049976,
+        "r_true": 0.12489380109049372,
+        "r_mirror": 0.11359583670679592,
+        "r12_true_vs_mirror": 0.6736999429356402,
+        "steiger_z": 0.5195088908478495,
+        "delta_r": 0.011297964383697803,
+        "delta_r_ci95": [
+          -0.03147208444170088,
+          0.054148431309254876
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-05",
+        "view": 2,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1360,
+        "signal_size": 24,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.342160091049976,
+        "r_true": 0.12489380109049372,
+        "r_mirror": 0.03675201683686502,
+        "r12_true_vs_mirror": -0.059841452114135794,
+        "steiger_z": 2.2428907241831886,
+        "delta_r": 0.0881417842536287,
+        "delta_r_ci95": [
+          -0.03447638434873666,
+          0.24965495568976012
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 3,
+      "seed": 177983096,
+      "azimuth": {
+        "geometry": "geo-train-05",
+        "view": 3,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1362,
+        "signal_size": 14,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.36086523719511,
+        "r_true": 0.09757000249584392,
+        "r_mirror": 0.10654702964524985,
+        "r12_true_vs_mirror": 0.03495985266131747,
+        "steiger_z": -0.24006948578956283,
+        "delta_r": -0.00897702714940593,
+        "delta_r_ci95": [
+          -0.1346813999275746,
+          0.12013742878064534
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 33,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-05",
+        "view": 3,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1362,
+        "signal_size": 14,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.36086523719511,
+        "r_true": 0.09757000249584392,
+        "r_mirror": 0.042176122672231774,
+        "r12_true_vs_mirror": -0.06532058597500828,
+        "steiger_z": 1.4046274982161675,
+        "delta_r": 0.05539387982361215,
+        "delta_r_ci95": [
+          -0.07472994252294916,
+          0.19879137643010225
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 33,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 4,
+      "seed": 1316920680,
+      "azimuth": {
+        "geometry": "geo-train-05",
+        "view": 4,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1359,
+        "signal_size": 5,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.329019653741798,
+        "r_true": 0.08610999277786396,
+        "r_mirror": 0.09726742225366013,
+        "r12_true_vs_mirror": 0.6352701808783844,
+        "steiger_z": -0.48346750150254636,
+        "delta_r": -0.011157429475796163,
+        "delta_r_ci95": [
+          -0.0739640155563601,
+          0.03682169395831123
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-05",
+        "view": 4,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1359,
+        "signal_size": 5,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.329019653741798,
+        "r_true": 0.08610999277786396,
+        "r_mirror": 0.053700634827914887,
+        "r12_true_vs_mirror": -0.007349633733565287,
+        "steiger_z": 0.843986736927977,
+        "delta_r": 0.03240935794994908,
+        "delta_r_ci95": [
+          -0.06873602723078379,
+          0.16808449902951872
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 5,
+      "seed": 1494740704,
+      "azimuth": {
+        "geometry": "geo-train-05",
+        "view": 5,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1363,
+        "signal_size": 1,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.364060349502113,
+        "r_true": 0.06908690251791394,
+        "r_mirror": 0.08456752787897197,
+        "r12_true_vs_mirror": 0.6341615561435998,
+        "steiger_z": -0.6697746055617438,
+        "delta_r": -0.015480625361058029,
+        "delta_r_ci95": [
+          -0.05840278265791179,
+          0.03684420655562038
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-05",
+        "view": 5,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1363,
+        "signal_size": 1,
+        "insufficient_pixels": false,
+        "scale_factor_s": 3.364060349502113,
+        "r_true": 0.06908690251791394,
+        "r_mirror": 0.04255217943311034,
+        "r12_true_vs_mirror": -0.0638020508832505,
+        "steiger_z": 0.6725172695560808,
+        "delta_r": 0.026534723084803598,
+        "delta_r_ci95": [
+          -0.05862718261300131,
+          0.1462288127010192
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 0,
+      "seed": 19335021,
+      "azimuth": {
+        "geometry": "geo-train-07",
+        "view": 0,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 2050,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.609386450918102,
+        "r_true": 0.032393372435421494,
+        "r_mirror": 0.032393372435421494,
+        "r12_true_vs_mirror": 1.0,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-07",
+        "view": 0,
+        "axis": "elevation",
+        "n_pixels_evaluated": 2050,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.609386450918102,
+        "r_true": 0.032393372435421494,
+        "r_mirror": 0.030778435179472582,
+        "r12_true_vs_mirror": -0.03667481644635473,
+        "steiger_z": 0.05078174045642631,
+        "delta_r": 0.0016149372559489117,
+        "delta_r_ci95": [
+          -0.07233997583112851,
+          0.07034362209523683
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 1,
+      "seed": 575996654,
+      "azimuth": {
+        "geometry": "geo-train-07",
+        "view": 1,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 2044,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.604715847312139,
+        "r_true": 0.026416379296896934,
+        "r_mirror": 0.026416379296896934,
+        "r12_true_vs_mirror": 0.9999999999999999,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 33,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-07",
+        "view": 1,
+        "axis": "elevation",
+        "n_pixels_evaluated": 2044,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.604715847312139,
+        "r_true": 0.026416379296896934,
+        "r_mirror": 0.03254283007361043,
+        "r12_true_vs_mirror": -0.05201007446523961,
+        "steiger_z": -0.1909391712579957,
+        "delta_r": -0.006126450776713498,
+        "delta_r_ci95": [
+          -0.07829640211853882,
+          0.06155852411291756
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 33,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 2,
+      "seed": 1499248901,
+      "azimuth": {
+        "geometry": "geo-train-07",
+        "view": 2,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 2075,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.630619471592179,
+        "r_true": 0.05146478836971544,
+        "r_mirror": 0.05146478836971544,
+        "r12_true_vs_mirror": 1.0,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-07",
+        "view": 2,
+        "axis": "elevation",
+        "n_pixels_evaluated": 2075,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.630619471592179,
+        "r_true": 0.05146478836971544,
+        "r_mirror": 0.021608523671944803,
+        "r12_true_vs_mirror": -0.0510508025977513,
+        "steiger_z": 0.9383797765122589,
+        "delta_r": 0.02985626469777064,
+        "delta_r_ci95": [
+          -0.05580590284510617,
+          0.10511677494684107
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 3,
+      "seed": 2070661986,
+      "azimuth": {
+        "geometry": "geo-train-07",
+        "view": 3,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 2074,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.628426713600484,
+        "r_true": 0.02841269789583174,
+        "r_mirror": 0.02841269789583174,
+        "r12_true_vs_mirror": 1.0,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 33,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-07",
+        "view": 3,
+        "axis": "elevation",
+        "n_pixels_evaluated": 2074,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.628426713600484,
+        "r_true": 0.02841269789583174,
+        "r_mirror": 0.016651042183153046,
+        "r12_true_vs_mirror": -0.04448449380171217,
+        "steiger_z": 0.37048055251097534,
+        "delta_r": 0.011761655712678693,
+        "delta_r_ci95": [
+          -0.05858609364145352,
+          0.08180359157352643
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 33,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 4,
+      "seed": 454614720,
+      "azimuth": {
+        "geometry": "geo-train-07",
+        "view": 4,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 2094,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.646920452693673,
+        "r_true": 0.044851087969789045,
+        "r_mirror": 0.044851087969789045,
+        "r12_true_vs_mirror": 1.0,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-07",
+        "view": 4,
+        "axis": "elevation",
+        "n_pixels_evaluated": 2094,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.646920452693673,
+        "r_true": 0.044851087969789045,
+        "r_mirror": 0.019758820782146233,
+        "r12_true_vs_mirror": -0.05562769923187816,
+        "steiger_z": 0.7903436088198503,
+        "delta_r": 0.025092267187642812,
+        "delta_r_ci95": [
+          -0.05125599427025805,
+          0.0962226671043283
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 32,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 5,
+      "seed": 330757878,
+      "azimuth": {
+        "geometry": "geo-train-07",
+        "view": 5,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 2082,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.66131607953515,
+        "r_true": 0.04042141964219215,
+        "r_mirror": 0.04042141964219215,
+        "r12_true_vs_mirror": 1.0,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 35,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-07",
+        "view": 5,
+        "axis": "elevation",
+        "n_pixels_evaluated": 2082,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.66131607953515,
+        "r_true": 0.04042141964219215,
+        "r_mirror": 0.029343017581786396,
+        "r12_true_vs_mirror": -0.04480801454029503,
+        "steiger_z": 0.349766499350548,
+        "delta_r": 0.011078402060405751,
+        "delta_r_ci95": [
+          -0.057200242443485684,
+          0.07592984658387684
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 35,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 0,
+      "seed": 1437181348,
+      "azimuth": {
+        "geometry": "geo-train-10",
+        "view": 0,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 2136,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.499260454045721,
+        "r_true": -0.04193734161123242,
+        "r_mirror": -0.04193734161123242,
+        "r12_true_vs_mirror": 1.0,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 37,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-10",
+        "view": 0,
+        "axis": "elevation",
+        "n_pixels_evaluated": 2136,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.499260454045721,
+        "r_true": -0.04193734161123242,
+        "r_mirror": 0.016649234803193302,
+        "r12_true_vs_mirror": -0.1146038549290119,
+        "steiger_z": -1.8129954628661278,
+        "delta_r": -0.058586576414425724,
+        "delta_r_ci95": [
+          -0.21486112517571143,
+          0.10351242241106154
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 37,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 1,
+      "seed": 83106245,
+      "azimuth": {
+        "geometry": "geo-train-10",
+        "view": 1,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 2137,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.532155535298183,
+        "r_true": -0.03506450093536455,
+        "r_mirror": -0.03506450093536455,
+        "r12_true_vs_mirror": 0.9999999999999998,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 36,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-10",
+        "view": 1,
+        "axis": "elevation",
+        "n_pixels_evaluated": 2137,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.532155535298183,
+        "r_true": -0.03506450093536455,
+        "r_mirror": 0.030766588930965982,
+        "r12_true_vs_mirror": -0.11397073018863749,
+        "steiger_z": -2.038143914666897,
+        "delta_r": -0.06583108986633053,
+        "delta_r_ci95": [
+          -0.22670715307021194,
+          0.09261988861796781
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 36,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 2,
+      "seed": 1821746931,
+      "azimuth": {
+        "geometry": "geo-train-10",
+        "view": 2,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 2119,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.531363031650841,
+        "r_true": -0.05052603134029824,
+        "r_mirror": -0.05052603134029824,
+        "r12_true_vs_mirror": 1.0,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 35,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-10",
+        "view": 2,
+        "axis": "elevation",
+        "n_pixels_evaluated": 2119,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.531363031650841,
+        "r_true": -0.05052603134029824,
+        "r_mirror": 0.019427225008337774,
+        "r12_true_vs_mirror": -0.10408811211211629,
+        "steiger_z": -2.1667450510609116,
+        "delta_r": -0.06995325634863601,
+        "delta_r_ci95": [
+          -0.23628989152021634,
+          0.10264687806163374
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 35,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 3,
+      "seed": 150535437,
+      "azimuth": {
+        "geometry": "geo-train-10",
+        "view": 3,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 2140,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.493519716764873,
+        "r_true": -0.056668595292049116,
+        "r_mirror": -0.056668595292049116,
+        "r12_true_vs_mirror": 0.9999999999999998,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 35,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-10",
+        "view": 3,
+        "axis": "elevation",
+        "n_pixels_evaluated": 2140,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.493519716764873,
+        "r_true": -0.056668595292049116,
+        "r_mirror": 0.027682759631127707,
+        "r12_true_vs_mirror": -0.10613686377909444,
+        "steiger_z": -2.6236368188157537,
+        "delta_r": -0.08435135492317683,
+        "delta_r_ci95": [
+          -0.24403785774983341,
+          0.07330402016683342
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 35,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 4,
+      "seed": 1336375382,
+      "azimuth": {
+        "geometry": "geo-train-10",
+        "view": 4,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 2175,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.532056447857636,
+        "r_true": -0.03492841783695077,
+        "r_mirror": -0.03492841783695077,
+        "r12_true_vs_mirror": 1.0,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 36,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-10",
+        "view": 4,
+        "axis": "elevation",
+        "n_pixels_evaluated": 2175,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.532056447857636,
+        "r_true": -0.03492841783695077,
+        "r_mirror": 0.03269427690180899,
+        "r12_true_vs_mirror": -0.10869948205706706,
+        "steiger_z": -2.1172223213308166,
+        "delta_r": -0.06762269473875976,
+        "delta_r_ci95": [
+          -0.23639647578383244,
+          0.10208423951982303
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 36,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 5,
+      "seed": 1070454280,
+      "azimuth": {
+        "geometry": "geo-train-10",
+        "view": 5,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 2134,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.485783505305199,
+        "r_true": -0.04050407427363515,
+        "r_mirror": -0.04050407427363515,
+        "r12_true_vs_mirror": 1.0,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 37,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-train-10",
+        "view": 5,
+        "axis": "elevation",
+        "n_pixels_evaluated": 2134,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 5.485783505305199,
+        "r_true": -0.04050407427363515,
+        "r_mirror": 0.010908574274761459,
+        "r12_true_vs_mirror": -0.11211193849938843,
+        "steiger_z": -1.5919970190971007,
+        "delta_r": -0.05141264854839661,
+        "delta_r_ci95": [
+          -0.2066003182329404,
+          0.11664115187048633
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 37,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "seed": 767794435,
+      "azimuth": {
+        "geometry": "geo-val-02",
+        "view": 0,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1477,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 4.294551658067988,
+        "r_true": 0.05325046642798592,
+        "r_mirror": 0.05325046642798592,
+        "r12_true_vs_mirror": 1.0,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 30,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-val-02",
+        "view": 0,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1477,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 4.294551658067988,
+        "r_true": 0.05325046642798592,
+        "r_mirror": NaN,
+        "r12_true_vs_mirror": NaN,
+        "steiger_z": NaN,
+        "delta_r": NaN,
+        "delta_r_ci95": [
+          NaN,
+          NaN
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 30,
+        "delta_r_ci95_n_failed_resamples": 2000,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "seed": 1633576825,
+      "azimuth": {
+        "geometry": "geo-val-02",
+        "view": 1,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1471,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 4.299295461413872,
+        "r_true": 0.06679779491715844,
+        "r_mirror": 0.06679779491715844,
+        "r12_true_vs_mirror": 1.0,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 30,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-val-02",
+        "view": 1,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1471,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 4.299295461413872,
+        "r_true": 0.06679779491715844,
+        "r_mirror": NaN,
+        "r12_true_vs_mirror": NaN,
+        "steiger_z": NaN,
+        "delta_r": NaN,
+        "delta_r_ci95": [
+          NaN,
+          NaN
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 30,
+        "delta_r_ci95_n_failed_resamples": 2000,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "seed": 331605628,
+      "azimuth": {
+        "geometry": "geo-val-02",
+        "view": 2,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1460,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 4.282367197954249,
+        "r_true": 0.05878007452208506,
+        "r_mirror": 0.05878007452208506,
+        "r12_true_vs_mirror": 1.0,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 30,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-val-02",
+        "view": 2,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1460,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 4.282367197954249,
+        "r_true": 0.05878007452208506,
+        "r_mirror": NaN,
+        "r12_true_vs_mirror": NaN,
+        "steiger_z": NaN,
+        "delta_r": NaN,
+        "delta_r_ci95": [
+          NaN,
+          NaN
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 30,
+        "delta_r_ci95_n_failed_resamples": 2000,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "seed": 1663217405,
+      "azimuth": {
+        "geometry": "geo-val-02",
+        "view": 3,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1458,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 4.281262136845178,
+        "r_true": 0.0611179292581027,
+        "r_mirror": 0.0611179292581027,
+        "r12_true_vs_mirror": 0.9999999999999999,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 30,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-val-02",
+        "view": 3,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1458,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 4.281262136845178,
+        "r_true": 0.0611179292581027,
+        "r_mirror": NaN,
+        "r12_true_vs_mirror": NaN,
+        "steiger_z": NaN,
+        "delta_r": NaN,
+        "delta_r_ci95": [
+          NaN,
+          NaN
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 30,
+        "delta_r_ci95_n_failed_resamples": 2000,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "seed": 143902924,
+      "azimuth": {
+        "geometry": "geo-val-02",
+        "view": 4,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1481,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 4.3067616409651235,
+        "r_true": 0.07045689237369691,
+        "r_mirror": 0.07045689237369691,
+        "r12_true_vs_mirror": 1.0,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 30,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-val-02",
+        "view": 4,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1481,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 4.3067616409651235,
+        "r_true": 0.07045689237369691,
+        "r_mirror": NaN,
+        "r12_true_vs_mirror": NaN,
+        "steiger_z": NaN,
+        "delta_r": NaN,
+        "delta_r_ci95": [
+          NaN,
+          NaN
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 30,
+        "delta_r_ci95_n_failed_resamples": 2000,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "seed": 1882901399,
+      "azimuth": {
+        "geometry": "geo-val-02",
+        "view": 5,
+        "axis": "azimuth",
+        "n_pixels_evaluated": 1476,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 4.329375941260615,
+        "r_true": 0.07426735491407202,
+        "r_mirror": 0.07426735491407202,
+        "r12_true_vs_mirror": 1.0,
+        "steiger_z": 0.0,
+        "delta_r": 0.0,
+        "delta_r_ci95": [
+          0.0,
+          0.0
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 30,
+        "delta_r_ci95_n_failed_resamples": 0,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      },
+      "elevation": {
+        "geometry": "geo-val-02",
+        "view": 5,
+        "axis": "elevation",
+        "n_pixels_evaluated": 1476,
+        "signal_size": 0,
+        "insufficient_pixels": false,
+        "scale_factor_s": 4.329375941260615,
+        "r_true": 0.07426735491407202,
+        "r_mirror": NaN,
+        "r12_true_vs_mirror": NaN,
+        "steiger_z": NaN,
+        "delta_r": NaN,
+        "delta_r_ci95": [
+          NaN,
+          NaN
+        ],
+        "delta_r_ci95_n_bootstrap": 2000,
+        "delta_r_ci95_n_blocks": 30,
+        "delta_r_ci95_n_failed_resamples": 2000,
+        "ci_excludes_zero": false,
+        "confirms_true_orientation": false,
+        "contradicts_true_orientation": false
+      }
+    }
+  ],
+  "azimuth_verdict": {
+    "verdict": "UNRESOLVED",
+    "n_cases_total": 30,
+    "n_cases_usable": 30,
+    "n_cases_qualifying_by_signal_size": 0,
+    "n_cases_qualifying_confirmed": 0,
+    "n_cases_contradicting": 0,
+    "contradicting_cases": []
+  },
+  "elevation_positive_control": {
+    "n_cases_usable": 30,
+    "all_confirm_true_orientation": false,
+    "any_contradict_true_orientation": false,
+    "note": "Elevation is already resolved (work unit U8's Steiger test, z ~ 456 on geo-train-06); this cross-geometry re-check is a POSITIVE CONTROL for the method itself, not part of the azimuth verdict above -- if it failed to confirm here, that would indicate a bug in this check, not a real elevation registration problem."
+  },
+  "input_hashes": {
+    "geometry:geo-train-03": {
+      "path": "scripts/simulation/geometry_catalog/geometries/geo-train-03.json",
+      "sha256": "757ff851126ae659d21fbaeaee1c4d60292e2b4d70b7fac04c0d1c88912f3a72"
+    },
+    "campaign:geo-train-03:view0": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-03/geo-train-03_view0_hist.csv",
+      "sha256": "f0629ab9b7549f269a00e566db8315a50f4be212342a820f4f3d33097bb624fb"
+    },
+    "campaign:geo-train-03:view1": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-03/geo-train-03_view1_hist.csv",
+      "sha256": "3f281fdcfa50a4e3219be4bfd582b8f397a76fb87ff560a71d0920e4b979e159"
+    },
+    "campaign:geo-train-03:view2": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-03/geo-train-03_view2_hist.csv",
+      "sha256": "f42f8152f9d33f1945d7c85e14bbe268e99e6f9c9a972d576686c893c4141112"
+    },
+    "campaign:geo-train-03:view3": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-03/geo-train-03_view3_hist.csv",
+      "sha256": "3ab16c22a72bba16b169a1ef841bb6352baa9c5e29bb70a48b36b8ea8304c5c2"
+    },
+    "campaign:geo-train-03:view4": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-03/geo-train-03_view4_hist.csv",
+      "sha256": "1fadec1707894ef9d439ac1d825eb4c0b16ec35585e03561f6c1636d6339a86e"
+    },
+    "campaign:geo-train-03:view5": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-03/geo-train-03_view5_hist.csv",
+      "sha256": "d7e91be4a4000401cf30f0d1578747087bf957c391c15177f3d3ebf0259fff3e"
+    },
+    "geometry:geo-train-05": {
+      "path": "scripts/simulation/geometry_catalog/geometries/geo-train-05.json",
+      "sha256": "09322cce8d7f40e4f68a6ef5400aa2aa722d3a68d107b1c3cce3977ef03b723c"
+    },
+    "campaign:geo-train-05:view0": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-05/geo-train-05_view0_hist.csv",
+      "sha256": "41cdf86a2f35337ee584c62b5d43306d39e3239812e8dd514fc6542fb7a6a435"
+    },
+    "campaign:geo-train-05:view1": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-05/geo-train-05_view1_hist.csv",
+      "sha256": "814432348fc8d4d570c24731e36a5add9c91911e81e654836dd93bf901f7e2d6"
+    },
+    "campaign:geo-train-05:view2": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-05/geo-train-05_view2_hist.csv",
+      "sha256": "de457169445fc76ccb7e23032d7e16f89800a1a692c536812db24d1591420b9a"
+    },
+    "campaign:geo-train-05:view3": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-05/geo-train-05_view3_hist.csv",
+      "sha256": "17e4e7a49197cf17de16b9f04dfe6f7025d4e97afb9c14639a42b5415e572727"
+    },
+    "campaign:geo-train-05:view4": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-05/geo-train-05_view4_hist.csv",
+      "sha256": "0205584428a79852b823f9636842d45b2de47c03fd25b8f871172aabd6daee1a"
+    },
+    "campaign:geo-train-05:view5": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-05/geo-train-05_view5_hist.csv",
+      "sha256": "f0e066e259bbb1ba3a4751d647a768ccc6ecba33657ba8a6c00e2581ed51b2bb"
+    },
+    "geometry:geo-train-07": {
+      "path": "scripts/simulation/geometry_catalog/geometries/geo-train-07.json",
+      "sha256": "f8e3a804871a6744e101384cbcc5b360063e9ba017122ea5a022119dc6d457d1"
+    },
+    "campaign:geo-train-07:view0": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-07/geo-train-07_view0_hist.csv",
+      "sha256": "8f189ac4dd13a68d6a86702b5ce3c6c871675dbe4f4b7fcf2ac727c051dff1a2"
+    },
+    "campaign:geo-train-07:view1": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-07/geo-train-07_view1_hist.csv",
+      "sha256": "8c7a8453701f81979c4ce490880830f4f0df7f2fd11c1da051536ea2f75fbfaf"
+    },
+    "campaign:geo-train-07:view2": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-07/geo-train-07_view2_hist.csv",
+      "sha256": "5805199db818e0ca891f0d236362f8553534bbeb9a6b4ec8b93d3d4f5d4156f6"
+    },
+    "campaign:geo-train-07:view3": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-07/geo-train-07_view3_hist.csv",
+      "sha256": "883daad748f3dbe7d9f305b0f59ad35f0b54f4bcd758390515ce22cfe0152573"
+    },
+    "campaign:geo-train-07:view4": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-07/geo-train-07_view4_hist.csv",
+      "sha256": "399495750d8effe7ecd2df766c8e0bb531a6537382a7302792e55670ec5c3080"
+    },
+    "campaign:geo-train-07:view5": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-07/geo-train-07_view5_hist.csv",
+      "sha256": "261fa0a13257ceedd79d14a312939cf1835105becf0004d3bdd1ac298184215c"
+    },
+    "geometry:geo-train-10": {
+      "path": "scripts/simulation/geometry_catalog/geometries/geo-train-10.json",
+      "sha256": "218c427d76f134eeafd211f5c2ae778a113fd3dedb6f2cc93bedca83a795a448"
+    },
+    "campaign:geo-train-10:view0": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-10/geo-train-10_view0_hist.csv",
+      "sha256": "2773cc23fb3c4b6e72c7cbf90f9390d8b944d06eacadb89053423d31ca22dff8"
+    },
+    "campaign:geo-train-10:view1": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-10/geo-train-10_view1_hist.csv",
+      "sha256": "8044cac236f6544afe4239e2063bddc99d8b455f9689202dc912b916fed7257a"
+    },
+    "campaign:geo-train-10:view2": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-10/geo-train-10_view2_hist.csv",
+      "sha256": "101b4a919074ea409256c0964d3e09da304659c36f3ca3eb66dd3cdf28a8e7df"
+    },
+    "campaign:geo-train-10:view3": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-10/geo-train-10_view3_hist.csv",
+      "sha256": "40e0193712f6e5ccadc920fdd667898073c0befcf7752e47180a8d3480fab280"
+    },
+    "campaign:geo-train-10:view4": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-10/geo-train-10_view4_hist.csv",
+      "sha256": "290d5d2374ada1897e80103a236e19d1366291b1b0d37f051d8d0ddc87a6dc34"
+    },
+    "campaign:geo-train-10:view5": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-train-10/geo-train-10_view5_hist.csv",
+      "sha256": "5a5ea2c123ff8fa1a6e0e64dcf5fe707a569d8ee635a48805868b9f33ee92515"
+    },
+    "geometry:geo-val-02": {
+      "path": "scripts/simulation/geometry_catalog/geometries/geo-val-02.json",
+      "sha256": "f8376b4fe3262acb7523b605e2c2f9c8d9e5c36532c34e8bcc70d041f695b3bb"
+    },
+    "campaign:geo-val-02:view0": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-val-02/geo-val-02_view0_hist.csv",
+      "sha256": "911ad512abdb7abdfaa593c1e6e15ba80f88ca97cb662c13f97118a34b57eee6"
+    },
+    "campaign:geo-val-02:view1": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-val-02/geo-val-02_view1_hist.csv",
+      "sha256": "60fdb2ddb277607125a5419940d43e82323beaae10258e03720bf64431c8da45"
+    },
+    "campaign:geo-val-02:view2": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-val-02/geo-val-02_view2_hist.csv",
+      "sha256": "2974a5ce4c7ce0d673e56fe009ef33d34477bf59173f1f4549cd1af4009f8fac"
+    },
+    "campaign:geo-val-02:view3": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-val-02/geo-val-02_view3_hist.csv",
+      "sha256": "82866b45e34c628ad0c5e6d9af96d5757c158cade4d3e8ac26edd06134f52e4c"
+    },
+    "campaign:geo-val-02:view4": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-val-02/geo-val-02_view4_hist.csv",
+      "sha256": "8f2695400c0053679c24845e6102a6eec0b0b963217ab4f77eea3c17fee999f5"
+    },
+    "campaign:geo-val-02:view5": {
+      "path": "../muography-thesis/data/campaign-geant4-merged/geo-val-02/geo-val-02_view5_hist.csv",
+      "sha256": "d46a73a0864d884121f772e716f80238fb5b183253b46b77e015310c0de5f35a"
+    }
+  },
+  "outputs": {
+    "figure_png": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/analisis/registro-orientacion.png",
+    "figure_case": {
+      "geometry": "geo-train-05",
+      "view": 2
+    }
+  }
+}
