@@ -2,4 +2,6 @@
 objetivo-1/originales/** -text
 *.md text eol=lf
 *.json text eol=lf
+*.py text eol=lf
+*.sbatch text eol=lf
 objetivo-1/originales/** -text

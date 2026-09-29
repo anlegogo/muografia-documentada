@@ -1,0 +1,1149 @@
+{
+  "fecha_utc": "2026-09-29T03:29:35.922870+00:00",
+  "python": "3.12.14",
+  "numpy": "2.4.4",
+  "script_sha256": "179a7af9296f476115dc460be49914f8bf93e3e4a0c11eb89069f1603ffe2e91",
+  "geometrias": [
+    {
+      "geometria": "geo-gen-01",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 0.0,
+          "zmax_m": 386.5,
+          "margen_radial_suficiente_m": -15.149416564910098,
+          "estado": "salida lateral del cono demostrada",
+          "testigo_superficie_m": [
+            -55.590117172891645,
+            -45.539926497566604,
+            386.5
+          ],
+          "contacta_base": true
+        },
+        {
+          "indice": 1,
+          "zmin_m": 146.4,
+          "zmax_m": 228.20000000000002,
+          "margen_radial_suficiente_m": 164.42499523062793,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        },
+        {
+          "indice": 2,
+          "zmin_m": 118.69999999999999,
+          "zmax_m": 203.5,
+          "margen_radial_suficiente_m": 117.74881022546026,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        }
+      ],
+      "pares": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "estado": "sin intersección interior por distancia esfera-cilindro",
+          "separacion_m": 33.342463593435845
+        },
+        {
+          "indices": [
+            0,
+            2
+          ],
+          "estado": "sin intersección interior por distancia esfera-cilindro",
+          "separacion_m": 82.0587260838773
+        },
+        {
+          "indices": [
+            1,
+            2
+          ],
+          "estado": "sin intersección interior por distancia entre esferas",
+          "separacion_m": 55.88987032108336
+        }
+      ]
+    },
+    {
+      "geometria": "geo-test-01",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 0.0,
+          "zmax_m": 360.1,
+          "margen_radial_suficiente_m": 42.58513989662845,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": true
+        },
+        {
+          "indice": 1,
+          "zmin_m": 118.9,
+          "zmax_m": 191.9,
+          "margen_radial_suficiente_m": 297.4941533895751,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        }
+      ],
+      "pares": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "estado": "intersección demostrada con testigo interior",
+          "testigo_m": [
+            -29.26875,
+            -27.63125,
+            155.4
+          ],
+          "margen_a": -0.2695656709854154,
+          "margen_b": -0.2702359143366486
+        }
+      ]
+    },
+    {
+      "geometria": "geo-test-02",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 142.5,
+          "zmax_m": 221.7,
+          "margen_radial_suficiente_m": 200.20488620634376,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        }
+      ],
+      "pares": []
+    },
+    {
+      "geometria": "geo-test-03",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 0.0,
+          "zmax_m": 344.9,
+          "margen_radial_suficiente_m": -10.359086170711635,
+          "estado": "salida lateral del cono demostrada",
+          "testigo_superficie_m": [
+            60.18472416548533,
+            -25.634234366780788,
+            344.9
+          ],
+          "contacta_base": true
+        },
+        {
+          "indice": 1,
+          "zmin_m": 169.0,
+          "zmax_m": 217.2,
+          "margen_radial_suficiente_m": 159.48384719174692,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        },
+        {
+          "indice": 2,
+          "zmin_m": -5.1000000000000085,
+          "zmax_m": 124.7,
+          "margen_radial_suficiente_m": 182.25557129754492,
+          "estado": "salida del cono demostrada bajo la base",
+          "testigo_superficie_m": [
+            140.8,
+            -12.9,
+            -5.1000000000000085
+          ],
+          "contacta_base": false
+        }
+      ],
+      "pares": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "estado": "sin intersección interior por distancia esfera-cilindro",
+          "separacion_m": 28.442129535080262
+        },
+        {
+          "indices": [
+            0,
+            2
+          ],
+          "estado": "sin intersección interior por cajas envolventes"
+        },
+        {
+          "indices": [
+            1,
+            2
+          ],
+          "estado": "sin intersección interior por cajas envolventes"
+        }
+      ]
+    },
+    {
+      "geometria": "geo-train-01",
+      "contencion": [],
+      "pares": []
+    },
+    {
+      "geometria": "geo-train-02",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 0.0,
+          "zmax_m": 361.1,
+          "margen_radial_suficiente_m": 38.12578857133758,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": true
+        }
+      ],
+      "pares": []
+    },
+    {
+      "geometria": "geo-train-03",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 58.2,
+          "zmax_m": 129.8,
+          "margen_radial_suficiente_m": 258.6126371718927,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        }
+      ],
+      "pares": []
+    },
+    {
+      "geometria": "geo-train-04",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 128.89999999999998,
+          "zmax_m": 210.3,
+          "margen_radial_suficiente_m": 163.736949473923,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        }
+      ],
+      "pares": []
+    },
+    {
+      "geometria": "geo-train-05",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 0.0,
+          "zmax_m": 325.8,
+          "margen_radial_suficiente_m": 39.569464118066094,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": true
+        },
+        {
+          "indice": 1,
+          "zmin_m": 180.0,
+          "zmax_m": 238.8,
+          "margen_radial_suficiente_m": 133.65908457719394,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        }
+      ],
+      "pares": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "estado": "sin intersección interior por distancia esfera-cilindro",
+          "separacion_m": 9.097226329136056
+        }
+      ]
+    },
+    {
+      "geometria": "geo-train-06",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 0.0,
+          "zmax_m": 340.0,
+          "margen_radial_suficiente_m": 40.682853230213766,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": true
+        },
+        {
+          "indice": 1,
+          "zmin_m": 73.20000000000002,
+          "zmax_m": 202.4,
+          "margen_radial_suficiente_m": 152.66936427922963,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        }
+      ],
+      "pares": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "estado": "intersección demostrada con testigo interior",
+          "testigo_m": [
+            21.6125,
+            -37.25,
+            137.8
+          ],
+          "margen_a": -0.6274713010204083,
+          "margen_b": -0.6210469871007531
+        }
+      ]
+    },
+    {
+      "geometria": "geo-train-07",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 106.9,
+          "zmax_m": 202.9,
+          "margen_radial_suficiente_m": 201.18099164081173,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        },
+        {
+          "indice": 1,
+          "zmin_m": 142.6,
+          "zmax_m": 235.4,
+          "margen_radial_suficiente_m": 234.75478149188103,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        }
+      ],
+      "pares": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "estado": "sin intersección interior por cajas envolventes"
+        }
+      ]
+    },
+    {
+      "geometria": "geo-train-08",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 0.0,
+          "zmax_m": 320.2,
+          "margen_radial_suficiente_m": 53.54965338922659,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": true
+        },
+        {
+          "indice": 1,
+          "zmin_m": 197.10000000000002,
+          "zmax_m": 237.5,
+          "margen_radial_suficiente_m": 172.35857256523366,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        },
+        {
+          "indice": 2,
+          "zmin_m": 103.7,
+          "zmax_m": 218.10000000000002,
+          "margen_radial_suficiente_m": 192.96259306840938,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        }
+      ],
+      "pares": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "estado": "sin intersección interior por distancia esfera-cilindro",
+          "separacion_m": 59.71565375091102
+        },
+        {
+          "indices": [
+            0,
+            2
+          ],
+          "estado": "intersección demostrada con testigo interior",
+          "testigo_m": [
+            46.043749999999996,
+            -3.4250000000000043,
+            160.9
+          ],
+          "margen_a": -0.6318167360412879,
+          "margen_b": -0.6243177368086794
+        },
+        {
+          "indices": [
+            1,
+            2
+          ],
+          "estado": "sin intersección interior por cajas envolventes"
+        }
+      ]
+    },
+    {
+      "geometria": "geo-train-09",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 0.0,
+          "zmax_m": 336.1,
+          "margen_radial_suficiente_m": 22.4353570030911,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": true
+        }
+      ],
+      "pares": []
+    },
+    {
+      "geometria": "geo-train-10",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 217.2,
+          "zmax_m": 273.0,
+          "margen_radial_suficiente_m": 124.3605897200224,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        },
+        {
+          "indice": 1,
+          "zmin_m": 128.89999999999998,
+          "zmax_m": 220.3,
+          "margen_radial_suficiente_m": 159.67519368125386,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        }
+      ],
+      "pares": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "estado": "sin intersección interior por distancia entre esferas",
+          "separacion_m": 5.337506927949015
+        }
+      ]
+    },
+    {
+      "geometria": "geo-train-11",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 0.0,
+          "zmax_m": 391.8,
+          "margen_radial_suficiente_m": 5.257038723887149,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": true
+        },
+        {
+          "indice": 1,
+          "zmin_m": 90.5,
+          "zmax_m": 175.5,
+          "margen_radial_suficiente_m": 311.5375147743514,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        },
+        {
+          "indice": 2,
+          "zmin_m": 154.29999999999998,
+          "zmax_m": 252.1,
+          "margen_radial_suficiente_m": 105.97085069240177,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        }
+      ],
+      "pares": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "estado": "intersección demostrada con testigo interior",
+          "testigo_m": [
+            -12.18125,
+            -9.14375,
+            133.0
+          ],
+          "margen_a": -0.5292873612431834,
+          "margen_b": -0.5239703719723181
+        },
+        {
+          "indices": [
+            0,
+            2
+          ],
+          "estado": "sin intersección interior por distancia esfera-cilindro",
+          "separacion_m": 70.11185553791893
+        },
+        {
+          "indices": [
+            1,
+            2
+          ],
+          "estado": "sin intersección interior por distancia entre esferas",
+          "separacion_m": 47.84916516805405
+        }
+      ]
+    },
+    {
+      "geometria": "geo-train-12",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 61.3,
+          "zmax_m": 140.3,
+          "margen_radial_suficiente_m": 203.3120842518876,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        }
+      ],
+      "pares": []
+    },
+    {
+      "geometria": "geo-val-01",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 0.0,
+          "zmax_m": 361.6,
+          "margen_radial_suficiente_m": 57.622812693634614,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": true
+        }
+      ],
+      "pares": []
+    },
+    {
+      "geometria": "geo-val-02",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 104.3,
+          "zmax_m": 181.89999999999998,
+          "margen_radial_suficiente_m": 191.9000137445455,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        }
+      ],
+      "pares": []
+    },
+    {
+      "geometria": "geo-val-03",
+      "contencion": [
+        {
+          "indice": 0,
+          "zmin_m": 0.0,
+          "zmax_m": 370.3,
+          "margen_radial_suficiente_m": 18.211885462625673,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": true
+        },
+        {
+          "indice": 1,
+          "zmin_m": 42.2,
+          "zmax_m": 111.2,
+          "margen_radial_suficiente_m": 236.03891332445653,
+          "estado": "contenido por cota analítica suficiente",
+          "testigo_superficie_m": null,
+          "contacta_base": false
+        }
+      ],
+      "pares": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "estado": "sin intersección interior por cajas envolventes"
+        }
+      ]
+    }
+  ],
+  "datos": [
+    {
+      "geometria": "geo-gen-01",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 941,
+      "max_low": 515,
+      "max_binomial_sin_recorte": 515,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-test-01",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 924,
+      "max_low": 509,
+      "max_binomial_sin_recorte": 509,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-test-02",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 929,
+      "max_low": 496,
+      "max_binomial_sin_recorte": 496,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-test-03",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 939,
+      "max_low": 517,
+      "max_binomial_sin_recorte": 517,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-train-01",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 931,
+      "max_low": 505,
+      "max_binomial_sin_recorte": 505,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-train-02",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 934,
+      "max_low": 517,
+      "max_binomial_sin_recorte": 517,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-train-03",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 944,
+      "max_low": 511,
+      "max_binomial_sin_recorte": 511,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-train-04",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 942,
+      "max_low": 499,
+      "max_binomial_sin_recorte": 499,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-train-05",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 939,
+      "max_low": 516,
+      "max_binomial_sin_recorte": 516,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-train-06",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 946,
+      "max_low": 521,
+      "max_binomial_sin_recorte": 521,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-train-07",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 926,
+      "max_low": 520,
+      "max_binomial_sin_recorte": 520,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-train-08",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 937,
+      "max_low": 502,
+      "max_binomial_sin_recorte": 502,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-train-09",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 947,
+      "max_low": 510,
+      "max_binomial_sin_recorte": 510,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-train-10",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 925,
+      "max_low": 503,
+      "max_binomial_sin_recorte": 503,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-train-11",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 936,
+      "max_low": 506,
+      "max_binomial_sin_recorte": 506,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-train-12",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 943,
+      "max_low": 514,
+      "max_binomial_sin_recorte": 514,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-val-01",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 932,
+      "max_low": 501,
+      "max_binomial_sin_recorte": 501,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-val-02",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 926,
+      "max_low": 500,
+      "max_binomial_sin_recorte": 500,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    },
+    {
+      "geometria": "geo-val-03",
+      "checks": {
+        "shape": true,
+        "dtype": true,
+        "fracciones": true,
+        "limite_binomial": true,
+        "referencias_coinciden": true,
+        "semillas_coinciden": true,
+        "pares_reproducidos": true
+      },
+      "forma_ref": [
+        6,
+        256,
+        256
+      ],
+      "forma_low": [
+        6,
+        4,
+        20,
+        256,
+        256
+      ],
+      "max_ref": 931,
+      "max_low": 510,
+      "max_binomial_sin_recorte": 510,
+      "pixeles_recortados_reproduccion": 0,
+      "pares_distintos": 0
+    }
+  ],
+  "errores_datos": [],
+  "limites": "Geometría ideal alineada según JSON y Geant4; tolerancias/navegación no simuladas. Pares regenerados en memoria, sin modificar originales; no nuevo transporte Monte Carlo."
+}

@@ -31,4 +31,8 @@ La construcción calcula además estadísticas base sobre las geometrías dispon
 
 Para Geant4 consultar CMake, Docker y scripts SC3 incluidos. El script histórico `make_sc3_bundle.sh` presupone que las rutas `scripts/…` están en la raíz del historial Git original: no se puede ejecutar directamente desde esta selección anidada. Requiere preparación de un entorno de ejecución independiente. Los scripts SC3 dependen de módulos y rutas del clúster.
 
-En esta incorporación se ha verificado la copia, no se han regenerado geometrías, figuras, pares ni campañas. Los faltantes y diferencias de entorno están en [pendientes](PENDIENTES.md).
+En la incorporación inicial solo se verificó la copia. En la revisión posterior se regeneraron en memoria los 9.120 pares, sin escribir sobre los originales: véase [revisión de datos](REVISION_DATOS.md). No se han regenerado campañas Geant4. Los faltantes y diferencias de entorno están en [pendientes](PENDIENTES.md).
+
+La herramienta `auditar_oe1.py` requiere NumPy; el comparador del piloto también. El ejecutor SLURM necesita Bash y el entorno Geant4 de SC3. Consultar las [instrucciones](INSTRUCCIONES_ESTUDIANTES.md) antes de ejecutar.
+
+Controles pequeños de las herramientas nuevas: `python herramientas/test_herramientas_oe1.py`. Utilizan datos sintéticos de prueba; no ejecutan Geant4. La sintaxis del ejecutor puede comprobarse con `bash -n herramientas/ejecutar_piloto_oe1.sbatch`; pasar esa comprobación no acredita compatibilidad con la configuración de SC3.

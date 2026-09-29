@@ -4,6 +4,8 @@ Réplica local selectiva del material de Reinaldo Cárdenas Tirado y Daniel Andr
 
 **Estado:** datos y código incorporados; integridad verificable; validación física pendiente de cierre. No se ha ejecutado una nueva campaña Geant4.
 
+**Avance de revisión:** se reprodujeron en memoria los 9.120 pares y se identificaron defectos geométricos en seis escenarios. Consultar el [diagnóstico](objetivo-1/DIAGNOSTICO_GEOMETRIAS.md), la [revisión de datos](objetivo-1/REVISION_DATOS.md) y las [instrucciones listas para SC3](objetivo-1/INSTRUCCIONES_ESTUDIANTES.md).
+
 ## Por dónde comenzar
 
 1. [Índice de documentación](docs/INDICE.md).

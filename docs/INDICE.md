@@ -14,5 +14,9 @@
 | [Pendientes](../objetivo-1/PENDIENTES.md) | ¿Qué impide cerrar la validación física? |
 | [Bitácora de revisión](../objetivo-1/BITACORA.md) | ¿Qué hicimos nosotros y cuándo? |
 | [Cambios](../CHANGELOG.md) | ¿Qué cambió en esta réplica? |
+| [Diagnóstico geométrico](../objetivo-1/DIAGNOSTICO_GEOMETRIAS.md) | ¿Qué defectos pudimos demostrar localmente? |
+| [Revisión de datos](../objetivo-1/REVISION_DATOS.md) | ¿Se reproducen los 9.120 pares recibidos? |
+| [Instrucciones para estudiantes](../objetivo-1/INSTRUCCIONES_ESTUDIANTES.md) | ¿Qué deben ejecutar y entregar desde SC3? |
+| [Plantilla de entrega](../objetivo-1/PLANTILLA_ENTREGA_OE1.md) | ¿Cómo reportar los resultados? |
 
 Los Markdown originales de los estudiantes permanecen dentro de `originales/`; sus enlaces históricos se conservan y pueden apuntar a archivos del repositorio de trabajo no entregados. No son enlaces nuevos de nuestra guía.
