@@ -1,0 +1,35 @@
+{
+  "corridas_pareadas": [
+    {
+      "semilla": 2026092801,
+      "eficiencia_original": 0.752098,
+      "eficiencia_corregida": 0.752098,
+      "delta_eficiencia": 0.0,
+      "cambio_relativo_global": 0.0,
+      "diferencia_absoluta_media_pixel_por_evento": 0.0,
+      "nota_espacial": "Incluye fluctuaciones Monte Carlo; no es por sí sola cambio físico."
+    },
+    {
+      "semilla": 2026092802,
+      "eficiencia_original": 0.75238,
+      "eficiencia_corregida": 0.75238,
+      "delta_eficiencia": 0.0,
+      "cambio_relativo_global": 0.0,
+      "diferencia_absoluta_media_pixel_por_evento": 0.0,
+      "nota_espacial": "Incluye fluctuaciones Monte Carlo; no es por sí sola cambio físico."
+    },
+    {
+      "semilla": 2026092803,
+      "eficiencia_original": 0.751804,
+      "eficiencia_corregida": 0.751804,
+      "delta_eficiencia": 0.0,
+      "cambio_relativo_global": 0.0,
+      "diferencia_absoluta_media_pixel_por_evento": 3.0517578125e-11,
+      "nota_espacial": "Incluye fluctuaciones Monte Carlo; no es por sí sola cambio físico."
+    }
+  ],
+  "media_delta_eficiencia": 0.0,
+  "desviacion_entre_replicas": 0.0,
+  "error_estandar_media_delta": 0.0,
+  "limites": "Tres pares son piloto. Semilla compartida no asegura trayectorias idénticas. Sin criterio automático de equivalencia; revisar mapas, geometría e incertidumbre local."
+}

@@ -1,0 +1,456 @@
+{
+  "metadata": {
+    "generated_utc": "2026-09-29T11:35:10.703973+00:00",
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "script_sha256": "5b82b05f997514b20aad61804817c9478ead057fd8f57db070ba2230a5a42468",
+    "pilot_root": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/piloto",
+    "prereg_dir": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/analisis",
+    "geometry_id": "geo-train-06",
+    "view": 0,
+    "seeds": [
+      2026092801,
+      2026092802,
+      2026092803
+    ],
+    "variants": {
+      "A": "original",
+      "B": "corregida"
+    },
+    "pilot_events_per_run_design": 1000000,
+    "pilot_n_seeds": 3,
+    "interpretation_se_multiplier": 2.0
+  },
+  "definitions": {
+    "count_per_1e6_events": "raw mask count in a run, scaled by PILOT_EVENTS_PER_RUN / that run's own events_transported (PREREGISTRO_ROI.md section 6, point 1).",
+    "diff_b_minus_a_per_1e6_events": "D_s = count_B,s - count_A,s per seed, per 1e6 events (section 6, point 2).",
+    "sd_between_replicates": "sample standard deviation (ddof=1) of the 3 seeds' D_s (section 6, point 3). Can be exactly 0.0 -- see the module docstring.",
+    "se_observed_mean_3seeds": "sd_between_replicates / sqrt(3) (section 6, point 3); used ONLY by control_check below, never by interpretation.category.",
+    "poisson_se_per_run": "pre-registered, PREDICTED standard error from roi-preregistro.json (section 4); read and reported here, not recomputed.",
+    "predicted_se_mean_3seeds": "pre-registered, PREDICTED SE of the 3-seed mean from roi-preregistro.json (section 4); this is the 'SE' section 7's interpretation.category rule refers to.",
+    "interpretation.category": "one of inconclusive_insufficient_power, null_adequate_power, effect_present, discordant -- exactly as PREREGISTRO_ROI.md section 7 defines them; governed by predicted_se_mean_3seeds ONLY, never by sd_between_replicates/se_observed_mean_3seeds (see classify_interpretation).",
+    "control_check": "section 6, point 5's spurious-difference check, R_rock/R_sky only: mean_diff compatible with 0 within se_observed_mean_3seeds (null for R_int/R_cond/R_body, where point 5 does not apply)."
+  },
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": []
+  },
+  "input_hashes": {
+    "prereg_json": {
+      "path": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/analisis/roi-preregistro.json",
+      "sha256": "8f8fd6c1ee58a083e3f9d540cc7c296b9c4d451877de0676730eac8b396b04ac"
+    },
+    "masks_npz": {
+      "path": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/analisis/roi-mascaras.npz",
+      "sha256": "7546773bc4a5e4e13c8a1ada843c0b6f9559d238c5b6f1a6bcbbbac6d0907d8c"
+    },
+    "runs": {
+      "original": {
+        "2026092801": {
+          "hist": {
+            "path": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/piloto/original/2026092801/geo-train-06_view0_hist.csv",
+            "sha256": "88d37159eda5d3f74817d984e70277ed37b49d873dd252cf025debd661b58caa"
+          },
+          "meta": {
+            "path": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/piloto/original/2026092801/geo-train-06_view0.meta.json",
+            "sha256": "298998b75f19204ef2c472632b16b0876ffe46a1c3c02fe42d8ae1fad6afd63e"
+          }
+        },
+        "2026092802": {
+          "hist": {
+            "path": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/piloto/original/2026092802/geo-train-06_view0_hist.csv",
+            "sha256": "9e12bc47f9c574f344e5c82041efee0d22efda4408aa22ed49c30b98564c7534"
+          },
+          "meta": {
+            "path": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/piloto/original/2026092802/geo-train-06_view0.meta.json",
+            "sha256": "2791ae8ea6bfb45f22756e47d9ce127fa330b63531b3d6a02fabe3d133fa804d"
+          }
+        },
+        "2026092803": {
+          "hist": {
+            "path": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/piloto/original/2026092803/geo-train-06_view0_hist.csv",
+            "sha256": "b4558a075b4ef8953f36a42c716e6a49f8339b56d282785779488405925953a4"
+          },
+          "meta": {
+            "path": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/piloto/original/2026092803/geo-train-06_view0.meta.json",
+            "sha256": "e759bdc3bdba582cbe0c453f353e4776e2148022eec622de4094c9e65fdff7be"
+          }
+        }
+      },
+      "corregida": {
+        "2026092801": {
+          "hist": {
+            "path": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/piloto/corregida/2026092801/geo-train-06_view0_hist.csv",
+            "sha256": "88d37159eda5d3f74817d984e70277ed37b49d873dd252cf025debd661b58caa"
+          },
+          "meta": {
+            "path": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/piloto/corregida/2026092801/geo-train-06_view0.meta.json",
+            "sha256": "1282a77d8350244b98b907838df0027a15bae31e56d82b619945f99cdb56c14b"
+          }
+        },
+        "2026092802": {
+          "hist": {
+            "path": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/piloto/corregida/2026092802/geo-train-06_view0_hist.csv",
+            "sha256": "9e12bc47f9c574f344e5c82041efee0d22efda4408aa22ed49c30b98564c7534"
+          },
+          "meta": {
+            "path": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/piloto/corregida/2026092802/geo-train-06_view0.meta.json",
+            "sha256": "193964c2d592cba91c5fb9a4af6a16371725086ef2cacca6c9fc748e82340b8c"
+          }
+        },
+        "2026092803": {
+          "hist": {
+            "path": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/piloto/corregida/2026092803/geo-train-06_view0_hist.csv",
+            "sha256": "b2ffc4e8ff8d505810dca75d7fe545e95f896a2600e62f95d6da6a51489ef368"
+          },
+          "meta": {
+            "path": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/piloto/corregida/2026092803/geo-train-06_view0.meta.json",
+            "sha256": "e79afc29c5b73168345f7c4a5180e9fd158d408fcf1483a24c8438abe3789b57"
+          }
+        }
+      }
+    }
+  },
+  "global_efficiency": {
+    "per_run": {
+      "A": {
+        "2026092801": {
+          "detected_in_bins": 752098,
+          "events_transported": 1000000,
+          "efficiency": 0.752098
+        },
+        "2026092802": {
+          "detected_in_bins": 752380,
+          "events_transported": 1000000,
+          "efficiency": 0.75238
+        },
+        "2026092803": {
+          "detected_in_bins": 751804,
+          "events_transported": 1000000,
+          "efficiency": 0.751804
+        }
+      },
+      "B": {
+        "2026092801": {
+          "detected_in_bins": 752098,
+          "events_transported": 1000000,
+          "efficiency": 0.752098
+        },
+        "2026092802": {
+          "detected_in_bins": 752380,
+          "events_transported": 1000000,
+          "efficiency": 0.75238
+        },
+        "2026092803": {
+          "detected_in_bins": 751804,
+          "events_transported": 1000000,
+          "efficiency": 0.751804
+        }
+      }
+    },
+    "per_variant": {
+      "A": {
+        "detected_in_bins_total": 2256282,
+        "events_transported_total": 3000000,
+        "efficiency": 0.752094
+      },
+      "B": {
+        "detected_in_bins_total": 2256282,
+        "events_transported_total": 3000000,
+        "efficiency": 0.752094
+      }
+    }
+  },
+  "roi_results": {
+    "R_int": {
+      "n_pixels": 195,
+      "per_seed": {
+        "2026092801": {
+          "count_a_raw": 2.0,
+          "count_b_raw": 2.0,
+          "events_transported_a": 1000000,
+          "events_transported_b": 1000000,
+          "count_a_per_1e6_events": 2.0,
+          "count_b_per_1e6_events": 2.0,
+          "diff_b_minus_a_per_1e6_events": 0.0
+        },
+        "2026092802": {
+          "count_a_raw": 0.0,
+          "count_b_raw": 0.0,
+          "events_transported_a": 1000000,
+          "events_transported_b": 1000000,
+          "count_a_per_1e6_events": 0.0,
+          "count_b_per_1e6_events": 0.0,
+          "diff_b_minus_a_per_1e6_events": 0.0
+        },
+        "2026092803": {
+          "count_a_raw": 2.0,
+          "count_b_raw": 2.0,
+          "events_transported_a": 1000000,
+          "events_transported_b": 1000000,
+          "count_a_per_1e6_events": 2.0,
+          "count_b_per_1e6_events": 2.0,
+          "diff_b_minus_a_per_1e6_events": 0.0
+        }
+      },
+      "mean_diff_per_1e6_events": 0.0,
+      "sd_between_replicates": 0.0,
+      "se_observed_mean_3seeds": 0.0,
+      "n_seeds_nonzero_diff": 0,
+      "prereg_reference": {
+        "expected_b1_per_1e6_events": 1.1169479900910462,
+        "expected_conduit_wins_per_1e6_events": 1.2102538615490366,
+        "delta_max_b1_minus_conduit_wins": -0.09330587145799041,
+        "poisson_se_per_run": 1.056857601614828,
+        "predicted_se_mean_3seeds": 0.8629206182459837
+      },
+      "interpretation": {
+        "category": "inconclusive_insufficient_power",
+        "category_label": "Inconclusive: the pre-registered SE exceeds |Delta_max| -- the planned statistics cannot separate 0 from Delta_max in this ROI; NOT evidence that A and B are equivalent (PREREGISTRO_ROI.md section 7, case 1).",
+        "se_predicted_mean_3seeds": 0.8629206182459837,
+        "delta_max": -0.09330587145799041,
+        "mean_diff_per_1e6_events": 0.0,
+        "two_se_predicted": 1.7258412364919673,
+        "abs_delta_max_over_se_predicted": 0.10812798939449224,
+        "abs_mean_diff_over_abs_delta_max": 0.0,
+        "sign_matches_delta_max": null
+      },
+      "control_check": null
+    },
+    "R_cond": {
+      "n_pixels": 769,
+      "per_seed": {
+        "2026092801": {
+          "count_a_raw": 84.0,
+          "count_b_raw": 84.0,
+          "events_transported_a": 1000000,
+          "events_transported_b": 1000000,
+          "count_a_per_1e6_events": 84.0,
+          "count_b_per_1e6_events": 84.0,
+          "diff_b_minus_a_per_1e6_events": 0.0
+        },
+        "2026092802": {
+          "count_a_raw": 82.0,
+          "count_b_raw": 82.0,
+          "events_transported_a": 1000000,
+          "events_transported_b": 1000000,
+          "count_a_per_1e6_events": 82.0,
+          "count_b_per_1e6_events": 82.0,
+          "diff_b_minus_a_per_1e6_events": 0.0
+        },
+        "2026092803": {
+          "count_a_raw": 73.0,
+          "count_b_raw": 73.0,
+          "events_transported_a": 1000000,
+          "events_transported_b": 1000000,
+          "count_a_per_1e6_events": 73.0,
+          "count_b_per_1e6_events": 73.0,
+          "diff_b_minus_a_per_1e6_events": 0.0
+        }
+      },
+      "mean_diff_per_1e6_events": 0.0,
+      "sd_between_replicates": 0.0,
+      "se_observed_mean_3seeds": 0.0,
+      "n_seeds_nonzero_diff": 0,
+      "prereg_reference": {
+        "expected_b1_per_1e6_events": 15.871365259840157,
+        "expected_conduit_wins_per_1e6_events": 15.874145937400314,
+        "delta_max_b1_minus_conduit_wins": -0.0027806775601568745,
+        "poisson_se_per_run": 3.983888208752871,
+        "predicted_se_mean_3seeds": 3.2528311012450017
+      },
+      "interpretation": {
+        "category": "inconclusive_insufficient_power",
+        "category_label": "Inconclusive: the pre-registered SE exceeds |Delta_max| -- the planned statistics cannot separate 0 from Delta_max in this ROI; NOT evidence that A and B are equivalent (PREREGISTRO_ROI.md section 7, case 1).",
+        "se_predicted_mean_3seeds": 3.2528311012450017,
+        "delta_max": -0.0027806775601568745,
+        "mean_diff_per_1e6_events": 0.0,
+        "two_se_predicted": 6.5056622024900035,
+        "abs_delta_max_over_se_predicted": 0.0008548484300622269,
+        "abs_mean_diff_over_abs_delta_max": 0.0,
+        "sign_matches_delta_max": null
+      },
+      "control_check": null
+    },
+    "R_body": {
+      "n_pixels": 830,
+      "per_seed": {
+        "2026092801": {
+          "count_a_raw": 14.0,
+          "count_b_raw": 14.0,
+          "events_transported_a": 1000000,
+          "events_transported_b": 1000000,
+          "count_a_per_1e6_events": 14.0,
+          "count_b_per_1e6_events": 14.0,
+          "diff_b_minus_a_per_1e6_events": 0.0
+        },
+        "2026092802": {
+          "count_a_raw": 17.0,
+          "count_b_raw": 17.0,
+          "events_transported_a": 1000000,
+          "events_transported_b": 1000000,
+          "count_a_per_1e6_events": 17.0,
+          "count_b_per_1e6_events": 17.0,
+          "diff_b_minus_a_per_1e6_events": 0.0
+        },
+        "2026092803": {
+          "count_a_raw": 19.0,
+          "count_b_raw": 19.0,
+          "events_transported_a": 1000000,
+          "events_transported_b": 1000000,
+          "count_a_per_1e6_events": 19.0,
+          "count_b_per_1e6_events": 19.0,
+          "diff_b_minus_a_per_1e6_events": 0.0
+        }
+      },
+      "mean_diff_per_1e6_events": 0.0,
+      "sd_between_replicates": 0.0,
+      "se_observed_mean_3seeds": 0.0,
+      "n_seeds_nonzero_diff": 0,
+      "prereg_reference": {
+        "expected_b1_per_1e6_events": 5.33409724384313,
+        "expected_conduit_wins_per_1e6_events": 5.334834824240334,
+        "delta_max_b1_minus_conduit_wins": -0.0007375803972031747,
+        "poisson_se_per_run": 2.309566462313464,
+        "predicted_se_mean_3seeds": 1.8857531199042874
+      },
+      "interpretation": {
+        "category": "inconclusive_insufficient_power",
+        "category_label": "Inconclusive: the pre-registered SE exceeds |Delta_max| -- the planned statistics cannot separate 0 from Delta_max in this ROI; NOT evidence that A and B are equivalent (PREREGISTRO_ROI.md section 7, case 1).",
+        "se_predicted_mean_3seeds": 1.8857531199042874,
+        "delta_max": -0.0007375803972031747,
+        "mean_diff_per_1e6_events": 0.0,
+        "two_se_predicted": 3.771506239808575,
+        "abs_delta_max_over_se_predicted": 0.0003911330647781779,
+        "abs_mean_diff_over_abs_delta_max": 0.0,
+        "sign_matches_delta_max": null
+      },
+      "control_check": null
+    },
+    "R_rock": {
+      "n_pixels": 12849,
+      "per_seed": {
+        "2026092801": {
+          "count_a_raw": 2875.0,
+          "count_b_raw": 2875.0,
+          "events_transported_a": 1000000,
+          "events_transported_b": 1000000,
+          "count_a_per_1e6_events": 2875.0,
+          "count_b_per_1e6_events": 2875.0,
+          "diff_b_minus_a_per_1e6_events": 0.0
+        },
+        "2026092802": {
+          "count_a_raw": 2848.0,
+          "count_b_raw": 2848.0,
+          "events_transported_a": 1000000,
+          "events_transported_b": 1000000,
+          "count_a_per_1e6_events": 2848.0,
+          "count_b_per_1e6_events": 2848.0,
+          "diff_b_minus_a_per_1e6_events": 0.0
+        },
+        "2026092803": {
+          "count_a_raw": 2901.0,
+          "count_b_raw": 2901.0,
+          "events_transported_a": 1000000,
+          "events_transported_b": 1000000,
+          "count_a_per_1e6_events": 2901.0,
+          "count_b_per_1e6_events": 2901.0,
+          "diff_b_minus_a_per_1e6_events": 0.0
+        }
+      },
+      "mean_diff_per_1e6_events": 0.0,
+      "sd_between_replicates": 0.0,
+      "se_observed_mean_3seeds": 0.0,
+      "n_seeds_nonzero_diff": 0,
+      "prereg_reference": {
+        "expected_b1_per_1e6_events": 722.2230066945394,
+        "expected_conduit_wins_per_1e6_events": 722.2230066945394,
+        "delta_max_b1_minus_conduit_wins": 0.0,
+        "poisson_se_per_run": 26.874207089596883,
+        "predicted_se_mean_3seeds": 21.942698203799512
+      },
+      "interpretation": {
+        "category": "inconclusive_insufficient_power",
+        "category_label": "Inconclusive: the pre-registered SE exceeds |Delta_max| -- the planned statistics cannot separate 0 from Delta_max in this ROI; NOT evidence that A and B are equivalent (PREREGISTRO_ROI.md section 7, case 1).",
+        "se_predicted_mean_3seeds": 21.942698203799512,
+        "delta_max": 0.0,
+        "mean_diff_per_1e6_events": 0.0,
+        "two_se_predicted": 43.885396407599025,
+        "abs_delta_max_over_se_predicted": 0.0,
+        "abs_mean_diff_over_abs_delta_max": null,
+        "sign_matches_delta_max": null
+      },
+      "control_check": {
+        "mean_diff_per_1e6_events": 0.0,
+        "se_observed_mean_3seeds": 0.0,
+        "compatible_with_zero": true,
+        "spurious_difference_detected": false
+      }
+    },
+    "R_sky": {
+      "n_pixels": 50842,
+      "per_seed": {
+        "2026092801": {
+          "count_a_raw": 749020.0,
+          "count_b_raw": 749020.0,
+          "events_transported_a": 1000000,
+          "events_transported_b": 1000000,
+          "count_a_per_1e6_events": 749020.0,
+          "count_b_per_1e6_events": 749020.0,
+          "diff_b_minus_a_per_1e6_events": 0.0
+        },
+        "2026092802": {
+          "count_a_raw": 749349.0,
+          "count_b_raw": 749349.0,
+          "events_transported_a": 1000000,
+          "events_transported_b": 1000000,
+          "count_a_per_1e6_events": 749349.0,
+          "count_b_per_1e6_events": 749349.0,
+          "diff_b_minus_a_per_1e6_events": 0.0
+        },
+        "2026092803": {
+          "count_a_raw": 748717.0,
+          "count_b_raw": 748717.0,
+          "events_transported_a": 1000000,
+          "events_transported_b": 1000000,
+          "count_a_per_1e6_events": 748717.0,
+          "count_b_per_1e6_events": 748717.0,
+          "diff_b_minus_a_per_1e6_events": 0.0
+        }
+      },
+      "mean_diff_per_1e6_events": 0.0,
+      "sd_between_replicates": 0.0,
+      "se_observed_mean_3seeds": 0.0,
+      "n_seeds_nonzero_diff": 0,
+      "prereg_reference": {
+        "expected_b1_per_1e6_events": 751338.0707658178,
+        "expected_conduit_wins_per_1e6_events": 751338.0707658178,
+        "delta_max_b1_minus_conduit_wins": 0.0,
+        "poisson_se_per_run": 866.7975950392444,
+        "predicted_se_mean_3seeds": 707.7372727059186
+      },
+      "interpretation": {
+        "category": "inconclusive_insufficient_power",
+        "category_label": "Inconclusive: the pre-registered SE exceeds |Delta_max| -- the planned statistics cannot separate 0 from Delta_max in this ROI; NOT evidence that A and B are equivalent (PREREGISTRO_ROI.md section 7, case 1).",
+        "se_predicted_mean_3seeds": 707.7372727059186,
+        "delta_max": 0.0,
+        "mean_diff_per_1e6_events": 0.0,
+        "two_se_predicted": 1415.4745454118372,
+        "abs_delta_max_over_se_predicted": 0.0,
+        "abs_mean_diff_over_abs_delta_max": null,
+        "sign_matches_delta_max": null
+      },
+      "control_check": {
+        "mean_diff_per_1e6_events": 0.0,
+        "se_observed_mean_3seeds": 0.0,
+        "compatible_with_zero": true,
+        "spurious_difference_detected": false
+      }
+    }
+  },
+  "outputs": {
+    "figure_png": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/analisis/roi-resultados-mapas.png",
+    "results_json": "muografia-documentada/objetivo-1/entregas/2026-09-29-geo-train-06/analisis/roi-resultados.json"
+  }
+}

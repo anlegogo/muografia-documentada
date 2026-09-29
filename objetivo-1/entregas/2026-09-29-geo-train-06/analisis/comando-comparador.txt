@@ -1,0 +1,6 @@
+2026-09-29T11:03:55Z
+guane.sc3.uis.edu.co
+Python 3.9.25
+numpy 1.23.5
+16ccee3028bc8233f25ff668b7ebdb9abaa3805a84e6c20e9cacfd718f69fd46  comparar_piloto_oe1.py
+python3 comparar_piloto_oe1.py /home/dapintoo/oe1-trabajo/salidas/piloto-geo-train-06-v0 --out /home/dapintoo/oe1-trabajo/salidas/comparacion-piloto-v0/resumen-piloto.json 
