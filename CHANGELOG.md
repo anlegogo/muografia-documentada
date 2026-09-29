@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Revisión de entrega y encargo de diseño — 2026-09-29, Colombia
+
+- Se documenta la revisión independiente de la entrega `712c786`, con observaciones y evidencia de recálculo.
+- Se actualizan seguimiento, matriz e índice; el primer encargo queda identificado como histórico.
+- Se solicita el diseño del segundo ensayo antes de ampliar simulaciones; sin fusión de resultados ni cierre del OE1.
+
 ## Revisión técnica del OE1 y preparación de instrucciones — 2026-09-28, Colombia
 
 - Diagnóstico analítico del catálogo: intersecciones entre anomalías en cuatro geometrías y salidas del edificio en otras dos.

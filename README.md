@@ -8,6 +8,8 @@ Réplica local selectiva del material de Reinaldo Cárdenas Tirado y Daniel Andr
 
 ## Por dónde comenzar
 
+**Seguimiento del 29 de septiembre:** [primera entrega revisada con observaciones](objetivo-1/REVISION_ENTREGA_2026-09-29.md). El encargo vigente es [presentar el diseño del siguiente ensayo](objetivo-1/DISENO_SIGUIENTE_ENSAYO_OE1.md) antes de ampliar las simulaciones. Los resultados recibidos permanecen en la rama de estudiantes, sin fusionar.
+
 1. [Índice de documentación](docs/INDICE.md).
 2. [Alcance del OE1](objetivo-1/ALCANCE.md).
 3. [Matriz de cumplimiento y evidencia](objetivo-1/MATRIZ_CUMPLIMIENTO.md).

@@ -1,0 +1,1534 @@
+{
+  "manifest_total": 120,
+  "manifest_failures": [],
+  "pilot": [
+    {
+      "seed": 2026092801,
+      "runs": [
+        {
+          "variant": "original",
+          "n": 1000000,
+          "detected": 752098,
+          "sum": 752098,
+          "sum_matches": true,
+          "hashes_ok": true,
+          "GeomVol1002": 1,
+          "GeomNav": 0
+        },
+        {
+          "variant": "corregida",
+          "n": 1000000,
+          "detected": 752098,
+          "sum": 752098,
+          "sum_matches": true,
+          "hashes_ok": true,
+          "GeomVol1002": 0,
+          "GeomNav": 0
+        }
+      ],
+      "different_bins": 0,
+      "L1": 0,
+      "roi_counts": {
+        "R_int": [
+          2,
+          2
+        ],
+        "R_cond": [
+          84,
+          84
+        ],
+        "R_body": [
+          14,
+          14
+        ],
+        "R_rock": [
+          2875,
+          2875
+        ],
+        "R_sky": [
+          749020,
+          749020
+        ]
+      }
+    },
+    {
+      "seed": 2026092802,
+      "runs": [
+        {
+          "variant": "original",
+          "n": 1000000,
+          "detected": 752380,
+          "sum": 752380,
+          "sum_matches": true,
+          "hashes_ok": true,
+          "GeomVol1002": 1,
+          "GeomNav": 0
+        },
+        {
+          "variant": "corregida",
+          "n": 1000000,
+          "detected": 752380,
+          "sum": 752380,
+          "sum_matches": true,
+          "hashes_ok": true,
+          "GeomVol1002": 0,
+          "GeomNav": 0
+        }
+      ],
+      "different_bins": 0,
+      "L1": 0,
+      "roi_counts": {
+        "R_int": [
+          0,
+          0
+        ],
+        "R_cond": [
+          82,
+          82
+        ],
+        "R_body": [
+          17,
+          17
+        ],
+        "R_rock": [
+          2848,
+          2848
+        ],
+        "R_sky": [
+          749349,
+          749349
+        ]
+      }
+    },
+    {
+      "seed": 2026092803,
+      "runs": [
+        {
+          "variant": "original",
+          "n": 1000000,
+          "detected": 751804,
+          "sum": 751804,
+          "sum_matches": true,
+          "hashes_ok": true,
+          "GeomVol1002": 1,
+          "GeomNav": 0
+        },
+        {
+          "variant": "corregida",
+          "n": 1000000,
+          "detected": 751804,
+          "sum": 751804,
+          "sum_matches": true,
+          "hashes_ok": true,
+          "GeomVol1002": 0,
+          "GeomNav": 0
+        }
+      ],
+      "different_bins": 2,
+      "L1": 2,
+      "roi_counts": {
+        "R_int": [
+          2,
+          2
+        ],
+        "R_cond": [
+          73,
+          73
+        ],
+        "R_body": [
+          19,
+          19
+        ],
+        "R_rock": [
+          2901,
+          2901
+        ],
+        "R_sky": [
+          748717,
+          748717
+        ]
+      }
+    }
+  ],
+  "campaign_reproduction_equal": true,
+  "reproduction_hist_sha_crlf": "78bd394ec73d09a8167d5fd2122386db2778956853c75bdcb54e11d61f33ed14",
+  "T1_rows": 228,
+  "T1_exit_counts": {
+    "A:1": 36,
+    "A:0": 78,
+    "B:0": 114
+  },
+  "T1_archive_summary_count": 228,
+  "T1_summaries": [
+    {
+      "name": "A/geo-gen-01_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-gen-01 view=1 volumes=5 overlapping=1 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-gen-01_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-gen-01 view=0 volumes=5 overlapping=1 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-gen-01_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-gen-01 view=2 volumes=5 overlapping=1 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-gen-01_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-gen-01 view=3 volumes=5 overlapping=1 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-gen-01_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-gen-01 view=5 volumes=5 overlapping=1 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-gen-01_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-gen-01 view=4 volumes=5 overlapping=1 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-test-01_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-01 view=0 volumes=4 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-test-01_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-01 view=1 volumes=4 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-test-01_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-01 view=2 volumes=4 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-test-01_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-01 view=3 volumes=4 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-test-01_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-01 view=4 volumes=4 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-test-01_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-01 view=5 volumes=4 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-test-02_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-02 view=0 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-test-02_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-02 view=1 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-test-02_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-02 view=3 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-test-02_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-02 view=2 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-test-02_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-02 view=4 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-test-02_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-02 view=5 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-test-03_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-03 view=0 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-test-03_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-03 view=1 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-test-03_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-03 view=2 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-test-03_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-03 view=3 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-test-03_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-03 view=4 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-test-03_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-03 view=5 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-01_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-01 view=0 volumes=2 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-01_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-01 view=1 volumes=2 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-01_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-01 view=2 volumes=2 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-01_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-01 view=3 volumes=2 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-01_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-01 view=4 volumes=2 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-01_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-01 view=5 volumes=2 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-02_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-02 view=0 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-02_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-02 view=1 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-02_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-02 view=2 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-02_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-02 view=3 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-02_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-02 view=4 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-02_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-02 view=5 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-03_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-03 view=0 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-03_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-03 view=1 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-03_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-03 view=2 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-03_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-03 view=3 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-03_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-03 view=4 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-03_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-03 view=5 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-04_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-04 view=0 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-04_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-04 view=1 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-04_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-04 view=2 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-04_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-04 view=3 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-04_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-04 view=4 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-04_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-04 view=5 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-05_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-05 view=0 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-05_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-05 view=1 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-05_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-05 view=2 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-05_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-05 view=3 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-05_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-05 view=4 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-05_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-05 view=5 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-06_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-06 view=0 volumes=4 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-06_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-06 view=1 volumes=4 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-06_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-06 view=2 volumes=4 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-06_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-06 view=3 volumes=4 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-06_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-06 view=4 volumes=4 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-06_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-06 view=5 volumes=4 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-07_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-07 view=0 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-07_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-07 view=1 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-07_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-07 view=2 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-07_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-07 view=3 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-07_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-07 view=4 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-07_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-07 view=5 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-08_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-08 view=0 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-08_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-08 view=1 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-08_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-08 view=2 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-08_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-08 view=3 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-08_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-08 view=4 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-08_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-08 view=5 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-09_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-09 view=0 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-09_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-09 view=1 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-09_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-09 view=2 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-09_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-09 view=3 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-09_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-09 view=4 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-09_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-09 view=5 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-10_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-10 view=0 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-10_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-10 view=1 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-10_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-10 view=2 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-10_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-10 view=3 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-10_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-10 view=4 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-10_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-10 view=5 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-11_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-11 view=0 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-11_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-11 view=1 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-11_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-11 view=2 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-11_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-11 view=3 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-11_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-11 view=4 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-11_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-11 view=5 volumes=5 overlapping=2 status=OVERLAPS"
+      ]
+    },
+    {
+      "name": "A/geo-train-12_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-12 view=0 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-12_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-12 view=1 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-12_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-12 view=2 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-12_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-12 view=3 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-12_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-12 view=4 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-train-12_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-12 view=5 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-01_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-01 view=0 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-01_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-01 view=1 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-01_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-01 view=2 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-01_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-01 view=3 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-01_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-01 view=4 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-01_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-01 view=5 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-02_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-02 view=0 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-02_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-02 view=1 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-02_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-02 view=2 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-02_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-02 view=3 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-02_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-02 view=4 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-02_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-02 view=5 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-03_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-03 view=0 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-03_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-03 view=1 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-03_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-03 view=2 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-03_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-03 view=3 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-03_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-03 view=4 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "A/geo-val-03_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-03 view=5 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-gen-01_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-gen-01 view=1 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-gen-01_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-gen-01 view=0 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-gen-01_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-gen-01 view=2 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-gen-01_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-gen-01 view=3 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-gen-01_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-gen-01 view=4 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-gen-01_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-gen-01 view=5 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-01_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-01 view=0 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-01_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-01 view=1 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-01_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-01 view=2 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-01_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-01 view=3 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-01_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-01 view=4 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-01_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-01 view=5 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-02_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-02 view=0 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-02_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-02 view=1 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-02_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-02 view=2 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-02_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-02 view=3 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-02_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-02 view=4 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-02_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-02 view=5 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-03_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-03 view=0 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-03_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-03 view=1 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-03_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-03 view=2 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-03_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-03 view=3 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-03_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-03 view=4 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-test-03_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-test-03 view=5 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-01_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-01 view=0 volumes=2 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-01_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-01 view=1 volumes=2 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-01_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-01 view=2 volumes=2 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-01_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-01 view=3 volumes=2 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-01_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-01 view=4 volumes=2 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-01_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-01 view=5 volumes=2 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-02_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-02 view=0 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-02_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-02 view=1 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-02_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-02 view=2 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-02_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-02 view=3 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-02_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-02 view=4 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-02_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-02 view=5 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-03_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-03 view=0 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-03_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-03 view=1 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-03_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-03 view=2 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-03_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-03 view=3 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-03_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-03 view=4 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-03_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-03 view=5 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-04_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-04 view=0 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-04_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-04 view=1 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-04_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-04 view=2 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-04_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-04 view=3 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-04_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-04 view=4 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-04_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-04 view=5 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-05_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-05 view=0 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-05_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-05 view=1 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-05_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-05 view=2 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-05_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-05 view=3 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-05_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-05 view=4 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-05_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-05 view=5 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-06_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-06 view=0 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-06_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-06 view=1 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-06_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-06 view=2 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-06_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-06 view=3 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-06_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-06 view=4 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-06_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-06 view=5 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-07_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-07 view=0 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-07_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-07 view=1 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-07_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-07 view=2 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-07_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-07 view=3 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-07_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-07 view=4 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-07_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-07 view=5 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-08_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-08 view=0 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-08_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-08 view=1 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-08_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-08 view=2 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-08_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-08 view=3 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-08_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-08 view=4 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-08_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-08 view=5 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-09_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-09 view=0 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-09_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-09 view=1 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-09_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-09 view=2 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-09_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-09 view=3 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-09_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-09 view=4 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-09_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-09 view=5 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-10_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-10 view=0 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-10_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-10 view=1 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-10_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-10 view=2 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-10_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-10 view=3 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-10_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-10 view=4 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-10_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-10 view=5 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-11_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-11 view=0 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-11_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-11 view=1 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-11_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-11 view=2 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-11_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-11 view=3 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-11_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-11 view=4 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-11_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-11 view=5 volumes=5 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-12_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-12 view=0 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-12_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-12 view=1 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-12_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-12 view=2 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-12_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-12 view=3 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-12_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-12 view=4 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-train-12_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-train-12 view=5 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-01_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-01 view=0 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-01_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-01 view=1 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-01_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-01 view=2 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-01_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-01 view=3 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-01_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-01 view=4 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-01_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-01 view=5 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-02_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-02 view=0 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-02_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-02 view=1 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-02_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-02 view=2 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-02_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-02 view=3 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-02_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-02 view=4 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-02_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-02 view=5 volumes=3 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-03_view0.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-03 view=0 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-03_view1.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-03 view=1 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-03_view2.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-03 view=2 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-03_view3.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-03 view=3 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-03_view4.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-03 view=4 volumes=4 overlapping=0 status=OK"
+      ]
+    },
+    {
+      "name": "B/geo-val-03_view5.log",
+      "summary": [
+        "OVERLAP-CHECK-SUMMARY geometry=geo-val-03 view=5 volumes=4 overlapping=0 status=OK"
+      ]
+    }
+  ],
+  "revision_entrega": "712c78664074732a612b47a8fa4a7fe45f8c4746",
+  "nota": "Recálculo local sobre bytes versionados; copia de exportación Windows restaurada a los blobs Git para evitar conversión CRLF. No se ejecutó Geant4 localmente."
+}

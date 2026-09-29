@@ -2,6 +2,8 @@
 
 | Documento | Pregunta que responde |
 |---|---|
+| [Revisión de primera entrega](../objetivo-1/REVISION_ENTREGA_2026-09-29.md) | ¿Qué se comprobó y qué observaciones deben atender? |
+| [Diseño del siguiente ensayo](../objetivo-1/DISENO_SIGUIENTE_ENSAYO_OE1.md) | ¿Qué deben entregar ahora antes de ampliar simulaciones? |
 | [README principal](../README.md) | ¿Qué contiene esta réplica? |
 | [Procedencia](PROCEDENCIA.md) | ¿De quién proviene cada material y qué versión se recibió? |
 | [Reglas documentales](DOCUMENTACION.md) | ¿Cómo registrar y actualizar el trabajo? |

@@ -1,5 +1,7 @@
 # Objetivo específico 1: guía del material
 
+**Encargo vigente:** [propuesta del segundo ensayo](DISENO_SIGUIENTE_ENSAYO_OE1.md), a partir de la [revisión de la primera entrega](REVISION_ENTREGA_2026-09-29.md). La ejecución de una campaña ampliada queda pendiente de revisar ese diseño.
+
 Consultar primero [alcance](ALCANCE.md) y [matriz de cumplimiento](MATRIZ_CUMPLIMIENTO.md).
 
 Nueva revisión: [diagnóstico geométrico](DIAGNOSTICO_GEOMETRIAS.md), [reproducción de pares](REVISION_DATOS.md), [instrucciones SC3](INSTRUCCIONES_ESTUDIANTES.md) y [plantilla de reporte](PLANTILLA_ENTREGA_OE1.md).

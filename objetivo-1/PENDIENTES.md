@@ -2,6 +2,8 @@
 
 Todos los siguientes puntos permanecen abiertos; no se asigna a los estudiantes una actividad como realizada sin evidencia.
 
+**Estado al 29 de septiembre:** la [primera entrega revisada](REVISION_ENTREGA_2026-09-29.md) respalda controles geométricos favorables de B en 114 casos y la reproducción exacta de una vista histórica. P-01 avanza en corrección geométrica, pero conserva pendiente el impacto físico y la decisión de regeneración; P-02 avanza para ese entorno/caso SC3, sin certificar otros entornos. P-03/P-04 continúan abiertos. El nuevo encargo es una [propuesta de ensayo](DISENO_SIGUIENTE_ENSAYO_OE1.md), no repetir las 114 vistas.
+
 **Actualización de revisión:** el [diagnóstico local](DIAGNOSTICO_GEOMETRIAS.md) demuestra intersecciones en cuatro geometrías y salidas del edificio en otras dos. Los [9.120 pares se reprodujeron](REVISION_DATOS.md); ese resultado no cierra P-01. Las [instrucciones de SC3](INSTRUCCIONES_ESTUDIANTES.md) preparan el siguiente ensayo.
 
 | ID | Hallazgo / necesidad | Evidencia | Condición de cierre |

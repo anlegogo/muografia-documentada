@@ -1,5 +1,7 @@
 # Primera entrega de los estudiantes — cierre técnico del OE1
 
+**Actualización del 29 de septiembre de 2026:** esta primera entrega ya fue recibida y [revisada con observaciones](REVISION_ENTREGA_2026-09-29.md). Conservar este documento como encargo histórico. El paso vigente es [diseñar el siguiente ensayo](DISENO_SIGUIENTE_ENSAYO_OE1.md); no repetir automáticamente el piloto ni ampliar la campaña.
+
 **Propósito:** determinar el impacto de los defectos geométricos sobre la campaña sintética. Este encargo no incluye entrenamiento ni evaluación de redes. No repetir todavía la campaña completa.
 
 ## 1. Entorno y copia de trabajo

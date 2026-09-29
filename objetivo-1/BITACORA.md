@@ -1,5 +1,12 @@
 # Bitácora de nuestra revisión del OE1
 
+## Primera entrega revisada y solicitud de diseño — 2026-09-29, Colombia
+
+- Fuente: rama `oe1/geo-train-06-piloto`, revisión `712c78664074732a612b47a8fa4a7fe45f8c4746`.
+- Evidencia de recálculo incorporada: `evidencias/revision-entrega-712c786.json`. Coinciden 120 huellas, histogramas/metadatos de piloto y reproducción de una vista histórica. No se ejecutó Geant4 localmente.
+- Se publica revisión con observaciones O-01…O-05; no se declara cerrado el OE1 ni se fusiona la rama de resultados.
+- Encargo: propuesta del siguiente ensayo, con observable, correspondencia de primarios, incertidumbre, control y presupuesto, antes de nuevas corridas de producción.
+
 ## Revisión técnica y encargo SC3 — 2026-09-28, Colombia
 
 - Entrada: mismo catálogo y datos incorporados; no se consultó una nueva entrega de estudiantes.
