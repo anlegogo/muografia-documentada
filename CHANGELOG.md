@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Preparación local del complemento R2-01 — 2026-09-30, Colombia
+
+- Se prepara un complemento técnico con 12 muones dirigidos: seis entradas desde el conducto y seis desde el cuerpo denso; 72 transportes propuestos en SC3.
+- Se añaden generador, CSV, metadatos, huellas, longitudes esperadas, ejecutor y guía. Validación local de estructura/panel OK y acuerdo entre dos cálculos geométricos.
+- La ejecución Geant4 sigue pendiente; no se modifica ni aprueba la etapa 2. [Diseño](objetivo-1/COMPLEMENTO_R2_01.md).
+
 ## Revisión de etapa 1 — 2026-09-30, Colombia
 
 - Descarga y verificación del paquete completo de etapa 1, incluidas seis listas y 13 registros por muón.

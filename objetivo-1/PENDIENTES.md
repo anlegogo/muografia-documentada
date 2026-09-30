@@ -2,6 +2,8 @@
 
 **Paso actual:** [revisión independiente de etapa 1](REVISION_ETAPA_1_2026-09-30.md), con 405 comprobaciones reproducidas y 156 controles propios sin fallos. Falta el complemento R2-01 de entrada desde el conducto y el dimensionamiento de etapa 2. P-01…P-04 siguen abiertos; el [protocolo v1.0](PROTOCOLO_SEGUNDO_ENSAYO_OE1.md) se conserva sin cambios.
 
+**Preparación local completada:** [complemento R2-01](COMPLEMENTO_R2_01.md), con 12 primarios dirigidos, controles geométricos y ejecutor para 72 transportes en SC3. La lista fue validada localmente; su transporte sigue pendiente.
+
 Todos los siguientes puntos permanecen abiertos; no se asigna a los estudiantes una actividad como realizada sin evidencia.
 
 **Estado al 29 de septiembre:** la [primera entrega revisada](REVISION_ENTREGA_2026-09-29.md) respalda controles geométricos favorables de B en 114 casos y la reproducción exacta de una vista histórica. P-01 avanza en corrección geométrica, pero conserva pendiente el impacto físico y la decisión de regeneración; P-02 avanza para ese entorno/caso SC3, sin certificar otros entornos. P-03/P-04 continúan abiertos. El nuevo encargo es una [propuesta de ensayo](DISENO_SIGUIENTE_ENSAYO_OE1.md), no repetir las 114 vistas.

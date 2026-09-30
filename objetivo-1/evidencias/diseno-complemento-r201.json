@@ -1,0 +1,15 @@
+{
+  "validacion_estructura_y_panel": "OK",
+  "cruces_profundos": 12,
+  "diferencia_max_longitud_m": 9.762857189343777e-12,
+  "geometria_sensibilidad": 108,
+  "semillas": [
+    1026093011,
+    1026093012,
+    1026093013
+  ],
+  "transportes_SC3_ejecutados": 0,
+  "catalogo_sha256": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+  "lista_sha256": "ae8318a704d004989f65faaa5b8fe5624281fefef7c65f370a281d2378402ea1",
+  "generador_sha256": "ab8db3a06798d6e8b5f1e2db5699e0bf4652bb80a2127797f2afd63fd4c0ba17"
+}

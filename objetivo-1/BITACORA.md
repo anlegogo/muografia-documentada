@@ -1,5 +1,13 @@
 # Bitácora de nuestra revisión del OE1
 
+## Preparación local del complemento R2-01 — 2026-09-30, Colombia
+
+- Por solicitud del director se prepara localmente el [complemento R2-01](COMPLEMENTO_R2_01.md), sin transporte Geant4.
+- Se definen 12 trayectorias y tres semillas por variante: 72 transportes técnicos, separados de la fuente representativa.
+- En desarrollo, una primera propuesta no retroproyectaba al panel físico de 1,2 m; el validador la rechazó. Se corrigieron las direcciones antes de congelar la lista. El intento descartado permanece en tmp, fuera de la entrega.
+- Lista final: validador de estudiantes OK, 108 rectas de sensibilidad mantienen la entrada, 12 cruces profundos contrastados con su referencia; discrepancia máxima de longitud 9,8 × 10⁻¹² m.
+- Se comprueba sintaxis Bash del ejecutor; su funcionamiento Geant4/SLURM está pendiente en SC3. Se conserva el alcance de R2-01 y P-01…P-04.
+
 ## Revisión independiente de etapa 1 — 2026-09-30, Colombia
 
 - Responsable de transporte: Daniel y Reinaldo en SC3. Revisión: análisis local independiente, sin nueva ejecución Geant4.

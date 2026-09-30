@@ -1,0 +1,332 @@
+{
+  "version": "r2-01/1",
+  "catalogo_sha256": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+  "lista_sha256": "ae8318a704d004989f65faaa5b8fe5624281fefef7c65f370a281d2378402ea1",
+  "generador_sha256": "ab8db3a06798d6e8b5f1e2db5699e0bf4652bb80a2127797f2afd63fd4c0ba17",
+  "energia_cinetica_GeV": 10000,
+  "semillas_transporte": [
+    1026093011,
+    1026093012,
+    1026093013
+  ],
+  "variantes": [
+    "A",
+    "B"
+  ],
+  "transportes_propuestos": 72,
+  "estado": "Diseño local; transporte Geant4 pendiente en SC3.",
+  "muones": [
+    {
+      "id": 0,
+      "punto_paso_x20_3_m": [
+        20.3,
+        -16.0,
+        125.0
+      ],
+      "lado_entrada_recta": "desde_conducto",
+      "longitud_recta_Z_m": 28.303064637081206,
+      "separacion_entradas_primitivas_m": 10.407542049449603,
+      "entrada_Z_m": [
+        11.284880485534018,
+        -16.147230695347,
+        126.13643692970963
+      ],
+      "salida_Z_m": [
+        39.362024560905866,
+        -15.688687972874868,
+        122.59706029062785
+      ],
+      "longitudes_9_rectas_desplazadas_min_max_m": [
+        28.003737933658044,
+        28.597285058240573
+      ],
+      "nota_sensibilidad": "9 rectas paralelas desplazadas 0 o ±5 cm por eje transversal; no es cota del transporte."
+    },
+    {
+      "id": 1,
+      "punto_paso_x20_3_m": [
+        20.3,
+        -16.0,
+        140.0
+      ],
+      "lado_entrada_recta": "desde_conducto",
+      "longitud_recta_Z_m": 31.975699785090683,
+      "separacion_entradas_primitivas_m": 6.8128196309641,
+      "entrada_Z_m": [
+        7.705276473032768,
+        -16.20569110588086,
+        141.78051363528112
+      ],
+      "salida_Z_m": [
+        39.36202456091087,
+        -15.688687972874785,
+        137.30520526519734
+      ],
+      "longitudes_9_rectas_desplazadas_min_max_m": [
+        31.76940087609546,
+        32.18026529312351
+      ],
+      "nota_sensibilidad": "9 rectas paralelas desplazadas 0 o ±5 cm por eje transversal; no es cota del transporte."
+    },
+    {
+      "id": 2,
+      "punto_paso_x20_3_m": [
+        20.3,
+        -15.5,
+        125.0
+      ],
+      "lado_entrada_recta": "desde_conducto",
+      "longitud_recta_Z_m": 25.551308533501356,
+      "separacion_entradas_primitivas_m": 12.697344982438835,
+      "entrada_Z_m": [
+        13.781913267342702,
+        -15.603123756615483,
+        125.82166348012983
+      ],
+      "salida_Z_m": [
+        39.1294709549245,
+        -15.202095743797766,
+        122.62637576509835
+      ],
+      "longitudes_9_rectas_desplazadas_min_max_m": [
+        25.199749858033897,
+        25.8949196362787
+      ],
+      "nota_sensibilidad": "9 rectas paralelas desplazadas 0 o ±5 cm por eje transversal; no es cota del transporte."
+    },
+    {
+      "id": 3,
+      "punto_paso_x20_3_m": [
+        20.3,
+        -15.5,
+        140.0
+      ],
+      "lado_entrada_recta": "desde_conducto",
+      "longitud_recta_Z_m": 29.929156326791144,
+      "separacion_entradas_primitivas_m": 8.396481388759184,
+      "entrada_Z_m": [
+        9.498614144157614,
+        -15.670890559115602,
+        141.5269898346781
+      ],
+      "salida_Z_m": [
+        39.129470954930866,
+        -15.202095743797663,
+        137.33808132361133
+      ],
+      "longitudes_9_rectas_desplazadas_min_max_m": [
+        29.705174921499406,
+        30.151003083632645
+      ],
+      "nota_sensibilidad": "9 rectas paralelas desplazadas 0 o ±5 cm por eje transversal; no es cota del transporte."
+    },
+    {
+      "id": 4,
+      "punto_paso_x20_3_m": [
+        20.3,
+        -15.0,
+        125.0
+      ],
+      "lado_entrada_recta": "desde_conducto",
+      "longitud_recta_Z_m": 22.250629389237474,
+      "separacion_entradas_primitivas_m": 15.503517627357724,
+      "entrada_Z_m": [
+        16.807900710610625,
+        -15.05346686673557,
+        125.44021053612289
+      ],
+      "salida_Z_m": [
+        38.88127204991849,
+        -14.715505684649607,
+        122.65766347028179
+      ],
+      "longitudes_9_rectas_desplazadas_min_max_m": [
+        21.8070620621603,
+        22.678856076476222
+      ],
+      "nota_sensibilidad": "9 rectas paralelas desplazadas 0 o ±5 cm por eje transversal; no es cota del transporte."
+    },
+    {
+      "id": 5,
+      "punto_paso_x20_3_m": [
+        20.3,
+        -15.0,
+        140.0
+      ],
+      "lado_entrada_recta": "desde_conducto",
+      "longitud_recta_Z_m": 27.68928815699587,
+      "separacion_entradas_primitivas_m": 10.140848938284194,
+      "entrada_Z_m": [
+        11.467745509492488,
+        -15.135228965354303,
+        141.24861411343807
+      ],
+      "salida_Z_m": [
+        38.881272049913605,
+        -14.715505684649681,
+        137.37316915493207
+      ],
+      "longitudes_9_rectas_desplazadas_min_max_m": [
+        27.44275097003151,
+        27.933071678079614
+      ],
+      "nota_sensibilidad": "9 rectas paralelas desplazadas 0 o ±5 cm por eje transversal; no es cota del transporte."
+    },
+    {
+      "id": 6,
+      "punto_paso_x20_3_m": [
+        20.3,
+        -35.0,
+        125.0
+      ],
+      "lado_entrada_recta": "desde_elipsoide",
+      "longitud_recta_Z_m": 36.66834973829816,
+      "separacion_entradas_primitivas_m": 27.8330224158085,
+      "entrada_Z_m": [
+        2.495837018941984,
+        -35.636057675142425,
+        127.24437493943111
+      ],
+      "salida_Z_m": [
+        38.85343635197444,
+        -34.33717436733785,
+        122.66117241046356
+      ],
+      "longitudes_9_rectas_desplazadas_min_max_m": [
+        36.610022908815495,
+        36.726307332253896
+      ],
+      "nota_sensibilidad": "9 rectas paralelas desplazadas 0 o ±5 cm por eje transversal; no es cota del transporte."
+    },
+    {
+      "id": 7,
+      "punto_paso_x20_3_m": [
+        20.3,
+        -35.0,
+        140.0
+      ],
+      "lado_entrada_recta": "desde_elipsoide",
+      "longitud_recta_Z_m": 36.742078845213086,
+      "separacion_entradas_primitivas_m": 27.615063660648843,
+      "entrada_Z_m": [
+        2.4958370189483503,
+        -35.63605767514219,
+        142.5169710859198
+      ],
+      "salida_Z_m": [
+        38.853436351967844,
+        -34.33717436733808,
+        137.3771042821807
+      ],
+      "longitudes_9_rectas_desplazadas_min_max_m": [
+        36.68363473789486,
+        36.80015297459772
+      ],
+      "nota_sensibilidad": "9 rectas paralelas desplazadas 0 o ±5 cm por eje transversal; no es cota del transporte."
+    },
+    {
+      "id": 8,
+      "punto_paso_x20_3_m": [
+        20.3,
+        -30.0,
+        125.0
+      ],
+      "lado_entrada_recta": "desde_elipsoide",
+      "longitud_recta_Z_m": 40.855836732615785,
+      "separacion_entradas_primitivas_m": 19.76181819547014,
+      "entrada_Z_m": [
+        0.21008946558379193,
+        -30.615185583375002,
+        127.53251398489375
+      ],
+      "salida_Z_m": [
+        40.72643279052727,
+        -29.374509560359485,
+        122.4250643568132
+      ],
+      "longitudes_9_rectas_desplazadas_min_max_m": [
+        40.828364604624426,
+        40.88304191761381
+      ],
+      "nota_sensibilidad": "9 rectas paralelas desplazadas 0 o ±5 cm por eje transversal; no es cota del transporte."
+    },
+    {
+      "id": 9,
+      "punto_paso_x20_3_m": [
+        20.3,
+        -30.0,
+        140.0
+      ],
+      "lado_entrada_recta": "desde_elipsoide",
+      "longitud_recta_Z_m": 40.93801295450373,
+      "separacion_entradas_primitivas_m": 19.798899740954425,
+      "entrada_Z_m": [
+        0.2100894655831098,
+        -30.615185583375023,
+        142.8401067765813
+      ],
+      "salida_Z_m": [
+        40.72643279052795,
+        -29.37450956035946,
+        137.11231913699282
+      ],
+      "longitudes_9_rectas_desplazadas_min_max_m": [
+        40.91048556988528,
+        40.96527285920206
+      ],
+      "nota_sensibilidad": "9 rectas paralelas desplazadas 0 o ±5 cm por eje transversal; no es cota del transporte."
+    },
+    {
+      "id": 10,
+      "punto_paso_x20_3_m": [
+        20.3,
+        -25.0,
+        125.0
+      ],
+      "lado_entrada_recta": "desde_elipsoide",
+      "longitud_recta_Z_m": 42.320184728220966,
+      "separacion_entradas_primitivas_m": 11.415615026289402,
+      "entrada_Z_m": [
+        -0.6744679424042488,
+        -25.53522680265398,
+        127.64402040511065
+      ],
+      "salida_Z_m": [
+        41.29996935239217,
+        -24.464122451965086,
+        122.35276491270751
+      ],
+      "longitudes_9_rectas_desplazadas_min_max_m": [
+        42.31766494784597,
+        42.322464325851115
+      ],
+      "nota_sensibilidad": "9 rectas paralelas desplazadas 0 o ±5 cm por eje transversal; no es cota del transporte."
+    },
+    {
+      "id": 11,
+      "punto_paso_x20_3_m": [
+        20.3,
+        -25.0,
+        140.0
+      ],
+      "lado_entrada_recta": "desde_elipsoide",
+      "longitud_recta_Z_m": 42.405330263970995,
+      "separacion_entradas_primitivas_m": 11.884084686250617,
+      "entrada_Z_m": [
+        -0.6744679424080005,
+        -25.535226802654076,
+        142.96515648670362
+      ],
+      "salida_Z_m": [
+        41.29996935239615,
+        -24.464122451964982,
+        137.03123838388606
+      ],
+      "longitudes_9_rectas_desplazadas_min_max_m": [
+        42.40280541394759,
+        42.407614448002164
+      ],
+      "nota_sensibilidad": "9 rectas paralelas desplazadas 0 o ±5 cm por eje transversal; no es cota del transporte."
+    }
+  ]
+}

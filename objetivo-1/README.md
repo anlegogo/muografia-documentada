@@ -2,6 +2,8 @@
 
 **Paso actual:** [revisión de la etapa 1](REVISION_ETAPA_1_2026-09-30.md) terminada: resultados reproducidos y comparación individual verificada. Preparar el complemento de cobertura R2-01 antes de dimensionar la etapa 2. El [protocolo v1.0](PROTOCOLO_SEGUNDO_ENSAYO_OE1.md) permanece como diseño aplicado.
 
+**Preparación local completada:** [complemento R2-01](COMPLEMENTO_R2_01.md), con 12 primarios dirigidos, controles geométricos y ejecutor para 72 transportes en SC3. La lista fue validada localmente; su transporte sigue pendiente.
+
 Consultar primero [alcance](ALCANCE.md) y [matriz de cumplimiento](MATRIZ_CUMPLIMIENTO.md).
 
 Nueva revisión: [diagnóstico geométrico](DIAGNOSTICO_GEOMETRIAS.md), [reproducción de pares](REVISION_DATOS.md), [instrucciones SC3](INSTRUCCIONES_ESTUDIANTES.md) y [plantilla de reporte](PLANTILLA_ENTREGA_OE1.md).

@@ -1,0 +1,3 @@
+ae8318a704d004989f65faaa5b8fe5624281fefef7c65f370a281d2378402ea1  geo-train-06_v0_r10_r201.primarios.csv
+05457ab64a460dc779f4caf7a980c3f686294e9a721221075c858891d3ed0914  geo-train-06_v0_r10_r201.primarios.csv.meta.json
+fdf3f7b57cf167323be2192a43b1372471a51f2dad2d3f9cccd7d5fc3dc69b4e  trayectorias-esperadas.json

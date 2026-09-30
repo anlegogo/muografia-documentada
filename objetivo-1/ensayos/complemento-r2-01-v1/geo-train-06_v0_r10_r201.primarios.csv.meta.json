@@ -1,0 +1,38 @@
+{
+  "format": "oe1-primarios/1",
+  "kind": "sintetico",
+  "synthetic": true,
+  "geometry_id": "geo-train-06",
+  "view_index": 0,
+  "base_radius_m": 509.7,
+  "start_radius_m": 1809.7,
+  "case_code": 6,
+  "replica": 10,
+  "source_seed": null,
+  "n": 12,
+  "columns": [
+    "id",
+    "x_m",
+    "y_m",
+    "z_m",
+    "dx",
+    "dy",
+    "dz",
+    "ekin_gev",
+    "pdg",
+    "charge_e"
+  ],
+  "units": {
+    "position": "m, world frame",
+    "direction": "unit travel direction",
+    "ekin_gev": "kinetic energy, GeV",
+    "pdg": "13 = mu-",
+    "charge_e": "elementary charges"
+  },
+  "float_format": "Python round-trip text; LF",
+  "canon_fnv1a64": "c11af894c81614a5",
+  "canon_hash_layout": "FNV-1a-64, little endian int64 id, 7 float64, int32 pdg; sin charge_e",
+  "file_sha256": "ae8318a704d004989f65faaa5b8fe5624281fefef7c65f370a281d2378402ea1",
+  "descripcion": "Complemento técnico R2-01: 6 entradas desde conducto y 6 desde elipsoide; no es muestra del flujo.",
+  "generador": "herramientas/preparar_complemento_r2_01.py"
+}

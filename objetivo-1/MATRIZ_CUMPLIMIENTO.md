@@ -2,6 +2,8 @@
 
 **Paso actual:** [etapa 1 revisada](REVISION_ETAPA_1_2026-09-30.md). Verificados los 600.000 pares A/B y la repetición A/A; efecto físico todavía inconcluso. La cobertura R2-01 y la etapa 2 siguen pendientes.
 
+**Preparación local completada:** [complemento R2-01](COMPLEMENTO_R2_01.md), con 12 primarios dirigidos, controles geométricos y ejecutor para 72 transportes en SC3. La lista fue validada localmente; su transporte sigue pendiente.
+
 Valoración técnica de revisión, no calificación académica definitiva. «Verificado» se limita al control descrito.
 
 **Revisión del 29 de septiembre:** [entrega del piloto](REVISION_ENTREGA_2026-09-29.md) revisada con observaciones. Corrección geométrica con evidencia favorable; impacto físico aún inconcluso. El encargo de diseño enlazado en esa revisión es histórico; el seguimiento actual figura arriba.
