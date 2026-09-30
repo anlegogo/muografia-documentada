@@ -1,5 +1,10 @@
 # Registro de cambios
 
+## Extensión del control geométrico — 2026-09-29
+
+- Se contrastan independientemente los volúmenes de las cuatro intersecciones conocidas del catálogo y sus fracciones del volumen del conducto.
+- Se registran límites de interpretación: volumen no equivale a sensibilidad muográfica ni a efecto en conteos; el siguiente ensayo permanece pendiente de diseño.
+
 ## Control independiente adicional — 2026-09-29
 
 - Se incorpora cálculo de volumen por cuadratura y contraste con la entrega, sin modificar fuentes originales.

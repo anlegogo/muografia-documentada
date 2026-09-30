@@ -1,5 +1,11 @@
 # Bitácora de nuestra revisión del OE1
 
+## Ampliación de controles independientes — 2026-09-29, Colombia
+
+- Cuadratura de las cuatro intersecciones conocidas: geo-test-01, geo-train-06, geo-train-08 y geo-train-11.
+- Las cuatro estimaciones son compatibles con los valores y errores estándar entregados (discrepancia máxima 1,13 EE). Dos tolerancias del integrador difieren menos de 0,023 m³ en cada caso.
+- Evidencia: `evidencias/intersecciones-independientes.json`; interpretación en `CONTROL_FISICO_LOCAL.md`. No se modifica el encargo de los estudiantes ni se ejecuta transporte Geant4.
+
 ## Control geométrico independiente — 2026-09-29, Colombia
 
 - Se integró el volumen común conducto/elipsoide de geo-train-06 mediante cuadratura, con dos tolerancias. Resultado: 83.663,703 m³, compatible con la estimación entregada.

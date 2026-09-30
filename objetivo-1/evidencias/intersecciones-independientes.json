@@ -1,0 +1,90 @@
+{
+  "fecha_utc": "2026-09-30T00:17:39.809618+00:00",
+  "metodo": "Cuadratura XY independiente de longitud vertical común.",
+  "referencia_sha256": "49288c570fd8a9b617c940b1508dddc306fe3f3ff8571e8b0c213a9204ead91f",
+  "script_sha256": "e42f129ddd20bd29dbded709c6d237d556f796be5f8ae367f2eab128be27c474",
+  "integrador_sha256": "dffafc1517665bbdbe32c992d783ed513ddbb50d81f185552b2c97a2311ac702",
+  "resultados": [
+    {
+      "geometria": "geo-test-01",
+      "indices": [
+        0,
+        1
+      ],
+      "source_sha256": "66a46bb729eedf508ffb8e15bd8cf8c602e0f63141a3f8a2d9594597bd32c5e8",
+      "interseccion_m3": 6879.756576965485,
+      "diferencia_tolerancias_m3": 0.005823426427014056,
+      "error_estimado_exterior_m3": 5.2506579777400475e-05,
+      "volumen_conducto_m3": 1038623.7542402648,
+      "fraccion_conducto_intersectada": 0.00662391607054848,
+      "densidad_conducto": 2.151,
+      "densidad_prioritaria": 0.454,
+      "estudiantes": {
+        "volumen_m3": 6888.792005939999,
+        "ee_m3": 8.003354896081126,
+        "diferencia_en_ee": -1.128955180900306
+      }
+    },
+    {
+      "geometria": "geo-train-06",
+      "indices": [
+        0,
+        1
+      ],
+      "source_sha256": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+      "interseccion_m3": 83663.70318303618,
+      "diferencia_tolerancias_m3": 0.0018348511512158439,
+      "error_estimado_exterior_m3": 0.0006894810940138996,
+      "volumen_conducto_m3": 471050.4024792536,
+      "fraccion_conducto_intersectada": 0.17761093662736221,
+      "densidad_conducto": 1.832,
+      "densidad_prioritaria": 3.285,
+      "estudiantes": {
+        "volumen_m3": 83641.91913000001,
+        "ee_m3": 44.670706825509825,
+        "diferencia_en_ee": 0.48765857055415435
+      }
+    },
+    {
+      "geometria": "geo-train-08",
+      "indices": [
+        0,
+        2
+      ],
+      "source_sha256": "df859ca1ead6e4fca4cad0d877131167a47a4d6443ebed1ee3379189600f7601",
+      "interseccion_m3": 111734.42258323282,
+      "diferencia_tolerancias_m3": 0.02230627329845447,
+      "error_estimado_exterior_m3": 0.0011145408934680745,
+      "volumen_conducto_m3": 1260601.2235771816,
+      "fraccion_conducto_intersectada": 0.08863581955455065,
+      "densidad_conducto": 1.991,
+      "densidad_prioritaria": 3.256,
+      "estudiantes": {
+        "volumen_m3": 111691.38396187202,
+        "ee_m3": 71.16020229480843,
+        "diferencia_en_ee": 0.6048130833368894
+      }
+    },
+    {
+      "geometria": "geo-train-11",
+      "indices": [
+        0,
+        1
+      ],
+      "source_sha256": "201b8e4e65de4538a44acae09c1e69ddd1179459bd8be645bdeac669ac43d77f",
+      "interseccion_m3": 28902.72447438484,
+      "diferencia_tolerancias_m3": 0.0035155686709913425,
+      "error_estimado_exterior_m3": 3.18879792757798e-05,
+      "volumen_conducto_m3": 634258.0949038739,
+      "fraccion_conducto_intersectada": 0.045569342680230586,
+      "densidad_conducto": 1.972,
+      "densidad_prioritaria": 0.327,
+      "estudiantes": {
+        "volumen_m3": 28900.705775824994,
+        "ee_m3": 21.905972064172587,
+        "diferencia_en_ee": 0.09215288661608305
+      }
+    }
+  ],
+  "limites": "No calcula flujo, opacidad en vistas ni transporte. La fracción de volumen no determina sensibilidad muográfica. No cubre defectos de salida del edificio."
+}
