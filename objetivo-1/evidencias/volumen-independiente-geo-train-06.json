@@ -1,0 +1,24 @@
+{
+  "fecha_utc": "2026-09-30T00:00:58.157424+00:00",
+  "scipy": "1.18.1",
+  "source_sha256": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+  "script_sha256": "dffafc1517665bbdbe32c992d783ed513ddbb50d81f185552b2c97a2311ac702",
+  "geometria": "geo-train-06",
+  "metodo": "Cuadratura adaptativa anidada XY de longitud vertical común; sin muestreo Monte Carlo.",
+  "interseccion_m3": 83663.70318303618,
+  "interseccion_control_tolerancia_m3": 83663.70501788733,
+  "diferencia_tolerancias_m3": 0.0018348511512158439,
+  "estimacion_error_integral_exterior_m3": 0.0006894810940138996,
+  "conducto_completo_m3": 471050.4024792536,
+  "conducto_menos_interseccion_m3": 387386.6992962174,
+  "cuerpo_denso_m3": 1215148.5354013385,
+  "comparacion_reportada": {
+    "interseccion_autores_m3": 83641.9,
+    "ee_monte_carlo_autores_m3": 44.7,
+    "diferencia_m3": 21.803183036186965,
+    "conducto_geant4_B_m3": 387492.0,
+    "ee_geant4_B_m3": 90.7,
+    "diferencia_geant4_menos_cuadratura_m3": 105.30070378258824
+  },
+  "limites": "Dos tolerancias comprueban estabilidad numérica, no constituyen cota rigurosa total. No incluye navegación ni transporte. Supone sólidos alineados del JSON; ambas anomalías están contenidas en el edificio en este caso."
+}

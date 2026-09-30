@@ -2,6 +2,7 @@
 
 | Documento | Pregunta que responde |
 |---|---|
+| [Control físico local](../objetivo-1/CONTROL_FISICO_LOCAL.md) | ¿Qué volúmenes y materiales pudimos contrastar independientemente? |
 | [Revisión de primera entrega](../objetivo-1/REVISION_ENTREGA_2026-09-29.md) | ¿Qué se comprobó y qué observaciones deben atender? |
 | [Diseño del siguiente ensayo](../objetivo-1/DISENO_SIGUIENTE_ENSAYO_OE1.md) | ¿Qué deben entregar ahora antes de ampliar simulaciones? |
 | [README principal](../README.md) | ¿Qué contiene esta réplica? |

@@ -1,5 +1,11 @@
 # Bitácora de nuestra revisión del OE1
 
+## Control geométrico independiente — 2026-09-29, Colombia
+
+- Se integró el volumen común conducto/elipsoide de geo-train-06 mediante cuadratura, con dos tolerancias. Resultado: 83.663,703 m³, compatible con la estimación entregada.
+- Se contrastaron volumen restante y cuerpo denso; se documentó la diferencia de densidad del aire entre modelos, conservando la coincidencia de clase de material.
+- Evidencia y límites en `CONTROL_FISICO_LOCAL.md`; no se ejecutó Geant4 ni se cambió el encargo vigente.
+
 ## Primera entrega revisada y solicitud de diseño — 2026-09-29, Colombia
 
 - Fuente: rama `oe1/geo-train-06-piloto`, revisión `712c78664074732a612b47a8fa4a7fe45f8c4746`.

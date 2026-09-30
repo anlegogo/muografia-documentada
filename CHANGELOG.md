@@ -1,5 +1,10 @@
 # Registro de cambios
 
+## Control independiente adicional — 2026-09-29
+
+- Se incorpora cálculo de volumen por cuadratura y contraste con la entrega, sin modificar fuentes originales.
+- Se documentan coincidencias y límites de la asignación de materiales, incluida la densidad del aire.
+
 ## Revisión de entrega y encargo de diseño — 2026-09-29, Colombia
 
 - Se documenta la revisión independiente de la entrega `712c786`, con observaciones y evidencia de recálculo.
