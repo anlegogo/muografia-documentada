@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Protocolo del segundo ensayo v1.0 — 2026-09-29
+
+- Diseño documentado desde la revisión: etapa técnica acotada, primarios comunes, observable principal y entregables.
+- Se sustituye el encargo de diseño desde cero; la etapa física de mayor estadística permanece condicionada a revisión.
+- Se aclara que los recursos de cómputo no constituyen presupuesto económico.
+
 ## Extensión del control geométrico — 2026-09-29
 
 - Se contrastan independientemente los volúmenes de las cuatro intersecciones conocidas del catálogo y sus fracciones del volumen del conducto.

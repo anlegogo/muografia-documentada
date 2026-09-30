@@ -1,6 +1,6 @@
 # Objetivo específico 1: guía del material
 
-**Encargo vigente:** [propuesta del segundo ensayo](DISENO_SIGUIENTE_ENSAYO_OE1.md), a partir de la [revisión de la primera entrega](REVISION_ENTREGA_2026-09-29.md). La ejecución de una campaña ampliada queda pendiente de revisar ese diseño.
+**Encargo vigente:** [protocolo del segundo ensayo v1.0](PROTOCOLO_SEGUNDO_ENSAYO_OE1.md), aportado desde la revisión. Implementar y reportar la etapa 1; la etapa 2 y una campaña ampliada siguen pendientes de dimensionamiento y revisión.
 
 Consultar primero [alcance](ALCANCE.md) y [matriz de cumplimiento](MATRIZ_CUMPLIMIENTO.md).
 

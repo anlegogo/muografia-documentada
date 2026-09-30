@@ -1,5 +1,7 @@
 # Pendientes del OE1
 
+**Encargo vigente:** [protocolo del segundo ensayo v1.0](PROTOCOLO_SEGUNDO_ENSAYO_OE1.md). El director aporta el diseño; corresponde implementar y reportar etapa 1, y revisar después los recursos necesarios para etapa 2. Las referencias posteriores al encargo de propuesta describen el seguimiento previo.
+
 Todos los siguientes puntos permanecen abiertos; no se asigna a los estudiantes una actividad como realizada sin evidencia.
 
 **Estado al 29 de septiembre:** la [primera entrega revisada](REVISION_ENTREGA_2026-09-29.md) respalda controles geométricos favorables de B en 114 casos y la reproducción exacta de una vista histórica. P-01 avanza en corrección geométrica, pero conserva pendiente el impacto físico y la decisión de regeneración; P-02 avanza para ese entorno/caso SC3, sin certificar otros entornos. P-03/P-04 continúan abiertos. El nuevo encargo es una [propuesta de ensayo](DISENO_SIGUIENTE_ENSAYO_OE1.md), no repetir las 114 vistas.

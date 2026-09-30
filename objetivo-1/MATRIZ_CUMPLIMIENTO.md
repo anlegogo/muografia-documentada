@@ -1,5 +1,7 @@
 # Matriz de cumplimiento del OE1
 
+**Paso actual:** [protocolo del segundo ensayo v1.0](PROTOCOLO_SEGUNDO_ENSAYO_OE1.md), diseñado desde la revisión. La etapa 1 está definida; etapa 2 y cierre físico siguen pendientes.
+
 Valoración técnica de revisión, no calificación académica definitiva. «Verificado» se limita al control descrito.
 
 **Revisión del 29 de septiembre:** [entrega del piloto](REVISION_ENTREGA_2026-09-29.md) revisada con observaciones. Corrección geométrica con evidencia favorable; impacto físico aún inconcluso. Ver [encargo vigente](DISENO_SIGUIENTE_ENSAYO_OE1.md).

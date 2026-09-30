@@ -1,5 +1,11 @@
 # Bitácora de nuestra revisión del OE1
 
+## Diseño aportado por la revisión — 2026-09-29, Colombia
+
+- Por solicitud del director se define el protocolo del segundo ensayo v1.0; sustituye pedir a los estudiantes un diseño desde cero.
+- Etapa 1: dos geometrías, una vista, tres réplicas A/B y repetición técnica A/A; 13 corridas de 100.000 primarios, con trazabilidad individual.
+- Se fijan observable, archivos y controles; el margen físico, la incertidumbre y el tamaño de etapa 2 se decidirán tras revisar etapa 1. No se ejecutó ni se autoriza por este registro una campaña completa.
+
 ## Ampliación de controles independientes — 2026-09-29, Colombia
 
 - Cuadratura de las cuatro intersecciones conocidas: geo-test-01, geo-train-06, geo-train-08 y geo-train-11.

@@ -1,5 +1,7 @@
 # Segundo encargo OE1 — diseñar el ensayo antes de ampliar simulaciones
 
+**Sustituido por el [protocolo del segundo ensayo, versión 1.0](PROTOCOLO_SEGUNDO_ENSAYO_OE1.md).** El director ha optado por aportar el diseño. Este documento se conserva como antecedente; ya no se solicita a los estudiantes diseñarlo desde cero. El encargo vigente es implementar y documentar su etapa 1 y aportar información para dimensionar la etapa 2.
+
 **Destinatarios:** Daniel y Reinaldo. **Entrega solicitada ahora:** propuesta breve en Markdown y estimación de recursos; no una campaña nueva. Alcance exclusivo: simulación y generación de datos del OE1.
 
 ## Pregunta que debe responder el diseño
