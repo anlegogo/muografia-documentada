@@ -1,0 +1,5 @@
+# consulta en SC3 (solo lectura), fecha_utc=2026-09-30T21:02:23Z
+# ssh sc3-guane quota -s
+Disk quotas for user dapintoo (uid 10240):
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+ ioserver:/home  19884M  20480M  20480M           37851       0       0

@@ -1,0 +1,51 @@
+caso,ambito,clase_A,clase_B,n,ids_fuera_de_la_diagonal,etiqueta
+geo-train-06,replica 1,R_cond,R_cond,9,,
+geo-train-06,replica 1,R_body,R_body,2,,
+geo-train-06,replica 1,R_rock,R_rock,269,,
+geo-train-06,replica 1,R_sky,R_sky,74866,,
+geo-train-06,replica 1,sin clase,sin clase,12,,
+geo-train-06,replica 1,no detectado,no detectado,24842,,
+geo-train-06,replica 2,R_int,R_int,1,,
+geo-train-06,replica 2,R_cond,R_cond,5,,
+geo-train-06,replica 2,R_rock,R_rock,290,,
+geo-train-06,replica 2,R_sky,R_sky,75013,,
+geo-train-06,replica 2,sin clase,sin clase,10,,
+geo-train-06,replica 2,no detectado,no detectado,24681,,
+geo-train-06,replica 3,R_cond,R_cond,8,,
+geo-train-06,replica 3,R_rock,R_rock,311,,
+geo-train-06,replica 3,R_sky,R_sky,74861,,
+geo-train-06,replica 3,sin clase,sin clase,10,,
+geo-train-06,replica 3,no detectado,no detectado,24810,,
+geo-train-06,agrupado,R_int,R_int,1,,
+geo-train-06,agrupado,R_cond,R_cond,22,,
+geo-train-06,agrupado,R_body,R_body,2,,
+geo-train-06,agrupado,R_rock,R_rock,870,,
+geo-train-06,agrupado,R_sky,R_sky,224740,,
+geo-train-06,agrupado,sin clase,sin clase,32,,
+geo-train-06,agrupado,no detectado,no detectado,74333,,
+geo-train-01,replica 1,R_int,R_int,1,,control angular
+geo-train-01,replica 1,R_cond,R_cond,12,,control angular
+geo-train-01,replica 1,R_body,R_body,2,,control angular
+geo-train-01,replica 1,R_rock,R_rock,771,,control angular
+geo-train-01,replica 1,R_sky,R_sky,72820,,control angular
+geo-train-01,replica 1,sin clase,sin clase,19,,control angular
+geo-train-01,replica 1,no detectado,no detectado,26375,,control angular
+geo-train-01,replica 2,R_cond,R_cond,21,,control angular
+geo-train-01,replica 2,R_body,R_body,3,,control angular
+geo-train-01,replica 2,R_rock,R_rock,752,,control angular
+geo-train-01,replica 2,R_sky,R_sky,73043,,control angular
+geo-train-01,replica 2,sin clase,sin clase,25,,control angular
+geo-train-01,replica 2,no detectado,no detectado,26156,,control angular
+geo-train-01,replica 3,R_cond,R_cond,12,,control angular
+geo-train-01,replica 3,R_body,R_body,2,,control angular
+geo-train-01,replica 3,R_rock,R_rock,749,,control angular
+geo-train-01,replica 3,R_sky,R_sky,73002,,control angular
+geo-train-01,replica 3,sin clase,sin clase,11,,control angular
+geo-train-01,replica 3,no detectado,no detectado,26224,,control angular
+geo-train-01,agrupado,R_int,R_int,1,,control angular
+geo-train-01,agrupado,R_cond,R_cond,45,,control angular
+geo-train-01,agrupado,R_body,R_body,7,,control angular
+geo-train-01,agrupado,R_rock,R_rock,2272,,control angular
+geo-train-01,agrupado,R_sky,R_sky,218865,,control angular
+geo-train-01,agrupado,sin clase,sin clase,55,,control angular
+geo-train-01,agrupado,no detectado,no detectado,78755,,control angular

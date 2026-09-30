@@ -1,0 +1,136 @@
+COMPARACIÓN DEL ANÁLISIS DE LA ETAPA 1: SC3 FRENTE A LA REPRODUCCIÓN LOCAL
+
+Carpeta de SC3 (trabajo 30570): etapa1-01. Carpeta local: reproduccion-local-01.
+Generado por comparar_sc3_local.py: python comparar_sc3_local.py --out comparacion-sc3-local.txt
+Criterios: archivos por SHA-256; JSON por hojas; .npz por arreglos; otros textos por líneas.
+Clases de diferencia (regla fija por nombre de campo): fecha = campo con 'fecha'; ruta = 'ruta',
+'ruta_usada', 'figuras', 'cwd' y 'comando'; entorno = 'herramienta.entorno.*', 'host', 'python' y
+'numpy'; otra = cualquier diferencia restante.
+
+ARCHIVOS DE LA CARPETA DE SC3
+
+cambios-bin.csv
+  SHA-256 SC3:   57b96bb243f9440c43025b5af584c32365910fd8a618a5cacaf6749e9abb6ad7
+  SHA-256 local: 57b96bb243f9440c43025b5af584c32365910fd8a618a5cacaf6749e9abb6ad7
+  resultado: IDÉNTICO byte a byte
+comando-analisis.txt
+  SHA-256 SC3:   32e1b51a981a518a6e26941f6375f99d5cf2bebcb419e8b2a0fbec3c24eb0edc
+  SHA-256 local: 59e9d472a74232472f1d9711332b1c10903f608c5d4981cd7b9593e63c0c2488
+  resultado: DISTINTO byte a byte
+  líneas: SC3 14, local 14; distintas 6
+  línea 1 distinta [fecha] (fecha_utc)
+    SC3:   fecha_utc=2026-09-30T20:33:44Z
+    local: fecha_utc=2026-09-30T20:35:54Z
+  línea 2 distinta [entorno] (host)
+    SC3:   host=guane02.sc3.uis.edu.co
+    local: host=MSI
+  línea 3 distinta [ruta] (cwd)
+    SC3:   cwd=/home/dapintoo/oe1-trabajo/etapa1
+    local: cwd=C:\Users\etherion\Documents\tesis-ing-sistemas\tesis-5-8-26\tesis-ing-sistemas\muog...
+  línea 4 distinta [entorno] (python)
+    SC3:   python=3.9.25
+    local: python=3.13.5
+  línea 5 distinta [entorno] (numpy)
+    SC3:   numpy=2.0.2
+    local: numpy=2.4.4
+  línea 13 distinta [ruta] (comando)
+    SC3:   comando=herramientas/oe1_stage1_analysis.py --attempt corridas/intento-01 --roi-mask an...
+    local: comando=oe1_stage1_analysis.py --attempt C:/Users/etherion/AppData/Local/Temp/claude/c-...
+    opciones solo en SC3: --no-figures; solo en local: (ninguna)
+contratos.json
+  SHA-256 SC3:   0bc57a0bd887f8dac8a489eb9202b8969540c81e43df70f6f925559d3e4155f9
+  SHA-256 local: 95792da15efe8be457d6f326ab9ae83faf6166279e3d55c9f367bc81838b3fe0
+  resultado: DISTINTO byte a byte
+  hojas JSON: SC3 3864, local 3864; distintas 7; solo en SC3 0; solo en local 0
+  hoja distinta [fecha] fecha_utc
+    SC3:   2026-09-30T20:33:44Z
+    local: 2026-09-30T20:35:50Z
+  hoja distinta [ruta] contratos.K0.ambitos.listas[0].evidencia.ruta_usada
+    SC3:   listas/prep-01/A2/geo-train-06_v0_r1_s2026092901.primarios.csv
+    local: C:/Users/etherion/AppData/Local/Temp/claude/c--Users-etherion-Documents-tesis-ing-siste...
+  hoja distinta [ruta] contratos.K0.ambitos.listas[1].evidencia.ruta_usada
+    SC3:   listas/prep-01/A2/geo-train-06_v0_r2_s2026092902.primarios.csv
+    local: C:/Users/etherion/AppData/Local/Temp/claude/c--Users-etherion-Documents-tesis-ing-siste...
+  hoja distinta [ruta] contratos.K0.ambitos.listas[2].evidencia.ruta_usada
+    SC3:   listas/prep-01/A2/geo-train-06_v0_r3_s2026092903.primarios.csv
+    local: C:/Users/etherion/AppData/Local/Temp/claude/c--Users-etherion-Documents-tesis-ing-siste...
+  hoja distinta [ruta] contratos.K0.ambitos.listas[3].evidencia.ruta_usada
+    SC3:   listas/prep-01/A2/geo-train-01_v0_r1_s2026092901.primarios.csv
+    local: C:/Users/etherion/AppData/Local/Temp/claude/c--Users-etherion-Documents-tesis-ing-siste...
+  hoja distinta [ruta] contratos.K0.ambitos.listas[4].evidencia.ruta_usada
+    SC3:   listas/prep-01/A2/geo-train-01_v0_r2_s2026092902.primarios.csv
+    local: C:/Users/etherion/AppData/Local/Temp/claude/c--Users-etherion-Documents-tesis-ing-siste...
+  hoja distinta [ruta] contratos.K0.ambitos.listas[5].evidencia.ruta_usada
+    SC3:   listas/prep-01/A2/geo-train-01_v0_r3_s2026092903.primarios.csv
+    local: C:/Users/etherion/AppData/Local/Temp/claude/c--Users-etherion-Documents-tesis-ing-siste...
+cruces-union.csv
+  SHA-256 SC3:   1b804e24252834f8487d10d24533e1b2254cee304cab085e6181cb6260e20b4d
+  SHA-256 local: 1b804e24252834f8487d10d24533e1b2254cee304cab085e6181cb6260e20b4d
+  resultado: IDÉNTICO byte a byte
+mapas-etapa1.npz
+  SHA-256 SC3:   cd58ba70b5ff09d4ddd7354550f8046d98424c0cffdf3715bd086f3f528be0d5
+  SHA-256 local: c482c6753d46724a5709236b64ce0cf5d74f4eb15ea25c7c1e9b804da5b32a98
+  resultado: DISTINTO byte a byte
+  arreglos: SC3 6, local 6; mismos nombres: sí; iguales (dtype, forma y valores): 6; distintos: 0
+    geo-train-01__A_sobre_N: igual (float64, (256, 256))
+    geo-train-01__B_menos_A_sobre_N: igual (float64, (256, 256))
+    geo-train-01__B_sobre_N: igual (float64, (256, 256))
+    geo-train-06__A_sobre_N: igual (float64, (256, 256))
+    geo-train-06__B_menos_A_sobre_N: igual (float64, (256, 256))
+    geo-train-06__B_sobre_N: igual (float64, (256, 256))
+  miembros .npy del zip: SC3 6, local 6; contenido descomprimido idéntico: 6 de 6
+  campos del encabezado zip distintos: create_system (SC3 3, local 0); create_version (SC3 20, local 45); extract_version (SC3 20, local 45)
+matriz-clases.csv
+  SHA-256 SC3:   da221e656e5e9b42b3a4227b8b6caa5a75366447dcd352c5588e2fde31523000
+  SHA-256 local: da221e656e5e9b42b3a4227b8b6caa5a75366447dcd352c5588e2fde31523000
+  resultado: IDÉNTICO byte a byte
+muones-discordantes.csv
+  SHA-256 SC3:   20c2ed0876e7dc4ca1f915a7f7e611aa86e0f2b269934227f487b5a99a2907d3
+  SHA-256 local: 20c2ed0876e7dc4ca1f915a7f7e611aa86e0f2b269934227f487b5a99a2907d3
+  resultado: IDÉNTICO byte a byte
+resultados-etapa1.json
+  SHA-256 SC3:   6425f4b312ee70967aba2c5077d1eebe7ee4e176aeef02af996e89f004cd3f43
+  SHA-256 local: a9cf20bead0edb1830d67e9913c25390f5675bbda6d517c25a3f27ae2cf8bdf9
+  resultado: DISTINTO byte a byte
+  hojas JSON: SC3 760, local 762; distintas 5; solo en SC3 0; solo en local 2
+  hoja distinta [entorno] herramienta.entorno.python
+    SC3:   3.9.25
+    local: 3.13.5
+  hoja distinta [entorno] herramienta.entorno.numpy
+    SC3:   2.0.2
+    local: 2.4.4
+  hoja distinta [entorno] herramienta.entorno.matplotlib
+    SC3:   no usado
+    local: 3.10.7
+  hoja distinta [entorno] herramienta.entorno.plataforma
+    SC3:   linux 64-bit
+    local: win32 64-bit
+  hoja distinta [ruta] herramienta.crossing_reference.ruta
+    SC3:   /home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/tests/crossing_refer...
+    local: C:\Users\etherion\Documents\tesis-ing-sistemas\tesis-5-8-26\tesis-ing-sistemas\muograph...
+  hoja solo en local [ruta] figuras[0]
+    local: figuras\mapa-geo-train-06.png
+  hoja solo en local [ruta] figuras[1]
+    local: figuras\mapa-geo-train-01.png
+tabla-corridas.csv
+  SHA-256 SC3:   9dc1d8f4215f9012052cb6f1af766f521a163988cf745f7e8184101d33331f86
+  SHA-256 local: 9dc1d8f4215f9012052cb6f1af766f521a163988cf745f7e8184101d33331f86
+  resultado: IDÉNTICO byte a byte
+transiciones.csv
+  SHA-256 SC3:   e5a68181a9d8b7d83ff9e345374a0940a9e2f9a7e38cacf2f2667c32216522ac
+  SHA-256 local: e5a68181a9d8b7d83ff9e345374a0940a9e2f9a7e38cacf2f2667c32216522ac
+  resultado: IDÉNTICO byte a byte
+
+ARCHIVOS SOLO EN LA CARPETA LOCAL
+
+figuras/mapa-geo-train-01.png (359672 bytes)
+figuras/mapa-geo-train-06.png (369921 bytes)
+
+RESUMEN
+
+archivos en la carpeta de SC3: 10; idénticos byte a byte: 6; distintos byte a byte o ausentes en local: 4
+tablas CSV de SC3: 6; todas idénticas byte a byte a las locales: sí
+arreglos de mapas-etapa1.npz iguales a los locales: sí
+hojas o líneas distintas por clase: entorno 7, fecha 2, ruta 11
+diferencias de clase 'otra': 0
+archivos solo en la carpeta local: 2

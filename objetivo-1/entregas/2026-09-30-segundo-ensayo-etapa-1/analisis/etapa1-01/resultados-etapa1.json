@@ -1,0 +1,1030 @@
+{
+ "formato": "oe1-resultados-etapa1/1",
+ "estado": "OK",
+ "naturaleza": "Etapa 1 diagnóstica: no dimensionada; ningún intervalo de esta etapa acota el efecto ni decide equivalencia.",
+ "leyendas": {
+  "delta": "Δ = promedio(Y_B − Y_A) = (n01 − n10)/N",
+  "y": "Y = 1 si el muon se detecta dentro de R_int",
+  "millon": "10⁶·Δ en cuentas por millón de primarios generados",
+  "frase_DE": "DE = 0 entre réplicas no implica incertidumbre cero (PROT:76).",
+  "mapas": "diferencia neta; no identifica muones individuales",
+  "repeticion_AA": "la repetición A/A queda fuera de Δ, transiciones, agrupado y DE",
+  "cuerda": "la cuerda pre→post no es la trayectoria navegada (WentzelVI desplaza lateralmente dentro del paso, aunque MuHadLateralDisplacement esté desactivado): las longitudes en Z son de la cuerda y sum_lat_z_mm (Σ del desplazamiento lateral de los pasos cercanos a Z) da la escala del error, no una cota: con incidencia θ el error de longitud es del orden de lat/sen θ y en una cuerda rasante crece como √(2·R·lat) (R ≤ 86.3 m), de modo que se informa como ≲ 2√(2·R_max·lat); sin esa columna no hay escala",
+  "recursos": "cpu_s = rusage_user_cpu_seconds + rusage_system_cpu_seconds y rss_kb = rusage_max_rss_kb del meta.json (getrusage del proceso, desde su arranque; kB); si el meta no los tiene, user_s + sys_s y maxrss_kb de recursos.json (run_timed.py, del proceso hijo). fuente_cpu y fuente_rss dicen cuál se usó en cada fila",
+  "cotas_clopper_pearson": "dato: ΣY (muones detectados dentro de R_int en la variante) y N (primarios generados), medidos en esta etapa; supuesto: los N primarios son ensayos de Bernoulli independientes con la misma probabilidad p (réplicas agrupadas), sin comprobar"
+ },
+ "recursos_del_meta": {
+  "g06-A-r1": {
+   "rusage_max_rss_kb": 115940,
+   "rusage_system_cpu_seconds": 0.21223499999999998,
+   "rusage_user_cpu_seconds": 89.79746
+  },
+  "g06-B-r1": {
+   "rusage_max_rss_kb": 116576,
+   "rusage_system_cpu_seconds": 0.231202,
+   "rusage_user_cpu_seconds": 81.354241
+  },
+  "g06-A-r2": {
+   "rusage_max_rss_kb": 118156,
+   "rusage_system_cpu_seconds": 0.180927,
+   "rusage_user_cpu_seconds": 88.717914
+  },
+  "g06-B-r2": {
+   "rusage_max_rss_kb": 115392,
+   "rusage_system_cpu_seconds": 0.190744,
+   "rusage_user_cpu_seconds": 86.891516
+  },
+  "g06-A-r3": {
+   "rusage_max_rss_kb": 116668,
+   "rusage_system_cpu_seconds": 0.195959,
+   "rusage_user_cpu_seconds": 89.718461
+  },
+  "g06-B-r3": {
+   "rusage_max_rss_kb": 116700,
+   "rusage_system_cpu_seconds": 0.19555699999999998,
+   "rusage_user_cpu_seconds": 79.344123
+  },
+  "g01-A-r1": {
+   "rusage_max_rss_kb": 115004,
+   "rusage_system_cpu_seconds": 0.19932999999999998,
+   "rusage_user_cpu_seconds": 89.129775
+  },
+  "g01-B-r1": {
+   "rusage_max_rss_kb": 115716,
+   "rusage_system_cpu_seconds": 0.184563,
+   "rusage_user_cpu_seconds": 89.312134
+  },
+  "g01-A-r1-rep": {
+   "rusage_max_rss_kb": 116060,
+   "rusage_system_cpu_seconds": 0.180168,
+   "rusage_user_cpu_seconds": 91.168798
+  },
+  "g01-A-r2": {
+   "rusage_max_rss_kb": 115952,
+   "rusage_system_cpu_seconds": 0.200263,
+   "rusage_user_cpu_seconds": 88.979467
+  },
+  "g01-B-r2": {
+   "rusage_max_rss_kb": 116032,
+   "rusage_system_cpu_seconds": 0.173093,
+   "rusage_user_cpu_seconds": 83.852346
+  },
+  "g01-A-r3": {
+   "rusage_max_rss_kb": 116364,
+   "rusage_system_cpu_seconds": 0.195538,
+   "rusage_user_cpu_seconds": 81.17946
+  },
+  "g01-B-r3": {
+   "rusage_max_rss_kb": 115620,
+   "rusage_system_cpu_seconds": 0.186501,
+   "rusage_user_cpu_seconds": 58.282864000000004
+  }
+ },
+ "desplazamiento_lateral": {
+  "g06-A-r1": {
+   "max_lat_mm": 33443.568058818324,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.88806,
+   "max_lat_z_mm": 0.0,
+   "max_suma_lat_z_mm": 0.0
+  },
+  "g06-B-r1": {
+   "max_lat_mm": 33443.568058818324,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.88806,
+   "max_lat_z_mm": 0.0,
+   "max_suma_lat_z_mm": 0.0
+  },
+  "g06-A-r2": {
+   "max_lat_mm": 28541.562453327333,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.88909,
+   "max_lat_z_mm": 0.07701201749908283,
+   "max_suma_lat_z_mm": 0.07701201778711542
+  },
+  "g06-B-r2": {
+   "max_lat_mm": 28541.562453327333,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.88909,
+   "max_lat_z_mm": 0.07701201749908283,
+   "max_suma_lat_z_mm": 0.07701201778711542
+  },
+  "g06-A-r3": {
+   "max_lat_mm": 28897.942683030004,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.88935,
+   "max_lat_z_mm": 0.0,
+   "max_suma_lat_z_mm": 0.0
+  },
+  "g06-B-r3": {
+   "max_lat_mm": 28897.942683030004,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.88935,
+   "max_lat_z_mm": 0.0,
+   "max_suma_lat_z_mm": 0.0
+  },
+  "g01-A-r1": {
+   "max_lat_mm": 40336.12654005267,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.89901,
+   "max_lat_z_mm": null,
+   "max_suma_lat_z_mm": null
+  },
+  "g01-B-r1": {
+   "max_lat_mm": 40336.12654005267,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.89901,
+   "max_lat_z_mm": null,
+   "max_suma_lat_z_mm": null
+  },
+  "g01-A-r1-rep": {
+   "max_lat_mm": 40336.12654005267,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.89901,
+   "max_lat_z_mm": null,
+   "max_suma_lat_z_mm": null
+  },
+  "g01-A-r2": {
+   "max_lat_mm": 32843.46843752921,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.89872,
+   "max_lat_z_mm": null,
+   "max_suma_lat_z_mm": null
+  },
+  "g01-B-r2": {
+   "max_lat_mm": 32843.46843752921,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.89872,
+   "max_lat_z_mm": null,
+   "max_suma_lat_z_mm": null
+  },
+  "g01-A-r3": {
+   "max_lat_mm": 29864.121658258155,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.8982,
+   "max_lat_z_mm": null,
+   "max_suma_lat_z_mm": null
+  },
+  "g01-B-r3": {
+   "max_lat_mm": 29864.121658258155,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.8982,
+   "max_lat_z_mm": null,
+   "max_suma_lat_z_mm": null
+  }
+ },
+ "atribucion_al_solape_bloqueada": false,
+ "advertencias": [],
+ "casos": {
+  "geo-train-06": {
+   "rol": "afectado",
+   "etiqueta_mascara": "R_int (región de intersección)",
+   "pares": [
+    {
+     "caso": "geo-train-06",
+     "replica": 1,
+     "N": 100000,
+     "n00": 100000,
+     "n01": 0,
+     "n10": 0,
+     "n11": 0,
+     "b": 0,
+     "delta": 0.0,
+     "sumY_A": 0,
+     "sumY_B": 0,
+     "det_A": 75158,
+     "det_B": 75158,
+     "m00": 24842,
+     "m01": 0,
+     "m10": 0,
+     "m11": 75158,
+     "delta_eficiencia": 0.0,
+     "delta_por_millon": 0.0,
+     "denominador": "cuentas por millón de primarios generados; denominador N = 100 000",
+     "tango_inf": -3.841311258303763e-05,
+     "tango_sup": 3.841311258303763e-05,
+     "tango_inf_por_millon": -38.41311258303763,
+     "tango_sup_por_millon": 38.41311258303763,
+     "nivel": 0.95,
+     "mcnemar_exacto": {
+      "b": 0,
+      "n01": 0,
+      "n10": 0,
+      "definido": false,
+      "p_dos_colas": 1.0
+     },
+     "nota": "diagnóstico; etapa 1 no dimensionada",
+     "semiancho": 3.841311258303763e-05,
+     "cruces": {
+      "cruces_A": 0,
+      "cruces_B": 0,
+      "cruces_ambas": 0,
+      "cruces_union": 0,
+      "tamano_U": 0,
+      "delta_condicional_U": null,
+      "n01_U": 0,
+      "n10_U": 0,
+      "nota_U": "|U| = 0: Δ_U no está definido",
+      "lz_total_A_m": 0.0,
+      "lz_total_B_m": 0.0,
+      "lz_a0_total_A_m": 0.0,
+      "lz_a1_total_A_m": 0.0,
+      "lz_a1_total_B_m": 0.0
+     },
+     "bins_cambiados": 0,
+     "discordantes": 0,
+     "discordantes_por_clase": {}
+    },
+    {
+     "caso": "geo-train-06",
+     "replica": 2,
+     "N": 100000,
+     "n00": 99999,
+     "n01": 0,
+     "n10": 0,
+     "n11": 1,
+     "b": 0,
+     "delta": 0.0,
+     "sumY_A": 1,
+     "sumY_B": 1,
+     "det_A": 75319,
+     "det_B": 75319,
+     "m00": 24681,
+     "m01": 0,
+     "m10": 0,
+     "m11": 75319,
+     "delta_eficiencia": 0.0,
+     "delta_por_millon": 0.0,
+     "denominador": "cuentas por millón de primarios generados; denominador N = 100 000",
+     "tango_inf": -3.841311258303763e-05,
+     "tango_sup": 3.841311258303763e-05,
+     "tango_inf_por_millon": -38.41311258303763,
+     "tango_sup_por_millon": 38.41311258303763,
+     "nivel": 0.95,
+     "mcnemar_exacto": {
+      "b": 0,
+      "n01": 0,
+      "n10": 0,
+      "definido": false,
+      "p_dos_colas": 1.0
+     },
+     "nota": "diagnóstico; etapa 1 no dimensionada",
+     "semiancho": 3.841311258303763e-05,
+     "cruces": {
+      "cruces_A": 1,
+      "cruces_B": 1,
+      "cruces_ambas": 1,
+      "cruces_union": 1,
+      "tamano_U": 1,
+      "delta_condicional_U": 0.0,
+      "n01_U": 0,
+      "n10_U": 0,
+      "nota_U": "condicional; denominador |U| = 1; no sustituye a Δ (PROT:69)",
+      "lz_total_A_m": 25.623869821803744,
+      "lz_total_B_m": 25.623869821803744,
+      "lz_a0_total_A_m": 0.0,
+      "lz_a1_total_A_m": 25.623869821803744,
+      "lz_a1_total_B_m": 25.623869821803744
+     },
+     "bins_cambiados": 0,
+     "discordantes": 0,
+     "discordantes_por_clase": {}
+    },
+    {
+     "caso": "geo-train-06",
+     "replica": 3,
+     "N": 100000,
+     "n00": 100000,
+     "n01": 0,
+     "n10": 0,
+     "n11": 0,
+     "b": 0,
+     "delta": 0.0,
+     "sumY_A": 0,
+     "sumY_B": 0,
+     "det_A": 75190,
+     "det_B": 75190,
+     "m00": 24810,
+     "m01": 0,
+     "m10": 0,
+     "m11": 75190,
+     "delta_eficiencia": 0.0,
+     "delta_por_millon": 0.0,
+     "denominador": "cuentas por millón de primarios generados; denominador N = 100 000",
+     "tango_inf": -3.841311258303763e-05,
+     "tango_sup": 3.841311258303763e-05,
+     "tango_inf_por_millon": -38.41311258303763,
+     "tango_sup_por_millon": 38.41311258303763,
+     "nivel": 0.95,
+     "mcnemar_exacto": {
+      "b": 0,
+      "n01": 0,
+      "n10": 0,
+      "definido": false,
+      "p_dos_colas": 1.0
+     },
+     "nota": "diagnóstico; etapa 1 no dimensionada",
+     "semiancho": 3.841311258303763e-05,
+     "cruces": {
+      "cruces_A": 0,
+      "cruces_B": 0,
+      "cruces_ambas": 0,
+      "cruces_union": 0,
+      "tamano_U": 0,
+      "delta_condicional_U": null,
+      "n01_U": 0,
+      "n10_U": 0,
+      "nota_U": "|U| = 0: Δ_U no está definido",
+      "lz_total_A_m": 0.0,
+      "lz_total_B_m": 0.0,
+      "lz_a0_total_A_m": 0.0,
+      "lz_a1_total_A_m": 0.0,
+      "lz_a1_total_B_m": 0.0
+     },
+     "bins_cambiados": 0,
+     "discordantes": 0,
+     "discordantes_por_clase": {}
+    }
+   ],
+   "agrupado": {
+    "N": 300000,
+    "n00": 299999,
+    "n01": 0,
+    "n10": 0,
+    "n11": 1,
+    "sumY_A": 1,
+    "sumY_B": 1,
+    "det_A": 225667,
+    "det_B": 225667,
+    "m00": 74333,
+    "m01": 0,
+    "m10": 0,
+    "m11": 225667,
+    "b": 0,
+    "delta": 0.0,
+    "delta_por_millon": 0.0,
+    "denominador": "cuentas por millón de primarios generados; denominador N = 300 000",
+    "delta_eficiencia": 0.0,
+    "tango_inf": -1.2804698773235382e-05,
+    "tango_sup": 1.2804698773235382e-05,
+    "tango_inf_por_millon": -12.804698773235382,
+    "tango_sup_por_millon": 12.804698773235382,
+    "nivel": 0.95,
+    "mcnemar_exacto": {
+     "b": 0,
+     "n01": 0,
+     "n10": 0,
+     "definido": false,
+     "p_dos_colas": 1.0
+    },
+    "nota": "diagnóstico; etapa 1 no dimensionada",
+    "semiancho": 1.2804698773235382e-05,
+    "por_replica": {
+     "deltas_por_replica": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "media": 0.0,
+     "DE": 0.0,
+     "rango": [
+      0.0,
+      0.0
+     ],
+     "media_por_millon": 0.0,
+     "DE_por_millon": 0.0,
+     "rango_por_millon": [
+      0.0,
+      0.0
+     ],
+     "frase": "DE = 0 entre réplicas no implica incertidumbre cero (PROT:76)."
+    },
+    "intervalo_no_acota_el_efecto": true,
+    "nota_intervalo": "El intervalo de la etapa 1 es un diagnóstico: la etapa 1 no está dimensionada (PROT §4) y su intervalo no acota el efecto ni decide equivalencia. Las cotas superiores exactas de Clopper-Pearson de p_A y p_B se dan aparte, cada una con lo que es dato (ΣY y N medidos en esta etapa) y lo que es supuesto (primarios independientes con la misma probabilidad).",
+    "cotas_superiores_clopper_pearson": {
+     "nivel_bilateral": 0.95,
+     "N": 300000,
+     "etiqueta": "dato: ΣY (muones detectados dentro de R_int en la variante) y N (primarios generados), medidos en esta etapa; supuesto: los N primarios son ensayos de Bernoulli independientes con la misma probabilidad p (réplicas agrupadas), sin comprobar",
+     "p_A": {
+      "suma_Y": 1,
+      "estimacion": 3.3333333333333333e-06,
+      "inf": 8.439268950333201e-08,
+      "sup": 1.8572003130434833e-05,
+      "sup_por_millon": 18.572003130434833
+     },
+     "p_B": {
+      "suma_Y": 1,
+      "estimacion": 3.3333333333333333e-06,
+      "inf": 8.439268950333201e-08,
+      "sup": 1.8572003130434833e-05,
+      "sup_por_millon": 18.572003130434833
+     }
+    }
+   },
+   "matriz_clases_agrupada": {
+    "R_int": {
+     "R_int": 1,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "R_cond": {
+     "R_int": 0,
+     "R_cond": 22,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "R_body": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 2,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "R_rock": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 870,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "R_sky": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 224740,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "sin clase": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 32,
+     "no detectado": 0
+    },
+    "no detectado": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 74333
+    }
+   },
+   "cruces_agrupados": {
+    "cruces_A": 1,
+    "cruces_B": 1,
+    "cruces_ambas": 1,
+    "cruces_union": 1,
+    "tamano_U": 1,
+    "delta_condicional_U": 0.0
+   },
+   "bins_cambiados_agrupados": 0,
+   "mapas": {
+    "leyenda": "diferencia neta; no identifica muones individuales"
+   }
+  },
+  "geo-train-01": {
+   "rol": "control angular",
+   "etiqueta_mascara": "máscara angular R_int (control), no una región de intersección",
+   "pares": [
+    {
+     "caso": "geo-train-01",
+     "replica": 1,
+     "N": 100000,
+     "n00": 99999,
+     "n01": 0,
+     "n10": 0,
+     "n11": 1,
+     "b": 0,
+     "delta": 0.0,
+     "sumY_A": 1,
+     "sumY_B": 1,
+     "det_A": 73625,
+     "det_B": 73625,
+     "m00": 26375,
+     "m01": 0,
+     "m10": 0,
+     "m11": 73625,
+     "delta_eficiencia": 0.0,
+     "delta_por_millon": 0.0,
+     "denominador": "cuentas por millón de primarios generados; denominador N = 100 000",
+     "tango_inf": -3.841311258303763e-05,
+     "tango_sup": 3.841311258303763e-05,
+     "tango_inf_por_millon": -38.41311258303763,
+     "tango_sup_por_millon": 38.41311258303763,
+     "nivel": 0.95,
+     "mcnemar_exacto": {
+      "b": 0,
+      "n01": 0,
+      "n10": 0,
+      "definido": false,
+      "p_dos_colas": 1.0
+     },
+     "nota": "diagnóstico; etapa 1 no dimensionada",
+     "semiancho": 3.841311258303763e-05,
+     "cruces": {},
+     "bins_cambiados": 0,
+     "discordantes": 0,
+     "discordantes_por_clase": {}
+    },
+    {
+     "caso": "geo-train-01",
+     "replica": 2,
+     "N": 100000,
+     "n00": 100000,
+     "n01": 0,
+     "n10": 0,
+     "n11": 0,
+     "b": 0,
+     "delta": 0.0,
+     "sumY_A": 0,
+     "sumY_B": 0,
+     "det_A": 73844,
+     "det_B": 73844,
+     "m00": 26156,
+     "m01": 0,
+     "m10": 0,
+     "m11": 73844,
+     "delta_eficiencia": 0.0,
+     "delta_por_millon": 0.0,
+     "denominador": "cuentas por millón de primarios generados; denominador N = 100 000",
+     "tango_inf": -3.841311258303763e-05,
+     "tango_sup": 3.841311258303763e-05,
+     "tango_inf_por_millon": -38.41311258303763,
+     "tango_sup_por_millon": 38.41311258303763,
+     "nivel": 0.95,
+     "mcnemar_exacto": {
+      "b": 0,
+      "n01": 0,
+      "n10": 0,
+      "definido": false,
+      "p_dos_colas": 1.0
+     },
+     "nota": "diagnóstico; etapa 1 no dimensionada",
+     "semiancho": 3.841311258303763e-05,
+     "cruces": {},
+     "bins_cambiados": 0,
+     "discordantes": 0,
+     "discordantes_por_clase": {}
+    },
+    {
+     "caso": "geo-train-01",
+     "replica": 3,
+     "N": 100000,
+     "n00": 100000,
+     "n01": 0,
+     "n10": 0,
+     "n11": 0,
+     "b": 0,
+     "delta": 0.0,
+     "sumY_A": 0,
+     "sumY_B": 0,
+     "det_A": 73776,
+     "det_B": 73776,
+     "m00": 26224,
+     "m01": 0,
+     "m10": 0,
+     "m11": 73776,
+     "delta_eficiencia": 0.0,
+     "delta_por_millon": 0.0,
+     "denominador": "cuentas por millón de primarios generados; denominador N = 100 000",
+     "tango_inf": -3.841311258303763e-05,
+     "tango_sup": 3.841311258303763e-05,
+     "tango_inf_por_millon": -38.41311258303763,
+     "tango_sup_por_millon": 38.41311258303763,
+     "nivel": 0.95,
+     "mcnemar_exacto": {
+      "b": 0,
+      "n01": 0,
+      "n10": 0,
+      "definido": false,
+      "p_dos_colas": 1.0
+     },
+     "nota": "diagnóstico; etapa 1 no dimensionada",
+     "semiancho": 3.841311258303763e-05,
+     "cruces": {},
+     "bins_cambiados": 0,
+     "discordantes": 0,
+     "discordantes_por_clase": {}
+    }
+   ],
+   "agrupado": {
+    "N": 300000,
+    "n00": 299999,
+    "n01": 0,
+    "n10": 0,
+    "n11": 1,
+    "sumY_A": 1,
+    "sumY_B": 1,
+    "det_A": 221245,
+    "det_B": 221245,
+    "m00": 78755,
+    "m01": 0,
+    "m10": 0,
+    "m11": 221245,
+    "b": 0,
+    "delta": 0.0,
+    "delta_por_millon": 0.0,
+    "denominador": "cuentas por millón de primarios generados; denominador N = 300 000",
+    "delta_eficiencia": 0.0,
+    "tango_inf": -1.2804698773235382e-05,
+    "tango_sup": 1.2804698773235382e-05,
+    "tango_inf_por_millon": -12.804698773235382,
+    "tango_sup_por_millon": 12.804698773235382,
+    "nivel": 0.95,
+    "mcnemar_exacto": {
+     "b": 0,
+     "n01": 0,
+     "n10": 0,
+     "definido": false,
+     "p_dos_colas": 1.0
+    },
+    "nota": "diagnóstico; etapa 1 no dimensionada",
+    "semiancho": 1.2804698773235382e-05,
+    "por_replica": {
+     "deltas_por_replica": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "media": 0.0,
+     "DE": 0.0,
+     "rango": [
+      0.0,
+      0.0
+     ],
+     "media_por_millon": 0.0,
+     "DE_por_millon": 0.0,
+     "rango_por_millon": [
+      0.0,
+      0.0
+     ],
+     "frase": "DE = 0 entre réplicas no implica incertidumbre cero (PROT:76)."
+    },
+    "intervalo_no_acota_el_efecto": true,
+    "nota_intervalo": "El intervalo de la etapa 1 es un diagnóstico: la etapa 1 no está dimensionada (PROT §4) y su intervalo no acota el efecto ni decide equivalencia. Las cotas superiores exactas de Clopper-Pearson de p_A y p_B se dan aparte, cada una con lo que es dato (ΣY y N medidos en esta etapa) y lo que es supuesto (primarios independientes con la misma probabilidad).",
+    "cotas_superiores_clopper_pearson": {
+     "nivel_bilateral": 0.95,
+     "N": 300000,
+     "etiqueta": "dato: ΣY (muones detectados dentro de R_int en la variante) y N (primarios generados), medidos en esta etapa; supuesto: los N primarios son ensayos de Bernoulli independientes con la misma probabilidad p (réplicas agrupadas), sin comprobar",
+     "p_A": {
+      "suma_Y": 1,
+      "estimacion": 3.3333333333333333e-06,
+      "inf": 8.439268950333201e-08,
+      "sup": 1.8572003130434833e-05,
+      "sup_por_millon": 18.572003130434833
+     },
+     "p_B": {
+      "suma_Y": 1,
+      "estimacion": 3.3333333333333333e-06,
+      "inf": 8.439268950333201e-08,
+      "sup": 1.8572003130434833e-05,
+      "sup_por_millon": 18.572003130434833
+     }
+    }
+   },
+   "matriz_clases_agrupada": {
+    "R_int": {
+     "R_int": 1,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "R_cond": {
+     "R_int": 0,
+     "R_cond": 45,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "R_body": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 7,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "R_rock": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 2272,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "R_sky": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 218865,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "sin clase": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 55,
+     "no detectado": 0
+    },
+    "no detectado": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 78755
+    }
+   },
+   "cruces_agrupados": {},
+   "bins_cambiados_agrupados": 0,
+   "mapas": {
+    "leyenda": "diferencia neta; no identifica muones individuales"
+   }
+  }
+ },
+ "verificacion_de_la_recta": {
+  "g06-A-r1": {
+   "ekin_minima_gev": 1000.0,
+   "muones_de_alta_energia": 297,
+   "tabla_2x2": {
+    "recta_cruza_registro_cruza": 0,
+    "recta_cruza_registro_no": 0,
+    "recta_no_registro_cruza": 0,
+    "recta_no_registro_no": 297
+   },
+   "desacuerdos_ids": [],
+   "n_desacuerdos": 0,
+   "recta_cruza_todas_las_energias": 39,
+   "recta_cruza_por_estado_final": {
+    "DET": 0,
+    "PLANE_OUT": 0,
+    "WORLD_EXIT": 0,
+    "DECAY": 18,
+    "MU_CAPTURE": 21,
+    "STOPPED": 0,
+    "OTHER": 0,
+    "ABORTED": 0
+   },
+   "diferencia_relativa_de_longitud_max": null,
+   "diferencia_relativa_de_longitud_media": null
+  },
+  "g06-B-r1": {
+   "ekin_minima_gev": 1000.0,
+   "muones_de_alta_energia": 297,
+   "tabla_2x2": {
+    "recta_cruza_registro_cruza": 0,
+    "recta_cruza_registro_no": 0,
+    "recta_no_registro_cruza": 0,
+    "recta_no_registro_no": 297
+   },
+   "desacuerdos_ids": [],
+   "n_desacuerdos": 0,
+   "recta_cruza_todas_las_energias": 39,
+   "recta_cruza_por_estado_final": {
+    "DET": 0,
+    "PLANE_OUT": 0,
+    "WORLD_EXIT": 0,
+    "DECAY": 18,
+    "MU_CAPTURE": 21,
+    "STOPPED": 0,
+    "OTHER": 0,
+    "ABORTED": 0
+   },
+   "diferencia_relativa_de_longitud_max": null,
+   "diferencia_relativa_de_longitud_media": null
+  },
+  "g06-A-r2": {
+   "ekin_minima_gev": 1000.0,
+   "muones_de_alta_energia": 282,
+   "tabla_2x2": {
+    "recta_cruza_registro_cruza": 0,
+    "recta_cruza_registro_no": 0,
+    "recta_no_registro_cruza": 0,
+    "recta_no_registro_no": 282
+   },
+   "desacuerdos_ids": [],
+   "n_desacuerdos": 0,
+   "recta_cruza_todas_las_energias": 48,
+   "recta_cruza_por_estado_final": {
+    "DET": 0,
+    "PLANE_OUT": 0,
+    "WORLD_EXIT": 0,
+    "DECAY": 25,
+    "MU_CAPTURE": 23,
+    "STOPPED": 0,
+    "OTHER": 0,
+    "ABORTED": 0
+   },
+   "diferencia_relativa_de_longitud_max": null,
+   "diferencia_relativa_de_longitud_media": null
+  },
+  "g06-B-r2": {
+   "ekin_minima_gev": 1000.0,
+   "muones_de_alta_energia": 282,
+   "tabla_2x2": {
+    "recta_cruza_registro_cruza": 0,
+    "recta_cruza_registro_no": 0,
+    "recta_no_registro_cruza": 0,
+    "recta_no_registro_no": 282
+   },
+   "desacuerdos_ids": [],
+   "n_desacuerdos": 0,
+   "recta_cruza_todas_las_energias": 48,
+   "recta_cruza_por_estado_final": {
+    "DET": 0,
+    "PLANE_OUT": 0,
+    "WORLD_EXIT": 0,
+    "DECAY": 25,
+    "MU_CAPTURE": 23,
+    "STOPPED": 0,
+    "OTHER": 0,
+    "ABORTED": 0
+   },
+   "diferencia_relativa_de_longitud_max": null,
+   "diferencia_relativa_de_longitud_media": null
+  },
+  "g06-A-r3": {
+   "ekin_minima_gev": 1000.0,
+   "muones_de_alta_energia": 296,
+   "tabla_2x2": {
+    "recta_cruza_registro_cruza": 0,
+    "recta_cruza_registro_no": 0,
+    "recta_no_registro_cruza": 0,
+    "recta_no_registro_no": 296
+   },
+   "desacuerdos_ids": [],
+   "n_desacuerdos": 0,
+   "recta_cruza_todas_las_energias": 51,
+   "recta_cruza_por_estado_final": {
+    "DET": 0,
+    "PLANE_OUT": 0,
+    "WORLD_EXIT": 0,
+    "DECAY": 28,
+    "MU_CAPTURE": 23,
+    "STOPPED": 0,
+    "OTHER": 0,
+    "ABORTED": 0
+   },
+   "diferencia_relativa_de_longitud_max": null,
+   "diferencia_relativa_de_longitud_media": null
+  },
+  "g06-B-r3": {
+   "ekin_minima_gev": 1000.0,
+   "muones_de_alta_energia": 296,
+   "tabla_2x2": {
+    "recta_cruza_registro_cruza": 0,
+    "recta_cruza_registro_no": 0,
+    "recta_no_registro_cruza": 0,
+    "recta_no_registro_no": 296
+   },
+   "desacuerdos_ids": [],
+   "n_desacuerdos": 0,
+   "recta_cruza_todas_las_energias": 51,
+   "recta_cruza_por_estado_final": {
+    "DET": 0,
+    "PLANE_OUT": 0,
+    "WORLD_EXIT": 0,
+    "DECAY": 28,
+    "MU_CAPTURE": 23,
+    "STOPPED": 0,
+    "OTHER": 0,
+    "ABORTED": 0
+   },
+   "diferencia_relativa_de_longitud_max": null,
+   "diferencia_relativa_de_longitud_media": null
+  }
+ },
+ "entradas": {
+  "manifiesto_sha256": "0a9acf6455469044a8c90b812921185b7dcf24c24d22c501b1c787005e79a402",
+  "R_int_texto_sha256": "e76dcbe5926f9f4aeb61c556729d15c64124cd50a8577dca6beee9ffa317c5fd",
+  "R_int_contenido_sha256": "3029f266419a6a156ecf809a2967bf1b9b72349c6a95e4697115a740140cce63",
+  "npz_sha256": "7546773bc4a5e4e13c8a1ada843c0b6f9559d238c5b6f1a6bcbbbac6d0907d8c",
+  "solapes_entre_mascaras_descriptivas": 0,
+  "corridas": {
+   "g06-A-r1": {
+    "hist": "83bb16921d8bf6f2867bfbf46f03d16e653597f638b14509f19bfea53659c5bf",
+    "meta": "bb4c79e3abf8f6e812611194128d2ca08dadeb7bd08a4fbedcc2277682e9713a",
+    "muones": "ca8940046e7ecd8624b894158cfbe65c99dd2f873af784583777203669fedc01",
+    "run.log": "43991bd45106a6ecc9166aef281c6966c2358a0b7542c51534ef98c3f975a3a5"
+   },
+   "g06-B-r1": {
+    "hist": "83bb16921d8bf6f2867bfbf46f03d16e653597f638b14509f19bfea53659c5bf",
+    "meta": "825b3ee996e38d65b7c7e64c79d5fb196b19442f9e72631b6845f99d120a1aaa",
+    "muones": "33394a379dc7393b856f6c617b8c88b852619bbd1ee31e4722c0121d7cf1e9f3",
+    "run.log": "bb24c16e11c5b58222eb38d86b901227504e0b734d6ed4c752cf1e18c743e842"
+   },
+   "g06-A-r2": {
+    "hist": "46acc9e8312e15bc57f0773fef308c7cc698b0361d4328cf884cdd05604ce72b",
+    "meta": "f71da4c475886c49df8cfcf812667725fad8f53eeb9ed6c00bace06d05fbb4de",
+    "muones": "6b3b09c51b8ff003cbef739202de8575d1f7ca3de32b7a3dd5b4a04e6280a5d2",
+    "run.log": "24f8b7fb98ff4d47d980f0627dddb9e06828d27f80269ac12474984cce421421"
+   },
+   "g06-B-r2": {
+    "hist": "46acc9e8312e15bc57f0773fef308c7cc698b0361d4328cf884cdd05604ce72b",
+    "meta": "d9a274b57bb3c2e524d05c4f07a7a917d63f0e99152fe174497610fd165b978a",
+    "muones": "77b65fbfa89e017a714d0c2711abc873203594d2de51e32cb0356ba0317ede95",
+    "run.log": "b16dc5cdfb2630fc63b9a2a74c287288fba5a687441a4a82e5b6ee9f96e2e838"
+   },
+   "g06-A-r3": {
+    "hist": "8c955311326bc451c0e47208b7a160af1ded4df1725c0567673738713a37fb82",
+    "meta": "ed539c9ad05b324a392e1d4d43de7f7f11691e6ed1127f52e574ceba6c7d9262",
+    "muones": "ac151d4e58fb560fe9483899c5738eadb4cf577e7fd328aa095b4455e9f2f915",
+    "run.log": "757b3e0b484f499ed3acf0e550f703b7ab5b9f34329208942d276bc4a59c994e"
+   },
+   "g06-B-r3": {
+    "hist": "8c955311326bc451c0e47208b7a160af1ded4df1725c0567673738713a37fb82",
+    "meta": "1d009694ea95c5425d766ea9d6e90fe3dbae21f91cb61a04f98c7d4406502a1b",
+    "muones": "2f9efd1a9b9a09288dfae72a40d91fa44a4bb4ea318a62b95260c194223fad87",
+    "run.log": "1394e0399a7232ea9d2997be83ffcdbbaa06ab72aa639d9eb5f873a00980d0d1"
+   },
+   "g01-A-r1": {
+    "hist": "e81868c245b59174cca13784d723d93b0c1e559057660d9491823a86ccac8485",
+    "meta": "f964eef1961df033697d1950ff125592bb4d58d882b8e70edba960803d7d4128",
+    "muones": "2e6a68020f286bad9ad05d57b4ddb80bcc5c8adaa833f5d9a8381fff25d06c38",
+    "run.log": "985e53f7319235ba5ce2c87f81dcfa335f11090fd2f6cd928b6bc12e1070684a"
+   },
+   "g01-B-r1": {
+    "hist": "e81868c245b59174cca13784d723d93b0c1e559057660d9491823a86ccac8485",
+    "meta": "f9e394e04f3db56f6c967155d412963779b9771c32b240d763a931dccff2b1a0",
+    "muones": "a344e4dcb24451bbf2bbd1d7d79cd3bce9e483b91c230279c554e5785616d12f",
+    "run.log": "1889f5ffb99dcdefb9b498a2ba61566060da121221aa4f0c0ff6d2c03f324f21"
+   },
+   "g01-A-r1-rep": {
+    "hist": "e81868c245b59174cca13784d723d93b0c1e559057660d9491823a86ccac8485",
+    "meta": "bcd281ccb897e31a892ebe71b957c3593615e662c39e6fcfb47cd906706e0bd5",
+    "muones": "2e6a68020f286bad9ad05d57b4ddb80bcc5c8adaa833f5d9a8381fff25d06c38",
+    "run.log": "519eea5c6407c34cf25ea6b4cd8f2e3832e08619cf069b64da6efdc3019af601"
+   },
+   "g01-A-r2": {
+    "hist": "3178950c83dee42adee5afd8d1a11d01249bcf6dbc90fc02be3b68180139c2dc",
+    "meta": "0e3006706b144add8b7ef84a284c0fefe2216c47794301b17d26a4e2f2dc695c",
+    "muones": "9ceb0e984e3c63cb401f53837a0a1cd0a8bb21d77daf84c4a2257858da94c9d9",
+    "run.log": "1128b4e78a3c2a608618cbde3cf3674c15411e711772a271a51ee8b1bab7e8fe"
+   },
+   "g01-B-r2": {
+    "hist": "3178950c83dee42adee5afd8d1a11d01249bcf6dbc90fc02be3b68180139c2dc",
+    "meta": "b8d132a3f7f27b40a1ddff5356ce9f4dce88223ddac2a9c564a38f9617af413e",
+    "muones": "1fbf24d54ffacf3dca2099fd84ffc121dcae5b262ffe738af1c6dededd55ab7b",
+    "run.log": "13d9e7249fd440b053612a99a32e82e37d8cec9bb2b0b87cc16ad9b4fab21da9"
+   },
+   "g01-A-r3": {
+    "hist": "c1aaea82fea0f8a34ebcffb39e3bc10be63f3b4475a656b2dc8628175ceda35b",
+    "meta": "7ca91bf9134f975667b37087cb33c075529dadd8180355127b1e061cef230367",
+    "muones": "9e5ad5fa30a8e91998d512fca5a18e2256f93f28f55ebd1a788df7af53ed06d8",
+    "run.log": "ff727ccf8a97ba5696ad76126366e737a3cbbe076b1036db508e6a7b38382d02"
+   },
+   "g01-B-r3": {
+    "hist": "c1aaea82fea0f8a34ebcffb39e3bc10be63f3b4475a656b2dc8628175ceda35b",
+    "meta": "38e5a94dbe094957ae2ddbff0f903b6fb296f01a18be3d3baccce2f9dcfb07d1",
+    "muones": "d89fca78280996bc3415df3a6d73ef6360b195c8d747c27d776d3bf6b6842e72",
+    "run.log": "a3ac6e6ad6492742747039706db5d2e49dab73a6d2d1388a06bcbf41a620a142"
+   }
+  },
+  "listas": {
+   "geo-train-06_v0_r1_s2026092901.primarios.csv": "a676dd129a2b20b7d6b2316a6562bd8569e50060d04809a8b24b4713ebb5eac6",
+   "geo-train-06_v0_r2_s2026092902.primarios.csv": "b3637415b4e536ec679a652b25f7b47e860bb1308ab0c0478e958b99877d3818",
+   "geo-train-06_v0_r3_s2026092903.primarios.csv": "77a62b535a5262943009ad73cf6a838552049d88cd55fcf2b87588f70a63a93d",
+   "geo-train-01_v0_r1_s2026092901.primarios.csv": "bfdbaf9bd5bdc0ebfdcd11e3129c3ea625581ca90107a4d813aa762db6f47a5c",
+   "geo-train-01_v0_r2_s2026092902.primarios.csv": "0d78a88443cd41133be1ca2df2865a88227ab4c7febe4c57162d3b1edfc20605",
+   "geo-train-01_v0_r3_s2026092903.primarios.csv": "f63209cafec65c52dabd909cc9acb78477604c733b4106a3efb80bc46bbe91dd"
+  }
+ },
+ "herramienta": {
+  "scripts_sha256": {
+   "oe1_stage1_analysis.py": "e08d3355e32257fda2330b3c73600aebb46983b61eff71d143a96d07163173a3",
+   "oe1_stage1_common.py": "1575b1e64d0431da50f708c4735930fe3b2457fce7cf2b1f5a29fed5d371fb3e",
+   "oe1_stage1_lists.py": "debbf77aa64e54a68ec7311ad7361b3554de9965f133e77501e9a5cbb865713c",
+   "oe1_stage1_roi.py": "e9b2de31191e569ca92c4b3bb51bc31f1ffed9b90f31e35441beb5e29b9b1105",
+   "oe1_stage1_synthetic.py": "c450d4435c36dffcbaacaeed749c283154bf5668b73ec82a04913d2098e20435",
+   "oe1_stage1_tecnicas.py": "ff2c8f9e121df4c0ec9f3ee2465baea7e8b1a80838e11260eb55ab1d8dedf325"
+  },
+  "entorno": {
+   "python": "3.9.25",
+   "numpy": "2.0.2",
+   "scipy": "no usado",
+   "matplotlib": "no usado",
+   "plataforma": "linux 64-bit"
+  },
+  "crossing_reference": {
+   "ruta": "/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/tests/crossing_reference.py",
+   "sha256": "d5f296ff29adbc7a3da3ad0720119137bb8dde0ce134f3c55870568320edb8d3"
+  }
+ },
+ "figuras": []
+}

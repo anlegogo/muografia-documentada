@@ -1,0 +1,21 @@
+
+**************************************************************
+ Geant4 version Name: geant4-11-04-patch-02 [MT]   (12-June-2026)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+OE1-LIST-MODE list=geo-train-06_v0_r2_s2026092902.primarios.csv n=100000 sha256=b3637415b4e536ec679a652b25f7b47e860bb1308ab0c0478e958b99877d3818 canon_fnv1a64=b266bbd227ee2d1a mask=R_int.mask.txt mask_ones=195 geometry=geo-train-06 view=0 variant=B case_code=6 replica=2 transport_seed=1026092902 master_seed=1026092902 master_seed_applied=1026092902 run_manager=G4TaskRunManager muon_log=full region=0,1 binary_sha256=ae76186647e7cc90796a9504cfa8bc763fc959484c2f78bf647cbe321f996852 geometry_sha256=c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed
+Checking overlaps for volume edifice:0 (G4Cons) ... OK! 
+Checking overlaps for volume anomaly_0:0 (G4SubtractionSolid) ... OK! 
+ANOMALY-CSG name=anomaly_0 kind=conduit clipped=no minus=[1] solid=G4SubtractionSolid placed=yes
+Checking overlaps for volume anomaly_1:0 (G4Ellipsoid) ... OK! 
+ANOMALY-CSG name=anomaly_1 kind=dense_body clipped=no minus=[] solid=G4Ellipsoid placed=yes
+Checking overlaps for volume detector:0 (G4Box) ... OK! 
+OE1-PRERUN-CHECK run_manager=G4TaskRunManager variant=B variant_check=ok errors=none status=OK
+RUN DONE geo-train-06 view 0: events=100000 detected=75319 wall_s=84.6203
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=2 muon_log=full n=100000 rows=100000 DET=75319 PLANE_OUT=2411 WORLD_EXIT=0 DECAY=19833 MU_CAPTURE=2437 STOPPED=0 OTHER=0 ABORTED=0 in_rint=1 crossed=1 graze_muons=0 ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=none status=OK

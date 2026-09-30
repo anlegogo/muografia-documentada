@@ -1,0 +1,5 @@
+raw big files: 406 MB; free in /home: 849 MB
+sacct: job 30569 state/exit: COMPLETED 0:0
+compressed files: 26, raw files hashed: 26
+-rw-r--r--. 1 dapintoo SIMON 132864000 Sep 30 15:30 intento-01.tar
+53b05115b94bd8d60be674606cb265d16b375536111fd464143da866d4a0c5de  intento-01.tar

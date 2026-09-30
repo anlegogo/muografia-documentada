@@ -1,0 +1,10 @@
+fecha_utc=2026-09-30T20:27:36Z
+trabajo=30569
+nodo=guane02.sc3.uis.edu.co
+intento=01
+principal_sbatch_sha256=0a8d720e83a886f8cbe79a4a615c7f05d3cbc38d27a2a4c86cfe74011652b8c3
+manifiesto_sha256=0a9acf6455469044a8c90b812921185b7dcf24c24d22c501b1c787005e79a402
+entradas_esperadas_sha256=eb144327e46699bb3d0192a00da3644b8919224f3677e015990b82f83b5d0dd4
+xargs_paralelismo=13
+libre_en_home_mb=1257 (minimo exigido 800)
+interruptores_ignorados_en_trabajo=ninguno

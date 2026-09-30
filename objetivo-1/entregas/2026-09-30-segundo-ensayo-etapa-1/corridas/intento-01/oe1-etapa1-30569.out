@@ -1,0 +1,15 @@
+corrida	veredicto	codigo	motivo	nodo	trabajo	inicio_utc	fin_utc
+g01-A-r1	OK	0		guane02.sc3.uis.edu.co	30569	2026-09-30T20:27:36Z	2026-09-30T20:29:08Z
+g01-A-r1-rep	OK	0		guane02.sc3.uis.edu.co	30569	2026-09-30T20:27:36Z	2026-09-30T20:29:10Z
+g01-A-r2	OK	0		guane02.sc3.uis.edu.co	30569	2026-09-30T20:27:36Z	2026-09-30T20:29:08Z
+g01-A-r3	OK	0		guane02.sc3.uis.edu.co	30569	2026-09-30T20:27:36Z	2026-09-30T20:28:59Z
+g01-B-r1	OK	0		guane02.sc3.uis.edu.co	30569	2026-09-30T20:27:36Z	2026-09-30T20:29:08Z
+g01-B-r2	OK	0		guane02.sc3.uis.edu.co	30569	2026-09-30T20:27:36Z	2026-09-30T20:29:02Z
+g01-B-r3	OK	0		guane02.sc3.uis.edu.co	30569	2026-09-30T20:27:36Z	2026-09-30T20:28:36Z
+g06-A-r1	OK	0		guane02.sc3.uis.edu.co	30569	2026-09-30T20:27:36Z	2026-09-30T20:29:08Z
+g06-A-r2	OK	0		guane02.sc3.uis.edu.co	30569	2026-09-30T20:27:36Z	2026-09-30T20:29:07Z
+g06-A-r3	OK	0		guane02.sc3.uis.edu.co	30569	2026-09-30T20:27:36Z	2026-09-30T20:29:08Z
+g06-B-r1	OK	0		guane02.sc3.uis.edu.co	30569	2026-09-30T20:27:36Z	2026-09-30T20:28:59Z
+g06-B-r2	OK	0		guane02.sc3.uis.edu.co	30569	2026-09-30T20:27:36Z	2026-09-30T20:29:05Z
+g06-B-r3	OK	0		guane02.sc3.uis.edu.co	30569	2026-09-30T20:27:36Z	2026-09-30T20:28:57Z
+ETAPA1 OK: 13 de 13 corridas OK en guane02.sc3.uis.edu.co, intento 01
