@@ -38,7 +38,7 @@ La tabla resume las desviaciones y definiciones operativas respecto al protocolo
 | DV2 | Resiembra por muón con {`id`, `s_tr`, `case_code`, `TAG_TR`}; `s_tr = s_src − 10⁹` | aplicada | K0 (manifiesto), K9 (a), T-M y T-P |
 | DV3 | `in_rint` escrito por el binario y recalculado fuera de línea | aplicada | K6.16: 0 diferencias en las 13 corridas |
 | DV4 | Campos de cruce «no aplica» en geo-train-01 | aplicada | K6.21: `crossed = −1` en sus 7 corridas |
-| DV5 | Listas y registros por muón en almacenamiento compartido | aplicada en parte | fuera de esta carpeta; falta publicarlos (sección «Datos pesados») |
+| DV5 | Listas y registros por muón en almacenamiento compartido | aplicada | carpeta compartida del proyecto ([`datos-compartidos/ENLACE.txt`](datos-compartidos/ENLACE.txt), sección «Datos pesados») |
 | DV6 | `.gitattributes` solo para extensiones de datos | aplicada | [`.gitattributes`](.gitattributes); no cubre `*.copia` ni `*.status`, que tienen 0 bytes CR |
 | DV7 | Tabla por corrida ampliada y transiciones por par | aplicada | `analisis/etapa1-01/tabla-corridas.csv` y `transiciones.csv` |
 | DV8 | Cruce con ε = 1 µm y roces aparte; longitud, material y energía | aplicada | C1 a C9, R1, V y T-S (sección 3) |
@@ -207,7 +207,7 @@ Esta sección solo propone: margen, método, tamaño y recursos se fijan por esc
 
 ## Datos pesados
 
-Estos archivos no están en la carpeta de la entrega (DV5). Se conservan en SC3 hasta publicarlos.
+Estos archivos no están en la carpeta de la entrega (DV5). Están publicados en la carpeta compartida del proyecto [`para-drive-oe1-etapa1-2026-09-30`](https://drive.google.com/drive/folders/1a9VcFXk8JAe8ClxWo81sXA7Jhr4kkk89?usp=sharing), con su `SHA256SUMS.txt` (copiado en [`datos-compartidos/`](datos-compartidos/)), y se conservan también en SC3.
 
 | Archivo | Tamaño | SHA-256 | Ubicación en SC3 |
 |---|---|---|---|
@@ -215,4 +215,4 @@ Estos archivos no están en la carpeta de la entrega (DV5). Se conservan en SC3 
 | Seis listas `*.primarios.csv` | 87.369.045 B | [`primarios/listas-prep-01.sha256`](primarios/listas-prep-01.sha256) | `~/oe1-trabajo/etapa1/listas/prep-01/A2/` |
 | 13 `_muones.csv` sin comprimir | 424.932.502 B | [`SHA256SUMS-crudos.txt`](corridas/intento-01/SHA256SUMS-crudos.txt) | `~/oe1-trabajo/etapa1/corridas/intento-01/` |
 
-Paso pendiente: publicar `intento-01.tar` y las seis listas en el almacenamiento compartido del proyecto y añadir su URL al manifiesto de la entrega (DV5).
+Para comprobarlos después de descargarlos: `sha256sum -c SHA256SUMS.txt` dentro de la carpeta descargada.

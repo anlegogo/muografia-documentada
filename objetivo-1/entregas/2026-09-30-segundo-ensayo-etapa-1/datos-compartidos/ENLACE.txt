@@ -1,0 +1,5 @@
+Carpeta compartida del proyecto: https://drive.google.com/drive/folders/1a9VcFXk8JAe8ClxWo81sXA7Jhr4kkk89?usp=sharing
+Nombre de la carpeta: para-drive-oe1-etapa1-2026-09-30
+Publicada: 2026-09-30
+Contenido: intento-01.tar (132.864.000 B) y listas/ (6 *.primarios.csv con sus *.meta.json).
+Comprobación: sha256sum -c SHA256SUMS.txt dentro de la carpeta descargada; la lista está copiada junto a este archivo.
