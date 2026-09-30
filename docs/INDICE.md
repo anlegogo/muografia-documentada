@@ -2,10 +2,11 @@
 
 | Documento | Pregunta que responde |
 |---|---|
-| [Protocolo vigente del segundo ensayo](../objetivo-1/PROTOCOLO_SEGUNDO_ENSAYO_OE1.md) | ¿Qué deben implementar y ejecutar ahora, y qué queda condicionado? |
+| [Revisión de etapa 1](../objetivo-1/REVISION_ETAPA_1_2026-09-30.md) | ¿Qué confirmamos de las 13 corridas y qué falta antes de ampliar? |
+| [Protocolo aplicado del segundo ensayo](../objetivo-1/PROTOCOLO_SEGUNDO_ENSAYO_OE1.md) | ¿Qué diseño rigió la etapa 1 y qué condiciona la etapa 2? |
 | [Control físico local](../objetivo-1/CONTROL_FISICO_LOCAL.md) | ¿Qué volúmenes y materiales pudimos contrastar independientemente? |
 | [Revisión de primera entrega](../objetivo-1/REVISION_ENTREGA_2026-09-29.md) | ¿Qué se comprobó y qué observaciones deben atender? |
-| [Diseño del siguiente ensayo](../objetivo-1/DISENO_SIGUIENTE_ENSAYO_OE1.md) | ¿Qué deben entregar ahora antes de ampliar simulaciones? |
+| [Diseño del siguiente ensayo](../objetivo-1/DISENO_SIGUIENTE_ENSAYO_OE1.md) | ¿Qué encargo histórico de diseño fue sustituido por el protocolo v1.0? |
 | [README principal](../README.md) | ¿Qué contiene esta réplica? |
 | [Procedencia](PROCEDENCIA.md) | ¿De quién proviene cada material y qué versión se recibió? |
 | [Reglas documentales](DOCUMENTACION.md) | ¿Cómo registrar y actualizar el trabajo? |

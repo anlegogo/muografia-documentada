@@ -1,6 +1,6 @@
 # Objetivo específico 1: guía del material
 
-**Encargo vigente:** [protocolo del segundo ensayo v1.0](PROTOCOLO_SEGUNDO_ENSAYO_OE1.md), aportado desde la revisión. Implementar y reportar la etapa 1; la etapa 2 y una campaña ampliada siguen pendientes de dimensionamiento y revisión.
+**Paso actual:** [revisión de la etapa 1](REVISION_ETAPA_1_2026-09-30.md) terminada: resultados reproducidos y comparación individual verificada. Preparar el complemento de cobertura R2-01 antes de dimensionar la etapa 2. El [protocolo v1.0](PROTOCOLO_SEGUNDO_ENSAYO_OE1.md) permanece como diseño aplicado.
 
 Consultar primero [alcance](ALCANCE.md) y [matriz de cumplimiento](MATRIZ_CUMPLIMIENTO.md).
 

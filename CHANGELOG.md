@@ -1,5 +1,12 @@
 # Registro de cambios
 
+## Revisión de etapa 1 — 2026-09-30, Colombia
+
+- Descarga y verificación del paquete completo de etapa 1, incluidas seis listas y 13 registros por muón.
+- Análisis de autores reproducido (405 comprobaciones) y auditor independiente (156 controles), sin fallos.
+- Se documenta R2-01: los cruces sintéticos cubren entrada desde el elipsoide, no desde el conducto. No se declara equivalencia física ni se aprueba etapa 2.
+- Informe: [revisión de etapa 1](objetivo-1/REVISION_ETAPA_1_2026-09-30.md). Se mantienen las entregas en sus ramas.
+
 ## Protocolo del segundo ensayo v1.0 — 2026-09-29
 
 - Diseño documentado desde la revisión: etapa técnica acotada, primarios comunes, observable principal y entregables.

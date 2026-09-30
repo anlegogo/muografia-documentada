@@ -1,10 +1,10 @@
 # Matriz de cumplimiento del OE1
 
-**Paso actual:** [protocolo del segundo ensayo v1.0](PROTOCOLO_SEGUNDO_ENSAYO_OE1.md), diseñado desde la revisión. La etapa 1 está definida; etapa 2 y cierre físico siguen pendientes.
+**Paso actual:** [etapa 1 revisada](REVISION_ETAPA_1_2026-09-30.md). Verificados los 600.000 pares A/B y la repetición A/A; efecto físico todavía inconcluso. La cobertura R2-01 y la etapa 2 siguen pendientes.
 
 Valoración técnica de revisión, no calificación académica definitiva. «Verificado» se limita al control descrito.
 
-**Revisión del 29 de septiembre:** [entrega del piloto](REVISION_ENTREGA_2026-09-29.md) revisada con observaciones. Corrección geométrica con evidencia favorable; impacto físico aún inconcluso. Ver [encargo vigente](DISENO_SIGUIENTE_ENSAYO_OE1.md).
+**Revisión del 29 de septiembre:** [entrega del piloto](REVISION_ENTREGA_2026-09-29.md) revisada con observaciones. Corrección geométrica con evidencia favorable; impacto físico aún inconcluso. El encargo de diseño enlazado en esa revisión es histórico; el seguimiento actual figura arriba.
 
 | ID | Aspecto | Evidencia | Estado | Condición pendiente |
 |---|---|---|---|---|
@@ -13,7 +13,7 @@ Valoración técnica de revisión, no calificación académica definitiva. «Ver
 | OE1-03 | Diferentes niveles de conteo | Shards, metadatos y auditoría local | Verificado: 9.120 pares regenerados en memoria e idénticos; semillas y límites comprobados | La validez física de las referencias sigue dependiendo de P-01/P-04. |
 | OE1-04 | Datos organizados y trazables | Particiones por geometría, semillas y SHA-256 | Verificado: integridad y particiones declaradas | Conservar versión al recibir cambios. |
 | OE1-05 | Representatividad y validación física | Controles analíticos recibidos, comparación de motores y logs | Parcial | Cuantificar efectos de solapamientos y supuestos físicos; P-01/P-04. |
-| OE1-06 | Reproducción independiente | Reproducción SC3 entregada y comparación local contra conteos originales | Histograma de geo-train-06, vista 0, idéntico; alcance parcial | Otros casos/entornos e insumos ausentes: P-02/P-03. |
+| OE1-06 | Reproducción independiente | Histograma histórico y análisis de etapa 1 reproducidos; 600.000 pares A/B contrastados y 13 histogramas reconstruidos desde crudos | Verificado para el análisis y los archivos revisados; sin nueva ejecución Geant4 local | Cobertura de transporte y otros casos/entornos: R2-01, P-01/P-02/P-03. |
 
 **Conclusión:** la generación del conjunto está respaldada. El cierre de su validación física continúa pendiente; ordenar o verificar hashes no resuelve ese pendiente.
 

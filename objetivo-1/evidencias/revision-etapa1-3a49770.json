@@ -1,0 +1,1134 @@
+{
+  "revision_entrega": "3a49770",
+  "codigo_estudiantes": "3315f82",
+  "entorno": {
+    "python": "3.12.14",
+    "numpy": "2.4.4",
+    "pandas": "3.0.6"
+  },
+  "alcance": "Archivos descargados, comparación independiente y reproducción del análisis; sin nueva ejecución Geant4.",
+  "checks": [
+    {
+      "control": "manifiesto_versionados",
+      "ok": true,
+      "evidencia": {
+        "entradas": 523,
+        "fallos": []
+      }
+    },
+    {
+      "control": "descarga_drive",
+      "ok": true,
+      "evidencia": {
+        "entradas": 7,
+        "fallos": []
+      }
+    },
+    {
+      "control": "archivo_pruebas_tecnicas",
+      "ok": true,
+      "evidencia": {
+        "entradas": 1,
+        "fallos": []
+      }
+    },
+    {
+      "control": "produccion_crudos",
+      "ok": true,
+      "evidencia": {
+        "entradas": 26,
+        "fallos": []
+      }
+    },
+    {
+      "control": "produccion_gz",
+      "ok": true,
+      "evidencia": {
+        "entradas": 26,
+        "fallos": []
+      }
+    },
+    {
+      "control": "mascara_256x256_195",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r1:ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r1:lista_ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r1:primarios",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r1:lista_sha",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r1:estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r1:deteccion_estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r1:histograma",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r1:ROI",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r1:tabla",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r1:ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r1:lista_ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r1:primarios",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r1:lista_sha",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r1:estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r1:deteccion_estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r1:histograma",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r1:ROI",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r1:tabla",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r2:ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r2:lista_ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r2:primarios",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r2:lista_sha",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r2:estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r2:deteccion_estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r2:histograma",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r2:ROI",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r2:tabla",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r2:ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r2:lista_ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r2:primarios",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r2:lista_sha",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r2:estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r2:deteccion_estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r2:histograma",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r2:ROI",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r2:tabla",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r3:ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r3:lista_ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r3:primarios",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r3:lista_sha",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r3:estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r3:deteccion_estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r3:histograma",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r3:ROI",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-A-r3:tabla",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r3:ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r3:lista_ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r3:primarios",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r3:lista_sha",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r3:estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r3:deteccion_estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r3:histograma",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r3:ROI",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g06-B-r3:tabla",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1:ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1:lista_ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1:primarios",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1:lista_sha",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1:estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1:deteccion_estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1:histograma",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1:ROI",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1:tabla",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r1:ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r1:lista_ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r1:primarios",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r1:lista_sha",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r1:estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r1:deteccion_estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r1:histograma",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r1:ROI",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r1:tabla",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r2:ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r2:lista_ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r2:primarios",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r2:lista_sha",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r2:estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r2:deteccion_estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r2:histograma",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r2:ROI",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r2:tabla",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r2:ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r2:lista_ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r2:primarios",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r2:lista_sha",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r2:estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r2:deteccion_estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r2:histograma",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r2:ROI",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r2:tabla",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r3:ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r3:lista_ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r3:primarios",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r3:lista_sha",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r3:estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r3:deteccion_estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r3:histograma",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r3:ROI",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r3:tabla",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r3:ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r3:lista_ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r3:primarios",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r3:lista_sha",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r3:estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r3:deteccion_estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r3:histograma",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r3:ROI",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-B-r3:tabla",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1-rep:ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1-rep:lista_ids",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1-rep:primarios",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1-rep:lista_sha",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1-rep:estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1-rep:deteccion_estado",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1-rep:histograma",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1-rep:ROI",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "g01-A-r1-rep:tabla",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "repeticion_AA_bytes",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "geo-train-06:1:primarios_rng0",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "geo-train-06:1:registros_iguales",
+      "ok": true,
+      "evidencia": {}
+    },
+    {
+      "control": "geo-train-06:2:primarios_rng0",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "geo-train-06:2:registros_iguales",
+      "ok": true,
+      "evidencia": {}
+    },
+    {
+      "control": "geo-train-06:3:primarios_rng0",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "geo-train-06:3:registros_iguales",
+      "ok": true,
+      "evidencia": {}
+    },
+    {
+      "control": "geo-train-01:1:primarios_rng0",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "geo-train-01:1:registros_iguales",
+      "ok": true,
+      "evidencia": {}
+    },
+    {
+      "control": "geo-train-01:2:primarios_rng0",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "geo-train-01:2:registros_iguales",
+      "ok": true,
+      "evidencia": {}
+    },
+    {
+      "control": "geo-train-01:3:primarios_rng0",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "geo-train-01:3:registros_iguales",
+      "ok": true,
+      "evidencia": {}
+    },
+    {
+      "control": "TS_A2:clasificacion_rectas",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "TS_A2:longitudes_1pct",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "TS_A2:materiales",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "TS_B2:clasificacion_rectas",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "TS_B2:longitudes_1pct",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "TS_B2:materiales",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "TR:invariancia",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "TM:invariancia",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "TP:invariancia",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "TP:100_primarios_sustituidos",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "TL_A:histogramas",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "TL_B:histogramas",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "reproduccion:cambios-bin.csv",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "reproduccion:cruces-union.csv",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "reproduccion:matriz-clases.csv",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "reproduccion:muones-discordantes.csv",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "reproduccion:tabla-corridas.csv",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "reproduccion:transiciones.csv",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "reproduccion:mapas",
+      "ok": true,
+      "evidencia": null
+    },
+    {
+      "control": "reproduccion:contratos",
+      "ok": true,
+      "evidencia": null
+    }
+  ],
+  "corridas": [
+    {
+      "corrida": "g06-A-r1",
+      "N": 100000,
+      "detectados": 75158,
+      "ROI": 0,
+      "cruces": 0,
+      "IDs_cruce": [],
+      "rectas_iniciales_cruzan": 39,
+      "rectas_alta_energia_cruzan": 0,
+      "registros_cruce": []
+    },
+    {
+      "corrida": "g06-B-r1",
+      "N": 100000,
+      "detectados": 75158,
+      "ROI": 0,
+      "cruces": 0,
+      "IDs_cruce": [],
+      "rectas_iniciales_cruzan": 39,
+      "rectas_alta_energia_cruzan": 0,
+      "registros_cruce": []
+    },
+    {
+      "corrida": "g06-A-r2",
+      "N": 100000,
+      "detectados": 75319,
+      "ROI": 1,
+      "cruces": 1,
+      "IDs_cruce": [
+        3910
+      ],
+      "rectas_iniciales_cruzan": 48,
+      "rectas_alta_energia_cruzan": 0,
+      "registros_cruce": [
+        {
+          "caso": 6,
+          "geometry_id": "geo-train-06",
+          "view": 0,
+          "variant": "A",
+          "replica": 2,
+          "list_sha256": "b3637415b4e536ec679a652b25f7b47e860bb1308ab0c0478e958b99877d3818",
+          "id": 3910,
+          "prim_fnv": "e75e8a84924d22f3",
+          "rng0": "c2eff6682d053521",
+          "rng1": "a3b0a1c382e548a5",
+          "detected": 0,
+          "iel": -1,
+          "iaz": -1,
+          "in_rint": -1,
+          "ekin_plane_gev": "",
+          "el_plane_deg": "",
+          "relaz_plane_deg": "",
+          "status": "MU_CAPTURE",
+          "end_process": "muMinusCaptureAtRest",
+          "n_steps": 224,
+          "end_x_m": 62.293290295608024,
+          "end_y_m": -39.306882910232,
+          "end_z_m": 151.95361731819253,
+          "end_vol": "anomaly_1",
+          "crossed": 1,
+          "lz_m": 25.623869821803744,
+          "lz_true_m": 25.623931885393514,
+          "lz_rock_m": 0,
+          "lz_a0_m": 0,
+          "lz_a1_m": 25.623869821803744,
+          "lz_other_m": 0,
+          "lc_m": 25.623869821803744,
+          "le_m": 85.798455258392,
+          "rho_lz_gcm2": 8417.441236462528,
+          "n_steps_z": 18,
+          "n_steps_z_both_out": 0,
+          "n_entries_z": 1,
+          "n_graze_z": 0,
+          "mat_in": "A1",
+          "mat_out": "A1",
+          "e_in_gev": "36.872930689246715",
+          "e_in_lo_gev": "35.88803416696353",
+          "e_in_hi_gev": "37.088195635549006",
+          "e_out_gev": "19.301350205923796",
+          "e_out_lo_gev": "18.506787990911672",
+          "e_out_hi_gev": "19.48119014761542",
+          "max_lat_mm": 15.864489323976649,
+          "max_lat_z_mm": 1.3798426295467748e-11,
+          "sum_lat_z_mm": 1.5798884421036978e-10
+        }
+      ]
+    },
+    {
+      "corrida": "g06-B-r2",
+      "N": 100000,
+      "detectados": 75319,
+      "ROI": 1,
+      "cruces": 1,
+      "IDs_cruce": [
+        3910
+      ],
+      "rectas_iniciales_cruzan": 48,
+      "rectas_alta_energia_cruzan": 0,
+      "registros_cruce": [
+        {
+          "caso": 6,
+          "geometry_id": "geo-train-06",
+          "view": 0,
+          "variant": "B",
+          "replica": 2,
+          "list_sha256": "b3637415b4e536ec679a652b25f7b47e860bb1308ab0c0478e958b99877d3818",
+          "id": 3910,
+          "prim_fnv": "e75e8a84924d22f3",
+          "rng0": "c2eff6682d053521",
+          "rng1": "a3b0a1c382e548a5",
+          "detected": 0,
+          "iel": -1,
+          "iaz": -1,
+          "in_rint": -1,
+          "ekin_plane_gev": "",
+          "el_plane_deg": "",
+          "relaz_plane_deg": "",
+          "status": "MU_CAPTURE",
+          "end_process": "muMinusCaptureAtRest",
+          "n_steps": 224,
+          "end_x_m": 62.293290295608024,
+          "end_y_m": -39.306882910232,
+          "end_z_m": 151.95361731819253,
+          "end_vol": "anomaly_1",
+          "crossed": 1,
+          "lz_m": 25.623869821803744,
+          "lz_true_m": 25.623931885393514,
+          "lz_rock_m": 0,
+          "lz_a0_m": 0,
+          "lz_a1_m": 25.623869821803744,
+          "lz_other_m": 0,
+          "lc_m": 25.623869821803744,
+          "le_m": 85.798455258392,
+          "rho_lz_gcm2": 8417.441236462528,
+          "n_steps_z": 18,
+          "n_steps_z_both_out": 0,
+          "n_entries_z": 1,
+          "n_graze_z": 0,
+          "mat_in": "A1",
+          "mat_out": "A1",
+          "e_in_gev": "36.872930689246715",
+          "e_in_lo_gev": "35.88803416696353",
+          "e_in_hi_gev": "37.088195635549006",
+          "e_out_gev": "19.301350205923796",
+          "e_out_lo_gev": "18.506787990911672",
+          "e_out_hi_gev": "19.48119014761542",
+          "max_lat_mm": 15.864489323976649,
+          "max_lat_z_mm": 1.3798426295467748e-11,
+          "sum_lat_z_mm": 1.5798884421036978e-10
+        }
+      ]
+    },
+    {
+      "corrida": "g06-A-r3",
+      "N": 100000,
+      "detectados": 75190,
+      "ROI": 0,
+      "cruces": 0,
+      "IDs_cruce": [],
+      "rectas_iniciales_cruzan": 51,
+      "rectas_alta_energia_cruzan": 0,
+      "registros_cruce": []
+    },
+    {
+      "corrida": "g06-B-r3",
+      "N": 100000,
+      "detectados": 75190,
+      "ROI": 0,
+      "cruces": 0,
+      "IDs_cruce": [],
+      "rectas_iniciales_cruzan": 51,
+      "rectas_alta_energia_cruzan": 0,
+      "registros_cruce": []
+    },
+    {
+      "corrida": "g01-A-r1",
+      "N": 100000,
+      "detectados": 73625,
+      "ROI": 1,
+      "cruces": 0,
+      "IDs_cruce": []
+    },
+    {
+      "corrida": "g01-B-r1",
+      "N": 100000,
+      "detectados": 73625,
+      "ROI": 1,
+      "cruces": 0,
+      "IDs_cruce": []
+    },
+    {
+      "corrida": "g01-A-r2",
+      "N": 100000,
+      "detectados": 73844,
+      "ROI": 0,
+      "cruces": 0,
+      "IDs_cruce": []
+    },
+    {
+      "corrida": "g01-B-r2",
+      "N": 100000,
+      "detectados": 73844,
+      "ROI": 0,
+      "cruces": 0,
+      "IDs_cruce": []
+    },
+    {
+      "corrida": "g01-A-r3",
+      "N": 100000,
+      "detectados": 73776,
+      "ROI": 0,
+      "cruces": 0,
+      "IDs_cruce": []
+    },
+    {
+      "corrida": "g01-B-r3",
+      "N": 100000,
+      "detectados": 73776,
+      "ROI": 0,
+      "cruces": 0,
+      "IDs_cruce": []
+    },
+    {
+      "corrida": "g01-A-r1-rep",
+      "N": 100000,
+      "detectados": 73625,
+      "ROI": 1,
+      "cruces": 0,
+      "IDs_cruce": []
+    }
+  ],
+  "pares": [
+    {
+      "caso": "geo-train-06",
+      "replica": 1,
+      "N": 100000,
+      "n00_n01_n10_n11": [
+        75158,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "caso": "geo-train-06",
+      "replica": 2,
+      "N": 100000,
+      "n00_n01_n10_n11": [
+        75318,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "caso": "geo-train-06",
+      "replica": 3,
+      "N": 100000,
+      "n00_n01_n10_n11": [
+        75190,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "caso": "geo-train-01",
+      "replica": 1,
+      "N": 100000,
+      "n00_n01_n10_n11": [
+        73624,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "caso": "geo-train-01",
+      "replica": 2,
+      "N": 100000,
+      "n00_n01_n10_n11": [
+        73844,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "caso": "geo-train-01",
+      "replica": 3,
+      "N": 100000,
+      "n00_n01_n10_n11": [
+        73776,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "sinteticos": [
+    {
+      "variante": "A2",
+      "N": 60,
+      "cruzan": 20,
+      "error_relativo_max": 0.0018499240879210621,
+      "con_LZ_en_conducto": 0,
+      "material_entrada": {
+        "A1": 20
+      },
+      "rectas_entran_desde_conducto": 0,
+      "rectas_entran_desde_elipsoide": 20
+    },
+    {
+      "variante": "B2",
+      "N": 60,
+      "cruzan": 20,
+      "error_relativo_max": 0.0018499240879210621,
+      "con_LZ_en_conducto": 0,
+      "material_entrada": {
+        "A1": 20
+      },
+      "rectas_entran_desde_conducto": 0,
+      "rectas_entran_desde_elipsoide": 20
+    }
+  ],
+  "ok": true
+}

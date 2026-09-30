@@ -1,6 +1,6 @@
 # Pendientes del OE1
 
-**Encargo vigente:** [protocolo del segundo ensayo v1.0](PROTOCOLO_SEGUNDO_ENSAYO_OE1.md). El director aporta el diseño; corresponde implementar y reportar etapa 1, y revisar después los recursos necesarios para etapa 2. Las referencias posteriores al encargo de propuesta describen el seguimiento previo.
+**Paso actual:** [revisión independiente de etapa 1](REVISION_ETAPA_1_2026-09-30.md), con 405 comprobaciones reproducidas y 156 controles propios sin fallos. Falta el complemento R2-01 de entrada desde el conducto y el dimensionamiento de etapa 2. P-01…P-04 siguen abiertos; el [protocolo v1.0](PROTOCOLO_SEGUNDO_ENSAYO_OE1.md) se conserva sin cambios.
 
 Todos los siguientes puntos permanecen abiertos; no se asigna a los estudiantes una actividad como realizada sin evidencia.
 

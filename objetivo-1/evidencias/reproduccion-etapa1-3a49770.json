@@ -1,0 +1,45 @@
+{
+  "entrega": "3a4977030a4193098ee66057fbd3c63603d7fa76",
+  "codigo": "3315f82ffa1a3be604897e34e2319b379f500655",
+  "ejecucion_analisis": {
+    "exit_code": 0,
+    "contratos": 405,
+    "fallos_bloqueantes": 0,
+    "fallos_no_bloqueantes": 0
+  },
+  "P1_A2_B2_igual_A_B": true,
+  "diferencias_json": [
+    {
+      "archivo": "contratos.json",
+      "rutas": [
+        "/contratos/K0/ambitos/listas/0/evidencia/ruta_usada",
+        "/contratos/K0/ambitos/listas/1/evidencia/ruta_usada",
+        "/contratos/K0/ambitos/listas/2/evidencia/ruta_usada",
+        "/contratos/K0/ambitos/listas/3/evidencia/ruta_usada",
+        "/contratos/K0/ambitos/listas/4/evidencia/ruta_usada",
+        "/contratos/K0/ambitos/listas/5/evidencia/ruta_usada",
+        "/fecha_utc"
+      ]
+    },
+    {
+      "archivo": "resultados-etapa1.json",
+      "rutas": [
+        "/herramienta/crossing_reference/ruta",
+        "/herramienta/entorno/python",
+        "/herramienta/entorno/plataforma",
+        "/herramienta/entorno/numpy"
+      ]
+    }
+  ],
+  "CSV_iguales_sha256": {
+    "cambios-bin.csv": "57b96bb243f9440c43025b5af584c32365910fd8a618a5cacaf6749e9abb6ad7",
+    "cruces-union.csv": "1b804e24252834f8487d10d24533e1b2254cee304cab085e6181cb6260e20b4d",
+    "matriz-clases.csv": "da221e656e5e9b42b3a4227b8b6caa5a75366447dcd352c5588e2fde31523000",
+    "muones-discordantes.csv": "20c2ed0876e7dc4ca1f915a7f7e611aa86e0f2b269934227f487b5a99a2907d3",
+    "tabla-corridas.csv": "9dc1d8f4215f9012052cb6f1af766f521a163988cf745f7e8184101d33331f86",
+    "transiciones.csv": "e5a68181a9d8b7d83ff9e345374a0940a9e2f9a7e38cacf2f2667c32216522ac"
+  },
+  "mapas_arreglos_iguales": 6,
+  "datos_grandes_fuera_de_git": true,
+  "geant4_ejecutado_por_revisor": false
+}

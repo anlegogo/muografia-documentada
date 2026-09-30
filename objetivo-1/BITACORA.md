@@ -1,5 +1,14 @@
 # Bitácora de nuestra revisión del OE1
 
+## Revisión independiente de etapa 1 — 2026-09-30, Colombia
+
+- Responsable de transporte: Daniel y Reinaldo en SC3. Revisión: análisis local independiente, sin nueva ejecución Geant4.
+- Entradas: entrega `3a49770`, código `3315f82`, paquete Drive con TAR y seis listas de primarios.
+- Procedimiento y comandos: [revisión de etapa 1](REVISION_ETAPA_1_2026-09-30.md), sección 6. Entorno: Python 3.12.14, NumPy 2.4.4, pandas 3.0.6.
+- Resultado: 405 comprobaciones del análisis reproducidas y 156 controles propios sin fallos; 600.000 pares verificados, repetición A/A idéntica y 13 histogramas reconstruidos.
+- Limitación: un cruce en producción; los 20 cruces sintéticos también entran desde el elipsoide. R2-01 requiere complemento antes de ampliar. P-01…P-04 permanecen abiertos.
+- Evidencia: `evidencias/revision-etapa1-3a49770.json` y `evidencias/reproduccion-etapa1-3a49770.json`. Se conserva el fallo de descarga inicial del conector: tiempo agotado; descarga directa y huellas posteriores correctas.
+
 ## Diseño aportado por la revisión — 2026-09-29, Colombia
 
 - Por solicitud del director se define el protocolo del segundo ensayo v1.0; sustituye pedir a los estudiantes un diseño desde cero.
