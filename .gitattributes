@@ -4,4 +4,5 @@ objetivo-1/originales/** -text
 *.json text eol=lf
 *.py text eol=lf
 *.sbatch text eol=lf
+herramientas/ejecutar_complemento_r2_01.sh text eol=lf
 objetivo-1/originales/** -text
