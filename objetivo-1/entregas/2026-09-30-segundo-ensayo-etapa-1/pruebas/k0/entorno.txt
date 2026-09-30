@@ -1,0 +1,6 @@
+SLURM_JOB_ID=30565 host=guane01.sc3.uis.edu.co inicio=2026-09-30 19:37:31 UTC scratch=/tmp/oe1-k0-30565
+g++ (GCC) 14.2.0
+geant4 11.4.2
+Python 3.9.25
+numpy 2.0.2
+fin=2026-09-30 19:54:46 UTC

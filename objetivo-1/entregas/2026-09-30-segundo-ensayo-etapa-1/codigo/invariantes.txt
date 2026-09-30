@@ -1,0 +1,16 @@
+A=95201700ce090aea5bdce9b0d3816a55f389b4fc
+B=f1edc8008e3742aa4cdeaa55edcb2057af3b0238
+A2=fdaef4b8aad259f17043ef0fc6fdccc295e3b8e2
+B2=9bb43f3b620b5e6d62e4b5ea79647dff44c6f3cd
+ANALYSIS=59e03c8b08d11a92bddb08415db404db5ccb1f2f
+TOOLS=3315f82ffa1a3be604897e34e2319b379f500655
+I1 OK diff(A2,B2) == diff(9520170,f1edc80)
+I2 OK diff(9520170,A2) == diff(f1edc80,B2)
+I3 OK P2 touches 35 files, all under geant4_app, none protected
+I4 OK 4 legacy lines removed:
+    -                       const FluxTables* tables, double exposureDays);
+    -      days > 0 ? days : -1.0));
+    -                                           double exposureDays)
+    -      fExposureDays(exposureDays)
+P2 files unchanged between A2 and TOOLS
+Regenerated on 2026-09-30 from git, after the first run's rg-based checks failed silently in a child bash; independent audit: 10/10 PASS.

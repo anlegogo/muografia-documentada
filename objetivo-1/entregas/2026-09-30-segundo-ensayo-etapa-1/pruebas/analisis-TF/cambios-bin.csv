@@ -1,0 +1,5 @@
+caso,ambito,delta_iEl,delta_iAz,n,tipo
+geo-train-06,replica 0,0,0,1489,mismo bin
+geo-train-06,agrupado,0,0,1489,mismo bin
+geo-train-01,replica 0,0,0,1470,mismo bin
+geo-train-01,agrupado,0,0,1470,mismo bin

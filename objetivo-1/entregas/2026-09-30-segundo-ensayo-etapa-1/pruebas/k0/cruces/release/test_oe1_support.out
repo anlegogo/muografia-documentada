@@ -1,0 +1,11 @@
+PASS strict command line (exit-2 class errors, modes, ranges)
+PASS ROI mask reader: format, orientation [iEl, iAz], sha
+PASS per-muon CSV: columns, NA rules, formatting
+PASS id check and histogram reconstruction
+PASS ConfigureListMode: consistency with the geometry
+PASS output preflight: never overwrite, writable folder
+PASS provenance: binary, geometry and table SHA-256
+PASS --variant against the geometry signature
+PASS checks before BeamOn (run manager, --variant): decision table
+PASS RunData: thread-safe bookkeeping
+test_oe1_support: 373 checks, 0 failed

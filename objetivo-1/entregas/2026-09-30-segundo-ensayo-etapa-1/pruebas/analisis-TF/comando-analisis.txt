@@ -1,0 +1,13 @@
+fecha_utc=2026-09-30T19:58:42Z
+host=guane02.sc3.uis.edu.co
+cwd=/home/dapintoo/oe1-trabajo/etapa1
+python=3.9.25
+numpy=2.0.2
+manifiesto_sha256=e02d4116d4f62417b818eb7ab6c987671ddba641be37a6ad346600819c32bf64
+script_sha256[oe1_stage1_analysis.py]=e08d3355e32257fda2330b3c73600aebb46983b61eff71d143a96d07163173a3
+script_sha256[oe1_stage1_common.py]=1575b1e64d0431da50f708c4735930fe3b2457fce7cf2b1f5a29fed5d371fb3e
+script_sha256[oe1_stage1_lists.py]=debbf77aa64e54a68ec7311ad7361b3554de9965f133e77501e9a5cbb865713c
+script_sha256[oe1_stage1_roi.py]=e9b2de31191e569ca92c4b3bb51bc31f1ffed9b90f31e35441beb5e29b9b1105
+script_sha256[oe1_stage1_synthetic.py]=c450d4435c36dffcbaacaeed749c283154bf5668b73ec82a04913d2098e20435
+script_sha256[oe1_stage1_tecnicas.py]=ff2c8f9e121df4c0ec9f3ee2465baea7e8b1a80838e11260eb55ab1d8dedf325
+comando=/home/dapintoo/oe1-trabajo/etapa1/herramientas/oe1_stage1_analysis.py --attempt /home/dapintoo/oe1-trabajo/etapa1/pruebas/tecnicas-01/tf --roi-mask /home/dapintoo/oe1-trabajo/etapa1/analisis/roi/R_int.mask.txt --roi-frozen /home/dapintoo/oe1-trabajo/etapa1/analisis/roi/R_int-congelada.json --roi-npz /home/dapintoo/oe1-trabajo/etapa1/analisis/roi/roi-mascaras.npz --lists-dir /home/dapintoo/oe1-trabajo/etapa1/pruebas/tecnicas-01/listas --replicas 0 --no-figures --out /home/dapintoo/oe1-trabajo/etapa1/pruebas/tecnicas-01/resultados/analisis-TF

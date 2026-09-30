@@ -1,0 +1,19 @@
+Environment variable "G4RUN_MANAGER_TYPE" enabled with value == Serial. Overriding G4RunManager type...
+
+**************************************************************
+ Geant4 version Name: geant4-11-04-patch-02 [MT]   (12-June-2026)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+OE1-LIST-MODE list=geo-train-06_v0_r0_s2026092990.primarios.csv n=20 sha256=2497dad0f85f6a367ac8b59cfba859de21265ccc0af8f8fca401970326c37d32 canon_fnv1a64=e144b22787097bc5 mask=mask.txt mask_ones=272 geometry=geo-train-06 view=0 variant=A case_code=6 replica=0 transport_seed=1026092990 master_seed=1026092990 master_seed_applied=1026092990 run_manager=G4RunManager muon_log=full region=0,1 binary_sha256=ae76186647e7cc90796a9504cfa8bc763fc959484c2f78bf647cbe321f996852 geometry_sha256=c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed
+Checking overlaps for volume edifice:0 (G4Cons) ... OK! 
+Checking overlaps for volume anomaly_0:0 (G4SubtractionSolid) ... OK! 
+ANOMALY-CSG name=anomaly_0 kind=conduit clipped=no minus=[1] solid=G4SubtractionSolid placed=yes
+Checking overlaps for volume anomaly_1:0 (G4Ellipsoid) ... OK! 
+ANOMALY-CSG name=anomaly_1 kind=dense_body clipped=no minus=[] solid=G4Ellipsoid placed=yes
+Checking overlaps for volume detector:0 (G4Box) ... OK! 
+OE1-PRERUN-CHECK run_manager=G4RunManager variant=A variant_check=mismatch errors=run_manager_not_task,variant_geometry_mismatch status=FAIL

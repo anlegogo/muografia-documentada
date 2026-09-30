@@ -1,0 +1,5 @@
+pre-BeamOn checks: OK errors=none
+RUN DONE geo-train-06 view 0: events=20 detected=2 wall_s=2.13971e-07
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=1 muon_log=full n=19 rows=20 DET=2 PLANE_OUT=1 WORLD_EXIT=1 DECAY=2 MU_CAPTURE=1 STOPPED=1 OTHER=12 ABORTED=0 in_rint=1 crossed=7 graze_muons=1 ids_ok=0 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=events_transported_mismatch,generated_count_mismatch,ids_incomplete_or_duplicate status=FAIL
+errors after finalisation: events_transported_mismatch generated_count_mismatch ids_incomplete_or_duplicate
+PASS [dup-id]: 13 checks, 0 failed

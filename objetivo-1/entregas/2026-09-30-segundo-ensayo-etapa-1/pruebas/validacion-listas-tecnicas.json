@@ -1,0 +1,259 @@
+{
+ "formato": "oe1-validacion-listas/1",
+ "listas": [
+  {
+   "archivo": "geo-train-06_v0_r0_s2026092990.primarios.csv",
+   "ruta": "/home/dapintoo/oe1-trabajo/etapa1/pruebas/tecnicas-01/listas/geo-train-06_v0_r0_s2026092990.primarios.csv",
+   "n": 2000,
+   "sha256": "faeba1769e22633f305ffe85f12df3c7876005dd987d8cfe12dfe4f300582f35",
+   "canon_fnv1a64": "982e7a6e21ebd6bb",
+   "linea_check_python": "OE1-CHECK-PRIMARIES file=geo-train-06_v0_r0_s2026092990.primarios.csv n=2000 lf_only=1 header_ok=1 ends_with_newline=1 bad_rows=0 id_min=0 id_max=1999 ids_contiguous=1 dup_ids=0 dup_states=0 nonfinite=0 norm_fail=0 max_norm_dev=2.220446049250313e-16 dz_nonneg=0 ekin_nonpos=0 pdg_bad=0 charge_mismatch=0 n_mu_plus=1131 n_mu_minus=869 canon_fnv1a64=982e7a6e21ebd6bb file_sha256=faeba1769e22633f305ffe85f12df3c7876005dd987d8cfe12dfe4f300582f35 sidecar=ok sidecar_n=2000 sidecar_fnv_match=1 sidecar_sha_match=1 status=OK",
+   "estructural": {
+    "defectos": {
+     "lf_only": 1,
+     "header_ok": 1,
+     "ends_with_newline": 1,
+     "bad_rows": 0,
+     "id_min": 0,
+     "id_max": 1999,
+     "ids_contiguous": 1,
+     "dup_ids": 0,
+     "dup_states": 0,
+     "nonfinite": 0,
+     "norm_fail": 0,
+     "max_norm_dev": 2.220446049250313e-16,
+     "dz_nonneg": 0,
+     "ekin_nonpos": 0,
+     "pdg_bad": 0,
+     "charge_mismatch": 0,
+     "n_mu_plus": 1131,
+     "n_mu_minus": 869
+    },
+    "limpio": true,
+    "coincide_con_check_del_binario": true
+   },
+   "sidecar": {
+    "presente": true,
+    "error": null,
+    "formato_ok": true,
+    "n_ok": true,
+    "canon_ok": true,
+    "sha_ok": true,
+    "radio_base_m": 509.7,
+    "radio_de_partida_ok": true,
+    "case_code_ok": true,
+    "catalogo_sha256": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+    "radio_base_catalogo_ok": true,
+    "nombre_ok": true
+   },
+   "geometria": {
+    "filas_no_finitas": 0,
+    "desviacion_plano_max_m": 7.958078640513122e-13,
+    "exceso_sobre_panel_max_m": 0.0,
+    "radio_de_partida_esperado_m": 1809.7,
+    "desviacion_radio_de_partida_max_m": 9.094947017729282e-13,
+    "impacto_y_rango_m": [
+     -0.5995290526209942,
+     0.5999054747778132
+    ],
+    "impacto_z_rango_m": [
+     0.9000939552151976,
+     2.099942593833248
+    ],
+    "elevacion_rango_grados": [
+     1.9569577025164169,
+     47.087247545242114
+    ],
+    "acimut_relativo_rango_grados": [
+     -29.990663077770304,
+     29.992524993486327
+    ],
+    "tolerancia_m": 1e-09,
+    "ok": true,
+    "rango_angular_ok": true
+   },
+   "estadistica": {
+    "omitida": true
+   },
+   "problemas": [],
+   "veredicto": "OK"
+  },
+  {
+   "archivo": "geo-train-01_v0_r0_s2026092990.primarios.csv",
+   "ruta": "/home/dapintoo/oe1-trabajo/etapa1/pruebas/tecnicas-01/listas/geo-train-01_v0_r0_s2026092990.primarios.csv",
+   "n": 2000,
+   "sha256": "bab8ec0ac6b7a05103e56f201f9f9476ab6164183c1c1ee2ece547822bb5e9e6",
+   "canon_fnv1a64": "b48417bab442e1d4",
+   "linea_check_python": "OE1-CHECK-PRIMARIES file=geo-train-01_v0_r0_s2026092990.primarios.csv n=2000 lf_only=1 header_ok=1 ends_with_newline=1 bad_rows=0 id_min=0 id_max=1999 ids_contiguous=1 dup_ids=0 dup_states=0 nonfinite=0 norm_fail=0 max_norm_dev=2.220446049250313e-16 dz_nonneg=0 ekin_nonpos=0 pdg_bad=0 charge_mismatch=0 n_mu_plus=1105 n_mu_minus=895 canon_fnv1a64=b48417bab442e1d4 file_sha256=bab8ec0ac6b7a05103e56f201f9f9476ab6164183c1c1ee2ece547822bb5e9e6 sidecar=ok sidecar_n=2000 sidecar_fnv_match=1 sidecar_sha_match=1 status=OK",
+   "estructural": {
+    "defectos": {
+     "lf_only": 1,
+     "header_ok": 1,
+     "ends_with_newline": 1,
+     "bad_rows": 0,
+     "id_min": 0,
+     "id_max": 1999,
+     "ids_contiguous": 1,
+     "dup_ids": 0,
+     "dup_states": 0,
+     "nonfinite": 0,
+     "norm_fail": 0,
+     "max_norm_dev": 2.220446049250313e-16,
+     "dz_nonneg": 0,
+     "ekin_nonpos": 0,
+     "pdg_bad": 0,
+     "charge_mismatch": 0,
+     "n_mu_plus": 1105,
+     "n_mu_minus": 895
+    },
+    "limpio": true,
+    "coincide_con_check_del_binario": true
+   },
+   "sidecar": {
+    "presente": true,
+    "error": null,
+    "formato_ok": true,
+    "n_ok": true,
+    "canon_ok": true,
+    "sha_ok": true,
+    "radio_base_m": 656.2,
+    "radio_de_partida_ok": true,
+    "case_code_ok": true,
+    "catalogo_sha256": "ff3c69ab7e37b51c5d4e1318d298a9ddc35446367e6ea4abf5c322e3b86f07b1",
+    "radio_base_catalogo_ok": true,
+    "nombre_ok": true
+   },
+   "geometria": {
+    "filas_no_finitas": 0,
+    "desviacion_plano_max_m": 7.958078640513122e-13,
+    "exceso_sobre_panel_max_m": 0.0,
+    "radio_de_partida_esperado_m": 1956.2,
+    "desviacion_radio_de_partida_max_m": 9.094947017729282e-13,
+    "impacto_y_rango_m": [
+     -0.5987636786414328,
+     0.5996058190290796
+    ],
+    "impacto_z_rango_m": [
+     0.900937264276763,
+     2.099679181299962
+    ],
+    "elevacion_rango_grados": [
+     2.0082754189659493,
+     47.08731301939448
+    ],
+    "acimut_relativo_rango_grados": [
+     -29.96224877516881,
+     29.902957481129363
+    ],
+    "tolerancia_m": 1e-09,
+    "ok": true,
+    "rango_angular_ok": true
+   },
+   "estadistica": {
+    "omitida": true
+   },
+   "problemas": [],
+   "veredicto": "OK"
+  },
+  {
+   "archivo": "geo-train-06_v0_r0_s2026092991.primarios.csv",
+   "ruta": "/home/dapintoo/oe1-trabajo/etapa1/pruebas/tecnicas-01/listas/geo-train-06_v0_r0_s2026092991.primarios.csv",
+   "n": 2000,
+   "sha256": "ccb914ab15a325ebe97de34e170999f027000a5f573c076e5bca76622c59744b",
+   "canon_fnv1a64": "9d32ce0eca3aa1d4",
+   "linea_check_python": "OE1-CHECK-PRIMARIES file=geo-train-06_v0_r0_s2026092991.primarios.csv n=2000 lf_only=1 header_ok=1 ends_with_newline=1 bad_rows=0 id_min=0 id_max=1999 ids_contiguous=1 dup_ids=0 dup_states=0 nonfinite=0 norm_fail=0 max_norm_dev=2.220446049250313e-16 dz_nonneg=0 ekin_nonpos=0 pdg_bad=0 charge_mismatch=0 n_mu_plus=1093 n_mu_minus=907 canon_fnv1a64=9d32ce0eca3aa1d4 file_sha256=ccb914ab15a325ebe97de34e170999f027000a5f573c076e5bca76622c59744b sidecar=ok sidecar_n=2000 sidecar_fnv_match=1 sidecar_sha_match=1 status=OK",
+   "estructural": {
+    "defectos": {
+     "lf_only": 1,
+     "header_ok": 1,
+     "ends_with_newline": 1,
+     "bad_rows": 0,
+     "id_min": 0,
+     "id_max": 1999,
+     "ids_contiguous": 1,
+     "dup_ids": 0,
+     "dup_states": 0,
+     "nonfinite": 0,
+     "norm_fail": 0,
+     "max_norm_dev": 2.220446049250313e-16,
+     "dz_nonneg": 0,
+     "ekin_nonpos": 0,
+     "pdg_bad": 0,
+     "charge_mismatch": 0,
+     "n_mu_plus": 1093,
+     "n_mu_minus": 907
+    },
+    "limpio": true,
+    "coincide_con_check_del_binario": true
+   },
+   "sidecar": {
+    "presente": true,
+    "error": null,
+    "formato_ok": true,
+    "n_ok": true,
+    "canon_ok": true,
+    "sha_ok": true,
+    "radio_base_m": 509.7,
+    "radio_de_partida_ok": true,
+    "case_code_ok": true,
+    "catalogo_sha256": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+    "radio_base_catalogo_ok": true,
+    "nombre_ok": true
+   },
+   "geometria": {
+    "filas_no_finitas": 0,
+    "desviacion_plano_max_m": 6.821210263296962e-13,
+    "exceso_sobre_panel_max_m": 0.0,
+    "radio_de_partida_esperado_m": 1809.7,
+    "desviacion_radio_de_partida_max_m": 6.821210263296962e-13,
+    "impacto_y_rango_m": [
+     -0.5991824313807115,
+     0.59923972977208
+    ],
+    "impacto_z_rango_m": [
+     0.9016527435899206,
+     2.0992627099169567
+    ],
+    "elevacion_rango_grados": [
+     1.955794589035511,
+     47.08434100854163
+    ],
+    "acimut_relativo_rango_grados": [
+     -29.999956502516056,
+     29.96920811061317
+    ],
+    "tolerancia_m": 1e-09,
+    "ok": true,
+    "rango_angular_ok": true
+   },
+   "estadistica": {
+    "omitida": true
+   },
+   "problemas": [],
+   "veredicto": "OK"
+  }
+ ],
+ "cruzada": {
+  "listas": 3,
+  "fnv_canonicos_distintos": true,
+  "sha256_distintos": true
+ },
+ "veredicto": "OK",
+ "herramienta": {
+  "scripts_sha256": {
+   "oe1_stage1_analysis.py": "e08d3355e32257fda2330b3c73600aebb46983b61eff71d143a96d07163173a3",
+   "oe1_stage1_common.py": "1575b1e64d0431da50f708c4735930fe3b2457fce7cf2b1f5a29fed5d371fb3e",
+   "oe1_stage1_lists.py": "debbf77aa64e54a68ec7311ad7361b3554de9965f133e77501e9a5cbb865713c",
+   "oe1_stage1_roi.py": "e9b2de31191e569ca92c4b3bb51bc31f1ffed9b90f31e35441beb5e29b9b1105",
+   "oe1_stage1_synthetic.py": "c450d4435c36dffcbaacaeed749c283154bf5668b73ec82a04913d2098e20435",
+   "oe1_stage1_tecnicas.py": "ff2c8f9e121df4c0ec9f3ee2465baea7e8b1a80838e11260eb55ab1d8dedf325"
+  },
+  "entorno": {
+   "python": "3.9.25",
+   "numpy": "2.0.2",
+   "scipy": "no usado",
+   "matplotlib": "no usado",
+   "plataforma": "linux 64-bit"
+  }
+ }
+}

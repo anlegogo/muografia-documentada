@@ -1,0 +1,61 @@
+{
+ "formato": "oe1-prueba-tecnica/1",
+ "prueba": "T-F",
+ "ok": true,
+ "etiqueta": "prueba técnica (DV1), fuera de las 13 corridas",
+ "comprobaciones": [
+  {
+   "descripcion": "el análisis terminó sin errores ni contratos bloqueantes fallidos",
+   "ok": true,
+   "evidencia": {
+    "estado": "OK",
+    "bloqueantes_fallidos": []
+   }
+  },
+  {
+   "descripcion": "no hay contratos no bloqueantes fallidos (K8, K9 b, avisos)",
+   "ok": true,
+   "evidencia": {
+    "no_bloqueantes_fallidos": []
+   }
+  },
+  {
+   "descripcion": "la tabla de corridas tiene 5 filas",
+   "ok": true,
+   "evidencia": {
+    "filas": 5
+   }
+  },
+  {
+   "descripcion": "estado STOPPED = 0 en todas las corridas",
+   "ok": true,
+   "evidencia": {
+    "distintas_de_cero": {}
+   }
+  },
+  {
+   "descripcion": "estado OTHER = 0 en todas las corridas",
+   "ok": true,
+   "evidencia": {
+    "distintas_de_cero": {}
+   }
+  },
+  {
+   "descripcion": "estado ABORTED = 0 en todas las corridas",
+   "ok": true,
+   "evidencia": {
+    "distintas_de_cero": {}
+   }
+  }
+ ],
+ "entradas": {
+  "contratos_sha256": "651fb54dc5965ef55e9ba79e4aa897f2937787bf9e3187a6f8aa8e1a7aefe5c0",
+  "pared_s": [
+   "1.6489920309977606",
+   "1.5683552830014378",
+   "1.6930542940390296",
+   "1.1459041199996136",
+   "1.2223762379726395"
+  ]
+ }
+}

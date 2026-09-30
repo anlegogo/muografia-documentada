@@ -1,0 +1,7 @@
+geo-train-06_v0_r1_s2026092901.primarios.csv         n=100000  OK  fnv=17b2c3a5d5221296  p_min=0.021
+geo-train-06_v0_r2_s2026092902.primarios.csv         n=100000  OK  fnv=b266bbd227ee2d1a  p_min=0.0303
+geo-train-06_v0_r3_s2026092903.primarios.csv         n=100000  OK  fnv=81051b5efda04332  p_min=0.0201
+geo-train-01_v0_r1_s2026092901.primarios.csv         n=100000  OK  fnv=5408480e1aa8038f  p_min=0.0188
+geo-train-01_v0_r2_s2026092902.primarios.csv         n=100000  OK  fnv=7d9b7bdc7439eb6a  p_min=0.0264
+geo-train-01_v0_r3_s2026092903.primarios.csv         n=100000  OK  fnv=f37169c5944fbbfb  p_min=0.012
+VALIDACION DE LISTAS: OK

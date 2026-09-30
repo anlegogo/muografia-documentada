@@ -1,0 +1,46 @@
+{
+ "formato": "oe1-pruebas-tecnicas/1",
+ "ok": true,
+ "pruebas": [
+  {
+   "prueba": "T-F",
+   "ok": true,
+   "fallos": []
+  },
+  {
+   "prueba": "T-L (A)",
+   "ok": true,
+   "fallos": []
+  },
+  {
+   "prueba": "T-L (B)",
+   "ok": true,
+   "fallos": []
+  },
+  {
+   "prueba": "T-M",
+   "ok": true,
+   "fallos": []
+  },
+  {
+   "prueba": "T-P",
+   "ok": true,
+   "fallos": []
+  },
+  {
+   "prueba": "T-R",
+   "ok": true,
+   "fallos": []
+  },
+  {
+   "prueba": "T-S (A2)",
+   "ok": true,
+   "fallos": []
+  },
+  {
+   "prueba": "T-S (B2)",
+   "ok": true,
+   "fallos": []
+  }
+ ]
+}

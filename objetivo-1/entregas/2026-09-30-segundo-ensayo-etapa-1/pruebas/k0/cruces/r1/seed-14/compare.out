@@ -1,0 +1,13 @@
+PASS R1 numpy reference: |len - ref| <= tol(len, X) over 100000 segments (60 exceed the plain 1e-09 m; all of them have len <= 0.0029 m): 0 violations, worst 2.84e-09
+PASS R1 numpy reference: lc (bare conduit length): 0 violations, worst 2.3e-12
+PASS R1 numpy reference: le (bare dense-body length): 0 violations, worst 2.84e-09
+PASS R1 numpy reference: lo / hi parameters (tolerance tol(len) / chord): 0 violations, worst 1.42e-09
+PASS R1 numpy reference: hit flag (segments with reference length >= 1e-9 m): 0 violations, worst 0
+PASS R1 numpy reference: deep flag (0 ambiguous excluded): 0 violations, worst 0
+PASS R1 numpy reference: graze flag (0 ambiguous excluded): 0 violations, worst 0
+PASS R1 numpy reference: near flag (0 ambiguous excluded; 40422 near): 0 violations, worst 0
+PASS R1 near contains every chord with positive length in Z (numpy and C++): 0 violations, worst 0
+INFO segments: 100000; with len > 0: 33310; deep: 32045; graze: 2023; both ends outside Z (len > 0): 22799
+PASS R1 60-digit reference: |len - exact| <= tol(len, X) on 742 segments (74 exceed the plain 1e-09 m; worst error for len >= 5 cm: 3.42e-11 m): 0 violations, worst 6.19e-09
+PASS R1 dense-sampling oracle (K=200001): |len - oracle| <= 2|d|/(K-1) on 2000 segments: 0 violations, worst 0.5
+R1 OVERALL PASS

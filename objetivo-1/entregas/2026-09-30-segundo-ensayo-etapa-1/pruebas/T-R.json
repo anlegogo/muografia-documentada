@@ -1,0 +1,59 @@
+{
+ "formato": "oe1-prueba-tecnica/1",
+ "prueba": "T-R",
+ "ok": true,
+ "etiqueta": "prueba técnica (DV1), fuera de las 13 corridas",
+ "comprobaciones": [
+  {
+   "descripcion": "hist.csv idéntico entre --muon-log full y min",
+   "ok": true,
+   "evidencia": {
+    "full": "1903d70f9d2fd03c9c099b8e9dddf47254329ab1fd658378756744f30256ecb8",
+    "min": "1903d70f9d2fd03c9c099b8e9dddf47254329ab1fd658378756744f30256ecb8"
+   }
+  },
+  {
+   "descripcion": "mismos IDs",
+   "ok": true,
+   "evidencia": {}
+  },
+  {
+   "descripcion": "rng1 igual para todo id (registrar no consume números aleatorios; PROT:17)",
+   "ok": true,
+   "evidencia": {
+    "distintos": 0
+   }
+  },
+  {
+   "descripcion": "las columnas de identidad, estado y bin son iguales",
+   "ok": true,
+   "evidencia": {
+    "columnas_distintas": []
+   }
+  },
+  {
+   "descripcion": "el nivel min deja vacíos los campos de cruce (informativo)",
+   "ok": true,
+   "evidencia": {}
+  },
+  {
+   "descripcion": "el meta de la corrida min declara level = min",
+   "ok": true,
+   "evidencia": {
+    "level": "min"
+   }
+  }
+ ],
+ "entradas": {
+  "full": {
+   "dir": "/home/dapintoo/oe1-trabajo/etapa1/pruebas/tecnicas-01/tf/geo-train-06/B/2026092990",
+   "hist_sha256": "1903d70f9d2fd03c9c099b8e9dddf47254329ab1fd658378756744f30256ecb8",
+   "muones_sha256": "129aaf5cfc94ffbd156cd449674c491dbdb22d3176dfaffe65a594b4f12e9097"
+  },
+  "min": {
+   "dir": "/home/dapintoo/oe1-trabajo/etapa1/pruebas/tecnicas-01/corridas/tr/min",
+   "hist_sha256": "1903d70f9d2fd03c9c099b8e9dddf47254329ab1fd658378756744f30256ecb8",
+   "muones_sha256": "1d08bc6e433c0a64d125ef3018b2ce2e4de23e22b1ff5dc0b11630fa0c4517a1"
+  }
+ }
+}

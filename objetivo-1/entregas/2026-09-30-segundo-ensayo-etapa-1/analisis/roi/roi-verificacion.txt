@@ -1,0 +1,13 @@
+[OK] sha256 del texto == congelada.json
+[OK] formato del texto
+[OK] sha256 de R_int.tobytes() == congelada.json
+[OK] forma == congelada.json
+[OK] pixeles == congelada.json
+[OK] filas == congelada.json
+[OK] columnas == congelada.json
+[OK] sha256 del texto == valor congelado del plan
+[OK] sha256 de R_int.tobytes() == valor congelado del plan
+[OK] pixeles/filas/columnas == plan
+[OK] sha256 del npz == congelada.json
+[OK] R_int del npz == texto
+VERIFICACION R_int: OK

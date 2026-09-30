@@ -1,0 +1,5 @@
+pre-BeamOn checks: OK errors=none
+RUN DONE geo-train-06 view 0: events=19 detected=1 wall_s=2.10013e-07
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=1 muon_log=full n=19 rows=19 DET=2 PLANE_OUT=1 WORLD_EXIT=1 DECAY=1 MU_CAPTURE=1 STOPPED=1 OTHER=12 ABORTED=0 in_rint=1 crossed=7 graze_muons=1 ids_ok=1 hist_ok=0 det_ok=0 writes_ok=1 ekin_sum_equal=0 errors=detected_count_mismatch,hist_reconstruction_mismatch status=FAIL
+errors after finalisation: detected_count_mismatch hist_reconstruction_mismatch
+PASS [hist-mismatch]: 15 checks, 0 failed

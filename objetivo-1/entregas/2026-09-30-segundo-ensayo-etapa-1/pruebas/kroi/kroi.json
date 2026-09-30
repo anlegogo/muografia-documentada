@@ -1,0 +1,122 @@
+{
+ "convenciones": {
+  "detector_m": [
+   1000.0,
+   0.0,
+   1.5
+  ],
+  "acimut_de_mirada_grados": 180.0,
+  "relAz": "wrap(atan2(from.y, from.x) - lookAz), from = -direccion del muon en el panel",
+  "pixel": "binIndex con centros de linspace y lround (SteppingAction.cc)",
+  "espejo": "iAz -> 255 - iAz (relAz -> -relAz)"
+ },
+ "centroide": {
+  "punto_m": [
+   21.36,
+   -30.71,
+   137.81
+  ],
+  "elevacion_grados": 7.925583133449765,
+  "acimut_relativo_grados": 1.7973679522406534,
+  "pixel": [
+   34,
+   135
+  ],
+  "en_R_int": true,
+  "pixel_espejo": [
+   34,
+   120
+  ],
+  "espejo_en_R_int": false
+ },
+ "mapa_LZ": {
+  "descripcion": "longitud (m) de la recta central de cada pixel dentro de Z",
+  "pixeles_con_LZ_positiva": 209,
+  "pixeles_con_LZ_ge_20_m": 194,
+  "LZ_maxima_m": 42.418898608818864,
+  "LZ_total_m": 6784.730908145802,
+  "pixel_de_LZ_maxima": [
+   41,
+   134
+  ],
+  "centro_de_masa_pixel": [
+   33.50695140764736,
+   135.07843773349984
+  ]
+ },
+ "solape": {
+  "masa_LZ_en_R_int": 0.9694116057109387,
+  "masa_LZ_en_espejo_azimut": 0.0,
+  "masa_LZ_en_elevacion_invertida": 0.0,
+  "pixeles_LZ_positiva_en_R_int": 195,
+  "pixeles_LZ_positiva_en_espejo": 0,
+  "jaccard_LZ_ge_20_con_R_int": 0.9948717948717949,
+  "jaccard_LZ_ge_20_con_espejo": 0.0,
+  "jaccard_LZ_ge_20_con_elevacion_invertida": 0.0,
+  "R_int_pixeles": 195
+ },
+ "comparacion_con_l_int_del_piloto": {
+  "descripcion": "l_int del npz (marcha de rayos con paso de 2 m, float32) frente a L_Z exacta",
+  "diferencia_maxima_m": 1.9752011449967881,
+  "diferencia_media_abs_m": 0.002147934994593383,
+  "correlacion": 0.9996801103743409,
+  "pixeles_l_int_positiva": 209,
+  "pixeles_solo_uno_positivo": 0,
+  "pixeles_union": 209
+ },
+ "puntos_de_Z": {
+  "muestras": 20000,
+  "semilla": 20260930,
+  "fraccion_en_R_int": 0.95255,
+  "fraccion_en_espejo": 0.0
+ },
+ "criterios": {
+  "masa_minima_en_R_int": 0.5,
+  "razon_maxima_espejo_sobre_R_int": 0.1
+ },
+ "comprobaciones": [
+  {
+   "descripcion": "el pixel del centroide esta en R_int",
+   "ok": true
+  },
+  {
+   "descripcion": "el pixel espejo del centroide NO esta en R_int",
+   "ok": true
+  },
+  {
+   "descripcion": "masa de L_Z en R_int >= 0.50",
+   "ok": true
+  },
+  {
+   "descripcion": "masa de L_Z en el espejo <= 0.10 x masa en R_int",
+   "ok": true
+  }
+ ],
+ "pixel_esperado_34_135": true,
+ "veredicto": "OK",
+ "entradas": {
+  "npz_sha256": "7546773bc4a5e4e13c8a1ada843c0b6f9559d238c5b6f1a6bcbbbac6d0907d8c",
+  "R_int_contenido_sha256": "3029f266419a6a156ecf809a2967bf1b9b72349c6a95e4697115a740140cce63",
+  "crossing_reference": {
+   "ruta": "/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/tests/crossing_reference.py",
+   "sha256": "d5f296ff29adbc7a3da3ad0720119137bb8dde0ce134f3c55870568320edb8d3"
+  }
+ },
+ "herramienta": {
+  "scripts_sha256": {
+   "oe1_stage1_analysis.py": "e08d3355e32257fda2330b3c73600aebb46983b61eff71d143a96d07163173a3",
+   "oe1_stage1_common.py": "1575b1e64d0431da50f708c4735930fe3b2457fce7cf2b1f5a29fed5d371fb3e",
+   "oe1_stage1_lists.py": "debbf77aa64e54a68ec7311ad7361b3554de9965f133e77501e9a5cbb865713c",
+   "oe1_stage1_roi.py": "e9b2de31191e569ca92c4b3bb51bc31f1ffed9b90f31e35441beb5e29b9b1105",
+   "oe1_stage1_synthetic.py": "c450d4435c36dffcbaacaeed749c283154bf5668b73ec82a04913d2098e20435",
+   "oe1_stage1_tecnicas.py": "ff2c8f9e121df4c0ec9f3ee2465baea7e8b1a80838e11260eb55ab1d8dedf325"
+  },
+  "entorno": {
+   "python": "3.9.25",
+   "numpy": "2.0.2",
+   "scipy": "no usado",
+   "matplotlib": "no usado",
+   "plataforma": "linux 64-bit"
+  }
+ }
+}

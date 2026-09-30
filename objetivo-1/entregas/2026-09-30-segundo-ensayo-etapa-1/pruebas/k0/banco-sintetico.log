@@ -1,0 +1,73 @@
+compiler: g++ (GCC) 14.2.0; geant4 11.4.2
+build ok (warnings: 0)
+strict pass muography_sim.cc: 3 known warnings in P0 lines (expected 3), 0 others
+strict-warning pass (-Wall -Wextra -Wshadow -pedantic) over P2's Geant4-linked sources: 0 warnings
+=== ok-full
+pre-BeamOn checks: OK errors=none
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=1 muon_log=full n=19 rows=19 DET=2 PLANE_OUT=1 WORLD_EXIT=1 DECAY=1 MU_CAPTURE=1 STOPPED=1 OTHER=12 ABORTED=0 in_rint=1 crossed=7 graze_muons=1 ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=none status=OK
+errors after finalisation: none
+PASS [ok-full]: 766 checks, 0 failed
+=== ok-min
+pre-BeamOn checks: OK errors=none
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=1 muon_log=min n=19 rows=19 DET=2 PLANE_OUT=1 WORLD_EXIT=1 DECAY=1 MU_CAPTURE=1 STOPPED=1 OTHER=12 ABORTED=0 in_rint=1 crossed=NA graze_muons=NA ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=none status=OK
+errors after finalisation: none
+PASS [ok-min]: 842 checks, 0 failed
+=== ok-noregion
+pre-BeamOn checks: OK errors=none
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=1 muon_log=full n=19 rows=19 DET=2 PLANE_OUT=1 WORLD_EXIT=1 DECAY=1 MU_CAPTURE=1 STOPPED=1 OTHER=12 ABORTED=0 in_rint=1 crossed=NA graze_muons=NA ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=none status=OK
+errors after finalisation: none
+PASS [ok-noregion]: 1014 checks, 0 failed
+=== aborted
+pre-BeamOn checks: OK errors=none
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=1 muon_log=full n=19 rows=19 DET=2 PLANE_OUT=1 WORLD_EXIT=1 DECAY=1 MU_CAPTURE=1 STOPPED=1 OTHER=11 ABORTED=1 in_rint=1 crossed=7 graze_muons=1 ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=aborted_events status=FAIL
+errors after finalisation: aborted_events
+PASS [aborted]: 16 checks, 0 failed
+=== hist-mismatch
+pre-BeamOn checks: OK errors=none
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=1 muon_log=full n=19 rows=19 DET=2 PLANE_OUT=1 WORLD_EXIT=1 DECAY=1 MU_CAPTURE=1 STOPPED=1 OTHER=12 ABORTED=0 in_rint=1 crossed=7 graze_muons=1 ids_ok=1 hist_ok=0 det_ok=0 writes_ok=1 ekin_sum_equal=0 errors=detected_count_mismatch,hist_reconstruction_mismatch status=FAIL
+errors after finalisation: detected_count_mismatch hist_reconstruction_mismatch
+PASS [hist-mismatch]: 15 checks, 0 failed
+=== missing-event
+pre-BeamOn checks: OK errors=none
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=1 muon_log=full n=19 rows=18 DET=2 PLANE_OUT=1 WORLD_EXIT=1 DECAY=1 MU_CAPTURE=0 STOPPED=1 OTHER=12 ABORTED=0 in_rint=1 crossed=7 graze_muons=1 ids_ok=0 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=events_transported_mismatch,generated_count_mismatch,ids_incomplete_or_duplicate status=FAIL
+errors after finalisation: events_transported_mismatch generated_count_mismatch ids_incomplete_or_duplicate
+PASS [missing-event]: 15 checks, 0 failed
+=== dup-id
+pre-BeamOn checks: OK errors=none
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=1 muon_log=full n=19 rows=20 DET=2 PLANE_OUT=1 WORLD_EXIT=1 DECAY=2 MU_CAPTURE=1 STOPPED=1 OTHER=12 ABORTED=0 in_rint=1 crossed=7 graze_muons=1 ids_ok=0 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=events_transported_mismatch,generated_count_mismatch,ids_incomplete_or_duplicate status=FAIL
+errors after finalisation: events_transported_mismatch generated_count_mismatch ids_incomplete_or_duplicate
+PASS [dup-id]: 13 checks, 0 failed
+=== two-workers
+pre-BeamOn checks: OK errors=none
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=1 muon_log=full n=19 rows=19 DET=2 PLANE_OUT=1 WORLD_EXIT=1 DECAY=1 MU_CAPTURE=1 STOPPED=1 OTHER=12 ABORTED=0 in_rint=1 crossed=7 graze_muons=1 ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=worker_threads_not_one status=FAIL
+errors after finalisation: worker_threads_not_one
+PASS [two-workers]: 13 checks, 0 failed
+=== bad-engine
+pre-BeamOn checks: OK errors=none
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=1 muon_log=full n=19 rows=19 DET=2 PLANE_OUT=1 WORLD_EXIT=1 DECAY=1 MU_CAPTURE=1 STOPPED=1 OTHER=12 ABORTED=0 in_rint=1 crossed=7 graze_muons=1 ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=worker_engine_not_mixmax,worker_threads_not_one status=FAIL
+errors after finalisation: worker_engine_not_mixmax worker_threads_not_one
+PASS [bad-engine]: 13 checks, 0 failed
+=== bad-outdir
+pre-BeamOn checks: OK errors=none
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=1 muon_log=full n=19 rows=19 DET=2 PLANE_OUT=1 WORLD_EXIT=1 DECAY=1 MU_CAPTURE=1 STOPPED=1 OTHER=12 ABORTED=0 in_rint=1 crossed=7 graze_muons=1 ids_ok=1 hist_ok=1 det_ok=1 writes_ok=0 ekin_sum_equal=1 errors=hist_write_failed,meta_write_failed,muon_log_write_failed status=FAIL
+errors after finalisation: hist_write_failed meta_write_failed muon_log_write_failed
+PASS [bad-outdir]: 16 checks, 0 failed
+=== bad-variant
+pre-BeamOn checks: FAIL (main would exit 4 here) errors=variant_geometry_mismatch
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=A case_code=6 replica=1 muon_log=full n=19 rows=19 DET=2 PLANE_OUT=1 WORLD_EXIT=1 DECAY=1 MU_CAPTURE=1 STOPPED=1 OTHER=12 ABORTED=0 in_rint=1 crossed=7 graze_muons=1 ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=variant_geometry_mismatch status=FAIL
+errors after finalisation: variant_geometry_mismatch
+PASS [bad-variant]: 20 checks, 0 failed
+=== bad-run-manager
+pre-BeamOn checks: FAIL (main would exit 4 here) errors=run_manager_not_task
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=1 muon_log=full n=19 rows=19 DET=2 PLANE_OUT=1 WORLD_EXIT=1 DECAY=1 MU_CAPTURE=1 STOPPED=1 OTHER=12 ABORTED=0 in_rint=1 crossed=7 graze_muons=1 ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=run_manager_not_task status=FAIL
+errors after finalisation: run_manager_not_task
+PASS [bad-run-manager]: 17 checks, 0 failed
+=== bad-both
+pre-BeamOn checks: FAIL (main would exit 4 here) errors=run_manager_not_task,variant_geometry_mismatch
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=A case_code=6 replica=1 muon_log=full n=19 rows=19 DET=2 PLANE_OUT=1 WORLD_EXIT=1 DECAY=1 MU_CAPTURE=1 STOPPED=1 OTHER=12 ABORTED=0 in_rint=1 crossed=7 graze_muons=1 ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=run_manager_not_task,variant_geometry_mismatch status=FAIL
+errors after finalisation: run_manager_not_task variant_geometry_mismatch
+PASS [bad-both]: 17 checks, 0 failed
+A/A: _muones.csv and _hist.csv byte-identical
+A/A: meta.json equal apart from ['wall_seconds', 'seconds_per_event', 'rusage_max_rss_kb', 'rusage_system_cpu_seconds', 'rusage_user_cpu_seconds']
+min vs full: identical on 20 identity/state columns for 19 muons
+ALL SYNTHETIC LIST-MODE SCENARIOS PASSED

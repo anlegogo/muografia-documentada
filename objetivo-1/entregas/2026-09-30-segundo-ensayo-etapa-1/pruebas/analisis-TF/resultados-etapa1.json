@@ -1,0 +1,596 @@
+{
+ "formato": "oe1-resultados-etapa1/1",
+ "estado": "OK",
+ "naturaleza": "Etapa 1 diagnóstica: no dimensionada; ningún intervalo de esta etapa acota el efecto ni decide equivalencia.",
+ "leyendas": {
+  "delta": "Δ = promedio(Y_B − Y_A) = (n01 − n10)/N",
+  "y": "Y = 1 si el muon se detecta dentro de R_int",
+  "millon": "10⁶·Δ en cuentas por millón de primarios generados",
+  "frase_DE": "DE = 0 entre réplicas no implica incertidumbre cero (PROT:76).",
+  "mapas": "diferencia neta; no identifica muones individuales",
+  "repeticion_AA": "la repetición A/A queda fuera de Δ, transiciones, agrupado y DE",
+  "cuerda": "la cuerda pre→post no es la trayectoria navegada (WentzelVI desplaza lateralmente dentro del paso, aunque MuHadLateralDisplacement esté desactivado): las longitudes en Z son de la cuerda y sum_lat_z_mm (Σ del desplazamiento lateral de los pasos cercanos a Z) da la escala del error, no una cota: con incidencia θ el error de longitud es del orden de lat/sen θ y en una cuerda rasante crece como √(2·R·lat) (R ≤ 86.3 m), de modo que se informa como ≲ 2√(2·R_max·lat); sin esa columna no hay escala",
+  "recursos": "cpu_s = rusage_user_cpu_seconds + rusage_system_cpu_seconds y rss_kb = rusage_max_rss_kb del meta.json (getrusage del proceso, desde su arranque; kB); si el meta no los tiene, user_s + sys_s y maxrss_kb de recursos.json (run_timed.py, del proceso hijo). fuente_cpu y fuente_rss dicen cuál se usó en cada fila",
+  "cotas_clopper_pearson": "dato: ΣY (muones detectados dentro de R_int en la variante) y N (primarios generados), medidos en esta etapa; supuesto: los N primarios son ensayos de Bernoulli independientes con la misma probabilidad p (réplicas agrupadas), sin comprobar"
+ },
+ "recursos_del_meta": {
+  "g06-A-r0": {
+   "rusage_max_rss_kb": 68480,
+   "rusage_system_cpu_seconds": 0.07919899999999999,
+   "rusage_user_cpu_seconds": 4.182326
+  },
+  "g06-B-r0": {
+   "rusage_max_rss_kb": 68376,
+   "rusage_system_cpu_seconds": 0.095187,
+   "rusage_user_cpu_seconds": 4.120586
+  },
+  "g01-A-r0": {
+   "rusage_max_rss_kb": 67516,
+   "rusage_system_cpu_seconds": 0.080075,
+   "rusage_user_cpu_seconds": 4.165585
+  },
+  "g01-B-r0": {
+   "rusage_max_rss_kb": 67900,
+   "rusage_system_cpu_seconds": 0.08115599999999999,
+   "rusage_user_cpu_seconds": 3.105964
+  },
+  "g01-A-r0-rep": {
+   "rusage_max_rss_kb": 67900,
+   "rusage_system_cpu_seconds": 0.084955,
+   "rusage_user_cpu_seconds": 3.269178
+  }
+ },
+ "desplazamiento_lateral": {
+  "g06-A-r0": {
+   "max_lat_mm": 16608.63393541821,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.903,
+   "max_lat_z_mm": 0.0,
+   "max_suma_lat_z_mm": 0.0
+  },
+  "g06-B-r0": {
+   "max_lat_mm": 16608.63393541821,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.903,
+   "max_lat_z_mm": 0.0,
+   "max_suma_lat_z_mm": 0.0
+  },
+  "g01-A-r0": {
+   "max_lat_mm": 13828.22666821676,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.891,
+   "max_lat_z_mm": null,
+   "max_suma_lat_z_mm": null
+  },
+  "g01-B-r0": {
+   "max_lat_mm": 13828.22666821676,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.891,
+   "max_lat_z_mm": null,
+   "max_suma_lat_z_mm": null
+  },
+  "g01-A-r0-rep": {
+   "max_lat_mm": 13828.22666821676,
+   "fraccion_max_lat_mayor_1e-6_mm": 0.891,
+   "max_lat_z_mm": null,
+   "max_suma_lat_z_mm": null
+  }
+ },
+ "atribucion_al_solape_bloqueada": false,
+ "advertencias": [],
+ "casos": {
+  "geo-train-06": {
+   "rol": "afectado",
+   "etiqueta_mascara": "R_int (región de intersección)",
+   "pares": [
+    {
+     "caso": "geo-train-06",
+     "replica": 0,
+     "N": 2000,
+     "n00": 2000,
+     "n01": 0,
+     "n10": 0,
+     "n11": 0,
+     "b": 0,
+     "delta": 0.0,
+     "sumY_A": 0,
+     "sumY_B": 0,
+     "det_A": 1489,
+     "det_B": 1489,
+     "m00": 511,
+     "m01": 0,
+     "m10": 0,
+     "m11": 1489,
+     "delta_eficiencia": 0.0,
+     "delta_por_millon": 0.0,
+     "denominador": "cuentas por millón de primarios generados; denominador N = 2 000",
+     "tango_inf": -0.0019170472812529305,
+     "tango_sup": 0.0019170472812529305,
+     "tango_inf_por_millon": -1917.0472812529306,
+     "tango_sup_por_millon": 1917.0472812529306,
+     "nivel": 0.95,
+     "mcnemar_exacto": {
+      "b": 0,
+      "n01": 0,
+      "n10": 0,
+      "definido": false,
+      "p_dos_colas": 1.0
+     },
+     "nota": "diagnóstico; etapa 1 no dimensionada",
+     "semiancho": 0.0019170472812529305,
+     "cruces": {
+      "cruces_A": 0,
+      "cruces_B": 0,
+      "cruces_ambas": 0,
+      "cruces_union": 0,
+      "tamano_U": 0,
+      "delta_condicional_U": null,
+      "n01_U": 0,
+      "n10_U": 0,
+      "nota_U": "|U| = 0: Δ_U no está definido",
+      "lz_total_A_m": 0.0,
+      "lz_total_B_m": 0.0,
+      "lz_a0_total_A_m": 0.0,
+      "lz_a1_total_A_m": 0.0,
+      "lz_a1_total_B_m": 0.0
+     },
+     "bins_cambiados": 0,
+     "discordantes": 0,
+     "discordantes_por_clase": {}
+    }
+   ],
+   "agrupado": {
+    "N": 2000,
+    "n00": 2000,
+    "n01": 0,
+    "n10": 0,
+    "n11": 0,
+    "sumY_A": 0,
+    "sumY_B": 0,
+    "det_A": 1489,
+    "det_B": 1489,
+    "m00": 511,
+    "m01": 0,
+    "m10": 0,
+    "m11": 1489,
+    "b": 0,
+    "delta": 0.0,
+    "delta_por_millon": 0.0,
+    "denominador": "cuentas por millón de primarios generados; denominador N = 2 000",
+    "delta_eficiencia": 0.0,
+    "tango_inf": -0.0019170472812529305,
+    "tango_sup": 0.0019170472812529305,
+    "tango_inf_por_millon": -1917.0472812529306,
+    "tango_sup_por_millon": 1917.0472812529306,
+    "nivel": 0.95,
+    "mcnemar_exacto": {
+     "b": 0,
+     "n01": 0,
+     "n10": 0,
+     "definido": false,
+     "p_dos_colas": 1.0
+    },
+    "nota": "diagnóstico; etapa 1 no dimensionada",
+    "semiancho": 0.0019170472812529305,
+    "por_replica": {
+     "deltas_por_replica": [
+      0.0
+     ],
+     "media": 0.0,
+     "DE": null,
+     "rango": [
+      0.0,
+      0.0
+     ],
+     "media_por_millon": 0.0,
+     "DE_por_millon": null,
+     "rango_por_millon": [
+      0.0,
+      0.0
+     ],
+     "frase": "DE = 0 entre réplicas no implica incertidumbre cero (PROT:76)."
+    },
+    "intervalo_no_acota_el_efecto": true,
+    "nota_intervalo": "El intervalo de la etapa 1 es un diagnóstico: la etapa 1 no está dimensionada (PROT §4) y su intervalo no acota el efecto ni decide equivalencia. Las cotas superiores exactas de Clopper-Pearson de p_A y p_B se dan aparte, cada una con lo que es dato (ΣY y N medidos en esta etapa) y lo que es supuesto (primarios independientes con la misma probabilidad).",
+    "cotas_superiores_clopper_pearson": {
+     "nivel_bilateral": 0.95,
+     "N": 2000,
+     "etiqueta": "dato: ΣY (muones detectados dentro de R_int en la variante) y N (primarios generados), medidos en esta etapa; supuesto: los N primarios son ensayos de Bernoulli independientes con la misma probabilidad p (réplicas agrupadas), sin comprobar",
+     "p_A": {
+      "suma_Y": 0,
+      "estimacion": 0.0,
+      "inf": 0.0,
+      "sup": 0.0018427397934059368,
+      "sup_por_millon": 1842.7397934059368
+     },
+     "p_B": {
+      "suma_Y": 0,
+      "estimacion": 0.0,
+      "inf": 0.0,
+      "sup": 0.0018427397934059368,
+      "sup_por_millon": 1842.7397934059368
+     }
+    }
+   },
+   "matriz_clases_agrupada": {
+    "R_int": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "R_cond": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "R_body": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "R_rock": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 3,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "R_sky": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 1486,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "sin clase": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "no detectado": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 511
+    }
+   },
+   "cruces_agrupados": {
+    "cruces_A": 0,
+    "cruces_B": 0,
+    "cruces_ambas": 0,
+    "cruces_union": 0,
+    "tamano_U": 0,
+    "delta_condicional_U": null
+   },
+   "bins_cambiados_agrupados": 0,
+   "mapas": {
+    "leyenda": "diferencia neta; no identifica muones individuales"
+   }
+  },
+  "geo-train-01": {
+   "rol": "control angular",
+   "etiqueta_mascara": "máscara angular R_int (control), no una región de intersección",
+   "pares": [
+    {
+     "caso": "geo-train-01",
+     "replica": 0,
+     "N": 2000,
+     "n00": 2000,
+     "n01": 0,
+     "n10": 0,
+     "n11": 0,
+     "b": 0,
+     "delta": 0.0,
+     "sumY_A": 0,
+     "sumY_B": 0,
+     "det_A": 1470,
+     "det_B": 1470,
+     "m00": 530,
+     "m01": 0,
+     "m10": 0,
+     "m11": 1470,
+     "delta_eficiencia": 0.0,
+     "delta_por_millon": 0.0,
+     "denominador": "cuentas por millón de primarios generados; denominador N = 2 000",
+     "tango_inf": -0.0019170472812529305,
+     "tango_sup": 0.0019170472812529305,
+     "tango_inf_por_millon": -1917.0472812529306,
+     "tango_sup_por_millon": 1917.0472812529306,
+     "nivel": 0.95,
+     "mcnemar_exacto": {
+      "b": 0,
+      "n01": 0,
+      "n10": 0,
+      "definido": false,
+      "p_dos_colas": 1.0
+     },
+     "nota": "diagnóstico; etapa 1 no dimensionada",
+     "semiancho": 0.0019170472812529305,
+     "cruces": {},
+     "bins_cambiados": 0,
+     "discordantes": 0,
+     "discordantes_por_clase": {}
+    }
+   ],
+   "agrupado": {
+    "N": 2000,
+    "n00": 2000,
+    "n01": 0,
+    "n10": 0,
+    "n11": 0,
+    "sumY_A": 0,
+    "sumY_B": 0,
+    "det_A": 1470,
+    "det_B": 1470,
+    "m00": 530,
+    "m01": 0,
+    "m10": 0,
+    "m11": 1470,
+    "b": 0,
+    "delta": 0.0,
+    "delta_por_millon": 0.0,
+    "denominador": "cuentas por millón de primarios generados; denominador N = 2 000",
+    "delta_eficiencia": 0.0,
+    "tango_inf": -0.0019170472812529305,
+    "tango_sup": 0.0019170472812529305,
+    "tango_inf_por_millon": -1917.0472812529306,
+    "tango_sup_por_millon": 1917.0472812529306,
+    "nivel": 0.95,
+    "mcnemar_exacto": {
+     "b": 0,
+     "n01": 0,
+     "n10": 0,
+     "definido": false,
+     "p_dos_colas": 1.0
+    },
+    "nota": "diagnóstico; etapa 1 no dimensionada",
+    "semiancho": 0.0019170472812529305,
+    "por_replica": {
+     "deltas_por_replica": [
+      0.0
+     ],
+     "media": 0.0,
+     "DE": null,
+     "rango": [
+      0.0,
+      0.0
+     ],
+     "media_por_millon": 0.0,
+     "DE_por_millon": null,
+     "rango_por_millon": [
+      0.0,
+      0.0
+     ],
+     "frase": "DE = 0 entre réplicas no implica incertidumbre cero (PROT:76)."
+    },
+    "intervalo_no_acota_el_efecto": true,
+    "nota_intervalo": "El intervalo de la etapa 1 es un diagnóstico: la etapa 1 no está dimensionada (PROT §4) y su intervalo no acota el efecto ni decide equivalencia. Las cotas superiores exactas de Clopper-Pearson de p_A y p_B se dan aparte, cada una con lo que es dato (ΣY y N medidos en esta etapa) y lo que es supuesto (primarios independientes con la misma probabilidad).",
+    "cotas_superiores_clopper_pearson": {
+     "nivel_bilateral": 0.95,
+     "N": 2000,
+     "etiqueta": "dato: ΣY (muones detectados dentro de R_int en la variante) y N (primarios generados), medidos en esta etapa; supuesto: los N primarios son ensayos de Bernoulli independientes con la misma probabilidad p (réplicas agrupadas), sin comprobar",
+     "p_A": {
+      "suma_Y": 0,
+      "estimacion": 0.0,
+      "inf": 0.0,
+      "sup": 0.0018427397934059368,
+      "sup_por_millon": 1842.7397934059368
+     },
+     "p_B": {
+      "suma_Y": 0,
+      "estimacion": 0.0,
+      "inf": 0.0,
+      "sup": 0.0018427397934059368,
+      "sup_por_millon": 1842.7397934059368
+     }
+    }
+   },
+   "matriz_clases_agrupada": {
+    "R_int": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "R_cond": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "R_body": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "R_rock": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 20,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "R_sky": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 1450,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "sin clase": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 0
+    },
+    "no detectado": {
+     "R_int": 0,
+     "R_cond": 0,
+     "R_body": 0,
+     "R_rock": 0,
+     "R_sky": 0,
+     "sin clase": 0,
+     "no detectado": 530
+    }
+   },
+   "cruces_agrupados": {},
+   "bins_cambiados_agrupados": 0,
+   "mapas": {
+    "leyenda": "diferencia neta; no identifica muones individuales"
+   }
+  }
+ },
+ "verificacion_de_la_recta": {
+  "g06-A-r0": {
+   "ekin_minima_gev": 1000.0,
+   "muones_de_alta_energia": 7,
+   "tabla_2x2": {
+    "recta_cruza_registro_cruza": 0,
+    "recta_cruza_registro_no": 0,
+    "recta_no_registro_cruza": 0,
+    "recta_no_registro_no": 7
+   },
+   "desacuerdos_ids": [],
+   "n_desacuerdos": 0,
+   "recta_cruza_todas_las_energias": 1,
+   "recta_cruza_por_estado_final": {
+    "DET": 0,
+    "PLANE_OUT": 0,
+    "WORLD_EXIT": 0,
+    "DECAY": 0,
+    "MU_CAPTURE": 1,
+    "STOPPED": 0,
+    "OTHER": 0,
+    "ABORTED": 0
+   },
+   "diferencia_relativa_de_longitud_max": null,
+   "diferencia_relativa_de_longitud_media": null
+  },
+  "g06-B-r0": {
+   "ekin_minima_gev": 1000.0,
+   "muones_de_alta_energia": 7,
+   "tabla_2x2": {
+    "recta_cruza_registro_cruza": 0,
+    "recta_cruza_registro_no": 0,
+    "recta_no_registro_cruza": 0,
+    "recta_no_registro_no": 7
+   },
+   "desacuerdos_ids": [],
+   "n_desacuerdos": 0,
+   "recta_cruza_todas_las_energias": 1,
+   "recta_cruza_por_estado_final": {
+    "DET": 0,
+    "PLANE_OUT": 0,
+    "WORLD_EXIT": 0,
+    "DECAY": 0,
+    "MU_CAPTURE": 1,
+    "STOPPED": 0,
+    "OTHER": 0,
+    "ABORTED": 0
+   },
+   "diferencia_relativa_de_longitud_max": null,
+   "diferencia_relativa_de_longitud_media": null
+  }
+ },
+ "entradas": {
+  "manifiesto_sha256": "e02d4116d4f62417b818eb7ab6c987671ddba641be37a6ad346600819c32bf64",
+  "R_int_texto_sha256": "e76dcbe5926f9f4aeb61c556729d15c64124cd50a8577dca6beee9ffa317c5fd",
+  "R_int_contenido_sha256": "3029f266419a6a156ecf809a2967bf1b9b72349c6a95e4697115a740140cce63",
+  "npz_sha256": "7546773bc4a5e4e13c8a1ada843c0b6f9559d238c5b6f1a6bcbbbac6d0907d8c",
+  "solapes_entre_mascaras_descriptivas": 0,
+  "corridas": {
+   "g06-A-r0": {
+    "hist": "1903d70f9d2fd03c9c099b8e9dddf47254329ab1fd658378756744f30256ecb8",
+    "meta": "8a938cfe79d877ac0f4f2cba4336761efc3d7cbd8f872f72a83316d6717c9535",
+    "muones": "9d2765a6762613c0839a661fc87b26225ec1eddd785184b325066ef75cebb1dd",
+    "run.log": "b1b16c2f08905c561155ac5efe1d470cf8b646cfb03447bf47e2b8626b9c079e"
+   },
+   "g06-B-r0": {
+    "hist": "1903d70f9d2fd03c9c099b8e9dddf47254329ab1fd658378756744f30256ecb8",
+    "meta": "4beb83818fa1958dcdc4aac05de49f3f02aadce6686af4796bbb31fb40b68f8f",
+    "muones": "129aaf5cfc94ffbd156cd449674c491dbdb22d3176dfaffe65a594b4f12e9097",
+    "run.log": "10650b4b25bce49b3c40cc3cc93695876a7758cd754ffbb52627121d98e59109"
+   },
+   "g01-A-r0": {
+    "hist": "30c91444240903c59abe6afe3690b20132072cfad784999a39c88da6b38ec0cb",
+    "meta": "11ea1610c8858581fc4398d7969ff5cf7d6d6938d9bb328b478fcdf869214eab",
+    "muones": "f565bb28349c92b31e73b6f384b85412f62bb0a954adbb2abf8ad4abe6b50c1e",
+    "run.log": "229d620a70a0a9a1c9378f0a1edd1c38fbea3482a447be6abd9f822d60a2583d"
+   },
+   "g01-B-r0": {
+    "hist": "30c91444240903c59abe6afe3690b20132072cfad784999a39c88da6b38ec0cb",
+    "meta": "96d3d1c70ac7a3735690cd8f53cc1221cc2ef2f8ca271992369102ec0318afe9",
+    "muones": "3891408e1398f713dee8511f2185f98598fcf6f410a0c8c9a1752eee48697263",
+    "run.log": "ccd14b2448d05f039cdc6e25d5d903f8b3ed3c05422909540e1453211446fdad"
+   },
+   "g01-A-r0-rep": {
+    "hist": "30c91444240903c59abe6afe3690b20132072cfad784999a39c88da6b38ec0cb",
+    "meta": "29636a06f92e9005578b25d2e9daa24550ad74449be558d99b57d72c7226d61d",
+    "muones": "f565bb28349c92b31e73b6f384b85412f62bb0a954adbb2abf8ad4abe6b50c1e",
+    "run.log": "6cf235866a2b80c7fe1765447d19a8cf44c5c8274b7283f3bd571f0ea12acf12"
+   }
+  },
+  "listas": {
+   "geo-train-06_v0_r0_s2026092990.primarios.csv": "faeba1769e22633f305ffe85f12df3c7876005dd987d8cfe12dfe4f300582f35",
+   "geo-train-01_v0_r0_s2026092990.primarios.csv": "bab8ec0ac6b7a05103e56f201f9f9476ab6164183c1c1ee2ece547822bb5e9e6"
+  }
+ },
+ "herramienta": {
+  "scripts_sha256": {
+   "oe1_stage1_analysis.py": "e08d3355e32257fda2330b3c73600aebb46983b61eff71d143a96d07163173a3",
+   "oe1_stage1_common.py": "1575b1e64d0431da50f708c4735930fe3b2457fce7cf2b1f5a29fed5d371fb3e",
+   "oe1_stage1_lists.py": "debbf77aa64e54a68ec7311ad7361b3554de9965f133e77501e9a5cbb865713c",
+   "oe1_stage1_roi.py": "e9b2de31191e569ca92c4b3bb51bc31f1ffed9b90f31e35441beb5e29b9b1105",
+   "oe1_stage1_synthetic.py": "c450d4435c36dffcbaacaeed749c283154bf5668b73ec82a04913d2098e20435",
+   "oe1_stage1_tecnicas.py": "ff2c8f9e121df4c0ec9f3ee2465baea7e8b1a80838e11260eb55ab1d8dedf325"
+  },
+  "entorno": {
+   "python": "3.9.25",
+   "numpy": "2.0.2",
+   "scipy": "no usado",
+   "matplotlib": "no usado",
+   "plataforma": "linux 64-bit"
+  },
+  "crossing_reference": {
+   "ruta": "/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/tests/crossing_reference.py",
+   "sha256": "d5f296ff29adbc7a3da3ad0720119137bb8dde0ce134f3c55870568320edb8d3"
+  }
+ },
+ "figuras": []
+}

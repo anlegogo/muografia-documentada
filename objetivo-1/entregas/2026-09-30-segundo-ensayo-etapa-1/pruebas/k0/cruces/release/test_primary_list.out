@@ -1,0 +1,8 @@
+PASS SHA-256 vectors, boundaries, file hashing
+PASS FNV-1a-64, hex helpers, engine-state hash
+PASS to_chars / from_chars exact round trip of doubles
+PASS canonical FNV of a list
+PASS validation: every defect class is detected
+PASS files: exclusive create, sidecar, PrimaryList::Load
+PASS --check-primaries summary line and status
+test_primary_list: 165 checks, 0 failed

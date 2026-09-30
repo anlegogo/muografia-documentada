@@ -1,0 +1,60 @@
+{
+ "formato": "oe1-prueba-tecnica/1",
+ "prueba": "T-M",
+ "ok": true,
+ "etiqueta": "prueba técnica (DV1), fuera de las 13 corridas",
+ "comprobaciones": [
+  {
+   "descripcion": "hist.csv idéntico con otra semilla maestra",
+   "ok": true,
+   "evidencia": {
+    "ref": "1903d70f9d2fd03c9c099b8e9dddf47254329ab1fd658378756744f30256ecb8",
+    "desplazada": "1903d70f9d2fd03c9c099b8e9dddf47254329ab1fd658378756744f30256ecb8"
+   }
+  },
+  {
+   "descripcion": "rng0 igual para todo id",
+   "ok": true,
+   "evidencia": {}
+  },
+  {
+   "descripcion": "rng1 igual para todo id",
+   "ok": true,
+   "evidencia": {}
+  },
+  {
+   "descripcion": "_muones.csv idéntico byte a byte",
+   "ok": true,
+   "evidencia": {
+    "columnas_distintas": []
+   }
+  },
+  {
+   "descripcion": "meta.json igual salvo tiempos y la semilla maestra",
+   "ok": true,
+   "evidencia": {
+    "campos_distintos": []
+   }
+  },
+  {
+   "descripcion": "las semillas maestras de las dos corridas son distintas",
+   "ok": true,
+   "evidencia": {
+    "ref": 1026092990,
+    "desplazada": 1026092995
+   }
+  }
+ ],
+ "entradas": {
+  "referencia": {
+   "dir": "/home/dapintoo/oe1-trabajo/etapa1/pruebas/tecnicas-01/tf/geo-train-06/B/2026092990",
+   "hist_sha256": "1903d70f9d2fd03c9c099b8e9dddf47254329ab1fd658378756744f30256ecb8",
+   "muones_sha256": "129aaf5cfc94ffbd156cd449674c491dbdb22d3176dfaffe65a594b4f12e9097"
+  },
+  "maestra_desplazada": {
+   "dir": "/home/dapintoo/oe1-trabajo/etapa1/pruebas/tecnicas-01/corridas/tm/shifted",
+   "hist_sha256": "1903d70f9d2fd03c9c099b8e9dddf47254329ab1fd658378756744f30256ecb8",
+   "muones_sha256": "129aaf5cfc94ffbd156cd449674c491dbdb22d3176dfaffe65a594b4f12e9097"
+  }
+ }
+}

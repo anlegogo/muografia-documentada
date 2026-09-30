@@ -1,0 +1,44 @@
+{
+ "formato": "oe1-prueba-tecnica/1",
+ "prueba": "T-P",
+ "ok": true,
+ "etiqueta": "prueba técnica (DV1), fuera de las 13 corridas",
+ "comprobaciones": [
+  {
+   "descripcion": "misma longitud",
+   "ok": true,
+   "evidencia": {}
+  },
+  {
+   "descripcion": "los ids >= 100 conservan rng0, rng1 y todo el resultado",
+   "ok": true,
+   "evidencia": {
+    "columnas_distintas": []
+   }
+  },
+  {
+   "descripcion": "rng1 igual en los ids >= 100",
+   "ok": true,
+   "evidencia": {}
+  },
+  {
+   "descripcion": "la sustitución de las primeras 100 filas se aplicó (>90 % cambia el primario)",
+   "ok": true,
+   "evidencia": {
+    "fraccion_que_cambia": 1.0
+   }
+  }
+ ],
+ "entradas": {
+  "base": {
+   "dir": "/home/dapintoo/oe1-trabajo/etapa1/pruebas/tecnicas-01/tf/geo-train-06/B/2026092990",
+   "hist_sha256": "1903d70f9d2fd03c9c099b8e9dddf47254329ab1fd658378756744f30256ecb8",
+   "muones_sha256": "129aaf5cfc94ffbd156cd449674c491dbdb22d3176dfaffe65a594b4f12e9097"
+  },
+  "derivada": {
+   "dir": "/home/dapintoo/oe1-trabajo/etapa1/pruebas/tecnicas-01/corridas/tp/derivada",
+   "hist_sha256": "0843b063a795f6932e0a4ca0cc5b68bcc0f7da28d04de3db0e026ef16802a102",
+   "muones_sha256": "247e7274c20e7ee76411162fc0c99d4983048020272a00b6c2bbcf7e47dfe753"
+  }
+ }
+}

@@ -1,0 +1,301 @@
+EEEEE..EEEEEs..EEEE..EEEE.s......sss................s........................ssss........E............ssEE...EEE..........
+======================================================================
+ERROR: setUpClass (tests.test_oe1_stage1_analysis.BlockingFileDefectTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 529, in setUpClass
+    cls.fx = F.build_attempt(os.path.join(cls.tmp, "base"), n=N)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: setUpClass (tests.test_oe1_stage1_analysis.BlockingRecordDefectTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 673, in setUpClass
+    cls.fx = F.build_attempt(os.path.join(cls.tmp, "records"), n=N, tweak=tweak)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: setUpClass (tests.test_oe1_stage1_analysis.DeltaTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 438, in setUpClass
+    cls.fx = F.build_attempt(os.path.join(cls.tmp, "delta"), n=N, tweak=tweak)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: test_an_efficiency_far_from_the_campaign_is_flagged_and_does_not_block (tests.test_oe1_stage1_analysis.EfficiencySanityTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 1567, in test_an_efficiency_far_from_the_campaign_is_flagged_and_does_not_block
+    fx = F.build_attempt(os.path.join(self.tmp, "eff-bad"), n=N, tweak=tweak)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: test_pristine_efficiencies_are_compatible_with_the_campaign (tests.test_oe1_stage1_analysis.EfficiencySanityTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 1551, in test_pristine_efficiencies_are_compatible_with_the_campaign
+    fx = F.build_attempt(os.path.join(self.tmp, "eff-ok"), n=N)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: setUpClass (tests.test_oe1_stage1_analysis.FingerprintTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 1308, in setUpClass
+    cls.fx = F.build_attempt(os.path.join(cls.tmp, "fingerprints"), n=N, tweak=tweak)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: setUpClass (tests.test_oe1_stage1_analysis.LateralDisplacementTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 1090, in setUpClass
+    cls.fx_new = F.build_attempt(os.path.join(cls.tmp, "lat-new"), n=N, lateral_columns=True, tweak=big)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: test_a_binary_without_the_lateral_columns_cannot_explain_anything (tests.test_oe1_stage1_analysis.LateralScaleTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 1538, in test_a_binary_without_the_lateral_columns_cannot_explain_anything
+    fx = F.build_attempt(os.path.join(self.tmp, "scale-old"), n=N, tweak=tweak)          # no lateral columns
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: test_a_violation_beyond_the_scale_or_without_lateral_data_blocks (tests.test_oe1_stage1_analysis.LateralScaleTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 1522, in test_a_violation_beyond_the_scale_or_without_lateral_data_blocks
+    fx = self.build("scale-unexplained", tweak)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 1460, in build
+    return F.build_attempt(os.path.join(self.tmp, name), n=N, lateral_columns=True, tweak=tweak)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: test_an_explained_violation_is_reported_and_does_not_block (tests.test_oe1_stage1_analysis.LateralScaleTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 1489, in test_an_explained_violation_is_reported_and_does_not_block
+    fx = self.build("scale-explained", tweak)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 1460, in build
+    return F.build_attempt(os.path.join(self.tmp, name), n=N, lateral_columns=True, tweak=tweak)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: setUpClass (tests.test_oe1_stage1_analysis.ListVerificationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 1369, in setUpClass
+    cls.fx = F.build_attempt(os.path.join(cls.tmp, "lists"), n=N, lateral_columns=True)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: setUpClass (tests.test_oe1_stage1_analysis.ManifestTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 838, in setUpClass
+    cls.fx = F.build_attempt(os.path.join(cls.tmp, "base"), n=N)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: setUpClass (tests.test_oe1_stage1_analysis.NonBlockingTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 732, in setUpClass
+    cls.fx = F.build_attempt(os.path.join(cls.tmp, "base"), n=N, lateral_columns=True)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: setUpClass (tests.test_oe1_stage1_analysis.PristineTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 152, in setUpClass
+    cls.fx = F.build_attempt(os.path.join(cls.tmp, "pristine"), n=N, lateral_columns=True)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: setUpClass (tests.test_oe1_stage1_analysis.ResourceColumnsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 1650, in setUpClass
+    cls.fx = F.build_attempt(os.path.join(cls.tmp, "resources"), n=N)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: setUpClass (tests.test_oe1_stage1_analysis.TimingKeysInComparisonsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 1606, in setUpClass
+    cls.fx = F.build_attempt(os.path.join(cls.tmp, "timing"), n=N)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: setUpClass (tests.test_oe1_stage1_analysis.UnusableRoiInputTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 931, in setUpClass
+    cls.fx = F.build_attempt(os.path.join(cls.tmp, "roi-inputs"), n=N)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: setUpClass (tests.test_oe1_stage1_analysis.WorkerThreadTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_analysis.py", line 1254, in setUpClass
+    cls.fx = F.build_attempt(os.path.join(cls.tmp, "workers"), n=N)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: setUpClass (tests.test_oe1_stage1_lists.ListValidatorTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_lists.py", line 47, in setUpClass
+    cls.tables = C.load_tables(F.TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: setUpClass (tests.test_oe1_stage1_synthetic.CheckRunTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_synthetic.py", line 201, in setUpClass
+    cls.res = S.generate(os.path.join(cls.tmp, "ts"), CATALOG, F.CROSSING_REFERENCE)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_synthetic.py", line 325, in generate
+    cat = C.read_catalog(catalog_path)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1151, in read_catalog
+    with open(path, "rb") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geometry_catalog/geometries/geo-train-06.json'
+
+======================================================================
+ERROR: setUpClass (tests.test_oe1_stage1_synthetic.GenerationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_synthetic.py", line 44, in setUpClass
+    cls.res = S.generate(cls.out, CATALOG, F.CROSSING_REFERENCE)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_synthetic.py", line 325, in generate
+    cat = C.read_catalog(catalog_path)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1151, in read_catalog
+    with open(path, "rb") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geometry_catalog/geometries/geo-train-06.json'
+
+======================================================================
+ERROR: test_functional_rehearsal_fails_when_contracts_block (tests.test_oe1_stage1_tecnicas.TechnicalTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_tecnicas.py", line 251, in test_functional_rehearsal_fails_when_contracts_block
+    rc, out = self.analysis_dir(tweak, "tf3")
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_tecnicas.py", line 219, in analysis_dir
+    fx = F.build_attempt(self.d(name), n=N, tweak=tweak, replicas=(0,))
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: test_functional_rehearsal_flags_unexpected_statuses (tests.test_oe1_stage1_tecnicas.TechnicalTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_tecnicas.py", line 241, in test_functional_rehearsal_flags_unexpected_statuses
+    rc, out = self.analysis_dir(tweak, "tf2")
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_tecnicas.py", line 219, in analysis_dir
+    fx = F.build_attempt(self.d(name), n=N, tweak=tweak, replicas=(0,))
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+======================================================================
+ERROR: test_functional_rehearsal_passes (tests.test_oe1_stage1_tecnicas.TechnicalTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_tecnicas.py", line 229, in test_functional_rehearsal_passes
+    rc, out = self.analysis_dir()
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/test_oe1_stage1_tecnicas.py", line 219, in analysis_dir
+    fx = F.build_attempt(self.d(name), n=N, tweak=tweak, replicas=(0,))
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/fixtures.py", line 452, in build_attempt
+    tables = C.load_tables(TABLES_DIR)
+  File "/home/dapintoo/oe1-trabajo/subida-etapa1/subida/analysis/tests/../oe1_stage1_common.py", line 1073, in load_tables
+    with open(os.path.join(tables_dir, "row_weights_30d.txt"), "r") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dapintoo/oe1-trabajo/subida-etapa1/subida/simulation/geant4_app/tables/row_weights_30d.txt'
+
+----------------------------------------------------------------------
+Ran 106 tests in 3.797s
+
+FAILED (errors=24, skipped=12)

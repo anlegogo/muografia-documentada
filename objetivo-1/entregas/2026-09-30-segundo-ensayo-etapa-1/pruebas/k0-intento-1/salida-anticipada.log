@@ -1,0 +1,24 @@
+=== checks that end the run before BeamOn (exit 4)
+case a2-as-b: exit 4 (want 4)
+    OE1-PRERUN-CHECK run_manager=G4TaskRunManager variant=B variant_check=mismatch errors=variant_geometry_mismatch status=FAIL
+    list mode: --variant B expects anomaly_0 to be a G4SubtractionSolid but the geometry built 'G4Tubs'|list mode: a check failed before BeamOn: no transport was run and no output was written (exit 4)|
+case b2-as-a: exit 4 (want 4)
+    OE1-PRERUN-CHECK run_manager=G4TaskRunManager variant=A variant_check=mismatch errors=variant_geometry_mismatch status=FAIL
+    list mode: --variant A expects anomaly_0 to be a G4Tubs (plain primitive) but the geometry built 'G4SubtractionSolid'|list mode: a check failed before BeamOn: no transport was run and no output was written (exit 4)|
+case a2-serial: exit 4 (want 4)
+    OE1-PRERUN-CHECK run_manager=G4RunManager variant=A variant_check=ok errors=run_manager_not_task status=FAIL
+    list mode: the run manager is 'G4RunManager', expected 'G4TaskRunManager'|list mode: a check failed before BeamOn: no transport was run and no output was written (exit 4)|
+case b2-both: exit 4 (want 4)
+    OE1-PRERUN-CHECK run_manager=G4RunManager variant=A variant_check=mismatch errors=run_manager_not_task,variant_geometry_mismatch status=FAIL
+    list mode: the run manager is 'G4RunManager', expected 'G4TaskRunManager'|list mode: --variant A expects anomaly_0 to be a G4Tubs (plain primitive) but the geometry built 'G4SubtractionSolid'|
+=== order of the exit codes: earlier errors win over the pre-BeamOn checks
+case order-sha: exit 1 (want 1)
+    
+    input error: primary list SHA-256 mismatch: file 2497dad0f85f6a367ac8b59cfba859de21265ccc0af8f8fca401970326c37d32 != --primaries-sha256 0000000000000000000000000000000000000000000000000000000000000000|
+case order-pair: exit 2 (want 2)
+    
+    error: the geometry has 2 anomalies: --region-pair I,J (conduit, dense_body|cavity) is required; pass --region-pair none to run without a region on purpose|
+case order-exists: exit 1 (want 1)
+(positive controls skipped: set OE1_EARLY_EXIT_POSITIVE=1 for a local run that transports 20 muons)
+early_exit: 32 checks, 0 failed
+PASS early_exit

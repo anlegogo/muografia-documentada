@@ -1,0 +1,192 @@
+compiler: g++ (GCC) 14.2.0
+output:   /tmp/oe1-k0-30565/cruces
+build ok   [release] test_region_crossing (warnings: 0)
+build ok   [release] crossing_eval (warnings: 0)
+build ok   [release] test_primary_list (warnings: 0)
+build ok   [release] test_oe1_support (warnings: 0)
+--- run [release] test_region_crossing --catalog /home/dapintoo/oe1-trabajo/catalogo
+PASS C1 vertical through the centroid (0.01 s)
+PASS C2 horizontal through the centroid (0.00 s)
+PASS C3 tangent to the conduit and to the dense body (0.00 s)
+PASS C4 crosses both primitives, misses Z (0.02 s)
+PASS C5 inside only one primitive (0.00 s)
+PASS C6 fully inside / half inside (0.01 s)
+PASS C7 degenerate and axis-parallel segments (0.42 s)
+  C8: worst |sum(pieces) - whole| over 1e4 polylines = 2.95e-12 m
+PASS C8 additivity of pieces and entry counting (0.04 s)
+  C9: worst |len_fwd - len_rev| / tolerance over 1e5 segments = 0.272 (must be <= 1)
+PASS C9 reversal of 1e5 segments (0.11 s)
+  nearZ: 6502 of 20000 random segments hit Z, 7479 are near
+PASS nearZ: chord meets both primitives grown by 1 m (0.01 s)
+PASS extras: long chord, ZBox, sphere, invalid pairs (0.00 s)
+PASS EntryCounter: zero chords, misses and slivers (0.00 s)
+PASS catalog primitives equal the test constants (0.00 s)
+  V: Z by vertical lines (h=0.01)      = 83663.71529 (director 83663.70318, diff +0.0121)
+  V: Z by lines along x (h=0.02)       = 83663.95436 (diff +0.2512)
+  V: Z by lines detector->centroid (h=0.02) = 83663.76969 (diff +0.0665)
+  V: conduit alone (cells 0.005 x 1)   = 471050.59221 (exact 471050.40248, diff +0.1897)
+  V: dense body alone (h=0.05)         = 1215148.70336 (exact 1215148.53540, diff +0.1680)
+PASS V volume by parallel-line grids (6.76 s)
+test_region_crossing: 453607 checks, 0 failed
+--- run [release] test_primary_list 
+PASS SHA-256 vectors, boundaries, file hashing
+PASS FNV-1a-64, hex helpers, engine-state hash
+PASS to_chars / from_chars exact round trip of doubles
+PASS canonical FNV of a list
+PASS validation: every defect class is detected
+PASS files: exclusive create, sidecar, PrimaryList::Load
+PASS --check-primaries summary line and status
+test_primary_list: 165 checks, 0 failed
+--- run [release] test_oe1_support 
+PASS strict command line (exit-2 class errors, modes, ranges)
+PASS ROI mask reader: format, orientation [iEl, iAz], sha
+PASS per-muon CSV: columns, NA rules, formatting
+PASS id check and histogram reconstruction
+PASS ConfigureListMode: consistency with the geometry
+PASS output preflight: never overwrite, writable folder
+PASS provenance: binary, geometry and table SHA-256
+PASS --variant against the geometry signature
+PASS checks before BeamOn (run manager, --variant): decision table
+PASS RunData: thread-safe bookkeeping
+test_oe1_support: 373 checks, 0 failed
+build ok   [sanitize] test_region_crossing (warnings: 0)
+build ok   [sanitize] crossing_eval (warnings: 0)
+build ok   [sanitize] test_primary_list (warnings: 0)
+build ok   [sanitize] test_oe1_support (warnings: 0)
+--- run [sanitize] test_region_crossing --fast --catalog /home/dapintoo/oe1-trabajo/catalogo
+PASS C1 vertical through the centroid (0.03 s)
+PASS C2 horizontal through the centroid (0.00 s)
+PASS C3 tangent to the conduit and to the dense body (0.00 s)
+PASS C4 crosses both primitives, misses Z (0.05 s)
+PASS C5 inside only one primitive (0.00 s)
+PASS C6 fully inside / half inside (0.06 s)
+PASS C7 degenerate and axis-parallel segments (2.91 s)
+  C8: worst |sum(pieces) - whole| over 1e4 polylines = 2.95e-12 m
+PASS C8 additivity of pieces and entry counting (0.12 s)
+  C9: worst |len_fwd - len_rev| / tolerance over 1e5 segments = 0.272 (must be <= 1)
+PASS C9 reversal of 1e5 segments (0.34 s)
+  nearZ: 6502 of 20000 random segments hit Z, 7479 are near
+PASS nearZ: chord meets both primitives grown by 1 m (0.05 s)
+PASS extras: long chord, ZBox, sphere, invalid pairs (0.00 s)
+PASS EntryCounter: zero chords, misses and slivers (0.00 s)
+PASS catalog primitives equal the test constants (0.01 s)
+  V: Z by vertical lines (h=0.02)      = 83663.27504 (director 83663.70318, diff -0.4281)
+  V: Z by lines along x (h=0.04)       = 83664.49103 (diff +0.7878)
+  V: Z by lines detector->centroid (h=0.04) = 83664.81407 (diff +1.1109)
+  V: conduit alone (cells 0.005 x 1)   = 471050.59221 (exact 471050.40248, diff +0.1897)
+  V: dense body alone (h=0.1)         = 1215149.23582 (exact 1215148.53540, diff +0.7004)
+PASS V volume by parallel-line grids [fast] (16.72 s)
+test_region_crossing: 453607 checks, 0 failed
+--- run [sanitize] test_primary_list 
+PASS SHA-256 vectors, boundaries, file hashing
+PASS FNV-1a-64, hex helpers, engine-state hash
+PASS to_chars / from_chars exact round trip of doubles
+PASS canonical FNV of a list
+PASS validation: every defect class is detected
+PASS files: exclusive create, sidecar, PrimaryList::Load
+PASS --check-primaries summary line and status
+test_primary_list: 165 checks, 0 failed
+--- run [sanitize] test_oe1_support 
+PASS strict command line (exit-2 class errors, modes, ranges)
+PASS ROI mask reader: format, orientation [iEl, iAz], sha
+PASS per-muon CSV: columns, NA rules, formatting
+PASS id check and histogram reconstruction
+PASS ConfigureListMode: consistency with the geometry
+PASS output preflight: never overwrite, writable folder
+PASS provenance: binary, geometry and table SHA-256
+PASS --variant against the geometry signature
+PASS checks before BeamOn (run manager, --variant): decision table
+PASS RunData: thread-safe bookkeeping
+test_oe1_support: 373 checks, 0 failed
+--- R1 (numpy 2.0.2, seeds: 20260930 11 12 13 14 15, 100000 segments each)
+--- R1 seed 20260930
+wrote 100000 segments to /tmp/oe1-k0-30565/cruces/r1/seed-20260930/seg.csv (seed 20260930)
+PASS R1 numpy reference: |len - ref| <= tol(len, X) over 100000 segments (56 exceed the plain 1e-09 m; all of them have len <= 0.00291 m): 0 violations, worst 4.03e-09
+PASS R1 numpy reference: lc (bare conduit length): 0 violations, worst 2.33e-12
+PASS R1 numpy reference: le (bare dense-body length): 0 violations, worst 4.03e-09
+PASS R1 numpy reference: lo / hi parameters (tolerance tol(len) / chord): 0 violations, worst 2.01e-09
+PASS R1 numpy reference: hit flag (segments with reference length >= 1e-9 m): 0 violations, worst 0
+PASS R1 numpy reference: deep flag (0 ambiguous excluded): 0 violations, worst 0
+PASS R1 numpy reference: graze flag (0 ambiguous excluded): 0 violations, worst 0
+PASS R1 numpy reference: near flag (0 ambiguous excluded; 40440 near): 0 violations, worst 0
+PASS R1 near contains every chord with positive length in Z (numpy and C++): 0 violations, worst 0
+INFO segments: 100000; with len > 0: 33162; deep: 31912; graze: 2064; both ends outside Z (len > 0): 22592
+PASS R1 60-digit reference: |len - exact| <= tol(len, X) on 740 segments (82 exceed the plain 1e-09 m; worst error for len >= 5 cm: 1.05e-11 m): 0 violations, worst 5.16e-09
+PASS R1 dense-sampling oracle (K=200001): |len - oracle| <= 2|d|/(K-1) on 2000 segments: 0 violations, worst 0.5
+R1 OVERALL PASS
+--- R1 seed 11
+wrote 100000 segments to /tmp/oe1-k0-30565/cruces/r1/seed-11/seg.csv (seed 11)
+PASS R1 numpy reference: |len - ref| <= tol(len, X) over 100000 segments (50 exceed the plain 1e-09 m; all of them have len <= 0.00308 m): 0 violations, worst 3.91e-09
+PASS R1 numpy reference: lc (bare conduit length): 0 violations, worst 2.13e-12
+PASS R1 numpy reference: le (bare dense-body length): 0 violations, worst 3.91e-09
+PASS R1 numpy reference: lo / hi parameters (tolerance tol(len) / chord): 0 violations, worst 1.95e-09
+PASS R1 numpy reference: hit flag (segments with reference length >= 1e-9 m): 0 violations, worst 0
+PASS R1 numpy reference: deep flag (0 ambiguous excluded): 0 violations, worst 0
+PASS R1 numpy reference: graze flag (0 ambiguous excluded): 0 violations, worst 0
+PASS R1 numpy reference: near flag (0 ambiguous excluded; 40289 near): 0 violations, worst 0
+PASS R1 near contains every chord with positive length in Z (numpy and C++): 0 violations, worst 0
+INFO segments: 100000; with len > 0: 33026; deep: 31772; graze: 2087; both ends outside Z (len > 0): 22657
+PASS R1 60-digit reference: |len - exact| <= tol(len, X) on 737 segments (77 exceed the plain 1e-09 m; worst error for len >= 5 cm: 4.05e-11 m): 0 violations, worst 4.84e-09
+PASS R1 dense-sampling oracle (K=200001): |len - oracle| <= 2|d|/(K-1) on 2000 segments: 0 violations, worst 0.5
+R1 OVERALL PASS
+--- R1 seed 12
+wrote 100000 segments to /tmp/oe1-k0-30565/cruces/r1/seed-12/seg.csv (seed 12)
+PASS R1 numpy reference: |len - ref| <= tol(len, X) over 100000 segments (65 exceed the plain 1e-09 m; all of them have len <= 0.00276 m): 0 violations, worst 3.51e-09
+PASS R1 numpy reference: lc (bare conduit length): 0 violations, worst 2.02e-12
+PASS R1 numpy reference: le (bare dense-body length): 0 violations, worst 3.51e-09
+PASS R1 numpy reference: lo / hi parameters (tolerance tol(len) / chord): 0 violations, worst 1.76e-09
+PASS R1 numpy reference: hit flag (segments with reference length >= 1e-9 m): 0 violations, worst 0
+PASS R1 numpy reference: deep flag (0 ambiguous excluded): 0 violations, worst 0
+PASS R1 numpy reference: graze flag (0 ambiguous excluded): 0 violations, worst 0
+PASS R1 numpy reference: near flag (0 ambiguous excluded; 40417 near): 0 violations, worst 0
+PASS R1 near contains every chord with positive length in Z (numpy and C++): 0 violations, worst 0
+INFO segments: 100000; with len > 0: 33233; deep: 31932; graze: 2056; both ends outside Z (len > 0): 22713
+PASS R1 60-digit reference: |len - exact| <= tol(len, X) on 743 segments (91 exceed the plain 1e-09 m; worst error for len >= 5 cm: 1.97e-11 m): 0 violations, worst 5.48e-09
+PASS R1 dense-sampling oracle (K=200001): |len - oracle| <= 2|d|/(K-1) on 2000 segments: 0 violations, worst 0.5
+R1 OVERALL PASS
+--- R1 seed 13
+wrote 100000 segments to /tmp/oe1-k0-30565/cruces/r1/seed-13/seg.csv (seed 13)
+PASS R1 numpy reference: |len - ref| <= tol(len, X) over 100000 segments (59 exceed the plain 1e-09 m; all of them have len <= 0.00301 m): 0 violations, worst 3.62e-09
+PASS R1 numpy reference: lc (bare conduit length): 0 violations, worst 2.17e-12
+PASS R1 numpy reference: le (bare dense-body length): 0 violations, worst 3.62e-09
+PASS R1 numpy reference: lo / hi parameters (tolerance tol(len) / chord): 0 violations, worst 1.81e-09
+PASS R1 numpy reference: hit flag (segments with reference length >= 1e-9 m): 0 violations, worst 0
+PASS R1 numpy reference: deep flag (0 ambiguous excluded): 0 violations, worst 0
+PASS R1 numpy reference: graze flag (0 ambiguous excluded): 0 violations, worst 0
+PASS R1 numpy reference: near flag (0 ambiguous excluded; 40410 near): 0 violations, worst 0
+PASS R1 near contains every chord with positive length in Z (numpy and C++): 0 violations, worst 0
+INFO segments: 100000; with len > 0: 33260; deep: 31963; graze: 2112; both ends outside Z (len > 0): 22739
+PASS R1 60-digit reference: |len - exact| <= tol(len, X) on 741 segments (79 exceed the plain 1e-09 m; worst error for len >= 5 cm: 2.17e-11 m): 0 violations, worst 7.84e-09
+PASS R1 dense-sampling oracle (K=200001): |len - oracle| <= 2|d|/(K-1) on 2000 segments: 0 violations, worst 0.5
+R1 OVERALL PASS
+--- R1 seed 14
+wrote 100000 segments to /tmp/oe1-k0-30565/cruces/r1/seed-14/seg.csv (seed 14)
+PASS R1 numpy reference: |len - ref| <= tol(len, X) over 100000 segments (60 exceed the plain 1e-09 m; all of them have len <= 0.0029 m): 0 violations, worst 2.84e-09
+PASS R1 numpy reference: lc (bare conduit length): 0 violations, worst 2.3e-12
+PASS R1 numpy reference: le (bare dense-body length): 0 violations, worst 2.84e-09
+PASS R1 numpy reference: lo / hi parameters (tolerance tol(len) / chord): 0 violations, worst 1.42e-09
+PASS R1 numpy reference: hit flag (segments with reference length >= 1e-9 m): 0 violations, worst 0
+PASS R1 numpy reference: deep flag (0 ambiguous excluded): 0 violations, worst 0
+PASS R1 numpy reference: graze flag (0 ambiguous excluded): 0 violations, worst 0
+PASS R1 numpy reference: near flag (0 ambiguous excluded; 40422 near): 0 violations, worst 0
+PASS R1 near contains every chord with positive length in Z (numpy and C++): 0 violations, worst 0
+INFO segments: 100000; with len > 0: 33310; deep: 32045; graze: 2023; both ends outside Z (len > 0): 22799
+PASS R1 60-digit reference: |len - exact| <= tol(len, X) on 742 segments (74 exceed the plain 1e-09 m; worst error for len >= 5 cm: 3.42e-11 m): 0 violations, worst 6.19e-09
+PASS R1 dense-sampling oracle (K=200001): |len - oracle| <= 2|d|/(K-1) on 2000 segments: 0 violations, worst 0.5
+R1 OVERALL PASS
+--- R1 seed 15
+wrote 100000 segments to /tmp/oe1-k0-30565/cruces/r1/seed-15/seg.csv (seed 15)
+PASS R1 numpy reference: |len - ref| <= tol(len, X) over 100000 segments (55 exceed the plain 1e-09 m; all of them have len <= 0.00276 m): 0 violations, worst 3.5e-09
+PASS R1 numpy reference: lc (bare conduit length): 0 violations, worst 2.08e-12
+PASS R1 numpy reference: le (bare dense-body length): 0 violations, worst 3.5e-09
+PASS R1 numpy reference: lo / hi parameters (tolerance tol(len) / chord): 0 violations, worst 1.75e-09
+PASS R1 numpy reference: hit flag (segments with reference length >= 1e-9 m): 0 violations, worst 0
+PASS R1 numpy reference: deep flag (0 ambiguous excluded): 0 violations, worst 0
+PASS R1 numpy reference: graze flag (0 ambiguous excluded): 0 violations, worst 0
+PASS R1 numpy reference: near flag (0 ambiguous excluded; 40400 near): 0 violations, worst 0
+PASS R1 near contains every chord with positive length in Z (numpy and C++): 0 violations, worst 0
+INFO segments: 100000; with len > 0: 33141; deep: 31877; graze: 2041; both ends outside Z (len > 0): 22759
+PASS R1 60-digit reference: |len - exact| <= tol(len, X) on 743 segments (70 exceed the plain 1e-09 m; worst error for len >= 5 cm: 6.97e-11 m): 0 violations, worst 7.05e-09
+PASS R1 dense-sampling oracle (K=200001): |len - oracle| <= 2|d|/(K-1) on 2000 segments: 0 violations, worst 0.5
+R1 OVERALL PASS
+ALL TESTS PASSED (summary: /tmp/oe1-k0-30565/cruces/pruebas-cruces.json)

@@ -1,0 +1,54 @@
+{
+ "formato": "oe1-prueba-tecnica/1",
+ "prueba": "T-L (A)",
+ "ok": true,
+ "etiqueta": "prueba técnica (DV1), fuera de las 13 corridas",
+ "comprobaciones": [
+  {
+   "descripcion": "hist.csv del binario del piloto y del instrumentado (modo legado) idénticos byte a byte",
+   "ok": true,
+   "evidencia": {
+    "piloto": "88dd85291944091245970337c4ef074dbea978e21e870e1f70e2d1bb164f7c68",
+    "nuevo": "88dd85291944091245970337c4ef074dbea978e21e870e1f70e2d1bb164f7c68"
+   }
+  },
+  {
+   "descripcion": "meta.json igual salvo los tiempos y el uso de recursos (wall_seconds y seconds_per_event y rusage_user_cpu_seconds y rusage_system_cpu_seconds y rusage_max_rss_kb, ...)",
+   "ok": true,
+   "evidencia": {
+    "campos_distintos": [],
+    "claves_de_tiempo_ignoradas": [
+     "seconds_per_event",
+     "wall_seconds"
+    ]
+   }
+  },
+  {
+   "descripcion": "el modo legado no escribe la clave oe1_etapa1",
+   "ok": true,
+   "evidencia": {}
+  },
+  {
+   "descripcion": "run.log igual una vez enmascarado wall_s= (informativo)",
+   "ok": true,
+   "evidencia": {}
+  },
+  {
+   "descripcion": "el modo legado no escribe _muones.csv",
+   "ok": true,
+   "evidencia": {}
+  }
+ ],
+ "entradas": {
+  "piloto": {
+   "dir": "/home/dapintoo/oe1-trabajo/etapa1/pruebas/tecnicas-01/corridas/tl/pilot-A",
+   "hist_sha256": "88dd85291944091245970337c4ef074dbea978e21e870e1f70e2d1bb164f7c68",
+   "muones_sha256": null
+  },
+  "nuevo": {
+   "dir": "/home/dapintoo/oe1-trabajo/etapa1/pruebas/tecnicas-01/corridas/tl/A2",
+   "hist_sha256": "88dd85291944091245970337c4ef074dbea978e21e870e1f70e2d1bb164f7c68",
+   "muones_sha256": null
+  }
+ }
+}

@@ -1,0 +1,8 @@
+cruces rc=1
+banco-sintetico rc=1
+salida-anticipada rc=0
+inercia-legado rc=1
+pruebas-python rc=1
+auditoria-aleatorios-A2 rc=0
+auditoria-aleatorios-B2 rc=0
+TOTAL rc=1

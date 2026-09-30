@@ -1,0 +1,2404 @@
+{
+ "formato": "oe1-validacion-listas/1",
+ "listas": [
+  {
+   "archivo": "geo-train-06_v0_r1_s2026092901.primarios.csv",
+   "ruta": "/home/dapintoo/oe1-trabajo/etapa1/listas/prep-01/A2/geo-train-06_v0_r1_s2026092901.primarios.csv",
+   "n": 100000,
+   "sha256": "a676dd129a2b20b7d6b2316a6562bd8569e50060d04809a8b24b4713ebb5eac6",
+   "canon_fnv1a64": "17b2c3a5d5221296",
+   "linea_check_python": "OE1-CHECK-PRIMARIES file=geo-train-06_v0_r1_s2026092901.primarios.csv n=100000 lf_only=1 header_ok=1 ends_with_newline=1 bad_rows=0 id_min=0 id_max=99999 ids_contiguous=1 dup_ids=0 dup_states=0 nonfinite=0 norm_fail=0 max_norm_dev=2.220446049250313e-16 dz_nonneg=0 ekin_nonpos=0 pdg_bad=0 charge_mismatch=0 n_mu_plus=55959 n_mu_minus=44041 canon_fnv1a64=17b2c3a5d5221296 file_sha256=a676dd129a2b20b7d6b2316a6562bd8569e50060d04809a8b24b4713ebb5eac6 sidecar=ok sidecar_n=100000 sidecar_fnv_match=1 sidecar_sha_match=1 status=OK",
+   "estructural": {
+    "defectos": {
+     "lf_only": 1,
+     "header_ok": 1,
+     "ends_with_newline": 1,
+     "bad_rows": 0,
+     "id_min": 0,
+     "id_max": 99999,
+     "ids_contiguous": 1,
+     "dup_ids": 0,
+     "dup_states": 0,
+     "nonfinite": 0,
+     "norm_fail": 0,
+     "max_norm_dev": 2.220446049250313e-16,
+     "dz_nonneg": 0,
+     "ekin_nonpos": 0,
+     "pdg_bad": 0,
+     "charge_mismatch": 0,
+     "n_mu_plus": 55959,
+     "n_mu_minus": 44041
+    },
+    "limpio": true,
+    "coincide_con_check_del_binario": true
+   },
+   "sidecar": {
+    "presente": true,
+    "error": null,
+    "formato_ok": true,
+    "n_ok": true,
+    "canon_ok": true,
+    "sha_ok": true,
+    "radio_base_m": 509.7,
+    "radio_de_partida_ok": true,
+    "case_code_ok": true,
+    "catalogo_sha256": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+    "radio_base_catalogo_ok": true,
+    "nombre_ok": true
+   },
+   "comparacion_con_binario": {
+    "presente": true,
+    "campos": [
+     {
+      "campo": "n",
+      "python": 100000,
+      "binario": "100000",
+      "igual": true
+     },
+     {
+      "campo": "lf_only",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "header_ok",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "ends_with_newline",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "bad_rows",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "id_min",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "id_max",
+      "python": 99999,
+      "binario": "99999",
+      "igual": true
+     },
+     {
+      "campo": "ids_contiguous",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "dup_ids",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "dup_states",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "nonfinite",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "norm_fail",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "dz_nonneg",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "ekin_nonpos",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "pdg_bad",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "charge_mismatch",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "n_mu_plus",
+      "python": 55959,
+      "binario": "55959",
+      "igual": true
+     },
+     {
+      "campo": "n_mu_minus",
+      "python": 44041,
+      "binario": "44041",
+      "igual": true
+     },
+     {
+      "campo": "canon_fnv1a64",
+      "python": "17b2c3a5d5221296",
+      "binario": "17b2c3a5d5221296",
+      "igual": true
+     },
+     {
+      "campo": "file_sha256",
+      "python": "a676dd129a2b20b7d6b2316a6562bd8569e50060d04809a8b24b4713ebb5eac6",
+      "binario": "a676dd129a2b20b7d6b2316a6562bd8569e50060d04809a8b24b4713ebb5eac6",
+      "igual": true
+     },
+     {
+      "campo": "max_norm_dev",
+      "python": 2.220446049250313e-16,
+      "binario": 2.220446049250313e-16,
+      "igual": true
+     }
+    ],
+    "todo_igual": true
+   },
+   "geometria": {
+    "filas_no_finitas": 0,
+    "desviacion_plano_max_m": 7.958078640513122e-13,
+    "exceso_sobre_panel_max_m": 0.0,
+    "radio_de_partida_esperado_m": 1809.7,
+    "desviacion_radio_de_partida_max_m": 9.094947017729282e-13,
+    "impacto_y_rango_m": [
+     -0.5999968254699297,
+     0.5999996250803861
+    ],
+    "impacto_z_rango_m": [
+     0.9000192927419448,
+     2.0999988363412285
+    ],
+    "elevacion_rango_grados": [
+     1.924232907032278,
+     47.08803060071556
+    ],
+    "acimut_relativo_rango_grados": [
+     -29.997544152839343,
+     29.99869875699543
+    ],
+    "tolerancia_m": 1e-09,
+    "ok": true,
+    "rango_angular_ok": true
+   },
+   "estadistica": {
+    "alfa": 0.0001,
+    "pruebas": [
+     {
+      "prueba": "filas de elevacion frente a row_weights (chi-cuadrado)",
+      "n": 100000,
+      "estadistico": 206.2066800815771,
+      "p": 0.9888777089925871,
+      "marcada": false,
+      "p_scipy": null,
+      "gl": 255
+     },
+     {
+      "prueba": "holgura de elevacion dentro de la fila (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.0020930840767461323,
+      "p": 0.7729693462549228,
+      "marcada": false,
+      "p_scipy": null,
+      "desviacion_maxima_grados": 0.08823540268785734,
+      "semipaso_grados": 0.08823549999999991
+     },
+     {
+      "prueba": "acimut relativo (KS uniforme en +-30 grados)",
+      "n": 100000,
+      "estadistico": 0.004052314831003545,
+      "p": 0.07474623766973722,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "punto de impacto y en el panel (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.0019386773099104304,
+      "p": 0.8462016229917534,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "punto de impacto z en el panel (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.003384718463733949,
+      "p": 0.20171678466171789,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "fraccion de mu+ frente a 0.5613 (binomial exacta)",
+      "n": 100000,
+      "estadistico": 0.55959,
+      "p": 0.2800722081751058,
+      "marcada": false,
+      "p_scipy": null,
+      "mu_plus": 55959,
+      "fraccion": 0.55959
+     },
+     {
+      "prueba": "momento banda 0 (KS frente a p_cdf)",
+      "n": 457,
+      "estadistico": 0.026216856064948002,
+      "p": 0.9083656198445186,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 1 (KS frente a p_cdf)",
+      "n": 685,
+      "estadistico": 0.03193067779971248,
+      "p": 0.48114233039186916,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 2 (KS frente a p_cdf)",
+      "n": 1099,
+      "estadistico": 0.02942634982902309,
+      "p": 0.2930273277081682,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 3 (KS frente a p_cdf)",
+      "n": 1691,
+      "estadistico": 0.016920592846105864,
+      "p": 0.7147607071280847,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 4 (KS frente a p_cdf)",
+      "n": 2416,
+      "estadistico": 0.011485195665199566,
+      "p": 0.9059299209528504,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 5 (KS frente a p_cdf)",
+      "n": 3269,
+      "estadistico": 0.009424435004685261,
+      "p": 0.9325098252668824,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 6 (KS frente a p_cdf)",
+      "n": 4179,
+      "estadistico": 0.011339119779549822,
+      "p": 0.6534661038949171,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 7 (KS frente a p_cdf)",
+      "n": 5226,
+      "estadistico": 0.010898168401603958,
+      "p": 0.561868143725877,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 8 (KS frente a p_cdf)",
+      "n": 6498,
+      "estadistico": 0.012059262928201808,
+      "p": 0.2994231628035691,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 9 (KS frente a p_cdf)",
+      "n": 7594,
+      "estadistico": 0.015492392821553735,
+      "p": 0.051696846494378786,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 10 (KS frente a p_cdf)",
+      "n": 8822,
+      "estadistico": 0.006274686883601055,
+      "p": 0.8770966166585512,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 11 (KS frente a p_cdf)",
+      "n": 9798,
+      "estadistico": 0.006565965844246735,
+      "p": 0.7908872533712846,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 12 (KS frente a p_cdf)",
+      "n": 10826,
+      "estadistico": 0.004975435346241064,
+      "p": 0.9510301553073637,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 13 (KS frente a p_cdf)",
+      "n": 11658,
+      "estadistico": 0.01396412528809221,
+      "p": 0.02099235839813892,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 14 (KS frente a p_cdf)",
+      "n": 12429,
+      "estadistico": 0.010788752123274015,
+      "p": 0.11006283240523645,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 15 (KS frente a p_cdf)",
+      "n": 13353,
+      "estadistico": 0.008277849665112469,
+      "p": 0.31830526522115277,
+      "marcada": false,
+      "p_scipy": null
+     }
+    ],
+    "p_minimo": 0.02099235839813892,
+    "marcadas": 0,
+    "scipy_disponible": false,
+    "nota": "p < alfa exige investigar antes de transportar; con ~22 pruebas por lista la probabilidad de una marca espuria es ~2 por mil"
+   },
+   "problemas": [],
+   "veredicto": "OK"
+  },
+  {
+   "archivo": "geo-train-06_v0_r2_s2026092902.primarios.csv",
+   "ruta": "/home/dapintoo/oe1-trabajo/etapa1/listas/prep-01/A2/geo-train-06_v0_r2_s2026092902.primarios.csv",
+   "n": 100000,
+   "sha256": "b3637415b4e536ec679a652b25f7b47e860bb1308ab0c0478e958b99877d3818",
+   "canon_fnv1a64": "b266bbd227ee2d1a",
+   "linea_check_python": "OE1-CHECK-PRIMARIES file=geo-train-06_v0_r2_s2026092902.primarios.csv n=100000 lf_only=1 header_ok=1 ends_with_newline=1 bad_rows=0 id_min=0 id_max=99999 ids_contiguous=1 dup_ids=0 dup_states=0 nonfinite=0 norm_fail=0 max_norm_dev=2.220446049250313e-16 dz_nonneg=0 ekin_nonpos=0 pdg_bad=0 charge_mismatch=0 n_mu_plus=56180 n_mu_minus=43820 canon_fnv1a64=b266bbd227ee2d1a file_sha256=b3637415b4e536ec679a652b25f7b47e860bb1308ab0c0478e958b99877d3818 sidecar=ok sidecar_n=100000 sidecar_fnv_match=1 sidecar_sha_match=1 status=OK",
+   "estructural": {
+    "defectos": {
+     "lf_only": 1,
+     "header_ok": 1,
+     "ends_with_newline": 1,
+     "bad_rows": 0,
+     "id_min": 0,
+     "id_max": 99999,
+     "ids_contiguous": 1,
+     "dup_ids": 0,
+     "dup_states": 0,
+     "nonfinite": 0,
+     "norm_fail": 0,
+     "max_norm_dev": 2.220446049250313e-16,
+     "dz_nonneg": 0,
+     "ekin_nonpos": 0,
+     "pdg_bad": 0,
+     "charge_mismatch": 0,
+     "n_mu_plus": 56180,
+     "n_mu_minus": 43820
+    },
+    "limpio": true,
+    "coincide_con_check_del_binario": true
+   },
+   "sidecar": {
+    "presente": true,
+    "error": null,
+    "formato_ok": true,
+    "n_ok": true,
+    "canon_ok": true,
+    "sha_ok": true,
+    "radio_base_m": 509.7,
+    "radio_de_partida_ok": true,
+    "case_code_ok": true,
+    "catalogo_sha256": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+    "radio_base_catalogo_ok": true,
+    "nombre_ok": true
+   },
+   "comparacion_con_binario": {
+    "presente": true,
+    "campos": [
+     {
+      "campo": "n",
+      "python": 100000,
+      "binario": "100000",
+      "igual": true
+     },
+     {
+      "campo": "lf_only",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "header_ok",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "ends_with_newline",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "bad_rows",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "id_min",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "id_max",
+      "python": 99999,
+      "binario": "99999",
+      "igual": true
+     },
+     {
+      "campo": "ids_contiguous",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "dup_ids",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "dup_states",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "nonfinite",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "norm_fail",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "dz_nonneg",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "ekin_nonpos",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "pdg_bad",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "charge_mismatch",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "n_mu_plus",
+      "python": 56180,
+      "binario": "56180",
+      "igual": true
+     },
+     {
+      "campo": "n_mu_minus",
+      "python": 43820,
+      "binario": "43820",
+      "igual": true
+     },
+     {
+      "campo": "canon_fnv1a64",
+      "python": "b266bbd227ee2d1a",
+      "binario": "b266bbd227ee2d1a",
+      "igual": true
+     },
+     {
+      "campo": "file_sha256",
+      "python": "b3637415b4e536ec679a652b25f7b47e860bb1308ab0c0478e958b99877d3818",
+      "binario": "b3637415b4e536ec679a652b25f7b47e860bb1308ab0c0478e958b99877d3818",
+      "igual": true
+     },
+     {
+      "campo": "max_norm_dev",
+      "python": 2.220446049250313e-16,
+      "binario": 2.220446049250313e-16,
+      "igual": true
+     }
+    ],
+    "todo_igual": true
+   },
+   "geometria": {
+    "filas_no_finitas": 0,
+    "desviacion_plano_max_m": 9.094947017729282e-13,
+    "exceso_sobre_panel_max_m": 0.0,
+    "radio_de_partida_esperado_m": 1809.7,
+    "desviacion_radio_de_partida_max_m": 9.094947017729282e-13,
+    "impacto_y_rango_m": [
+     -0.5999760685551792,
+     0.5999880195278706
+    ],
+    "impacto_z_rango_m": [
+     0.9000012540032003,
+     2.099997756068774
+    ],
+    "elevacion_rango_grados": [
+     1.9232527627796765,
+     47.08805406241615
+    ],
+    "acimut_relativo_rango_grados": [
+     -29.99924618112703,
+     29.999853808204666
+    ],
+    "tolerancia_m": 1e-09,
+    "ok": true,
+    "rango_angular_ok": true
+   },
+   "estadistica": {
+    "alfa": 0.0001,
+    "pruebas": [
+     {
+      "prueba": "filas de elevacion frente a row_weights (chi-cuadrado)",
+      "n": 100000,
+      "estadistico": 284.2305121404228,
+      "p": 0.10076399639357118,
+      "marcada": false,
+      "p_scipy": null,
+      "gl": 255
+     },
+     {
+      "prueba": "holgura de elevacion dentro de la fila (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.003099000695989451,
+      "p": 0.29164703158598865,
+      "marcada": false,
+      "p_scipy": null,
+      "desviacion_maxima_grados": 0.0882353479520086,
+      "semipaso_grados": 0.08823549999999991
+     },
+     {
+      "prueba": "acimut relativo (KS uniforme en +-30 grados)",
+      "n": 100000,
+      "estadistico": 0.001467557931030039,
+      "p": 0.982360346343581,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "punto de impacto y en el panel (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.0027498987136803654,
+      "p": 0.4355649769996833,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "punto de impacto z en el panel (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.003094151126524669,
+      "p": 0.29338875542523063,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "fraccion de mu+ frente a 0.5613 (binomial exacta)",
+      "n": 100000,
+      "estadistico": 0.5618,
+      "p": 0.7451795381786542,
+      "marcada": false,
+      "p_scipy": null,
+      "mu_plus": 56180,
+      "fraccion": 0.5618
+     },
+     {
+      "prueba": "momento banda 0 (KS frente a p_cdf)",
+      "n": 458,
+      "estadistico": 0.051694001404607615,
+      "p": 0.1679723614299914,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 1 (KS frente a p_cdf)",
+      "n": 633,
+      "estadistico": 0.02526316950919172,
+      "p": 0.8092095267919465,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 2 (KS frente a p_cdf)",
+      "n": 1073,
+      "estadistico": 0.028814390543690546,
+      "p": 0.33066569623824127,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 3 (KS frente a p_cdf)",
+      "n": 1702,
+      "estadistico": 0.016600458289723063,
+      "p": 0.7329292430543077,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 4 (KS frente a p_cdf)",
+      "n": 2517,
+      "estadistico": 0.022554338394943474,
+      "p": 0.15250274119395113,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 5 (KS frente a p_cdf)",
+      "n": 3273,
+      "estadistico": 0.010051264479729816,
+      "p": 0.8940711875008571,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 6 (KS frente a p_cdf)",
+      "n": 4341,
+      "estadistico": 0.01740123985705755,
+      "p": 0.14286242656728104,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 7 (KS frente a p_cdf)",
+      "n": 5419,
+      "estadistico": 0.010893563546221618,
+      "p": 0.5388787903633756,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 8 (KS frente a p_cdf)",
+      "n": 6209,
+      "estadistico": 0.00956901053190884,
+      "p": 0.6184653942383843,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 9 (KS frente a p_cdf)",
+      "n": 7624,
+      "estadistico": 0.0165547016681874,
+      "p": 0.030278731638188238,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 10 (KS frente a p_cdf)",
+      "n": 8717,
+      "estadistico": 0.0074495097576119385,
+      "p": 0.717177666625885,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 11 (KS frente a p_cdf)",
+      "n": 9669,
+      "estadistico": 0.0035618440710813992,
+      "p": 0.9996858549491229,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 12 (KS frente a p_cdf)",
+      "n": 10668,
+      "estadistico": 0.006088696716974762,
+      "p": 0.8228155361981453,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 13 (KS frente a p_cdf)",
+      "n": 11700,
+      "estadistico": 0.007982111162542771,
+      "p": 0.44376467339862175,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 14 (KS frente a p_cdf)",
+      "n": 12588,
+      "estadistico": 0.00960153876732428,
+      "p": 0.19519473571900856,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 15 (KS frente a p_cdf)",
+      "n": 13409,
+      "estadistico": 0.010805731517430028,
+      "p": 0.08673899338803609,
+      "marcada": false,
+      "p_scipy": null
+     }
+    ],
+    "p_minimo": 0.030278731638188238,
+    "marcadas": 0,
+    "scipy_disponible": false,
+    "nota": "p < alfa exige investigar antes de transportar; con ~22 pruebas por lista la probabilidad de una marca espuria es ~2 por mil"
+   },
+   "problemas": [],
+   "veredicto": "OK"
+  },
+  {
+   "archivo": "geo-train-06_v0_r3_s2026092903.primarios.csv",
+   "ruta": "/home/dapintoo/oe1-trabajo/etapa1/listas/prep-01/A2/geo-train-06_v0_r3_s2026092903.primarios.csv",
+   "n": 100000,
+   "sha256": "77a62b535a5262943009ad73cf6a838552049d88cd55fcf2b87588f70a63a93d",
+   "canon_fnv1a64": "81051b5efda04332",
+   "linea_check_python": "OE1-CHECK-PRIMARIES file=geo-train-06_v0_r3_s2026092903.primarios.csv n=100000 lf_only=1 header_ok=1 ends_with_newline=1 bad_rows=0 id_min=0 id_max=99999 ids_contiguous=1 dup_ids=0 dup_states=0 nonfinite=0 norm_fail=0 max_norm_dev=2.220446049250313e-16 dz_nonneg=0 ekin_nonpos=0 pdg_bad=0 charge_mismatch=0 n_mu_plus=56319 n_mu_minus=43681 canon_fnv1a64=81051b5efda04332 file_sha256=77a62b535a5262943009ad73cf6a838552049d88cd55fcf2b87588f70a63a93d sidecar=ok sidecar_n=100000 sidecar_fnv_match=1 sidecar_sha_match=1 status=OK",
+   "estructural": {
+    "defectos": {
+     "lf_only": 1,
+     "header_ok": 1,
+     "ends_with_newline": 1,
+     "bad_rows": 0,
+     "id_min": 0,
+     "id_max": 99999,
+     "ids_contiguous": 1,
+     "dup_ids": 0,
+     "dup_states": 0,
+     "nonfinite": 0,
+     "norm_fail": 0,
+     "max_norm_dev": 2.220446049250313e-16,
+     "dz_nonneg": 0,
+     "ekin_nonpos": 0,
+     "pdg_bad": 0,
+     "charge_mismatch": 0,
+     "n_mu_plus": 56319,
+     "n_mu_minus": 43681
+    },
+    "limpio": true,
+    "coincide_con_check_del_binario": true
+   },
+   "sidecar": {
+    "presente": true,
+    "error": null,
+    "formato_ok": true,
+    "n_ok": true,
+    "canon_ok": true,
+    "sha_ok": true,
+    "radio_base_m": 509.7,
+    "radio_de_partida_ok": true,
+    "case_code_ok": true,
+    "catalogo_sha256": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+    "radio_base_catalogo_ok": true,
+    "nombre_ok": true
+   },
+   "comparacion_con_binario": {
+    "presente": true,
+    "campos": [
+     {
+      "campo": "n",
+      "python": 100000,
+      "binario": "100000",
+      "igual": true
+     },
+     {
+      "campo": "lf_only",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "header_ok",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "ends_with_newline",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "bad_rows",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "id_min",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "id_max",
+      "python": 99999,
+      "binario": "99999",
+      "igual": true
+     },
+     {
+      "campo": "ids_contiguous",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "dup_ids",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "dup_states",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "nonfinite",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "norm_fail",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "dz_nonneg",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "ekin_nonpos",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "pdg_bad",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "charge_mismatch",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "n_mu_plus",
+      "python": 56319,
+      "binario": "56319",
+      "igual": true
+     },
+     {
+      "campo": "n_mu_minus",
+      "python": 43681,
+      "binario": "43681",
+      "igual": true
+     },
+     {
+      "campo": "canon_fnv1a64",
+      "python": "81051b5efda04332",
+      "binario": "81051b5efda04332",
+      "igual": true
+     },
+     {
+      "campo": "file_sha256",
+      "python": "77a62b535a5262943009ad73cf6a838552049d88cd55fcf2b87588f70a63a93d",
+      "binario": "77a62b535a5262943009ad73cf6a838552049d88cd55fcf2b87588f70a63a93d",
+      "igual": true
+     },
+     {
+      "campo": "max_norm_dev",
+      "python": 2.220446049250313e-16,
+      "binario": 2.220446049250313e-16,
+      "igual": true
+     }
+    ],
+    "todo_igual": true
+   },
+   "geometria": {
+    "filas_no_finitas": 0,
+    "desviacion_plano_max_m": 9.094947017729282e-13,
+    "exceso_sobre_panel_max_m": 0.0,
+    "radio_de_partida_esperado_m": 1809.7,
+    "desviacion_radio_de_partida_max_m": 9.094947017729282e-13,
+    "impacto_y_rango_m": [
+     -0.5999742655059208,
+     0.599990490204874
+    ],
+    "impacto_z_rango_m": [
+     0.9000033845464941,
+     2.099991475299703
+    ],
+    "elevacion_rango_grados": [
+     1.9184829127954697,
+     47.08818689848319
+    ],
+    "acimut_relativo_rango_grados": [
+     -29.999760449332314,
+     29.999916060723294
+    ],
+    "tolerancia_m": 1e-09,
+    "ok": true,
+    "rango_angular_ok": true
+   },
+   "estadistica": {
+    "alfa": 0.0001,
+    "pruebas": [
+     {
+      "prueba": "filas de elevacion frente a row_weights (chi-cuadrado)",
+      "n": 100000,
+      "estadistico": 246.7849509189981,
+      "p": 0.6323726329669523,
+      "marcada": false,
+      "p_scipy": null,
+      "gl": 255
+     },
+     {
+      "prueba": "holgura de elevacion dentro de la fila (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.001995814952064967,
+      "p": 0.8202243421069102,
+      "marcada": false,
+      "p_scipy": null,
+      "desviacion_maxima_grados": 0.08823434010627906,
+      "semipaso_grados": 0.08823549999999991
+     },
+     {
+      "prueba": "acimut relativo (KS uniforme en +-30 grados)",
+      "n": 100000,
+      "estadistico": 0.0030198012661140083,
+      "p": 0.321011951983966,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "punto de impacto y en el panel (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.001885518644715034,
+      "p": 0.8689087125773095,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "punto de impacto z en el panel (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.002200218010009747,
+      "p": 0.7178256664585088,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "fraccion de mu+ frente a 0.5613 (binomial exacta)",
+      "n": 100000,
+      "estadistico": 0.56319,
+      "p": 0.22597446708474214,
+      "marcada": false,
+      "p_scipy": null,
+      "mu_plus": 56319,
+      "fraccion": 0.56319
+     },
+     {
+      "prueba": "momento banda 0 (KS frente a p_cdf)",
+      "n": 422,
+      "estadistico": 0.028487297198157346,
+      "p": 0.8787873209392564,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 1 (KS frente a p_cdf)",
+      "n": 684,
+      "estadistico": 0.02376331445768093,
+      "p": 0.8303601568900743,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 2 (KS frente a p_cdf)",
+      "n": 1160,
+      "estadistico": 0.021341955194443707,
+      "p": 0.6617114341683933,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 3 (KS frente a p_cdf)",
+      "n": 1692,
+      "estadistico": 0.03675273658368661,
+      "p": 0.020138077086300336,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 4 (KS frente a p_cdf)",
+      "n": 2355,
+      "estadistico": 0.015636903076387876,
+      "p": 0.6091110517153535,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 5 (KS frente a p_cdf)",
+      "n": 3300,
+      "estadistico": 0.011201893565253918,
+      "p": 0.799919087184303,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 6 (KS frente a p_cdf)",
+      "n": 4194,
+      "estadistico": 0.012376919935844333,
+      "p": 0.5391893813014497,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 7 (KS frente a p_cdf)",
+      "n": 5387,
+      "estadistico": 0.008404617474600085,
+      "p": 0.8397483204388265,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 8 (KS frente a p_cdf)",
+      "n": 6423,
+      "estadistico": 0.011888739794622238,
+      "p": 0.32229612646883077,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 9 (KS frente a p_cdf)",
+      "n": 7594,
+      "estadistico": 0.0070239964993965565,
+      "p": 0.846688068594201,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 10 (KS frente a p_cdf)",
+      "n": 8852,
+      "estadistico": 0.008528275072814062,
+      "p": 0.5385935190302511,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 11 (KS frente a p_cdf)",
+      "n": 9880,
+      "estadistico": 0.009205993332835893,
+      "p": 0.3707897371478529,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 12 (KS frente a p_cdf)",
+      "n": 10668,
+      "estadistico": 0.008614695675307982,
+      "p": 0.40552906982359727,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 13 (KS frente a p_cdf)",
+      "n": 11626,
+      "estadistico": 0.00823713482545635,
+      "p": 0.4078745289218165,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 14 (KS frente a p_cdf)",
+      "n": 12314,
+      "estadistico": 0.005471833919622582,
+      "p": 0.8537029682765492,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 15 (KS frente a p_cdf)",
+      "n": 13449,
+      "estadistico": 0.006926530728317282,
+      "p": 0.5374760837331924,
+      "marcada": false,
+      "p_scipy": null
+     }
+    ],
+    "p_minimo": 0.020138077086300336,
+    "marcadas": 0,
+    "scipy_disponible": false,
+    "nota": "p < alfa exige investigar antes de transportar; con ~22 pruebas por lista la probabilidad de una marca espuria es ~2 por mil"
+   },
+   "problemas": [],
+   "veredicto": "OK"
+  },
+  {
+   "archivo": "geo-train-01_v0_r1_s2026092901.primarios.csv",
+   "ruta": "/home/dapintoo/oe1-trabajo/etapa1/listas/prep-01/A2/geo-train-01_v0_r1_s2026092901.primarios.csv",
+   "n": 100000,
+   "sha256": "bfdbaf9bd5bdc0ebfdcd11e3129c3ea625581ca90107a4d813aa762db6f47a5c",
+   "canon_fnv1a64": "5408480e1aa8038f",
+   "linea_check_python": "OE1-CHECK-PRIMARIES file=geo-train-01_v0_r1_s2026092901.primarios.csv n=100000 lf_only=1 header_ok=1 ends_with_newline=1 bad_rows=0 id_min=0 id_max=99999 ids_contiguous=1 dup_ids=0 dup_states=0 nonfinite=0 norm_fail=0 max_norm_dev=2.220446049250313e-16 dz_nonneg=0 ekin_nonpos=0 pdg_bad=0 charge_mismatch=0 n_mu_plus=56013 n_mu_minus=43987 canon_fnv1a64=5408480e1aa8038f file_sha256=bfdbaf9bd5bdc0ebfdcd11e3129c3ea625581ca90107a4d813aa762db6f47a5c sidecar=ok sidecar_n=100000 sidecar_fnv_match=1 sidecar_sha_match=1 status=OK",
+   "estructural": {
+    "defectos": {
+     "lf_only": 1,
+     "header_ok": 1,
+     "ends_with_newline": 1,
+     "bad_rows": 0,
+     "id_min": 0,
+     "id_max": 99999,
+     "ids_contiguous": 1,
+     "dup_ids": 0,
+     "dup_states": 0,
+     "nonfinite": 0,
+     "norm_fail": 0,
+     "max_norm_dev": 2.220446049250313e-16,
+     "dz_nonneg": 0,
+     "ekin_nonpos": 0,
+     "pdg_bad": 0,
+     "charge_mismatch": 0,
+     "n_mu_plus": 56013,
+     "n_mu_minus": 43987
+    },
+    "limpio": true,
+    "coincide_con_check_del_binario": true
+   },
+   "sidecar": {
+    "presente": true,
+    "error": null,
+    "formato_ok": true,
+    "n_ok": true,
+    "canon_ok": true,
+    "sha_ok": true,
+    "radio_base_m": 656.2,
+    "radio_de_partida_ok": true,
+    "case_code_ok": true,
+    "catalogo_sha256": "ff3c69ab7e37b51c5d4e1318d298a9ddc35446367e6ea4abf5c322e3b86f07b1",
+    "radio_base_catalogo_ok": true,
+    "nombre_ok": true
+   },
+   "comparacion_con_binario": {
+    "presente": true,
+    "campos": [
+     {
+      "campo": "n",
+      "python": 100000,
+      "binario": "100000",
+      "igual": true
+     },
+     {
+      "campo": "lf_only",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "header_ok",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "ends_with_newline",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "bad_rows",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "id_min",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "id_max",
+      "python": 99999,
+      "binario": "99999",
+      "igual": true
+     },
+     {
+      "campo": "ids_contiguous",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "dup_ids",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "dup_states",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "nonfinite",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "norm_fail",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "dz_nonneg",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "ekin_nonpos",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "pdg_bad",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "charge_mismatch",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "n_mu_plus",
+      "python": 56013,
+      "binario": "56013",
+      "igual": true
+     },
+     {
+      "campo": "n_mu_minus",
+      "python": 43987,
+      "binario": "43987",
+      "igual": true
+     },
+     {
+      "campo": "canon_fnv1a64",
+      "python": "5408480e1aa8038f",
+      "binario": "5408480e1aa8038f",
+      "igual": true
+     },
+     {
+      "campo": "file_sha256",
+      "python": "bfdbaf9bd5bdc0ebfdcd11e3129c3ea625581ca90107a4d813aa762db6f47a5c",
+      "binario": "bfdbaf9bd5bdc0ebfdcd11e3129c3ea625581ca90107a4d813aa762db6f47a5c",
+      "igual": true
+     },
+     {
+      "campo": "max_norm_dev",
+      "python": 2.220446049250313e-16,
+      "binario": 2.220446049250313e-16,
+      "igual": true
+     }
+    ],
+    "todo_igual": true
+   },
+   "geometria": {
+    "filas_no_finitas": 0,
+    "desviacion_plano_max_m": 9.094947017729282e-13,
+    "exceso_sobre_panel_max_m": 0.0,
+    "radio_de_partida_esperado_m": 1956.2,
+    "desviacion_radio_de_partida_max_m": 9.094947017729282e-13,
+    "impacto_y_rango_m": [
+     -0.599983497761059,
+     0.5999792069427485
+    ],
+    "impacto_z_rango_m": [
+     0.9000052097906064,
+     2.0999845151605996
+    ],
+    "elevacion_rango_grados": [
+     1.929683740981772,
+     47.08801841910324
+    ],
+    "acimut_relativo_rango_grados": [
+     -29.99822126661425,
+     29.999622709697977
+    ],
+    "tolerancia_m": 1e-09,
+    "ok": true,
+    "rango_angular_ok": true
+   },
+   "estadistica": {
+    "alfa": 0.0001,
+    "pruebas": [
+     {
+      "prueba": "filas de elevacion frente a row_weights (chi-cuadrado)",
+      "n": 100000,
+      "estadistico": 276.80580804846306,
+      "p": 0.16635448669319128,
+      "marcada": false,
+      "p_scipy": null,
+      "gl": 255
+     },
+     {
+      "prueba": "holgura de elevacion dentro de la fila (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.00316382244518032,
+      "p": 0.26906903239311336,
+      "marcada": false,
+      "p_scipy": null,
+      "desviacion_maxima_grados": 0.08823538452931246,
+      "semipaso_grados": 0.08823549999999991
+     },
+     {
+      "prueba": "acimut relativo (KS uniforme en +-30 grados)",
+      "n": 100000,
+      "estadistico": 0.00225257752680863,
+      "p": 0.6901728001350637,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "punto de impacto y en el panel (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.0035790917296887326,
+      "p": 0.1539327565326318,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "punto de impacto z en el panel (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.0023390471589870288,
+      "p": 0.6440984582306624,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "fraccion de mu+ frente a 0.5613 (binomial exacta)",
+      "n": 100000,
+      "estadistico": 0.56013,
+      "p": 0.4617088172203514,
+      "marcada": false,
+      "p_scipy": null,
+      "mu_plus": 56013,
+      "fraccion": 0.56013
+     },
+     {
+      "prueba": "momento banda 0 (KS frente a p_cdf)",
+      "n": 477,
+      "estadistico": 0.0437198624814652,
+      "p": 0.3149778904342484,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 1 (KS frente a p_cdf)",
+      "n": 701,
+      "estadistico": 0.027413776577322857,
+      "p": 0.66219871258641,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 2 (KS frente a p_cdf)",
+      "n": 1045,
+      "estadistico": 0.0213482324775362,
+      "p": 0.7232728783618854,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 3 (KS frente a p_cdf)",
+      "n": 1711,
+      "estadistico": 0.027413321197422152,
+      "p": 0.15044578761648567,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 4 (KS frente a p_cdf)",
+      "n": 2389,
+      "estadistico": 0.009675115078040752,
+      "p": 0.9781577270165253,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 5 (KS frente a p_cdf)",
+      "n": 3301,
+      "estadistico": 0.02652714640888687,
+      "p": 0.018829157948613357,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 6 (KS frente a p_cdf)",
+      "n": 4231,
+      "estadistico": 0.0140192573901613,
+      "p": 0.3742226840158714,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 7 (KS frente a p_cdf)",
+      "n": 5382,
+      "estadistico": 0.015378231996633407,
+      "p": 0.1554640767191474,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 8 (KS frente a p_cdf)",
+      "n": 6424,
+      "estadistico": 0.007295570233095572,
+      "p": 0.8827259073049621,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 9 (KS frente a p_cdf)",
+      "n": 7580,
+      "estadistico": 0.013263569457831692,
+      "p": 0.1378489522919705,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 10 (KS frente a p_cdf)",
+      "n": 8678,
+      "estadistico": 0.005898280009878021,
+      "p": 0.9226422833582578,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 11 (KS frente a p_cdf)",
+      "n": 9631,
+      "estadistico": 0.005222899885620413,
+      "p": 0.954871982213997,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 12 (KS frente a p_cdf)",
+      "n": 10933,
+      "estadistico": 0.008737708825631518,
+      "p": 0.3727818019215094,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 13 (KS frente a p_cdf)",
+      "n": 11619,
+      "estadistico": 0.006257292378754498,
+      "p": 0.7519588141480662,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 14 (KS frente a p_cdf)",
+      "n": 12510,
+      "estadistico": 0.012676255722076757,
+      "p": 0.03558037964824511,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 15 (KS frente a p_cdf)",
+      "n": 13388,
+      "estadistico": 0.006199321311027628,
+      "p": 0.6810124081582996,
+      "marcada": false,
+      "p_scipy": null
+     }
+    ],
+    "p_minimo": 0.018829157948613357,
+    "marcadas": 0,
+    "scipy_disponible": false,
+    "nota": "p < alfa exige investigar antes de transportar; con ~22 pruebas por lista la probabilidad de una marca espuria es ~2 por mil"
+   },
+   "problemas": [],
+   "veredicto": "OK"
+  },
+  {
+   "archivo": "geo-train-01_v0_r2_s2026092902.primarios.csv",
+   "ruta": "/home/dapintoo/oe1-trabajo/etapa1/listas/prep-01/A2/geo-train-01_v0_r2_s2026092902.primarios.csv",
+   "n": 100000,
+   "sha256": "0d78a88443cd41133be1ca2df2865a88227ab4c7febe4c57162d3b1edfc20605",
+   "canon_fnv1a64": "7d9b7bdc7439eb6a",
+   "linea_check_python": "OE1-CHECK-PRIMARIES file=geo-train-01_v0_r2_s2026092902.primarios.csv n=100000 lf_only=1 header_ok=1 ends_with_newline=1 bad_rows=0 id_min=0 id_max=99999 ids_contiguous=1 dup_ids=0 dup_states=0 nonfinite=0 norm_fail=0 max_norm_dev=2.220446049250313e-16 dz_nonneg=0 ekin_nonpos=0 pdg_bad=0 charge_mismatch=0 n_mu_plus=56057 n_mu_minus=43943 canon_fnv1a64=7d9b7bdc7439eb6a file_sha256=0d78a88443cd41133be1ca2df2865a88227ab4c7febe4c57162d3b1edfc20605 sidecar=ok sidecar_n=100000 sidecar_fnv_match=1 sidecar_sha_match=1 status=OK",
+   "estructural": {
+    "defectos": {
+     "lf_only": 1,
+     "header_ok": 1,
+     "ends_with_newline": 1,
+     "bad_rows": 0,
+     "id_min": 0,
+     "id_max": 99999,
+     "ids_contiguous": 1,
+     "dup_ids": 0,
+     "dup_states": 0,
+     "nonfinite": 0,
+     "norm_fail": 0,
+     "max_norm_dev": 2.220446049250313e-16,
+     "dz_nonneg": 0,
+     "ekin_nonpos": 0,
+     "pdg_bad": 0,
+     "charge_mismatch": 0,
+     "n_mu_plus": 56057,
+     "n_mu_minus": 43943
+    },
+    "limpio": true,
+    "coincide_con_check_del_binario": true
+   },
+   "sidecar": {
+    "presente": true,
+    "error": null,
+    "formato_ok": true,
+    "n_ok": true,
+    "canon_ok": true,
+    "sha_ok": true,
+    "radio_base_m": 656.2,
+    "radio_de_partida_ok": true,
+    "case_code_ok": true,
+    "catalogo_sha256": "ff3c69ab7e37b51c5d4e1318d298a9ddc35446367e6ea4abf5c322e3b86f07b1",
+    "radio_base_catalogo_ok": true,
+    "nombre_ok": true
+   },
+   "comparacion_con_binario": {
+    "presente": true,
+    "campos": [
+     {
+      "campo": "n",
+      "python": 100000,
+      "binario": "100000",
+      "igual": true
+     },
+     {
+      "campo": "lf_only",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "header_ok",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "ends_with_newline",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "bad_rows",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "id_min",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "id_max",
+      "python": 99999,
+      "binario": "99999",
+      "igual": true
+     },
+     {
+      "campo": "ids_contiguous",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "dup_ids",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "dup_states",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "nonfinite",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "norm_fail",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "dz_nonneg",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "ekin_nonpos",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "pdg_bad",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "charge_mismatch",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "n_mu_plus",
+      "python": 56057,
+      "binario": "56057",
+      "igual": true
+     },
+     {
+      "campo": "n_mu_minus",
+      "python": 43943,
+      "binario": "43943",
+      "igual": true
+     },
+     {
+      "campo": "canon_fnv1a64",
+      "python": "7d9b7bdc7439eb6a",
+      "binario": "7d9b7bdc7439eb6a",
+      "igual": true
+     },
+     {
+      "campo": "file_sha256",
+      "python": "0d78a88443cd41133be1ca2df2865a88227ab4c7febe4c57162d3b1edfc20605",
+      "binario": "0d78a88443cd41133be1ca2df2865a88227ab4c7febe4c57162d3b1edfc20605",
+      "igual": true
+     },
+     {
+      "campo": "max_norm_dev",
+      "python": 2.220446049250313e-16,
+      "binario": 2.220446049250313e-16,
+      "igual": true
+     }
+    ],
+    "todo_igual": true
+   },
+   "geometria": {
+    "filas_no_finitas": 0,
+    "desviacion_plano_max_m": 9.094947017729282e-13,
+    "exceso_sobre_panel_max_m": 0.0,
+    "radio_de_partida_esperado_m": 1956.2,
+    "desviacion_radio_de_partida_max_m": 9.094947017729282e-13,
+    "impacto_y_rango_m": [
+     -0.5999763218777616,
+     0.5999958597942623
+    ],
+    "impacto_z_rango_m": [
+     0.9000000289647687,
+     2.0999933888633677
+    ],
+    "elevacion_rango_grados": [
+     1.9244601882227377,
+     47.088228527761
+    ],
+    "acimut_relativo_rango_grados": [
+     -29.999737367682116,
+     29.999643985246994
+    ],
+    "tolerancia_m": 1e-09,
+    "ok": true,
+    "rango_angular_ok": true
+   },
+   "estadistica": {
+    "alfa": 0.0001,
+    "pruebas": [
+     {
+      "prueba": "filas de elevacion frente a row_weights (chi-cuadrado)",
+      "n": 100000,
+      "estadistico": 253.32244154974967,
+      "p": 0.5179084076781874,
+      "marcada": false,
+      "p_scipy": null,
+      "gl": 255
+     },
+     {
+      "prueba": "holgura de elevacion dentro de la fila (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.002848600475334806,
+      "p": 0.3911456742901149,
+      "marcada": false,
+      "p_scipy": null,
+      "desviacion_maxima_grados": 0.08823467430330822,
+      "semipaso_grados": 0.08823549999999991
+     },
+     {
+      "prueba": "acimut relativo (KS uniforme en +-30 grados)",
+      "n": 100000,
+      "estadistico": 0.002682721452318515,
+      "p": 0.46733608723987163,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "punto de impacto y en el panel (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.0028575219556356,
+      "p": 0.38727030633221,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "punto de impacto z en el panel (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.003211075409117581,
+      "p": 0.2534286437443826,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "fraccion de mu+ frente a 0.5613 (binomial exacta)",
+      "n": 100000,
+      "estadistico": 0.56057,
+      "p": 0.6486480156374432,
+      "marcada": false,
+      "p_scipy": null,
+      "mu_plus": 56057,
+      "fraccion": 0.56057
+     },
+     {
+      "prueba": "momento banda 0 (KS frente a p_cdf)",
+      "n": 432,
+      "estadistico": 0.022522801753662725,
+      "p": 0.9795636638886603,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 1 (KS frente a p_cdf)",
+      "n": 690,
+      "estadistico": 0.029701579034926484,
+      "p": 0.5705699244159324,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 2 (KS frente a p_cdf)",
+      "n": 1135,
+      "estadistico": 0.014275905042814285,
+      "p": 0.9739396518968275,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 3 (KS frente a p_cdf)",
+      "n": 1701,
+      "estadistico": 0.018224486147546237,
+      "p": 0.6206535300276411,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 4 (KS frente a p_cdf)",
+      "n": 2456,
+      "estadistico": 0.012694763529961267,
+      "p": 0.8212474634896934,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 5 (KS frente a p_cdf)",
+      "n": 3248,
+      "estadistico": 0.018746014832252134,
+      "p": 0.20180741076269595,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 6 (KS frente a p_cdf)",
+      "n": 4250,
+      "estadistico": 0.016945618053493816,
+      "p": 0.17248844498462498,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 7 (KS frente a p_cdf)",
+      "n": 5164,
+      "estadistico": 0.011278544936096702,
+      "p": 0.5249756053461292,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 8 (KS frente a p_cdf)",
+      "n": 6460,
+      "estadistico": 0.010686647574108088,
+      "p": 0.4499165487043903,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 9 (KS frente a p_cdf)",
+      "n": 7587,
+      "estadistico": 0.010887874598324132,
+      "p": 0.32786495390152415,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 10 (KS frente a p_cdf)",
+      "n": 8768,
+      "estadistico": 0.0060699397840087155,
+      "p": 0.902356708949552,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 11 (KS frente a p_cdf)",
+      "n": 9794,
+      "estadistico": 0.011820452497634582,
+      "p": 0.12864249805379205,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 12 (KS frente a p_cdf)",
+      "n": 10630,
+      "estadistico": 0.010246161420889188,
+      "p": 0.21325403818363545,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 13 (KS frente a p_cdf)",
+      "n": 11718,
+      "estadistico": 0.008431843329105654,
+      "p": 0.37400774620612176,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 14 (KS frente a p_cdf)",
+      "n": 12494,
+      "estadistico": 0.0131453787558376,
+      "p": 0.026406148080288353,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 15 (KS frente a p_cdf)",
+      "n": 13473,
+      "estadistico": 0.009654559292741172,
+      "p": 0.16133598308459887,
+      "marcada": false,
+      "p_scipy": null
+     }
+    ],
+    "p_minimo": 0.026406148080288353,
+    "marcadas": 0,
+    "scipy_disponible": false,
+    "nota": "p < alfa exige investigar antes de transportar; con ~22 pruebas por lista la probabilidad de una marca espuria es ~2 por mil"
+   },
+   "problemas": [],
+   "veredicto": "OK"
+  },
+  {
+   "archivo": "geo-train-01_v0_r3_s2026092903.primarios.csv",
+   "ruta": "/home/dapintoo/oe1-trabajo/etapa1/listas/prep-01/A2/geo-train-01_v0_r3_s2026092903.primarios.csv",
+   "n": 100000,
+   "sha256": "f63209cafec65c52dabd909cc9acb78477604c733b4106a3efb80bc46bbe91dd",
+   "canon_fnv1a64": "f37169c5944fbbfb",
+   "linea_check_python": "OE1-CHECK-PRIMARIES file=geo-train-01_v0_r3_s2026092903.primarios.csv n=100000 lf_only=1 header_ok=1 ends_with_newline=1 bad_rows=0 id_min=0 id_max=99999 ids_contiguous=1 dup_ids=0 dup_states=0 nonfinite=0 norm_fail=0 max_norm_dev=2.220446049250313e-16 dz_nonneg=0 ekin_nonpos=0 pdg_bad=0 charge_mismatch=0 n_mu_plus=56356 n_mu_minus=43644 canon_fnv1a64=f37169c5944fbbfb file_sha256=f63209cafec65c52dabd909cc9acb78477604c733b4106a3efb80bc46bbe91dd sidecar=ok sidecar_n=100000 sidecar_fnv_match=1 sidecar_sha_match=1 status=OK",
+   "estructural": {
+    "defectos": {
+     "lf_only": 1,
+     "header_ok": 1,
+     "ends_with_newline": 1,
+     "bad_rows": 0,
+     "id_min": 0,
+     "id_max": 99999,
+     "ids_contiguous": 1,
+     "dup_ids": 0,
+     "dup_states": 0,
+     "nonfinite": 0,
+     "norm_fail": 0,
+     "max_norm_dev": 2.220446049250313e-16,
+     "dz_nonneg": 0,
+     "ekin_nonpos": 0,
+     "pdg_bad": 0,
+     "charge_mismatch": 0,
+     "n_mu_plus": 56356,
+     "n_mu_minus": 43644
+    },
+    "limpio": true,
+    "coincide_con_check_del_binario": true
+   },
+   "sidecar": {
+    "presente": true,
+    "error": null,
+    "formato_ok": true,
+    "n_ok": true,
+    "canon_ok": true,
+    "sha_ok": true,
+    "radio_base_m": 656.2,
+    "radio_de_partida_ok": true,
+    "case_code_ok": true,
+    "catalogo_sha256": "ff3c69ab7e37b51c5d4e1318d298a9ddc35446367e6ea4abf5c322e3b86f07b1",
+    "radio_base_catalogo_ok": true,
+    "nombre_ok": true
+   },
+   "comparacion_con_binario": {
+    "presente": true,
+    "campos": [
+     {
+      "campo": "n",
+      "python": 100000,
+      "binario": "100000",
+      "igual": true
+     },
+     {
+      "campo": "lf_only",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "header_ok",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "ends_with_newline",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "bad_rows",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "id_min",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "id_max",
+      "python": 99999,
+      "binario": "99999",
+      "igual": true
+     },
+     {
+      "campo": "ids_contiguous",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "dup_ids",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "dup_states",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "nonfinite",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "norm_fail",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "dz_nonneg",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "ekin_nonpos",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "pdg_bad",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "charge_mismatch",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "n_mu_plus",
+      "python": 56356,
+      "binario": "56356",
+      "igual": true
+     },
+     {
+      "campo": "n_mu_minus",
+      "python": 43644,
+      "binario": "43644",
+      "igual": true
+     },
+     {
+      "campo": "canon_fnv1a64",
+      "python": "f37169c5944fbbfb",
+      "binario": "f37169c5944fbbfb",
+      "igual": true
+     },
+     {
+      "campo": "file_sha256",
+      "python": "f63209cafec65c52dabd909cc9acb78477604c733b4106a3efb80bc46bbe91dd",
+      "binario": "f63209cafec65c52dabd909cc9acb78477604c733b4106a3efb80bc46bbe91dd",
+      "igual": true
+     },
+     {
+      "campo": "max_norm_dev",
+      "python": 2.220446049250313e-16,
+      "binario": 2.220446049250313e-16,
+      "igual": true
+     }
+    ],
+    "todo_igual": true
+   },
+   "geometria": {
+    "filas_no_finitas": 0,
+    "desviacion_plano_max_m": 9.094947017729282e-13,
+    "exceso_sobre_panel_max_m": 0.0,
+    "radio_de_partida_esperado_m": 1956.2,
+    "desviacion_radio_de_partida_max_m": 9.094947017729282e-13,
+    "impacto_y_rango_m": [
+     -0.5999890816662798,
+     0.5999881793250097
+    ],
+    "impacto_z_rango_m": [
+     0.9000149778530613,
+     2.099997806939882
+    ],
+    "elevacion_rango_grados": [
+     1.9143899335158587,
+     47.08815527376924
+    ],
+    "acimut_relativo_rango_grados": [
+     -29.999428509609178,
+     29.999871696279744
+    ],
+    "tolerancia_m": 1e-09,
+    "ok": true,
+    "rango_angular_ok": true
+   },
+   "estadistica": {
+    "alfa": 0.0001,
+    "pruebas": [
+     {
+      "prueba": "filas de elevacion frente a row_weights (chi-cuadrado)",
+      "n": 100000,
+      "estadistico": 239.30040722341573,
+      "p": 0.7518464143211291,
+      "marcada": false,
+      "p_scipy": null,
+      "gl": 255
+     },
+     {
+      "prueba": "holgura de elevacion dentro de la fila (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.0027001017838055863,
+      "p": 0.4590030831480441,
+      "marcada": false,
+      "p_scipy": null,
+      "desviacion_maxima_grados": 0.08823528625257637,
+      "semipaso_grados": 0.08823549999999991
+     },
+     {
+      "prueba": "acimut relativo (KS uniforme en +-30 grados)",
+      "n": 100000,
+      "estadistico": 0.0016863971545010847,
+      "p": 0.9384218836876577,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "punto de impacto y en el panel (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.002261033261174633,
+      "p": 0.6856818753933261,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "punto de impacto z en el panel (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.003370478301107302,
+      "p": 0.20562560546669126,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "fraccion de mu+ frente a 0.5613 (binomial exacta)",
+      "n": 100000,
+      "estadistico": 0.56356,
+      "p": 0.14801434026597796,
+      "marcada": false,
+      "p_scipy": null,
+      "mu_plus": 56356,
+      "fraccion": 0.56356
+     },
+     {
+      "prueba": "momento banda 0 (KS frente a p_cdf)",
+      "n": 419,
+      "estadistico": 0.0392462422851621,
+      "p": 0.5307459773151786,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 1 (KS frente a p_cdf)",
+      "n": 660,
+      "estadistico": 0.0448414532375383,
+      "p": 0.13709030709395556,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 2 (KS frente a p_cdf)",
+      "n": 1116,
+      "estadistico": 0.01751105804337627,
+      "p": 0.8808343136376519,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 3 (KS frente a p_cdf)",
+      "n": 1718,
+      "estadistico": 0.021456254477247527,
+      "p": 0.40391721770143635,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 4 (KS frente a p_cdf)",
+      "n": 2304,
+      "estadistico": 0.017462828474634318,
+      "p": 0.4800931265101191,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 5 (KS frente a p_cdf)",
+      "n": 3307,
+      "estadistico": 0.027749979832383753,
+      "p": 0.012014310113703637,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 6 (KS frente a p_cdf)",
+      "n": 4275,
+      "estadistico": 0.010708854241682053,
+      "p": 0.7087612027834114,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 7 (KS frente a p_cdf)",
+      "n": 5243,
+      "estadistico": 0.009477540938068962,
+      "p": 0.7320844443680341,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 8 (KS frente a p_cdf)",
+      "n": 6470,
+      "estadistico": 0.012389041159417302,
+      "p": 0.27211483178601514,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 9 (KS frente a p_cdf)",
+      "n": 7517,
+      "estadistico": 0.009992978876974035,
+      "p": 0.4389688758762006,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 10 (KS frente a p_cdf)",
+      "n": 8841,
+      "estadistico": 0.0075869549974993955,
+      "p": 0.6873257409827331,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 11 (KS frente a p_cdf)",
+      "n": 9790,
+      "estadistico": 0.0065105718949176605,
+      "p": 0.7997539783085839,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 12 (KS frente a p_cdf)",
+      "n": 10813,
+      "estadistico": 0.009622616134958739,
+      "p": 0.2680984393514192,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 13 (KS frente a p_cdf)",
+      "n": 11615,
+      "estadistico": 0.011324831430294724,
+      "p": 0.10096657138154895,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 14 (KS frente a p_cdf)",
+      "n": 12406,
+      "estadistico": 0.0066389559302109935,
+      "p": 0.6435726853892207,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 15 (KS frente a p_cdf)",
+      "n": 13506,
+      "estadistico": 0.005539195456396584,
+      "p": 0.8006169469200928,
+      "marcada": false,
+      "p_scipy": null
+     }
+    ],
+    "p_minimo": 0.012014310113703637,
+    "marcadas": 0,
+    "scipy_disponible": false,
+    "nota": "p < alfa exige investigar antes de transportar; con ~22 pruebas por lista la probabilidad de una marca espuria es ~2 por mil"
+   },
+   "problemas": [],
+   "veredicto": "OK"
+  }
+ ],
+ "cruzada": {
+  "listas": 6,
+  "fnv_canonicos_distintos": true,
+  "sha256_distintos": true
+ },
+ "veredicto": "OK",
+ "herramienta": {
+  "scripts_sha256": {
+   "oe1_stage1_analysis.py": "e08d3355e32257fda2330b3c73600aebb46983b61eff71d143a96d07163173a3",
+   "oe1_stage1_common.py": "1575b1e64d0431da50f708c4735930fe3b2457fce7cf2b1f5a29fed5d371fb3e",
+   "oe1_stage1_lists.py": "debbf77aa64e54a68ec7311ad7361b3554de9965f133e77501e9a5cbb865713c",
+   "oe1_stage1_roi.py": "e9b2de31191e569ca92c4b3bb51bc31f1ffed9b90f31e35441beb5e29b9b1105",
+   "oe1_stage1_synthetic.py": "c450d4435c36dffcbaacaeed749c283154bf5668b73ec82a04913d2098e20435",
+   "oe1_stage1_tecnicas.py": "ff2c8f9e121df4c0ec9f3ee2465baea7e8b1a80838e11260eb55ab1d8dedf325"
+  },
+  "entorno": {
+   "python": "3.9.25",
+   "numpy": "2.0.2",
+   "scipy": "no usado",
+   "matplotlib": "no usado",
+   "plataforma": "linux 64-bit"
+  }
+ }
+}

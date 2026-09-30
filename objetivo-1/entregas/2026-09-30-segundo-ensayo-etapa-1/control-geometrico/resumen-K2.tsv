@@ -1,0 +1,5 @@
+binario	caso	salida	status	overlapping	ANOMALY-CSG	clipped_no	G4Exception	cabecera_ok
+A2	geo-train-06	1	OVERLAPS	2	0	0	9	yes
+A2	geo-train-01	0	OK	0	0	0	0	yes
+B2	geo-train-06	0	OK	0	2	2	0	yes
+B2	geo-train-01	0	OK	0	0	0	0	yes

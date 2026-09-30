@@ -1,0 +1,51 @@
+compiler: g++ (GCC) 14.2.0
+output:   /tmp/oe1-k0-30564/cruces
+BUILD FAIL [release] test_region_crossing (see /tmp/oe1-k0-30564/cruces/release/test_region_crossing.build.log)
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/src/GeometryConfig.cc:6:10: fatal error: json.hpp: No such file or directory
+    6 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.
+BUILD FAIL [release] crossing_eval (see /tmp/oe1-k0-30564/cruces/release/crossing_eval.build.log)
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/src/GeometryConfig.cc:6:10: fatal error: json.hpp: No such file or directory
+    6 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.
+BUILD FAIL [release] test_primary_list (see /tmp/oe1-k0-30564/cruces/release/test_primary_list.build.log)
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/tests/test_primary_list.cc:26:10: fatal error: json.hpp: No such file or directory
+   26 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/src/PrimaryList.cc:19:10: fatal error: json.hpp: No such file or directory
+   19 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.
+BUILD FAIL [release] test_oe1_support (see /tmp/oe1-k0-30564/cruces/release/test_oe1_support.build.log)
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/src/PrimaryList.cc:19:10: fatal error: json.hpp: No such file or directory
+   19 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.
+BUILD FAIL [sanitize] test_region_crossing (see /tmp/oe1-k0-30564/cruces/sanitize/test_region_crossing.build.log)
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/src/GeometryConfig.cc:6:10: fatal error: json.hpp: No such file or directory
+    6 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.
+BUILD FAIL [sanitize] crossing_eval (see /tmp/oe1-k0-30564/cruces/sanitize/crossing_eval.build.log)
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/src/GeometryConfig.cc:6:10: fatal error: json.hpp: No such file or directory
+    6 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.
+BUILD FAIL [sanitize] test_primary_list (see /tmp/oe1-k0-30564/cruces/sanitize/test_primary_list.build.log)
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/tests/test_primary_list.cc:26:10: fatal error: json.hpp: No such file or directory
+   26 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/src/PrimaryList.cc:19:10: fatal error: json.hpp: No such file or directory
+   19 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.
+BUILD FAIL [sanitize] test_oe1_support (see /tmp/oe1-k0-30564/cruces/sanitize/test_oe1_support.build.log)
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/src/PrimaryList.cc:19:10: fatal error: json.hpp: No such file or directory
+   19 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.
+TESTS FAILED (summary: /tmp/oe1-k0-30564/cruces/pruebas-cruces.json)

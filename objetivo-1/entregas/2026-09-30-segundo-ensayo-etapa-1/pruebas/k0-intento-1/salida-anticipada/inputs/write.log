@@ -1,0 +1,1 @@
+OE1-WRITE-PRIMARIES file=geo-train-06_v0_r0_s2026092990.primarios.csv geometry=geo-train-06 view=0 case_code=6 replica=0 source_seed=2026092990 n=20 n_mu_plus=10 canon_fnv1a64=e144b22787097bc5 file_sha256=2497dad0f85f6a367ac8b59cfba859de21265ccc0af8f8fca401970326c37d32 status=OK

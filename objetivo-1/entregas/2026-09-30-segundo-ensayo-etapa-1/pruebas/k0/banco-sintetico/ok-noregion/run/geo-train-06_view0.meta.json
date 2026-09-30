@@ -1,0 +1,163 @@
+{
+ "detected_in_bins": 2,
+ "detector": {
+  "distance_m": 1000.0,
+  "height_m": 1.5,
+  "side_m": 1.2
+ },
+ "ecomug_draws_total": 19,
+ "engine": "geant4-$Name: geant4-11-04-patch-02 [MT]$",
+ "events_transported": 19,
+ "exposure_days": -1.0,
+ "geometry_id": "geo-train-06",
+ "grid": {
+  "az_half_deg": 30.0,
+  "el_max_deg": 47.0,
+  "el_min_deg": 2.0,
+  "n_az": 256,
+  "n_el": 256
+ },
+ "mean_ekin_detected_gev": 66.5,
+ "oe1_etapa1": {
+  "binary_sha256": "43fa12ba95ab922fe7e157be0881395e55eae6ab2cf111575770e6ab9c6d21e7",
+  "case_code": 6,
+  "checks": {
+   "detected_equal": true,
+   "ekin_sum_equal": true,
+   "events_equal": true,
+   "generated_equal": true,
+   "hist_reconstructed_equal": true,
+   "ids_complete_unique": true,
+   "variant_matches_geometry": null,
+   "writes_ok": true
+  },
+  "counts": {
+   "crossed": null,
+   "entries_z": null,
+   "graze_muons": null,
+   "graze_steps": null,
+   "in_rint": 1,
+   "max_lat_mm": 9.0,
+   "max_lat_z_mm": null,
+   "max_sum_lat_z_mm": null,
+   "near_z_muons": null,
+   "near_z_steps": null,
+   "status": {
+    "ABORTED": 0,
+    "DECAY": 1,
+    "DET": 2,
+    "MU_CAPTURE": 1,
+    "OTHER": 12,
+    "PLANE_OUT": 1,
+    "STOPPED": 1,
+    "WORLD_EXIT": 1
+   },
+   "steps_z": null,
+   "steps_z_both_out": null,
+   "z_muons": null
+  },
+  "errors": [],
+  "format": "oe1-etapa1/1",
+  "geometry_signature": {
+   "fnv1a64": "01104264b468b139",
+   "variant_check_note": "",
+   "volumes": [
+    "anomaly_0:G4SubtractionSolid:anomaly_0_mat",
+    "anomaly_1:G4Box:anomaly_1_mat",
+    "detector:G4Box:G4_AIR",
+    "world:G4Box:G4_AIR"
+   ]
+  },
+  "inputs": {
+   "geometry_json": {
+    "file": "geo-train-06.json",
+    "sha256": "713e342588d369b663d20b70b7c04480acf40b5873ebc4264848db5968606bb7"
+   },
+   "tables": {
+    "meta.json": "5eedd117eabf1704e82d04ea99a303c4cc0d26bed124a8bc29f4bda45b60e0ae",
+    "p_cdf.txt": "3195693940723db29bb18c6b0fb35cacdd26cdc825db479eea9537aafd86d7f3",
+    "row_weights_30d.txt": "a7c6882a45dbaefd37c17f1da98fee82c0ba4fa5d79908d624741725ff887328"
+   }
+  },
+  "list": {
+   "canon_fnv1a64": "0048cde81859a0de",
+   "file": "geo-train-06_v0_r1_s2026092901.primarios.csv",
+   "n": 19,
+   "sha256": "649bd59509d5f419929448514b7c49ef98a4d8774644bbd08c974a9046c4b560",
+   "sha256_verified": true,
+   "sidecar_case_code": 6,
+   "sidecar_kind": "source-model",
+   "sidecar_replica": 1,
+   "source_seed": 2026092901
+  },
+  "mode": "list",
+  "muon_log": {
+   "bytes": 4682,
+   "columns": 49,
+   "file": "geo-train-06_view0_muones.csv",
+   "fnv1a64": "ff07d408f5782e18",
+   "level": "full",
+   "rows": 19
+  },
+  "region": {
+   "applicable": false,
+   "explicit_none": true,
+   "geometry_anomalies": 2
+  },
+  "replica": 1,
+  "roi_mask": {
+   "cols": [
+    131,
+    138
+   ],
+   "content_fnv1a64": "41e6c2f107e394b5",
+   "file": "mask.txt",
+   "in_rint": "1/0 = detected inside/outside the mask; -1 = not detected",
+   "indexing": "line = iEl (hist.csv row), character = iAz (hist.csv column)",
+   "ones": 272,
+   "rows": [
+    17,
+    50
+   ],
+   "sha256": "370faf95ecc1617745a453fa1b170675872ea7246019431d65f2450c3255c190",
+   "sha256_verified": true
+  },
+  "runtime": {
+   "master_engine": "MixMaxRng",
+   "run_manager_class": "G4TaskRunManager",
+   "threads_cli": 1,
+   "worker_engines": [
+    "MixMaxRng"
+   ],
+   "worker_thread_ids": [
+    -1
+   ]
+  },
+  "seeds": {
+   "master_applied": 878609254,
+   "master_cli": 3026092901,
+   "master_rule": "CLHEP::HepRandom::setTheSeed(seed % 2147483647) before the run manager (unchanged)",
+   "source_key_text": "{s_src, case_code, 0, TAG_SRC=0x4F455331} (list generation)",
+   "source_seed": 2026092901,
+   "transport_key": [
+    "event_id",
+    1026092901,
+    6,
+    1329943601
+   ],
+   "transport_key_text": "G4Random::setTheSeeds({event_id, s_tr, case_code, TAG_TR=0x4F455431}, 4) in EventAction::BeginOfEventAction",
+   "transport_seed": 1026092901
+  },
+  "variant": "B"
+ },
+ "physics_note": "secondaries killed at creation; primary-only transport for transmission counting",
+ "rusage_max_rss_kb": 33216,
+ "rusage_system_cpu_seconds": 0.013668,
+ "rusage_user_cpu_seconds": 0.097593,
+ "sampling": "table-driven: protocol lambda_open row weights (Guan-normalized, surrogate convention) + real-EcoMug momentum spectra; backtracked line of sight, uniform panel impact",
+ "seconds_per_event": 1.1473036322154497e-08,
+ "seed": 3026092901,
+ "threads": 1,
+ "view_index": 0,
+ "wall_seconds": 2.1798769012093544e-07
+}

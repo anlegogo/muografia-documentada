@@ -1,0 +1,18 @@
+/home/dapintoo/oe1-trabajo/subida-etapa1/repo-A2/scripts/simulation/geant4_app/muography_sim.cc:4:1: warning: multi-line comment [-Wcomment]
+    4 | //   muography_sim --geometry <catalog.json> --view <0-5> --tables DIR \
+      | ^
+/home/dapintoo/oe1-trabajo/subida-etapa1/repo-A2/scripts/simulation/geant4_app/muography_sim.cc: In function ‘int main(int, char**)’:
+/home/dapintoo/oe1-trabajo/subida-etapa1/repo-A2/scripts/simulation/geant4_app/muography_sim.cc:488:22: warning: declaration of ‘s’ shadows a global declaration [-Wshadow]
+  488 |     for (const auto& s : slicesY) geomdiag::RunSliceY(cfg.geometry_id, view, outDir, s);
+      |                      ^
+In file included from /opt/ohpc/pub/apps/geant4/11.4.2/include/Geant4/FTFP_BERT.hh:41,
+                 from /home/dapintoo/oe1-trabajo/subida-etapa1/repo-A2/scripts/simulation/geant4_app/muography_sim.cc:66:
+/opt/ohpc/pub/apps/geant4/11.4.2/include/Geant4/CLHEP/Units/SystemOfUnits.h:155:28: note: shadowed declaration is here
+  155 |   static constexpr double  s = second;
+      |                            ^
+/home/dapintoo/oe1-trabajo/subida-etapa1/repo-A2/scripts/simulation/geant4_app/muography_sim.cc:489:22: warning: declaration of ‘s’ shadows a global declaration [-Wshadow]
+  489 |     for (const auto& s : slicesZ) geomdiag::RunSliceZ(cfg.geometry_id, view, outDir, s);
+      |                      ^
+/opt/ohpc/pub/apps/geant4/11.4.2/include/Geant4/CLHEP/Units/SystemOfUnits.h:155:28: note: shadowed declaration is here
+  155 |   static constexpr double  s = second;
+      |                            ^

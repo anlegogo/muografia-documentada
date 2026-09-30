@@ -1,0 +1,26 @@
+=== technical lists
+=== launching 14 technical runs, 6 at a time
+=== evaluation
+T-L (A): OK
+T-L (B): OK
+T-R: OK
+T-M: OK
+T-P: OK
+T-S (A2): clasificacion 60/60, longitud 20/20, materiales 60/60, no detectados 0 -> OK
+T-S (B2): clasificacion 60/60, longitud 20/20, materiales 60/60, no detectados 0 -> OK
+T-F: OK
+T-F   OK
+T-L (A) OK
+T-L (B) OK
+T-M   OK
+T-P   OK
+T-R   OK
+T-S (A2) OK
+T-S (B2) OK
+PRUEBAS TÉCNICAS: OK
+fecha_utc=2026-09-30T19:58:43Z
+trabajo=30568
+nodo=guane02.sc3.uis.edu.co
+TEC_NN=01
+fallos=0
+resultado=OK

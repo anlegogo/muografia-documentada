@@ -1,0 +1,17 @@
+=== cruces 19:33:21
+cruces rc=1
+=== banco-sintetico 19:34:31
+banco-sintetico rc=1
+=== salida-anticipada 19:34:44
+salida-anticipada rc=0
+=== inercia-legado 19:34:50
+inercia-legado rc=1
+=== pruebas-python 19:34:57
+pruebas-python rc=1
+=== auditoria-aleatorios-A2 19:35:01
+auditoria-aleatorios-A2 rc=0
+=== auditoria-aleatorios-B2 19:35:04
+auditoria-aleatorios-B2 rc=0
+TOTAL rc=1
+srun: error: guane01: task 0: Exited with exit code 1
+EXIT=1

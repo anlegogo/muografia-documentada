@@ -1,0 +1,1 @@
+wrote /home/dapintoo/oe1-trabajo/etapa1/pruebas/tecnicas-01/tf/manifiesto-corridas.tsv (5 rows) and /home/dapintoo/oe1-trabajo/etapa1/pruebas/tecnicas-01/tf/entradas-esperadas.sha256 (12 files)

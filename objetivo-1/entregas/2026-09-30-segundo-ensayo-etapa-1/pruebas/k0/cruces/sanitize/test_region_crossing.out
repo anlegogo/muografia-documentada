@@ -1,0 +1,23 @@
+PASS C1 vertical through the centroid (0.03 s)
+PASS C2 horizontal through the centroid (0.00 s)
+PASS C3 tangent to the conduit and to the dense body (0.00 s)
+PASS C4 crosses both primitives, misses Z (0.05 s)
+PASS C5 inside only one primitive (0.00 s)
+PASS C6 fully inside / half inside (0.06 s)
+PASS C7 degenerate and axis-parallel segments (2.91 s)
+  C8: worst |sum(pieces) - whole| over 1e4 polylines = 2.95e-12 m
+PASS C8 additivity of pieces and entry counting (0.12 s)
+  C9: worst |len_fwd - len_rev| / tolerance over 1e5 segments = 0.272 (must be <= 1)
+PASS C9 reversal of 1e5 segments (0.34 s)
+  nearZ: 6502 of 20000 random segments hit Z, 7479 are near
+PASS nearZ: chord meets both primitives grown by 1 m (0.05 s)
+PASS extras: long chord, ZBox, sphere, invalid pairs (0.00 s)
+PASS EntryCounter: zero chords, misses and slivers (0.00 s)
+PASS catalog primitives equal the test constants (0.01 s)
+  V: Z by vertical lines (h=0.02)      = 83663.27504 (director 83663.70318, diff -0.4281)
+  V: Z by lines along x (h=0.04)       = 83664.49103 (diff +0.7878)
+  V: Z by lines detector->centroid (h=0.04) = 83664.81407 (diff +1.1109)
+  V: conduit alone (cells 0.005 x 1)   = 471050.59221 (exact 471050.40248, diff +0.1897)
+  V: dense body alone (h=0.1)         = 1215149.23582 (exact 1215148.53540, diff +0.7004)
+PASS V volume by parallel-line grids [fast] (16.72 s)
+test_region_crossing: 453607 checks, 0 failed

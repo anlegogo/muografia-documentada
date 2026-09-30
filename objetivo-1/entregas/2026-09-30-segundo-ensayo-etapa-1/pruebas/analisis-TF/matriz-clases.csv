@@ -1,0 +1,13 @@
+caso,ambito,clase_A,clase_B,n,ids_fuera_de_la_diagonal,etiqueta
+geo-train-06,replica 0,R_rock,R_rock,3,,
+geo-train-06,replica 0,R_sky,R_sky,1486,,
+geo-train-06,replica 0,no detectado,no detectado,511,,
+geo-train-06,agrupado,R_rock,R_rock,3,,
+geo-train-06,agrupado,R_sky,R_sky,1486,,
+geo-train-06,agrupado,no detectado,no detectado,511,,
+geo-train-01,replica 0,R_rock,R_rock,20,,control angular
+geo-train-01,replica 0,R_sky,R_sky,1450,,control angular
+geo-train-01,replica 0,no detectado,no detectado,530,,control angular
+geo-train-01,agrupado,R_rock,R_rock,20,,control angular
+geo-train-01,agrupado,R_sky,R_sky,1450,,control angular
+geo-train-01,agrupado,no detectado,no detectado,530,,control angular

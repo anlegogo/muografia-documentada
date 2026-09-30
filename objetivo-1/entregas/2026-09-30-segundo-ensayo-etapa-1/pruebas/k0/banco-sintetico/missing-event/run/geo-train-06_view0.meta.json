@@ -1,0 +1,212 @@
+{
+ "detected_in_bins": 2,
+ "detector": {
+  "distance_m": 1000.0,
+  "height_m": 1.5,
+  "side_m": 1.2
+ },
+ "ecomug_draws_total": 18,
+ "engine": "geant4-$Name: geant4-11-04-patch-02 [MT]$",
+ "events_transported": 18,
+ "exposure_days": -1.0,
+ "geometry_id": "geo-train-06",
+ "grid": {
+  "az_half_deg": 30.0,
+  "el_max_deg": 47.0,
+  "el_min_deg": 2.0,
+  "n_az": 256,
+  "n_el": 256
+ },
+ "mean_ekin_detected_gev": 66.5,
+ "oe1_etapa1": {
+  "binary_sha256": "43fa12ba95ab922fe7e157be0881395e55eae6ab2cf111575770e6ab9c6d21e7",
+  "case_code": 6,
+  "checks": {
+   "detected_equal": true,
+   "ekin_sum_equal": true,
+   "events_equal": false,
+   "generated_equal": false,
+   "hist_reconstructed_equal": true,
+   "ids_complete_unique": false,
+   "variant_matches_geometry": true,
+   "writes_ok": true
+  },
+  "counts": {
+   "crossed": 7,
+   "entries_z": 9,
+   "graze_muons": 1,
+   "graze_steps": 1,
+   "in_rint": 1,
+   "max_lat_mm": 9.0,
+   "max_lat_z_mm": 4.0,
+   "max_sum_lat_z_mm": 4.0,
+   "near_z_muons": 10,
+   "near_z_steps": 19,
+   "status": {
+    "ABORTED": 0,
+    "DECAY": 1,
+    "DET": 2,
+    "MU_CAPTURE": 0,
+    "OTHER": 12,
+    "PLANE_OUT": 1,
+    "STOPPED": 1,
+    "WORLD_EXIT": 1
+   },
+   "steps_z": 11,
+   "steps_z_both_out": 5,
+   "z_muons": 9
+  },
+  "errors": [
+   "events_transported_mismatch",
+   "generated_count_mismatch",
+   "ids_incomplete_or_duplicate"
+  ],
+  "format": "oe1-etapa1/1",
+  "geometry_signature": {
+   "fnv1a64": "01104264b468b139",
+   "variant_check_note": "",
+   "volumes": [
+    "anomaly_0:G4SubtractionSolid:anomaly_0_mat",
+    "anomaly_1:G4Box:anomaly_1_mat",
+    "detector:G4Box:G4_AIR",
+    "world:G4Box:G4_AIR"
+   ]
+  },
+  "inputs": {
+   "geometry_json": {
+    "file": "geo-train-06.json",
+    "sha256": "713e342588d369b663d20b70b7c04480acf40b5873ebc4264848db5968606bb7"
+   },
+   "tables": {
+    "meta.json": "5eedd117eabf1704e82d04ea99a303c4cc0d26bed124a8bc29f4bda45b60e0ae",
+    "p_cdf.txt": "3195693940723db29bb18c6b0fb35cacdd26cdc825db479eea9537aafd86d7f3",
+    "row_weights_30d.txt": "a7c6882a45dbaefd37c17f1da98fee82c0ba4fa5d79908d624741725ff887328"
+   }
+  },
+  "list": {
+   "canon_fnv1a64": "0048cde81859a0de",
+   "file": "geo-train-06_v0_r1_s2026092901.primarios.csv",
+   "n": 19,
+   "sha256": "649bd59509d5f419929448514b7c49ef98a4d8774644bbd08c974a9046c4b560",
+   "sha256_verified": true,
+   "sidecar_case_code": 6,
+   "sidecar_kind": "source-model",
+   "sidecar_replica": 1,
+   "source_seed": 2026092901
+  },
+  "mode": "list",
+  "muon_log": {
+   "bytes": 5957,
+   "columns": 49,
+   "file": "geo-train-06_view0_muones.csv",
+   "fnv1a64": "8f406539c4c2bf8d",
+   "level": "full",
+   "rows": 18
+  },
+  "region": {
+   "applicable": true,
+   "cylinder_m": {
+    "cx": 20.3,
+    "cy": -24.5,
+    "r": 21.0,
+    "z0": 0.0,
+    "z1": 340.0
+   },
+   "definitions": "per primary step, exact interval of the pre->post CHORD with cylinder intersect ellipsoid. The chord is not the path followed: multiple scattering displaces the post-step point sideways, so lengths in Z are chord lengths and their error is reported, not zero: max_lat_mm = largest lateral displacement over all primary steps (diagnostic); max_lat_z_mm / sum_lat_z_mm = largest / summed lateral displacement over the steps near Z (chord meets both primitives grown by near_margin_m); sum_lat_z_mm is a scale of the error of the chord lengths in Z, not a bound. crossed = some step longer than 2 eps inside Z with positive length inside Z shrunk by eps (so crossed = 1 implies n_steps_z >= 1); graze = touches Z grown by eps away from both step ends; lz_true = chord length x StepLength/|chord|; length split by the pre-step material; e_in/e_out interpolated along the chord with the step's [E_post, E_pre] bracket",
+   "ellipsoid_m": {
+    "ax": 72.9,
+    "ay": 61.6,
+    "az": 64.6,
+    "cx": 32.2,
+    "cy": -74.1,
+    "cz": 137.8
+   },
+   "eps_m": 1e-06,
+   "explicit_none": false,
+   "frame": "world, metres (cone axis at the origin, ground at z = 0)",
+   "geometry_anomalies": 2,
+   "kinds": [
+    "conduit",
+    "dense_body"
+   ],
+   "materials": {
+    "A0": "anomaly_0_mat",
+    "A1": "anomaly_1_mat",
+    "AIR": "G4_AIR",
+    "R": "standard_rock"
+   },
+   "near_margin_m": 1.0,
+   "pair": [
+    0,
+    1
+   ],
+   "zbox_m": {
+    "hi": [
+     41.3,
+     -12.499999999999993,
+     202.4
+    ],
+    "lo": [
+     -0.6999999999999993,
+     -45.5,
+     73.20000000000002
+    ]
+   }
+  },
+  "replica": 1,
+  "roi_mask": {
+   "cols": [
+    131,
+    138
+   ],
+   "content_fnv1a64": "41e6c2f107e394b5",
+   "file": "mask.txt",
+   "in_rint": "1/0 = detected inside/outside the mask; -1 = not detected",
+   "indexing": "line = iEl (hist.csv row), character = iAz (hist.csv column)",
+   "ones": 272,
+   "rows": [
+    17,
+    50
+   ],
+   "sha256": "370faf95ecc1617745a453fa1b170675872ea7246019431d65f2450c3255c190",
+   "sha256_verified": true
+  },
+  "runtime": {
+   "master_engine": "MixMaxRng",
+   "run_manager_class": "G4TaskRunManager",
+   "threads_cli": 1,
+   "worker_engines": [
+    "MixMaxRng"
+   ],
+   "worker_thread_ids": [
+    -1
+   ]
+  },
+  "seeds": {
+   "master_applied": 878609254,
+   "master_cli": 3026092901,
+   "master_rule": "CLHEP::HepRandom::setTheSeed(seed % 2147483647) before the run manager (unchanged)",
+   "source_key_text": "{s_src, case_code, 0, TAG_SRC=0x4F455331} (list generation)",
+   "source_seed": 2026092901,
+   "transport_key": [
+    "event_id",
+    1026092901,
+    6,
+    1329943601
+   ],
+   "transport_key_text": "G4Random::setTheSeeds({event_id, s_tr, case_code, TAG_TR=0x4F455431}, 4) in EventAction::BeginOfEventAction",
+   "transport_seed": 1026092901
+  },
+  "variant": "B"
+ },
+ "physics_note": "secondaries killed at creation; primary-only transport for transmission counting",
+ "rusage_max_rss_kb": 33024,
+ "rusage_system_cpu_seconds": 0.014778999999999999,
+ "rusage_user_cpu_seconds": 0.095663,
+ "sampling": "table-driven: protocol lambda_open row weights (Guan-normalized, surrogate convention) + real-EcoMug momentum spectra; backtracked line of sight, uniform panel impact",
+ "seconds_per_event": 1.1667402254210579e-08,
+ "seed": 3026092901,
+ "threads": 1,
+ "view_index": 0,
+ "wall_seconds": 2.100132405757904e-07
+}

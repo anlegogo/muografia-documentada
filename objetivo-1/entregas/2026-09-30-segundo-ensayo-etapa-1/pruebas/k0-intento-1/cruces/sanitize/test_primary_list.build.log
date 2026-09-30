@@ -1,0 +1,8 @@
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/tests/test_primary_list.cc:26:10: fatal error: json.hpp: No such file or directory
+   26 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/src/PrimaryList.cc:19:10: fatal error: json.hpp: No such file or directory
+   19 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.

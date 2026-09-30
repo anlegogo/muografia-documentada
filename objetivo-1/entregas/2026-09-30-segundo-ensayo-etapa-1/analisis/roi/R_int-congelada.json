@@ -1,0 +1,57 @@
+{
+ "formato": "oe1-roi-congelada/1",
+ "mascara": "R_int",
+ "descripcion": "R_int del piloto (712c786), congelada para la etapa 1. PROT:59 prohibe redefinirla; la orientacion se demuestra geometricamente con oe1_stage1_roi.py kroi.",
+ "origen": {
+  "repositorio": "muografia-documentada",
+  "commit": "712c786",
+  "ruta": "objetivo-1/entregas/2026-09-29-geo-train-06/analisis/roi-mascaras.npz",
+  "clave_npz": "R_int",
+  "sha256_archivo": "7546773bc4a5e4e13c8a1ada843c0b6f9559d238c5b6f1a6bcbbbac6d0907d8c",
+  "construida_por": "oe1_pilot_roi.py preregister (repositorio de codigo, commit fa21f57)"
+ },
+ "hash_contenido": {
+  "algoritmo": "sha256",
+  "sobre": "R_int.tobytes() (orden C, bool, 1 byte por pixel)",
+  "valor": "3029f266419a6a156ecf809a2967bf1b9b72349c6a95e4697115a740140cce63"
+ },
+ "orientacion": {
+  "indices": "[iEl, iAz]",
+  "filas": "iEl = linea de hist.csv (elevacion 2 a 47 grados, centros de linspace)",
+  "columnas": "iAz = columna de hist.csv (acimut relativo -30 a +30 grados, centros de linspace)",
+  "transformaciones": "ninguna (sin transposicion ni volteo)"
+ },
+ "texto": {
+  "archivo": "R_int.mask.txt",
+  "formato": "256 lineas terminadas en LF de 256 caracteres '0'/'1'; linea = iEl, caracter = iAz (RoiMask.hh)",
+  "bytes": 65792,
+  "sha256": "e76dcbe5926f9f4aeb61c556729d15c64124cd50a8577dca6beee9ffa317c5fd"
+ },
+ "herramienta": {
+  "scripts_sha256": {
+   "oe1_stage1_roi.py": "e9b2de31191e569ca92c4b3bb51bc31f1ffed9b90f31e35441beb5e29b9b1105",
+   "oe1_stage1_common.py": "1575b1e64d0431da50f708c4735930fe3b2457fce7cf2b1f5a29fed5d371fb3e"
+  },
+  "entorno": {
+   "python": "3.13.5",
+   "numpy": "2.4.4",
+   "scipy": "no usado",
+   "matplotlib": "no usado",
+   "plataforma": "win32 64-bit"
+  }
+ },
+ "forma": [
+  256,
+  256
+ ],
+ "dtype": "bool",
+ "pixeles": 195,
+ "filas": [
+  17,
+  50
+ ],
+ "columnas": [
+  131,
+  138
+ ]
+}

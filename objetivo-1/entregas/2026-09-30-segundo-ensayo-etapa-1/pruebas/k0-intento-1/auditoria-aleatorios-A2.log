@@ -1,0 +1,60 @@
+audit_rng.sh: 2026-09-30T19:35:01Z host=guane01.sc3.uis.edu.co
+input: unified diff /home/dapintoo/oe1-trabajo/etapa1/registro/P2-instrumentacion.diff sha256=caf69f4fb108d5038152bc5f8df082cdea5a3547f183a464e19f01281d1c07dd
+ok    muography_sim.cc:141: engine variable 'previous'
+ok    muography_sim.cc:184: engine variable 'fresh'
+ok    muography_sim.cc:139: engine variable 'engine'
+ok    muography_sim.cc:186: the fresh.flat() proof of --write-primaries (private engine, 7 draws per muon)
+ok    muography_sim.cc:140: engine.setSeeds
+ok    muography_sim.cc:141: G4Random::getTheEngine
+ok    muography_sim.cc:142: G4Random::setTheEngine
+ok    muography_sim.cc:185: fresh.setSeeds
+ok    muography_sim.cc:187: fresh.put
+ok    muography_sim.cc:187: engine.put
+ok    muography_sim.cc:189: G4Random::setTheEngine
+ok    muography_sim.cc:417: G4Random::getTheEngine
+ok    muography_sim.cc:417: getTheEngine()->name
+ok    src/EventAction.cc:77: G4Random::setTheSeeds
+ok    src/EventAction.cc:78: G4Random::getTheEngine
+ok    src/EventAction.cc:82: engine->put
+ok    src/EventAction.cc:86: engine->name
+ok    src/EventAction.cc:227: G4Random::getTheEngine
+ok    src/EventAction.cc:227: getTheEngine()->put
+
+audited lines per file (added lines in diff mode):
+      9  include/ActionInitialization.hh
+     81  include/EventAction.hh
+    293  include/MuonRecord.hh
+     87  include/Oe1Cli.hh
+    111  include/Oe1Hash.hh
+    253  include/Oe1ListMode.hh
+      8  include/PrimaryGeneratorAction.hh
+    157  include/PrimaryList.hh
+    358  include/RegionCrossing.hh
+    124  include/RoiMask.hh
+     16  include/RunAction.hh
+     44  include/RunData.hh
+    184  include/Sha256.hh
+      5  include/SteppingAction.hh
+    307  muography_sim.cc
+     38  src/ActionInitialization.cc
+    256  src/EventAction.cc
+    361  src/Oe1Cli.cc
+     21  src/PrimaryGeneratorAction.cc
+    465  src/PrimaryList.cc
+    435  src/RunAction.cc
+      5  src/SteppingAction.cc
+skipped files (not part of the binary, or not C++): 13
+allowed engine touches / proofs found: 19
+findings: 0
+
+nm -C --undefined-only over 8 object files (RNG / navigator related symbols):
+  ok    src/EventAction.cc.o: 3 matching symbols, all allowed
+  ok    src/RunAction.cc.o: 0 matching symbols, all allowed
+  ok    src/PrimaryList.cc.o: 0 matching symbols, all allowed
+  ok    src/Oe1Cli.cc.o: 0 matching symbols, all allowed
+  ok    src/SteppingAction.cc.o: 0 matching symbols, all allowed
+  ok    src/ActionInitialization.cc.o: 0 matching symbols, all allowed
+  ok    src/PrimaryGeneratorAction.cc.o: 2 matching symbols, all allowed
+  ok    muography_sim.cc.o: 4 matching symbols, all allowed
+
+RESULT: PASS (no random number is drawn and no navigator is queried by the code P2 adds)

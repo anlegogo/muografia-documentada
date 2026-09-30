@@ -1,0 +1,20 @@
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/tests/g4/test_list_mode_g4.cc:82:10: fatal error: json.hpp: No such file or directory
+   82 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/src/RunAction.cc:29:10: fatal error: json.hpp: No such file or directory
+   29 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/src/PrimaryList.cc:19:10: fatal error: json.hpp: No such file or directory
+   19 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/src/FluxTables.cc:9:10: fatal error: json.hpp: No such file or directory
+    9 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/src/GeometryConfig.cc:6:10: fatal error: json.hpp: No such file or directory
+    6 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.

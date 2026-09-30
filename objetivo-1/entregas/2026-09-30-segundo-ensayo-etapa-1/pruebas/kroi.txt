@@ -1,0 +1,7 @@
+K-ROI centroide de Z: elevacion 7.9256, acimut relativo +1.7974 -> pixel (34, 135) (en R_int: True)
+  espejo en acimut: pixel (34, 120) (en R_int: False)
+  masa de L_Z en R_int 0.9694 | espejo 0.0000 | elevacion invertida 0.0000
+  Jaccard(L_Z>=20 m, R_int) 0.9949 | espejo 0.0000
+  l_int del piloto: |dif| max 1.975 m, media 0.0021 m, correlacion 0.9996801103743409
+  figura: no generada
+K-ROI veredicto: OK

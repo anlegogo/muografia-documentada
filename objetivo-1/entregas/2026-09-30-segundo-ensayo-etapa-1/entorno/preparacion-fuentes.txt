@@ -1,0 +1,49 @@
+fecha_utc=2026-09-30T19:29:41Z
+host=guane.sc3.uis.edu.co
+libre_en_home_mb=1459
+parche=/home/dapintoo/oe1-trabajo/subida-etapa1/subida/P2-instrumentacion.diff
+parche_sha256=caf69f4fb108d5038152bc5f8df082cdea5a3547f183a464e19f01281d1c07dd
+lista_sha256_de_P2=/home/dapintoo/oe1-trabajo/subida-etapa1/subida/P2-instrumentacion.sha256
+lista_sha256_de_P2_sha256=d454dbbde01209c8461ac4966e8abc7c461128d47f60f1fbf21adfb3b8e31ac3
+nivel_de_recorte_patch=-p2
+archivos_que_toca_P2:
+  simulation/geant4_app/include/ActionInitialization.hh
+  simulation/geant4_app/include/EventAction.hh
+  simulation/geant4_app/include/MuonRecord.hh
+  simulation/geant4_app/include/Oe1Cli.hh
+  simulation/geant4_app/include/Oe1Hash.hh
+  simulation/geant4_app/include/Oe1ListMode.hh
+  simulation/geant4_app/include/PrimaryGeneratorAction.hh
+  simulation/geant4_app/include/PrimaryList.hh
+  simulation/geant4_app/include/RegionCrossing.hh
+  simulation/geant4_app/include/RoiMask.hh
+  simulation/geant4_app/include/RunAction.hh
+  simulation/geant4_app/include/RunData.hh
+  simulation/geant4_app/include/Sha256.hh
+  simulation/geant4_app/include/SteppingAction.hh
+  simulation/geant4_app/muography_sim.cc
+  simulation/geant4_app/src/ActionInitialization.cc
+  simulation/geant4_app/src/EventAction.cc
+  simulation/geant4_app/src/Oe1Cli.cc
+  simulation/geant4_app/src/PrimaryGeneratorAction.cc
+  simulation/geant4_app/src/PrimaryList.cc
+  simulation/geant4_app/src/RunAction.cc
+  simulation/geant4_app/src/SteppingAction.cc
+  simulation/geant4_app/tests/build_tests.sh
+  simulation/geant4_app/tests/check.hh
+  simulation/geant4_app/tests/crossing_eval.cc
+  simulation/geant4_app/tests/crossing_reference.py
+  simulation/geant4_app/tests/g4/build_g4_tests.sh
+  simulation/geant4_app/tests/g4/early_exit.sh
+  simulation/geant4_app/tests/g4/legacy_inertness.cc
+  simulation/geant4_app/tests/g4/legacy_inertness.sh
+  simulation/geant4_app/tests/g4/test_list_mode_g4.cc
+  simulation/geant4_app/tests/list_support.hh
+  simulation/geant4_app/tests/test_oe1_support.cc
+  simulation/geant4_app/tests/test_primary_list.cc
+  simulation/geant4_app/tests/test_region_crossing.cc
+resultado=OK
+A2_fuentes_sha256=490f85fdb756da0806094d5fdcdbe08ed25dbc412bb0c3cc786ca8274bf613eb
+B2_fuentes_sha256=3bc1f22114f32563304ae1ba80e1e406bcc46ca305d559dc837ca0931e71d058
+diff_A2_B2=solo src/DetectorConstruction.cc
+diff_A2_B2_frente_al_del_piloto=identico al diff-A-B.txt del piloto (encabezados enmascarados; sha256 del enmascarado 11a1cd3602bcbb1a33873d55760fd869afbb5af07527867eb460bcf94295289b)

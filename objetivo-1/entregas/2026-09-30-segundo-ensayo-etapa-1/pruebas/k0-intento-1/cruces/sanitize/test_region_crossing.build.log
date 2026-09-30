@@ -1,0 +1,4 @@
+/home/dapintoo/oe1-trabajo/etapa1/fuentes/A2/simulation/geant4_app/src/GeometryConfig.cc:6:10: fatal error: json.hpp: No such file or directory
+    6 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.

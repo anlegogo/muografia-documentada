@@ -1,0 +1,10 @@
+built probe_orig (0 warnings)
+built probe_new (0 warnings)
+legacy sampler identical: legacy sampler: n=20000 seed=2026092901 fnv1a64=09746aeccd2d5581
+legacy sampler identical: legacy sampler: n=20000 seed=2026092902 fnv1a64=681db97c1961e0ec
+legacy sampler identical: legacy sampler: n=20000 seed=7 fnv1a64=460cda380ac5a276
+legacy hist.csv byte-identical (af98dbdfe2a6d00f...)
+legacy meta.json byte-identical apart from wall_seconds / seconds_per_event
+legacy 'RUN DONE' line identical apart from wall_s: RUN DONE geo-train-06 view 0: events=6000 detected=5000 wall_s=X
+meta.json occurrences of "oe1" in a legacy run: 0
+LEGACY INERTNESS: PASS

@@ -1,0 +1,10 @@
+*.csv -text
+*.tsv -text
+*.txt -text
+*.log -text
+*.out -text
+*.sha256 -text
+*.err -text
+*.sh -text
+*.diff -text
+SHA256SUMS -text

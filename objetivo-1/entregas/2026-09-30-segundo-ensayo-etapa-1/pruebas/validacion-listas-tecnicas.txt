@@ -1,0 +1,4 @@
+geo-train-06_v0_r0_s2026092990.primarios.csv         n=2000    OK  fnv=982e7a6e21ebd6bb  p_min=-
+geo-train-01_v0_r0_s2026092990.primarios.csv         n=2000    OK  fnv=b48417bab442e1d4  p_min=-
+geo-train-06_v0_r0_s2026092991.primarios.csv         n=2000    OK  fnv=9d32ce0eca3aa1d4  p_min=-
+VALIDACION DE LISTAS: OK

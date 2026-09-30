@@ -1,0 +1,19 @@
+
+**************************************************************
+ Geant4 version Name: geant4-11-04-patch-02 [MT]   (12-June-2026)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+Checking overlaps for volume edifice:0 (G4Cons) ... OK! 
+Checking overlaps for volume detector:0 (G4Box) ... OK! 
+OVERLAP-CHECK-HEADER resolution=100000 tolerance=0 maxErr=100 seed=20260929 g4version=$Name: geant4-11-04-patch-02 [MT]$ geometry=geo-train-01 view=0 rng-note=CLHEP::HepRandom_process_engine_via_GetPointOnSurface
+Checking overlaps for volume edifice:0 (G4Cons) ... OK! 
+OVERLAP-CHECK volume=edifice copy=0 solid=G4Cons result=ok
+Checking overlaps for volume detector:0 (G4Box) ... OK! 
+OVERLAP-CHECK volume=detector copy=0 solid=G4Box result=ok
+OVERLAP-CHECK-SUMMARY geometry=geo-train-01 view=0 volumes=2 overlapping=0 status=OK

@@ -1,0 +1,40 @@
+fecha_inicio_utc=2026-09-30T19:31:12Z
+host=guane01.sc3.uis.edu.co
+slurm_job_id=30563
+linea_srun=srun -p legacy -N1 -c8 --mem=8G -t 00:30:00 bash /home/dapintoo/oe1-trabajo/etapa1/herramientas/build_stage1.sh
+modulos=gnu14/14.2.0 geant4/11.4.2
+compilador_ruta=/opt/ohpc/pub/compiler/gcc/14.2.0/bin/g++
+compilador=g++ (GCC) 14.2.0
+cmake_ruta=/usr/bin/cmake
+cmake=cmake version 3.31.8
+geant4=11.4.2
+paralelismo=-j8
+env_stage1_sh_sha256=92603b6306c0f6cf7c8a5591748179078fa68c71580ed7c0a8b8548c7af2140a
+--- A2 ---
+A2.configure_exit=0
+A2.build_exit=0
+A2.advertencias=0
+A2.errores=0
+A2.CMAKE_BUILD_TYPE=Release
+A2.CMAKE_CXX_FLAGS=
+A2.CMAKE_CXX_FLAGS_RELEASE=-O3 -DNDEBUG
+A2.flags_de_compilacion= -O3 -DNDEBUG -std=gnu++17
+A2.binario=/home/dapintoo/oe1-trabajo/etapa1/build/A2/muography_sim
+A2.sha256=a07d83c443120bb0a7e0d32d73ad8f1c1fa7e7cba771e9fc8331f7218b0728f5
+A2.bytes=685568
+A2.mtime=2026-09-30 14:31:37.423930826 -0500
+--- B2 ---
+B2.configure_exit=0
+B2.build_exit=0
+B2.advertencias=0
+B2.errores=0
+B2.CMAKE_BUILD_TYPE=Release
+B2.CMAKE_CXX_FLAGS=
+B2.CMAKE_CXX_FLAGS_RELEASE=-O3 -DNDEBUG
+B2.flags_de_compilacion= -O3 -DNDEBUG -std=gnu++17
+B2.binario=/home/dapintoo/oe1-trabajo/etapa1/build/B2/muography_sim
+B2.sha256=ae76186647e7cc90796a9504cfa8bc763fc959484c2f78bf647cbe321f996852
+B2.bytes=689936
+B2.mtime=2026-09-30 14:32:02.660181425 -0500
+fecha_fin_utc=2026-09-30T19:32:02Z
+resultado=OK

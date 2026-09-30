@@ -1,0 +1,12 @@
+/home/dapintoo/oe1-trabajo/subida-etapa1/orig/scripts/simulation/geant4_app/src/RunAction.cc:11:10: fatal error: json.hpp: No such file or directory
+   11 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.
+/home/dapintoo/oe1-trabajo/subida-etapa1/orig/scripts/simulation/geant4_app/src/FluxTables.cc:9:10: fatal error: json.hpp: No such file or directory
+    9 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.
+/home/dapintoo/oe1-trabajo/subida-etapa1/orig/scripts/simulation/geant4_app/src/GeometryConfig.cc:6:10: fatal error: json.hpp: No such file or directory
+    6 | #include "json.hpp"
+      |          ^~~~~~~~~~
+compilation terminated.

@@ -1,0 +1,4 @@
+3315f82ffa1a3be604897e34e2319b379f500655 2026-09-30T14:15:25-05:00 feat(cluster): add SC3 scripts for OE1 stage-1 runs
+59e03c8b08d11a92bddb08415db404db5ccb1f2f 2026-09-30T14:15:24-05:00 feat(analysis): add OE1 stage-1 contracts and paired statistics
+9bb43f3b620b5e6d62e4b5ea79647dff44c6f3cd 2026-09-29T02:54:48-05:00 fix(sim): resolve anomaly overlaps with ordered CSG priority
+fdaef4b8aad259f17043ef0fc6fdccc295e3b8e2 2026-09-30T14:15:24-05:00 feat(sim): add OE1 stage-1 list mode and per-muon logging
