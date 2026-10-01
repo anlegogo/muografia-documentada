@@ -131,8 +131,8 @@ La [verificación de integridad](analisis/verificacion-integridad.json) descompr
 
 - **Datos grandes, fuera de Git:**
   - qué son: 85 archivos, 6,69 GB comprimidos (los 55 registros por muón, las 27 listas y 3 paquetes de archivos pequeños);
-  - dónde están: carpeta local `para-drive-oe1-etapa2/` de los estudiantes, con [`datos-compartidos/SHA256SUMS.txt`](datos-compartidos/SHA256SUMS.txt);
-  - pendiente: subirlos al almacenamiento compartido y añadir aquí el enlace.
+  - dónde están: en la [carpeta compartida del proyecto](https://drive.google.com/drive/folders/1yDAqmIiffuive-M9Esm4_KbHn65qQDja?usp=sharing) `para-drive-oe1-etapa2` ([`datos-compartidos/ENLACE.txt`](datos-compartidos/ENLACE.txt)), con su lista [`SHA256SUMS.txt`](datos-compartidos/SHA256SUMS.txt);
+  - cómo comprobarlos: después de descargarlos, ejecutar `sha256sum -c ../SHA256SUMS.txt` dentro de la carpeta `datos/` (85 archivos).
 - **En esta carpeta:**
   - [`corridas/`](corridas/): de los tres grupos, comandos, `run.log`, meta, histogramas, `SHA256SUMS`, estado, entorno, manifiesto, huellas esperadas y análisis por bloque;
   - [`preparacion/`](preparacion/): listas congeladas, validación y K2;

@@ -1,0 +1,5 @@
+Carpeta compartida del proyecto: https://drive.google.com/drive/folders/1yDAqmIiffuive-M9Esm4_KbHn65qQDja?usp=sharing
+Nombre de la carpeta: para-drive-oe1-etapa2
+Publicada: 2026-10-01
+Contenido: datos/ con 85 archivos (55 registros por muon *_muones.csv.gz, 27 listas *.primarios.csv.gz y 3 paquetes *-pequenos.tar), 6,69 GB.
+Comprobacion: dentro de datos/, sha256sum -c ../SHA256SUMS.txt (la lista esta copiada junto a este archivo).
