@@ -1,0 +1,2 @@
+geo-train-06_v0_r106_s2026100106.primarios.csv       n=1000000 OK  fnv=3fda31377d101e8c  p_min=0.00473
+VALIDACION DE LISTAS: OK

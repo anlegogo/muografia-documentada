@@ -1,0 +1,419 @@
+{
+ "formato": "oe1-validacion-listas/1",
+ "listas": [
+  {
+   "archivo": "geo-train-01_v0_r202_s2026100202.primarios.csv",
+   "ruta": "/tmp/oe1-etapa2-30599/A2/geo-train-01_v0_r202_s2026100202.primarios.csv",
+   "n": 100000,
+   "sha256": "b0fd69d18f05a4f95726b1f33d83bb95647adee259689453c074e38f7f01d28e",
+   "canon_fnv1a64": "615e43efa50d1a50",
+   "linea_check_python": "OE1-CHECK-PRIMARIES file=geo-train-01_v0_r202_s2026100202.primarios.csv n=100000 lf_only=1 header_ok=1 ends_with_newline=1 bad_rows=0 id_min=0 id_max=99999 ids_contiguous=1 dup_ids=0 dup_states=0 nonfinite=0 norm_fail=0 max_norm_dev=2.220446049250313e-16 dz_nonneg=0 ekin_nonpos=0 pdg_bad=0 charge_mismatch=0 n_mu_plus=56207 n_mu_minus=43793 canon_fnv1a64=615e43efa50d1a50 file_sha256=b0fd69d18f05a4f95726b1f33d83bb95647adee259689453c074e38f7f01d28e sidecar=ok sidecar_n=100000 sidecar_fnv_match=1 sidecar_sha_match=1 status=OK",
+   "estructural": {
+    "defectos": {
+     "lf_only": 1,
+     "header_ok": 1,
+     "ends_with_newline": 1,
+     "bad_rows": 0,
+     "id_min": 0,
+     "id_max": 99999,
+     "ids_contiguous": 1,
+     "dup_ids": 0,
+     "dup_states": 0,
+     "nonfinite": 0,
+     "norm_fail": 0,
+     "max_norm_dev": 2.220446049250313e-16,
+     "dz_nonneg": 0,
+     "ekin_nonpos": 0,
+     "pdg_bad": 0,
+     "charge_mismatch": 0,
+     "n_mu_plus": 56207,
+     "n_mu_minus": 43793
+    },
+    "limpio": true,
+    "coincide_con_check_del_binario": true
+   },
+   "sidecar": {
+    "presente": true,
+    "error": null,
+    "formato_ok": true,
+    "n_ok": true,
+    "canon_ok": true,
+    "sha_ok": true,
+    "radio_base_m": 656.2,
+    "radio_de_partida_ok": true,
+    "case_code_ok": true,
+    "catalogo_sha256": "ff3c69ab7e37b51c5d4e1318d298a9ddc35446367e6ea4abf5c322e3b86f07b1",
+    "radio_base_catalogo_ok": true,
+    "nombre_ok": true
+   },
+   "comparacion_con_binario": {
+    "presente": true,
+    "campos": [
+     {
+      "campo": "n",
+      "python": 100000,
+      "binario": "100000",
+      "igual": true
+     },
+     {
+      "campo": "lf_only",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "header_ok",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "ends_with_newline",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "bad_rows",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "id_min",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "id_max",
+      "python": 99999,
+      "binario": "99999",
+      "igual": true
+     },
+     {
+      "campo": "ids_contiguous",
+      "python": 1,
+      "binario": "1",
+      "igual": true
+     },
+     {
+      "campo": "dup_ids",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "dup_states",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "nonfinite",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "norm_fail",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "dz_nonneg",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "ekin_nonpos",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "pdg_bad",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "charge_mismatch",
+      "python": 0,
+      "binario": "0",
+      "igual": true
+     },
+     {
+      "campo": "n_mu_plus",
+      "python": 56207,
+      "binario": "56207",
+      "igual": true
+     },
+     {
+      "campo": "n_mu_minus",
+      "python": 43793,
+      "binario": "43793",
+      "igual": true
+     },
+     {
+      "campo": "canon_fnv1a64",
+      "python": "615e43efa50d1a50",
+      "binario": "615e43efa50d1a50",
+      "igual": true
+     },
+     {
+      "campo": "file_sha256",
+      "python": "b0fd69d18f05a4f95726b1f33d83bb95647adee259689453c074e38f7f01d28e",
+      "binario": "b0fd69d18f05a4f95726b1f33d83bb95647adee259689453c074e38f7f01d28e",
+      "igual": true
+     },
+     {
+      "campo": "max_norm_dev",
+      "python": 2.220446049250313e-16,
+      "binario": 2.220446049250313e-16,
+      "igual": true
+     }
+    ],
+    "todo_igual": true
+   },
+   "geometria": {
+    "filas_no_finitas": 0,
+    "desviacion_plano_max_m": 9.094947017729282e-13,
+    "exceso_sobre_panel_max_m": 0.0,
+    "radio_de_partida_esperado_m": 1956.2,
+    "desviacion_radio_de_partida_max_m": 9.094947017729282e-13,
+    "impacto_y_rango_m": [
+     -0.5999971874565446,
+     0.5999994292536712
+    ],
+    "impacto_z_rango_m": [
+     0.9000167717432532,
+     2.099992491094099
+    ],
+    "elevacion_rango_grados": [
+     1.9135081729217605,
+     47.087987357372405
+    ],
+    "acimut_relativo_rango_grados": [
+     -29.99887252833215,
+     29.999141615359424
+    ],
+    "tolerancia_m": 1e-09,
+    "ok": true,
+    "rango_angular_ok": true
+   },
+   "estadistica": {
+    "alfa": 0.0001,
+    "pruebas": [
+     {
+      "prueba": "filas de elevacion frente a row_weights (chi-cuadrado)",
+      "n": 100000,
+      "estadistico": 205.09872487564013,
+      "p": 0.9904314982287297,
+      "marcada": false,
+      "p_scipy": null,
+      "gl": 255
+     },
+     {
+      "prueba": "holgura de elevacion dentro de la fila (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.002806545617711542,
+      "p": 0.4097297511274385,
+      "marcada": false,
+      "p_scipy": null,
+      "desviacion_maxima_grados": 0.08823477485642428,
+      "semipaso_grados": 0.08823549999999991
+     },
+     {
+      "prueba": "acimut relativo (KS uniforme en +-30 grados)",
+      "n": 100000,
+      "estadistico": 0.004473355496661335,
+      "p": 0.036440023019155526,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "punto de impacto y en el panel (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.002350650101374696,
+      "p": 0.6379092483102836,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "punto de impacto z en el panel (KS uniforme)",
+      "n": 100000,
+      "estadistico": 0.0026348633976390756,
+      "p": 0.49066703764611264,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "fraccion de mu+ frente a 0.5613 (binomial exacta)",
+      "n": 100000,
+      "estadistico": 0.56207,
+      "p": 0.6191453277452718,
+      "marcada": false,
+      "p_scipy": null,
+      "mu_plus": 56207,
+      "fraccion": 0.56207
+     },
+     {
+      "prueba": "momento banda 0 (KS frente a p_cdf)",
+      "n": 462,
+      "estadistico": 0.029774605414005006,
+      "p": 0.8016910731802814,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 1 (KS frente a p_cdf)",
+      "n": 678,
+      "estadistico": 0.029387840729433068,
+      "p": 0.5955243450895201,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 2 (KS frente a p_cdf)",
+      "n": 1092,
+      "estadistico": 0.022133086920910316,
+      "p": 0.6539259600238799,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 3 (KS frente a p_cdf)",
+      "n": 1639,
+      "estadistico": 0.01953321393062779,
+      "p": 0.5552600158474209,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 4 (KS frente a p_cdf)",
+      "n": 2370,
+      "estadistico": 0.010331890391266585,
+      "p": 0.9611636845605341,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 5 (KS frente a p_cdf)",
+      "n": 3352,
+      "estadistico": 0.019497097308825595,
+      "p": 0.1546646827653233,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 6 (KS frente a p_cdf)",
+      "n": 4244,
+      "estadistico": 0.00821736684919383,
+      "p": 0.9358784162661353,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 7 (KS frente a p_cdf)",
+      "n": 5318,
+      "estadistico": 0.014333316118828376,
+      "p": 0.22298847391688822,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 8 (KS frente a p_cdf)",
+      "n": 6497,
+      "estadistico": 0.006462936735706859,
+      "p": 0.9483292502400817,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 9 (KS frente a p_cdf)",
+      "n": 7510,
+      "estadistico": 0.01232425377702967,
+      "p": 0.20277983154043028,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 10 (KS frente a p_cdf)",
+      "n": 8659,
+      "estadistico": 0.006760543606661673,
+      "p": 0.8223759644976221,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 11 (KS frente a p_cdf)",
+      "n": 9633,
+      "estadistico": 0.00706166909417022,
+      "p": 0.7212935782028335,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 12 (KS frente a p_cdf)",
+      "n": 10767,
+      "estadistico": 0.008156832108051348,
+      "p": 0.46931690045867425,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 13 (KS frente a p_cdf)",
+      "n": 11717,
+      "estadistico": 0.00691137305472278,
+      "p": 0.6289204370422975,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 14 (KS frente a p_cdf)",
+      "n": 12451,
+      "estadistico": 0.003982120421482771,
+      "p": 0.9889571091854774,
+      "marcada": false,
+      "p_scipy": null
+     },
+     {
+      "prueba": "momento banda 15 (KS frente a p_cdf)",
+      "n": 13611,
+      "estadistico": 0.009260869369129676,
+      "p": 0.19257860949049035,
+      "marcada": false,
+      "p_scipy": null
+     }
+    ],
+    "p_minimo": 0.036440023019155526,
+    "marcadas": 0,
+    "scipy_disponible": false,
+    "nota": "p < alfa exige investigar antes de transportar; con ~22 pruebas por lista la probabilidad de una marca espuria es ~2 por mil"
+   },
+   "problemas": [],
+   "veredicto": "OK"
+  }
+ ],
+ "cruzada": {},
+ "veredicto": "OK",
+ "herramienta": {
+  "scripts_sha256": {
+   "oe1_stage1_analysis.py": "e08d3355e32257fda2330b3c73600aebb46983b61eff71d143a96d07163173a3",
+   "oe1_stage1_common.py": "1575b1e64d0431da50f708c4735930fe3b2457fce7cf2b1f5a29fed5d371fb3e",
+   "oe1_stage1_lists.py": "debbf77aa64e54a68ec7311ad7361b3554de9965f133e77501e9a5cbb865713c",
+   "oe1_stage1_roi.py": "e9b2de31191e569ca92c4b3bb51bc31f1ffed9b90f31e35441beb5e29b9b1105",
+   "oe1_stage1_synthetic.py": "c450d4435c36dffcbaacaeed749c283154bf5668b73ec82a04913d2098e20435"
+  },
+  "entorno": {
+   "python": "3.9.25",
+   "numpy": "2.0.2",
+   "scipy": "no usado",
+   "matplotlib": "no usado",
+   "plataforma": "linux 64-bit"
+  }
+ }
+}

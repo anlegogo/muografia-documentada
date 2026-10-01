@@ -1,0 +1,8 @@
+etapa1/build/A2/muography_sim: OK
+etapa1/build/B2/muography_sim: OK
+catalogo/geo-train-06.json: OK
+catalogo/geo-train-01.json: OK
+tablas/row_weights_30d.txt: OK
+tablas/p_cdf.txt: OK
+tablas/meta.json: OK
+etapa1/analisis/roi/R_int.mask.txt: OK

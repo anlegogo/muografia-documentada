@@ -1,0 +1,12 @@
+*.csv -text
+*.tsv -text
+*.txt -text
+*.log -text
+*.out -text
+*.sha256 -text
+*.json -text
+*.err -text
+*.check -text
+*.sbatch -text
+*.rc -text
+SHA256SUMS -text
