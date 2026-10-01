@@ -1,0 +1,7 @@
+grupo=controles replicas=201,202,203 intento=01 trabajo=30601 nodo=guane01.sc3.uis.edu.co
+tmp_libre_GB=47 necesario_GB=3
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs            47G   36K   47G   1% /tmp
+               total        used        free      shared  buff/cache   available
+Mem:              93           2          85           0           6          91
+Swap:              3           0           3

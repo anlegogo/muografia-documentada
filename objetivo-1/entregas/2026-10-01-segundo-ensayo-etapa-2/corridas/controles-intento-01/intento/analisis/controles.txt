@@ -1,0 +1,1 @@
+R2-CONTROLES estado=OK bloqueantes=0 K8_identico=True pares=3

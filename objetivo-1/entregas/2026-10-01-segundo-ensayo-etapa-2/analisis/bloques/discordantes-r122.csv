@@ -1,0 +1,5 @@
+replica,id,clase,campos,Y_A,Y_B,estado_A,estado_B,iel_A,iaz_A,iel_B,iaz_B,cruza_A,cruza_B
+122,444047,cruza_Z,rng1,0,0,DECAY,DECAY,-1,-1,-1,-1,1.0,1.0
+122,622049,cruza_Z,iel+iaz+rng1,0,0,DET,DET,17,135,20,134,1.0,1.0
+122,831009,cruza_Z,rng1,0,0,DECAY,DECAY,-1,-1,-1,-1,1.0,1.0
+122,844264,cruza_Z,rng1,0,0,DECAY,DECAY,-1,-1,-1,-1,1.0,1.0

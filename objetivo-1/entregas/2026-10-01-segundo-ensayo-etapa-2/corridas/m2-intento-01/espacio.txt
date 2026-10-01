@@ -1,0 +1,7 @@
+grupo=m2 replicas=113,114,115,116,117,118,119,120,121,122,123,124 intento=01 trabajo=30603 nodo=guane03.sc3.uis.edu.co
+tmp_libre_GB=47 necesario_GB=24
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs            47G   36K   47G   1% /tmp
+               total        used        free      shared  buff/cache   available
+Mem:              93           2          87           0           5          91
+Swap:              3           0           3

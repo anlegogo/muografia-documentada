@@ -1,0 +1,4 @@
+corridas_ok=1 xargs=0 estados=7 no_OK=0 fin_utc=2026-10-01T15:09:59Z
+R2-CONTROLES estado=OK bloqueantes=0 K8_identico=True pares=3
+analisis_ok=1 fin_utc=2026-10-01T15:11:15Z
+GRUPO controles intento 01: corridas_ok=1 analisis_ok=1 exportacion_ok=1

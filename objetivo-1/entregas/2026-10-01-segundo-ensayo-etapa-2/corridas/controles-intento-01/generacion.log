@@ -1,0 +1,9 @@
+$ /home/dapintoo/oe1-trabajo/etapa1/build/A2/muography_sim --write-primaries /tmp/oe1-etapa2-30601/listas/geo-train-01_v0_r201_s2026100201.primarios.csv --geometry /home/dapintoo/oe1-trabajo/catalogo/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/tablas --seed 2026100201 --events 100000 --case-code 1 --replica 201 
+OE1-WRITE-PRIMARIES file=geo-train-01_v0_r201_s2026100201.primarios.csv geometry=geo-train-01 view=0 case_code=1 replica=201 source_seed=2026100201 n=100000 n_mu_plus=56289 canon_fnv1a64=32bc42ceebf50061 file_sha256=21b4400ba6e4a27da1a30e5777edd954568a668db4cdffa5f09603507dcc98c5 status=OK
+exit=0
+$ /home/dapintoo/oe1-trabajo/etapa1/build/A2/muography_sim --write-primaries /tmp/oe1-etapa2-30601/listas/geo-train-01_v0_r202_s2026100202.primarios.csv --geometry /home/dapintoo/oe1-trabajo/catalogo/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/tablas --seed 2026100202 --events 100000 --case-code 1 --replica 202 
+OE1-WRITE-PRIMARIES file=geo-train-01_v0_r202_s2026100202.primarios.csv geometry=geo-train-01 view=0 case_code=1 replica=202 source_seed=2026100202 n=100000 n_mu_plus=56207 canon_fnv1a64=615e43efa50d1a50 file_sha256=b0fd69d18f05a4f95726b1f33d83bb95647adee259689453c074e38f7f01d28e status=OK
+exit=0
+$ /home/dapintoo/oe1-trabajo/etapa1/build/A2/muography_sim --write-primaries /tmp/oe1-etapa2-30601/listas/geo-train-01_v0_r203_s2026100203.primarios.csv --geometry /home/dapintoo/oe1-trabajo/catalogo/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/tablas --seed 2026100203 --events 100000 --case-code 1 --replica 203 
+OE1-WRITE-PRIMARIES file=geo-train-01_v0_r203_s2026100203.primarios.csv geometry=geo-train-01 view=0 case_code=1 replica=203 source_seed=2026100203 n=100000 n_mu_plus=56048 canon_fnv1a64=6c5840abeebb7c44 file_sha256=a68a752f51821ad11ccf419254d67ebe615dbb047772d61fb3787d1b05dacd6a status=OK
+exit=0

@@ -1,0 +1,1 @@
+R2-BLOQUE r119 estado=OK N=1000000 n00=999994 n01=0 n10=0 n11=6 det_A=752207 det_B=752207 bloqueantes=0

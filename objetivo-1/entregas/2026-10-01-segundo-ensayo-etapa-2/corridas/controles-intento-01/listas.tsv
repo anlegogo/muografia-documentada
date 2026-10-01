@@ -1,0 +1,4 @@
+nombre	geometria	case_code	replica	semilla_fuente	n
+geo-train-01_v0_r201_s2026100201.primarios.csv	geo-train-01	1	201	2026100201	100000
+geo-train-01_v0_r202_s2026100202.primarios.csv	geo-train-01	1	202	2026100202	100000
+geo-train-01_v0_r203_s2026100203.primarios.csv	geo-train-01	1	203	2026100203	100000

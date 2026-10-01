@@ -1,0 +1,21 @@
+
+**************************************************************
+ Geant4 version Name: geant4-11-04-patch-02 [MT]   (12-June-2026)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+OE1-LIST-MODE list=geo-train-06_v0_r107_s2026100107.primarios.csv n=1000000 sha256=00d2433832c882ddc2b5007f2885306a9175e1248b938ca23cba051749e8a783 canon_fnv1a64=1b3de27767eaa161 mask=R_int.mask.txt mask_ones=195 geometry=geo-train-06 view=0 variant=B case_code=6 replica=107 transport_seed=1026100107 master_seed=1026100107 master_seed_applied=1026100107 run_manager=G4TaskRunManager muon_log=full region=0,1 binary_sha256=ae76186647e7cc90796a9504cfa8bc763fc959484c2f78bf647cbe321f996852 geometry_sha256=c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed
+Checking overlaps for volume edifice:0 (G4Cons) ... OK! 
+Checking overlaps for volume anomaly_0:0 (G4SubtractionSolid) ... OK! 
+ANOMALY-CSG name=anomaly_0 kind=conduit clipped=no minus=[1] solid=G4SubtractionSolid placed=yes
+Checking overlaps for volume anomaly_1:0 (G4Ellipsoid) ... OK! 
+ANOMALY-CSG name=anomaly_1 kind=dense_body clipped=no minus=[] solid=G4Ellipsoid placed=yes
+Checking overlaps for volume detector:0 (G4Box) ... OK! 
+OE1-PRERUN-CHECK run_manager=G4TaskRunManager variant=B variant_check=ok errors=none status=OK
+RUN DONE geo-train-06 view 0: events=1000000 detected=752271 wall_s=890.857
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=107 muon_log=full n=1000000 rows=1000000 DET=752271 PLANE_OUT=24450 WORLD_EXIT=6 DECAY=198591 MU_CAPTURE=24682 STOPPED=0 OTHER=0 ABORTED=0 in_rint=1 crossed=5 graze_muons=0 ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=none status=OK

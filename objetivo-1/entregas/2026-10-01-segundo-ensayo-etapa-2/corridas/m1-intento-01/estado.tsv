@@ -1,0 +1,25 @@
+corrida	veredicto	codigo	motivo	nodo	trabajo	inicio_utc	fin_utc
+geo-train-06-r101-A	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:18Z
+geo-train-06-r101-B	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:27Z
+geo-train-06-r102-A	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:33Z
+geo-train-06-r102-B	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:10Z
+geo-train-06-r103-A	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:25Z
+geo-train-06-r103-B	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:23Z
+geo-train-06-r104-A	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:20Z
+geo-train-06-r104-B	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:05Z
+geo-train-06-r105-A	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:27Z
+geo-train-06-r105-B	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:30Z
+geo-train-06-r106-A	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:31Z
+geo-train-06-r106-B	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:09Z
+geo-train-06-r107-A	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:26Z
+geo-train-06-r107-B	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:22Z
+geo-train-06-r108-A	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:23Z
+geo-train-06-r108-B	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:23Z
+geo-train-06-r109-A	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:28Z
+geo-train-06-r109-B	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:35Z
+geo-train-06-r110-A	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:24Z
+geo-train-06-r110-B	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:21Z
+geo-train-06-r111-A	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:23Z
+geo-train-06-r111-B	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:20Z
+geo-train-06-r112-A	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:12Z
+geo-train-06-r112-B	OK	0		guane02.sc3.uis.edu.co	30602	2026-10-01T15:12:16Z	2026-10-01T15:27:18Z

@@ -1,0 +1,29 @@
+
+**************************************************************
+ Geant4 version Name: geant4-11-04-patch-02 [MT]   (12-June-2026)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+OE1-LIST-MODE list=geo-train-06_v0_r122_s2026100122.primarios.csv n=1000000 sha256=a5301237dad197053d736819876d3a00a1120842d1b64c5a27b550488a026e3b canon_fnv1a64=78e870f57b2c455b mask=R_int.mask.txt mask_ones=195 geometry=geo-train-06 view=0 variant=A case_code=6 replica=122 transport_seed=1026100122 master_seed=1026100122 master_seed_applied=1026100122 run_manager=G4TaskRunManager muon_log=full region=0,1 binary_sha256=a07d83c443120bb0a7e0d32d73ad8f1c1fa7e7cba771e9fc8331f7218b0728f5 geometry_sha256=c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed
+Checking overlaps for volume edifice:0 (G4Cons) ... OK! 
+Checking overlaps for volume anomaly_0:0 (G4Tubs) ... OK! 
+Checking overlaps for volume anomaly_1:0 (G4Ellipsoid) ... 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomVol1002
+      issued by : G4PVPlacement::CheckOverlaps()
+Overlap with volume already placed !
+          Overlap is detected for volume anomaly_1:0 (G4Ellipsoid) with anomaly_0:0 (G4Tubs)
+          overlap at local point (1087.52,1032.69,-67723.2) by 19.5003 m   (max of 91 cases)
+NOTE: Reached maximum fixed number -1- of overlaps reports for this volume !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+Checking overlaps for volume detector:0 (G4Box) ... OK! 
+OE1-PRERUN-CHECK run_manager=G4TaskRunManager variant=A variant_check=ok errors=none status=OK
+RUN DONE geo-train-06 view 0: events=1000000 detected=752353 wall_s=885.033
+OE1-ETAPA1 geometry=geo-train-06 view=0 variant=A case_code=6 replica=122 muon_log=full n=1000000 rows=1000000 DET=752353 PLANE_OUT=24595 WORLD_EXIT=9 DECAY=198254 MU_CAPTURE=24789 STOPPED=0 OTHER=0 ABORTED=0 in_rint=1 crossed=8 graze_muons=0 ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=none status=OK

@@ -1,0 +1,17 @@
+
+**************************************************************
+ Geant4 version Name: geant4-11-04-patch-02 [MT]   (12-June-2026)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+OE1-LIST-MODE list=geo-train-01_v0_r201_s2026100201.primarios.csv n=100000 sha256=21b4400ba6e4a27da1a30e5777edd954568a668db4cdffa5f09603507dcc98c5 canon_fnv1a64=32bc42ceebf50061 mask=R_int.mask.txt mask_ones=195 geometry=geo-train-01 view=0 variant=A case_code=1 replica=201 transport_seed=1026100201 master_seed=1026100201 master_seed_applied=1026100201 run_manager=G4TaskRunManager muon_log=full region=none binary_sha256=a07d83c443120bb0a7e0d32d73ad8f1c1fa7e7cba771e9fc8331f7218b0728f5 geometry_sha256=ff3c69ab7e37b51c5d4e1318d298a9ddc35446367e6ea4abf5c322e3b86f07b1
+Checking overlaps for volume edifice:0 (G4Cons) ... OK! 
+Checking overlaps for volume detector:0 (G4Box) ... OK! 
+OE1-PRERUN-CHECK run_manager=G4TaskRunManager variant=A variant_check=not_checked errors=none status=OK
+RUN DONE geo-train-01 view 0: events=100000 detected=73741 wall_s=71.9074
+OE1-ETAPA1 geometry=geo-train-01 view=0 variant=A case_code=1 replica=201 muon_log=full n=100000 rows=100000 DET=73741 PLANE_OUT=2333 WORLD_EXIT=1 DECAY=21357 MU_CAPTURE=2568 STOPPED=0 OTHER=0 ABORTED=0 in_rint=0 crossed=NA graze_muons=NA ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=none status=OK

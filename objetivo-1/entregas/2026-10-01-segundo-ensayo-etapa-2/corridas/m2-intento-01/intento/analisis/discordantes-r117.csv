@@ -1,0 +1,5 @@
+replica,id,clase,campos,Y_A,Y_B,estado_A,estado_B,iel_A,iaz_A,iel_B,iaz_B,cruza_A,cruza_B
+117,212263,cruza_Z,iaz+rng1,1,1,DET,DET,29,132,29,134,1.0,1.0
+117,293234,cruza_Z,rng1,0,0,DECAY,DECAY,-1,-1,-1,-1,1.0,1.0
+117,557783,cruza_Z,rng1,0,0,DECAY,DECAY,-1,-1,-1,-1,1.0,1.0
+117,781475,cruza_Z,rng1,0,0,MU_CAPTURE,MU_CAPTURE,-1,-1,-1,-1,1.0,1.0

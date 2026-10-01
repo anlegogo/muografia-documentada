@@ -1,0 +1,5 @@
+replica,id,clase,campos,Y_A,Y_B,estado_A,estado_B,iel_A,iaz_A,iel_B,iaz_B,cruza_A,cruza_B
+112,115899,cruza_Z,detected+status+iel+iaz+in_rint+rng1,0,1,DECAY,DET,-1,-1,40,132,1.0,1.0
+112,299811,cruza_Z,rng1,0,0,DECAY,DECAY,-1,-1,-1,-1,1.0,1.0
+112,323781,cruza_Z,rng1,0,0,MU_CAPTURE,MU_CAPTURE,-1,-1,-1,-1,1.0,1.0
+112,477126,cruza_Z,iel+iaz+rng1,1,1,DET,DET,37,132,35,131,1.0,1.0

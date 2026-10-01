@@ -1,0 +1,28 @@
+{
+ "grupos": {
+  "controles": {
+   "corridas": 7,
+   "sha256sums_ok": 7,
+   "muones_ok": 7,
+   "listas_ok": 3,
+   "bytes_muones": 225394888
+  },
+  "m1": {
+   "corridas": 24,
+   "sha256sums_ok": 24,
+   "muones_ok": 24,
+   "listas_ok": 12,
+   "bytes_muones": 8109223113
+  },
+  "m2": {
+   "corridas": 24,
+   "sha256sums_ok": 24,
+   "muones_ok": 24,
+   "listas_ok": 12,
+   "bytes_muones": 8108986209
+  }
+ },
+ "fallos": [],
+ "archivos_grandes": 85,
+ "bytes_grandes": 6685463186
+}

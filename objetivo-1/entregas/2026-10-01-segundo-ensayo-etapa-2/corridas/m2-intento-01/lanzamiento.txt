@@ -1,0 +1,12 @@
+fecha_utc=2026-10-01T15:12:15Z
+trabajo=30603
+nodo=guane03.sc3.uis.edu.co
+grupo=m2
+intento=01
+replicas=113,114,115,116,117,118,119,120,121,122,123,124
+corridas=24
+xargs_paralelismo=24
+corridas_sbatch_sha256=25fd87207c2e4c67088f24c6f3c38b8b42cb201ad5260693e2f76b3945db0f29
+corridas_ok=1 xargs=0 estados=24 no_OK=0 fin_utc=2026-10-01T15:27:38Z
+analisis_ok=1 fin_utc=2026-10-01T15:36:19Z
+compresion_fin_utc=2026-10-01T15:37:26Z

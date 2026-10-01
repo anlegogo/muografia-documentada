@@ -1,0 +1,4 @@
+variante=A
+obtenidos=GeomVol1002=1
+esperados=GeomVol1002=1
+coinciden=si

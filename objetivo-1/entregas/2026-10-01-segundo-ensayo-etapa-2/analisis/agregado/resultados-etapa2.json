@@ -1,0 +1,110 @@
+{
+ "bloques_validos": 24,
+ "bloques_esperados": 24,
+ "problemas": [],
+ "totales": {
+  "N": 24000000,
+  "n00": 23999929,
+  "n01": 4,
+  "n10": 1,
+  "n11": 66,
+  "m00": 5946900,
+  "m01": 2,
+  "m10": 1,
+  "m11": 18053097,
+  "det_A": 18053098,
+  "det_B": 18053099,
+  "sumY_A": 67,
+  "sumY_B": 70,
+  "detectados_en_ambas": 18053097,
+  "cambian_de_pixel_detectados_en_ambas": 10,
+  "en_R_int_en_ambas_pero_otro_pixel": 5,
+  "discordantes": 50,
+  "cruces_A": 151,
+  "cruces_B": 151,
+  "cruces_ambas": 151,
+  "cruces_union": 151,
+  "discordantes_por_clase": {
+   "cruza_Z": 50
+  }
+ },
+ "intervalo_R_int": {
+  "N": 24000000,
+  "counts_00_01_10_11": [
+   23999929,
+   4,
+   1,
+   66
+  ],
+  "delta_per_million": 0.125,
+  "interval95_conservative_per_million": [
+   -0.22919962834922267,
+   0.4694393009440489
+  ],
+  "margin_per_million": 0.27366037480921346,
+  "decision_numerica": "inconcluso",
+  "N_principal_completo": true,
+  "advertencia": "La decisión numérica no valida primarios, fuente, independencia, contratos ni integridad. No autoriza inferencia sobre toda la imagen o el catálogo."
+ },
+ "intervalo_deteccion_total_exploratorio": {
+  "N": 24000000,
+  "counts_00_01_10_11": [
+   5946900,
+   2,
+   1,
+   18053097
+  ],
+  "delta_per_million": 0.04166666666666667,
+  "interval95_conservative_per_million": [
+   -0.258909135083879,
+   0.3379033387182067
+  ],
+  "margin_per_million": 0.27366037480921346,
+  "decision_numerica": "inconcluso",
+  "N_principal_completo": true,
+  "advertencia": "La decisión numérica no valida primarios, fuente, independencia, contratos ni integridad. No autoriza inferencia sobre toda la imagen o el catálogo."
+ },
+ "entre_bloques": {
+  "delta_por_millon_media": 0.125,
+  "delta_por_millon_desviacion": 0.3378319623460881,
+  "delta_por_millon_min": 0.0,
+  "delta_por_millon_max": 1.0,
+  "error_estandar_de_la_media_por_millon": 0.06895966054592131,
+  "nota": "descriptivo; el protocolo (§3) no usa la desviación entre bloques como intervalo de confianza"
+ },
+ "interpretable": true,
+ "categoria_de_cierre": "inconcluso",
+ "mapas": {
+  "bloques": 24,
+  "N": 24000000,
+  "suma_A": 18053098,
+  "suma_B": 18053099,
+  "R_int_A": 67,
+  "R_int_B": 70,
+  "celdas_distintas": 23,
+  "max_abs_diferencia_celda": 1
+ },
+ "margen_por_millon": 0.27366037480921346,
+ "calculador": {
+  "ruta": "C:\\Users\\etherion\\Documents\\tesis-ing-sistemas\\tesis-5-8-26\\tesis-ing-sistemas\\muografia-etapa2\\herramientas\\planificar_etapa2_oe1.py",
+  "sha256": "dd320df056916a1298f4ddc448231de9c98bdb61496eef9f871dbdbc03e6a29b"
+ },
+ "herramienta": {
+  "scripts_sha256": {
+   "oe1_stage2_analysis.py": "402d7f1839b3d482cba94477aaffe49a08b406eced0b0439c682590582bc72a0",
+   "oe1_stage1_analysis.py": "e08d3355e32257fda2330b3c73600aebb46983b61eff71d143a96d07163173a3",
+   "oe1_stage1_common.py": "1575b1e64d0431da50f708c4735930fe3b2457fce7cf2b1f5a29fed5d371fb3e",
+   "oe1_stage1_lists.py": "debbf77aa64e54a68ec7311ad7361b3554de9965f133e77501e9a5cbb865713c",
+   "oe1_stage1_roi.py": "e9b2de31191e569ca92c4b3bb51bc31f1ffed9b90f31e35441beb5e29b9b1105",
+   "oe1_stage1_synthetic.py": "c450d4435c36dffcbaacaeed749c283154bf5668b73ec82a04913d2098e20435",
+   "oe1_stage1_tecnicas.py": "ff2c8f9e121df4c0ec9f3ee2465baea7e8b1a80838e11260eb55ab1d8dedf325"
+  },
+  "entorno": {
+   "python": "3.13.5",
+   "numpy": "2.4.4",
+   "scipy": "1.16.3",
+   "matplotlib": "3.10.7",
+   "plataforma": "win32 64-bit"
+  }
+ }
+}

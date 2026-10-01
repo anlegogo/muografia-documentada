@@ -1,0 +1,4 @@
+variante=A
+obtenidos=ninguno
+esperados=ninguno
+coinciden=si

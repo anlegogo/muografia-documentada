@@ -1,0 +1,2 @@
+R2-PLAN corridas=55 transportes=48700000 pares_principales=24000000 listas=27 problemas=0
+R2-PLAN corridas=55 transportes=48700000 pares_principales=24000000 listas=27 problemas=0
