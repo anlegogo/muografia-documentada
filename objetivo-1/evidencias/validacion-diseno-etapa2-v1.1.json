@@ -1,0 +1,53 @@
+{
+  "fecha": "2026-10-01",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "tests_exit_code": 0,
+  "tests_output": "test_decisions (test_planificar_etapa2_oe1.PlanTests.test_decisions) ... ok\ntest_exact_reference (test_planificar_etapa2_oe1.PlanTests.test_exact_reference) ... ok\ntest_invalid (test_planificar_etapa2_oe1.PlanTests.test_invalid) ... ok\ntest_manifest_pairing (test_planificar_etapa2_oe1.PlanTests.test_manifest_pairing) ... ok\ntest_swap (test_planificar_etapa2_oe1.PlanTests.test_swap) ... ok\ntest_zero_formula_and_nonzero_uncertainty (test_planificar_etapa2_oe1.PlanTests.test_zero_formula_and_nonzero_uncertainty) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.017s\n\nOK\n",
+  "links": [
+    {
+      "link": "PROTOCOLO_SEGUNDO_ENSAYO_OE1.md",
+      "ok": true
+    },
+    {
+      "link": "ensayos/etapa-2-v1.1/corridas.csv",
+      "ok": true
+    },
+    {
+      "link": "../herramientas/planificar_etapa2_oe1.py",
+      "ok": true
+    },
+    {
+      "link": "ensayos/etapa-2-v1.1/dimensionamiento.json",
+      "ok": true
+    },
+    {
+      "link": "ensayos/etapa-2-v1.1/corridas.csv",
+      "ok": true
+    },
+    {
+      "link": "ensayos/etapa-2-v1.1/dimensionamiento.json",
+      "ok": true
+    },
+    {
+      "link": "../herramientas/planificar_etapa2_oe1.py",
+      "ok": true
+    },
+    {
+      "link": "../herramientas/test_planificar_etapa2_oe1.py",
+      "ok": true
+    },
+    {
+      "link": "INSTRUCCIONES_ETAPA_2.md",
+      "ok": true
+    },
+    {
+      "link": "PROTOCOLO_ETAPA_2_OE1_V1_1.md",
+      "ok": true
+    },
+    {
+      "link": "ensayos/etapa-2-v1.1/corridas.csv",
+      "ok": true
+    }
+  ],
+  "alcance": "Cálculo y plan locales; no ejecución Geant4/SLURM ni verificación de cuota SC3."
+}

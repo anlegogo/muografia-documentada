@@ -1,0 +1,157 @@
+{
+  "version": "1.1",
+  "fecha_diseno": "2026-10-01",
+  "N_principal": 24000000,
+  "corridas": 55,
+  "transportes": 48700000,
+  "primarios_distintos": 24300000,
+  "margen": 2.7366037480921347e-07,
+  "alpha_familia_principal": 0.05,
+  "alpha_por_proporcion": 0.025,
+  "min_N_cero_discordancias": 16012644,
+  "escenarios_sinteticos_no_resultados": [
+    {
+      "N": 24000000,
+      "counts_00_01_10_11": [
+        24000000,
+        0,
+        0,
+        0
+      ],
+      "delta_per_million": 0.0,
+      "interval95_conservative_per_million": [
+        -0.18258442644287345,
+        0.18258442644287345
+      ],
+      "margin_per_million": 0.27366037480921346,
+      "decision_numerica": "dentro_del_margen",
+      "N_principal_completo": true,
+      "advertencia": "La decisión numérica no valida primarios, fuente, independencia, contratos ni integridad. No autoriza inferencia sobre toda la imagen o el catálogo."
+    },
+    {
+      "N": 24000000,
+      "counts_00_01_10_11": [
+        23999999,
+        1,
+        0,
+        0
+      ],
+      "delta_per_million": 0.04166666666666667,
+      "interval95_conservative_per_million": [
+        -0.18206031051772495,
+        0.26587187435497484
+      ],
+      "margin_per_million": 0.27366037480921346,
+      "decision_numerica": "dentro_del_margen",
+      "N_principal_completo": true,
+      "advertencia": "La decisión numérica no valida primarios, fuente, independencia, contratos ni integridad. No autoriza inferencia sobre toda la imagen o el catálogo."
+    },
+    {
+      "N": 24000000,
+      "counts_00_01_10_11": [
+        23999999,
+        0,
+        1,
+        0
+      ],
+      "delta_per_million": -0.04166666666666667,
+      "interval95_conservative_per_million": [
+        -0.26587187435497484,
+        0.18206031051772495
+      ],
+      "margin_per_million": 0.27366037480921346,
+      "decision_numerica": "dentro_del_margen",
+      "N_principal_completo": true,
+      "advertencia": "La decisión numérica no valida primarios, fuente, independencia, contratos ni integridad. No autoriza inferencia sobre toda la imagen o el catálogo."
+    },
+    {
+      "N": 24000000,
+      "counts_00_01_10_11": [
+        23999998,
+        1,
+        1,
+        0
+      ],
+      "delta_per_million": 0.0,
+      "interval95_conservative_per_million": [
+        -0.26534775842982633,
+        0.26534775842982633
+      ],
+      "margin_per_million": 0.27366037480921346,
+      "decision_numerica": "dentro_del_margen",
+      "N_principal_completo": true,
+      "advertencia": "La decisión numérica no valida primarios, fuente, independencia, contratos ni integridad. No autoriza inferencia sobre toda la imagen o el catálogo."
+    },
+    {
+      "N": 24000000,
+      "counts_00_01_10_11": [
+        23999998,
+        2,
+        0,
+        0
+      ],
+      "delta_per_million": 0.08333333333333334,
+      "interval95_conservative_per_million": [
+        -0.17562168721237315,
+        0.33842745458029433
+      ],
+      "margin_per_million": 0.27366037480921346,
+      "decision_numerica": "inconcluso",
+      "N_principal_completo": true,
+      "advertencia": "La decisión numérica no valida primarios, fuente, independencia, contratos ni integridad. No autoriza inferencia sobre toda la imagen o el catálogo."
+    },
+    {
+      "N": 24000000,
+      "counts_00_01_10_11": [
+        23999995,
+        5,
+        0,
+        0
+      ],
+      "delta_per_million": 0.20833333333333334,
+      "interval95_conservative_per_million": [
+        -0.12618415605116315,
+        0.5318836242887082
+      ],
+      "margin_per_million": 0.27366037480921346,
+      "decision_numerica": "inconcluso",
+      "N_principal_completo": true,
+      "advertencia": "La decisión numérica no valida primarios, fuente, independencia, contratos ni integridad. No autoriza inferencia sobre toda la imagen o el catálogo."
+    },
+    {
+      "N": 24000000,
+      "counts_00_01_10_11": [
+        23999980,
+        20,
+        0,
+        0
+      ],
+      "delta_per_million": 0.8333333333333334,
+      "interval95_conservative_per_million": [
+        0.28984444021302425,
+        1.3575344679596653
+      ],
+      "margin_per_million": 0.27366037480921346,
+      "decision_numerica": "diferencia_relevante",
+      "N_principal_completo": true,
+      "advertencia": "La decisión numérica no valida primarios, fuente, independencia, contratos ni integridad. No autoriza inferencia sobre toda la imagen o el catálogo."
+    }
+  ],
+  "recursos_estimados_no_medidos_etapa2": {
+    "cpu_horas_media": 11.4445,
+    "cpu_horas_rango": [
+      7.91375,
+      12.350861111111112
+    ],
+    "registros_GB_decimal": 15.918569,
+    "registros_gzip_GB_decimal": 4.95279,
+    "listas_GB_decimal": 3.53808,
+    "reserva_minima_GiB": 30
+  },
+  "restricciones": [
+    "No ampliar N tras ver resultados",
+    "No combinar desarrollo con confirmación",
+    "A/A y control no aumentan N principal",
+    "Verificar almacenamiento y contratos antes de lanzar"
+  ]
+}

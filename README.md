@@ -8,7 +8,7 @@ Réplica local selectiva del material de Reinaldo Cárdenas Tirado y Daniel Andr
 
 ## Por dónde comenzar
 
-**Paso actual:** [complemento R2-01 revisado](objetivo-1/REVISION_COMPLEMENTO_R2_01_2026-10-01.md). Se reprodujo el análisis de los 72 transportes y se verificó la asignación de material de B en los 36 pares dirigidos. Falta dimensionar y acordar la etapa 2 con fuente representativa; OE1 y P-01…P-04 no se cierran con esta prueba.
+**Paso actual:** [etapa 2 diseñada, protocolo v1.1](objetivo-1/PROTOCOLO_ETAPA_2_OE1_V1_1.md): 24 millones de pares principales, 55 corridas contando controles y 48,7 millones de transportes. Lista para preparación operativa de estudiantes en SC3; requiere verificar cuota, entorno, listas y scripts antes de ejecutar. Hay tamaño fijo y regla de cierre; OE1 y P-01…P-04 siguen abiertos.
 
 **Ejecución recibida:** R2-01 fue corrido por los estudiantes en SC3 el 30 de septiembre y revisado localmente el 1 de octubre. [Resultados y límites](objetivo-1/REVISION_COMPLEMENTO_R2_01_2026-10-01.md). Las entregas permanecen en su rama y el protocolo v1.0 se conserva como registro histórico.
 
