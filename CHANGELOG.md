@@ -1,5 +1,12 @@
 # Registro de cambios
 
+## Revisión del complemento R2-01 — 2026-10-01, Colombia
+
+- Revisión local de entrega `a4d7b79`, ejecutada por los estudiantes en SC3 el 30 de septiembre. Comparador `0d97beb` reproducido y auditoría propia: 103/103 controles satisfactorios.
+- B asigna el solape al cuerpo denso en 36/36 pares; A lo asigna al conducto en los 18 casos dirigidos desde ese lado. Tres pares cambian de píxel; ninguno cambia su detección.
+- Se conserva la limitación del lado inferido en B y de la fuente dirigida; no se estima la frecuencia en la campaña. P-01…P-04 siguen abiertos. Siguiente paso: dimensionar etapa 2 y resolver almacenamiento, sin aprobar ni lanzar todavía una campaña.
+- [Revisión, evidencia y comandos](objetivo-1/REVISION_COMPLEMENTO_R2_01_2026-10-01.md).
+
 ## Preparación local del complemento R2-01 — 2026-09-30, Colombia
 
 - Se prepara un complemento técnico con 12 muones dirigidos: seis entradas desde el conducto y seis desde el cuerpo denso; 72 transportes propuestos en SC3.

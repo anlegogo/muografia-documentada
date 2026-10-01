@@ -8,9 +8,9 @@ Réplica local selectiva del material de Reinaldo Cárdenas Tirado y Daniel Andr
 
 ## Por dónde comenzar
 
-**Paso actual:** consultar la [revisión de la etapa 1](objetivo-1/REVISION_ETAPA_1_2026-09-30.md). Se verificaron los registros y resultados de las 13 corridas. Falta cubrir la entrada al solape desde el conducto antes de dimensionar la etapa 2. El [protocolo v1.0](objetivo-1/PROTOCOLO_SEGUNDO_ENSAYO_OE1.md) se conserva como diseño aplicado; sus parámetros de etapa 2 no están aprobados. Las entregas permanecen en las ramas de estudiantes, sin fusionar.
+**Paso actual:** [complemento R2-01 revisado](objetivo-1/REVISION_COMPLEMENTO_R2_01_2026-10-01.md). Se reprodujo el análisis de los 72 transportes y se verificó la asignación de material de B en los 36 pares dirigidos. Falta dimensionar y acordar la etapa 2 con fuente representativa; OE1 y P-01…P-04 no se cierran con esta prueba.
 
-**Preparación local completada:** [complemento R2-01](objetivo-1/COMPLEMENTO_R2_01.md), con 12 primarios dirigidos, controles geométricos y ejecutor para 72 transportes en SC3. La lista fue validada localmente; su transporte sigue pendiente.
+**Ejecución recibida:** R2-01 fue corrido por los estudiantes en SC3 el 30 de septiembre y revisado localmente el 1 de octubre. [Resultados y límites](objetivo-1/REVISION_COMPLEMENTO_R2_01_2026-10-01.md). Las entregas permanecen en su rama y el protocolo v1.0 se conserva como registro histórico.
 
 1. [Índice de documentación](docs/INDICE.md).
 2. [Alcance del OE1](objetivo-1/ALCANCE.md).

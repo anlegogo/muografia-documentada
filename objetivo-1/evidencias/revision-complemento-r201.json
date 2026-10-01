@@ -1,0 +1,571 @@
+{
+  "date": "2026-10-01",
+  "delivery": "a4d7b79",
+  "checks": [
+    {
+      "control": "sha256:LF-normalized:.gitattributes",
+      "ok": true
+    },
+    {
+      "control": "sha256:analisis/comando-analisis.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:analisis/contratos-r201.json",
+      "ok": true
+    },
+    {
+      "control": "sha256:analisis/pares-r201.csv",
+      "ok": true
+    },
+    {
+      "control": "sha256:analisis/resumen-r201.json",
+      "ok": true
+    },
+    {
+      "control": "sha256:analisis/trayectorias-r201.csv",
+      "ok": true
+    },
+    {
+      "control": "sha256:codigo/commits.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093011/comando.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093011/geo-train-06_view0.meta.json",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093011/geo-train-06_view0_hist.csv",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093011/geo-train-06_view0_muones.csv",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093011/run.log",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093011/SHA256SUMS.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093012/comando.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093012/geo-train-06_view0.meta.json",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093012/geo-train-06_view0_hist.csv",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093012/geo-train-06_view0_muones.csv",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093012/run.log",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093012/SHA256SUMS.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093013/comando.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093013/geo-train-06_view0.meta.json",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093013/geo-train-06_view0_hist.csv",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093013/geo-train-06_view0_muones.csv",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093013/run.log",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/A/1026093013/SHA256SUMS.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093011/comando.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093011/geo-train-06_view0.meta.json",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093011/geo-train-06_view0_hist.csv",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093011/geo-train-06_view0_muones.csv",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093011/run.log",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093011/SHA256SUMS.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093012/comando.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093012/geo-train-06_view0.meta.json",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093012/geo-train-06_view0_hist.csv",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093012/geo-train-06_view0_muones.csv",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093012/run.log",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093012/SHA256SUMS.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093013/comando.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093013/geo-train-06_view0.meta.json",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093013/geo-train-06_view0_hist.csv",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093013/geo-train-06_view0_muones.csv",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093013/run.log",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/B/1026093013/SHA256SUMS.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/check-A2.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/check-B2.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/entorno.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/estado.tsv",
+      "ok": true
+    },
+    {
+      "control": "sha256:corridas/intento-01/FINALIZADO.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:RESULTADOS_COMPLEMENTO_R2_01.md",
+      "ok": true
+    },
+    {
+      "control": "sha256:slurm/r201.sbatch",
+      "ok": true
+    },
+    {
+      "control": "sha256:slurm/sacct.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:slurm/slurm-30580.out",
+      "ok": true
+    },
+    {
+      "control": "sha256:verificacion/insumos-sc3.sha256",
+      "ok": true
+    },
+    {
+      "control": "sha256:verificacion/regeneracion-lista.txt",
+      "ok": true
+    },
+    {
+      "control": "sha256:verificacion/verificacion-geometrica-r201.json",
+      "ok": true
+    },
+    {
+      "control": "A/1026093011:ids",
+      "ok": true
+    },
+    {
+      "control": "A/1026093011:primary_hash",
+      "ok": true
+    },
+    {
+      "control": "A/1026093011:list_hash",
+      "ok": true
+    },
+    {
+      "control": "A/1026093011:crossed",
+      "ok": true
+    },
+    {
+      "control": "A/1026093011:histogram",
+      "ok": true
+    },
+    {
+      "control": "A/1026093011:material",
+      "ok": true
+    },
+    {
+      "control": "A/1026093012:ids",
+      "ok": true
+    },
+    {
+      "control": "A/1026093012:primary_hash",
+      "ok": true
+    },
+    {
+      "control": "A/1026093012:list_hash",
+      "ok": true
+    },
+    {
+      "control": "A/1026093012:crossed",
+      "ok": true
+    },
+    {
+      "control": "A/1026093012:histogram",
+      "ok": true
+    },
+    {
+      "control": "A/1026093012:material",
+      "ok": true
+    },
+    {
+      "control": "A/1026093013:ids",
+      "ok": true
+    },
+    {
+      "control": "A/1026093013:primary_hash",
+      "ok": true
+    },
+    {
+      "control": "A/1026093013:list_hash",
+      "ok": true
+    },
+    {
+      "control": "A/1026093013:crossed",
+      "ok": true
+    },
+    {
+      "control": "A/1026093013:histogram",
+      "ok": true
+    },
+    {
+      "control": "A/1026093013:material",
+      "ok": true
+    },
+    {
+      "control": "B/1026093011:ids",
+      "ok": true
+    },
+    {
+      "control": "B/1026093011:primary_hash",
+      "ok": true
+    },
+    {
+      "control": "B/1026093011:list_hash",
+      "ok": true
+    },
+    {
+      "control": "B/1026093011:crossed",
+      "ok": true
+    },
+    {
+      "control": "B/1026093011:histogram",
+      "ok": true
+    },
+    {
+      "control": "B/1026093011:material",
+      "ok": true
+    },
+    {
+      "control": "B/1026093012:ids",
+      "ok": true
+    },
+    {
+      "control": "B/1026093012:primary_hash",
+      "ok": true
+    },
+    {
+      "control": "B/1026093012:list_hash",
+      "ok": true
+    },
+    {
+      "control": "B/1026093012:crossed",
+      "ok": true
+    },
+    {
+      "control": "B/1026093012:histogram",
+      "ok": true
+    },
+    {
+      "control": "B/1026093012:material",
+      "ok": true
+    },
+    {
+      "control": "B/1026093013:ids",
+      "ok": true
+    },
+    {
+      "control": "B/1026093013:primary_hash",
+      "ok": true
+    },
+    {
+      "control": "B/1026093013:list_hash",
+      "ok": true
+    },
+    {
+      "control": "B/1026093013:crossed",
+      "ok": true
+    },
+    {
+      "control": "B/1026093013:histogram",
+      "ok": true
+    },
+    {
+      "control": "B/1026093013:material",
+      "ok": true
+    },
+    {
+      "control": "1026093011:rng0",
+      "ok": true
+    },
+    {
+      "control": "1026093011:detection",
+      "ok": true
+    },
+    {
+      "control": "1026093011:dense_controls_equal",
+      "ok": true
+    },
+    {
+      "control": "1026093012:rng0",
+      "ok": true
+    },
+    {
+      "control": "1026093012:detection",
+      "ok": true
+    },
+    {
+      "control": "1026093012:dense_controls_equal",
+      "ok": true
+    },
+    {
+      "control": "1026093013:rng0",
+      "ok": true
+    },
+    {
+      "control": "1026093013:detection",
+      "ok": true
+    },
+    {
+      "control": "1026093013:dense_controls_equal",
+      "ok": true
+    },
+    {
+      "control": "reproduction:pares-r201.csv",
+      "ok": true
+    },
+    {
+      "control": "reproduction:trayectorias-r201.csv",
+      "ok": true
+    },
+    {
+      "control": "reproduction:coverage",
+      "ok": true
+    }
+  ],
+  "passed": 103,
+  "failed": 0,
+  "pixel_changes": [
+    {
+      "seed": 1026093011,
+      "id": 0,
+      "A": [
+        29,
+        131
+      ],
+      "B": [
+        29,
+        132
+      ]
+    },
+    {
+      "seed": 1026093011,
+      "id": 1,
+      "A": [
+        34,
+        131
+      ],
+      "B": [
+        34,
+        132
+      ]
+    },
+    {
+      "seed": 1026093012,
+      "id": 0,
+      "A": [
+        30,
+        131
+      ],
+      "B": [
+        29,
+        131
+      ]
+    }
+  ],
+  "energy_pairs": [
+    {
+      "seed": 1026093011,
+      "id": 0,
+      "delta_exit_GeV": -1227.9464420011864,
+      "delta_loss_GeV": 1228.6661922464264
+    },
+    {
+      "seed": 1026093011,
+      "id": 1,
+      "delta_exit_GeV": -50.91632419072357,
+      "delta_loss_GeV": 50.92468732749603
+    },
+    {
+      "seed": 1026093011,
+      "id": 2,
+      "delta_exit_GeV": -2906.003592545123,
+      "delta_loss_GeV": 2914.071884389953
+    },
+    {
+      "seed": 1026093011,
+      "id": 3,
+      "delta_exit_GeV": -617.9197921646246,
+      "delta_loss_GeV": 617.8574800938286
+    },
+    {
+      "seed": 1026093011,
+      "id": 4,
+      "delta_exit_GeV": -96.46577745164814,
+      "delta_loss_GeV": 97.45272268932422
+    },
+    {
+      "seed": 1026093011,
+      "id": 5,
+      "delta_exit_GeV": -25.383569680259825,
+      "delta_loss_GeV": 25.40252886257349
+    },
+    {
+      "seed": 1026093012,
+      "id": 0,
+      "delta_exit_GeV": -56.793320751332885,
+      "delta_loss_GeV": 57.36741099787605
+    },
+    {
+      "seed": 1026093012,
+      "id": 1,
+      "delta_exit_GeV": -2.981733466555852,
+      "delta_loss_GeV": 2.985300673284655
+    },
+    {
+      "seed": 1026093012,
+      "id": 2,
+      "delta_exit_GeV": -74.25935672641572,
+      "delta_loss_GeV": 74.27681116849726
+    },
+    {
+      "seed": 1026093012,
+      "id": 3,
+      "delta_exit_GeV": -931.3964976691632,
+      "delta_loss_GeV": 935.9764882159425
+    },
+    {
+      "seed": 1026093012,
+      "id": 4,
+      "delta_exit_GeV": -173.6924089139502,
+      "delta_loss_GeV": 196.45749111225086
+    },
+    {
+      "seed": 1026093012,
+      "id": 5,
+      "delta_exit_GeV": -8.231641292225504,
+      "delta_loss_GeV": 8.205905442030598
+    },
+    {
+      "seed": 1026093013,
+      "id": 0,
+      "delta_exit_GeV": -10.72934340946722,
+      "delta_loss_GeV": 10.729705401587125
+    },
+    {
+      "seed": 1026093013,
+      "id": 1,
+      "delta_exit_GeV": 87.17341124585892,
+      "delta_loss_GeV": -87.13999854223493
+    },
+    {
+      "seed": 1026093013,
+      "id": 2,
+      "delta_exit_GeV": -74.87151336884108,
+      "delta_loss_GeV": 76.91396398872712
+    },
+    {
+      "seed": 1026093013,
+      "id": 3,
+      "delta_exit_GeV": -81.62241881625323,
+      "delta_loss_GeV": 82.20512439859431
+    },
+    {
+      "seed": 1026093013,
+      "id": 4,
+      "delta_exit_GeV": -64.16803269690536,
+      "delta_loss_GeV": 64.11168339781307
+    },
+    {
+      "seed": 1026093013,
+      "id": 5,
+      "delta_exit_GeV": -464.3916914272804,
+      "delta_loss_GeV": 464.8861983269826
+    }
+  ],
+  "lower_exit_B": 17,
+  "higher_loss_B": 17,
+  "limitation": "Registros agregados; no reconstruyen trayectoria completa ni frecuencia bajo la fuente original."
+}

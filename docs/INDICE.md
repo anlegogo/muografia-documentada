@@ -2,6 +2,7 @@
 
 | Documento | Pregunta que responde |
 |---|---|
+| [Revisión del complemento R2-01](../objetivo-1/REVISION_COMPLEMENTO_R2_01_2026-10-01.md) | ¿Qué confirmaron los 72 transportes y qué falta para la etapa 2? |
 | [Complemento técnico R2-01](../objetivo-1/COMPLEMENTO_R2_01.md) | ¿Qué insumos y prueba pequeña preparamos para cubrir la entrada desde el conducto? |
 | [Revisión de etapa 1](../objetivo-1/REVISION_ETAPA_1_2026-09-30.md) | ¿Qué confirmamos de las 13 corridas y qué falta antes de ampliar? |
 | [Protocolo aplicado del segundo ensayo](../objetivo-1/PROTOCOLO_SEGUNDO_ENSAYO_OE1.md) | ¿Qué diseño rigió la etapa 1 y qué condiciona la etapa 2? |

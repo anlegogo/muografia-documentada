@@ -1,8 +1,8 @@
 # Pendientes del OE1
 
-**Paso actual:** [revisión independiente de etapa 1](REVISION_ETAPA_1_2026-09-30.md), con 405 comprobaciones reproducidas y 156 controles propios sin fallos. Falta el complemento R2-01 de entrada desde el conducto y el dimensionamiento de etapa 2. P-01…P-04 siguen abiertos; el [protocolo v1.0](PROTOCOLO_SEGUNDO_ENSAYO_OE1.md) se conserva sin cambios.
+**Paso actual:** [complemento R2-01 revisado](REVISION_COMPLEMENTO_R2_01_2026-10-01.md). Se reprodujo el análisis de los 72 transportes y se verificó la asignación de material de B en los 36 pares dirigidos. Falta dimensionar y acordar la etapa 2 con fuente representativa; OE1 y P-01…P-04 no se cierran con esta prueba.
 
-**Preparación local completada:** [complemento R2-01](COMPLEMENTO_R2_01.md), con 12 primarios dirigidos, controles geométricos y ejecutor para 72 transportes en SC3. La lista fue validada localmente; su transporte sigue pendiente.
+**Ejecución recibida:** R2-01 fue corrido por los estudiantes en SC3 el 30 de septiembre y revisado localmente el 1 de octubre. [Resultados y límites](REVISION_COMPLEMENTO_R2_01_2026-10-01.md). Las entregas permanecen en su rama y el protocolo v1.0 se conserva como registro histórico.
 
 Todos los siguientes puntos permanecen abiertos; no se asigna a los estudiantes una actividad como realizada sin evidencia.
 
