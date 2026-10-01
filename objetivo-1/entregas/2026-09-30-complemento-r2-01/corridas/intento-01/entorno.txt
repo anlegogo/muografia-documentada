@@ -1,0 +1,68 @@
+Thu Oct  1 02:43:53 AM UTC 2026
+guane01.sc3.uis.edu.co
+SLURM_JOB_ID=30580
+G4ABLADATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4ABLA3.3
+G4CHANNELINGDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4CHANNELING2.0
+G4ENSDFSTATEDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4ENSDFSTATE3.0
+G4FORCE_EVENTS_PER_TASK=<sin definir>
+G4FORCE_EVENTS_PER_TASK=<sin definir>
+G4FORCE_GRAINSIZE=<sin definir>
+G4FORCE_GRAINSIZE=<sin definir>
+G4FORCE_RUN_MANAGER_TYPE=<sin definir>
+G4FORCE_RUN_MANAGER_TYPE=<sin definir>
+G4INCLDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4INCL1.3
+G4LEDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4EMLOW8.8
+G4LEVELGAMMADATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/PhotonEvaporation6.1.2
+G4NEUTRONHPDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4NDL4.7.1
+G4PARTICLEXSDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4PARTICLEXS4.2
+G4PIIDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4PII1.3
+G4RADIOACTIVEDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/RadioactiveDecay6.1.2
+G4REALSURFACEDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/RealSurface2.2
+G4RUN_MANAGER_TYPE=<sin definir>
+G4RUN_MANAGER_TYPE=<sin definir>
+G4SAIDXSDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4SAIDDATA2.0
+LOADEDMODULES=gnu14/14.2.0:geant4/11.4.2
+SLURM_CLUSTER_NAME=sc3
+SLURM_CONF=/etc/slurm/slurm.conf
+SLURM_CPUS_ON_NODE=2
+SLURM_CPUS_PER_TASK=1
+SLURM_GTIDS=0
+SLURM_JOBID=30580
+SLURM_JOB_ACCOUNT=simon
+SLURM_JOB_CPUS_PER_NODE=2
+SLURM_JOB_END_TIME=1790823233
+SLURM_JOB_GID=10010
+SLURM_JOB_ID=30580
+SLURM_JOB_NAME=oe1-r201
+SLURM_JOB_NODELIST=guane01
+SLURM_JOB_NUM_NODES=1
+SLURM_JOB_PARTITION=legacy
+SLURM_JOB_QOS=normal
+SLURM_JOB_START_TIME=1790822633
+SLURM_JOB_UID=10240
+SLURM_JOB_USER=dapintoo
+SLURM_LOCALID=0
+SLURM_MEM_PER_NODE=1024
+SLURM_NNODES=1
+SLURM_NODEID=0
+SLURM_NODELIST=guane01
+SLURM_NPROCS=1
+SLURM_NTASKS=1
+SLURM_OOM_KILL_STEP=0
+SLURM_PRIO_PROCESS=0
+SLURM_PROCID=0
+SLURM_SUBMIT_DIR=/home/dapintoo/oe1-trabajo/complemento-r2-01
+SLURM_SUBMIT_HOST=guane.sc3.uis.edu.co
+SLURM_TASKS_PER_NODE=1
+SLURM_TASK_PID=387126
+SLURM_TOPOLOGY_ADDR=guane01
+SLURM_TOPOLOGY_ADDR_PATTERN=node
+SLURM_TRES_PER_TASK=cpu=1
+a07d83c443120bb0a7e0d32d73ad8f1c1fa7e7cba771e9fc8331f7218b0728f5  /home/dapintoo/oe1-trabajo/etapa1/build/A2/muography_sim
+ae76186647e7cc90796a9504cfa8bc763fc959484c2f78bf647cbe321f996852  /home/dapintoo/oe1-trabajo/etapa1/build/B2/muography_sim
+c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed  /home/dapintoo/oe1-trabajo/catalogo/geo-train-06.json
+e76dcbe5926f9f4aeb61c556729d15c64124cd50a8577dca6beee9ffa317c5fd  /home/dapintoo/oe1-trabajo/etapa1/analisis/roi/R_int.mask.txt
+ae8318a704d004989f65faaa5b8fe5624281fefef7c65f370a281d2378402ea1  /home/dapintoo/oe1-trabajo/complemento-r2-01/insumos/objetivo-1/ensayos/complemento-r2-01-v1/geo-train-06_v0_r10_r201.primarios.csv
+93ce67abe51c59ea3ac5c07dc99fd1615ae147df82c16d1bad64f5c0712d2c0c  /home/dapintoo/oe1-trabajo/tablas/row_weights_30d.txt
+7161c8adf11711139840007dff26178221c4cfbff8fc3253cabdda50c533f6ae  /home/dapintoo/oe1-trabajo/tablas/p_cdf.txt
+7ac4b6a9353af701b56e5a97ee783ed59072d58df52d80ddbdc0f5f70147d35d  /home/dapintoo/oe1-trabajo/tablas/meta.json

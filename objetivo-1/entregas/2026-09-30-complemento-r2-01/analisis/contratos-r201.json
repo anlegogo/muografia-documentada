@@ -1,0 +1,2592 @@
+{
+ "formato": "oe1-contratos/1",
+ "estado": "OK",
+ "fecha_utc": "2026-10-01T02:47:11Z",
+ "bloqueantes_fallidos": [],
+ "no_bloqueantes_fallidos": [],
+ "no_verificables": [
+  "K6.15 [A-1026093011] eficiencia de detección compatible con la de la campaña (|z| <= 5; informativo, no bloquea)",
+  "K6.15 [A-1026093012] eficiencia de detección compatible con la de la campaña (|z| <= 5; informativo, no bloquea)",
+  "K6.15 [A-1026093013] eficiencia de detección compatible con la de la campaña (|z| <= 5; informativo, no bloquea)",
+  "K6.15 [B-1026093011] eficiencia de detección compatible con la de la campaña (|z| <= 5; informativo, no bloquea)",
+  "K6.15 [B-1026093012] eficiencia de detección compatible con la de la campaña (|z| <= 5; informativo, no bloquea)",
+  "K6.15 [B-1026093013] eficiencia de detección compatible con la de la campaña (|z| <= 5; informativo, no bloquea)"
+ ],
+ "contratos": {
+  "K6": {
+   "descripcion": "Completitud y reconstrucción de cada corrida (filas = N, IDs únicos, sin ABORTED, histograma reconstruido igual en las 65 536 celdas, in_rint igual al recalculado, prim_fnv y rng0 no nulos y únicos, prim_fnv recalculado desde la lista para todo id, desplazamiento lateral reportado con su escala de error (ya no se exige max_lat < 1e-6 mm: la cuerda pre→post no es la trayectoria navegada), B sin avisos, clave oe1_etapa1 y _muones.csv presentes); aquí N = 12 por corrida",
+   "bloqueante": true,
+   "veredicto": "OK_CON_AVISOS",
+   "ambitos": {
+    "A-1026093011": [
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.1",
+      "descripcion": "archivos presentes (hist, meta, _muones.csv), sin .part",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "problemas": [],
+       "part": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.2",
+      "descripcion": "SHA256SUMS de la corrida coincide con los archivos",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "no_coinciden": [],
+       "sin_listar": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.3",
+      "descripcion": "estado del guion de lanzamiento: OK con código de salida 0",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "run_id": "A-1026093011",
+       "veredicto": "OK",
+       "rc": "0",
+       "motivo": "PROCESO_OK",
+       "nodo": null,
+       "trabajo": null
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.4",
+      "descripcion": "la clave oe1_etapa1 está en el meta (el binario nuevo, no uno viejo)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "presente": true
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.5",
+      "descripcion": "las comprobaciones del binario son todas verdaderas y no hay errores",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "checks": {
+        "detected_equal": true,
+        "ekin_sum_equal": true,
+        "events_equal": true,
+        "generated_equal": true,
+        "hist_reconstructed_equal": true,
+        "ids_complete_unique": true,
+        "variant_matches_geometry": true,
+        "writes_ok": true
+       },
+       "errors": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.6",
+      "descripcion": "filas = N = events_transported = ecomug_draws_total = N de la lista",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas": 12,
+       "N": 12,
+       "events_transported": 12,
+       "ecomug_draws_total": 12
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.7",
+      "descripcion": "IDs únicos, ordenados y 0..N-1",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {}
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.8",
+      "descripcion": "prim_fnv y rng0: 16 dígitos hexadecimales, ninguno nulo y N valores distintos cada uno (una columna vacía o constante haría pasar K7, K8 y K9 (a) en vacío)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "N": 12,
+       "prim_fnv": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       },
+       "rng0": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.9",
+      "descripcion": "prim_fnv recalculado desde las filas de la lista == columna prim_fnv, para todo id",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas_que_difieren": 0,
+       "N": 12,
+       "primeras": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.10",
+      "descripcion": "ninguna fila ABORTED",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "ABORTED": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.11",
+      "descripcion": "los conteos por estado del meta coinciden con las filas",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas": {
+        "DET": 12,
+        "PLANE_OUT": 0,
+        "WORLD_EXIT": 0,
+        "DECAY": 0,
+        "MU_CAPTURE": 0,
+        "STOPPED": 0,
+        "OTHER": 0,
+        "ABORTED": 0
+       },
+       "meta": {
+        "ABORTED": 0,
+        "DECAY": 0,
+        "DET": 12,
+        "MU_CAPTURE": 0,
+        "OTHER": 0,
+        "PLANE_OUT": 0,
+        "STOPPED": 0,
+        "WORLD_EXIT": 0
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.12",
+      "descripcion": "histograma reconstruido con las filas DET igual a hist.csv en las 65 536 celdas",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "celdas_distintas": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.13",
+      "descripcion": "número de filas DET = detected_in_bins = suma de hist.csv",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "DET": 12,
+       "detected_in_bins": 12,
+       "suma_hist": 12
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.14",
+      "descripcion": "la columna detected vale 1 exactamente en las filas DET",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {}
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.15",
+      "descripcion": "eficiencia de detección compatible con la de la campaña (|z| <= 5; informativo, no bloquea)",
+      "ok": null,
+      "bloqueante": false,
+      "evidencia": {
+       "eficiencia": 1.0,
+       "referencia_campana": 0.7521691179133344,
+       "z": 1.9884312740799315,
+       "nota": "no aplica: lista dirigida de 10 TeV, no es una muestra de la fuente"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.16",
+      "descripcion": "in_rint del binario == valor recalculado fuera de línea (100 %)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "distintas": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.17",
+      "descripcion": "hist[R_int].sum() == número de filas con in_rint = 1",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "hist": 9,
+       "filas": 9
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.18",
+      "descripcion": "desplazamiento lateral reportado: max_lat_mm finito y presente en toda fila con pasos, con el mismo máximo que el meta (diagnóstico: ya no se exige < 1e-6 mm)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "max_lat_mm": 0.18882451127823838,
+       "meta_max_lat_mm": 0.18882451127823838,
+       "filas_sin_dato": 0,
+       "mediana_mm": 0.009838175942631852,
+       "p99_mm": 0.1863423126542512,
+       "fraccion_mayor_que_1e-6_mm": 1.0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.19",
+      "descripcion": "escala del error de la longitud en Z (Σ del desplazamiento transversal, no cota): max_lat_z_mm y sum_lat_z_mm finitos, no negativos y con sum_lat_z_mm >= max_lat_z_mm en cada fila; con valores en todas las filas si hay región, max_lat_z_mm <= max_lat_mm y los máximos iguales a los del meta",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "max_lat_z_mm": 0.0001905720045728825,
+       "max_sum_lat_z_mm": 0.00019057214784899413,
+       "filas_con_dato": 12,
+       "meta_max_lat_z_mm": 0.0001905720045728825,
+       "meta_max_sum_lat_z_mm": 0.00019057214784899413,
+       "filas_coherentes": true,
+       "maximos_iguales_al_meta": true
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.20",
+      "descripcion": "avisos de A iguales a los esperados por el manifiesto (diagnóstico histórico)",
+      "ok": true,
+      "bloqueante": false,
+      "evidencia": {
+       "obtenidos": "GeomVol1002=1",
+       "esperados": "GeomVol1002=1"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.21",
+      "descripcion": "region.applicable = true y crossed en {0, 1}",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "applicable": true,
+       "crossed_valores": [
+        1.0
+       ]
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.22",
+      "descripcion": "procedencia coherente con el manifiesto (variante, caso, réplica, lista, semillas, un hilo, MixMaxRng, G4TaskRunManager, máscara)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "falla": [],
+       "worker_thread_ids": [
+        0
+       ],
+       "run_manager_class": "G4TaskRunManager"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.23",
+      "descripcion": "la firma de volúmenes corresponde a la variante A (anomaly_0 = G4Tubs)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "firma": {
+        "anomaly_0": "G4Tubs",
+        "anomaly_1": "G4Ellipsoid"
+       },
+       "esperada": {
+        "anomaly_0": "G4Tubs",
+        "anomaly_1": "G4Ellipsoid"
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.24",
+      "descripcion": "FNV-1a-64 de _muones.csv coincide con muon_log del meta (lo que el binario escribió)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "fnv_calculado": "35d4d12de7d8aa0b",
+       "fnv_meta": "35d4d12de7d8aa0b"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.25",
+      "descripcion": "tamaño y número de columnas de _muones.csv coinciden con muon_log del meta",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "bytes": 7642,
+       "meta_bytes": 7642,
+       "columnas": 49,
+       "meta_columnas": 49
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.26",
+      "descripcion": "run.log contiene RUN DONE y la línea OE1-ETAPA1 con status=OK y errors=none",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "RUN DONE": "RUN DONE geo-train-06 view 0: events=12 detected=12 wall_s=0.0556191",
+       "OE1-ETAPA1": "OE1-ETAPA1 geometry=geo-train-06 view=0 variant=A case_code=6 replica=10 muon_log=full n=12 rows=12 DET=12 PLANE_OUT=0 WORLD_EXIT=0 DECAY=0 MU_CAPTURE=0 STOPPED=0 OTHER=0 ABORTED=0 in_rint=9 crossed=12 graze_muons=0 ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=none status=OK"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093011",
+      "id": "K6.27",
+      "descripcion": "energía cinética media en el plano == meta (informativo)",
+      "ok": true,
+      "bloqueante": false,
+      "evidencia": {
+       "recalculada": 4879.746468605751,
+       "meta": 4879.746468605751,
+       "diferencia_relativa": 0.0
+      }
+     }
+    ],
+    "A-1026093012": [
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.1",
+      "descripcion": "archivos presentes (hist, meta, _muones.csv), sin .part",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "problemas": [],
+       "part": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.2",
+      "descripcion": "SHA256SUMS de la corrida coincide con los archivos",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "no_coinciden": [],
+       "sin_listar": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.3",
+      "descripcion": "estado del guion de lanzamiento: OK con código de salida 0",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "run_id": "A-1026093012",
+       "veredicto": "OK",
+       "rc": "0",
+       "motivo": "PROCESO_OK",
+       "nodo": null,
+       "trabajo": null
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.4",
+      "descripcion": "la clave oe1_etapa1 está en el meta (el binario nuevo, no uno viejo)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "presente": true
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.5",
+      "descripcion": "las comprobaciones del binario son todas verdaderas y no hay errores",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "checks": {
+        "detected_equal": true,
+        "ekin_sum_equal": true,
+        "events_equal": true,
+        "generated_equal": true,
+        "hist_reconstructed_equal": true,
+        "ids_complete_unique": true,
+        "variant_matches_geometry": true,
+        "writes_ok": true
+       },
+       "errors": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.6",
+      "descripcion": "filas = N = events_transported = ecomug_draws_total = N de la lista",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas": 12,
+       "N": 12,
+       "events_transported": 12,
+       "ecomug_draws_total": 12
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.7",
+      "descripcion": "IDs únicos, ordenados y 0..N-1",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {}
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.8",
+      "descripcion": "prim_fnv y rng0: 16 dígitos hexadecimales, ninguno nulo y N valores distintos cada uno (una columna vacía o constante haría pasar K7, K8 y K9 (a) en vacío)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "N": 12,
+       "prim_fnv": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       },
+       "rng0": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.9",
+      "descripcion": "prim_fnv recalculado desde las filas de la lista == columna prim_fnv, para todo id",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas_que_difieren": 0,
+       "N": 12,
+       "primeras": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.10",
+      "descripcion": "ninguna fila ABORTED",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "ABORTED": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.11",
+      "descripcion": "los conteos por estado del meta coinciden con las filas",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas": {
+        "DET": 12,
+        "PLANE_OUT": 0,
+        "WORLD_EXIT": 0,
+        "DECAY": 0,
+        "MU_CAPTURE": 0,
+        "STOPPED": 0,
+        "OTHER": 0,
+        "ABORTED": 0
+       },
+       "meta": {
+        "ABORTED": 0,
+        "DECAY": 0,
+        "DET": 12,
+        "MU_CAPTURE": 0,
+        "OTHER": 0,
+        "PLANE_OUT": 0,
+        "STOPPED": 0,
+        "WORLD_EXIT": 0
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.12",
+      "descripcion": "histograma reconstruido con las filas DET igual a hist.csv en las 65 536 celdas",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "celdas_distintas": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.13",
+      "descripcion": "número de filas DET = detected_in_bins = suma de hist.csv",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "DET": 12,
+       "detected_in_bins": 12,
+       "suma_hist": 12
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.14",
+      "descripcion": "la columna detected vale 1 exactamente en las filas DET",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {}
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.15",
+      "descripcion": "eficiencia de detección compatible con la de la campaña (|z| <= 5; informativo, no bloquea)",
+      "ok": null,
+      "bloqueante": false,
+      "evidencia": {
+       "eficiencia": 1.0,
+       "referencia_campana": 0.7521691179133344,
+       "z": 1.9884312740799315,
+       "nota": "no aplica: lista dirigida de 10 TeV, no es una muestra de la fuente"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.16",
+      "descripcion": "in_rint del binario == valor recalculado fuera de línea (100 %)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "distintas": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.17",
+      "descripcion": "hist[R_int].sum() == número de filas con in_rint = 1",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "hist": 9,
+       "filas": 9
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.18",
+      "descripcion": "desplazamiento lateral reportado: max_lat_mm finito y presente en toda fila con pasos, con el mismo máximo que el meta (diagnóstico: ya no se exige < 1e-6 mm)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "max_lat_mm": 0.12650208114121173,
+       "meta_max_lat_mm": 0.12650208114121173,
+       "filas_sin_dato": 0,
+       "mediana_mm": 0.017772890736455268,
+       "p99_mm": 0.11897114977340902,
+       "fraccion_mayor_que_1e-6_mm": 1.0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.19",
+      "descripcion": "escala del error de la longitud en Z (Σ del desplazamiento transversal, no cota): max_lat_z_mm y sum_lat_z_mm finitos, no negativos y con sum_lat_z_mm >= max_lat_z_mm en cada fila; con valores en todas las filas si hay región, max_lat_z_mm <= max_lat_mm y los máximos iguales a los del meta",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "max_lat_z_mm": 0.003260208277026565,
+       "max_sum_lat_z_mm": 0.0032602083324492093,
+       "filas_con_dato": 12,
+       "meta_max_lat_z_mm": 0.003260208277026565,
+       "meta_max_sum_lat_z_mm": 0.0032602083324492093,
+       "filas_coherentes": true,
+       "maximos_iguales_al_meta": true
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.20",
+      "descripcion": "avisos de A iguales a los esperados por el manifiesto (diagnóstico histórico)",
+      "ok": true,
+      "bloqueante": false,
+      "evidencia": {
+       "obtenidos": "GeomVol1002=1",
+       "esperados": "GeomVol1002=1"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.21",
+      "descripcion": "region.applicable = true y crossed en {0, 1}",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "applicable": true,
+       "crossed_valores": [
+        1.0
+       ]
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.22",
+      "descripcion": "procedencia coherente con el manifiesto (variante, caso, réplica, lista, semillas, un hilo, MixMaxRng, G4TaskRunManager, máscara)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "falla": [],
+       "worker_thread_ids": [
+        0
+       ],
+       "run_manager_class": "G4TaskRunManager"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.23",
+      "descripcion": "la firma de volúmenes corresponde a la variante A (anomaly_0 = G4Tubs)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "firma": {
+        "anomaly_0": "G4Tubs",
+        "anomaly_1": "G4Ellipsoid"
+       },
+       "esperada": {
+        "anomaly_0": "G4Tubs",
+        "anomaly_1": "G4Ellipsoid"
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.24",
+      "descripcion": "FNV-1a-64 de _muones.csv coincide con muon_log del meta (lo que el binario escribió)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "fnv_calculado": "4c9330dd8141391f",
+       "fnv_meta": "4c9330dd8141391f"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.25",
+      "descripcion": "tamaño y número de columnas de _muones.csv coinciden con muon_log del meta",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "bytes": 7606,
+       "meta_bytes": 7606,
+       "columnas": 49,
+       "meta_columnas": 49
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.26",
+      "descripcion": "run.log contiene RUN DONE y la línea OE1-ETAPA1 con status=OK y errors=none",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "RUN DONE": "RUN DONE geo-train-06 view 0: events=12 detected=12 wall_s=0.0587046",
+       "OE1-ETAPA1": "OE1-ETAPA1 geometry=geo-train-06 view=0 variant=A case_code=6 replica=10 muon_log=full n=12 rows=12 DET=12 PLANE_OUT=0 WORLD_EXIT=0 DECAY=0 MU_CAPTURE=0 STOPPED=0 OTHER=0 ABORTED=0 in_rint=9 crossed=12 graze_muons=0 ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=none status=OK"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093012",
+      "id": "K6.27",
+      "descripcion": "energía cinética media en el plano == meta (informativo)",
+      "ok": true,
+      "bloqueante": false,
+      "evidencia": {
+       "recalculada": 4595.780038549368,
+       "meta": 4595.780038549368,
+       "diferencia_relativa": 0.0
+      }
+     }
+    ],
+    "A-1026093013": [
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.1",
+      "descripcion": "archivos presentes (hist, meta, _muones.csv), sin .part",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "problemas": [],
+       "part": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.2",
+      "descripcion": "SHA256SUMS de la corrida coincide con los archivos",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "no_coinciden": [],
+       "sin_listar": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.3",
+      "descripcion": "estado del guion de lanzamiento: OK con código de salida 0",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "run_id": "A-1026093013",
+       "veredicto": "OK",
+       "rc": "0",
+       "motivo": "PROCESO_OK",
+       "nodo": null,
+       "trabajo": null
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.4",
+      "descripcion": "la clave oe1_etapa1 está en el meta (el binario nuevo, no uno viejo)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "presente": true
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.5",
+      "descripcion": "las comprobaciones del binario son todas verdaderas y no hay errores",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "checks": {
+        "detected_equal": true,
+        "ekin_sum_equal": true,
+        "events_equal": true,
+        "generated_equal": true,
+        "hist_reconstructed_equal": true,
+        "ids_complete_unique": true,
+        "variant_matches_geometry": true,
+        "writes_ok": true
+       },
+       "errors": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.6",
+      "descripcion": "filas = N = events_transported = ecomug_draws_total = N de la lista",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas": 12,
+       "N": 12,
+       "events_transported": 12,
+       "ecomug_draws_total": 12
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.7",
+      "descripcion": "IDs únicos, ordenados y 0..N-1",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {}
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.8",
+      "descripcion": "prim_fnv y rng0: 16 dígitos hexadecimales, ninguno nulo y N valores distintos cada uno (una columna vacía o constante haría pasar K7, K8 y K9 (a) en vacío)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "N": 12,
+       "prim_fnv": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       },
+       "rng0": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.9",
+      "descripcion": "prim_fnv recalculado desde las filas de la lista == columna prim_fnv, para todo id",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas_que_difieren": 0,
+       "N": 12,
+       "primeras": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.10",
+      "descripcion": "ninguna fila ABORTED",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "ABORTED": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.11",
+      "descripcion": "los conteos por estado del meta coinciden con las filas",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas": {
+        "DET": 11,
+        "PLANE_OUT": 0,
+        "WORLD_EXIT": 0,
+        "DECAY": 0,
+        "MU_CAPTURE": 1,
+        "STOPPED": 0,
+        "OTHER": 0,
+        "ABORTED": 0
+       },
+       "meta": {
+        "ABORTED": 0,
+        "DECAY": 0,
+        "DET": 11,
+        "MU_CAPTURE": 1,
+        "OTHER": 0,
+        "PLANE_OUT": 0,
+        "STOPPED": 0,
+        "WORLD_EXIT": 0
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.12",
+      "descripcion": "histograma reconstruido con las filas DET igual a hist.csv en las 65 536 celdas",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "celdas_distintas": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.13",
+      "descripcion": "número de filas DET = detected_in_bins = suma de hist.csv",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "DET": 11,
+       "detected_in_bins": 11,
+       "suma_hist": 11
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.14",
+      "descripcion": "la columna detected vale 1 exactamente en las filas DET",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {}
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.15",
+      "descripcion": "eficiencia de detección compatible con la de la campaña (|z| <= 5; informativo, no bloquea)",
+      "ok": null,
+      "bloqueante": false,
+      "evidencia": {
+       "eficiencia": 0.9166666666666666,
+       "referencia_campana": 0.7521691179133344,
+       "z": 1.3198196596670753,
+       "nota": "no aplica: lista dirigida de 10 TeV, no es una muestra de la fuente"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.16",
+      "descripcion": "in_rint del binario == valor recalculado fuera de línea (100 %)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "distintas": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.17",
+      "descripcion": "hist[R_int].sum() == número de filas con in_rint = 1",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "hist": 8,
+       "filas": 8
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.18",
+      "descripcion": "desplazamiento lateral reportado: max_lat_mm finito y presente en toda fila con pasos, con el mismo máximo que el meta (diagnóstico: ya no se exige < 1e-6 mm)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "max_lat_mm": 1.070511428644485,
+       "meta_max_lat_mm": 1.070511428644485,
+       "filas_sin_dato": 0,
+       "mediana_mm": 0.02355013094437941,
+       "p99_mm": 1.0371793191530592,
+       "fraccion_mayor_que_1e-6_mm": 1.0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.19",
+      "descripcion": "escala del error de la longitud en Z (Σ del desplazamiento transversal, no cota): max_lat_z_mm y sum_lat_z_mm finitos, no negativos y con sum_lat_z_mm >= max_lat_z_mm en cada fila; con valores en todas las filas si hay región, max_lat_z_mm <= max_lat_mm y los máximos iguales a los del meta",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "max_lat_z_mm": 0.002818403318357407,
+       "max_sum_lat_z_mm": 0.003971540621127592,
+       "filas_con_dato": 12,
+       "meta_max_lat_z_mm": 0.002818403318357407,
+       "meta_max_sum_lat_z_mm": 0.003971540621127592,
+       "filas_coherentes": true,
+       "maximos_iguales_al_meta": true
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.20",
+      "descripcion": "avisos de A iguales a los esperados por el manifiesto (diagnóstico histórico)",
+      "ok": true,
+      "bloqueante": false,
+      "evidencia": {
+       "obtenidos": "GeomVol1002=1",
+       "esperados": "GeomVol1002=1"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.21",
+      "descripcion": "region.applicable = true y crossed en {0, 1}",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "applicable": true,
+       "crossed_valores": [
+        1.0
+       ]
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.22",
+      "descripcion": "procedencia coherente con el manifiesto (variante, caso, réplica, lista, semillas, un hilo, MixMaxRng, G4TaskRunManager, máscara)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "falla": [],
+       "worker_thread_ids": [
+        0
+       ],
+       "run_manager_class": "G4TaskRunManager"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.23",
+      "descripcion": "la firma de volúmenes corresponde a la variante A (anomaly_0 = G4Tubs)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "firma": {
+        "anomaly_0": "G4Tubs",
+        "anomaly_1": "G4Ellipsoid"
+       },
+       "esperada": {
+        "anomaly_0": "G4Tubs",
+        "anomaly_1": "G4Ellipsoid"
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.24",
+      "descripcion": "FNV-1a-64 de _muones.csv coincide con muon_log del meta (lo que el binario escribió)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "fnv_calculado": "0f8c41cb07283bad",
+       "fnv_meta": "0f8c41cb07283bad"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.25",
+      "descripcion": "tamaño y número de columnas de _muones.csv coinciden con muon_log del meta",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "bytes": 7580,
+       "meta_bytes": 7580,
+       "columnas": 49,
+       "meta_columnas": 49
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.26",
+      "descripcion": "run.log contiene RUN DONE y la línea OE1-ETAPA1 con status=OK y errors=none",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "RUN DONE": "RUN DONE geo-train-06 view 0: events=12 detected=11 wall_s=0.0565647",
+       "OE1-ETAPA1": "OE1-ETAPA1 geometry=geo-train-06 view=0 variant=A case_code=6 replica=10 muon_log=full n=12 rows=12 DET=11 PLANE_OUT=0 WORLD_EXIT=0 DECAY=0 MU_CAPTURE=1 STOPPED=0 OTHER=0 ABORTED=0 in_rint=8 crossed=12 graze_muons=0 ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=none status=OK"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "A-1026093013",
+      "id": "K6.27",
+      "descripcion": "energía cinética media en el plano == meta (informativo)",
+      "ok": true,
+      "bloqueante": false,
+      "evidencia": {
+       "recalculada": 3347.123766080385,
+       "meta": 3347.123766080385,
+       "diferencia_relativa": 0.0
+      }
+     }
+    ],
+    "B-1026093011": [
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.1",
+      "descripcion": "archivos presentes (hist, meta, _muones.csv), sin .part",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "problemas": [],
+       "part": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.2",
+      "descripcion": "SHA256SUMS de la corrida coincide con los archivos",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "no_coinciden": [],
+       "sin_listar": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.3",
+      "descripcion": "estado del guion de lanzamiento: OK con código de salida 0",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "run_id": "B-1026093011",
+       "veredicto": "OK",
+       "rc": "0",
+       "motivo": "PROCESO_OK",
+       "nodo": null,
+       "trabajo": null
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.4",
+      "descripcion": "la clave oe1_etapa1 está en el meta (el binario nuevo, no uno viejo)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "presente": true
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.5",
+      "descripcion": "las comprobaciones del binario son todas verdaderas y no hay errores",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "checks": {
+        "detected_equal": true,
+        "ekin_sum_equal": true,
+        "events_equal": true,
+        "generated_equal": true,
+        "hist_reconstructed_equal": true,
+        "ids_complete_unique": true,
+        "variant_matches_geometry": true,
+        "writes_ok": true
+       },
+       "errors": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.6",
+      "descripcion": "filas = N = events_transported = ecomug_draws_total = N de la lista",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas": 12,
+       "N": 12,
+       "events_transported": 12,
+       "ecomug_draws_total": 12
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.7",
+      "descripcion": "IDs únicos, ordenados y 0..N-1",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {}
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.8",
+      "descripcion": "prim_fnv y rng0: 16 dígitos hexadecimales, ninguno nulo y N valores distintos cada uno (una columna vacía o constante haría pasar K7, K8 y K9 (a) en vacío)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "N": 12,
+       "prim_fnv": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       },
+       "rng0": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.9",
+      "descripcion": "prim_fnv recalculado desde las filas de la lista == columna prim_fnv, para todo id",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas_que_difieren": 0,
+       "N": 12,
+       "primeras": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.10",
+      "descripcion": "ninguna fila ABORTED",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "ABORTED": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.11",
+      "descripcion": "los conteos por estado del meta coinciden con las filas",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas": {
+        "DET": 12,
+        "PLANE_OUT": 0,
+        "WORLD_EXIT": 0,
+        "DECAY": 0,
+        "MU_CAPTURE": 0,
+        "STOPPED": 0,
+        "OTHER": 0,
+        "ABORTED": 0
+       },
+       "meta": {
+        "ABORTED": 0,
+        "DECAY": 0,
+        "DET": 12,
+        "MU_CAPTURE": 0,
+        "OTHER": 0,
+        "PLANE_OUT": 0,
+        "STOPPED": 0,
+        "WORLD_EXIT": 0
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.12",
+      "descripcion": "histograma reconstruido con las filas DET igual a hist.csv en las 65 536 celdas",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "celdas_distintas": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.13",
+      "descripcion": "número de filas DET = detected_in_bins = suma de hist.csv",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "DET": 12,
+       "detected_in_bins": 12,
+       "suma_hist": 12
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.14",
+      "descripcion": "la columna detected vale 1 exactamente en las filas DET",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {}
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.15",
+      "descripcion": "eficiencia de detección compatible con la de la campaña (|z| <= 5; informativo, no bloquea)",
+      "ok": null,
+      "bloqueante": false,
+      "evidencia": {
+       "eficiencia": 1.0,
+       "referencia_campana": 0.7521691179133344,
+       "z": 1.9884312740799315,
+       "nota": "no aplica: lista dirigida de 10 TeV, no es una muestra de la fuente"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.16",
+      "descripcion": "in_rint del binario == valor recalculado fuera de línea (100 %)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "distintas": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.17",
+      "descripcion": "hist[R_int].sum() == número de filas con in_rint = 1",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "hist": 10,
+       "filas": 10
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.18",
+      "descripcion": "desplazamiento lateral reportado: max_lat_mm finito y presente en toda fila con pasos, con el mismo máximo que el meta (diagnóstico: ya no se exige < 1e-6 mm)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "max_lat_mm": 0.18882451127823838,
+       "meta_max_lat_mm": 0.18882451127823838,
+       "filas_sin_dato": 0,
+       "mediana_mm": 0.019110603187796178,
+       "p99_mm": 0.1863423126542512,
+       "fraccion_mayor_que_1e-6_mm": 1.0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.19",
+      "descripcion": "escala del error de la longitud en Z (Σ del desplazamiento transversal, no cota): max_lat_z_mm y sum_lat_z_mm finitos, no negativos y con sum_lat_z_mm >= max_lat_z_mm en cada fila; con valores en todas las filas si hay región, max_lat_z_mm <= max_lat_mm y los máximos iguales a los del meta",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "max_lat_z_mm": 0.0017891436689903535,
+       "max_sum_lat_z_mm": 0.0017891437651892006,
+       "filas_con_dato": 12,
+       "meta_max_lat_z_mm": 0.0017891436689903535,
+       "meta_max_sum_lat_z_mm": 0.0017891437651892006,
+       "filas_coherentes": true,
+       "maximos_iguales_al_meta": true
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.20",
+      "descripcion": "B sin GeomVol1002 / GeomNav / G4Exception en el registro",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "codigos": {}
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.21",
+      "descripcion": "region.applicable = true y crossed en {0, 1}",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "applicable": true,
+       "crossed_valores": [
+        1.0
+       ]
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.22",
+      "descripcion": "procedencia coherente con el manifiesto (variante, caso, réplica, lista, semillas, un hilo, MixMaxRng, G4TaskRunManager, máscara)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "falla": [],
+       "worker_thread_ids": [
+        0
+       ],
+       "run_manager_class": "G4TaskRunManager"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.23",
+      "descripcion": "la firma de volúmenes corresponde a la variante B (anomaly_0 = G4SubtractionSolid)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "firma": {
+        "anomaly_0": "G4SubtractionSolid",
+        "anomaly_1": "G4Ellipsoid"
+       },
+       "esperada": {
+        "anomaly_0": "G4SubtractionSolid",
+        "anomaly_1": "G4Ellipsoid"
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.24",
+      "descripcion": "FNV-1a-64 de _muones.csv coincide con muon_log del meta (lo que el binario escribió)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "fnv_calculado": "0e88e3309439534f",
+       "fnv_meta": "0e88e3309439534f"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.25",
+      "descripcion": "tamaño y número de columnas de _muones.csv coinciden con muon_log del meta",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "bytes": 7685,
+       "meta_bytes": 7685,
+       "columnas": 49,
+       "meta_columnas": 49
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.26",
+      "descripcion": "run.log contiene RUN DONE y la línea OE1-ETAPA1 con status=OK y errors=none",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "RUN DONE": "RUN DONE geo-train-06 view 0: events=12 detected=12 wall_s=0.0573948",
+       "OE1-ETAPA1": "OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=10 muon_log=full n=12 rows=12 DET=12 PLANE_OUT=0 WORLD_EXIT=0 DECAY=0 MU_CAPTURE=0 STOPPED=0 OTHER=0 ABORTED=0 in_rint=10 crossed=12 graze_muons=0 ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=none status=OK"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093011",
+      "id": "K6.27",
+      "descripcion": "energía cinética media en el plano == meta (informativo)",
+      "ok": true,
+      "bloqueante": false,
+      "evidencia": {
+       "recalculada": 3842.351007516736,
+       "meta": 3842.351007516736,
+       "diferencia_relativa": 0.0
+      }
+     }
+    ],
+    "B-1026093012": [
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.1",
+      "descripcion": "archivos presentes (hist, meta, _muones.csv), sin .part",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "problemas": [],
+       "part": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.2",
+      "descripcion": "SHA256SUMS de la corrida coincide con los archivos",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "no_coinciden": [],
+       "sin_listar": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.3",
+      "descripcion": "estado del guion de lanzamiento: OK con código de salida 0",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "run_id": "B-1026093012",
+       "veredicto": "OK",
+       "rc": "0",
+       "motivo": "PROCESO_OK",
+       "nodo": null,
+       "trabajo": null
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.4",
+      "descripcion": "la clave oe1_etapa1 está en el meta (el binario nuevo, no uno viejo)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "presente": true
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.5",
+      "descripcion": "las comprobaciones del binario son todas verdaderas y no hay errores",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "checks": {
+        "detected_equal": true,
+        "ekin_sum_equal": true,
+        "events_equal": true,
+        "generated_equal": true,
+        "hist_reconstructed_equal": true,
+        "ids_complete_unique": true,
+        "variant_matches_geometry": true,
+        "writes_ok": true
+       },
+       "errors": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.6",
+      "descripcion": "filas = N = events_transported = ecomug_draws_total = N de la lista",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas": 12,
+       "N": 12,
+       "events_transported": 12,
+       "ecomug_draws_total": 12
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.7",
+      "descripcion": "IDs únicos, ordenados y 0..N-1",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {}
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.8",
+      "descripcion": "prim_fnv y rng0: 16 dígitos hexadecimales, ninguno nulo y N valores distintos cada uno (una columna vacía o constante haría pasar K7, K8 y K9 (a) en vacío)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "N": 12,
+       "prim_fnv": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       },
+       "rng0": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.9",
+      "descripcion": "prim_fnv recalculado desde las filas de la lista == columna prim_fnv, para todo id",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas_que_difieren": 0,
+       "N": 12,
+       "primeras": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.10",
+      "descripcion": "ninguna fila ABORTED",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "ABORTED": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.11",
+      "descripcion": "los conteos por estado del meta coinciden con las filas",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas": {
+        "DET": 12,
+        "PLANE_OUT": 0,
+        "WORLD_EXIT": 0,
+        "DECAY": 0,
+        "MU_CAPTURE": 0,
+        "STOPPED": 0,
+        "OTHER": 0,
+        "ABORTED": 0
+       },
+       "meta": {
+        "ABORTED": 0,
+        "DECAY": 0,
+        "DET": 12,
+        "MU_CAPTURE": 0,
+        "OTHER": 0,
+        "PLANE_OUT": 0,
+        "STOPPED": 0,
+        "WORLD_EXIT": 0
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.12",
+      "descripcion": "histograma reconstruido con las filas DET igual a hist.csv en las 65 536 celdas",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "celdas_distintas": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.13",
+      "descripcion": "número de filas DET = detected_in_bins = suma de hist.csv",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "DET": 12,
+       "detected_in_bins": 12,
+       "suma_hist": 12
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.14",
+      "descripcion": "la columna detected vale 1 exactamente en las filas DET",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {}
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.15",
+      "descripcion": "eficiencia de detección compatible con la de la campaña (|z| <= 5; informativo, no bloquea)",
+      "ok": null,
+      "bloqueante": false,
+      "evidencia": {
+       "eficiencia": 1.0,
+       "referencia_campana": 0.7521691179133344,
+       "z": 1.9884312740799315,
+       "nota": "no aplica: lista dirigida de 10 TeV, no es una muestra de la fuente"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.16",
+      "descripcion": "in_rint del binario == valor recalculado fuera de línea (100 %)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "distintas": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.17",
+      "descripcion": "hist[R_int].sum() == número de filas con in_rint = 1",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "hist": 9,
+       "filas": 9
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.18",
+      "descripcion": "desplazamiento lateral reportado: max_lat_mm finito y presente en toda fila con pasos, con el mismo máximo que el meta (diagnóstico: ya no se exige < 1e-6 mm)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "max_lat_mm": 0.2577457863657027,
+       "meta_max_lat_mm": 0.2577457863657027,
+       "filas_sin_dato": 0,
+       "mediana_mm": 0.02370777711292179,
+       "p99_mm": 0.2447993678314359,
+       "fraccion_mayor_que_1e-6_mm": 1.0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.19",
+      "descripcion": "escala del error de la longitud en Z (Σ del desplazamiento transversal, no cota): max_lat_z_mm y sum_lat_z_mm finitos, no negativos y con sum_lat_z_mm >= max_lat_z_mm en cada fila; con valores en todas las filas si hay región, max_lat_z_mm <= max_lat_mm y los máximos iguales a los del meta",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "max_lat_z_mm": 0.003260208277026565,
+       "max_sum_lat_z_mm": 0.003260208355216216,
+       "filas_con_dato": 12,
+       "meta_max_lat_z_mm": 0.003260208277026565,
+       "meta_max_sum_lat_z_mm": 0.003260208355216216,
+       "filas_coherentes": true,
+       "maximos_iguales_al_meta": true
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.20",
+      "descripcion": "B sin GeomVol1002 / GeomNav / G4Exception en el registro",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "codigos": {}
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.21",
+      "descripcion": "region.applicable = true y crossed en {0, 1}",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "applicable": true,
+       "crossed_valores": [
+        1.0
+       ]
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.22",
+      "descripcion": "procedencia coherente con el manifiesto (variante, caso, réplica, lista, semillas, un hilo, MixMaxRng, G4TaskRunManager, máscara)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "falla": [],
+       "worker_thread_ids": [
+        0
+       ],
+       "run_manager_class": "G4TaskRunManager"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.23",
+      "descripcion": "la firma de volúmenes corresponde a la variante B (anomaly_0 = G4SubtractionSolid)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "firma": {
+        "anomaly_0": "G4SubtractionSolid",
+        "anomaly_1": "G4Ellipsoid"
+       },
+       "esperada": {
+        "anomaly_0": "G4SubtractionSolid",
+        "anomaly_1": "G4Ellipsoid"
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.24",
+      "descripcion": "FNV-1a-64 de _muones.csv coincide con muon_log del meta (lo que el binario escribió)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "fnv_calculado": "83d13fb86f5950d5",
+       "fnv_meta": "83d13fb86f5950d5"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.25",
+      "descripcion": "tamaño y número de columnas de _muones.csv coinciden con muon_log del meta",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "bytes": 7618,
+       "meta_bytes": 7618,
+       "columnas": 49,
+       "meta_columnas": 49
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.26",
+      "descripcion": "run.log contiene RUN DONE y la línea OE1-ETAPA1 con status=OK y errors=none",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "RUN DONE": "RUN DONE geo-train-06 view 0: events=12 detected=12 wall_s=0.0589072",
+       "OE1-ETAPA1": "OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=10 muon_log=full n=12 rows=12 DET=12 PLANE_OUT=0 WORLD_EXIT=0 DECAY=0 MU_CAPTURE=0 STOPPED=0 OTHER=0 ABORTED=0 in_rint=9 crossed=12 graze_muons=0 ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=none status=OK"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093012",
+      "id": "K6.27",
+      "descripcion": "energía cinética media en el plano == meta (informativo)",
+      "ok": true,
+      "bloqueante": false,
+      "evidencia": {
+       "recalculada": 4507.909114285281,
+       "meta": 4507.909114285281,
+       "diferencia_relativa": 0.0
+      }
+     }
+    ],
+    "B-1026093013": [
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.1",
+      "descripcion": "archivos presentes (hist, meta, _muones.csv), sin .part",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "problemas": [],
+       "part": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.2",
+      "descripcion": "SHA256SUMS de la corrida coincide con los archivos",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "no_coinciden": [],
+       "sin_listar": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.3",
+      "descripcion": "estado del guion de lanzamiento: OK con código de salida 0",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "run_id": "B-1026093013",
+       "veredicto": "OK",
+       "rc": "0",
+       "motivo": "PROCESO_OK",
+       "nodo": null,
+       "trabajo": null
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.4",
+      "descripcion": "la clave oe1_etapa1 está en el meta (el binario nuevo, no uno viejo)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "presente": true
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.5",
+      "descripcion": "las comprobaciones del binario son todas verdaderas y no hay errores",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "checks": {
+        "detected_equal": true,
+        "ekin_sum_equal": true,
+        "events_equal": true,
+        "generated_equal": true,
+        "hist_reconstructed_equal": true,
+        "ids_complete_unique": true,
+        "variant_matches_geometry": true,
+        "writes_ok": true
+       },
+       "errors": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.6",
+      "descripcion": "filas = N = events_transported = ecomug_draws_total = N de la lista",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas": 12,
+       "N": 12,
+       "events_transported": 12,
+       "ecomug_draws_total": 12
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.7",
+      "descripcion": "IDs únicos, ordenados y 0..N-1",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {}
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.8",
+      "descripcion": "prim_fnv y rng0: 16 dígitos hexadecimales, ninguno nulo y N valores distintos cada uno (una columna vacía o constante haría pasar K7, K8 y K9 (a) en vacío)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "N": 12,
+       "prim_fnv": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       },
+       "rng0": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.9",
+      "descripcion": "prim_fnv recalculado desde las filas de la lista == columna prim_fnv, para todo id",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas_que_difieren": 0,
+       "N": 12,
+       "primeras": []
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.10",
+      "descripcion": "ninguna fila ABORTED",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "ABORTED": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.11",
+      "descripcion": "los conteos por estado del meta coinciden con las filas",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "filas": {
+        "DET": 11,
+        "PLANE_OUT": 0,
+        "WORLD_EXIT": 0,
+        "DECAY": 0,
+        "MU_CAPTURE": 1,
+        "STOPPED": 0,
+        "OTHER": 0,
+        "ABORTED": 0
+       },
+       "meta": {
+        "ABORTED": 0,
+        "DECAY": 0,
+        "DET": 11,
+        "MU_CAPTURE": 1,
+        "OTHER": 0,
+        "PLANE_OUT": 0,
+        "STOPPED": 0,
+        "WORLD_EXIT": 0
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.12",
+      "descripcion": "histograma reconstruido con las filas DET igual a hist.csv en las 65 536 celdas",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "celdas_distintas": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.13",
+      "descripcion": "número de filas DET = detected_in_bins = suma de hist.csv",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "DET": 11,
+       "detected_in_bins": 11,
+       "suma_hist": 11
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.14",
+      "descripcion": "la columna detected vale 1 exactamente en las filas DET",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {}
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.15",
+      "descripcion": "eficiencia de detección compatible con la de la campaña (|z| <= 5; informativo, no bloquea)",
+      "ok": null,
+      "bloqueante": false,
+      "evidencia": {
+       "eficiencia": 0.9166666666666666,
+       "referencia_campana": 0.7521691179133344,
+       "z": 1.3198196596670753,
+       "nota": "no aplica: lista dirigida de 10 TeV, no es una muestra de la fuente"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.16",
+      "descripcion": "in_rint del binario == valor recalculado fuera de línea (100 %)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "distintas": 0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.17",
+      "descripcion": "hist[R_int].sum() == número de filas con in_rint = 1",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "hist": 8,
+       "filas": 8
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.18",
+      "descripcion": "desplazamiento lateral reportado: max_lat_mm finito y presente en toda fila con pasos, con el mismo máximo que el meta (diagnóstico: ya no se exige < 1e-6 mm)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "max_lat_mm": 1.070511428644485,
+       "meta_max_lat_mm": 1.070511428644485,
+       "filas_sin_dato": 0,
+       "mediana_mm": 0.023614897698409798,
+       "p99_mm": 1.0371793191530592,
+       "fraccion_mayor_que_1e-6_mm": 1.0
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.19",
+      "descripcion": "escala del error de la longitud en Z (Σ del desplazamiento transversal, no cota): max_lat_z_mm y sum_lat_z_mm finitos, no negativos y con sum_lat_z_mm >= max_lat_z_mm en cada fila; con valores en todas las filas si hay región, max_lat_z_mm <= max_lat_mm y los máximos iguales a los del meta",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "max_lat_z_mm": 0.0001033476974336212,
+       "max_sum_lat_z_mm": 0.00010334795329348218,
+       "filas_con_dato": 12,
+       "meta_max_lat_z_mm": 0.0001033476974336212,
+       "meta_max_sum_lat_z_mm": 0.00010334795329348218,
+       "filas_coherentes": true,
+       "maximos_iguales_al_meta": true
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.20",
+      "descripcion": "B sin GeomVol1002 / GeomNav / G4Exception en el registro",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "codigos": {}
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.21",
+      "descripcion": "region.applicable = true y crossed en {0, 1}",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "applicable": true,
+       "crossed_valores": [
+        1.0
+       ]
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.22",
+      "descripcion": "procedencia coherente con el manifiesto (variante, caso, réplica, lista, semillas, un hilo, MixMaxRng, G4TaskRunManager, máscara)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "falla": [],
+       "worker_thread_ids": [
+        0
+       ],
+       "run_manager_class": "G4TaskRunManager"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.23",
+      "descripcion": "la firma de volúmenes corresponde a la variante B (anomaly_0 = G4SubtractionSolid)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "firma": {
+        "anomaly_0": "G4SubtractionSolid",
+        "anomaly_1": "G4Ellipsoid"
+       },
+       "esperada": {
+        "anomaly_0": "G4SubtractionSolid",
+        "anomaly_1": "G4Ellipsoid"
+       }
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.24",
+      "descripcion": "FNV-1a-64 de _muones.csv coincide con muon_log del meta (lo que el binario escribió)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "fnv_calculado": "aea5b6c798ea7f4e",
+       "fnv_meta": "aea5b6c798ea7f4e"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.25",
+      "descripcion": "tamaño y número de columnas de _muones.csv coinciden con muon_log del meta",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "bytes": 7632,
+       "meta_bytes": 7632,
+       "columnas": 49,
+       "meta_columnas": 49
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.26",
+      "descripcion": "run.log contiene RUN DONE y la línea OE1-ETAPA1 con status=OK y errors=none",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "RUN DONE": "RUN DONE geo-train-06 view 0: events=12 detected=11 wall_s=0.0566191",
+       "OE1-ETAPA1": "OE1-ETAPA1 geometry=geo-train-06 view=0 variant=B case_code=6 replica=10 muon_log=full n=12 rows=12 DET=11 PLANE_OUT=0 WORLD_EXIT=0 DECAY=0 MU_CAPTURE=1 STOPPED=0 OTHER=0 ABORTED=0 in_rint=8 crossed=12 graze_muons=0 ids_ok=1 hist_ok=1 det_ok=1 writes_ok=1 ekin_sum_equal=1 errors=none status=OK"
+      }
+     },
+     {
+      "contrato": "K6",
+      "ambito": "B-1026093013",
+      "id": "K6.27",
+      "descripcion": "energía cinética media en el plano == meta (informativo)",
+      "ok": true,
+      "bloqueante": false,
+      "evidencia": {
+       "recalculada": 3093.9352961116047,
+       "meta": 3093.9352961116047,
+       "diferencia_relativa": 0.0
+      }
+     }
+    ]
+   }
+  },
+  "K9": {
+   "descripcion": "A frente a B: (a) prim_fnv y rng0 iguales para todo id, en geo-train-06 y en el control; (b) clasificación de la discordancia de los que no cruzan Z (solo diagnóstico); (c) en B lz_a0 y lz_rock <= 1 µm, salvo lo que explica el desplazamiento lateral (no bloqueante)",
+   "bloqueante": true,
+   "veredicto": "OK",
+   "ambitos": {
+    "A-1026093011 vs B-1026093011": [
+     {
+      "contrato": "K9",
+      "ambito": "A-1026093011 vs B-1026093011",
+      "id": "K9.1",
+      "descripcion": "(a) mismos IDs y prim_fnv igual para todo id (N valores distintos, no nulos)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "prim_fnv_distintos": 0,
+       "valores_reales_y_distintos_en_A_y_B": true,
+       "A": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       },
+       "B": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       }
+      }
+     },
+     {
+      "contrato": "K9",
+      "ambito": "A-1026093011 vs B-1026093011",
+      "id": "K9.2",
+      "descripcion": "(a) rng0 igual para todo id (N valores distintos, no nulos)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "rng0_distintos": 0,
+       "valores_reales_y_distintos_en_A_y_B": true,
+       "A": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       },
+       "B": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       }
+      }
+     }
+    ],
+    "A-1026093012 vs B-1026093012": [
+     {
+      "contrato": "K9",
+      "ambito": "A-1026093012 vs B-1026093012",
+      "id": "K9.1",
+      "descripcion": "(a) mismos IDs y prim_fnv igual para todo id (N valores distintos, no nulos)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "prim_fnv_distintos": 0,
+       "valores_reales_y_distintos_en_A_y_B": true,
+       "A": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       },
+       "B": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       }
+      }
+     },
+     {
+      "contrato": "K9",
+      "ambito": "A-1026093012 vs B-1026093012",
+      "id": "K9.2",
+      "descripcion": "(a) rng0 igual para todo id (N valores distintos, no nulos)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "rng0_distintos": 0,
+       "valores_reales_y_distintos_en_A_y_B": true,
+       "A": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       },
+       "B": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       }
+      }
+     }
+    ],
+    "A-1026093013 vs B-1026093013": [
+     {
+      "contrato": "K9",
+      "ambito": "A-1026093013 vs B-1026093013",
+      "id": "K9.1",
+      "descripcion": "(a) mismos IDs y prim_fnv igual para todo id (N valores distintos, no nulos)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "prim_fnv_distintos": 0,
+       "valores_reales_y_distintos_en_A_y_B": true,
+       "A": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       },
+       "B": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       }
+      }
+     },
+     {
+      "contrato": "K9",
+      "ambito": "A-1026093013 vs B-1026093013",
+      "id": "K9.2",
+      "descripcion": "(a) rng0 igual para todo id (N valores distintos, no nulos)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "rng0_distintos": 0,
+       "valores_reales_y_distintos_en_A_y_B": true,
+       "A": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       },
+       "B": {
+        "filas": 12,
+        "no_hexadecimales_de_16_digitos": 0,
+        "ceros": 0,
+        "valores_distintos": 12
+       }
+      }
+     }
+    ]
+   }
+  },
+  "R201": {
+   "descripcion": "Archivos del ejecutor del complemento R2-01: FINALIZADO.txt, las 6 corridas con PROCESO_OK, y A2 y B2 leen la misma lista (check-A2.txt = check-B2.txt)",
+   "bloqueante": true,
+   "veredicto": "OK",
+   "ambitos": {
+    "intento": [
+     {
+      "contrato": "R201",
+      "ambito": "intento",
+      "id": "R201.1",
+      "descripcion": "FINALIZADO.txt presente (el ejecutor terminó las 6 corridas)",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {}
+     },
+     {
+      "contrato": "R201",
+      "ambito": "intento",
+      "id": "R201.2",
+      "descripcion": "estado.tsv: las 6 corridas (A, B x 3 semillas) con PROCESO_OK",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "estado": {
+        "A-1026093011": "PROCESO_OK",
+        "B-1026093011": "PROCESO_OK",
+        "A-1026093012": "PROCESO_OK",
+        "B-1026093012": "PROCESO_OK",
+        "A-1026093013": "PROCESO_OK",
+        "B-1026093013": "PROCESO_OK"
+       }
+      }
+     },
+     {
+      "contrato": "R201",
+      "ambito": "intento",
+      "id": "R201.3",
+      "descripcion": "check-A2.txt == check-B2.txt, con status=OK, n=12, la huella de la lista y su FNV canónico",
+      "ok": true,
+      "bloqueante": true,
+      "evidencia": {
+       "identicos": true,
+       "linea": {
+        "status": "OK",
+        "n": "12",
+        "file_sha256": "ae8318a704d004989f65faaa5b8fe5624281fefef7c65f370a281d2378402ea1",
+        "canon_fnv1a64": "c11af894c81614a5"
+       }
+      }
+     }
+    ]
+   }
+  }
+ },
+ "entradas": {
+  "intento": "C:\\Users\\etherion\\AppData\\Local\\Temp\\claude\\c--Users-etherion-Documents-tesis-ing-sistemas-tesis-5-8-26-tesis-ing-sistemas\\c5f46186-ae19-4f11-98f9-b9fe64729926\\scratchpad\\r201\\sc3\\intento-01",
+  "lista": {
+   "archivo": "geo-train-06_v0_r10_r201.primarios.csv",
+   "sha256": "ae8318a704d004989f65faaa5b8fe5624281fefef7c65f370a281d2378402ea1",
+   "canon_fnv1a64": "c11af894c81614a5"
+  },
+  "esperado": {
+   "archivo": "trayectorias-esperadas.json",
+   "sha256": "fdf3f7b57cf167323be2192a43b1372471a51f2dad2d3f9cccd7d5fc3dc69b4e"
+  },
+  "mascara": {
+   "archivo": "R_int.mask.txt",
+   "sha256": "e76dcbe5926f9f4aeb61c556729d15c64124cd50a8577dca6beee9ffa317c5fd"
+  },
+  "semillas": [
+   1026093011,
+   1026093012,
+   1026093013
+  ]
+ },
+ "herramienta": {
+  "scripts_sha256": {
+   "oe1_r201_compare.py": "62b551f263d82ad1cc6e6595e129a3022ab17b15b427d80d9a589edd8ae96a80",
+   "oe1_stage1_analysis.py": "e08d3355e32257fda2330b3c73600aebb46983b61eff71d143a96d07163173a3",
+   "oe1_stage1_common.py": "1575b1e64d0431da50f708c4735930fe3b2457fce7cf2b1f5a29fed5d371fb3e",
+   "oe1_stage1_lists.py": "debbf77aa64e54a68ec7311ad7361b3554de9965f133e77501e9a5cbb865713c",
+   "oe1_stage1_roi.py": "e9b2de31191e569ca92c4b3bb51bc31f1ffed9b90f31e35441beb5e29b9b1105",
+   "oe1_stage1_synthetic.py": "c450d4435c36dffcbaacaeed749c283154bf5668b73ec82a04913d2098e20435",
+   "oe1_stage1_tecnicas.py": "ff2c8f9e121df4c0ec9f3ee2465baea7e8b1a80838e11260eb55ab1d8dedf325"
+  },
+  "entorno": {
+   "python": "3.13.5",
+   "numpy": "2.4.4",
+   "scipy": "no usado",
+   "matplotlib": "no usado",
+   "plataforma": "win32 64-bit"
+  }
+ }
+}

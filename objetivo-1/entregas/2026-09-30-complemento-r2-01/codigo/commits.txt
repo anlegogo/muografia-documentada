@@ -1,0 +1,10 @@
+Repositorio de código: muography-dl-reconstruction
+  binario A2: fdaef4b8aad259f17043ef0fc6fdccc295e3b8e2 (rama oe1/stage1-instrumentation; herramientas de SC3 en 3315f82ffa1a3be604897e34e2319b379f500655); ejecutable a07d83c443120bb0a7e0d32d73ad8f1c1fa7e7cba771e9fc8331f7218b0728f5
+  binario B2: 9bb43f3b620b5e6d62e4b5ea79647dff44c6f3cd (A2 más la corrección de la geometría); ejecutable ae76186647e7cc90796a9504cfa8bc763fc959484c2f78bf647cbe321f996852
+  comparación: 0d97beb5287ebc0e43ecc63ad1c4c43fa0d87e46 (rama oe1/complement-r2-01)
+    scripts/analysis/oe1_r201_compare.py 62b551f263d82ad1cc6e6595e129a3022ab17b15b427d80d9a589edd8ae96a80
+    scripts/analysis/tests/test_oe1_r201_compare.py c2a8f5a58e2012026beb3dae6bb8d289fcfc6924babe38d2a21e021faeae4c20
+Repositorio del director: muografia-documentada
+  diseño, insumos y ejecutor: 7c1a4e2785b082a8e94d2e2ec909e31e3a72e943 (main)
+    herramientas/ejecutar_complemento_r2_01.sh d3a27235231eff2fc33e3af12a86cc23a26cd1ad38c0569dd98161b0a0e48a28
+    herramientas/preparar_complemento_r2_01.py ab8db3a06798d6e8b5f1e2db5699e0bf4652bb80a2127797f2afd63fd4c0ba17

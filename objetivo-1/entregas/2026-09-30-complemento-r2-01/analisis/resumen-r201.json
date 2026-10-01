@@ -1,0 +1,94 @@
+{
+ "formato": "oe1-r201-resumen/1",
+ "estado": "OK",
+ "cobertura": {
+  "desde_conducto": {
+   "ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "pares": 18,
+   "pares_con_cruce_en_A_y_B": 18,
+   "pares_con_lado_observado_en_A_igual_al_planificado": 18,
+   "ids_con_lado_en_A_igual_al_planificado_en_las_3_semillas": 6,
+   "pares_con_material_de_B_correcto": 18,
+   "pares_de_B_fuera_de_1um_explicados_por_escala_lateral": 0,
+   "transiciones": {
+    "11": 18
+   },
+   "pares_detectados_en_ambas_con_mismo_pixel": 15,
+   "ids_consistentes_en_3_semillas_A": 4,
+   "ids_consistentes_en_3_semillas_B": 4,
+   "A_identidad_ok": 18
+  },
+  "desde_cuerpo_denso": {
+   "ids": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "pares": 18,
+   "pares_con_cruce_en_A_y_B": 18,
+   "pares_con_lado_observado_en_A_igual_al_planificado": 18,
+   "ids_con_lado_en_A_igual_al_planificado_en_las_3_semillas": 6,
+   "pares_con_material_de_B_correcto": 18,
+   "pares_de_B_fuera_de_1um_explicados_por_escala_lateral": 0,
+   "transiciones": {
+    "11": 17,
+    "00": 1
+   },
+   "pares_detectados_en_ambas_con_mismo_pixel": 17,
+   "ids_consistentes_en_3_semillas_A": 2,
+   "ids_consistentes_en_3_semillas_B": 2,
+   "A_identidad_ok": 18
+  }
+ },
+ "criterio_material_B": "lz_m = lz_a1_m y lz_a0_m, lz_rock_m, lz_other_m <= 1 µm (T-S); la escala lateral 2·√(2·R_max·Σlat) puede explicar un exceso, pero no es una cota",
+ "lado_observado_A": "mat_in del primer tramo profundo en Z: A0 = desde el conducto, A1 = desde el cuerpo denso; en B toda Z es A1 y el lado no se observa en el registro agregado",
+ "entradas": {
+  "intento": "C:\\Users\\etherion\\AppData\\Local\\Temp\\claude\\c--Users-etherion-Documents-tesis-ing-sistemas-tesis-5-8-26-tesis-ing-sistemas\\c5f46186-ae19-4f11-98f9-b9fe64729926\\scratchpad\\r201\\sc3\\intento-01",
+  "lista": {
+   "archivo": "geo-train-06_v0_r10_r201.primarios.csv",
+   "sha256": "ae8318a704d004989f65faaa5b8fe5624281fefef7c65f370a281d2378402ea1",
+   "canon_fnv1a64": "c11af894c81614a5"
+  },
+  "esperado": {
+   "archivo": "trayectorias-esperadas.json",
+   "sha256": "fdf3f7b57cf167323be2192a43b1372471a51f2dad2d3f9cccd7d5fc3dc69b4e"
+  },
+  "mascara": {
+   "archivo": "R_int.mask.txt",
+   "sha256": "e76dcbe5926f9f4aeb61c556729d15c64124cd50a8577dca6beee9ffa317c5fd"
+  },
+  "semillas": [
+   1026093011,
+   1026093012,
+   1026093013
+  ]
+ },
+ "herramienta": {
+  "scripts_sha256": {
+   "oe1_r201_compare.py": "62b551f263d82ad1cc6e6595e129a3022ab17b15b427d80d9a589edd8ae96a80",
+   "oe1_stage1_analysis.py": "e08d3355e32257fda2330b3c73600aebb46983b61eff71d143a96d07163173a3",
+   "oe1_stage1_common.py": "1575b1e64d0431da50f708c4735930fe3b2457fce7cf2b1f5a29fed5d371fb3e",
+   "oe1_stage1_lists.py": "debbf77aa64e54a68ec7311ad7361b3554de9965f133e77501e9a5cbb865713c",
+   "oe1_stage1_roi.py": "e9b2de31191e569ca92c4b3bb51bc31f1ffed9b90f31e35441beb5e29b9b1105",
+   "oe1_stage1_synthetic.py": "c450d4435c36dffcbaacaeed749c283154bf5668b73ec82a04913d2098e20435",
+   "oe1_stage1_tecnicas.py": "ff2c8f9e121df4c0ec9f3ee2465baea7e8b1a80838e11260eb55ab1d8dedf325"
+  },
+  "entorno": {
+   "python": "3.13.5",
+   "numpy": "2.4.4",
+   "scipy": "no usado",
+   "matplotlib": "no usado",
+   "plataforma": "win32 64-bit"
+  }
+ }
+}

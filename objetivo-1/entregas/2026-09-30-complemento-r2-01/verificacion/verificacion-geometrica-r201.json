@@ -1,0 +1,754 @@
+{
+ "formato": "oe1-r201-rectas/1",
+ "ok": true,
+ "lista": {
+  "archivo": "geo-train-06_v0_r10_r201.primarios.csv",
+  "sha256": "ae8318a704d004989f65faaa5b8fe5624281fefef7c65f370a281d2378402ea1",
+  "canon_fnv1a64": "c11af894c81614a5",
+  "estructura_correcta": true,
+  "n": 12
+ },
+ "catalogo": {
+  "archivo": "geo-train-06.json",
+  "sha256": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+  "primitivas_iguales_a_crossing_reference": true,
+  "cilindro": {
+   "cx": 20.3,
+   "cy": -24.5,
+   "r": 21.0,
+   "z0": 0.0,
+   "z1": 340.0
+  },
+  "elipsoide": {
+   "cx": 32.2,
+   "cy": -74.1,
+   "cz": 137.8,
+   "ax": 72.9,
+   "ay": 61.6,
+   "az": 64.6
+  }
+ },
+ "crossing_reference": {
+  "ruta": "C:\\Users\\etherion\\Documents\\tesis-ing-sistemas\\tesis-5-8-26\\tesis-ing-sistemas\\muography-stage1\\scripts\\simulation\\geant4_app\\tests\\crossing_reference.py",
+  "sha256": "d5f296ff29adbc7a3da3ad0720119137bb8dde0ce134f3c55870568320edb8d3"
+ },
+ "esperado": {
+  "archivo": "trayectorias-esperadas.json",
+  "sha256": "fdf3f7b57cf167323be2192a43b1372471a51f2dad2d3f9cccd7d5fc3dc69b4e"
+ },
+ "criterios": {
+  "lz_min_m": 20.0,
+  "separacion_min_m": 5.0,
+  "tolerancia_m": 1e-06,
+  "anillos_m": [
+   0.025,
+   0.05
+  ],
+  "rectas_por_anillo": 360,
+  "lado": "el de la primitiva en la que la recta entra en último lugar"
+ },
+ "muones": [
+  {
+   "id": 0,
+   "lado_planificado": "desde_conducto",
+   "medicion": {
+    "lado": "desde_conducto",
+    "profundo": true,
+    "lz_m": 28.30306463707974,
+    "separacion_entradas_m": 10.40754204945414,
+    "parte_fuera_de_ambas_primitivas": true,
+    "entrada_Z_m": [
+     11.284880485537087,
+     -16.14723069534695,
+     126.13643692970925
+    ],
+    "salida_Z_m": [
+     39.36202456090746,
+     -15.68868797287484,
+     122.59706029062765
+    ],
+    "anillo": {
+     "radios_m": [
+      0.025,
+      0.05
+     ],
+     "rectas": 720,
+     "conservan_lado": 720,
+     "lz_min_m": 28.043576179833444,
+     "lz_max_m": 28.558981486158462
+    }
+   },
+   "json": {
+    "lado_entrada_recta": "desde_conducto",
+    "longitud_recta_Z_m": 28.303064637081206,
+    "separacion_entradas_primitivas_m": 10.407542049449603,
+    "longitudes_9_rectas_desplazadas_min_max_m": [
+     28.003737933658044,
+     28.597285058240573
+    ]
+   },
+   "comprobaciones": {
+    "id_en_orden": true,
+    "mu_menos_de_10_TeV": true,
+    "pasa_por_el_centro_del_panel": true,
+    "radio_de_partida": true,
+    "parte_fuera_de_ambas_primitivas": true,
+    "cruce_profundo": true,
+    "lado_planificado": true,
+    "lado_del_json": true,
+    "lz_mayor_que_20_m": true,
+    "separacion_mayor_que_5_m": true,
+    "lz_igual_al_json": true,
+    "entrada_igual_al_json": true,
+    "salida_igual_al_json": true,
+    "anillo_conserva_el_lado": true
+   },
+   "ok": true
+  },
+  {
+   "id": 1,
+   "lado_planificado": "desde_conducto",
+   "medicion": {
+    "lado": "desde_conducto",
+    "profundo": true,
+    "lz_m": 31.975699785085954,
+    "separacion_entradas_m": 6.812819630962101,
+    "parte_fuera_de_ambas_primitivas": true,
+    "entrada_Z_m": [
+     7.705276473033905,
+     -16.205691105880838,
+     141.78051363528098
+    ],
+    "salida_Z_m": [
+     39.36202456090723,
+     -15.688687972874844,
+     137.30520526519786
+    ],
+    "anillo": {
+     "radios_m": [
+      0.025,
+      0.05
+     ],
+     "rectas": 720,
+     "conservan_lado": 720,
+     "lz_min_m": 31.780007826100704,
+     "lz_max_m": 32.16982262562797
+    }
+   },
+   "json": {
+    "lado_entrada_recta": "desde_conducto",
+    "longitud_recta_Z_m": 31.975699785090683,
+    "separacion_entradas_primitivas_m": 6.8128196309641,
+    "longitudes_9_rectas_desplazadas_min_max_m": [
+     31.76940087609546,
+     32.18026529312351
+    ]
+   },
+   "comprobaciones": {
+    "id_en_orden": true,
+    "mu_menos_de_10_TeV": true,
+    "pasa_por_el_centro_del_panel": true,
+    "radio_de_partida": true,
+    "parte_fuera_de_ambas_primitivas": true,
+    "cruce_profundo": true,
+    "lado_planificado": true,
+    "lado_del_json": true,
+    "lz_mayor_que_20_m": true,
+    "separacion_mayor_que_5_m": true,
+    "lz_igual_al_json": true,
+    "entrada_igual_al_json": true,
+    "salida_igual_al_json": true,
+    "anillo_conserva_el_lado": true
+   },
+   "ok": true
+  },
+  {
+   "id": 2,
+   "lado_planificado": "desde_conducto",
+   "medicion": {
+    "lado": "desde_conducto",
+    "profundo": true,
+    "lz_m": 25.551308533507886,
+    "separacion_entradas_m": 12.697344982440208,
+    "parte_fuera_de_ambas_primitivas": true,
+    "entrada_Z_m": [
+     13.781913267340087,
+     -15.603123756615522,
+     125.82166348013014
+    ],
+    "salida_Z_m": [
+     39.129470954928365,
+     -15.202095743797704,
+     122.62637576509785
+    ],
+    "anillo": {
+     "radios_m": [
+      0.025,
+      0.05
+     ],
+     "rectas": 720,
+     "conservan_lado": 720,
+     "lz_min_m": 25.247606731392843,
+     "lz_max_m": 25.849432761688757
+    }
+   },
+   "json": {
+    "lado_entrada_recta": "desde_conducto",
+    "longitud_recta_Z_m": 25.551308533501356,
+    "separacion_entradas_primitivas_m": 12.697344982438835,
+    "longitudes_9_rectas_desplazadas_min_max_m": [
+     25.199749858033897,
+     25.8949196362787
+    ]
+   },
+   "comprobaciones": {
+    "id_en_orden": true,
+    "mu_menos_de_10_TeV": true,
+    "pasa_por_el_centro_del_panel": true,
+    "radio_de_partida": true,
+    "parte_fuera_de_ambas_primitivas": true,
+    "cruce_profundo": true,
+    "lado_planificado": true,
+    "lado_del_json": true,
+    "lz_mayor_que_20_m": true,
+    "separacion_mayor_que_5_m": true,
+    "lz_igual_al_json": true,
+    "entrada_igual_al_json": true,
+    "salida_igual_al_json": true,
+    "anillo_conserva_el_lado": true
+   },
+   "ok": true
+  },
+  {
+   "id": 3,
+   "lado_planificado": "desde_conducto",
+   "medicion": {
+    "lado": "desde_conducto",
+    "profundo": true,
+    "lz_m": 29.929156326786696,
+    "separacion_entradas_m": 8.39648138875859,
+    "parte_fuera_de_ambas_primitivas": true,
+    "entrada_Z_m": [
+     9.498614144159546,
+     -15.670890559115573,
+     141.5269898346778
+    ],
+    "salida_Z_m": [
+     39.129470954928365,
+     -15.202095743797704,
+     137.3380813236117
+    ],
+    "anillo": {
+     "radios_m": [
+      0.025,
+      0.05
+     ],
+     "rectas": 720,
+     "conservan_lado": 720,
+     "lz_min_m": 29.715949134473878,
+     "lz_max_m": 30.14041221921264
+    }
+   },
+   "json": {
+    "lado_entrada_recta": "desde_conducto",
+    "longitud_recta_Z_m": 29.929156326791144,
+    "separacion_entradas_primitivas_m": 8.396481388759184,
+    "longitudes_9_rectas_desplazadas_min_max_m": [
+     29.705174921499406,
+     30.151003083632645
+    ]
+   },
+   "comprobaciones": {
+    "id_en_orden": true,
+    "mu_menos_de_10_TeV": true,
+    "pasa_por_el_centro_del_panel": true,
+    "radio_de_partida": true,
+    "parte_fuera_de_ambas_primitivas": true,
+    "cruce_profundo": true,
+    "lado_planificado": true,
+    "lado_del_json": true,
+    "lz_mayor_que_20_m": true,
+    "separacion_mayor_que_5_m": true,
+    "lz_igual_al_json": true,
+    "entrada_igual_al_json": true,
+    "salida_igual_al_json": true,
+    "anillo_conserva_el_lado": true
+   },
+   "ok": true
+  },
+  {
+   "id": 4,
+   "lado_planificado": "desde_conducto",
+   "medicion": {
+    "lado": "desde_conducto",
+    "profundo": true,
+    "lz_m": 22.250629389229854,
+    "separacion_entradas_m": 15.503517627354125,
+    "parte_fuera_de_ambas_primitivas": true,
+    "entrada_Z_m": [
+     16.807900710612557,
+     -15.05346686673554,
+     125.44021053612263
+    ],
+    "salida_Z_m": [
+     38.88127204991292,
+     -14.715505684649692,
+     122.65766347028249
+    ],
+    "anillo": {
+     "radios_m": [
+      0.025,
+      0.05
+     ],
+     "rectas": 720,
+     "conservan_lado": 720,
+     "lz_min_m": 21.869475833523676,
+     "lz_max_m": 22.620979494490133
+    }
+   },
+   "json": {
+    "lado_entrada_recta": "desde_conducto",
+    "longitud_recta_Z_m": 22.250629389237474,
+    "separacion_entradas_primitivas_m": 15.503517627357724,
+    "longitudes_9_rectas_desplazadas_min_max_m": [
+     21.8070620621603,
+     22.678856076476222
+    ]
+   },
+   "comprobaciones": {
+    "id_en_orden": true,
+    "mu_menos_de_10_TeV": true,
+    "pasa_por_el_centro_del_panel": true,
+    "radio_de_partida": true,
+    "parte_fuera_de_ambas_primitivas": true,
+    "cruce_profundo": true,
+    "lado_planificado": true,
+    "lado_del_json": true,
+    "lz_mayor_que_20_m": true,
+    "separacion_mayor_que_5_m": true,
+    "lz_igual_al_json": true,
+    "entrada_igual_al_json": true,
+    "salida_igual_al_json": true,
+    "anillo_conserva_el_lado": true
+   },
+   "ok": true
+  },
+  {
+   "id": 5,
+   "lado_planificado": "desde_conducto",
+   "medicion": {
+    "lado": "desde_conducto",
+    "profundo": true,
+    "lz_m": 27.68928815699496,
+    "separacion_entradas_m": 10.14084893828337,
+    "parte_fuera_de_ambas_primitivas": true,
+    "entrada_Z_m": [
+     11.467745509492715,
+     -15.1352289653543,
+     141.24861411343804
+    ],
+    "salida_Z_m": [
+     38.881272049913036,
+     -14.71550568464969,
+     137.37316915493216
+    ],
+    "anillo": {
+     "radios_m": [
+      0.025,
+      0.05
+     ],
+     "rectas": 720,
+     "conservan_lado": 720,
+     "lz_min_m": 27.4537450083814,
+     "lz_max_m": 27.92228791914673
+    }
+   },
+   "json": {
+    "lado_entrada_recta": "desde_conducto",
+    "longitud_recta_Z_m": 27.68928815699587,
+    "separacion_entradas_primitivas_m": 10.140848938284194,
+    "longitudes_9_rectas_desplazadas_min_max_m": [
+     27.44275097003151,
+     27.933071678079614
+    ]
+   },
+   "comprobaciones": {
+    "id_en_orden": true,
+    "mu_menos_de_10_TeV": true,
+    "pasa_por_el_centro_del_panel": true,
+    "radio_de_partida": true,
+    "parte_fuera_de_ambas_primitivas": true,
+    "cruce_profundo": true,
+    "lado_planificado": true,
+    "lado_del_json": true,
+    "lz_mayor_que_20_m": true,
+    "separacion_mayor_que_5_m": true,
+    "lz_igual_al_json": true,
+    "entrada_igual_al_json": true,
+    "salida_igual_al_json": true,
+    "anillo_conserva_el_lado": true
+   },
+   "ok": true
+  },
+  {
+   "id": 6,
+   "lado_planificado": "desde_cuerpo_denso",
+   "medicion": {
+    "lado": "desde_cuerpo_denso",
+    "profundo": true,
+    "lz_m": 36.6683497382884,
+    "separacion_entradas_m": 27.833022415813904,
+    "parte_fuera_de_ambas_primitivas": true,
+    "entrada_Z_m": [
+     2.4958370189467587,
+     -35.63605767514225,
+     127.24437493943051
+    ],
+    "salida_Z_m": [
+     38.85343635196955,
+     -34.33717436733802,
+     122.66117241046418
+    ],
+    "anillo": {
+     "radios_m": [
+      0.025,
+      0.05
+     ],
+     "rectas": 720,
+     "conservan_lado": 720,
+     "lz_min_m": 36.61002290881597,
+     "lz_max_m": 36.72630733224534
+    }
+   },
+   "json": {
+    "lado_entrada_recta": "desde_elipsoide",
+    "longitud_recta_Z_m": 36.66834973829816,
+    "separacion_entradas_primitivas_m": 27.8330224158085,
+    "longitudes_9_rectas_desplazadas_min_max_m": [
+     36.610022908815495,
+     36.726307332253896
+    ]
+   },
+   "comprobaciones": {
+    "id_en_orden": true,
+    "mu_menos_de_10_TeV": true,
+    "pasa_por_el_centro_del_panel": true,
+    "radio_de_partida": true,
+    "parte_fuera_de_ambas_primitivas": true,
+    "cruce_profundo": true,
+    "lado_planificado": true,
+    "lado_del_json": true,
+    "lz_mayor_que_20_m": true,
+    "separacion_mayor_que_5_m": true,
+    "lz_igual_al_json": true,
+    "entrada_igual_al_json": true,
+    "salida_igual_al_json": true,
+    "anillo_conserva_el_lado": true
+   },
+   "ok": true
+  },
+  {
+   "id": 7,
+   "lado_planificado": "desde_cuerpo_denso",
+   "medicion": {
+    "lado": "desde_cuerpo_denso",
+    "profundo": true,
+    "lz_m": 36.742078845216355,
+    "separacion_entradas_m": 27.615063660645152,
+    "parte_fuera_de_ambas_primitivas": true,
+    "entrada_Z_m": [
+     2.4958370189468724,
+     -35.63605767514224,
+     142.51697108592003
+    ],
+    "salida_Z_m": [
+     38.85343635196966,
+     -34.337174367338015,
+     137.37710428218043
+    ],
+    "anillo": {
+     "radios_m": [
+      0.025,
+      0.05
+     ],
+     "rectas": 720,
+     "conservan_lado": 720,
+     "lz_min_m": 36.68363473789866,
+     "lz_max_m": 36.80015297459615
+    }
+   },
+   "json": {
+    "lado_entrada_recta": "desde_elipsoide",
+    "longitud_recta_Z_m": 36.742078845213086,
+    "separacion_entradas_primitivas_m": 27.615063660648843,
+    "longitudes_9_rectas_desplazadas_min_max_m": [
+     36.68363473789486,
+     36.80015297459772
+    ]
+   },
+   "comprobaciones": {
+    "id_en_orden": true,
+    "mu_menos_de_10_TeV": true,
+    "pasa_por_el_centro_del_panel": true,
+    "radio_de_partida": true,
+    "parte_fuera_de_ambas_primitivas": true,
+    "cruce_profundo": true,
+    "lado_planificado": true,
+    "lado_del_json": true,
+    "lz_mayor_que_20_m": true,
+    "separacion_mayor_que_5_m": true,
+    "lz_igual_al_json": true,
+    "entrada_igual_al_json": true,
+    "salida_igual_al_json": true,
+    "anillo_conserva_el_lado": true
+   },
+   "ok": true
+  },
+  {
+   "id": 8,
+   "lado_planificado": "desde_cuerpo_denso",
+   "medicion": {
+    "lado": "desde_cuerpo_denso",
+    "profundo": true,
+    "lz_m": 40.85583673261762,
+    "separacion_entradas_m": 19.761818195467733,
+    "parte_fuera_de_ambas_primitivas": true,
+    "entrada_Z_m": [
+     0.21008946558288244,
+     -30.61518558337503,
+     127.53251398489387
+    ],
+    "salida_Z_m": [
+     40.726432790528065,
+     -29.374509560359456,
+     122.42506435681308
+    ],
+    "anillo": {
+     "radios_m": [
+      0.025,
+      0.05
+     ],
+     "rectas": 720,
+     "conservan_lado": 720,
+     "lz_min_m": 40.8283646046228,
+     "lz_max_m": 40.88304191760805
+    }
+   },
+   "json": {
+    "lado_entrada_recta": "desde_elipsoide",
+    "longitud_recta_Z_m": 40.855836732615785,
+    "separacion_entradas_primitivas_m": 19.76181819547014,
+    "longitudes_9_rectas_desplazadas_min_max_m": [
+     40.828364604624426,
+     40.88304191761381
+    ]
+   },
+   "comprobaciones": {
+    "id_en_orden": true,
+    "mu_menos_de_10_TeV": true,
+    "pasa_por_el_centro_del_panel": true,
+    "radio_de_partida": true,
+    "parte_fuera_de_ambas_primitivas": true,
+    "cruce_profundo": true,
+    "lado_planificado": true,
+    "lado_del_json": true,
+    "lz_mayor_que_20_m": true,
+    "separacion_mayor_que_5_m": true,
+    "lz_igual_al_json": true,
+    "entrada_igual_al_json": true,
+    "salida_igual_al_json": true,
+    "anillo_conserva_el_lado": true
+   },
+   "ok": true
+  },
+  {
+   "id": 9,
+   "lado_planificado": "desde_cuerpo_denso",
+   "medicion": {
+    "lado": "desde_cuerpo_denso",
+    "profundo": true,
+    "lz_m": 40.93801295450414,
+    "separacion_entradas_m": 19.798899740955527,
+    "parte_fuera_de_ambas_primitivas": true,
+    "entrada_Z_m": [
+     0.21008946558288244,
+     -30.615185583375027,
+     142.84010677658137
+    ],
+    "salida_Z_m": [
+     40.72643279052818,
+     -29.374509560359453,
+     137.11231913699277
+    ],
+    "anillo": {
+     "radios_m": [
+      0.025,
+      0.05
+     ],
+     "rectas": 720,
+     "conservan_lado": 720,
+     "lz_min_m": 40.91048556988342,
+     "lz_max_m": 40.96527285919919
+    }
+   },
+   "json": {
+    "lado_entrada_recta": "desde_elipsoide",
+    "longitud_recta_Z_m": 40.93801295450373,
+    "separacion_entradas_primitivas_m": 19.798899740954425,
+    "longitudes_9_rectas_desplazadas_min_max_m": [
+     40.91048556988528,
+     40.96527285920206
+    ]
+   },
+   "comprobaciones": {
+    "id_en_orden": true,
+    "mu_menos_de_10_TeV": true,
+    "pasa_por_el_centro_del_panel": true,
+    "radio_de_partida": true,
+    "parte_fuera_de_ambas_primitivas": true,
+    "cruce_profundo": true,
+    "lado_planificado": true,
+    "lado_del_json": true,
+    "lz_mayor_que_20_m": true,
+    "separacion_mayor_que_5_m": true,
+    "lz_igual_al_json": true,
+    "entrada_igual_al_json": true,
+    "salida_igual_al_json": true,
+    "anillo_conserva_el_lado": true
+   },
+   "ok": true
+  },
+  {
+   "id": 10,
+   "lado_planificado": "desde_cuerpo_denso",
+   "medicion": {
+    "lado": "desde_cuerpo_denso",
+    "profundo": true,
+    "lz_m": 42.3201847282272,
+    "separacion_entradas_m": 11.415615026287439,
+    "parte_fuera_de_ambas_primitivas": true,
+    "entrada_Z_m": [
+     -0.6744679424073183,
+     -25.53522680265406,
+     127.64402040511105
+    ],
+    "salida_Z_m": [
+     41.29996935239524,
+     -24.464122451965007,
+     122.35276491270713
+    ],
+    "anillo": {
+     "radios_m": [
+      0.025,
+      0.05
+     ],
+     "rectas": 720,
+     "conservan_lado": 720,
+     "lz_min_m": 42.317664947852286,
+     "lz_max_m": 42.32246432585484
+    }
+   },
+   "json": {
+    "lado_entrada_recta": "desde_elipsoide",
+    "longitud_recta_Z_m": 42.320184728220966,
+    "separacion_entradas_primitivas_m": 11.415615026289402,
+    "longitudes_9_rectas_desplazadas_min_max_m": [
+     42.31766494784597,
+     42.322464325851115
+    ]
+   },
+   "comprobaciones": {
+    "id_en_orden": true,
+    "mu_menos_de_10_TeV": true,
+    "pasa_por_el_centro_del_panel": true,
+    "radio_de_partida": true,
+    "parte_fuera_de_ambas_primitivas": true,
+    "cruce_profundo": true,
+    "lado_planificado": true,
+    "lado_del_json": true,
+    "lz_mayor_que_20_m": true,
+    "separacion_mayor_que_5_m": true,
+    "lz_igual_al_json": true,
+    "entrada_igual_al_json": true,
+    "salida_igual_al_json": true,
+    "anillo_conserva_el_lado": true
+   },
+   "ok": true
+  },
+  {
+   "id": 11,
+   "lado_planificado": "desde_cuerpo_denso",
+   "medicion": {
+    "lado": "desde_cuerpo_denso",
+    "profundo": true,
+    "lz_m": 42.40533026396944,
+    "separacion_entradas_m": 11.884084686248594,
+    "parte_fuera_de_ambas_primitivas": true,
+    "entrada_Z_m": [
+     -0.6744679424073183,
+     -25.53522680265406,
+     142.9651564867035
+    ],
+    "salida_Z_m": [
+     41.29996935239535,
+     -24.464122451965007,
+     137.03123838388618
+    ],
+    "anillo": {
+     "radios_m": [
+      0.025,
+      0.05
+     ],
+     "rectas": 720,
+     "conservan_lado": 720,
+     "lz_min_m": 42.40280541395595,
+     "lz_max_m": 42.40761444800337
+    }
+   },
+   "json": {
+    "lado_entrada_recta": "desde_elipsoide",
+    "longitud_recta_Z_m": 42.405330263970995,
+    "separacion_entradas_primitivas_m": 11.884084686250617,
+    "longitudes_9_rectas_desplazadas_min_max_m": [
+     42.40280541394759,
+     42.407614448002164
+    ]
+   },
+   "comprobaciones": {
+    "id_en_orden": true,
+    "mu_menos_de_10_TeV": true,
+    "pasa_por_el_centro_del_panel": true,
+    "radio_de_partida": true,
+    "parte_fuera_de_ambas_primitivas": true,
+    "cruce_profundo": true,
+    "lado_planificado": true,
+    "lado_del_json": true,
+    "lz_mayor_que_20_m": true,
+    "separacion_mayor_que_5_m": true,
+    "lz_igual_al_json": true,
+    "entrada_igual_al_json": true,
+    "salida_igual_al_json": true,
+    "anillo_conserva_el_lado": true
+   },
+   "ok": true
+  }
+ ],
+ "herramienta": {
+  "scripts_sha256": {
+   "oe1_r201_compare.py": "62b551f263d82ad1cc6e6595e129a3022ab17b15b427d80d9a589edd8ae96a80",
+   "oe1_stage1_analysis.py": "e08d3355e32257fda2330b3c73600aebb46983b61eff71d143a96d07163173a3",
+   "oe1_stage1_common.py": "1575b1e64d0431da50f708c4735930fe3b2457fce7cf2b1f5a29fed5d371fb3e",
+   "oe1_stage1_lists.py": "debbf77aa64e54a68ec7311ad7361b3554de9965f133e77501e9a5cbb865713c",
+   "oe1_stage1_roi.py": "e9b2de31191e569ca92c4b3bb51bc31f1ffed9b90f31e35441beb5e29b9b1105",
+   "oe1_stage1_synthetic.py": "c450d4435c36dffcbaacaeed749c283154bf5668b73ec82a04913d2098e20435",
+   "oe1_stage1_tecnicas.py": "ff2c8f9e121df4c0ec9f3ee2465baea7e8b1a80838e11260eb55ab1d8dedf325"
+  },
+  "entorno": {
+   "python": "3.13.5",
+   "numpy": "2.4.4",
+   "scipy": "no usado",
+   "matplotlib": "no usado",
+   "plataforma": "win32 64-bit"
+  }
+ }
+}

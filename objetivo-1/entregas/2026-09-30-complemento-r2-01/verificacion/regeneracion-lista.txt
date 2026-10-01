@@ -1,0 +1,5 @@
+generador_sha256 ab8db3a06798d6e8b5f1e2db5699e0bf4652bb80a2127797f2afd63fd4c0ba17 | python 3.13.5 Windows
+geo-train-06_v0_r10_r201.primarios.csv             IDENTICO ae8318a704d00498
+geo-train-06_v0_r10_r201.primarios.csv.meta.json   IDENTICO 05457ab64a460dc7
+trayectorias-esperadas.json                        IDENTICO fdf3f7b57cf16732
+SHA256SUMS.txt                                     IDENTICO f150e54d96577e0c

@@ -1,0 +1,8 @@
+*.csv -text
+*.tsv -text
+*.txt -text
+*.log -text
+*.out -text
+*.sha256 -text
+*.json -text
+*.sbatch -text
