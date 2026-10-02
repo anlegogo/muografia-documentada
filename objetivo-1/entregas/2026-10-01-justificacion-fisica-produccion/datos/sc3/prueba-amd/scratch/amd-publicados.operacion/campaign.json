@@ -1,0 +1,14 @@
+{
+  "id": "6b8597f7f12a51371eba7c4148eabf66c98cdad2773b70682ea9ca526999ca4e",
+  "identity": {
+    "manifest": "62b32e769904138d46b0512c5c0f3415f4eedb71cf89f9db497658c3ea426eed",
+    "recipe": "db9e5caab4c599afc00430452bea190eb2f50b1fa6a49cc5f027f3a5e6659e90",
+    "worker": "2108a6a033f957a2ab9032447ced7e6312f11e93749f804746a2e428be86d086",
+    "sbatch": "f95cabb05c1c70f84052b7326281347ea9fb1709644a60f41e65c6a939b743f4",
+    "destination": "/home/dapintoo/muography-scratch/oe1-prueba-amd/amd-publicados",
+    "tree": "/home/dapintoo/oe1-trabajo/produccion-receta",
+    "scratch": "/home/dapintoo/muography-scratch/oe1-prueba-amd/amd-intentos",
+    "python": "/home/dapintoo/oe1-trabajo/entorno/python-oe1",
+    "threads": 64
+  }
+}

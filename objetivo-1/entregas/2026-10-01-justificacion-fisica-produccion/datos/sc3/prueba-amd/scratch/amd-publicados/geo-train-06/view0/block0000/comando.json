@@ -1,0 +1,17 @@
+[
+  "/home/dapintoo/oe1-trabajo/produccion-receta/build-receta/muography_sim",
+  "--geometry",
+  "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-train-06.json",
+  "--view",
+  "0",
+  "--tables",
+  "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geant4_app/tables-az-edges-v1",
+  "--seed",
+  "20261002900000",
+  "--events",
+  "5000000",
+  "--threads",
+  "64",
+  "--out",
+  "/home/dapintoo/muography-scratch/oe1-prueba-amd/amd-intentos/intento-81646a18f127464296a082c9971c42c2/geo-train-06/view0/block0000"
+]

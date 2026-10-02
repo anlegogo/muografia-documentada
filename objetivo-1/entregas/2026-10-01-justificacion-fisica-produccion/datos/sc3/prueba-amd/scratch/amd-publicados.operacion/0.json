@@ -1,0 +1,30 @@
+{
+  "row": 0,
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--job-name=oe1-6b8597f7f12a-0",
+    "--partition=amd",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=64",
+    "--time=00:55:00",
+    "--chdir=/home/dapintoo/oe1-trabajo/produccion-receta",
+    "--output=/home/dapintoo/muography-scratch/oe1-prueba-amd/amd-publicados.operacion/logs/%x-%j.out",
+    "/home/dapintoo/oe1-trabajo/prueba-amd/replica/herramientas/bloque_verificado_angular.sbatch",
+    "/home/dapintoo/oe1-trabajo/prueba-amd/manifiesto-prueba-amd.csv",
+    "0",
+    "/home/dapintoo/oe1-trabajo/produccion-receta",
+    "/home/dapintoo/muography-scratch/oe1-prueba-amd/amd-intentos",
+    "/home/dapintoo/muography-scratch/oe1-prueba-amd/amd-publicados",
+    "/home/dapintoo/oe1-trabajo/prueba-amd/replica/objetivo-1/contratos/receta-operativa-siete-actividades.json",
+    "/home/dapintoo/oe1-trabajo/entorno/python-oe1",
+    "64",
+    "/home/dapintoo/oe1-trabajo/prueba-amd/replica/herramientas/operar_bloque_angular.py",
+    "62b32e769904138d46b0512c5c0f3415f4eedb71cf89f9db497658c3ea426eed",
+    "db9e5caab4c599afc00430452bea190eb2f50b1fa6a49cc5f027f3a5e6659e90"
+  ],
+  "record": "/home/dapintoo/muography-scratch/oe1-prueba-amd/amd-publicados.operacion/0.json",
+  "status": "submitted",
+  "job_id": "30684"
+}

@@ -1,0 +1,8 @@
+{
+  "manifest_sha256": "62b32e769904138d46b0512c5c0f3415f4eedb71cf89f9db497658c3ea426eed",
+  "recipe_sha256": "db9e5caab4c599afc00430452bea190eb2f50b1fa6a49cc5f027f3a5e6659e90",
+  "worker_sha256": "2108a6a033f957a2ab9032447ced7e6312f11e93749f804746a2e428be86d086",
+  "threads": 24,
+  "slurm_job_id": "30683",
+  "definition_status": "adopted_idealized_scope_recipe_pending_physical_review"
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "oe1-verified-publication-v1",
+  "status": "published",
+  "physical_validation": false,
+  "manifest_sha256": "62b32e769904138d46b0512c5c0f3415f4eedb71cf89f9db497658c3ea426eed",
+  "row": {
+    "fila": 0,
+    "geometria": "geo-train-06",
+    "vista": 0,
+    "bloque": 0,
+    "semilla": 20261002900000,
+    "eventos": 5000000
+  },
+  "files": {
+    "comando.json": "5edec1a3721a4681163e20e1a35a399a96fa67f56b858a1af1d9600592039d4b",
+    "entradas.sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9",
+    "exit_code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "geo-train-06_view0.meta.json": "7336511bc9d273865bdf1b98730d7895fa94441c032ac9ac5e061f80398531b9",
+    "geo-train-06_view0.raw.meta.json": "b0ccc332813c2a0e888715d29ba6555d41b98b884615764f2ac208b9dcc588cf",
+    "geo-train-06_view0_gen.csv": "fff4f9a2561de8dad45a84245343e52cc0e9122e29936d1c165f2fa881f405cc",
+    "geo-train-06_view0_hist.csv": "a7928b459d1f647b6c2a909aa726468c219b8c4c2014b9b793a54e414946c049",
+    "geo-train-06_view0_hist_sin_corte.csv": "4b7a3699e0bdfd434a4b6c06539e64118fcb575c48d0daf65887fd11d160cd16",
+    "operacion.json": "742e27d545c3e099824c663e2348e310a03b05b9063bed516a65d6b93a5d32c9",
+    "receta.env": "8c07b6437669744cb930fd92568af781e48f03dd0f1885822ba0c1813871fea2",
+    "run.log": "802eb283771a0832f3de07d37a722803916137270c6bf5d76ae4c2a9d170d925",
+    "salida.sha256": "eb16a95313cf0fe3f842641ac9eb0ee0ef5ef4ac4fcf45a048a4832cc01e50bc"
+  },
+  "accept_crlf": false,
+  "output_hash_checks": [
+    {
+      "name": "geo-train-06_view0_hist.csv",
+      "received_sha256": "a7928b459d1f647b6c2a909aa726468c219b8c4c2014b9b793a54e414946c049",
+      "expected_sha256": "a7928b459d1f647b6c2a909aa726468c219b8c4c2014b9b793a54e414946c049",
+      "crlf_to_lf_verified": false
+    },
+    {
+      "name": "geo-train-06_view0.meta.json",
+      "received_sha256": "7336511bc9d273865bdf1b98730d7895fa94441c032ac9ac5e061f80398531b9",
+      "expected_sha256": "7336511bc9d273865bdf1b98730d7895fa94441c032ac9ac5e061f80398531b9",
+      "crlf_to_lf_verified": false
+    }
+  ]
+}
