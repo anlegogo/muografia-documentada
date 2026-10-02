@@ -1,0 +1,24 @@
+2026-10-02T12:52:41-0500
+node=guane.sc3.uis.edu.co user=dapintoo cwd=/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica
+
+Currently Loaded Modules:
+  1) gnu14/14.2.0   2) geant4/11.4.2
+
+ 
+
+-rwxr-xr-x. 1 dapintoo SIMON 402 Oct  2 12:52 /home/dapintoo/oe1-trabajo/entorno/python-oe1
+bbe37feefbbfb4802308247e481514698f6e9b294ea8999786118cd0f09d13e7  /home/dapintoo/oe1-trabajo/entorno/python-oe1
+#!/bin/bash
+# Stable interpreter path for the OE1 campaign tools on SC3. The launcher
+# resolves symlinks in --python, and the team's venv exposes python as a symlink
+# to the base interpreter, which has no NumPy. This regular file survives
+# Path.resolve() and keeps the venv in use. Installed on SC3 as
+# ~/oe1-trabajo/entorno/python-oe1 (mode 755).
+exec "$HOME/muography-train/venv/bin/python" "$@"
+resolved /home/dapintoo/oe1-trabajo/entorno/python-oe1
+executable /home/dapintoo/muography-train/venv/bin/python
+prefix /home/dapintoo/muography-train/venv
+python 3.13.13
+numpy 2.5.2
+scipy 1.18.1
+matplotlib 3.11.1

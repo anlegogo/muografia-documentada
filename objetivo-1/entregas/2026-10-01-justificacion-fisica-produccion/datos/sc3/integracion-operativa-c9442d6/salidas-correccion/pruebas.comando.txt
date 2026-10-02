@@ -1,0 +1,1 @@
+srun -p legacy -N1 -n1 -c2 -t 00:10:00 /home/dapintoo/oe1-trabajo/entorno/python-oe1 -m unittest discover -s herramientas -p test_\*angular\*.py -v 

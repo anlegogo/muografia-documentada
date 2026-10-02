@@ -1,0 +1,1 @@
+srun -p legacy -N1 -n1 -c2 -t 00:10:00 /home/dapintoo/muography-train/venv/bin/python -m unittest discover -s herramientas -p test_\*angular\*.py -v 

@@ -1,0 +1,214 @@
+test_analizar_roi_angular_v1 (unittest.loader._FailedTest.test_analizar_roi_angular_v1) ... ERROR
+test_diagnosticar_observable_angular (unittest.loader._FailedTest.test_diagnosticar_observable_angular) ... ERROR
+test_empaquetar_angular_v1 (unittest.loader._FailedTest.test_empaquetar_angular_v1) ... ERROR
+test_fuente_angular (unittest.loader._FailedTest.test_fuente_angular) ... ERROR
+test_fusionar_bloques_angular (unittest.loader._FailedTest.test_fusionar_bloques_angular) ... ERROR
+test_operacion_angular (unittest.loader._FailedTest.test_operacion_angular) ... ERROR
+test_piloto_angular (unittest.loader._FailedTest.test_piloto_angular) ... ERROR
+test_preparacion_fisica_angular (unittest.loader._FailedTest.test_preparacion_fisica_angular) ... ERROR
+test_preparar_campana_angular (unittest.loader._FailedTest.test_preparar_campana_angular) ... ERROR
+test_preparar_imagen_angular_v1 (unittest.loader._FailedTest.test_preparar_imagen_angular_v1) ... ERROR
+test_publicar_bloque_angular (unittest.loader._FailedTest.test_publicar_bloque_angular) ... ERROR
+test_error_in_completed_log (test_revisar_smoke_angular.SmokeReviewTests.test_error_in_completed_log) ... ok
+test_failed_exit (test_revisar_smoke_angular.SmokeReviewTests.test_failed_exit) ... ok
+test_invalid_histogram (test_revisar_smoke_angular.SmokeReviewTests.test_invalid_histogram) ... ok
+test_missing_log (test_revisar_smoke_angular.SmokeReviewTests.test_missing_log) ... ok
+test_old_grid (test_revisar_smoke_angular.SmokeReviewTests.test_old_grid) ... ok
+test_truncated_histogram (test_revisar_smoke_angular.SmokeReviewTests.test_truncated_histogram) ... ok
+test_valid_fixture (test_revisar_smoke_angular.SmokeReviewTests.test_valid_fixture) ... ok
+test_wrong_count_and_noninteger_metadata (test_revisar_smoke_angular.SmokeReviewTests.test_wrong_count_and_noninteger_metadata) ... ok
+test_roi_angular_v1 (unittest.loader._FailedTest.test_roi_angular_v1) ... ERROR
+
+======================================================================
+ERROR: test_analizar_roi_angular_v1 (unittest.loader._FailedTest.test_analizar_roi_angular_v1)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_analizar_roi_angular_v1
+Traceback (most recent call last):
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/test_analizar_roi_angular_v1.py", line 5, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
+ERROR: test_diagnosticar_observable_angular (unittest.loader._FailedTest.test_diagnosticar_observable_angular)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_diagnosticar_observable_angular
+Traceback (most recent call last):
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/test_diagnosticar_observable_angular.py", line 2, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
+ERROR: test_empaquetar_angular_v1 (unittest.loader._FailedTest.test_empaquetar_angular_v1)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_empaquetar_angular_v1
+Traceback (most recent call last):
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/test_empaquetar_angular_v1.py", line 6, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
+ERROR: test_fuente_angular (unittest.loader._FailedTest.test_fuente_angular)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_fuente_angular
+Traceback (most recent call last):
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/test_fuente_angular.py", line 2, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
+ERROR: test_fusionar_bloques_angular (unittest.loader._FailedTest.test_fusionar_bloques_angular)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_fusionar_bloques_angular
+Traceback (most recent call last):
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/test_fusionar_bloques_angular.py", line 6, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
+ERROR: test_operacion_angular (unittest.loader._FailedTest.test_operacion_angular)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_operacion_angular
+Traceback (most recent call last):
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/test_operacion_angular.py", line 8, in <module>
+    import test_fusionar_bloques_angular as fixtures
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/test_fusionar_bloques_angular.py", line 6, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
+ERROR: test_piloto_angular (unittest.loader._FailedTest.test_piloto_angular)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_piloto_angular
+Traceback (most recent call last):
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/test_piloto_angular.py", line 9, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
+ERROR: test_preparacion_fisica_angular (unittest.loader._FailedTest.test_preparacion_fisica_angular)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_preparacion_fisica_angular
+Traceback (most recent call last):
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/test_preparacion_fisica_angular.py", line 6, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
+ERROR: test_preparar_campana_angular (unittest.loader._FailedTest.test_preparar_campana_angular)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_preparar_campana_angular
+Traceback (most recent call last):
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/test_preparar_campana_angular.py", line 6, in <module>
+    from preparar_campana_angular import preflight
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/preparar_campana_angular.py", line 9, in <module>
+    from fusionar_bloques_angular import manifest_rows,validate_block
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/fusionar_bloques_angular.py", line 14, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
+ERROR: test_preparar_imagen_angular_v1 (unittest.loader._FailedTest.test_preparar_imagen_angular_v1)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_preparar_imagen_angular_v1
+Traceback (most recent call last):
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/test_preparar_imagen_angular_v1.py", line 5, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
+ERROR: test_publicar_bloque_angular (unittest.loader._FailedTest.test_publicar_bloque_angular)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_publicar_bloque_angular
+Traceback (most recent call last):
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/test_publicar_bloque_angular.py", line 5, in <module>
+    import test_fusionar_bloques_angular as fixtures
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/test_fusionar_bloques_angular.py", line 6, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
+ERROR: test_roi_angular_v1 (unittest.loader._FailedTest.test_roi_angular_v1)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_roi_angular_v1
+Traceback (most recent call last):
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/ohpc/pub/software/conda_categories/machine_learning/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/test_roi_angular_v1.py", line 2, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.938s
+
+FAILED (errors=12)
+srun: error: guane02: task 0: Exited with exit code 1

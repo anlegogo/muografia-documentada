@@ -1,0 +1,7 @@
+executable /opt/ohpc/pub/software/conda_categories/machine_learning/bin/python3.13
+prefix /opt/ohpc/pub/software/conda_categories/machine_learning
+base_prefix /opt/ohpc/pub/software/conda_categories/machine_learning
+python 3.13.13
+numpy NO DISPONIBLE: ModuleNotFoundError No module named 'numpy'
+scipy NO DISPONIBLE: ModuleNotFoundError No module named 'scipy'
+matplotlib NO DISPONIBLE: ModuleNotFoundError No module named 'matplotlib'

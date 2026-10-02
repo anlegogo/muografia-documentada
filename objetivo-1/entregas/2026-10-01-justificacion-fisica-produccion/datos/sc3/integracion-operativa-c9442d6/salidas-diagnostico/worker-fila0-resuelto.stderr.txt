@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/operar_bloque_angular.py", line 13, in <module>
+    from fusionar_bloques_angular import manifest_rows, validate_block
+  File "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/fusionar_bloques_angular.py", line 14, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

@@ -1,0 +1,1 @@
+/home/dapintoo/muography-train/venv/bin/python herramientas/preparar_campana_angular.py /home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/objetivo-1/evidencias/piloto-propuesto-siete-actividades/manifiesto-piloto-propuesto.csv --geometrias geo-train-06 --informe /home/dapintoo/oe1-trabajo/integracion-c9442d6/salidas/preflight-piloto-v2.json 

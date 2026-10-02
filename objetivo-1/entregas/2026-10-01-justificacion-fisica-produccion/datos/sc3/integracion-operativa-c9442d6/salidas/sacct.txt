@@ -1,0 +1,2 @@
+JobID|JobName|Partition|AllocCPUS|State|ExitCode|Elapsed|Start|End|NodeList|SubmitLine
+30636|python|legacy|2|COMPLETED|0:0|00:00:20|2026-10-02T12:49:55|2026-10-02T12:50:15|guane02|srun -p legacy -N1 -n1 -c2 -t 00:10:00 /home/dapintoo/muography-train/venv/bin/python -m unittest discover -s herramientas -p test_*angular*.py -v

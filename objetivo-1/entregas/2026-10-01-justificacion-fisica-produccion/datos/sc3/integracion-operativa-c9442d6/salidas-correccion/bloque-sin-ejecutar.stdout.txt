@@ -1,0 +1,31 @@
+{
+  "command": [
+    "srun",
+    "-p",
+    "legacy",
+    "-N1",
+    "-n1",
+    "-c2",
+    "-t",
+    "00:05:00",
+    "--chdir=/home/dapintoo/oe1-trabajo/produccion-receta",
+    "bash",
+    "-lc",
+    "set -euo pipefail; module purge; module load gnu14/14.2.0 geant4/11.4.2; echo \"node=$(hostname) job=$SLURM_JOB_ID cwd=$PWD\" >&2; module list 2>&1 | cat >&2; \"$7\" \"$9\" --manifiesto \"$1\" --fila \"$2\" --arbol \"$3\" --temporal \"$4\" --salida \"$5\" --receta \"$6\" --threads \"$8\" --sha-manifiesto \"${10}\" --sha-receta \"${11}\"",
+    "bloque",
+    "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/objetivo-1/evidencias/piloto-propuesto-siete-actividades/manifiesto-piloto-propuesto.csv",
+    "0",
+    "/home/dapintoo/oe1-trabajo/produccion-receta",
+    "/home/dapintoo/muography-scratch/oe1-piloto-v2-intentos",
+    "/home/dapintoo/muography-scratch/oe1-piloto-v2-publicados",
+    "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/objetivo-1/contratos/receta-operativa-siete-actividades.json",
+    "/home/dapintoo/oe1-trabajo/entorno/python-oe1",
+    "24",
+    "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/operar_bloque_angular.py",
+    "36d072c16d4f51a1772984114c1ab9a873501aa4b17aab14562fb7272a6d9a8d",
+    "db9e5caab4c599afc00430452bea190eb2f50b1fa6a49cc5f027f3a5e6659e90"
+  ],
+  "returncode": 0,
+  "stdout": "{\n  \"status\": \"dry_run\",\n  \"row\": {\n    \"fila\": 0,\n    \"geometria\": \"geo-train-06\",\n    \"vista\": 0,\n    \"bloque\": 0,\n    \"semilla\": 20261002400000,\n    \"eventos\": 35166667\n  },\n  \"command\": [\n    \"/home/dapintoo/oe1-trabajo/produccion-receta/build-receta/muography_sim\",\n    \"--geometry\",\n    \"/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-train-06.json\",\n    \"--view\",\n    \"0\",\n    \"--tables\",\n    \"/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geant4_app/tables-az-edges-v1\",\n    \"--seed\",\n    \"20261002400000\",\n    \"--events\",\n    \"35166667\",\n    \"--threads\",\n    \"24\",\n    \"--out\",\n    \"/home/dapintoo/muography-scratch/oe1-piloto-v2-intentos/intento-b12fdd392e1c4974a4caff062b8228e5/geo-train-06/view0/block0000\"\n  ],\n  \"physical_validation\": false\n}\n",
+  "stderr": "node=guane02.sc3.uis.edu.co job=30642 cwd=/home/dapintoo/oe1-trabajo/produccion-receta\n\nCurrently Loaded Modules:\n  1) gnu14/14.2.0   2) geant4/11.4.2\n\n \n\n"
+}

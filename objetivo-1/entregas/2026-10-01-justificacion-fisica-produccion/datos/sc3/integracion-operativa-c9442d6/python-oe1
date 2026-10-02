@@ -1,0 +1,7 @@
+#!/bin/bash
+# Stable interpreter path for the OE1 campaign tools on SC3. The launcher
+# resolves symlinks in --python, and the team's venv exposes python as a symlink
+# to the base interpreter, which has no NumPy. This regular file survives
+# Path.resolve() and keeps the venv in use. Installed on SC3 as
+# ~/oe1-trabajo/entorno/python-oe1 (mode 755).
+exec "$HOME/muography-train/venv/bin/python" "$@"

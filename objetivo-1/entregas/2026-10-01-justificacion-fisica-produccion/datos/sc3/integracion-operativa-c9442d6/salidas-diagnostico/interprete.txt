@@ -1,0 +1,9 @@
+2026-10-02T12:51:25-0500
+node=guane.sc3.uis.edu.co
+lrwxrwxrwx. 1 dapintoo SIMON 7 Aug 31 19:10 /home/dapintoo/muography-train/venv/bin/python -> python3
+resolved=/opt/ohpc/pub/software/conda_categories/machine_learning/bin/python3.13
+home = /opt/ohpc/pub/software/conda_categories/machine_learning/bin
+include-system-site-packages = false
+version = 3.13.13
+executable = /opt/ohpc/pub/software/conda_categories/machine_learning/bin/python3.13
+command = /opt/ohpc/pub/software/conda_categories/machine_learning/bin/python3 -m venv /home/dapintoo/muography-train/venv

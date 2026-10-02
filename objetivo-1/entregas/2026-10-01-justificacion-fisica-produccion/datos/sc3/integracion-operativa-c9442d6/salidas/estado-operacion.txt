@@ -1,0 +1,7 @@
+/home/dapintoo/muography-scratch/oe1-piloto-v2-publicados.operacion:
+total 4
+drwxr-xr-x.  2 dapintoo SIMON    6 Oct  2 12:50 .
+drwxr-xr-x. 12 dapintoo SIMON 4096 Oct  2 12:50 ..
+--
+ls: cannot access '/home/dapintoo/muography-scratch/oe1-piloto-v2-publicados': No such file or directory
+ls: cannot access '/home/dapintoo/muography-scratch/oe1-piloto-v2-intentos': No such file or directory

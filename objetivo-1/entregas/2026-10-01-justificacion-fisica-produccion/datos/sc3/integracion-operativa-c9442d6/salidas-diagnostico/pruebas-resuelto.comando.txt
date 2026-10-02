@@ -1,0 +1,1 @@
+srun -p legacy -N1 -n1 -c2 -t 00:10:00 /opt/ohpc/pub/software/conda_categories/machine_learning/bin/python3.13 -m unittest discover -s herramientas -p test_\*angular\*.py -v 

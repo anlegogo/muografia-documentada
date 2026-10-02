@@ -1,0 +1,156 @@
+{
+  "checked": 30,
+  "mismatches": [],
+  "entries": [
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/build-receta/muography_sim",
+      "expected": "00145f7edfebb01efae17b3d4ab0e0ff177de454dd08568985a581aba3027865",
+      "found": "00145f7edfebb01efae17b3d4ab0e0ff177de454dd08568985a581aba3027865"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/controles-oe1-v3.patch",
+      "expected": "4e7b24dda253caa183f91d24278c84cf3d9b778f56f288db1cbd2a328ddebd58",
+      "found": "4e7b24dda253caa183f91d24278c84cf3d9b778f56f288db1cbd2a328ddebd58"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geant4_app/tables-az-edges-v1/meta.json",
+      "expected": "65cf778ec9d5e380f67e434638d437822dc22ce9e863e12f684dcbcf63da7e8b",
+      "found": "65cf778ec9d5e380f67e434638d437822dc22ce9e863e12f684dcbcf63da7e8b"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geant4_app/tables-az-edges-v1/row_weights_30d.txt",
+      "expected": "76698ac167efa8b767597b28c814a1ff88f93b41e032d1e98dd58bd1d9f3ac3d",
+      "found": "76698ac167efa8b767597b28c814a1ff88f93b41e032d1e98dd58bd1d9f3ac3d"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geant4_app/tables-az-edges-v1/p_cdf.txt",
+      "expected": "7161c8adf11711139840007dff26178221c4cfbff8fc3253cabdda50c533f6ae",
+      "found": "7161c8adf11711139840007dff26178221c4cfbff8fc3253cabdda50c533f6ae"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-gen-01.json",
+      "expected": "f171aa214fda5243db6c5790f29e31cb68601d2b771bf36ca291a1673fd1166a",
+      "found": "f171aa214fda5243db6c5790f29e31cb68601d2b771bf36ca291a1673fd1166a"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-test-01.json",
+      "expected": "66a46bb729eedf508ffb8e15bd8cf8c602e0f63141a3f8a2d9594597bd32c5e8",
+      "found": "66a46bb729eedf508ffb8e15bd8cf8c602e0f63141a3f8a2d9594597bd32c5e8"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-test-02.json",
+      "expected": "a61c7363caaffe807627f5235c58439e3c41838f1b82fa03e81c3298d9f6c723",
+      "found": "a61c7363caaffe807627f5235c58439e3c41838f1b82fa03e81c3298d9f6c723"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-test-03.json",
+      "expected": "c9db0081eb9bb0e6db9a8bc409f2e9f782bcbfc151057b6127cd5827555c6b8c",
+      "found": "c9db0081eb9bb0e6db9a8bc409f2e9f782bcbfc151057b6127cd5827555c6b8c"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-train-01.json",
+      "expected": "ff3c69ab7e37b51c5d4e1318d298a9ddc35446367e6ea4abf5c322e3b86f07b1",
+      "found": "ff3c69ab7e37b51c5d4e1318d298a9ddc35446367e6ea4abf5c322e3b86f07b1"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-train-02.json",
+      "expected": "abe49537a4e692a6df6ebf928342e8338b383b2b9e1f4e4ab2b8f0ba95d67526",
+      "found": "abe49537a4e692a6df6ebf928342e8338b383b2b9e1f4e4ab2b8f0ba95d67526"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-train-03.json",
+      "expected": "757ff851126ae659d21fbaeaee1c4d60292e2b4d70b7fac04c0d1c88912f3a72",
+      "found": "757ff851126ae659d21fbaeaee1c4d60292e2b4d70b7fac04c0d1c88912f3a72"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-train-04.json",
+      "expected": "a7d30817a40e8d4a71d2e85e571b65c7459ce88eeb549c05e56211ed60a6a440",
+      "found": "a7d30817a40e8d4a71d2e85e571b65c7459ce88eeb549c05e56211ed60a6a440"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-train-05.json",
+      "expected": "09322cce8d7f40e4f68a6ef5400aa2aa722d3a68d107b1c3cce3977ef03b723c",
+      "found": "09322cce8d7f40e4f68a6ef5400aa2aa722d3a68d107b1c3cce3977ef03b723c"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-train-06.json",
+      "expected": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+      "found": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-train-07.json",
+      "expected": "f8e3a804871a6744e101384cbcc5b360063e9ba017122ea5a022119dc6d457d1",
+      "found": "f8e3a804871a6744e101384cbcc5b360063e9ba017122ea5a022119dc6d457d1"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-train-08.json",
+      "expected": "df859ca1ead6e4fca4cad0d877131167a47a4d6443ebed1ee3379189600f7601",
+      "found": "df859ca1ead6e4fca4cad0d877131167a47a4d6443ebed1ee3379189600f7601"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-train-09.json",
+      "expected": "35bf7e33e0b864f486fb881e29613b5687e40ef4794d91f05d6a9fa7dbf75288",
+      "found": "35bf7e33e0b864f486fb881e29613b5687e40ef4794d91f05d6a9fa7dbf75288"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-train-10.json",
+      "expected": "218c427d76f134eeafd211f5c2ae778a113fd3dedb6f2cc93bedca83a795a448",
+      "found": "218c427d76f134eeafd211f5c2ae778a113fd3dedb6f2cc93bedca83a795a448"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-train-11.json",
+      "expected": "201b8e4e65de4538a44acae09c1e69ddd1179459bd8be645bdeac669ac43d77f",
+      "found": "201b8e4e65de4538a44acae09c1e69ddd1179459bd8be645bdeac669ac43d77f"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-train-12.json",
+      "expected": "269a8f3959347c2713a4f8f563cf82092dc638f9633afbeafe5b26ca4fbcdc8d",
+      "found": "269a8f3959347c2713a4f8f563cf82092dc638f9633afbeafe5b26ca4fbcdc8d"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-val-01.json",
+      "expected": "71d4daf62362f81473403d57261fd293cfd687fb6f2998d46a142dfcbf29d6d7",
+      "found": "71d4daf62362f81473403d57261fd293cfd687fb6f2998d46a142dfcbf29d6d7"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-val-02.json",
+      "expected": "f8376b4fe3262acb7523b605e2c2f9c8d9e5c36532c34e8bcc70d041f695b3bb",
+      "found": "f8376b4fe3262acb7523b605e2c2f9c8d9e5c36532c34e8bcc70d041f695b3bb"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-val-03.json",
+      "expected": "4a5eb9a461d4a084bd966a5cc48508556d279ffb8d9fda202e76e64619f0716d",
+      "found": "4a5eb9a461d4a084bd966a5cc48508556d279ffb8d9fda202e76e64619f0716d"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/operar_bloque_angular.py",
+      "expected": "2108a6a033f957a2ab9032447ced7e6312f11e93749f804746a2e428be86d086",
+      "found": "2108a6a033f957a2ab9032447ced7e6312f11e93749f804746a2e428be86d086"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/publicar_bloque_angular.py",
+      "expected": "15dcd116c7a092e632c9855e17569264da41faa908a158890a721188ad1b7b98",
+      "found": "15dcd116c7a092e632c9855e17569264da41faa908a158890a721188ad1b7b98"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/fusionar_bloques_angular.py",
+      "expected": "e8b5e98ac4ce984e8d41708a6ec5723e088e9c861323921d6ddff6a80b95cea4",
+      "found": "e8b5e98ac4ce984e8d41708a6ec5723e088e9c861323921d6ddff6a80b95cea4"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/configuracion_angular.py",
+      "expected": "35099a36f348f485424feed6fb3582ebb60f5703597b286806f1d5891d9a7f91",
+      "found": "35099a36f348f485424feed6fb3582ebb60f5703597b286806f1d5891d9a7f91"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/preparar_imagen_angular_v1.py",
+      "expected": "61e2e4e6ea37ddececd6902a77c23cceb54baebd8ad481f4998b0089d6fdde02",
+      "found": "61e2e4e6ea37ddececd6902a77c23cceb54baebd8ad481f4998b0089d6fdde02"
+    },
+    {
+      "path": "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/diagnosticar_observable_angular.py",
+      "expected": "2d27d94c3c6877c0fce1e6b02aa7d8ad9fe03e87dbdf71f1495876bd1d87a822",
+      "found": "2d27d94c3c6877c0fce1e6b02aa7d8ad9fe03e87dbdf71f1495876bd1d87a822"
+    }
+  ]
+}

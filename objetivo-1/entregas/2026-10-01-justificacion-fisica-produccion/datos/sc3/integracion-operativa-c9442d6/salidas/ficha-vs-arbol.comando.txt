@@ -1,0 +1,1 @@
+/home/dapintoo/muography-train/venv/bin/python - /home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/objetivo-1/contratos/receta-operativa-siete-actividades.json /home/dapintoo/oe1-trabajo/produccion-receta /home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas 

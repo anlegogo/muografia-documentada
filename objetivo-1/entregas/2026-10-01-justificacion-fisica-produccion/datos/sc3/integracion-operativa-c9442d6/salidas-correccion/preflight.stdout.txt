@@ -1,0 +1,17 @@
+{
+  "schema": "oe1-offline-preflight-v1",
+  "campaign_id": "3351cc58a320d30eea8d766adf1d600db43bdbdf576c68dde8bfefdc7a80d055",
+  "submission_authorized": false,
+  "physical_validation": false,
+  "queue_inspected": false,
+  "scope": [
+    "geo-train-06"
+  ],
+  "errors": [],
+  "manifest_sha256": "36d072c16d4f51a1772984114c1ab9a873501aa4b17aab14562fb7272a6d9a8d",
+  "missing_views": [],
+  "total_blocks": 36,
+  "total_events": 1266000000,
+  "technical_manifest_complete": true,
+  "all_blocks_verified": false
+}

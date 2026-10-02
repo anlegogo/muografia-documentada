@@ -1,0 +1,29 @@
+{
+  "status": "dry_run",
+  "row": {
+    "fila": 0,
+    "geometria": "geo-train-06",
+    "vista": 0,
+    "bloque": 0,
+    "semilla": 20261002400000,
+    "eventos": 35166667
+  },
+  "command": [
+    "/home/dapintoo/oe1-trabajo/produccion-receta/build-receta/muography_sim",
+    "--geometry",
+    "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geometry_catalog/geometries/geo-train-06.json",
+    "--view",
+    "0",
+    "--tables",
+    "/home/dapintoo/oe1-trabajo/produccion-receta/scripts/simulation/geant4_app/tables-az-edges-v1",
+    "--seed",
+    "20261002400000",
+    "--events",
+    "35166667",
+    "--threads",
+    "24",
+    "--out",
+    "/home/dapintoo/muography-scratch/oe1-piloto-v2-intentos/intento-aa3054da56624cc88a0e0e65ad86efee/geo-train-06/view0/block0000"
+  ],
+  "physical_validation": false
+}

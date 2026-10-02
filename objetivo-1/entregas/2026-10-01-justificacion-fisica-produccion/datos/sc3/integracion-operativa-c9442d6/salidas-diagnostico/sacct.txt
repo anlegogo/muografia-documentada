@@ -1,0 +1,13 @@
+JobID|JobName|Partition|AllocCPUS|State|ExitCode|Elapsed|Start|End|NodeList|SubmitLine
+30638|python3.13|legacy|2|COMPLETED|0:0|00:00:00|2026-10-02T12:51:26|2026-10-02T12:51:26|guane02|srun -p legacy -N1 -n1 -c2 -t 00:05:00 /opt/ohpc/pub/software/conda_categories/machine_learning/bin/python3.13 -c import sys
+print("executable", sys.executable)
+print("prefix", sys.prefix)
+print("base_prefix", sys.base_prefix)
+print("python", sys.version.split()[0])
+for name in ("numpy", "scipy", "matplotlib"):
+    try:
+        module = __import__(name)
+        print(name, module.__version__, module.__file__)
+    except Exception as exc:
+        print(name, "NO DISPONIBLE:", type(exc).__name__, exc)
+30639|python3.13|legacy|2|FAILED|1:0|00:00:02|2026-10-02T12:51:26|2026-10-02T12:51:28|guane02|srun -p legacy -N1 -n1 -c2 -t 00:10:00 /opt/ohpc/pub/software/conda_categories/machine_learning/bin/python3.13 -m unittest discover -s herramientas -p test_*angular*.py -v

@@ -1,0 +1,1 @@
+/home/dapintoo/oe1-trabajo/entorno/python-oe1 herramientas/preparar_campana_angular.py /home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/objetivo-1/evidencias/piloto-propuesto-siete-actividades/manifiesto-piloto-propuesto.csv --geometrias geo-train-06 --informe /home/dapintoo/oe1-trabajo/integracion-c9442d6/salidas-correccion/preflight-piloto-v2.json 

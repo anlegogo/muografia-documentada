@@ -1,0 +1,1 @@
+/home/dapintoo/muography-train/venv/bin/python - /home/dapintoo/oe1-trabajo/integracion-c9442d6/salidas/lanzador.stdout.txt 
