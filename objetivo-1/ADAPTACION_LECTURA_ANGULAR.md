@@ -1,5 +1,7 @@
 # Adaptación local de lectura y exportación angular
 
+**Avance en regiones:** [seis ROI geométricas candidatas de geo-train-06](REGIONES_ANGULARES_V1.md), contrastadas sobre 393.216 rayos; no sustituyen las máscaras congeladas.
+
 2026-10-01, Colombia. **Estado: parcial.** Continúa la [revisión de la corrida angular](REVISION_MALLA_ANGULAR_2026-10-01.md). No se solicita otra corrida ni se altera material histórico.
 
 ## Implementado y comprobado

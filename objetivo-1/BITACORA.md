@@ -1,5 +1,11 @@
 # Bitácora de nuestra revisión del OE1
 
+## Regiones geométricas con malla v1 — 2026-10-01, Colombia
+
+- Cálculo propio de seis ROI candidatas de geo-train-06, umbral fijo de 20 m y rayos centrales. Ocho pruebas pasan; 393.216 rayos contrastados con referencia externa, máscaras coincidentes y error máximo 1,33e-10 m.
+- Vista 0: 193 píxeles nuevos, 194 con centros antiguos recalculados y 195 en la máscara histórica. Se separa el efecto del recálculo del cambio angular; no se reescribe el ensayo previo.
+- [Método y evidencia](REGIONES_ANGULARES_V1.md). Sin transporte nuevo; integración de consumidores y aceptación física pendientes.
+
 ## Lectura y exportación angular — 2026-10-01, Colombia
 
 - Nueva herramienta con coordenadas explícitas y rechazo de mallas incompatibles. Exportación de la entrega 90abb96: 750 conteos conservados píxel a píxel. Siete pruebas específicas satisfactorias.

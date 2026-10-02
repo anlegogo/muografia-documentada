@@ -1,5 +1,7 @@
 # Muografía: documentación y seguimiento académico
 
+**Avance en regiones:** [seis ROI geométricas candidatas de geo-train-06](objetivo-1/REGIONES_ANGULARES_V1.md), contrastadas sobre 393.216 rayos; no sustituyen las máscaras congeladas.
+
 **Adaptación local:** [lector y exportador angular](objetivo-1/ADAPTACION_LECTURA_ANGULAR.md) probado con los 750 conteos reales; pendientes ROI, consumidores finales y aceptación física.
 
 **Actualización de entrega:** [corrida angular revisada](objetivo-1/REVISION_MALLA_ANGULAR_2026-10-01.md): 1.000 primarios y 750 registros, 24 controles del revisor y 31 contrastes satisfactorios. Integración técnica respaldada en SC3; aceptación física y compatibilidad del conjunto final pendientes. Las instrucciones y estados anteriores se conservan como historial.

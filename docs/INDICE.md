@@ -2,6 +2,7 @@
 
 | Documento | Pregunta que responde |
 |---|---|
+| [Regiones angulares v1](../objetivo-1/REGIONES_ANGULARES_V1.md) | ¿Qué regiones candidatas calculamos con los nuevos centros? |
 | [Lectura y exportación angular](../objetivo-1/ADAPTACION_LECTURA_ANGULAR.md) | ¿Cómo preservar conteos y coordenadas sin mezclar versiones? |
 | [Revisión de la corrida angular](../objetivo-1/REVISION_MALLA_ANGULAR_2026-10-01.md) | ¿Qué confirmó la entrega de 1.000 primarios y qué sigue? |
 | [Corrección de malla azimutal](../objetivo-1/correcciones/malla-angular-v1/README.md) | ¿Qué corregimos y cómo deben comprobarlo en SC3? |

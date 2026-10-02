@@ -1,0 +1,13 @@
+test_away_and_outside (test_roi_angular_v1.ChordTests.test_away_and_outside) ... ok
+test_diameter_cylinder_limits (test_roi_angular_v1.ChordTests.test_diameter_cylinder_limits) ... ok
+test_ellipsoid_limits (test_roi_angular_v1.ChordTests.test_ellipsoid_limits) ... ok
+test_nonunit_rejected (test_roi_angular_v1.ChordTests.test_nonunit_rejected) ... ok
+test_origin_inside (test_roi_angular_v1.ChordTests.test_origin_inside) ... ok
+test_six_views_point_toward_axis_and_up (test_roi_angular_v1.ChordTests.test_six_views_point_toward_axis_and_up) ... ok
+test_tangent (test_roi_angular_v1.ChordTests.test_tangent) ... ok
+test_vertical_caps (test_roi_angular_v1.ChordTests.test_vertical_caps) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

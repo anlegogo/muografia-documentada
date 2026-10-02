@@ -1,0 +1,76 @@
+{
+  "estado": "ROI_geometrica_candidata_no_congelada",
+  "geometry_id": "geo-train-06",
+  "geometry_sha256": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+  "grid": {
+    "az_edges_deg": [
+      -30.0,
+      30.0
+    ],
+    "az_first_center_deg": -29.8828125,
+    "az_half_deg": 30.0,
+    "az_step_deg": 0.234375,
+    "azimuth_convention": "az-edges-v1",
+    "el_max_deg": 47.0,
+    "el_min_deg": 2.0,
+    "elevation_convention": "legacy-centers-2-47",
+    "n_az": 256,
+    "n_el": 256
+  },
+  "plantilla_grid_sha256": "371a1bb60df3eb8123769e7812f6be4494d01faf4f31ddfd8e122e92ca2458a7",
+  "threshold_m": 20,
+  "ray_length_m": 3000,
+  "detector_distance_m": 1000,
+  "detector_height_m": 1.5,
+  "scope": "interseccion de dos primitivas mediante rayos rectos centrales; no simula muones",
+  "views": [
+    {
+      "view": 0,
+      "pixels_new": 193,
+      "pixels_legacy_recomputed": 194,
+      "cells_changed": 1,
+      "max_length_m": 42.43477924443016,
+      "roi_npz_sha256": "bae611a9746487a518959bc2db9049d1dd135d4ee149b65805578a4b5af8b5cd"
+    },
+    {
+      "view": 1,
+      "pixels_new": 181,
+      "pixels_legacy_recomputed": 181,
+      "cells_changed": 0,
+      "max_length_m": 37.47484296358664,
+      "roi_npz_sha256": "a2aa254e0a01f22eda3a2b48f0e152b84d749528449c78ccef504cbcdb792577"
+    },
+    {
+      "view": 2,
+      "pixels_new": 164,
+      "pixels_legacy_recomputed": 162,
+      "cells_changed": 2,
+      "max_length_m": 33.75456021331979,
+      "roi_npz_sha256": "3fb56dd238571d84f8676937f5c0f58f0176628a0a530ecbe9db58e9f9928038"
+    },
+    {
+      "view": 3,
+      "pixels_new": 161,
+      "pixels_legacy_recomputed": 162,
+      "cells_changed": 1,
+      "max_length_m": 42.39524746209463,
+      "roi_npz_sha256": "71aa7beb87843d2a098af16bcff78ad3c81f41fc1a0e5e85eb4451e5163b5a01"
+    },
+    {
+      "view": 4,
+      "pixels_new": 182,
+      "pixels_legacy_recomputed": 182,
+      "cells_changed": 0,
+      "max_length_m": 38.67011679551058,
+      "roi_npz_sha256": "9d61b5a7ffb62074cb4b9d768a73b1f26eb301df831c80d535898ef19253ca23"
+    },
+    {
+      "view": 5,
+      "pixels_new": 181,
+      "pixels_legacy_recomputed": 181,
+      "cells_changed": 0,
+      "max_length_m": 33.75192660057451,
+      "roi_npz_sha256": "6cf118ebcdf3b5c4b43b0955ba663ff17949538a8915d06988de4cc74d7a869a"
+    }
+  ]
+}
