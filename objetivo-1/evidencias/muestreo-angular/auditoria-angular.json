@@ -1,0 +1,31 @@
+{
+  "alcance": "fuente y redondeo angular sin transporte; no correccion de histogramas",
+  "fuentes_sha256": {
+    "src/PrimaryGeneratorAction.cc": "80d0daef546f625ab0b003d676e5c83f4637661a997810121c922d32016f0fd9",
+    "src/SteppingAction.cc": "d27d90be1bb5847b410f8fade2c4d7f71e760524eee3463315a33e88cb583de5",
+    "src/FluxTables.cc": "fa4626b2b9e9ba5d337106acf26cc30c971786a8b072094352823bd10564ba46",
+    "include/GeometryConfig.hh": "f4ae53cd1ffa6186eb5a517e3b05bf12c1abe6a2b5a17aec9b72542a3bcc8f37",
+    "tables/row_weights_30d.txt": "93ce67abe51c59ea3ac5c07dc99fd1615ae147df82c16d1bad64f5c0712d2c0c"
+  },
+  "azimut": {
+    "numero_pixeles": 256,
+    "paso_grados": 0.23529411764705882,
+    "probabilidad_nominal_por_columna": 0.00390625,
+    "probabilidad_columna_extrema": 0.0019607843137254832,
+    "probabilidad_columna_interior": 0.0039215686274509665,
+    "razon_extremo_nominal": 0.5019607843137237,
+    "razon_interior_nominal": 1.0039215686274474,
+    "distancia_variacion_total": 0.003890931372547508,
+    "suma_probabilidades": 0.9999999999999969,
+    "puntos_cuadratura": 1044480,
+    "error_maximo_cuadratura": 1.3877787807814457e-17
+  },
+  "elevacion": {
+    "soporte_min_grados": 1.9117645,
+    "soporte_max_grados": 47.0882355,
+    "probabilidad_fuera_centros_2_47": 0.00429184786843771,
+    "probabilidad_fuera_celdas": 1.0014281404124858e-08,
+    "maxima_diferencia_probabilidad_fila": 1.9496934875601335e-08
+  },
+  "decision": "documentar y fijar convencion antes de produccion; no cambiar tablas automaticamente"
+}

@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Control de muestreo angular — 2026-10-01, Colombia
+
+- Revisión local del director: integración exacta de celdas y cuadratura de 1.044.480 direcciones; diferencia máxima 1,39e-17. Las dos columnas de borde tienen 0,50196 veces la probabilidad nominal; las interiores 1,00392. Probabilidad total conservada.
+- Se documenta el soporte real en elevación y el efecto diminuto de redondeo de tablas. [Evidencia y límites](objetivo-1/CONTROL_MUESTREO_ANGULAR.md).
+- Próximo paso: fijar centros/bordes/dominio angular y normalización antes de decidir reutilización. No se cambian originales, no se ejecuta Geant4 y no se modifica el resultado A/B. P-04 abierto.
+
 ## Preparación de producción — 2026-10-01, Colombia
 
 - Revisión local del director: 114 referencias verificadas contra sus huellas; inventario reproducible de 36 vistas candidatas a regeneración y 78 de reutilización condicionada.
