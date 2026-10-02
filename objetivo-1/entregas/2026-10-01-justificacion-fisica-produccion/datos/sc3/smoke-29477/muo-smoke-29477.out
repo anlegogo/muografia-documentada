@@ -1,0 +1,25 @@
+node=guane01.sc3.uis.edu.co geo=geo-train-01 view=0 events=100000 seed=20260805 threads=8
+
+**************************************************************
+ Geant4 version Name: geant4-11-04-patch-02 [MT]   (12-June-2026)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+Checking overlaps for volume edifice:0 (G4Cons) ... OK! 
+Checking overlaps for volume detector:0 (G4Box) ... OK! 
+RUN DONE geo-train-01 view 0: events=100000 detected=63890 wall_s=13.9556
+
+real	0m18.908s
+user	1m50.173s
+sys	0m0.754s
+total 132
+drwxr-xr-x. 2 dapintoo SIMON     77 Aug 30 19:01 .
+drwxr-xr-x. 4 dapintoo SIMON     56 Aug 30 19:01 ..
+-rw-r--r--. 1 dapintoo SIMON 131072 Aug 30 19:01 geo-train-01_view0_hist.csv
+-rw-r--r--. 1 dapintoo SIMON    756 Aug 30 19:01 geo-train-01_view0.meta.json
+results copied to /home/dapintoo/muography-sim/results/smoke-29477

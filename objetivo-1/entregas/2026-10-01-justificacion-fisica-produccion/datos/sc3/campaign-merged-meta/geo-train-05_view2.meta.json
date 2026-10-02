@@ -1,0 +1,16 @@
+{
+ "engine": "geant4 (merged blocks)",
+ "geometry_id": "geo-train-05",
+ "view_index": 2,
+ "blocks_merged": 1,
+ "blocks_expected": 1,
+ "events_transported": 36173185,
+ "ecomug_draws_total": 36173185,
+ "detected_in_bins": 27062479,
+ "wall_seconds_total": 1030.501267156098,
+ "block_seeds": [
+  20260805082000
+ ],
+ "hist_sha256": "de457169445fc76ccb7e23032d7e16f89800a1a692c536812db24d1591420b9a",
+ "merged_at": "2026-08-31T21:37:10.558753+00:00"
+}

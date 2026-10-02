@@ -1,0 +1,9 @@
+# Extracto de muo-smoke-29475.out (300025 lineas; el resto son avisos repetidos de G4ParticleGun)
+# sha256 del archivo completo en SC3: f96434674660149036cb0283e9c0f15e4ff4e1aeb69e7b24cc06686485cd25fe
+node=guane01.sc3.uis.edu.co geo=geo-train-01 view=0 events=100000 seed=20260805 threads=8
+[...]
+RUN DONE geo-train-01 view 0: events=100000 detected=1203 wall_s=22.402
+real	0m29.272s
+user	2m48.864s
+sys	0m6.403s
+results copied to /home/dapintoo/muography-sim/results/smoke-29475
