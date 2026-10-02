@@ -1,5 +1,7 @@
 # Guía de los materiales del OE1
 
+> Actualización 2026-10-02: se recibió y revisó la entrega física/producción. Consultar la [revisión vigente](REVISION_FISICA_PRODUCCION_2026-10-02.md) antes de aplicar solicitudes o estados anteriores. La nueva configuración requiere ampliar los controles de compatibilidad de nuestra cadena.
+
 Estado actual: [cadena local preparada](CADENA_LOCAL_OE1.md), [matriz](MATRIZ_CUMPLIMIENTO.md) y [pendientes](PENDIENTES.md). La integración angular en SC3 está revisada; el cierre físico y la campaña final siguen pendientes.
 
 La tabla describe el material histórico conservado, no una nueva entrega de producción.

@@ -1,21 +1,19 @@
 # Pendientes del OE1
 
-Estado consolidado al 2026-10-01, Colombia. **P-01 a P-04 continúan abiertos**, con avances diferentes. La integración angular en SC3 ya fue recibida y revisada; no sigue pendiente repetir la prueba de 1.000 muones.
+Estado consolidado al 2026-10-02, Colombia. **P-01 a P-04 continúan abiertos**, con avances diferentes. La integración angular en SC3 ya fue recibida y revisada; no sigue pendiente repetir la prueba de 1.000 muones.
 
 | ID | Avance respaldado | Qué falta para cerrar |
 |---|---|---|
 | P-01 · geometría y datos corregidos | Se identificaron seis geometrías afectadas; se recibió evidencia de controles geométricos de B. Etapas 1, complemento y etapa 2 revisados; se cuantificó el efecto observado en el caso estudiado, con resultado estadístico inconcluso. | Decidir el alcance de sustitución y producir referencias compatibles con la definición final. No extrapolar equivalencia a todo el catálogo ni mezclar mallas antiguas y nuevas. |
-| P-02 · entorno reproducible | Registros SC3 respaldan Geant4 11.4.2 y GCC 14.2.0 en la corrida angular; código y tablas coinciden con el parche. Entorno Python de análisis documentado. | Completar receta de compilación y paquetes de datos físicos, bibliotecas/opciones y configuración de producción. No declarar equivalente el Docker histórico 11.3.2. |
-| P-03 · reproducción de la cadena | Se reprodujeron los 9.120 pares históricos y se implementó una alternativa local versionada para lectura, ROI, representación y empaquetado, con 41 pruebas. | La alternativa de transporte/ejecución de campaña final y su ficha definitiva aún no están fijadas; recuperar antecedentes que sean necesarios para justificar física y operación. |
+| P-02 · entorno reproducible | Receta SC3 ampliada recibida: Geant4 11.4.2, GCC 14.2.0, versiones de datos físicos y configuración de compilación. Entorno Python de análisis documentado. | Fijar la versión de producción y revisar su trazabilidad de extremo a extremo. No declarar equivalente el Docker histórico 11.3.2. |
+| P-03 · reproducción de la cadena | Se reprodujeron los 9.120 pares históricos y se implementó una alternativa local versionada para lectura, ROI, representación y empaquetado, con 41 pruebas. | Lanzador y fusión recibidos con prueba SC3; corregir T-01/T-02/T-03 de la revisión del 2 de octubre y fijar ficha definitiva. |
 | P-04 · aceptación y normalización física | Malla angular corregida y comprobada; regiones analíticas contrastadas; discrepancia conceptual entre convergencia del plano y aceptación del panel delimitada. | Justificar el observable, el plano de 600 m, generación espacial, aceptación angular y relación de conteos con exposición. Revisar respaldo existente y definir un control dirigido solo si es necesario. |
 
-El pendiente principal es P-04. Las herramientas no pueden sustituir una definición física ni producir el respaldo de SC3 que aún no está compartido.
+El pendiente principal es P-04. Ya se recibió respaldo de SC3 y una configuración candidata, pero la convergencia de planos grandes no demuestra equivalencia con el panel físico.
 
 ## Siguiente entrega necesaria
 
-Solicitar los archivos, comandos, semillas y conteos de la convergencia de planos 100/300/600 m y de cualquier tamaño adicional, junto con la explicación de qué representa la imagen y cómo se normaliza el conteo. Añadir la receta del entorno y ejecución. **No pedir otra corrida de integración angular ni una campaña grande todavía.**
-
-La [cadena local](CADENA_LOCAL_OE1.md) contiene el procedimiento y el mensaje preparado. La búsqueda en la historia disponible no localizó el runbook ni el paquete específico de convergencia; eso no prueba que no existan en SC3.
+La entrega `f9a77ef` fue revisada: [resultados, observaciones y responsables](REVISION_FISICA_PRODUCCION_2026-10-02.md). Corregir los finales de línea/huellas, la validación y agregación de bloques, y la compatibilidad de la nueva configuración. Precisar observable y normalización; el criterio de bordes sigue abierto. No repetir genéricamente la solicitud anterior ni lanzar la campaña grande. Decidir P0 después de revisar esos puntos.
 
 ## Evidencia de referencia
 

@@ -1,5 +1,7 @@
 # Matriz de cumplimiento del OE1
 
+> Actualización 2026-10-02: se recibió y revisó la entrega física/producción. Consultar la [revisión vigente](REVISION_FISICA_PRODUCCION_2026-10-02.md) antes de aplicar solicitudes o estados anteriores. La nueva configuración requiere ampliar los controles de compatibilidad de nuestra cadena.
+
 Estado consolidado al 2026-10-01, Colombia. Valoración técnica, no calificación académica. «Verificado» se limita a la evidencia descrita.
 
 | ID | Aspecto | Evidencia y estado | Pendiente |

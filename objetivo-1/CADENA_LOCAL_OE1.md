@@ -1,5 +1,7 @@
 # Cadena local preparada para la malla angular v1
 
+> Actualización 2026-10-02: se recibió y revisó la entrega física/producción. Consultar la [revisión vigente](REVISION_FISICA_PRODUCCION_2026-10-02.md) antes de aplicar solicitudes o estados anteriores. La nueva configuración requiere ampliar los controles de compatibilidad de nuestra cadena.
+
 Estado al 2026-10-01, Colombia. Se completa una **alternativa local nueva** para recibir, verificar, representar, analizar y empaquetar referencias compatibles. No sustituye los datos históricos, no activa el transporte de listas/ROI en el ejecutable angular y no habilita todavía la campaña final.
 
 ## Qué quedó implementado

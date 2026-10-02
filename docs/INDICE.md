@@ -1,5 +1,7 @@
 # Índice de documentación
 
+- [Revisión física y producción, 2026-10-02](../objetivo-1/REVISION_FISICA_PRODUCCION_2026-10-02.md).
+
 | Documento | Pregunta que responde |
 |---|---|
 | [Cadena local y estado consolidado](../objetivo-1/CADENA_LOCAL_OE1.md) | ¿Qué está preparado, cómo se ejecuta y qué falta recibir? |
