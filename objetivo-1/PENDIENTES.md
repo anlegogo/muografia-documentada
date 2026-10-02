@@ -1,5 +1,7 @@
 # Pendientes del OE1
 
+> Datos ya reanalizados: [panel/plano y bordes con corte de energía](DIAGNOSTICO_OBSERVABLE_Y_DECISION.md). La siguiente decisión está acotada a la definición física; no pedir otra comparación 100/600 para repetir lo ya demostrado.
+
 > Avance posterior a la revisión: [fusión y compatibilidad corregidas localmente](CORRECCIONES_LOCALES_FUSION_CONFIGURACION.md), 56 pruebas y contraste con los dos bloques reales. Las observaciones físicas siguen abiertas; adoptar la alternativa en SC3 requiere actualizar las herramientas allí.
 
 Estado consolidado al 2026-10-02, Colombia. **P-01 a P-04 continúan abiertos**, con avances diferentes. La integración angular en SC3 ya fue recibida y revisada; no sigue pendiente repetir la prueba de 1.000 muones.

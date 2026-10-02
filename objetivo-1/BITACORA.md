@@ -1,5 +1,11 @@
 # Bitácora de nuestra revisión del OE1
 
+## Diagnóstico del observable con datos conservados — 2026-10-02
+
+- Comparados panel de 1,2 m y planos de 100/600 m para los mismos primarios con E > 3 GeV. En bandas de roca, la contención 100/600 cercana a uno no implica contención en el panel. No se interpreta como eficiencia física ni factor correctivo.
+- Reanalizados bordes con corte: máximos descriptivos 1,64 pp (sin margen, 20M) y 2,84 pp (5°, 2M). No son comparación pareada ni decisión estadística; no se atribuye empeoramiento al margen.
+- [Definiciones pendientes, criterios y reproducción](DIAGNOSTICO_OBSERVABLE_Y_DECISION.md). 60 pruebas locales satisfactorias; no se ejecutan transportes nuevos ni se cambian normalización o alcance físico.
+
 ## Correcciones locales de fusión y configuración — 2026-10-02
 
 - Nueva fusión estricta, con rechazo de bloques/semillas repetidos o contradictorios, agregados corregidos y verificación SHA exacta o conversión CRLF->LF explícita y trazable. Preserva entradas.

@@ -1,5 +1,7 @@
 # Índice de documentación
 
+- [Diagnóstico del observable y decisión física](../objetivo-1/DIAGNOSTICO_OBSERVABLE_Y_DECISION.md).
+
 - [Correcciones locales de fusión y configuración](../objetivo-1/CORRECCIONES_LOCALES_FUSION_CONFIGURACION.md).
 
 - [Revisión física y producción, 2026-10-02](../objetivo-1/REVISION_FISICA_PRODUCCION_2026-10-02.md).

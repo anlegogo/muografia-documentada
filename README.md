@@ -8,6 +8,8 @@ La entrega de justificación física y producción fue revisada al **2026-10-02*
 
 Comenzar por la [revisión actual y acciones concretas](objetivo-1/REVISION_FISICA_PRODUCCION_2026-10-02.md). Las [correcciones locales de fusión y configuración](objetivo-1/CORRECCIONES_LOCALES_FUSION_CONFIGURACION.md) ya incorporan los campos nuevos y reúnen **56 pruebas satisfactorias**; se comprobaron sobre los dos bloques reales. La adopción en SC3 sigue pendiente.
 
+Avance adicional: [diagnóstico del observable y decisión física](objetivo-1/DIAGNOSTICO_OBSERVABLE_Y_DECISION.md), con los datos ya conservados y **60 pruebas locales**. No requiere repetir corridas para obtener estos resultados.
+
 | Evidencia / recurso | Qué contiene |
 |---|---|
 | [Revisión de la corrida angular](objetivo-1/REVISION_MALLA_ANGULAR_2026-10-01.md) | Integración satisfactoria en SC3, con 24 controles y 31 contrastes propios. |

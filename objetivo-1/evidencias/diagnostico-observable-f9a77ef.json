@@ -1,0 +1,248 @@
+{
+  "schema": "oe1-observable-diagnostic-v1",
+  "physical_validation": false,
+  "geometry": "geo-train-01",
+  "view": 0,
+  "containment_cut_3gev": [
+    {
+      "rock_column_g_cm2": [
+        10000.0,
+        30000.0
+      ],
+      "panel_1_2m": 1920,
+      "plane_100m": 2725,
+      "plane_600m": 2726,
+      "panel_over_600": 0.7043286867204696,
+      "plane100_over_600": 0.9996331621423331
+    },
+    {
+      "rock_column_g_cm2": [
+        30000.0,
+        60000.0
+      ],
+      "panel_1_2m": 191,
+      "plane_100m": 1705,
+      "plane_600m": 1707,
+      "panel_over_600": 0.11189220855301699,
+      "plane100_over_600": 0.9988283538371412
+    },
+    {
+      "rock_column_g_cm2": [
+        60000.0,
+        100000.0
+      ],
+      "panel_1_2m": 238,
+      "plane_100m": 1610,
+      "plane_600m": 1620,
+      "panel_over_600": 0.1469135802469136,
+      "plane100_over_600": 0.9938271604938271
+    },
+    {
+      "rock_column_g_cm2": [
+        100000.0,
+        200000.0
+      ],
+      "panel_1_2m": 250,
+      "plane_100m": 1703,
+      "plane_600m": 1721,
+      "panel_over_600": 0.1452643811737362,
+      "plane100_over_600": 0.989540964555491
+    },
+    {
+      "rock_column_g_cm2": [
+        200000.0,
+        10000000.0
+      ],
+      "panel_1_2m": 12,
+      "plane_100m": 330,
+      "plane_600m": 333,
+      "panel_over_600": 0.036036036036036036,
+      "plane100_over_600": 0.990990990990991
+    }
+  ],
+  "edges": {
+    "c01-anidado-cono": {
+      "events": 20000000,
+      "margin_deg": 0.0,
+      "all_energies": {
+        "interior_ratio": 0.9999205065652853,
+        "column_edge_residual_pp": [
+          -3.3157289385145505,
+          -0.18828414509134417,
+          0.10790524527949374,
+          0.004992425762484487,
+          -0.34487176747765025,
+          -0.3123353540374296,
+          0.11659392886024245,
+          -0.22508977797104368,
+          -0.081999588747661,
+          -3.4288674470838387
+        ],
+        "column_edge_max_abs_pp": 3.4288674470838387,
+        "top_row_residual_pp": [
+          -0.05525033713172922,
+          0.13985053478395848,
+          -0.19448529015897442,
+          0.10839820502076547,
+          -4.1946228989075856
+        ],
+        "combined_max_abs_pp": 4.1946228989075856,
+        "interpretation": "descriptive ratios; migration prevents treating these as binomial efficiencies",
+        "acceptance_decision": null
+      },
+      "cut_3gev": {
+        "interior_ratio": 0.5135164655041523,
+        "column_edge_residual_pp": [
+          -0.4227135798777648,
+          -0.04391143633620809,
+          0.27851661289507446,
+          -0.01659820481069163,
+          -0.3296316794427878,
+          -0.008230180308466117,
+          0.025496977891092953,
+          -0.16169053654940813,
+          -0.13588517622766805,
+          -0.5951970532573791
+        ],
+        "column_edge_max_abs_pp": 0.5951970532573791,
+        "top_row_residual_pp": [
+          1.118462513811902,
+          1.6444472945068178,
+          1.2874078829649915,
+          1.5336623519609738,
+          1.0780596237764506
+        ],
+        "combined_max_abs_pp": 1.6444472945068178,
+        "interpretation": "descriptive ratios; migration prevents treating these as binomial efficiencies",
+        "acceptance_decision": null
+      }
+    },
+    "c02-cono-margen-5deg": {
+      "events": 2000000,
+      "margin_deg": 5.0,
+      "all_energies": {
+        "interior_ratio": 1.000163270362074,
+        "column_edge_residual_pp": [
+          0.026226155281960928,
+          -1.48691527150151,
+          0.2814186039457267,
+          0.9158763536231129,
+          0.2843602490159691,
+          -0.016327036207397505,
+          0.7205606967791711,
+          -1.654294276862589,
+          0.8387392314283426,
+          -0.453963797695367
+        ],
+        "column_edge_max_abs_pp": 1.654294276862589,
+        "top_row_residual_pp": [
+          0.11287304847649171,
+          -0.31033551163608397,
+          0.3483198571750057,
+          -0.028814172215152478,
+          -0.5953960938552605
+        ],
+        "combined_max_abs_pp": 1.654294276862589,
+        "interpretation": "descriptive ratios; migration prevents treating these as binomial efficiencies",
+        "acceptance_decision": null
+      },
+      "cut_3gev": {
+        "interior_ratio": 0.5140188316123074,
+        "column_edge_residual_pp": [
+          0.3853508813224438,
+          -1.233815934339988,
+          0.19318276816100433,
+          1.3947270082607766,
+          -1.3589278347702627,
+          -2.838907675178337,
+          -0.8167076085649483,
+          -0.2889054207855568,
+          0.28687271734985087,
+          -1.7738744084955127
+        ],
+        "column_edge_max_abs_pp": 2.838907675178337,
+        "top_row_residual_pp": [
+          0.9704178200875102,
+          1.0018848372648048,
+          1.8278977136712615,
+          1.0401560011564281,
+          0.9019552930067676
+        ],
+        "combined_max_abs_pp": 2.838907675178337,
+        "interpretation": "descriptive ratios; migration prevents treating these as binomial efficiencies",
+        "acceptance_decision": null
+      }
+    }
+  },
+  "sources": [
+    {
+      "file": "datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0.meta.json",
+      "received_sha256": "b257c51eab0caac01c92b799e66971648c6b07b73bb0a73caa1de6a78e58abef",
+      "sc3_sha256": "b257c51eab0caac01c92b799e66971648c6b07b73bb0a73caa1de6a78e58abef",
+      "crlf_to_lf_needed": false
+    },
+    {
+      "file": "datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_gen.csv",
+      "received_sha256": "51c570f9ff60f6ae6e7f077d828743f4f35c42ed48d880e8acc41178cf87869a",
+      "sc3_sha256": "0c357545f3e11a016c1fb0053ee6d6e8b0c6570cd72d2206b2921519ac66a486",
+      "crlf_to_lf_needed": true
+    },
+    {
+      "file": "datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub300_ecut0.csv",
+      "received_sha256": "91c0b0cbf80854806af66d778ecf8801b860553c81dc01dded3ecfb69f6d5c74",
+      "sc3_sha256": "37ed5cf168360655ce13b4fceb8798f6dd40536061a5497c62fcdb73e5a6f76c",
+      "crlf_to_lf_needed": true
+    },
+    {
+      "file": "datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub300_ecut3.csv",
+      "received_sha256": "dfcb0dd0ec3a12c4cea76c7e7548848eaced34cf51e51e0bd67411c1233e9977",
+      "sc3_sha256": "8408e1ff25188a685da1426aa34b9d251c8d2ca6a4bbdb78d38e443b548e8182",
+      "crlf_to_lf_needed": true
+    },
+    {
+      "file": "datos/sc3/controles-30626/resultados/c02-cono-margen-5deg/geo-train-01_view0.meta.json",
+      "received_sha256": "d87d083ba412ac4dd1b6ac5342dc44dbcd6b914d7dcfe5a35965dd8abec81bbc",
+      "sc3_sha256": "d87d083ba412ac4dd1b6ac5342dc44dbcd6b914d7dcfe5a35965dd8abec81bbc",
+      "crlf_to_lf_needed": false
+    },
+    {
+      "file": "datos/sc3/controles-30626/resultados/c02-cono-margen-5deg/geo-train-01_view0_gen.csv",
+      "received_sha256": "05c43ae91790c9ffb84cc93b46a8df1f033e739ac9a433fc25cbd67ea296e870",
+      "sc3_sha256": "eb3a6cbee287185ca34950a781378dde55a0fa87af08fe95c959f1d15c38d4ab",
+      "crlf_to_lf_needed": true
+    },
+    {
+      "file": "datos/sc3/controles-30626/resultados/c02-cono-margen-5deg/geo-train-01_view0_hist.csv",
+      "received_sha256": "859ccb105d8bef8fbebcb15c3486145ab73794bc457e9324c156dafb8d4e5252",
+      "sc3_sha256": "a3d4f3164166403dfdbfe11db066680579f975bc5d2763f3703369322170c6d0",
+      "crlf_to_lf_needed": true
+    },
+    {
+      "file": "datos/sc3/controles-30626/resultados/c02-cono-margen-5deg/geo-train-01_view0_hist_ecut3.csv",
+      "received_sha256": "7b50cedffb05e60f857a274036b26a566feffdd3a05e4b5d0efbaa8468a1d5bb",
+      "sc3_sha256": "3570e60d9a294a683c0e48ad3b61fd2032d482ca5ad7eb3e6d4216a7f07158e4",
+      "crlf_to_lf_needed": true
+    },
+    {
+      "file": "datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub0.6_ecut3.csv",
+      "received_sha256": "884fedee1ab36cc6cc1583c290cd65c94316f3b7a892aadf0fa708ea3a3545ce",
+      "sc3_sha256": "5fd38094a611fff061f984b14e57cbcee5764fa79d9dfbad712ca319ca442ce8",
+      "crlf_to_lf_needed": true
+    },
+    {
+      "file": "datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub50_ecut3.csv",
+      "received_sha256": "d75f4754b136b6cfc542245561e58e60ad46719c4fca02b4978b81065af67789",
+      "sc3_sha256": "93570de07e6659969e609c595a215dac83876745e342bd4d8486cb4f5aa2cdf9",
+      "crlf_to_lf_needed": true
+    }
+  ],
+  "geometry_helper_sha256": "a14bc5a05078d2308a855307bd9a3106946986e19da19719240d098fff17df4a",
+  "geometry_sha256": "ff3c69ab7e37b51c5d4e1318d298a9ddc35446367e6ea4abf5c322e3b86f07b1",
+  "opacity_mask_sha256": "759f0dc0f08701db17b0f0deaf66fb572119c7563df6487db83c21264cc5af83",
+  "limits": [
+    "Restricted nominal source: small-panel fraction is NOT physical detector transmission.",
+    "Margins have unequal sample sizes; no paired confidence interval or pass decision.",
+    "Ratios use arrival bins over nominal bins, with migration between bins.",
+    "No new normalization rate or physical exposure is inferred."
+  ]
+}
