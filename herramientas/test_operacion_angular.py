@@ -97,6 +97,15 @@ class OperationTests(unittest.TestCase):
         cmd=r['planned'][0]['command']
         self.assertTrue(Path(cmd[-3]).is_absolute());self.assertEqual(cmd[-2],worker.digest(self.f.manifest))
 
+    def test_partition_and_time_limit_are_options_outside_identity(self):
+        with patch('lanzar_campana_angular.subprocess.run',return_value=SimpleNamespace(stdout='')):
+            default=self.call_launch()
+            amd=launch(self.f.manifest,self.tree,self.scratch,self.out,self.recipe,Path(__import__('sys').executable),1,4,False,'amd','01:30:00')
+        self.assertIn('--partition=legacy',default['planned'][0]['command']);self.assertIn('--time=00:55:00',default['planned'][0]['command'])
+        self.assertIn('--partition=amd',amd['planned'][0]['command']);self.assertIn('--time=01:30:00',amd['planned'][0]['command'])
+        self.assertEqual(default['campaign_id'],amd['campaign_id'])
+        with self.assertRaises(ValueError):launch(self.f.manifest,self.tree,self.scratch,self.out,self.recipe,Path(__import__('sys').executable),1,4,False,'amd;rm','00:55:00')
+
     def test_submission_intent_prevents_retry_after_ambiguous_sbatch(self):
         calls=[]
         def proc(cmd,**kwargs):

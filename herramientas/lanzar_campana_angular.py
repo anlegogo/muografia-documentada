@@ -14,8 +14,12 @@ from fusionar_bloques_angular import manifest_rows
 from operar_bloque_angular import existing, digest, prepare
 
 
-def launch(manifest,tree,scratch,destination,recipe,python,threads=24,max_jobs=4,submit=False):
+def launch(manifest,tree,scratch,destination,recipe,python,threads=24,max_jobs=4,submit=False,partition='legacy',time_limit='00:55:00'):
     if threads<1 or max_jobs<1:raise ValueError('recursos inválidos')
+    # Partition and wall-time limit are scheduling options; they are recorded in each
+    # planned command but kept out of the campaign identity, so earlier roots stay valid.
+    if not partition.replace('_','').isalnum() or not all(x.isdigit() for x in time_limit.replace('-',':').split(':')):
+        raise ValueError('partición/tiempo inválidos')
     manifest,tree,scratch,destination,recipe,python=map(lambda p:Path(p).resolve(),(manifest,tree,scratch,destination,recipe,python))
     rows=manifest_rows(manifest)
     script=Path(__file__).resolve().with_name('bloque_verificado_angular.sbatch')
@@ -43,8 +47,8 @@ def launch(manifest,tree,scratch,destination,recipe,python,threads=24,max_jobs=4
             if len(planned)>=free:continue
             prepare(manifest,row['fila'],tree,scratch,destination,recipe,threads)
             logdir=state/'logs'
-            cmd=['sbatch','--parsable','--job-name='+name,'--partition=legacy','--nodes=1','--ntasks=1',
-                 '--cpus-per-task='+str(threads),'--time=00:55:00','--chdir='+str(tree),
+            cmd=['sbatch','--parsable','--job-name='+name,'--partition='+partition,'--nodes=1','--ntasks=1',
+                 '--cpus-per-task='+str(threads),'--time='+time_limit,'--chdir='+str(tree),
                  '--output='+str(logdir/'%x-%j.out'),str(script),str(manifest),str(row['fila']),str(tree),str(scratch),str(destination),str(recipe),str(python),str(threads),str(worker),identity['manifest'],identity['recipe']]
             planned.append({'row':row['fila'],'command':cmd,'record':str(record)})
         # Validate all selected commands before the first submission.
@@ -70,5 +74,6 @@ if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     for n in ('manifiesto','arbol','temporal','salida','receta','python'):p.add_argument('--'+n,type=Path,required=True)
     p.add_argument('--threads',type=int,default=24);p.add_argument('--max-trabajos',type=int,default=4)
+    p.add_argument('--particion',default='legacy');p.add_argument('--tiempo',default='00:55:00')
     p.add_argument('--enviar',action='store_true');a=p.parse_args()
-    print(json.dumps(launch(a.manifiesto,a.arbol,a.temporal,a.salida,a.receta,a.python,a.threads,a.max_trabajos,a.enviar),indent=2))
+    print(json.dumps(launch(a.manifiesto,a.arbol,a.temporal,a.salida,a.receta,a.python,a.threads,a.max_trabajos,a.enviar,a.particion,a.tiempo),indent=2))
