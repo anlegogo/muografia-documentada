@@ -1,0 +1,11 @@
+{
+  "tests": 78,
+  "failures": 0,
+  "errors": 0,
+  "new_publication_tests": 9,
+  "scope": "local, no SLURM execution",
+  "source_sha256": {
+    "publicar_bloque_angular.py": "15dcd116c7a092e632c9855e17569264da41faa908a158890a721188ad1b7b98",
+    "test_publicar_bloque_angular.py": "625d22952f5600e785c26c40ac35db16955b46280565503502a8d843b4033220"
+  }
+}

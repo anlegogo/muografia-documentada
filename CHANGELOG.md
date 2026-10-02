@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Publicación verificada de bloques — 2026-10-02
+
+- Nueva herramienta de publicación: valida, copia a temporal, verifica todos los bytes y promueve con bloqueo; no sobrescribe resultados distintos y reconoce repeticiones idénticas.
+- Fallos controlados de copia, corrupción, escritura de recibo y promoción no publican un bloque. Suite: 78 pruebas satisfactorias. Dos bloques reales publicados localmente y verificados sin alterar entradas ni ejecutar transporte.
+- [Uso, adopción y límites](objetivo-1/PUBLICACION_VERIFICADA_BLOQUES.md). Falta integrar y comprobar el flujo en SC3; la validación física permanece abierta.
+
 ## Preparación local integral — 2026-10-02
 
 - Probabilidades del algoritmo de fuente calculadas desde las tablas v1: ventana nominal 0,6841465610; 20,18 % de masa en filas extrapoladas. Concordancia con la fracción observada de c02; no valida físicamente la extrapolación.

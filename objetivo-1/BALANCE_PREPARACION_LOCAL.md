@@ -1,5 +1,7 @@
 # Balance de preparación local del OE1
 
+> Avance posterior: [publicación verificada con pruebas de fallos](PUBLICACION_VERIFICADA_BLOQUES.md). Suite ampliada a 78 pruebas; adopción en SC3 y física todavía pendientes.
+
 2026-10-02. Consolida lo realizado después de la entrega `f9a77ef`, con autorización del director. **La cadena local está preparada y probada para el alcance técnico descrito; la interpretación física y la operación de producción en SC3 siguen abiertas.** No se lanzaron transportes nuevos ni se modificó la rama estudiantil.
 
 ## Qué ya podemos dar por adelantado

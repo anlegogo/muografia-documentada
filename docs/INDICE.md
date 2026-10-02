@@ -1,5 +1,7 @@
 # Índice de documentación
 
+- [Publicación verificada de bloques](../objetivo-1/PUBLICACION_VERIFICADA_BLOQUES.md).
+
 - [Balance de preparación local y ficha candidata](../objetivo-1/BALANCE_PREPARACION_LOCAL.md).
 
 - [Diagnóstico del observable y decisión física](../objetivo-1/DIAGNOSTICO_OBSERVABLE_Y_DECISION.md).
