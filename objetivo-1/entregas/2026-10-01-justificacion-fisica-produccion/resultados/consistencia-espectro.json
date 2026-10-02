@@ -1,0 +1,326 @@
+{
+ "resumen": {
+  "umbral_s0_gev": 0.7980614314412022,
+  "fraccion_generada_bajo_umbral_ponderada": 0.06592649078424631,
+  "perdida_transporte_aire_ponderada": 0.1948267366603338,
+  "ks_max": 0.11871362358698273,
+  "ks_min": 0.06279388315659573
+ },
+ "bandas": [
+  {
+   "banda_deg": [
+    2.0,
+    4.812
+   ],
+   "peso_s0": 0.0043167704124508904,
+   "e_total_min_generado_gev": 0.6134968958465064,
+   "e_total_max_generado_gev": 1727.413612606332,
+   "mediana_ecomug_gev": 27.631972632609532,
+   "mediana_guan_mismo_rango_gev": 27.476186685216067,
+   "ks_ecomug_vs_guan": 0.06279388315659573,
+   "fraccion_generada_bajo_umbral_s0_ecomug": 0.001220703125,
+   "fraccion_bajo_umbral_s0_guan": 0.0057070784776642736,
+   "razon_tasa_rango_generado_vs_s0": 1.0057398361731533,
+   "fraccion_flujo_sobre_maximo_generado": 0.0008240216773832035,
+   "camino_aire_m": 1959.6615227911498,
+   "supervivencia_rango_aire": 1.0,
+   "supervivencia_rango_y_decaimiento": 0.9749041390509641
+  },
+  {
+   "banda_deg": [
+    4.812,
+    7.625
+   ],
+   "peso_s0": 0.006794986813350679,
+   "e_total_min_generado_gev": 0.520272257728371,
+   "e_total_max_generado_gev": 1200.274682775474,
+   "mediana_ecomug_gev": 16.46476324003182,
+   "mediana_guan_mismo_rango_gev": 21.021378544762914,
+   "ks_ecomug_vs_guan": 0.07442635262464131,
+   "fraccion_generada_bajo_umbral_s0_ecomug": 0.005859375,
+   "fraccion_bajo_umbral_s0_guan": 0.011219231998401913,
+   "razon_tasa_rango_generado_vs_s0": 1.0113465313661762,
+   "fraccion_flujo_sobre_maximo_generado": 0.0010575414382850347,
+   "camino_aire_m": 1967.7783276310688,
+   "supervivencia_rango_aire": 0.998779296875,
+   "supervivencia_rango_y_decaimiento": 0.9561472150939228
+  },
+  {
+   "banda_deg": [
+    7.625,
+    10.438
+   ],
+   "peso_s0": 0.010952232432928758,
+   "e_total_min_generado_gev": 0.5165540728152049,
+   "e_total_max_generado_gev": 1365.6298978373782,
+   "mediana_ecomug_gev": 10.954833607139507,
+   "mediana_guan_mismo_rango_gev": 15.97793000663325,
+   "ks_ecomug_vs_guan": 0.1131783163185166,
+   "fraccion_generada_bajo_umbral_s0_ecomug": 0.01123046875,
+   "fraccion_bajo_umbral_s0_guan": 0.015046008334341665,
+   "razon_tasa_rango_generado_vs_s0": 1.015275848883964,
+   "fraccion_flujo_sobre_maximo_generado": 0.00041989659434732597,
+   "camino_aire_m": 1980.7570555880254,
+   "supervivencia_rango_aire": 0.997802734375,
+   "supervivencia_rango_y_decaimiento": 0.9407796699386906
+  },
+  {
+   "banda_deg": [
+    10.438,
+    13.25
+   ],
+   "peso_s0": 0.016774574038137147,
+   "e_total_min_generado_gev": 0.5134350429579589,
+   "e_total_max_generado_gev": 3163.077904889688,
+   "mediana_ecomug_gev": 8.505472650057085,
+   "mediana_guan_mismo_rango_gev": 12.510152190895178,
+   "ks_ecomug_vs_guan": 0.11590525850632799,
+   "fraccion_generada_bajo_umbral_s0_ecomug": 0.016845703125,
+   "fraccion_bajo_umbral_s0_guan": 0.019554469866647883,
+   "razon_tasa_rango_generado_vs_s0": 1.0199444734721654,
+   "fraccion_flujo_sobre_maximo_generado": 2.979395475180684e-05,
+   "camino_aire_m": 1998.7533418310195,
+   "supervivencia_rango_aire": 0.99609375,
+   "supervivencia_rango_y_decaimiento": 0.9228395024011055
+  },
+  {
+   "banda_deg": [
+    13.25,
+    16.062
+   ],
+   "peso_s0": 0.024149163609103526,
+   "e_total_min_generado_gev": 0.5128055440405533,
+   "e_total_max_generado_gev": 2367.1291023580657,
+   "mediana_ecomug_gev": 6.957090980516929,
+   "mediana_guan_mismo_rango_gev": 10.144959117208455,
+   "ks_ecomug_vs_guan": 0.11669420363846689,
+   "fraccion_generada_bajo_umbral_s0_ecomug": 0.0244140625,
+   "fraccion_bajo_umbral_s0_guan": 0.024334918581950693,
+   "razon_tasa_rango_generado_vs_s0": 1.02494187713122,
+   "fraccion_flujo_sobre_maximo_generado": 3.680767173458349e-05,
+   "camino_aire_m": 2021.9908515571365,
+   "supervivencia_rango_aire": 0.99365234375,
+   "supervivencia_rango_y_decaimiento": 0.9071328325643346
+  },
+  {
+   "banda_deg": [
+    16.062,
+    18.875
+   ],
+   "peso_s0": 0.03288719898253652,
+   "e_total_min_generado_gev": 0.5124764217013983,
+   "e_total_max_generado_gev": 4659.487848072953,
+   "mediana_ecomug_gev": 5.844974325943465,
+   "mediana_guan_mismo_rango_gev": 8.483591048609698,
+   "ks_ecomug_vs_guan": 0.11871362358698273,
+   "fraccion_generada_bajo_umbral_s0_ecomug": 0.031005859375,
+   "fraccion_bajo_umbral_s0_guan": 0.02934123375318154,
+   "razon_tasa_rango_generado_vs_s0": 1.0302281654207208,
+   "fraccion_flujo_sobre_maximo_generado": 4.153278658341494e-06,
+   "camino_aire_m": 2050.7774934209197,
+   "supervivencia_rango_aire": 0.9912109375,
+   "supervivencia_rango_y_decaimiento": 0.892399896269507
+  },
+  {
+   "banda_deg": [
+    18.875,
+    21.688
+   ],
+   "peso_s0": 0.04274345979026162,
+   "e_total_min_generado_gev": 0.5124660158028569,
+   "e_total_max_generado_gev": 4366.5427106533225,
+   "mediana_ecomug_gev": 5.077379099984729,
+   "mediana_guan_mismo_rango_gev": 7.277058444781835,
+   "ks_ecomug_vs_guan": 0.11627484579999914,
+   "fraccion_generada_bajo_umbral_s0_ecomug": 0.037109375,
+   "fraccion_bajo_umbral_s0_guan": 0.03445282756995982,
+   "razon_tasa_rango_generado_vs_s0": 1.0356821795492919,
+   "fraccion_flujo_sobre_maximo_generado": 3.3048506978232416e-06,
+   "camino_aire_m": 2085.499050958763,
+   "supervivencia_rango_aire": 0.989013671875,
+   "supervivencia_rango_y_decaimiento": 0.8784639415534012
+  },
+  {
+   "banda_deg": [
+    21.688,
+    24.5
+   ],
+   "peso_s0": 0.05343186444853706,
+   "e_total_min_generado_gev": 0.5119622843030714,
+   "e_total_max_generado_gev": 4409.677341890818,
+   "mediana_ecomug_gev": 4.567551900771205,
+   "mediana_guan_mismo_rango_gev": 6.372677071385339,
+   "ks_ecomug_vs_guan": 0.11034965125177254,
+   "fraccion_generada_bajo_umbral_s0_ecomug": 0.044189453125,
+   "fraccion_bajo_umbral_s0_guan": 0.03968692050504452,
+   "razon_tasa_rango_generado_vs_s0": 1.0413270644256105,
+   "fraccion_flujo_sobre_maximo_generado": 2.2761438768638623e-06,
+   "camino_aire_m": 2126.622005689336,
+   "supervivencia_rango_aire": 0.98486328125,
+   "supervivencia_rango_y_decaimiento": 0.8635989173609009
+  },
+  {
+   "banda_deg": [
+    24.5,
+    27.312
+   ],
+   "peso_s0": 0.06464191117401998,
+   "e_total_min_generado_gev": 0.5117754985564303,
+   "e_total_max_generado_gev": 4857.207198024188,
+   "mediana_ecomug_gev": 4.131391583789148,
+   "mediana_guan_mismo_rango_gev": 5.67728488626776,
+   "ks_ecomug_vs_guan": 0.10419951234183189,
+   "fraccion_generada_bajo_umbral_s0_ecomug": 0.05078125,
+   "fraccion_bajo_umbral_s0_guan": 0.04488574995917871,
+   "razon_tasa_rango_generado_vs_s0": 1.0469951630993468,
+   "fraccion_flujo_sobre_maximo_generado": 1.3010501020990855e-06,
+   "camino_aire_m": 2174.734667099783,
+   "supervivencia_rango_aire": 0.98046875,
+   "supervivencia_rango_y_decaimiento": 0.849258286830765
+  },
+  {
+   "banda_deg": [
+    27.312,
+    30.125
+   ],
+   "peso_s0": 0.07604880724847915,
+   "e_total_min_generado_gev": 0.5116577205533288,
+   "e_total_max_generado_gev": 7129.576985157914,
+   "mediana_ecomug_gev": 3.823786298307224,
+   "mediana_guan_mismo_rango_gev": 5.13005321455146,
+   "ks_ecomug_vs_guan": 0.10039491563920566,
+   "fraccion_generada_bajo_umbral_s0_ecomug": 0.0576171875,
+   "fraccion_bajo_umbral_s0_guan": 0.050030606094968566,
+   "razon_tasa_rango_generado_vs_s0": 1.0526654926105652,
+   "fraccion_flujo_sobre_maximo_generado": 3.601766262885493e-07,
+   "camino_aire_m": 2230.581459632743,
+   "supervivencia_rango_aire": 0.974609375,
+   "supervivencia_rango_y_decaimiento": 0.834164532300828
+  },
+  {
+   "banda_deg": [
+    30.125,
+    32.938
+   ],
+   "peso_s0": 0.08732590786532882,
+   "e_total_min_generado_gev": 0.511652079201045,
+   "e_total_max_generado_gev": 3969.2703951562653,
+   "mediana_ecomug_gev": 3.560749699602068,
+   "mediana_guan_mismo_rango_gev": 4.691328435629056,
+   "ks_ecomug_vs_guan": 0.09489237690123731,
+   "fraccion_generada_bajo_umbral_s0_ecomug": 0.06298828125,
+   "fraccion_bajo_umbral_s0_guan": 0.05507162005724753,
+   "razon_tasa_rango_generado_vs_s0": 1.0582812636663363,
+   "fraccion_flujo_sobre_maximo_generado": 1.3195583573222508e-06,
+   "camino_aire_m": 2295.0591034216545,
+   "supervivencia_rango_aire": 0.969482421875,
+   "supervivencia_rango_y_decaimiento": 0.8197066946788265
+  },
+  {
+   "banda_deg": [
+    32.938,
+    35.75
+   ],
+   "peso_s0": 0.09815348452404742,
+   "e_total_min_generado_gev": 0.5115343544427896,
+   "e_total_max_generado_gev": 4615.3012605844215,
+   "mediana_ecomug_gev": 3.346794437751885,
+   "mediana_guan_mismo_rango_gev": 4.3338445906384155,
+   "ks_ecomug_vs_guan": 0.09055783964323527,
+   "fraccion_generada_bajo_umbral_s0_ecomug": 0.068603515625,
+   "fraccion_bajo_umbral_s0_guan": 0.06001609299913169,
+   "razon_tasa_rango_generado_vs_s0": 1.0638480005371795,
+   "fraccion_flujo_sobre_maximo_generado": 7.146341809293637e-07,
+   "camino_aire_m": 2369.240919045838,
+   "supervivencia_rango_aire": 0.96240234375,
+   "supervivencia_rango_y_decaimiento": 0.8040778543623871
+  },
+  {
+   "banda_deg": [
+    35.75,
+    38.562
+   ],
+   "peso_s0": 0.10822791636417582,
+   "e_total_min_generado_gev": 0.5115250348469805,
+   "e_total_max_generado_gev": 4586.722604341957,
+   "mediana_ecomug_gev": 3.164187155497892,
+   "mediana_guan_mismo_rango_gev": 4.038921026090189,
+   "ks_ecomug_vs_guan": 0.08753214833536505,
+   "fraccion_generada_bajo_umbral_s0_ecomug": 0.07470703125,
+   "fraccion_bajo_umbral_s0_guan": 0.06479412884548075,
+   "razon_tasa_rango_generado_vs_s0": 1.0692832785207944,
+   "fraccion_flujo_sobre_maximo_generado": 5.972919455175527e-07,
+   "camino_aire_m": 2454.472736855725,
+   "supervivencia_rango_aire": 0.95361328125,
+   "supervivencia_rango_y_decaimiento": 0.7866979483140015
+  },
+  {
+   "banda_deg": [
+    38.562,
+    41.375
+   ],
+   "peso_s0": 0.11726761131942985,
+   "e_total_min_generado_gev": 0.5114895758109701,
+   "e_total_max_generado_gev": 7242.863660145668,
+   "mediana_ecomug_gev": 3.014410024608191,
+   "mediana_guan_mismo_rango_gev": 3.7926607143135955,
+   "ks_ecomug_vs_guan": 0.08238784111827402,
+   "fraccion_generada_bajo_umbral_s0_ecomug": 0.080078125,
+   "fraccion_bajo_umbral_s0_guan": 0.06941206422265789,
+   "razon_tasa_rango_generado_vs_s0": 1.0745894735511226,
+   "fraccion_flujo_sobre_maximo_generado": 1.4926538084154048e-07,
+   "camino_aire_m": 2552.4606263192486,
+   "supervivencia_rango_aire": 0.94384765625,
+   "supervivencia_rango_y_decaimiento": 0.7691889839988542
+  },
+  {
+   "banda_deg": [
+    41.375,
+    44.188
+   ],
+   "peso_s0": 0.12501966534284356,
+   "e_total_min_generado_gev": 0.511453688821932,
+   "e_total_max_generado_gev": 4965.220154249189,
+   "mediana_ecomug_gev": 2.887080442072614,
+   "mediana_guan_mismo_rango_gev": 3.585158440602118,
+   "ks_ecomug_vs_guan": 0.07865284692577346,
+   "fraccion_generada_bajo_umbral_s0_ecomug": 0.084716796875,
+   "fraccion_bajo_umbral_s0_guan": 0.07384574395743337,
+   "razon_tasa_rango_generado_vs_s0": 1.0797337414103936,
+   "fraccion_flujo_sobre_maximo_generado": 3.461993738767053e-07,
+   "camino_aire_m": 2665.3070511432484,
+   "supervivencia_rango_aire": 0.93310546875,
+   "supervivencia_rango_y_decaimiento": 0.7507829615964847
+  },
+  {
+   "banda_deg": [
+    44.188,
+    47.0
+   ],
+   "peso_s0": 0.1312644456343691,
+   "e_total_min_generado_gev": 0.5114310015271433,
+   "e_total_max_generado_gev": 3280.406265451572,
+   "mediana_ecomug_gev": 2.772449433365747,
+   "mediana_guan_mismo_rango_gev": 3.4090648066956595,
+   "ks_ecomug_vs_guan": 0.07644997034454759,
+   "fraccion_generada_bajo_umbral_s0_ecomug": 0.091064453125,
+   "fraccion_bajo_umbral_s0_guan": 0.0780740805440916,
+   "razon_tasa_rango_generado_vs_s0": 1.0846858504533297,
+   "fraccion_flujo_sobre_maximo_generado": 8.942155110903221e-07,
+   "camino_aire_m": 2795.6171647922915,
+   "supervivencia_rango_aire": 0.91845703125,
+   "supervivencia_rango_y_decaimiento": 0.7289923777574172
+  }
+ ],
+ "figura": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/figuras/fig5-espectro.png",
+ "supuestos": {
+  "energia_guan": "E en la parametrización de Guan tratada como energía total",
+  "transporte": "mismo modelo que relacion_plano_detector.py (G4_AIR, camino R_inicio/cos)",
+  "geometria_camino": "geo-train-01 (R_inicio = 1956,2 m)"
+ },
+ "entorno": {
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "matplotlib": "3.10.7"
+ }
+}

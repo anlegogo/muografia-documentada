@@ -1,0 +1,72 @@
+{
+ "formula": "N_v1(T) = sum_b Phi_int(E_min, theta_b) * A * dOmega_b * T ; T_eq = 30 d * N / S0_v1",
+ "e_min_umbral_gev": 0.7980614314412022,
+ "s0_tabla_historica": 36175379.99,
+ "s0_recalculado_malla_historica": 36177629.634406075,
+ "diferencia_relativa_historica": 6.218716725836515e-05,
+ "max_dif_relativa_por_fila": 0.0005115370020508658,
+ "s0_v1_declarado": 36034069.911914065,
+ "s0_v1_recalculado": 36036310.768646665,
+ "diferencia_relativa_v1": 6.218716725792106e-05,
+ "error_integracion_relativo": -7.959291520309719e-07,
+ "angulo_solido_sr": {
+  "exacto": 0.7320358154917841,
+  "suma_discreta_v1": 0.7320361048398678,
+  "diferencia_relativa": 3.952649276772746e-07,
+  "elevacion_cubierta_deg": [
+   1.911764705882353,
+   47.088235294117645
+  ],
+  "azimut_cubierto_deg": [
+   -30,
+   30
+  ]
+ },
+ "tasa_v1_por_segundo": 13.902897673088992,
+ "variantes_s0": {
+  "adoptada (umbral CSDA roca sobre 3 km de aire, E total)": {
+   "s0": 36036310.768646665,
+   "cambio_relativo": 0.0
+  },
+  "umbral interpretado como energía cinética (E_total = E_min + m)": {
+   "s0": 35269160.978621066,
+   "cambio_relativo": -0.02128824437525545
+  },
+  "densidad del aire G4_AIR en el umbral": {
+   "s0": 36133936.35321128,
+   "cambio_relativo": 0.002709089318031932
+  },
+  "umbral por rango Bethe en aire (cinética)": {
+   "s0": 35824623.46796022,
+   "cambio_relativo": -0.00587427780955363
+  },
+  "sin umbral de aire (E_total desde p = 0,5 GeV/c de EcoMug)": {
+   "s0": 38267965.63061975,
+   "cambio_relativo": 0.06192795029159126
+  },
+  "panel vertical físico (área proyectada A·cos(el)·cos(az))": {
+   "s0": 28272431.20706273,
+   "cambio_relativo": -0.21544601531017116
+  }
+ },
+ "energia_cinetica_rango_aire_bethe_gev": 0.7211796407703459,
+ "factor_proyeccion_panel_vertical_medio": 0.7845539846898288,
+ "exposicion_equivalente_dias": {
+  "etapa 2 (24.000.000 pares)": 19.981090167168265,
+  "S0 v1 (30 d)": 30.000000073335542,
+  "2 × S0 v1": 60.000000146671084,
+  "10 × S0 v1": 300.0000007333554
+ },
+ "exposicion_efectiva_cielo_29484_dias": {
+  "min": 12.056340951382014,
+  "max": 27.73872058212489,
+  "media_ponderada": 23.112833640557948
+ },
+ "figura": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/figuras/fig4-exposicion.png",
+ "entorno": {
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "matplotlib": "3.10.7"
+ },
+ "referencia_modelo": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/resultados/relacion-plano-detector.json"
+}

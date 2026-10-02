@@ -1,0 +1,310 @@
+{
+ "geometria": "geo-train-01",
+ "vista": 0,
+ "corridas_conservadas": [
+  {
+   "job": 29475,
+   "lado_plano_m": 1.2,
+   "commit_codigo": "81a5935",
+   "muestreo": "EcoMug directo (sin tablas)",
+   "semilla": 20260805,
+   "hilos": 8,
+   "eventos_generados_ecomug": 2145555,
+   "eventos_transportados": 100000,
+   "registrados_en_pixeles": 1203,
+   "eficiencia": 0.01203,
+   "sigma_binomial": 0.00034475033139940564,
+   "ekin_media_registrada_gev": 94.3787447399398,
+   "pared_s": 22.401978207286447,
+   "nodo_slurm": "guane01",
+   "estado_slurm": "COMPLETED 0:0",
+   "comando": "sbatch --export=ALL,GEO=geo-train-01,VIEW=0,EVENTS=100000,SEED=20260805 cluster/sc3/smoke_test.sbatch",
+   "inicio": "2026-08-30T18:56:07",
+   "sha256_meta": "4b00e2023072423a848d1edf6fcdea60f61c8e87edf6afbed088eff5a0ff1f29",
+   "sha256_hist": "63701b688c52a5285e5e9de2f76903a626f5ed8f24bc9891f5950ddaa47a7a67",
+   "hist": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/smoke-29475/geo-train-01_view0_hist.csv"
+  },
+  {
+   "job": 29477,
+   "lado_plano_m": 100.0,
+   "commit_codigo": "477f193",
+   "muestreo": "EcoMug directo (sin tablas)",
+   "semilla": 20260805,
+   "hilos": 8,
+   "eventos_generados_ecomug": 2146114,
+   "eventos_transportados": 100000,
+   "registrados_en_pixeles": 63890,
+   "eficiencia": 0.6389,
+   "sigma_binomial": 0.0015189035189899325,
+   "ekin_media_registrada_gev": 10.388806329547062,
+   "pared_s": 13.955594814848155,
+   "nodo_slurm": "guane01",
+   "estado_slurm": "COMPLETED 0:0",
+   "comando": "sbatch --export=ALL,GEO=geo-train-01,VIEW=0,EVENTS=100000,SEED=20260805 cluster/sc3/smoke_test.sbatch",
+   "inicio": "2026-08-30T19:01:02",
+   "sha256_meta": "32c30723ca29b21dbee18cb453c26aaf956cad8e40bacd094e58ba9a46f4d95d",
+   "sha256_hist": "63e02515e52c03f3fba64e4179a46fe0fa64900d65f42de45ba3648e0cac9d4f",
+   "hist": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/smoke-29477/geo-train-01_view0_hist.csv"
+  },
+  {
+   "job": 29480,
+   "lado_plano_m": 100.0,
+   "commit_codigo": "30fd245 (tablas) + 477f193 (plano)",
+   "muestreo": "tablas S0 (30 d)",
+   "semilla": 20260805,
+   "hilos": 24,
+   "eventos_generados_ecomug": 36174573,
+   "eventos_transportados": 36174573,
+   "registrados_en_pixeles": 23209619,
+   "eficiencia": 0.6416003583511546,
+   "sigma_binomial": 7.972864358782066e-05,
+   "ekin_media_registrada_gev": 24.59677979011728,
+   "pared_s": 1249.9089191555977,
+   "nodo_slurm": "guane01",
+   "estado_slurm": "COMPLETED 0:0",
+   "comando": "sbatch --partition=legacy --cpus-per-task=24 --time=02:00:00 --export=ALL,GEO=geo-train-01,VIEW=0,DAYS=30,SEED=20260805 cluster/sc3/smoke_test.sbatch",
+   "inicio": "2026-08-30T19:24:13",
+   "sha256_meta": "9e205d4f69f1d86ba41e6a21df13e8e03d7baef3378ecb2e0a94a497c3433a73",
+   "sha256_hist": "f221e01bf15d5aab7f64e4879cb381ee981530e67d8fae212a9f8733f664f84a",
+   "hist": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/smoke-29480/geo-train-01_view0_hist.csv"
+  },
+  {
+   "job": 29484,
+   "lado_plano_m": 600.0,
+   "commit_codigo": "653f0fd",
+   "muestreo": "tablas S0 (30 d)",
+   "semilla": 20260805,
+   "hilos": 24,
+   "eventos_generados_ecomug": 36174573,
+   "eventos_transportados": 36174573,
+   "registrados_en_pixeles": 26693501,
+   "eficiencia": 0.7379078392991674,
+   "sigma_binomial": 7.311834805889773e-05,
+   "ekin_media_registrada_gev": 21.49930347420843,
+   "pared_s": 1156.9252871880308,
+   "nodo_slurm": "guane01",
+   "estado_slurm": "COMPLETED 0:0",
+   "comando": "sbatch --partition=legacy --cpus-per-task=24 --time=01:30:00 --export=ALL,GEO=geo-train-01,VIEW=0,DAYS=30,SEED=20260805 cluster/sc3/smoke_test.sbatch",
+   "inicio": "2026-08-30T20:03:20",
+   "sha256_meta": "d783e3dbab9537c0a7c4dabcd774b9ce53f6b5ebb3a0914350c6f01baaa2b065",
+   "sha256_hist": "c6182ccb38a99d9348d6e64ec0b3d7aaa9dab8ae5ed2391dae72783c07a112c3",
+   "hist": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/smoke-29484/geo-train-01_view0_hist.csv"
+  }
+ ],
+ "serie_2M_semilla_777_comentario_653f0fd": [
+  {
+   "lado_plano_m": 100.0,
+   "eficiencia_pct": 64.2,
+   "job": null,
+   "estado": "faltante: no hay trabajo SLURM de 2M eventos con plano de 100 m; el valor coincide con 29480 (64,16 %) al redondear",
+   "sigma_binomial_pct_si_N_2e6": 0.03389955751923615
+  },
+  {
+   "lado_plano_m": 300.0,
+   "eficiencia_pct": 73.07,
+   "job": 29481,
+   "estado": "faltante: srun interactivo con salida en /tmp del nodo (borrada); SLURM registra FAILED 2:0 tras 12 min; asignacion al plano de 300 m inferida",
+   "sigma_binomial_pct_si_N_2e6": 0.0313669818439709
+  },
+  {
+   "lado_plano_m": 600.0,
+   "eficiencia_pct": 73.81,
+   "job": 29482,
+   "estado": "faltante: srun interactivo con --out /tmp/ab600 (borrado); COMPLETED 0:0",
+   "sigma_binomial_pct_si_N_2e6": 0.031089257791076325
+  }
+ ],
+ "diferencia_300_600_pp": 0.7400000000000091,
+ "sigma_diferencia_pp_si_independientes": 0.044163667193746495,
+ "deficit_100_vs_600_relativo": 0.13051424015156343,
+ "energia_ganada_100_a_600": {
+  "muones_ganados": 3483882,
+  "ekin_media_ganados_gev": 0.8639188217523129
+ },
+ "por_pixel_29480_vs_29484": {
+  "bandas_columna": [
+   {
+    "columna_roca_g_cm2": [
+     0,
+     1
+    ],
+    "pixeles": 48762,
+    "conteo_100m": 23042126,
+    "conteo_600m": 26480561,
+    "razon_100_600": 0.8701524865730752,
+    "sigma_razon": 0.0002478977594443349,
+    "esperado_csda_surrogado": 34240010.915431924,
+    "razon_600m_vs_csda": 0.7733806237796861,
+    "razon_100m_vs_csda": 0.6729590728493298
+   },
+   {
+    "columna_roca_g_cm2": [
+     1,
+     10000.0
+    ],
+    "pixeles": 30,
+    "conteo_100m": 3003,
+    "conteo_600m": 3231,
+    "razon_100_600": 0.9294336118848654,
+    "sigma_razon": 0.023558933595279084,
+    "esperado_csda_surrogado": 2453.1414938514367,
+    "razon_600m_vs_csda": 1.3170866858263948,
+    "razon_100m_vs_csda": 1.224144635573093
+   },
+   {
+    "columna_roca_g_cm2": [
+     10000.0,
+     30000.0
+    ],
+    "pixeles": 262,
+    "conteo_100m": 19175,
+    "conteo_600m": 21241,
+    "razon_100_600": 0.9027352761169436,
+    "sigma_razon": 0.008992530351959915,
+    "esperado_csda_surrogado": 6714.838592382075,
+    "razon_600m_vs_csda": 3.16329271474935,
+    "razon_100m_vs_csda": 2.855615922287971
+   },
+   {
+    "columna_roca_g_cm2": [
+     30000.0,
+     60000.0
+    ],
+    "pixeles": 780,
+    "conteo_100m": 25305,
+    "conteo_600m": 30315,
+    "razon_100_600": 0.8347352795645719,
+    "sigma_razon": 0.007107752622086281,
+    "esperado_csda_surrogado": 5365.042809026374,
+    "razon_600m_vs_csda": 5.650467494685554,
+    "razon_100m_vs_csda": 4.716644563846872
+   },
+   {
+    "columna_roca_g_cm2": [
+     60000.0,
+     100000.0
+    ],
+    "pixeles": 1660,
+    "conteo_100m": 16720,
+    "conteo_600m": 24669,
+    "razon_100_600": 0.6777737241071791,
+    "sigma_razon": 0.006789429543681159,
+    "esperado_csda_surrogado": 3616.6534286762953,
+    "razon_600m_vs_csda": 6.8209466255186415,
+    "razon_100m_vs_csda": 4.6230583963140655
+   },
+   {
+    "columna_roca_g_cm2": [
+     100000.0,
+     200000.0
+    ],
+    "pixeles": 6842,
+    "conteo_100m": 7767,
+    "conteo_600m": 20359,
+    "razon_100_600": 0.381502038410531,
+    "sigma_razon": 0.0050879867918348426,
+    "esperado_csda_surrogado": 3614.84874591064,
+    "razon_600m_vs_csda": 5.632047543629998,
+    "razon_100m_vs_csda": 2.148637618319868
+   },
+   {
+    "columna_roca_g_cm2": [
+     200000.0,
+     10000000.0
+    ],
+    "pixeles": 6688,
+    "conteo_100m": 671,
+    "conteo_600m": 2735,
+    "razon_100_600": 0.2453382084095064,
+    "sigma_razon": 0.01056933311653911,
+    "esperado_csda_surrogado": 873.8577080486566,
+    "razon_600m_vs_csda": 3.129800166330643,
+    "razon_100m_vs_csda": 0.7678595654873351
+   }
+  ],
+  "bandas_silueta": [
+   {
+    "grados_bajo_silueta": [
+     -99,
+     -1
+    ],
+    "pixeles": 47492,
+    "conteo_100m": 22855509,
+    "conteo_600m": 26285538,
+    "razon_100_600": 0.8695088911628897
+   },
+   {
+    "grados_bajo_silueta": [
+     -1,
+     0
+    ],
+    "pixeles": 1524,
+    "conteo_100m": 204614,
+    "conteo_600m": 214526,
+    "razon_100_600": 0.9537958102980525
+   },
+   {
+    "grados_bajo_silueta": [
+     0,
+     0.5
+    ],
+    "pixeles": 508,
+    "conteo_100m": 19554,
+    "conteo_600m": 22437,
+    "razon_100_600": 0.8715068859473192
+   },
+   {
+    "grados_bajo_silueta": [
+     0.5,
+     1
+    ],
+    "pixeles": 762,
+    "conteo_100m": 15228,
+    "conteo_600m": 19055,
+    "razon_100_600": 0.7991603253739176
+   },
+   {
+    "grados_bajo_silueta": [
+     1,
+     2
+    ],
+    "pixeles": 1524,
+    "conteo_100m": 11926,
+    "conteo_600m": 18281,
+    "razon_100_600": 0.6523713144795142
+   },
+   {
+    "grados_bajo_silueta": [
+     2,
+     4
+    ],
+    "pixeles": 2794,
+    "conteo_100m": 5420,
+    "conteo_600m": 13278,
+    "razon_100_600": 0.4081940051212532
+   },
+   {
+    "grados_bajo_silueta": [
+     4,
+     99
+    ],
+    "pixeles": 10420,
+    "conteo_100m": 2516,
+    "conteo_600m": 9996,
+    "razon_100_600": 0.25170068027210885
+   }
+  ],
+  "fraccion_conteos_en_roca_600m": 0.0038577125152883724,
+  "razon_global_roca": 0.7083471477328133,
+  "razon_global_cielo": 0.8701524865730752
+ },
+ "figuras": [
+  "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/figuras/fig1-eficiencia-plano.png",
+  "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/figuras/fig2-planos-por-pixel.png"
+ ],
+ "entorno": {
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "matplotlib": "3.10.7"
+ }
+}

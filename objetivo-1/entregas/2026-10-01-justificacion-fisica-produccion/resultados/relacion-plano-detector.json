@@ -1,0 +1,59 @@
+{
+ "geometria": "geo-train-01",
+ "vista": 0,
+ "supuestos": {
+  "lineas": "solo cielo abierto (columna de roca nula y > 1° sobre la silueta; sin columnas extremas)",
+  "camino_aire_m": "R_inicio / cos(elev), R_inicio = 1956.2 m (PrimaryGeneratorAction)",
+  "aire": "G4_AIR, densidad 0.00120479 g/cm3, X0 = 36.62 g/cm2",
+  "perdida": "Bethe con efecto densidad (Sternheimer), sin pérdidas radiativas ni fluctuaciones",
+  "dispersion": "Highland diferencial, núcleo gaussiano; sin colas de dispersión simple",
+  "decaimiento": "c·tau = 658.638 m",
+  "espectro": "cuantiles p_cdf.txt por banda (el mismo muestreo del generador)",
+  "plano": "cuadrado vertical; componente vertical escalada por 1/cos(elev)"
+ },
+ "validacion_filas_20_a_42_grados": {
+  "residuo_100m_medio_pp": 0.2827708402783519,
+  "residuo_100m_max_abs_pp": 0.9648598236784212,
+  "residuo_600m_medio_pp": -0.8969560972598087,
+  "residuo_600m_max_abs_pp": 2.451596592094074,
+  "sigma_poisson_fila_600m_pp_mediana": 0.20548563614731924
+ },
+ "residuo_600m_filas_sobre_44_grados_pp": -11.043068950046486,
+ "residuo_100m_filas_bajo_13_grados_pp": -2.537528460012733,
+ "residuo_600m_filas_bajo_13_grados_pp": -2.5629377712822308,
+ "eficiencia_total_predicha_solo_cielo": {
+  "1.2": 0.014251510516127766,
+  "10": 0.1706632770987489,
+  "50": 0.5061768177936498,
+  "100": 0.6433320409763904,
+  "300": 0.7498012085138112,
+  "600": 0.7616023655087568,
+  "1200": 0.7622770245347893,
+  "6000": 0.7622788313117522
+ },
+ "eficiencia_total_predicha_plano_infinito": 0.7622788313120087,
+ "contribucion_medida_pixeles_roca": {
+  "100": 0.002009173681193141,
+  "600": 0.0028361081138400723
+ },
+ "eficiencia_total_medida": {
+  "100": 0.6416003583511546,
+  "600": 0.7379078392991674
+ },
+ "desplazamiento_mediano_m_por_elevacion": {
+  "2.0": 1.5191334348946295,
+  "7.6": 3.9040518263580664,
+  "13.3": 6.327088917372218,
+  "18.9": 9.102860779888928,
+  "24.6": 11.81376059785756,
+  "30.2": 14.749346105792029,
+  "35.9": 18.121635584678245,
+  "41.5": 22.048302477906173
+ },
+ "figura": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/figuras/fig3-modelo-contencion.png",
+ "entorno": {
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "matplotlib": "3.10.7"
+ }
+}
