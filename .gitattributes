@@ -1,4 +1,4 @@
-# Conservar los bytes recibidos, incluidos finales de línea.
+# Conservar los bytes recibidos, incluidos finales de lÃ­nea.
 objetivo-1/originales/** -text
 *.md text eol=lf
 *.json text eol=lf
@@ -6,3 +6,5 @@ objetivo-1/originales/** -text
 *.sbatch text eol=lf
 herramientas/ejecutar_complemento_r2_01.sh text eol=lf
 objetivo-1/originales/** -text
+
+objetivo-1/correcciones/**/*.patch text eol=lf

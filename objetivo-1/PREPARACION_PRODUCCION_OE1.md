@@ -1,5 +1,7 @@
 # Preparación de producción del OE1
 
+**Corrección preparada:** [malla azimutal v1](correcciones/malla-angular-v1/README.md). Parche separado, seis pruebas Python satisfactorias; compilación C++ y verificación de integración en Geant4 pendientes.
+
 **Nuevo control local:** [muestreo angular](CONTROL_MUESTREO_ANGULAR.md). Se cuantifica una diferencia en las columnas de borde entre el muestreo de la fuente y la distribución nominal. Resolver la convención angular antes de fijar qué referencias reutilizar.
 
 Revisión: 2026-10-01, Colombia. **Estado: parcial; plan condicionado, no orden de ejecución.** Continúa la [auditoría completa de etapa 2](AUDITORIA_COMPLETA_ETAPA_2_2026-10-01.md). El resultado inconcluso de A/B no exige ampliar automáticamente el ensayo ni impide elegir una geometría B correctamente construida. Tampoco certifica la normalización física de la campaña.

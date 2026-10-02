@@ -1,0 +1,66 @@
+{
+  "base_commit": "d8ca7499df6a8ec69eeb73843a245e0661c38220",
+  "status": "propuesta_probada_en_python_pendiente_cpp_y_geant4",
+  "files": [
+    {
+      "path": "scripts/analysis/build_generator_tables.py",
+      "before_sha256": "ded413f60ad9e129743661abb244f927a32b9b286f2f15f5a69ebddc6e33d9f7",
+      "after_sha256": "338ea15ff2019761786d314c7e9c13f1eb69c3f2d3334a1769e4ce73e2af5c42"
+    },
+    {
+      "path": "scripts/analysis/convertir_tablas_azimut.py",
+      "before_sha256": null,
+      "after_sha256": "58176c093402b525a0bede06c97525472491e20f9837ab9cb9bf001d5665ba11"
+    },
+    {
+      "path": "scripts/analysis/test_angular_grid_v1.py",
+      "before_sha256": null,
+      "after_sha256": "8aefac0e3f7f30c866c02ca959e60caf7b5cdd1f411edc45212e436016f5ac6d"
+    },
+    {
+      "path": "scripts/simulation/geant4_app/include/AzimuthGrid.hh",
+      "before_sha256": null,
+      "after_sha256": "9e1f3e0fde23fee0f6f87595e323e65d50d5d7222cc97386793504783484431a"
+    },
+    {
+      "path": "scripts/simulation/geant4_app/muography_sim.cc",
+      "before_sha256": "ff8111c3ad738ee7a89a7225eb86667fa5ca011107f0b70dbf10ab3983cff051",
+      "after_sha256": "e5dc8c5700b863e61f970dc9614112e143f053f7cefa9e768767e18c6b6c6c3b"
+    },
+    {
+      "path": "scripts/simulation/geant4_app/src/FluxTables.cc",
+      "before_sha256": "fa4626b2b9e9ba5d337106acf26cc30c971786a8b072094352823bd10564ba46",
+      "after_sha256": "b649e23e984a529eb7c6068c8784f4f93a1903f8f9b6e1c03ecfea4c5f94b3b9"
+    },
+    {
+      "path": "scripts/simulation/geant4_app/src/RunAction.cc",
+      "before_sha256": "bff4d19faa5bd18cbada01661787c73fe8c70863e6bd69270c3ddd96beef16da",
+      "after_sha256": "0accf1eba427530c37260b3faaefe62dafb523b61640d3105b579a17f917af8d"
+    },
+    {
+      "path": "scripts/simulation/geant4_app/src/SteppingAction.cc",
+      "before_sha256": "850c3576b291b3174fe833754c330a74660881e068e83520cf3ccd1cb57bfd80",
+      "after_sha256": "f304453d712f48d758d44730c8c2a6e8fadfed4a2a1bb2cc2e31cd3da706c752"
+    },
+    {
+      "path": "scripts/simulation/geant4_app/tests/test_azimuth_grid.cc",
+      "before_sha256": null,
+      "after_sha256": "2a09045acf725b18c6eab0ec24c37dc55e247c568f91ce79e4c277dfc1ba4505"
+    },
+    {
+      "path": "scripts/simulation/surrogate/imaging.py",
+      "before_sha256": "968631d1ae68914326a1e453339d44714ded508910149b2e009be47512963d36",
+      "after_sha256": "d37f82f619687a15154777207a106ad1ab711e9764966f9a794ce6df1dbc1ac6"
+    }
+  ],
+  "patch_sha256": "8af721332eec08c4fc1006333d8353fffcc9f8f2319a925ca01ad8f29f6be8ce",
+  "git_apply_check": true,
+  "git_apply_content_verified": true,
+  "python_tests_passed": 6,
+  "cpp_test_executed": false,
+  "geant4_executed": false,
+  "row_scale": 0.99609375,
+  "new_total_30d_convention": 36034069.911914065,
+  "not_physical_exposure_validation": true,
+  "local_note": "First byte check encountered Git CRLF conversion; repeated in fresh directory with core.autocrlf=false: all hashes match."
+}

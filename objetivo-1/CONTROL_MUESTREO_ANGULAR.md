@@ -1,5 +1,7 @@
 # Control local del muestreo angular
 
+**Corrección preparada:** [malla azimutal v1](correcciones/malla-angular-v1/README.md). Parche separado, seis pruebas Python satisfactorias; compilación C++ y verificación de integración en Geant4 pendientes.
+
 Revisión del director: 2026-10-01, Colombia. **Estado: verificado para el generador y su discretización sin transporte; validación física parcial.** Continúa la [preparación de producción](PREPARACION_PRODUCCION_OE1.md). No requiere SC3 ni modifica código o datos originales.
 
 ## Resultado

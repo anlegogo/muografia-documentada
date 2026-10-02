@@ -2,6 +2,7 @@
 
 | Documento | Pregunta que responde |
 |---|---|
+| [Corrección de malla azimutal](../objetivo-1/correcciones/malla-angular-v1/README.md) | ¿Qué corregimos y cómo deben comprobarlo en SC3? |
 | [Control de muestreo angular](../objetivo-1/CONTROL_MUESTREO_ANGULAR.md) | ¿Coinciden los intervalos de generación y la distribución nominal por píxel? |
 | [Preparación de producción](../objetivo-1/PREPARACION_PRODUCCION_OE1.md) | ¿Qué datos podrían regenerarse y qué deben aclarar antes de lanzar producción? |
 | [Auditoría completa de etapa 2](../objetivo-1/AUDITORIA_COMPLETA_ETAPA_2_2026-10-01.md) | ¿Qué confirmó la revisión de todos los registros y qué falta para producir los datos finales? |

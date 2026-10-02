@@ -1,5 +1,7 @@
 # Muografía: documentación y seguimiento académico
 
+**Corrección preparada:** [malla azimutal v1](objetivo-1/correcciones/malla-angular-v1/README.md). Parche separado, seis pruebas Python satisfactorias; compilación C++ y verificación de integración en Geant4 pendientes.
+
 **Nuevo control local:** [muestreo angular](objetivo-1/CONTROL_MUESTREO_ANGULAR.md). Se cuantifica una diferencia en las columnas de borde entre el muestreo de la fuente y la distribución nominal. Resolver la convención angular antes de fijar qué referencias reutilizar.
 
 **Preparación actual:** [alcance de producción y decisiones de normalización](objetivo-1/PREPARACION_PRODUCCION_OE1.md). Inventario verificado de 114 referencias; 36 candidatas a regenerar y 78 de reutilización condicionada. Primero resolver la definición del observable y la receta de producción.
