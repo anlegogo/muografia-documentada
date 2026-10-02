@@ -1,5 +1,16 @@
 # Bitácora de la revisión del OE1
 
+## Preparación completa de campaña — 2026-10-02
+
+- Por autorización de la dirección se completan las [siete actividades](PREPARACION_CAMPANA_114.md), usando los histogramas `ccbdce0` y el catálogo congelado.
+- Evidencias: manifiesto y 38 máscaras, análisis binomial, presupuesto e inventario de 480 pares. El piloto presenta la menor columna nominal q90 del catálogo; 344 M no garantiza la meta de roca en las 19 geometrías.
+- 106 pruebas, integridad de semillas y regeneración exacta de pares satisfactorias. Sin nuevas corridas; pendiente acuerdo de presupuesto/calidad y ejecución SC3.
+
+## Histogramas del piloto revisados — 2026-10-02
+
+- Entradas: entrega `ccbdce0`, diseño y máscaras congelados. Se verificaron bytes, conteos, coordenadas y evaluación en Python local.
+- [Resultado y límites](REVISION_HISTOGRAMAS_PILOTO_CCBDCE0.md): 90 regiones de borde conformes; proyección a 344 M cercana al 90 % de ROI con 100 cuentas, sin garantía para otras geometrías. Siguiente paso: fijar criterio y presupuesto de campaña; no repetir el piloto.
+
 ## Adopción del alcance idealizado — 2026-10-02
 
 - La dirección aceptó expresamente la recomendación de alcance idealizado en la conversación de trabajo. Se registra en la [definición y lista de cierre](DEFINICION_PRODUCTO_OE1.md) y en la ficha operativa.

@@ -1,0 +1,16 @@
+{
+  "test_command": "python -m unittest discover -s herramientas -p 'test_*angular*.py' -v",
+  "tests_passed": 106,
+  "exit_code": 0,
+  "manifest_blocks": 1026,
+  "unique_views": 114,
+  "unique_seeds": 1026,
+  "seed_overlap_with_pilot": 0,
+  "events_each_view": 344000000,
+  "events_total": 39216000000,
+  "helper_matches_ccbdce0_blob": true,
+  "pair_count": 480,
+  "pair_seed_reproduction_exact": true,
+  "no_new_transport": true,
+  "production_authorized": false
+}

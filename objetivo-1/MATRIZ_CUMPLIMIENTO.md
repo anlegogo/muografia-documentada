@@ -1,5 +1,9 @@
 # Matriz de cumplimiento del OE1
 
+> Preparación posterior: [plan de 114 vistas y criterios](PREPARACION_CAMPANA_114.md). Se verificaron 480 pares del piloto y 106 pruebas; se analizaron las 19 geometrías. La producción y aceptación del conjunto final siguen pendientes.
+
+> Actualización posterior — 2026-10-02: [piloto ccbdce0 reproducido desde los histogramas](REVISION_HISTOGRAMAS_PILOTO_CCBDCE0.md). La entrega respalda el flujo ejecutado en SC3 y el criterio de bordes para seis vistas. Quedan el criterio de suficiencia en roca, el presupuesto y la decisión de campaña; 344 M es una propuesta. Los estados anteriores se conservan como antecedente.
+
 > Estado posterior: [siete actividades locales completadas](ENTREGA_SIETE_ACTIVIDADES.md). Referencia ideal, diseño condicional y automatización implementados; 103 pruebas. Alcance idealizado adoptado por la dirección: [definición y criterios de cierre](DEFINICION_PRODUCTO_OE1.md#lista-única-de-criterios-de-cierre). Pendientes: incorporación al informe, verificación operativa SC3, revisión del piloto y conjunto final. OE1 no se declara completo.
 
 > Actualización 2026-10-02: se recibió y revisó la entrega física/producción. Consultar la [revisión vigente](REVISION_FISICA_PRODUCCION_2026-10-02.md) antes de aplicar solicitudes o estados anteriores. La ampliación posterior está documentada en las correcciones locales enlazadas arriba.

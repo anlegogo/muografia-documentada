@@ -1,0 +1,180 @@
+{
+  "views": [
+    {
+      "view": 0,
+      "source_hashes": {
+        "hist_sha256": "b65da04cf08829be1396fae2bec22bed47373bed017b1df60927eb932ce415a9",
+        "meta_sha256": "a58fe8bfb1516b32332c9271e97fc454127dcb407b4aa3d1801723ccbf3b32b5"
+      },
+      "alternatives": [
+        {
+          "N": 211000000,
+          "scaled_fraction_ge100": 0.639344262295082,
+          "future_fraction_mean_plugin": 0.6278163231047726,
+          "future_fraction_mean_simultaneous_rate_bounds": [
+            0.4219470318784536,
+            0.9102637879869414
+          ]
+        },
+        {
+          "N": 344000000,
+          "scaled_fraction_ge100": 0.930327868852459,
+          "future_fraction_mean_plugin": 0.9112797138457654,
+          "future_fraction_mean_simultaneous_rate_bounds": [
+            0.6491806729734254,
+            0.9994241277343248
+          ]
+        }
+      ],
+      "retrospective_border_114_equivalent_regions": 15
+    },
+    {
+      "view": 1,
+      "source_hashes": {
+        "hist_sha256": "cc9b83c1867179bc19d5a3d3dcffd694a5e341472eac767d914f528066d9e540",
+        "meta_sha256": "2452baa077298e2381e6e6e9d42bfda191fbfcad5d29aeed5c1bc3e0010a26a1"
+      },
+      "alternatives": [
+        {
+          "N": 211000000,
+          "scaled_fraction_ge100": 0.6311475409836066,
+          "future_fraction_mean_plugin": 0.6278668258391452,
+          "future_fraction_mean_simultaneous_rate_bounds": [
+            0.43259693783895403,
+            0.8983078324469244
+          ]
+        },
+        {
+          "N": 344000000,
+          "scaled_fraction_ge100": 0.9098360655737705,
+          "future_fraction_mean_plugin": 0.8992448867415759,
+          "future_fraction_mean_simultaneous_rate_bounds": [
+            0.6408610501291915,
+            0.9984376739492341
+          ]
+        }
+      ],
+      "retrospective_border_114_equivalent_regions": 15
+    },
+    {
+      "view": 2,
+      "source_hashes": {
+        "hist_sha256": "da146ffe3bfa2fbafe8a54de04b3daf350c08bdc4a4096b2ec4d5a7f5c2b3ae1",
+        "meta_sha256": "5fdde09e19fd677c707305b3288666110aba78c40c1c972ea98d659f11c81781"
+      },
+      "alternatives": [
+        {
+          "N": 211000000,
+          "scaled_fraction_ge100": 0.6516393442622951,
+          "future_fraction_mean_plugin": 0.6402484311332246,
+          "future_fraction_mean_simultaneous_rate_bounds": [
+            0.4216549392786581,
+            0.8993396620224461
+          ]
+        },
+        {
+          "N": 344000000,
+          "scaled_fraction_ge100": 0.9016393442622951,
+          "future_fraction_mean_plugin": 0.8990193482601585,
+          "future_fraction_mean_simultaneous_rate_bounds": [
+            0.6595676815378432,
+            0.9967351005093664
+          ]
+        }
+      ],
+      "retrospective_border_114_equivalent_regions": 15
+    },
+    {
+      "view": 3,
+      "source_hashes": {
+        "hist_sha256": "1e8d2d91bae3722ffb2b9f4d9aad542517f429780ff949fedb66806868619bda",
+        "meta_sha256": "884e2b569cd42d9a1b3f2f6d3bc40fe8c3694c8b0fe5cae4c0c9b183d0ecad98"
+      },
+      "alternatives": [
+        {
+          "N": 211000000,
+          "scaled_fraction_ge100": 0.639344262295082,
+          "future_fraction_mean_plugin": 0.6313096144342457,
+          "future_fraction_mean_simultaneous_rate_bounds": [
+            0.42065544860378423,
+            0.9037421345997594
+          ]
+        },
+        {
+          "N": 344000000,
+          "scaled_fraction_ge100": 0.9057377049180327,
+          "future_fraction_mean_plugin": 0.9038219872187452,
+          "future_fraction_mean_simultaneous_rate_bounds": [
+            0.6478878110128372,
+            0.99963567184959
+          ]
+        }
+      ],
+      "retrospective_border_114_equivalent_regions": 14
+    },
+    {
+      "view": 4,
+      "source_hashes": {
+        "hist_sha256": "20e1a1567a02408dbcd60763ceca4c0308e36ad0ef76041d09e5bde30d642d3c",
+        "meta_sha256": "7d3118d2776e9d52d23c704e0eaa3ce55f53e082da900c175316c4520cd3a6c4"
+      },
+      "alternatives": [
+        {
+          "N": 211000000,
+          "scaled_fraction_ge100": 0.6311475409836066,
+          "future_fraction_mean_plugin": 0.6296249663674093,
+          "future_fraction_mean_simultaneous_rate_bounds": [
+            0.42738009957044276,
+            0.9026855887317004
+          ]
+        },
+        {
+          "N": 344000000,
+          "scaled_fraction_ge100": 0.9098360655737705,
+          "future_fraction_mean_plugin": 0.9023872821851978,
+          "future_fraction_mean_simultaneous_rate_bounds": [
+            0.6450378506752484,
+            0.9996053684592099
+          ]
+        }
+      ],
+      "retrospective_border_114_equivalent_regions": 15
+    },
+    {
+      "view": 5,
+      "source_hashes": {
+        "hist_sha256": "bc76f3fab6a65a166c3b6f5c2057948a0608e6ed7218c69f929d9dd2a116f32d",
+        "meta_sha256": "e8fe3dbc6c25ed4203592960bb66ded7fb52d8360be404eafad49ebd5f6d06f0"
+      },
+      "alternatives": [
+        {
+          "N": 211000000,
+          "scaled_fraction_ge100": 0.6311475409836066,
+          "future_fraction_mean_plugin": 0.6244294314077113,
+          "future_fraction_mean_simultaneous_rate_bounds": [
+            0.4247017352266673,
+            0.8975016541109099
+          ]
+        },
+        {
+          "N": 344000000,
+          "scaled_fraction_ge100": 0.8975409836065574,
+          "future_fraction_mean_plugin": 0.8973835769492214,
+          "future_fraction_mean_simultaneous_rate_bounds": [
+            0.6429346064141751,
+            0.9991581596585991
+          ]
+        }
+      ],
+      "retrospective_border_114_equivalent_regions": 15
+    }
+  ],
+  "family_roi_count": 1464,
+  "limits": [
+    "Plug-in means treat estimated rates as fixed; CP envelope propagates simultaneous marginal rate bounds at family alpha 0.05.",
+    "These bound expected fraction, not future realized fraction, and do not guarantee 90 percent.",
+    "Alpha114 recalculation is retrospective sensitivity, not a change to pilot acceptance."
+  ],
+  "physical_validation": false,
+  "production_authorized": false
+}

@@ -1,0 +1,468 @@
+{
+  "schema": "oe1-campaign-114-v1",
+  "status": "prepared_candidate_not_submission_authorization",
+  "events_per_view": 344000000,
+  "expected_views": 114,
+  "expected_pairs": 9120,
+  "blocks_per_view": 9,
+  "events_total": 39216000000,
+  "manifest_sha256": "f5180881a003336fa5515e5ce74d2e056ca93a7f457db97c4931e2fc33f19a4a",
+  "recipe_sha256": "db9e5caab4c599afc00430452bea190eb2f50b1fa6a49cc5f027f3a5e6659e90",
+  "helper_sha256": "a14bc5a05078d2308a855307bd9a3106946986e19da19719240d098fff17df4a",
+  "masks_sha256": {
+    "geo-gen-01-sky.npy": "b2dfb68648136966f5d3528ade65e65f14b55b5441b4aaaf52e0646dbbfc6703",
+    "geo-gen-01-rock_roi.npy": "6fca782eaf205995538c07ce892192a032ae49e981c6d2999226e87284550448",
+    "geo-test-01-sky.npy": "b09c8fc467933c6a04898265ddbe785f1da1da3ab46bfbbccecbd59fd8b060dd",
+    "geo-test-01-rock_roi.npy": "200a33f03745e5948d58558b6ae06f6ae51b7e024b5097ce75be576a493777a2",
+    "geo-test-02-sky.npy": "7fbdced517dcb7d07d245c77e962a0515ce0531580c2ccaf31bc32fb25a6476e",
+    "geo-test-02-rock_roi.npy": "ba31dd1fadb613711db3122725bdfae828428435b96c7b0be20330305d4294ed",
+    "geo-test-03-sky.npy": "c67905c583891ba2f6307e8cd014becba9761bc133dfc59a273406c8aa8891a8",
+    "geo-test-03-rock_roi.npy": "41406669300be4b91b3cb77d7f2aa49361a32cf5ab345cebd9b7b54b6489a37d",
+    "geo-train-01-sky.npy": "23d33c2d65714e084c49e2711ad416c13a2e30edfa32e666b4ae6cd8e5bb99d9",
+    "geo-train-01-rock_roi.npy": "2d86bf580b85dc3ead988f5477ff6a4f34875df0b47abcbcd25f2b7350513ef8",
+    "geo-train-02-sky.npy": "1d6ab50a0f320cc5d008ef0a19c287c44ba6e6b9d137128d299c591310f44ec0",
+    "geo-train-02-rock_roi.npy": "be82152b66788d5b20fcf645df3ebac7abf531a1da75c3cd4c69a66aa245355d",
+    "geo-train-03-sky.npy": "2d5eedb23ea3a754f476bcca1a6c6fd099f6fe8ef38fe363409884bf03da8691",
+    "geo-train-03-rock_roi.npy": "a77e64cbb7dbe6edea64c2dec194e639d8c26ec7272091c2580561eaf22c3330",
+    "geo-train-04-sky.npy": "5dd9ceb8eee3e2f435adb7515cbef5a5a1ead9fbf337d005ad48f90fab560481",
+    "geo-train-04-rock_roi.npy": "58eb338c456c767c18c885ca38018e0acf5cb2565506b7df55736cbe906f342d",
+    "geo-train-05-sky.npy": "c14a89b54f0c952eb7103a93e2d2556525ab2af6284c2db314e826691ad27d0b",
+    "geo-train-05-rock_roi.npy": "e0c8c8c5cb54fc1926ad822641ee638f0de781fdfc6492f70506e0175e9afb1f",
+    "geo-train-06-sky.npy": "72d5d5beea1be9ac1090264846ddd9d3e498faaebd08fe0e6ec0c12781fa8274",
+    "geo-train-06-rock_roi.npy": "ca5a8421eb3fbe5353ef2aa2543d28b9d70945ca81a382f9797f907989da8cb1",
+    "geo-train-07-sky.npy": "94065c89dee543823e33efa5e9aa62fba862f2a97673acde0ac39c83943fa033",
+    "geo-train-07-rock_roi.npy": "4df58bda3c5204925080d69ac6b10dc833f9c942b7972b8eb0178baeaa3793e0",
+    "geo-train-08-sky.npy": "19be478bce450fd97fe744d0641b7166917edab597c9228a919bbf874098a908",
+    "geo-train-08-rock_roi.npy": "8923dabed533b3769ed0768daefa0e71f0f7f7933ef4c3a79b044a600145c514",
+    "geo-train-09-sky.npy": "3095401d631de06e7c89156fce6059c177c01b31efb5568cd45235eb802117ce",
+    "geo-train-09-rock_roi.npy": "1694feef909f452e2102a92d5c68be1353d141e0a4085a17b6c79f647d37712b",
+    "geo-train-10-sky.npy": "98379295c1eaabd4e4000db773aeab016240390cbadfb348f30734d64b6ee2a6",
+    "geo-train-10-rock_roi.npy": "827a75c8b217ecc0be3580a49b09a6014425b470cce7ded5b9c483bfa4b432f8",
+    "geo-train-11-sky.npy": "2d3f7482d97017de54c9e83e978b1eb1ef9b5ba1074bd3b876506b1816830aec",
+    "geo-train-11-rock_roi.npy": "31e2e5a7bbf21d0336435cdfd5a6eb8d51ba2fa69b14c872067fe60934124103",
+    "geo-train-12-sky.npy": "f463f6b4b3e100fcc38341b3998034d452711c905f08d018d9eaed6dd8a9dec4",
+    "geo-train-12-rock_roi.npy": "494876ad8743e4adadf85cc8a5e496d2d0e27d9bd8be9e01c8a4b1b3bb679d25",
+    "geo-val-01-sky.npy": "045756e71305b9a4395054996cf7a29f40072621a86a890deda127a5bf0bb97f",
+    "geo-val-01-rock_roi.npy": "92ad52fe1590916928e10a355876493410b4193c5d79698c2762339ba5e4e4ef",
+    "geo-val-02-sky.npy": "5793666e2e6826d8002d7a45111c34ab55aaf97793762556acace7043787d346",
+    "geo-val-02-rock_roi.npy": "5bfc0fe83f6b6acec7870c1e2637f13974f239479ebb2f2b074dbc7578c9cf6f",
+    "geo-val-03-sky.npy": "cf4b44e73e2fcda717f288261078ddb56c70148865bf8db8cc9e97f8d40565a0",
+    "geo-val-03-rock_roi.npy": "6a7ca078e129a96e82ad97faf1bd54f77c86d64d86194d399b9eb0b7dd31ee6d"
+  },
+  "geometries": [
+    {
+      "geometry": "geo-gen-01",
+      "geometry_sha256": "f171aa214fda5243db6c5790f29e31cb68601d2b771bf36ca291a1673fd1166a",
+      "sky": "geo-gen-01-sky.npy",
+      "rock_roi": "geo-gen-01-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 619.2,
+        "height_m": 425.4,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 3,
+      "anomaly_density_range": [
+        0.048,
+        1.831
+      ],
+      "rock_roi_count": 196,
+      "nominal_rock_q90_g_cm2": 259700.0,
+      "nominal_rock_max_g_cm2": 297860.0,
+      "nominal_rock_fraction_above_100k": 0.8102564102564103
+    },
+    {
+      "geometry": "geo-test-01",
+      "geometry_sha256": "66a46bb729eedf508ffb8e15bd8cf8c602e0f63141a3f8a2d9594597bd32c5e8",
+      "sky": "geo-test-01-sky.npy",
+      "rock_roi": "geo-test-01-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 671.1,
+        "height_m": 428.0,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 2,
+      "anomaly_density_range": [
+        0.454,
+        2.151
+      ],
+      "rock_roi_count": 170,
+      "nominal_rock_q90_g_cm2": 283020.0,
+      "nominal_rock_max_g_cm2": 323300.0,
+      "nominal_rock_fraction_above_100k": 0.8512658227848101
+    },
+    {
+      "geometry": "geo-test-02",
+      "geometry_sha256": "a61c7363caaffe807627f5235c58439e3c41838f1b82fa03e81c3298d9f6c723",
+      "sky": "geo-test-02-sky.npy",
+      "rock_roi": "geo-test-02-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 642.2,
+        "height_m": 415.9,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 1,
+      "anomaly_density_range": [
+        3.09,
+        3.09
+      ],
+      "rock_roi_count": 178,
+      "nominal_rock_q90_g_cm2": 269823.00000000006,
+      "nominal_rock_max_g_cm2": 308460.0,
+      "nominal_rock_fraction_above_100k": 0.8288135593220339
+    },
+    {
+      "geometry": "geo-test-03",
+      "geometry_sha256": "c9db0081eb9bb0e6db9a8bc409f2e9f782bcbfc151057b6127cd5827555c6b8c",
+      "sky": "geo-test-03-sky.npy",
+      "rock_roi": "geo-test-03-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 518.5,
+        "height_m": 385.8,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 3,
+      "anomaly_density_range": [
+        0.222,
+        3.244
+      ],
+      "rock_roi_count": 222,
+      "nominal_rock_q90_g_cm2": 214120.0,
+      "nominal_rock_max_g_cm2": 246450.0,
+      "nominal_rock_fraction_above_100k": 0.7073732718894009
+    },
+    {
+      "geometry": "geo-train-01",
+      "geometry_sha256": "ff3c69ab7e37b51c5d4e1318d298a9ddc35446367e6ea4abf5c322e3b86f07b1",
+      "sky": "geo-train-01-sky.npy",
+      "rock_roi": "geo-train-01-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 656.2,
+        "height_m": 359.1,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 0,
+      "anomaly_density_range": [
+        2.65,
+        2.65
+      ],
+      "rock_roi_count": 152,
+      "nominal_rock_q90_g_cm2": 271943.0,
+      "nominal_rock_max_g_cm2": 310050.0,
+      "nominal_rock_fraction_above_100k": 0.8333333333333334
+    },
+    {
+      "geometry": "geo-train-02",
+      "geometry_sha256": "abe49537a4e692a6df6ebf928342e8338b383b2b9e1f4e4ab2b8f0ba95d67526",
+      "sky": "geo-train-02-sky.npy",
+      "rock_roi": "geo-train-02-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 549.7,
+        "height_m": 409.8,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 1,
+      "anomaly_density_range": [
+        1.92,
+        1.92
+      ],
+      "rock_roi_count": 230,
+      "nominal_rock_q90_g_cm2": 230020.0,
+      "nominal_rock_max_g_cm2": 262880.0,
+      "nominal_rock_fraction_above_100k": 0.7414141414141414
+    },
+    {
+      "geometry": "geo-train-03",
+      "geometry_sha256": "757ff851126ae659d21fbaeaee1c4d60292e2b4d70b7fac04c0d1c88912f3a72",
+      "sky": "geo-train-03-sky.npy",
+      "rock_roi": "geo-train-03-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 573.7,
+        "height_m": 356.2,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 1,
+      "anomaly_density_range": [
+        0.267,
+        0.267
+      ],
+      "rock_roi_count": 188,
+      "nominal_rock_q90_g_cm2": 236380.0,
+      "nominal_rock_max_g_cm2": 270300.0,
+      "nominal_rock_fraction_above_100k": 0.759009009009009
+    },
+    {
+      "geometry": "geo-train-04",
+      "geometry_sha256": "a7d30817a40e8d4a71d2e85e571b65c7459ce88eeb549c05e56211ed60a6a440",
+      "sky": "geo-train-04-sky.npy",
+      "rock_roi": "geo-train-04-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 679.8,
+        "height_m": 387.2,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 1,
+      "anomaly_density_range": [
+        3.022,
+        3.022
+      ],
+      "rock_roi_count": 150,
+      "nominal_rock_q90_g_cm2": 284080.0,
+      "nominal_rock_max_g_cm2": 324360.0,
+      "nominal_rock_fraction_above_100k": 0.8534031413612565
+    },
+    {
+      "geometry": "geo-train-05",
+      "geometry_sha256": "09322cce8d7f40e4f68a6ef5400aa2aa722d3a68d107b1c3cce3977ef03b723c",
+      "sky": "geo-train-05-sky.npy",
+      "rock_roi": "geo-train-05-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 565.7,
+        "height_m": 386.0,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 2,
+      "anomaly_density_range": [
+        0.335,
+        2.013
+      ],
+      "rock_roi_count": 210,
+      "nominal_rock_q90_g_cm2": 234419.00000000003,
+      "nominal_rock_max_g_cm2": 269240.0,
+      "nominal_rock_fraction_above_100k": 0.7515657620041754
+    },
+    {
+      "geometry": "geo-train-06",
+      "geometry_sha256": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+      "sky": "geo-train-06-sky.npy",
+      "rock_roi": "geo-train-06-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 509.7,
+        "height_m": 416.3,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 2,
+      "anomaly_density_range": [
+        1.832,
+        3.285
+      ],
+      "rock_roi_count": 244,
+      "nominal_rock_q90_g_cm2": 212689.00000000003,
+      "nominal_rock_max_g_cm2": 244330.0,
+      "nominal_rock_fraction_above_100k": 0.7086956521739131
+    },
+    {
+      "geometry": "geo-train-07",
+      "geometry_sha256": "f8e3a804871a6744e101384cbcc5b360063e9ba017122ea5a022119dc6d457d1",
+      "sky": "geo-train-07-sky.npy",
+      "rock_roi": "geo-train-07-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 678.7,
+        "height_m": 429.2,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 2,
+      "anomaly_density_range": [
+        0.169,
+        3.015
+      ],
+      "rock_roi_count": 168,
+      "nominal_rock_q90_g_cm2": 286730.0,
+      "nominal_rock_max_g_cm2": 327010.0,
+      "nominal_rock_fraction_above_100k": 0.8575899843505478
+    },
+    {
+      "geometry": "geo-train-08",
+      "geometry_sha256": "df859ca1ead6e4fca4cad0d877131167a47a4d6443ebed1ee3379189600f7601",
+      "sky": "geo-train-08-sky.npy",
+      "rock_roi": "geo-train-08-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 588.2,
+        "height_m": 413.4,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 3,
+      "anomaly_density_range": [
+        0.468,
+        3.256
+      ],
+      "rock_roi_count": 204,
+      "nominal_rock_q90_g_cm2": 246450.0,
+      "nominal_rock_max_g_cm2": 281960.0,
+      "nominal_rock_fraction_above_100k": 0.7829313543599258
+    },
+    {
+      "geometry": "geo-train-09",
+      "geometry_sha256": "35bf7e33e0b864f486fb881e29613b5687e40ef4794d91f05d6a9fa7dbf75288",
+      "sky": "geo-train-09-sky.npy",
+      "rock_roi": "geo-train-09-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 549.4,
+        "height_m": 373.2,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 1,
+      "anomaly_density_range": [
+        1.884,
+        1.884
+      ],
+      "rock_roi_count": 206,
+      "nominal_rock_q90_g_cm2": 226840.0,
+      "nominal_rock_max_g_cm2": 260230.0,
+      "nominal_rock_fraction_above_100k": 0.7364864864864865
+    },
+    {
+      "geometry": "geo-train-10",
+      "geometry_sha256": "218c427d76f134eeafd211f5c2ae778a113fd3dedb6f2cc93bedca83a795a448",
+      "sky": "geo-train-10-sky.npy",
+      "rock_roi": "geo-train-10-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 648.7,
+        "height_m": 449.6,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 2,
+      "anomaly_density_range": [
+        0.068,
+        0.464
+      ],
+      "rock_roi_count": 186,
+      "nominal_rock_q90_g_cm2": 274487.00000000006,
+      "nominal_rock_max_g_cm2": 313760.0,
+      "nominal_rock_fraction_above_100k": 0.8405572755417957
+    },
+    {
+      "geometry": "geo-train-11",
+      "geometry_sha256": "201b8e4e65de4538a44acae09c1e69ddd1179459bd8be645bdeac669ac43d77f",
+      "sky": "geo-train-11-sky.npy",
+      "rock_roi": "geo-train-11-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 623.0,
+        "height_m": 419.8,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 3,
+      "anomaly_density_range": [
+        0.157,
+        1.972
+      ],
+      "rock_roi_count": 192,
+      "nominal_rock_q90_g_cm2": 261290.0,
+      "nominal_rock_max_g_cm2": 298920.0,
+      "nominal_rock_fraction_above_100k": 0.8141135972461274
+    },
+    {
+      "geometry": "geo-train-12",
+      "geometry_sha256": "269a8f3959347c2713a4f8f563cf82092dc638f9633afbeafe5b26ca4fbcdc8d",
+      "sky": "geo-train-12-sky.npy",
+      "rock_roi": "geo-train-12-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 534.5,
+        "height_m": 411.9,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 1,
+      "anomaly_density_range": [
+        3.159,
+        3.159
+      ],
+      "rock_roi_count": 234,
+      "nominal_rock_q90_g_cm2": 223660.0,
+      "nominal_rock_max_g_cm2": 255460.0,
+      "nominal_rock_fraction_above_100k": 0.7291666666666666
+    },
+    {
+      "geometry": "geo-val-01",
+      "geometry_sha256": "71d4daf62362f81473403d57261fd293cfd687fb6f2998d46a142dfcbf29d6d7",
+      "sky": "geo-val-01-sky.npy",
+      "rock_roi": "geo-val-01-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 698.7,
+        "height_m": 427.6,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 1,
+      "anomaly_density_range": [
+        2.071,
+        2.071
+      ],
+      "rock_roi_count": 156,
+      "nominal_rock_q90_g_cm2": 295740.0,
+      "nominal_rock_max_g_cm2": 336550.0,
+      "nominal_rock_fraction_above_100k": 0.8711656441717791
+    },
+    {
+      "geometry": "geo-val-02",
+      "geometry_sha256": "f8376b4fe3262acb7523b605e2c2f9c8d9e5c36532c34e8bcc70d041f695b3bb",
+      "sky": "geo-val-02-sky.npy",
+      "rock_roi": "geo-val-02-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 664.0,
+        "height_m": 367.3,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 1,
+      "anomaly_density_range": [
+        0.208,
+        0.208
+      ],
+      "rock_roi_count": 152,
+      "nominal_rock_q90_g_cm2": 274699.00000000006,
+      "nominal_rock_max_g_cm2": 314290.0,
+      "nominal_rock_fraction_above_100k": 0.8358490566037736
+    },
+    {
+      "geometry": "geo-val-03",
+      "geometry_sha256": "4a5eb9a461d4a084bd966a5cc48508556d279ffb8d9fda202e76e64619f0716d",
+      "sky": "geo-val-03-sky.npy",
+      "rock_roi": "geo-val-03-rock_roi.npy",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 610.9,
+        "height_m": 425.4,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": 2,
+      "anomaly_density_range": [
+        1.85,
+        3.014
+      ],
+      "rock_roi_count": 198,
+      "nominal_rock_q90_g_cm2": 256785.0,
+      "nominal_rock_max_g_cm2": 294150.0,
+      "nominal_rock_fraction_above_100k": 0.8044982698961938
+    }
+  ],
+  "alpha_all_114_views": 0.05,
+  "alpha_per_view": 0.0004385964912280702,
+  "border_tolerance": 0.01,
+  "rock_min_counts": 100,
+  "rock_min_fraction": 0.9,
+  "rock_criterion_interpretation": "Observed descriptive sufficiency in 4x4 nominal 30k-100k ROI, not confidence on latent rates or per-pixel accuracy.",
+  "mask_definition": "Homogeneous cone only; 2 m ray march; circular symmetry used for six views; anomalies retained in actual transport but ignored in masks.",
+  "pilot_reuse": false,
+  "physical_validation": false,
+  "production_authorized": false,
+  "limitations": [
+    "344 M does not guarantee rock criterion across geometries.",
+    "Do not increase N until pass; retain and report failures.",
+    "Pilot is separate. Fresh campaign avoids changing its receipts, seeds or output roots."
+  ]
+}

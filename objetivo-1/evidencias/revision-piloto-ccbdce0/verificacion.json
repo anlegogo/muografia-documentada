@@ -1,0 +1,102 @@
+{
+  "source_commit": "ccbdce0",
+  "files_hash_verified": [
+    "fusion\\geo-train-06\\entradas.sha256",
+    "fusion\\geo-train-06\\geo-train-06_view0_hist.csv",
+    "fusion\\geo-train-06\\geo-train-06_view0.meta.json",
+    "fusion\\geo-train-06\\geo-train-06_view1_hist.csv",
+    "fusion\\geo-train-06\\geo-train-06_view1.meta.json",
+    "fusion\\geo-train-06\\geo-train-06_view2_hist.csv",
+    "fusion\\geo-train-06\\geo-train-06_view2.meta.json",
+    "fusion\\geo-train-06\\geo-train-06_view3_hist.csv",
+    "fusion\\geo-train-06\\geo-train-06_view3.meta.json",
+    "fusion\\geo-train-06\\geo-train-06_view4_hist.csv",
+    "fusion\\geo-train-06\\geo-train-06_view4.meta.json",
+    "fusion\\geo-train-06\\geo-train-06_view5_hist.csv",
+    "fusion\\geo-train-06\\geo-train-06_view5.meta.json",
+    "fusion\\revision-fusion.json",
+    "imagenes\\geo-train-06_view0.meta.json",
+    "imagenes\\geo-train-06_view0.npz",
+    "imagenes\\geo-train-06_view1.meta.json",
+    "imagenes\\geo-train-06_view1.npz",
+    "imagenes\\geo-train-06_view2.meta.json",
+    "imagenes\\geo-train-06_view2.npz",
+    "imagenes\\geo-train-06_view3.meta.json",
+    "imagenes\\geo-train-06_view3.npz",
+    "imagenes\\geo-train-06_view4.meta.json",
+    "imagenes\\geo-train-06_view4.npz",
+    "imagenes\\geo-train-06_view5.meta.json",
+    "imagenes\\geo-train-06_view5.npz",
+    "imagenes\\revision-exportacion.json"
+  ],
+  "float_comparison_tolerance": 1e-10,
+  "max_absolute_difference": 2.942091015256665e-14,
+  "evaluation_reproduced": true,
+  "npz_counts_and_coordinates_exact": true,
+  "border_regions_equivalent": 90,
+  "physical_validation": false,
+  "production_authorized": false,
+  "roi": [
+    {
+      "view": 0,
+      "counts": 73882961,
+      "roi_count": 244,
+      "median": 122.0,
+      "q10": 63.3,
+      "fraction_ge100": 0.639344262295082,
+      "projected_fraction_344_ge100": 0.930327868852459,
+      "projected_q10_344": 103.2
+    },
+    {
+      "view": 1,
+      "counts": 73888094,
+      "roi_count": 244,
+      "median": 127.0,
+      "q10": 62.0,
+      "fraction_ge100": 0.6311475409836066,
+      "projected_fraction_344_ge100": 0.9098360655737705,
+      "projected_q10_344": 101.08056872037915
+    },
+    {
+      "view": 2,
+      "counts": 73888460,
+      "roi_count": 244,
+      "median": 121.0,
+      "q10": 62.0,
+      "fraction_ge100": 0.6516393442622951,
+      "projected_fraction_344_ge100": 0.9016393442622951,
+      "projected_q10_344": 101.08056872037915
+    },
+    {
+      "view": 3,
+      "counts": 73877504,
+      "roi_count": 244,
+      "median": 123.5,
+      "q10": 63.0,
+      "fraction_ge100": 0.639344262295082,
+      "projected_fraction_344_ge100": 0.9057377049180327,
+      "projected_q10_344": 102.71090047393365
+    },
+    {
+      "view": 4,
+      "counts": 73872248,
+      "roi_count": 244,
+      "median": 127.0,
+      "q10": 63.3,
+      "fraction_ge100": 0.6311475409836066,
+      "projected_fraction_344_ge100": 0.9098360655737705,
+      "projected_q10_344": 103.2
+    },
+    {
+      "view": 5,
+      "counts": 73874396,
+      "roi_count": 244,
+      "median": 126.0,
+      "q10": 61.3,
+      "fraction_ge100": 0.6311475409836066,
+      "projected_fraction_344_ge100": 0.8975409836065574,
+      "projected_q10_344": 99.939336492891
+    }
+  ],
+  "projection_limit": "Linear scaling of observed counts; not new transport, predictive confidence or a guarantee for other geometries."
+}
