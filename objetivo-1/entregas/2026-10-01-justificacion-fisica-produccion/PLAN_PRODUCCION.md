@@ -15,7 +15,7 @@ La receta queda fijada por las comprobaciones de [PUNTOS_NO_DEMOSTRADOS.md](PUNT
 | Observable (imagen de referencia) | Muones con E_cin > 3 GeV al cruzar el plano, por dirección de llegada | C1: imagen independiente del plano; conserva el 83,5 % del conteo en roca |
 | Normalización | k · S0_v1 inyecciones nominales en la ventana = k · 30 días convencionales | Sección 2b del README; convención de área pendiente (C6) |
 
-La única decisión abierta antes de producir es C6, que es de definición y no requiere cómputo.
+> **Actualización 2026-10-02:** la revisión de la dirección deja abiertos F-01 (equivalencia con el panel, control C3), F-02 (normalización y etiqueta de T) y F-03 (bordes con el observable final), además de C6. Ver [IMAGEN_FINAL_OBSERVABLE.md](IMAGEN_FINAL_OBSERVABLE.md). Este plan sigue siendo condicional; no autoriza P0 ni P1.
 
 ## 2. Geometrías y vistas; qué se reutiliza
 

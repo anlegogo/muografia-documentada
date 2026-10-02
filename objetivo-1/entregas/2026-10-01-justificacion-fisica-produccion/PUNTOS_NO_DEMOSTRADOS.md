@@ -1,12 +1,14 @@
 # Puntos no demostrados: comprobaciones, criterios y resultados
 
+> **Alcance ajustado tras la revisión de la dirección (2026-10-02):** C1 y C5 demuestran **contención entre planos grandes** para una fuente restringida al panel nominal, no equivalencia con un detector físico de 1,2 m (F-01). C3 vuelve a estar abierto, con un diseño dimensionado en [IMAGEN_FINAL_OBSERVABLE.md](IMAGEN_FINAL_OBSERVABLE.md). El 99,97 % de C2 corresponde a la imagen sin corte energético y no cierra la normalización (F-02). C4 sigue abierto para el observable con corte (F-03). C6 no es el único pendiente. Los resultados numéricos de abajo se mantienen; las conclusiones se leen con este alcance.
+
 Cada punto indica la pregunta, la comparación y el criterio de resultado satisfactorio, fijados antes de ejecutar. C1, C2, C4 y C5 se ejecutaron en SC3 el 2026-10-02 en trabajos cortos (30621, 30622, 30625 y 30626; 16,7 h-núcleo en total). Los datos, comandos, logs y huellas están en `datos/sc3/controles-*`. La evaluación es reproducible con `scripts/controles_sc3.py`, que genera `resultados/controles-sc3.json` y las figuras 7 y 8.
 
 **Ejecutable de control.** Se aplicó un parche de diagnóstico (`controles/controles-oe1-v3.patch`, con versiones v1 y v2 anteriores) sobre una copia del árbol de producción `angular-v1` (commit `0dea8e1`). El parche añade opciones por variables de entorno: tamaño del plano, cuadrados anidados en el plano, cortes de energía cinética, histograma de direcciones nominales, punto de inyección y margen angular. **Sin variables, los tres ejecutables parcheados reproducen bit a bit el histograma del ejecutable de producción** (geo-train-01, vista 0, 2·10⁶ primarios, semilla 777: 1.473.703 registros idénticos en r01, a00 y c00 frente a r00).
 
 **Cuadrados anidados.** Un único plano de 1.200 m registra a la vez los cuadrados de 1,2; 100; 300 y 600 m de lado, con los mismos muones. La razón entre planos es entonces una fracción binomial anidada, con σ = √(p(1−p)/n). Todas las corridas usan geo-train-01 y la vista 0.
 
-## C1. Contaminación de los píxeles de roca por muones blandos dispersados — **cumple con E > 3 GeV e inyección junto a la roca**
+## C1. Contaminación de los píxeles de roca por muones blandos dispersados — **independencia del plano entre 100 y 600 m con E > 3 GeV e inyección junto a la roca; la equivalencia con el panel no está demostrada**
 
 **Pregunta.** ¿Existe un observable en el que el plano grande y el panel físico coincidan, de modo que la imagen deje de depender del tamaño del plano?
 
@@ -24,7 +26,7 @@ Cada punto indica la pregunta, la comparación y el criterio de resultado satisf
 
 Con E > 3 GeV e inyección junto a la roca, las razones por banda son 1,000 / 0,999 / 0,994 / 0,990 / 0,991 (mínima 0,9895 ± 0,0025), y la razón de cielo abierto coincide con el modelo a menos de 0,01 pp. Con la inyección actual, el conteo de roca a 600 m es de 3,1 a 6,8 veces la expectativa CSDA. Con inyección junto a la roca baja a 0,60–1,09 sin corte y a 0,57–0,85 con E > 3 GeV. El exceso de muones blandos dispersados desaparece. La diferencia restante con la CSDA no se evaluó en esta entrega (ver «Fuera de alcance»).
 
-## C2. Doble descuento del aire en la normalización — **cumple con inyección 1 m antes de la roca**
+## C2. Doble descuento del aire en la normalización — **cumple sin corte con inyección 1 m antes de la roca; la normalización con el observable final sigue abierta (F-02)**
 
 **Pregunta.** El espectro inyectado es de nivel del mar. ¿Debe atravesar el aire previo?
 
@@ -42,9 +44,9 @@ Con E > 3 GeV e inyección junto a la roca, las razones por banda son 1,000 / 0,
 
 La variante (b), especificada de antemano, no cumple: deja entre 0,56 y 1,74 km de aire. La variante (c) se añadió tras ese resultado y se evaluó con el mismo criterio. Con (c), el número de muones inyectados en la ventana coincide con los registrados en cielo abierto, y la convención S0 («muones que llegan al detector») queda consistente con el transporte. El tiempo de transporte baja de 0,796 a 0,532 ms de núcleo por evento.
 
-## C3. Equivalencia con un detector físico mediante generación en área amplia — **no necesaria**
+## C3. Equivalencia con un detector físico mediante generación en área amplia — **abierto**
 
-C1 encontró un observable independiente del plano, de modo que esta referencia costosa (unas 6.600 h-núcleo) no se ejecuta. Si en el futuro se quisiera interpretar la componente por debajo de 3 GeV, el diseño sigue siendo el de [REVISION_ACEPTACION_PLANO.md](../../REVISION_ACEPTACION_PLANO.md).
+La independencia del plano de C1 no implica equivalencia con el panel: ambos planos grandes registran la misma fuente restringida (F-01). Con los datos anidados de c01, solo entre el 3,6 % y el 70,4 % de los registros con E > 3 GeV del cuadrado de 600 m caen en el panel de 1,2 m, según la banda. El control queda dimensionado en dos etapas (C3-a: escala de desplazamiento, unas 3 h-núcleo; C3-b: fuente amplia restringida en dirección, entre 6,6 y 660 h-núcleo según el semilado), con un criterio de equivalencia por intervalos simultáneos en [IMAGEN_FINAL_OBSERVABLE.md](IMAGEN_FINAL_OBSERVABLE.md#3-propuesta). La estimación anterior de 6.600 h-núcleo correspondía a todas las direcciones.
 
 ## C4. Pérdida por migración angular en los bordes de la ventana — **mejora clara; el criterio de 1 pp no se cumple de forma estricta**
 
@@ -64,7 +66,7 @@ C1 encontró un observable independiente del plano, de modo que esta referencia 
 | Antes de la roca, 0° | 4,2 pp | −0,8 pp | 0,2 pp |
 | Antes de la roca, 5° | 1,65 pp | −0,07 pp | 0,75 pp |
 
-Ninguna configuración cumple estrictamente. Con inyección junto a la roca y margen de 5°, el sesgo medio de borde desaparece (−0,07 pp) y la desviación máxima, 1,65 pp, está a 2,2 dispersiones empíricas. Esa dispersión, medida en las columnas interiores, es la fluctuación propia de esta corrida y no un efecto de borde; su origen detallado no se analizó (θ₀ ≈ 0,07° a 0,5 GeV/c en 1 m de aire, frente a bins de 0,18–0,23°). Sin margen, el déficit es real: −3,3 pp en las columnas extremas y −4,2 pp en la fila superior. **Se adopta un margen de 5°.** Confirmar el criterio de 1 pp exige una muestra unas 6 veces mayor; esa verificación se incluye en el piloto P0 del plan.
+Ninguna configuración cumple estrictamente. Además, estos valores corresponden al histograma **sin corte**. Sobre la imagen con E > 3 GeV, el diagnóstico de la dirección da 1,64 pp (c01, sin margen) y 2,84 pp (c02, 5°) ([DIAGNOSTICO_OBSERVABLE_Y_DECISION.md](../../DIAGNOSTICO_OBSERVABLE_Y_DECISION.md)). La dispersión empírica no es un intervalo de confianza válido con migración entre píxeles; el criterio requiere réplicas independientes. **C4 queda abierto.** Con inyección junto a la roca y margen de 5°, el sesgo medio de borde desaparece (−0,07 pp) y la desviación máxima, 1,65 pp, está a 2,2 dispersiones empíricas. Esa dispersión, medida en las columnas interiores, es la fluctuación propia de esta corrida y no un efecto de borde; su origen detallado no se analizó (θ₀ ≈ 0,07° a 0,5 GeV/c en 1 m de aire, frente a bins de 0,18–0,23°). Sin margen, el déficit es real: −3,3 pp en las columnas extremas y −4,2 pp en la fila superior. **Se adopta un margen de 5°.** Confirmar el criterio de 1 pp exige una muestra unas 6 veces mayor; esa verificación se incluye en el piloto P0 del plan.
 
 ## C5. Asíntota del plano — **cumple**
 
@@ -80,7 +82,7 @@ Ninguna configuración cumple estrictamente. Con inyección junto a la roca y ma
 
 ## C6. Convención de área y significado de «30 días» — decisión pendiente
 
-S0 usa A = 1,44 m² normal a cada dirección. Un panel vertical real aporta A·cos(el)·cos(az), lo que reduce S0 un 21,5 %. Interpretar la energía del umbral como cinética cambia S0 un −2,1 %. No requiere corrida. Con la inyección (c), además, el umbral de aire de S0 (0,798 GeV) deja de tener contrapartida física. La ficha de datos debe declarar si S0 se recalcula desde el rango generado (+6,2 %, figura 4) o se mantiene como convención. **Es la única decisión de definición que queda antes de producir.**
+S0 usa A = 1,44 m² normal a cada dirección. Un panel vertical real aporta A·cos(el)·cos(az), lo que reduce S0 un 21,5 %. Interpretar la energía del umbral como cinética cambia S0 un −2,1 %. No requiere corrida. Con la inyección (c), además, el umbral de aire de S0 (0,798 GeV) deja de tener contrapartida física. La ficha de datos debe declarar si S0 se recalcula desde el rango generado (+6,2 %, figura 4) o se mantiene como convención. Es una decisión de definición, **no la única pendiente**: se suman F-01 y F-03 (ver [IMAGEN_FINAL_OBSERVABLE.md](IMAGEN_FINAL_OBSERVABLE.md#5-lo-que-queda-sin-demostrar)).
 
 ## Fuera de alcance de esta entrega
 
