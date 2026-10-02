@@ -1,5 +1,10 @@
 # Bitácora de nuestra revisión del OE1
 
+## Siete actividades locales completadas — 2026-10-02
+
+- [Entrega consolidada](ENTREGA_SIETE_ACTIVIDADES.md): referencia ideal, análisis estadístico, definición propuesta, piloto y automatización. 103 pruebas satisfactorias.
+- Se dejan instrucciones concretas para verificar integración SC3 sin nuevos muones y acordar alcance/presupuesto. No se fusiona la rama de estudiantes ni se ejecuta transporte.
+
 ## Revisión de entrega 01a9871 — 2026-10-02
 
 - [Informe y acciones acotadas](REVISION_INTEGRACION_OBSERVABLE_01A9871.md): herramientas verificadas con dos bloques en SC3, análisis reproducido y T-01 corregido a favor de la integridad de los objetos Git entregados.

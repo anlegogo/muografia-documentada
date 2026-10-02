@@ -1,0 +1,85 @@
+{
+  "schema": "oe1-seven-activities-analysis-v1",
+  "student_commit": "01a98718ba381797f6d4616e25d42ad533cad6f1",
+  "runs": {
+    "c01-anidado-cono": {
+      "N": 20000000,
+      "margin": 0,
+      "ideal_q_range": [
+        0.458372161433459,
+        0.9587696850056436
+      ],
+      "sky_min_elevation_deg": 6.9411764705882355,
+      "extrapolated_rock_pixels": 7122,
+      "denominator_only_new_over_old_response_in_extrapolated_rock": {
+        "min": 0.9537991224713612,
+        "median": 0.9537991224713616,
+        "max": 1.0116715436689443
+      },
+      "edge_decisions": {
+        "equivalent": 3,
+        "inconclusive": 12,
+        "outside_tolerance": 0
+      },
+      "max_abs_edge_point_estimate_pp": 0.8724970349233782,
+      "ideal_sky_is_physical_reference": false
+    },
+    "c02-cono-margen-5deg": {
+      "N": 2000000,
+      "margin": 5,
+      "ideal_q_range": [
+        0.4583721614334589,
+        0.9587696850056437
+      ],
+      "sky_min_elevation_deg": 6.9411764705882355,
+      "extrapolated_rock_pixels": 7122,
+      "denominator_only_new_over_old_response_in_extrapolated_rock": {
+        "min": 0.9202970796592058,
+        "median": 0.9202970796592062,
+        "max": 0.9761367412463785
+      },
+      "edge_decisions": {
+        "equivalent": 0,
+        "inconclusive": 15,
+        "outside_tolerance": 0
+      },
+      "max_abs_edge_point_estimate_pp": 3.064099691613414,
+      "ideal_sky_is_physical_reference": false
+    }
+  },
+  "sources": [
+    {
+      "file": "datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub300_ecut3.csv",
+      "sha256": "8408e1ff25188a685da1426aa34b9d251c8d2ca6a4bbdb78d38e443b548e8182"
+    },
+    {
+      "file": "datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_gen.csv",
+      "sha256": "0c357545f3e11a016c1fb0053ee6d6e8b0c6570cd72d2206b2921519ac66a486"
+    },
+    {
+      "file": "datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0.meta.json",
+      "sha256": "b257c51eab0caac01c92b799e66971648c6b07b73bb0a73caa1de6a78e58abef"
+    },
+    {
+      "file": "datos/sc3/controles-30626/resultados/c02-cono-margen-5deg/geo-train-01_view0_hist_ecut3.csv",
+      "sha256": "3570e60d9a294a683c0e48ad3b61fd2032d482ca5ad7eb3e6d4216a7f07158e4"
+    },
+    {
+      "file": "datos/sc3/controles-30626/resultados/c02-cono-margen-5deg/geo-train-01_view0_gen.csv",
+      "sha256": "eb3a6cbee287185ca34950a781378dde55a0fa87af08fe95c959f1d15c38d4ab"
+    },
+    {
+      "file": "datos/sc3/controles-30626/resultados/c02-cono-margen-5deg/geo-train-01_view0.meta.json",
+      "sha256": "d87d083ba412ac4dd1b6ac5342dc44dbcd6b914d7dcfe5a35965dd8abec81bbc"
+    }
+  ],
+  "geometry_sha256": "ff3c69ab7e37b51c5d4e1318d298a9ddc35446367e6ea4abf5c322e3b86f07b1",
+  "helper_sha256": "a14bc5a05078d2308a855307bd9a3106946986e19da19719240d098fff17df4a",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.4.4",
+    "scipy": "1.18.1"
+  },
+  "physical_validation": false,
+  "production_authorized": false
+}

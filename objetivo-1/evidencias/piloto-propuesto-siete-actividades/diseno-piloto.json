@@ -1,0 +1,88 @@
+{
+  "schema": "oe1-pilot-design-v1",
+  "status": "proposed_not_authorized_for_submission",
+  "geometry": "geo-train-06",
+  "events_per_view": 211000000,
+  "events_total": 1266000000,
+  "blocks_per_view": 6,
+  "views": [
+    {
+      "view": 0,
+      "events_normal_bound": 210873672,
+      "sky_mask": "cielo-geo-train-06-view0.npy",
+      "rock_roi_mask": "roi-roca-geo-train-06-view0.npy",
+      "rock_roi_count": 244
+    },
+    {
+      "view": 1,
+      "events_normal_bound": 210873672,
+      "sky_mask": "cielo-geo-train-06-view1.npy",
+      "rock_roi_mask": "roi-roca-geo-train-06-view1.npy",
+      "rock_roi_count": 244
+    },
+    {
+      "view": 2,
+      "events_normal_bound": 210873672,
+      "sky_mask": "cielo-geo-train-06-view2.npy",
+      "rock_roi_mask": "roi-roca-geo-train-06-view2.npy",
+      "rock_roi_count": 244
+    },
+    {
+      "view": 3,
+      "events_normal_bound": 210873672,
+      "sky_mask": "cielo-geo-train-06-view3.npy",
+      "rock_roi_mask": "roi-roca-geo-train-06-view3.npy",
+      "rock_roi_count": 244
+    },
+    {
+      "view": 4,
+      "events_normal_bound": 210873672,
+      "sky_mask": "cielo-geo-train-06-view4.npy",
+      "rock_roi_mask": "roi-roca-geo-train-06-view4.npy",
+      "rock_roi_count": 244
+    },
+    {
+      "view": 5,
+      "events_normal_bound": 210873672,
+      "sky_mask": "cielo-geo-train-06-view5.npy",
+      "rock_roi_mask": "roi-roca-geo-train-06-view5.npy",
+      "rock_roi_count": 244
+    }
+  ],
+  "alpha_all_six_views": 0.05,
+  "alpha_per_view": 0.008333333333333333,
+  "tolerance_pp": 1.0,
+  "target_joint_power_approx": 0.8,
+  "assumed_true_border_difference_pp": 0.0,
+  "planning": "normal approximation with marginal CP and Cauchy upper bound on contrast SD",
+  "core_hours_illustrative_c01_rate": 187.26140983333332,
+  "manifest_sha256": "36d072c16d4f51a1772984114c1ab9a873501aa4b17aab14562fb7272a6d9a8d",
+  "geometry_sha256": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+  "helper_sha256": "a14bc5a05078d2308a855307bd9a3106946986e19da19719240d098fff17df4a",
+  "mask_sha256": {
+    "cielo-geo-train-06-view0.npy": "72d5d5beea1be9ac1090264846ddd9d3e498faaebd08fe0e6ec0c12781fa8274",
+    "roi-roca-geo-train-06-view0.npy": "ca5a8421eb3fbe5353ef2aa2543d28b9d70945ca81a382f9797f907989da8cb1",
+    "cielo-geo-train-06-view1.npy": "72d5d5beea1be9ac1090264846ddd9d3e498faaebd08fe0e6ec0c12781fa8274",
+    "roi-roca-geo-train-06-view1.npy": "ca5a8421eb3fbe5353ef2aa2543d28b9d70945ca81a382f9797f907989da8cb1",
+    "cielo-geo-train-06-view2.npy": "72d5d5beea1be9ac1090264846ddd9d3e498faaebd08fe0e6ec0c12781fa8274",
+    "roi-roca-geo-train-06-view2.npy": "ca5a8421eb3fbe5353ef2aa2543d28b9d70945ca81a382f9797f907989da8cb1",
+    "cielo-geo-train-06-view3.npy": "72d5d5beea1be9ac1090264846ddd9d3e498faaebd08fe0e6ec0c12781fa8274",
+    "roi-roca-geo-train-06-view3.npy": "ca5a8421eb3fbe5353ef2aa2543d28b9d70945ca81a382f9797f907989da8cb1",
+    "cielo-geo-train-06-view4.npy": "72d5d5beea1be9ac1090264846ddd9d3e498faaebd08fe0e6ec0c12781fa8274",
+    "roi-roca-geo-train-06-view4.npy": "ca5a8421eb3fbe5353ef2aa2543d28b9d70945ca81a382f9797f907989da8cb1",
+    "cielo-geo-train-06-view5.npy": "72d5d5beea1be9ac1090264846ddd9d3e498faaebd08fe0e6ec0c12781fa8274",
+    "roi-roca-geo-train-06-view5.npy": "ca5a8421eb3fbe5353ef2aa2543d28b9d70945ca81a382f9797f907989da8cb1"
+  },
+  "source_table_sha256": {
+    "meta.json": "65cf778ec9d5e380f67e434638d437822dc22ce9e863e12f684dcbcf63da7e8b",
+    "row_weights_30d.txt": "76698ac167efa8b767597b28c814a1ff88f93b41e032d1e98dd58bd1d9f3ac3d",
+    "p_cdf.txt": "7161c8adf11711139840007dff26178221c4cfbff8fc3253cabdda50c533f6ae"
+  },
+  "limits": [
+    "Conservative statistical design around ideal response; requires scientific agreement before transport.",
+    "N does not guarantee equivalence if the true response difference approaches or exceeds 1 pp.",
+    "Timing uses homogeneous c01, not measured pilot geometry performance.",
+    "No adaptive continuation until passing. One evaluation after all fixed blocks."
+  ],
+  "roi_definition": "4x4 center ray, homogeneous edifice column only, 2 m ray-march; anomalies ignored for selection, retained in transport"
+}

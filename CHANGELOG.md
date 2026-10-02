@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Siete actividades locales completadas — 2026-10-02
+
+- Referencia ideal de cielo, análisis de bordes y diseño C3 con incertidumbre simultánea; piloto condicional con máscaras, semillas y presupuesto.
+- Worker y lanzador preparados con integridad, publicación verificada e intenciones persistentes; normalización convencional validada y agregada en nuevos bloques.
+- 103 pruebas satisfactorias; fusión de datos SC3 reales reproduce las huellas previas. Definición del producto y guía única de estudiantes documentadas. Sin nuevas corridas ni autorización de campaña.
+
 ## Revisión de entrega 01a9871 — 2026-10-02
 
 - Prueba técnica de dos bloques en SC3 respaldada; fusión reproducida con hashes idénticos y 113 valores del nuevo análisis contrastados.

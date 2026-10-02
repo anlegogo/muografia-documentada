@@ -1,6 +1,6 @@
 # Matriz de cumplimiento del OE1
 
-> Estado posterior: [entrega 01a9871 revisada](REVISION_INTEGRACION_OBSERVABLE_01A9871.md). Herramientas verificadas sobre dos bloques en SC3; propuesta de observable recibida. Permanecen ajustes de referencia de cielo, diseño de C3 y definición final. OE1 no se declara completo.
+> Estado posterior: [siete actividades locales completadas](ENTREGA_SIETE_ACTIVIDADES.md). Referencia ideal, diseño condicional y automatización implementados; 103 pruebas. Pendientes: adopción académica, verificación operativa SC3, piloto y conjunto final. OE1 no se declara completo.
 
 > Actualización 2026-10-02: se recibió y revisó la entrega física/producción. Consultar la [revisión vigente](REVISION_FISICA_PRODUCCION_2026-10-02.md) antes de aplicar solicitudes o estados anteriores. La ampliación posterior está documentada en las correcciones locales enlazadas arriba.
 

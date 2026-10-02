@@ -4,11 +4,13 @@ Réplica de trabajo de Andrés Leonardo González Gómez para el material de Rei
 
 ## Estado actual
 
-La [actualización 01a9871 fue revisada](objetivo-1/REVISION_INTEGRACION_OBSERVABLE_01A9871.md) al **2026-10-02**: queda respaldada la prueba de nuestras herramientas en SC3 sobre dos bloques existentes, con 200.000 primarios y 69.995 registros con corte. Se reprodujo el nuevo análisis del observable y se corrigió nuestra atribución anterior sobre finales de línea: los objetos Git originales estaban bien. **La campaña final sigue pendiente** de acordar la definición física y corregir la referencia de cielo y el diseño estadístico del control propuesto.
+**Preparación local posterior completada:** [entrega de las siete actividades](objetivo-1/ENTREGA_SIETE_ACTIVIDADES.md), con definición de producto, referencia ideal de cielo, diseño estadístico, evaluación de bordes, automatización y [guía única para estudiantes](objetivo-1/GUIA_SIGUIENTE_ETAPA_OE1.md). **103 pruebas locales satisfactorias.** Quedan la adopción académica de la definición y la comprobación operativa en SC3; el piloto calculado y la campaña son condicionales, no órdenes de ejecución.
 
-Comenzar por el [balance de preparación local](objetivo-1/BALANCE_PREPARACION_LOCAL.md): cadena técnica corregida, probabilidades de fuente calculadas, manifiestos revisados y **78 pruebas locales satisfactorias**. La definición candidata y las dependencias pendientes están reunidas allí. Las revisiones anteriores conservan la evidencia y la cronología.
+Como antecedente, la [actualización 01a9871](objetivo-1/REVISION_INTEGRACION_OBSERVABLE_01A9871.md) respaldó la prueba de herramientas en SC3 sobre dos bloques, con 200.000 primarios y 69.995 registros con corte. Se reprodujo su análisis y se corrigió nuestra atribución sobre finales de línea: los objetos Git originales estaban bien. Las correcciones y propuestas posteriores están reunidas en la entrega de siete actividades; **la campaña final sigue pendiente** del acuerdo científico y la evaluación del piloto.
 
-También está disponible la [publicación verificada de bloques](objetivo-1/PUBLICACION_VERIFICADA_BLOQUES.md), probada frente a fallos de copia y guardado. La suite local reúne **78 pruebas satisfactorias**. Las herramientas ya se probaron en SC3 con dos bloques; su uso dentro del lanzador automático de producción continúa pendiente.
+Comenzar por la entrega de siete actividades y su guía. El [balance de preparación local anterior](objetivo-1/BALANCE_PREPARACION_LOCAL.md) conserva el antecedente de la cadena y las probabilidades de fuente; las revisiones anteriores preservan evidencia y cronología.
+
+También está disponible la [publicación verificada de bloques](objetivo-1/PUBLICACION_VERIFICADA_BLOQUES.md), probada frente a fallos de copia y guardado. Esas herramientas ya se probaron en SC3 con dos bloques; el nuevo lanzador y worker están implementados y probados localmente, pendientes de verificación operativa allí.
 
 | Evidencia / recurso | Qué contiene |
 |---|---|

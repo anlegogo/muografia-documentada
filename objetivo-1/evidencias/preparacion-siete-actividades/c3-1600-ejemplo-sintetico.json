@@ -1,0 +1,46 @@
+{
+  "schema": "oe1-c3-binomial-v1",
+  "physical_validation": false,
+  "alpha_family": 0.05,
+  "method": "Clopper-Pearson on both probabilities, Bonferroni over 2*m probabilities; ratio bounds",
+  "bands": [
+    {
+      "name": "0",
+      "ratio": 1.0,
+      "interval": [
+        0.871663743037842,
+        1.1472314174223273
+      ],
+      "decision": "inconclusive"
+    },
+    {
+      "name": "1",
+      "ratio": 1.0,
+      "interval": [
+        0.871663743037842,
+        1.1472314174223273
+      ],
+      "decision": "inconclusive"
+    },
+    {
+      "name": "2",
+      "ratio": 1.0,
+      "interval": [
+        0.871663743037842,
+        1.1472314174223273
+      ],
+      "decision": "inconclusive"
+    },
+    {
+      "name": "3",
+      "ratio": 1.0,
+      "interval": [
+        0.871663743037842,
+        1.1472314174223273
+      ],
+      "decision": "inconclusive"
+    }
+  ],
+  "all_equivalent": false,
+  "synthetic_example_not_SC3": true
+}

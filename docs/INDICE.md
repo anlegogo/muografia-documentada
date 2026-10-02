@@ -1,5 +1,10 @@
 # Índice de documentación
 
+- [Entrega de las siete actividades](../objetivo-1/ENTREGA_SIETE_ACTIVIDADES.md).
+- [Definición propuesta del producto OE1](../objetivo-1/DEFINICION_PRODUCTO_OE1.md).
+- [Referencias y diseño estadístico](../objetivo-1/DISENO_ESTADISTICO_Y_REFERENCIAS.md).
+- [Guía única de la siguiente etapa](../objetivo-1/GUIA_SIGUIENTE_ETAPA_OE1.md).
+
 - [Revisión de integración SC3 y observable, entrega 01a9871](../objetivo-1/REVISION_INTEGRACION_OBSERVABLE_01A9871.md).
 
 - [Publicación verificada de bloques](../objetivo-1/PUBLICACION_VERIFICADA_BLOQUES.md).

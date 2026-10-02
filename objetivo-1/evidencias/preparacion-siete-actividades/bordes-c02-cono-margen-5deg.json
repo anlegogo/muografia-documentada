@@ -1,0 +1,280 @@
+{
+  "schema": "oe1-border-response-v1",
+  "physical_validation": false,
+  "events": 2000000,
+  "alpha_family": 0.05,
+  "tolerance_pp": 1.0,
+  "baseline": {
+    "counts": 260472,
+    "nominal_probability": 0.2533860115991148,
+    "ideal_probability": 0.13010538754304496,
+    "residual": 0.0005154683012323316,
+    "interval": [
+      -0.002256583422026702,
+      0.003296506973374711
+    ]
+  },
+  "regions": [
+    {
+      "counts": 1217,
+      "nominal_probability": 0.0011730833870329392,
+      "ideal_probability": 0.0006023397571437268,
+      "residual": 0.0052513256298465216,
+      "interval": [
+        -0.037580864130397504,
+        0.050721687684711
+      ],
+      "name": "column_0",
+      "difference_pp": 0.47358573286141903,
+      "difference_interval_pp": [
+        -4.087737110377222,
+        5.29782711067377
+      ],
+      "decision": "inconclusive"
+    },
+    {
+      "counts": 1194,
+      "nominal_probability": 0.0011730833870329392,
+      "ideal_probability": 0.0006023397571437268,
+      "residual": -0.004551899040384954,
+      "interval": [
+        -0.04696725748405271,
+        0.04050186055402908
+      ],
+      "name": "column_1",
+      "difference_pp": -0.5067367341617285,
+      "difference_interval_pp": [
+        -5.026376445742742,
+        4.275844397605579
+      ],
+      "decision": "inconclusive"
+    },
+    {
+      "counts": 1213,
+      "nominal_probability": 0.0011730833870329392,
+      "ideal_probability": 0.0006023397571437268,
+      "residual": 0.0035464169915454475,
+      "interval": [
+        -0.039213565593502774,
+        0.048944611331113864
+      ],
+      "name": "column_2",
+      "difference_pp": 0.3030948690313116,
+      "difference_interval_pp": [
+        -4.251007256687749,
+        5.120119475314057
+      ],
+      "decision": "inconclusive"
+    },
+    {
+      "counts": 1246,
+      "nominal_probability": 0.0011730833870329392,
+      "ideal_probability": 0.0006023397571437268,
+      "residual": 0.017611913257529654,
+      "interval": [
+        -0.02574026266943301,
+        0.06360197954200954
+      ],
+      "name": "column_3",
+      "difference_pp": 1.709644495629732,
+      "difference_interval_pp": [
+        -2.903676964280772,
+        6.585856296403623
+      ],
+      "decision": "inconclusive"
+    },
+    {
+      "counts": 1165,
+      "nominal_probability": 0.0011730833870329392,
+      "ideal_probability": 0.0006023397571437268,
+      "residual": -0.016912486668068088,
+      "interval": [
+        -0.05879650074708643,
+        0.027610224118350957
+      ],
+      "name": "column_4",
+      "difference_pp": -1.742795496930042,
+      "difference_interval_pp": [
+        -6.209300772046114,
+        2.986680754037766
+      ],
+      "decision": "inconclusive"
+    },
+    {
+      "counts": 1149,
+      "nominal_probability": 0.0011730833870329392,
+      "ideal_probability": 0.0006023397571437268,
+      "residual": -0.023732121221272568,
+      "interval": [
+        -0.06532014235265578,
+        0.02049476318762025
+      ],
+      "name": "column_251",
+      "difference_pp": -2.42475895225049,
+      "difference_interval_pp": [
+        -6.861664932603048,
+        2.275134660964695
+      ],
+      "decision": "inconclusive"
+    },
+    {
+      "counts": 1167,
+      "nominal_probability": 0.0011730833870329392,
+      "ideal_probability": 0.0006023397571437268,
+      "residual": -0.016060032348917504,
+      "interval": [
+        -0.05798090203567984,
+        0.028499513402550674
+      ],
+      "name": "column_252",
+      "difference_pp": -1.6575500650149837,
+      "difference_interval_pp": [
+        -6.127740900905455,
+        3.0756096824577375
+      ],
+      "decision": "inconclusive"
+    },
+    {
+      "counts": 1217,
+      "nominal_probability": 0.0011730833870329392,
+      "ideal_probability": 0.0006023397571437268,
+      "residual": 0.0052513256298465216,
+      "interval": [
+        -0.037580864130397504,
+        0.050721687684711
+      ],
+      "name": "column_253",
+      "difference_pp": 0.47358573286141903,
+      "difference_interval_pp": [
+        -4.087737110377222,
+        5.29782711067377
+      ],
+      "decision": "inconclusive"
+    },
+    {
+      "counts": 1209,
+      "nominal_probability": 0.0011730833870329392,
+      "ideal_probability": 0.0006023397571437268,
+      "residual": 0.0018415083532442812,
+      "interval": [
+        -0.040846147705465796,
+        0.04716741576854922
+      ],
+      "name": "column_254",
+      "difference_pp": 0.13260400520119495,
+      "difference_interval_pp": [
+        -4.414265467884051,
+        4.942399919057593
+      ],
+      "decision": "inconclusive"
+    },
+    {
+      "counts": 1134,
+      "nominal_probability": 0.0011730833870329392,
+      "ideal_probability": 0.0006023397571437268,
+      "residual": -0.030125528614901805,
+      "interval": [
+        -0.07143417595674419,
+        0.013822140525753961
+      ],
+      "name": "column_255",
+      "difference_pp": -3.064099691613414,
+      "difference_interval_pp": [
+        -7.473068293011889,
+        1.6078723947780662
+      ],
+      "decision": "inconclusive"
+    },
+    {
+      "counts": 5147,
+      "nominal_probability": 0.005664824761514846,
+      "ideal_probability": 0.002596597970077338,
+      "residual": -0.004077437705444811,
+      "interval": [
+        -0.022540343512533215,
+        0.014927765079561672
+      ],
+      "name": "row_251",
+      "difference_pp": -0.4592906006677142,
+      "difference_interval_pp": [
+        -2.5836850485907927,
+        1.7184348501588373
+      ],
+      "decision": "inconclusive"
+    },
+    {
+      "counts": 5154,
+      "nominal_probability": 0.00567826561860602,
+      "ideal_probability": 0.0026027588847937393,
+      "residual": -0.004536400112973772,
+      "interval": [
+        -0.022968246117629418,
+        0.014436454199353424
+      ],
+      "name": "row_252",
+      "difference_pp": -0.5051868414206103,
+      "difference_interval_pp": [
+        -2.626475309100413,
+        1.6693037621380125
+      ],
+      "decision": "inconclusive"
+    },
+    {
+      "counts": 5257,
+      "nominal_probability": 0.005691265947804132,
+      "ideal_probability": 0.0026087178737876243,
+      "residual": 0.00347587450556734,
+      "interval": [
+        -0.01509849074211532,
+        0.022589938916028614
+      ],
+      "name": "row_253",
+      "difference_pp": 0.2960406204335009,
+      "difference_interval_pp": [
+        -1.8394997715490031,
+        2.4846522338055315
+      ],
+      "decision": "inconclusive"
+    },
+    {
+      "counts": 5146,
+      "nominal_probability": 0.005704075120312559,
+      "ideal_probability": 0.002614589241876485,
+      "residual": -0.00729114554055977,
+      "interval": [
+        -0.025625207389477805,
+        0.011581482395396511
+      ],
+      "name": "row_254",
+      "difference_pp": -0.7806613841792102,
+      "difference_interval_pp": [
+        -2.8921714362852518,
+        1.3838065817423213
+      ],
+      "decision": "inconclusive"
+    },
+    {
+      "counts": 5230,
+      "nominal_probability": 0.005716632800202654,
+      "ideal_probability": 0.002620345332750298,
+      "residual": -0.0009350491691731933,
+      "interval": [
+        -0.019378988362982207,
+        0.018046213429248753
+      ],
+      "name": "row_255",
+      "difference_pp": -0.1450517470405525,
+      "difference_interval_pp": [
+        -2.267549533635692,
+        2.0302796851275455
+      ],
+      "decision": "inconclusive"
+    }
+  ],
+  "all_equivalent": false,
+  "limits": [
+    "Tests nonuniform response relative to ideal no-transport source; does not isolate migration from air transport.",
+    "Existing-run results are retrospective diagnostics. Freeze masks, recipe and N before confirmatory runs.",
+    "Marginal binomial coverage assumes independent primary histories and one recorded arrival per primary."
+  ]
+}

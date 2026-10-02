@@ -12,3 +12,9 @@ objetivo-1/correcciones/**/*.patch text eol=lf
 # Evidence hashes refer to exact received bytes. Do not normalize SC3 artifacts.
 # Existing mismatches must be documented; this does not repair old commits.
 objetivo-1/entregas/**/datos/sc3/** -text
+
+# This new manifest has a frozen SHA used by the pilot evaluator on all hosts.
+objetivo-1/evidencias/piloto-propuesto-siete-actividades/*.csv text eol=lf
+
+# This new manifest has a frozen SHA used by the pilot evaluator on all hosts.
+objetivo-1/evidencias/piloto-propuesto-siete-actividades/*.csv text eol=lf
