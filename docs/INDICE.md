@@ -1,5 +1,15 @@
 # Índice de documentación
 
+- [Publicación verificada de bloques](../objetivo-1/PUBLICACION_VERIFICADA_BLOQUES.md).
+
+- [Balance de preparación local y ficha candidata](../objetivo-1/BALANCE_PREPARACION_LOCAL.md).
+
+- [Diagnóstico del observable y decisión física](../objetivo-1/DIAGNOSTICO_OBSERVABLE_Y_DECISION.md).
+
+- [Correcciones locales de fusión y configuración](../objetivo-1/CORRECCIONES_LOCALES_FUSION_CONFIGURACION.md).
+
+- [Revisión física y producción, 2026-10-02](../objetivo-1/REVISION_FISICA_PRODUCCION_2026-10-02.md).
+
 | Documento | Pregunta que responde |
 |---|---|
 | [Cadena local y estado consolidado](../objetivo-1/CADENA_LOCAL_OE1.md) | ¿Qué está preparado, cómo se ejecuta y qué falta recibir? |

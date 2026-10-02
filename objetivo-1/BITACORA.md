@@ -1,5 +1,37 @@
 # Bitácora de nuestra revisión del OE1
 
+## Publicación verificada de bloques — 2026-10-02
+
+- Nueva herramienta de publicación: valida, copia a temporal, verifica todos los bytes y promueve con bloqueo; no sobrescribe resultados distintos y reconoce repeticiones idénticas.
+- Fallos controlados de copia, corrupción, escritura de recibo y promoción no publican un bloque. Suite: 78 pruebas satisfactorias. Dos bloques reales publicados localmente y verificados sin alterar entradas ni ejecutar transporte.
+- [Uso, adopción y límites](PUBLICACION_VERIFICADA_BLOQUES.md). Falta integrar y comprobar el flujo en SC3; la validación física permanece abierta.
+
+## Preparación local integral — 2026-10-02
+
+- Probabilidades del algoritmo de fuente calculadas desde las tablas v1: ventana nominal 0,6841465610; 20,18 % de masa en filas extrapoladas. Concordancia con la fracción observada de c02; no valida físicamente la extrapolación.
+- Preflight offline de manifiestos k=1/k=10: 114 vistas, 228/1.596 bloques, sin duplicados ni huecos. Integra validación estricta de bloques; no consulta colas ni envía trabajos.
+- Ficha de definición candidata y [balance único de resultados y dependencias](BALANCE_PREPARACION_LOCAL.md). 69 pruebas locales satisfactorias; conserva sin cambios la definición física, los originales, las ramas de estudiantes y la operación de SC3.
+
+## Diagnóstico del observable con datos conservados — 2026-10-02
+
+- Comparados panel de 1,2 m y planos de 100/600 m para los mismos primarios con E > 3 GeV. En bandas de roca, la contención 100/600 cercana a uno no implica contención en el panel. No se interpreta como eficiencia física ni factor correctivo.
+- Reanalizados bordes con corte: máximos descriptivos 1,64 pp (sin margen, 20M) y 2,84 pp (5°, 2M). No son comparación pareada ni decisión estadística; no se atribuye empeoramiento al margen.
+- [Definiciones pendientes, criterios y reproducción](DIAGNOSTICO_OBSERVABLE_Y_DECISION.md). 60 pruebas locales satisfactorias; no se ejecutan transportes nuevos ni se cambian normalización o alcance físico.
+
+## Correcciones locales de fusión y configuración — 2026-10-02
+
+- Nueva fusión estricta, con rechazo de bloques/semillas repetidos o contradictorios, agregados corregidos y verificación SHA exacta o conversión CRLF->LF explícita y trazable. Preserva entradas.
+- Empaquetador actualizado para distinguir inyección, margen, plano, selección energética y definiciones de fuente/normalización. Se protege la conservación de bytes de futuras entregas SC3.
+- 56 pruebas locales satisfactorias. Dos bloques reales: 200.000 primarios, 69.995 registros seleccionados y 130.190 sin corte; matriz conservada, exportación y lectura satisfactorias.
+- [Instrucciones de adopción y límites](CORRECCIONES_LOCALES_FUSION_CONFIGURACION.md). Rama estudiantil intacta; no se actualizan SC3 ni su lanzador y no se autoriza campaña física.
+
+## Revisión de justificación física y producción — 2026-10-02
+
+- Revisada la entrega f9a77ef sin fusionar su rama. Se ejecutan seis análisis y coinciden 3.045 valores numéricos; 114 histogramas históricos reconstruidos coinciden con el manifiesto.
+- Se verifican 19 corridas (92 millones de primarios) y la fusión de integración de 200.000 primarios/69.995 registros, tras normalización de líneas en copia temporal. 181/200 huellas de controles requieren esa normalización.
+- Se documentan límites de C1/C2/C3/C5, C4 aún no cumplido, metadatos agregados incorrectos y aceptación de semillas contradictorias/bloques repetidos. Nuestra firma de empaquetado también requiere reconocer las opciones nuevas.
+- [Dictamen y siguiente entrega acotada](REVISION_FISICA_PRODUCCION_2026-10-02.md). No se autoriza campaña final, no se ejecuta Geant4 localmente y no se envían mensajes a estudiantes.
+
 ## Consolidación de la cadena local — 2026-10-01, Colombia
 
 - Por autorización del director se completa una alternativa de representación, auditoría multivista y empaquetado binomial versionado: seis vistas por geometría, 80 pares por vista, semillas estables por identidad y uint32 sin recorte. No se generan referencias físicas inexistentes.

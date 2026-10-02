@@ -1,0 +1,764 @@
+{
+  "commit": "f9a77eff49c01bfd073c00d7d62414e3ce962f9d",
+  "scope": "revision local; sin transporte Geant4 ni autorizacion de produccion",
+  "control_output_hashes": {
+    "checked": 200,
+    "exact_failures": 181,
+    "failures_not_explained_by_line_endings": []
+  },
+  "control_histograms": [
+    {
+      "run": "r00-produccion",
+      "events": 2000000,
+      "counts": 1473703,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "r01-parche-por-defecto",
+      "events": 2000000,
+      "counts": 1473703,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "r02-plano-1.2m",
+      "events": 2000000,
+      "counts": 30610,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "r03-plano-100m",
+      "events": 2000000,
+      "counts": 1281560,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "r04-plano-300m",
+      "events": 2000000,
+      "counts": 1458786,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "r05-plano-600m",
+      "events": 2000000,
+      "counts": 1473703,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "r06-plano-1200m",
+      "events": 2000000,
+      "counts": 1474456,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "r07-edificio-100m",
+      "events": 2000000,
+      "counts": 1765749,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "r08-edificio-600m",
+      "events": 2000000,
+      "counts": 1770305,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "r09-margen-2deg",
+      "events": 2000000,
+      "counts": 1287103,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "r10-margen-5deg",
+      "events": 2000000,
+      "counts": 1043809,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "a00-parche-v2-por-defecto",
+      "events": 2000000,
+      "counts": 1473703,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "a01-anidado-actual",
+      "events": 20000000,
+      "counts": 14736843,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "a02-anidado-edificio",
+      "events": 20000000,
+      "counts": 17702498,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "m01-edificio-margen-2deg",
+      "events": 2000000,
+      "counts": 1532338,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "m02-edificio-margen-5deg",
+      "events": 2000000,
+      "counts": 1235873,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "c00-parche-v3-por-defecto",
+      "events": 2000000,
+      "counts": 1473703,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "c01-anidado-cono",
+      "events": 20000000,
+      "counts": 19074904,
+      "matches": true,
+      "exit": "0"
+    },
+    {
+      "run": "c02-cono-margen-5deg",
+      "events": 2000000,
+      "counts": 1306074,
+      "matches": true,
+      "exit": "0"
+    }
+  ],
+  "reproduction_numbers": {
+    "compared": 3045,
+    "differences": []
+  },
+  "historical_histogram_hashes": [
+    {
+      "geometry": "geo-gen-01",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-gen-01",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-gen-01",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-gen-01",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-gen-01",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-gen-01",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-01",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-01",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-01",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-01",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-01",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-01",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-02",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-02",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-02",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-02",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-02",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-02",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-03",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-03",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-03",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-03",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-03",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-test-03",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-01",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-01",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-01",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-01",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-01",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-01",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-02",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-02",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-02",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-02",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-02",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-02",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-03",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-03",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-03",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-03",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-03",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-03",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-04",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-04",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-04",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-04",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-04",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-04",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-05",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-06",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-06",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-06",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-06",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-06",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-06",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-07",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-08",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-08",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-08",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-08",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-08",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-08",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-09",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-09",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-09",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-09",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-09",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-09",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-10",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-11",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-11",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-11",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-11",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-11",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-11",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-12",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-12",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-12",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-12",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-12",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-train-12",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "matches": true
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "matches": true
+    }
+  ],
+  "integration_working_copy_line_endings_normalized": [
+    "geo-train-06/view0/block0000/geo-train-06_view0_gen.csv",
+    "geo-train-06/view0/block0000/geo-train-06_view0_hist.csv",
+    "geo-train-06/view0/block0000/geo-train-06_view0_hist_sin_corte.csv",
+    "geo-train-06/view0/block0001/geo-train-06_view0_gen.csv",
+    "geo-train-06/view0/block0001/geo-train-06_view0_hist.csv",
+    "geo-train-06/view0/block0001/geo-train-06_view0_hist_sin_corte.csv"
+  ],
+  "real_merge": {
+    "execution": {
+      "exit": 0,
+      "stdout": "vistas fusionadas: 1\n",
+      "stderr": ""
+    },
+    "histogram_equal": true,
+    "events": 200000,
+    "cut_counts": 69995,
+    "all_energy_counts_reported": 65050,
+    "all_energy_counts_sum_blocks": 130190
+  },
+  "negative_test_wrong_seed": {
+    "exit": 0,
+    "stdout": "vistas fusionadas: 1\n",
+    "stderr": ""
+  },
+  "negative_test_duplicate_block": {
+    "exit": 0,
+    "stdout": "vistas fusionadas: 1\n",
+    "stderr": ""
+  },
+  "negative_test_package_recipe_signature_unchanged": true,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.4.4",
+    "matplotlib": "3.11.1"
+  },
+  "analysis_scripts_executed": [
+    "comparar_planos.py",
+    "relacion_plano_detector.py",
+    "exposicion_equivalente.py",
+    "consistencia_espectro.py",
+    "controles_sc3.py",
+    "plan_produccion.py"
+  ]
+}

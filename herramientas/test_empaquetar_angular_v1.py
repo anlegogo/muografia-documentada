@@ -29,6 +29,40 @@ class PackageTests(unittest.TestCase):
     def test_complete_inventory(self):
         r,_=audit(self.paths,['geo-train-01']);self.assertTrue(r['technical_complete']);self.assertEqual(r['target_pairs'],480)
 
+    def controlled(self):
+        for p in self.paths:
+            mp=p.with_suffix('.meta.json');m=json.loads(mp.read_text())
+            m['oe1_controles']={'inject':'cone','plane_half_m':300,'margin_deg':5,
+                               'edifice_margin_m':50,'ecuts_gev':[3],'subplanes_half_m':[]}
+            m['reference_histogram']='kinetic energy at the counting plane > 3 GeV'
+            mp.write_text(json.dumps(m))
+
+    def test_controlled_inventory(self):
+        self.controlled()
+        self.assertTrue(audit(self.paths,['geo-train-01'])[0]['technical_complete'])
+
+    def test_changed_recipe_rejected(self):
+        self.controlled();p=self.paths[0].with_suffix('.meta.json');base=json.loads(p.read_text())
+        for key,value in [('inject','legacy'),('plane_half_m',600),('margin_deg',2),('ecuts_gev',[5])]:
+            with self.subTest(key=key):
+                m=copy.deepcopy(base);m['oe1_controles'][key]=value;p.write_text(json.dumps(m))
+                self.assertFalse(audit(self.paths,['geo-train-01'])[0]['technical_complete'])
+
+    def test_reference_source_normalization_changes_rejected(self):
+        self.controlled();p=self.paths[0].with_suffix('.meta.json');base=json.loads(p.read_text())
+        for key,value in [('reference_histogram','all energies'),('source_definition',{'surface':'new'}),
+                          ('normalization',{'area':'vertical'})]:
+            with self.subTest(key=key):
+                m=copy.deepcopy(base);m[key]=value;p.write_text(json.dumps(m))
+                self.assertFalse(audit(self.paths,['geo-train-01'])[0]['technical_complete'])
+
+    def test_missing_or_invalid_controls_rejected(self):
+        self.controlled();p=self.paths[0].with_suffix('.meta.json');base=json.loads(p.read_text())
+        for value in [None,{},dict(base['oe1_controles'],margin_deg=float('nan'))]:
+            with self.subTest(value=value):
+                m=copy.deepcopy(base);m['oe1_controles']=value;p.write_text(json.dumps(m))
+                self.assertTrue(audit(self.paths,['geo-train-01'])[0]['errors'])
+
     def test_missing_views(self):
         r,_=audit(self.paths[:1],['geo-train-01']);self.assertFalse(r['technical_complete']);self.assertEqual(len(r['missing']),5)
 

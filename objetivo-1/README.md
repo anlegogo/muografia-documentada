@@ -1,5 +1,9 @@
 # Guía de los materiales del OE1
 
+> Avance posterior a la revisión: [fusión y compatibilidad corregidas localmente](CORRECCIONES_LOCALES_FUSION_CONFIGURACION.md), 56 pruebas y contraste con los dos bloques reales. Las observaciones físicas siguen abiertas; adoptar la alternativa en SC3 requiere actualizar las herramientas allí.
+
+> Actualización 2026-10-02: se recibió y revisó la entrega física/producción. Consultar la [revisión vigente](REVISION_FISICA_PRODUCCION_2026-10-02.md) antes de aplicar solicitudes o estados anteriores. La ampliación posterior está documentada en las correcciones locales enlazadas arriba.
+
 Estado actual: [cadena local preparada](CADENA_LOCAL_OE1.md), [matriz](MATRIZ_CUMPLIMIENTO.md) y [pendientes](PENDIENTES.md). La integración angular en SC3 está revisada; el cierre físico y la campaña final siguen pendientes.
 
 La tabla describe el material histórico conservado, no una nueva entrega de producción.

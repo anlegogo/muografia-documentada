@@ -4,9 +4,11 @@ Réplica de trabajo de Andrés Leonardo González Gómez para el material de Rei
 
 ## Estado actual
 
-La corrección angular fue aplicada y probada por los estudiantes en SC3: **1.000 primarios, 750 registros**, entrega revisada. La nueva cadena local de lectura, representación, regiones y empaquetado está implementada y tiene **41 pruebas satisfactorias**. La aceptación física del plano de conteo y la normalización temporal siguen pendientes: **el OE1 no está cerrado y la campaña final no está definida**.
+La entrega de justificación física y producción fue revisada al **2026-10-02**: se reprodujeron sus seis análisis y la fusión de dos bloques de integración, y se contrastaron los histogramas/metadatos de 19 corridas de control (92 millones de primarios). Hay una propuesta de regenerar las 114 vistas, pero **la receta aún no se declara validada y la campaña final no está habilitada**: quedan observaciones físicas y la adopción de las correcciones técnicas en el flujo de los estudiantes.
 
-Comenzar por [cadena local preparada y siguiente entrega necesaria](objetivo-1/CADENA_LOCAL_OE1.md). Allí están los comandos, resultados, límites y un mensaje preparado para los estudiantes.
+Comenzar por el [balance de preparación local](objetivo-1/BALANCE_PREPARACION_LOCAL.md): cadena técnica corregida, probabilidades de fuente calculadas, manifiestos revisados y **78 pruebas locales satisfactorias**. La definición candidata y las dependencias pendientes están reunidas allí. Las revisiones anteriores conservan la evidencia y la cronología.
+
+También está disponible la [publicación verificada de bloques](objetivo-1/PUBLICACION_VERIFICADA_BLOQUES.md), probada frente a fallos de copia y guardado. La suite local reúne **78 pruebas satisfactorias**; el flujo de SC3 aún debe adoptar estas herramientas.
 
 | Evidencia / recurso | Qué contiene |
 |---|---|
@@ -20,7 +22,7 @@ Comenzar por [cadena local preparada y siguiente entrega necesaria](objetivo-1/C
 
 ## Datos y versiones
 
-El conjunto histórico tiene 19 geometrías, 114 vistas y 9.120 pares reducidos, cuya reproducción se verificó. No es todavía el conjunto corregido final. De la malla nueva se recibió una vista de prueba; no se completan vistas ausentes con copias ni se reetiquetan matrices antiguas.
+El conjunto histórico tiene 19 geometrías, 114 vistas y 9.120 pares reducidos, cuya reproducción se verificó. No es todavía el conjunto corregido final. De la malla nueva hay pruebas de integración y controles, aún no un conjunto final aprobado; no se completan vistas ausentes con copias ni se reetiquetan matrices antiguas.
 
 `objetivo-1/originales/` conserva el material recibido. `objetivo-1/evidencias/` contiene nuestras verificaciones. `herramientas/` incluye auditores y herramientas nuevas de preparación; `objetivo-1/correcciones/` conserva el parche entregado. Los ensayos y entregas congelados permanecen en sus ramas.
 

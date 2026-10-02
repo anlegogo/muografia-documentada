@@ -1,0 +1,69 @@
+{
+  "schema": "oe1-candidate-definition-v1",
+  "status": "candidate_not_physically_approved",
+  "source_delivery_commit": "f9a77eff49c01bfd073c00d7d62414e3ce962f9d",
+  "code_base": "0dea8e1",
+  "patch_sha256": "4e7b24dda253caa183f91d24278c84cf3d9b778f56f288db1cbd2a328ddebd58",
+  "reported_binary_sha256": "00145f7edfebb01efae17b3d4ab0e0ff177de454dd08568985a581aba3027865",
+  "binary_locally_rebuilt": false,
+  "table_sha256": {
+    "meta.json": "65cf778ec9d5e380f67e434638d437822dc22ce9e863e12f684dcbcf63da7e8b",
+    "row_weights_30d.txt": "76698ac167efa8b767597b28c814a1ff88f93b41e032d1e98dd58bd1d9f3ac3d",
+    "p_cdf.txt": "7161c8adf11711139840007dff26178221c4cfbff8fc3253cabdda50c533f6ae"
+  },
+  "source_definition": {
+    "status": "documented_algorithm_not_calibrated_flux",
+    "nominal_impact": "uniform over 1.2 m square panel",
+    "injection": "last sampled interior point of cone plus 1 m, backward ray sampled every 0.5 m up to 4 km; 1 m before panel when no intersection sampled",
+    "azimuth": "uniform over -35 to +35 degrees relative to view direction",
+    "elevation": "original row weights within nominal range, linear extrapolation of eight edge rows outside; clamp negative weights to zero and centers below 0.1 degrees to zero",
+    "momentum": "piecewise linear interpolation of 257 inverse-CDF quantiles in 16 elevation bands; nearest edge band outside table range",
+    "probability_nominal_window": 0.6841465610179727
+  },
+  "oe1_controles": {
+    "inject": "cone",
+    "plane_half_m": 300,
+    "edifice_margin_m": 50,
+    "margin_deg": 5,
+    "ecuts_gev": [
+      3
+    ],
+    "subplanes_half_m": []
+  },
+  "reference_histogram": "kinetic energy at the counting plane > 3 GeV",
+  "normalization": {
+    "status": "unresolved_physical_interpretation",
+    "S0_30_conventional_days": 36034069.911914065,
+    "physical_days_calibrated": false,
+    "runtime_exposure_days": -1,
+    "area_convention_inherited": "1.44 m2 normal to each direction",
+    "energy_threshold_inherited_GeV": 0.7980614314412022,
+    "threshold_convention_to_resolve": "total versus kinetic energy and surface reference"
+  },
+  "image": {
+    "shape": [
+      256,
+      256
+    ],
+    "azimuth": "az-edges-v1",
+    "elevation": "legacy-centers-2-47",
+    "counts_dtype": "uint32"
+  },
+  "pairs": {
+    "fractions": [
+      0.5,
+      0.1,
+      0.05,
+      0.01
+    ],
+    "replicates_per_fraction": 20,
+    "independent_reference_per_pair": false
+  },
+  "open_gates": [
+    "physical observable and spatial acceptance",
+    "consistent source spectrum, area and exposure definition",
+    "angular border equivalence for energy-selected observable",
+    "adoption and operational validation of corrected tools on SC3"
+  ],
+  "production_authorized": false
+}

@@ -1,5 +1,9 @@
 # Cadena local preparada para la malla angular v1
 
+> Avance posterior a la revisión: [fusión y compatibilidad corregidas localmente](CORRECCIONES_LOCALES_FUSION_CONFIGURACION.md), 56 pruebas y contraste con los dos bloques reales. Las observaciones físicas siguen abiertas; adoptar la alternativa en SC3 requiere actualizar las herramientas allí.
+
+> Actualización 2026-10-02: se recibió y revisó la entrega física/producción. Consultar la [revisión vigente](REVISION_FISICA_PRODUCCION_2026-10-02.md) antes de aplicar solicitudes o estados anteriores. La ampliación posterior está documentada en las correcciones locales enlazadas arriba.
+
 Estado al 2026-10-01, Colombia. Se completa una **alternativa local nueva** para recibir, verificar, representar, analizar y empaquetar referencias compatibles. No sustituye los datos históricos, no activa el transporte de listas/ROI en el ejecutable angular y no habilita todavía la campaña final.
 
 ## Qué quedó implementado

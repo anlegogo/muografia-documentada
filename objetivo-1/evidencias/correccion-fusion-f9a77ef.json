@@ -1,0 +1,82 @@
+{
+  "commit_estudiantes": "f9a77eff49c01bfd073c00d7d62414e3ce962f9d",
+  "strict_rejection": "huella no coincide: geo-train-06_view0_hist.csv",
+  "counts_unchanged": true,
+  "events": 200000,
+  "cut_counts": 69995,
+  "all_energy_counts": 130190,
+  "mean_ekin_all_energies_gev": 17.83626210474492,
+  "seconds_per_event": 2.328428884007735e-05,
+  "export_and_package_reader_passed": true,
+  "physical_validation": false,
+  "full_six_view_package_created": false,
+  "merge_report": {
+    "schema": "oe1-strict-block-merge-v1",
+    "physical_validation": false,
+    "manifest_sha256": "aeef224c3de575b33efc8ac47968e18e0f982dc72962bda5a7e398935fef8202",
+    "accept_crlf": true,
+    "views": [
+      {
+        "geometry": "geo-train-06",
+        "view": 0,
+        "events": 200000,
+        "counts": 69995,
+        "all_energy_counts": 130190,
+        "hist_sha256": "d145db023d60ef76a696b7ed5cc2d36b0958a42b49e298fc67ec1e46d6d38408",
+        "meta_sha256": "85626b866993add2b8271336465e439f47c9540502dca2e9564bf9ac1a765e2f",
+        "blocks": [
+          {
+            "manifest_row": {
+              "fila": 108,
+              "geometria": "geo-train-06",
+              "vista": 0,
+              "bloque": 0,
+              "semilla": 20261001090000,
+              "eventos": 100000
+            },
+            "outputs": [
+              {
+                "name": "geo-train-06_view0_hist.csv",
+                "received_sha256": "9a0e05666e6e49511aa639a613272228e16a3bab24892d5da0220cdaeedf6a6b",
+                "expected_sha256": "3c21b65e64506fead2196b145df6f41ef3c85810fbd870a38b7639603100a7c6",
+                "crlf_to_lf_verified": true
+              },
+              {
+                "name": "geo-train-06_view0.meta.json",
+                "received_sha256": "12c7637e0bc29c35f988a19546a0b46af28622c6305236a7e9cd38e81c3208c7",
+                "expected_sha256": "12c7637e0bc29c35f988a19546a0b46af28622c6305236a7e9cd38e81c3208c7",
+                "crlf_to_lf_verified": false
+              }
+            ],
+            "input_manifest_sha256": "38952595ad9b3379bdefb3931e48df383a616b93d545874557b16c5d8c8bbd05"
+          },
+          {
+            "manifest_row": {
+              "fila": 109,
+              "geometria": "geo-train-06",
+              "vista": 0,
+              "bloque": 1,
+              "semilla": 20261001090001,
+              "eventos": 100000
+            },
+            "outputs": [
+              {
+                "name": "geo-train-06_view0_hist.csv",
+                "received_sha256": "108f53e500096b187896ecc09dc4baa29820f713d33ea63f698a652f3dd27cc5",
+                "expected_sha256": "a8be45a3a93ffb74e9d1db5b14653db9c1a5c827deb434daa85dc49aa19a5dea",
+                "crlf_to_lf_verified": true
+              },
+              {
+                "name": "geo-train-06_view0.meta.json",
+                "received_sha256": "1183c068659a44db13fffa39f6eee7a4519b3a1371622704b3c0c980c38c3038",
+                "expected_sha256": "1183c068659a44db13fffa39f6eee7a4519b3a1371622704b3c0c980c38c3038",
+                "crlf_to_lf_verified": false
+              }
+            ],
+            "input_manifest_sha256": "38952595ad9b3379bdefb3931e48df383a616b93d545874557b16c5d8c8bbd05"
+          }
+        ]
+      }
+    ]
+  }
+}
