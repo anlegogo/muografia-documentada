@@ -1,0 +1,15 @@
+{
+  "tests": 56,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.4.4",
+  "sources": {
+    "configuracion_angular.py": "35099a36f348f485424feed6fb3582ebb60f5703597b286806f1d5891d9a7f91",
+    "fusionar_bloques_angular.py": "148d2f6c1c18b581cb2a4ad5c7342b50dfac9028b5f09ce7965cde190fda5029",
+    "empaquetar_angular_v1.py": "dd7cf30be6ba9f5f1a3dfb17ea564075cbf96b7becee809cbb0855413a7b959a",
+    "test_fusionar_bloques_angular.py": "444b696f6ebe4dd38f72a5e81796805076321ff0693997dbeb3f89d9c02b7cf3",
+    "test_empaquetar_angular_v1.py": "9ba7470e295958ea57b42bd28b30461c0a27b402fc1e29ff4729d188bf9ebcc1"
+  },
+  "physical_validation": false
+}

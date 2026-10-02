@@ -1,5 +1,12 @@
 # Bitácora de nuestra revisión del OE1
 
+## Correcciones locales de fusión y configuración — 2026-10-02
+
+- Nueva fusión estricta, con rechazo de bloques/semillas repetidos o contradictorios, agregados corregidos y verificación SHA exacta o conversión CRLF->LF explícita y trazable. Preserva entradas.
+- Empaquetador actualizado para distinguir inyección, margen, plano, selección energética y definiciones de fuente/normalización. Se protege la conservación de bytes de futuras entregas SC3.
+- 56 pruebas locales satisfactorias. Dos bloques reales: 200.000 primarios, 69.995 registros seleccionados y 130.190 sin corte; matriz conservada, exportación y lectura satisfactorias.
+- [Instrucciones de adopción y límites](CORRECCIONES_LOCALES_FUSION_CONFIGURACION.md). Rama estudiantil intacta; no se actualizan SC3 ni su lanzador y no se autoriza campaña física.
+
 ## Revisión de justificación física y producción — 2026-10-02
 
 - Revisada la entrega f9a77ef sin fusionar su rama. Se ejecutan seis análisis y coinciden 3.045 valores numéricos; 114 histogramas históricos reconstruidos coinciden con el manifiesto.

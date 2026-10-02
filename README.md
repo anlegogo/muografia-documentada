@@ -4,9 +4,9 @@ Réplica de trabajo de Andrés Leonardo González Gómez para el material de Rei
 
 ## Estado actual
 
-La entrega de justificación física y producción fue revisada al **2026-10-02**: se reprodujeron sus seis análisis y la fusión de dos bloques de integración, y se contrastaron los histogramas/metadatos de 19 corridas de control (92 millones de primarios). Hay una propuesta de regenerar las 114 vistas, pero **la receta aún no se declara validada y la campaña final no está habilitada**: quedan observaciones físicas, de fusión y de compatibilidad de metadatos.
+La entrega de justificación física y producción fue revisada al **2026-10-02**: se reprodujeron sus seis análisis y la fusión de dos bloques de integración, y se contrastaron los histogramas/metadatos de 19 corridas de control (92 millones de primarios). Hay una propuesta de regenerar las 114 vistas, pero **la receta aún no se declara validada y la campaña final no está habilitada**: quedan observaciones físicas y la adopción de las correcciones técnicas en el flujo de los estudiantes.
 
-Comenzar por la [revisión actual y acciones concretas](objetivo-1/REVISION_FISICA_PRODUCCION_2026-10-02.md). La [cadena local](objetivo-1/CADENA_LOCAL_OE1.md) conserva sus 41 pruebas del contrato anterior y deberá incorporar los campos de configuración nuevos.
+Comenzar por la [revisión actual y acciones concretas](objetivo-1/REVISION_FISICA_PRODUCCION_2026-10-02.md). Las [correcciones locales de fusión y configuración](objetivo-1/CORRECCIONES_LOCALES_FUSION_CONFIGURACION.md) ya incorporan los campos nuevos y reúnen **56 pruebas satisfactorias**; se comprobaron sobre los dos bloques reales. La adopción en SC3 sigue pendiente.
 
 | Evidencia / recurso | Qué contiene |
 |---|---|

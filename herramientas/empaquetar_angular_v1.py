@@ -11,6 +11,7 @@ from pathlib import Path
 import re
 import numpy as np
 from preparar_imagen_angular_v1 import coordinates
+from configuracion_angular import configuration
 
 ROOT=Path(__file__).resolve().parents[1]
 FRACTIONS=np.array([.5,.1,.05,.01])
@@ -54,7 +55,8 @@ def load(path):
             raise ValueError('matriz de conteos inválida')
         for k,v in coord.items():
             if not np.array_equal(z[k],v):raise ValueError('coordenadas inconsistentes')
-    signature={k:m[k] for k in ['grid','binary_sha256','table_sha256','engine','sampling','physics_note','detector','exposure_days']}
+    signature=configuration(m)
+    signature.update({k:m[k] for k in ['binary_sha256','table_sha256']})
     if exposure==-1:signature['fixed_events']=n
     return {'path':path,'meta':m,'coords':coord,'counts':counts,
             'signature':json.dumps(signature,sort_keys=True), 'meta_sha256':sha(mp)}
@@ -63,7 +65,7 @@ def load(path):
 def audit(paths,expected_geometries):
     if not expected_geometries or len(set(expected_geometries))!=len(expected_geometries):
         raise ValueError('lista de geometrías vacía o repetida')
-    report={'schema':'oe1-package-review-v1','physical_validation':False,
+    report={'schema':'oe1-package-review-v1','configuration_contract':'explicit-recipe-v2','physical_validation':False,
             'expected_geometries':sorted(expected_geometries),'errors':[],'missing':[],'references':[]}
     images=[];seen=set();signatures=set();geo_hashes={}
     for p in sorted(map(Path,paths)):

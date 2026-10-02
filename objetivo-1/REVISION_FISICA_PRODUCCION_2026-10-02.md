@@ -1,5 +1,7 @@
 # Revisión de la justificación física y propuesta de producción
 
+> Avance posterior a la revisión: [fusión y compatibilidad corregidas localmente](CORRECCIONES_LOCALES_FUSION_CONFIGURACION.md), 56 pruebas y contraste con los dos bloques reales. Las observaciones físicas siguen abiertas; adoptar la alternativa en SC3 requiere actualizar las herramientas allí.
+
 Revisión del director, 2026-10-02, Colombia. Rama de los estudiantes: `oe1/justificacion-fisica-produccion`, commit **f9a77eff49c01bfd073c00d7d62414e3ce962f9d** (ocho commits sobre `18aa5b1`). [Entrega congelada](https://github.com/anlegogo/muografia-documentada/tree/f9a77eff49c01bfd073c00d7d62414e3ce962f9d/objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion).
 
 **Dictamen: avance sustancial y resultados numéricos reproducibles, con observaciones que impiden declarar validada la receta o habilitar la campaña final.** Se recuperó parte del respaldo histórico, se documentó el entorno, se ejecutaron controles nuevos y existe una propuesta de producción. No basta resolver C6 para dar por cerrada la física. La rama se conserva sin fusionar en `main`.

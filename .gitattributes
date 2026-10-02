@@ -8,3 +8,7 @@ herramientas/ejecutar_complemento_r2_01.sh text eol=lf
 objetivo-1/originales/** -text
 
 objetivo-1/correcciones/**/*.patch text eol=lf
+
+# Evidence hashes refer to exact received bytes. Do not normalize SC3 artifacts.
+# Existing mismatches must be documented; this does not repair old commits.
+objetivo-1/entregas/**/datos/sc3/** -text
