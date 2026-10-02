@@ -1,5 +1,7 @@
 # Preparación de producción del OE1
 
+**Actualización de entrega:** [corrida angular revisada](REVISION_MALLA_ANGULAR_2026-10-01.md): 1.000 primarios y 750 registros, 24 controles del revisor y 31 contrastes satisfactorios. Integración técnica respaldada en SC3; aceptación física y compatibilidad del conjunto final pendientes. Las instrucciones y estados anteriores se conservan como historial.
+
 **Corrección preparada:** [malla azimutal v1](correcciones/malla-angular-v1/README.md). Parche separado, seis pruebas Python satisfactorias; compilación C++ y verificación de integración en Geant4 pendientes.
 
 **Nuevo control local:** [muestreo angular](CONTROL_MUESTREO_ANGULAR.md). Se cuantifica una diferencia en las columnas de borde entre el muestreo de la fuente y la distribución nominal. Resolver la convención angular antes de fijar qué referencias reutilizar.

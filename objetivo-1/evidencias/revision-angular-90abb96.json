@@ -1,0 +1,109 @@
+{
+  "estado": "conforme_control_tecnico",
+  "alcance": "coherencia de archivos; no valida aceptacion fisica, version real de Geant4 ni origen del binario",
+  "nota": "Un log sin patrones de error no garantiza ausencia de todos los fallos. Revisar entorno y procedencia aparte.",
+  "sha256": {
+    "geo-train-01_view0.meta.json": "371a1bb60df3eb8123769e7812f6be4494d01faf4f31ddfd8e122e92ca2458a7",
+    "geo-train-01_view0_hist.csv": "4553ddd2ab6fa36f8356f87d8921bdcbde278b06004412613897e5a0b27cb6cb",
+    "run.log": "d40a79a0c49e635459ebb13163debbbdd3ddceb2f7fe73a81633d226a986655e",
+    "exit_code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "controles": [
+    {
+      "control": "codigo_real_reportado_cero",
+      "ok": true
+    },
+    {
+      "control": "geometria",
+      "ok": true
+    },
+    {
+      "control": "vista",
+      "ok": true
+    },
+    {
+      "control": "events_transported",
+      "ok": true
+    },
+    {
+      "control": "ecomug_draws_total",
+      "ok": true
+    },
+    {
+      "control": "seed",
+      "ok": true
+    },
+    {
+      "control": "threads",
+      "ok": true
+    },
+    {
+      "control": "sin_exposicion_temporal_asignada",
+      "ok": true
+    },
+    {
+      "control": "malla_azimuth_convention",
+      "ok": true
+    },
+    {
+      "control": "malla_n_az",
+      "ok": true
+    },
+    {
+      "control": "malla_n_el",
+      "ok": true
+    },
+    {
+      "control": "malla_az_edges_deg",
+      "ok": true
+    },
+    {
+      "control": "malla_az_step_deg",
+      "ok": true
+    },
+    {
+      "control": "malla_az_first_center_deg",
+      "ok": true
+    },
+    {
+      "control": "malla_az_half_deg",
+      "ok": true
+    },
+    {
+      "control": "malla_el_min_deg",
+      "ok": true
+    },
+    {
+      "control": "malla_el_max_deg",
+      "ok": true
+    },
+    {
+      "control": "malla_elevation_convention",
+      "ok": true
+    },
+    {
+      "control": "histograma_256x256",
+      "ok": true
+    },
+    {
+      "control": "conteos_enteros_no_negativos",
+      "ok": true
+    },
+    {
+      "control": "detectados_coinciden_con_histograma",
+      "ok": true
+    },
+    {
+      "control": "detectados_dentro_presupuesto",
+      "ok": true
+    },
+    {
+      "control": "marca_final_log",
+      "ok": true
+    },
+    {
+      "control": "sin_errores_conocidos_en_log",
+      "ok": true
+    }
+  ]
+}

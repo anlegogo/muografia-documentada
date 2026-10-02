@@ -1,0 +1,147 @@
+{
+  "entrega_commit": "90abb96",
+  "codigo_commit": "0dea8e1e1f8ad1e52ee2024e4c6c968748214a32",
+  "controles": [
+    {
+      "control": "fetch_head",
+      "ok": true
+    },
+    {
+      "control": "entrega:RESUMEN.md",
+      "ok": true
+    },
+    {
+      "control": "entrega:corrida/comando.txt",
+      "ok": true
+    },
+    {
+      "control": "entrega:corrida/entorno.txt",
+      "ok": true
+    },
+    {
+      "control": "entrega:corrida/entradas.sha256",
+      "ok": true
+    },
+    {
+      "control": "entrega:corrida/exit_code.txt",
+      "ok": true
+    },
+    {
+      "control": "entrega:corrida/geo-train-01_view0.meta.json",
+      "ok": true
+    },
+    {
+      "control": "entrega:corrida/geo-train-01_view0_hist.csv",
+      "ok": true
+    },
+    {
+      "control": "entrega:corrida/run.log",
+      "ok": true
+    },
+    {
+      "control": "entrega:prueba-cpp.txt",
+      "ok": true
+    },
+    {
+      "control": "entrega:pruebas-python.txt",
+      "ok": true
+    },
+    {
+      "control": "entrega:revision-angular.json",
+      "ok": true
+    },
+    {
+      "control": "entrega:sacct-30616.txt",
+      "ok": true
+    },
+    {
+      "control": "entrega:slurm-30616.out",
+      "ok": true
+    },
+    {
+      "control": "entrega:smoke_angular_v1.sbatch",
+      "ok": true
+    },
+    {
+      "control": "codigo:scripts/analysis/build_generator_tables.py",
+      "ok": true
+    },
+    {
+      "control": "codigo:scripts/analysis/convertir_tablas_azimut.py",
+      "ok": true
+    },
+    {
+      "control": "codigo:scripts/analysis/test_angular_grid_v1.py",
+      "ok": true
+    },
+    {
+      "control": "codigo:scripts/simulation/geant4_app/include/AzimuthGrid.hh",
+      "ok": true
+    },
+    {
+      "control": "codigo:scripts/simulation/geant4_app/muography_sim.cc",
+      "ok": true
+    },
+    {
+      "control": "codigo:scripts/simulation/geant4_app/src/FluxTables.cc",
+      "ok": true
+    },
+    {
+      "control": "codigo:scripts/simulation/geant4_app/src/RunAction.cc",
+      "ok": true
+    },
+    {
+      "control": "codigo:scripts/simulation/geant4_app/src/SteppingAction.cc",
+      "ok": true
+    },
+    {
+      "control": "codigo:scripts/simulation/geant4_app/tests/test_azimuth_grid.cc",
+      "ok": true
+    },
+    {
+      "control": "codigo:scripts/simulation/surrogate/imaging.py",
+      "ok": true
+    },
+    {
+      "control": "entrada:scripts/simulation/geometry_catalog/geometries/geo-train-01.json",
+      "ok": true
+    },
+    {
+      "control": "entrada:scripts/simulation/geant4_app/tables-az-edges-v1/meta.json",
+      "ok": true
+    },
+    {
+      "control": "entrada:scripts/simulation/geant4_app/tables-az-edges-v1/p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "entrada:scripts/simulation/geant4_app/tables-az-edges-v1/row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "alcance_codigo_solo_parche_y_tablas",
+      "ok": true,
+      "archivos": [
+        "scripts/analysis/build_generator_tables.py",
+        "scripts/analysis/convertir_tablas_azimut.py",
+        "scripts/analysis/test_angular_grid_v1.py",
+        "scripts/simulation/geant4_app/include/AzimuthGrid.hh",
+        "scripts/simulation/geant4_app/muography_sim.cc",
+        "scripts/simulation/geant4_app/src/FluxTables.cc",
+        "scripts/simulation/geant4_app/src/RunAction.cc",
+        "scripts/simulation/geant4_app/src/SteppingAction.cc",
+        "scripts/simulation/geant4_app/tables-az-edges-v1/meta.json",
+        "scripts/simulation/geant4_app/tables-az-edges-v1/p_cdf.txt",
+        "scripts/simulation/geant4_app/tables-az-edges-v1/row_weights_30d.txt",
+        "scripts/simulation/geant4_app/tests/test_azimuth_grid.cc",
+        "scripts/simulation/surrogate/imaging.py"
+      ]
+    },
+    {
+      "control": "informe_revisor_reproducido",
+      "ok": true
+    }
+  ],
+  "fallidos": 0,
+  "limite": "huella del ejecutable reportada; binario y compilacion no reproducidos localmente"
+}

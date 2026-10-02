@@ -1,5 +1,7 @@
 # Corrección propuesta: malla azimutal v1
 
+**Actualización de entrega:** [corrida angular revisada](../../REVISION_MALLA_ANGULAR_2026-10-01.md): 1.000 primarios y 750 registros, 24 controles del revisor y 31 contrastes satisfactorios. Integración técnica respaldada en SC3; aceptación física y compatibilidad del conjunto final pendientes. Las instrucciones y estados anteriores se conservan como historial.
+
 2026-10-01, Colombia. Preparada por el director a partir del trabajo de los estudiantes. **Implementada y probada localmente en Python; compilación C++ y ejecución Geant4 pendientes. No habilita producción definitiva.**
 
 ## Cambio concreto
