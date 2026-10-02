@@ -1,5 +1,11 @@
 # Bitácora de nuestra revisión del OE1
 
+## Preparación local integral — 2026-10-02
+
+- Probabilidades del algoritmo de fuente calculadas desde las tablas v1: ventana nominal 0,6841465610; 20,18 % de masa en filas extrapoladas. Concordancia con la fracción observada de c02; no valida físicamente la extrapolación.
+- Preflight offline de manifiestos k=1/k=10: 114 vistas, 228/1.596 bloques, sin duplicados ni huecos. Integra validación estricta de bloques; no consulta colas ni envía trabajos.
+- Ficha de definición candidata y [balance único de resultados y dependencias](BALANCE_PREPARACION_LOCAL.md). 69 pruebas locales satisfactorias; conserva sin cambios la definición física, los originales, las ramas de estudiantes y la operación de SC3.
+
 ## Diagnóstico del observable con datos conservados — 2026-10-02
 
 - Comparados panel de 1,2 m y planos de 100/600 m para los mismos primarios con E > 3 GeV. En bandas de roca, la contención 100/600 cercana a uno no implica contención en el panel. No se interpreta como eficiencia física ni factor correctivo.

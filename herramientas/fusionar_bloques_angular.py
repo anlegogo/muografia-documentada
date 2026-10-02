@@ -89,6 +89,43 @@ def input_entries(path):
     return result
 
 
+def validate_block(r, source, accept_crlf=False):
+    source = Path(source)
+    geo, view = r['geometria'], r['vista']
+    d = source/geo/f'view{view}'/f"block{r['bloque']:04d}"
+    stem = f'{geo}_view{view}'
+    if (d/'exit_code.txt').read_text().strip() != '0':
+        raise ValueError('bloque fallido: '+str(d))
+    hashes = verify_outputs(d, stem, accept_crlf)
+    _, counts, _, meta, _ = read_image(d/(stem+'_hist.csv'))
+    for key, expected in [('seed', r['semilla']), ('view_index', view),
+                          ('events_transported', r['eventos'])]:
+        if type(meta.get(key)) is not int or meta[key] != expected:
+            raise ValueError('manifiesto contradice '+key)
+    if meta['geometry_id'] != geo or meta.get('exposure_days') != -1:
+        raise ValueError('geometría o exposición incompatible; se requieren bloques N fijo')
+    inputs = input_entries(d/'entradas.sha256')
+    config = configuration(meta)
+    signature = json.dumps({'config': config, 'inputs': inputs, 'threads': meta.get('threads')}, sort_keys=True, allow_nan=False)
+    wall = meta.get('wall_seconds')
+    if type(wall) not in (float, int) or not math.isfinite(wall) or wall < 0:
+        raise ValueError('tiempo inválido')
+    all_count = meta.get('detected_all_energies', meta['detected_in_bins'])
+    if type(all_count) is not int or not meta['detected_in_bins'] <= all_count <= r['eventos']:
+        raise ValueError('conteo sin corte incoherente')
+    if 'reference_histogram' in meta and 'detected_all_energies' not in meta:
+        raise ValueError('falta conteo de todas las energías')
+    mean = meta.get('mean_ekin_detected_gev')
+    if mean is not None and (type(mean) not in (float, int) or not math.isfinite(mean) or mean < 0):
+        raise ValueError('media energética inválida')
+    draws = meta.get('ecomug_draws_total')
+    if type(draws) is not int or draws < r['eventos']:
+        raise ValueError('contador de generación inválido')
+    entry = {'row': r, 'meta': meta, 'counts': counts, 'hashes': hashes,
+             'all_count': all_count, 'mean': mean, 'directory': d, 'signature': signature}
+    return entry
+
+
 def merge(manifest, source, destination, accept_crlf=False):
     source, destination = Path(source), Path(destination)
     if destination.exists():
@@ -96,39 +133,8 @@ def merge(manifest, source, destination, accept_crlf=False):
     rows = manifest_rows(manifest)
     groups = {}
     for r in rows:
-        geo, view = r['geometria'], r['vista']
-        d = source/geo/f'view{view}'/f"block{r['bloque']:04d}"
-        stem = f'{geo}_view{view}'
-        if (d/'exit_code.txt').read_text().strip() != '0':
-            raise ValueError('bloque fallido: '+str(d))
-        hashes = verify_outputs(d, stem, accept_crlf)
-        _, counts, _, meta, _ = read_image(d/(stem+'_hist.csv'))
-        for key, expected in [('seed', r['semilla']), ('view_index', view),
-                              ('events_transported', r['eventos'])]:
-            if type(meta.get(key)) is not int or meta[key] != expected:
-                raise ValueError('manifiesto contradice '+key)
-        if meta['geometry_id'] != geo or meta.get('exposure_days') != -1:
-            raise ValueError('geometría o exposición incompatible; se requieren bloques N fijo')
-        inputs = input_entries(d/'entradas.sha256')
-        config = configuration(meta)
-        signature = json.dumps({'config': config, 'inputs': inputs, 'threads': meta.get('threads')}, sort_keys=True, allow_nan=False)
-        wall = meta.get('wall_seconds')
-        if type(wall) not in (float, int) or not math.isfinite(wall) or wall < 0:
-            raise ValueError('tiempo inválido')
-        all_count = meta.get('detected_all_energies', meta['detected_in_bins'])
-        if type(all_count) is not int or not meta['detected_in_bins'] <= all_count <= r['eventos']:
-            raise ValueError('conteo sin corte incoherente')
-        if 'reference_histogram' in meta and 'detected_all_energies' not in meta:
-            raise ValueError('falta conteo de todas las energías')
-        mean = meta.get('mean_ekin_detected_gev')
-        if mean is not None and (type(mean) not in (float, int) or not math.isfinite(mean) or mean < 0):
-            raise ValueError('media energética inválida')
-        draws = meta.get('ecomug_draws_total')
-        if type(draws) is not int or draws < r['eventos']:
-            raise ValueError('contador de generación inválido')
-        entry = {'row': r, 'meta': meta, 'counts': counts, 'hashes': hashes,
-                 'all_count': all_count, 'mean': mean, 'directory': d, 'signature': signature}
-        groups.setdefault((geo, view), []).append(entry)
+        entry = validate_block(r, source, accept_crlf)
+        groups.setdefault((r['geometria'], r['vista']), []).append(entry)
     prepared = []
     geometry_signatures = {}
     for (geo, view), blocks in sorted(groups.items()):

@@ -1,5 +1,7 @@
 # Pendientes del OE1
 
+> Estado consolidado: [balance de preparación local](BALANCE_PREPARACION_LOCAL.md), con 69 pruebas y ficha candidata. Permanecen las decisiones físicas y la adopción/verificación operativa en SC3.
+
 > Datos ya reanalizados: [panel/plano y bordes con corte de energía](DIAGNOSTICO_OBSERVABLE_Y_DECISION.md). La siguiente decisión está acotada a la definición física; no pedir otra comparación 100/600 para repetir lo ya demostrado.
 
 > Avance posterior a la revisión: [fusión y compatibilidad corregidas localmente](CORRECCIONES_LOCALES_FUSION_CONFIGURACION.md), 56 pruebas y contraste con los dos bloques reales. Las observaciones físicas siguen abiertas; adoptar la alternativa en SC3 requiere actualizar las herramientas allí.

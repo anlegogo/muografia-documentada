@@ -1,0 +1,27 @@
+{
+  "schema": "oe1-source-probability-v1",
+  "physical_validation": false,
+  "margin_deg": 5,
+  "nominal_rate_convention_30d": 36034069.911914065,
+  "extended_elevation_weight_sum": 45145577.76233107,
+  "probability_generated_inside_nominal_window": 0.6841465610179727,
+  "elevation_mass_extrapolated": 0.20182503585145253,
+  "momentum_spectrum_clamped_outside_band_range_probability": 0.20525464967109172,
+  "probability_generated_kinetic_above_3gev": 0.5315774222573431,
+  "probability_kinetic_above_3gev_given_nominal_window": 0.5490909199440219,
+  "vertical_area_over_normal_area_nominal_convention": 0.7845532360554517,
+  "candidate_total_events_per_view": {
+    "1": 52670103,
+    "10": 526701031
+  },
+  "table_sha256": {
+    "meta.json": "65cf778ec9d5e380f67e434638d437822dc22ce9e863e12f684dcbcf63da7e8b",
+    "row_weights_30d.txt": "76698ac167efa8b767597b28c814a1ff88f93b41e032d1e98dd58bd1d9f3ac3d",
+    "p_cdf.txt": "7161c8adf11711139840007dff26178221c4cfbff8fc3253cabdda50c533f6ae"
+  },
+  "limits": [
+    "Probabilities of the implemented sampler, not validation of extrapolated physical flux.",
+    "Generated energy probability is not detected-energy acceptance after rock.",
+    "Area ratio is a convention comparison, not an applied correction."
+  ]
+}

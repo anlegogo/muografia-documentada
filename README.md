@@ -6,9 +6,7 @@ Réplica de trabajo de Andrés Leonardo González Gómez para el material de Rei
 
 La entrega de justificación física y producción fue revisada al **2026-10-02**: se reprodujeron sus seis análisis y la fusión de dos bloques de integración, y se contrastaron los histogramas/metadatos de 19 corridas de control (92 millones de primarios). Hay una propuesta de regenerar las 114 vistas, pero **la receta aún no se declara validada y la campaña final no está habilitada**: quedan observaciones físicas y la adopción de las correcciones técnicas en el flujo de los estudiantes.
 
-Comenzar por la [revisión actual y acciones concretas](objetivo-1/REVISION_FISICA_PRODUCCION_2026-10-02.md). Las [correcciones locales de fusión y configuración](objetivo-1/CORRECCIONES_LOCALES_FUSION_CONFIGURACION.md) ya incorporan los campos nuevos y reúnen **56 pruebas satisfactorias**; se comprobaron sobre los dos bloques reales. La adopción en SC3 sigue pendiente.
-
-Avance adicional: [diagnóstico del observable y decisión física](objetivo-1/DIAGNOSTICO_OBSERVABLE_Y_DECISION.md), con los datos ya conservados y **60 pruebas locales**. No requiere repetir corridas para obtener estos resultados.
+Comenzar por el [balance de preparación local](objetivo-1/BALANCE_PREPARACION_LOCAL.md): cadena técnica corregida, probabilidades de fuente calculadas, manifiestos revisados y **69 pruebas locales satisfactorias**. La definición candidata y las dependencias pendientes están reunidas allí. Las revisiones anteriores conservan la evidencia y la cronología.
 
 | Evidencia / recurso | Qué contiene |
 |---|---|
