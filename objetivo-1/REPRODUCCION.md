@@ -1,5 +1,7 @@
 # Verificación y reproducción del OE1
 
+**Estado consolidado:** consultar [cadena local preparada](CADENA_LOCAL_OE1.md). Lectura, representación, ROI y empaquetado nuevos implementados; las descripciones de pasos pendientes anteriores en esta página son históricas. Validación física y producción final aún abiertas.
+
 ## Verificar la copia recibida
 
 Desde la raíz de esta réplica, con Python 3.9 o superior:

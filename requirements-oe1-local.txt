@@ -1,0 +1,4 @@
+# Entorno efectivamente probado: Python 3.12.14 en Windows.
+# Cadena local nueva; no instala Geant4 ni dependencias de entrenamiento.
+numpy==2.4.4
+matplotlib==3.11.1

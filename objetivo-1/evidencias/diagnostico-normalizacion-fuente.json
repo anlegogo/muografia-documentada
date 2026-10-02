@@ -1,0 +1,32 @@
+{
+  "scope": "lectura de formulas y tablas; no es correccion ni validacion de exposicion",
+  "surrogate_air_path_m": 3000,
+  "surrogate_air_density_g_cm3": 0.001225,
+  "surrogate_air_opacity_g_cm2": 367.5,
+  "surrogate_minimum_energy_from_air_gev": 0.7980614314412022,
+  "spectrum_min_kinetic_per_band_gev": [
+    0.48870629681381744,
+    0.4082915499926321,
+    0.40719748187485144,
+    0.40553309208662275,
+    0.40562017058670924,
+    0.4055780988692053,
+    0.40578063157793137,
+    0.40541372712851026,
+    0.4053912240381285,
+    0.4053912240381285,
+    0.40539905119498226,
+    0.405385353674001,
+    0.4054019863801824,
+    0.4053922024324425,
+    0.40539611601053477,
+    0.4053902456438981
+  ],
+  "bands_with_minimum_kinetic_below_surrogate_air_threshold": 16,
+  "spectrum_bands": 16,
+  "source_sha256": {
+    "flux_model.py": "40a75dd3684697f84b0c40566701ff412bcb4c5f7ee1e662217652943261ef4a",
+    "p_cdf.txt": "7161c8adf11711139840007dff26178221c4cfbff8fc3253cabdda50c533f6ae"
+  },
+  "interpretation": "La tasa lambda/transmission del surrogate usa phi_sky con umbral de aire; la tabla de momento no usa ese mismo corte inferior. Aclarar a que superficie y espectro corresponde la normalizacion antes del transporte Geant4. Esto no cuantifica por si solo un sesgo ni demuestra doble conteo de perdidas."
+}

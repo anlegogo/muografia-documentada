@@ -1,5 +1,7 @@
 # Preparación de producción del OE1
 
+**Estado consolidado:** consultar [cadena local preparada](CADENA_LOCAL_OE1.md). Lectura, representación, ROI y empaquetado nuevos implementados; las descripciones de pasos pendientes anteriores en esta página son históricas. Validación física y producción final aún abiertas.
+
 **Pendiente físico precisado:** [aceptación del plano de conteo](REVISION_ACEPTACION_PLANO.md). La convergencia al ampliar el plano no demuestra por sí sola equivalencia con un detector pequeño; se documenta un contraejemplo matemático y la evidencia a revisar antes de otro ensayo.
 
 **Adaptación local:** [lector y exportador angular](ADAPTACION_LECTURA_ANGULAR.md) probado con los 750 conteos reales; pendientes ROI, consumidores finales y aceptación física.

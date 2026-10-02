@@ -1,0 +1,493 @@
+{
+  "schema": "oe1-package-review-v1",
+  "physical_validation": false,
+  "expected_geometries": [
+    "geo-gen-01",
+    "geo-test-01",
+    "geo-test-02",
+    "geo-test-03",
+    "geo-train-01",
+    "geo-train-02",
+    "geo-train-03",
+    "geo-train-04",
+    "geo-train-05",
+    "geo-train-06",
+    "geo-train-07",
+    "geo-train-08",
+    "geo-train-09",
+    "geo-train-10",
+    "geo-train-11",
+    "geo-train-12",
+    "geo-val-01",
+    "geo-val-02",
+    "geo-val-03"
+  ],
+  "errors": [],
+  "missing": [
+    {
+      "geometry_id": "geo-gen-01",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-gen-01",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-gen-01",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-gen-01",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-gen-01",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-gen-01",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-test-01",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-test-01",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-test-01",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-test-01",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-test-01",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-test-01",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-test-02",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-test-02",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-test-02",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-test-02",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-test-02",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-test-02",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-test-03",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-test-03",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-test-03",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-test-03",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-test-03",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-test-03",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-train-01",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-train-01",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-train-01",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-train-01",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-train-01",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-train-02",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-train-02",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-train-02",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-train-02",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-train-02",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-train-02",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-train-03",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-train-03",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-train-03",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-train-03",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-train-03",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-train-03",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-train-04",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-train-04",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-train-04",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-train-04",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-train-04",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-train-04",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-train-05",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-train-05",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-train-05",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-train-05",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-train-05",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-train-05",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-train-06",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-train-06",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-train-06",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-train-06",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-train-06",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-train-06",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-train-07",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-train-07",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-train-07",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-train-07",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-train-07",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-train-07",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-train-08",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-train-08",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-train-08",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-train-08",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-train-08",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-train-08",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-train-09",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-train-09",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-train-09",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-train-09",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-train-09",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-train-09",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-train-10",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-train-10",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-train-10",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-train-10",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-train-10",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-train-10",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-train-11",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-train-11",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-train-11",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-train-11",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-train-11",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-train-11",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-train-12",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-train-12",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-train-12",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-train-12",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-train-12",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-train-12",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-val-01",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-val-01",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-val-01",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-val-01",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-val-01",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-val-01",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-val-02",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-val-02",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-val-02",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-val-02",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-val-02",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-val-02",
+      "view": 5
+    },
+    {
+      "geometry_id": "geo-val-03",
+      "view": 0
+    },
+    {
+      "geometry_id": "geo-val-03",
+      "view": 1
+    },
+    {
+      "geometry_id": "geo-val-03",
+      "view": 2
+    },
+    {
+      "geometry_id": "geo-val-03",
+      "view": 3
+    },
+    {
+      "geometry_id": "geo-val-03",
+      "view": 4
+    },
+    {
+      "geometry_id": "geo-val-03",
+      "view": 5
+    }
+  ],
+  "references": [
+    {
+      "geometry_id": "geo-train-01",
+      "view": 0,
+      "npz_sha256": "ecf4e24803a9f94ab375901afbc2d5048c07fa379f56bec4c22898c5a22cf4de",
+      "meta_sha256": "4cf6b0d49910a98bc2b9cf447e6bf311ef551f32393bf8bf2774b2e8aec464a3",
+      "counts": 750
+    }
+  ],
+  "technical_complete": false,
+  "actual_references": 1,
+  "target_references": 114,
+  "target_pairs": 9120
+}

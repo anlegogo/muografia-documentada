@@ -1,0 +1,15 @@
+{
+  "scope": "historia disponible de refs locales actualizadas y 0dea8e1, sin acceso a SC3",
+  "shallow": "false",
+  "searched_paths": {
+    "docs/reports/phase-b-sc3-runbook.md": [],
+    "docs/research-log/2026-W36.md": [],
+    "run_campaign.py": [],
+    "run_pilot.py": [],
+    "dataset/DATASHEET.md": []
+  },
+  "related_objects": [
+    "5447e5ff93690d6df34c2c991a351ce322bbc4c1 results/simulation/stage-09-engine-comparison.json"
+  ],
+  "limite": "no demuestra ausencia en discos SC3, Drive ni otras ramas no descargadas"
+}

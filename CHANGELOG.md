@@ -1,5 +1,12 @@
 # Registro de cambios
 
+## Consolidación de la cadena local — 2026-10-01, Colombia
+
+- Por autorización del director se completa una alternativa de representación, auditoría multivista y empaquetado binomial versionado: seis vistas por geometría, 80 pares por vista, semillas estables por identidad y uint32 sin recorte. No se generan referencias físicas inexistentes.
+- 41 pruebas satisfactorias. Se reexporta la vista real de 750 conteos con huellas de ejecutable/tablas y se representa con bordes correctos; figura inspeccionada y corregida. Auditoría real: una vista de prueba, no campaña final.
+- Se amplía la búsqueda de respaldo en historia Git y se documenta la superficie/umbral de aire de la normalización heredada. No se afirma un sesgo físico cuantificado.
+- README, matriz y pendientes consolidados para eliminar estados contradictorios. [Guía única, comandos y siguiente entrega](objetivo-1/CADENA_LOCAL_OE1.md). Requiere evidencia de convergencia/normalización y receta SC3 antes de fijar producción. No se envían mensajes ni trabajos al supercomputador.
+
 ## Aceptación del plano: revisión conceptual — 2026-10-01, Colombia
 
 - Se revisa la evidencia local de planos 100/300/600 m y se distingue convergencia numérica de aceptación del panel físico. La cota histórica respecto a la asíntota no se reproduce con los materiales identificados.

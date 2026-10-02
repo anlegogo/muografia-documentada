@@ -49,6 +49,15 @@ def read_image(hist):
             raise ValueError('huellas de geometría contradictorias')
         meta['geometry_sha256']=matches[0]
         meta['geometry_provenance_manifest_sha256']=hashlib.sha256(provenance.read_bytes()).hexdigest()
+        entries=[line.split() for line in provenance.read_text().splitlines() if len(line.split())==2]
+        def unique_hash(ending):
+            found=[h for h,p in entries if p.replace('\\','/').endswith(ending)]
+            if len(found)!=1 or not re.fullmatch('[0-9a-f]{64}',found[0]):
+                raise ValueError('procedencia incompleta o ambigua: '+ending)
+            return found[0]
+        meta['binary_sha256']=unique_hash('/muography_sim')
+        meta['table_sha256']={name:unique_hash('/tables-az-edges-v1/'+name)
+                              for name in ['meta.json','row_weights_30d.txt','p_cdf.txt']}
     coords = coordinates(meta)
     rows = list(csv.reader(hist.read_text(encoding='utf-8-sig').splitlines()))
     if len(rows)!=256 or any(len(r)!=256 for r in rows):

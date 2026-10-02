@@ -1,0 +1,28 @@
+{
+  "tests": 41,
+  "failures": 0,
+  "errors": 0,
+  "utc": "2026-10-02T04:06:51.925585+00:00",
+  "python": "3.12.14",
+  "numpy": "2.4.4",
+  "matplotlib": "3.11.1",
+  "source_hashes": {
+    "analizar_roi_angular_v1.py": "e8696c61b3d1b5c27aa0450c17e3d1ff018ee45f393ac965dd9cd168fbe9a9cb",
+    "auditar_muestreo_angular.py": "4be905106abec128e709366a5855cb3a3a310ed131dfddb5dc876c68c632163a",
+    "empaquetar_angular_v1.py": "fe1048fb9768cfff3442301f7aaa3f70cc74d1c3d49c6ca45cef030f59f93df4",
+    "preparar_imagen_angular_v1.py": "61e2e4e6ea37ddececd6902a77c23cceb54baebd8ad481f4998b0089d6fdde02",
+    "preparar_roi_angular_v1.py": "caf3bbf93f3a06cb2053bd26ee9b504381608a414895b0301a801d77c5c429f9",
+    "revisar_smoke_angular.py": "12f7dd4e1093f6f04e1edf88a9bdba1561325e8d9391310cc4fec51c2bad991f",
+    "test_analizar_roi_angular_v1.py": "76a5b836ac29f540d9b1416310d0884f26573f2330ae74b775ccda688201ab6f",
+    "test_empaquetar_angular_v1.py": "7a464650e8a8d426c0293679c7925c7e76a93ca32dd33fc5485f495a3b6f35cd",
+    "test_preparar_imagen_angular_v1.py": "4f01c5286cf97141d464c22c6ee20b9950b404318f9ec918d1d4e8be7f3e3e16",
+    "test_revisar_smoke_angular.py": "6d0777affcb1bbea6b4044f7d600eb6bbba8e24c406c08541c334d10c2f84dce",
+    "test_roi_angular_v1.py": "1bdc02fda956387ae39ab4a63ab58a6589e0cd6e06836fa047f19eb88b0e2e98",
+    "visualizar_angular_v1.py": "42fe48acb80c2813a6dff7cd0df40f5e6d65331687dbde2cbda1fb8c47ccb1e2"
+  },
+  "actual_data": "90abb96: geo-train-01 view0, 1000 primarios, 750 registros",
+  "actual_inventory": "disponibilidad-campana-angular.json",
+  "geant4_executed_locally": false,
+  "physical_validation_complete": false,
+  "figure_sha256": "784605447d6c28e7306bd4a8dc86b5d508c883337568c4249723b7caca5547ef"
+}

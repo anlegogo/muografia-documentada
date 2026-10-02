@@ -1,32 +1,30 @@
 # Pendientes del OE1
 
-**Pendiente físico precisado:** [aceptación del plano de conteo](REVISION_ACEPTACION_PLANO.md). La convergencia al ampliar el plano no demuestra por sí sola equivalencia con un detector pequeño; se documenta un contraejemplo matemático y la evidencia a revisar antes de otro ensayo.
+Estado consolidado al 2026-10-01, Colombia. **P-01 a P-04 continúan abiertos**, con avances diferentes. La integración angular en SC3 ya fue recibida y revisada; no sigue pendiente repetir la prueba de 1.000 muones.
 
-**Actualización de entrega:** [corrida angular revisada](REVISION_MALLA_ANGULAR_2026-10-01.md): 1.000 primarios y 750 registros, 24 controles del revisor y 31 contrastes satisfactorios. Integración técnica respaldada en SC3; aceptación física y compatibilidad del conjunto final pendientes. Las instrucciones y estados anteriores se conservan como historial.
+| ID | Avance respaldado | Qué falta para cerrar |
+|---|---|---|
+| P-01 · geometría y datos corregidos | Se identificaron seis geometrías afectadas; se recibió evidencia de controles geométricos de B. Etapas 1, complemento y etapa 2 revisados; se cuantificó el efecto observado en el caso estudiado, con resultado estadístico inconcluso. | Decidir el alcance de sustitución y producir referencias compatibles con la definición final. No extrapolar equivalencia a todo el catálogo ni mezclar mallas antiguas y nuevas. |
+| P-02 · entorno reproducible | Registros SC3 respaldan Geant4 11.4.2 y GCC 14.2.0 en la corrida angular; código y tablas coinciden con el parche. Entorno Python de análisis documentado. | Completar receta de compilación y paquetes de datos físicos, bibliotecas/opciones y configuración de producción. No declarar equivalente el Docker histórico 11.3.2. |
+| P-03 · reproducción de la cadena | Se reprodujeron los 9.120 pares históricos y se implementó una alternativa local versionada para lectura, ROI, representación y empaquetado, con 41 pruebas. | La alternativa de transporte/ejecución de campaña final y su ficha definitiva aún no están fijadas; recuperar antecedentes que sean necesarios para justificar física y operación. |
+| P-04 · aceptación y normalización física | Malla angular corregida y comprobada; regiones analíticas contrastadas; discrepancia conceptual entre convergencia del plano y aceptación del panel delimitada. | Justificar el observable, el plano de 600 m, generación espacial, aceptación angular y relación de conteos con exposición. Revisar respaldo existente y definir un control dirigido solo si es necesario. |
 
-**Corrección preparada:** [malla azimutal v1](correcciones/malla-angular-v1/README.md). Parche separado, seis pruebas Python satisfactorias; compilación C++ y verificación de integración en Geant4 pendientes.
+El pendiente principal es P-04. Las herramientas no pueden sustituir una definición física ni producir el respaldo de SC3 que aún no está compartido.
 
-**Nuevo control local:** [muestreo angular](CONTROL_MUESTREO_ANGULAR.md). Se cuantifica una diferencia en las columnas de borde entre el muestreo de la fuente y la distribución nominal. Resolver la convención angular antes de fijar qué referencias reutilizar.
+## Siguiente entrega necesaria
 
-**Preparación actual:** [alcance de producción y decisiones de normalización](PREPARACION_PRODUCCION_OE1.md). Inventario verificado de 114 referencias; 36 candidatas a regenerar y 78 de reutilización condicionada. Primero resolver la definición del observable y la receta de producción.
+Solicitar los archivos, comandos, semillas y conteos de la convergencia de planos 100/300/600 m y de cualquier tamaño adicional, junto con la explicación de qué representa la imagen y cómo se normaliza el conteo. Añadir la receta del entorno y ejecución. **No pedir otra corrida de integración angular ni una campaña grande todavía.**
 
-**Paso actual:** [auditoría completa de etapa 2](AUDITORIA_COMPLETA_ETAPA_2_2026-10-01.md). Verificados los 85 archivos, las 27 listas y los 55 registros completos; conteos e intervalo reproducidos. Resultado estadístico inconcluso. Preparar producción B resolviendo entorno, normalización y alcance; las precisiones de interpretación E2-01/E2-02/E2-04 quedan documentadas. OE1 y P-01…P-04 siguen abiertos.
+La [cadena local](CADENA_LOCAL_OE1.md) contiene el procedimiento y el mensaje preparado. La búsqueda en la historia disponible no localizó el runbook ni el paquete específico de convergencia; eso no prueba que no existan en SC3.
 
-**Ejecución recibida:** etapa 2 realizada en SC3 por los estudiantes y [auditada íntegramente](AUDITORIA_COMPLETA_ETAPA_2_2026-10-01.md); no se añaden corridas ni se inicia producción definitiva con esta revisión. Se preservan las entregas en sus ramas y los diseños congelados.
+## Evidencia de referencia
 
-Todos los siguientes puntos permanecen abiertos; no se asigna a los estudiantes una actividad como realizada sin evidencia.
+- [Corrida angular de 1.000 primarios](REVISION_MALLA_ANGULAR_2026-10-01.md).
+- [Auditoría completa de etapa 2](AUDITORIA_COMPLETA_ETAPA_2_2026-10-01.md).
+- [Aceptación del plano](REVISION_ACEPTACION_PLANO.md).
+- [Diagnóstico de geometrías](DIAGNOSTICO_GEOMETRIAS.md).
+- [Preparación de producción](PREPARACION_PRODUCCION_OE1.md).
 
-**Estado al 29 de septiembre:** la [primera entrega revisada](REVISION_ENTREGA_2026-09-29.md) respalda controles geométricos favorables de B en 114 casos y la reproducción exacta de una vista histórica. P-01 avanza en corrección geométrica, pero conserva pendiente el impacto físico y la decisión de regeneración; P-02 avanza para ese entorno/caso SC3, sin certificar otros entornos. P-03/P-04 continúan abiertos. El nuevo encargo es una [propuesta de ensayo](DISENO_SIGUIENTE_ENSAYO_OE1.md), no repetir las 114 vistas.
+Las seis geometrías históricamente afectadas son geo-gen-01, geo-test-01, geo-test-03, geo-train-06, geo-train-08 y geo-train-11. El plan de 36 referencias sustituidas y 78 reutilizadas era condicional a conservar el observable y la malla. La adopción de az-edges-v1 obliga a revisar esa compatibilidad; no autoriza reutilización por cambiar las etiquetas.
 
-**Actualización de revisión:** el [diagnóstico local](DIAGNOSTICO_GEOMETRIAS.md) demuestra intersecciones en cuatro geometrías y salidas del edificio en otras dos. Los [9.120 pares se reprodujeron](REVISION_DATOS.md); ese resultado no cierra P-01. Las [instrucciones de SC3](INSTRUCCIONES_ESTUDIANTES.md) preparan el siguiente ensayo.
-
-| ID | Hallazgo / necesidad | Evidencia | Condición de cierre |
-|---|---|---|---|
-| P-01 | Advertencias de solapamiento de volúmenes Geant4 | 68 de 199 logs incluyen GeomVol1002, contando duplicados; seis geometrías identificadas en el registro | Revisar construcción geométrica, ejecutar controles sin solapamientos y comparar conteos/contrastes antes y después. Cuantificar impacto y decidir qué datos deben regenerarse. |
-| P-02 | Entornos históricos diferentes | Dockerfile declara v11.3.2; entorno SC3 y datos declaran 11.4.2 | Documentar y comprobar el entorno que reproduce la campaña, incluidas dependencias y generador. No asumir equivalencia entre versiones. |
-| P-03 | Reproducción histórica incompleta | Bitácora refiere `run_campaign.py`, `run_pilot.py`, `dataset/DATASHEET.md` y documentos de etapas no presentes; piloto gráfico depende de CSV histórico no entregado | Obtener originales si son necesarios para repetir esos pasos, o documentar una alternativa reproducible claramente identificada como nueva. |
-| P-04 | Transferencia de controles analíticos a campaña Geant4 | Validación surrogate y comparación entre motores recibidas | Identificar controles aplicables al transporte final y justificar sensibilidad al flujo, área de generación y normalización temporal; no extrapolar automáticamente el éxito del surrogate. |
-
-Geometrías con advertencias identificadas: `geo-gen-01`, `geo-test-01`, `geo-test-03`, `geo-train-06`, `geo-train-08`, `geo-train-11`. La corrección de trazado de ROI mencionada en la revisión global no corrige por sí misma la construcción de volúmenes Geant4. El efecto sobre resultados no se ha cuantificado: no se afirma que todos los datos sean inválidos ni que las advertencias sean inocuas.
-
-[Detalle de advertencias](evidencias/advertencias-simulacion.json). Una futura corrección tendrá código, datos derivados y comparación separados de los originales.
+Las observaciones históricas y sus fechas se conservan en la [bitácora](BITACORA.md), los informes correspondientes y el historial Git. Esta página expresa el estado actual, no una nueva calificación académica.

@@ -2,6 +2,7 @@
 
 | Documento | Pregunta que responde |
 |---|---|
+| [Cadena local y estado consolidado](../objetivo-1/CADENA_LOCAL_OE1.md) | ¿Qué está preparado, cómo se ejecuta y qué falta recibir? |
 | [Aceptación del plano de conteo](../objetivo-1/REVISION_ACEPTACION_PLANO.md) | ¿Qué demuestra la convergencia del plano y qué falta justificar físicamente? |
 | [Regiones angulares v1](../objetivo-1/REGIONES_ANGULARES_V1.md) | ¿Qué regiones candidatas calculamos con los nuevos centros? |
 | [Lectura y exportación angular](../objetivo-1/ADAPTACION_LECTURA_ANGULAR.md) | ¿Cómo preservar conteos y coordenadas sin mezclar versiones? |

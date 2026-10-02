@@ -1,5 +1,7 @@
 # Adaptación local de lectura y exportación angular
 
+**Estado consolidado:** consultar [cadena local preparada](CADENA_LOCAL_OE1.md). Lectura, representación, ROI y empaquetado nuevos implementados; las descripciones de pasos pendientes anteriores en esta página son históricas. Validación física y producción final aún abiertas.
+
 **Integración disponible:** lectura → exportación → conteos por ROI candidata, con controles de geometría, vista, coordenadas y huellas. Ocho pruebas del analizador y nueve del exportador pasan. No constituye todavía el empaquetado definitivo ni habilita el modo de listas del simulador.
 
 **Avance en regiones:** [seis ROI geométricas candidatas de geo-train-06](REGIONES_ANGULARES_V1.md), contrastadas sobre 393.216 rayos; no sustituyen las máscaras congeladas.

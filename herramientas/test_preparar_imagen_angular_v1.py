@@ -56,7 +56,7 @@ class ImageExportTests(unittest.TestCase):
         self.assertFalse(self.target.exists())
 
     def test_geometry_manifest_is_preserved(self):
-        (self.fixture.root/'entradas.sha256').write_text('a'*64+'  scripts/simulation/geometry_catalog/geometries/geo-train-01.json\n')
+        (self.fixture.root/'entradas.sha256').write_text('a'*64+'  scripts/simulation/geometry_catalog/geometries/geo-train-01.json\n' + 'b'*64+'  build/muography_sim\n' + ''.join('c'*64+'  scripts/simulation/geant4_app/tables-az-edges-v1/'+name+'\n' for name in ['meta.json','p_cdf.txt','row_weights_30d.txt']))
         export([self.hist],self.target)
         meta=json.loads((self.target/'geo-train-01_view0.meta.json').read_text())
         self.assertEqual(meta['geometry_sha256'],'a'*64)
