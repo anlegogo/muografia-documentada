@@ -1,5 +1,7 @@
 # Preparación de producción del OE1
 
+**Adaptación local:** [lector y exportador angular](ADAPTACION_LECTURA_ANGULAR.md) probado con los 750 conteos reales; pendientes ROI, consumidores finales y aceptación física.
+
 **Actualización de entrega:** [corrida angular revisada](REVISION_MALLA_ANGULAR_2026-10-01.md): 1.000 primarios y 750 registros, 24 controles del revisor y 31 contrastes satisfactorios. Integración técnica respaldada en SC3; aceptación física y compatibilidad del conjunto final pendientes. Las instrucciones y estados anteriores se conservan como historial.
 
 **Corrección preparada:** [malla azimutal v1](correcciones/malla-angular-v1/README.md). Parche separado, seis pruebas Python satisfactorias; compilación C++ y verificación de integración en Geant4 pendientes.

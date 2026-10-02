@@ -1,0 +1,12 @@
+test_rejects_duplicate_view (test_preparar_imagen_angular_v1.ImageExportTests.test_rejects_duplicate_view) ... ok
+test_rejects_inconsistent_grid (test_preparar_imagen_angular_v1.ImageExportTests.test_rejects_inconsistent_grid) ... ok
+test_rejects_legacy_before_writing (test_preparar_imagen_angular_v1.ImageExportTests.test_rejects_legacy_before_writing) ... ok
+test_rejects_mixed_batch_without_partial_output (test_preparar_imagen_angular_v1.ImageExportTests.test_rejects_mixed_batch_without_partial_output) ... ok
+test_rejects_overwrite (test_preparar_imagen_angular_v1.ImageExportTests.test_rejects_overwrite) ... ok
+test_rejects_uint32_overflow (test_preparar_imagen_angular_v1.ImageExportTests.test_rejects_uint32_overflow) ... ok
+test_roundtrip_preserves_pixels_and_coordinates (test_preparar_imagen_angular_v1.ImageExportTests.test_roundtrip_preserves_pixels_and_coordinates) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.478s
+
+OK

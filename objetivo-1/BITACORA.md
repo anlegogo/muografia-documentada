@@ -1,5 +1,10 @@
 # Bitácora de nuestra revisión del OE1
 
+## Lectura y exportación angular — 2026-10-01, Colombia
+
+- Nueva herramienta con coordenadas explícitas y rechazo de mallas incompatibles. Exportación de la entrega 90abb96: 750 conteos conservados píxel a píxel. Siete pruebas específicas satisfactorias.
+- [Adaptación y auditoría de consumidores](ADAPTACION_LECTURA_ANGULAR.md): no se modifica la cadena histórica; ROI y empaquetado definitivo continúan pendientes. No se ejecuta Geant4 ni se solicita otra corrida.
+
 ## Revisión de entrega angular — 2026-10-01, Colombia
 
 - Entrega 90abb96 y código 0dea8e1: 1.000 primarios, 750 registros; 24 controles locales y 31 contrastes de huellas/código satisfactorios. Se recibe evidencia de prueba C++ y corrida Geant4 en SC3.
