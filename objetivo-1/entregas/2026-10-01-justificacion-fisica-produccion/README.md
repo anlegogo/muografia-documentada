@@ -1,10 +1,10 @@
 # Justificación física y plan de producción del conjunto de imágenes del OE1
 
-Entrega del 2026-10-01 (Colombia). Rama `oe1/justificacion-fisica-produccion`, creada desde `main` en `18aa5b1`.
+Entrega del 2026-10-01 (Colombia), con comprobaciones en SC3 del 2026-10-02. Rama `oe1/justificacion-fisica-produccion`, creada desde `main` en `18aa5b1`.
 
 Esta entrega responde a la solicitud de [PENDIENTES.md](../../PENDIENTES.md) y [CADENA_LOCAL_OE1.md](../../CADENA_LOCAL_OE1.md): los archivos, comandos, semillas y conteos de la comparación de planos de conteo; la relación del conteo con el detector de 1,2 m y con la exposición; y un plan de producción. Se revisaron los seis commits del director posteriores a `f35ee7c`: `ac0277c`, `963697b`, `63ecb65`, `c63e296`, `2036cf1` y `18aa5b1`. Contienen la revisión de la corrida angular, el exportador, las regiones, la integración de ROI, la [revisión de la aceptación del plano](../../REVISION_ACEPTACION_PLANO.md) y la cadena local. No traen instrucciones que contradigan la solicitud.
 
-No se lanzaron simulaciones. Todo el análisis se hizo sobre datos existentes en SC3 y en los repositorios. No se modificaron `main`, `originales/` ni entregas anteriores.
+Los puntos 1 y 2 se analizaron sobre datos existentes en SC3 y en los repositorios. Las comprobaciones del punto 3 (C1, C2, C4 y C5) se ejecutaron en SC3 en trabajos cortos: 30621, 30622, 30625 y 30626, unas 16,7 h-núcleo en total. Además, una prueba de integración de la cadena de producción usó dos bloques de 10⁵ primarios. **No se lanzó la producción del conjunto.** No se modificaron `main`, `originales/`, entregas anteriores ni el árbol de producción `angular-v1` de SC3.
 
 ## Contenido
 
@@ -15,11 +15,13 @@ No se lanzaron simulaciones. Todo el análisis se hizo sobre datos existentes en
 | [scripts/relacion_plano_detector.py](scripts/relacion_plano_detector.py) | Punto 2a; figura 3; [relacion-plano-detector.json](resultados/relacion-plano-detector.json) |
 | [scripts/exposicion_equivalente.py](scripts/exposicion_equivalente.py) | Punto 2b; figura 4; [exposicion-equivalente.json](resultados/exposicion-equivalente.json) |
 | [scripts/consistencia_espectro.py](scripts/consistencia_espectro.py) | Punto 2c; figura 5; [consistencia-espectro.json](resultados/consistencia-espectro.json) |
+| [scripts/controles_sc3.py](scripts/controles_sc3.py) | Punto 3: C1, C2, C4 y C5 sobre las corridas de SC3; figuras 7 y 8; [controles-sc3.json](resultados/controles-sc3.json) |
 | [scripts/plan_produccion.py](scripts/plan_produccion.py) | Punto 4; figura 6; [plan-produccion.json](resultados/plan-produccion.json); manifiestos |
-| [PUNTOS_NO_DEMOSTRADOS.md](PUNTOS_NO_DEMOSTRADOS.md) | Punto 3: seis comprobaciones con pregunta, comparación y criterio |
+| [PUNTOS_NO_DEMOSTRADOS.md](PUNTOS_NO_DEMOSTRADOS.md) | Punto 3: seis comprobaciones con pregunta, comparación, criterio y **resultado** |
+| [controles/](controles/) | Parches de diagnóstico (v1, v2 y v3) y sbatch de las comprobaciones |
 | [PLAN_PRODUCCION.md](PLAN_PRODUCCION.md) | Punto 4: vistas, criterio de N, cómputo, almacenamiento y comandos |
-| [produccion/](produccion/) | `bloque_v1.sbatch`, `lanzar_v1.py`, `fusionar_v1.py` y manifiestos con k = 1 y k = 2 |
-| [datos/sc3/](datos/sc3/) | Evidencia copiada de SC3: metadatos, histogramas y logs de 29475/29477/29480/29484; 114 metadatos de campaña; extractos de `sacct`; scripts SLURM históricos |
+| [produccion/](produccion/) | `preparar_arbol_receta.sh`, `bloque_v1.sbatch`, `lanzar_v1.py`, `fusionar_v1.py`, `prueba_integracion.sh` y manifiestos de la receta con k = 1 y k = 10 |
+| [datos/sc3/](datos/sc3/) | Evidencia copiada de SC3: metadatos, histogramas y logs de 29475/29477/29480/29484; 114 metadatos de campaña; extractos de `sacct`; scripts SLURM históricos; `controles-30621/30622/30625/30626` (corridas completas con huellas verificadas); `prueba-integracion/`; receta de entorno (`receta-entorno-geant4.txt`) |
 
 ## Uso
 
@@ -30,10 +32,11 @@ python objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/scripts/co
 python objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/scripts/relacion_plano_detector.py
 python objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/scripts/exposicion_equivalente.py
 python objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/scripts/consistencia_espectro.py
+python objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/scripts/controles_sc3.py
 python objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/scripts/plan_produccion.py --campana RUTA/campaign-merged
 ```
 
-Cada script tarda menos de 35 s. Los cuatro primeros solo leen archivos versionados. El último necesita los 114 histogramas fusionados de SC3 (`~/muography-scratch/campaign-merged`, 26 MB, sin versionar), cuyas huellas comprueba contra `datos/sc3/campaign-manifest.csv` antes de usarlos. Los JSON registran el entorno. Los scripts no usan números aleatorios, salvo la medición del tamaño del NPZ, que tiene semilla fija.
+Cada script tarda menos de 1 min. Los cinco primeros solo leen archivos versionados; `plan_produccion.py` usa además `controles-sc3.json`, así que se ejecuta después. El último necesita los 114 histogramas fusionados de SC3 (`~/muography-scratch/campaign-merged`, 26 MB, sin versionar), cuyas huellas comprueba contra `datos/sc3/campaign-manifest.csv` antes de usarlos. Los JSON registran el entorno. Los scripts no usan números aleatorios, salvo la medición del tamaño del NPZ, que tiene semilla fija.
 
 ---
 
@@ -61,6 +64,8 @@ Todas las corridas usan geo-train-01, vista 0, Geant4 11.4.2 MT y el nodo guane0
 Los comandos exactos (`SubmitLine`) están en [sacct-serie-planos.txt](datos/sc3/sacct-serie-planos.txt) y en el JSON. Las huellas de cada histograma y metadato también están en el JSON.
 
 **Datos faltantes.** La serie de 2·10⁶ eventos con semilla 777 solo consta en el comentario de `DetectorConstruction.cc`. 29481 y 29482 fueron `srun` interactivos con salida en `/tmp` del nodo. El 2026-10-01 se revisó `/tmp` de guane01 y ya no contiene esos archivos. 29481 figura como FAILED 2:0 tras 12 min. No hay trabajo SLURM de 2·10⁶ eventos con el plano de 100 m; el valor 64,2 % coincide con 29480 (64,16 %) al redondear. No se encontró ningún otro tamaño de plano. Estos valores no se reconstruyen. Si los tres fueran binomiales con N = 2·10⁶, la diferencia de 300 a 600 m sería de 0,74 ± 0,04 puntos porcentuales: significativa, y por tanto no indica saturación.
+
+**Serie repetida con datos conservados (trabajo 30621; C5).** Con el mismo N = 2·10⁶ y la misma semilla 777, en planos separados y con la malla v1: 1,53 / 64,08 / 72,94 / 73,69 / 73,72 % para 1,2 / 100 / 300 / 600 / 1.200 m. Los tres valores del comentario quedan reproducidos con un desfase uniforme de −0,12 a −0,13 pp. Con cuadrados anidados (2·10⁷ primarios), el plano de 600 m queda a 0,037 pp del de 1.200 m.
 
 **Resultado por píxel, 29480 frente a 29484** (misma N, semilla y tablas; figura 2). La razón de conteos 100 m/600 m vale 0,870 en cielo abierto y baja con la columna de roca:
 
@@ -92,7 +97,7 @@ Con el cambio de variable Δ = x_final − x, C = D si la probabilidad de transp
 
 La eficiencia total predicha es del 64,3 % con 100 m y del 76,2 % con 600 m, y el plano infinito daría también un 76,2 %. Para el panel de 1,2 m predice un 1,43 %, del mismo orden que el 1,20 % de 29475, que usa otro muestreo de direcciones. El modelo no incluye las colas de dispersión simple, las fluctuaciones de pérdida ni la migración angular hacia fuera de la ventana. Esta última produce −11 puntos porcentuales en las filas por encima de 44° y −2,5 por debajo de 13°. El déficit de −0,90 a 600 m indica que el modelo gaussiano no acota la asíntota.
 
-**Conclusión.** Para muones de cielo abierto, el plano grande es un estimador válido del flujo direccional que llega al panel: la condición de invariancia se cumple y la eficiencia coincide con el modelo con un error de alrededor de 1 punto porcentual. En los píxeles de roca, el conteo está dominado por muones blandos desplazados entre decenas y cientos de metros. Su número depende del plano, y no se ha demostrado su equivalencia con un detector físico ([C1](PUNTOS_NO_DEMOSTRADOS.md#c1-contaminación-de-los-píxeles-de-roca-por-muones-blandos-dispersados), [C3](PUNTOS_NO_DEMOSTRADOS.md#c3-equivalencia-del-estimador-con-un-detector-físico-alternativa-a-c1)).
+**Conclusión.** Para muones de cielo abierto, el plano grande es un estimador válido del flujo direccional que llega al panel: la condición de invariancia se cumple y la eficiencia coincide con el modelo con un error de alrededor de 1 punto porcentual. En los píxeles de roca, el conteo está dominado por muones blandos desplazados entre decenas y cientos de metros. Su número depende del plano, y no se ha demostrado su equivalencia con un detector físico. **Resuelto en C1:** con inyección 1 m antes de la roca y E_cin > 3 GeV en el plano, la razón 100 m / 600 m es ≥ 0,989 en todas las bandas de roca (σ ≤ 0,0052) y se conserva el 83,5 % del conteo en roca. Con ese observable, la imagen deja de depender del tamaño del plano (figura 7). Para muones de más de 3 GeV, el desplazamiento residual es de pocos metros (figura 3), lo que acota la diferencia con un panel físico a un paralaje del orden de un píxel; esa cota no se midió directamente.
 
 ## 2b. Exposición equivalente
 
@@ -123,34 +128,52 @@ Resultados de `consistencia-espectro.json` (figura 5):
 - **Rango.** EcoMug empieza en p = 0,5 GeV/c (E total de 0,511 a 0,614 GeV según la banda), pero S0 solo cuenta E > 0,798 GeV. Ponderado por S0, el 6,6 % de los primarios generados está por debajo del umbral de la tasa: un 0,1 % a 2–5° y un 9,1 % a 44–47°. Integrar Guan en el rango generado aumentaría la tasa entre un 0,6 % y un 8,5 % según la banda.
 - **Transporte.** El aire entre la inyección y el detector elimina otro 19,5 %, ponderado por S0, por frenado y decaimiento. Esto se suma al umbral de aire ya aplicado en S0.
 
-**Conclusión.** La normalización es internamente consistente con la convención del surrogate, que se reproduce a 6·10⁻⁵. Sin embargo, no es consistente con un espectro de nivel del mar transportado por el aire: el aire se descuenta dos veces. La corrección propuesta y su criterio se describen en C2.
+**Conclusión.** La normalización es internamente consistente con la convención del surrogate, que se reproduce a 6·10⁻⁵. Sin embargo, no es consistente con un espectro de nivel del mar transportado por el aire: el aire se descuenta dos veces. **Resuelto en C2:** inyectando 1 m antes de que la línea de mira entre en roca, la eficiencia de cielo abierto pasa del 81,0 % al 99,97 % (fila mínima 99,69 %; residuo frente al modelo ≤ 0,36 pp). La tasa S0 queda así consistente con lo que se registra (figura 8).
 
-## 3 y 4. Puntos no demostrados y plan de producción
+## 3. Comprobaciones ejecutadas en SC3
 
-Ver [PUNTOS_NO_DEMOSTRADOS.md](PUNTOS_NO_DEMOSTRADOS.md) y [PLAN_PRODUCCION.md](PLAN_PRODUCCION.md). Cifras clave del plan:
+Detalle, criterios y tablas en [PUNTOS_NO_DEMOSTRADOS.md](PUNTOS_NO_DEMOSTRADOS.md). Todas con geo-train-01 y vista 0.
 
-- Se generan las 114 vistas; ninguna referencia histórica se reutiliza, por la malla v1 y la geometría B.
-- k = 1 cuesta 841 h-núcleo y unas 8,8 h de pared. Con los datos históricos, el criterio de 400 cuentas en el 90 % de las ROI de roca exige k ≈ 6,6. k se fija tras el piloto P0.
-- Los pares ocupan 0,49 GB comprimidos con k = 1.
+| Comprobación | Resultado | Estado |
+|---|---|---|
+| Regresión del parche | Los ejecutables parcheados sin opciones reproducen bit a bit el histograma de producción (3/3) | cumple |
+| C1, observable independiente del plano | E_cin > 3 GeV con inyección junto a la roca: razón 100/600 ≥ 0,989 en todas las bandas | cumple |
+| C2, doble descuento del aire | Inyección 1 m antes de la roca: cielo abierto 99,97 %. La variante (b), fijada de antemano, no cumple (93,6 %) | cumple con (c) |
+| C3, referencia con generación amplia | No necesaria, porque C1 encontró un observable | no se ejecuta |
+| C4, margen angular | Margen de 5°: sesgo medio de borde −0,07 pp; máximo 1,65 pp (2,2σ empíricas) frente al criterio de 1 pp | parcial; se confirma en P0 |
+| C5, asíntota | 600 m frente a 1.200 m: 0,037 pp sin corte, 0 pp con la receta | cumple |
+| C6, convención de área | Decisión de definición | pendiente |
+
+## 4. Plan de producción
+
+Ver [PLAN_PRODUCCION.md](PLAN_PRODUCCION.md). Cifras clave:
+
+- **Receta:** inyección 1 m antes de la roca, margen de 5°, plano de 600 m, imagen de referencia con E_cin > 3 GeV, ejecutable `0dea8e1` + parche v3. El árbol de producción ya está compilado en SC3 (trabajo 30627), y la cadena lanzador → bloque → fusión → exportador del director se probó con éxito (30628 y 30629).
+- **Vistas:** se generan las 114. Ninguna referencia histórica se reutiliza, por la malla v1, la geometría B y el cambio de observable.
+- **N:** el conteo en ROI de roca con la receta es 0,124 veces el histórico, que estaba inflado por el fondo blando. Para 100 cuentas (10 %) en el 90 % de las ROI hace falta k ≈ 9,5. **Se recomienda k = 10**: 526,7 millones de primarios por vista (300 días convencionales), 8.305 h-núcleo, unas 86,5 h de pared con cuatro trabajos, 1,3 GB de histogramas y hasta 2,4 GB de pares. Para 5 % haría falta k ≈ 38, unas 31.500 h-núcleo.
+- **P0** (geo-train-06, seis vistas, k = 1, unas 44 h-núcleo) verifica el factor en una geometría con anomalías y C4 con más estadística antes de P1.
+
+**Receta de entorno (P-02).** Geant4 11.4.2 MT, módulos `gnu14/14.2.0` y `geant4/11.4.2`, GCC 14.2.0 y lista de física `FTFP_BERT`. Las versiones de los paquetes de datos (G4NDL 4.7.1, G4EMLOW 8.8, PhotonEvaporation 6.1.2, RadioactiveDecay 6.1.2, G4PARTICLEXS 4.2, entre otros) están en `datos/sc3/receta-entorno-geant4.txt`, y el `CMakeCache.txt` de producción en `datos/sc3/controles-30621/resultados/`. **Observación:** `build-az-edges-v1` se compiló con `CMAKE_BUILD_TYPE` vacío, sin `-O3`. El árbol de la receta reproduce esa configuración para conservar la equivalencia bit a bit. Compilar en Release podría reducir el coste, pero exigiría una nueva regresión.
 
 ---
 
 ## Resumen
 
-1. **Se demostró**, con código y datos conservados, cómo se asignan los planos (1,2; 100 y 600 m) a corridas concretas, con conteos, semillas y comandos. La serie de 2·10⁶ eventos (64,2; 73,07 y 73,81 %) **no está respaldada por datos**.
-2. **Se demostró** que el plano grande es un estimador correcto del flujo direccional en cielo abierto. Un modelo independiente reproduce la eficiencia medida con un error de 0,3 a 0,9 puntos porcentuales en las filas interiores.
-3. **Se demostró** que en los píxeles de roca el conteo depende fuertemente del plano: la razón 100/600 baja hasta 0,25 y el conteo supera entre 3 y 7 veces la expectativa CSDA. La componente dependiente es de muones blandos, con una energía media de unos 0,9 GeV.
-4. **Se reprodujo S0** desde el flujo de Guan con un error de 6·10⁻⁵, se derivó S0 v1 y se cuantificaron sus incertidumbres de convención. **Se identificaron** dos sesgos con magnitud medida: el doble descuento del aire (19,5 %) y la pérdida en los bordes de la ventana (hasta 32 puntos porcentuales en la fila superior).
+1. **Planos.** Se identificó qué corrida corresponde a cada plano, con conteos, semillas y comandos. La serie original de 2·10⁶ eventos se había perdido; se **repitió con datos conservados**, reproduce los valores citados con un desfase de ~0,12 pp, y el plano de 600 m queda a 0,04 pp del de 1.200 m.
+2. **Cielo abierto.** El plano grande es un estimador correcto del flujo direccional. Un modelo independiente reproduce la eficiencia con un error de 0,3 a 0,9 pp.
+3. **Roca.** Con la configuración histórica, el conteo en roca dependía del plano: la razón 100/600 bajaba hasta 0,25 y el conteo era de 3 a 7 veces la expectativa CSDA, por muones blandos de unos 0,9 GeV. **Con la receta validada esa dependencia desaparece** (razón ≥ 0,989) y el conteo en roca queda en 0,6–1,1 veces la CSDA.
+4. **Normalización.** S0 se reprodujo desde Guan con un error de 6·10⁻⁵. El doble descuento del aire (19,5 %) **se eliminó** con la inyección junto a la roca (cielo abierto 99,97 %). La pérdida en los bordes de la ventana (hasta 32 pp) **se redujo** a un sesgo medio de −0,07 pp con un margen de 5°.
+5. **Producción.** La receta, el ejecutable, los manifiestos, el lanzador y la fusión están probados en SC3. Con k = 10 la producción cuesta 8.305 h-núcleo.
 
 ## Pendientes
 
-- C1 a C6 de [PUNTOS_NO_DEMOSTRADOS.md](PUNTOS_NO_DEMOSTRADOS.md). C1, C2, C4 y C5 son corridas cortas (unos 64 s cada una con 2·10⁶ eventos). C3 solo se recomienda si C1 falla. C6 es una decisión de definición.
-- P-02: la receta de entorno de esta entrega se limita a los módulos `gnu14/14.2.0` y `geant4/11.4.2` y a las huellas del ejecutable y las tablas. Faltan las versiones de los paquetes de datos físicos de Geant4 y las opciones de compilación de `build-az-edges-v1` (`CMakeCache.txt`), que deben registrarse en P0.
+- **C6:** declarar la convención de área (normal o panel vertical, −21,5 %) y si S0 se recalcula sin el umbral de aire (+6,2 %). Es la única decisión antes de P0.
+- **P0:** verificar el factor de conteo de la receta en geo-train-06 (criterio: dentro del 20 % de 0,124) y C4 con 5,3·10⁷ primarios por vista (criterio: ≤ 1 pp).
+- La transmisión Geant4 frente a CSDA en roca (0,57–1,09) no se evaluó: corresponde a la física del motor, no al estimador.
 - Las respuestas E2-01, E2-02 y E2-04 no forman parte de esta entrega.
 
 ## Propuesta para completar el OE1
 
-1. Ejecutar C1, C2 y C4 en una sola sesión de SC3: unas seis corridas de 2·10⁶ eventos, menos de 15 min de pared en total, con criterios ya fijados.
-2. Decidir el observable. Se recomienda definirlo como «flujo direccional de muones con E_cin > E_corte en la ventana», usando el corte que haga la imagen independiente del plano, con inyección acorde a C2, margen angular según C4 y convención de área declarada (C6). Después, congelar el ejecutable y su receta de compilación.
-3. Ejecutar el piloto P0 (geo-train-01, seis vistas, unas 44 h-núcleo) y fijar k con la regla del plan.
-4. Ejecutar P1 (114 vistas) con el lanzador idempotente, fusionar, exportar y empaquetar con la cadena local, y publicar una ficha de datos versionada que enlace la historia → referencia v1 → pares.
+1. Decidir C6 y registrarlo en la ficha de datos.
+2. Ejecutar P0 con los comandos de [PLAN_PRODUCCION.md](PLAN_PRODUCCION.md) (sección 4), aplicar sus dos criterios y fijar k.
+3. Ejecutar P1 (114 vistas, k = 10 salvo que P0 indique otro valor) con el lanzador idempotente. Después fusionar, exportar y empaquetar con la cadena local, y publicar una ficha de datos versionada con la trazabilidad historia → receta v1 → referencia → pares.

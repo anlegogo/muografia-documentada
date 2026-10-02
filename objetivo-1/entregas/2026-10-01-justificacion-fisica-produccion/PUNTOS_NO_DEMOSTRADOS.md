@@ -1,63 +1,88 @@
-# Puntos no demostrados y comprobaciones propuestas
+# Puntos no demostrados: comprobaciones, criterios y resultados
 
-Cada punto indica la pregunta que se resuelve, qué se compara y el criterio de resultado satisfactorio, fijado antes de ejecutar. Ninguna de estas comprobaciones se ejecutó en esta entrega. Las duraciones se estiman con el tiempo medido de la campaña histórica: 0,737 ms de núcleo por evento, es decir, unos 64 s de pared para 2·10⁶ eventos en 24 núcleos *legacy*.
+Cada punto indica la pregunta, la comparación y el criterio de resultado satisfactorio, fijados antes de ejecutar. C1, C2, C4 y C5 se ejecutaron en SC3 el 2026-10-02 en trabajos cortos (30621, 30622, 30625 y 30626; 16,7 h-núcleo en total). Los datos, comandos, logs y huellas están en `datos/sc3/controles-*`. La evaluación es reproducible con `scripts/controles_sc3.py`, que genera `resultados/controles-sc3.json` y las figuras 7 y 8.
 
-Las comprobaciones C1 a C3 condicionan la producción, porque pueden cambiar el ejecutable o la definición del dato. C4 a C6 condicionan la interpretación y el informe.
+**Ejecutable de control.** Se aplicó un parche de diagnóstico (`controles/controles-oe1-v3.patch`, con versiones v1 y v2 anteriores) sobre una copia del árbol de producción `angular-v1` (commit `0dea8e1`). El parche añade opciones por variables de entorno: tamaño del plano, cuadrados anidados en el plano, cortes de energía cinética, histograma de direcciones nominales, punto de inyección y margen angular. **Sin variables, los tres ejecutables parcheados reproducen bit a bit el histograma del ejecutable de producción** (geo-train-01, vista 0, 2·10⁶ primarios, semilla 777: 1.473.703 registros idénticos en r01, a00 y c00 frente a r00).
 
-## C1. Contaminación de los píxeles de roca por muones blandos dispersados
+**Cuadrados anidados.** Un único plano de 1.200 m registra a la vez los cuadrados de 1,2; 100; 300 y 600 m de lado, con los mismos muones. La razón entre planos es entonces una fracción binomial anidada, con σ = √(p(1−p)/n). Todas las corridas usan geo-train-01 y la vista 0.
 
-**Lo que está demostrado.** En los píxeles de roca, el conteo depende del plano (figura 2; `comparacion-planos.json`). La razón entre los planos de 100 m y 600 m es 0,870 en cielo abierto, pero baja a 0,38 para columnas de 1–2·10⁵ g/cm² y a 0,25 por encima de 2·10⁵ g/cm². Con el plano de 600 m, el conteo en las columnas de roca ≥ 10⁴ g/cm² supera entre 3,1 y 6,8 veces la expectativa CSDA del surrogate, mientras que en cielo abierto es 0,77 veces esa expectativa. Los 3.483.882 muones que se ganan al pasar de 100 m a 600 m tienen una energía cinética media estimada de 0,86 GeV. Un muón de 100 GeV o más se desplaza menos de 1 m (figura 3, derecha), así que esos registros son muones blandos con desplazamientos de decenas a cientos de metros.
-
-**Lo que no está demostrado.** No se ha demostrado que un detector físico de 1,2 m registre esa componente con la misma tasa. La equivalencia entre el plano grande y el panel exige que la materia atravesada no cambie apreciablemente entre líneas paralelas separadas por el desplazamiento. Con 50 m de desplazamiento a 1 km del edificio, el paralaje es de unos 2,9°, es decir, 12 píxeles.
+## C1. Contaminación de los píxeles de roca por muones blandos dispersados — **cumple con E > 3 GeV e inyección junto a la roca**
 
 **Pregunta.** ¿Existe un observable en el que el plano grande y el panel físico coincidan, de modo que la imagen deje de depender del tamaño del plano?
 
-**Comparación.** El ejecutable instrumentado registra la energía cinética al cruzar el plano, ya disponible en `SteppingAction` como `post->GetKineticEnergy()`, y genera un histograma por cada umbral E_corte ∈ {0; 0,5; 1; 3} GeV. Se usan geo-train-01, vista 0, N = 2·10⁶, semilla 777 y planos de 100 m y 600 m. Son ocho histogramas en dos corridas de unos 64 s cada una. En macropíxeles de 8×8 se compara la razón 100/600 por banda de columna de roca, igual que en la figura 2.
+**Comparación.** Razón de conteos 100 m / 600 m por banda de columna de roca, para cortes E_cin > {0; 0,5; 1; 2; 3; 5} GeV en el plano. 2·10⁷ primarios por variante de inyección, anidados.
 
-**Criterio.** Se adopta el menor E_corte para el que la razón 100/600 en todas las bandas de roca sea ≥ 0,98, con incertidumbre de Poisson ≤ 0,01. Con ese corte, la razón de cielo abierto debe quedar dentro de ±1 punto porcentual del modelo de la figura 3. Si ningún corte cumple, el estimador direccional no está justificado para los píxeles de roca, y la alternativa pasa a ser C3.
+**Criterio.** El menor corte con razón ≥ 0,98 y σ ≤ 0,01 en todas las bandas de roca, y razón de cielo abierto dentro de ±1 punto porcentual del modelo semianalítico evaluado con el mismo corte.
 
-## C2. Doble descuento del aire en la normalización
+**Resultado (figura 7).**
 
-**Lo que está demostrado.** S0 integra el flujo de Guan por encima de 0,798 GeV, que es el umbral de 3 km de aire calculado con los parámetros CSDA de roca estándar. Después, el generador inyecta el espectro EcoMug, que también es de nivel del mar, entre 1,96 y 2,8 km aguas arriba, y Geant4 lo transporta por ese aire (`consistencia-espectro.json`). Ponderado por S0, el 6,6 % de los muones generados está por debajo del umbral de S0, y el transporte por aire elimina otro 19,5 % por frenado y decaimiento (2,5 % a 2–5°, 27 % a 44–47°). En cielo abierto, la exposición efectiva del trabajo 29484 es de 23,1 días equivalentes, con rango por fila de 12,1 a 27,7, frente a los 30 declarados (figura 4, derecha).
+| Inyección | Sin corte: razón por banda (10–30 / 30–60 / 60–100 / 100–200 / >200 ·10³ g/cm²) | Menor corte que cumple | Conteo de roca que conserva ese corte |
+|---|---|---|---|
+| Actual (D + R + 300 m) | 0,900 / 0,839 / 0,679 / 0,381 / 0,255 | 5 GeV | 24,2 % |
+| Cilindro del edificio + 50 m | 0,979 / 0,950 / 0,867 / 0,627 / 0,457 | 3 GeV | 37,6 % |
+| 1 m antes de entrar en roca | 0,998 / 0,991 / 0,969 / 0,853 / 0,724 | **3 GeV** | **83,5 %** |
 
-**Pregunta.** ¿El espectro inyectado representa el flujo en el punto de inyección o en el detector? Si representa el flujo en el detector, ¿debe transportarse por el aire previo?
+Con E > 3 GeV e inyección junto a la roca, las razones por banda son 1,000 / 0,999 / 0,994 / 0,990 / 0,991 (mínima 0,9895 ± 0,0025), y la razón de cielo abierto coincide con el modelo a menos de 0,01 pp. Con la inyección actual, el conteo de roca a 600 m es de 3,1 a 6,8 veces la expectativa CSDA. Con inyección junto a la roca baja a 0,60–1,09 sin corte y a 0,57–0,85 con E > 3 GeV. El exceso de muones blandos dispersados desaparece. La diferencia restante con la CSDA no se evaluó en esta entrega (ver «Fuera de alcance»).
 
-**Comparación.** Se proponen dos variantes del generador con la misma semilla y N = 2·10⁶: (a) la actual; (b) retroceso solo hasta salir del cilindro que contiene el edificio, con el radio base de la geometría más un margen de 50 m, en lugar de `R_inicio = D + R + 300 m`. En ambas se mide la eficiencia de cielo abierto por fila y la razón entre el conteo de roca y S0.
+## C2. Doble descuento del aire en la normalización — **cumple con inyección 1 m antes de la roca**
 
-**Criterio.** Se considera consistente la variante en la que el conteo de cielo abierto dividido por la tasa inyectada por fila es ≥ 0,97 en las filas de 20 a 42°, con la pérdida restante explicada por el decaimiento en el tramo de aire residual según el modelo de la figura 3 (±1 punto porcentual). Si se adopta (b), S0 se recalcula con el umbral del rango generado (+6,2 %, figura 4) y se vuelve a ejecutar C1.
+**Pregunta.** El espectro inyectado es de nivel del mar. ¿Debe atravesar el aire previo?
 
-## C3. Equivalencia del estimador con un detector físico (alternativa a C1)
+**Comparación.** Eficiencia de cielo abierto por fila (conteo en el cuadrado de 600 m dividido por las inyecciones con dirección nominal en esa fila), filas de 20 a 42°, para tres puntos de inyección. 2·10⁷ primarios cada una.
 
-**Pregunta.** Si no se adopta un corte de energía, ¿coincide el estimador actual con un panel físico que recibe también muones vecinos?
+**Criterio, fijado para la variante (b).** Eficiencia ≥ 0,97 en todas las filas de 20 a 42°, con la pérdida restante explicada por el modelo del tramo de aire residual dentro de ±1 punto porcentual.
 
-**Comparación.** Esta es la referencia propuesta por la dirección (`REVISION_ACEPTACION_PLANO.md`): impactos nominales uniformes sobre un cuadrado de 300 m de lado, con conteo solo en el panel central, y se compara con el estimador actual en macropíxeles de 8×8. Para el panel físico de 1,44 m², la dilución es (300/1,2)² = 62.500. Con un panel de 10×10 m, cuyo paralaje de 0,57° es inferior a un macropíxel, la dilución es de 900 y obtener la estadística del plano de 600 m en las bandas de roca de 3·10⁴–10⁵ g/cm² requiere unos 3,2·10¹⁰ eventos (900 × 3,6·10⁷), es decir, unas 6.600 h-núcleo.
+**Resultado (figura 8, izquierda).**
 
-**Criterio.** Las razones por banda de roca entre la referencia y el estimador deben ser compatibles con 1 a 2σ. Dado el coste, solo se recomienda si C1 no encuentra un corte válido.
+| Inyección | Eficiencia media | Fila mínima | Residuo frente al modelo (máximo) | Cumple |
+|---|---:|---:|---:|---|
+| Actual | 81,0 % | 72,9 % | 2,4 pp | no |
+| (b) Cilindro del edificio + 50 m (0,56–1,74 km de aire) | 93,6 % | 91,2 % | 2,5 pp | no |
+| (c) 1 m antes de la roca | 99,97 % | 99,69 % | 0,36 pp | **sí** |
 
-## C4. Pérdida por migración angular en los bordes de la ventana
+La variante (b), especificada de antemano, no cumple: deja entre 0,56 y 1,74 km de aire. La variante (c) se añadió tras ese resultado y se evaluó con el mismo criterio. Con (c), el número de muones inyectados en la ventana coincide con los registrados en cielo abierto, y la convención S0 («muones que llegan al detector») queda consistente con el transporte. El tiempo de transporte baja de 0,796 a 0,532 ms de núcleo por evento.
 
-**Lo que está demostrado.** El generador inyecta direcciones solo dentro de la ventana de la imagen, de 2 a 47° de elevación y de −30 a +30° de azimut, y el contador registra en esa misma ventana. Los muones que se dispersan hacia fuera se pierden, pero no entra ninguno desde fuera. Con el plano de 600 m, el residuo medido menos el modelo es de −11,0 puntos porcentuales en las filas por encima de 44° y llega a −32 en la fila superior (medido 40,2 %, modelo 71,9 %) (figura 3, centro).
+## C3. Equivalencia con un detector físico mediante generación en área amplia — **no necesaria**
+
+C1 encontró un observable independiente del plano, de modo que esta referencia costosa (unas 6.600 h-núcleo) no se ejecuta. Si en el futuro se quisiera interpretar la componente por debajo de 3 GeV, el diseño sigue siendo el de [REVISION_ACEPTACION_PLANO.md](../../REVISION_ACEPTACION_PLANO.md).
+
+## C4. Pérdida por migración angular en los bordes de la ventana — **mejora clara; el criterio de 1 pp no se cumple de forma estricta**
 
 **Pregunta.** ¿Qué margen angular de generación elimina el déficit en los bordes?
 
-**Comparación.** Se genera en una ventana ampliada en Δ ∈ {2; 5}° por cada lado, con pesos de fila y espectro extendidos, y se cuenta en la ventana nominal. Se usa N = 2·10⁶ en cada caso.
+**Comparación.** Ventana de generación ampliada en Δ ∈ {0; 2; 5}° por lado, conteo en la ventana nominal y cuadrado de 600 m. Se mide la desviación de las cinco filas superiores respecto del ajuste lineal de 30–42°, y la de las cinco columnas de cada borde respecto de la media de las columnas interiores. 2·10⁶ primarios por caso.
 
-**Criterio.** Se adopta el menor Δ con el que la eficiencia de cielo abierto en las cinco filas y columnas de borde coincide con la tendencia de las filas interiores (ajuste lineal en 30–42°) dentro de 1 punto porcentual.
+**Criterio.** El menor Δ con todas las desviaciones ≤ 1 pp.
 
-## C5. Asíntota del plano
+**Resultado (figura 8, derecha).**
 
-**Lo que está demostrado.** La afirmación «menos de 0,5 % de la asíntota» se apoya en tres valores de un comentario de código: 64,2; 73,07 y 73,81 %. Sus histogramas, comandos y salidas no se conservan (sección 1 del README). El modelo gaussiano predice que el plano de 600 m retiene todo salvo 0,07 puntos porcentuales del núcleo de dispersión. Sin embargo, en las filas interiores el valor medido queda 0,90 puntos porcentuales por debajo del modelo, de modo que las colas no gaussianas pueden ser mayores. La cota no queda demostrada.
+| Inyección, margen | Desviación máxima | Desviación media en bordes | Dispersión empírica entre columnas interiores |
+|---|---:|---:|---:|
+| Actual, 0° | 31,5 pp | −19,0 pp | 1,8 pp |
+| Actual, 5° | 4,1 pp | −1,2 pp | 2,3 pp |
+| Cilindro, 5° | 4,3 pp | −0,5 pp | 2,4 pp |
+| Antes de la roca, 0° | 4,2 pp | −0,8 pp | 0,2 pp |
+| Antes de la roca, 5° | 1,65 pp | −0,07 pp | 0,75 pp |
 
-**Comparación.** Si C1 no adopta un corte de energía: plano de 1.200 m frente a 600 m, con N = 2·10⁶ y semilla 777.
+Ninguna configuración cumple estrictamente. Con inyección junto a la roca y margen de 5°, el sesgo medio de borde desaparece (−0,07 pp) y la desviación máxima, 1,65 pp, está a 2,2 dispersiones empíricas. Esa dispersión, medida en las columnas interiores, es la fluctuación propia de esta corrida y no un efecto de borde; su origen detallado no se analizó (θ₀ ≈ 0,07° a 0,5 GeV/c en 1 m de aire, frente a bins de 0,18–0,23°). Sin margen, el déficit es real: −3,3 pp en las columnas extremas y −4,2 pp en la fila superior. **Se adopta un margen de 5°.** Confirmar el criterio de 1 pp exige una muestra unas 6 veces mayor; esa verificación se incluye en el piloto P0 del plan.
 
-**Criterio.** |ε₁₂₀₀ − ε₆₀₀| < 0,1 punto porcentual en total, y razón por banda de roca compatible con 1 dentro de 2σ. Si C1 adopta un corte, esta comprobación se hace con ese mismo corte.
+## C5. Asíntota del plano — **cumple**
 
-## C6. Convención de área y significado de «30 días»
+**Comparación.** Cuadrado de 600 m frente al plano de 1.200 m, mismos muones, 2·10⁷ primarios.
 
-**Lo que está demostrado.** S0 usa A = 1,44 m² perpendicular a cada dirección, sin proyección. Un panel vertical real aporta A·cos(el)·cos(az), lo que reduce S0 un 21,5 % (factor medio 0,785). Interpretar la energía del umbral como cinética en lugar de total cambia S0 un −2,1 %. Es una decisión de definición, no de simulación.
+**Criterio.** |ε₁₂₀₀ − ε₆₀₀| < 0,1 pp en total, y razón por banda de roca compatible con 1 dentro de 2σ (σ de corridas independientes, tal como se fijó).
 
-**Pregunta.** ¿El píxel es una cuenta esperada de un detector vertical o un flujo direccional multiplicado por el área normal?
+**Resultado.**
 
-**Comparación.** No requiere corrida. Se documenta la decisión y se recalcula S0 con `scripts/exposicion_equivalente.py`, ajustando la variante.
+- Sin corte, la diferencia total es de 0,037 pp; con E > 0,5 GeV o más, ≤ 0,005 pp. Todas las bandas cumplen.
+- Con inyección junto a la roca, la diferencia es exactamente cero en todos los cortes.
+- La serie se repitió con N = 2·10⁶ y semilla 777, en planos separados con la malla v1: 1,53 / 64,08 / 72,94 / 73,69 / 73,72 % para 1,2 / 100 / 300 / 600 / 1.200 m. Reproduce los tres valores del comentario de código (64,2 / 73,07 / 73,81 %) con un desfase uniforme de −0,12 a −0,13 pp, que no se analizó por separado. La afirmación «menos de 0,5 % de la asíntota» queda respaldada por datos conservados: el plano de 600 m está a 0,04 pp del de 1.200 m.
 
-**Criterio.** La ficha de datos declara la convención, y S0, N y la exposición equivalente se recalculan con ella. No se mezclan referencias con convenciones distintas en una misma versión.
+## C6. Convención de área y significado de «30 días» — decisión pendiente
+
+S0 usa A = 1,44 m² normal a cada dirección. Un panel vertical real aporta A·cos(el)·cos(az), lo que reduce S0 un 21,5 %. Interpretar la energía del umbral como cinética cambia S0 un −2,1 %. No requiere corrida. Con la inyección (c), además, el umbral de aire de S0 (0,798 GeV) deja de tener contrapartida física. La ficha de datos debe declarar si S0 se recalcula desde el rango generado (+6,2 %, figura 4) o se mantiene como convención. **Es la única decisión de definición que queda antes de producir.**
+
+## Fuera de alcance de esta entrega
+
+- La comparación de transmisión Geant4 frente a CSDA en roca (razones de 0,57 a 1,09 con la inyección (c)): es física del motor de transporte, no del estimador.
+- C1 se evaluó en una sola geometría homogénea (geo-train-01). La extrapolación del corte de 3 GeV a geometrías con anomalías se verifica en el piloto P0 del plan con geo-train-06.
