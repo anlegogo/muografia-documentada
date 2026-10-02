@@ -1,0 +1,101 @@
+{
+  "schema": "oe1-local-preparation-verification-v1",
+  "tests": 103,
+  "new_tests": 25,
+  "result": "pass",
+  "worker_dependency_hashes_match_staged_git": {
+    "operar_bloque_angular.py": true,
+    "publicar_bloque_angular.py": true,
+    "fusionar_bloques_angular.py": true,
+    "configuracion_angular.py": true,
+    "preparar_imagen_angular_v1.py": true,
+    "diagnosticar_observable_angular.py": true
+  },
+  "pilot_manifest_hash_matches_staged_git": true,
+  "analytic_source_matches_previous_independent_implementation": true,
+  "real_sc3_merge_exactly_reproduced": true,
+  "real_merge": {
+    "geometry": "geo-train-06",
+    "view": 0,
+    "events": 200000,
+    "counts": 69995,
+    "all_energy_counts": 130190,
+    "hist_sha256": "d145db023d60ef76a696b7ed5cc2d36b0958a42b49e298fc67ec1e46d6d38408",
+    "meta_sha256": "4e1eb966e0e4e372afa6944f8c58cd228436a53d230612d6dfe5f0869e82f509",
+    "blocks": [
+      {
+        "manifest_row": {
+          "fila": 108,
+          "geometria": "geo-train-06",
+          "vista": 0,
+          "bloque": 0,
+          "semilla": 20261001090000,
+          "eventos": 100000
+        },
+        "outputs": [
+          {
+            "name": "geo-train-06_view0_hist.csv",
+            "received_sha256": "3c21b65e64506fead2196b145df6f41ef3c85810fbd870a38b7639603100a7c6",
+            "expected_sha256": "3c21b65e64506fead2196b145df6f41ef3c85810fbd870a38b7639603100a7c6",
+            "crlf_to_lf_verified": false
+          },
+          {
+            "name": "geo-train-06_view0.meta.json",
+            "received_sha256": "12c7637e0bc29c35f988a19546a0b46af28622c6305236a7e9cd38e81c3208c7",
+            "expected_sha256": "12c7637e0bc29c35f988a19546a0b46af28622c6305236a7e9cd38e81c3208c7",
+            "crlf_to_lf_verified": false
+          }
+        ],
+        "input_manifest_sha256": "24cb5f4959ae90681cf4794e7101439fb8b600a7aae211a899c00dacca535b4c"
+      },
+      {
+        "manifest_row": {
+          "fila": 109,
+          "geometria": "geo-train-06",
+          "vista": 0,
+          "bloque": 1,
+          "semilla": 20261001090001,
+          "eventos": 100000
+        },
+        "outputs": [
+          {
+            "name": "geo-train-06_view0_hist.csv",
+            "received_sha256": "a8be45a3a93ffb74e9d1db5b14653db9c1a5c827deb434daa85dc49aa19a5dea",
+            "expected_sha256": "a8be45a3a93ffb74e9d1db5b14653db9c1a5c827deb434daa85dc49aa19a5dea",
+            "crlf_to_lf_verified": false
+          },
+          {
+            "name": "geo-train-06_view0.meta.json",
+            "received_sha256": "1183c068659a44db13fffa39f6eee7a4519b3a1371622704b3c0c980c38c3038",
+            "expected_sha256": "1183c068659a44db13fffa39f6eee7a4519b3a1371622704b3c0c980c38c3038",
+            "crlf_to_lf_verified": false
+          }
+        ],
+        "input_manifest_sha256": "24cb5f4959ae90681cf4794e7101439fb8b600a7aae211a899c00dacca535b4c"
+      }
+    ]
+  },
+  "local_document_links_checked": 20,
+  "python_sources_parsed": [
+    "herramientas/analizar_preparacion_angular.py",
+    "herramientas/estadistica_control_angular.py",
+    "herramientas/evaluar_bordes_angular.py",
+    "herramientas/evaluar_piloto_angular.py",
+    "herramientas/fusionar_bloques_angular.py",
+    "herramientas/lanzar_campana_angular.py",
+    "herramientas/operar_bloque_angular.py",
+    "herramientas/preparar_piloto_angular.py",
+    "herramientas/referencia_cielo_angular.py",
+    "herramientas/test_operacion_angular.py",
+    "herramientas/test_piloto_angular.py",
+    "herramientas/test_preparacion_fisica_angular.py"
+  ],
+  "bash_syntax_checked": true,
+  "geant4_executed": false,
+  "slurm_accessed": false,
+  "physical_validation": false,
+  "notes": [
+    "Queue and simulator were mocked in operational tests.",
+    "Binomial planning experiments are not Geant4 histories."
+  ]
+}

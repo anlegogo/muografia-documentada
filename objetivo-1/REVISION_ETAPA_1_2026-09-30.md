@@ -58,7 +58,7 @@ Desde los crudos se comprobaron:
 
 Este hallazgo no invalida la detección de cruces comprobada ni exige repetir las 13 corridas. Delimita su cobertura: no se ha contrastado experimentalmente la situación en que la geometría original puede asignar material del conducto a la intersección.
 
-Las 453.607 comprobaciones C++ y las compilaciones con sanitizadores se conservan como evidencia **reportada de SC3**; no se recompilaron en esta revisión. Nuestro contraste independiente de T-S no reproduce todos esos ensayos. Las longitudes y energías interpoladas se apoyan en cuerdas de pasos; no deben presentarse como una reconstrucción exacta de la trayectoria física entre sus extremos.
+Las 453.607 comprobaciones C++ y las compilaciones con sanitizadores se conservan como evidencia **reportada de SC3**; no se recompilaron en esta revisión. El contraste independiente de T-S no reproduce todos esos ensayos. Las longitudes y energías interpoladas se apoyan en cuerdas de pasos; no deben presentarse como una reconstrucción exacta de la trayectoria física entre sus extremos.
 
 ## 5. Observaciones y condiciones para avanzar
 
@@ -92,7 +92,7 @@ Descargar y verificar el TAR y las listas contra `datos-compartidos/SHA256SUMS.t
 
 Ejecutar `scripts/analysis/oe1_stage1_analysis.py` del código descargado con `--attempt` apuntando a producción, `--lists-dir` a las seis listas, `--roi-mask`, `--roi-frozen` y `--roi-npz` a `analisis/roi/` de la entrega, `--no-figures` y una carpeta nueva en `--out`. La referencia geométrica es `scripts/simulation/geant4_app/tests/crossing_reference.py` del mismo código; la herramienta puede localizarla automáticamente. No usar `--skip-muon-fnv` ni `--diagnostic-only` para esta reproducción.
 
-Después, ejecutar nuestro auditor (los marcadores representan las carpetas anteriores):
+Después, ejecutar el auditor (los marcadores representan las carpetas anteriores):
 
 ```text
 python muografia-documentada/herramientas/revisar_etapa1_oe1.py --entrega ENTREGA --datos DATOS --codigo CODIGO --reproduccion SALIDA_AUTORES --out SALIDA_REVISION.json

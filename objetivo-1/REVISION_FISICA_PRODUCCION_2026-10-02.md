@@ -1,6 +1,6 @@
 # Revisión de la justificación física y propuesta de producción
 
-> Avance posterior a la revisión: [fusión y compatibilidad corregidas localmente](CORRECCIONES_LOCALES_FUSION_CONFIGURACION.md), 56 pruebas y contraste con los dos bloques reales. Las observaciones físicas siguen abiertas; adoptar la alternativa en SC3 requiere actualizar las herramientas allí.
+> Actualización: [revisión de la entrega 01a9871](REVISION_INTEGRACION_OBSERVABLE_01A9871.md). Verificación de herramientas en SC3 recibida. T-01 corregido: el desajuste estaba en la copia extraída, no en los objetos Git. Este informe conserva el estado histórico de f9a77ef.
 
 Revisión del director, 2026-10-02, Colombia. Rama de los estudiantes: `oe1/justificacion-fisica-produccion`, commit **f9a77eff49c01bfd073c00d7d62414e3ce962f9d** (ocho commits sobre `18aa5b1`). [Entrega congelada](https://github.com/anlegogo/muografia-documentada/tree/f9a77eff49c01bfd073c00d7d62414e3ce962f9d/objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion).
 
@@ -11,8 +11,8 @@ Revisión del director, 2026-10-02, Colombia. Rama de los estudiantes: `oe1/just
 - Se revisaron 19 corridas de control, que suman **92 millones de primarios transportados**. Los 19 histogramas tienen dimensiones y conteos coherentes con sus metadatos; los códigos de salida conservados son cero. No son 92 millones de historias independientes: hay reutilización de semillas y regresiones.
 - Se ejecutaron los seis análisis Python de la entrega en una copia temporal. Se compararon **3.045 valores numéricos**, sin discrepancias a tolerancia absoluta/relativa de `1e-10`. Esto reproduce los cálculos de los estudiantes; no constituye por sí solo una validación independiente de sus modelos físicos.
 - Para reproducir el plan se reconstruyeron los 114 CSV históricos desde los `ref_counts` de los NPZ conservados. Los **114 SHA-256 coinciden** con `campaign-manifest.csv` al usar la representación CSV con CRLF. No se sustituyeron ni modificaron los originales.
-- Se repitió la fusión de los dos bloques de integración, normalizando finales de línea únicamente en una copia de trabajo: **200.000 primarios y 69.995 registros con el corte energético**. La matriz coincide con la entregada y se exporta con nuestra herramienta.
-- Se reprodujeron tres carencias mediante entradas de prueba: la fusión acepta una semilla incorrecta en el manifiesto; acepta el mismo bloque repetido; nuestro empaquetador no distingue cambios de `oe1_controles` y `reference_histogram` en su firma de compatibilidad. Estas pruebas no describen manipulación de las corridas reales.
+- Se repitió la fusión de los dos bloques de integración, normalizando finales de línea únicamente en una copia de trabajo: **200.000 primarios y 69.995 registros con el corte energético**. La matriz coincide con la entregada y se exporta con la herramienta.
+- Se reprodujeron tres carencias mediante entradas de prueba: la fusión acepta una semilla incorrecta en el manifiesto; acepta el mismo bloque repetido; el empaquetador no distingue cambios de `oe1_controles` y `reference_histogram` en su firma de compatibilidad. Estas pruebas no describen manipulación de las corridas reales.
 
 [Evidencia estructurada de la revisión](evidencias/revision-fisica-f9a77ef.json). Entorno local: Python 3.12.14, NumPy 2.4.4 y Matplotlib 3.11.1. No se recompiló ni ejecutó Geant4 localmente, no se accedió a SC3 y no se lanzó producción.
 
@@ -52,7 +52,7 @@ Además, `controles_sc3.py` evalúa C4 con `h["full"]["0"]` (sin corte), mientra
 
 ### T-01 · Los finales de línea rompen la verificación exacta de la entrega
 
-De 200 entradas en los cuatro `salidas.sha256` de controles, **181 no coinciden con los bytes versionados**. Las 181 coinciden al convertir CRLF a LF; no hay discrepancias restantes en ese conjunto. Los histogramas de los dos bloques de integración presentan el mismo problema, por lo que `fusionar_v1.py` falla directamente sobre la entrega extraída de Git.
+De 200 entradas en los cuatro `salidas.sha256` de controles, **181 no coincidían con los bytes de la copia extraída**. Las 181 coinciden al convertir CRLF a LF; no hay discrepancias restantes en ese conjunto. Los histogramas de los dos bloques de integración presentaban el mismo problema en esa copia. **Corrección del 2026-10-02:** la atribución original a los «bytes versionados» fue incorrecta. La comprobación directa posterior demuestra que las 204 entradas de los seis manifiestos coinciden con los objetos Git de f9a77ef. No había datos SC3 corruptos o ausentes por este motivo; véase la revisión 01a9871.
 
 **Acción:** conservar de forma explícita los bytes de SC3 y su manifiesto, o registrar una conversión con ambos juegos de huellas y procedencia. Establecer atributos Git apropiados. No silenciar ni omitir la verificación SHA. La normalización local usada en esta revisión quedó limitada a copias y no modifica la evidencia original.
 
@@ -64,17 +64,17 @@ Las pruebas negativas comprueban que cambiar una semilla del manifiesto sin camb
 
 **Acción:** rechazar duplicados y contradicciones de geometría, vista, bloque y semilla; validar formas, conteos y configuración; calcular los agregados con precisión. Incorporar pruebas negativas antes de usarlo para una campaña. No se encontró evidencia de bloques duplicados en la pequeña entrega real.
 
-### T-03 · Nuestra cadena debe reconocer la configuración nueva
+### T-03 · La cadena debe reconocer la configuración nueva
 
-El exportador conserva `oe1_controles` y `reference_histogram`, pero la firma de compatibilidad de nuestro `empaquetar_angular_v1.py` no los incluye. El mismo ejecutable puede funcionar con diferente inyección, margen, plano y selección energética. Cambiar esos campos deja la firma actual idéntica: una mezcla podría pasar los controles técnicos.
+El exportador conserva `oe1_controles` y `reference_histogram`, pero la firma de compatibilidad del `empaquetar_angular_v1.py` no los incluye. El mismo ejecutable puede funcionar con diferente inyección, margen, plano y selección energética. Cambiar esos campos deja la firma actual idéntica: una mezcla podría pasar los controles técnicos.
 
-**Acción de nuestra parte:** extender el contrato y sus pruebas para la configuración nueva, incluyendo definición de fuente/normalización cuando se acuerde. Las 41 pruebas anteriores siguen respaldando el contrato anterior; no certifican estos campos nuevos. Exportar correctamente una vista no prueba todavía el empaquetado de seis vistas con la receta nueva.
+**Acción de la dirección:** extender el contrato y sus pruebas para la configuración nueva, incluyendo definición de fuente/normalización cuando se acuerde. Las 41 pruebas anteriores siguen respaldando el contrato anterior; no certifican estos campos nuevos. Exportar correctamente una vista no prueba todavía el empaquetado de seis vistas con la receta nueva.
 
 ## Siguiente entrega acotada
 
 1. Estudiantes: corregir T-01/T-02 y ajustar las conclusiones de C1/C2/C3/C5 al alcance realmente demostrado.
 2. Estudiantes y dirección: fijar la definición del producto (F-01/F-02) y el evaluador del piloto (F-03), con criterios previos. El criterio de 100 cuentas es por ROI de 4×4 píxeles, no una precisión del 10 % por píxel.
-3. Nuestra parte: adaptar la compatibilidad de la cadena a esa definición y revisar la nueva entrega.
+3. Dirección: adaptar la compatibilidad de la cadena a esa definición y revisar la nueva entrega.
 4. Solo después, decidir el piloto P0 y, según sus resultados, el número de muones y la campaña P1. No se requiere repetir los 19 controles por los errores de documentación/fusión ni descartar sus datos.
 
 La entrega representa un avance importante del OE1. La campaña final sigue pendiente, pero ahora las decisiones y correcciones están mejor delimitadas; ya no corresponde solicitar de nuevo, de forma genérica, toda la evidencia de SC3.

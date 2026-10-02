@@ -35,6 +35,6 @@ La documentación de [Geant4](https://geant4.web.cern.ch/documentation/dev/bfad_
 
 ## Caso inicial propuesto
 
-`geo-train-06`, vista 0. El log recibido `b-09-0-29628.out` informa una intersección entre `anomaly_1` y `anomaly_0` de 19,5003 m en un punto muestreado, y después `RUN DONE`. Esto permite relacionar defecto del catálogo, construcción y ejecución histórica. El punto interior de nuestra auditoría es independiente del punto muestreado por Geant4.
+`geo-train-06`, vista 0. El log recibido `b-09-0-29628.out` informa una intersección entre `anomaly_1` y `anomaly_0` de 19,5003 m en un punto muestreado, y después `RUN DONE`. Esto permite relacionar defecto del catálogo, construcción y ejecución histórica. El punto interior de la auditoría es independiente del punto muestreado por Geant4.
 
 Seguir las [instrucciones para estudiantes](INSTRUCCIONES_ESTUDIANTES.md). No se ha movido una anomalía ni modificado una densidad por iniciativa de esta auditoría: debe justificarse primero el escenario físico pretendido.

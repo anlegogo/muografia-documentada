@@ -8,7 +8,7 @@ Revisión: 1 de octubre de 2026, Colombia. Ejecución declarada por estudiantes:
 
 Entrega inmutable: [a4d7b79, informe y registros](https://github.com/anlegogo/muografia-documentada/tree/a4d7b79aeb9bd861516e81afa25d7950d2245488/objetivo-1/entregas/2026-09-30-complemento-r2-01). Comparador: repositorio de estudiantes, commit `0d97beb5287ebc0e43ecc63ad1c4c43fa0d87e46`. Las ramas se mantienen separadas.
 
-## Qué verificamos
+## Verificaciones realizadas
 
 - Seis corridas de 12 primarios: A/B por tres semillas, 72 transportes y 36 pares. Es la misma lista congelada de 12 muones de 10 TeV; no son 72 primarios independientes de la fuente.
 - Integridad del manifiesto: todos los archivos concuerdan; `.gitattributes` concuerda al normalizar CRLF a LF tras la extracción Windows. Los datos científicos se comprobaron byte a byte sin normalización.
@@ -31,7 +31,7 @@ Tres pares cambian un bin del histograma: ID 0/semilla 1026093011, ID 1/10260930
 
 ## Precisión sobre la cobertura y la interpretación física
 
-En A, `mat_in` distingue los lados de entrada observados. En B, el registro agregado no identifica directamente el lado: la entrada se infiere del diseño y las comprobaciones geométricas, como reconoce el informe. El material A1 sí está registrado en B para las 36 comparaciones. El desplazamiento lateral local cerca del solape no es una cota de la desviación acumulada de toda la trayectoria. Por ello aceptamos evidencia del mecanismo en los casos dirigidos, sin afirmar que se haya reconstruido la trayectoria real completa de B ni demostrado directamente cada lado de entrada en B.
+En A, `mat_in` distingue los lados de entrada observados. En B, el registro agregado no identifica directamente el lado: la entrada se infiere del diseño y las comprobaciones geométricas, como reconoce el informe. El material A1 sí está registrado en B para las 36 comparaciones. El desplazamiento lateral local cerca del solape no es una cota de la desviación acumulada de toda la trayectoria. Por ello se acepta evidencia del mecanismo en los casos dirigidos, sin afirmar que se haya reconstruido la trayectoria real completa de B ni demostrado directamente cada lado de entrada en B.
 
 La atribución de pérdidas individuales a procesos radiativos concretos exige información por pasos/procesos; el registro agregado permite medir diferencias, pero no atribuir por sí solo cada pérdida a un proceso específico. Esta precisión no invalida el resultado de asignación de material.
 

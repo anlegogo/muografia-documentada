@@ -5,10 +5,11 @@
 3. La matriz usa estados **verificado**, **reportado**, **parcial** y **pendiente**. «Verificado» exige nombrar el control y su evidencia; no implica validación física automática.
 4. Cada pendiente conserva un identificador estable, evidencia, criterio de cierre y estado. Una corrección debe conservar el antes y el después.
 5. No editar archivos de `originales/` ni sustituir binarios bajo el mismo nombre. Incorporar una nueva entrega con revisión, inventario y comparación; ensayos derivados se guardan fuera de esa carpeta.
-6. Separar fecha del experimento, fecha declarada por los autores y fecha de nuestra revisión. La bitácora de simulación recibida es retrospectiva.
+6. Separar fecha del experimento, fecha declarada por los autores y fecha de la revisión. La bitácora de simulación recibida es retrospectiva.
 7. Documentar entorno, comando, entradas y salidas de cada ejecución. Registrar fallos y advertencias, además de los resultados satisfactorios.
 8. Al crear un Markdown, enlazarlo desde el índice o desde el documento que lo introduce. Los enlaces nuevos son relativos dentro de la réplica.
 9. OE2 y OE3 se incorporarán solo cuando se amplíe expresamente el alcance. Una dependencia de preparación de datos no constituye una evaluación de modelos.
+10. Redactar la documentación propia en estilo académico impersonal o en tercera persona, como documentación de la dirección del trabajo. Usar «se verificó», «se recomienda» o «la dirección propone» según corresponda. Evitar la primera persona, el plural conversacional y las identidades del asistente como autor. Conservar las atribuciones verificables a estudiantes y dirección, sin atribuir a una persona ejecuciones o decisiones que no consten. Esta norma no modifica documentos originales ni entregas recibidas de terceros.
 
 ## Plantilla de entrada de bitácora
 

@@ -4,7 +4,7 @@
 
 2026-10-01, Colombia. **Estado: regiones geométricas candidatas calculadas y contrastadas; no son máscaras congeladas de un nuevo ensayo.** Continúa la [adaptación de lectura](ADAPTACION_LECTURA_ANGULAR.md).
 
-Una región de análisis selecciona los píxeles desde los cuales se observa una zona concreta del modelo. Al cambiar los ángulos centrales de los píxeles debemos volver a calcular esa selección, en lugar de copiar la máscara anterior.
+Una región de análisis selecciona los píxeles desde los cuales se observa una zona concreta del modelo. Al cambiar los ángulos centrales de los píxeles se debe volver a calcular esa selección, en lugar de copiar la máscara anterior.
 
 ## Avance local
 
@@ -23,7 +23,7 @@ Se generan NPZ con mapa de longitudes, máscara booleana, centros y bordes expl�
 | 4 | 182 | 182 | 0 |
 | 5 | 181 | 181 | 0 |
 
-La tercera columna es un **recálculo analítico con centros antiguos**, no la máscara histórica congelada. Esta última tiene 195 píxeles en vista 0. El recálculo antiguo difiere de ella en la celda `[23,133]`, cuya longitud analítica es 19,6805995 m: está por debajo del umbral de 20 m, pero figura incluida en la máscara congelada. Por tanto, la diferencia 195 → 193 no se atribuye íntegramente al cambio angular: una celda difiere por el recálculo geométrico y otra por los nuevos centros. No modificamos retrospectivamente la máscara ni el criterio estadístico del ensayo ya ejecutado.
+La tercera columna es un **recálculo analítico con centros antiguos**, no la máscara histórica congelada. Esta última tiene 195 píxeles en vista 0. El recálculo antiguo difiere de ella en la celda `[23,133]`, cuya longitud analítica es 19,6805995 m: está por debajo del umbral de 20 m, pero figura incluida en la máscara congelada. Por tanto, la diferencia 195 → 193 no se atribuye íntegramente al cambio angular: una celda difiere por el recálculo geométrico y otra por los nuevos centros. No se modifican retrospectivamente la máscara ni el criterio estadístico del ensayo ya ejecutado.
 
 ## Verificación
 

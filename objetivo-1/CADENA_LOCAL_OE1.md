@@ -17,7 +17,7 @@ Estado al 2026-10-01, Colombia. Se completa una **alternativa local nueva** para
 | Contar dentro y fuera de una región | [analizar_roi_angular_v1.py](../herramientas/analizar_roi_angular_v1.py) | Exige igualdad de geometría, vista, posición, malla y huellas. No confunde fracción observada con transmisión física. |
 | Auditar y empaquetar referencias | [empaquetar_angular_v1.py](../herramientas/empaquetar_angular_v1.py) | Seis vistas por geometría, configuración compatible y pares reproducibles; bloquea lotes incompletos. |
 
-Las herramientas son alternativas versionadas en nuestra réplica: no se editan los consumidores históricos de los estudiantes. Para adoptar esta cadena no hay que cambiar retrospectivamente sus scripts de etapas 1/2, máscaras congeladas ni análisis A/B.
+Las herramientas son alternativas versionadas en la réplica: no se editan los consumidores históricos de los estudiantes. Para adoptar esta cadena no hay que cambiar retrospectivamente sus scripts de etapas 1/2, máscaras congeladas ni análisis A/B.
 
 ## Verificación realizada
 
@@ -44,7 +44,7 @@ Cada realización se obtiene por reducción binomial de la referencia. Son **80 
 
 El esquema nuevo de semillas usa semilla maestra, etiqueta de versión, identidad de geometría derivada de SHA-256, vista y fracción; no depende del orden de archivos ni cambia al empaquetar un subconjunto. Se conserva el prefijo train/val/test/gen por geometría, sin redistribuir pares entre particiones. La versión de NumPy queda registrada. Este esquema está identificado como nuevo y no pretende reproducir las realizaciones históricas.
 
-Se utiliza uint32 para los conteos reducidos: **no se recortan silenciosamente a 65.535**. El constructor histórico contiene un recorte uint16; no afirmamos aquí que haya afectado los datos históricos. La prueba nueva incluye referencias de 200.000 conteos para comprobar que se preservan valores superiores al límite uint16.
+Se utiliza uint32 para los conteos reducidos: **no se recortan silenciosamente a 65.535**. El constructor histórico contiene un recorte uint16; no se afirma aquí que haya afectado los datos históricos. La prueba nueva incluye referencias de 200.000 conteos para comprobar que se preservan valores superiores al límite uint16.
 
 El manifiesto registra huellas de entradas, paquetes y metadatos; los NPZ se releen y contrastan antes de cerrar el manifiesto. La auditoría exige mismo binario, tablas, motor, definición de muestreo, nota de física, detector, malla y exposición. Cuando la exposición es `-1` (N fijo), exige también igual N entre vistas. Se puede estudiar otra política posteriormente; no se mezcla implícitamente en esta versión.
 
@@ -74,18 +74,18 @@ Este último comando queda preparado para cuando existan seis referencias compat
 
 ## Límite del trabajo local y siguiente entrega necesaria
 
-Se amplió la búsqueda del respaldo de producción a la historia disponible del repositorio fuente (no superficial), referencias locales actualizadas y commit `0dea8e1`. No aparecen los cinco documentos/scripts históricos buscados ni un paquete específico de convergencia: [alcance exacto de búsqueda](evidencias/busqueda-respaldo-produccion.json). Solo se identifica el JSON de comparación entre motores entre los nombres relacionados. Puede haber evidencia adicional en SC3 o en otros archivos no incorporados; no damos por inexistente ese material.
+Se amplió la búsqueda del respaldo de producción a la historia disponible del repositorio fuente (no superficial), referencias locales actualizadas y commit `0dea8e1`. No aparecen los cinco documentos/scripts históricos buscados ni un paquete específico de convergencia: [alcance exacto de búsqueda](evidencias/busqueda-respaldo-produccion.json). Solo se identifica el JSON de comparación entre motores entre los nombres relacionados. Puede haber evidencia adicional en SC3 o en otros archivos no incorporados; no se da por inexistente ese material.
 
-Para avanzar físicamente necesitamos una entrega acotada de los estudiantes:
+Para avanzar en la validación física se requiere una entrega acotada de los estudiantes:
 
 1. Los resultados y comandos de la comparación de planos de 100, 300 y 600 m, y cualquier tamaño adicional utilizado para estimar la asíntota; incluir semillas y conteos, no solo porcentajes.
 2. La explicación de qué representa la imagen: llegadas a un detector de 1,2 m o un estimador direccional idealizado; cómo se justifica la compensación por dispersión y la relación con el tiempo de exposición. Aclarar también la superficie y convención energética de la tasa heredada del surrogate: [diagnóstico de fuente](REVISION_ACEPTACION_PLANO.md#precisión-adicional-sobre-la-normalización-de-la-fuente).
 3. La receta completa del entorno y ejecución: código, compilación, bibliotecas/datos físicos Geant4 y opciones. Geant4 11.4.2 está respaldado para los ensayos, pero no debe inferirse equivalencia con el Docker histórico 11.3.2.
 
-Con esa evidencia se podrá decidir si basta la justificación existente o diseñar **un control físico dirigido** con referencia y criterio definidos de antemano. No se lanza otra campaña por el solo hecho de tener herramientas listas. No tenemos acceso a la sesión SC3 para recuperar lo que solo esté allí.
+Con esa evidencia se podrá decidir si basta la justificación existente o diseñar **un control físico dirigido** con referencia y criterio definidos de antemano. No se lanza otra campaña por el solo hecho de tener herramientas listas. La revisión local no dispone de acceso a la sesión SC3 para recuperar lo que solo esté allí.
 
 El plan provisional de 36 vistas a regenerar y 78 a reutilizar estaba condicionado a conservar la definición de los datos. **Con la malla nueva no se pueden reutilizar matrices antiguas cambiando sus etiquetas.** La decisión final debe tratar explícitamente esa compatibilidad, el observable y la precisión de referencia; aún no se fija N de producción ni presupuesto SC3.
 
 ### Mensaje preparado, no enviado
 
-Daniel y Reinaldo, la prueba de la corrección angular quedó revisada satisfactoriamente. Ya dejamos preparadas las herramientas para verificar, representar y organizar las imágenes y generar sus versiones de menor conteo. Por ahora no necesitamos repetir esa prueba ni lanzar la campaña grande. Para cerrar la justificación física, necesitamos que compartan los archivos y comandos con los que compararon los planos de 100, 300 y 600 metros, y nos expliquen cómo relacionan ese conteo con el detector pequeño y el tiempo de exposición. Si usaron otros tamaños para estimar la convergencia, inclúyanlos. Con esa información revisaremos qué falta y fijaremos el alcance de la campaña final.
+La prueba de la corrección angular quedó revisada satisfactoriamente. Se prepararon herramientas para verificar, representar y organizar las imágenes y generar versiones de menor conteo. No se requiere repetir esa prueba ni lanzar la campaña grande. Para completar la justificación física, se solicita a los estudiantes entregar los archivos y comandos de la comparación de planos de 100, 300 y 600 metros, junto con la relación entre ese conteo, el detector pequeño y la exposición. Si se utilizaron otros tamaños para estimar convergencia, deben incluirse. Esa información permitirá precisar los pendientes y el alcance de la campaña final.

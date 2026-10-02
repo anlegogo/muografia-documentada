@@ -106,6 +106,15 @@ def validate_block(r, source, accept_crlf=False):
         raise ValueError('geometría o exposición incompatible; se requieren bloques N fijo')
     inputs = input_entries(d/'entradas.sha256')
     config = configuration(meta)
+    if 'nominal_in_window' in meta or 'conventional_exposure_days' in meta:
+        nominal=meta.get('nominal_in_window');days=meta.get('conventional_exposure_days')
+        s0=meta.get('normalization',{}).get('S0_30_conventional_days')
+        if type(nominal) is not int or not 0<=nominal<=r['eventos'] or type(s0) not in (int,float) or not math.isfinite(s0) or s0<=0 or type(days) not in (int,float) or not math.isfinite(days) or not math.isclose(days,30*nominal/s0,rel_tol=1e-12,abs_tol=1e-12):
+            raise ValueError('exposición convencional incoherente')
+        # Nominal directions are counted separately from detected directions.
+        from diagnosticar_observable_angular import matrix
+        gen=matrix(d/(stem+'_gen.csv'))
+        if int(gen.sum())!=nominal:raise ValueError('generación nominal contradice metadatos')
     signature = json.dumps({'config': config, 'inputs': inputs, 'threads': meta.get('threads')}, sort_keys=True, allow_nan=False)
     wall = meta.get('wall_seconds')
     if type(wall) not in (float, int) or not math.isfinite(wall) or wall < 0:
@@ -153,6 +162,11 @@ def merge(manifest, source, destination, accept_crlf=False):
         meta['wall_seconds_semantics'] = 'sum of block wall times; not campaign elapsed time'
         meta['detected_in_bins'] = int(counts.sum())
         meta['detected_all_energies'] = sum(b['all_count'] for b in blocks)
+        present=['nominal_in_window' in b['meta'] for b in blocks]
+        if any(present) and not all(present):raise ValueError('normalización convencional incompleta entre bloques')
+        if all(present):
+            meta['nominal_in_window']=sum(b['meta']['nominal_in_window'] for b in blocks)
+            meta['conventional_exposure_days']=sum(b['meta']['conventional_exposure_days'] for b in blocks)
         meta.pop('mean_ekin_detected_gev', None)
         if all(b['mean'] is not None for b in blocks) and meta['detected_all_energies']:
             meta['mean_ekin_all_energies_gev'] = sum(b['mean']*b['all_count'] for b in blocks)/meta['detected_all_energies']

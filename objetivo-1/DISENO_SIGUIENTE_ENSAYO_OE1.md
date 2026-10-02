@@ -63,7 +63,7 @@ Crear `PROPUESTA_SEGUNDO_ENSAYO.md` en la carpeta de su entrega, dentro de su ra
 
 No rellenar como aprobado el diseño por anticipado. No cambiar originales ni borrar el primer piloto. Pueden preparar código y pruebas de diagnóstico de bajo coste para revisión, claramente identificadas; **esta solicitud no autoriza aumentar la campaña de producción**.
 
-## Qué revisaremos antes de ejecutar
+## Revisión previa a la ejecución
 
 | Criterio | Evidencia esperada |
 |---|---|

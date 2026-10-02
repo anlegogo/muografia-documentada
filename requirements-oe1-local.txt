@@ -2,3 +2,4 @@
 # Cadena local nueva; no instala Geant4 ni dependencias de entrenamiento.
 numpy==2.4.4
 matplotlib==3.11.1
+scipy==1.18.1

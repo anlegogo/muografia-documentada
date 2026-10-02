@@ -4,11 +4,13 @@ Réplica de trabajo de Andrés Leonardo González Gómez para el material de Rei
 
 ## Estado actual
 
-La entrega de justificación física y producción fue revisada al **2026-10-02**: se reprodujeron sus seis análisis y la fusión de dos bloques de integración, y se contrastaron los histogramas/metadatos de 19 corridas de control (92 millones de primarios). Hay una propuesta de regenerar las 114 vistas, pero **la receta aún no se declara validada y la campaña final no está habilitada**: quedan observaciones físicas y la adopción de las correcciones técnicas en el flujo de los estudiantes.
+**Preparación local posterior completada:** [entrega de las siete actividades](objetivo-1/ENTREGA_SIETE_ACTIVIDADES.md), con definición de producto, referencia ideal de cielo, diseño estadístico, evaluación de bordes, automatización y [guía única para estudiantes](objetivo-1/GUIA_SIGUIENTE_ETAPA_OE1.md). **103 pruebas locales satisfactorias.** El [alcance idealizado quedó adoptado por la dirección](objetivo-1/DEFINICION_PRODUCTO_OE1.md#lista-única-de-criterios-de-cierre). Quedan su incorporación al informe y la comprobación operativa en SC3; el piloto calculado y la campaña son condicionales, no órdenes de ejecución.
 
-Comenzar por el [balance de preparación local](objetivo-1/BALANCE_PREPARACION_LOCAL.md): cadena técnica corregida, probabilidades de fuente calculadas, manifiestos revisados y **78 pruebas locales satisfactorias**. La definición candidata y las dependencias pendientes están reunidas allí. Las revisiones anteriores conservan la evidencia y la cronología.
+Como antecedente, la [actualización 01a9871](objetivo-1/REVISION_INTEGRACION_OBSERVABLE_01A9871.md) respaldó la prueba de herramientas en SC3 sobre dos bloques, con 200.000 primarios y 69.995 registros con corte. Se reprodujo su análisis y se corrigió la atribución sobre finales de línea: los objetos Git originales estaban bien. Las correcciones y propuestas posteriores están reunidas en la entrega de siete actividades; **la campaña final sigue pendiente** del acuerdo científico y la evaluación del piloto.
 
-También está disponible la [publicación verificada de bloques](objetivo-1/PUBLICACION_VERIFICADA_BLOQUES.md), probada frente a fallos de copia y guardado. La suite local reúne **78 pruebas satisfactorias**; el flujo de SC3 aún debe adoptar estas herramientas.
+Comenzar por la entrega de siete actividades y su guía. El [balance de preparación local anterior](objetivo-1/BALANCE_PREPARACION_LOCAL.md) conserva el antecedente de la cadena y las probabilidades de fuente; las revisiones anteriores preservan evidencia y cronología.
+
+También está disponible la [publicación verificada de bloques](objetivo-1/PUBLICACION_VERIFICADA_BLOQUES.md), probada frente a fallos de copia y guardado. Esas herramientas ya se probaron en SC3 con dos bloques; el nuevo lanzador y worker están implementados y probados localmente, pendientes de verificación operativa allí.
 
 | Evidencia / recurso | Qué contiene |
 |---|---|
@@ -24,7 +26,7 @@ También está disponible la [publicación verificada de bloques](objetivo-1/PUB
 
 El conjunto histórico tiene 19 geometrías, 114 vistas y 9.120 pares reducidos, cuya reproducción se verificó. No es todavía el conjunto corregido final. De la malla nueva hay pruebas de integración y controles, aún no un conjunto final aprobado; no se completan vistas ausentes con copias ni se reetiquetan matrices antiguas.
 
-`objetivo-1/originales/` conserva el material recibido. `objetivo-1/evidencias/` contiene nuestras verificaciones. `herramientas/` incluye auditores y herramientas nuevas de preparación; `objetivo-1/correcciones/` conserva el parche entregado. Los ensayos y entregas congelados permanecen en sus ramas.
+`objetivo-1/originales/` conserva el material recibido. `objetivo-1/evidencias/` contiene las verificaciones. `herramientas/` incluye auditores y herramientas nuevas de preparación; `objetivo-1/correcciones/` conserva el parche entregado. Los ensayos y entregas congelados permanecen en sus ramas.
 
 Los NPZ históricos y logs grandes no forman parte del historial Git de esta réplica; restaurarlos según [procedencia](docs/PROCEDENCIA.md) y verificar sus huellas. Los derivados nuevos se generan en carpetas de trabajo separadas. Para los scripts nuevos consultar [versiones Python probadas](requirements-oe1-local.txt).
 

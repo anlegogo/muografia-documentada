@@ -1,0 +1,1675 @@
+{
+  "student_commit": "01a98718ba381797f6d4616e25d42ad533cad6f1",
+  "date": "2026-10-02",
+  "t01_git_objects": {
+    "matches": 204,
+    "entries": [
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r00-produccion/geo-train-01_view0_hist.csv",
+        "expected": "702ebdf99397a03c9cf536e66e5b49a636bb52b73b6d954ac42af4979bc0b988",
+        "actual": "702ebdf99397a03c9cf536e66e5b49a636bb52b73b6d954ac42af4979bc0b988",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r00-produccion/geo-train-01_view0.meta.json",
+        "expected": "7a8355af911eb1a719d6880bf235e04b3bae18caeb533c975a28bf0dd0f9d86e",
+        "actual": "7a8355af911eb1a719d6880bf235e04b3bae18caeb533c975a28bf0dd0f9d86e",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r01-parche-por-defecto/geo-train-01_view0_hist.csv",
+        "expected": "702ebdf99397a03c9cf536e66e5b49a636bb52b73b6d954ac42af4979bc0b988",
+        "actual": "702ebdf99397a03c9cf536e66e5b49a636bb52b73b6d954ac42af4979bc0b988",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r01-parche-por-defecto/geo-train-01_view0.meta.json",
+        "expected": "55799fb1e8c1216a080170377ea880e61b01126966d55bd5dc08fbb9d635a8e6",
+        "actual": "55799fb1e8c1216a080170377ea880e61b01126966d55bd5dc08fbb9d635a8e6",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r02-plano-1.2m/geo-train-01_view0_gen.csv",
+        "expected": "ceb9d1ac2233147638a5f99743e1ff24cc09cf1f505e141eafd9eb7d695eeb50",
+        "actual": "ceb9d1ac2233147638a5f99743e1ff24cc09cf1f505e141eafd9eb7d695eeb50",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r02-plano-1.2m/geo-train-01_view0_hist.csv",
+        "expected": "b36878e69a7478dd9df0464719c2fafc5cacb1d32711fcfa33a89b0c0c60e089",
+        "actual": "b36878e69a7478dd9df0464719c2fafc5cacb1d32711fcfa33a89b0c0c60e089",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r02-plano-1.2m/geo-train-01_view0_hist_ecut0.5.csv",
+        "expected": "620d3a18543fcc0978d8de03e10646937f5321db09249b7c4144fd377dc74e14",
+        "actual": "620d3a18543fcc0978d8de03e10646937f5321db09249b7c4144fd377dc74e14",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r02-plano-1.2m/geo-train-01_view0_hist_ecut1.csv",
+        "expected": "4754be9e8121ae6a7cfc3199fcd35f5e756433936beb6f6edc24143c48fb29c3",
+        "actual": "4754be9e8121ae6a7cfc3199fcd35f5e756433936beb6f6edc24143c48fb29c3",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r02-plano-1.2m/geo-train-01_view0_hist_ecut2.csv",
+        "expected": "a47eaa8cd5c49d9b38b82b956f37d625c3b3743b8c8889ce4da7a9202c1a1acb",
+        "actual": "a47eaa8cd5c49d9b38b82b956f37d625c3b3743b8c8889ce4da7a9202c1a1acb",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r02-plano-1.2m/geo-train-01_view0_hist_ecut3.csv",
+        "expected": "54238e1b7858d785c6a00611003aa0efa812010d5b54269cf7fb38aae34c10e3",
+        "actual": "54238e1b7858d785c6a00611003aa0efa812010d5b54269cf7fb38aae34c10e3",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r02-plano-1.2m/geo-train-01_view0_hist_ecut5.csv",
+        "expected": "9f7440ab388f0111e1bd012bceb4470672ee5f1544a748dc1c3e225056de2b93",
+        "actual": "9f7440ab388f0111e1bd012bceb4470672ee5f1544a748dc1c3e225056de2b93",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r02-plano-1.2m/geo-train-01_view0.meta.json",
+        "expected": "4ddaf2d5681e7769fed5a0f774ad792f92c7282b2a0288ade0acff26322bc2fa",
+        "actual": "4ddaf2d5681e7769fed5a0f774ad792f92c7282b2a0288ade0acff26322bc2fa",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r03-plano-100m/geo-train-01_view0_gen.csv",
+        "expected": "ceb9d1ac2233147638a5f99743e1ff24cc09cf1f505e141eafd9eb7d695eeb50",
+        "actual": "ceb9d1ac2233147638a5f99743e1ff24cc09cf1f505e141eafd9eb7d695eeb50",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r03-plano-100m/geo-train-01_view0_hist.csv",
+        "expected": "6a5abc8173e167daf8cedcface8671fdc6628ed84689d6c67a3f67379ebecb22",
+        "actual": "6a5abc8173e167daf8cedcface8671fdc6628ed84689d6c67a3f67379ebecb22",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r03-plano-100m/geo-train-01_view0_hist_ecut0.5.csv",
+        "expected": "ed9b0234b97c4707e0e69a53881633c1d1b105c9045e6d0ace63c68fbbbfb47c",
+        "actual": "ed9b0234b97c4707e0e69a53881633c1d1b105c9045e6d0ace63c68fbbbfb47c",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r03-plano-100m/geo-train-01_view0_hist_ecut1.csv",
+        "expected": "97269f4f64d5987334edb5966ece1cebde581bb217a4396833ef7cfe4e83087b",
+        "actual": "97269f4f64d5987334edb5966ece1cebde581bb217a4396833ef7cfe4e83087b",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r03-plano-100m/geo-train-01_view0_hist_ecut2.csv",
+        "expected": "3eb6d842397f4fcd7f46e67fcd6430d181319a7bfffbe1630a542a611d350e93",
+        "actual": "3eb6d842397f4fcd7f46e67fcd6430d181319a7bfffbe1630a542a611d350e93",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r03-plano-100m/geo-train-01_view0_hist_ecut3.csv",
+        "expected": "88387032409c0aae3c4a829ee9efcbdd69063ad3fd0073d32c714960f9c63e4b",
+        "actual": "88387032409c0aae3c4a829ee9efcbdd69063ad3fd0073d32c714960f9c63e4b",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r03-plano-100m/geo-train-01_view0_hist_ecut5.csv",
+        "expected": "e2bb519c314f7ea8de381dbe603205a4e9ccc32a0fa5198da6fc6a950e427aa7",
+        "actual": "e2bb519c314f7ea8de381dbe603205a4e9ccc32a0fa5198da6fc6a950e427aa7",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r03-plano-100m/geo-train-01_view0.meta.json",
+        "expected": "9f4cffba2d54c509f68dc20425fe589d433ab8f3620ce3a9f295763b2f7b6ef3",
+        "actual": "9f4cffba2d54c509f68dc20425fe589d433ab8f3620ce3a9f295763b2f7b6ef3",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r04-plano-300m/geo-train-01_view0_gen.csv",
+        "expected": "ceb9d1ac2233147638a5f99743e1ff24cc09cf1f505e141eafd9eb7d695eeb50",
+        "actual": "ceb9d1ac2233147638a5f99743e1ff24cc09cf1f505e141eafd9eb7d695eeb50",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r04-plano-300m/geo-train-01_view0_hist.csv",
+        "expected": "ce57615c8f3cde122fbb962246523a095bf240997b7457c46cf5344492e5b798",
+        "actual": "ce57615c8f3cde122fbb962246523a095bf240997b7457c46cf5344492e5b798",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r04-plano-300m/geo-train-01_view0_hist_ecut0.5.csv",
+        "expected": "bdc52c563795669c8ffef2e2cac5f1389a80123c08160c3f6fd4c945623cd9f1",
+        "actual": "bdc52c563795669c8ffef2e2cac5f1389a80123c08160c3f6fd4c945623cd9f1",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r04-plano-300m/geo-train-01_view0_hist_ecut1.csv",
+        "expected": "e98f51c12dcf99f1a3d72014e8bae7159fb5a1d8e67d02afecfbfa93632a487e",
+        "actual": "e98f51c12dcf99f1a3d72014e8bae7159fb5a1d8e67d02afecfbfa93632a487e",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r04-plano-300m/geo-train-01_view0_hist_ecut2.csv",
+        "expected": "35ce869c40f4625461e3148f70e567c1318fac39f93ad1e3824a94ad340bc072",
+        "actual": "35ce869c40f4625461e3148f70e567c1318fac39f93ad1e3824a94ad340bc072",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r04-plano-300m/geo-train-01_view0_hist_ecut3.csv",
+        "expected": "6ce496aedb4dc603ebda3435d2b17679f5de965ede947991f2b9815c1ef71efa",
+        "actual": "6ce496aedb4dc603ebda3435d2b17679f5de965ede947991f2b9815c1ef71efa",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r04-plano-300m/geo-train-01_view0_hist_ecut5.csv",
+        "expected": "8d5e9b874fad7bc1b018704f11224f8da78a4ebd89ed21876b15e5d2606579f1",
+        "actual": "8d5e9b874fad7bc1b018704f11224f8da78a4ebd89ed21876b15e5d2606579f1",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r04-plano-300m/geo-train-01_view0.meta.json",
+        "expected": "03738ca6a7846df70baefa3eff0da0632326dd0958b20e70376067ae9db8f1ca",
+        "actual": "03738ca6a7846df70baefa3eff0da0632326dd0958b20e70376067ae9db8f1ca",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r05-plano-600m/geo-train-01_view0_gen.csv",
+        "expected": "ceb9d1ac2233147638a5f99743e1ff24cc09cf1f505e141eafd9eb7d695eeb50",
+        "actual": "ceb9d1ac2233147638a5f99743e1ff24cc09cf1f505e141eafd9eb7d695eeb50",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r05-plano-600m/geo-train-01_view0_hist.csv",
+        "expected": "702ebdf99397a03c9cf536e66e5b49a636bb52b73b6d954ac42af4979bc0b988",
+        "actual": "702ebdf99397a03c9cf536e66e5b49a636bb52b73b6d954ac42af4979bc0b988",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r05-plano-600m/geo-train-01_view0_hist_ecut0.5.csv",
+        "expected": "0937f106073d70d051cb2cdf0a3567a9f1c313e7ac3f07dd2ab632636e177de5",
+        "actual": "0937f106073d70d051cb2cdf0a3567a9f1c313e7ac3f07dd2ab632636e177de5",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r05-plano-600m/geo-train-01_view0_hist_ecut1.csv",
+        "expected": "fc19e5aeae2e5bdb5c775da54d8c37fba1ce5aeb9ef13d3298da9a379fc943a2",
+        "actual": "fc19e5aeae2e5bdb5c775da54d8c37fba1ce5aeb9ef13d3298da9a379fc943a2",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r05-plano-600m/geo-train-01_view0_hist_ecut2.csv",
+        "expected": "b432801d4ca8a29237e57644d4a8d4d71e1814e66ac1f0351b9eb53cc740fef1",
+        "actual": "b432801d4ca8a29237e57644d4a8d4d71e1814e66ac1f0351b9eb53cc740fef1",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r05-plano-600m/geo-train-01_view0_hist_ecut3.csv",
+        "expected": "f44a5cbe94b6d0c48a626addd1c19c3cf3e79b7f4bf6508af14548ecdb2df431",
+        "actual": "f44a5cbe94b6d0c48a626addd1c19c3cf3e79b7f4bf6508af14548ecdb2df431",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r05-plano-600m/geo-train-01_view0_hist_ecut5.csv",
+        "expected": "8d5e9b874fad7bc1b018704f11224f8da78a4ebd89ed21876b15e5d2606579f1",
+        "actual": "8d5e9b874fad7bc1b018704f11224f8da78a4ebd89ed21876b15e5d2606579f1",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r05-plano-600m/geo-train-01_view0.meta.json",
+        "expected": "cc81e74baeb516a38fc35148bdd4e724b8b12ff901712283704ed789e404a04e",
+        "actual": "cc81e74baeb516a38fc35148bdd4e724b8b12ff901712283704ed789e404a04e",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r06-plano-1200m/geo-train-01_view0_gen.csv",
+        "expected": "ceb9d1ac2233147638a5f99743e1ff24cc09cf1f505e141eafd9eb7d695eeb50",
+        "actual": "ceb9d1ac2233147638a5f99743e1ff24cc09cf1f505e141eafd9eb7d695eeb50",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r06-plano-1200m/geo-train-01_view0_hist.csv",
+        "expected": "8b39cc32c618dcea3c355033e3e6d7e40253976e7245fef3a91a1cf58fc954ad",
+        "actual": "8b39cc32c618dcea3c355033e3e6d7e40253976e7245fef3a91a1cf58fc954ad",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r06-plano-1200m/geo-train-01_view0_hist_ecut0.5.csv",
+        "expected": "9d178bfd33995634623d7195f42b94e4fb989db0ab0d96070edb288fb1ccc919",
+        "actual": "9d178bfd33995634623d7195f42b94e4fb989db0ab0d96070edb288fb1ccc919",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r06-plano-1200m/geo-train-01_view0_hist_ecut1.csv",
+        "expected": "e2b47b171b8dea8ae6ed6974ff8fb00991e4fd96503102d495993d015c2dcd2a",
+        "actual": "e2b47b171b8dea8ae6ed6974ff8fb00991e4fd96503102d495993d015c2dcd2a",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r06-plano-1200m/geo-train-01_view0_hist_ecut2.csv",
+        "expected": "baa354a0e04cce79a94edff33038fc4c767d4b1b2135276cbbe89c0a5971b3eb",
+        "actual": "baa354a0e04cce79a94edff33038fc4c767d4b1b2135276cbbe89c0a5971b3eb",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r06-plano-1200m/geo-train-01_view0_hist_ecut3.csv",
+        "expected": "f44a5cbe94b6d0c48a626addd1c19c3cf3e79b7f4bf6508af14548ecdb2df431",
+        "actual": "f44a5cbe94b6d0c48a626addd1c19c3cf3e79b7f4bf6508af14548ecdb2df431",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r06-plano-1200m/geo-train-01_view0_hist_ecut5.csv",
+        "expected": "8d5e9b874fad7bc1b018704f11224f8da78a4ebd89ed21876b15e5d2606579f1",
+        "actual": "8d5e9b874fad7bc1b018704f11224f8da78a4ebd89ed21876b15e5d2606579f1",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r06-plano-1200m/geo-train-01_view0.meta.json",
+        "expected": "a592993678fb148a90bcdb661df1c9769d5593935773b54d17df871b55c560ab",
+        "actual": "a592993678fb148a90bcdb661df1c9769d5593935773b54d17df871b55c560ab",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r07-edificio-100m/geo-train-01_view0_gen.csv",
+        "expected": "ceb9d1ac2233147638a5f99743e1ff24cc09cf1f505e141eafd9eb7d695eeb50",
+        "actual": "ceb9d1ac2233147638a5f99743e1ff24cc09cf1f505e141eafd9eb7d695eeb50",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r07-edificio-100m/geo-train-01_view0_hist.csv",
+        "expected": "84dd1e5b76626d380bbee31ba73f1f4fa1149cba375634a82be8ff086bfa34c2",
+        "actual": "84dd1e5b76626d380bbee31ba73f1f4fa1149cba375634a82be8ff086bfa34c2",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r07-edificio-100m/geo-train-01_view0_hist_ecut0.5.csv",
+        "expected": "fec24cd99917ad062f004be97e4beac02628424ef8ac3ce7642799024f77c5c2",
+        "actual": "fec24cd99917ad062f004be97e4beac02628424ef8ac3ce7642799024f77c5c2",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r07-edificio-100m/geo-train-01_view0_hist_ecut1.csv",
+        "expected": "88091ca4e5617c1eeefadaef7154e2068b25541e435e1101b213120292698141",
+        "actual": "88091ca4e5617c1eeefadaef7154e2068b25541e435e1101b213120292698141",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r07-edificio-100m/geo-train-01_view0_hist_ecut2.csv",
+        "expected": "8a44333a3a541c769ee23952b15959a4f361dd84658483fc1f137619f7d6b82e",
+        "actual": "8a44333a3a541c769ee23952b15959a4f361dd84658483fc1f137619f7d6b82e",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r07-edificio-100m/geo-train-01_view0_hist_ecut3.csv",
+        "expected": "bfae10a7671399bccee6eec2ed2afe365cb629b65013ca1b9beacd1a6670c1b7",
+        "actual": "bfae10a7671399bccee6eec2ed2afe365cb629b65013ca1b9beacd1a6670c1b7",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r07-edificio-100m/geo-train-01_view0_hist_ecut5.csv",
+        "expected": "8ef3030f2f92687e3e3764cda318e775e15fdf285e3e6fd5f5ad3ef58797b31e",
+        "actual": "8ef3030f2f92687e3e3764cda318e775e15fdf285e3e6fd5f5ad3ef58797b31e",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r07-edificio-100m/geo-train-01_view0.meta.json",
+        "expected": "e6f0f5648b30e4a697ceeac46b8d05f1f132911b2b3dd38f8eb63a910938fc76",
+        "actual": "e6f0f5648b30e4a697ceeac46b8d05f1f132911b2b3dd38f8eb63a910938fc76",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r08-edificio-600m/geo-train-01_view0_gen.csv",
+        "expected": "ceb9d1ac2233147638a5f99743e1ff24cc09cf1f505e141eafd9eb7d695eeb50",
+        "actual": "ceb9d1ac2233147638a5f99743e1ff24cc09cf1f505e141eafd9eb7d695eeb50",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r08-edificio-600m/geo-train-01_view0_hist.csv",
+        "expected": "27aa50ecbfcbe45e7e4665d564c482d1e4fb44c1760d63d9383abd2b21ea5cfe",
+        "actual": "27aa50ecbfcbe45e7e4665d564c482d1e4fb44c1760d63d9383abd2b21ea5cfe",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r08-edificio-600m/geo-train-01_view0_hist_ecut0.5.csv",
+        "expected": "8ec41af0a062570ed41b435acd0cc608ae30c028424a7ae4111ebf1b8357a48a",
+        "actual": "8ec41af0a062570ed41b435acd0cc608ae30c028424a7ae4111ebf1b8357a48a",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r08-edificio-600m/geo-train-01_view0_hist_ecut1.csv",
+        "expected": "67c5b6a44f5dbab58d71adf80fd3cbceedea25dbe2a1e39cb9196a42d3a49e88",
+        "actual": "67c5b6a44f5dbab58d71adf80fd3cbceedea25dbe2a1e39cb9196a42d3a49e88",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r08-edificio-600m/geo-train-01_view0_hist_ecut2.csv",
+        "expected": "820da58a7cc45cd3053b98fb28e5ea26d6f025390c1064ba74cc32f1f6715455",
+        "actual": "820da58a7cc45cd3053b98fb28e5ea26d6f025390c1064ba74cc32f1f6715455",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r08-edificio-600m/geo-train-01_view0_hist_ecut3.csv",
+        "expected": "2416d3ab71b5924d9e59dc25f6023f5e4714575df573f16c2b2d2e49e69a8bf2",
+        "actual": "2416d3ab71b5924d9e59dc25f6023f5e4714575df573f16c2b2d2e49e69a8bf2",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r08-edificio-600m/geo-train-01_view0_hist_ecut5.csv",
+        "expected": "8616cf612eb4ae3027e07f5bc304985883f181ed77b8d7ec5d4685d55057e007",
+        "actual": "8616cf612eb4ae3027e07f5bc304985883f181ed77b8d7ec5d4685d55057e007",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r08-edificio-600m/geo-train-01_view0.meta.json",
+        "expected": "5e1a0a9f42639cc40fbd905ef21b7a1f549eda05ce2c6637fd1f9961b44d4947",
+        "actual": "5e1a0a9f42639cc40fbd905ef21b7a1f549eda05ce2c6637fd1f9961b44d4947",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r09-margen-2deg/geo-train-01_view0_gen.csv",
+        "expected": "dc03180e25bbe0874ed45f728ac723b98beb2d908eaeaf74ae142642d9784e79",
+        "actual": "dc03180e25bbe0874ed45f728ac723b98beb2d908eaeaf74ae142642d9784e79",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r09-margen-2deg/geo-train-01_view0_hist.csv",
+        "expected": "58d7127bba059fc0de8c296526345966b1e1c7e751259c842711171f03314f07",
+        "actual": "58d7127bba059fc0de8c296526345966b1e1c7e751259c842711171f03314f07",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r09-margen-2deg/geo-train-01_view0_hist_ecut0.5.csv",
+        "expected": "bf062215738bc87d40e2113f5b949cb52d3bb90912e55fae5aab3795b392635c",
+        "actual": "bf062215738bc87d40e2113f5b949cb52d3bb90912e55fae5aab3795b392635c",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r09-margen-2deg/geo-train-01_view0_hist_ecut1.csv",
+        "expected": "28ddefec586de984aa476047182fa8053eab7e3e150ba60915afaf09a8042f0a",
+        "actual": "28ddefec586de984aa476047182fa8053eab7e3e150ba60915afaf09a8042f0a",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r09-margen-2deg/geo-train-01_view0_hist_ecut2.csv",
+        "expected": "85f925d5c6f60ab33b77e73f7669d1509d87ded3c9ca57b911a417de7adc3aba",
+        "actual": "85f925d5c6f60ab33b77e73f7669d1509d87ded3c9ca57b911a417de7adc3aba",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r09-margen-2deg/geo-train-01_view0_hist_ecut3.csv",
+        "expected": "cdf957fcf9867d61fcf0deda71dd1c40a54e71a8529f782be23e790d05373e28",
+        "actual": "cdf957fcf9867d61fcf0deda71dd1c40a54e71a8529f782be23e790d05373e28",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r09-margen-2deg/geo-train-01_view0_hist_ecut5.csv",
+        "expected": "9cb65476ecc138fda52f83542020111ec5a47fc720ade16f09d61eb6697540f1",
+        "actual": "9cb65476ecc138fda52f83542020111ec5a47fc720ade16f09d61eb6697540f1",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r09-margen-2deg/geo-train-01_view0.meta.json",
+        "expected": "252ea0bf5bf20eb0995eee6b9429aa208e3e0342d94fedbc8437708e924cc488",
+        "actual": "252ea0bf5bf20eb0995eee6b9429aa208e3e0342d94fedbc8437708e924cc488",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r10-margen-5deg/geo-train-01_view0_gen.csv",
+        "expected": "eb3a6cbee287185ca34950a781378dde55a0fa87af08fe95c959f1d15c38d4ab",
+        "actual": "eb3a6cbee287185ca34950a781378dde55a0fa87af08fe95c959f1d15c38d4ab",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r10-margen-5deg/geo-train-01_view0_hist.csv",
+        "expected": "d1e3786bb191f9fb392b5a2578b8dc1e36186794b1459805917a54d350e57544",
+        "actual": "d1e3786bb191f9fb392b5a2578b8dc1e36186794b1459805917a54d350e57544",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r10-margen-5deg/geo-train-01_view0_hist_ecut0.5.csv",
+        "expected": "acdf966f5a2cf755cd40f5b909d9925cdd54e1e441cc9938e9a972c23b148705",
+        "actual": "acdf966f5a2cf755cd40f5b909d9925cdd54e1e441cc9938e9a972c23b148705",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r10-margen-5deg/geo-train-01_view0_hist_ecut1.csv",
+        "expected": "48485e069c035dd5fc99e2698cc31a9a62e58ceee026dbec10686413140bd994",
+        "actual": "48485e069c035dd5fc99e2698cc31a9a62e58ceee026dbec10686413140bd994",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r10-margen-5deg/geo-train-01_view0_hist_ecut2.csv",
+        "expected": "289bec69546f52645ab068a29a4443316a115d60f0678d9022fb7e3f9f1078d9",
+        "actual": "289bec69546f52645ab068a29a4443316a115d60f0678d9022fb7e3f9f1078d9",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r10-margen-5deg/geo-train-01_view0_hist_ecut3.csv",
+        "expected": "7ce8286ed58fb19b4a03223c7072122a97154b57747475c2ac47f0554ff4f989",
+        "actual": "7ce8286ed58fb19b4a03223c7072122a97154b57747475c2ac47f0554ff4f989",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r10-margen-5deg/geo-train-01_view0_hist_ecut5.csv",
+        "expected": "d0133c74810a85c1c0180d8044bd9403bd7b6ab6df72d9854be40e57cc9b15bc",
+        "actual": "d0133c74810a85c1c0180d8044bd9403bd7b6ab6df72d9854be40e57cc9b15bc",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r10-margen-5deg/geo-train-01_view0.meta.json",
+        "expected": "f99a9ae9cf944abd959593d32554cfff5abf0fa928fe84e489955bf39c920eda",
+        "actual": "f99a9ae9cf944abd959593d32554cfff5abf0fa928fe84e489955bf39c920eda",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a00-parche-v2-por-defecto/geo-train-01_view0_hist.csv",
+        "expected": "702ebdf99397a03c9cf536e66e5b49a636bb52b73b6d954ac42af4979bc0b988",
+        "actual": "702ebdf99397a03c9cf536e66e5b49a636bb52b73b6d954ac42af4979bc0b988",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a00-parche-v2-por-defecto/geo-train-01_view0.meta.json",
+        "expected": "b3208bc7562d8397d30406b45a1863efdef7545b3022a716b1992ac8c2a60c05",
+        "actual": "b3208bc7562d8397d30406b45a1863efdef7545b3022a716b1992ac8c2a60c05",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_gen.csv",
+        "expected": "0c357545f3e11a016c1fb0053ee6d6e8b0c6570cd72d2206b2921519ac66a486",
+        "actual": "0c357545f3e11a016c1fb0053ee6d6e8b0c6570cd72d2206b2921519ac66a486",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist.csv",
+        "expected": "c4e8168688c1aa7078e45a1b7c75be78915c13b1d0f788d3209e301b414996b8",
+        "actual": "c4e8168688c1aa7078e45a1b7c75be78915c13b1d0f788d3209e301b414996b8",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_ecut0.5.csv",
+        "expected": "ac20fbea39ceb03b6a9b84f4da36a4e934bf4475127e3e865c0f5bfc20ff7e6c",
+        "actual": "ac20fbea39ceb03b6a9b84f4da36a4e934bf4475127e3e865c0f5bfc20ff7e6c",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_ecut1.csv",
+        "expected": "ad714ed9114f5c35d11a98d58a4bc3cc91b20aa406cfbe33f9400b844c03bb51",
+        "actual": "ad714ed9114f5c35d11a98d58a4bc3cc91b20aa406cfbe33f9400b844c03bb51",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_ecut2.csv",
+        "expected": "5d8b889076ca9e7df77b5f0aca23e31435bfc41345f99ab514a718d886418dff",
+        "actual": "5d8b889076ca9e7df77b5f0aca23e31435bfc41345f99ab514a718d886418dff",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_ecut3.csv",
+        "expected": "b5fcc1070f1a85034b53042ba96df3060db80bde02a53ff63196d603d2cfdbca",
+        "actual": "b5fcc1070f1a85034b53042ba96df3060db80bde02a53ff63196d603d2cfdbca",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_ecut5.csv",
+        "expected": "948f0aa7f8565aef6a6f09f4f5b5d82b00118aa051e32c46ea0d11c4b901a0fd",
+        "actual": "948f0aa7f8565aef6a6f09f4f5b5d82b00118aa051e32c46ea0d11c4b901a0fd",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub0.6_ecut0.5.csv",
+        "expected": "c9d90e8cfb3fea30bce6a28d2a3d53ce5af221c56ef465059dbbeafa973cfbf9",
+        "actual": "c9d90e8cfb3fea30bce6a28d2a3d53ce5af221c56ef465059dbbeafa973cfbf9",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub0.6_ecut0.csv",
+        "expected": "b08b4a819d8784dedd672952d1b8de51f0edd8b6b03d7fde2c60eb1b2378b7ca",
+        "actual": "b08b4a819d8784dedd672952d1b8de51f0edd8b6b03d7fde2c60eb1b2378b7ca",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub0.6_ecut1.csv",
+        "expected": "6336264803dfdd6318bde0efe515ff6a8330f23d3ee9c7feaded435b47630470",
+        "actual": "6336264803dfdd6318bde0efe515ff6a8330f23d3ee9c7feaded435b47630470",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub0.6_ecut2.csv",
+        "expected": "b252b7e2164ff5c31679c95ab28e3fc016f53102c90bbc0add1e814f8afdc245",
+        "actual": "b252b7e2164ff5c31679c95ab28e3fc016f53102c90bbc0add1e814f8afdc245",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub0.6_ecut3.csv",
+        "expected": "91fed6f1fb1b03fbdae9bc3f39e658cb0e63965ae2422f6f150a381bb817239c",
+        "actual": "91fed6f1fb1b03fbdae9bc3f39e658cb0e63965ae2422f6f150a381bb817239c",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub0.6_ecut5.csv",
+        "expected": "99a07a8f6124ef248be9ca46a1734218eaee512468f42a818e1cedee3d9be684",
+        "actual": "99a07a8f6124ef248be9ca46a1734218eaee512468f42a818e1cedee3d9be684",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub150_ecut0.5.csv",
+        "expected": "344c3c74fe9ee656a3a4452a66816071dbdfa31b97813eb13f476bc3e80b315e",
+        "actual": "344c3c74fe9ee656a3a4452a66816071dbdfa31b97813eb13f476bc3e80b315e",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub150_ecut0.csv",
+        "expected": "925c085d4bc9f61abf2db6df91e5a82c495bc70793c5c931c97f7e0648a24e20",
+        "actual": "925c085d4bc9f61abf2db6df91e5a82c495bc70793c5c931c97f7e0648a24e20",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub150_ecut1.csv",
+        "expected": "fdbe07fa596a2022f3c364959021e81a3d176d04db5cdbaf8ba5ae4b00c76e68",
+        "actual": "fdbe07fa596a2022f3c364959021e81a3d176d04db5cdbaf8ba5ae4b00c76e68",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub150_ecut2.csv",
+        "expected": "10d310fcd0b9fff5d4b583aa615da6e1f498e7186f807fc3b4377c6ad090eb96",
+        "actual": "10d310fcd0b9fff5d4b583aa615da6e1f498e7186f807fc3b4377c6ad090eb96",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub150_ecut3.csv",
+        "expected": "609e7de7865aa12944ae118ef10f6eb29a78b37e0af5492f5559670162134e89",
+        "actual": "609e7de7865aa12944ae118ef10f6eb29a78b37e0af5492f5559670162134e89",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub150_ecut5.csv",
+        "expected": "3f08b129b78b372885111628b8f7364de126ec8fb451410e6587c1ff07c228b7",
+        "actual": "3f08b129b78b372885111628b8f7364de126ec8fb451410e6587c1ff07c228b7",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub300_ecut0.5.csv",
+        "expected": "029ee5de6301bad7404575a0fcab09041fc40e81056b6784775edc20fb875432",
+        "actual": "029ee5de6301bad7404575a0fcab09041fc40e81056b6784775edc20fb875432",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub300_ecut0.csv",
+        "expected": "a6efb100b73a649bc82d1ac7d0a5b3796cf945d2a53fb9ba7fa3e10f8516ea2f",
+        "actual": "a6efb100b73a649bc82d1ac7d0a5b3796cf945d2a53fb9ba7fa3e10f8516ea2f",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub300_ecut1.csv",
+        "expected": "1600934dcecbb7b9a0e6b4828793b7ae14fe19fa19d63421b805fbd3e19131a7",
+        "actual": "1600934dcecbb7b9a0e6b4828793b7ae14fe19fa19d63421b805fbd3e19131a7",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub300_ecut2.csv",
+        "expected": "7936c6662355597539c68ad07504fc82cb589f2cf000bddbde6e8bc2158e3cfd",
+        "actual": "7936c6662355597539c68ad07504fc82cb589f2cf000bddbde6e8bc2158e3cfd",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub300_ecut3.csv",
+        "expected": "ee4879c478845224d73c79ebef38599027f23d4def1e02fa7581dda07ccf04a3",
+        "actual": "ee4879c478845224d73c79ebef38599027f23d4def1e02fa7581dda07ccf04a3",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub300_ecut5.csv",
+        "expected": "2085f04e7b72099d6f415ae3c0c68b500398bd8453ac08dd804af0b8ddff07cb",
+        "actual": "2085f04e7b72099d6f415ae3c0c68b500398bd8453ac08dd804af0b8ddff07cb",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub50_ecut0.5.csv",
+        "expected": "907179f3a5134330ce84d75cdbc5bbea8809e8538426e652aa393d7ae7fc17f8",
+        "actual": "907179f3a5134330ce84d75cdbc5bbea8809e8538426e652aa393d7ae7fc17f8",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub50_ecut0.csv",
+        "expected": "c24464746f589ec3894710b58f3ff535cd0e78b8832ed68e127dded7bb39acea",
+        "actual": "c24464746f589ec3894710b58f3ff535cd0e78b8832ed68e127dded7bb39acea",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub50_ecut1.csv",
+        "expected": "51ff72ea73e69d3e631b95ef073ee0b96b229842309433173f81d2bc831f554d",
+        "actual": "51ff72ea73e69d3e631b95ef073ee0b96b229842309433173f81d2bc831f554d",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub50_ecut2.csv",
+        "expected": "ab1e433a4a7ba00a9a6b7cd212b6ca140f513f7d2d3d0c3f47d307eb6fbfec0e",
+        "actual": "ab1e433a4a7ba00a9a6b7cd212b6ca140f513f7d2d3d0c3f47d307eb6fbfec0e",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub50_ecut3.csv",
+        "expected": "355415ac80a6acc74bc18fb10a9293bacf0a2697459bb2d260ba76bff598639d",
+        "actual": "355415ac80a6acc74bc18fb10a9293bacf0a2697459bb2d260ba76bff598639d",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0_hist_sub50_ecut5.csv",
+        "expected": "29e1536f64dbf26918ccca4b44875796dbc8a07f45c06f20b38a93036c5392bd",
+        "actual": "29e1536f64dbf26918ccca4b44875796dbc8a07f45c06f20b38a93036c5392bd",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual/geo-train-01_view0.meta.json",
+        "expected": "f5e0df06afd064a4dd8f5ff782b74021f6adcc64688f773363001dcd80ccdc79",
+        "actual": "f5e0df06afd064a4dd8f5ff782b74021f6adcc64688f773363001dcd80ccdc79",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_gen.csv",
+        "expected": "0c357545f3e11a016c1fb0053ee6d6e8b0c6570cd72d2206b2921519ac66a486",
+        "actual": "0c357545f3e11a016c1fb0053ee6d6e8b0c6570cd72d2206b2921519ac66a486",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist.csv",
+        "expected": "e0c9a394bf8bca51b0d055e5bcafa5ed0cff96c7643f1c197e42d8ce18f93e3e",
+        "actual": "e0c9a394bf8bca51b0d055e5bcafa5ed0cff96c7643f1c197e42d8ce18f93e3e",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_ecut0.5.csv",
+        "expected": "211fe39dde1ea2191e43d83e60095cb694734630d6a4731aeb57d9d1cb1974a9",
+        "actual": "211fe39dde1ea2191e43d83e60095cb694734630d6a4731aeb57d9d1cb1974a9",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_ecut1.csv",
+        "expected": "e431cd16404a129220656623da66a4aed63129d5ed392a9c532fe479822f77c3",
+        "actual": "e431cd16404a129220656623da66a4aed63129d5ed392a9c532fe479822f77c3",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_ecut2.csv",
+        "expected": "e2f084b5daf7114998bddf4286eaf93511a5ba2cf4368df4dc33daa951364684",
+        "actual": "e2f084b5daf7114998bddf4286eaf93511a5ba2cf4368df4dc33daa951364684",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_ecut3.csv",
+        "expected": "ee8064f12cd00c01867dc926c092510488409ca5f17a1334eb464aba2eb66d18",
+        "actual": "ee8064f12cd00c01867dc926c092510488409ca5f17a1334eb464aba2eb66d18",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_ecut5.csv",
+        "expected": "84faefc664e9d357646033e849b50ecaaf39c9841da4b5c4f0b1a1cd97135533",
+        "actual": "84faefc664e9d357646033e849b50ecaaf39c9841da4b5c4f0b1a1cd97135533",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub0.6_ecut0.5.csv",
+        "expected": "9be14800d0384eec524673132521ce3bd24c02932c75626d190c63a83f39b480",
+        "actual": "9be14800d0384eec524673132521ce3bd24c02932c75626d190c63a83f39b480",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub0.6_ecut0.csv",
+        "expected": "2524a23897ee484d4024dc384442f606d51bb8642ebc984b6009d9e31a2ef120",
+        "actual": "2524a23897ee484d4024dc384442f606d51bb8642ebc984b6009d9e31a2ef120",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub0.6_ecut1.csv",
+        "expected": "cb67b958008d91b4f4b17dfbc36bfcf0a905b53223b0fd40a8f199267e04813f",
+        "actual": "cb67b958008d91b4f4b17dfbc36bfcf0a905b53223b0fd40a8f199267e04813f",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub0.6_ecut2.csv",
+        "expected": "2e2c8e120e9631620e579772f386f9b2c6770fae8aa64d6120bb3f8e7b01532f",
+        "actual": "2e2c8e120e9631620e579772f386f9b2c6770fae8aa64d6120bb3f8e7b01532f",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub0.6_ecut3.csv",
+        "expected": "d6746eac3a6da271e9d3d92bb2dcca1a2afe76325b39fedb4a6155210eb179c8",
+        "actual": "d6746eac3a6da271e9d3d92bb2dcca1a2afe76325b39fedb4a6155210eb179c8",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub0.6_ecut5.csv",
+        "expected": "5d2f5a9505de099bda8a3e7d96f6b3c3bdc7ab45c08d6d0d138428dd16192054",
+        "actual": "5d2f5a9505de099bda8a3e7d96f6b3c3bdc7ab45c08d6d0d138428dd16192054",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub150_ecut0.5.csv",
+        "expected": "18a97b56b2430eaf08ee654ac444697c118abbf5eaa863d4c9b8ae01ee8fae09",
+        "actual": "18a97b56b2430eaf08ee654ac444697c118abbf5eaa863d4c9b8ae01ee8fae09",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub150_ecut0.csv",
+        "expected": "086966564cecb4058654f26b70f69d5878bfa306978876ea1c76fa92e694795d",
+        "actual": "086966564cecb4058654f26b70f69d5878bfa306978876ea1c76fa92e694795d",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub150_ecut1.csv",
+        "expected": "4804eff62f4605c64d4f4ac00c7d0ff6bd0a84d674c69eef0cede0d9c1fd140d",
+        "actual": "4804eff62f4605c64d4f4ac00c7d0ff6bd0a84d674c69eef0cede0d9c1fd140d",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub150_ecut2.csv",
+        "expected": "f2435a05d18464b4d9a037c834cb385487585b05816f74b94f159600ae981a33",
+        "actual": "f2435a05d18464b4d9a037c834cb385487585b05816f74b94f159600ae981a33",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub150_ecut3.csv",
+        "expected": "2bc335b0eb9ca61549a46b26b23dde63b70599d8db41dbcc7c96852988e50793",
+        "actual": "2bc335b0eb9ca61549a46b26b23dde63b70599d8db41dbcc7c96852988e50793",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub150_ecut5.csv",
+        "expected": "84faefc664e9d357646033e849b50ecaaf39c9841da4b5c4f0b1a1cd97135533",
+        "actual": "84faefc664e9d357646033e849b50ecaaf39c9841da4b5c4f0b1a1cd97135533",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub300_ecut0.5.csv",
+        "expected": "63dcce7e6b730de8f582f6e0a6111e96e26fa8e79945f2001c4d0c5e623da153",
+        "actual": "63dcce7e6b730de8f582f6e0a6111e96e26fa8e79945f2001c4d0c5e623da153",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub300_ecut0.csv",
+        "expected": "1fc62d7d1bdfe93a44b4f90eba84e82b5e7a8e1b526e564ca83d185f1c5ad14f",
+        "actual": "1fc62d7d1bdfe93a44b4f90eba84e82b5e7a8e1b526e564ca83d185f1c5ad14f",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub300_ecut1.csv",
+        "expected": "e431cd16404a129220656623da66a4aed63129d5ed392a9c532fe479822f77c3",
+        "actual": "e431cd16404a129220656623da66a4aed63129d5ed392a9c532fe479822f77c3",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub300_ecut2.csv",
+        "expected": "e2f084b5daf7114998bddf4286eaf93511a5ba2cf4368df4dc33daa951364684",
+        "actual": "e2f084b5daf7114998bddf4286eaf93511a5ba2cf4368df4dc33daa951364684",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub300_ecut3.csv",
+        "expected": "ee8064f12cd00c01867dc926c092510488409ca5f17a1334eb464aba2eb66d18",
+        "actual": "ee8064f12cd00c01867dc926c092510488409ca5f17a1334eb464aba2eb66d18",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub300_ecut5.csv",
+        "expected": "84faefc664e9d357646033e849b50ecaaf39c9841da4b5c4f0b1a1cd97135533",
+        "actual": "84faefc664e9d357646033e849b50ecaaf39c9841da4b5c4f0b1a1cd97135533",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub50_ecut0.5.csv",
+        "expected": "42999ddfa2fa8a9d59f54ea38b0bd5471dc7f48e487c0f43236a9deaf34201aa",
+        "actual": "42999ddfa2fa8a9d59f54ea38b0bd5471dc7f48e487c0f43236a9deaf34201aa",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub50_ecut0.csv",
+        "expected": "7fbd9e33d8214a51da1b470c715176e6fbd1d2c490dfc6bcfbaabdb078aebef6",
+        "actual": "7fbd9e33d8214a51da1b470c715176e6fbd1d2c490dfc6bcfbaabdb078aebef6",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub50_ecut1.csv",
+        "expected": "5fe88c1ec35c3a11350f10498ffd1ca7e8ebd02dc607998f9e38d2750723e261",
+        "actual": "5fe88c1ec35c3a11350f10498ffd1ca7e8ebd02dc607998f9e38d2750723e261",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub50_ecut2.csv",
+        "expected": "4434f95026d992d32e41d174d602de0c418451fe9c88b8b194aacad4b0b76219",
+        "actual": "4434f95026d992d32e41d174d602de0c418451fe9c88b8b194aacad4b0b76219",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub50_ecut3.csv",
+        "expected": "932857c202968bc004a026c915ed6f2aa012e6f7619ee1c050cffc8e14d922e6",
+        "actual": "932857c202968bc004a026c915ed6f2aa012e6f7619ee1c050cffc8e14d922e6",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0_hist_sub50_ecut5.csv",
+        "expected": "f26418bdb8f439ba5123a3945b686979c47a7318cef2e2956ec39283af952595",
+        "actual": "f26418bdb8f439ba5123a3945b686979c47a7318cef2e2956ec39283af952595",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio/geo-train-01_view0.meta.json",
+        "expected": "eb0262d823730816e7d335b74ed5ea01c6a76f374000f60ddc62eb4482fe1a8c",
+        "actual": "eb0262d823730816e7d335b74ed5ea01c6a76f374000f60ddc62eb4482fe1a8c",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m01-edificio-margen-2deg/geo-train-01_view0_gen.csv",
+        "expected": "dc03180e25bbe0874ed45f728ac723b98beb2d908eaeaf74ae142642d9784e79",
+        "actual": "dc03180e25bbe0874ed45f728ac723b98beb2d908eaeaf74ae142642d9784e79",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m01-edificio-margen-2deg/geo-train-01_view0_hist.csv",
+        "expected": "8c0f4b45a043b59f359be599b0101364938f9dde0ab36571b9f89f4dcabf7fee",
+        "actual": "8c0f4b45a043b59f359be599b0101364938f9dde0ab36571b9f89f4dcabf7fee",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m01-edificio-margen-2deg/geo-train-01_view0_hist_ecut0.5.csv",
+        "expected": "23ebce733ad54c921776928d1ce073527d08221948960b4c6cc63852f654dc98",
+        "actual": "23ebce733ad54c921776928d1ce073527d08221948960b4c6cc63852f654dc98",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m01-edificio-margen-2deg/geo-train-01_view0_hist_ecut1.csv",
+        "expected": "b82a9e2a627b60130a41cff9cbceeb39d6e446302b51faf27248a40b30a02c4c",
+        "actual": "b82a9e2a627b60130a41cff9cbceeb39d6e446302b51faf27248a40b30a02c4c",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m01-edificio-margen-2deg/geo-train-01_view0_hist_ecut2.csv",
+        "expected": "e634b78033a8e938b5f0274fa9f21e8a8c5c9f2a2935b73329533c4f6f7cbe04",
+        "actual": "e634b78033a8e938b5f0274fa9f21e8a8c5c9f2a2935b73329533c4f6f7cbe04",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m01-edificio-margen-2deg/geo-train-01_view0_hist_ecut3.csv",
+        "expected": "4044ce5514a10fe7e6df709d63a73d89c6b4ea0cf87f7592bf8937d21e2c7923",
+        "actual": "4044ce5514a10fe7e6df709d63a73d89c6b4ea0cf87f7592bf8937d21e2c7923",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m01-edificio-margen-2deg/geo-train-01_view0_hist_ecut5.csv",
+        "expected": "9fdab750ac79b5dc4ff02c8d385cfeac49adb8b48c266a29c04ecc40ffa54b87",
+        "actual": "9fdab750ac79b5dc4ff02c8d385cfeac49adb8b48c266a29c04ecc40ffa54b87",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m01-edificio-margen-2deg/geo-train-01_view0.meta.json",
+        "expected": "6aefa1bfc8b0875756563f28b88f4e532228799edb80cc3a1c6c0db65dd6980e",
+        "actual": "6aefa1bfc8b0875756563f28b88f4e532228799edb80cc3a1c6c0db65dd6980e",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m02-edificio-margen-5deg/geo-train-01_view0_gen.csv",
+        "expected": "eb3a6cbee287185ca34950a781378dde55a0fa87af08fe95c959f1d15c38d4ab",
+        "actual": "eb3a6cbee287185ca34950a781378dde55a0fa87af08fe95c959f1d15c38d4ab",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m02-edificio-margen-5deg/geo-train-01_view0_hist.csv",
+        "expected": "bf60167c767e1bb87d2971bbde097e30a5aa11fe15c4be82c0be319313336111",
+        "actual": "bf60167c767e1bb87d2971bbde097e30a5aa11fe15c4be82c0be319313336111",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m02-edificio-margen-5deg/geo-train-01_view0_hist_ecut0.5.csv",
+        "expected": "6c1f142dbb218cdad71358aff374e35fc942e0eb97f63f6ea0b9a6ca0e1dab12",
+        "actual": "6c1f142dbb218cdad71358aff374e35fc942e0eb97f63f6ea0b9a6ca0e1dab12",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m02-edificio-margen-5deg/geo-train-01_view0_hist_ecut1.csv",
+        "expected": "dd97ecb4ca687f2aa9cdb72faa35b91dacb4cbab9bd54f0a1fde28a1833ea67b",
+        "actual": "dd97ecb4ca687f2aa9cdb72faa35b91dacb4cbab9bd54f0a1fde28a1833ea67b",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m02-edificio-margen-5deg/geo-train-01_view0_hist_ecut2.csv",
+        "expected": "8f6c1000650e95431abfbc6c201d272099417d73faa42293e3e7cfcce681e2db",
+        "actual": "8f6c1000650e95431abfbc6c201d272099417d73faa42293e3e7cfcce681e2db",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m02-edificio-margen-5deg/geo-train-01_view0_hist_ecut3.csv",
+        "expected": "96f0e546c6306f46079472d6612e12f442913a4ccb8e11be47f49234e647db35",
+        "actual": "96f0e546c6306f46079472d6612e12f442913a4ccb8e11be47f49234e647db35",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m02-edificio-margen-5deg/geo-train-01_view0_hist_ecut5.csv",
+        "expected": "97182ed75241caf1f5664e40a9db2a1a389291596351df70832da948a67511f9",
+        "actual": "97182ed75241caf1f5664e40a9db2a1a389291596351df70832da948a67511f9",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m02-edificio-margen-5deg/geo-train-01_view0.meta.json",
+        "expected": "3d8295566a153506bbb6bc459f929d6a7cd0f104120ecb21c76aadb0487184df",
+        "actual": "3d8295566a153506bbb6bc459f929d6a7cd0f104120ecb21c76aadb0487184df",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c00-parche-v3-por-defecto/geo-train-01_view0_hist.csv",
+        "expected": "702ebdf99397a03c9cf536e66e5b49a636bb52b73b6d954ac42af4979bc0b988",
+        "actual": "702ebdf99397a03c9cf536e66e5b49a636bb52b73b6d954ac42af4979bc0b988",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c00-parche-v3-por-defecto/geo-train-01_view0.meta.json",
+        "expected": "41cf7dfe4e4860bfdc4b799ae5046dd9b4c6a70fb2101c338c263cbb26d6013f",
+        "actual": "41cf7dfe4e4860bfdc4b799ae5046dd9b4c6a70fb2101c338c263cbb26d6013f",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_gen.csv",
+        "expected": "0c357545f3e11a016c1fb0053ee6d6e8b0c6570cd72d2206b2921519ac66a486",
+        "actual": "0c357545f3e11a016c1fb0053ee6d6e8b0c6570cd72d2206b2921519ac66a486",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist.csv",
+        "expected": "37ed5cf168360655ce13b4fceb8798f6dd40536061a5497c62fcdb73e5a6f76c",
+        "actual": "37ed5cf168360655ce13b4fceb8798f6dd40536061a5497c62fcdb73e5a6f76c",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_ecut0.5.csv",
+        "expected": "0606984c89e02f23b0425fc3e8cb483441c6d87f08300f99e8fd97c23f811452",
+        "actual": "0606984c89e02f23b0425fc3e8cb483441c6d87f08300f99e8fd97c23f811452",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_ecut1.csv",
+        "expected": "5406178612cabfa5a5e35a5afdb53c409e430427ba5043b16cb69e0441296f10",
+        "actual": "5406178612cabfa5a5e35a5afdb53c409e430427ba5043b16cb69e0441296f10",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_ecut2.csv",
+        "expected": "e6d7df2450c2ffa2e8aecc6bcefe29ec78fa6fb7d3880d2cf392b86e30a45903",
+        "actual": "e6d7df2450c2ffa2e8aecc6bcefe29ec78fa6fb7d3880d2cf392b86e30a45903",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_ecut3.csv",
+        "expected": "8408e1ff25188a685da1426aa34b9d251c8d2ca6a4bbdb78d38e443b548e8182",
+        "actual": "8408e1ff25188a685da1426aa34b9d251c8d2ca6a4bbdb78d38e443b548e8182",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_ecut5.csv",
+        "expected": "73a040df3aade1ebf0e3aed9b0b7e3fd76c4a5fcb5c99344cef3a693141a443a",
+        "actual": "73a040df3aade1ebf0e3aed9b0b7e3fd76c4a5fcb5c99344cef3a693141a443a",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub0.6_ecut0.5.csv",
+        "expected": "a45580c41f138747227ac333649e0202eed1f59a5f2fc15710d306f8a508806e",
+        "actual": "a45580c41f138747227ac333649e0202eed1f59a5f2fc15710d306f8a508806e",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub0.6_ecut0.csv",
+        "expected": "b290c043aad667d853a0233bcf8dd3ec6a4783da2f8082eecadc8ac35a7a087b",
+        "actual": "b290c043aad667d853a0233bcf8dd3ec6a4783da2f8082eecadc8ac35a7a087b",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub0.6_ecut1.csv",
+        "expected": "44e9dbe2af6a35287c83467e8f4bedd6bb0fa631f2198d1485c2fa8ed9e48b6c",
+        "actual": "44e9dbe2af6a35287c83467e8f4bedd6bb0fa631f2198d1485c2fa8ed9e48b6c",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub0.6_ecut2.csv",
+        "expected": "9b197c138386ab4a95b16b621c426850d67824b23d9c3d840506e20b808c7ed3",
+        "actual": "9b197c138386ab4a95b16b621c426850d67824b23d9c3d840506e20b808c7ed3",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub0.6_ecut3.csv",
+        "expected": "5fd38094a611fff061f984b14e57cbcee5764fa79d9dfbad712ca319ca442ce8",
+        "actual": "5fd38094a611fff061f984b14e57cbcee5764fa79d9dfbad712ca319ca442ce8",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub0.6_ecut5.csv",
+        "expected": "d27e856e6e0713ca898811349d024c6dfed0611ae48d943c0de2a2017e1a4796",
+        "actual": "d27e856e6e0713ca898811349d024c6dfed0611ae48d943c0de2a2017e1a4796",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub150_ecut0.5.csv",
+        "expected": "b0daa4b1d4b99d6ae55cba71ee5b00f6a3c9f5151480c50131e521a554c8090f",
+        "actual": "b0daa4b1d4b99d6ae55cba71ee5b00f6a3c9f5151480c50131e521a554c8090f",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub150_ecut0.csv",
+        "expected": "69d89bd457ab19819f6736852fe56964e7ebe6314e7a465a3409d7ef23c12ba0",
+        "actual": "69d89bd457ab19819f6736852fe56964e7ebe6314e7a465a3409d7ef23c12ba0",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub150_ecut1.csv",
+        "expected": "3c080228a098f90e47ca2eb6b1ac266962927066562bd45dcced3df614151c38",
+        "actual": "3c080228a098f90e47ca2eb6b1ac266962927066562bd45dcced3df614151c38",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub150_ecut2.csv",
+        "expected": "9e28906f606b0815bd80388b31801a77de120012fce482d41088f42e795bb647",
+        "actual": "9e28906f606b0815bd80388b31801a77de120012fce482d41088f42e795bb647",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub150_ecut3.csv",
+        "expected": "aadda2908cf282f1474af89f6c32aa10e51f945a10bd360d5a8a2fc3a4e7b0a9",
+        "actual": "aadda2908cf282f1474af89f6c32aa10e51f945a10bd360d5a8a2fc3a4e7b0a9",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub150_ecut5.csv",
+        "expected": "73a040df3aade1ebf0e3aed9b0b7e3fd76c4a5fcb5c99344cef3a693141a443a",
+        "actual": "73a040df3aade1ebf0e3aed9b0b7e3fd76c4a5fcb5c99344cef3a693141a443a",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub300_ecut0.5.csv",
+        "expected": "0606984c89e02f23b0425fc3e8cb483441c6d87f08300f99e8fd97c23f811452",
+        "actual": "0606984c89e02f23b0425fc3e8cb483441c6d87f08300f99e8fd97c23f811452",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub300_ecut0.csv",
+        "expected": "37ed5cf168360655ce13b4fceb8798f6dd40536061a5497c62fcdb73e5a6f76c",
+        "actual": "37ed5cf168360655ce13b4fceb8798f6dd40536061a5497c62fcdb73e5a6f76c",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub300_ecut1.csv",
+        "expected": "5406178612cabfa5a5e35a5afdb53c409e430427ba5043b16cb69e0441296f10",
+        "actual": "5406178612cabfa5a5e35a5afdb53c409e430427ba5043b16cb69e0441296f10",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub300_ecut2.csv",
+        "expected": "e6d7df2450c2ffa2e8aecc6bcefe29ec78fa6fb7d3880d2cf392b86e30a45903",
+        "actual": "e6d7df2450c2ffa2e8aecc6bcefe29ec78fa6fb7d3880d2cf392b86e30a45903",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub300_ecut3.csv",
+        "expected": "8408e1ff25188a685da1426aa34b9d251c8d2ca6a4bbdb78d38e443b548e8182",
+        "actual": "8408e1ff25188a685da1426aa34b9d251c8d2ca6a4bbdb78d38e443b548e8182",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub300_ecut5.csv",
+        "expected": "73a040df3aade1ebf0e3aed9b0b7e3fd76c4a5fcb5c99344cef3a693141a443a",
+        "actual": "73a040df3aade1ebf0e3aed9b0b7e3fd76c4a5fcb5c99344cef3a693141a443a",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub50_ecut0.5.csv",
+        "expected": "7d5ca5a8f9c26c82b7da9e162b67ea3252a2522244d1ef0a02007e10f8be45aa",
+        "actual": "7d5ca5a8f9c26c82b7da9e162b67ea3252a2522244d1ef0a02007e10f8be45aa",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub50_ecut0.csv",
+        "expected": "f2901b480774ea5a4a56a77d4351ab2bd7f1f6773eeacaebbf53bf92e68ca348",
+        "actual": "f2901b480774ea5a4a56a77d4351ab2bd7f1f6773eeacaebbf53bf92e68ca348",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub50_ecut1.csv",
+        "expected": "0540f7a53c3362e2f323781195cde80eeaf40fb1629dd3a8218f3a9ee29544c0",
+        "actual": "0540f7a53c3362e2f323781195cde80eeaf40fb1629dd3a8218f3a9ee29544c0",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub50_ecut2.csv",
+        "expected": "94a69d2460bbc1023e0daf7860420c4f61cd556285609451a630c5a0cc7a8b54",
+        "actual": "94a69d2460bbc1023e0daf7860420c4f61cd556285609451a630c5a0cc7a8b54",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub50_ecut3.csv",
+        "expected": "93570de07e6659969e609c595a215dac83876745e342bd4d8486cb4f5aa2cdf9",
+        "actual": "93570de07e6659969e609c595a215dac83876745e342bd4d8486cb4f5aa2cdf9",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0_hist_sub50_ecut5.csv",
+        "expected": "5bc792c727fe817468250a4c7dbcf6769e9a9dc1e0b70d7373adedeaf9286249",
+        "actual": "5bc792c727fe817468250a4c7dbcf6769e9a9dc1e0b70d7373adedeaf9286249",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono/geo-train-01_view0.meta.json",
+        "expected": "b257c51eab0caac01c92b799e66971648c6b07b73bb0a73caa1de6a78e58abef",
+        "actual": "b257c51eab0caac01c92b799e66971648c6b07b73bb0a73caa1de6a78e58abef",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c02-cono-margen-5deg/geo-train-01_view0_gen.csv",
+        "expected": "eb3a6cbee287185ca34950a781378dde55a0fa87af08fe95c959f1d15c38d4ab",
+        "actual": "eb3a6cbee287185ca34950a781378dde55a0fa87af08fe95c959f1d15c38d4ab",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c02-cono-margen-5deg/geo-train-01_view0_hist.csv",
+        "expected": "a3d4f3164166403dfdbfe11db066680579f975bc5d2763f3703369322170c6d0",
+        "actual": "a3d4f3164166403dfdbfe11db066680579f975bc5d2763f3703369322170c6d0",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c02-cono-margen-5deg/geo-train-01_view0_hist_ecut0.5.csv",
+        "expected": "fbf03189e143673acbcba48901412d0c552cbf03990ba421395774b63bf9249f",
+        "actual": "fbf03189e143673acbcba48901412d0c552cbf03990ba421395774b63bf9249f",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c02-cono-margen-5deg/geo-train-01_view0_hist_ecut1.csv",
+        "expected": "2f61fd226707fa8c0271f91a9c360ce2dc84f561d5a3e462e3e20bb118203e74",
+        "actual": "2f61fd226707fa8c0271f91a9c360ce2dc84f561d5a3e462e3e20bb118203e74",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c02-cono-margen-5deg/geo-train-01_view0_hist_ecut2.csv",
+        "expected": "cfc82512a71a9fb89bf1cce25a2e604619a4f7172ddec500e0ddfd20702fdb8a",
+        "actual": "cfc82512a71a9fb89bf1cce25a2e604619a4f7172ddec500e0ddfd20702fdb8a",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c02-cono-margen-5deg/geo-train-01_view0_hist_ecut3.csv",
+        "expected": "3570e60d9a294a683c0e48ad3b61fd2032d482ca5ad7eb3e6d4216a7f07158e4",
+        "actual": "3570e60d9a294a683c0e48ad3b61fd2032d482ca5ad7eb3e6d4216a7f07158e4",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c02-cono-margen-5deg/geo-train-01_view0_hist_ecut5.csv",
+        "expected": "8599f296e7fcbb012a8d3e385090c075decfbc619cd8591e1ceec7d03f2d5ca1",
+        "actual": "8599f296e7fcbb012a8d3e385090c075decfbc619cd8591e1ceec7d03f2d5ca1",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c02-cono-margen-5deg/geo-train-01_view0.meta.json",
+        "expected": "d87d083ba412ac4dd1b6ac5342dc44dbcd6b914d7dcfe5a35965dd8abec81bbc",
+        "actual": "d87d083ba412ac4dd1b6ac5342dc44dbcd6b914d7dcfe5a35965dd8abec81bbc",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/prueba-integracion/oe1-v1-prueba/geo-train-06/view0/block0000/geo-train-06_view0_hist.csv",
+        "expected": "3c21b65e64506fead2196b145df6f41ef3c85810fbd870a38b7639603100a7c6",
+        "actual": "3c21b65e64506fead2196b145df6f41ef3c85810fbd870a38b7639603100a7c6",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/prueba-integracion/oe1-v1-prueba/geo-train-06/view0/block0000/geo-train-06_view0.meta.json",
+        "expected": "12c7637e0bc29c35f988a19546a0b46af28622c6305236a7e9cd38e81c3208c7",
+        "actual": "12c7637e0bc29c35f988a19546a0b46af28622c6305236a7e9cd38e81c3208c7",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/prueba-integracion/oe1-v1-prueba/geo-train-06/view0/block0001/geo-train-06_view0_hist.csv",
+        "expected": "a8be45a3a93ffb74e9d1db5b14653db9c1a5c827deb434daa85dc49aa19a5dea",
+        "actual": "a8be45a3a93ffb74e9d1db5b14653db9c1a5c827deb434daa85dc49aa19a5dea",
+        "ok": true
+      },
+      {
+        "path": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/prueba-integracion/oe1-v1-prueba/geo-train-06/view0/block0001/geo-train-06_view0.meta.json",
+        "expected": "1183c068659a44db13fffa39f6eee7a4519b3a1371622704b3c0c980c38c3038",
+        "actual": "1183c068659a44db13fffa39f6eee7a4519b3a1371622704b3c0c980c38c3038",
+        "ok": true
+      }
+    ],
+    "correction": "Prior mismatch was in extracted working copy, not committed Git blobs."
+  },
+  "sc3": {
+    "tools": [
+      {
+        "name": "analizar_roi_angular_v1.py",
+        "ok": true
+      },
+      {
+        "name": "auditar_crudos_etapa2.py",
+        "ok": true
+      },
+      {
+        "name": "auditar_fuente_angular.py",
+        "ok": true
+      },
+      {
+        "name": "auditar_muestreo_angular.py",
+        "ok": true
+      },
+      {
+        "name": "auditar_oe1.py",
+        "ok": true
+      },
+      {
+        "name": "comparar_piloto_oe1.py",
+        "ok": true
+      },
+      {
+        "name": "configuracion_angular.py",
+        "ok": true
+      },
+      {
+        "name": "control_compensacion_plano.py",
+        "ok": true
+      },
+      {
+        "name": "detallar_diferencias_etapa2.py",
+        "ok": true
+      },
+      {
+        "name": "diagnosticar_observable_angular.py",
+        "ok": true
+      },
+      {
+        "name": "empaquetar_angular_v1.py",
+        "ok": true
+      },
+      {
+        "name": "fusionar_bloques_angular.py",
+        "ok": true
+      },
+      {
+        "name": "planificar_etapa2_oe1.py",
+        "ok": true
+      },
+      {
+        "name": "preparar_alcance_produccion.py",
+        "ok": true
+      },
+      {
+        "name": "preparar_campana_angular.py",
+        "ok": true
+      },
+      {
+        "name": "preparar_complemento_r2_01.py",
+        "ok": true
+      },
+      {
+        "name": "preparar_imagen_angular_v1.py",
+        "ok": true
+      },
+      {
+        "name": "preparar_roi_angular_v1.py",
+        "ok": true
+      },
+      {
+        "name": "publicar_bloque_angular.py",
+        "ok": true
+      },
+      {
+        "name": "revisar_complemento_r201.py",
+        "ok": true
+      },
+      {
+        "name": "revisar_etapa1_oe1.py",
+        "ok": true
+      },
+      {
+        "name": "revisar_resumen_etapa2.py",
+        "ok": true
+      },
+      {
+        "name": "revisar_smoke_angular.py",
+        "ok": true
+      },
+      {
+        "name": "test_analizar_roi_angular_v1.py",
+        "ok": true
+      },
+      {
+        "name": "test_diagnosticar_observable_angular.py",
+        "ok": true
+      },
+      {
+        "name": "test_empaquetar_angular_v1.py",
+        "ok": true
+      },
+      {
+        "name": "test_fuente_angular.py",
+        "ok": true
+      },
+      {
+        "name": "test_fusionar_bloques_angular.py",
+        "ok": true
+      },
+      {
+        "name": "test_herramientas_oe1.py",
+        "ok": true
+      },
+      {
+        "name": "test_planificar_etapa2_oe1.py",
+        "ok": true
+      },
+      {
+        "name": "test_preparar_campana_angular.py",
+        "ok": true
+      },
+      {
+        "name": "test_preparar_imagen_angular_v1.py",
+        "ok": true
+      },
+      {
+        "name": "test_publicar_bloque_angular.py",
+        "ok": true
+      },
+      {
+        "name": "test_revisar_smoke_angular.py",
+        "ok": true
+      },
+      {
+        "name": "test_roi_angular_v1.py",
+        "ok": true
+      },
+      {
+        "name": "validar_intersecciones_oe1.py",
+        "ok": true
+      },
+      {
+        "name": "validar_volumen_oe1.py",
+        "ok": true
+      },
+      {
+        "name": "verificar_integridad.py",
+        "ok": true
+      },
+      {
+        "name": "visualizar_angular_v1.py",
+        "ok": true
+      }
+    ],
+    "source_files": [
+      {
+        "path": "geo-train-06/view0/block0000/comando.txt",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0000/entorno.txt",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0000/entradas.sha256",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0000/exit_code.txt",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0000/geo-train-06_view0_gen.csv",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0000/geo-train-06_view0_hist.csv",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0000/geo-train-06_view0_hist_sin_corte.csv",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0000/geo-train-06_view0.meta.json",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0000/receta.env",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0000/run.log",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0000/salida.sha256",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0001/comando.txt",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0001/entorno.txt",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0001/entradas.sha256",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0001/exit_code.txt",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0001/geo-train-06_view0_gen.csv",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0001/geo-train-06_view0_hist.csv",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0001/geo-train-06_view0_hist_sin_corte.csv",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0001/geo-train-06_view0.meta.json",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0001/receta.env",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0001/run.log",
+        "ok": true
+      },
+      {
+        "path": "geo-train-06/view0/block0001/salida.sha256",
+        "ok": true
+      },
+      {
+        "path": ".lanzador.lock",
+        "ok": true
+      }
+    ],
+    "npz": {
+      "counts_ref": {
+        "shape": [
+          256,
+          256
+        ],
+        "dtype": "uint32"
+      },
+      "az_edges_deg": {
+        "shape": [
+          257
+        ],
+        "dtype": "float64"
+      },
+      "az_centers_deg": {
+        "shape": [
+          256
+        ],
+        "dtype": "float64"
+      },
+      "el_edges_deg": {
+        "shape": [
+          257
+        ],
+        "dtype": "float64"
+      },
+      "el_centers_deg": {
+        "shape": [
+          256
+        ],
+        "dtype": "float64"
+      }
+    },
+    "events": 200000,
+    "counts": 69995,
+    "all_energy_counts": 130190,
+    "publication": {
+      "publicacion-108": {
+        "schema": "oe1-verified-publication-v1",
+        "status": "published",
+        "physical_validation": false,
+        "manifest_sha256": "1d0594c3ce1999c02ad9459db38d4b97a03a8929b103444eae9505e40dc7467d",
+        "row": {
+          "fila": 108,
+          "geometria": "geo-train-06",
+          "vista": 0,
+          "bloque": 0,
+          "semilla": 20261001090000,
+          "eventos": 100000
+        },
+        "files": {
+          "comando.txt": "ca650e8ec764eeaf0b49c5517c6616de8fba50eaf56178ff5f41450413aa4703",
+          "entorno.txt": "8369c5599518ad3d62e2a6f4002e4e60055c05f0a2accee814b3649a123ffaa0",
+          "entradas.sha256": "24cb5f4959ae90681cf4794e7101439fb8b600a7aae211a899c00dacca535b4c",
+          "exit_code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+          "geo-train-06_view0.meta.json": "12c7637e0bc29c35f988a19546a0b46af28622c6305236a7e9cd38e81c3208c7",
+          "geo-train-06_view0_gen.csv": "cf3739f823917ad779fe17f5e962b6bdcfe946bfdc6fae996645f3642ae235fa",
+          "geo-train-06_view0_hist.csv": "3c21b65e64506fead2196b145df6f41ef3c85810fbd870a38b7639603100a7c6",
+          "geo-train-06_view0_hist_sin_corte.csv": "146f932b127e9ee0670d5bdeef71eb8275a27bb4317423591f69e67983e33131",
+          "receta.env": "b7e4ad31c216c6e11194f28e91ee40d15842195fdce2d4edaf2411e665ebcf97",
+          "run.log": "ee91349726c88c648c4e1a6ba5a138b1eadbb6894f18ee9ad0b1c45e99d230f4",
+          "salida.sha256": "aa55e7572045e3a1c2c8bee17746254a8b2548632a1abf23dd0b1900fba5e2e3"
+        },
+        "accept_crlf": false,
+        "output_hash_checks": [
+          {
+            "name": "geo-train-06_view0_hist.csv",
+            "received_sha256": "3c21b65e64506fead2196b145df6f41ef3c85810fbd870a38b7639603100a7c6",
+            "expected_sha256": "3c21b65e64506fead2196b145df6f41ef3c85810fbd870a38b7639603100a7c6",
+            "crlf_to_lf_verified": false
+          },
+          {
+            "name": "geo-train-06_view0.meta.json",
+            "received_sha256": "12c7637e0bc29c35f988a19546a0b46af28622c6305236a7e9cd38e81c3208c7",
+            "expected_sha256": "12c7637e0bc29c35f988a19546a0b46af28622c6305236a7e9cd38e81c3208c7",
+            "crlf_to_lf_verified": false
+          }
+        ]
+      },
+      "publicacion-109": {
+        "schema": "oe1-verified-publication-v1",
+        "status": "published",
+        "physical_validation": false,
+        "manifest_sha256": "1d0594c3ce1999c02ad9459db38d4b97a03a8929b103444eae9505e40dc7467d",
+        "row": {
+          "fila": 109,
+          "geometria": "geo-train-06",
+          "vista": 0,
+          "bloque": 1,
+          "semilla": 20261001090001,
+          "eventos": 100000
+        },
+        "files": {
+          "comando.txt": "90af1c967bb79fb88227208cafcdf2c32572d988e614288af4d57be862f67077",
+          "entorno.txt": "51e9abe00fdce79eaed22be9a03407473a1fabdb946b4acce2ee8102424847c1",
+          "entradas.sha256": "24cb5f4959ae90681cf4794e7101439fb8b600a7aae211a899c00dacca535b4c",
+          "exit_code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+          "geo-train-06_view0.meta.json": "1183c068659a44db13fffa39f6eee7a4519b3a1371622704b3c0c980c38c3038",
+          "geo-train-06_view0_gen.csv": "5ee12cdbf34ec6faf7e302b24c67383fd28b8a2714b0c8930256bf37633dd39f",
+          "geo-train-06_view0_hist.csv": "a8be45a3a93ffb74e9d1db5b14653db9c1a5c827deb434daa85dc49aa19a5dea",
+          "geo-train-06_view0_hist_sin_corte.csv": "0af78c8761bf942c7c764bb2a0154be450069f4e93a293144ee114fb5fe14ff8",
+          "receta.env": "b7e4ad31c216c6e11194f28e91ee40d15842195fdce2d4edaf2411e665ebcf97",
+          "run.log": "99b320ef9205e0d97274c831d3d4895f3bf477773a0e0d81c85422db940845dc",
+          "salida.sha256": "a63f664f302c136600d0b48ad93450094023e1f32707cb74607a627715e3c8a6"
+        },
+        "accept_crlf": false,
+        "output_hash_checks": [
+          {
+            "name": "geo-train-06_view0_hist.csv",
+            "received_sha256": "a8be45a3a93ffb74e9d1db5b14653db9c1a5c827deb434daa85dc49aa19a5dea",
+            "expected_sha256": "a8be45a3a93ffb74e9d1db5b14653db9c1a5c827deb434daa85dc49aa19a5dea",
+            "crlf_to_lf_verified": false
+          },
+          {
+            "name": "geo-train-06_view0.meta.json",
+            "received_sha256": "1183c068659a44db13fffa39f6eee7a4519b3a1371622704b3c0c980c38c3038",
+            "expected_sha256": "1183c068659a44db13fffa39f6eee7a4519b3a1371622704b3c0c980c38c3038",
+            "crlf_to_lf_verified": false
+          }
+        ]
+      },
+      "publicacion-108-repetida": {
+        "schema": "oe1-verified-publication-v1",
+        "status": "already_verified",
+        "physical_validation": false,
+        "manifest_sha256": "1d0594c3ce1999c02ad9459db38d4b97a03a8929b103444eae9505e40dc7467d",
+        "row": {
+          "fila": 108,
+          "geometria": "geo-train-06",
+          "vista": 0,
+          "bloque": 0,
+          "semilla": 20261001090000,
+          "eventos": 100000
+        },
+        "files": {
+          "comando.txt": "ca650e8ec764eeaf0b49c5517c6616de8fba50eaf56178ff5f41450413aa4703",
+          "entorno.txt": "8369c5599518ad3d62e2a6f4002e4e60055c05f0a2accee814b3649a123ffaa0",
+          "entradas.sha256": "24cb5f4959ae90681cf4794e7101439fb8b600a7aae211a899c00dacca535b4c",
+          "exit_code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+          "geo-train-06_view0.meta.json": "12c7637e0bc29c35f988a19546a0b46af28622c6305236a7e9cd38e81c3208c7",
+          "geo-train-06_view0_gen.csv": "cf3739f823917ad779fe17f5e962b6bdcfe946bfdc6fae996645f3642ae235fa",
+          "geo-train-06_view0_hist.csv": "3c21b65e64506fead2196b145df6f41ef3c85810fbd870a38b7639603100a7c6",
+          "geo-train-06_view0_hist_sin_corte.csv": "146f932b127e9ee0670d5bdeef71eb8275a27bb4317423591f69e67983e33131",
+          "receta.env": "b7e4ad31c216c6e11194f28e91ee40d15842195fdce2d4edaf2411e665ebcf97",
+          "run.log": "ee91349726c88c648c4e1a6ba5a138b1eadbb6894f18ee9ad0b1c45e99d230f4",
+          "salida.sha256": "aa55e7572045e3a1c2c8bee17746254a8b2548632a1abf23dd0b1900fba5e2e3"
+        },
+        "accept_crlf": false,
+        "output_hash_checks": [
+          {
+            "name": "geo-train-06_view0_hist.csv",
+            "received_sha256": "3c21b65e64506fead2196b145df6f41ef3c85810fbd870a38b7639603100a7c6",
+            "expected_sha256": "3c21b65e64506fead2196b145df6f41ef3c85810fbd870a38b7639603100a7c6",
+            "crlf_to_lf_verified": false
+          },
+          {
+            "name": "geo-train-06_view0.meta.json",
+            "received_sha256": "12c7637e0bc29c35f988a19546a0b46af28622c6305236a7e9cd38e81c3208c7",
+            "expected_sha256": "12c7637e0bc29c35f988a19546a0b46af28622c6305236a7e9cd38e81c3208c7",
+            "crlf_to_lf_verified": false
+          }
+        ]
+      }
+    },
+    "outputs_and_exit_codes_verified": true
+  },
+  "sky_reference": {
+    "available_elevation_deg": [
+      6.9411764705882355,
+      47.0
+    ],
+    "rows_outside_reference": 28,
+    "rock_pixels": 16322,
+    "rock_pixels_edge_extrapolation": 7122,
+    "note": "np.interp extends endpoint sky efficiency to elevations with no observed open sky; not a measured counterfactual reference."
+  },
+  "c3_planning": {
+    "normal_z_bonferroni_4": 2.4977054744123737,
+    "halfwidth_D1600_C_infinite": 0.06244263686030934,
+    "halfwidth_D1600_C1707": 0.08691236569683707,
+    "minimum_counts_one_arm_other_infinite_approx": 2496,
+    "minimum_each_arm_equal_approx": 4991,
+    "note": "Local normal/Poisson planning approximation at R=1; not a power calculation or approved budget. New angular restriction changes rates."
+  },
+  "analysis_reproduction": {
+    "numeric_values": 113,
+    "abs_rel_tolerance": 1e-10
+  }
+}

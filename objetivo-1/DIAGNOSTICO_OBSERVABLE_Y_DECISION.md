@@ -62,7 +62,7 @@ Los controles de integridad, la fusión y el empaquetado ya pueden usarse. La en
 
 [Herramienta](../herramientas/diagnosticar_observable_angular.py), [resultados y huellas](evidencias/diagnostico-observable-f9a77ef.json), [pruebas](evidencias/pruebas-diagnostico-observable.txt) y [validación](evidencias/validacion-diagnostico-observable.json). La suite local reúne **60 pruebas satisfactorias**, cuatro nuevas del diagnóstico. Reutilizar el helper de geometría de la entrega reproduce su clasificación de columnas; no representa una validación independiente de toda su física.
 
-Desde la raíz de nuestra réplica, con `ENTREGA` apuntando a la carpeta congelada de f9a77ef:
+Desde la raíz de la réplica, con `ENTREGA` apuntando a la carpeta congelada de f9a77ef:
 
 ```console
 python herramientas/diagnosticar_observable_angular.py ENTREGA --salida DIAGNOSTICO_NUEVO.json

@@ -1,6 +1,6 @@
 # Matriz de cumplimiento del OE1
 
-> Avance posterior a la revisión: [fusión y compatibilidad corregidas localmente](CORRECCIONES_LOCALES_FUSION_CONFIGURACION.md), 56 pruebas y contraste con los dos bloques reales. Las observaciones físicas siguen abiertas; adoptar la alternativa en SC3 requiere actualizar las herramientas allí.
+> Estado posterior: [siete actividades locales completadas](ENTREGA_SIETE_ACTIVIDADES.md). Referencia ideal, diseño condicional y automatización implementados; 103 pruebas. Alcance idealizado adoptado por la dirección: [definición y criterios de cierre](DEFINICION_PRODUCTO_OE1.md#lista-única-de-criterios-de-cierre). Pendientes: incorporación al informe, verificación operativa SC3, revisión del piloto y conjunto final. OE1 no se declara completo.
 
 > Actualización 2026-10-02: se recibió y revisó la entrega física/producción. Consultar la [revisión vigente](REVISION_FISICA_PRODUCCION_2026-10-02.md) antes de aplicar solicitudes o estados anteriores. La ampliación posterior está documentada en las correcciones locales enlazadas arriba.
 
@@ -15,6 +15,6 @@ Estado consolidado al 2026-10-01, Colombia. Valoración técnica, no calificaci�
 | OE1-05 | Representatividad y validación física | Controles geométricos y código revisados; contraste de regiones sobre 393.216 rayos. Parcial. | Aceptación del plano, muestreo espacial/angular y exposición: P-04. |
 | OE1-06 | Reproducción independiente | Auditoría de 48,7 millones de registros de etapa 2; corrección angular y entrega verificadas; nueva alternativa local de preparación probada. | No se reprodujo Geant4 localmente; falta cerrar la receta de campaña y su alcance: P-02/P-03. |
 
-**El OE1 sigue abierto por la validación física y la definición/producción del conjunto final**, no por ausencia de herramientas de organización. No se asigna un porcentaje global de avance sin una rúbrica acordada.
+**El OE1 sigue abierto por la justificación física del alcance adoptado y la producción/validación del conjunto final**, no por ausencia de herramientas de organización. No se asigna un porcentaje global de avance sin una rúbrica acordada.
 
 Consultar [cadena local y siguiente entrega](CADENA_LOCAL_OE1.md), [pendientes](PENDIENTES.md), [auditoría de etapa 2](AUDITORIA_COMPLETA_ETAPA_2_2026-10-01.md), [corrida angular](REVISION_MALLA_ANGULAR_2026-10-01.md) y [aceptación física](REVISION_ACEPTACION_PLANO.md).

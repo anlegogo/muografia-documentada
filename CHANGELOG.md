@@ -1,5 +1,27 @@
 # Registro de cambios
 
+## Adopción del alcance idealizado — 2026-10-02
+
+- Alcance idealizado del OE1 adoptado expresamente por la dirección; equivalencia instrumental y C3 quedan como extensión opcional.
+- Definición, criterios de cierre, ficha, pendientes y guía actualizados. La decisión no aprueba la receta física, el presupuesto del piloto ni la campaña.
+
+## Unificación del estilo documental — 2026-10-02
+
+- Redacción propia ajustada a estilo académico impersonal y tercera persona, conforme al criterio indicado por la dirección.
+- Regla editorial registrada en `AGENTS.md` y `docs/DOCUMENTACION.md`. Se conservan resultados, comandos, atribuciones y documentos originales recibidos.
+
+## Siete actividades locales completadas — 2026-10-02
+
+- Referencia ideal de cielo, análisis de bordes y diseño C3 con incertidumbre simultánea; piloto condicional con máscaras, semillas y presupuesto.
+- Worker y lanzador preparados con integridad, publicación verificada e intenciones persistentes; normalización convencional validada y agregada en nuevos bloques.
+- 103 pruebas satisfactorias; fusión de datos SC3 reales reproduce las huellas previas. Definición del producto y guía única de estudiantes documentadas. Sin nuevas corridas ni autorización de campaña.
+
+## Revisión de entrega 01a9871 — 2026-10-02
+
+- Prueba técnica de dos bloques en SC3 respaldada; fusión reproducida con hashes idénticos y 113 valores del nuevo análisis contrastados.
+- Corrección de T-01: 204 huellas coinciden con los objetos Git originales; la discrepancia era de la copia extraída.
+- Se documentan ajustes de referencia de cielo y dimensionamiento/alcance de C3 antes de nuevas corridas. Rama estudiantil sin fusionar; sin cambios al simulador.
+
 ## Publicación verificada de bloques — 2026-10-02
 
 - Nueva herramienta de publicación: valida, copia a temporal, verifica todos los bytes y promueve con bloqueo; no sobrescribe resultados distintos y reconoce repeticiones idénticas.
@@ -29,7 +51,7 @@
 
 - Revisada la entrega f9a77ef sin fusionar su rama. Se ejecutan seis análisis y coinciden 3.045 valores numéricos; 114 histogramas históricos reconstruidos coinciden con el manifiesto.
 - Se verifican 19 corridas (92 millones de primarios) y la fusión de integración de 200.000 primarios/69.995 registros, tras normalización de líneas en copia temporal. 181/200 huellas de controles requieren esa normalización.
-- Se documentan límites de C1/C2/C3/C5, C4 aún no cumplido, metadatos agregados incorrectos y aceptación de semillas contradictorias/bloques repetidos. Nuestra firma de empaquetado también requiere reconocer las opciones nuevas.
+- Se documentan límites de C1/C2/C3/C5, C4 aún no cumplido, metadatos agregados incorrectos y aceptación de semillas contradictorias/bloques repetidos. La firma de empaquetado también requiere reconocer las opciones nuevas.
 - [Dictamen y siguiente entrega acotada](objetivo-1/REVISION_FISICA_PRODUCCION_2026-10-02.md). No se autoriza campaña final, no se ejecuta Geant4 localmente y no se envían mensajes a estudiantes.
 
 ## Consolidación de la cadena local — 2026-10-01, Colombia
