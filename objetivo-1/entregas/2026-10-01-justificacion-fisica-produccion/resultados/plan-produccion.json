@@ -1,0 +1,1118 @@
+{
+ "tiempos_medidos": {
+  "vistas": 114,
+  "trabajos_slurm": 194,
+  "vistas_distintas_en_slurm": 114,
+  "trabajos_duplicados": 80,
+  "particion": [
+   "legacy"
+  ],
+  "cpus_por_trabajo": [
+   24
+  ],
+  "nucleo_s_por_evento": {
+   "media": 0.0007369087285466337,
+   "desv": 3.2911663225577766e-05,
+   "min": 0.0006713086194522185,
+   "max": 0.0008105931382612572
+  },
+  "pared_s_por_vista": {
+   "media": 1110.7510533913307,
+   "desv": 49.60176232830327
+  },
+  "slurm_elapsed_s": {
+   "media": 1116.0670103092784,
+   "desv": 47.74045377629681,
+   "max": 1229
+  },
+  "horas_nucleo_consumidas": 1443.4466666666667,
+  "duracion_campana_h": 19.92972222222222,
+  "inicio": "2026-08-30T20:11:24",
+  "fin": "2026-08-31T16:07:11"
+ },
+ "estadistica_roi": {
+  "roi_pixeles": 4,
+  "banda_columna_g_cm2": [
+   30000.0,
+   100000.0
+  ],
+  "conteo_objetivo": 400,
+  "percentil": 10,
+  "vistas_con_rois": 114,
+  "rois_totales": 21816,
+  "mediana_global": 271.0,
+  "p10_global": 85.0,
+  "k_necesario": {
+   "mediana": 3.6167429692609545,
+   "p90": 6.645656797170279,
+   "max": 7.104795737122557
+  },
+  "por_vista": [
+   {
+    "geometria": "geo-gen-01",
+    "vista": 0,
+    "rois_en_banda": 194,
+    "mediana": 306.0,
+    "p10": 114.3,
+    "k_necesario": 3.499562554680665
+   },
+   {
+    "geometria": "geo-gen-01",
+    "vista": 1,
+    "rois_en_banda": 194,
+    "mediana": 311.0,
+    "p10": 111.2,
+    "k_necesario": 3.597122302158273
+   },
+   {
+    "geometria": "geo-gen-01",
+    "vista": 2,
+    "rois_en_banda": 194,
+    "mediana": 309.5,
+    "p10": 109.7,
+    "k_necesario": 3.6463081130355515
+   },
+   {
+    "geometria": "geo-gen-01",
+    "vista": 3,
+    "rois_en_banda": 194,
+    "mediana": 306.0,
+    "p10": 118.2,
+    "k_necesario": 3.3840947546531304
+   },
+   {
+    "geometria": "geo-gen-01",
+    "vista": 4,
+    "rois_en_banda": 194,
+    "mediana": 306.5,
+    "p10": 111.3,
+    "k_necesario": 3.5938903863432166
+   },
+   {
+    "geometria": "geo-gen-01",
+    "vista": 5,
+    "rois_en_banda": 194,
+    "mediana": 311.5,
+    "p10": 109.3,
+    "k_necesario": 3.6596523330283626
+   },
+   {
+    "geometria": "geo-test-01",
+    "vista": 0,
+    "rois_en_banda": 174,
+    "mediana": 413.0,
+    "p10": 159.1,
+    "k_necesario": 2.51414204902577
+   },
+   {
+    "geometria": "geo-test-01",
+    "vista": 1,
+    "rois_en_banda": 174,
+    "mediana": 410.0,
+    "p10": 163.2,
+    "k_necesario": 2.450980392156863
+   },
+   {
+    "geometria": "geo-test-01",
+    "vista": 2,
+    "rois_en_banda": 174,
+    "mediana": 423.5,
+    "p10": 157.9,
+    "k_necesario": 2.53324889170361
+   },
+   {
+    "geometria": "geo-test-01",
+    "vista": 3,
+    "rois_en_banda": 174,
+    "mediana": 417.5,
+    "p10": 163.2,
+    "k_necesario": 2.450980392156863
+   },
+   {
+    "geometria": "geo-test-01",
+    "vista": 4,
+    "rois_en_banda": 174,
+    "mediana": 407.0,
+    "p10": 177.8,
+    "k_necesario": 2.249718785151856
+   },
+   {
+    "geometria": "geo-test-01",
+    "vista": 5,
+    "rois_en_banda": 174,
+    "mediana": 422.0,
+    "p10": 168.3,
+    "k_necesario": 2.3767082590612
+   },
+   {
+    "geometria": "geo-test-02",
+    "vista": 0,
+    "rois_en_banda": 178,
+    "mediana": 331.0,
+    "p10": 129.4,
+    "k_necesario": 3.0911901081916535
+   },
+   {
+    "geometria": "geo-test-02",
+    "vista": 1,
+    "rois_en_banda": 178,
+    "mediana": 335.5,
+    "p10": 132.0,
+    "k_necesario": 3.0303030303030303
+   },
+   {
+    "geometria": "geo-test-02",
+    "vista": 2,
+    "rois_en_banda": 178,
+    "mediana": 330.0,
+    "p10": 134.4,
+    "k_necesario": 2.9761904761904763
+   },
+   {
+    "geometria": "geo-test-02",
+    "vista": 3,
+    "rois_en_banda": 178,
+    "mediana": 346.0,
+    "p10": 124.4,
+    "k_necesario": 3.215434083601286
+   },
+   {
+    "geometria": "geo-test-02",
+    "vista": 4,
+    "rois_en_banda": 178,
+    "mediana": 328.0,
+    "p10": 130.0,
+    "k_necesario": 3.076923076923077
+   },
+   {
+    "geometria": "geo-test-02",
+    "vista": 5,
+    "rois_en_banda": 178,
+    "mediana": 337.5,
+    "p10": 129.2,
+    "k_necesario": 3.0959752321981426
+   },
+   {
+    "geometria": "geo-test-03",
+    "vista": 0,
+    "rois_en_banda": 222,
+    "mediana": 165.5,
+    "p10": 57.50000000000001,
+    "k_necesario": 6.956521739130434
+   },
+   {
+    "geometria": "geo-test-03",
+    "vista": 1,
+    "rois_en_banda": 222,
+    "mediana": 163.5,
+    "p10": 61.2,
+    "k_necesario": 6.5359477124183005
+   },
+   {
+    "geometria": "geo-test-03",
+    "vista": 2,
+    "rois_en_banda": 222,
+    "mediana": 155.5,
+    "p10": 58.0,
+    "k_necesario": 6.896551724137931
+   },
+   {
+    "geometria": "geo-test-03",
+    "vista": 3,
+    "rois_en_banda": 222,
+    "mediana": 161.5,
+    "p10": 56.300000000000004,
+    "k_necesario": 7.104795737122557
+   },
+   {
+    "geometria": "geo-test-03",
+    "vista": 4,
+    "rois_en_banda": 222,
+    "mediana": 158.5,
+    "p10": 60.1,
+    "k_necesario": 6.655574043261231
+   },
+   {
+    "geometria": "geo-test-03",
+    "vista": 5,
+    "rois_en_banda": 222,
+    "mediana": 161.5,
+    "p10": 60.1,
+    "k_necesario": 6.655574043261231
+   },
+   {
+    "geometria": "geo-train-01",
+    "vista": 0,
+    "rois_en_banda": 150,
+    "mediana": 293.5,
+    "p10": 118.8,
+    "k_necesario": 3.367003367003367
+   },
+   {
+    "geometria": "geo-train-01",
+    "vista": 1,
+    "rois_en_banda": 150,
+    "mediana": 305.0,
+    "p10": 131.70000000000002,
+    "k_necesario": 3.037205770690964
+   },
+   {
+    "geometria": "geo-train-01",
+    "vista": 2,
+    "rois_en_banda": 150,
+    "mediana": 296.0,
+    "p10": 130.4,
+    "k_necesario": 3.067484662576687
+   },
+   {
+    "geometria": "geo-train-01",
+    "vista": 3,
+    "rois_en_banda": 150,
+    "mediana": 302.5,
+    "p10": 145.20000000000002,
+    "k_necesario": 2.7548209366391183
+   },
+   {
+    "geometria": "geo-train-01",
+    "vista": 4,
+    "rois_en_banda": 150,
+    "mediana": 293.0,
+    "p10": 125.9,
+    "k_necesario": 3.177124702144559
+   },
+   {
+    "geometria": "geo-train-01",
+    "vista": 5,
+    "rois_en_banda": 150,
+    "mediana": 294.0,
+    "p10": 134.0,
+    "k_necesario": 2.985074626865672
+   },
+   {
+    "geometria": "geo-train-02",
+    "vista": 0,
+    "rois_en_banda": 232,
+    "mediana": 197.5,
+    "p10": 67.1,
+    "k_necesario": 5.961251862891207
+   },
+   {
+    "geometria": "geo-train-02",
+    "vista": 1,
+    "rois_en_banda": 232,
+    "mediana": 199.5,
+    "p10": 64.1,
+    "k_necesario": 6.2402496099844
+   },
+   {
+    "geometria": "geo-train-02",
+    "vista": 2,
+    "rois_en_banda": 232,
+    "mediana": 195.5,
+    "p10": 64.1,
+    "k_necesario": 6.2402496099844
+   },
+   {
+    "geometria": "geo-train-02",
+    "vista": 3,
+    "rois_en_banda": 232,
+    "mediana": 194.5,
+    "p10": 57.400000000000006,
+    "k_necesario": 6.968641114982578
+   },
+   {
+    "geometria": "geo-train-02",
+    "vista": 4,
+    "rois_en_banda": 232,
+    "mediana": 192.0,
+    "p10": 58.400000000000006,
+    "k_necesario": 6.84931506849315
+   },
+   {
+    "geometria": "geo-train-02",
+    "vista": 5,
+    "rois_en_banda": 232,
+    "mediana": 198.5,
+    "p10": 63.0,
+    "k_necesario": 6.349206349206349
+   },
+   {
+    "geometria": "geo-train-03",
+    "vista": 0,
+    "rois_en_banda": 188,
+    "mediana": 188.0,
+    "p10": 67.1,
+    "k_necesario": 5.961251862891207
+   },
+   {
+    "geometria": "geo-train-03",
+    "vista": 1,
+    "rois_en_banda": 188,
+    "mediana": 176.0,
+    "p10": 70.4,
+    "k_necesario": 5.681818181818182
+   },
+   {
+    "geometria": "geo-train-03",
+    "vista": 2,
+    "rois_en_banda": 188,
+    "mediana": 181.0,
+    "p10": 69.0,
+    "k_necesario": 5.797101449275362
+   },
+   {
+    "geometria": "geo-train-03",
+    "vista": 3,
+    "rois_en_banda": 188,
+    "mediana": 188.0,
+    "p10": 70.4,
+    "k_necesario": 5.681818181818182
+   },
+   {
+    "geometria": "geo-train-03",
+    "vista": 4,
+    "rois_en_banda": 188,
+    "mediana": 186.0,
+    "p10": 67.8,
+    "k_necesario": 5.899705014749263
+   },
+   {
+    "geometria": "geo-train-03",
+    "vista": 5,
+    "rois_en_banda": 188,
+    "mediana": 180.5,
+    "p10": 72.1,
+    "k_necesario": 5.547850208044383
+   },
+   {
+    "geometria": "geo-train-04",
+    "vista": 0,
+    "rois_en_banda": 152,
+    "mediana": 365.5,
+    "p10": 148.2,
+    "k_necesario": 2.699055330634278
+   },
+   {
+    "geometria": "geo-train-04",
+    "vista": 1,
+    "rois_en_banda": 152,
+    "mediana": 358.0,
+    "p10": 152.9,
+    "k_necesario": 2.6160889470241986
+   },
+   {
+    "geometria": "geo-train-04",
+    "vista": 2,
+    "rois_en_banda": 152,
+    "mediana": 353.0,
+    "p10": 162.4,
+    "k_necesario": 2.4630541871921183
+   },
+   {
+    "geometria": "geo-train-04",
+    "vista": 3,
+    "rois_en_banda": 152,
+    "mediana": 351.0,
+    "p10": 163.2,
+    "k_necesario": 2.450980392156863
+   },
+   {
+    "geometria": "geo-train-04",
+    "vista": 4,
+    "rois_en_banda": 152,
+    "mediana": 353.5,
+    "p10": 145.10000000000002,
+    "k_necesario": 2.756719503790489
+   },
+   {
+    "geometria": "geo-train-04",
+    "vista": 5,
+    "rois_en_banda": 152,
+    "mediana": 355.0,
+    "p10": 156.1,
+    "k_necesario": 2.5624599615631007
+   },
+   {
+    "geometria": "geo-train-05",
+    "vista": 0,
+    "rois_en_banda": 210,
+    "mediana": 192.0,
+    "p10": 64.9,
+    "k_necesario": 6.163328197226502
+   },
+   {
+    "geometria": "geo-train-05",
+    "vista": 1,
+    "rois_en_banda": 210,
+    "mediana": 190.0,
+    "p10": 68.80000000000001,
+    "k_necesario": 5.813953488372092
+   },
+   {
+    "geometria": "geo-train-05",
+    "vista": 2,
+    "rois_en_banda": 210,
+    "mediana": 195.5,
+    "p10": 67.0,
+    "k_necesario": 5.970149253731344
+   },
+   {
+    "geometria": "geo-train-05",
+    "vista": 3,
+    "rois_en_banda": 210,
+    "mediana": 190.0,
+    "p10": 62.800000000000004,
+    "k_necesario": 6.369426751592356
+   },
+   {
+    "geometria": "geo-train-05",
+    "vista": 4,
+    "rois_en_banda": 210,
+    "mediana": 190.5,
+    "p10": 70.60000000000001,
+    "k_necesario": 5.665722379603399
+   },
+   {
+    "geometria": "geo-train-05",
+    "vista": 5,
+    "rois_en_banda": 210,
+    "mediana": 199.0,
+    "p10": 67.7,
+    "k_necesario": 5.908419497784342
+   },
+   {
+    "geometria": "geo-train-06",
+    "vista": 0,
+    "rois_en_banda": 242,
+    "mediana": 173.5,
+    "p10": 59.1,
+    "k_necesario": 6.768189509306261
+   },
+   {
+    "geometria": "geo-train-06",
+    "vista": 1,
+    "rois_en_banda": 242,
+    "mediana": 172.0,
+    "p10": 60.0,
+    "k_necesario": 6.666666666666667
+   },
+   {
+    "geometria": "geo-train-06",
+    "vista": 2,
+    "rois_en_banda": 242,
+    "mediana": 174.0,
+    "p10": 58.1,
+    "k_necesario": 6.884681583476764
+   },
+   {
+    "geometria": "geo-train-06",
+    "vista": 3,
+    "rois_en_banda": 242,
+    "mediana": 174.5,
+    "p10": 62.2,
+    "k_necesario": 6.430868167202572
+   },
+   {
+    "geometria": "geo-train-06",
+    "vista": 4,
+    "rois_en_banda": 242,
+    "mediana": 168.5,
+    "p10": 60.0,
+    "k_necesario": 6.666666666666667
+   },
+   {
+    "geometria": "geo-train-06",
+    "vista": 5,
+    "rois_en_banda": 242,
+    "mediana": 168.5,
+    "p10": 61.400000000000006,
+    "k_necesario": 6.514657980456025
+   },
+   {
+    "geometria": "geo-train-07",
+    "vista": 0,
+    "rois_en_banda": 160,
+    "mediana": 419.5,
+    "p10": 175.8,
+    "k_necesario": 2.2753128555176336
+   },
+   {
+    "geometria": "geo-train-07",
+    "vista": 1,
+    "rois_en_banda": 160,
+    "mediana": 416.0,
+    "p10": 165.9,
+    "k_necesario": 2.4110910186859553
+   },
+   {
+    "geometria": "geo-train-07",
+    "vista": 2,
+    "rois_en_banda": 160,
+    "mediana": 429.5,
+    "p10": 179.0,
+    "k_necesario": 2.2346368715083798
+   },
+   {
+    "geometria": "geo-train-07",
+    "vista": 3,
+    "rois_en_banda": 160,
+    "mediana": 417.5,
+    "p10": 183.9,
+    "k_necesario": 2.1750951604132682
+   },
+   {
+    "geometria": "geo-train-07",
+    "vista": 4,
+    "rois_en_banda": 160,
+    "mediana": 438.5,
+    "p10": 185.9,
+    "k_necesario": 2.151694459386767
+   },
+   {
+    "geometria": "geo-train-07",
+    "vista": 5,
+    "rois_en_banda": 160,
+    "mediana": 429.0,
+    "p10": 187.9,
+    "k_necesario": 2.12879191059074
+   },
+   {
+    "geometria": "geo-train-08",
+    "vista": 0,
+    "rois_en_banda": 208,
+    "mediana": 239.5,
+    "p10": 83.90000000000002,
+    "k_necesario": 4.767580452920142
+   },
+   {
+    "geometria": "geo-train-08",
+    "vista": 1,
+    "rois_en_banda": 208,
+    "mediana": 246.5,
+    "p10": 86.60000000000002,
+    "k_necesario": 4.6189376443418
+   },
+   {
+    "geometria": "geo-train-08",
+    "vista": 2,
+    "rois_en_banda": 208,
+    "mediana": 235.5,
+    "p10": 92.4,
+    "k_necesario": 4.329004329004329
+   },
+   {
+    "geometria": "geo-train-08",
+    "vista": 3,
+    "rois_en_banda": 208,
+    "mediana": 237.0,
+    "p10": 85.4,
+    "k_necesario": 4.68384074941452
+   },
+   {
+    "geometria": "geo-train-08",
+    "vista": 4,
+    "rois_en_banda": 208,
+    "mediana": 230.0,
+    "p10": 82.50000000000001,
+    "k_necesario": 4.848484848484848
+   },
+   {
+    "geometria": "geo-train-08",
+    "vista": 5,
+    "rois_en_banda": 208,
+    "mediana": 236.0,
+    "p10": 83.50000000000001,
+    "k_necesario": 4.790419161676646
+   },
+   {
+    "geometria": "geo-train-09",
+    "vista": 0,
+    "rois_en_banda": 204,
+    "mediana": 174.0,
+    "p10": 63.0,
+    "k_necesario": 6.349206349206349
+   },
+   {
+    "geometria": "geo-train-09",
+    "vista": 1,
+    "rois_en_banda": 204,
+    "mediana": 165.5,
+    "p10": 67.0,
+    "k_necesario": 5.970149253731344
+   },
+   {
+    "geometria": "geo-train-09",
+    "vista": 2,
+    "rois_en_banda": 204,
+    "mediana": 167.5,
+    "p10": 64.2,
+    "k_necesario": 6.230529595015576
+   },
+   {
+    "geometria": "geo-train-09",
+    "vista": 3,
+    "rois_en_banda": 204,
+    "mediana": 167.5,
+    "p10": 59.0,
+    "k_necesario": 6.779661016949152
+   },
+   {
+    "geometria": "geo-train-09",
+    "vista": 4,
+    "rois_en_banda": 204,
+    "mediana": 171.5,
+    "p10": 61.3,
+    "k_necesario": 6.525285481239805
+   },
+   {
+    "geometria": "geo-train-09",
+    "vista": 5,
+    "rois_en_banda": 204,
+    "mediana": 170.5,
+    "p10": 63.0,
+    "k_necesario": 6.349206349206349
+   },
+   {
+    "geometria": "geo-train-10",
+    "vista": 0,
+    "rois_en_banda": 184,
+    "mediana": 377.5,
+    "p10": 137.6,
+    "k_necesario": 2.906976744186047
+   },
+   {
+    "geometria": "geo-train-10",
+    "vista": 1,
+    "rois_en_banda": 184,
+    "mediana": 380.0,
+    "p10": 133.9,
+    "k_necesario": 2.9873039581777445
+   },
+   {
+    "geometria": "geo-train-10",
+    "vista": 2,
+    "rois_en_banda": 184,
+    "mediana": 383.5,
+    "p10": 142.9,
+    "k_necesario": 2.7991602519244227
+   },
+   {
+    "geometria": "geo-train-10",
+    "vista": 3,
+    "rois_en_banda": 184,
+    "mediana": 391.5,
+    "p10": 141.2,
+    "k_necesario": 2.8328611898017
+   },
+   {
+    "geometria": "geo-train-10",
+    "vista": 4,
+    "rois_en_banda": 184,
+    "mediana": 384.5,
+    "p10": 150.6,
+    "k_necesario": 2.656042496679947
+   },
+   {
+    "geometria": "geo-train-10",
+    "vista": 5,
+    "rois_en_banda": 184,
+    "mediana": 385.5,
+    "p10": 147.0,
+    "k_necesario": 2.7210884353741496
+   },
+   {
+    "geometria": "geo-train-11",
+    "vista": 0,
+    "rois_en_banda": 192,
+    "mediana": 314.5,
+    "p10": 114.40000000000002,
+    "k_necesario": 3.496503496503496
+   },
+   {
+    "geometria": "geo-train-11",
+    "vista": 1,
+    "rois_en_banda": 192,
+    "mediana": 313.0,
+    "p10": 114.1,
+    "k_necesario": 3.5056967572304996
+   },
+   {
+    "geometria": "geo-train-11",
+    "vista": 2,
+    "rois_en_banda": 192,
+    "mediana": 307.5,
+    "p10": 114.0,
+    "k_necesario": 3.508771929824561
+   },
+   {
+    "geometria": "geo-train-11",
+    "vista": 3,
+    "rois_en_banda": 192,
+    "mediana": 315.0,
+    "p10": 105.9,
+    "k_necesario": 3.777148253068933
+   },
+   {
+    "geometria": "geo-train-11",
+    "vista": 4,
+    "rois_en_banda": 192,
+    "mediana": 319.0,
+    "p10": 114.0,
+    "k_necesario": 3.508771929824561
+   },
+   {
+    "geometria": "geo-train-11",
+    "vista": 5,
+    "rois_en_banda": 192,
+    "mediana": 311.5,
+    "p10": 114.0,
+    "k_necesario": 3.508771929824561
+   },
+   {
+    "geometria": "geo-train-12",
+    "vista": 0,
+    "rois_en_banda": 238,
+    "mediana": 187.5,
+    "p10": 63.10000000000001,
+    "k_necesario": 6.339144215530903
+   },
+   {
+    "geometria": "geo-train-12",
+    "vista": 1,
+    "rois_en_banda": 238,
+    "mediana": 177.0,
+    "p10": 63.400000000000006,
+    "k_necesario": 6.309148264984227
+   },
+   {
+    "geometria": "geo-train-12",
+    "vista": 2,
+    "rois_en_banda": 238,
+    "mediana": 182.0,
+    "p10": 61.0,
+    "k_necesario": 6.557377049180328
+   },
+   {
+    "geometria": "geo-train-12",
+    "vista": 3,
+    "rois_en_banda": 238,
+    "mediana": 182.0,
+    "p10": 60.400000000000006,
+    "k_necesario": 6.62251655629139
+   },
+   {
+    "geometria": "geo-train-12",
+    "vista": 4,
+    "rois_en_banda": 238,
+    "mediana": 183.0,
+    "p10": 60.7,
+    "k_necesario": 6.589785831960461
+   },
+   {
+    "geometria": "geo-train-12",
+    "vista": 5,
+    "rois_en_banda": 238,
+    "mediana": 182.5,
+    "p10": 62.400000000000006,
+    "k_necesario": 6.41025641025641
+   },
+   {
+    "geometria": "geo-val-01",
+    "vista": 0,
+    "rois_en_banda": 156,
+    "mediana": 493.0,
+    "p10": 212.0,
+    "k_necesario": 1.8867924528301887
+   },
+   {
+    "geometria": "geo-val-01",
+    "vista": 1,
+    "rois_en_banda": 156,
+    "mediana": 479.5,
+    "p10": 220.5,
+    "k_necesario": 1.8140589569160999
+   },
+   {
+    "geometria": "geo-val-01",
+    "vista": 2,
+    "rois_en_banda": 156,
+    "mediana": 483.0,
+    "p10": 200.5,
+    "k_necesario": 1.9950124688279303
+   },
+   {
+    "geometria": "geo-val-01",
+    "vista": 3,
+    "rois_en_banda": 156,
+    "mediana": 498.5,
+    "p10": 203.0,
+    "k_necesario": 1.9704433497536946
+   },
+   {
+    "geometria": "geo-val-01",
+    "vista": 4,
+    "rois_en_banda": 156,
+    "mediana": 473.0,
+    "p10": 202.0,
+    "k_necesario": 1.9801980198019802
+   },
+   {
+    "geometria": "geo-val-01",
+    "vista": 5,
+    "rois_en_banda": 156,
+    "mediana": 475.0,
+    "p10": 214.0,
+    "k_necesario": 1.8691588785046729
+   },
+   {
+    "geometria": "geo-val-02",
+    "vista": 0,
+    "rois_en_banda": 156,
+    "mediana": 308.5,
+    "p10": 133.5,
+    "k_necesario": 2.9962546816479403
+   },
+   {
+    "geometria": "geo-val-02",
+    "vista": 1,
+    "rois_en_banda": 156,
+    "mediana": 295.0,
+    "p10": 133.5,
+    "k_necesario": 2.9962546816479403
+   },
+   {
+    "geometria": "geo-val-02",
+    "vista": 2,
+    "rois_en_banda": 156,
+    "mediana": 305.5,
+    "p10": 135.5,
+    "k_necesario": 2.952029520295203
+   },
+   {
+    "geometria": "geo-val-02",
+    "vista": 3,
+    "rois_en_banda": 156,
+    "mediana": 298.0,
+    "p10": 142.0,
+    "k_necesario": 2.816901408450704
+   },
+   {
+    "geometria": "geo-val-02",
+    "vista": 4,
+    "rois_en_banda": 156,
+    "mediana": 302.5,
+    "p10": 132.5,
+    "k_necesario": 3.018867924528302
+   },
+   {
+    "geometria": "geo-val-02",
+    "vista": 5,
+    "rois_en_banda": 156,
+    "mediana": 307.0,
+    "p10": 136.5,
+    "k_necesario": 2.93040293040293
+   },
+   {
+    "geometria": "geo-val-03",
+    "vista": 0,
+    "rois_en_banda": 196,
+    "mediana": 281.0,
+    "p10": 105.0,
+    "k_necesario": 3.8095238095238093
+   },
+   {
+    "geometria": "geo-val-03",
+    "vista": 1,
+    "rois_en_banda": 196,
+    "mediana": 289.5,
+    "p10": 104.0,
+    "k_necesario": 3.8461538461538463
+   },
+   {
+    "geometria": "geo-val-03",
+    "vista": 2,
+    "rois_en_banda": 196,
+    "mediana": 280.0,
+    "p10": 108.5,
+    "k_necesario": 3.686635944700461
+   },
+   {
+    "geometria": "geo-val-03",
+    "vista": 3,
+    "rois_en_banda": 196,
+    "mediana": 282.0,
+    "p10": 110.0,
+    "k_necesario": 3.6363636363636362
+   },
+   {
+    "geometria": "geo-val-03",
+    "vista": 4,
+    "rois_en_banda": 196,
+    "mediana": 286.0,
+    "p10": 97.0,
+    "k_necesario": 4.123711340206185
+   },
+   {
+    "geometria": "geo-val-03",
+    "vista": 5,
+    "rois_en_banda": 196,
+    "mediana": 277.0,
+    "p10": 107.0,
+    "k_necesario": 3.7383177570093458
+   }
+  ]
+ },
+ "almacenamiento_medido": {
+  "npz_pares_bytes_por_vista": {
+   "media": 4267866.166666667,
+   "min": 4122759,
+   "max": 4323638,
+   "vistas_medidas": [
+    "geo-gen-01_view0",
+    "geo-test-03_view1",
+    "geo-train-03_view2",
+    "geo-train-06_view3",
+    "geo-train-09_view4",
+    "geo-train-12_view5"
+   ]
+  },
+  "npz_sin_comprimir_bytes": 20971520,
+  "hist_csv_bytes_aprox": 273919
+ },
+ "opciones": [
+  {
+   "k": 1,
+   "eventos_por_vista": 36034070,
+   "eventos_totales": 4107883970,
+   "exposicion_equivalente_dias": 30,
+   "bloques": 114,
+   "horas_nucleo": 840.8709870330549,
+   "horas_nucleo_sigma_media": 3.5173296424175615,
+   "horas_nucleo_rango_por_dispersion_vistas": [
+    766.0160879840389,
+    924.9507107837588
+   ],
+   "pared_h_con_4_trabajos_simultaneos": 8.759072781594323,
+   "fraccion_rois_banda_con_objetivo": 0.33090392372570593,
+   "conteo_roi_mediano_por_fraccion": {
+    "0.5": 135.5,
+    "0.1": 27.1,
+    "0.05": 13.55,
+    "0.01": 2.71
+   },
+   "almacenamiento_gb": {
+    "histogramas_csv": 0.031226766,
+    "pares_npz_comprimidos_medido_k1": 0.48653674300000005,
+    "pares_npz_sin_comprimir": 2.39075328
+   }
+  },
+  {
+   "k": 2,
+   "eventos_por_vista": 72068140,
+   "eventos_totales": 8215767940,
+   "exposicion_equivalente_dias": 60,
+   "bloques": 228,
+   "horas_nucleo": 1681.7419740661098,
+   "horas_nucleo_sigma_media": 7.034659284835123,
+   "horas_nucleo_rango_por_dispersion_vistas": [
+    1532.0321759680778,
+    1849.9014215675177
+   ],
+   "pared_h_con_4_trabajos_simultaneos": 17.518145563188646,
+   "fraccion_rois_banda_con_objetivo": 0.6387513751375138,
+   "conteo_roi_mediano_por_fraccion": {
+    "0.5": 271.0,
+    "0.1": 54.2,
+    "0.05": 27.1,
+    "0.01": 5.42
+   },
+   "almacenamiento_gb": {
+    "histogramas_csv": 0.062453532,
+    "pares_npz_comprimidos_medido_k1": null,
+    "pares_npz_sin_comprimir": 2.39075328
+   }
+  },
+  {
+   "k": 4,
+   "eventos_por_vista": 144136280,
+   "eventos_totales": 16431535880,
+   "exposicion_equivalente_dias": 120,
+   "bloques": 456,
+   "horas_nucleo": 3363.4839481322197,
+   "horas_nucleo_sigma_media": 14.069318569670246,
+   "horas_nucleo_rango_por_dispersion_vistas": [
+    3064.0643519361556,
+    3699.8028431350353
+   ],
+   "pared_h_con_4_trabajos_simultaneos": 35.03629112637729,
+   "fraccion_rois_banda_con_objetivo": 0.8684451778511184,
+   "conteo_roi_mediano_por_fraccion": {
+    "0.5": 542.0,
+    "0.1": 108.4,
+    "0.05": 54.2,
+    "0.01": 10.84
+   },
+   "almacenamiento_gb": {
+    "histogramas_csv": 0.124907064,
+    "pares_npz_comprimidos_medido_k1": null,
+    "pares_npz_sin_comprimir": 2.39075328
+   }
+  },
+  {
+   "k": 8,
+   "eventos_por_vista": 288272559,
+   "eventos_totales": 32863071760,
+   "exposicion_equivalente_dias": 240,
+   "bloques": 912,
+   "horas_nucleo": 6726.967896264439,
+   "horas_nucleo_sigma_media": 28.138637139340492,
+   "horas_nucleo_rango_por_dispersion_vistas": [
+    6128.128703872311,
+    7399.605686270071
+   ],
+   "pared_h_con_4_trabajos_simultaneos": 70.07258225275459,
+   "fraccion_rois_banda_con_objetivo": 0.9626420975430876,
+   "conteo_roi_mediano_por_fraccion": {
+    "0.5": 1084.0,
+    "0.1": 216.8,
+    "0.05": 108.4,
+    "0.01": 21.68
+   },
+   "almacenamiento_gb": {
+    "histogramas_csv": 0.249814128,
+    "pares_npz_comprimidos_medido_k1": null,
+    "pares_npz_sin_comprimir": 2.39075328
+   }
+  }
+ ],
+ "parametros": {
+  "fracciones": [
+   0.5,
+   0.1,
+   0.05,
+   0.01
+  ],
+  "realizaciones": 20,
+  "cpus": 24,
+  "max_simultaneos": 4,
+  "eventos_max_bloque": 40000000,
+  "semilla_maestra_v1": 20261001,
+  "regla_semilla": "maestra*1e6 + indice_geometria*1e4 + vista*1e3 + bloque (orden alfabético del catálogo)"
+ },
+ "manifiestos": {
+  "k1": {
+   "ruta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/produccion/manifiesto-v1-k1.csv",
+   "filas": 114
+  },
+  "k2": {
+   "ruta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/produccion/manifiesto-v1-k2.csv",
+   "filas": 228
+  }
+ },
+ "figura": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/figuras/fig6-estadistica-roi.png",
+ "entorno": {
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "matplotlib": "3.10.7"
+ }
+}
