@@ -1,0 +1,2 @@
+JobID|JobName|State|ExitCode|Start|End|ElapsedRaw|NCPUS|NodeList|Partition|SubmitLine
+30631|oe1-verificacion|COMPLETED|0:0|2026-10-02T09:45:41|2026-10-02T09:45:46|5|2|guane01|legacy|srun -p legacy -N1 -n1 -c2 -t 00:10:00 --job-name=oe1-verificacion bash verificar_bloques.sh

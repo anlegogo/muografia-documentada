@@ -1,0 +1,12 @@
+Fri Oct  2 02:45:42 PM UTC 2026
+job=30631 node=guane01.sc3.uis.edu.co cwd=/home/dapintoo/oe1-trabajo/verificacion-c4b6e4c
+
+Currently Loaded Modules:
+  1) prun/2.2       3) hwloc/2.13.0   5) libfabric/1.18.0   7) ohpc
+  2) gnu14/14.2.0   4) ucx/1.20.1     6) openmpi5/5.0.7
+
+ 
+
+Python 3.13.13
+numpy 2.5.2
+/home/dapintoo/muography-train/venv/bin/python

@@ -1,0 +1,42 @@
+{
+  "schema": "oe1-verified-publication-v1",
+  "status": "published",
+  "physical_validation": false,
+  "manifest_sha256": "1d0594c3ce1999c02ad9459db38d4b97a03a8929b103444eae9505e40dc7467d",
+  "row": {
+    "fila": 109,
+    "geometria": "geo-train-06",
+    "vista": 0,
+    "bloque": 1,
+    "semilla": 20261001090001,
+    "eventos": 100000
+  },
+  "files": {
+    "comando.txt": "90af1c967bb79fb88227208cafcdf2c32572d988e614288af4d57be862f67077",
+    "entorno.txt": "51e9abe00fdce79eaed22be9a03407473a1fabdb946b4acce2ee8102424847c1",
+    "entradas.sha256": "24cb5f4959ae90681cf4794e7101439fb8b600a7aae211a899c00dacca535b4c",
+    "exit_code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "geo-train-06_view0.meta.json": "1183c068659a44db13fffa39f6eee7a4519b3a1371622704b3c0c980c38c3038",
+    "geo-train-06_view0_gen.csv": "5ee12cdbf34ec6faf7e302b24c67383fd28b8a2714b0c8930256bf37633dd39f",
+    "geo-train-06_view0_hist.csv": "a8be45a3a93ffb74e9d1db5b14653db9c1a5c827deb434daa85dc49aa19a5dea",
+    "geo-train-06_view0_hist_sin_corte.csv": "0af78c8761bf942c7c764bb2a0154be450069f4e93a293144ee114fb5fe14ff8",
+    "receta.env": "b7e4ad31c216c6e11194f28e91ee40d15842195fdce2d4edaf2411e665ebcf97",
+    "run.log": "99b320ef9205e0d97274c831d3d4895f3bf477773a0e0d81c85422db940845dc",
+    "salida.sha256": "a63f664f302c136600d0b48ad93450094023e1f32707cb74607a627715e3c8a6"
+  },
+  "accept_crlf": false,
+  "output_hash_checks": [
+    {
+      "name": "geo-train-06_view0_hist.csv",
+      "received_sha256": "a8be45a3a93ffb74e9d1db5b14653db9c1a5c827deb434daa85dc49aa19a5dea",
+      "expected_sha256": "a8be45a3a93ffb74e9d1db5b14653db9c1a5c827deb434daa85dc49aa19a5dea",
+      "crlf_to_lf_verified": false
+    },
+    {
+      "name": "geo-train-06_view0.meta.json",
+      "received_sha256": "1183c068659a44db13fffa39f6eee7a4519b3a1371622704b3c0c980c38c3038",
+      "expected_sha256": "1183c068659a44db13fffa39f6eee7a4519b3a1371622704b3c0c980c38c3038",
+      "crlf_to_lf_verified": false
+    }
+  ]
+}

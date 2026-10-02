@@ -1,0 +1,1 @@
+/home/dapintoo/muography-train/venv/bin/python herramientas/publicar_bloque_angular.py --manifiesto /home/dapintoo/oe1-trabajo/produccion-v1/manifiesto-prueba.csv --fila 108 --origen /home/dapintoo/muography-scratch/oe1-v1-prueba --destino /home/dapintoo/muography-scratch/oe1-v1-prueba-publicados-c4b6e4c 

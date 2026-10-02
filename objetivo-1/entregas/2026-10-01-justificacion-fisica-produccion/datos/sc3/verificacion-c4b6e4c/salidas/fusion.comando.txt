@@ -1,0 +1,1 @@
+/home/dapintoo/muography-train/venv/bin/python herramientas/fusionar_bloques_angular.py --manifiesto /home/dapintoo/oe1-trabajo/produccion-v1/manifiesto-prueba.csv --salida /home/dapintoo/muography-scratch/oe1-v1-prueba --destino /home/dapintoo/oe1-trabajo/verificacion-c4b6e4c/salidas/fusion 

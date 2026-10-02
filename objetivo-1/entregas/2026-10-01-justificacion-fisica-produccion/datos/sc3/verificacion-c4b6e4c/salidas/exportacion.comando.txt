@@ -1,0 +1,1 @@
+/home/dapintoo/muography-train/venv/bin/python herramientas/preparar_imagen_angular_v1.py /home/dapintoo/oe1-trabajo/verificacion-c4b6e4c/salidas/fusion/geo-train-06/geo-train-06_view0_hist.csv --salida /home/dapintoo/oe1-trabajo/verificacion-c4b6e4c/salidas/imagenes 

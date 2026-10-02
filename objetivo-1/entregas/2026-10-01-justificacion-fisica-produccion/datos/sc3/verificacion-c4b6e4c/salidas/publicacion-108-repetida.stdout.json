@@ -1,0 +1,42 @@
+{
+  "schema": "oe1-verified-publication-v1",
+  "status": "already_verified",
+  "physical_validation": false,
+  "manifest_sha256": "1d0594c3ce1999c02ad9459db38d4b97a03a8929b103444eae9505e40dc7467d",
+  "row": {
+    "fila": 108,
+    "geometria": "geo-train-06",
+    "vista": 0,
+    "bloque": 0,
+    "semilla": 20261001090000,
+    "eventos": 100000
+  },
+  "files": {
+    "comando.txt": "ca650e8ec764eeaf0b49c5517c6616de8fba50eaf56178ff5f41450413aa4703",
+    "entorno.txt": "8369c5599518ad3d62e2a6f4002e4e60055c05f0a2accee814b3649a123ffaa0",
+    "entradas.sha256": "24cb5f4959ae90681cf4794e7101439fb8b600a7aae211a899c00dacca535b4c",
+    "exit_code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "geo-train-06_view0.meta.json": "12c7637e0bc29c35f988a19546a0b46af28622c6305236a7e9cd38e81c3208c7",
+    "geo-train-06_view0_gen.csv": "cf3739f823917ad779fe17f5e962b6bdcfe946bfdc6fae996645f3642ae235fa",
+    "geo-train-06_view0_hist.csv": "3c21b65e64506fead2196b145df6f41ef3c85810fbd870a38b7639603100a7c6",
+    "geo-train-06_view0_hist_sin_corte.csv": "146f932b127e9ee0670d5bdeef71eb8275a27bb4317423591f69e67983e33131",
+    "receta.env": "b7e4ad31c216c6e11194f28e91ee40d15842195fdce2d4edaf2411e665ebcf97",
+    "run.log": "ee91349726c88c648c4e1a6ba5a138b1eadbb6894f18ee9ad0b1c45e99d230f4",
+    "salida.sha256": "aa55e7572045e3a1c2c8bee17746254a8b2548632a1abf23dd0b1900fba5e2e3"
+  },
+  "accept_crlf": false,
+  "output_hash_checks": [
+    {
+      "name": "geo-train-06_view0_hist.csv",
+      "received_sha256": "3c21b65e64506fead2196b145df6f41ef3c85810fbd870a38b7639603100a7c6",
+      "expected_sha256": "3c21b65e64506fead2196b145df6f41ef3c85810fbd870a38b7639603100a7c6",
+      "crlf_to_lf_verified": false
+    },
+    {
+      "name": "geo-train-06_view0.meta.json",
+      "received_sha256": "12c7637e0bc29c35f988a19546a0b46af28622c6305236a7e9cd38e81c3208c7",
+      "expected_sha256": "12c7637e0bc29c35f988a19546a0b46af28622c6305236a7e9cd38e81c3208c7",
+      "crlf_to_lf_verified": false
+    }
+  ]
+}
