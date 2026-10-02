@@ -1,13 +1,13 @@
 # Guía de la siguiente etapa para Daniel y Reinaldo
 
-2026-10-02. Esta guía reúne las tareas posteriores a `01a9871`. **La prueba de los dos bloques ya fue aceptada; no deben repetirla ni producir muones para demostrarla otra vez.** El propósito siguiente es dejar el proceso automático funcionando y acordar una imagen con interpretación explícita, antes de producir las 114 vistas.
+2026-10-02. Esta guía reúne las tareas posteriores a `01a9871`. **La prueba de los dos bloques ya fue aceptada; no deben repetirla ni producir muones para demostrarla otra vez.** El propósito siguiente es dejar el proceso automático funcionando y verificar la receta del producto idealizado adoptado, antes de producir las 114 vistas.
 
 ## Actividades inmediatas sin nuevas simulaciones
 
-1. Incorporar la actualización de `main` en su rama de entrega y leer la [definición propuesta](DEFINICION_PRODUCTO_OE1.md). Dejar en el informe una respuesta explícita: adoptar el conjunto idealizado con sus limitaciones, o explicar por qué se necesita equivalencia con un detector. No basta cambiar el nombre del producto: justificar su relación con el OE1.
+1. Incorporar la actualización de `main` en su rama de entrega y leer la [definición adoptada y sus criterios de cierre](DEFINICION_PRODUCTO_OE1.md). Incorporar al informe el conjunto idealizado y sus limitaciones, conforme a la decisión de la dirección del 2026-10-02. Justificar su relación con el OE1. La equivalencia con un detector real queda como extensión opcional; no se solicita ejecutar C3.
 2. En su entorno Python del proyecto, ejecutar las pruebas abajo. No usan Geant4: el simulador y la cola de las pruebas son dobles sintéticos. Conservar versiones, salida completa y código de salida. Si falta SciPy, instalarlo en el entorno del proyecto, sin cambiar módulos o paquetes globales. Entorno local probado: Python 3.12.14, NumPy 2.4.4, SciPy 1.18.1; las versiones SC3 deben registrarse y verificarse, no presumirse equivalentes.
 3. Revisar el plan de lanzamiento sin `--enviar`: comprobar rutas, huellas, trabajos ya en cola, cupos y nombres con identidad de campaña. Resolver cualquier discrepancia antes de pedir transporte. La ficha conserva el hash del ejecutable reportado por los estudiantes; si se recompiló, documentar código/parche/compilador y revisar la ficha como nueva versión, no reemplazar el hash solo para evitar el error.
-4. Entregar un breve `RESULTADOS_INTEGRACION_OPERATIVA.md`: commit usado, entorno, resultado de pruebas, plan de lanzamiento, decisiones sobre el observable y limitaciones. No hace falta otra justificación extensa ni repetir las 19 corridas.
+4. Entregar un breve `RESULTADOS_INTEGRACION_OPERATIVA.md`: commit usado, entorno, resultado de pruebas, plan de lanzamiento, incorporación del alcance adoptado y sus limitaciones. No hace falta otra justificación extensa ni repetir las 19 corridas.
 
 Desde la raíz de esta réplica en SC3 (sustituir las rutas por las reales):
 
@@ -52,11 +52,11 @@ Las pruebas locales cubren esos casos con fallos simulados, pero no certifican l
 
 ## Cuándo pasar al piloto con muones
 
-Primero deben quedar acordados el producto, las limitaciones de la referencia ideal, el criterio de bordes y el presupuesto. **El manifiesto propuesto no es una orden de ejecución.** No lanzar C3 por defecto: su necesidad depende de la afirmación instrumental que se decida sostener.
+El alcance del producto ya está adoptado. Antes del piloto deben revisarse la receta y las limitaciones de la referencia ideal, y acordarse el criterio de bordes, la suficiencia de conteos en roca y el presupuesto. **El manifiesto propuesto no es una orden de ejecución.** C3 queda fuera de los requisitos del producto adoptado; una futura afirmación instrumental exigiría una decisión adicional.
 
 Hay un piloto completamente especificado para valorar: geo-train-06, seis vistas, 211 millones de primarios por vista, 36 bloques en total; coste orientativo 187 horas-núcleo. El [diseño estadístico](DISENO_ESTADISTICO_Y_REFERENCIAS.md) explica por qué ese número es mayor que el piloto anterior y sus hipótesis. Es una opción conservadora, no un mínimo ni una promesa de resultado favorable.
 
-Una vez aceptado ese alcance, el comando anterior con **`--enviar`** realiza los envíos que quepan. Repetir manualmente el lanzador cuando haya cupos para continuar las filas restantes; las filas ya registradas no se duplican. No cambiar semillas o N después de inspeccionar los bordes. No pasar de un piloto inconcluso a «seguir hasta aprobar».
+Únicamente después de aprobar expresamente el diseño y presupuesto del piloto y comprobar la integración SC3, el comando anterior con **`--enviar`** realiza los envíos que quepan. Repetir manualmente el lanzador cuando haya cupos para continuar las filas restantes; las filas ya registradas no se duplican. No cambiar semillas o N después de inspeccionar los bordes. No pasar de un piloto inconcluso a «seguir hasta aprobar».
 
 ## Qué entregar del piloto y cómo evaluarlo
 

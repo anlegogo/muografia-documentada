@@ -1,8 +1,8 @@
-# Definición propuesta del producto del OE1
+# Definición adoptada del producto del OE1
 
-2026-10-02. Versión de trabajo preparada por la dirección a partir de `01a9871`. Esta definición hace concreta la opción recomendada; **no declara aprobado el modelo físico ni terminado el OE1**. La elección académica queda visible para que dirección y estudiantes la incorporen expresamente al informe. No cambia los archivos históricos ni sus etiquetas.
+2026-10-02. La dirección adoptó expresamente el alcance idealizado descrito a continuación, a partir de la propuesta posterior a `01a9871`. **La adopción del alcance no declara validado el modelo físico ni terminado el OE1, y no autoriza el piloto ni la campaña.** Corresponde incorporar esta decisión y sus limitaciones al informe académico. Los archivos históricos conservan sus etiquetas y procedencia.
 
-## Producto principal recomendado
+## Producto principal adoptado
 
 Un conjunto de **imágenes de conteos direccionales sintéticos de muones transmitidos por escenarios volcánicos idealizados**, acompañado de realizaciones de menor conteo del mismo observable. La unidad es una matriz de 256 × 256 enteros: cada entrada cuenta primarios que alcanzan el plano de registro con energía cinética mayor que 3 GeV y dirección final dentro de ese píxel.
 
@@ -36,12 +36,29 @@ Los datos existentes no permiten medir una referencia de cielo a las elevaciones
 
 ## Qué exige C3 y qué no
 
-**Para el producto idealizado recomendado, C3 no es una condición automática de equivalencia instrumental, porque esa equivalencia queda fuera de sus afirmaciones.** Siguen siendo necesarias la trazabilidad de fuente, las comprobaciones geométricas y de transporte, la evaluación de bordes con corte y la suficiencia de conteos en roca. Excluir una afirmación instrumental no exime de justificar por qué los escenarios y el transporte son representativos del OE1.
+**Para el producto idealizado adoptado, C3 no es una condición automática de equivalencia instrumental, porque esa equivalencia queda fuera de sus afirmaciones.** Siguen siendo necesarias la trazabilidad de fuente, las comprobaciones geométricas y de transporte, la evaluación de bordes con corte y la suficiencia de conteos en roca. Excluir una afirmación instrumental no exime de justificar por qué los escenarios y el transporte son representativos del OE1.
 
 Si el informe pretende afirmar «estas imágenes son lo que mediría el detector de 1,2 m», entonces sí necesita demostrar la contribución de muones generados fuera del panel, fijar aceptación y resolución del instrumento y una referencia física compatible. C3 es una vía posible; [su diseño corregido](DISENO_ESTADISTICO_Y_REFERENCIAS.md) es condicional y no se ordena ejecutarlo por defecto.
 
-La decisión recomendada es adoptar el producto principal idealizado y dejar la equivalencia instrumental como extensión. Debe quedar expresada en el informe académico, con las limitaciones anteriores; no se interpreta el silencio como aceptación ni se inicia P1 por esta propuesta.
+La decisión adoptada por la dirección es desarrollar el producto principal idealizado y dejar la equivalencia instrumental como extensión opcional. C3 no constituye un requisito de cierre de este alcance. Deben conservarse en el informe las limitaciones anteriores y la justificación de representatividad. La receta definitiva, los criterios estadísticos y el presupuesto del piloto requieren revisión específica antes de iniciar transporte.
 
 ## Contrato listo para el flujo nuevo
 
-La [ficha operativa propuesta](contratos/receta-operativa-siete-actividades.json) registra fuente, normalización, geometrías y hashes de herramientas. El ejecutor añade esos campos solamente a nuevas ejecuciones, junto con el contador nominal. La fusión valida y suma ambos contadores y la exposición convencional; no altera retrospectivamente los bloques recibidos. El empaquetador distingue las definiciones presentes de las ausentes.
+La [ficha operativa con el alcance adoptado](contratos/receta-operativa-siete-actividades.json) registra fuente, normalización, geometrías y hashes de herramientas. El ejecutor añade esos campos solamente a nuevas ejecuciones, junto con el contador nominal. La fusión valida y suma ambos contadores y la exposición convencional; no altera retrospectivamente los bloques recibidos. El empaquetador distingue las definiciones presentes de las ausentes.
+
+## Lista única de criterios de cierre
+
+Esta lista reúne las condiciones de aceptación del OE1 bajo el alcance adoptado. El catálogo objetivo continúa siendo 19 escenarios, 114 referencias y 9.120 pares; sus cifras históricas no acreditan por sí mismas la entrega del conjunto corregido.
+
+| Criterio | Evidencia requerida | Estado y responsable siguiente |
+|---|---|---|
+| A-01 · alcance explícito | Decisión de la dirección e incorporación de producto y limitaciones al informe. | Alcance adoptado; estudiantes: actualizar el informe. |
+| A-02 · representatividad | Justificación de escenarios, fuente híbrida, geometrías y transporte, con límites de la referencia ideal. | Parcial; estudiantes documentan y dirección revisa. No se exige equivalencia instrumental. |
+| A-03 · receta reproducible | Código, entorno, tablas, geometrías, semillas, parámetros y huellas compatibles y congelados. | Ficha candidata disponible; estudiantes verifican trazabilidad y dirección revisa la versión definitiva. |
+| A-04 · integración operativa | Pruebas y plan de lanzamiento en SC3 con versiones, logs y códigos de salida. | Herramientas locales probadas; estudiantes comprueban el nuevo flujo sin nuevos muones. |
+| A-05 · piloto y suficiencia | Criterio de bordes, suficiencia de conteos en roca y presupuesto acordados antes de ejecutar; evaluación de seis vistas y tiempos reales. | Diseño conservador propuesto, pendiente de revisión y autorización específica. Los resultados inconclusos no cuentan como aceptación. |
+| A-06 · referencias finales | 114 referencias compatibles, inventario íntegro y evaluación conforme a los criterios acordados. | Pendiente de decidir y ejecutar la campaña después del piloto. |
+| A-07 · niveles de conteo | 9.120 pares reproducibles, uint32 sin saturación, semillas y particiones por geometría, dependencia de la referencia declarada. | Cadena preparada; pendiente de aplicarla a las referencias finales aceptadas. |
+| A-08 · entrega verificable | Datos recuperables, manifiestos, hashes, comandos y ficha final coherentes con el informe. | Documentación y herramientas disponibles; pendiente de auditoría del conjunto final. |
+
+La dirección revisará la evidencia de cierre. Ninguna prueba de software sustituye la evaluación del transporte y de la suficiencia estadística. La equivalencia con un instrumento real queda fuera de esta lista y requeriría un alcance adicional explícito.

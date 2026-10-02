@@ -1,5 +1,11 @@
 # Bitácora de la revisión del OE1
 
+## Adopción del alcance idealizado — 2026-10-02
+
+- La dirección aceptó expresamente la recomendación de alcance idealizado en la conversación de trabajo. Se registra en la [definición y lista de cierre](DEFINICION_PRODUCTO_OE1.md) y en la ficha operativa.
+- Resultado: se resuelve la decisión de alcance; C3 no es requisito del producto principal. Se conservan parámetros, hashes y evidencias científicas.
+- Siguiente paso: incorporar la decisión al informe, verificar el flujo SC3 sin nuevos muones y revisar criterio/receta/presupuesto del piloto. No se autoriza transporte por esta decisión.
+
 ## Unificación del estilo documental — 2026-10-02
 
 - Se adopta redacción impersonal o en tercera persona para la documentación de la dirección. Ajuste editorial sin cambios en resultados, código, comandos ni archivos originales de estudiantes.

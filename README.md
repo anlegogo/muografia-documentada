@@ -4,7 +4,7 @@ Réplica de trabajo de Andrés Leonardo González Gómez para el material de Rei
 
 ## Estado actual
 
-**Preparación local posterior completada:** [entrega de las siete actividades](objetivo-1/ENTREGA_SIETE_ACTIVIDADES.md), con definición de producto, referencia ideal de cielo, diseño estadístico, evaluación de bordes, automatización y [guía única para estudiantes](objetivo-1/GUIA_SIGUIENTE_ETAPA_OE1.md). **103 pruebas locales satisfactorias.** Quedan la adopción académica de la definición y la comprobación operativa en SC3; el piloto calculado y la campaña son condicionales, no órdenes de ejecución.
+**Preparación local posterior completada:** [entrega de las siete actividades](objetivo-1/ENTREGA_SIETE_ACTIVIDADES.md), con definición de producto, referencia ideal de cielo, diseño estadístico, evaluación de bordes, automatización y [guía única para estudiantes](objetivo-1/GUIA_SIGUIENTE_ETAPA_OE1.md). **103 pruebas locales satisfactorias.** El [alcance idealizado quedó adoptado por la dirección](objetivo-1/DEFINICION_PRODUCTO_OE1.md#lista-única-de-criterios-de-cierre). Quedan su incorporación al informe y la comprobación operativa en SC3; el piloto calculado y la campaña son condicionales, no órdenes de ejecución.
 
 Como antecedente, la [actualización 01a9871](objetivo-1/REVISION_INTEGRACION_OBSERVABLE_01A9871.md) respaldó la prueba de herramientas en SC3 sobre dos bloques, con 200.000 primarios y 69.995 registros con corte. Se reprodujo su análisis y se corrigió la atribución sobre finales de línea: los objetos Git originales estaban bien. Las correcciones y propuestas posteriores están reunidas en la entrega de siete actividades; **la campaña final sigue pendiente** del acuerdo científico y la evaluación del piloto.
 

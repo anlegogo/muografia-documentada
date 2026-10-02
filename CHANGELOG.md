@@ -1,5 +1,10 @@
 # Registro de cambios
 
+## Adopción del alcance idealizado — 2026-10-02
+
+- Alcance idealizado del OE1 adoptado expresamente por la dirección; equivalencia instrumental y C3 quedan como extensión opcional.
+- Definición, criterios de cierre, ficha, pendientes y guía actualizados. La decisión no aprueba la receta física, el presupuesto del piloto ni la campaña.
+
 ## Unificación del estilo documental — 2026-10-02
 
 - Redacción propia ajustada a estilo académico impersonal y tercera persona, conforme al criterio indicado por la dirección.

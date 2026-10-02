@@ -1,5 +1,7 @@
 # Entrega de las siete actividades de preparación del OE1
 
+> Actualización de decisión — 2026-10-02: la dirección adoptó el [producto idealizado y sus criterios de cierre](DEFINICION_PRODUCTO_OE1.md). Las recomendaciones de adopción de esta entrega quedan resueltas por esa decisión. Continúan pendientes la integración SC3 y la revisión específica del piloto y su presupuesto; no se autoriza transporte.
+
 2026-10-02. Trabajo local realizado con autorización de la dirección, sobre la entrega estudiantil `01a9871`. **Se completó la preparación documental, analítica y de software de las siete actividades.** No se ejecutaron nuevos transportes ni se declara aprobada la campaña; las decisiones académicas y comprobaciones SC3 están identificadas en la guía.
 
 | Actividad | Entrega terminada | Límite que permanece explícito |
@@ -27,4 +29,4 @@ La fusión actual reproduce las huellas originales de los dos bloques reales: 20
 
 [Análisis de cielo/bordes/C3](DISENO_ESTADISTICO_Y_REFERENCIAS.md), [resultados](evidencias/preparacion-siete-actividades/resumen.json), [diseño piloto](evidencias/piloto-propuesto-siete-actividades/diseno-piloto.json). Los 20.000 experimentos estadísticos de planificación son binomiales sintéticos, no transportes Geant4.
 
-La siguiente tarea de estudiantes es **comprobar la integración operativa y responder a la definición propuesta**, sin repetir el ensayo de dos bloques y sin lanzar C3 por rutina. Después se acuerda el piloto y se usan sus resultados para dimensionar la campaña final.
+La siguiente tarea de estudiantes es **comprobar la integración operativa e incorporar al informe la definición adoptada**, sin repetir el ensayo de dos bloques y sin lanzar C3 por rutina. Después se acuerda el piloto y se usan sus resultados para dimensionar la campaña final.

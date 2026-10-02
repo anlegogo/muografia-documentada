@@ -1,6 +1,6 @@
 {
   "schema": "oe1-operational-definition-v2",
-  "status": "recommended_idealized_product_not_physically_approved",
+  "status": "adopted_idealized_scope_recipe_pending_physical_review",
   "source_delivery_commit": "01a98718ba381797f6d4616e25d42ad533cad6f1",
   "code_base": "0dea8e1",
   "patch_sha256": "4e7b24dda253caa183f91d24278c84cf3d9b778f56f288db1cbd2a328ddebd58",
@@ -63,7 +63,7 @@
     "independent_reference_per_pair": false
   },
   "open_gates": [
-    "academic adoption of idealized product and limitations",
+    "incorporation of adopted scope and limitations into academic report; justification of representativeness and final recipe",
     "SC3 integration of launcher and worker",
     "final border/reference criterion and fixed pilot budget",
     "pilot evaluation and campaign decision"
@@ -98,5 +98,13 @@
     "preparar_imagen_angular_v1.py": "61e2e4e6ea37ddececd6902a77c23cceb54baebd8ad481f4998b0089d6fdde02",
     "diagnosticar_observable_angular.py": "2d27d94c3c6877c0fce1e6b02aa7d8ad9fe03e87dbdf71f1495876bd1d87a822"
   },
-  "runtime_tool_hash_convention": "Git LF source blobs; runtime checkout must preserve LF per .gitattributes"
+  "runtime_tool_hash_convention": "Git LF source blobs; runtime checkout must preserve LF per .gitattributes",
+  "scope_decision": {
+    "status": "adopted_by_direction",
+    "date": "2026-10-02",
+    "product": "idealized directional synthetic transmission counts at different count levels",
+    "instrument_equivalence_required": false,
+    "reference": "../DEFINICION_PRODUCTO_OE1.md"
+  },
+  "pilot_execution_authorized": false
 }
