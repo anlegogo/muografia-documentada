@@ -1,8 +1,8 @@
 # Complemento técnico R2-01: entrada al solape desde ambos lados
 
-**Diseño de nuestra revisión, 30 de septiembre de 2026. Estado: preparado y validado geométricamente en local; transporte pendiente en SC3.** No es la etapa 2 ni una estimación del efecto sobre la campaña. Responde al hallazgo [R2-01](REVISION_ETAPA_1_2026-09-30.md).
+**Diseño de la revisión, 30 de septiembre de 2026. Estado: preparado y validado geométricamente en local; transporte pendiente en SC3.** No es la etapa 2 ni una estimación del efecto sobre la campaña. Responde al hallazgo [R2-01](REVISION_ETAPA_1_2026-09-30.md).
 
-## Qué vamos a comprobar
+## Comprobación prevista
 
 Si la geometría corregida asigna al cuerpo denso toda la intersección Z, también cuando el muón llega primero por el conducto. La prueba anterior solo cubrió cruces que entraban desde el cuerpo denso. A mantiene el defecto histórico como diagnóstico, sin constituir una referencia física correcta.
 
@@ -37,7 +37,7 @@ El cálculo local exige más de 20 m de recorrido ideal dentro de Z y más de 5 
 
 ## Ejecución para Daniel y Reinaldo
 
-1. Actualizar nuestro repositorio y copiar la carpeta de insumos conservando sus bytes. Guardar el complemento en una carpeta nueva de SC3, separado de `etapa1/corridas/intento-01`.
+1. Actualizar el repositorio y copiar la carpeta de insumos conservando sus bytes. Guardar el complemento en una carpeta nueva de SC3, separado de `etapa1/corridas/intento-01`.
 2. Usar Geant4 11.4.2 y los módulos de etapa 1; conservar los binarios A2/B2 y tablas. El ejecutor verifica sus binarios contra las huellas recibidas. Si no coinciden, informar qué cambió antes de ejecutarlo; no desactivar el chequeo.
 3. En una asignación SC3 pequeña (propuesta: partición `legacy`, 1 CPU, 1 GB, 10 minutos), definir las siguientes variables como rutas absolutas y ejecutar `bash herramientas/ejecutar_complemento_r2_01.sh`. No ejecutarlo en el nodo de acceso.
 

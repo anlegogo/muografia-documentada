@@ -13,8 +13,8 @@ La etapa proporciona evidencia útil: aparecen efectos de la corrección en la f
 ## Evidencia contrastada localmente
 
 - Manifiesto de 1.061 archivos de la entrega: huellas verificadas. En 56 archivos de texto (`.gitattributes` y 55 `.status`) la extracción Windows convirtió LF a CRLF; concuerdan al normalizar LF. Sin normalización en CSV/JSON científicos.
-- 55 metadatos e histogramas: 48,7 millones de transportes declarados; sus totales y conteos ROI concuerdan. Las verificaciones internas de metadatos son declaraciones del simulador, no sustituyen nuestra lectura de crudos. En control sin anomalías `variant_matches_geometry=null` es no aplicable, no un fallo.
-- 24 bloques de un millón de pares; cuatro CSV agregados reproducidos byte a byte. Se regeneró el agregado con el código de autores y nuestro calculador.
+- 55 metadatos e histogramas: 48,7 millones de transportes declarados; sus totales y conteos ROI concuerdan. Las verificaciones internas de metadatos son declaraciones del simulador, no sustituyen la lectura de crudos. En control sin anomalías `variant_matches_geometry=null` es no aplicable, no un fallo.
+- 24 bloques de un millón de pares; cuatro CSV agregados reproducidos byte a byte. Se regeneró el agregado con el código de autores y el calculador.
 - Mapas reconstruidos sumando los histogramas principales: A=18.053.098, B=18.053.099 detecciones; ROI=67/70. Las 23 celdas distintas cambian como máximo una cuenta. Las filas de diez cambios de píxel y tres cambios de detección explican exactamente el mapa diferencial.
 - 151 filas seleccionadas de cruce, 51 etiquetadas desde conducto y 100 desde cuerpo denso según material en A. B asigna A1 dentro de 1 µm en las 151 filas recibidas. El lado real en B sigue sin observarse directamente con el registro agregado.
 - Las 12 pruebas del analizador de estudiantes pasan localmente. Un primer intento falló por extracción local incompleta de las tablas de simulación; se incorporó `scripts/simulation` del mismo commit y se repitió sin modificar el código.

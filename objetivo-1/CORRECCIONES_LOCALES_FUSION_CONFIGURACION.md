@@ -1,6 +1,6 @@
 # Correcciones locales de fusión y configuración — 2026-10-02
 
-Se atienden los pendientes técnicos T-01/T-02/T-03 de la [revisión de la entrega f9a77ef](REVISION_FISICA_PRODUCCION_2026-10-02.md). No se cambia su rama ni la física del simulador. La alternativa nueva está en `herramientas/` de nuestra réplica, disponible para que los estudiantes la adopten. Su lanzador y sus scripts en SC3 no se actualizan automáticamente.
+Se atienden los pendientes técnicos T-01/T-02/T-03 de la [revisión de la entrega f9a77ef](REVISION_FISICA_PRODUCCION_2026-10-02.md). No se cambia su rama ni la física del simulador. La alternativa nueva está en `herramientas/` de la réplica, disponible para que los estudiantes la adopten. Su lanzador y sus scripts en SC3 no se actualizan automáticamente.
 
 ## Resultado comprobado
 
@@ -53,7 +53,7 @@ El contrato del informe incorpora `configuration_contract=explicit-recipe-v2`; p
 
 ## Instrucciones para adoptar las correcciones
 
-Desde la raíz de nuestra réplica actualizada, con el entorno Python documentado:
+Desde la raíz de la réplica actualizada, con el entorno Python documentado:
 
 ```console
 python -m unittest discover -s herramientas -p "test_*angular*.py" -v

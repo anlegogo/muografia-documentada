@@ -40,9 +40,9 @@ Inspección de los scripts de estudiantes recibidos en `d8ca749`, con el cambio 
 | `oe1_stage1_common.py`, `oe1_stage1_roi.py` | Conservan centros azimutales históricos y redondeo antiguo. Mantenerlos para reproducir los ensayos congelados; preparar una ruta nueva antes de generar ROI para la nueva malla. |
 | `oe1_stage1_analysis.py`, `oe1_stage2_analysis.py` | Sus gráficos y contornos pertenecen al protocolo histórico. No reutilizarlos para certificar ROI nueva sin adaptación. |
 | `compare_engines.py` | Antes de comparar matrices nuevas e históricas, exigir igualdad de coordenadas y observable; igualdad de dimensiones no basta. |
-| `build_dataset.py` | Lee matrices y metadatos sin bloquear mezcla de mallas. Añadir control de versión/coordenadas antes del empaquetado definitivo. La validación de lote de nuestra exportación no se propaga automáticamente a ese script. |
+| `build_dataset.py` | Lee matrices y metadatos sin bloquear mezcla de mallas. Añadir control de versión/coordenadas antes del empaquetado definitivo. La validación de lote de la exportación no se propaga automáticamente a ese script. |
 
-No se afirma que toda la cadena esté adaptada. Ahora disponemos de un contrato de lectura/exportación probado y de una lista concreta de consumidores pendientes. Los ensayos A/B anteriores siguen usando su malla histórica y no deben reinterpretarse con estos centros.
+No se afirma que toda la cadena esté adaptada. Se dispone de un contrato de lectura/exportación probado y de una lista concreta de consumidores pendientes. Los ensayos A/B anteriores siguen usando su malla histórica y no deben reinterpretarse con estos centros.
 
 ## Próximo trabajo antes de producción
 

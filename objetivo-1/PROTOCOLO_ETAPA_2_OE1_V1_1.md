@@ -57,7 +57,7 @@ Se fija un método conservador válido para conteos escasos, también sin discor
 2. Construir `[L01−U10, U01−L10]` para Delta. Por la desigualdad de unión, los dos intervalos contienen simultáneamente sus parámetros con probabilidad al menos 95 %. No se supone independencia entre n01 y n10.
 3. Es un intervalo conservador del efecto pareado, **no** un intervalo exacto óptimo para la diferencia. Requiere pares independientes de la misma distribución; compartir primario y estado inicial A/B no elimina la aleatoriedad entre pares.
 
-La [documentación primaria de SciPy](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats._result_classes.BinomTestResult.proportion_ci.html) describe el intervalo binomial exacto usado como componente. Nuestra combinación, nivel familiar y tamaño se fijan aquí. El [calculador](../herramientas/planificar_etapa2_oe1.py) implementa la inversión beta; sus pruebas la contrastan con `binomtest(...).proportion_ci(method='exact')`.
+La [documentación primaria de SciPy](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats._result_classes.BinomTestResult.proportion_ci.html) describe el intervalo binomial exacto usado como componente. La combinación, nivel familiar y tamaño se fijan aquí. El [calculador](../herramientas/planificar_etapa2_oe1.py) implementa la inversión beta; sus pruebas la contrastan con `binomtest(...).proportion_ci(method='exact')`.
 
 Con n01=n10=0, el intervalo es `±[1−0,0125^(1/N)]`, nunca cero. No se usa TOST al 90 % ni se cambia de método buscando una conclusión favorable.
 

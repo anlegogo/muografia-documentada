@@ -4,7 +4,7 @@
 
 ## Entrega examinada
 
-Autores de la entrega: Reinaldo Cárdenas Tirado y Daniel Andrés Pinto Ortega. Rama `oe1/geo-train-06-piloto`, revisión fija [`712c78664074732a612b47a8fa4a7fe45f8c4746`](https://github.com/anlegogo/muografia-documentada/tree/712c78664074732a612b47a8fa4a7fe45f8c4746/objetivo-1/entregas/2026-09-29-geo-train-06). Su carpeta contiene informe, parches, registros de entorno/compilación, controles geométricos, reproducción histórica y piloto A/B. `main` conserva por separado nuestros originales y esta revisión.
+Autores de la entrega: Reinaldo Cárdenas Tirado y Daniel Andrés Pinto Ortega. Rama `oe1/geo-train-06-piloto`, revisión fija [`712c78664074732a612b47a8fa4a7fe45f8c4746`](https://github.com/anlegogo/muografia-documentada/tree/712c78664074732a612b47a8fa4a7fe45f8c4746/objetivo-1/entregas/2026-09-29-geo-train-06). Su carpeta contiene informe, parches, registros de entorno/compilación, controles geométricos, reproducción histórica y piloto A/B. `main` conserva por separado los originales y esta revisión.
 
 ## Comprobaciones independientes realizadas
 

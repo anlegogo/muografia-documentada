@@ -1,12 +1,12 @@
 # Guía de la siguiente etapa para Daniel y Reinaldo
 
-2026-10-02. Esta guía reúne las tareas posteriores a `01a9871`. **La prueba de los dos bloques ya fue aceptada; no deben repetirla ni producir muones para demostrarla otra vez.** El propósito siguiente es dejar el proceso automático funcionando y acordar una imagen que podamos interpretar, antes de producir las 114 vistas.
+2026-10-02. Esta guía reúne las tareas posteriores a `01a9871`. **La prueba de los dos bloques ya fue aceptada; no deben repetirla ni producir muones para demostrarla otra vez.** El propósito siguiente es dejar el proceso automático funcionando y acordar una imagen con interpretación explícita, antes de producir las 114 vistas.
 
-## Lo que pueden hacer ahora, sin nuevas simulaciones
+## Actividades inmediatas sin nuevas simulaciones
 
-1. Incorporar nuestra actualización de `main` en su rama de entrega y leer la [definición propuesta](DEFINICION_PRODUCTO_OE1.md). Dejar en el informe una respuesta explícita: adoptar el conjunto idealizado con sus limitaciones, o explicar por qué se necesita equivalencia con un detector. No basta cambiar el nombre del producto: justificar su relación con el OE1.
+1. Incorporar la actualización de `main` en su rama de entrega y leer la [definición propuesta](DEFINICION_PRODUCTO_OE1.md). Dejar en el informe una respuesta explícita: adoptar el conjunto idealizado con sus limitaciones, o explicar por qué se necesita equivalencia con un detector. No basta cambiar el nombre del producto: justificar su relación con el OE1.
 2. En su entorno Python del proyecto, ejecutar las pruebas abajo. No usan Geant4: el simulador y la cola de las pruebas son dobles sintéticos. Conservar versiones, salida completa y código de salida. Si falta SciPy, instalarlo en el entorno del proyecto, sin cambiar módulos o paquetes globales. Entorno local probado: Python 3.12.14, NumPy 2.4.4, SciPy 1.18.1; las versiones SC3 deben registrarse y verificarse, no presumirse equivalentes.
-3. Revisar el plan de lanzamiento sin `--enviar`: comprobar rutas, huellas, trabajos ya en cola, cupos y nombres con identidad de campaña. Resolver cualquier discrepancia antes de pedir transporte. La ficha conserva el hash del ejecutable que ustedes reportaron; si recompilaron, documentar código/parche/compilador y revisar la ficha como nueva versión, no reemplazar el hash solo para evitar el error.
+3. Revisar el plan de lanzamiento sin `--enviar`: comprobar rutas, huellas, trabajos ya en cola, cupos y nombres con identidad de campaña. Resolver cualquier discrepancia antes de pedir transporte. La ficha conserva el hash del ejecutable reportado por los estudiantes; si se recompiló, documentar código/parche/compilador y revisar la ficha como nueva versión, no reemplazar el hash solo para evitar el error.
 4. Entregar un breve `RESULTADOS_INTEGRACION_OPERATIVA.md`: commit usado, entorno, resultado de pruebas, plan de lanzamiento, decisiones sobre el observable y limitaciones. No hace falta otra justificación extensa ni repetir las 19 corridas.
 
 Desde la raíz de esta réplica en SC3 (sustituir las rutas por las reales):
@@ -88,7 +88,7 @@ IMAGENES="$HOME/muography-scratch/oe1-piloto-v2-imagenes"
 
 En cualquier caso se revisan las seis vistas, la estadística en roca y los tiempos reales. **No hay salto automático a las 114 vistas.** Si el piloto es aceptado, la siguiente decisión es el tamaño de la campaña; después se producen, auditan y documentan las 114 referencias y sus 9.120 pares.
 
-## Reproducción local de lo que ya preparamos
+## Reproducción local de la preparación realizada
 
 `ENTREGA` es una extracción de la entrega congelada en `01a9871`; `TABLAS` son `tables-az-edges-v1` con los hashes de la ficha, no las tablas azimutales históricas. Los originales se conservan en esta réplica. Desde su raíz:
 

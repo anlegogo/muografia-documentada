@@ -8,7 +8,7 @@
 
 El trabajo 30631 registra cinco segundos de ejecución satisfactoria en SC3, usando bloques existentes. No genera muones nuevos. Se contrastaron:
 
-- Las huellas de **39 archivos Python** utilizados, todas iguales a los objetos Git de nuestro commit `c4b6e4c`.
+- Las huellas de **39 archivos Python** utilizados, todas iguales a los objetos Git del commit `c4b6e4c`.
 - **23 archivos de entrada**, cuyas huellas coinciden y se mantienen iguales antes y después de ejecutar las herramientas.
 - Los cinco códigos de salida cero y sus archivos de error vacíos. Los recibos registran dos publicaciones y una repetición reconocida como `already_verified`.
 - Los hashes de la fusión y exportación, la matriz NPZ frente al CSV y frente a la suma independiente de los bloques: **200.000 primarios, 69.995 registros con E_cin > 3 GeV y 130.190 de todas las energías**.
@@ -16,9 +16,9 @@ El trabajo 30631 registra cinco segundos de ejecución satisfactoria en SC3, usa
 
 Se acepta esta verificación de publicación, fusión y exportación para los dos bloques. No equivale a validar el lanzador automático de campaña, su interacción con la cola o todos los fallos del almacenamiento. Tampoco certifica física. Las 78 pruebas locales anteriores siguen como antecedente; no se presentan como pruebas nuevas de esta revisión.
 
-## Corrección de nuestra observación T-01
+## Corrección de la observación T-01
 
-Los estudiantes tienen razón: **las 204 entradas de los seis manifiestos originales coinciden con los objetos Git de `f9a77ef`**. La revisión anterior comparó una copia extraída que había sufrido conversión de finales de línea; atribuir el problema a los «bytes versionados» fue un error nuestro.
+Se confirma la observación de los estudiantes: **las 204 entradas de los seis manifiestos originales coinciden con los objetos Git de `f9a77ef`**. La revisión anterior comparó una copia extraída que había sufrido conversión de finales de línea; atribuir el problema a los «bytes versionados» fue un error de la revisión.
 
 Se corrige el informe anterior. No hay que pedirles recuperar ni reemplazar datos SC3 por esta observación. La regla `-text` ya incorporada protege las futuras extracciones; se conserva la auditoría anterior como registro de lo ocurrido en la copia local.
 

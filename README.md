@@ -6,7 +6,7 @@ Réplica de trabajo de Andrés Leonardo González Gómez para el material de Rei
 
 **Preparación local posterior completada:** [entrega de las siete actividades](objetivo-1/ENTREGA_SIETE_ACTIVIDADES.md), con definición de producto, referencia ideal de cielo, diseño estadístico, evaluación de bordes, automatización y [guía única para estudiantes](objetivo-1/GUIA_SIGUIENTE_ETAPA_OE1.md). **103 pruebas locales satisfactorias.** Quedan la adopción académica de la definición y la comprobación operativa en SC3; el piloto calculado y la campaña son condicionales, no órdenes de ejecución.
 
-Como antecedente, la [actualización 01a9871](objetivo-1/REVISION_INTEGRACION_OBSERVABLE_01A9871.md) respaldó la prueba de herramientas en SC3 sobre dos bloques, con 200.000 primarios y 69.995 registros con corte. Se reprodujo su análisis y se corrigió nuestra atribución sobre finales de línea: los objetos Git originales estaban bien. Las correcciones y propuestas posteriores están reunidas en la entrega de siete actividades; **la campaña final sigue pendiente** del acuerdo científico y la evaluación del piloto.
+Como antecedente, la [actualización 01a9871](objetivo-1/REVISION_INTEGRACION_OBSERVABLE_01A9871.md) respaldó la prueba de herramientas en SC3 sobre dos bloques, con 200.000 primarios y 69.995 registros con corte. Se reprodujo su análisis y se corrigió la atribución sobre finales de línea: los objetos Git originales estaban bien. Las correcciones y propuestas posteriores están reunidas en la entrega de siete actividades; **la campaña final sigue pendiente** del acuerdo científico y la evaluación del piloto.
 
 Comenzar por la entrega de siete actividades y su guía. El [balance de preparación local anterior](objetivo-1/BALANCE_PREPARACION_LOCAL.md) conserva el antecedente de la cadena y las probabilidades de fuente; las revisiones anteriores preservan evidencia y cronología.
 
@@ -26,7 +26,7 @@ También está disponible la [publicación verificada de bloques](objetivo-1/PUB
 
 El conjunto histórico tiene 19 geometrías, 114 vistas y 9.120 pares reducidos, cuya reproducción se verificó. No es todavía el conjunto corregido final. De la malla nueva hay pruebas de integración y controles, aún no un conjunto final aprobado; no se completan vistas ausentes con copias ni se reetiquetan matrices antiguas.
 
-`objetivo-1/originales/` conserva el material recibido. `objetivo-1/evidencias/` contiene nuestras verificaciones. `herramientas/` incluye auditores y herramientas nuevas de preparación; `objetivo-1/correcciones/` conserva el parche entregado. Los ensayos y entregas congelados permanecen en sus ramas.
+`objetivo-1/originales/` conserva el material recibido. `objetivo-1/evidencias/` contiene las verificaciones. `herramientas/` incluye auditores y herramientas nuevas de preparación; `objetivo-1/correcciones/` conserva el parche entregado. Los ensayos y entregas congelados permanecen en sus ramas.
 
 Los NPZ históricos y logs grandes no forman parte del historial Git de esta réplica; restaurarlos según [procedencia](docs/PROCEDENCIA.md) y verificar sus huellas. Los derivados nuevos se generan en carpetas de trabajo separadas. Para los scripts nuevos consultar [versiones Python probadas](requirements-oe1-local.txt).
 

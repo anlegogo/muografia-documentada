@@ -6,7 +6,7 @@
 
 2026-10-02. Consolida lo realizado después de la entrega `f9a77ef`, con autorización del director. **La cadena local está preparada y probada para el alcance técnico descrito; la interpretación física y la operación de producción en SC3 siguen abiertas.** No se lanzaron transportes nuevos ni se modificó la rama estudiantil.
 
-## Qué ya podemos dar por adelantado
+## Preparación completada
 
 | Frente | Resultado verificable |
 |---|---|
@@ -71,7 +71,7 @@ Al actualizarlo, deben: usar identidad de campaña, validar un bloque antes de o
 
 La [ficha JSON](contratos/receta-candidata-f9a77ef.json) conserva procedencia de código/parche, binario reportado, tablas, inyección, margen, corte, malla y pares. Describe lo que el código hace, incluida la búsqueda de la superficie del cono en pasos de 0,5 m y la generación a un metro del panel si no encuentra intersección muestreada. No afirma una intersección analítica exacta ni que ese procedimiento esté físicamente aprobado.
 
-Sus campos `source_definition` y `normalization` son una propuesta de documentación compatible con nuestra comparación técnica de metadatos. **No se añaden retrospectivamente a las corridas existentes como si hubieran sido parte de su ejecución**, ni se cambia la definición del objetivo para declarar terminado el trabajo.
+Sus campos `source_definition` y `normalization` son una propuesta de documentación compatible con la comparación técnica de metadatos. **No se añaden retrospectivamente a las corridas existentes como si hubieran sido parte de su ejecución**, ni se cambia la definición del objetivo para declarar terminado el trabajo.
 
 ## Qué falta y quién puede resolverlo
 
@@ -88,7 +88,7 @@ La guía para los criterios físicos está en [diagnóstico del observable y dec
 
 ## Comandos de revisión local
 
-Desde la raíz de nuestra réplica, con carpetas reales de tablas v1 y de la entrega:
+Desde la raíz de la réplica, con carpetas reales de tablas v1 y de la entrega:
 
 ```console
 python herramientas/auditar_fuente_angular.py TABLAS_V1 --salida PROBABILIDADES_NUEVAS.json

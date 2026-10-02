@@ -14,7 +14,7 @@
 
 Revisión: 2026-10-01, Colombia. **Estado: parcial; plan condicionado, no orden de ejecución.** Continúa la [auditoría completa de etapa 2](AUDITORIA_COMPLETA_ETAPA_2_2026-10-01.md). El resultado inconcluso de A/B no exige ampliar automáticamente el ensayo ni impide elegir una geometría B correctamente construida. Tampoco certifica la normalización física de la campaña.
 
-## Lo que adelantamos localmente
+## Preparación realizada localmente
 
 Se verificaron identidad y SHA-256 de las 114 referencias NPZ contra sus metadatos. El [inventario por vista](evidencias/preparacion-produccion/alcance-produccion.csv) conserva huellas de geometría, metadatos y referencia histórica; no sustituye los originales. El [resumen reproducible](evidencias/preparacion-produccion/preparacion-produccion.json) contiene resultados y huellas de tablas.
 
@@ -30,7 +30,7 @@ Las 36 referencias históricas suman **1.302.336.227 primarios**. Es una escala 
 
 **Condición del alcance:** las 78 referencias solo se reutilizan si se demuestra compatibilidad de fuente, espectro, normalización, detector, física, entorno y construcción geométrica. La reproducción de una vista de control no demuestra compatibilidad de todas. Si cambia la definición del observable o la aceptación, revisar las 114 vistas; no mezclar referencias con normalizaciones distintas bajo una misma versión de datos.
 
-## Qué encontramos al revisar la normalización
+## Hallazgos de la revisión de normalización
 
 Fuentes: código de estudiantes `d8ca749`, archivos `scripts/simulation/geant4_app/{muography_sim.cc,src/PrimaryGeneratorAction.cc,src/FluxTables.cc,src/DetectorConstruction.cc,src/SteppingAction.cc}`; generador histórico [build_generator_tables.py](originales/scripts/analysis/build_generator_tables.py), [imaging.py](originales/scripts/simulation/surrogate/imaging.py) y [bitácora histórica](originales/bitacora-simulacion.md). La auditoría de etapa 2 registra la procedencia de los ejecutables.
 
@@ -59,7 +59,7 @@ Una vez resueltas las decisiones anteriores: ejecutar el manifiesto B acordado; 
 
 P-01 se cierra con decisión y ejecución documentada de sustitución; P-02 con receta reproducible comprobada; P-03 con una alternativa nueva de ejecución y empaquetado reproducibles o los originales necesarios; P-04 con el observable y sus controles físicos justificados. Ninguno se cierra solo con este inventario. La meta es completar el conjunto de datos del OE1, sin introducir entrenamiento de redes.
 
-## Reproducir nuestra preparación
+## Reproducir la preparación
 
 Desde la raíz de la réplica, con Python y los NPZ restaurados:
 

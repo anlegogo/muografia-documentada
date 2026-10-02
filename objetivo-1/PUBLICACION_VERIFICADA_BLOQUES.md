@@ -32,7 +32,7 @@ Además, se publicaron en una carpeta local nueva los dos bloques reales de la e
 
 ## Uso y adopción
 
-Requiere el entorno Python 3.12 y NumPy ya documentado. Mantener juntas las herramientas de nuestra réplica: la publicación importa el validador, lector y contrato de configuración.
+Requiere el entorno Python 3.12 y NumPy ya documentado. Mantener juntas las herramientas de la réplica: la publicación importa el validador, lector y contrato de configuración.
 
 Desde la raíz de la réplica:
 

@@ -24,7 +24,7 @@ El ejecutable nuevo exige tablas con esa versión y apertura. El conversor exige
 
 El modo de transporte de listas congeladas OE1 queda **rechazado expresamente en este prototipo**, porque las máscaras ROI y sus formatos no están versionados para la nueva malla. Usar los ejecutables históricos para reproducir A/B. No aplicar el parche a una rama de entrega congelada ni reutilizar máscaras, mapas de opacidad, figuras o histogramas como si sus centros fueran los nuevos. Las herramientas auxiliares de representación y empaquetado deben adoptar estos metadatos antes de producción; este parche no certifica toda esa cadena.
 
-## Qué comprobamos aquí
+## Comprobaciones realizadas
 
 1. Centros azimutales nuevos y elevación conservada.
 2. 1.048.576 direcciones uniformes: **4.096 en cada una de las 256 columnas**, sin déficit en los extremos.

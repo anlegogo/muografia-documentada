@@ -14,9 +14,9 @@
 
 ## Resultados que cambian la decisión
 
-- Podemos eliminar la extrapolación del cielo como **referencia ideal de cálculo**, pero no afirmar que ya medimos el cielo físico oculto por la roca.
+- Es posible eliminar la extrapolación del cielo como **referencia ideal de cálculo**, pero no afirmar que se haya medido el cielo físico oculto por la roca.
 - En c02 las 15 regiones de borde quedan inconclusas con el nuevo análisis simultáneo. En c01, tres quedan dentro y doce inconclusas. No corresponde afirmar que ya se cumpla el criterio.
-- C3 con 1.600 cuentas no estaba dimensionada para su criterio. El método conservador preparado exige muchas más cuentas y tiene un coste elevado; esto refuerza la necesidad de decidir primero qué afirmación queremos validar.
+- C3 con 1.600 cuentas no estaba dimensionada para su criterio. El método conservador preparado exige muchas más cuentas y tiene un coste elevado; esto refuerza la necesidad de decidir primero qué afirmación se pretende validar.
 - Hay un piloto alternativo documentado: 211 millones por vista, seis vistas de geo-train-06, unos 187,3 h-núcleo bajo la tasa de c01. Es un escenario revisable **antes** de ejecutar, no un presupuesto mínimo ni aprobado.
 
 ## Verificación realizada
