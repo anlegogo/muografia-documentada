@@ -1,0 +1,1 @@
+build-az-edges-v1/muography_sim --geometry scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables scripts/simulation/geant4_app/tables-az-edges-v1 --seed 2026100107 --events 1000 --threads 1 --out results/angular-v1-smoke

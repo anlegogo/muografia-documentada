@@ -1,0 +1,11 @@
+test_builder_accepts_new_view (__main__.AngularGridTests.test_builder_accepts_new_view) ... ok
+test_builder_rejects_historical_metadata (__main__.AngularGridTests.test_builder_rejects_historical_metadata) ... ok
+test_centers_and_unmodified_elevation (__main__.AngularGridTests.test_centers_and_unmodified_elevation) ... ok
+test_expected_counts_solid_angle_contract (__main__.AngularGridTests.test_expected_counts_solid_angle_contract) ... ok
+test_table_conversion_and_no_double_scaling (__main__.AngularGridTests.test_table_conversion_and_no_double_scaling) ... ok
+test_uniform_source_one_million_directions (__main__.AngularGridTests.test_uniform_source_one_million_directions) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.127s
+
+OK

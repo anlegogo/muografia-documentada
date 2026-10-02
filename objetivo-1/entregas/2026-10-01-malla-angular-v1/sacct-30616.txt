@@ -1,0 +1,4 @@
+JobID           JobName  Partition      State ExitCode               Start                 End    Elapsed        NodeList 
+------------ ---------- ---------- ---------- -------- ------------------- ------------------- ---------- --------------- 
+30616        oe1-angul+     legacy  COMPLETED      0:0 2026-10-01T22:29:15 2026-10-01T22:29:20   00:00:05         guane01 
+30616.batch       batch             COMPLETED      0:0 2026-10-01T22:29:15 2026-10-01T22:29:20   00:00:05         guane01 

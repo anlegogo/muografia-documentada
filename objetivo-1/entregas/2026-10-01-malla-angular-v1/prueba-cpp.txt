@@ -1,0 +1,2 @@
+PASS: endpoints, outside, nonfinite, centers, edges, 1048576 directions
+exit=0
