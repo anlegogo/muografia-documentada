@@ -1,11 +1,15 @@
 # Justificación física y plan de producción del conjunto de imágenes del OE1
 
-Entrega del 2026-10-01 (Colombia), con comprobaciones en SC3 del 2026-10-02. Rama `oe1/justificacion-fisica-produccion`, creada desde `main` en `18aa5b1`. El 2026-10-02 se incorporó `main` en `c4b6e4c`, con la revisión de la dirección y sus herramientas, mediante un merge sin reescribir historia.
+Entrega del 2026-10-01 (Colombia), con comprobaciones en SC3 del 2026-10-02. Rama `oe1/justificacion-fisica-produccion`, creada desde `main` en `18aa5b1`. El 2026-10-02 se incorporó `main` en `c4b6e4c`, con la revisión de la dirección y sus herramientas, mediante un merge sin reescribir historia. El mismo día se incorporó `main` en `3178d83` (merge `c9442d6`, sin conflictos), con la definición adoptada del producto, el lanzador de campaña y la guía de la siguiente etapa.
 
 > **Actualización 2026-10-02, respuesta a la [revisión de la dirección](../../REVISION_FISICA_PRODUCCION_2026-10-02.md):**
 > - [VERIFICACION_BLOQUES.md](VERIFICACION_BLOQUES.md): las herramientas de la dirección (`c4b6e4c`), sin modificar, aplicadas en SC3 (trabajo 30631) a los dos bloques existentes. Se obtienen 200.000 primarios, 69.995 registros con corte y 130.190 sin corte, idénticos a lo esperado. T-01 diagnosticado: los 204 blobs versionados coinciden con sus huellas SC3.
 > - [IMAGEN_FINAL_OBSERVABLE.md](IMAGEN_FINAL_OBSERVABLE.md): qué representa la imagen final, comparación estimador frente a detector, propuesta, relación conteos–exposición y control C3 dimensionado.
 > - Las conclusiones de C1, C2, C3, C4 y C6 se ajustaron al alcance demostrado (F-01, F-02, F-03). Donde este README afirme más, prevalecen esos dos documentos y [PUNTOS_NO_DEMOSTRADOS.md](PUNTOS_NO_DEMOSTRADOS.md).
+
+> **Actualización 2026-10-02, respuesta a la [guía de la siguiente etapa](../../GUIA_SIGUIENTE_ETAPA_OE1.md):**
+> - [RESULTADOS_INTEGRACION_OPERATIVA.md](RESULTADOS_INTEGRACION_OPERATIVA.md): pruebas, preflight y plan de lanzamiento del flujo nuevo en SC3 con las herramientas de la dirección (`3178d83`), sin modificar y sin transportar muones. 103 pruebas satisfactorias (trabajo 30636). Se detectó y corrigió en el entorno del equipo un intérprete sin NumPy en el comando planificado (D-01).
+> - El mismo documento incorpora el [alcance adoptado por la dirección](../../DEFINICION_PRODUCTO_OE1.md): imágenes sintéticas de transmisión en escenarios volcánicos idealizados, con distintos niveles de conteo. Donde este README, [IMAGEN_FINAL_OBSERVABLE.md](IMAGEN_FINAL_OBSERVABLE.md) o [PLAN_PRODUCCION.md](PLAN_PRODUCCION.md) traten C3 como requisito, la cuenta del detector como producto o el piloto P0 anterior, prevalecen ese alcance y la guía.
 
 Esta entrega responde a la solicitud de [PENDIENTES.md](../../PENDIENTES.md) y [CADENA_LOCAL_OE1.md](../../CADENA_LOCAL_OE1.md): los archivos, comandos, semillas y conteos de la comparación de planos de conteo; la relación del conteo con el detector de 1,2 m y con la exposición; y un plan de producción. Se revisaron los seis commits del director posteriores a `f35ee7c`: `ac0277c`, `963697b`, `63ecb65`, `c63e296`, `2036cf1` y `18aa5b1`. Contienen la revisión de la corrida angular, el exportador, las regiones, la integración de ROI, la [revisión de la aceptación del plano](../../REVISION_ACEPTACION_PLANO.md) y la cadena local. No traen instrucciones que contradigan la solicitud.
 
@@ -26,7 +30,8 @@ Los puntos 1 y 2 se analizaron sobre datos existentes en SC3 y en los repositori
 | [IMAGEN_FINAL_OBSERVABLE.md](IMAGEN_FINAL_OBSERVABLE.md) | Definición del producto final, propuesta y relación conteos–exposición |
 | [scripts/relacion_conteos_exposicion.py](scripts/relacion_conteos_exposicion.py) | Términos de N_ij = T·A⊥·ΔΩ_ij·Φ_ij·ε_ij, T por imagen, opción detector y dimensionamiento de C3; figura 9; [relacion-conteos-exposicion.json](resultados/relacion-conteos-exposicion.json) |
 | [scripts/verificar_huellas_git.py](scripts/verificar_huellas_git.py) | T-01: huellas SC3 frente a blobs Git; [huellas-git-sc3.json](resultados/huellas-git-sc3.json) |
-| [verificacion/](verificacion/) | Script SLURM de la verificación |
+| [RESULTADOS_INTEGRACION_OPERATIVA.md](RESULTADOS_INTEGRACION_OPERATIVA.md) | Integración operativa en SC3 del lanzador y el worker de la dirección, dificultades, alcance adoptado y pendientes; evidencia en [datos/sc3/integracion-operativa-c9442d6/](datos/sc3/integracion-operativa-c9442d6/) |
+| [verificacion/](verificacion/) | Scripts de la verificación de bloques y de la integración operativa; envoltorio `python-oe1` |
 | [PUNTOS_NO_DEMOSTRADOS.md](PUNTOS_NO_DEMOSTRADOS.md) | Punto 3: seis comprobaciones con pregunta, comparación, criterio y **resultado** |
 | [controles/](controles/) | Parches de diagnóstico (v1, v2 y v3) y sbatch de las comprobaciones |
 | [PLAN_PRODUCCION.md](PLAN_PRODUCCION.md) | Punto 4: vistas, criterio de N, cómputo, almacenamiento y comandos |
