@@ -1,6 +1,6 @@
 # Resultados de la integración operativa en SC3
 
-2026-10-02 (Colombia). Se atiende la [guía de la siguiente etapa](../../GUIA_SIGUIENTE_ETAPA_OE1.md): incorporar `main` en la rama de entrega, comprobar en SC3 las pruebas y el plan de lanzamiento del flujo nuevo, e incorporar al informe el [alcance adoptado](../../DEFINICION_PRODUCTO_OE1.md) con sus limitaciones.
+2026-10-02 (Colombia). Se atiende la [guía de la siguiente etapa](../../GUIA_SIGUIENTE_ETAPA_OE1.md): incorporar `main` en la rama de entrega, comprobar en SC3 las pruebas y el plan de lanzamiento del flujo nuevo, e incorporar al informe el [alcance acordado](../../DEFINICION_PRODUCTO_OE1.md) con sus limitaciones.
 
 **No se transportaron muones ni se envió ningún trabajo de producción.** Conforme a la guía, no se repitió la prueba de los dos bloques, no se ejecutó C3 y el lanzador se usó sin `--enviar`. Las herramientas de la dirección se usaron sin modificar.
 
@@ -22,7 +22,7 @@
 
 Nodo de acceso `guane.sc3.uis.edu.co`, usuario `dapintoo`, Linux 5.14.0-687.39.1.el9_8, SLURM 25.11.8. Tras `module purge; module load gnu14/14.2.0 geant4/11.4.2`, `module list` muestra solo esos dos módulos ([entorno.txt](datos/sc3/integracion-operativa-c9442d6/salidas/entorno.txt)).
 
-| Componente | SC3 | Entorno probado por la dirección |
+| Componente | SC3 | Entorno de referencia de las herramientas |
 |---|---|---|
 | GCC | 14.2.0 | — |
 | CMake | 3.31.8 | — |
@@ -32,7 +32,7 @@ Nodo de acceso `guane.sc3.uis.edu.co`, usuario `dapintoo`, Linux 5.14.0-687.39.1
 | SciPy | 1.18.1 | 1.18.1 |
 | Matplotlib | 3.11.1 | 3.11.1 |
 
-SciPy ya estaba en el entorno del proyecto; no se instaló nada. Python y NumPy difieren de las versiones probadas por la dirección; las 103 pruebas pasan con las de SC3.
+SciPy ya estaba en el entorno del proyecto; no se instaló nada. Python y NumPy difieren del entorno de referencia ([requirements-oe1-local.txt](../../../requirements-oe1-local.txt)); las 103 pruebas pasan con las versiones de SC3.
 
 ## 3. Resultado por paso
 
@@ -97,7 +97,7 @@ Comprobaciones sobre el plan, el manifiesto, el preflight y la ficha:
 - **Malla angular.** `meta.json` de las tablas registra `n_azimuth_columns = 256` entre −30° y +30° con la convención `az-edges-v1` (256 intervalos iguales de 60/256°) y `n_elevation_rows = 256`. La ficha fija la imagen en 256 × 256, `uint32`, con elevación `legacy-centers-2-47` (256 centros equiespaciados entre 2° y 47°).
 - **Tiempo límite.** 55 min por bloque. El coste orientativo del diseño (187,26 h-núcleo para 36 bloques, con la tasa de c01) equivale a unos 13 min por bloque con 24 hilos. El rendimiento en geo-train-06 con la receta no está medido.
 
-No hay histograma ni registro de simulación nuevos que contrastar, porque no se simuló. La coherencia entre histograma, metadatos y recibos quedó comprobada con dos bloques reales en el trabajo 30631 ([VERIFICACION_BLOQUES.md](VERIFICACION_BLOQUES.md)), que la dirección dio por recibida, y las 103 pruebas la cubren con dobles sintéticos.
+No hay histograma ni registro de simulación nuevos que contrastar, porque no se simuló. La coherencia entre histograma, metadatos y recibos quedó comprobada con dos bloques reales en el trabajo 30631 ([VERIFICACION_BLOQUES.md](VERIFICACION_BLOQUES.md)), y las 103 pruebas la cubren con dobles sintéticos.
 
 ## 5. Pasos no ejecutados
 
@@ -107,27 +107,27 @@ La guía reserva `--enviar` para después de acordar el diseño y el presupuesto
 
 | Id | Problema | Causa | Solución y estado |
 |---|---|---|---|
-| D-01 | El comando `sbatch` planificado llevaba como intérprete `/opt/ohpc/pub/software/conda_categories/machine_learning/bin/python3.13`, que no tiene NumPy, SciPy ni Matplotlib. Con ese intérprete el worker termina con código 1 (`ModuleNotFoundError: No module named 'numpy'`) y las pruebas dan `Ran 20 tests`, `FAILED (errors=12)` (trabajo **30639**, FAILED 1:0). Con `--enviar`, los cuatro trabajos habrían fallado antes de simular y sus filas habrían quedado en `blocked_prior_attempts`. Los tres pasos de la guía no lo detectan: todos devuelven 0 | El lanzador aplica `Path.resolve()` a `--python`. En el entorno del equipo, `venv/bin/python` es un enlace simbólico al intérprete base; al resolverlo se pierde el venv ([interprete.txt](datos/sc3/integracion-operativa-c9442d6/salidas-diagnostico/interprete.txt), trabajo **30638** en nodo de cómputo) | **Aplicada, en el entorno del equipo.** Envoltorio [python-oe1](verificacion/python-oe1) (archivo regular, SHA-256 `bbe37fee…`) instalado en `~/oe1-trabajo/entorno/`, que ejecuta el intérprete del venv y sobrevive a `resolve()`. Verificado: 103 pruebas (30640), plan con el envoltorio y cuerpo del sbatch en nodo (30642). Debe usarse como `--python` desde el primer envío, porque la ruta forma parte de la identidad de la campaña. Queda a criterio de la dirección si el lanzador debe conservar la ruta sin resolver o si el preflight debe comprobar las importaciones del intérprete planificado |
-| D-02 | El venv no funciona desde el nodo `toctoc` y allí no hay `squeue`, `sbatch` ni `sacct` | El intérprete base del venv solo existe en `/opt/ohpc` de guane y sus nodos | Todos los pasos se ejecutan desde `guane`. Resuelta por procedimiento |
-| D-03 | No hay clon Git de la réplica en SC3 | Repositorio privado sin credenciales en el clúster | Copia con `git archive` del commit probado, con finales de línea LF, y comprobación de las 53 herramientas contra los blobs de Git. El directorio `integracion-c9442d6/replica` no se edita; sus rutas forman parte de la identidad de la campaña y deben mantenerse si se envía el piloto. Resuelta |
-| D-04 | Python 3.13.13 y NumPy 2.5.2 en SC3, frente a 3.12.14 y 2.4.4 del entorno probado por la dirección | Entorno preexistente del proyecto en SC3 | Registrado. Las 103 pruebas pasan; no se cambian versiones |
+| D-01 | El comando `sbatch` planificado llevaba como intérprete `/opt/ohpc/pub/software/conda_categories/machine_learning/bin/python3.13`, que no tiene NumPy, SciPy ni Matplotlib. Con ese intérprete el worker termina con código 1 (`ModuleNotFoundError: No module named 'numpy'`) y las pruebas dan `Ran 20 tests`, `FAILED (errors=12)` (trabajo **30639**, FAILED 1:0). Con `--enviar`, los cuatro trabajos habrían fallado antes de simular y sus filas habrían quedado en `blocked_prior_attempts`. Los tres pasos de la guía no lo detectan: todos devuelven 0 | El lanzador aplica `Path.resolve()` a `--python`. En el entorno del equipo, `venv/bin/python` es un enlace simbólico al intérprete base; al resolverlo se pierde el venv ([interprete.txt](datos/sc3/integracion-operativa-c9442d6/salidas-diagnostico/interprete.txt), trabajo **30638** en nodo de cómputo) | **Aplicada, en el entorno del equipo.** Envoltorio [python-oe1](verificacion/python-oe1) (archivo regular, SHA-256 `bbe37fee…`) instalado en `~/oe1-trabajo/entorno/`, que ejecuta el intérprete del venv y sobrevive a `resolve()`. Verificado: 103 pruebas (30640), plan con el envoltorio y cuerpo del sbatch en nodo (30642). Debe usarse como `--python` desde el primer envío, porque la ruta forma parte de la identidad de la campaña. Alternativa en la herramienta, no aplicada porque las herramientas recibidas no se modifican: que el lanzador conserve la ruta sin resolver o que el preflight compruebe las importaciones del intérprete planificado |
+| D-02 | El venv no funciona desde el nodo `toctoc` (código 127) y allí no hay `squeue`, `sbatch`, `sacct` ni `srun` ([toctoc.txt](datos/sc3/integracion-operativa-c9442d6/toctoc.txt)) | El intérprete base del venv existe en `guane` y en el nodo de cómputo, no en `toctoc` | Todos los pasos se ejecutan desde `guane`. Resuelta por procedimiento |
+| D-03 | No hay clon Git de la réplica en SC3 | El repositorio es privado y no se ha configurado un clon en el clúster | Copia con `git archive` del commit probado, con finales de línea LF, y comprobación de las 53 herramientas contra los blobs de Git. El directorio `integracion-c9442d6/replica` no se edita; sus rutas forman parte de la identidad de la campaña y deben mantenerse si se envía el piloto. Resuelta |
+| D-04 | Python 3.13.13 y NumPy 2.5.2 en SC3, frente a 3.12.14 y 2.4.4 del entorno de referencia | Entorno preexistente del proyecto en SC3 | Registrado. Las 103 pruebas pasan; no se cambian versiones |
 | D-05 | El preflight sugiere nombres `oe1-3351cc58a320-<fila>` y el lanzador usa `oe1-2984cba98893-<fila>` | Identidades distintas: la del preflight depende del manifiesto; la del lanzador incluye además ficha, herramientas, rutas, intérprete e hilos | Observación, sin corrección. Al conciliar con `squeue` y `sacct` deben usarse los nombres del lanzador |
 
-## 7. Alcance adoptado e incorporación al informe
+## 7. Alcance acordado
 
-La dirección adoptó el 2026-10-02 el alcance idealizado de [DEFINICION_PRODUCTO_OE1.md](../../DEFINICION_PRODUCTO_OE1.md). El conjunto del OE1 queda formado por **imágenes sintéticas de transmisión en escenarios volcánicos idealizados, con distintos niveles de conteo**. Esta definición sustituye, donde difieran, a la propuesta de [IMAGEN_FINAL_OBSERVABLE.md](IMAGEN_FINAL_OBSERVABLE.md): se conserva su opción (a), el estimador direccional, y se retira la opción derivada del detector y el control C3 como requisito.
+El alcance acordado el 2026-10-02 es el idealizado de [DEFINICION_PRODUCTO_OE1.md](../../DEFINICION_PRODUCTO_OE1.md): el conjunto del OE1 está formado por **imágenes sintéticas de transmisión en escenarios volcánicos idealizados, con distintos niveles de conteo**. Esta definición sustituye, donde difieran, a la propuesta de [IMAGEN_FINAL_OBSERVABLE.md](IMAGEN_FINAL_OBSERVABLE.md): se conserva su opción (a), el estimador direccional, y dejan de ser requisito la opción derivada del detector y el control C3.
 
 **Imagen de transmisión.** La magnitud de la imagen es el conteo direccional C_ij: una matriz de 256 × 256 enteros (`uint32`, sin saturación) en la que cada entrada cuenta los muones primarios que, tras atravesar el escenario, alcanzan el plano de registro con energía cinética mayor que 3 GeV y dirección final dentro del píxel. «Transmisión» designa la modalidad (muones que atraviesan el edificio, frente a la muografía por dispersión) y no una fracción calibrada.
 
 - *Relación con el estimador direccional.* C_ij es el estimador de la opción (a): impactos nominales uniformes sobre un panel de 1,2 m, registro en un plano computacional de 600 m y clasificación por dirección de llegada. Su valor esperado sigue E[C_ij] = T · A⊥ · ΔΩ_ij · Φ_ij · ε_ij, con A⊥ = 1,44 m² normal a cada dirección.
-- *Forma adimensional.* La respuesta normalizada ideal, C_ij / (N_generados · p_ideal,ij), usa la referencia de cielo tabulada sin transporte, con el mismo margen y el mismo corte. Reemplaza al cociente con la eficiencia de cielo extrapolada, que afectaba a 28 filas y a 7.122 de 16.322 píxeles de roca. Es un diagnóstico; no se presenta como transmisión física calibrada y no se recorta a [0, 1].
+- *Forma adimensional.* La respuesta normalizada ideal, C_ij / (N_generados · p_ideal,ij), usa la referencia de cielo tabulada sin transporte, con el mismo margen y el mismo corte. Reemplaza al cociente con la eficiencia de cielo extrapolada, que afectaba a las 28 filas por debajo de 6,94° y a 7.122 de los 16.322 píxeles de roca con columna de al menos 10.000 g/cm². Es un diagnóstico; no se presenta como transmisión física calibrada y no se recorta a [0, 1].
 - *Relación con la exposición.* El simulador se ejecuta con N fijo y `exposure_days` permanece en −1. La escala es convencional: T = 30 d · `nominal_in_window` / 36.034.069,911914065, donde `nominal_in_window` cuenta los primarios generados dentro de la ventana nominal (probabilidad 0,6841 por primario transportado). Para una vista del piloto propuesto, 211.000.000 primarios corresponden a un valor esperado de unos 120 días convencionales. No son días de un detector real.
 
-**Escenarios volcánicos idealizados.** 19 geometrías sintéticas (12 de entrenamiento, 3 de validación, 3 de prueba y 1 de generalización) con seis vistas cada una: 114 referencias. Son edificios de geometría simple con anomalías internas de densidad, en su versión corregida. La idealización abarca el transporte y la fuente: Geant4 11.4.2 con FTFP_BERT y solo primarios; fuente híbrida con pesos de dirección derivados de Guan y cuantiles de momento de EcoMug, declarada como hipótesis del conjunto; inyección junto al cono, margen angular de 5° y malla `az-edges-v1`. No representan la topografía ni la estructura de un volcán concreto.
+**Escenarios volcánicos idealizados.** 19 geometrías sintéticas (12 de entrenamiento, 3 de validación, 3 de prueba y 1 de generalización) con seis vistas cada una: 114 referencias. Cada una es un edificio cónico de roca de densidad uniforme; 18 contienen entre una y tres anomalías internas (conducto, cavidad o cuerpo denso) y una, geo-train-01, no contiene ninguna. Los 19 archivos del catálogo coinciden con las huellas de la ficha, y el transporte usa la geometría corregida. La idealización abarca el transporte y la fuente: Geant4 11.4.2 con FTFP_BERT y solo primarios; fuente híbrida con pesos de dirección derivados de Guan y cuantiles de momento de EcoMug, declarada como hipótesis del conjunto; inyección junto al cono, margen angular de 5° y malla `az-edges-v1`. No representan la topografía ni la estructura de un volcán concreto.
 
 **Niveles de conteo.** Cada referencia se acompaña de realizaciones de menor conteo del mismo observable, obtenidas por submuestreo: adelgazamiento binomial por píxel, k_ij ~ Binomial(C_ij, f), con f = 0,5; 0,1; 0,05 y 0,01, y 20 realizaciones por fracción con semillas registradas: 114 × 4 × 20 = 9.120 pares. Una fracción f reduce en promedio los conteos y la exposición convencional por f. Las realizaciones están condicionadas a la misma referencia finita: no equivalen a corridas independientes de f·N primarios y la referencia no es una verdad sin ruido. Las geometrías se separan entre particiones antes de formar los pares.
 
-**Relación con el OE1.** El objetivo pide un conjunto sintético de imágenes muográficas por transmisión con distintos niveles de estadística de conteo, obtenido por simulación Monte Carlo de escenarios volcánicos. El producto adoptado cubre cada término: imagen de muones transmitidos, simulación Monte Carlo con Geant4, escenarios volcánicos sintéticos y niveles de conteo por submuestreo. Su uso es entrenar y evaluar la mejora de imágenes de bajo conteo frente a su referencia de conteo alto, tarea que depende de la estadística de conteo y de la estructura de la imagen, no de la calibración absoluta de un instrumento.
+**Relación con el OE1.** El objetivo pide un conjunto sintético de imágenes muográficas por transmisión con distintos niveles de estadística de conteo, obtenido por simulación Monte Carlo de escenarios volcánicos. El producto acordado cubre cada término: imagen de muones transmitidos, simulación Monte Carlo con Geant4, escenarios volcánicos sintéticos y niveles de conteo por submuestreo. Su uso es entrenar y evaluar la mejora de imágenes de bajo conteo frente a su referencia de conteo alto, tarea que depende de la estadística de conteo y de la estructura de la imagen, no de la calibración absoluta de un instrumento.
 
 **Fuera del alcance.**
 
@@ -135,18 +135,26 @@ La dirección adoptó el 2026-10-02 el alcance idealizado de [DEFINICION_PRODUCT
 - Un flujo calibrado y una duración física de la exposición.
 - Una referencia de cielo medida: la ideal no incluye pérdidas en aire, decaimiento, dispersión ni migración angular.
 - Secundarios, fondo y respuesta instrumental (eficiencia, resolución, aceptación).
-- La validación del modelo físico: la adopción del alcance no la declara, ni da por terminado el OE1.
+- La validación del modelo físico: el alcance acordado no la declara ni da por terminado el OE1.
 
 Siguen vigentes, como limitaciones, la justificación de representatividad (A-02), el criterio de bordes con corte y la suficiencia de conteos en roca (A-05).
 
 ## 8. Pendientes y propuesta de continuación
 
-Estado frente a los [criterios de cierre](../../DEFINICION_PRODUCTO_OE1.md#lista-única-de-criterios-de-cierre): A-01, alcance incorporado en este informe; A-04, comprobado sin muones, con D-01 corregida y lo indicado en la sección 5 por comprobar.
+Respecto de los [criterios A-01 a A-08](../../DEFINICION_PRODUCTO_OE1.md#lista-única-de-criterios-de-cierre): A-01, alcance incorporado en este informe; A-04, comprobado sin muones, con D-01 corregida y lo indicado en la sección 5 por comprobar. Los demás siguen abiertos.
 
-1. **Dirección:** revisar D-01 y D-05, y decidir si se ajusta el lanzador o se mantiene el envoltorio como requisito del entorno.
-2. **Dirección y estudiantes:** acordar el criterio de bordes, la suficiencia de conteos en roca y el presupuesto del piloto (geo-train-06, seis vistas, 36 bloques, 187 h-núcleo orientativas).
-3. **Estudiantes, tras ese acuerdo:** ejecutar el lanzador con `--enviar` y `--python ~/oe1-trabajo/entorno/python-oe1`, sin editar la réplica, el manifiesto, la ficha ni el ejecutable; repetirlo cuando haya cupos; conservar `.operacion`, recibos, registros y `sacct`. Después, fusión, evaluación de las seis vistas, exportación y empaquetado con los comandos de la guía, y entrega de tiempos, conteos en roca y evaluación.
-4. **Estudiantes:** documentar la representatividad de escenarios, fuente y transporte (A-02) y actualizar con el alcance adoptado el resumen, los pendientes y la propuesta del [README](README.md) y de [PLAN_PRODUCCION.md](PLAN_PRODUCCION.md), que aún describen C3 y el piloto P0 anterior.
+Pendientes:
+
+- D-01 y D-05: definir si el envoltorio se mantiene como requisito del entorno o si la corrección pasa al lanzador.
+- Criterio de bordes, suficiencia de conteos en roca y presupuesto del piloto (geo-train-06, seis vistas, 36 bloques, 187 h-núcleo orientativas): la guía pide fijarlos antes de enviar.
+- Representatividad de escenarios, fuente y transporte (A-02).
+- El resumen, los pendientes y la propuesta del [README](README.md) y de [PLAN_PRODUCCION.md](PLAN_PRODUCCION.md) aún describen C3 y el piloto P0 anterior; deben actualizarse con el alcance acordado.
+
+Propuesta para continuar, una vez fijados el criterio y el presupuesto del piloto:
+
+1. Ejecutar el lanzador con `--enviar` y `--python ~/oe1-trabajo/entorno/python-oe1`, sin editar la réplica, el manifiesto, la ficha ni el ejecutable; repetirlo cuando haya cupos; conservar `.operacion`, recibos, registros y `sacct`.
+2. Con todos los bloques publicados, ejecutar la fusión, la evaluación de las seis vistas, la exportación y el empaquetado con los comandos de la guía, y entregar tiempos, conteos en roca y evaluación.
+3. Con el piloto evaluado, dimensionar la campaña de 114 referencias y 9.120 pares.
 
 ## 9. Evidencia
 
@@ -162,5 +170,6 @@ En [datos/sc3/integracion-operativa-c9442d6/](datos/sc3/integracion-operativa-c9
 | `integracion_operativa_envoltorio.sh` | Script ejecutado | `524882bbc20a5df46891b5722d37cec3e6aeabfcf6f0d7f56b118be622bb7d89` |
 | `python-oe1` | Envoltorio instalado | `bbe37feefbbfb4802308247e481514698f6e9b294ea8999786118cd0f09d13e7` |
 | `herramientas.git.sha256` | Huellas de los blobs de Git de `herramientas/` en `c9442d6` | `acf2de3854354f1370949514d13eff9ceb5c08df9ab37f7e8dabb81cea7bdb4e` |
+| `toctoc.txt` | Comprobación de D-02 en el nodo `toctoc` (13:02) | `47c2f31bd780796e1a3769ccb1c13e93b445d75422bab3f3d18a55e8d1e90b06` |
 
 Cada carpeta de salidas contiene, por paso, el comando (`*.comando.txt`), la salida estándar, la salida de error y el código de salida, además de `sacct.txt` y el estado de la cola antes y después. Los originales permanecen en `~/oe1-trabajo/integracion-c9442d6/` de SC3.
