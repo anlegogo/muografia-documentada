@@ -1,0 +1,14 @@
+PRUEBAS SINTETICAS DEL REVISOR; NO SON CORRIDAS GEANT4
+test_error_in_completed_log (test_revisar_smoke_angular.SmokeReviewTests.test_error_in_completed_log) ... ok
+test_failed_exit (test_revisar_smoke_angular.SmokeReviewTests.test_failed_exit) ... ok
+test_invalid_histogram (test_revisar_smoke_angular.SmokeReviewTests.test_invalid_histogram) ... ok
+test_missing_log (test_revisar_smoke_angular.SmokeReviewTests.test_missing_log) ... ok
+test_old_grid (test_revisar_smoke_angular.SmokeReviewTests.test_old_grid) ... ok
+test_truncated_histogram (test_revisar_smoke_angular.SmokeReviewTests.test_truncated_histogram) ... ok
+test_valid_fixture (test_revisar_smoke_angular.SmokeReviewTests.test_valid_fixture) ... ok
+test_wrong_count_and_noninteger_metadata (test_revisar_smoke_angular.SmokeReviewTests.test_wrong_count_and_noninteger_metadata) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.310s
+
+OK

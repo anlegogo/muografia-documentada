@@ -53,9 +53,31 @@ La prueba C++ usa el mismo encabezado que Geant4 y comprueba límites, centros, 
 cmake -S scripts/simulation/geant4_app -B build-az-edges-v1
 cmake --build build-az-edges-v1 -j 2
 mkdir -p results/angular-v1-smoke
-build-az-edges-v1/muography_sim --geometry scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables scripts/simulation/geant4_app/tables-az-edges-v1 --seed 2026100107 --events 1000 --threads 1 --out results/angular-v1-smoke
+if build-az-edges-v1/muography_sim --geometry scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables scripts/simulation/geant4_app/tables-az-edges-v1 --seed 2026100107 --events 1000 --threads 1 --out results/angular-v1-smoke > results/angular-v1-smoke/run.log 2>&1; then
+  printf "0\n" > results/angular-v1-smoke/exit_code.txt
+else
+  run_status=$?
+  printf "%s\n" "$run_status" > results/angular-v1-smoke/exit_code.txt
+fi
 ```
 
 Esta única corrida de **1.000 primarios** comprueba integración del programa: terminación satisfactoria, ausencia de errores, histograma 256×256, conteos enteros no negativos con suma ≤1.000, y metadatos de nueva malla y número generado. No exigir columnas uniformes después del transporte ni interpretar 1.000 eventos como una prueba física de precisión. Conservar comando, versiones, huella del ejecutable, tablas, log e histograma. Reportar fallos antes de ampliar N.
 
 Después de la revisión de esa entrega: adaptar consumidores/ROI y validar el plano de conteo y la exposición. Solo entonces decidir qué vistas regenerar. Los resultados A/B históricos permanecen válidos para su protocolo anterior; la nueva malla requiere una versión distinta del conjunto de datos.
+
+## Revisión automática de la entrega
+
+Quedó preparado el [revisor de la corrida](../../../herramientas/revisar_smoke_angular.py). En una carpeta nueva de entrega conservar los cuatro archivos de salida: `geo-train-01_view0.meta.json`, `geo-train-01_view0_hist.csv`, `run.log` y `exit_code.txt`. El bloque anterior captura el código real inmediatamente al terminar el simulador. No escribir cero manualmente para reemplazar una ejecución fallida ni reutilizar la carpeta de una corrida anterior.
+
+Desde la raíz de **muografia-documentada**, usando Python estándar:
+
+```console
+python herramientas/revisar_smoke_angular.py RUTA_ENTREGA --salida revision-angular.json
+python -m unittest discover -s herramientas -p test_revisar_smoke_angular.py -v
+```
+
+El revisor comprueba identidad del caso, semilla, un hilo, 1.000 primarios generados y transportados, versión y parámetros de malla, dimensiones del histograma, conteos enteros no negativos, coincidencia de su suma con metadatos, código de salida y marca de finalización. Señala patrones conocidos de error del log y registra SHA-256 de los cuatro archivos. El informe de salida debe ser nuevo; se rechaza sobrescribirlo. Devuelve código 0 si esos controles pasan y 1 si requieren revisión.
+
+[Ocho pruebas del revisor](pruebas-revisor-smoke.txt) verifican una entrega sintética conforme y casos de error: malla antigua, número de eventos incorrecto, valores no enteros/negativos, histograma truncado, terminación fallida, advertencia Geant4 y log ausente. **No son una entrega de los estudiantes ni una ejecución de Geant4.**
+
+Un resultado conforme solo acredita coherencia de los archivos presentados. La compilación, versiones reales, código utilizado, huella del ejecutable, tablas y ausencia de otros errores del log deben revisarse por separado. La aceptación física y el plano de 600 m continúan pendientes; este control no declara cerrado el OE1.
