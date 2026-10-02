@@ -1,5 +1,10 @@
 # Registro de cambios
 
+## Histogramas del piloto revisados — 2026-10-02
+
+- Se verificaron 27 huellas, seis imágenes y la evaluación completa desde los CSV de `ccbdce0`. Se confirma el resultado del piloto y se precisa la proyección a 344 M; no se habilita producción.
+- [Revisión](objetivo-1/REVISION_HISTOGRAMAS_PILOTO_CCBDCE0.md) y evidencia local registradas sin modificar la entrega estudiantil.
+
 ## Adopción del alcance idealizado — 2026-10-02
 
 - Alcance idealizado del OE1 adoptado expresamente por la dirección; equivalencia instrumental y C3 quedan como extensión opcional.

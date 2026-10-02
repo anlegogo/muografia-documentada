@@ -1,5 +1,7 @@
 # Muografía: documentación y seguimiento académico
 
+**Piloto recibido y reproducido:** [revisión de los histogramas ccbdce0](objetivo-1/REVISION_HISTOGRAMAS_PILOTO_CCBDCE0.md). Se verificaron las seis vistas, 27 huellas y 90 regiones de borde. Los 344 M por vista siguen siendo un presupuesto candidato; la campaña no queda autorizada por esta revisión.
+
 Réplica de trabajo de Andrés Leonardo González Gómez para el material de Reinaldo Cárdenas Tirado y Daniel Andrés Pinto Ortega, UIS / GOTS. Alcance exclusivo: **objetivo específico 1, simulación y generación de datos**.
 
 ## Estado actual

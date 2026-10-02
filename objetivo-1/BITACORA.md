@@ -1,5 +1,10 @@
 # Bitácora de la revisión del OE1
 
+## Histogramas del piloto revisados — 2026-10-02
+
+- Entradas: entrega `ccbdce0`, diseño y máscaras congelados. Se verificaron bytes, conteos, coordenadas y evaluación en Python local.
+- [Resultado y límites](REVISION_HISTOGRAMAS_PILOTO_CCBDCE0.md): 90 regiones de borde conformes; proyección a 344 M cercana al 90 % de ROI con 100 cuentas, sin garantía para otras geometrías. Siguiente paso: fijar criterio y presupuesto de campaña; no repetir el piloto.
+
 ## Adopción del alcance idealizado — 2026-10-02
 
 - La dirección aceptó expresamente la recomendación de alcance idealizado en la conversación de trabajo. Se registra en la [definición y lista de cierre](DEFINICION_PRODUCTO_OE1.md) y en la ficha operativa.

@@ -1,5 +1,7 @@
 # Pendientes del OE1
 
+> Actualización posterior — 2026-10-02: [piloto ccbdce0 reproducido desde los histogramas](REVISION_HISTOGRAMAS_PILOTO_CCBDCE0.md). La entrega respalda el flujo ejecutado en SC3 y el criterio de bordes para seis vistas. Quedan el criterio de suficiencia en roca, el presupuesto y la decisión de campaña; 344 M es una propuesta. Los estados anteriores se conservan como antecedente.
+
 > Estado actual: [siete actividades locales completadas](ENTREGA_SIETE_ACTIVIDADES.md), con 103 pruebas. Referencia ideal sin extrapolación, evaluadores, diseño condicional y lanzador listos. La comprobación de dos bloques en SC3 ya fue aceptada; falta verificar allí el nuevo flujo y revisar receta y acordar criterio/presupuesto; el alcance idealizado ya fue adoptado.
 
 > Datos ya reanalizados: [panel/plano y bordes con corte de energía](DIAGNOSTICO_OBSERVABLE_Y_DECISION.md). La siguiente decisión está acotada a la definición física; no pedir otra comparación 100/600 para repetir lo ya demostrado.
