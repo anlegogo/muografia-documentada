@@ -2,6 +2,7 @@
 
 | Documento | Pregunta que responde |
 |---|---|
+| [Preparación de producción](../objetivo-1/PREPARACION_PRODUCCION_OE1.md) | ¿Qué datos podrían regenerarse y qué deben aclarar antes de lanzar producción? |
 | [Auditoría completa de etapa 2](../objetivo-1/AUDITORIA_COMPLETA_ETAPA_2_2026-10-01.md) | ¿Qué confirmó la revisión de todos los registros y qué falta para producir los datos finales? |
 | [Revisión de etapa 2](../objetivo-1/REVISION_ETAPA_2_2026-10-01.md) | ¿Qué se verificó del resultado inconcluso y qué falta antes de producción? |
 | [Protocolo de etapa 2 v1.1](../objetivo-1/PROTOCOLO_ETAPA_2_OE1_V1_1.md) | ¿Qué se ejecutará, con qué tamaño, recursos y criterio de cierre? |

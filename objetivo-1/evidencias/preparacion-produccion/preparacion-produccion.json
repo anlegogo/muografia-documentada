@@ -1,0 +1,22 @@
+{
+  "estado": "plan_condicionado_no_orden_de_ejecucion",
+  "vistas": 114,
+  "npz_verificados": 114,
+  "pares": 9120,
+  "vistas_regeneracion_candidata": 36,
+  "pares_regeneracion_candidata": 2880,
+  "vistas_reutilizacion_condicionada": 78,
+  "pares_reutilizacion_condicionada": 6240,
+  "primarios_historicos_36": 1302336227,
+  "normalizacion": {
+    "total_tabla_30d": 36175379.99,
+    "total_meta_30d": 36175379.91628132,
+    "diferencia_relativa": 2.03781369556566e-09,
+    "alcance": "consistencia numerica; no valida exposicion fisica",
+    "sha256": {
+      "row_weights_30d.txt": "93ce67abe51c59ea3ac5c07dc99fd1615ae147df82c16d1bad64f5c0712d2c0c",
+      "p_cdf.txt": "7161c8adf11711139840007dff26178221c4cfbff8fc3253cabdda50c533f6ae",
+      "meta.json": "7ac4b6a9353af701b56e5a97ee783ed59072d58df52d80ddbdc0f5f70147d35d"
+    }
+  }
+}
