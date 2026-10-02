@@ -1,0 +1,4429 @@
+{
+  "checks": [
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/espacio.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/entorno.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/entradas-congeladas.check",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/herramientas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/plan.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/listas.tsv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/generacion.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/listas-regeneradas.check",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/manifiesto-corridas.tsv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/entradas-esperadas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/lanzamiento.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/estado.tsv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/analisis.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/estado/geo-train-01-r203-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/estado/geo-train-01-r202-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/estado/geo-train-01-r201-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/estado/geo-train-01-r201-AA.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/estado/geo-train-01-r201-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/estado/geo-train-01-r202-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/estado/geo-train-01-r203-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/B/geo-train-01_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/B/geo-train-01_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/A/geo-train-01_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/A/geo-train-01_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/AA/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/AA/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/AA/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/AA/geo-train-01_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/AA/geo-train-01_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/AA/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/AA/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r201/AA/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r202/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r202/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r202/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r202/B/geo-train-01_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r202/B/geo-train-01_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r202/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r202/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r202/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r202/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r202/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r202/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r202/A/geo-train-01_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r202/A/geo-train-01_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r202/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r202/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r202/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r203/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r203/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r203/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r203/B/geo-train-01_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r203/B/geo-train-01_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r203/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r203/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r203/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r203/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r203/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r203/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r203/A/geo-train-01_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r203/A/geo-train-01_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r203/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r203/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/geo-train-01/r203/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/estado.tsv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/analisis/controles.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/intento/analisis/controles.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/sidecars/geo-train-01_v0_r201_s2026100201.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/sidecars/geo-train-01_v0_r202_s2026100202.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/sidecars/geo-train-01_v0_r203_s2026100203.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-controles-pequenos.tar",
+      "file": "controles-intento-01/exportados.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/espacio.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/entorno.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/entradas-congeladas.check",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/herramientas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/plan.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/listas.tsv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/generacion.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/listas-regeneradas.check",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/manifiesto-corridas.tsv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/entradas-esperadas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/lanzamiento.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/estado.tsv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/analisis.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r104-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r106-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r102-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r112-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r101-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r112-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r110-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r104-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r111-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r107-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r108-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r108-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r103-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r111-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r110-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r103-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r107-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r101-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r105-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r109-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r105-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r106-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r102-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado/geo-train-06-r109-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r101/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r101/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r101/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r101/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r101/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r101/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r101/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r101/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r101/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r101/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r101/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r101/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r101/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r101/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r101/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r101/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r102/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r102/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r102/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r102/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r102/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r102/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r102/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r102/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r102/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r102/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r102/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r102/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r102/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r102/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r102/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r102/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r103/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r103/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r103/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r103/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r103/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r103/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r103/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r103/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r103/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r103/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r103/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r103/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r103/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r103/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r103/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r103/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r104/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r104/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r104/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r104/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r104/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r104/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r104/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r104/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r104/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r104/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r104/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r104/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r104/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r104/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r104/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r104/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r105/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r105/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r105/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r105/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r105/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r105/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r105/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r105/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r105/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r105/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r105/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r105/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r105/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r105/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r105/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r105/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r106/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r106/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r106/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r106/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r106/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r106/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r106/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r106/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r106/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r106/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r106/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r106/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r106/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r106/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r106/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r106/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r107/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r107/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r107/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r107/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r107/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r107/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r107/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r107/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r107/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r107/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r107/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r107/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r107/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r107/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r107/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r107/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r108/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r108/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r108/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r108/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r108/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r108/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r108/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r108/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r108/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r108/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r108/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r108/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r108/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r108/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r108/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r108/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r109/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r109/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r109/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r109/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r109/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r109/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r109/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r109/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r109/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r109/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r109/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r109/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r109/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r109/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r109/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r109/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r110/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r110/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r110/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r110/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r110/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r110/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r110/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r110/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r110/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r110/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r110/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r110/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r110/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r110/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r110/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r110/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r111/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r111/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r111/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r111/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r111/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r111/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r111/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r111/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r111/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r111/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r111/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r111/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r111/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r111/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r111/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r111/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r112/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r112/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r112/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r112/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r112/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r112/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r112/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r112/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r112/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r112/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r112/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r112/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r112/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r112/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r112/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/geo-train-06/r112/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/estado.tsv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r102.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r105.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r108.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r101.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r104.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r106.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r103.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r107.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/hist-r103.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/discordantes-r103.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cruces-r103.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cambios-pixel-r103.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r103.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r103.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r109.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/hist-r101.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/discordantes-r101.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cruces-r101.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cambios-pixel-r101.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r101.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/hist-r102.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/discordantes-r102.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cruces-r102.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cambios-pixel-r102.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r102.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r101.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r110.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r102.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r111.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/hist-r108.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/discordantes-r108.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cruces-r108.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cambios-pixel-r108.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r108.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r108.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r112.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/hist-r105.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/discordantes-r105.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cruces-r105.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cambios-pixel-r105.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r105.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r105.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/hist-r104.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/discordantes-r104.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cruces-r104.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cambios-pixel-r104.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r104.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r104.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/hist-r107.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/discordantes-r107.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cruces-r107.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cambios-pixel-r107.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r107.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r107.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/hist-r106.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/discordantes-r106.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cruces-r106.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cambios-pixel-r106.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r106.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r106.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/hist-r109.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/discordantes-r109.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cruces-r109.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cambios-pixel-r109.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r109.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r109.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/hist-r111.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/discordantes-r111.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cruces-r111.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cambios-pixel-r111.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r111.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r111.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/hist-r110.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/discordantes-r110.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cruces-r110.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cambios-pixel-r110.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r110.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r110.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/hist-r112.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/discordantes-r112.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cruces-r112.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/cambios-pixel-r112.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r112.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/intento/analisis/bloque-r112.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/sidecars/geo-train-06_v0_r101_s2026100101.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/sidecars/geo-train-06_v0_r102_s2026100102.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/sidecars/geo-train-06_v0_r103_s2026100103.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/sidecars/geo-train-06_v0_r104_s2026100104.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/sidecars/geo-train-06_v0_r105_s2026100105.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/sidecars/geo-train-06_v0_r106_s2026100106.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/sidecars/geo-train-06_v0_r107_s2026100107.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/sidecars/geo-train-06_v0_r108_s2026100108.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/sidecars/geo-train-06_v0_r109_s2026100109.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/sidecars/geo-train-06_v0_r110_s2026100110.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/sidecars/geo-train-06_v0_r111_s2026100111.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/sidecars/geo-train-06_v0_r112_s2026100112.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m1-pequenos.tar",
+      "file": "m1-intento-01/exportados.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/espacio.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/entorno.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/entradas-congeladas.check",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/herramientas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/plan.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/listas.tsv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/generacion.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/listas-regeneradas.check",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/manifiesto-corridas.tsv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/entradas-esperadas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/lanzamiento.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/estado.tsv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/analisis.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r114-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r120-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r120-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r122-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r113-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r117-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r115-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r123-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r116-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r114-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r121-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r116-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r119-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r124-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r123-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r121-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r124-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r115-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r118-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r113-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r118-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r119-A.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r117-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado/geo-train-06-r122-B.status",
+      "ok": true,
+      "normalized_status": true
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r113/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r113/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r113/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r113/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r113/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r113/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r113/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r113/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r113/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r113/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r113/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r113/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r113/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r113/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r113/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r113/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r114/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r114/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r114/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r114/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r114/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r114/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r114/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r114/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r114/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r114/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r114/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r114/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r114/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r114/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r114/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r114/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r115/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r115/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r115/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r115/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r115/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r115/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r115/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r115/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r115/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r115/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r115/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r115/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r115/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r115/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r115/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r115/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r116/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r116/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r116/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r116/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r116/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r116/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r116/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r116/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r116/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r116/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r116/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r116/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r116/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r116/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r116/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r116/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r117/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r117/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r117/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r117/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r117/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r117/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r117/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r117/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r117/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r117/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r117/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r117/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r117/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r117/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r117/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r117/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r118/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r118/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r118/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r118/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r118/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r118/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r118/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r118/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r118/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r118/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r118/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r118/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r118/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r118/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r118/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r118/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r119/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r119/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r119/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r119/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r119/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r119/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r119/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r119/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r119/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r119/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r119/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r119/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r119/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r119/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r119/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r119/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r120/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r120/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r120/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r120/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r120/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r120/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r120/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r120/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r120/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r120/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r120/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r120/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r120/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r120/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r120/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r120/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r121/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r121/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r121/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r121/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r121/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r121/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r121/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r121/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r121/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r121/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r121/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r121/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r121/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r121/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r121/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r121/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r122/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r122/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r122/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r122/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r122/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r122/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r122/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r122/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r122/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r122/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r122/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r122/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r122/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r122/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r122/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r122/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r123/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r123/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r123/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r123/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r123/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r123/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r123/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r123/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r123/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r123/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r123/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r123/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r123/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r123/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r123/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r123/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r124/B/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r124/B/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r124/B/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r124/B/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r124/B/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r124/B/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r124/B/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r124/B/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r124/A/entradas.sha256",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r124/A/comando.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r124/A/run.log",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r124/A/geo-train-06_view0_hist.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r124/A/geo-train-06_view0.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r124/A/recursos.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r124/A/avisos.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/geo-train-06/r124/A/SHA256SUMS",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/estado.tsv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r116.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r119.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r114.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r118.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r120.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r115.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r113.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r117.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/hist-r117.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/discordantes-r117.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cruces-r117.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cambios-pixel-r117.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r117.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r117.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r121.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/hist-r114.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/discordantes-r114.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cruces-r114.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cambios-pixel-r114.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r114.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r114.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r122.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/hist-r116.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/discordantes-r116.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cruces-r116.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cambios-pixel-r116.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r116.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r116.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r123.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/hist-r113.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/discordantes-r113.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cruces-r113.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cambios-pixel-r113.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r113.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r113.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r124.txt",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/hist-r119.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/discordantes-r119.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cruces-r119.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cambios-pixel-r119.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r119.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r119.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/hist-r118.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/discordantes-r118.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cruces-r118.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cambios-pixel-r118.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r118.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r118.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/hist-r115.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/discordantes-r115.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cruces-r115.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cambios-pixel-r115.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r115.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r115.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/hist-r120.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/discordantes-r120.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cruces-r120.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cambios-pixel-r120.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r120.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r120.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/hist-r122.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/discordantes-r122.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cruces-r122.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cambios-pixel-r122.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r122.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r122.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/hist-r121.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/discordantes-r121.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cruces-r121.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cambios-pixel-r121.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r121.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r121.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/hist-r123.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/discordantes-r123.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cruces-r123.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cambios-pixel-r123.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r123.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r123.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/hist-r124.npz",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/discordantes-r124.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cruces-r124.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/cambios-pixel-r124.csv",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r124.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/intento/analisis/bloque-r124.rc",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/sidecars/geo-train-06_v0_r113_s2026100113.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/sidecars/geo-train-06_v0_r114_s2026100114.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/sidecars/geo-train-06_v0_r115_s2026100115.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/sidecars/geo-train-06_v0_r116_s2026100116.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/sidecars/geo-train-06_v0_r117_s2026100117.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/sidecars/geo-train-06_v0_r118_s2026100118.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/sidecars/geo-train-06_v0_r119_s2026100119.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/sidecars/geo-train-06_v0_r120_s2026100120.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/sidecars/geo-train-06_v0_r121_s2026100121.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/sidecars/geo-train-06_v0_r122_s2026100122.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/sidecars/geo-train-06_v0_r123_s2026100123.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/sidecars/geo-train-06_v0_r124_s2026100124.primarios.csv.meta.json",
+      "ok": true,
+      "normalized_status": false
+    },
+    {
+      "tar": "i01-m2-pequenos.tar",
+      "file": "m2-intento-01/exportados.sha256",
+      "ok": true,
+      "normalized_status": false
+    }
+  ],
+  "extras_not_in_Git_at_same_path": [],
+  "passed": 737,
+  "failed": 0
+}

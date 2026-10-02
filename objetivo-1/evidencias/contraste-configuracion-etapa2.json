@@ -1,0 +1,2427 @@
+{
+  "checks": [
+    {
+      "control": "geo-train-06-r101-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r101-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r102-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r103-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r104-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r105-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r106-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r107-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r108-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r109-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r110-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r111-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r112-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r113-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r114-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r115-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r116-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r117-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r118-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r119-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r120-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r121-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r122-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r123-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-06-r124-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r202-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-A:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-A:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-A:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-A:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-A:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-A:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-A:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-A:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-A:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-A:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-A:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-B:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-B:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-B:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-B:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-B:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-B:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-B:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-B:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-B:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-B:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r203-B:table:row_weights_30d.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-AA:N",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-AA:source-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-AA:transport-seed",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-AA:case-replica",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-AA:binary",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-AA:runtime",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-AA:mask",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-AA:geometry",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-AA:table:meta.json",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-AA:table:p_cdf.txt",
+      "ok": true
+    },
+    {
+      "control": "geo-train-01-r201-AA:table:row_weights_30d.txt",
+      "ok": true
+    }
+  ],
+  "passed": 605,
+  "failed": 0,
+  "alcance": "Metadatos y configuraciones contra manifiesto congelado y archivos de c\u00f3digo d8ca749; no medici\u00f3n nueva del entorno SC3."
+}

@@ -1,8 +1,8 @@
 # Pendientes del OE1
 
-**Paso actual:** [etapa 2 entregada y agregado revisado](REVISION_ETAPA_2_2026-10-01.md). Resultado confirmatorio inconcluso: Delta=+0,125 cuentas/millón, IC95 % conservador [−0,229; +0,469]. Histogramas y agregado contrastados; faltan auditoría íntegra de registros grandes y precisiones E2-01…E2-03 antes del cierre técnico. No se amplía automáticamente la muestra ni se cierra OE1.
+**Paso actual:** [auditoría completa de etapa 2](AUDITORIA_COMPLETA_ETAPA_2_2026-10-01.md). Verificados los 85 archivos, las 27 listas y los 55 registros completos; conteos e intervalo reproducidos. Resultado estadístico inconcluso. Preparar producción B resolviendo entorno, normalización y alcance; las precisiones de interpretación E2-01/E2-02/E2-04 quedan documentadas. OE1 y P-01…P-04 siguen abiertos.
 
-**Ejecución recibida:** R2-01 fue corrido por los estudiantes en SC3 el 30 de septiembre y revisado localmente el 1 de octubre. [Resultados y límites](REVISION_COMPLEMENTO_R2_01_2026-10-01.md). Las entregas permanecen en su rama y el protocolo v1.0 se conserva como registro histórico.
+**Ejecución recibida:** etapa 2 realizada en SC3 por los estudiantes y [auditada íntegramente](AUDITORIA_COMPLETA_ETAPA_2_2026-10-01.md); no se añaden corridas ni se inicia producción definitiva con esta revisión. Se preservan las entregas en sus ramas y los diseños congelados.
 
 Todos los siguientes puntos permanecen abiertos; no se asigna a los estudiantes una actividad como realizada sin evidencia.
 

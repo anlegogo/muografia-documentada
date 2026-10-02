@@ -1,5 +1,7 @@
 # Revisión de la entrega de etapa 2 — 1 de octubre de 2026
 
+**Actualización posterior del 1 de octubre:** [auditoría íntegra completada](AUDITORIA_COMPLETA_ETAPA_2_2026-10-01.md). El contenido que sigue conserva el estado de la revisión preliminar o de las instrucciones originales; el seguimiento actual está en la auditoría completa.
+
 **Estado: revisión documental, de código y de resultados agregados completada, con observaciones. Auditoría íntegra de registros grandes pendiente.** Entrega: rama `oe1/segundo-ensayo-etapa-2`, revisión `f88de14`; preparación `0135072`, resultados `3e23f3b`. Código de estudiantes: `d8ca749`, rama `oe1/stage2`. Se conserva la entrega sin fusionar ni modificar.
 
 ## Dictamen

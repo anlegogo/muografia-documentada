@@ -1,5 +1,7 @@
 # Qué hacer ahora: etapa 2 de OE1
 
+**Actualización posterior del 1 de octubre:** [auditoría íntegra completada](AUDITORIA_COMPLETA_ETAPA_2_2026-10-01.md). El contenido que sigue conserva el estado de la revisión preliminar o de las instrucciones originales; el seguimiento actual está en la auditoría completa.
+
 Daniel y Reinaldo: el complemento confirmó que la corrección cambia el material atravesado por los muones en los casos que dirigimos a la zona problemática. Ahora necesitamos medir cuánto afecta eso a los conteos usando la fuente habitual de la simulación.
 
 El [protocolo v1.1](PROTOCOLO_ETAPA_2_OE1_V1_1.md) fija el diseño y el [manifiesto](ensayos/etapa-2-v1.1/corridas.csv) identifica cada corrida. No hay que repetir toda la campaña de imágenes.
