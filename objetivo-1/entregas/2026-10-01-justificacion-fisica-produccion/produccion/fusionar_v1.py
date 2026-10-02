@@ -9,7 +9,7 @@ exactly the events of the manifest. Sums the histograms bin by bin and writes
 consumed by herramientas/preparar_imagen_angular_v1.py.
 
 Usage:
-    python3 fusionar_v1.py --manifiesto manifiesto-v1-k2.csv --salida /ruta/salida-v1 --destino /ruta/fusion-v1
+    python3 fusionar_v1.py --manifiesto manifiesto-receta-k10.csv --salida /ruta/salida-v1 --destino /ruta/fusion-v1
 """
 
 from __future__ import annotations

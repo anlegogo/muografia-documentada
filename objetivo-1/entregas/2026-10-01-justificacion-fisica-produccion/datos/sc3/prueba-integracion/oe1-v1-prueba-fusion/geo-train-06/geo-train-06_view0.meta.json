@@ -1,0 +1,52 @@
+{
+ "detected_in_bins": 69995,
+ "detector": {
+  "distance_m": 1000.0,
+  "height_m": 1.5,
+  "side_m": 1.2
+ },
+ "ecomug_draws_total": 200000,
+ "engine": "geant4-$Name: geant4-11-04-patch-02 [MT]$",
+ "events_transported": 200000,
+ "exposure_days": -1.0,
+ "geometry_id": "geo-train-06",
+ "grid": {
+  "az_edges_deg": [
+   -30.0,
+   30.0
+  ],
+  "az_first_center_deg": -29.8828125,
+  "az_half_deg": 30.0,
+  "az_step_deg": 0.234375,
+  "azimuth_convention": "az-edges-v1",
+  "el_max_deg": 47.0,
+  "el_min_deg": 2.0,
+  "elevation_convention": "legacy-centers-2-47",
+  "n_az": 256,
+  "n_el": 256
+ },
+ "mean_ekin_detected_gev": 18.097840376863108,
+ "oe1_controles": {
+  "ecuts_gev": [
+   3.0
+  ],
+  "edifice_margin_m": 50.0,
+  "inject": "cone",
+  "margin_deg": 5.0,
+  "plane_half_m": 300.0,
+  "subplanes_half_m": []
+ },
+ "physics_note": "secondaries killed at creation; primary-only transport for transmission counting",
+ "sampling": "table-driven: protocol lambda_open row weights (Guan-normalized, surrogate convention) + real-EcoMug momentum spectra; backtracked line of sight, uniform panel impact",
+ "seconds_per_event": 2.312711726000998e-05,
+ "threads": 24,
+ "view_index": 0,
+ "wall_seconds": 4.65685776801547,
+ "detected_all_energies": 65050,
+ "reference_histogram": "kinetic energy at the counting plane > 3 GeV",
+ "block_seeds": [
+  20261001090000,
+  20261001090001
+ ],
+ "merged_blocks": 2
+}

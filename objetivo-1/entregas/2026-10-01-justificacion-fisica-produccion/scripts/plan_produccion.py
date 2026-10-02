@@ -33,6 +33,8 @@ import comun as c
 FRACCIONES = [0.5, 0.1, 0.05, 0.01]
 REALIZACIONES = 20
 K_OPCIONES = [1, 2, 4, 8]
+K_RECETA = [4, 8, 10, 16, 32]
+C_OBJETIVO_10 = 100           # counts -> 10 % Poisson precision
 ROI = 4                       # ROI = 4 x 4 pixels (0.94 deg x 0.70 deg)
 BANDA_ROI = (3.0e4, 1.0e5)    # rock column of the ROI centre, g/cm^2
 C_OBJETIVO = 400              # counts -> 5 % Poisson precision
@@ -129,9 +131,10 @@ def almacenamiento(hists, muestras: int = 6) -> dict:
             "hist_csv_bytes_aprox": st.mean(tam_csv)}
 
 
-def manifiesto(k: int, ruta: Path) -> int:
+def manifiesto(k: int, ruta: Path, fraccion_ventana: float) -> int:
+    """Rows per block; events = k * S0_v1 / window fraction (5 deg generation margin)."""
     geos = sorted(p.stem for p in c.GEOMETRIAS.glob("geo-*.json"))
-    n_vista = k * round(c.S0_V1)
+    n_vista = round(k * c.S0_V1 / fraccion_ventana)
     bloques = math.ceil(n_vista / EVENTOS_MAX_BLOQUE)
     base, resto = divmod(n_vista, bloques)
     filas = []
@@ -181,7 +184,31 @@ def main() -> None:
                                                      if k == 1 else None),
                 "pares_npz_sin_comprimir": 114 * alm["npz_sin_comprimir_bytes"] / 1e9},
         })
-    filas_manifiesto = {k: manifiesto(k, c.ENTREGA / "produccion" / f"manifiesto-v1-k{k}.csv") for k in (1, 2)}
+    # Validated recipe (controles-sc3.json): cone injection, E > 3 GeV, 5 deg margin.
+    imp = json.loads((c.RESULTADOS / "controles-sc3.json").read_text(encoding="utf-8"))["impacto_produccion"]
+    factor = imp["factor_conteo_roi_mediana"]
+    f_ventana = imp["fraccion_generada_en_ventana_margen_5"]
+    cs_ventana = imp["nucleo_s_por_evento_en_ventana_receta"]
+    roi_receta = roi["_todos"] * factor
+    opciones_receta = []
+    for k in K_RECETA:
+        en_ventana = 114 * k * c.S0_V1
+        opciones_receta.append({
+            "k": k, "exposicion_equivalente_dias": 30 * k,
+            "eventos_generados_por_vista": round(k * c.S0_V1 / f_ventana),
+            "bloques_por_vista": math.ceil(k * c.S0_V1 / f_ventana / EVENTOS_MAX_BLOQUE),
+            "horas_nucleo": en_ventana * cs_ventana / 3600,
+            "pared_h_con_4_trabajos_simultaneos": en_ventana * cs_ventana / CPUS / MAX_SIMULTANEOS / 3600,
+            "fraccion_rois_400": float(np.mean(k * roi_receta >= C_OBJETIVO)),
+            "fraccion_rois_100": float(np.mean(k * roi_receta >= C_OBJETIVO_10)),
+            "conteo_roi_mediano_referencia": float(k * np.median(roi_receta)),
+            "conteo_roi_mediano_fraccion_0_01": float(0.01 * k * np.median(roi_receta)),
+            "histogramas_gb": 114 * alm["hist_csv_bytes_aprox"] * 3 * math.ceil(k * c.S0_V1 / f_ventana / EVENTOS_MAX_BLOQUE) / 1e9,
+        })
+    k_10 = float(C_OBJETIVO_10 / np.percentile(roi_receta, PERCENTIL))
+    k_5 = float(C_OBJETIVO / np.percentile(roi_receta, PERCENTIL))
+    filas_manifiesto = {k: manifiesto(k, c.ENTREGA / "produccion" / f"manifiesto-receta-k{k}.csv", f_ventana)
+                        for k in (1, 10)}
 
     plt, coma = c.configurar_matplotlib()
     fig, axs = plt.subplots(1, 2, figsize=(10.5, 3.9), gridspec_kw={"wspace": 0.3})
@@ -217,17 +244,22 @@ def main() -> None:
 
     roi.pop("_todos")
     salida = {"tiempos_medidos": t, "estadistica_roi": roi, "almacenamiento_medido": alm,
-              "opciones": opciones, "parametros": {
+              "opciones_receta_historica": opciones,
+              "receta_validada": {"factor_conteo_roi": factor, "fraccion_en_ventana": f_ventana,
+                                  "nucleo_s_por_evento_en_ventana": cs_ventana,
+                                  "k_para_100_cuentas_p10": k_10, "k_para_400_cuentas_p10": k_5,
+                                  "opciones": opciones_receta,
+                                  "supuesto": "factor medido en geo-train-01 vista 0; se verifica en P0"},
+              "parametros": {
                   "fracciones": FRACCIONES, "realizaciones": REALIZACIONES, "cpus": CPUS,
                   "max_simultaneos": MAX_SIMULTANEOS, "eventos_max_bloque": EVENTOS_MAX_BLOQUE,
                   "semilla_maestra_v1": SEMILLA_MAESTRA_V1,
                   "regla_semilla": "maestra*1e6 + indice_geometria*1e4 + vista*1e3 + bloque (orden alfabético del catálogo)"},
-              "manifiestos": {f"k{k}": {"ruta": c.ruta_relativa(c.ENTREGA / "produccion" / f"manifiesto-v1-k{k}.csv"),
+              "manifiestos": {f"k{k}": {"ruta": c.ruta_relativa(c.ENTREGA / "produccion" / f"manifiesto-receta-k{k}.csv"),
                                         "filas": n} for k, n in filas_manifiesto.items()},
               "figura": ruta, "entorno": c.entorno()}
     c.escribir_json(c.RESULTADOS / "plan-produccion.json", salida)
-    print(json.dumps({"tiempos": t, "roi": {k: v for k, v in roi.items() if k != "por_vista"},
-                      "alm": alm, "opciones": opciones}, indent=1, ensure_ascii=False, default=str))
+    print(json.dumps({"receta": salida["receta_validada"]}, indent=1, ensure_ascii=False, default=str))
 
 
 if __name__ == "__main__":

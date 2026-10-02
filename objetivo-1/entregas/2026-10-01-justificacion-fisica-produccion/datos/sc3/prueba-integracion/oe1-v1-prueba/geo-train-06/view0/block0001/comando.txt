@@ -1,0 +1,1 @@
+build-receta/muography_sim --geometry scripts/simulation/geometry_catalog/geometries/geo-train-06.json --view 0 --tables scripts/simulation/geant4_app/tables-az-edges-v1 --seed 20261001090001 --events 100000 --threads 24 --out /home/dapintoo/muography-scratch/oe1-v1-prueba/.tmp/geo-train-06-view0-block1-30629 

@@ -1,0 +1,13 @@
+{
+  "schema": "oe1-image-az-edges-v1",
+  "scope": "exportacion sin alterar conteos; no valida fisica ni habilita produccion",
+  "images": [
+    {
+      "stem": "geo-train-06_view0",
+      "total": 69995,
+      "npz_sha256": "41936d4bd3171c3531dc28ad7b49f5fbd4f4b1b0de0bc77bb8008c1b4edfe694",
+      "hist_sha256": "d145db023d60ef76a696b7ed5cc2d36b0958a42b49e298fc67ec1e46d6d38408",
+      "meta_sha256": "dba433bfa363237ee58b259e25b8273d63ed4931acbdb826664fb5dc2934aca4"
+    }
+  ]
+}

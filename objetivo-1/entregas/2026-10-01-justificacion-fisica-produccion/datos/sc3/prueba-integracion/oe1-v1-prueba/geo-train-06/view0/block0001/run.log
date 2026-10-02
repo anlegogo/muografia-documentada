@@ -1,0 +1,18 @@
+
+**************************************************************
+ Geant4 version Name: geant4-11-04-patch-02 [MT]   (12-June-2026)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+Checking overlaps for volume edifice:0 (G4Cons) ... OK! 
+Checking overlaps for volume anomaly_0:0 (G4SubtractionSolid) ... OK! 
+ANOMALY-CSG name=anomaly_0 kind=conduit clipped=no minus=[1] solid=G4SubtractionSolid placed=yes
+Checking overlaps for volume anomaly_1:0 (G4Ellipsoid) ... OK! 
+ANOMALY-CSG name=anomaly_1 kind=dense_body clipped=no minus=[] solid=G4Ellipsoid placed=yes
+Checking overlaps for volume detector:0 (G4Box) ... OK! 
+RUN DONE geo-train-06 view 0: events=100000 detected=65140 wall_s=2.34415

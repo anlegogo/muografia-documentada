@@ -1,95 +1,113 @@
-# Plan de producción del conjunto de imágenes del OE1 (malla az-edges-v1)
+# Plan de producción del conjunto de imágenes del OE1 (malla az-edges-v1, receta validada)
 
-Las cifras proceden de `resultados/plan-produccion.json`, que se obtiene con `scripts/plan_produccion.py` a partir de los 114 metadatos fusionados, los 194 registros SLURM de la campaña del 30–31 de agosto y los 114 histogramas (huellas verificadas contra `datos/sc3/campaign-manifest.csv`). **No se lanza producción en esta entrega.**
+Las cifras salen de `resultados/plan-produccion.json` (`scripts/plan_produccion.py`). Ese script combina tres fuentes: los 114 histogramas y metadatos de la campaña histórica (huellas verificadas), los 194 registros SLURM de esa campaña y el impacto medido de la receta en los controles de SC3 (`resultados/controles-sc3.json`). **No se lanzó la producción.** La cadena completa sí se probó en SC3 con dos bloques pequeños (sección 5).
 
-## 1. Condiciones previas
+## 1. Receta validada
 
-La producción depende de C1, C2 y C4 de [PUNTOS_NO_DEMOSTRADOS.md](PUNTOS_NO_DEMOSTRADOS.md). Cualquiera de ellas puede cambiar el ejecutable (corte de energía, punto de inyección o margen angular) y, con él, el conteo en roca que fija N. Por eso la producción se hace en dos etapas:
+La receta queda fijada por las comprobaciones de [PUNTOS_NO_DEMOSTRADOS.md](PUNTOS_NO_DEMOSTRADOS.md):
 
-1. **Etapa P0 (piloto de producción):** geo-train-01, seis vistas, k = 1, con el ejecutable que resulte de C1, C2 y C4. Sirve para medir el tiempo por evento del ejecutable final y el percentil 10 del conteo por ROI. Con el ejecutable actual cuesta 44 h-núcleo y unos 19 min de pared por vista.
-2. **Etapa P1:** las 114 vistas con el k que resulte de P0, según el criterio de la sección 3.
+| Elemento | Valor | Respaldo |
+|---|---|---|
+| Ejecutable | Árbol `angular-v1` (`0dea8e1`, malla v1 + geometría B) + `controles-oe1-v3.patch`, compilado con el mismo `CMAKE_BUILD_TYPE` que `build-az-edges-v1` | Sin opciones, el binario es bit a bit idéntico al de producción (r01, a00, c00) |
+| Inyección | 1 m antes de que la línea de mira entre en roca (`OE1C_INJECT=cone`) | C2: cielo abierto 99,97 % |
+| Margen de generación | 5° por lado (`OE1C_MARGIN_DEG=5`); el 68,42 % de los primarios cae en la ventana | C4: sesgo medio de borde −0,07 pp |
+| Plano de conteo | 600 m (`OE1C_PLANE_HALF_M=300`) | C5: diferencia de 0 pp frente a 1.200 m |
+| Observable (imagen de referencia) | Muones con E_cin > 3 GeV al cruzar el plano, por dirección de llegada | C1: imagen independiente del plano; conserva el 83,5 % del conteo en roca |
+| Normalización | k · S0_v1 inyecciones nominales en la ventana = k · 30 días convencionales | Sección 2b del README; convención de área pendiente (C6) |
 
-## 2. Geometrías y vistas a generar; qué se reutiliza
+La única decisión abierta antes de producir es C6, que es de definición y no requiere cómputo.
 
-Se generan **las 114 vistas** (19 geometrías × 6 vistas). Ninguna referencia histórica se reutiliza como referencia de la nueva versión, por dos motivos:
+## 2. Geometrías y vistas; qué se reutiliza
 
-- **Corrección angular.** Los histogramas históricos asignan cada dirección al centro más próximo con paso de 60/255°; las columnas extremas tienen la mitad de ancho. La malla v1 usa 256 intervalos iguales de 60/256°. Como no se conservan direcciones por evento, la reasignación no es exacta: cualquier redistribución entre columnas introduciría una correlación artificial entre píxeles vecinos.
-- **Corrección geométrica.** Afecta a seis geometrías (geo-gen-01, geo-test-01, geo-test-03, geo-train-06, geo-train-08, geo-train-11). El árbol `angular-v1` (commit `0dea8e1`) contiene un `DetectorConstruction.cc` idéntico al de la variante B, verificado en SC3 con `diff -rq`. Producir con ese ejecutable aplica ambas correcciones.
+Se generan **las 114 vistas** (19 geometrías × 6). Ninguna referencia histórica se reutiliza:
+
+- La malla v1 cambia la asignación a columnas, y sin direcciones por evento no se puede reasignar.
+- Seis geometrías cambian con la corrección B.
+- El observable cambia: inyección, margen y corte. En el resto del catálogo, el conteo histórico en las ROI de roca estaba inflado entre 3 y 7 veces por muones blandos que dependen del plano (C1).
 
 Sí se reutilizan:
 
-- El catálogo de 19 geometrías.
-- Las tablas `tables-az-edges-v1`, cuyas huellas coinciden con la entrega `90abb96`: `row_weights_30d.txt` 76698ac1…, `p_cdf.txt` 7161c8ad…, `meta.json` 65cf778e….
-- El ejecutable `build-az-edges-v1/muography_sim` (SHA-256 a29e5277…), mientras C1, C2 y C4 no lo modifiquen.
-- La cadena local de lectura y empaquetado del director.
+- El catálogo de geometrías.
+- Las tablas `tables-az-edges-v1` (huellas 76698ac1…, 7161c8ad…, 65cf778e…).
+- El código `0dea8e1` con el parche.
+- La cadena local del director (lectura, ROI, empaquetado).
 - Los 9.120 pares históricos, que se conservan como versión distinta y no se mezclan con la nueva.
 
 ## 3. Criterio para el número de muones
 
-**Unidad estadística.** Una ROI es un bloque de 4×4 píxeles (0,94° × 0,70°) cuya dirección central atraviesa entre 3·10⁴ y 10⁵ g/cm² de roca. Es el rango en el que la transmisión es medible y donde se sitúan las anomalías del catálogo. Las 114 vistas suman 21.816 ROI de este tipo.
+**Unidad estadística.** Una ROI es un bloque de 4×4 píxeles (0,94° × 0,70°) cuya dirección central atraviesa entre 3·10⁴ y 10⁵ g/cm² de roca. Son 21.816 ROI en las 114 vistas.
 
-**Criterio propuesto.** El 90 % de las ROI debe alcanzar 400 cuentas en la referencia, es decir, una precisión de Poisson del 5 %. La reducción binomial no se ve limitada por este criterio: la fracción 0,01 conserva la baja estadística buscada, con unas 2,7 cuentas medianas por ROI para k = 1.
+**Conteo esperado con la receta.** Es el conteo histórico por ROI multiplicado por el factor medido en geo-train-01, 0,124 (mediana de 152 ROI comparando la receta con E > 3 GeV frente a la configuración histórica, mismos 2·10⁷ primarios). Que ese factor valga para geometrías con anomalías es un supuesto; se verifica en P0.
 
-Con los datos históricos (k = 1, 30 d convencionales), la mediana es de 271 cuentas por ROI y el percentil 10 de 85. El k necesario por vista tiene una mediana de 3,6, un percentil 90 de 6,6 y un máximo de 7,1 (figura 6).
+**Criterio propuesto.** El 90 % de las ROI debe alcanzar **100 cuentas (precisión de Poisson del 10 %)** en la referencia. Eso exige k = 9,5. Alcanzar 400 cuentas (5 %) exigiría k = 37,9.
 
-**Advertencia cuantificada.** Con el plano de 600 m y sin corte de energía, entre el 82 % y el 85 % del conteo en esa banda de columna excede la expectativa CSDA de transmisión: el conteo medido es entre 5,7 y 6,8 veces la expectativa. Esa componente es compatible con los muones blandos dispersados de C1. Si C1 adopta un corte, el conteo por ROI bajará y el k necesario subirá en una proporción similar. Por eso k se fija tras P0 con la regla k = 400 / p10(conteo por ROI en P0), redondeada hacia arriba a una potencia de 2.
+| k | Exposición equivalente | Generados por vista | Bloques por vista | Horas-núcleo | Pared con 4 trabajos | ROI ≥ 100 cuentas | ROI ≥ 400 cuentas | Mediana ROI (referencia / fracción 0,01) |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 4 | 120 d | 210.671.347 | 6 | 3.322 | 34,6 h | 63,4 % | 10,8 % | 135 / 1,3 |
+| 8 | 240 d | 421.342.694 | 11 | 6.644 | 69,2 h | 86,6 % | 32,8 % | 269 / 2,7 |
+| **10** | **300 d** | **526.678.368** | **14** | **8.305** | **86,5 h** | **90,8 %** | 42,3 % | 336 / 3,4 |
+| 16 | 480 d | 842.685.389 | 22 | 13.287 | 138,4 h | 96,1 % | 63,4 % | 538 / 5,4 |
+| 32 | 960 d | 1.685.370.778 | 43 | 26.575 | 276,8 h | 99,3 % | 86,6 % | 1.077 / 10,8 |
 
-| k | Exposición equivalente | Eventos por vista | Bloques | Horas-núcleo (rango por dispersión entre vistas) | Pared con 4 trabajos simultáneos | ROI con 400 cuentas (datos históricos) |
-|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 30 d | 36.034.070 | 114 | 841 (766–925) | 8,8 h | 33,1 % |
-| 2 | 60 d | 72.068.140 | 228 | 1.682 (1.532–1.850) | 17,5 h | 63,9 % |
-| 4 | 120 d | 144.136.280 | 456 | 3.363 (3.064–3.700) | 35,0 h | 86,8 % |
-| 8 | 240 d | 288.272.560 | 912 | 6.727 (6.128–7.400) | 70,1 h | 96,3 % |
+**Recomendación: k = 10.** El coste es de 0,728 ms de núcleo por evento dentro de la ventana, medido en c02 (0,498 ms por evento generado dividido entre la fracción en ventana, 0,684). La campaña histórica midió 0,737 ± 0,033 ms con la receta anterior. La pared supone cuatro trabajos simultáneos, el límite de envío observado; la campaña histórica perdió el 41 % del cómputo en 80 trabajos duplicados, y el lanzador nuevo lo evita (sección 5).
 
-Las horas-núcleo se calculan con 0,737 ± 0,033 ms de núcleo por evento: media y desviación entre las 114 vistas, partición *legacy*, 24 hilos. La incertidumbre de la media es de ±0,4 %. La pared supone cuatro trabajos simultáneos, el límite de envío observado. La campaña histórica tardó 19,9 h y consumió 1.443 h-núcleo para k = 1, porque 80 de sus 194 trabajos fueron duplicados: un 41 % de cómputo repetido por carreras del encadenamiento. El lanzador nuevo serializa los envíos con un bloqueo de archivo y comprueba la cola antes de cada envío.
+**Niveles de submuestreo.** Se aplican las fracciones 0,5; 0,1; 0,05 y 0,01 con 20 realizaciones binomiales cada una, lo que da 80 pares por vista y 9.120 en total. Con k = 10 equivalen a 150; 30; 15 y 3 días convencionales. La mediana por ROI en la fracción 0,01 es de unas 3,4 cuentas, que corresponde al régimen de baja estadística del OE1. Los pares de una vista comparten la referencia.
 
-**Niveles de submuestreo.** Se aplican las fracciones 0,5; 0,1; 0,05 y 0,01 con 20 realizaciones binomiales cada una, lo que da 80 pares por vista y 9.120 en total. Con k = 1 equivalen a 15; 3; 1,5 y 0,3 días convencionales. Los pares de una misma vista comparten la referencia y no son simulaciones independientes.
-
-**Almacenamiento (medido).** Un histograma CSV ocupa unos 274 kB por bloque. El NPZ de pares ocupa 4,27 MB comprimido por vista (medido en seis vistas con k = 1; rango 4,12–4,32 MB) y 21 MB sin comprimir. El total con k = 1 es de 0,03 GB de histogramas y 0,49 GB de pares (2,4 GB sin comprimir). Con k > 1 los histogramas escalan con el número de bloques (0,25 GB con k = 8), y el NPZ comprimido crece con los conteos, sin superar la cota sin comprimir de 2,4 GB. No se conserva información por evento.
+**Almacenamiento.** Por bloque se guardan tres CSV (imagen con corte, imagen sin corte y direcciones nominales) de unos 274 kB cada uno: 1,31 GB para k = 10. El NPZ de pares ocupa 4,27 MB comprimido por vista (medido con k = 1); con k = 10 crece con los conteos, sin superar 21 MB por vista (2,4 GB en total). No se guarda información por evento.
 
 ## 4. Archivos y comandos exactos
 
 Archivos en `produccion/`:
 
-- `manifiesto-v1-k1.csv` (114 filas) y `manifiesto-v1-k2.csv` (228 filas), con las columnas fila, geometría, vista, bloque, semilla y eventos. La semilla se construye como 20261001·10⁶ + índice_geometría·10⁴ + vista·10³ + bloque, con el catálogo en orden alfabético y la misma regla que la campaña histórica. Los bloques no superan 4·10⁷ eventos (unos 25 min en 24 núcleos, por debajo del límite de 1 h). Para otros k se regenera con `scripts/plan_produccion.py`.
-- `bloque_v1.sbatch`: ejecuta una fila del manifiesto. Registra el entorno, las huellas de las entradas (`entradas.sha256`, en el formato que espera `herramientas/preparar_imagen_angular_v1.py`), el comando, el log y el código de salida. Publica el bloque de forma atómica y **termina con el código real del simulador**.
-- `lanzar_v1.py`: lanzador idempotente que envía solo filas no publicadas y no encoladas, con un máximo de cuatro trabajos.
-- `fusionar_v1.py`: suma exacta de bloques por vista cuando k > 1. Comprueba código de salida, huellas, número de eventos e igualdad de entradas.
+- `preparar_arbol_receta.sh`: construye `~/oe1-trabajo/produccion-receta` como copia de `angular-v1` + parche v3 y compila en `build-receta/`.
+- `manifiesto-receta-k10.csv` (1.596 bloques de 37.619.884 eventos) y `manifiesto-receta-k1.csv` (228 bloques, para P0). La semilla se construye como 20261001·10⁶ + índice_geometría·10⁴ + vista·10³ + bloque, con el catálogo en orden alfabético.
+- `bloque_v1.sbatch`: ejecuta una fila con la receta. Promueve el histograma con E > 3 GeV a `<stem>_hist.csv` y conserva `_hist_sin_corte.csv` y `_gen.csv`. Ajusta `detected_in_bins` y registra entorno, `receta.env`, huellas de entrada (incluido el parche), comando, log y código de salida, que propaga al terminar.
+- `lanzar_v1.py`: envía solo filas no publicadas ni encoladas, con bloqueo de archivo y como máximo cuatro trabajos.
+- `fusionar_v1.py`: suma exacta por vista, con verificación de huellas, eventos y entradas.
+- `prueba_integracion.sh`: la prueba de la sección 5.
 
-En SC3 (guane), una vez cerradas las condiciones de la sección 1:
+En SC3 (guane), una vez decidido C6:
 
 ```bash
-# 0. Copiar produccion/ a SC3 y comprobar el ejecutable y las tablas
 scp -r produccion sc3-toctoc:~/oe1-trabajo/produccion-v1
 ssh sc3-toctoc
 ssh guane
-cd ~/oe1-trabajo/angular-v1
-sha256sum build-az-edges-v1/muography_sim scripts/simulation/geant4_app/tables-az-edges-v1/*
-#    esperado: a29e5277..., 65cf778e..., 7161c8ad..., 76698ac1... (o las huellas del ejecutable resultante de C1/C2/C4)
+cd ~/oe1-trabajo/produccion-v1
+srun -p legacy -N1 -n1 -c24 -t 00:30:00 bash preparar_arbol_receta.sh    # ya ejecutado el 2026-10-02 (trabajo 30627)
 
-# 1. Etapa P0: las seis vistas de geo-train-01 (filas 24-29 del manifiesto k1)
-awk -F, 'NR==1 || $2=="geo-train-01"' ~/oe1-trabajo/produccion-v1/manifiesto-v1-k1.csv > ~/oe1-trabajo/produccion-v1/manifiesto-p0.csv
-python3 ~/oe1-trabajo/produccion-v1/lanzar_v1.py --manifiesto ~/oe1-trabajo/produccion-v1/manifiesto-p0.csv \
-    --salida /home/$USER/muography-scratch/oe1-v1-p0 --dry-run
-python3 ~/oe1-trabajo/produccion-v1/lanzar_v1.py --manifiesto ~/oe1-trabajo/produccion-v1/manifiesto-p0.csv \
-    --salida /home/$USER/muography-scratch/oe1-v1-p0
+# Piloto P0: geo-train-06 (geometría con anomalías), seis vistas, k = 1, unas 44 h-núcleo
+awk -F, 'NR==1 || $2=="geo-train-06"' manifiesto-receta-k1.csv > manifiesto-p0.csv
+python3 lanzar_v1.py --manifiesto $PWD/manifiesto-p0.csv --salida $HOME/muography-scratch/oe1-receta-p0 --dry-run
+python3 lanzar_v1.py --manifiesto $PWD/manifiesto-p0.csv --salida $HOME/muography-scratch/oe1-receta-p0
+python3 fusionar_v1.py --manifiesto manifiesto-p0.csv --salida $HOME/muography-scratch/oe1-receta-p0 \
+    --destino $HOME/muography-scratch/oe1-receta-p0-fusion
 
-# 2. Etapa P1 con el k fijado (ejemplo k = 2); el encadenamiento rellena la cola sin intervención
-python3 ~/oe1-trabajo/produccion-v1/lanzar_v1.py --manifiesto ~/oe1-trabajo/produccion-v1/manifiesto-v1-k2.csv \
-    --salida /home/$USER/muography-scratch/oe1-v1-k2
-
-# 3. Fusión (solo k > 1) en una carpeta nueva
-python3 ~/oe1-trabajo/produccion-v1/fusionar_v1.py --manifiesto ~/oe1-trabajo/produccion-v1/manifiesto-v1-k2.csv \
-    --salida /home/$USER/muography-scratch/oe1-v1-k2 --destino /home/$USER/muography-scratch/oe1-v1-k2-fusion
+# P1: 114 vistas, k = 10 (o el k que resulte de P0)
+python3 lanzar_v1.py --manifiesto $PWD/manifiesto-receta-k10.csv --salida $HOME/muography-scratch/oe1-receta-k10
+python3 fusionar_v1.py --manifiesto manifiesto-receta-k10.csv --salida $HOME/muography-scratch/oe1-receta-k10 \
+    --destino $HOME/muography-scratch/oe1-receta-k10-fusion
 ```
 
-En la réplica local, con la cadena del director (`objetivo-1/CADENA_LOCAL_OE1.md`) y las carpetas copiadas desde SC3, para cada vista:
+En P0 se comprueban tres cosas antes de P1:
+
+- (i) El factor de conteo por ROI de la receta en geo-train-06, comparado con su histórico; si difiere en más del 20 % de 0,124, se recalcula k.
+- (ii) C4 con 5,3·10⁷ primarios por vista (26 veces los de la comprobación): las desviaciones de borde deben quedar ≤ 1 pp.
+- (iii) Todas las vistas deben pasar por el exportador y el empaquetador del director.
+
+En la réplica local, con las carpetas fusionadas copiadas desde SC3:
 
 ```console
-python herramientas/preparar_imagen_angular_v1.py FUSION/geo-train-01/geo-train-01_view0_hist.csv --salida IMAGENES_V1
-python herramientas/empaquetar_angular_v1.py IMAGENES_V1 --informe INVENTARIO_V1.json --salida PAQUETE_V1
+python herramientas/preparar_imagen_angular_v1.py FUSION/geo-train-06/geo-train-06_view0_hist.csv --salida IMAGENES_V1
+python herramientas/empaquetar_angular_v1.py IMAGENES_V1 --geometrias geo-train-06 --informe INVENTARIO_P0.json --salida PAQUETE_P0
 ```
 
-`entradas.sha256` debe estar en la misma carpeta que el histograma; `fusionar_v1.py` y `bloque_v1.sbatch` lo dejan allí. Antes de liberar los temporales de SC3 se comprueban las copias con `sha256sum -c salida.sha256` en cada bloque.
+## 5. Prueba de integración ejecutada (2026-10-02)
 
-Ni `bloque_v1.sbatch` ni `lanzar_v1.py` se han ejecutado en SC3. Se verificó la sintaxis (`bash -n`, `py_compile`), y `fusionar_v1.py` se probó con bloques sintéticos (dos bloques de una vista; suma y metadatos correctos). La primera ejecución real es la etapa P0.
+`prueba_integracion.sh` lanzó con `lanzar_v1.py` dos bloques de geo-train-06, vista 0, con 10⁵ primarios cada uno (trabajos 30628 y 30629, COMPLETED 0:0, 7 y 9 s):
+
+- Los dos bloques se publicaron con `exit_code` 0, `salida.sha256`, `receta.env` y `entradas.sha256`.
+- El encadenamiento (`CHAIN=1`) no reenvió ningún bloque: «pendientes=0».
+- `fusionar_v1.py` produjo la vista (200.000 primarios y 69.995 registros con E > 3 GeV).
+- `herramientas/preparar_imagen_angular_v1.py`, del director, la exportó sin errores y reconoció la procedencia de la malla v1, el binario y las tablas.
+
+Toda la evidencia está en `datos/sc3/prueba-integracion/`. Estas imágenes son de prueba y no forman parte del conjunto.

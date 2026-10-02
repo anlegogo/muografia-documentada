@@ -7,7 +7,7 @@ prevents the duplicated jobs observed in the 2026-08-30 campaign (194 jobs for
 114 views). Not executed in this delivery.
 
 Usage (on guane, from the directory that holds this file):
-    python3 lanzar_v1.py --manifiesto $PWD/manifiesto-v1-k1.csv --salida /ruta/salida-v1 [--dry-run]
+    python3 lanzar_v1.py --manifiesto $PWD/manifiesto-receta-k1.csv --salida /ruta/salida-v1 [--dry-run]
 """
 
 from __future__ import annotations
@@ -56,7 +56,7 @@ def main() -> None:
         pendientes = [f for f in filas if f["fila"] not in cola and not publicado(a.salida, f)]
         libres = max(0, a.max_trabajos - ocupados)
         print(f"filas={len(filas)} pendientes={len(pendientes)} en_cola={len(cola)} libres={libres}")
-        arbol = Path(os.environ.get("ARBOL", str(Path.home() / "oe1-trabajo/angular-v1")))
+        arbol = Path(os.environ.get("ARBOL", str(Path.home() / "oe1-trabajo/produccion-receta")))
         (arbol / "logs").mkdir(exist_ok=True)   # SLURM does not create the --output directory
         for f in pendientes[:libres]:
             cmd = ["sbatch", f"--job-name={PREFIJO}{f['fila']}",

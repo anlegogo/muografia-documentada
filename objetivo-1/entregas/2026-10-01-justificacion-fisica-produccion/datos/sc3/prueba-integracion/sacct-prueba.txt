@@ -1,0 +1,4 @@
+JobID|JobName|State|ExitCode|Start|End|ElapsedRaw|NCPUS|NodeList|Partition|SubmitLine
+30627|oe1-arbol-receta|COMPLETED|0:0|2026-10-02T00:50:18|2026-10-02T00:50:31|13|24|guane01|legacy|srun -p legacy -N1 -n1 -c24 -t 00:30:00 --job-name=oe1-arbol-receta bash preparar_arbol_receta.sh
+30628|oe1v1-108|COMPLETED|0:0|2026-10-02T00:50:55|2026-10-02T00:51:02|7|24|guane01|legacy|sbatch --job-name=oe1v1-108 --export=ALL,MANIFIESTO=/home/dapintoo/oe1-trabajo/produccion-v1/manifiesto-prueba.csv,FILA=108,SALIDA=/home/dapintoo/muography-scratch/oe1-v1-prueba,CHAIN=1 /home/dapintoo/oe1-trabajo/produccion-v1/bloque_v1.sbatch
+30629|oe1v1-109|COMPLETED|0:0|2026-10-02T00:50:55|2026-10-02T00:51:04|9|24|guane02|legacy|sbatch --job-name=oe1v1-109 --export=ALL,MANIFIESTO=/home/dapintoo/oe1-trabajo/produccion-v1/manifiesto-prueba.csv,FILA=109,SALIDA=/home/dapintoo/muography-scratch/oe1-v1-prueba,CHAIN=1 /home/dapintoo/oe1-trabajo/produccion-v1/bloque_v1.sbatch
