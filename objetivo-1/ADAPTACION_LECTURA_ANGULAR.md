@@ -1,5 +1,7 @@
 # Adaptación local de lectura y exportación angular
 
+**Integración disponible:** lectura → exportación → conteos por ROI candidata, con controles de geometría, vista, coordenadas y huellas. Ocho pruebas del analizador y nueve del exportador pasan. No constituye todavía el empaquetado definitivo ni habilita el modo de listas del simulador.
+
 **Avance en regiones:** [seis ROI geométricas candidatas de geo-train-06](REGIONES_ANGULARES_V1.md), contrastadas sobre 393.216 rayos; no sustituyen las máscaras congeladas.
 
 2026-10-01, Colombia. **Estado: parcial.** Continúa la [revisión de la corrida angular](REVISION_MALLA_ANGULAR_2026-10-01.md). No se solicita otra corrida ni se altera material histórico.
@@ -43,3 +45,26 @@ No se afirma que toda la cadena esté adaptada. Ahora disponemos de un contrato 
 ## Próximo trabajo antes de producción
 
 Integrar este contrato en representación, ROI y empaquetado de la versión nueva, con pruebas geométricas de las máscaras. Separadamente, justificar aceptación del plano de 600 m y normalización temporal usando evidencia existente. La exportación no valida ese modelo físico, no cambia el tamaño de la futura campaña y no cierra P-04. No es necesario pedir a los estudiantes otra simulación para esta adaptación local.
+
+## Análisis integrado de regiones candidatas
+
+La herramienta [analizar_roi_angular_v1.py](../herramientas/analizar_roi_angular_v1.py) recibe una imagen exportada y el directorio de regiones. Verifica:
+
+- Coincidencia de geometría y de su SHA-256, vista y posición del detector.
+- Versión y coordenadas completas de ambas matrices, no solo su tamaño.
+- Huellas de los NPZ, tipo de conteos, máscara booleana y correspondencia con longitudes de al menos 20 m.
+- Concordancia entre suma del histograma, metadatos y número de primarios.
+
+Produce conteos totales, dentro y fuera de la región, y fracción de detecciones dentro de ella. Si no hay detecciones, esa fracción queda sin valor. **No denomina esa fracción transmisión ni eficiencia**, no calcula significación ni fija una nueva decisión experimental. Registra huellas de imagen, máscara y sus metadatos. Conserva la denominación de ROI candidata.
+
+```console
+python herramientas/analizar_roi_angular_v1.py RUTA/geo-train-06_view0.npz --regiones CARPETA_ROI --salida NUEVO_INFORME.json
+```
+
+El ejemplo requiere una imagen **nueva y compatible de geo-train-06**, que no está en la entrega angular revisada. No utilizar una imagen histórica ni renombrar la de geo-train-01 para ejecutarlo. La imagen real recibida de geo-train-01 fue rechazada correctamente frente a la ROI de geo-train-06: [control real de incompatibilidad](evidencias/integracion-roi-rechazo-real.json). No se ha obtenido un conteo físico nuevo de la ROI.
+
+El exportador se amplió para comprobar la identidad indicada por el nombre del archivo y conservar la huella de geometría cuando acompaña al CSV el manifiesto `entradas.sha256`, como en la entrega SC3. Exige una única entrada de geometría con formato válido y rechaza contradicciones. Si no existe manifiesto puede exportar las coordenadas, pero el analizador de ROI rechazará una imagen sin huella de geometría. Las huellas declaradas verifican coherencia de archivos; no prueban por sí solas que el binario transportara esa geometría: esa trazabilidad continúa requiriendo la revisión de la entrega.
+
+[Pruebas de integración](evidencias/pruebas-integracion-roi.txt): ocho pruebas del analizador con datos sintéticos conocidos (7 conteos dentro, 11 fuera), corrupción, coordenadas desplazadas, identidades incompatibles, huella ausente, máscara incoherente, longitudes negativas y cero conteos; nueve pruebas del exportador, incluidas conservación y rechazo de manifiestos. Esos conteos de ejemplo no proceden de SC3.
+
+La ruta de análisis ya está disponible localmente sin modificar los scripts históricos. Pendientes: incorporación a los consumidores definitivos, empaquetado multivista y la justificación física del plano de conteo y exposición. No se solicita otra corrida solo para probar esta herramienta.

@@ -1,0 +1,28 @@
+test_corrupt_file (test_analizar_roi_angular_v1.AnalysisTests.test_corrupt_file) ... ok
+test_false_mask_size (test_analizar_roi_angular_v1.AnalysisTests.test_false_mask_size) ... ok
+test_known_counts (test_analizar_roi_angular_v1.AnalysisTests.test_known_counts) ... ok
+test_missing_geometry_hash (test_analizar_roi_angular_v1.AnalysisTests.test_missing_geometry_hash) ... ok
+test_negative_lengths (test_analizar_roi_angular_v1.AnalysisTests.test_negative_lengths) ... ok
+test_rejects_identity_and_detector_changes (test_analizar_roi_angular_v1.AnalysisTests.test_rejects_identity_and_detector_changes) ... ok
+test_shifted_coordinates_even_with_valid_hash (test_analizar_roi_angular_v1.AnalysisTests.test_shifted_coordinates_even_with_valid_hash) ... ok
+test_zero_counts (test_analizar_roi_angular_v1.AnalysisTests.test_zero_counts) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.208s
+
+OK
+
+test_geometry_manifest_is_preserved (test_preparar_imagen_angular_v1.ImageExportTests.test_geometry_manifest_is_preserved) ... ok
+test_invalid_manifest_rejected (test_preparar_imagen_angular_v1.ImageExportTests.test_invalid_manifest_rejected) ... ok
+test_rejects_duplicate_view (test_preparar_imagen_angular_v1.ImageExportTests.test_rejects_duplicate_view) ... ok
+test_rejects_inconsistent_grid (test_preparar_imagen_angular_v1.ImageExportTests.test_rejects_inconsistent_grid) ... ok
+test_rejects_legacy_before_writing (test_preparar_imagen_angular_v1.ImageExportTests.test_rejects_legacy_before_writing) ... ok
+test_rejects_mixed_batch_without_partial_output (test_preparar_imagen_angular_v1.ImageExportTests.test_rejects_mixed_batch_without_partial_output) ... ok
+test_rejects_overwrite (test_preparar_imagen_angular_v1.ImageExportTests.test_rejects_overwrite) ... ok
+test_rejects_uint32_overflow (test_preparar_imagen_angular_v1.ImageExportTests.test_rejects_uint32_overflow) ... ok
+test_roundtrip_preserves_pixels_and_coordinates (test_preparar_imagen_angular_v1.ImageExportTests.test_roundtrip_preserves_pixels_and_coordinates) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.590s
+
+OK

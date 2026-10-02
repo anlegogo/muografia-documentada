@@ -1,5 +1,7 @@
 # Regiones de análisis con la malla nueva
 
+**Integración posterior:** disponible el [analizador de conteos por región](ADAPTACION_LECTURA_ANGULAR.md#análisis-integrado-de-regiones-candidatas), con controles de compatibilidad. Las regiones conservan su estado de candidatas.
+
 2026-10-01, Colombia. **Estado: regiones geométricas candidatas calculadas y contrastadas; no son máscaras congeladas de un nuevo ensayo.** Continúa la [adaptación de lectura](ADAPTACION_LECTURA_ANGULAR.md).
 
 Una región de análisis selecciona los píxeles desde los cuales se observa una zona concreta del modelo. Al cambiar los ángulos centrales de los píxeles debemos volver a calcular esa selección, en lugar de copiar la máscara anterior.

@@ -36,6 +36,19 @@ def read_image(hist):
     stem = hist.name[:-9]
     sidecar = hist.with_name(stem+'.meta.json')
     meta = json.loads(sidecar.read_text(encoding='utf-8-sig'))
+    if stem != f"{meta.get('geometry_id')}_view{meta.get('view_index')}":
+        raise ValueError('nombre de archivo distinto de geometría/vista declaradas')
+    provenance = hist.with_name('entradas.sha256')
+    if provenance.exists():
+        suffix = f"scripts/simulation/geometry_catalog/geometries/{meta['geometry_id']}.json"
+        matches = [line.split()[0] for line in provenance.read_text().splitlines()
+                   if len(line.split()) == 2 and line.split()[1].replace('\\','/').endswith(suffix)]
+        if len(matches)!=1 or not re.fullmatch('[0-9a-f]{64}',matches[0]):
+            raise ValueError('manifiesto de entradas sin una huella inequívoca de geometría')
+        if meta.get('geometry_sha256', matches[0]) != matches[0]:
+            raise ValueError('huellas de geometría contradictorias')
+        meta['geometry_sha256']=matches[0]
+        meta['geometry_provenance_manifest_sha256']=hashlib.sha256(provenance.read_bytes()).hexdigest()
     coords = coordinates(meta)
     rows = list(csv.reader(hist.read_text(encoding='utf-8-sig').splitlines()))
     if len(rows)!=256 or any(len(r)!=256 for r in rows):

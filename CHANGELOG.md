@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Integración de regiones y lectura — 2026-10-01, Colombia
+
+- Analizador de conteos dentro/fuera de ROI candidata con validación de geometría, vista, coordenadas, huellas y contenido. Exportador ampliado para preservar procedencia de geometría desde entradas.sha256.
+- Ocho pruebas del analizador y nueve del exportador satisfactorias. Rechazo real correcto de imagen geo-train-01 contra ROI geo-train-06; no se generan resultados físicos inexistentes de geo-train-06.
+- [Uso y límites](objetivo-1/ADAPTACION_LECTURA_ANGULAR.md#análisis-integrado-de-regiones-candidatas). Integración local disponible; empaquetado definitivo y aceptación física pendientes.
+
 ## Regiones geométricas con malla v1 — 2026-10-01, Colombia
 
 - Cálculo propio de seis ROI candidatas de geo-train-06, umbral fijo de 20 m y rayos centrales. Ocho pruebas pasan; 393.216 rayos contrastados con referencia externa, máscaras coincidentes y error máximo 1,33e-10 m.

@@ -1,0 +1,7 @@
+{
+  "control": "imagen real geo-train-01 contra ROI geo-train-06",
+  "rechazo_esperado": true,
+  "mensaje": "la imagen y la ROI pertenecen a geometr\u00edas diferentes",
+  "total_exportado": 750,
+  "limite": "no es una medicion de conteos en la ROI de geo-train-06"
+}
