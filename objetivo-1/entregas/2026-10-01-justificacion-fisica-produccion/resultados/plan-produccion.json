@@ -979,7 +979,7 @@
   "npz_sin_comprimir_bytes": 20971520,
   "hist_csv_bytes_aprox": 273919
  },
- "opciones": [
+ "opciones_receta_historica": [
   {
    "k": 1,
    "eventos_por_vista": 36034070,
@@ -1085,6 +1085,81 @@
    }
   }
  ],
+ "receta_validada": {
+  "factor_conteo_roi": 0.12415476667111527,
+  "fraccion_en_ventana": 0.684176,
+  "nucleo_s_por_evento_en_ventana": 0.0007277887182713138,
+  "k_para_100_cuentas_p10": 9.475839065863278,
+  "k_para_400_cuentas_p10": 37.90335626345311,
+  "opciones": [
+   {
+    "k": 4,
+    "exposicion_equivalente_dias": 120,
+    "eventos_generados_por_vista": 210671347,
+    "bloques_por_vista": 6,
+    "horas_nucleo": 3321.8573436701745,
+    "pared_h_con_4_trabajos_simultaneos": 34.602680663230984,
+    "fraccion_rois_400": 0.10771910524385772,
+    "fraccion_rois_100": 0.6336175284195086,
+    "conteo_roi_mediano_referencia": 134.58376707148895,
+    "conteo_roi_mediano_fraccion_0_01": 1.3458376707148896,
+    "histogramas_gb": 0.562081788
+   },
+   {
+    "k": 8,
+    "exposicion_equivalente_dias": 240,
+    "eventos_generados_por_vista": 421342694,
+    "bloques_por_vista": 11,
+    "horas_nucleo": 6643.714687340349,
+    "pared_h_con_4_trabajos_simultaneos": 69.20536132646197,
+    "fraccion_rois_400": 0.32787862119545286,
+    "fraccion_rois_100": 0.8663366336633663,
+    "conteo_roi_mediano_referencia": 269.1675341429779,
+    "conteo_roi_mediano_fraccion_0_01": 2.691675341429779,
+    "histogramas_gb": 1.030483278
+   },
+   {
+    "k": 10,
+    "exposicion_equivalente_dias": 300,
+    "eventos_generados_por_vista": 526678368,
+    "bloques_por_vista": 14,
+    "horas_nucleo": 8304.643359175436,
+    "pared_h_con_4_trabajos_simultaneos": 86.50670165807745,
+    "fraccion_rois_400": 0.42276310964429775,
+    "fraccion_rois_100": 0.9075449211587825,
+    "conteo_roi_mediano_referencia": 336.4594176787224,
+    "conteo_roi_mediano_fraccion_0_01": 3.364594176787224,
+    "histogramas_gb": 1.311524172
+   },
+   {
+    "k": 16,
+    "exposicion_equivalente_dias": 480,
+    "eventos_generados_por_vista": 842685389,
+    "bloques_por_vista": 22,
+    "horas_nucleo": 13287.429374680698,
+    "pared_h_con_4_trabajos_simultaneos": 138.41072265292394,
+    "fraccion_rois_400": 0.6336175284195086,
+    "fraccion_rois_100": 0.9614961496149615,
+    "conteo_roi_mediano_referencia": 538.3350682859558,
+    "conteo_roi_mediano_fraccion_0_01": 5.383350682859558,
+    "histogramas_gb": 2.060966556
+   },
+   {
+    "k": 32,
+    "exposicion_equivalente_dias": 960,
+    "eventos_generados_por_vista": 1685370778,
+    "bloques_por_vista": 43,
+    "horas_nucleo": 26574.858749361396,
+    "pared_h_con_4_trabajos_simultaneos": 276.8214453058479,
+    "fraccion_rois_400": 0.8663366336633663,
+    "fraccion_rois_100": 0.9934451778511184,
+    "conteo_roi_mediano_referencia": 1076.6701365719116,
+    "conteo_roi_mediano_fraccion_0_01": 10.766701365719117,
+    "histogramas_gb": 4.028252814
+   }
+  ],
+  "supuesto": "factor medido en geo-train-01 vista 0; se verifica en P0"
+ },
  "parametros": {
   "fracciones": [
    0.5,
@@ -1101,12 +1176,12 @@
  },
  "manifiestos": {
   "k1": {
-   "ruta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/produccion/manifiesto-v1-k1.csv",
-   "filas": 114
-  },
-  "k2": {
-   "ruta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/produccion/manifiesto-v1-k2.csv",
+   "ruta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/produccion/manifiesto-receta-k1.csv",
    "filas": 228
+  },
+  "k10": {
+   "ruta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/produccion/manifiesto-receta-k10.csv",
+   "filas": 1596
   }
  },
  "figura": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/figuras/fig6-estadistica-roi.png",

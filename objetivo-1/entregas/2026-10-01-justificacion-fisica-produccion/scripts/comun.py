@@ -74,7 +74,12 @@ def ruta_relativa(path: Path) -> str:
 
 def escribir_json(path: Path, data: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    def numpy_a_python(o):
+        if isinstance(o, np.generic):
+            return o.item()
+        raise TypeError(type(o).__name__)
+    path.write_text(json.dumps(data, indent=1, ensure_ascii=False, default=numpy_a_python) + "\n",
+                    encoding="utf-8")
 
 
 def entorno() -> dict:

@@ -1,0 +1,3006 @@
+{
+ "corridas": {
+  "r00-produccion": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r00-produccion",
+   "exit": 0,
+   "eventos": 2000000,
+   "registrados": 1473703,
+   "eficiencia": 0.7368515,
+   "sigma": 0.0003113690470709557,
+   "ekin_media_gev": 21.437381042232257,
+   "semilla": 777,
+   "pared_s": 65.21224025799893,
+   "controles": null,
+   "sha256_hist": "702ebdf99397a03c9cf536e66e5b49a636bb52b73b6d954ac42af4979bc0b988",
+   "comando": "env /home/dapintoo/oe1-trabajo/angular-v1/build-az-edges-v1/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 2000000 --threads 24 --out resultados/r00-produccion"
+  },
+  "r01-parche-por-defecto": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r01-parche-por-defecto",
+   "exit": 0,
+   "eventos": 2000000,
+   "registrados": 1473703,
+   "eficiencia": 0.7368515,
+   "sigma": 0.0003113690470709557,
+   "ekin_media_gev": 21.43738104223223,
+   "semilla": 777,
+   "pared_s": 65.77679799398175,
+   "controles": null,
+   "sha256_hist": "702ebdf99397a03c9cf536e66e5b49a636bb52b73b6d954ac42af4979bc0b988",
+   "comando": "env /home/dapintoo/oe1-trabajo/controles-c1c5/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 2000000 --threads 24 --out resultados/r01-parche-por-defecto"
+  },
+  "r02-plano-1.2m": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r02-plano-1.2m",
+   "exit": 0,
+   "eventos": 2000000,
+   "registrados": 30610,
+   "eficiencia": 0.015305,
+   "sigma": 8.68065578599912e-05,
+   "ekin_media_gev": 650.6814172714074,
+   "semilla": 777,
+   "pared_s": 123.57964992994675,
+   "controles": {
+    "ecuts_gev": [
+     0.5,
+     1.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "edifice_margin_m": 50.0,
+    "inject": "legacy",
+    "margin_deg": 0.0,
+    "plane_half_m": 0.6
+   },
+   "sha256_hist": "b36878e69a7478dd9df0464719c2fafc5cacb1d32711fcfa33a89b0c0c60e089",
+   "comando": "env OE1C_PLANE_HALF_M=0.6 OE1C_ECUTS_GEV=0.5\\,1\\,2\\,3\\,5 /home/dapintoo/oe1-trabajo/controles-c1c5/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 2000000 --threads 24 --out resultados/r02-plano-1.2m"
+  },
+  "r03-plano-100m": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r03-plano-100m",
+   "exit": 0,
+   "eventos": 2000000,
+   "registrados": 1281560,
+   "eficiencia": 0.64078,
+   "sigma": 0.000339249901694901,
+   "ekin_media_gev": 24.52186702766776,
+   "semilla": 777,
+   "pared_s": 71.40022869902896,
+   "controles": {
+    "ecuts_gev": [
+     0.5,
+     1.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "edifice_margin_m": 50.0,
+    "inject": "legacy",
+    "margin_deg": 0.0,
+    "plane_half_m": 50.0
+   },
+   "sha256_hist": "6a5abc8173e167daf8cedcface8671fdc6628ed84689d6c67a3f67379ebecb22",
+   "comando": "env OE1C_PLANE_HALF_M=50 OE1C_ECUTS_GEV=0.5\\,1\\,2\\,3\\,5 /home/dapintoo/oe1-trabajo/controles-c1c5/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 2000000 --threads 24 --out resultados/r03-plano-100m"
+  },
+  "r04-plano-300m": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r04-plano-300m",
+   "exit": 0,
+   "eventos": 2000000,
+   "registrados": 1458786,
+   "eficiencia": 0.729393,
+   "sigma": 0.0003141487319336177,
+   "ekin_media_gev": 21.653062506903797,
+   "semilla": 777,
+   "pared_s": 66.10711228498258,
+   "controles": {
+    "ecuts_gev": [
+     0.5,
+     1.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "edifice_margin_m": 50.0,
+    "inject": "legacy",
+    "margin_deg": 0.0,
+    "plane_half_m": 150.0
+   },
+   "sha256_hist": "ce57615c8f3cde122fbb962246523a095bf240997b7457c46cf5344492e5b798",
+   "comando": "env OE1C_PLANE_HALF_M=150 OE1C_ECUTS_GEV=0.5\\,1\\,2\\,3\\,5 /home/dapintoo/oe1-trabajo/controles-c1c5/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 2000000 --threads 24 --out resultados/r04-plano-300m"
+  },
+  "r05-plano-600m": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r05-plano-600m",
+   "exit": 0,
+   "eventos": 2000000,
+   "registrados": 1473703,
+   "eficiencia": 0.7368515,
+   "sigma": 0.0003113690470709557,
+   "ekin_media_gev": 21.43738104223224,
+   "semilla": 777,
+   "pared_s": 65.05252699297853,
+   "controles": {
+    "ecuts_gev": [
+     0.5,
+     1.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "edifice_margin_m": 50.0,
+    "inject": "legacy",
+    "margin_deg": 0.0,
+    "plane_half_m": 300.0
+   },
+   "sha256_hist": "702ebdf99397a03c9cf536e66e5b49a636bb52b73b6d954ac42af4979bc0b988",
+   "comando": "env OE1C_PLANE_HALF_M=300 OE1C_ECUTS_GEV=0.5\\,1\\,2\\,3\\,5 /home/dapintoo/oe1-trabajo/controles-c1c5/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 2000000 --threads 24 --out resultados/r05-plano-600m"
+  },
+  "r06-plano-1200m": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r06-plano-1200m",
+   "exit": 0,
+   "eventos": 2000000,
+   "registrados": 1474456,
+   "eficiencia": 0.737228,
+   "sigma": 0.00031122570267894003,
+   "ekin_media_gev": 21.426560445464293,
+   "semilla": 777,
+   "pared_s": 65.74688701698324,
+   "controles": {
+    "ecuts_gev": [
+     0.5,
+     1.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "edifice_margin_m": 50.0,
+    "inject": "legacy",
+    "margin_deg": 0.0,
+    "plane_half_m": 600.0
+   },
+   "sha256_hist": "8b39cc32c618dcea3c355033e3e6d7e40253976e7245fef3a91a1cf58fc954ad",
+   "comando": "env OE1C_PLANE_HALF_M=600 OE1C_ECUTS_GEV=0.5\\,1\\,2\\,3\\,5 /home/dapintoo/oe1-trabajo/controles-c1c5/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 2000000 --threads 24 --out resultados/r06-plano-1200m"
+  },
+  "r07-edificio-100m": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r07-edificio-100m",
+   "exit": 0,
+   "eventos": 2000000,
+   "registrados": 1765749,
+   "eficiencia": 0.8828745,
+   "sigma": 0.00022738416529053862,
+   "ekin_media_gev": 18.596947119997132,
+   "semilla": 777,
+   "pared_s": 33.17066528799478,
+   "controles": {
+    "ecuts_gev": [
+     0.5,
+     1.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "edifice_margin_m": 50.0,
+    "inject": "edifice",
+    "margin_deg": 0.0,
+    "plane_half_m": 50.0
+   },
+   "sha256_hist": "84dd1e5b76626d380bbee31ba73f1f4fa1149cba375634a82be8ff086bfa34c2",
+   "comando": "env OE1C_INJECT=edifice OE1C_PLANE_HALF_M=50 OE1C_ECUTS_GEV=0.5\\,1\\,2\\,3\\,5 /home/dapintoo/oe1-trabajo/controles-c1c5/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 2000000 --threads 24 --out resultados/r07-edificio-100m"
+  },
+  "r08-edificio-600m": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r08-edificio-600m",
+   "exit": 0,
+   "eventos": 2000000,
+   "registrados": 1770305,
+   "eficiencia": 0.8851525,
+   "sigma": 0.00022545238049724602,
+   "ekin_media_gev": 18.55033024774054,
+   "semilla": 777,
+   "pared_s": 32.845296347979456,
+   "controles": {
+    "ecuts_gev": [
+     0.5,
+     1.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "edifice_margin_m": 50.0,
+    "inject": "edifice",
+    "margin_deg": 0.0,
+    "plane_half_m": 300.0
+   },
+   "sha256_hist": "27aa50ecbfcbe45e7e4665d564c482d1e4fb44c1760d63d9383abd2b21ea5cfe",
+   "comando": "env OE1C_INJECT=edifice OE1C_PLANE_HALF_M=300 OE1C_ECUTS_GEV=0.5\\,1\\,2\\,3\\,5 /home/dapintoo/oe1-trabajo/controles-c1c5/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 2000000 --threads 24 --out resultados/r08-edificio-600m"
+  },
+  "r09-margen-2deg": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r09-margen-2deg",
+   "exit": 0,
+   "eventos": 2000000,
+   "registrados": 1287103,
+   "eficiencia": 0.6435515,
+   "sigma": 0.0003386686927129152,
+   "ekin_media_gev": 20.875393470667902,
+   "semilla": 777,
+   "pared_s": 66.98714226903394,
+   "controles": {
+    "ecuts_gev": [
+     0.5,
+     1.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "edifice_margin_m": 50.0,
+    "inject": "legacy",
+    "margin_deg": 2.0,
+    "plane_half_m": 300.0
+   },
+   "sha256_hist": "58d7127bba059fc0de8c296526345966b1e1c7e751259c842711171f03314f07",
+   "comando": "env OE1C_MARGIN_DEG=2 OE1C_PLANE_HALF_M=300 OE1C_ECUTS_GEV=0.5\\,1\\,2\\,3\\,5 /home/dapintoo/oe1-trabajo/controles-c1c5/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 2000000 --threads 24 --out resultados/r09-margen-2deg"
+  },
+  "r10-margen-5deg": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30621/resultados/r10-margen-5deg",
+   "exit": 0,
+   "eventos": 2000000,
+   "registrados": 1043809,
+   "eficiencia": 0.5219045,
+   "sigma": 0.00035321395278198597,
+   "ekin_media_gev": 20.72855308423082,
+   "semilla": 777,
+   "pared_s": 68.33044666500064,
+   "controles": {
+    "ecuts_gev": [
+     0.5,
+     1.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "edifice_margin_m": 50.0,
+    "inject": "legacy",
+    "margin_deg": 5.0,
+    "plane_half_m": 300.0
+   },
+   "sha256_hist": "d1e3786bb191f9fb392b5a2578b8dc1e36186794b1459805917a54d350e57544",
+   "comando": "env OE1C_MARGIN_DEG=5 OE1C_PLANE_HALF_M=300 OE1C_ECUTS_GEV=0.5\\,1\\,2\\,3\\,5 /home/dapintoo/oe1-trabajo/controles-c1c5/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 2000000 --threads 24 --out resultados/r10-margen-5deg"
+  },
+  "a00-parche-v2-por-defecto": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a00-parche-v2-por-defecto",
+   "exit": 0,
+   "eventos": 2000000,
+   "registrados": 1473703,
+   "eficiencia": 0.7368515,
+   "sigma": 0.0003113690470709557,
+   "ekin_media_gev": 21.437381042232186,
+   "semilla": 777,
+   "pared_s": 64.63748521101661,
+   "controles": null,
+   "sha256_hist": "702ebdf99397a03c9cf536e66e5b49a636bb52b73b6d954ac42af4979bc0b988",
+   "comando": "env /home/dapintoo/oe1-trabajo/controles-c1c5-v2/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 2000000 --threads 24 --out resultados/a00-parche-v2-por-defecto"
+  },
+  "a01-anidado-actual": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a01-anidado-actual",
+   "exit": 0,
+   "eventos": 20000000,
+   "registrados": 14736843,
+   "eficiencia": 0.73684215,
+   "sigma": 9.846466269260702e-05,
+   "ekin_media_gev": 21.53712358797008,
+   "semilla": 777,
+   "pared_s": 662.933482554974,
+   "controles": {
+    "ecuts_gev": [
+     0.5,
+     1.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "edifice_margin_m": 50.0,
+    "inject": "legacy",
+    "margin_deg": 0.0,
+    "plane_half_m": 600.0,
+    "subplanes_half_m": [
+     0.6,
+     50.0,
+     150.0,
+     300.0
+    ]
+   },
+   "sha256_hist": "c4e8168688c1aa7078e45a1b7c75be78915c13b1d0f788d3209e301b414996b8",
+   "comando": "env OE1C_PLANE_HALF_M=600 OE1C_SUBPLANES_M=0.6\\,50\\,150\\,300 OE1C_ECUTS_GEV=0.5\\,1\\,2\\,3\\,5 /home/dapintoo/oe1-trabajo/controles-c1c5-v2/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 20000000 --threads 24 --out resultados/a01-anidado-actual"
+  },
+  "a02-anidado-edificio": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30622/resultados/a02-anidado-edificio",
+   "exit": 0,
+   "eventos": 20000000,
+   "registrados": 17702498,
+   "eficiencia": 0.8851249,
+   "sigma": 7.130175713122013e-05,
+   "ekin_media_gev": 18.62727871939266,
+   "semilla": 777,
+   "pared_s": 330.1860838169814,
+   "controles": {
+    "ecuts_gev": [
+     0.5,
+     1.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "edifice_margin_m": 50.0,
+    "inject": "edifice",
+    "margin_deg": 0.0,
+    "plane_half_m": 600.0,
+    "subplanes_half_m": [
+     0.6,
+     50.0,
+     150.0,
+     300.0
+    ]
+   },
+   "sha256_hist": "e0c9a394bf8bca51b0d055e5bcafa5ed0cff96c7643f1c197e42d8ce18f93e3e",
+   "comando": "env OE1C_INJECT=edifice OE1C_PLANE_HALF_M=600 OE1C_SUBPLANES_M=0.6\\,50\\,150\\,300 OE1C_ECUTS_GEV=0.5\\,1\\,2\\,3\\,5 /home/dapintoo/oe1-trabajo/controles-c1c5-v2/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 20000000 --threads 24 --out resultados/a02-anidado-edificio"
+  },
+  "m01-edificio-margen-2deg": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m01-edificio-margen-2deg",
+   "exit": 0,
+   "eventos": 2000000,
+   "registrados": 1532338,
+   "eficiencia": 0.766169,
+   "sigma": 0.0002992942226630845,
+   "ekin_media_gev": 18.213342904637532,
+   "semilla": 777,
+   "pared_s": 31.83704754797509,
+   "controles": {
+    "ecuts_gev": [
+     0.5,
+     1.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "edifice_margin_m": 50.0,
+    "inject": "edifice",
+    "margin_deg": 2.0,
+    "plane_half_m": 300.0
+   },
+   "sha256_hist": "8c0f4b45a043b59f359be599b0101364938f9dde0ab36571b9f89f4dcabf7fee",
+   "comando": "env OE1C_INJECT=edifice OE1C_MARGIN_DEG=2 OE1C_PLANE_HALF_M=300 OE1C_ECUTS_GEV=0.5\\,1\\,2\\,3\\,5 /home/dapintoo/oe1-trabajo/controles-c1c5/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 2000000 --threads 24 --out resultados/m01-edificio-margen-2deg"
+  },
+  "m02-edificio-margen-5deg": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30625/resultados/m02-edificio-margen-5deg",
+   "exit": 0,
+   "eventos": 2000000,
+   "registrados": 1235873,
+   "eficiencia": 0.6179365,
+   "sigma": 0.00034357748905287,
+   "ekin_media_gev": 18.17654242706894,
+   "semilla": 777,
+   "pared_s": 30.742201180022676,
+   "controles": {
+    "ecuts_gev": [
+     0.5,
+     1.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "edifice_margin_m": 50.0,
+    "inject": "edifice",
+    "margin_deg": 5.0,
+    "plane_half_m": 300.0
+   },
+   "sha256_hist": "bf60167c767e1bb87d2971bbde097e30a5aa11fe15c4be82c0be319313336111",
+   "comando": "env OE1C_INJECT=edifice OE1C_MARGIN_DEG=5 OE1C_PLANE_HALF_M=300 OE1C_ECUTS_GEV=0.5\\,1\\,2\\,3\\,5 /home/dapintoo/oe1-trabajo/controles-c1c5/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 2000000 --threads 24 --out resultados/m02-edificio-margen-5deg"
+  },
+  "c00-parche-v3-por-defecto": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c00-parche-v3-por-defecto",
+   "exit": 0,
+   "eventos": 2000000,
+   "registrados": 1473703,
+   "eficiencia": 0.7368515,
+   "sigma": 0.0003113690470709557,
+   "ekin_media_gev": 21.437381042232207,
+   "semilla": 777,
+   "pared_s": 67.0239230900188,
+   "controles": null,
+   "sha256_hist": "702ebdf99397a03c9cf536e66e5b49a636bb52b73b6d954ac42af4979bc0b988",
+   "comando": "env /home/dapintoo/oe1-trabajo/controles-c1c5-v3/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 2000000 --threads 24 --out resultados/c00-parche-v3-por-defecto"
+  },
+  "c01-anidado-cono": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c01-anidado-cono",
+   "exit": 0,
+   "eventos": 20000000,
+   "registrados": 19074904,
+   "eficiencia": 0.9537452,
+   "sigma": 4.696556902506347e-05,
+   "ekin_media_gev": 17.658336335469333,
+   "semilla": 777,
+   "pared_s": 443.7474391720025,
+   "controles": {
+    "ecuts_gev": [
+     0.5,
+     1.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "edifice_margin_m": 50.0,
+    "inject": "cone",
+    "margin_deg": 0.0,
+    "plane_half_m": 600.0,
+    "subplanes_half_m": [
+     0.6,
+     50.0,
+     150.0,
+     300.0
+    ]
+   },
+   "sha256_hist": "37ed5cf168360655ce13b4fceb8798f6dd40536061a5497c62fcdb73e5a6f76c",
+   "comando": "env OE1C_INJECT=cone OE1C_PLANE_HALF_M=600 OE1C_SUBPLANES_M=0.6\\,50\\,150\\,300 OE1C_ECUTS_GEV=0.5\\,1\\,2\\,3\\,5 /home/dapintoo/oe1-trabajo/controles-c1c5-v3/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 20000000 --threads 24 --out resultados/c01-anidado-cono"
+  },
+  "c02-cono-margen-5deg": {
+   "carpeta": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/controles-30626/resultados/c02-cono-margen-5deg",
+   "exit": 0,
+   "eventos": 2000000,
+   "registrados": 1306074,
+   "eficiencia": 0.653037,
+   "sigma": 0.00033658555868530665,
+   "ekin_media_gev": 17.529666898856128,
+   "semilla": 777,
+   "pared_s": 41.49463117599953,
+   "controles": {
+    "ecuts_gev": [
+     0.5,
+     1.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "edifice_margin_m": 50.0,
+    "inject": "cone",
+    "margin_deg": 5.0,
+    "plane_half_m": 300.0,
+    "subplanes_half_m": []
+   },
+   "sha256_hist": "a3d4f3164166403dfdbfe11db066680579f975bc5d2763f3703369322170c6d0",
+   "comando": "env OE1C_INJECT=cone OE1C_MARGIN_DEG=5 OE1C_PLANE_HALF_M=300 OE1C_ECUTS_GEV=0.5\\,1\\,2\\,3\\,5 /home/dapintoo/oe1-trabajo/controles-c1c5-v3/build-controles/muography_sim --geometry /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geometry_catalog/geometries/geo-train-01.json --view 0 --tables /home/dapintoo/oe1-trabajo/angular-v1/scripts/simulation/geant4_app/tables-az-edges-v1 --seed 777 --events 2000000 --threads 24 --out resultados/c02-cono-margen-5deg"
+  }
+ },
+ "regresion_parche_inerte": {
+  "r01-parche-por-defecto": true,
+  "a00-parche-v2-por-defecto": true,
+  "c00-parche-v3-por-defecto": true
+ },
+ "C1": [
+  {
+   "corte_gev": 0.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 10657,
+     "den": 11844,
+     "razon": 0.8997804795677136,
+     "sigma": 0.0027592766403958958
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 13950,
+     "den": 16623,
+     "razon": 0.8391987005955603,
+     "sigma": 0.002849196983414236
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 9353,
+     "den": 13772,
+     "razon": 0.6791315713040953,
+     "sigma": 0.00397779087267053
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 4284,
+     "den": 11232,
+     "razon": 0.3814102564102564,
+     "sigma": 0.004583201947566333
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 403,
+     "den": 1580,
+     "razon": 0.25506329113924053,
+     "sigma": 0.010966173785854239
+    }
+   ],
+   "cielo": {
+    "razon": 0.8696475878538117,
+    "sigma": 8.822131454305708e-05
+   },
+   "roca_total": {
+    "razon": 0.7020217616392073,
+    "sigma": 0.0019493281543382778,
+    "den": 55051
+   },
+   "conteo_roca_den_sobre_sin_corte": 1.0,
+   "modelo_cielo_razon": 0.8633063123848438,
+   "cielo_vs_modelo_pp": 0.63412754689679,
+   "cumple_roca": false,
+   "cumple": false
+  },
+  {
+   "corte_gev": 0.5,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 10395,
+     "den": 10961,
+     "razon": 0.9483623756956482,
+     "sigma": 0.0021137089961325278
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 13345,
+     "den": 14504,
+     "razon": 0.9200910093767236,
+     "sigma": 0.0022514863608141147
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 8592,
+     "den": 10438,
+     "razon": 0.8231461965893849,
+     "sigma": 0.0037345393833776498
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 3608,
+     "den": 5819,
+     "razon": 0.6200378071833649,
+     "sigma": 0.006362900030206294
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 356,
+     "den": 480,
+     "razon": 0.7416666666666667,
+     "sigma": 0.019979010977263855
+    }
+   ],
+   "cielo": {
+    "razon": 0.9097921083003386,
+    "sigma": 7.749314984112918e-05
+   },
+   "roca_total": {
+    "razon": 0.8600540258755509,
+    "sigma": 0.0016887935232195337,
+    "den": 42202
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.766598245263483,
+   "modelo_cielo_razon": 0.9095072404499212,
+   "cielo_vs_modelo_pp": 0.028486785041748064,
+   "cumple_roca": false,
+   "cumple": false
+  },
+  {
+   "corte_gev": 1.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 9754,
+     "den": 9947,
+     "razon": 0.9805971649743641,
+     "sigma": 0.0013830308041210316
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 12092,
+     "den": 12476,
+     "razon": 0.969220904135941,
+     "sigma": 0.001546328044159681
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 7148,
+     "den": 7762,
+     "razon": 0.9208966761144035,
+     "sigma": 0.0030634867048019297
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 2859,
+     "den": 3527,
+     "razon": 0.8106039126736604,
+     "sigma": 0.006597617285870088
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 353,
+     "den": 387,
+     "razon": 0.9121447028423773,
+     "sigma": 0.014389985744019939
+    }
+   ],
+   "cielo": {
+    "razon": 0.9511707739731411,
+    "sigma": 6.128079870118609e-05
+   },
+   "roca_total": {
+    "razon": 0.9444851755183437,
+    "sigma": 0.00124002727257001,
+    "den": 34099
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.6194074585384461,
+   "modelo_cielo_razon": 0.9550750064653097,
+   "cielo_vs_modelo_pp": -0.39042324921686467,
+   "cumple_roca": false,
+   "cumple": false
+  },
+  {
+   "corte_gev": 2.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 8126,
+     "den": 8161,
+     "razon": 0.9957113098884941,
+     "sigma": 0.0007233647881039783
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 9069,
+     "den": 9121,
+     "razon": 0.9942988707378577,
+     "sigma": 0.0007883474899173368
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 4439,
+     "den": 4517,
+     "razon": 0.9827319017046713,
+     "sigma": 0.001938272071259677
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 2050,
+     "den": 2168,
+     "razon": 0.9455719557195572,
+     "sigma": 0.004872243864486113
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 351,
+     "den": 358,
+     "razon": 0.9804469273743017,
+     "sigma": 0.007317757917573001
+    }
+   ],
+   "cielo": {
+    "razon": 0.9875535151271683,
+    "sigma": 3.497777125175459e-05
+   },
+   "roca_total": {
+    "razon": 0.9880781089414183,
+    "sigma": 0.0006958919117310545,
+    "den": 24325
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.44186299976385535,
+   "modelo_cielo_razon": 0.992531341112795,
+   "cielo_vs_modelo_pp": -0.49778259856266827,
+   "cumple_roca": false,
+   "cumple": false
+  },
+  {
+   "corte_gev": 3.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 6837,
+     "den": 6845,
+     "razon": 0.9988312636961285,
+     "sigma": 0.00041296914518593593
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 6922,
+     "den": 6938,
+     "razon": 0.997693859901989,
+     "sigma": 0.0005758698555192187
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 2992,
+     "den": 3014,
+     "razon": 0.9927007299270073,
+     "sigma": 0.00155051960909663
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 1788,
+     "den": 1837,
+     "razon": 0.9733260751224823,
+     "sigma": 0.003759395894290579
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 347,
+     "den": 350,
+     "razon": 0.9914285714285714,
+     "sigma": 0.004927462164433551
+    }
+   ],
+   "cielo": {
+    "razon": 0.9964715463176564,
+    "sigma": 2.0605196768511763e-05
+   },
+   "roca_total": {
+    "razon": 0.9948377581120944,
+    "sigma": 0.0005201174716271729,
+    "den": 18984
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.34484387204592104,
+   "modelo_cielo_razon": 0.9990624058918816,
+   "cielo_vs_modelo_pp": -0.2590859574225113,
+   "cumple_roca": false,
+   "cumple": false
+  },
+  {
+   "corte_gev": 5.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 5071,
+     "den": 5072,
+     "razon": 0.9998028391167192,
+     "sigma": 0.0001971414461157268
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 4375,
+     "den": 4381,
+     "razon": 0.9986304496690254,
+     "sigma": 0.0005587335809956283
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 1904,
+     "den": 1907,
+     "razon": 0.9984268484530676,
+     "sigma": 0.0009075447730111197
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 1632,
+     "den": 1638,
+     "razon": 0.9963369963369964,
+     "sigma": 0.0014926736153898059
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 343,
+     "den": 343,
+     "razon": 1.0,
+     "sigma": 0.0
+    }
+   ],
+   "cielo": {
+    "razon": 0.9994373548233141,
+    "sigma": 9.731373715390601e-06
+   },
+   "roca_total": {
+    "razon": 0.998800689603478,
+    "sigma": 0.0002996477520127913,
+    "den": 13341
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.24233892209042524,
+   "modelo_cielo_razon": 0.9999914063926826,
+   "cielo_vs_modelo_pp": -0.055405156936849664,
+   "cumple_roca": true,
+   "cumple": true
+  }
+ ],
+ "C1_corte_minimo_que_cumple": 5.0,
+ "C5": [
+  {
+   "corte_gev": 0.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 11844,
+     "den": 11851,
+     "razon": 0.9994093325457767,
+     "sigma": 0.00022318536967774999,
+     "sigma_independiente": 0.012985092828750754
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 16623,
+     "den": 16646,
+     "razon": 0.9986182866754776,
+     "sigma": 0.0002879080347157369,
+     "sigma_independiente": 0.010949889599967686
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 13772,
+     "den": 13823,
+     "razon": 0.9963104969977573,
+     "sigma": 0.0005156798157950049,
+     "sigma_independiente": 0.011995275974058292
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 11232,
+     "den": 11379,
+     "razon": 0.9870814658581598,
+     "sigma": 0.0010585979987472126,
+     "sigma_independiente": 0.013129019284982179
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 1580,
+     "den": 1657,
+     "razon": 0.9535304767652384,
+     "sigma": 0.0051711858147717475,
+     "sigma_independiente": 0.03352865488176758
+    }
+   ],
+   "cielo": {
+    "razon": 0.999515242214882,
+    "sigma": 5.766259164718451e-06
+   },
+   "roca_total": {
+    "razon": 0.9944902088301177,
+    "sigma": 0.0003146193828734588,
+    "den": 55356
+   },
+   "conteo_roca_den_sobre_sin_corte": 1.0,
+   "cumple_bandas_2sigma": true
+  },
+  {
+   "corte_gev": 0.5,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 10961,
+     "den": 10961,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.013507964448759341
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 14504,
+     "den": 14508,
+     "razon": 0.9997242900468707,
+     "sigma": 0.00013783597126001276,
+     "sigma_independiente": 0.011738737999485018
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 10438,
+     "den": 10443,
+     "razon": 0.999521210380159,
+     "sigma": 0.00021406996172954385,
+     "sigma_independiente": 0.013833955551030038
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 5819,
+     "den": 5831,
+     "razon": 0.9979420339564398,
+     "sigma": 0.0005934720078193513,
+     "sigma_independiente": 0.0184915186197143
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 480,
+     "den": 482,
+     "razon": 0.995850622406639,
+     "sigma": 0.0029279594593042513,
+     "sigma_independiente": 0.06421516419315129
+    }
+   ],
+   "cielo": {
+    "razon": 0.9999353940414722,
+    "sigma": 2.1740933770081396e-06
+   },
+   "roca_total": {
+    "razon": 0.9994552989934873,
+    "sigma": 0.00011354707396732694,
+    "den": 42225
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.7627899414697594,
+   "cumple_bandas_2sigma": true
+  },
+  {
+   "corte_gev": 1.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 9947,
+     "den": 9947,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.014179761913870432
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 12476,
+     "den": 12476,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.012661271301044007
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 7762,
+     "den": 7762,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.016051964057894892
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 3527,
+     "den": 3531,
+     "razon": 0.9988671764372699,
+     "sigma": 0.0005660908681487265,
+     "sigma_independiente": 0.02377918581200611
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 387,
+     "den": 387,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.07188851546895894
+    }
+   ],
+   "cielo": {
+    "razon": 0.9999840716861447,
+    "sigma": 1.134836335352823e-06
+   },
+   "roca_total": {
+    "razon": 0.9998827082661349,
+    "sigma": 5.86424274939731e-05,
+    "den": 34103
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.6160669123491582,
+   "cumple_bandas_2sigma": true
+  },
+  {
+   "corte_gev": 2.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 8161,
+     "den": 8161,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.01565464807562815
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 9121,
+     "den": 9121,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.01480791012905227
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 4517,
+     "den": 4517,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.021042142266467924
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 2168,
+     "den": 2169,
+     "razon": 0.9995389580451821,
+     "sigma": 0.00046093566272314523,
+     "sigma_independiente": 0.030355334433710367
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 358,
+     "den": 358,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.07474350927519359
+    }
+   ],
+   "cielo": {
+    "razon": 0.9999981088338263,
+    "sigma": 4.3386286535064783e-07
+   },
+   "roca_total": {
+    "razon": 0.9999588917207926,
+    "sigma": 4.110743425344618e-05,
+    "den": 24326
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.43944649179854034,
+   "cumple_bandas_2sigma": true
+  },
+  {
+   "corte_gev": 3.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 6845,
+     "den": 6845,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.017093392757666914
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 6938,
+     "den": 6938,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.01697844257437558
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 3014,
+     "den": 3014,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.025759852612848935
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 1837,
+     "den": 1837,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.03299593350177842
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 350,
+     "den": 350,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.07559289460184544
+    }
+   ],
+   "cielo": {
+    "razon": 0.9999995169812488,
+    "sigma": 2.41509317295542e-07
+   },
+   "roca_total": {
+    "razon": 1.0,
+    "sigma": 0.0,
+    "den": 18984
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.34294385432473445,
+   "cumple_bandas_2sigma": true
+  },
+  {
+   "corte_gev": 5.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 5072,
+     "den": 5072,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.01985753676973844
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 4381,
+     "den": 4381,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.02136625322773168
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 1907,
+     "den": 1907,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.03238468307633877
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 1638,
+     "den": 1638,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.03494282789073061
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 343,
+     "den": 343,
+     "razon": 1.0,
+     "sigma": 0.0,
+     "sigma_independiente": 0.07636035483212125
+    }
+   ],
+   "cielo": {
+    "razon": 0.9999996631876761,
+    "sigma": 2.3816223813822045e-07
+   },
+   "roca_total": {
+    "razon": 1.0,
+    "sigma": 0.0,
+    "den": 13341
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.24100368523737264,
+   "cumple_bandas_2sigma": true
+  }
+ ],
+ "C5_total_pp": {
+  "0": 0.03707,
+  "0.5": 0.00455,
+  "1": 0.001005,
+  "2": 0.0001,
+  "3": 2e-05,
+  "5": 1e-05
+ },
+ "serie_anidada_eficiencia": {
+  "0.6": 0.0152944,
+  "50": 0.64047515,
+  "150": 0.7289852,
+  "300": 0.73647145,
+  "600": 0.73684215
+ },
+ "C2_actual": {
+  "eficiencia_cielo_filas_20_42": {
+   "media": 0.8101899815992343,
+   "min_fila": 0.7291506219895835
+  },
+  "residuo_vs_modelo_pp": {
+   "medio": -1.0306700425052207,
+   "max_abs": 2.4116035106469536
+  },
+  "eficiencia_total": 0.73684215,
+  "cumple": false
+ },
+ "C1_edificio": [
+  {
+   "corte_gev": 0.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 10448,
+     "den": 10676,
+     "razon": 0.9786436867740727,
+     "sigma": 0.0013991721683818592
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 12556,
+     "den": 13220,
+     "razon": 0.9497730711043872,
+     "sigma": 0.0018996015289885239
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 8428,
+     "den": 9718,
+     "razon": 0.8672566371681416,
+     "sigma": 0.0034418487098154507
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 4400,
+     "den": 7013,
+     "razon": 0.6274062455439897,
+     "sigma": 0.005773514817594068
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 381,
+     "den": 834,
+     "razon": 0.4568345323741007,
+     "sigma": 0.017248944026506122
+    }
+   ],
+   "cielo": {
+    "razon": 0.9977771177696696,
+    "sigma": 1.1243340227654627e-05
+   },
+   "roca_total": {
+    "razon": 0.8734232169991076,
+    "sigma": 0.0016329372890920419,
+    "den": 41461
+   },
+   "conteo_roca_den_sobre_sin_corte": 1.0,
+   "modelo_cielo_razon": 0.9978762640462513,
+   "cielo_vs_modelo_pp": -0.009914627658169639,
+   "cumple_roca": false,
+   "cumple": false
+  },
+  {
+   "corte_gev": 0.5,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 9950,
+     "den": 10024,
+     "razon": 0.9926177174780527,
+     "sigma": 0.000854999406495166
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 11413,
+     "den": 11635,
+     "razon": 0.9809196390201976,
+     "sigma": 0.001268314082012116
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 7080,
+     "den": 7515,
+     "razon": 0.9421157684630739,
+     "sigma": 0.0026938150810314546
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 3323,
+     "den": 4161,
+     "razon": 0.7986061043018505,
+     "sigma": 0.0062171394155429785
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 342,
+     "den": 408,
+     "razon": 0.8382352941176471,
+     "sigma": 0.01823034032500657
+    }
+   ],
+   "cielo": {
+    "razon": 0.9992925495087975,
+    "sigma": 6.509478150729772e-06
+   },
+   "roca_total": {
+    "razon": 0.9515455057345227,
+    "sigma": 0.001168933937832515,
+    "den": 33743
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.8138491594510504,
+   "modelo_cielo_razon": 0.999826445055398,
+   "cielo_vs_modelo_pp": -0.0533895546600438,
+   "cumple_roca": false,
+   "cumple": false
+  },
+  {
+   "corte_gev": 1.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 9050,
+     "den": 9072,
+     "razon": 0.9975749559082893,
+     "sigma": 0.0005163938574929383
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 9651,
+     "den": 9718,
+     "razon": 0.9931055772792756,
+     "sigma": 0.0008393792270083336
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 5274,
+     "den": 5384,
+     "razon": 0.9795690936106983,
+     "sigma": 0.0019280079861005621
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 2434,
+     "den": 2736,
+     "razon": 0.8896198830409356,
+     "sigma": 0.00599086618189264
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 329,
+     "den": 345,
+     "razon": 0.9536231884057971,
+     "sigma": 0.011322160256381495
+    }
+   ],
+   "cielo": {
+    "razon": 0.9998097329957873,
+    "sigma": 3.5794222569784482e-06
+   },
+   "roca_total": {
+    "razon": 0.981031003485599,
+    "sigma": 0.0008263051346733309,
+    "den": 27255
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.6573647524179349,
+   "modelo_cielo_razon": 0.9999985994486036,
+   "cielo_vs_modelo_pp": -0.01888664528162387,
+   "cumple_roca": false,
+   "cumple": false
+  },
+  {
+   "corte_gev": 2.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 7383,
+     "den": 7394,
+     "razon": 0.9985123072761699,
+     "sigma": 0.00044822245237104657
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 6915,
+     "den": 6930,
+     "razon": 0.9978354978354979,
+     "sigma": 0.0005582668881936245
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 3158,
+     "den": 3190,
+     "razon": 0.9899686520376175,
+     "sigma": 0.001764391786512708
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 1839,
+     "den": 1922,
+     "razon": 0.9568158168574402,
+     "sigma": 0.004636602187866389
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 324,
+     "den": 328,
+     "razon": 0.9878048780487805,
+     "sigma": 0.006060266674839142
+    }
+   ],
+   "cielo": {
+    "razon": 0.9999604313089655,
+    "sigma": 1.8368940228927287e-06
+   },
+   "roca_total": {
+    "razon": 0.9926634284557782,
+    "sigma": 0.0006070300168175082,
+    "den": 19764
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.47668893659101325,
+   "modelo_cielo_razon": 0.99999999999642,
+   "cielo_vs_modelo_pp": -0.003956868745447206,
+   "cumple_roca": false,
+   "cumple": false
+  },
+  {
+   "corte_gev": 3.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 6154,
+     "den": 6155,
+     "razon": 0.9998375304630381,
+     "sigma": 0.00016245633825050178
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 5091,
+     "den": 5097,
+     "razon": 0.9988228369629194,
+     "sigma": 0.00048029185674997157
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 2281,
+     "den": 2296,
+     "razon": 0.9934668989547039,
+     "sigma": 0.0016813202611548241
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 1707,
+     "den": 1735,
+     "razon": 0.9838616714697407,
+     "sigma": 0.0030251475189703417
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 320,
+     "den": 321,
+     "razon": 0.9968847352024922,
+     "sigma": 0.0031104085750736318
+    }
+   ],
+   "cielo": {
+    "razon": 0.9999874222624475,
+    "sigma": 1.15299205995424e-06
+   },
+   "roca_total": {
+    "razon": 0.9967316072801846,
+    "sigma": 0.0004569179941453155,
+    "den": 15604
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.3763536817732327,
+   "modelo_cielo_razon": 0.9999999999999997,
+   "cielo_vs_modelo_pp": -0.0012577737552144086,
+   "cumple_roca": true,
+   "cumple": true
+  },
+  {
+   "corte_gev": 5.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 4488,
+     "den": 4488,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 3354,
+     "den": 3357,
+     "razon": 0.9991063449508489,
+     "sigma": 0.0005157213901133946
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 1652,
+     "den": 1654,
+     "razon": 0.9987908101571947,
+     "sigma": 0.000854509236642561
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 1611,
+     "den": 1619,
+     "razon": 0.9950586781964176,
+     "sigma": 0.001742699435730607
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 315,
+     "den": 315,
+     "razon": 1.0,
+     "sigma": 0.0
+    }
+   ],
+   "cielo": {
+    "razon": 0.9999968141328707,
+    "sigma": 6.952120961035924e-07
+   },
+   "roca_total": {
+    "razon": 0.9988629406105134,
+    "sigma": 0.0003151841887048469,
+    "den": 11433
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.2757531173874243,
+   "modelo_cielo_razon": 0.9999999999999994,
+   "cielo_vs_modelo_pp": -0.00031858671287743334,
+   "cumple_roca": true,
+   "cumple": true
+  }
+ ],
+ "C1_edificio_corte_minimo_que_cumple": 3.0,
+ "C2_edificio": {
+  "eficiencia_cielo_filas_20_42": {
+   "media": 0.9361534582892788,
+   "min_fila": 0.9116164858445144
+  },
+  "residuo_vs_modelo_pp": {
+   "medio": -0.7962494450062564,
+   "max_abs": 2.506040524403075
+  },
+  "eficiencia_total": 0.8851249,
+  "cumple": false,
+  "camino_aire_m": {
+   "2.0": 1708.2400044826497,
+   "11.0": 1739.1344249325864,
+   "20.0": 1192.7426735064746,
+   "29.0": 841.7423924320933,
+   "38.0": 663.0521444587665,
+   "47.0": 558.3226731437875
+  }
+ },
+ "C1_cono": [
+  {
+   "corte_gev": 0.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 3425,
+     "den": 3431,
+     "razon": 0.9982512387059166,
+     "sigma": 0.000713304290052189
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 1784,
+     "den": 1800,
+     "razon": 0.9911111111111112,
+     "sigma": 0.002212323633047116
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 1753,
+     "den": 1809,
+     "razon": 0.9690436705362079,
+     "sigma": 0.0040721814502010685
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 1881,
+     "den": 2206,
+     "razon": 0.8526745240253853,
+     "sigma": 0.007546191395664074
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 336,
+     "den": 464,
+     "razon": 0.7241379310344828,
+     "sigma": 0.020749023028079842
+    }
+   ],
+   "cielo": {
+    "razon": 0.9999960898111204,
+    "sigma": 4.545493356025609e-07
+   },
+   "roca_total": {
+    "razon": 0.9453141091658085,
+    "sigma": 0.00230736393740469,
+    "den": 9710
+   },
+   "conteo_roca_den_sobre_sin_corte": 1.0,
+   "modelo_cielo_razon": 0.9999999999999992,
+   "cielo_vs_modelo_pp": -0.00039101888787973493,
+   "cumple_roca": false,
+   "cumple": false
+  },
+  {
+   "corte_gev": 0.5,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 3394,
+     "den": 3400,
+     "razon": 0.9982352941176471,
+     "sigma": 0.0007198021982178976
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 1777,
+     "den": 1788,
+     "razon": 0.993847874720358,
+     "sigma": 0.00184922086413559
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 1747,
+     "den": 1791,
+     "razon": 0.9754327191513121,
+     "sigma": 0.0036578796462757635
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 1867,
+     "den": 2092,
+     "razon": 0.8924474187380497,
+     "sigma": 0.0067736210708874405
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 335,
+     "den": 379,
+     "razon": 0.8839050131926122,
+     "sigma": 0.016454698412806366
+    }
+   ],
+   "cielo": {
+    "razon": 0.9999974051389061,
+    "sigma": 3.74535451828289e-07
+   },
+   "roca_total": {
+    "razon": 0.9650793650793651,
+    "sigma": 0.0018884551559178366,
+    "den": 9450
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.9732234809474768,
+   "modelo_cielo_razon": 0.9999999999999997,
+   "cielo_vs_modelo_pp": -0.00025948610935522254,
+   "cumple_roca": false,
+   "cumple": false
+  },
+  {
+   "corte_gev": 1.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 3229,
+     "den": 3233,
+     "razon": 0.9987627590473245,
+     "sigma": 0.0006182376666004014
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 1757,
+     "den": 1763,
+     "razon": 0.996596710153148,
+     "sigma": 0.001387021003167449
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 1737,
+     "den": 1773,
+     "razon": 0.9796954314720813,
+     "sigma": 0.003349562271981604
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 1836,
+     "den": 1968,
+     "razon": 0.9329268292682927,
+     "sigma": 0.005638786650340676
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 333,
+     "den": 350,
+     "razon": 0.9514285714285714,
+     "sigma": 0.011490647737301
+    }
+   ],
+   "cielo": {
+    "razon": 0.9999982806341562,
+    "sigma": 3.2492932319917897e-07
+   },
+   "roca_total": {
+    "razon": 0.9785407725321889,
+    "sigma": 0.0015201492886661742,
+    "den": 9087
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.9358393408856849,
+   "modelo_cielo_razon": 0.9999999999999993,
+   "cielo_vs_modelo_pp": -0.00017193658431446934,
+   "cumple_roca": false,
+   "cumple": false
+  },
+  {
+   "corte_gev": 2.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 2960,
+     "den": 2962,
+     "razon": 0.9993247805536799,
+     "sigma": 0.0004772910295409775
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 1736,
+     "den": 1738,
+     "razon": 0.998849252013809,
+     "sigma": 0.0008132333869058704
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 1670,
+     "den": 1687,
+     "razon": 0.989922940130409,
+     "sigma": 0.002431700434459269
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 1757,
+     "den": 1811,
+     "razon": 0.9701822197680839,
+     "sigma": 0.003996732528924362
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 333,
+     "den": 338,
+     "razon": 0.985207100591716,
+     "sigma": 0.006566471573169546
+    }
+   ],
+   "cielo": {
+    "razon": 0.999998738126062,
+    "sigma": 3.1546828546078505e-07
+   },
+   "roca_total": {
+    "razon": 0.9906279287722587,
+    "sigma": 0.0010429076929559231,
+    "den": 8536
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.8790937178166839,
+   "modelo_cielo_razon": 0.9999999999999993,
+   "cielo_vs_modelo_pp": -0.00012618739373415622,
+   "cumple_roca": false,
+   "cumple": false
+  },
+  {
+   "corte_gev": 3.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 2725,
+     "den": 2726,
+     "razon": 0.9996331621423331,
+     "sigma": 0.0003667705664881881
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 1705,
+     "den": 1707,
+     "razon": 0.9988283538371412,
+     "sigma": 0.0008279934625734447
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 1610,
+     "den": 1620,
+     "razon": 0.9938271604938271,
+     "sigma": 0.001945989157628414
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 1703,
+     "den": 1721,
+     "razon": 0.989540964555491,
+     "sigma": 0.0024522925063995412
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 330,
+     "den": 333,
+     "razon": 0.990990990990991,
+     "sigma": 0.005177871246728869
+    }
+   ],
+   "cielo": {
+    "razon": 0.9999994075632256,
+    "sigma": 2.4186122871760105e-07
+   },
+   "roca_total": {
+    "razon": 0.9958060934994449,
+    "sigma": 0.0007177392148014179,
+    "den": 8107
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.8349124613800206,
+   "modelo_cielo_razon": 0.9999999999999994,
+   "cielo_vs_modelo_pp": -5.9243677386078275e-05,
+   "cumple_roca": true,
+   "cumple": true
+  },
+  {
+   "corte_gev": 5.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 2338,
+     "den": 2338,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 1622,
+     "den": 1622,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 1504,
+     "den": 1506,
+     "razon": 0.99867197875166,
+     "sigma": 0.0009384290820485488
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 1624,
+     "den": 1628,
+     "razon": 0.9975429975429976,
+     "sigma": 0.0012269910850557677
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 326,
+     "den": 326,
+     "razon": 1.0,
+     "sigma": 0.0
+    }
+   ],
+   "cielo": {
+    "razon": 0.999999568742763,
+    "sigma": 2.489864282029144e-07
+   },
+   "roca_total": {
+    "razon": 0.9991913746630727,
+    "sigma": 0.00032998641277095554,
+    "den": 7420
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.7641606591143152,
+   "modelo_cielo_razon": 0.9999999999999992,
+   "cielo_vs_modelo_pp": -4.312572362552558e-05,
+   "cumple_roca": true,
+   "cumple": true
+  }
+ ],
+ "C1_cono_corte_minimo_que_cumple": 3.0,
+ "C2_cono": {
+  "eficiencia_cielo_filas_20_42": {
+   "media": 0.9997355840646746,
+   "min_fila": 0.996892859816816
+  },
+  "residuo_vs_modelo_pp": {
+   "medio": -0.019724868870317176,
+   "max_abs": 0.36111985419693404
+  },
+  "eficiencia_total": 0.9537452,
+  "cumple": true
+ },
+ "C5_cono": [
+  {
+   "corte_gev": 0.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 3431,
+     "den": 3431,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 1800,
+     "den": 1800,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 1809,
+     "den": 1809,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 2206,
+     "den": 2206,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 464,
+     "den": 464,
+     "razon": 1.0,
+     "sigma": 0.0
+    }
+   ],
+   "cielo": {
+    "razon": 1.0,
+    "sigma": 0.0
+   },
+   "roca_total": {
+    "razon": 1.0,
+    "sigma": 0.0,
+    "den": 9710
+   },
+   "conteo_roca_den_sobre_sin_corte": 1.0
+  },
+  {
+   "corte_gev": 0.5,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 3400,
+     "den": 3400,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 1788,
+     "den": 1788,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 1791,
+     "den": 1791,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 2092,
+     "den": 2092,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 379,
+     "den": 379,
+     "razon": 1.0,
+     "sigma": 0.0
+    }
+   ],
+   "cielo": {
+    "razon": 1.0,
+    "sigma": 0.0
+   },
+   "roca_total": {
+    "razon": 1.0,
+    "sigma": 0.0,
+    "den": 9450
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.9732234809474768
+  },
+  {
+   "corte_gev": 1.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 3233,
+     "den": 3233,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 1763,
+     "den": 1763,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 1773,
+     "den": 1773,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 1968,
+     "den": 1968,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 350,
+     "den": 350,
+     "razon": 1.0,
+     "sigma": 0.0
+    }
+   ],
+   "cielo": {
+    "razon": 1.0,
+    "sigma": 0.0
+   },
+   "roca_total": {
+    "razon": 1.0,
+    "sigma": 0.0,
+    "den": 9087
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.9358393408856849
+  },
+  {
+   "corte_gev": 2.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 2962,
+     "den": 2962,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 1738,
+     "den": 1738,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 1687,
+     "den": 1687,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 1811,
+     "den": 1811,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 338,
+     "den": 338,
+     "razon": 1.0,
+     "sigma": 0.0
+    }
+   ],
+   "cielo": {
+    "razon": 1.0,
+    "sigma": 0.0
+   },
+   "roca_total": {
+    "razon": 1.0,
+    "sigma": 0.0,
+    "den": 8536
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.8790937178166839
+  },
+  {
+   "corte_gev": 3.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 2726,
+     "den": 2726,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 1707,
+     "den": 1707,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 1620,
+     "den": 1620,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 1721,
+     "den": 1721,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 333,
+     "den": 333,
+     "razon": 1.0,
+     "sigma": 0.0
+    }
+   ],
+   "cielo": {
+    "razon": 1.0,
+    "sigma": 0.0
+   },
+   "roca_total": {
+    "razon": 1.0,
+    "sigma": 0.0,
+    "den": 8107
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.8349124613800206
+  },
+  {
+   "corte_gev": 5.0,
+   "bandas": [
+    {
+     "banda": [
+      10000.0,
+      30000.0
+     ],
+     "num": 2338,
+     "den": 2338,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      30000.0,
+      60000.0
+     ],
+     "num": 1622,
+     "den": 1622,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      60000.0,
+      100000.0
+     ],
+     "num": 1506,
+     "den": 1506,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      100000.0,
+      200000.0
+     ],
+     "num": 1628,
+     "den": 1628,
+     "razon": 1.0,
+     "sigma": 0.0
+    },
+    {
+     "banda": [
+      200000.0,
+      10000000.0
+     ],
+     "num": 326,
+     "den": 326,
+     "razon": 1.0,
+     "sigma": 0.0
+    }
+   ],
+   "cielo": {
+    "razon": 1.0,
+    "sigma": 0.0
+   },
+   "roca_total": {
+    "razon": 1.0,
+    "sigma": 0.0,
+    "den": 7420
+   },
+   "conteo_roca_den_sobre_sin_corte": 0.7641606591143152
+  }
+ ],
+ "roca_vs_csda_cono_600m": [
+  {
+   "banda": [
+    10000.0,
+    30000.0
+   ],
+   "corte_0": 0.9018506922176045,
+   "corte_3": 0.716538906145494
+  },
+  {
+   "banda": [
+    30000.0,
+    60000.0
+   ],
+   "corte_0": 0.6024746863260323,
+   "corte_3": 0.5713468275325206
+  },
+  {
+   "banda": [
+    60000.0,
+    100000.0
+   ],
+   "corte_0": 0.8953158641300957,
+   "corte_3": 0.8017754007135185
+  },
+  {
+   "banda": [
+    100000.0,
+    200000.0
+   ],
+   "corte_0": 1.0936108572781122,
+   "corte_3": 0.853175106697929
+  },
+  {
+   "banda": [
+    200000.0,
+    10000000.0
+   ],
+   "corte_0": 0.9551794655859109,
+   "corte_3": 0.6855059526726472
+  }
+ ],
+ "roca_vs_csda_actual_600m": [
+  {
+   "banda": [
+    10000.0,
+    30000.0
+   ],
+   "corte_0": 3.1132380060114566,
+   "corte_3": 1.7992328732816971
+  },
+  {
+   "banda": [
+    30000.0,
+    60000.0
+   ],
+   "corte_0": 5.563853728220908,
+   "corte_3": 2.3222052076277846
+  },
+  {
+   "banda": [
+    60000.0,
+    100000.0
+   ],
+   "corte_0": 6.816080752238627,
+   "corte_3": 1.4916981837966325
+  },
+  {
+   "banda": [
+    100000.0,
+    200000.0
+   ],
+   "corte_0": 5.568194537147669,
+   "corte_3": 0.9106813893109212
+  },
+  {
+   "banda": [
+    200000.0,
+    10000000.0
+   ],
+   "corte_0": 3.2525507664347826,
+   "corte_3": 0.720501752058338
+  }
+ ],
+ "C5_cono_total_pp": {
+  "0": 0.0,
+  "0.5": 0.0,
+  "1": 0.0,
+  "2": 0.0,
+  "3": 0.0,
+  "5": 0.0
+ },
+ "C4": {
+  "r05-plano-600m": {
+   "margen_deg": 0,
+   "inyeccion": "actual",
+   "filas_superiores_desviacion_pp": [
+    -12.495350168604203,
+    -15.492491943572627,
+    -18.63826086111311,
+    -22.969638885096305,
+    -30.385200420480064
+   ],
+   "columnas_borde_desviacion_pp": [
+    -31.51924635015686,
+    -21.421750341776725,
+    -17.02978843964632,
+    -14.223202800162504,
+    -13.391202281196367,
+    -6.17724539175728,
+    -12.096138189334326,
+    -15.829552227802445,
+    -22.469639906322126,
+    -30.7086418674237
+   ],
+   "max_abs_pp": 31.51924635015686,
+   "sigma_fila_pp": 0.38316056086247996,
+   "sigma_columna_pp": 0.7034007733098561,
+   "dispersion_empirica_columnas_interiores_pp": 1.8340866014441852,
+   "dispersion_empirica_filas_30_42_pp": 1.2354631604400415,
+   "media_desviacion_bordes_pp": -18.989823338296326,
+   "cumple": false
+  },
+  "r09-margen-2deg": {
+   "margen_deg": 2,
+   "inyeccion": "actual",
+   "filas_superiores_desviacion_pp": [
+    -4.176998144938871,
+    -2.7584947476570143,
+    -3.119396714138589,
+    -5.316345474323658,
+    -4.1161551245998185
+   ],
+   "columnas_borde_desviacion_pp": [
+    -4.044321188698641,
+    -3.4111746734837967,
+    -3.88085016059031,
+    -2.9867068474155656,
+    -0.7771823817475987,
+    -2.334096248710993,
+    -2.9141345247683414,
+    -3.588944449590381,
+    -5.281940020120168,
+    -3.9584813412608555
+   ],
+   "max_abs_pp": 5.316345474323658,
+   "sigma_fila_pp": 0.3920012190878233,
+   "sigma_columna_pp": 0.7603620581482754,
+   "dispersion_empirica_columnas_interiores_pp": 1.9684578570703901,
+   "dispersion_empirica_filas_30_42_pp": 1.1285675802720185,
+   "media_desviacion_bordes_pp": -3.5110148028029733,
+   "cumple": false
+  },
+  "r10-margen-5deg": {
+   "margen_deg": 5,
+   "inyeccion": "actual",
+   "filas_superiores_desviacion_pp": [
+    -0.69302059483346,
+    -1.4939566629893042,
+    -2.2745651393513255,
+    -1.5943575376187402,
+    -0.9977002373157018
+   ],
+   "columnas_borde_desviacion_pp": [
+    -2.4437022703637568,
+    -4.124016949426867,
+    -0.5196862337292774,
+    -0.05657641389061885,
+    1.1585496854745192,
+    -0.42604071751398687,
+    -1.1886321323010596,
+    -0.8375650314064065,
+    -2.08328274210563,
+    -0.13232837027529198
+   ],
+   "max_abs_pp": 4.124016949426867,
+   "sigma_fila_pp": 0.4269093293635454,
+   "sigma_columna_pp": 0.8437675028925274,
+   "dispersion_empirica_columnas_interiores_pp": 2.2841477559428207,
+   "dispersion_empirica_filas_30_42_pp": 1.2316960007070477,
+   "media_desviacion_bordes_pp": -1.180458756509794,
+   "cumple": false
+  },
+  "r08-edificio-600m": {
+   "margen_deg": 0,
+   "inyeccion": "edificio",
+   "filas_superiores_desviacion_pp": [
+    -8.614202409016924,
+    -12.35235364526499,
+    -14.709760940702532,
+    -20.808422026227703,
+    -35.56461386540604
+   ],
+   "columnas_borde_desviacion_pp": [
+    -35.60192971373933,
+    -19.05755173934821,
+    -14.23338597677455,
+    -8.056179081551985,
+    -9.09830161354035,
+    -2.9782347185614344,
+    -7.792034588693353,
+    -13.950939655442562,
+    -20.32416328906902,
+    -34.94079669135887
+   ],
+   "max_abs_pp": 35.60192971373933,
+   "sigma_fila_pp": 0.31134941547445727,
+   "sigma_columna_pp": 0.3917243346495028,
+   "dispersion_empirica_columnas_interiores_pp": 1.7990683582712725,
+   "dispersion_empirica_filas_30_42_pp": 1.1986831536658853,
+   "media_desviacion_bordes_pp": -17.205524663646525,
+   "cumple": false
+  },
+  "m01-edificio-margen-2deg": {
+   "margen_deg": 2,
+   "inyeccion": "edificio",
+   "filas_superiores_desviacion_pp": [
+    -1.7016579235361595,
+    1.0700332398067114,
+    -0.184216746982524,
+    -1.4713734654735022,
+    -1.7568749888800084
+   ],
+   "columnas_borde_desviacion_pp": [
+    -0.6672657572649232,
+    -4.688625161912785,
+    0.4720849611013378,
+    -1.5031365428261112,
+    0.9269241279541651,
+    -3.645205437914123,
+    -1.4152507942991943,
+    -0.6390518776416276,
+    -4.472766748684965,
+    -2.9050494512341873
+   ],
+   "max_abs_pp": 4.688625161912785,
+   "sigma_fila_pp": 0.20632312387439555,
+   "sigma_columna_pp": 0.4180945916499151,
+   "dispersion_empirica_columnas_interiores_pp": 2.0283118424292064,
+   "dispersion_empirica_filas_30_42_pp": 1.3171619227147957,
+   "media_desviacion_bordes_pp": -1.5054288378525265,
+   "cumple": false
+  },
+  "m02-edificio-margen-5deg": {
+   "margen_deg": 5,
+   "inyeccion": "edificio",
+   "filas_superiores_desviacion_pp": [
+    -1.1149348141308302,
+    -0.8121678618937533,
+    -0.9617462636672736,
+    -0.02057837677378327,
+    -2.749176684760013
+   ],
+   "columnas_borde_desviacion_pp": [
+    -1.8578605227207001,
+    -4.2483486328583675,
+    -0.45121599843497284,
+    2.1549414967527936,
+    1.5551686503435747,
+    -0.542416555885572,
+    0.5687043261665914,
+    -0.9684612894287681,
+    1.059097988372426,
+    0.3931753728051657
+   ],
+   "max_abs_pp": 4.2483486328583675,
+   "sigma_fila_pp": 0.21813721021403482,
+   "sigma_columna_pp": 0.4527069634407105,
+   "dispersion_empirica_columnas_interiores_pp": 2.3702089774375197,
+   "dispersion_empirica_filas_30_42_pp": 1.2778619868285868,
+   "media_desviacion_bordes_pp": -0.5330546110742321,
+   "cumple": false
+  },
+  "c01-anidado-cono": {
+   "margen_deg": 0,
+   "inyeccion": "cono",
+   "filas_superiores_desviacion_pp": [
+    -0.05525033713172922,
+    0.13985053478395848,
+    -0.19448529015897442,
+    0.10839820502076547,
+    -4.1946228989075856
+   ],
+   "columnas_borde_desviacion_pp": [
+    -3.3157289385145505,
+    -0.18828414509134417,
+    0.10790524527949374,
+    0.004992425762484487,
+    -0.34487176747765025,
+    -0.3123353540374296,
+    0.11659392886024245,
+    -0.22508977797104368,
+    -0.081999588747661,
+    -3.4288674470838387
+   ],
+   "max_abs_pp": 4.1946228989075856,
+   "sigma_fila_pp": 0.007568846127635385,
+   "sigma_columna_pp": 0.008227333703102418,
+   "dispersion_empirica_columnas_interiores_pp": 0.1957290296291428,
+   "dispersion_empirica_filas_30_42_pp": 0.11077617453158854,
+   "media_desviacion_bordes_pp": -0.7909196803609908,
+   "cumple": false
+  },
+  "c02-cono-margen-5deg": {
+   "margen_deg": 5,
+   "inyeccion": "cono",
+   "filas_superiores_desviacion_pp": [
+    0.11287304847649171,
+    -0.31033551163608397,
+    0.3483198571750057,
+    -0.028814172215152478,
+    -0.5953960938552605
+   ],
+   "columnas_borde_desviacion_pp": [
+    0.026226155281960928,
+    -1.48691527150151,
+    0.2814186039457267,
+    0.9158763536231129,
+    0.2843602490159691,
+    -0.016327036207397505,
+    0.7205606967791711,
+    -1.654294276862589,
+    0.8387392314283426,
+    -0.453963797695367
+   ],
+   "max_abs_pp": 1.654294276862589,
+   "sigma_fila_pp": 0.012414093627311718,
+   "sigma_columna_pp": 0.0,
+   "dispersion_empirica_columnas_interiores_pp": 0.7511533524071246,
+   "dispersion_empirica_filas_30_42_pp": 0.45475201175987834,
+   "media_desviacion_bordes_pp": -0.0678447976165053,
+   "cumple": false
+  }
+ },
+ "C4_margen_minimo_que_cumple_actual": null,
+ "C4_margen_minimo_que_cumple_edificio": null,
+ "C4_margen_minimo_que_cumple_cono": null,
+ "impacto_produccion": {
+  "rois_geo_train_01": 152,
+  "factor_conteo_roi_mediana": 0.12415476667111527,
+  "factor_conteo_roi_suma": 0.1908177905308465,
+  "p10_roi_actual_por_2e7": 70.2,
+  "p10_roi_receta_por_2e7": 10.0,
+  "fraccion_generada_en_ventana_margen_5": 0.684176,
+  "nucleo_s_por_evento": {
+   "a01-anidado-actual": 0.0007955201790659688,
+   "c01-anidado-cono": 0.000532496927006403,
+   "c02-cono-margen-5deg": 0.0004979355741119944
+  },
+  "nucleo_s_por_evento_en_ventana_receta": 0.0007277887182713138
+ },
+ "serie_planos_separados": [
+  {
+   "lado_m": 1.2,
+   "eficiencia": 0.015305,
+   "sigma": 8.68065578599912e-05,
+   "registrados": 30610,
+   "eventos": 2000000,
+   "ekin_media_gev": 650.6814172714074
+  },
+  {
+   "lado_m": 100,
+   "eficiencia": 0.64078,
+   "sigma": 0.000339249901694901,
+   "registrados": 1281560,
+   "eventos": 2000000,
+   "ekin_media_gev": 24.52186702766776
+  },
+  {
+   "lado_m": 300,
+   "eficiencia": 0.729393,
+   "sigma": 0.0003141487319336177,
+   "registrados": 1458786,
+   "eventos": 2000000,
+   "ekin_media_gev": 21.653062506903797
+  },
+  {
+   "lado_m": 600,
+   "eficiencia": 0.7368515,
+   "sigma": 0.0003113690470709557,
+   "registrados": 1473703,
+   "eventos": 2000000,
+   "ekin_media_gev": 21.43738104223224
+  },
+  {
+   "lado_m": 1200,
+   "eficiencia": 0.737228,
+   "sigma": 0.00031122570267894003,
+   "registrados": 1474456,
+   "eventos": 2000000,
+   "ekin_media_gev": 21.426560445464293
+  }
+ ],
+ "figuras": [
+  "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/figuras/fig7-controles-plano-energia.png",
+  "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/figuras/fig8-controles-inyeccion-margen.png"
+ ],
+ "entorno": {
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "matplotlib": "3.10.7"
+ }
+}
