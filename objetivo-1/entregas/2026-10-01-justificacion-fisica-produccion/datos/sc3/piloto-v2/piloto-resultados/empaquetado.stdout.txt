@@ -1,0 +1,14 @@
+{
+  "schema": "oe1-package-review-v1",
+  "configuration_contract": "explicit-recipe-v2",
+  "physical_validation": false,
+  "expected_geometries": [
+    "geo-train-06"
+  ],
+  "errors": [],
+  "missing": [],
+  "technical_complete": true,
+  "actual_references": 6,
+  "target_references": 6,
+  "target_pairs": 480
+}

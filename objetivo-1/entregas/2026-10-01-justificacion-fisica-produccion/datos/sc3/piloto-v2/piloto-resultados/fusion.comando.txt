@@ -1,0 +1,1 @@
+/home/dapintoo/oe1-trabajo/entorno/python-oe1 herramientas/fusionar_bloques_angular.py --manifiesto /home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/objetivo-1/evidencias/piloto-propuesto-siete-actividades/manifiesto-piloto-propuesto.csv --salida /home/dapintoo/muography-scratch/oe1-piloto-v2-publicados --destino /home/dapintoo/muography-scratch/oe1-piloto-v2-fusion 

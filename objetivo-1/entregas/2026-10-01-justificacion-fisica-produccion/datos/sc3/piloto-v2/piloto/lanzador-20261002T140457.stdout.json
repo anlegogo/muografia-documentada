@@ -1,0 +1,19 @@
+{
+  "campaign_id": "2984cba988930ffebb23d21376c8c8ad7cdf47655872d16ba8c346c92071194f",
+  "submitted": true,
+  "planned": [],
+  "blocked_prior_attempts": [],
+  "verified": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "queue_jobs": 4,
+  "free_slots": 0,
+  "physical_validation": false
+}

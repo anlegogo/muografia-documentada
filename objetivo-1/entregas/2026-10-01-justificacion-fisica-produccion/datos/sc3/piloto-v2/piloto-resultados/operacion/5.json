@@ -1,0 +1,30 @@
+{
+  "row": 5,
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--job-name=oe1-2984cba98893-5",
+    "--partition=legacy",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=24",
+    "--time=00:55:00",
+    "--chdir=/home/dapintoo/oe1-trabajo/produccion-receta",
+    "--output=/home/dapintoo/muography-scratch/oe1-piloto-v2-publicados.operacion/logs/%x-%j.out",
+    "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/bloque_verificado_angular.sbatch",
+    "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/objetivo-1/evidencias/piloto-propuesto-siete-actividades/manifiesto-piloto-propuesto.csv",
+    "5",
+    "/home/dapintoo/oe1-trabajo/produccion-receta",
+    "/home/dapintoo/muography-scratch/oe1-piloto-v2-intentos",
+    "/home/dapintoo/muography-scratch/oe1-piloto-v2-publicados",
+    "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/objetivo-1/contratos/receta-operativa-siete-actividades.json",
+    "/home/dapintoo/oe1-trabajo/entorno/python-oe1",
+    "24",
+    "/home/dapintoo/oe1-trabajo/integracion-c9442d6/replica/herramientas/operar_bloque_angular.py",
+    "36d072c16d4f51a1772984114c1ab9a873501aa4b17aab14562fb7272a6d9a8d",
+    "db9e5caab4c599afc00430452bea190eb2f50b1fa6a49cc5f027f3a5e6659e90"
+  ],
+  "record": "/home/dapintoo/muography-scratch/oe1-piloto-v2-publicados.operacion/5.json",
+  "status": "submitted",
+  "job_id": "30648"
+}

@@ -1,0 +1,1 @@
+/home/dapintoo/oe1-trabajo/entorno/python-oe1 herramientas/empaquetar_angular_v1.py /home/dapintoo/muography-scratch/oe1-piloto-v2-imagenes --geometrias geo-train-06 --informe /home/dapintoo/oe1-trabajo/integracion-c9442d6/piloto-resultados/inventario-piloto-v2.json 

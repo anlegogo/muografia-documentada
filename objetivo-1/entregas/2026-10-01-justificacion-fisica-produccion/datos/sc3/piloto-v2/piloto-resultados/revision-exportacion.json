@@ -1,0 +1,48 @@
+{
+  "schema": "oe1-image-az-edges-v1",
+  "scope": "exportacion sin alterar conteos; no valida fisica ni habilita produccion",
+  "images": [
+    {
+      "stem": "geo-train-06_view0",
+      "total": 73882961,
+      "npz_sha256": "c9af0de4150c187c43e683ad4a22b85cbd4172a90f9199cdedb56a35b0606602",
+      "hist_sha256": "b65da04cf08829be1396fae2bec22bed47373bed017b1df60927eb932ce415a9",
+      "meta_sha256": "a58fe8bfb1516b32332c9271e97fc454127dcb407b4aa3d1801723ccbf3b32b5"
+    },
+    {
+      "stem": "geo-train-06_view1",
+      "total": 73888094,
+      "npz_sha256": "12bb1e00a0020bfced5fd25ae7d0bc687df58a20f9d6b060da105ad9f71ee904",
+      "hist_sha256": "cc9b83c1867179bc19d5a3d3dcffd694a5e341472eac767d914f528066d9e540",
+      "meta_sha256": "2452baa077298e2381e6e6e9d42bfda191fbfcad5d29aeed5c1bc3e0010a26a1"
+    },
+    {
+      "stem": "geo-train-06_view2",
+      "total": 73888460,
+      "npz_sha256": "d758e92d97f2eb56f0d9b490bd98df955106c5d730cf86075973336ae7d66813",
+      "hist_sha256": "da146ffe3bfa2fbafe8a54de04b3daf350c08bdc4a4096b2ec4d5a7f5c2b3ae1",
+      "meta_sha256": "5fdde09e19fd677c707305b3288666110aba78c40c1c972ea98d659f11c81781"
+    },
+    {
+      "stem": "geo-train-06_view3",
+      "total": 73877504,
+      "npz_sha256": "2f45cd0f442ef0a341ac89bfb483ba54e1015e435c05ef577504ced01f7fac82",
+      "hist_sha256": "1e8d2d91bae3722ffb2b9f4d9aad542517f429780ff949fedb66806868619bda",
+      "meta_sha256": "884e2b569cd42d9a1b3f2f6d3bc40fe8c3694c8b0fe5cae4c0c9b183d0ecad98"
+    },
+    {
+      "stem": "geo-train-06_view4",
+      "total": 73872248,
+      "npz_sha256": "62cda8c0ba116117dc6145db0e3c486196b94f03f76808363f646b0382536050",
+      "hist_sha256": "20e1a1567a02408dbcd60763ceca4c0308e36ad0ef76041d09e5bde30d642d3c",
+      "meta_sha256": "7d3118d2776e9d52d23c704e0eaa3ce55f53e082da900c175316c4520cd3a6c4"
+    },
+    {
+      "stem": "geo-train-06_view5",
+      "total": 73874396,
+      "npz_sha256": "38b817c74a831a8d8672cce6841fd50e40b745913499bec434b86c5c4efe4337",
+      "hist_sha256": "bc76f3fab6a65a166c3b6f5c2057948a0608e6ed7218c69f929d9dd2a116f32d",
+      "meta_sha256": "e8fe3dbc6c25ed4203592960bb66ded7fb52d8360be404eafad49ebd5f6d06f0"
+    }
+  ]
+}

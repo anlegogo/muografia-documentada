@@ -1,0 +1,47 @@
+{
+  "status": "published",
+  "attempt": "/home/dapintoo/muography-scratch/oe1-piloto-v2-intentos/intento-68c3ca0ecaae40e299e5b2ee08cf517a",
+  "receipt": {
+    "schema": "oe1-verified-publication-v1",
+    "status": "published",
+    "physical_validation": false,
+    "manifest_sha256": "36d072c16d4f51a1772984114c1ab9a873501aa4b17aab14562fb7272a6d9a8d",
+    "row": {
+      "fila": 32,
+      "geometria": "geo-train-06",
+      "vista": 5,
+      "bloque": 2,
+      "semilla": 20261002405002,
+      "eventos": 35166667
+    },
+    "files": {
+      "comando.json": "78b2596e4760575e136386548301e70cda6ad8148c34a157badd60b626d402bc",
+      "entradas.sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9",
+      "exit_code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "geo-train-06_view5.meta.json": "aa8461bf1d59cf0c54cb74329bf73e18e35d62fdb8846adad6521ba8e6ca38c1",
+      "geo-train-06_view5.raw.meta.json": "e9f29518b2be237f59982434e680ff1fa766a33482d9bce6bfc7c1de3ce9bf7a",
+      "geo-train-06_view5_gen.csv": "d1606fa16117a86fc0ef3f06c7cb2c344883531a6402358b10e2b70fd9443b11",
+      "geo-train-06_view5_hist.csv": "8a05d720f3c30f20116cc52b19bc46124c3aef6ea5da8b215635609cd9218340",
+      "geo-train-06_view5_hist_sin_corte.csv": "1150d0456a6f0aee1bca754978fbfd5b9d9cb359d47772c5d1ce3286406e7421",
+      "operacion.json": "a98a883019d8c6f0f663448bd8542a3beab977501e2afcebc35cbfe157e36da8",
+      "receta.env": "8c07b6437669744cb930fd92568af781e48f03dd0f1885822ba0c1813871fea2",
+      "run.log": "c24d0fdba2f96dd3e70b558a6ab3cbe3adb105cec352ea6b2e01236c5ceea19a",
+      "salida.sha256": "66f5868b2a43c840aa343e2ce6b760fffca845c0de1da5c616236f5a86d0e06b"
+    },
+    "accept_crlf": false,
+    "output_hash_checks": [
+      {
+        "name": "geo-train-06_view5_hist.csv",
+        "received_sha256": "8a05d720f3c30f20116cc52b19bc46124c3aef6ea5da8b215635609cd9218340",
+        "expected_sha256": "8a05d720f3c30f20116cc52b19bc46124c3aef6ea5da8b215635609cd9218340",
+        "crlf_to_lf_verified": false
+      },
+      {
+        "name": "geo-train-06_view5.meta.json",
+        "received_sha256": "aa8461bf1d59cf0c54cb74329bf73e18e35d62fdb8846adad6521ba8e6ca38c1",
+        "expected_sha256": "aa8461bf1d59cf0c54cb74329bf73e18e35d62fdb8846adad6521ba8e6ca38c1",
+        "crlf_to_lf_verified": false
+      }
+    ]
+  }
+}

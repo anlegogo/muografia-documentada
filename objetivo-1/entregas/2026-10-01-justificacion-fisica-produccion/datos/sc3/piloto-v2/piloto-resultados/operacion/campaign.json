@@ -1,0 +1,14 @@
+{
+  "id": "2984cba988930ffebb23d21376c8c8ad7cdf47655872d16ba8c346c92071194f",
+  "identity": {
+    "manifest": "36d072c16d4f51a1772984114c1ab9a873501aa4b17aab14562fb7272a6d9a8d",
+    "recipe": "db9e5caab4c599afc00430452bea190eb2f50b1fa6a49cc5f027f3a5e6659e90",
+    "worker": "2108a6a033f957a2ab9032447ced7e6312f11e93749f804746a2e428be86d086",
+    "sbatch": "f95cabb05c1c70f84052b7326281347ea9fb1709644a60f41e65c6a939b743f4",
+    "destination": "/home/dapintoo/muography-scratch/oe1-piloto-v2-publicados",
+    "tree": "/home/dapintoo/oe1-trabajo/produccion-receta",
+    "scratch": "/home/dapintoo/muography-scratch/oe1-piloto-v2-intentos",
+    "python": "/home/dapintoo/oe1-trabajo/entorno/python-oe1",
+    "threads": 24
+  }
+}

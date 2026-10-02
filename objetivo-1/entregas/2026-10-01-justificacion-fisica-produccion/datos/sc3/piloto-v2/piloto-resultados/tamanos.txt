@@ -1,0 +1,3 @@
+26M	/home/dapintoo/muography-scratch/oe1-piloto-v2-publicados
+1.7M	/home/dapintoo/muography-scratch/oe1-piloto-v2-fusion
+584K	/home/dapintoo/muography-scratch/oe1-piloto-v2-imagenes

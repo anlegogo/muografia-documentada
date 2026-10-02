@@ -1,0 +1,58 @@
+{
+  "schema": "oe1-package-review-v1",
+  "configuration_contract": "explicit-recipe-v2",
+  "physical_validation": false,
+  "expected_geometries": [
+    "geo-train-06"
+  ],
+  "errors": [],
+  "missing": [],
+  "references": [
+    {
+      "geometry_id": "geo-train-06",
+      "view": 0,
+      "npz_sha256": "c9af0de4150c187c43e683ad4a22b85cbd4172a90f9199cdedb56a35b0606602",
+      "meta_sha256": "5979ec71b2de2def79ad49596d713861d5e980fc033aa20cd76e5b9200724e3d",
+      "counts": 73882961
+    },
+    {
+      "geometry_id": "geo-train-06",
+      "view": 1,
+      "npz_sha256": "12bb1e00a0020bfced5fd25ae7d0bc687df58a20f9d6b060da105ad9f71ee904",
+      "meta_sha256": "52c0d9be23190a7b6096ab25eeb239d9da0c880302ed7e66ab375b2a3378e2fa",
+      "counts": 73888094
+    },
+    {
+      "geometry_id": "geo-train-06",
+      "view": 2,
+      "npz_sha256": "d758e92d97f2eb56f0d9b490bd98df955106c5d730cf86075973336ae7d66813",
+      "meta_sha256": "be2e80c0e4609406464c3478ee4dbf880aba89c5f1ff7928b8a693261f14fded",
+      "counts": 73888460
+    },
+    {
+      "geometry_id": "geo-train-06",
+      "view": 3,
+      "npz_sha256": "2f45cd0f442ef0a341ac89bfb483ba54e1015e435c05ef577504ced01f7fac82",
+      "meta_sha256": "a180894851cc37901607dcb16c1c88402e47936b1741498bf27fd1a544cf3bd9",
+      "counts": 73877504
+    },
+    {
+      "geometry_id": "geo-train-06",
+      "view": 4,
+      "npz_sha256": "62cda8c0ba116117dc6145db0e3c486196b94f03f76808363f646b0382536050",
+      "meta_sha256": "e1fefc2b53d3d500715e4cb7df407dd8a799f5e6899543551304885c1c4dbb89",
+      "counts": 73872248
+    },
+    {
+      "geometry_id": "geo-train-06",
+      "view": 5,
+      "npz_sha256": "38b817c74a831a8d8672cce6841fd50e40b745913499bec434b86c5c4efe4337",
+      "meta_sha256": "b482ca6ff571e4e336e7a3a6b54b26187768a786f9e036a4af5d26c11022e199",
+      "counts": 73874396
+    }
+  ],
+  "technical_complete": true,
+  "actual_references": 6,
+  "target_references": 6,
+  "target_pairs": 480
+}
