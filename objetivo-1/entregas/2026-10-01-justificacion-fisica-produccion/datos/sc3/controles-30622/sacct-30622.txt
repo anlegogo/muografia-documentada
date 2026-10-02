@@ -1,0 +1,2 @@
+JobID|JobName|State|ExitCode|Start|End|ElapsedRaw|NCPUS|NodeList|Partition|SubmitLine
+30622|oe1-controles-anidados|COMPLETED|0:0|2026-10-02T00:11:38|2026-10-02T00:29:44|1086|24|guane02|legacy|sbatch ejecutar_controles_anidados.sbatch

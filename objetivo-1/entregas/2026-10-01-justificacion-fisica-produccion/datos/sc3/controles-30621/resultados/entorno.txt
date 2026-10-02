@@ -1,0 +1,11 @@
+Fri Oct  2 05:09:07 AM UTC 2026
+job=30621 node=guane01.sc3.uis.edu.co cwd=/home/dapintoo/oe1-trabajo/controles-c1c5
+
+Currently Loaded Modules:
+  1) gnu14/14.2.0   2) geant4/11.4.2
+
+ 
+
+11.4.2
+c++ (GCC) 14.2.0
+cmake version 3.31.8

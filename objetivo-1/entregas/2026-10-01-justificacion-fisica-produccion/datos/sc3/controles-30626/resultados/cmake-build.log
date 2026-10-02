@@ -1,0 +1,15 @@
+[ 35%] Building CXX object CMakeFiles/muography_sim.dir/src/EventAction.cc.o
+[ 50%] Building CXX object CMakeFiles/muography_sim.dir/src/DetectorConstruction.cc.o
+[ 50%] Building CXX object CMakeFiles/muography_sim.dir/src/ActionInitialization.cc.o
+[ 50%] Building CXX object CMakeFiles/muography_sim.dir/src/FluxTables.cc.o
+[ 50%] Building CXX object CMakeFiles/muography_sim.dir/src/GeometryConfig.cc.o
+[ 57%] Building CXX object CMakeFiles/muography_sim.dir/src/Oe1Cli.cc.o
+[ 50%] Building CXX object CMakeFiles/muography_sim.dir/muography_sim.cc.o
+[ 92%] Building CXX object CMakeFiles/muography_sim.dir/src/PrimaryList.cc.o
+[ 92%] Building CXX object CMakeFiles/muography_sim.dir/src/GeometryDiagnostics.cc.o
+[ 92%] Building CXX object CMakeFiles/muography_sim.dir/src/StackingAction.cc.o
+[ 92%] Building CXX object CMakeFiles/muography_sim.dir/src/RunAction.cc.o
+[ 92%] Building CXX object CMakeFiles/muography_sim.dir/src/PrimaryGeneratorAction.cc.o
+[ 92%] Building CXX object CMakeFiles/muography_sim.dir/src/SteppingAction.cc.o
+[100%] Linking CXX executable muography_sim
+[100%] Built target muography_sim

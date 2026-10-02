@@ -1,0 +1,9 @@
+patching file scripts/simulation/geant4_app/include/ControlOptions.hh
+patching file scripts/simulation/geant4_app/include/FluxTables.hh
+patching file scripts/simulation/geant4_app/include/PrimaryGeneratorAction.hh
+patching file scripts/simulation/geant4_app/include/RunData.hh
+patching file scripts/simulation/geant4_app/src/DetectorConstruction.cc
+patching file scripts/simulation/geant4_app/src/FluxTables.cc
+patching file scripts/simulation/geant4_app/src/PrimaryGeneratorAction.cc
+patching file scripts/simulation/geant4_app/src/RunAction.cc
+patching file scripts/simulation/geant4_app/src/SteppingAction.cc

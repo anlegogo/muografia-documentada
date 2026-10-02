@@ -1,0 +1,4 @@
+a00-parche-v2-por-defecto exit=0 RUN DONE geo-train-01 view 0: events=2000000 detected=1473703 wall_s=64.6375
+a01-anidado-actual exit=0 RUN DONE geo-train-01 view 0: events=20000000 detected=14736843 wall_s=662.933
+a02-anidado-edificio exit=0 RUN DONE geo-train-01 view 0: events=20000000 detected=17702498 wall_s=330.186
+fallos=0

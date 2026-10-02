@@ -1,0 +1,12 @@
+r00-produccion exit=0 RUN DONE geo-train-01 view 0: events=2000000 detected=1473703 wall_s=65.2122
+r01-parche-por-defecto exit=0 RUN DONE geo-train-01 view 0: events=2000000 detected=1473703 wall_s=65.7768
+r02-plano-1.2m exit=0 RUN DONE geo-train-01 view 0: events=2000000 detected=30610 wall_s=123.58
+r03-plano-100m exit=0 RUN DONE geo-train-01 view 0: events=2000000 detected=1281560 wall_s=71.4002
+r04-plano-300m exit=0 RUN DONE geo-train-01 view 0: events=2000000 detected=1458786 wall_s=66.1071
+r05-plano-600m exit=0 RUN DONE geo-train-01 view 0: events=2000000 detected=1473703 wall_s=65.0525
+r06-plano-1200m exit=0 RUN DONE geo-train-01 view 0: events=2000000 detected=1474456 wall_s=65.7469
+r07-edificio-100m exit=0 RUN DONE geo-train-01 view 0: events=2000000 detected=1765749 wall_s=33.1707
+r08-edificio-600m exit=0 RUN DONE geo-train-01 view 0: events=2000000 detected=1770305 wall_s=32.8453
+r09-margen-2deg exit=0 RUN DONE geo-train-01 view 0: events=2000000 detected=1287103 wall_s=66.9871
+r10-margen-5deg exit=0 RUN DONE geo-train-01 view 0: events=2000000 detected=1043809 wall_s=68.3304
+fallos=0

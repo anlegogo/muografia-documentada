@@ -1,0 +1,4 @@
+c00-parche-v3-por-defecto exit=0 RUN DONE geo-train-01 view 0: events=2000000 detected=1473703 wall_s=67.0239
+c01-anidado-cono exit=0 RUN DONE geo-train-01 view 0: events=20000000 detected=19074904 wall_s=443.747
+c02-cono-margen-5deg exit=0 RUN DONE geo-train-01 view 0: events=2000000 detected=1306074 wall_s=41.4946
+fallos=0

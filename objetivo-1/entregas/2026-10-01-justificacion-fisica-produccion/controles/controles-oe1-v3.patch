@@ -1,0 +1,475 @@
+diff -ruN a/scripts/simulation/geant4_app/include/ControlOptions.hh b/scripts/simulation/geant4_app/include/ControlOptions.hh
+--- a/scripts/simulation/geant4_app/include/ControlOptions.hh
++++ b/scripts/simulation/geant4_app/include/ControlOptions.hh
+@@ -0,0 +1,84 @@
++#ifndef CONTROL_OPTIONS_HH
++#define CONTROL_OPTIONS_HH
++
++// Diagnostic options for the OE1 physical checks C1, C2, C4 and C5.
++// Read once from environment variables. With none of them set, the
++// executable behaves exactly as the production build (same random-number
++// consumption, same histogram, no extra files).
++//   OE1C_PLANE_HALF_M      counting-plane half side in m (default 300)
++//   OE1C_INJECT=edifice    start primaries just outside a cylinder that
++//                          encloses the edifice instead of D + R + 300 m away
++//   OE1C_INJECT=cone       start primaries 1 m before the line of sight enters
++//                          the rock of the cone (1 m before the panel if the
++//                          line never crosses rock)
++//   OE1C_EDIFICE_MARGIN_M  margin of that cylinder (default 50 m)
++//   OE1C_MARGIN_DEG        extra generation margin around the image window
++//   OE1C_ECUTS_GEV         comma list of kinetic-energy cuts at the plane
++//   OE1C_GEN_HIST=1        write the histogram of nominal directions only
++//   OE1C_SUBPLANES_M       comma list of half sides of nested squares on the
++//                          counting plane (same muons, every energy cut)
++
++#include <cstdlib>
++#include <sstream>
++#include <string>
++#include <vector>
++
++namespace ctrl {
++
++struct Options {
++  double planeHalfM = 300.0;
++  bool injectAtEdifice = false;
++  bool injectAtCone = false;
++  double edificeMarginM = 50.0;
++  double marginDeg = 0.0;
++  std::vector<double> ecutsGeV;
++  std::vector<double> subplanesM;
++  bool active = false;
++};
++
++inline const Options& Get()
++{
++  static const Options opts = [] {
++    Options r;
++    auto env = [](const char* key) {
++      const char* v = std::getenv(key);
++      return v != nullptr ? std::string(v) : std::string();
++    };
++    if (const auto s = env("OE1C_PLANE_HALF_M"); !s.empty()) {
++      r.planeHalfM = std::stod(s);
++      r.active = true;
++    }
++    if (env("OE1C_INJECT") == "edifice") {
++      r.injectAtEdifice = true;
++      r.active = true;
++    }
++    if (env("OE1C_INJECT") == "cone") {
++      r.injectAtCone = true;
++      r.active = true;
++    }
++    if (const auto s = env("OE1C_EDIFICE_MARGIN_M"); !s.empty()) r.edificeMarginM = std::stod(s);
++    if (const auto s = env("OE1C_MARGIN_DEG"); !s.empty()) {
++      r.marginDeg = std::stod(s);
++      r.active = true;
++    }
++    if (const auto s = env("OE1C_ECUTS_GEV"); !s.empty()) {
++      std::stringstream ss(s);
++      std::string tok;
++      while (std::getline(ss, tok, ',')) r.ecutsGeV.push_back(std::stod(tok));
++      r.active = true;
++    }
++    if (const auto s = env("OE1C_SUBPLANES_M"); !s.empty()) {
++      std::stringstream ss(s);
++      std::string tok;
++      while (std::getline(ss, tok, ',')) r.subplanesM.push_back(std::stod(tok));
++      r.active = true;
++    }
++    if (env("OE1C_GEN_HIST") == "1") r.active = true;
++    return r;
++  }();
++  return opts;
++}
++
++}  // namespace ctrl
++
++#endif
+diff -ruN a/scripts/simulation/geant4_app/include/FluxTables.hh b/scripts/simulation/geant4_app/include/FluxTables.hh
+--- a/scripts/simulation/geant4_app/include/FluxTables.hh
++++ b/scripts/simulation/geant4_app/include/FluxTables.hh
+@@ -37,10 +37,13 @@
+   }
+ 
+   double TotalCounts30d() const { return fTotal30d; }
++  int NumRows() const { return static_cast<int>(fRowElevDeg.size()); }
++  double RowWeight(int row) const { return fRowWeights[row]; }
+ 
+  private:
+   std::vector<double> fRowElevDeg;
+   std::vector<double> fRowCumulative;  // normalized cumulative weights
++  std::vector<double> fRowWeights;     // raw open-sky counts per row (30 d)
+   double fRowHalfStepDeg = 0.0;
+ 
+   std::vector<double> fBandEdgesDeg;
+diff -ruN a/scripts/simulation/geant4_app/include/PrimaryGeneratorAction.hh b/scripts/simulation/geant4_app/include/PrimaryGeneratorAction.hh
+--- a/scripts/simulation/geant4_app/include/PrimaryGeneratorAction.hh
++++ b/scripts/simulation/geant4_app/include/PrimaryGeneratorAction.hh
+@@ -6,6 +6,8 @@
+ #include "FluxTables.hh"
+ #include "GeometryConfig.hh"
+ 
++#include <vector>
++
+ class G4ParticleGun;
+ class G4Event;
+ namespace oe1 {
+@@ -43,6 +45,11 @@
+   const FluxTables* fTables;
+   double fLookAzRad;     // world azimuth the detector looks toward
+   double fStartRadiusM;  // horizontal backtrack distance from the detector
++  // OE1 checks (ControlOptions): edifice size and extended elevation sampler.
++  double fBaseRadiusM = 0.0;
++  double fHeightM = 0.0;
++  std::vector<double> fExtElevDeg;
++  std::vector<double> fExtCumulative;
+   const oe1::PrimaryList* fList = nullptr;
+ };
+ 
+diff -ruN a/scripts/simulation/geant4_app/include/RunData.hh b/scripts/simulation/geant4_app/include/RunData.hh
+--- a/scripts/simulation/geant4_app/include/RunData.hh
++++ b/scripts/simulation/geant4_app/include/RunData.hh
+@@ -2,13 +2,16 @@
+ #define RUN_DATA_HH
+ 
+ #include <atomic>
++#include <cmath>
+ #include <cstdint>
++#include <memory>
+ #include <mutex>
+ #include <set>
+ #include <string>
+ #include <utility>
+ #include <vector>
+ 
++#include "ControlOptions.hh"
+ #include "GeometryConfig.hh"
+ #include "MuonRecord.hh"
+ 
+@@ -29,12 +32,42 @@
+   void RecordHit(int azBin, int elBin, double ekinGeV)
+   {
+     std::lock_guard<std::mutex> lock(fMutex);
+-    fHist[static_cast<size_t>(elBin) * viewpar::kNAz + azBin] += 1;
++    const size_t idx = static_cast<size_t>(elBin) * viewpar::kNAz + azBin;
++    fHist[idx] += 1;
++    for (size_t c = 0; c < fCutHists.size(); ++c) {
++      if (ekinGeV > ctrl::Get().ecutsGeV[c]) fCutHists[c][idx] += 1;
++    }
+     fDetected += 1;
+     fEkinSumGeV += ekinGeV;
+   }
+ 
+   const std::vector<uint64_t>& Histogram() const { return fHist; }
++
++  // OE1 checks (ControlOptions): nominal direction of every generated primary
++  // inside the image window, and plane histograms above each energy cut.
++  void RecordNominal(int azBin, int elBin)
++  {
++    fGen[static_cast<size_t>(elBin) * viewpar::kNAz + azBin].fetch_add(1, std::memory_order_relaxed);
++  }
++  uint64_t Nominal(size_t idx) const { return fGen[idx].load(); }
++  const std::vector<std::vector<uint64_t>>& CutHistograms() const { return fCutHists; }
++
++  // Nested squares: index s * (1 + nCuts) + k, k = 0 without cut, k > 0 cut k-1.
++  void RecordSub(int azBin, int elBin, double ekinGeV, double yM, double zM)
++  {
++    const auto& o = ctrl::Get();
++    const size_t idx = static_cast<size_t>(elBin) * viewpar::kNAz + azBin;
++    const size_t nk = 1 + o.ecutsGeV.size();
++    std::lock_guard<std::mutex> lock(fMutex);
++    for (size_t s = 0; s < o.subplanesM.size(); ++s) {
++      if (std::abs(yM) > o.subplanesM[s] || std::abs(zM) > o.subplanesM[s]) continue;
++      fSubHists[s * nk][idx] += 1;
++      for (size_t c = 0; c < o.ecutsGeV.size(); ++c) {
++        if (ekinGeV > o.ecutsGeV[c]) fSubHists[s * nk + 1 + c][idx] += 1;
++      }
++    }
++  }
++  const std::vector<std::vector<uint64_t>>& SubHistograms() const { return fSubHists; }
+   uint64_t Generated() const { return fGenerated.load(); }
+   uint64_t Detected() const { return fDetected; }
+   double MeanEkinGeV() const
+@@ -78,9 +111,19 @@
+   bool Finalized() const { return fFinalized.load(); }
+ 
+  private:
+-  RunData() : fHist(static_cast<size_t>(viewpar::kNAz) * viewpar::kNEl, 0) {}
++  RunData()
++      : fHist(static_cast<size_t>(viewpar::kNAz) * viewpar::kNEl, 0),
++        fGen(new std::atomic<uint64_t>[static_cast<size_t>(viewpar::kNAz) * viewpar::kNEl]()),
++        fCutHists(ctrl::Get().ecutsGeV.size(),
++                  std::vector<uint64_t>(static_cast<size_t>(viewpar::kNAz) * viewpar::kNEl, 0)),
++        fSubHists(ctrl::Get().subplanesM.size() * (1 + ctrl::Get().ecutsGeV.size()),
++                  std::vector<uint64_t>(static_cast<size_t>(viewpar::kNAz) * viewpar::kNEl, 0))
++  {}
+ 
+   std::vector<uint64_t> fHist;
++  std::unique_ptr<std::atomic<uint64_t>[]> fGen;
++  std::vector<std::vector<uint64_t>> fCutHists;
++  std::vector<std::vector<uint64_t>> fSubHists;
+   std::atomic<uint64_t> fGenerated{0};
+   uint64_t fDetected = 0;
+   double fEkinSumGeV = 0.0;
+diff -ruN a/scripts/simulation/geant4_app/src/DetectorConstruction.cc b/scripts/simulation/geant4_app/src/DetectorConstruction.cc
+--- a/scripts/simulation/geant4_app/src/DetectorConstruction.cc
++++ b/scripts/simulation/geant4_app/src/DetectorConstruction.cc
+@@ -1,4 +1,5 @@
+ #include "DetectorConstruction.hh"
++#include "ControlOptions.hh"
+ 
+ #include <algorithm>
+ #include <cmath>
+@@ -287,7 +288,7 @@
+   // Convergence series (2M events, seed 777, geo-train-01 view 0):
+   //   half=50m: 64.2% detected | half=150m: 73.07% | half=300m: 73.81%
+   // -> 600x600 m sits <0.5% from the asymptote; adopted for production.
+-  const double kScoringHalfM = 300.0;
++  const double kScoringHalfM = ctrl::Get().planeHalfM;  // 300 m unless OE1C_PLANE_HALF_M
+   const double viewAz = fViewIndex * viewpar::kViewStepDeg * deg;
+   const G4ThreeVector detPos(viewpar::kDetDistanceM * m * std::cos(viewAz),
+                              viewpar::kDetDistanceM * m * std::sin(viewAz),
+diff -ruN a/scripts/simulation/geant4_app/src/FluxTables.cc b/scripts/simulation/geant4_app/src/FluxTables.cc
+--- a/scripts/simulation/geant4_app/src/FluxTables.cc
++++ b/scripts/simulation/geant4_app/src/FluxTables.cc
+@@ -40,6 +40,7 @@
+       throw std::runtime_error("row_weights_30d.txt: too few rows");
+     fRowHalfStepDeg = (fRowElevDeg[1] - fRowElevDeg[0]) / 2.0;
+ 
++    fRowWeights = weights;
+     double total = 0;
+     for (double w : weights) total += w;
+     fTotal30d = total;
+diff -ruN a/scripts/simulation/geant4_app/src/PrimaryGeneratorAction.cc b/scripts/simulation/geant4_app/src/PrimaryGeneratorAction.cc
+--- a/scripts/simulation/geant4_app/src/PrimaryGeneratorAction.cc
++++ b/scripts/simulation/geant4_app/src/PrimaryGeneratorAction.cc
+@@ -1,5 +1,6 @@
+ #include "PrimaryGeneratorAction.hh"
+ 
++#include <algorithm>
+ #include <cmath>
+ 
+ #include "G4Event.hh"
+@@ -11,6 +12,8 @@
+ #include "G4ThreeVector.hh"
+ #include "Randomize.hh"
+ 
++#include "AzimuthGrid.hh"
++#include "ControlOptions.hh"
+ #include "PrimaryList.hh"
+ #include "RunData.hh"
+ 
+@@ -27,6 +30,45 @@
+   fLookAzRad = (viewIndex * viewpar::kViewStepDeg + 180.0) * kDeg;
+   // Start beyond the far rim of the edifice, with margin.
+   fStartRadiusM = viewpar::kDetDistanceM + cfg.base_radius_m + 300.0;
++  fBaseRadiusM = cfg.base_radius_m;
++  fHeightM = cfg.height_m;
++
++  // OE1 check C4: extend the elevation rows by the requested margin. Rows
++  // outside the table get weights linearly extrapolated from the eight edge
++  // rows (clipped at zero); elevations below 0.1 deg get no weight.
++  const double margin = ctrl::Get().marginDeg;
++  if (margin > 0.0 && tables != nullptr) {
++    const int n = tables->NumRows();
++    const double step = 2.0 * tables->RowHalfStepDeg();
++    const int extra = static_cast<int>(std::ceil(margin / step));
++    auto edgeFit = [&](int first) {  // least squares on rows [first, first+8)
++      double sx = 0, sy = 0, sxx = 0, sxy = 0;
++      for (int i = first; i < first + 8; ++i) {
++        const double x = tables->RowElevationDeg(i), y = tables->RowWeight(i);
++        sx += x; sy += y; sxx += x * x; sxy += x * y;
++      }
++      const double b = (8 * sxy - sx * sy) / (8 * sxx - sx * sx);
++      return std::make_pair((sy - b * sx) / 8, b);
++    };
++    const auto lo = edgeFit(0);
++    const auto hi = edgeFit(n - 8);
++    double acc = 0.0;
++    for (int k = -extra; k < n + extra; ++k) {
++      const double el = tables->RowElevationDeg(0) + k * step;
++      double w = 0.0;
++      if (k >= 0 && k < n) {
++        w = tables->RowWeight(k);
++      } else if (el >= 0.1) {
++        const auto& fit = k < 0 ? lo : hi;
++        w = std::max(0.0, fit.first + fit.second * el);
++      }
++      acc += w;
++      fExtElevDeg.push_back(el);
++      fExtCumulative.push_back(acc);
++    }
++    for (double& c : fExtCumulative) c /= acc;
++    fExtCumulative.back() = 1.0;
++  }
+ }
+ 
+ PrimaryGeneratorAction::~PrimaryGeneratorAction() { delete fGun; }
+@@ -56,11 +98,27 @@
+   }
+ 
+   // --- Direction: protocol-weighted elevation row + uniform azimuth.
+-  const int row = fTables->SampleRow(G4UniformRand());
+-  const double elevDeg = fTables->RowElevationDeg(row) +
+-      (2.0 * G4UniformRand() - 1.0) * fTables->RowHalfStepDeg();
+-  const double relAz =
+-      (2.0 * G4UniformRand() - 1.0) * viewpar::kAzHalfDeg * kDeg;
++  const ctrl::Options& opts = ctrl::Get();
++  double elevDeg = 0.0;
++  double relAz = 0.0;
++  if (fExtCumulative.empty()) {
++    const int row = fTables->SampleRow(G4UniformRand());
++    elevDeg = fTables->RowElevationDeg(row) +
++        (2.0 * G4UniformRand() - 1.0) * fTables->RowHalfStepDeg();
++    relAz = (2.0 * G4UniformRand() - 1.0) * viewpar::kAzHalfDeg * kDeg;
++  } else {  // OE1 check C4: extended window
++    const double u = G4UniformRand();
++    const int row = static_cast<int>(
++        std::lower_bound(fExtCumulative.begin(), fExtCumulative.end(), u) - fExtCumulative.begin());
++    elevDeg = fExtElevDeg[row] + (2.0 * G4UniformRand() - 1.0) * fTables->RowHalfStepDeg();
++    relAz = (2.0 * G4UniformRand() - 1.0) * (viewpar::kAzHalfDeg + opts.marginDeg) * kDeg;
++  }
++  if (opts.active) {  // nominal direction, same binning as SteppingAction
++    const double spacing = (viewpar::kElMaxDeg - viewpar::kElMinDeg) / (viewpar::kNEl - 1);
++    const int iEl = static_cast<int>(std::lround((elevDeg - viewpar::kElMinDeg) / spacing));
++    const int iAz = azgrid::Bin(relAz / kDeg);
++    if (iAz >= 0 && iEl >= 0 && iEl < viewpar::kNEl) RunData::Instance().RecordNominal(iAz, iEl);
++  }
+ 
+   const double elev = elevDeg * kDeg;
+   const double azWorld = fLookAzRad + relAz;
+@@ -85,7 +143,43 @@
+   const G4ThreeVector impact = detCenter
+       + panelY * ((2.0 * G4UniformRand() - 1.0) * half)
+       + panelZ * ((2.0 * G4UniformRand() - 1.0) * half);
+-  const double pathLen = (fStartRadiusM / std::cos(elev)) * m;
++  double pathLen = (fStartRadiusM / std::cos(elev)) * m;
++  if (opts.injectAtEdifice) {
++    // OE1 check C2: last exit, going backwards along `from`, from the
++    // cylinder r <= R + margin, z <= H + margin around the edifice axis;
++    // start 1 m beyond it (1 m before the panel when the line misses it).
++    const double rc = (fBaseRadiusM + opts.edificeMarginM) * m;
++    const double hc = (fHeightM + opts.edificeMarginM) * m;
++    const double a = from.x() * from.x() + from.y() * from.y();
++    const double b = 2.0 * (impact.x() * from.x() + impact.y() * from.y());
++    const double c = impact.x() * impact.x() + impact.y() * impact.y() - rc * rc;
++    const double disc = b * b - 4.0 * a * c;
++    double tExit = 0.0;
++    if (a > 0.0 && disc > 0.0) {
++      const double t1 = (-b - std::sqrt(disc)) / (2.0 * a);
++      const double t2 = (-b + std::sqrt(disc)) / (2.0 * a);
++      const double tz = (hc - impact.z()) / from.z();
++      const double lo = std::max(t1, 0.0);
++      const double hi = std::min(t2, tz);
++      if (hi > lo) tExit = hi;
++    }
++    pathLen = tExit + 1.0 * m;
++  }
++  if (opts.injectAtCone) {
++    // OE1 check C2 (variant c): march backwards along `from` in 0.5 m steps
++    // up to 4 km and keep the farthest point inside the cone
++    // z <= H (1 - r / R); start 1 m beyond it.
++    const double rb = fBaseRadiusM * m;
++    const double h = fHeightM * m;
++    double tLast = -1.0;
++    for (double t = 0.0; t <= 4000.0 * m; t += 0.5 * m) {
++      const G4ThreeVector q = impact + from * t;
++      if (q.z() > h) break;  // above the apex: no more rock along this ray
++      const double r = std::hypot(q.x(), q.y());
++      if (r <= rb && q.z() >= 0.0 && q.z() <= h * (1.0 - r / rb)) tLast = t;
++    }
++    pathLen = (tLast >= 0.0 ? tLast : 0.0) + 1.0 * m;
++  }
+   const G4ThreeVector start = impact - arrivalDir * pathLen;
+ 
+   fGun->SetParticlePosition(start);
+diff -ruN a/scripts/simulation/geant4_app/src/RunAction.cc b/scripts/simulation/geant4_app/src/RunAction.cc
+--- a/scripts/simulation/geant4_app/src/RunAction.cc
++++ b/scripts/simulation/geant4_app/src/RunAction.cc
+@@ -26,6 +26,7 @@
+ #include "MuonRecord.hh"
+ #include "Oe1Hash.hh"
+ #include "Oe1ListMode.hh"
++#include "ControlOptions.hh"
+ #include "RunData.hh"
+ #include "json.hpp"
+ 
+@@ -456,6 +457,36 @@
+     }
+   }
+ 
++  // OE1 checks (ControlOptions): nominal-direction and energy-cut histograms.
++  if (ctrl::Get().active) {
++    auto writeHist = [&](const std::string& path, auto value) {
++      std::ofstream out(path);
++      for (int iEl = 0; iEl < viewpar::kNEl; ++iEl) {
++        for (int iAz = 0; iAz < viewpar::kNAz; ++iAz) {
++          out << value(static_cast<size_t>(iEl) * viewpar::kNAz + iAz);
++          out << (iAz + 1 < viewpar::kNAz ? ',' : '\n');
++        }
++      }
++    };
++    writeHist(stem + "_gen.csv", [&](size_t i) { return data.Nominal(i); });
++    const auto& cuts = ctrl::Get().ecutsGeV;
++    for (size_t c = 0; c < cuts.size(); ++c) {
++      std::ostringstream name;
++      name << stem << "_hist_ecut" << cuts[c] << ".csv";
++      const auto& h = data.CutHistograms()[c];
++      writeHist(name.str(), [&](size_t i) { return h[i]; });
++    }
++    const auto& subs = ctrl::Get().subplanesM;
++    for (size_t s = 0; s < subs.size(); ++s) {
++      for (size_t k = 0; k <= cuts.size(); ++k) {
++        std::ostringstream name;
++        name << stem << "_hist_sub" << subs[s] << "_ecut" << (k == 0 ? 0.0 : cuts[k - 1]) << ".csv";
++        const auto& h = data.SubHistograms()[s * (1 + cuts.size()) + k];
++        writeHist(name.str(), [&](size_t i) { return h[i]; });
++      }
++    }
++  }
++
+   // OE1 list mode: per-muon log, reconstruction and id checks.
+   Oe1Summary oe1Summary;
+   if (fLm != nullptr) oe1Summary = FinalizeListMode(*fLm, run, stem, histWriteOk);
+@@ -513,6 +544,15 @@
+                        "panel impact";
+     meta["physics_note"] = "secondaries killed at creation; primary-only "
+                            "transport for transmission counting";
++    if (ctrl::Get().active) {
++      const auto& o = ctrl::Get();
++      meta["oe1_controles"] = {{"plane_half_m", o.planeHalfM},
++                               {"inject", o.injectAtCone ? "cone" : (o.injectAtEdifice ? "edifice" : "legacy")},
++                               {"edifice_margin_m", o.edificeMarginM},
++                               {"margin_deg", o.marginDeg},
++                               {"ecuts_gev", o.ecutsGeV},
++                               {"subplanes_half_m", o.subplanesM}};
++    }
+     if (fLm != nullptr) meta["oe1_etapa1"] = Oe1Meta(*fLm, oe1Summary);
+ 
+     std::ofstream out(stem + ".meta.json");
+diff -ruN a/scripts/simulation/geant4_app/src/SteppingAction.cc b/scripts/simulation/geant4_app/src/SteppingAction.cc
+--- a/scripts/simulation/geant4_app/src/SteppingAction.cc
++++ b/scripts/simulation/geant4_app/src/SteppingAction.cc
+@@ -10,6 +10,7 @@
+ #include "EventAction.hh"
+ #include "RunData.hh"
+ #include "AzimuthGrid.hh"
++#include "ControlOptions.hh"
+ 
+ namespace {
+ constexpr double kDeg = M_PI / 180.0;
+@@ -58,6 +59,13 @@
+   if (iAz >= 0 && iEl >= 0) {
+     RunData::Instance().RecordHit(iAz, iEl,
+                                   post->GetKineticEnergy() / GeV);
++    if (!ctrl::Get().subplanesM.empty()) {  // OE1 checks: nested squares
++      const double viewAz = fLookAzRad - M_PI;
++      const G4ThreeVector pos = post->GetPosition();
++      const double yM = (-std::sin(viewAz) * pos.x() + std::cos(viewAz) * pos.y()) / m;
++      const double zM = pos.z() / m - viewpar::kDetHeightM;
++      RunData::Instance().RecordSub(iAz, iEl, post->GetKineticEnergy() / GeV, yM, zM);
++    }
+   }
+   if (fEv != nullptr) {  // OE1 list mode only: same integers and energy as above
+     fEv->OnPlane(iAz, iEl, post->GetKineticEnergy() / GeV, elev / kDeg, relAz / kDeg);

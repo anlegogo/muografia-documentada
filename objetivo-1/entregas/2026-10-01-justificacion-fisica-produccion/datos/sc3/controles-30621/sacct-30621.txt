@@ -1,0 +1,2 @@
+JobID|JobName|State|ExitCode|Start|End|ElapsedRaw|NCPUS|NodeList|Partition|SubmitLine
+30621|oe1-controles|COMPLETED|0:0|2026-10-02T00:09:06|2026-10-02T00:21:55|769|24|guane01|legacy|sbatch ejecutar_controles.sbatch

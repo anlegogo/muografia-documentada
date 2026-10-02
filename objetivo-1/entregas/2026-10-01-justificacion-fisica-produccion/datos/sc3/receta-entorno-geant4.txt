@@ -1,0 +1,34 @@
+Fri Oct  2 05:55:50 AM UTC 2026
+
+Currently Loaded Modules:
+  1) gnu14/14.2.0   2) geant4/11.4.2
+
+ 
+
+11.4.2
+G4NDL G4NEUTRONHPDATA /opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4NDL4.7.1
+G4EMLOW G4LEDATA /opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4EMLOW8.8
+PhotonEvaporation G4LEVELGAMMADATA /opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/PhotonEvaporation6.1.2
+RadioactiveDecay G4RADIOACTIVEDATA /opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/RadioactiveDecay6.1.2
+G4PARTICLEXS G4PARTICLEXSDATA /opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4PARTICLEXS4.2
+G4PII G4PIIDATA /opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4PII1.3
+RealSurface G4REALSURFACEDATA /opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/RealSurface2.2
+G4SAIDDATA G4SAIDXSDATA /opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4SAIDDATA2.0
+G4ABLA G4ABLADATA /opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4ABLA3.3
+G4INCL G4INCLDATA /opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4INCL1.3
+G4ENSDFSTATE G4ENSDFSTATEDATA /opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4ENSDFSTATE3.0
+G4CHANNELING G4CHANNELINGDATA /opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4CHANNELING2.0
+-DG4UI_USE_TCSH -W -Wall -pedantic -Wno-non-virtual-dtor -Wno-long-long -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-variadic-macros -Wshadow -pipe -pthread -ftls-model=initial-exec -std=c++17 -I/opt/ohpc/pub/apps/geant4/11.4.2/include/Geant4
+c++ (GCC) 14.2.0
+G4ABLADATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4ABLA3.3
+G4CHANNELINGDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4CHANNELING2.0
+G4ENSDFSTATEDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4ENSDFSTATE3.0
+G4INCLDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4INCL1.3
+G4LEDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4EMLOW8.8
+G4LEVELGAMMADATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/PhotonEvaporation6.1.2
+G4NEUTRONHPDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4NDL4.7.1
+G4PARTICLEXSDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4PARTICLEXS4.2
+G4PIIDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4PII1.3
+G4RADIOACTIVEDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/RadioactiveDecay6.1.2
+G4REALSURFACEDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/RealSurface2.2
+G4SAIDXSDATA=/opt/ohpc/pub/apps/geant4/11.4.2/share/Geant4/data/G4SAIDDATA2.0

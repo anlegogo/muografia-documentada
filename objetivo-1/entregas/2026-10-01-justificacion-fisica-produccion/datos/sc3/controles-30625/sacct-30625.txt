@@ -1,0 +1,2 @@
+JobID|JobName|State|ExitCode|Start|End|ElapsedRaw|NCPUS|NodeList|Partition|SubmitLine
+30625|oe1-controles-margen|COMPLETED|0:0|2026-10-02T00:23:50|2026-10-02T00:24:59|69|24|guane01|legacy|sbatch ejecutar_controles_margen_edificio.sbatch

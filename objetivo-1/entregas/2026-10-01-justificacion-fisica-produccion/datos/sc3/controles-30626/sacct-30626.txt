@@ -1,0 +1,2 @@
+JobID|JobName|State|ExitCode|Start|End|ElapsedRaw|NCPUS|NodeList|Partition|SubmitLine
+30626|oe1-controles-cono|COMPLETED|0:0|2026-10-02T00:32:19|2026-10-02T00:41:56|577|24|guane01|legacy|sbatch ejecutar_controles_cono.sbatch

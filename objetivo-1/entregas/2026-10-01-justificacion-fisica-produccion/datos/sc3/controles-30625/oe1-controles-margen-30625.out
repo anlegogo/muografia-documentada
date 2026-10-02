@@ -1,0 +1,3 @@
+m01-edificio-margen-2deg exit=0 RUN DONE geo-train-01 view 0: events=2000000 detected=1532338 wall_s=31.837
+m02-edificio-margen-5deg exit=0 RUN DONE geo-train-01 view 0: events=2000000 detected=1235873 wall_s=30.7422
+fallos=0

@@ -1,0 +1,16 @@
+dc03180e25bbe0874ed45f728ac723b98beb2d908eaeaf74ae142642d9784e79  ./m01-edificio-margen-2deg/geo-train-01_view0_gen.csv
+8c0f4b45a043b59f359be599b0101364938f9dde0ab36571b9f89f4dcabf7fee  ./m01-edificio-margen-2deg/geo-train-01_view0_hist.csv
+23ebce733ad54c921776928d1ce073527d08221948960b4c6cc63852f654dc98  ./m01-edificio-margen-2deg/geo-train-01_view0_hist_ecut0.5.csv
+b82a9e2a627b60130a41cff9cbceeb39d6e446302b51faf27248a40b30a02c4c  ./m01-edificio-margen-2deg/geo-train-01_view0_hist_ecut1.csv
+e634b78033a8e938b5f0274fa9f21e8a8c5c9f2a2935b73329533c4f6f7cbe04  ./m01-edificio-margen-2deg/geo-train-01_view0_hist_ecut2.csv
+4044ce5514a10fe7e6df709d63a73d89c6b4ea0cf87f7592bf8937d21e2c7923  ./m01-edificio-margen-2deg/geo-train-01_view0_hist_ecut3.csv
+9fdab750ac79b5dc4ff02c8d385cfeac49adb8b48c266a29c04ecc40ffa54b87  ./m01-edificio-margen-2deg/geo-train-01_view0_hist_ecut5.csv
+6aefa1bfc8b0875756563f28b88f4e532228799edb80cc3a1c6c0db65dd6980e  ./m01-edificio-margen-2deg/geo-train-01_view0.meta.json
+eb3a6cbee287185ca34950a781378dde55a0fa87af08fe95c959f1d15c38d4ab  ./m02-edificio-margen-5deg/geo-train-01_view0_gen.csv
+bf60167c767e1bb87d2971bbde097e30a5aa11fe15c4be82c0be319313336111  ./m02-edificio-margen-5deg/geo-train-01_view0_hist.csv
+6c1f142dbb218cdad71358aff374e35fc942e0eb97f63f6ea0b9a6ca0e1dab12  ./m02-edificio-margen-5deg/geo-train-01_view0_hist_ecut0.5.csv
+dd97ecb4ca687f2aa9cdb72faa35b91dacb4cbab9bd54f0a1fde28a1833ea67b  ./m02-edificio-margen-5deg/geo-train-01_view0_hist_ecut1.csv
+8f6c1000650e95431abfbc6c201d272099417d73faa42293e3e7cfcce681e2db  ./m02-edificio-margen-5deg/geo-train-01_view0_hist_ecut2.csv
+96f0e546c6306f46079472d6612e12f442913a4ccb8e11be47f49234e647db35  ./m02-edificio-margen-5deg/geo-train-01_view0_hist_ecut3.csv
+97182ed75241caf1f5664e40a9db2a1a389291596351df70832da948a67511f9  ./m02-edificio-margen-5deg/geo-train-01_view0_hist_ecut5.csv
+3d8295566a153506bbb6bc459f929d6a7cd0f104120ecb21c76aadb0487184df  ./m02-edificio-margen-5deg/geo-train-01_view0.meta.json
