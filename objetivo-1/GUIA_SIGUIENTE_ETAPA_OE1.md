@@ -1,5 +1,7 @@
 # Guía de la siguiente etapa para Daniel y Reinaldo
 
+> Esta guía corresponde al piloto ya recibido. Para las tareas actuales consultar [preparación de campaña de 114 vistas](PREPARACION_CAMPANA_114.md). No repetir las pruebas del piloto como requisito de entrega.
+
 2026-10-02. Esta guía reúne las tareas posteriores a `01a9871`. **La prueba de los dos bloques ya fue aceptada; no deben repetirla ni producir muones para demostrarla otra vez.** El propósito siguiente es dejar el proceso automático funcionando y verificar la receta del producto idealizado adoptado, antes de producir las 114 vistas.
 
 ## Actividades inmediatas sin nuevas simulaciones

@@ -1,0 +1,131 @@
+{
+  "schema": "oe1-package-review-v1",
+  "configuration_contract": "explicit-recipe-v2",
+  "physical_validation": false,
+  "expected_geometries": [
+    "geo-train-06"
+  ],
+  "errors": [],
+  "missing": [],
+  "references": [
+    {
+      "geometry_id": "geo-train-06",
+      "view": 0,
+      "npz_sha256": "c9af0de4150c187c43e683ad4a22b85cbd4172a90f9199cdedb56a35b0606602",
+      "meta_sha256": "5979ec71b2de2def79ad49596d713861d5e980fc033aa20cd76e5b9200724e3d",
+      "counts": 73882961
+    },
+    {
+      "geometry_id": "geo-train-06",
+      "view": 1,
+      "npz_sha256": "12bb1e00a0020bfced5fd25ae7d0bc687df58a20f9d6b060da105ad9f71ee904",
+      "meta_sha256": "52c0d9be23190a7b6096ab25eeb239d9da0c880302ed7e66ab375b2a3378e2fa",
+      "counts": 73888094
+    },
+    {
+      "geometry_id": "geo-train-06",
+      "view": 2,
+      "npz_sha256": "d758e92d97f2eb56f0d9b490bd98df955106c5d730cf86075973336ae7d66813",
+      "meta_sha256": "be2e80c0e4609406464c3478ee4dbf880aba89c5f1ff7928b8a693261f14fded",
+      "counts": 73888460
+    },
+    {
+      "geometry_id": "geo-train-06",
+      "view": 3,
+      "npz_sha256": "2f45cd0f442ef0a341ac89bfb483ba54e1015e435c05ef577504ced01f7fac82",
+      "meta_sha256": "a180894851cc37901607dcb16c1c88402e47936b1741498bf27fd1a544cf3bd9",
+      "counts": 73877504
+    },
+    {
+      "geometry_id": "geo-train-06",
+      "view": 4,
+      "npz_sha256": "62cda8c0ba116117dc6145db0e3c486196b94f03f76808363f646b0382536050",
+      "meta_sha256": "e1fefc2b53d3d500715e4cb7df407dd8a799f5e6899543551304885c1c4dbb89",
+      "counts": 73872248
+    },
+    {
+      "geometry_id": "geo-train-06",
+      "view": 5,
+      "npz_sha256": "38b817c74a831a8d8672cce6841fd50e40b745913499bec434b86c5c4efe4337",
+      "meta_sha256": "b482ca6ff571e4e336e7a3a6b54b26187768a786f9e036a4af5d26c11022e199",
+      "counts": 73874396
+    }
+  ],
+  "technical_complete": true,
+  "actual_references": 6,
+  "target_references": 6,
+  "target_pairs": 480,
+  "state": "paquete_tecnico_no_validacion_fisica",
+  "master_seed": 20260805,
+  "seed_scheme": "SeedSequence(master,0x415A5631,sha256(gid)[:8] little-endian,view,fraction_index).spawn(20)",
+  "numpy_version": "2.4.4",
+  "fractions": [
+    0.5,
+    0.1,
+    0.05,
+    0.01
+  ],
+  "realizations": 20,
+  "files": [
+    {
+      "name": "geo-train-06_view0_pairs.npz",
+      "sha256": "26e044be1cad3e523872602e64e0f0b036cfe485e4e97eccea99d07e61afc62b",
+      "geometry_id": "geo-train-06",
+      "view": 0,
+      "partition": "train",
+      "reference_sha256": "c9af0de4150c187c43e683ad4a22b85cbd4172a90f9199cdedb56a35b0606602",
+      "metadata_name": "geo-train-06_view0.meta.json",
+      "metadata_sha256": "c15b452700e9c8428f503d5995ea31f87ceea02619fdc53e38039fd197ef702e"
+    },
+    {
+      "name": "geo-train-06_view1_pairs.npz",
+      "sha256": "c7db8d914018c4d5fe940634208063e064266cc76ed5e0216223f685aba7f7d9",
+      "geometry_id": "geo-train-06",
+      "view": 1,
+      "partition": "train",
+      "reference_sha256": "12bb1e00a0020bfced5fd25ae7d0bc687df58a20f9d6b060da105ad9f71ee904",
+      "metadata_name": "geo-train-06_view1.meta.json",
+      "metadata_sha256": "e06d28de92469623f5409c015bdca612a0152d079f996f51a45856c51043289c"
+    },
+    {
+      "name": "geo-train-06_view2_pairs.npz",
+      "sha256": "5048c62c663ebd183dcc6ec2194caf15ec1b4f71eaee7215a848e8ba33deafbf",
+      "geometry_id": "geo-train-06",
+      "view": 2,
+      "partition": "train",
+      "reference_sha256": "d758e92d97f2eb56f0d9b490bd98df955106c5d730cf86075973336ae7d66813",
+      "metadata_name": "geo-train-06_view2.meta.json",
+      "metadata_sha256": "5492457a166be8b621b0388ed305af738da6728bd44b5f5e2b60a9b60fe8d648"
+    },
+    {
+      "name": "geo-train-06_view3_pairs.npz",
+      "sha256": "6a70a70021622a008be202a332cd5d952969806948dd7afb5b06920cdc4cbca1",
+      "geometry_id": "geo-train-06",
+      "view": 3,
+      "partition": "train",
+      "reference_sha256": "2f45cd0f442ef0a341ac89bfb483ba54e1015e435c05ef577504ced01f7fac82",
+      "metadata_name": "geo-train-06_view3.meta.json",
+      "metadata_sha256": "c31be1d419f1c44bb98b75c1e6b6104b7f98aa594e4156b37afdd6cc783c0d44"
+    },
+    {
+      "name": "geo-train-06_view4_pairs.npz",
+      "sha256": "17fcf43c78b770e930ef2fbc7d8448b4be4a6f7967f0e04746ab5d1587efa83d",
+      "geometry_id": "geo-train-06",
+      "view": 4,
+      "partition": "train",
+      "reference_sha256": "62cda8c0ba116117dc6145db0e3c486196b94f03f76808363f646b0382536050",
+      "metadata_name": "geo-train-06_view4.meta.json",
+      "metadata_sha256": "073b6211d40f9413d145858f72d7be4d725bf698ab01297926514802fa64292b"
+    },
+    {
+      "name": "geo-train-06_view5_pairs.npz",
+      "sha256": "cb15ab6338a2bc880d8da8ed0fc8d2cc9c31e75df0c963ac41c2df05c6e26709",
+      "geometry_id": "geo-train-06",
+      "view": 5,
+      "partition": "train",
+      "reference_sha256": "38b817c74a831a8d8672cce6841fd50e40b745913499bec434b86c5c4efe4337",
+      "metadata_name": "geo-train-06_view5.meta.json",
+      "metadata_sha256": "792c0ac49c2450f8d15d25f1db0ddf06f694d5ff4f01d3ede29fbbb5550f65c5"
+    }
+  ]
+}

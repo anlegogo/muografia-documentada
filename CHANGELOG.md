@@ -1,5 +1,10 @@
 # Registro de cambios
 
+## Preparación completa de campaña — 2026-10-02
+
+- Siete actividades completadas: criterios explícitos, análisis de incertidumbre, comparación geométrica, evaluador de 114 vistas, manifiesto candidato, 480 pares y guía SC3.
+- 106 pruebas satisfactorias. Se mantiene 344 M como candidato, sin garantía de suficiencia ni orden de transporte. [Entrega](objetivo-1/PREPARACION_CAMPANA_114.md).
+
 ## Histogramas del piloto revisados — 2026-10-02
 
 - Se verificaron 27 huellas, seis imágenes y la evaluación completa desde los CSV de `ccbdce0`. Se confirma el resultado del piloto y se precisa la proyección a 344 M; no se habilita producción.

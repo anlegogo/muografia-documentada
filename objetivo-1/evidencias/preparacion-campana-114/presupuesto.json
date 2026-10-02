@@ -1,0 +1,26 @@
+{
+  "rate_basis": "SC3 pilot 36 jobs: allocated CPU hours, not physical CPU efficiency",
+  "pilot_core_hours": 191.62666666666667,
+  "alternatives": [
+    {
+      "N": 211000000,
+      "total_events": 24054000000,
+      "core_hours": 3640.9066666666663,
+      "ideal_wall_hours_at_96_cores": 37.926111111111105
+    },
+    {
+      "N": 344000000,
+      "total_events": 39216000000,
+      "core_hours": 5935.885750394944,
+      "ideal_wall_hours_at_96_cores": 61.83214323328067
+    }
+  ],
+  "reuse_possible_saved_core_hours": 191.62666666666667,
+  "reuse_events_saved": 1266000000,
+  "reuse_fraction_of_344_campaign": 0.0322827417380661,
+  "selected_manifest_reuses_pilot": false,
+  "limitations": [
+    "One measured geometry; queue and scaling not guaranteed.",
+    "Plan preparation is not submission authorization."
+  ]
+}

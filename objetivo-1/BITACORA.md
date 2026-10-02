@@ -1,5 +1,11 @@
 # Bitácora de la revisión del OE1
 
+## Preparación completa de campaña — 2026-10-02
+
+- Por autorización de la dirección se completan las [siete actividades](PREPARACION_CAMPANA_114.md), usando los histogramas `ccbdce0` y el catálogo congelado.
+- Evidencias: manifiesto y 38 máscaras, análisis binomial, presupuesto e inventario de 480 pares. El piloto presenta la menor columna nominal q90 del catálogo; 344 M no garantiza la meta de roca en las 19 geometrías.
+- 106 pruebas, integridad de semillas y regeneración exacta de pares satisfactorias. Sin nuevas corridas; pendiente acuerdo de presupuesto/calidad y ejecución SC3.
+
 ## Histogramas del piloto revisados — 2026-10-02
 
 - Entradas: entrega `ccbdce0`, diseño y máscaras congelados. Se verificaron bytes, conteos, coordenadas y evaluación en Python local.

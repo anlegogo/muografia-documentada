@@ -1,0 +1,81 @@
+{
+  "total_pairs": 480,
+  "references": 6,
+  "master_seed": 20260805,
+  "pilot_only": true,
+  "physical_validation": false,
+  "checks": [
+    {
+      "view": 0,
+      "pairs": 80,
+      "sha256": "26e044be1cad3e523872602e64e0f0b036cfe485e4e97eccea99d07e61afc62b",
+      "repeat_seed_exact": true,
+      "aggregate_z": [
+        1.086775177872455,
+        -0.9345219018839722,
+        0.6367962173445092,
+        0.010405868437994275
+      ]
+    },
+    {
+      "view": 1,
+      "pairs": 80,
+      "sha256": "c7db8d914018c4d5fe940634208063e064266cc76ed5e0216223f685aba7f7d9",
+      "repeat_seed_exact": true,
+      "aggregate_z": [
+        0.6902926175964065,
+        -0.5385648989914682,
+        -1.0709979344291607,
+        -0.23080355693462226
+      ]
+    },
+    {
+      "view": 2,
+      "pairs": 80,
+      "sha256": "5048c62c663ebd183dcc6ec2194caf15ec1b4f71eaee7215a848e8ba33deafbf",
+      "repeat_seed_exact": true,
+      "aggregate_z": [
+        0.5593395802900356,
+        0.9850397842208173,
+        0.8614034268716104,
+        -0.08627660302376135
+      ]
+    },
+    {
+      "view": 3,
+      "pairs": 80,
+      "sha256": "6a70a70021622a008be202a332cd5d952969806948dd7afb5b06920cdc4cbca1",
+      "repeat_seed_exact": true,
+      "aggregate_z": [
+        0.11540388587155541,
+        1.1285438613859498,
+        0.13154177105477302,
+        -0.9446158273919567
+      ]
+    },
+    {
+      "view": 4,
+      "pairs": 80,
+      "sha256": "17fcf43c78b770e930ef2fbc7d8448b4be4a6f7967f0e04746ab5d1587efa83d",
+      "repeat_seed_exact": true,
+      "aggregate_z": [
+        0.12050717214285281,
+        1.281125830502565,
+        0.7168207219757394,
+        -0.5544795129266458
+      ]
+    },
+    {
+      "view": 5,
+      "pairs": 80,
+      "sha256": "cb15ab6338a2bc880d8da8ed0fc8d2cc9c31e75df0c963ac41c2df05c6e26709",
+      "repeat_seed_exact": true,
+      "aggregate_z": [
+        0.6947793072465028,
+        0.18592661258849474,
+        -1.5794894084694744,
+        -0.05365346689503008
+      ]
+    }
+  ]
+}
