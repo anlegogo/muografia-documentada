@@ -1,5 +1,7 @@
 # Pendientes del OE1
 
+**Pendiente físico precisado:** [aceptación del plano de conteo](REVISION_ACEPTACION_PLANO.md). La convergencia al ampliar el plano no demuestra por sí sola equivalencia con un detector pequeño; se documenta un contraejemplo matemático y la evidencia a revisar antes de otro ensayo.
+
 **Actualización de entrega:** [corrida angular revisada](REVISION_MALLA_ANGULAR_2026-10-01.md): 1.000 primarios y 750 registros, 24 controles del revisor y 31 contrastes satisfactorios. Integración técnica respaldada en SC3; aceptación física y compatibilidad del conjunto final pendientes. Las instrucciones y estados anteriores se conservan como historial.
 
 **Corrección preparada:** [malla azimutal v1](correcciones/malla-angular-v1/README.md). Parche separado, seis pruebas Python satisfactorias; compilación C++ y verificación de integración en Geant4 pendientes.

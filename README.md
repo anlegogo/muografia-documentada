@@ -1,5 +1,7 @@
 # Muografía: documentación y seguimiento académico
 
+**Pendiente físico precisado:** [aceptación del plano de conteo](objetivo-1/REVISION_ACEPTACION_PLANO.md). La convergencia al ampliar el plano no demuestra por sí sola equivalencia con un detector pequeño; se documenta un contraejemplo matemático y la evidencia a revisar antes de otro ensayo.
+
 **Avance en regiones:** [seis ROI geométricas candidatas de geo-train-06](objetivo-1/REGIONES_ANGULARES_V1.md), contrastadas sobre 393.216 rayos; no sustituyen las máscaras congeladas.
 
 **Adaptación local:** [lector y exportador angular](objetivo-1/ADAPTACION_LECTURA_ANGULAR.md) probado con los 750 conteos reales; pendientes ROI, consumidores finales y aceptación física.

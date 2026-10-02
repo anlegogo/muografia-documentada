@@ -1,5 +1,11 @@
 # Bitácora de nuestra revisión del OE1
 
+## Aceptación del plano: revisión conceptual — 2026-10-01, Colombia
+
+- Se revisa la evidencia local de planos 100/300/600 m y se distingue convergencia numérica de aceptación del panel físico. La cota histórica respecto a la asíntota no se reproduce con los materiales identificados.
+- [Derivación y control reproducible](REVISION_ACEPTACION_PLANO.md): contraejemplo 1D exacto y cuadratura, nueve combinaciones. No es Geant4 ni estima el sesgo del volcán.
+- P-04 acotado a observable, compensación, generación espacial y normalización. Revisar primero respaldo existente; no se prescribe ni ejecuta otra campaña.
+
 ## Integración de regiones y lectura — 2026-10-01, Colombia
 
 - Analizador de conteos dentro/fuera de ROI candidata con validación de geometría, vista, coordenadas, huellas y contenido. Exportador ampliado para preservar procedencia de geometría desde entradas.sha256.
