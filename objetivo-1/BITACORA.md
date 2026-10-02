@@ -1,5 +1,10 @@
 # Bitácora de nuestra revisión del OE1
 
+## Revisión de entrega 01a9871 — 2026-10-02
+
+- [Informe y acciones acotadas](REVISION_INTEGRACION_OBSERVABLE_01A9871.md): herramientas verificadas con dos bloques en SC3, análisis reproducido y T-01 corregido a favor de la integridad de los objetos Git entregados.
+- Antes de nuevas corridas: acordar observable, corregir referencia de cielo y dimensionamiento/alcance del control C3. No se ejecuta transporte ni se habilita campaña.
+
 ## Publicación verificada de bloques — 2026-10-02
 
 - Nueva herramienta de publicación: valida, copia a temporal, verifica todos los bytes y promueve con bloqueo; no sobrescribe resultados distintos y reconoce repeticiones idénticas.

@@ -1,6 +1,6 @@
 # Matriz de cumplimiento del OE1
 
-> Avance posterior a la revisión: [fusión y compatibilidad corregidas localmente](CORRECCIONES_LOCALES_FUSION_CONFIGURACION.md), 56 pruebas y contraste con los dos bloques reales. Las observaciones físicas siguen abiertas; adoptar la alternativa en SC3 requiere actualizar las herramientas allí.
+> Estado posterior: [entrega 01a9871 revisada](REVISION_INTEGRACION_OBSERVABLE_01A9871.md). Herramientas verificadas sobre dos bloques en SC3; propuesta de observable recibida. Permanecen ajustes de referencia de cielo, diseño de C3 y definición final. OE1 no se declara completo.
 
 > Actualización 2026-10-02: se recibió y revisó la entrega física/producción. Consultar la [revisión vigente](REVISION_FISICA_PRODUCCION_2026-10-02.md) antes de aplicar solicitudes o estados anteriores. La ampliación posterior está documentada en las correcciones locales enlazadas arriba.
 

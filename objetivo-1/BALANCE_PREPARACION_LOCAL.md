@@ -1,6 +1,6 @@
 # Balance de preparación local del OE1
 
-> Avance posterior: [publicación verificada con pruebas de fallos](PUBLICACION_VERIFICADA_BLOQUES.md). Suite ampliada a 78 pruebas; adopción en SC3 y física todavía pendientes.
+> Actualización: [verificación sobre dos bloques en SC3 recibida y revisada](REVISION_INTEGRACION_OBSERVABLE_01A9871.md). Suite local de 78 pruebas como antecedente. Quedan la integración en el lanzador de producción y las decisiones físicas; este balance conserva la preparación local previa.
 
 2026-10-02. Consolida lo realizado después de la entrega `f9a77ef`, con autorización del director. **La cadena local está preparada y probada para el alcance técnico descrito; la interpretación física y la operación de producción en SC3 siguen abiertas.** No se lanzaron transportes nuevos ni se modificó la rama estudiantil.
 

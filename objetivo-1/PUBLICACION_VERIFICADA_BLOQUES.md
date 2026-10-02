@@ -49,7 +49,7 @@ Primero comprobar la integración con las pruebas y archivos existentes. No hace
 
 ## Límites operativos
 
-La promoción usa un cambio de nombre dentro del mismo sistema de archivos y un bloqueo cooperativo. No garantiza durabilidad ante una pérdida eléctrica ni protege contra un proceso externo que ignore el protocolo y modifique los archivos. No se probó en el almacenamiento de SC3.
+La promoción usa un cambio de nombre dentro del mismo sistema de archivos y un bloqueo cooperativo. No garantiza durabilidad ante una pérdida eléctrica ni protege contra un proceso externo que ignore el protocolo y modifique los archivos. **Actualización:** [01a9871 aporta dos publicaciones y una repetición satisfactoria en SC3](REVISION_INTEGRACION_OBSERVABLE_01A9871.md); no equivale a comprobar todos los fallos del almacenamiento ni la integración del lanzador automático.
 
 Una terminación abrupta puede dejar un archivo `.publication.lock`; la herramienta no lo elimina automáticamente por antigüedad. Antes de retirarlo hay que comprobar que el proceso propietario terminó y revisar temporales/destino. Un directorio temporal, aunque contenga un recibo, no equivale al directorio final publicado.
 

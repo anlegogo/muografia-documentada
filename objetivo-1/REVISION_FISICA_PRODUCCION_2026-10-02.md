@@ -1,6 +1,6 @@
 # Revisión de la justificación física y propuesta de producción
 
-> Avance posterior a la revisión: [fusión y compatibilidad corregidas localmente](CORRECCIONES_LOCALES_FUSION_CONFIGURACION.md), 56 pruebas y contraste con los dos bloques reales. Las observaciones físicas siguen abiertas; adoptar la alternativa en SC3 requiere actualizar las herramientas allí.
+> Actualización: [revisión de la entrega 01a9871](REVISION_INTEGRACION_OBSERVABLE_01A9871.md). Verificación de herramientas en SC3 recibida. T-01 corregido: el desajuste estaba en nuestra copia extraída, no en los objetos Git. Este informe conserva el estado histórico de f9a77ef.
 
 Revisión del director, 2026-10-02, Colombia. Rama de los estudiantes: `oe1/justificacion-fisica-produccion`, commit **f9a77eff49c01bfd073c00d7d62414e3ce962f9d** (ocho commits sobre `18aa5b1`). [Entrega congelada](https://github.com/anlegogo/muografia-documentada/tree/f9a77eff49c01bfd073c00d7d62414e3ce962f9d/objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion).
 
@@ -52,7 +52,7 @@ Además, `controles_sc3.py` evalúa C4 con `h["full"]["0"]` (sin corte), mientra
 
 ### T-01 · Los finales de línea rompen la verificación exacta de la entrega
 
-De 200 entradas en los cuatro `salidas.sha256` de controles, **181 no coinciden con los bytes versionados**. Las 181 coinciden al convertir CRLF a LF; no hay discrepancias restantes en ese conjunto. Los histogramas de los dos bloques de integración presentan el mismo problema, por lo que `fusionar_v1.py` falla directamente sobre la entrega extraída de Git.
+De 200 entradas en los cuatro `salidas.sha256` de controles, **181 no coincidían con los bytes de nuestra copia extraída**. Las 181 coinciden al convertir CRLF a LF; no hay discrepancias restantes en ese conjunto. Los histogramas de los dos bloques de integración presentaban el mismo problema en esa copia. **Corrección del 2026-10-02:** la atribución original a los «bytes versionados» fue incorrecta. La comprobación directa posterior demuestra que las 204 entradas de los seis manifiestos coinciden con los objetos Git de f9a77ef. No había datos SC3 corruptos o ausentes por este motivo; véase la revisión 01a9871.
 
 **Acción:** conservar de forma explícita los bytes de SC3 y su manifiesto, o registrar una conversión con ambos juegos de huellas y procedencia. Establecer atributos Git apropiados. No silenciar ni omitir la verificación SHA. La normalización local usada en esta revisión quedó limitada a copias y no modifica la evidencia original.
 

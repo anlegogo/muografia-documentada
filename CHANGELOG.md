@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Revisión de entrega 01a9871 — 2026-10-02
+
+- Prueba técnica de dos bloques en SC3 respaldada; fusión reproducida con hashes idénticos y 113 valores del nuevo análisis contrastados.
+- Corrección de T-01: 204 huellas coinciden con los objetos Git originales; la discrepancia era de nuestra copia extraída.
+- Se documentan ajustes de referencia de cielo y dimensionamiento/alcance de C3 antes de nuevas corridas. Rama estudiantil sin fusionar; sin cambios al simulador.
+
 ## Publicación verificada de bloques — 2026-10-02
 
 - Nueva herramienta de publicación: valida, copia a temporal, verifica todos los bytes y promueve con bloqueo; no sobrescribe resultados distintos y reconoce repeticiones idénticas.

@@ -1,5 +1,7 @@
 # Índice de documentación
 
+- [Revisión de integración SC3 y observable, entrega 01a9871](../objetivo-1/REVISION_INTEGRACION_OBSERVABLE_01A9871.md).
+
 - [Publicación verificada de bloques](../objetivo-1/PUBLICACION_VERIFICADA_BLOQUES.md).
 
 - [Balance de preparación local y ficha candidata](../objetivo-1/BALANCE_PREPARACION_LOCAL.md).
