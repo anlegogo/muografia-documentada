@@ -61,6 +61,8 @@ No se fijó de antemano un umbral de suficiencia; estas cifras sirven para dimen
 | Inventario | — | [inventario-piloto-v2.json](datos/sc3/piloto-v2/piloto-resultados/inventario-piloto-v2.json) `8bf67b04…`: 6 de 6 referencias, `technical_complete: true`, `errors: []` |
 | Evaluación | — | `evaluacion-piloto-v2.json` `d57e4853…` |
 
+**Histogramas en el repositorio.** Los histogramas fusionados de las seis vistas (256 × 256, E_cin > 3 GeV) y sus metadatos están en [datos/sc3/piloto-v2/fusion/geo-train-06/](datos/sc3/piloto-v2/fusion/geo-train-06/). Las imágenes exportadas (`counts_ref` en `uint32`, con los bordes y centros de azimut y elevación) están en [datos/sc3/piloto-v2/imagenes/](datos/sc3/piloto-v2/imagenes/). Ambas copias coinciden byte a byte con `fusion.sha256` e `imagenes.sha256`. Los 36 bloques individuales, que incluyen los histogramas sin corte y la generación nominal (26 MB), permanecen en SC3 con sus huellas en `bloques-publicados.sha256`.
+
 Conteos fusionados con corte por vista: 73.882.961; 73.888.094; 73.888.460; 73.877.504; 73.872.248 y 73.874.396. Sin corte: de 137.486.309 a 137.505.724. La fusión verificó cada bloque sin aceptar conversiones CRLF.
 
 El empaquetado se ejecutó como indica la guía, sin `--salida`, así que verificó el inventario sin generar los 480 pares de estas seis referencias.

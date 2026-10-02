@@ -1,0 +1,974 @@
+{
+  "schema": "oe1-strict-block-merge-v1",
+  "physical_validation": false,
+  "manifest_sha256": "36d072c16d4f51a1772984114c1ab9a873501aa4b17aab14562fb7272a6d9a8d",
+  "accept_crlf": false,
+  "views": [
+    {
+      "geometry": "geo-train-06",
+      "view": 0,
+      "events": 211000000,
+      "counts": 73882961,
+      "all_energy_counts": 137499721,
+      "hist_sha256": "b65da04cf08829be1396fae2bec22bed47373bed017b1df60927eb932ce415a9",
+      "meta_sha256": "a58fe8bfb1516b32332c9271e97fc454127dcb407b4aa3d1801723ccbf3b32b5",
+      "blocks": [
+        {
+          "manifest_row": {
+            "fila": 0,
+            "geometria": "geo-train-06",
+            "vista": 0,
+            "bloque": 0,
+            "semilla": 20261002400000,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view0_hist.csv",
+              "received_sha256": "6be2205772fff0480b63faf10868d1ba80000ca63bfce785f3419fb95ed6dfe7",
+              "expected_sha256": "6be2205772fff0480b63faf10868d1ba80000ca63bfce785f3419fb95ed6dfe7",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view0.meta.json",
+              "received_sha256": "6d318fd805db8bc404da05731d84e7daa605cbc744ab80c80082621766b0ed3b",
+              "expected_sha256": "6d318fd805db8bc404da05731d84e7daa605cbc744ab80c80082621766b0ed3b",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 1,
+            "geometria": "geo-train-06",
+            "vista": 0,
+            "bloque": 1,
+            "semilla": 20261002400001,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view0_hist.csv",
+              "received_sha256": "24a0fb21d2185af820f9ab706a5a178849b5263f375e08d0e7703488bf0fab1c",
+              "expected_sha256": "24a0fb21d2185af820f9ab706a5a178849b5263f375e08d0e7703488bf0fab1c",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view0.meta.json",
+              "received_sha256": "0dca552852033cbffcd0bbbcb30451afe52bf5bbfde3aadf292e3691b4696587",
+              "expected_sha256": "0dca552852033cbffcd0bbbcb30451afe52bf5bbfde3aadf292e3691b4696587",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 2,
+            "geometria": "geo-train-06",
+            "vista": 0,
+            "bloque": 2,
+            "semilla": 20261002400002,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view0_hist.csv",
+              "received_sha256": "6b10bee4a4aea67de4df92cef5a6bfc7557161cd5cb4b075197b0297a323007e",
+              "expected_sha256": "6b10bee4a4aea67de4df92cef5a6bfc7557161cd5cb4b075197b0297a323007e",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view0.meta.json",
+              "received_sha256": "02f7a58890232ef78c357c4ea8e6b72ae384b652fc825cd7844d9df27b908f0d",
+              "expected_sha256": "02f7a58890232ef78c357c4ea8e6b72ae384b652fc825cd7844d9df27b908f0d",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 3,
+            "geometria": "geo-train-06",
+            "vista": 0,
+            "bloque": 3,
+            "semilla": 20261002400003,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view0_hist.csv",
+              "received_sha256": "ab7b6987534bf859f191204acd2065af4081c27df2be452f55f1e2fc0d76cb31",
+              "expected_sha256": "ab7b6987534bf859f191204acd2065af4081c27df2be452f55f1e2fc0d76cb31",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view0.meta.json",
+              "received_sha256": "8f9ba36abbe528849394e5c1cf5bd8519e417a12155561a544bc9c1b93acdcb4",
+              "expected_sha256": "8f9ba36abbe528849394e5c1cf5bd8519e417a12155561a544bc9c1b93acdcb4",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 4,
+            "geometria": "geo-train-06",
+            "vista": 0,
+            "bloque": 4,
+            "semilla": 20261002400004,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view0_hist.csv",
+              "received_sha256": "50eae225dcdfdd589b17de5fad69720d03e4d455ba477300ad33d29f95d1869b",
+              "expected_sha256": "50eae225dcdfdd589b17de5fad69720d03e4d455ba477300ad33d29f95d1869b",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view0.meta.json",
+              "received_sha256": "6dac383947c4b254b96b2cfac026ef7a4a76d37d5d7e84fa2ac185c829b49aea",
+              "expected_sha256": "6dac383947c4b254b96b2cfac026ef7a4a76d37d5d7e84fa2ac185c829b49aea",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 5,
+            "geometria": "geo-train-06",
+            "vista": 0,
+            "bloque": 5,
+            "semilla": 20261002400005,
+            "eventos": 35166665
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view0_hist.csv",
+              "received_sha256": "fde44e582a9f1e63f68b956094464473d9c4e49af08d874a493934fd91453b75",
+              "expected_sha256": "fde44e582a9f1e63f68b956094464473d9c4e49af08d874a493934fd91453b75",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view0.meta.json",
+              "received_sha256": "e00aed46950c2a7547a44ff86d0ddd1d6be35261f7b46bc3e728aa8e00ffe003",
+              "expected_sha256": "e00aed46950c2a7547a44ff86d0ddd1d6be35261f7b46bc3e728aa8e00ffe003",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        }
+      ]
+    },
+    {
+      "geometry": "geo-train-06",
+      "view": 1,
+      "events": 211000000,
+      "counts": 73888094,
+      "all_energy_counts": 137505724,
+      "hist_sha256": "cc9b83c1867179bc19d5a3d3dcffd694a5e341472eac767d914f528066d9e540",
+      "meta_sha256": "2452baa077298e2381e6e6e9d42bfda191fbfcad5d29aeed5c1bc3e0010a26a1",
+      "blocks": [
+        {
+          "manifest_row": {
+            "fila": 6,
+            "geometria": "geo-train-06",
+            "vista": 1,
+            "bloque": 0,
+            "semilla": 20261002401000,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view1_hist.csv",
+              "received_sha256": "67207562ab88bba985b73b5e0d80cd85caa14a796c7182146362a2448aa5a5cc",
+              "expected_sha256": "67207562ab88bba985b73b5e0d80cd85caa14a796c7182146362a2448aa5a5cc",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view1.meta.json",
+              "received_sha256": "55a2a3674482c78e99c9f963d35b4aece433d3ce47297b57eb41b752c51f0714",
+              "expected_sha256": "55a2a3674482c78e99c9f963d35b4aece433d3ce47297b57eb41b752c51f0714",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 7,
+            "geometria": "geo-train-06",
+            "vista": 1,
+            "bloque": 1,
+            "semilla": 20261002401001,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view1_hist.csv",
+              "received_sha256": "90b5ab95f9f4e8cebe52bc9bc1006d9f95ff508a034f0bfb7676ba18abb1d501",
+              "expected_sha256": "90b5ab95f9f4e8cebe52bc9bc1006d9f95ff508a034f0bfb7676ba18abb1d501",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view1.meta.json",
+              "received_sha256": "fd2c42019c980d0ed54e713f21f4dbe33c8bbc63ade6a529063e40c36226f97e",
+              "expected_sha256": "fd2c42019c980d0ed54e713f21f4dbe33c8bbc63ade6a529063e40c36226f97e",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 8,
+            "geometria": "geo-train-06",
+            "vista": 1,
+            "bloque": 2,
+            "semilla": 20261002401002,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view1_hist.csv",
+              "received_sha256": "397189fcc421045a00f9c81641f5b7300e1a468cc890a8270108e3b9c761d6ad",
+              "expected_sha256": "397189fcc421045a00f9c81641f5b7300e1a468cc890a8270108e3b9c761d6ad",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view1.meta.json",
+              "received_sha256": "dd92506b8f35485366bad602b2e46c8599206048e7c35fca27a4351f52d6d0bd",
+              "expected_sha256": "dd92506b8f35485366bad602b2e46c8599206048e7c35fca27a4351f52d6d0bd",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 9,
+            "geometria": "geo-train-06",
+            "vista": 1,
+            "bloque": 3,
+            "semilla": 20261002401003,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view1_hist.csv",
+              "received_sha256": "09798afb1cd4f02b84c8d6b05410f0b09a147fe14384c1dc394fef2734b079db",
+              "expected_sha256": "09798afb1cd4f02b84c8d6b05410f0b09a147fe14384c1dc394fef2734b079db",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view1.meta.json",
+              "received_sha256": "19409b45cd24ba115c7cf0d5ee13f1a18e10440cd5fcae841c84037d840301e5",
+              "expected_sha256": "19409b45cd24ba115c7cf0d5ee13f1a18e10440cd5fcae841c84037d840301e5",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 10,
+            "geometria": "geo-train-06",
+            "vista": 1,
+            "bloque": 4,
+            "semilla": 20261002401004,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view1_hist.csv",
+              "received_sha256": "d498eb65ec3d2ba2af8c0860fe99dcef8b4a7617035562c06f75f9d7245d29d9",
+              "expected_sha256": "d498eb65ec3d2ba2af8c0860fe99dcef8b4a7617035562c06f75f9d7245d29d9",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view1.meta.json",
+              "received_sha256": "07d5f35ce5ea951f6ad829563799a7a694ff94028fd86d3a841e3de492e78826",
+              "expected_sha256": "07d5f35ce5ea951f6ad829563799a7a694ff94028fd86d3a841e3de492e78826",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 11,
+            "geometria": "geo-train-06",
+            "vista": 1,
+            "bloque": 5,
+            "semilla": 20261002401005,
+            "eventos": 35166665
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view1_hist.csv",
+              "received_sha256": "d005fae737ca832d1ec7907603e369c2ee9a37e1ef9d7529d263198ea9ab3e2e",
+              "expected_sha256": "d005fae737ca832d1ec7907603e369c2ee9a37e1ef9d7529d263198ea9ab3e2e",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view1.meta.json",
+              "received_sha256": "f419cf354ef70ba82b6717496014457ce4eb1909c55bfb5130fade9dde134bc3",
+              "expected_sha256": "f419cf354ef70ba82b6717496014457ce4eb1909c55bfb5130fade9dde134bc3",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        }
+      ]
+    },
+    {
+      "geometry": "geo-train-06",
+      "view": 2,
+      "events": 211000000,
+      "counts": 73888460,
+      "all_energy_counts": 137504463,
+      "hist_sha256": "da146ffe3bfa2fbafe8a54de04b3daf350c08bdc4a4096b2ec4d5a7f5c2b3ae1",
+      "meta_sha256": "5fdde09e19fd677c707305b3288666110aba78c40c1c972ea98d659f11c81781",
+      "blocks": [
+        {
+          "manifest_row": {
+            "fila": 12,
+            "geometria": "geo-train-06",
+            "vista": 2,
+            "bloque": 0,
+            "semilla": 20261002402000,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view2_hist.csv",
+              "received_sha256": "10743324a8a9987f53f4689de82f7e030e711b48d9768e4ca6c7b2a7d29a6672",
+              "expected_sha256": "10743324a8a9987f53f4689de82f7e030e711b48d9768e4ca6c7b2a7d29a6672",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view2.meta.json",
+              "received_sha256": "f2a36098d82975a1e56c0f9254667bac8081dbb78bd555069b2b22b8d967a996",
+              "expected_sha256": "f2a36098d82975a1e56c0f9254667bac8081dbb78bd555069b2b22b8d967a996",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 13,
+            "geometria": "geo-train-06",
+            "vista": 2,
+            "bloque": 1,
+            "semilla": 20261002402001,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view2_hist.csv",
+              "received_sha256": "f8ec7393ebd91e734a35c50233310fa95a6f1acf41a359a62dde402935811893",
+              "expected_sha256": "f8ec7393ebd91e734a35c50233310fa95a6f1acf41a359a62dde402935811893",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view2.meta.json",
+              "received_sha256": "5ee3bf6b332a461a79c73508a9440e41fd0c5d773c22712afdf749e1b1f15736",
+              "expected_sha256": "5ee3bf6b332a461a79c73508a9440e41fd0c5d773c22712afdf749e1b1f15736",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 14,
+            "geometria": "geo-train-06",
+            "vista": 2,
+            "bloque": 2,
+            "semilla": 20261002402002,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view2_hist.csv",
+              "received_sha256": "273838d282a2b2c7f02e028edefe0840b041dcee595edf8760dbbf71ec2c574b",
+              "expected_sha256": "273838d282a2b2c7f02e028edefe0840b041dcee595edf8760dbbf71ec2c574b",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view2.meta.json",
+              "received_sha256": "4746c958ce1893682835fd5a409c4f40ed2e9ea592bb21c441ed0c8406e44014",
+              "expected_sha256": "4746c958ce1893682835fd5a409c4f40ed2e9ea592bb21c441ed0c8406e44014",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 15,
+            "geometria": "geo-train-06",
+            "vista": 2,
+            "bloque": 3,
+            "semilla": 20261002402003,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view2_hist.csv",
+              "received_sha256": "429321e40b6d8f6c76e5ab25b98d973d626d5abc81e9797a4c35be7e7ebca352",
+              "expected_sha256": "429321e40b6d8f6c76e5ab25b98d973d626d5abc81e9797a4c35be7e7ebca352",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view2.meta.json",
+              "received_sha256": "9a40e83b39881488011f51bb05a4c1e581915dcb45cd4beb47255d24d18f5eb8",
+              "expected_sha256": "9a40e83b39881488011f51bb05a4c1e581915dcb45cd4beb47255d24d18f5eb8",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 16,
+            "geometria": "geo-train-06",
+            "vista": 2,
+            "bloque": 4,
+            "semilla": 20261002402004,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view2_hist.csv",
+              "received_sha256": "39438bcf1833965fcdbc1416bd05dfddbbde63705e4fe179613b201bc01ed513",
+              "expected_sha256": "39438bcf1833965fcdbc1416bd05dfddbbde63705e4fe179613b201bc01ed513",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view2.meta.json",
+              "received_sha256": "a6b32bf260ebe0d33dd0045faa0b080fd5dfeb85517bcc39235e1a3be747b7cb",
+              "expected_sha256": "a6b32bf260ebe0d33dd0045faa0b080fd5dfeb85517bcc39235e1a3be747b7cb",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 17,
+            "geometria": "geo-train-06",
+            "vista": 2,
+            "bloque": 5,
+            "semilla": 20261002402005,
+            "eventos": 35166665
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view2_hist.csv",
+              "received_sha256": "61d84e0a681e8849682754394ac2b3f19f0d54de55ee7af8278c031eff9556a4",
+              "expected_sha256": "61d84e0a681e8849682754394ac2b3f19f0d54de55ee7af8278c031eff9556a4",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view2.meta.json",
+              "received_sha256": "3777334b84d1cd1725aa8936ae1bfe261607911c1c8d36120f86c4c1e7aa0c5b",
+              "expected_sha256": "3777334b84d1cd1725aa8936ae1bfe261607911c1c8d36120f86c4c1e7aa0c5b",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        }
+      ]
+    },
+    {
+      "geometry": "geo-train-06",
+      "view": 3,
+      "events": 211000000,
+      "counts": 73877504,
+      "all_energy_counts": 137496441,
+      "hist_sha256": "1e8d2d91bae3722ffb2b9f4d9aad542517f429780ff949fedb66806868619bda",
+      "meta_sha256": "884e2b569cd42d9a1b3f2f6d3bc40fe8c3694c8b0fe5cae4c0c9b183d0ecad98",
+      "blocks": [
+        {
+          "manifest_row": {
+            "fila": 18,
+            "geometria": "geo-train-06",
+            "vista": 3,
+            "bloque": 0,
+            "semilla": 20261002403000,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view3_hist.csv",
+              "received_sha256": "647edde2fb3e784d357dcbbe99b640b71f914e10315675010f4399cb9d3118d1",
+              "expected_sha256": "647edde2fb3e784d357dcbbe99b640b71f914e10315675010f4399cb9d3118d1",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view3.meta.json",
+              "received_sha256": "a0f566a10aac0545e88dae1007a32d195448cd123255d6de42ed8f3a9e560999",
+              "expected_sha256": "a0f566a10aac0545e88dae1007a32d195448cd123255d6de42ed8f3a9e560999",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 19,
+            "geometria": "geo-train-06",
+            "vista": 3,
+            "bloque": 1,
+            "semilla": 20261002403001,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view3_hist.csv",
+              "received_sha256": "46c74fa3ad4da92ff4dfa4129c6935f346c99b8fb956170e406c7d3109bfb915",
+              "expected_sha256": "46c74fa3ad4da92ff4dfa4129c6935f346c99b8fb956170e406c7d3109bfb915",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view3.meta.json",
+              "received_sha256": "c66e24eb0bfd1720a81d6af08068b080524f7fe2b74a73556c4bbb986df558eb",
+              "expected_sha256": "c66e24eb0bfd1720a81d6af08068b080524f7fe2b74a73556c4bbb986df558eb",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 20,
+            "geometria": "geo-train-06",
+            "vista": 3,
+            "bloque": 2,
+            "semilla": 20261002403002,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view3_hist.csv",
+              "received_sha256": "0f851119da6dd6e7ace35cc16820431d0ac35069a6c2eab9f7eb02085bda0f14",
+              "expected_sha256": "0f851119da6dd6e7ace35cc16820431d0ac35069a6c2eab9f7eb02085bda0f14",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view3.meta.json",
+              "received_sha256": "c84f7a4f177eac960d5ceb6b0cdb596b91e042b24554cdce7b68c5092661b21a",
+              "expected_sha256": "c84f7a4f177eac960d5ceb6b0cdb596b91e042b24554cdce7b68c5092661b21a",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 21,
+            "geometria": "geo-train-06",
+            "vista": 3,
+            "bloque": 3,
+            "semilla": 20261002403003,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view3_hist.csv",
+              "received_sha256": "e39ab69a9a11e42d8f816d8d8ab824dac47710763710c66e61f2ac2fb2d18d67",
+              "expected_sha256": "e39ab69a9a11e42d8f816d8d8ab824dac47710763710c66e61f2ac2fb2d18d67",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view3.meta.json",
+              "received_sha256": "467a02110bb58e670e2b2af72e4c20ecfae4aaad45282547a1aa2b6d27d3d5e7",
+              "expected_sha256": "467a02110bb58e670e2b2af72e4c20ecfae4aaad45282547a1aa2b6d27d3d5e7",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 22,
+            "geometria": "geo-train-06",
+            "vista": 3,
+            "bloque": 4,
+            "semilla": 20261002403004,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view3_hist.csv",
+              "received_sha256": "65f9ae1db3ae1173ec61e0a4a7ca50de5a94c3cf18d87b298d1764ca4ac5637e",
+              "expected_sha256": "65f9ae1db3ae1173ec61e0a4a7ca50de5a94c3cf18d87b298d1764ca4ac5637e",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view3.meta.json",
+              "received_sha256": "74372493f3cac0c792f6e675bea06aae91f799e528dec45bfc76e648daaf5402",
+              "expected_sha256": "74372493f3cac0c792f6e675bea06aae91f799e528dec45bfc76e648daaf5402",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 23,
+            "geometria": "geo-train-06",
+            "vista": 3,
+            "bloque": 5,
+            "semilla": 20261002403005,
+            "eventos": 35166665
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view3_hist.csv",
+              "received_sha256": "b545dd0e1e8aa39cf5ed26283c348c52a749625104000fa4bf55350ab1a1a2fa",
+              "expected_sha256": "b545dd0e1e8aa39cf5ed26283c348c52a749625104000fa4bf55350ab1a1a2fa",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view3.meta.json",
+              "received_sha256": "7671e528863b12bac29e47e28da456da43b15bc3b2e8b27bae5c9dc2a8ae83d1",
+              "expected_sha256": "7671e528863b12bac29e47e28da456da43b15bc3b2e8b27bae5c9dc2a8ae83d1",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        }
+      ]
+    },
+    {
+      "geometry": "geo-train-06",
+      "view": 4,
+      "events": 211000000,
+      "counts": 73872248,
+      "all_energy_counts": 137486309,
+      "hist_sha256": "20e1a1567a02408dbcd60763ceca4c0308e36ad0ef76041d09e5bde30d642d3c",
+      "meta_sha256": "7d3118d2776e9d52d23c704e0eaa3ce55f53e082da900c175316c4520cd3a6c4",
+      "blocks": [
+        {
+          "manifest_row": {
+            "fila": 24,
+            "geometria": "geo-train-06",
+            "vista": 4,
+            "bloque": 0,
+            "semilla": 20261002404000,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view4_hist.csv",
+              "received_sha256": "65c534807185de4d97a807b12dd6824aaa6475e3e17f2ee9db84564cf0150d8f",
+              "expected_sha256": "65c534807185de4d97a807b12dd6824aaa6475e3e17f2ee9db84564cf0150d8f",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view4.meta.json",
+              "received_sha256": "d23d33624b0b5abef077a797ce6fa9e6ae7e756efd3d623450a4fc5a3f41e540",
+              "expected_sha256": "d23d33624b0b5abef077a797ce6fa9e6ae7e756efd3d623450a4fc5a3f41e540",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 25,
+            "geometria": "geo-train-06",
+            "vista": 4,
+            "bloque": 1,
+            "semilla": 20261002404001,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view4_hist.csv",
+              "received_sha256": "f71e0ce882945ac2bc1684e5d3fc16d4be6177ae159d5e01d6c622e2403be88f",
+              "expected_sha256": "f71e0ce882945ac2bc1684e5d3fc16d4be6177ae159d5e01d6c622e2403be88f",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view4.meta.json",
+              "received_sha256": "210c637c2caa308ebc3d833466a9853642a06da61f468c7e65b8146dc361436b",
+              "expected_sha256": "210c637c2caa308ebc3d833466a9853642a06da61f468c7e65b8146dc361436b",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 26,
+            "geometria": "geo-train-06",
+            "vista": 4,
+            "bloque": 2,
+            "semilla": 20261002404002,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view4_hist.csv",
+              "received_sha256": "82bd382e94d59252af487d963af9b526a5b4659db81037f8c7eb934aa8546272",
+              "expected_sha256": "82bd382e94d59252af487d963af9b526a5b4659db81037f8c7eb934aa8546272",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view4.meta.json",
+              "received_sha256": "44edd106f37492c5ceaf5f1868c20662fc00e57ca21cb62a6adcbac08d2ed0fa",
+              "expected_sha256": "44edd106f37492c5ceaf5f1868c20662fc00e57ca21cb62a6adcbac08d2ed0fa",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 27,
+            "geometria": "geo-train-06",
+            "vista": 4,
+            "bloque": 3,
+            "semilla": 20261002404003,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view4_hist.csv",
+              "received_sha256": "03b4bab38c53bb94ae7f0f64fb24fceeb46a7314982cd99758ca95f02b74c3a0",
+              "expected_sha256": "03b4bab38c53bb94ae7f0f64fb24fceeb46a7314982cd99758ca95f02b74c3a0",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view4.meta.json",
+              "received_sha256": "8b35e2273f5206ea0bbb9b6fb9942503a86c3008c9cf3bfc890a3d679233e3fd",
+              "expected_sha256": "8b35e2273f5206ea0bbb9b6fb9942503a86c3008c9cf3bfc890a3d679233e3fd",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 28,
+            "geometria": "geo-train-06",
+            "vista": 4,
+            "bloque": 4,
+            "semilla": 20261002404004,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view4_hist.csv",
+              "received_sha256": "ff0722c30e205c51b9950c59432c36ce0fc21b578c7e15915f8583d7257c01f5",
+              "expected_sha256": "ff0722c30e205c51b9950c59432c36ce0fc21b578c7e15915f8583d7257c01f5",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view4.meta.json",
+              "received_sha256": "cd3a6e47f0a198c76caab8bfe2c20039959a3223b827fc7b70b477400db1c224",
+              "expected_sha256": "cd3a6e47f0a198c76caab8bfe2c20039959a3223b827fc7b70b477400db1c224",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 29,
+            "geometria": "geo-train-06",
+            "vista": 4,
+            "bloque": 5,
+            "semilla": 20261002404005,
+            "eventos": 35166665
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view4_hist.csv",
+              "received_sha256": "698debf4ed98f8c93127539f28cb09ace2e37052accfc4ce54277e0029d84fbc",
+              "expected_sha256": "698debf4ed98f8c93127539f28cb09ace2e37052accfc4ce54277e0029d84fbc",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view4.meta.json",
+              "received_sha256": "1416340169177e3efbb7d9fefe01c9c662e438efc1841663342aefe5d4e53c4b",
+              "expected_sha256": "1416340169177e3efbb7d9fefe01c9c662e438efc1841663342aefe5d4e53c4b",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        }
+      ]
+    },
+    {
+      "geometry": "geo-train-06",
+      "view": 5,
+      "events": 211000000,
+      "counts": 73874396,
+      "all_energy_counts": 137492891,
+      "hist_sha256": "bc76f3fab6a65a166c3b6f5c2057948a0608e6ed7218c69f929d9dd2a116f32d",
+      "meta_sha256": "e8fe3dbc6c25ed4203592960bb66ded7fb52d8360be404eafad49ebd5f6d06f0",
+      "blocks": [
+        {
+          "manifest_row": {
+            "fila": 30,
+            "geometria": "geo-train-06",
+            "vista": 5,
+            "bloque": 0,
+            "semilla": 20261002405000,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view5_hist.csv",
+              "received_sha256": "dbdb2e0c8ce7206a94310c68206db4adf1cb75d85236e3e848f3d7b3cb7c30fe",
+              "expected_sha256": "dbdb2e0c8ce7206a94310c68206db4adf1cb75d85236e3e848f3d7b3cb7c30fe",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view5.meta.json",
+              "received_sha256": "87dd3a71ec1f82baeb175573ffa687d5b5da080ee85bd29628b33d6b3e418f57",
+              "expected_sha256": "87dd3a71ec1f82baeb175573ffa687d5b5da080ee85bd29628b33d6b3e418f57",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 31,
+            "geometria": "geo-train-06",
+            "vista": 5,
+            "bloque": 1,
+            "semilla": 20261002405001,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view5_hist.csv",
+              "received_sha256": "d5419b7062844be940e04488e9dd04d4238411b857a0e4707fbd83ef63734010",
+              "expected_sha256": "d5419b7062844be940e04488e9dd04d4238411b857a0e4707fbd83ef63734010",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view5.meta.json",
+              "received_sha256": "99011aadae843e068a00e0a61488bd443325188c375407cdce0329490d8a8564",
+              "expected_sha256": "99011aadae843e068a00e0a61488bd443325188c375407cdce0329490d8a8564",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 32,
+            "geometria": "geo-train-06",
+            "vista": 5,
+            "bloque": 2,
+            "semilla": 20261002405002,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view5_hist.csv",
+              "received_sha256": "8a05d720f3c30f20116cc52b19bc46124c3aef6ea5da8b215635609cd9218340",
+              "expected_sha256": "8a05d720f3c30f20116cc52b19bc46124c3aef6ea5da8b215635609cd9218340",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view5.meta.json",
+              "received_sha256": "aa8461bf1d59cf0c54cb74329bf73e18e35d62fdb8846adad6521ba8e6ca38c1",
+              "expected_sha256": "aa8461bf1d59cf0c54cb74329bf73e18e35d62fdb8846adad6521ba8e6ca38c1",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 33,
+            "geometria": "geo-train-06",
+            "vista": 5,
+            "bloque": 3,
+            "semilla": 20261002405003,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view5_hist.csv",
+              "received_sha256": "418a7ab12c4d853b5842f67b1695f87653117683207f2f14ccefef8d9e9282b8",
+              "expected_sha256": "418a7ab12c4d853b5842f67b1695f87653117683207f2f14ccefef8d9e9282b8",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view5.meta.json",
+              "received_sha256": "084fc471765fb15a83b18221cd99246d6d790af1342fd243da1a21c0e73cf0d0",
+              "expected_sha256": "084fc471765fb15a83b18221cd99246d6d790af1342fd243da1a21c0e73cf0d0",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 34,
+            "geometria": "geo-train-06",
+            "vista": 5,
+            "bloque": 4,
+            "semilla": 20261002405004,
+            "eventos": 35166667
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view5_hist.csv",
+              "received_sha256": "e3e32c88109953a751aad6dd568ebf17d669530090a5ef3f678de277d31a3c27",
+              "expected_sha256": "e3e32c88109953a751aad6dd568ebf17d669530090a5ef3f678de277d31a3c27",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view5.meta.json",
+              "received_sha256": "46a1c515da5c64390156ce57287e3faf79366938acb38a21314ed9349b4bc400",
+              "expected_sha256": "46a1c515da5c64390156ce57287e3faf79366938acb38a21314ed9349b4bc400",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        },
+        {
+          "manifest_row": {
+            "fila": 35,
+            "geometria": "geo-train-06",
+            "vista": 5,
+            "bloque": 5,
+            "semilla": 20261002405005,
+            "eventos": 35166665
+          },
+          "outputs": [
+            {
+              "name": "geo-train-06_view5_hist.csv",
+              "received_sha256": "0743ea43542a6a5897d62b0ecb19355b2f86a4121772a4f555ea7ddf7bf8891c",
+              "expected_sha256": "0743ea43542a6a5897d62b0ecb19355b2f86a4121772a4f555ea7ddf7bf8891c",
+              "crlf_to_lf_verified": false
+            },
+            {
+              "name": "geo-train-06_view5.meta.json",
+              "received_sha256": "2a0d7b43ce5b15d72307dc4f5828ca83b2a0917a83b5b8cdfcf26883fb4b77c4",
+              "expected_sha256": "2a0d7b43ce5b15d72307dc4f5828ca83b2a0917a83b5b8cdfcf26883fb4b77c4",
+              "crlf_to_lf_verified": false
+            }
+          ],
+          "input_manifest_sha256": "122647423d78af509c67313829d20750c66fdf2a9a413d34328b7ede014d48d9"
+        }
+      ]
+    }
+  ]
+}
