@@ -1,0 +1,186 @@
+{
+ "definiciones": {
+  "E_min_gev": 0.7980614314412022,
+  "A_perp_cm2": 14400.0,
+  "dOmega_sr": "(60/256 deg)(45/255 deg) cos(el)",
+  "suma_dOmega_sr": 0.7320361048398678,
+  "S0_v1_declarado": 36034069.911914065,
+  "S0_v1_recalculado": 36036310.768646665,
+  "diferencia_relativa": 6.218716725792106e-05,
+  "tasa_s-1": 13.902033145028575,
+  "phi_cm2_s_sr": {
+   "el_2": 6.820864172987701e-05,
+   "el_24.5": 0.0012206436388862733,
+   "el_47": 0.0036674952711319877
+  }
+ },
+ "imagenes": {
+  "c01 (2e7, sin margen)": {
+   "primarios_generados": 20000000,
+   "nominales_en_ventana": 20000000,
+   "fraccion_en_ventana": 1.0,
+   "T_dias": 16.65090847264022,
+   "chi2_filas_gen_vs_tabla": 290.437917297612,
+   "grados_libertad": 255,
+   "p_valor_aprox": 0.0628617726396367
+  },
+  "c02 (2e6, margen 5°)": {
+   "primarios_generados": 2000000,
+   "nominales_en_ventana": 1368352,
+   "fraccion_en_ventana": 0.684176,
+   "T_dias": 1.1392151955177097,
+   "chi2_filas_gen_vs_tabla": 224.27534419419828,
+   "grados_libertad": 255,
+   "p_valor_aprox": 0.917676689375962
+  },
+  "integración 108+109 (2e5, margen 5°)": {
+   "primarios_generados": 200000,
+   "nominales_en_ventana": 136657,
+   "fraccion_en_ventana": 0.683285,
+   "T_dias": 0.11377315995727974,
+   "chi2_filas_gen_vs_tabla": 265.0972511870814,
+   "grados_libertad": 255,
+   "p_valor_aprox": 0.31887059940068074
+  },
+  "producción k = 10 (planificada)": {
+   "nominales_en_ventana": 360340699,
+   "T_dias": 300.0
+  }
+ },
+ "identidad_c01_prediccion_sobre_conteo": 1.0001435825156242,
+ "eps_c01": {
+  "cielo_media_filas_20_42": 0.558736570751239,
+  "transmision_mediana_roca_3e4_1e5": 0.013751453076680891
+ },
+ "detector": {
+  "factor_area_proyectada": 0.7845539846898287,
+  "telescopio_dos_planos": {
+   "0.3": {
+    "factor_medio_ponderado": 0.6053433281108827,
+    "fraccion_pixeles_sin_aceptacion": 0.0,
+    "elevacion_maxima_con_aceptacion_deg": 75.96375653207353
+   },
+   "0.6": {
+    "factor_medio_ponderado": 0.44481272535076366,
+    "fraccion_pixeles_sin_aceptacion": 0.0,
+    "elevacion_maxima_con_aceptacion_deg": 63.43494882292201
+   },
+   "1.2": {
+    "factor_medio_ponderado": 0.18433038445854885,
+    "fraccion_pixeles_sin_aceptacion": 0.07598876953125,
+    "elevacion_maxima_con_aceptacion_deg": 45.0
+   }
+  },
+  "resolucion_angular_rms_deg": {
+   "1 cm / 0.3 m": 0.7796968012336762,
+   "1 cm / 0.6 m": 0.3898484006168381,
+   "1 cm / 1.2 m": 0.19492420030841906,
+   "4 cm / 0.3 m": 3.118787204934705,
+   "4 cm / 0.6 m": 1.5593936024673525,
+   "4 cm / 1.2 m": 0.7796968012336762
+  },
+  "pixel_deg": {
+   "az": 0.234375,
+   "el": 0.17647058823529413
+  },
+  "contencion_c01_E3": [
+   {
+    "banda": [
+     10000.0,
+     30000.0
+    ],
+    "cuadrado_600m": 2726,
+    "panel_1_2m": 1920,
+    "fraccion_panel": 0.7043286867204696,
+    "fraccion_100m": 0.9996331621423331
+   },
+   {
+    "banda": [
+     30000.0,
+     60000.0
+    ],
+    "cuadrado_600m": 1707,
+    "panel_1_2m": 191,
+    "fraccion_panel": 0.11189220855301699,
+    "fraccion_100m": 0.9988283538371412
+   },
+   {
+    "banda": [
+     60000.0,
+     100000.0
+    ],
+    "cuadrado_600m": 1620,
+    "panel_1_2m": 238,
+    "fraccion_panel": 0.1469135802469136,
+    "fraccion_100m": 0.9938271604938271
+   },
+   {
+    "banda": [
+     100000.0,
+     200000.0
+    ],
+    "cuadrado_600m": 1721,
+    "panel_1_2m": 250,
+    "fraccion_panel": 0.1452643811737362,
+    "fraccion_100m": 0.989540964555491
+   },
+   {
+    "banda": [
+     200000.0,
+     10000000.0
+    ],
+    "cuadrado_600m": 333,
+    "panel_1_2m": 12,
+    "fraccion_panel": 0.036036036036036036,
+    "fraccion_100m": 0.990990990990991
+   }
+  ],
+  "dilucion_fuente_amplia_semilado_50m": 6944.444444444444,
+  "coste_k10_estimador_h_nucleo": 8304.643359175436,
+  "coste_k10_detector_fuente_amplia_h_nucleo": 57671134.438718304,
+  "mediana_roi_k10_estimador": 336.4594176787224
+ },
+ "control_C3": {
+  "fraccion_direcciones_banda_3e4_2e5": 0.0342957,
+  "conteo_banda_30_60_por_2e7": 1707.0,
+  "objetivo_conteo_panel_banda_30_60": 1600,
+  "nucleo_s_por_evento_c01": 0.000532496927006403,
+  "por_semilado": [
+   {
+    "semilado_m": 5.0,
+    "dilucion": 69.44444444444444,
+    "primarios_todas_direcciones": 1301829069.8431294,
+    "primarios_direcciones_banda": 44647139.23061901,
+    "horas_nucleo_direcciones_banda": 6.604017899981013
+   },
+   {
+    "semilado_m": 10.0,
+    "dilucion": 277.77777777777777,
+    "primarios_todas_direcciones": 5207316279.372518,
+    "primarios_direcciones_banda": 178588556.92247605,
+    "horas_nucleo_direcciones_banda": 26.416071599924052
+   },
+   {
+    "semilado_m": 20.0,
+    "dilucion": 1111.111111111111,
+    "primarios_todas_direcciones": 20829265117.49007,
+    "primarios_direcciones_banda": 714354227.6899042,
+    "horas_nucleo_direcciones_banda": 105.66428639969621
+   },
+   {
+    "semilado_m": 50.0,
+    "dilucion": 6944.444444444444,
+    "primarios_todas_direcciones": 130182906984.31294,
+    "primarios_direcciones_banda": 4464713923.061901,
+    "horas_nucleo_direcciones_banda": 660.4017899981012
+   }
+  ],
+  "etapa_a_cuadrados_pequenos_horas_nucleo": 2.9583162611466833
+ },
+ "figura": "objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/figuras/fig9-relacion-conteos-exposicion.png",
+ "entorno": {
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "matplotlib": "3.10.7"
+ }
+}
