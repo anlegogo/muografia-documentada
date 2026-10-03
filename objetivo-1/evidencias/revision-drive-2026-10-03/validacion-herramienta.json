@@ -1,0 +1,7 @@
+{
+  "negative_control": "Una huella esperada alterada en copia temporal; datos intactos.",
+  "negative_exit": 1,
+  "negative_failed_checks": 1,
+  "local_links_checked": 173,
+  "broken_links": []
+}

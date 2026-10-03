@@ -7,6 +7,8 @@
 - [Matriz consolidada](../objetivo-1/MATRIZ_CUMPLIMIENTO.md) y [pendientes](../objetivo-1/PENDIENTES.md).
 - [Revisión de los datos f395570](../objetivo-1/REVISION_DATOS_F395570.md).
 
+- [Verificación independiente de Drive y cierre de P-05](../objetivo-1/REVISION_DISTRIBUCION_DRIVE.md).
+
 ## Protocolos y antecedentes
 
 - [Entrega de las siete actividades](../objetivo-1/ENTREGA_SIETE_ACTIVIDADES.md).

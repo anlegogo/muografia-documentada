@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Recuperación independiente de Drive — 2026-10-03
+
+- Descarga completa de 753 archivos (1.126.769.406 bytes); 2.291 controles satisfactorios. Coinciden las 477 huellas de fusión/imágenes, los 342 arreglos de pares y los inventarios de distribución.
+- P-05 resuelto. En dataset-v2 se comprobó integridad y contenido, sin auditar la conversión ni evaluar redes. [Revisión y evidencia](objetivo-1/REVISION_DISTRIBUCION_DRIVE.md).
+- Contrastada la entrega estudiantil cb57145/8fa667c. Se preparó una lista de incorporación al manuscrito; P-04 permanece abierto porque no se recibió una versión redactada y actualizada.
+
 ## Cuatro entregables de cierre documental — 2026-10-03
 
 - Ficha final del conjunto y síntesis académica con límites explícitos. Tres figuras científicas en PNG/PDF, generadas desde histogramas y pares verificados.

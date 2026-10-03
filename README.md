@@ -1,6 +1,6 @@
 # Muografía: documentación y seguimiento académico
 
-**Estado del OE1 — 2026-10-03:** se recibieron y verificaron 114 referencias de la campaña corregida y se reprodujo el contenido de 9.120 pares. La ficha, las figuras y la síntesis académica están preparadas. Quedan la incorporación al informe, la valoración académica de representatividad y la verificación separada de la copia de Drive.
+**Estado del OE1 — 2026-10-03:** se recibieron y verificaron 114 referencias de la campaña corregida y se reprodujo el contenido de 9.120 pares. La ficha, las figuras y la síntesis académica están preparadas. La copia de Drive ya se recuperó y verificó: 753 archivos y 2.291 controles satisfactorios. Quedan la incorporación al informe y la valoración académica de representatividad.
 
 | Documento | Contenido |
 |---|---|
@@ -8,8 +8,9 @@
 | [Síntesis de resultados y figuras](objetivo-1/SINTESIS_RESULTADOS_OE1.md) | Texto para el informe y tres figuras exportables en PNG/PDF. |
 | [Definición y criterios de cierre](objetivo-1/DEFINICION_PRODUCTO_OE1.md) | Alcance adoptado y evidencia de A-01 a A-08. |
 | [Matriz de cumplimiento](objetivo-1/MATRIZ_CUMPLIMIENTO.md) | Aspectos verificados y límites de la conclusión. |
-| [Pendientes](objetivo-1/PENDIENTES.md) | P-01 a P-03 resueltos técnicamente; P-04 académico y P-05 distribución. |
+| [Pendientes](objetivo-1/PENDIENTES.md) | P-01 a P-03 resueltos técnicamente; P-05 distribución resuelto; P-04 académico pendiente. |
 | [Revisión directa f395570](objetivo-1/REVISION_DATOS_F395570.md) | 477 huellas, evaluación desde píxeles y reproducción de 9.120 pares. |
+| [Distribución verificada](objetivo-1/REVISION_DISTRIBUCION_DRIVE.md) | Descarga independiente, integridad y procedimiento reproducible. |
 | [Índice documental](docs/INDICE.md) | Herramientas, protocolos y revisiones anteriores. |
 
 La campaña contiene 19 escenarios idealizados con seis vistas, 344 millones de primarios por vista y 39.216 millones en total. Cumplen el criterio 1.710 regiones de borde; 107/114 vistas alcanzan la meta descriptiva de roca. Se conservan las siete excepciones y el 94,944 % global de ROI con al menos 100 cuentas no sustituye los indicadores individuales.

@@ -1,5 +1,14 @@
 # Bitácora de la revisión del OE1
 
+## Recuperación de Drive y preparación de revisión académica — 2026-10-03, Colombia
+
+- Actividad: comprobación independiente de la dirección; ejecución original y entrega por estudiantes. Referencias: f395570, actualización cb57145 y reporte de Reinaldo en 8fa667c.
+- Procedimiento: listado completo, descarga original mediante la conexión de Drive y ejecución de `herramientas/verificar_distribucion_oe1.py` con Python 3.12.14 y NumPy 2.4.4. [Comando, incidencias y límites](REVISION_DISTRIBUCION_DRIVE.md).
+- Evidencia: 753 archivos, 1.126.769.406 bytes, 2.291 controles y cero fallos en la ejecución final; [resultado e inventario](evidencias/revision-drive-2026-10-03/verificacion.json).
+- Se corrigió una expectativa inicial del auditor sobre las claves de NPZ y la resolución local de tres lotes; no eran fallos de los datos. Se verificaron también los cuatro arreglos de coordenadas.
+- P-05 resuelto para la copia examinada. P-04 continúa abierto: plantilla local sin resultados/conclusiones; no se identificó manuscrito actualizado. [Lista de incorporación](SINTESIS_RESULTADOS_OE1.md#incorporación-al-manuscrito-y-revisión-pendiente) preparada; no se reejecutó transporte ni se modificó la rama de estudiantes.
+
+
 ## Cuatro entregables de cierre documental — 2026-10-03
 
 - Autorización: completar los primeros cuatro puntos propuestos (ficha, figuras, criterios y síntesis). La verificación de Drive era el quinto y no se ejecutó.

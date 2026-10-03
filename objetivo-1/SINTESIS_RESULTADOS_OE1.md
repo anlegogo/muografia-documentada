@@ -46,6 +46,20 @@ La fuente híbrida y su extensión angular son hipótesis del conjunto. La simul
 
 Las referencias de conteo alto mantienen ruido, y las realizaciones reducidas comparten esa referencia. La representatividad geométrica y física debe justificarse dentro del alcance idealizado, sin extrapolar los controles a equivalencia experimental. La conversión `dataset-v2` y el reentrenamiento de modelos no se evalúan aquí.
 
-La evidencia disponible respalda la obtención y reproducción técnica de las 114 referencias y los 9.120 pares bajo el alcance adoptado. No se identifica una necesidad de repetir la campaña para completar estas verificaciones. Quedan la incorporación de esta síntesis al informe, la revisión académica de la representatividad y la verificación de la copia de distribución. El cierre formal del objetivo corresponde a esa valoración y no a una declaración automática del software.
+La evidencia disponible respalda la obtención y reproducción técnica de las 114 referencias y los 9.120 pares bajo el alcance adoptado. No se identifica una necesidad de repetir la campaña para completar estas verificaciones. La [copia de distribución](REVISION_DISTRIBUCION_DRIVE.md) ya se verificó de forma independiente. Quedan la incorporación de esta síntesis al informe y la revisión académica de la representatividad. El cierre formal del objetivo corresponde a esa valoración y no a una declaración automática del software.
 
 Fuentes internas: [ficha del conjunto](FICHA_CONJUNTO_OE1.md), [revisión de datos f395570](REVISION_DATOS_F395570.md), [revisión de ejecución e037d09](REVISION_CAMPANA_E037D09.md), [definición adoptada y criterios de cierre](DEFINICION_PRODUCTO_OE1.md).
+
+## Incorporación al manuscrito y revisión pendiente
+
+En la revisión local del 2026-10-03 se encontró una plantilla `Informe_Final_Muografia`: metodología contiene guías de redacción y los capítulos de resultados y conclusiones están reservados, sin contenido. No se identificó un manuscrito actualizado en la entrega `cb57145`. Por tanto, este texto es material preparado para incorporación; no acredita que el informe de estudiantes ya esté actualizado ni permite dictaminar su coherencia integral.
+
+| Sección del informe | Incorporación requerida | Comprobación de la revisión académica |
+|---|---|---|
+| Metodología del OE1 | Geometrías, fuente, observable, receta final, 344 M por vista, formación angular y adelgazamiento binomial según la ficha. | Distinguir 19 geometrías, 114 vistas y 9.120 pares; especificar energía cinética >3 GeV y plano computacional. |
+| Resultados del OE1 | Cifras y tres figuras de esta síntesis, con referencias a los inventarios. | Identificar la campaña de octubre; no atribuirle conteos, configuraciones o métricas de la campaña histórica. |
+| Discusión | Justificación de la familia de escenarios, ruido de las referencias, dependencia entre realizaciones y siete vistas bajo la meta descriptiva. | Explicar qué representa el conjunto y qué no permite inferir; no presentar el 94,944 % global como cumplimiento de todas las vistas. |
+| Conclusión del OE1 | Obtención del conjunto sintético con distintos niveles de conteo bajo el alcance adoptado. | No afirmar equivalencia instrumental, tiempos físicos calibrados, generalización experimental ni reconstrucción de densidad demostrada por estas pruebas. |
+| Reproducibilidad | Commit de la entrega, enlace de distribución, versiones, semillas, comandos y procedimiento de integridad. | Citar la versión efectivamente utilizada; distinguir transporte realizado en SC3 de posproceso reproducido localmente. |
+
+La próxima entrega académica debe identificar una versión concreta del manuscrito y sus secciones modificadas. La revisión posterior contrastará esas secciones con esta síntesis, la ficha y los criterios A-01 a A-08. Esta tarea no requiere por sí misma más transporte en SC3 ni autoriza iniciar OE2/OE3.

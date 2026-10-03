@@ -62,7 +62,7 @@ La fuente híbrida, el transporte sin secundarios, las geometrías idealizadas y
 
 ## Recuperación y reproducción
 
-Las matrices están en la [entrega congelada f395570](https://github.com/anlegogo/muografia-documentada/tree/f395570/objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/campana-114). El [Drive comunicado](https://drive.google.com/drive/folders/10gRmkWqmCqN3qOf2gfOWCDG4bcC7zhaT) no se verificó en estos cuatro trabajos. No se presume una licencia abierta por estar en un repositorio; conservar la atribución a los autores y el control de acceso vigente.
+Las matrices están en la [entrega congelada f395570](https://github.com/anlegogo/muografia-documentada/tree/f395570/objetivo-1/entregas/2026-10-01-justificacion-fisica-produccion/datos/sc3/campana-114). El [Drive comunicado](https://drive.google.com/drive/folders/10gRmkWqmCqN3qOf2gfOWCDG4bcC7zhaT) se recuperó y verificó el 2026-10-03: 753 archivos íntegros; véase la [revisión independiente](REVISION_DISTRIBUCION_DRIVE.md). No se presume una licencia abierta por estar en un repositorio; conservar la atribución a los autores y el control de acceso vigente.
 
 Desde la raíz de esta réplica, con `DATOS` apuntando a la carpeta `campana-114` extraída del commit y destinos nuevos:
 
