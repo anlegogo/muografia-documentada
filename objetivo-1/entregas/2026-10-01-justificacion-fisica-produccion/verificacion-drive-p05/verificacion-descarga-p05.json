@@ -1,0 +1,52 @@
+{
+ "fecha_utc": "2026-10-03T18:03:18+00:00",
+ "copia": "C:\\Users\\USER\\Downloads\\p05-descarga\\datos-oe1-campana-114",
+ "entorno": {
+  "python": "3.14.3",
+  "numpy": "2.5.3",
+  "zlib": "1.3.1.zlib-ng",
+  "plataforma": "Windows-11-10.0.26200-SP0"
+ },
+ "imagenes": {
+  "esperados": 229,
+  "coinciden": 229,
+  "distintos": [],
+  "faltan": []
+ },
+ "fusion": {
+  "esperados": 248,
+  "coinciden": 248,
+  "distintos": [],
+  "faltan": []
+ },
+ "pares": {
+  "archivos": 114,
+  "mismos_nombres_que_rama": true,
+  "contenido_coincide": 114,
+  "arreglos_comparados": 342,
+  "contenido_distinto": [],
+  "archivo_coincide_con_manifest_de_la_copia": 114,
+  "archivo_coincide_con_manifest_de_la_rama": 0
+ },
+ "dataset_v2": {
+  "shards": 19,
+  "contenido_coincide": 19,
+  "contenido_distinto": [],
+  "pairs_per_split": {
+   "train": 5760,
+   "val": 1440,
+   "test": 1440,
+   "generalization": 480
+  }
+ },
+ "copia_total": {
+  "archivos": 753,
+  "bytes": 1126769406,
+  "por_carpeta": {
+   "imagenes": 229,
+   "fusion": 248,
+   "pares": 229,
+   "dataset-v2": 40
+  }
+ }
+}

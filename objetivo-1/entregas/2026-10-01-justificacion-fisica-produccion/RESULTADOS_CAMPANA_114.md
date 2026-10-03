@@ -63,6 +63,8 @@ En el repositorio se incluyen las 114 imágenes exportadas ([datos/sc3/campana-1
 
 **Datos en Drive:** [oe1-campana-114](https://drive.google.com/drive/folders/10gRmkWqmCqN3qOf2gfOWCDG4bcC7zhaT): imágenes, los 9.120 pares, `dataset-v2` y un LEEME con versiones y verificaciones. Los 1.026 bloques publicados (734 MB) se conservan en SC3 con sus huellas en `bloques-publicados.sha256`.
 
+**Verificación de la copia de Drive (P-05):** la carpeta se descargó desde el enlace con una cuenta distinta de la propietaria y se contrastó con los inventarios de esta entrega: 229/229 imágenes y 248/248 archivos de fusión por huella de archivo, 114/114 pares por huella de contenido (342 arreglos) y 753 archivos idénticos a la copia subida. [Informe y evidencia](verificacion-drive-p05/VERIFICACION_DRIVE_P05.md).
+
 Evidencia completa en [datos/sc3/campana-114/posproceso/](datos/sc3/campana-114/posproceso/): comandos, salidas, códigos de salida, entorno, huellas de herramientas frente a Git (57 de 57) y `salidas.sha256` (25 archivos). Scripts ejecutados: [campana_114_preparar_7c120ce.sh](verificacion/campana_114_preparar_7c120ce.sh), [campana_114_lanzar_v5.sh](verificacion/campana_114_lanzar_v5.sh) (y versiones anteriores) y [campana_114_posproceso.sh](verificacion/campana_114_posproceso.sh).
 
 ## 4. Siguiente paso
