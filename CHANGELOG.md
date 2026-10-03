@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Correcciones de implementación OE2 v1 — 2026-10-03
+
+- P01–P03 corregidos: GP del promedio por muestra, normalización disponible sin referencia y manifiesto fijado con rechazo de reanudación incompatible. Se conserva código original y procedencia.
+- 17 controles satisfactorios, doce casos analíticos de GP y entrenamiento de la arquitectura completa con reanudación idéntica a ejecución continua en CPU. [Detalle y reproducción](objetivo-2/CORRECCIONES_V1.md).
+- P04 permanece pendiente; no se evalúa calidad final ni se ejecuta campaña en SC3. El convertidor histórico no fue recuperado; se comprueba directamente igualdad de sus salidas train/val con los paquetes fuente.
+
 ## Revisión inicial del OE2 — 2026-10-03
 
 - Ampliación expresamente autorizada a revisión del OE2; se mantiene el cierre del OE1.

@@ -1,6 +1,6 @@
 # Objetivo específico 2: revisión de la implementación recibida
 
-**Estado al 2026-10-03: implementación histórica reutilizable; adaptación al conjunto corregido pendiente.** La dirección autorizó expresamente esta revisión del OE2. El cierre del OE1 se mantiene; no se declara cumplido el OE2 ni se inicia una campaña de entrenamiento.
+**Estado al 2026-10-03: correcciones OE2-P01 a P03 implementadas y verificadas localmente.** Véase [correcciones v1, evidencia y reproducción](CORRECCIONES_V1.md). OE2-P04 continúa pendiente. El texto de revisión siguiente conserva los hallazgos del código histórico. La dirección autorizó expresamente esta revisión del OE2. El cierre del OE1 se mantiene; no se declara cumplido el OE2 ni se inicia una campaña de entrenamiento.
 
 El objetivo consiste en diseñar e implementar una cGAN que transforme imágenes muográficas de baja estadística en imágenes de calidad comparable a las de alta estadística. La salida considerada es una imagen muográfica; esta revisión no acredita reconstrucción de densidad.
 
@@ -27,7 +27,7 @@ Las particiones contienen 5.760 pares de entrenamiento, 1.440 de validación, 1.
 
 ### OE2-P01 — Agregación del crítico y penalización del gradiente
 
-**Estado: pendiente; debe resolverse antes del entrenamiento.** En `scripts/training/losses.py`, las pérdidas adversarias usan el promedio del mapa del crítico, mientras que `gradient_penalty` diferencia su suma mediante `grad_outputs=ones_like(scores)`.
+**Estado vigente: resuelto en la implementación derivada v1; hallazgo histórico conservado a continuación.** En `scripts/training/losses.py`, las pérdidas adversarias usan el promedio del mapa del crítico, mientras que `gradient_penalty` diferencia su suma mediante `grad_outputs=ones_like(scores)`.
 
 Para un mapa con P parches, la puntuación por muestra utilizada por la pérdida es
 
@@ -43,7 +43,7 @@ La prueba construye un crítico cuyo promedio tiene gradiente de norma uno. La p
 
 ### OE2-P02 — Normalización dependiente de la referencia
 
-**Estado: pendiente; decisión metodológica antes del entrenamiento.** El modo seleccionado `ref_equivalent` calcula
+**Estado vigente: resuelto mediante normalización v1 ajustada solo con train; hallazgo histórico conservado a continuación.** El modo seleccionado `ref_equivalent` calcula
 
 \[
 x=\frac{\log(1+n_{\mathrm{low}}/f)}{\log(1+\max n_{\mathrm{ref}})},\qquad
@@ -56,7 +56,7 @@ Esto permite un experimento con información privilegiada si se declara expresam
 
 ### OE2-P03 — Identidad y selección del conjunto
 
-**Estado: pendiente; integración antes del entrenamiento.** El lector apunta a `dataset/shards` y `results/dataset/splits.json` del repositorio histórico. Para el diagnóstico se redirigieron estas rutas únicamente en memoria. Esto prueba compatibilidad de arreglos, no una integración de producción terminada.
+**Estado vigente: integración resuelta sobre distribución fijada en v1; recuperación del convertidor histórico continúa como antecedente documental.** El lector apunta a `dataset/shards` y `results/dataset/splits.json` del repositorio histórico. Para el diagnóstico se redirigieron estas rutas únicamente en memoria. Esto prueba compatibilidad de arreglos, no una integración de producción terminada.
 
 El checkpoint guarda configuración y commit, pero no vincula obligatoriamente el estado a las huellas de los datos. La protección contra una configuración diferente es útil, aunque no basta cuando cambian los archivos bajo las mismas rutas.
 
@@ -82,4 +82,4 @@ python objetivo-2/herramientas/revisar_base.py --codigo ../tmp/revision-muograph
 
 El script termina correctamente cuando reproduce los diagnósticos, incluidos los defectos actuales; no equivale a una aprobación del código para entrenar. Al corregir el código deberán cambiarse las expectativas y conservar esta evidencia del antes. Véase la [bitácora](BITACORA.md).
 
-**Secuencia recomendada:** resolver P01–P03 localmente, verificar un entrenamiento corto y su reanudación, fijar el protocolo P04 y solo entonces asignar un entrenamiento prolongado a SC3. El resultado de la revisión es una base aprovechable con correcciones concretas, no la necesidad de comenzar desde cero.
+**Secuencia vigente:** P01–P03 corregidos y prueba corta de reanudación completada; fijar el protocolo P04 y comprobar GPU antes de asignar un entrenamiento prolongado a SC3. El resultado de la revisión es una base aprovechable con correcciones concretas, no la necesidad de comenzar desde cero.

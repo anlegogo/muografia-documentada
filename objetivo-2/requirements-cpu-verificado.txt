@@ -1,0 +1,6 @@
+# Entorno CPU verificado; instalar PyTorch CPU desde su índice correspondiente.
+torch==2.6.0+cpu
+numpy==2.4.4
+scikit-image==0.26.0
+matplotlib==3.11.1
+scipy==1.18.1

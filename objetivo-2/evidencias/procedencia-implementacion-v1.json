@@ -1,0 +1,40 @@
+{
+  "source_repository": "https://github.com/Dp100131/muography-dl-reconstruction",
+  "source_commit": "b88fa576494cb8a664c46b8c94c5918c5097d616",
+  "authors": "Implementaci\u00f3n de los estudiantes; adaptaci\u00f3n documentada por la direcci\u00f3n",
+  "files": {
+    "models/__init__.py": {
+      "source_sha256": "948f2681a08383a5648cb03ec7dd5fb2560e56695f3d32c9d7c69da56ec135a2",
+      "derived_sha256": "948f2681a08383a5648cb03ec7dd5fb2560e56695f3d32c9d7c69da56ec135a2"
+    },
+    "models/unet_generator.py": {
+      "source_sha256": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+      "derived_sha256": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f"
+    },
+    "models/patch_critic.py": {
+      "source_sha256": "41fbbb005fd152d3ddf10e50721ac855108907714e150632d1942275736b84d8",
+      "derived_sha256": "41fbbb005fd152d3ddf10e50721ac855108907714e150632d1942275736b84d8"
+    },
+    "scripts/training/engine.py": {
+      "source_sha256": "b32b792f2aee03805caf7ddb053ae661b8baf73bf3648e7e48ec4860914e67b0",
+      "derived_sha256": "375c8cf2f2fcae2e1a8c936277decd9dfe7b1e2bbb6589f70d798280b2774757"
+    },
+    "scripts/training/losses.py": {
+      "source_sha256": "ec71f56f5fb7507aee38751f084efe1b22106ada087a0695f3ab3d4e7b48f2ca",
+      "derived_sha256": "8d950c772d923a98343b8cda787b28567df7d2bbd09c62f50085efb13f96c0a5"
+    },
+    "scripts/training/train_cwgan_gp.py": {
+      "source_sha256": "ffeaba1a67601143307891a6e56bc3bbffc8b2b3f2f4604acb06a70f79ca35d6",
+      "derived_sha256": "005defcb2aa1fcae804f15355cb5e613c01518d89b4831ef03c38f494d0e0ead"
+    },
+    "scripts/evaluation/metrics.py": {
+      "source_sha256": "65c59765cb326572a007e59da349a58d4511181f2634737e5e69362e82d268c8",
+      "derived_sha256": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42"
+    },
+    "scripts/analysis/plotting_style.py": {
+      "source_sha256": "e4eb61afe1d72685ffdcd89c2a6b777b243161ce2b551b20e059faa9eadc2bdc",
+      "derived_sha256": "e4eb61afe1d72685ffdcd89c2a6b777b243161ce2b551b20e059faa9eadc2bdc"
+    }
+  },
+  "new_file": "scripts/training/muography_dataset.py"
+}

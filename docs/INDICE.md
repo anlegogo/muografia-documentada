@@ -2,6 +2,8 @@
 
 ## Objetivo específico 2
 
+- [Correcciones v1, verificación y comandos de reproducción](../objetivo-2/CORRECCIONES_V1.md).
+
 - [Revisión de la implementación y pendientes OE2-P01 a OE2-P04](../objetivo-2/README.md).
 - [Bitácora del OE2](../objetivo-2/BITACORA.md).
 

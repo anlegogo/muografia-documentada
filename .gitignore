@@ -4,3 +4,4 @@ __pycache__/
 objetivo-1/originales/**/*.npz
 objetivo-1/originales/logs/
 trabajo/
+objetivo-2/implementacion/runs/
