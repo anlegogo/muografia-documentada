@@ -1,5 +1,13 @@
 # Bitácora de la revisión del OE1
 
+## Cuatro entregables de cierre documental — 2026-10-03
+
+- Autorización: completar los primeros cuatro puntos propuestos (ficha, figuras, criterios y síntesis). La verificación de Drive era el quinto y no se ejecutó.
+- Entradas: matrices de f395570, evaluación reproducida y contenido de pares verificado. [Ficha](FICHA_CONJUNTO_OE1.md) y [síntesis](SINTESIS_RESULTADOS_OE1.md) redactadas en forma impersonal.
+- Se generaron tres figuras en PNG/PDF y se inspeccionaron visualmente. Las 114 métricas coinciden con la evaluación; huellas de datos y ejemplo de pares verificadas. [Registro](figuras/cierre-2026-10-03/validacion.json).
+- Se sustituyeron estados obsoletos en la entrada, matriz, pendientes y criterios, conservando IDs e historial. No se alteraron originales ni receta.
+- Una primera generación no pudo escribir la caché de fuentes fuera del espacio de trabajo; se regeneró usando MPLCONFIGDIR dentro de tmp, sin errores. No se ejecutó transporte ni entrenamiento. Pendiente incorporación al manuscrito, valoración académica y revisión separada de distribución.
+
 ## Revisión directa f395570 — 2026-10-03
 
 - Entradas recibidas por Git: fusión, imágenes y huellas. Se ejecutó evaluación local y regeneración binomial completa con NumPy 2.4.4.
