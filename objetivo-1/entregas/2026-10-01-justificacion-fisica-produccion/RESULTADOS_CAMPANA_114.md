@@ -57,6 +57,8 @@ Vistas por debajo de la meta, conservadas sin cambios: geo-test-03 v1 (0,896) y 
 | Imágenes exportadas (114 NPZ) | `~/muography-scratch/oe1-114-344M-imagenes` | 11 MB | [imagenes.sha256](datos/sc3/campana-114/posproceso/imagenes.sha256) |
 | Inventario | — | — | [inventario-114-344M.json](datos/sc3/campana-114/posproceso/inventario-114-344M.json): 114/114, `technical_complete: true`, 9.120 pares objetivo |
 
+En el repositorio se incluyen las 114 imágenes exportadas ([datos/sc3/campana-114/imagenes/](datos/sc3/campana-114/imagenes/), 12 MB, verificadas contra `imagenes.sha256`). Con ellas se regeneran de forma determinista los 9.120 pares (`empaquetar_angular_v1.py --salida`, NumPy 2.4.4, semilla 20260805) y su conversión al formato de entrenamiento (`analysis/convert_oe1_package.py` de `muography-thesis`, rama `oe2/retrain-dataset-v2`). Las huellas esperadas están en [pares/manifest.json](datos/sc3/campana-114/pares/manifest.json) (114 archivos de pares) y en [dataset-v2/splits.json](datos/sc3/campana-114/dataset-v2/splits.json) (19 shards). Los binarios de pares (547 MB) y de `dataset-v2` (487 MB) no se versionan.
+
 Evidencia completa en [datos/sc3/campana-114/posproceso/](datos/sc3/campana-114/posproceso/): comandos, salidas, códigos de salida, entorno, huellas de herramientas frente a Git (57 de 57) y `salidas.sha256` (25 archivos). Scripts ejecutados: [campana_114_preparar_7c120ce.sh](verificacion/campana_114_preparar_7c120ce.sh), [campana_114_lanzar_v5.sh](verificacion/campana_114_lanzar_v5.sh) (y versiones anteriores) y [campana_114_posproceso.sh](verificacion/campana_114_posproceso.sh).
 
 ## 4. Siguiente paso

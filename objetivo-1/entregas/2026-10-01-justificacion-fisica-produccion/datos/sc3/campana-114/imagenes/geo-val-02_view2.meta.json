@@ -1,0 +1,99 @@
+{
+  "detected_in_bins": 119921255,
+  "detector": {
+    "distance_m": 1000.0,
+    "height_m": 1.5,
+    "side_m": 1.2
+  },
+  "ecomug_draws_total": 344000000,
+  "engine": "geant4-$Name: geant4-11-04-patch-02 [MT]$",
+  "events_transported": 344000000,
+  "exposure_days": -1.0,
+  "geometry_id": "geo-val-02",
+  "grid": {
+    "az_edges_deg": [
+      -30.0,
+      30.0
+    ],
+    "az_first_center_deg": -29.8828125,
+    "az_half_deg": 30.0,
+    "az_step_deg": 0.234375,
+    "azimuth_convention": "az-edges-v1",
+    "el_max_deg": 47.0,
+    "el_min_deg": 2.0,
+    "elevation_convention": "legacy-centers-2-47",
+    "n_az": 256,
+    "n_el": 256
+  },
+  "oe1_controles": {
+    "ecuts_gev": [
+      3.0
+    ],
+    "edifice_margin_m": 50.0,
+    "inject": "cone",
+    "margin_deg": 5.0,
+    "plane_half_m": 300.0,
+    "subplanes_half_m": []
+  },
+  "physics_note": "secondaries killed at creation; primary-only transport for transmission counting",
+  "sampling": "table-driven: protocol lambda_open row weights (Guan-normalized, surrogate convention) + real-EcoMug momentum spectra; backtracked line of sight, uniform panel impact",
+  "seconds_per_event": 2.951217645987717e-06,
+  "threads": 64,
+  "view_index": 2,
+  "wall_seconds": 1015.2188702197745,
+  "detected_all_energies": 223818303,
+  "reference_histogram": "kinetic energy at the counting plane > 3 GeV",
+  "source_definition": {
+    "status": "documented_algorithm_not_calibrated_flux",
+    "nominal_impact": "uniform over 1.2 m square panel",
+    "injection": "last sampled interior point of cone plus 1 m, backward ray sampled every 0.5 m up to 4 km; 1 m before panel when no intersection sampled",
+    "azimuth": "uniform over -35 to +35 degrees relative to view direction",
+    "elevation": "original row weights within nominal range, linear extrapolation of eight edge rows outside; clamp negative weights to zero and centers below 0.1 degrees to zero",
+    "momentum": "piecewise linear interpolation of 257 inverse-CDF quantiles in 16 elevation bands; nearest edge band outside table range",
+    "probability_nominal_window": 0.6841465610179727,
+    "observable": "primary directional synthetic counts; no claim of finite detector equivalence"
+  },
+  "normalization": {
+    "status": "declared_conventional_scale_not_instrument_exposure",
+    "S0_30_conventional_days": 36034069.911914065,
+    "physical_days_calibrated": false,
+    "runtime_exposure_days": -1,
+    "area_convention_inherited": "1.44 m2 normal to each direction",
+    "energy_threshold_inherited_GeV": 0.7980614314412022,
+    "threshold_convention_to_resolve": "S0 inherited numeric convention only; not used as generator energy cutoff or calibrated physical duration",
+    "formula": "T_conventional_days = 30 * nominal_in_window / S0_30_conventional_days",
+    "diagnostic_reference": "ideal tabulated no-transport source; not measured open-sky flux"
+  },
+  "nominal_in_window": 235334648,
+  "conventional_exposure_days": 195.9267842144502,
+  "geometry_sha256": "f8376b4fe3262acb7523b605e2c2f9c8d9e5c36532c34e8bcc70d041f695b3bb",
+  "geometry_provenance_manifest_sha256": "8b6f0e7a1756ee5270b369f4222519299d5b1992859cceb6cc5c06f4e524ea3f",
+  "binary_sha256": "00145f7edfebb01efae17b3d4ab0e0ff177de454dd08568985a581aba3027865",
+  "table_sha256": {
+    "meta.json": "65cf778ec9d5e380f67e434638d437822dc22ce9e863e12f684dcbcf63da7e8b",
+    "row_weights_30d.txt": "76698ac167efa8b767597b28c814a1ff88f93b41e032d1e98dd58bd1d9f3ac3d",
+    "p_cdf.txt": "7161c8adf11711139840007dff26178221c4cfbff8fc3253cabdda50c533f6ae"
+  },
+  "wall_seconds_semantics": "sum of block wall times; not campaign elapsed time",
+  "mean_ekin_all_energies_gev": 17.612830834385065,
+  "energy_mean_note": "all-energy weighted mean when available; selected-energy mean unavailable",
+  "block_seeds": [
+    20261002770200,
+    20261002770201,
+    20261002770202,
+    20261002770203,
+    20261002770204,
+    20261002770205,
+    20261002770206,
+    20261002770207,
+    20261002770208
+  ],
+  "merged_blocks": 9,
+  "merge_contract": "oe1-strict-block-merge-v1",
+  "npz_contract": "oe1-image-az-edges-v1: counts_ref uint32 plus explicit angular centers/edges",
+  "npz_sha256": "882fcf40a347b72dbf3709f846e73c1c92eaed60a0b4c938798ea7930ff2c89e",
+  "source_files": {
+    "hist_sha256": "cf6ed96ee45a7e497fa4c8ea53f269e09d9cb8b7c178b4feec924ac61c1c7e94",
+    "meta_sha256": "245c0412f5514c9aea0567f959121f8865aad974b2f2ad2fcbe90374383ee160"
+  }
+}

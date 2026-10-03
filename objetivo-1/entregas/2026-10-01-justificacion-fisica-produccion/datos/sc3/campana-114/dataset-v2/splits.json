@@ -1,0 +1,66 @@
+{
+  "dataset_version": "v2.0",
+  "engine": "geant4-$Name: geant4-11-04-patch-02 [MT]$",
+  "frozen_utc": "2026-10-03T15:03:13+00:00",
+  "split_policy": "by geometry (all realizations of a geometry share its split)",
+  "splits": {
+    "train": [
+      "geo-train-01",
+      "geo-train-02",
+      "geo-train-03",
+      "geo-train-04",
+      "geo-train-05",
+      "geo-train-06",
+      "geo-train-07",
+      "geo-train-08",
+      "geo-train-09",
+      "geo-train-10",
+      "geo-train-11",
+      "geo-train-12"
+    ],
+    "val": [
+      "geo-val-01",
+      "geo-val-02",
+      "geo-val-03"
+    ],
+    "test": [
+      "geo-test-01",
+      "geo-test-02",
+      "geo-test-03"
+    ],
+    "generalization": [
+      "geo-gen-01"
+    ]
+  },
+  "pairs_per_split": {
+    "train": 5760,
+    "val": 1440,
+    "test": 1440,
+    "generalization": 480
+  },
+  "train_pairs_criterion_ge_5000": true,
+  "shard_sha256": {
+    "geo-gen-01": "9a97286698012f09006c275217fd5b1330efecc12105b05bfe61abf18b66d7fa",
+    "geo-test-01": "bcacf833417723d1f221468461bfa4e98cfb190dd640a6dcbdd5142e75541526",
+    "geo-test-02": "a718daa940e144a1ed2d985b7ce25cc33565e5b01ffcac22f4e0b2fd8f8b80b0",
+    "geo-test-03": "7ad85cb7851e5a47dd2a4a395460ca499c1d130bb73d7f651ff77917689f80d6",
+    "geo-train-01": "4277fd3d9e2d560c479ecf1c00a1c9ad548cf655d643d943526299d937890a05",
+    "geo-train-02": "6f6cc770398d3d1b1dc4f8ae7b58d4c078d1ac4c9bb4dc5c133924c583e29ddf",
+    "geo-train-03": "906573e50d89b54ff4d9f4d882c3c9e504307c678cf964f7a929f8c6ddcde0b3",
+    "geo-train-04": "1173b2524df463374e41c99b25cdd31b643bfcb3391ea0b81340a3c3db096a26",
+    "geo-train-05": "f212c593fc5f340a02c6c1b605db1b3034a5baa8ae04a85c64b89a50d435b38d",
+    "geo-train-06": "7ce454c9e19b34d620c0b41089e14b503371edd3be3d8c05e9ef354927897f48",
+    "geo-train-07": "ee40ae883d5bf58b4a07b37e54bc965ae7fa0296acf2a28c19e5053a9c4331a6",
+    "geo-train-08": "4d7eef108ce51622c7245ba02250b7436ce165ec832f78b28aafe16b0a1cfd38",
+    "geo-train-09": "8a86ee88b9f5378cb5235bfcc90ac2ffb12ff92dd27fdfce1ee3b8e24a6dbf05",
+    "geo-train-10": "7193146743fac36f71a137d2ef943572627071f01b2866a5537e743430a107a3",
+    "geo-train-11": "eaffd7958fc3307c0d1dc4c9290d37451badc7a4d8994abb2605e42f67cbaf7d",
+    "geo-train-12": "c33e7bff6bfaf01baf584a1d70bb36974f94aa4306a95fd4ad5d8d05c3b51d4f",
+    "geo-val-01": "72e19188f313dde0725a0503d6dd7ee28fd0e416b9bf2cca1fb84990e97308cb",
+    "geo-val-02": "860055e347234ed8ec4390d7d11a967e3434cabda350475bdb267536e5c57583",
+    "geo-val-03": "fd381dcbb83503b6a3888c1ed448d529d37d0bb47630465615c74fcb4b554717"
+  },
+  "complete_catalog": true,
+  "source_package_manifest_sha256": "d217603e90958922a93da93dcc025e6e0983eaf98e7671e774c64faee6f6e5da",
+  "partition_template_sha256": "32b98d22d7054618872ce6a719ac9a45eaf4c313639bdfc8bea229e8c2ba0306"
+}

@@ -1,0 +1,107 @@
+{
+  "geometry_id": "geo-train-08",
+  "n_views": 6,
+  "fractions": [
+    0.5,
+    0.1,
+    0.05,
+    0.01
+  ],
+  "k_realizations": 20,
+  "master_seed": 20260805,
+  "thinning": "Binomial(counts, f) \u2014 exact real-event subsampling (muografia-documentada herramientas/empaquetar_angular_v1.py)",
+  "seed_derivation": "SeedSequence(master,0x415A5631,sha256(gid)[:8] little-endian,view,fraction_index).spawn(20)",
+  "seeds": null,
+  "source_views": [
+    {
+      "view": 0,
+      "pairs_file": "geo-train-08_view0_pairs.npz",
+      "pairs_sha256": "4073884fcb73c004229be8047c41bc3c6f4e611d8f74bb846da164f4ccd598a7",
+      "metadata_file": "geo-train-08_view0.meta.json",
+      "metadata_sha256": "3c24270e8ad1900e64b8452e93ea019ecbfdd939bfcae46ca69452cc78780d3c",
+      "reference_npz_sha256": "59cdd0f318becf06067997e81067c0a0c11e6bfb8d41bb85b128bd8b27db2137",
+      "events_transported": 344000000,
+      "detected_in_bins": 118912278,
+      "nominal_in_window": 235359829,
+      "conventional_exposure_days": 195.9477485407627,
+      "exposure_days": -1.0
+    },
+    {
+      "view": 1,
+      "pairs_file": "geo-train-08_view1_pairs.npz",
+      "pairs_sha256": "81ef318cdf83c2fcac0b93d1d22f2c44abf56e4a190c7d047fe1e23719a84a7a",
+      "metadata_file": "geo-train-08_view1.meta.json",
+      "metadata_sha256": "ccf038792bbc52822ea5029ce7f3f7cb54cc5cffd9424e90280f3ca530b5bc94",
+      "reference_npz_sha256": "6f024aedc80ddea384d6d9b8568ca8f91c7fb7c02007f67b4529814a49361c10",
+      "events_transported": 344000000,
+      "detected_in_bins": 118904568,
+      "nominal_in_window": 235352148,
+      "conventional_exposure_days": 195.94135375936378,
+      "exposure_days": -1.0
+    },
+    {
+      "view": 2,
+      "pairs_file": "geo-train-08_view2_pairs.npz",
+      "pairs_sha256": "9eb431b7e82ed7d93910a4074861129eca46d339038e8de71acf930b3c707781",
+      "metadata_file": "geo-train-08_view2.meta.json",
+      "metadata_sha256": "1b30966da09f8c9b2366dc2906917b02f27d5a29ae45a347df0ca3d1daea81bb",
+      "reference_npz_sha256": "33a57dbfcefaa79cd81dba7757955e34b4a9b538cde97a92b4d5e57a91119d4a",
+      "events_transported": 344000000,
+      "detected_in_bins": 118911323,
+      "nominal_in_window": 235352513,
+      "conventional_exposure_days": 195.9416576384434,
+      "exposure_days": -1.0
+    },
+    {
+      "view": 3,
+      "pairs_file": "geo-train-08_view3_pairs.npz",
+      "pairs_sha256": "236b181c9d3ef8df86d587b30497f04526159551e97f27855ff71e611e06ceb0",
+      "metadata_file": "geo-train-08_view3.meta.json",
+      "metadata_sha256": "ac0765966c60a4329244d6a8604b679d63afebf73abc5ca1117bcbe38aae8a1f",
+      "reference_npz_sha256": "5f86c1f86ebd4cf1324f79d983306e64f32770e45f8415e075863af3c3b46284",
+      "events_transported": 344000000,
+      "detected_in_bins": 118890809,
+      "nominal_in_window": 235347583,
+      "conventional_exposure_days": 195.93755318950488,
+      "exposure_days": -1.0
+    },
+    {
+      "view": 4,
+      "pairs_file": "geo-train-08_view4_pairs.npz",
+      "pairs_sha256": "6438e6b4e6ca271f59705092b22f776a762456cf86ede630c8b139ad0915532d",
+      "metadata_file": "geo-train-08_view4.meta.json",
+      "metadata_sha256": "30f98f352c25da2a0dadc3d6da16b644b93ad08cd4e13ff003716074859ba325",
+      "reference_npz_sha256": "2074884c75cd7bf462e2d5fdd3e5cbdfb42fa767b58fd558f77a5f0661091d61",
+      "events_transported": 344000000,
+      "detected_in_bins": 118881983,
+      "nominal_in_window": 235345265,
+      "conventional_exposure_days": 195.9356233492129,
+      "exposure_days": -1.0
+    },
+    {
+      "view": 5,
+      "pairs_file": "geo-train-08_view5_pairs.npz",
+      "pairs_sha256": "a00f8d483437e3afd6905c837854ad62f466702e4bdd931f78054a12befbb9a7",
+      "metadata_file": "geo-train-08_view5.meta.json",
+      "metadata_sha256": "1b2c258acba8e10879db7ef689edc54cb759bb6aa9ac8fcfcd02012c96e5708a",
+      "reference_npz_sha256": "7fa1e1a714ab37f9b9640e3e3bb3579018c8f61419e0893b9e27715c0298d067",
+      "events_transported": 344000000,
+      "detected_in_bins": 118891404,
+      "nominal_in_window": 235343216,
+      "conventional_exposure_days": 195.9339174636399,
+      "exposure_days": -1.0
+    }
+  ],
+  "exposure_days_reference": null,
+  "split": "train",
+  "counts_dtype": {
+    "ref_counts": "uint32",
+    "low_counts": "uint16"
+  },
+  "low_counts_max": 1962,
+  "ref_counts_max": 3736,
+  "engine": "geant4-$Name: geant4-11-04-patch-02 [MT]$",
+  "binary_sha256": "00145f7edfebb01efae17b3d4ab0e0ff177de454dd08568985a581aba3027865",
+  "geometry_sha256": "df859ca1ead6e4fca4cad0d877131167a47a4d6443ebed1ee3379189600f7601",
+  "package_numpy_version": "2.4.4"
+}
