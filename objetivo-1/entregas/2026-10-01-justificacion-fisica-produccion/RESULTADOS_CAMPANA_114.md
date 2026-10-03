@@ -22,7 +22,7 @@
 
 **Bordes.** Las 15 regiones de cada una de las 114 vistas son equivalentes dentro de ±1 pp con el intervalo completo, con α = 0,05/114 por vista (familia completa al 95 %). El mayor extremo de un intervalo fue 0,933 pp (geo-train-02, vista 5, `column_2`).
 
-**Roca** (indicador descriptivo: ≥ 90 % de las ROI de 4 × 4 con ≥ 100 cuentas). Lo cumplen 107 de 114 vistas. Por vista, la fracción va de 0,892 a 1,000 (mediana 0,961), la mediana de cuentas por ROI de 190 a 260,5, y el percentil 10 de 97,2 a 157,5.
+**Roca** (indicador descriptivo: ≥ 90 % de las ROI de 4 × 4 con ≥ 100 cuentas). Sobre el total de la campaña, 20.713 de 21.816 ROI (94,9 %) alcanzan 100 cuentas. Evaluado vista por vista, como lo hace `evaluar_campana_114.py`, lo cumplen 107 de 114 vistas. Por vista, la fracción va de 0,892 a 1,000 (mediana 0,961), la mediana de cuentas por ROI de 190 a 260,5, y el percentil 10 de 97,2 a 157,5.
 
 | Geometría | Vistas que cumplen | Fracción ≥ 100 (mín.–máx.) | ROI por vista |
 |---|---:|---|---:|
@@ -53,11 +53,15 @@ Vistas por debajo de la meta, conservadas sin cambios: geo-test-03 v1 (0,896) y 
 | Producto | Ubicación en SC3 | Tamaño | Huella |
 |---|---|---|---|
 | Bloques publicados (1.026) | `~/muography-scratch/oe1-114-344M-publicados` | 734 MB | [bloques-publicados.sha256](datos/sc3/campana-114/posproceso/bloques-publicados.sha256) |
-| Fusión (114 vistas) | `~/muography-scratch/oe1-114-344M-fusion` | 32 MB | [fusion.sha256](datos/sc3/campana-114/posproceso/fusion.sha256) |
+| Fusión (114 vistas) | `~/muography-scratch/oe1-114-344M-fusion`; copia en [datos/sc3/campana-114/fusion/](datos/sc3/campana-114/fusion/) | 32 MB | [fusion.sha256](datos/sc3/campana-114/posproceso/fusion.sha256) (248/248 verificados en la copia) |
 | Imágenes exportadas (114 NPZ) | `~/muography-scratch/oe1-114-344M-imagenes` | 11 MB | [imagenes.sha256](datos/sc3/campana-114/posproceso/imagenes.sha256) |
 | Inventario | — | — | [inventario-114-344M.json](datos/sc3/campana-114/posproceso/inventario-114-344M.json): 114/114, `technical_complete: true`, 9.120 pares objetivo |
 
 En el repositorio se incluyen las 114 imágenes exportadas ([datos/sc3/campana-114/imagenes/](datos/sc3/campana-114/imagenes/), 12 MB, verificadas contra `imagenes.sha256`). Con ellas se regeneran de forma determinista los 9.120 pares (`empaquetar_angular_v1.py --salida`, NumPy 2.4.4, semilla 20260805) y su conversión al formato de entrenamiento (`analysis/convert_oe1_package.py` de `muography-thesis`, rama `oe2/retrain-dataset-v2`). Las huellas esperadas están en [pares/manifest.json](datos/sc3/campana-114/pares/manifest.json) (114 archivos de pares) y en [dataset-v2/splits.json](datos/sc3/campana-114/dataset-v2/splits.json) (19 shards). Los binarios de pares (547 MB) y de `dataset-v2` (487 MB) no se versionan.
+
+**Reproducción en una segunda máquina.** Los pares y `dataset-v2` se regeneraron desde las 114 imágenes del repositorio en otro equipo (Ubuntu 26.04.1 en WSL2, Python 3.13.16, NumPy 2.4.4, zlib 1.3.2; muografia-documentada `c04bdd8`, muography-thesis `92fa6f0`). El contenido es idéntico al original en los 114 archivos de pares (342 arreglos) y en los 19 shards (57 arreglos), según [huellas-contenido.json](datos/sc3/campana-114/huellas-contenido.json). Las huellas de archivo difieren solo porque la compresión depende de la versión de zlib (1.3.2 frente a 1.3.1 en la primera máquina). No hubo valores recortados (`values_clipped = 0`).
+
+**Datos en Drive:** [oe1-campana-114](https://drive.google.com/drive/folders/10gRmkWqmCqN3qOf2gfOWCDG4bcC7zhaT): imágenes, los 9.120 pares, `dataset-v2` y un LEEME con versiones y verificaciones. Los 1.026 bloques publicados (734 MB) se conservan en SC3 con sus huellas en `bloques-publicados.sha256`.
 
 Evidencia completa en [datos/sc3/campana-114/posproceso/](datos/sc3/campana-114/posproceso/): comandos, salidas, códigos de salida, entorno, huellas de herramientas frente a Git (57 de 57) y `salidas.sha256` (25 archivos). Scripts ejecutados: [campana_114_preparar_7c120ce.sh](verificacion/campana_114_preparar_7c120ce.sh), [campana_114_lanzar_v5.sh](verificacion/campana_114_lanzar_v5.sh) (y versiones anteriores) y [campana_114_posproceso.sh](verificacion/campana_114_posproceso.sh).
 
