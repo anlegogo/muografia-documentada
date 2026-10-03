@@ -18,3 +18,12 @@
 - Incidencias: la consulta adicional al repositorio citado como muography-thesis no pudo ejecutarse mediante gh porque ese ejecutable no está disponible. El convertidor histórico permanece no recuperado; la verificación independiente contra paquetes fuente evita depender de su ejecución para integrar los datos. La ayuda CLI emitió un aviso de caché de fuentes de Matplotlib sin permisos en el perfil de Windows; terminó correctamente y no afectó los controles numéricos.
 - Se separó selección del mejor SSIM sin redondear del umbral de paciencia. Los resultados son pruebas técnicas CPU de dos pasos, sin apertura de imágenes reservadas y sin conclusión de calidad.
 - Siguiente paso: protocolo OE2-P04 y prueba GPU, antes del entrenamiento prolongado.
+
+## 2026-10-03 — Diseño del piloto OE2-P04
+
+- Autorización de la dirección para preparar protocolo, configuraciones y comandos SC3. Se fijó comparación al 5 % entre U-Net L1 y cWGAN-GP, semilla 2026100301, lote 4 y normalización v1.
+- Dos etapas: comprobación técnica de dos épocas con parada/reanudación deliberada, y piloto de hasta 30 épocas con 1.440 pares train/360 val, paciencia 8 y validación por época.
+- Se añadieron ejecutor externo y resumen de registros; no se modifica la implementación corregida ni su identidad. Se registra baseline sin red, entorno, memoria CUDA y tiempos.
+- Evidencia: [resumen técnico local](evidencias/protocolo-piloto-local.json), [protocolo](PROTOCOLO_PILOTO_F05.md) e [instrucciones](INSTRUCCIONES_PILOTO_SC3.md). Ambos métodos se ejecutan y reanudan en CPU para verificar comandos; esta comprobación no aprueba GPU ni calidad.
+- Próximo paso: estudiantes ejecutan A en SC3 y, si pasa, B con autonomía dentro de los límites definidos. Se requiere revisión de resultados antes de ampliar a otras fracciones y repeticiones.
+- Resultado local: veinte controles no GPU satisfactorios entre ambos métodos; se comprobó el rechazo de la entrega CPU como aceptación GPU y la coherencia de las cuatro configuraciones. Las dos redes aún empeoran el SSIM de entrada después de cuatro actualizaciones; se registra expresamente sin convertir la prueba técnica en evidencia de calidad. [Verificación del protocolo](evidencias/verificacion-protocolo-v1.json).

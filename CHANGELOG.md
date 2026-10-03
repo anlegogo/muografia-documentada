@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Diseño del piloto OE2 al 5 % — 2026-10-03
+
+- Protocolo con prueba técnica de dos épocas y piloto U-Net/cGAN de hasta 30 épocas; mismos pares, semilla y lote, con baseline de entrada y conjuntos reservados protegidos.
+- Cuatro configuraciones, ejecutor con verificación CUDA, interrupción/reanudación, registros de memoria/tiempo y resumen automático. [Instrucciones SC3](objetivo-2/INSTRUCCIONES_PILOTO_SC3.md).
+- Verificación local de ambos métodos y sus reanudaciones en CPU. GPU, valoración de calidad y campaña principal permanecen pendientes; no se lanzan los 24 entrenamientos.
+
 ## Correcciones de implementación OE2 v1 — 2026-10-03
 
 - P01–P03 corregidos: GP del promedio por muestra, normalización disponible sin referencia y manifiesto fijado con rechazo de reanudación incompatible. Se conserva código original y procedencia.

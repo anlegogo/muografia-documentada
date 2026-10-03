@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "configurations": 4,
+  "methods_matched": true,
+  "pilot_uses_full_train_val": true,
+  "cpu_report_rejected_for_gpu_acceptance": true,
+  "links_ok": true,
+  "files_sha256_lf": {
+    "objetivo-2/configuraciones/piloto-v1/piloto-cgan.json": "8a4b562dc4dc54a45fc1eb23d9eebc89bd505aff4c1f81c901e63aa88805009d",
+    "objetivo-2/configuraciones/piloto-v1/piloto-unet.json": "19974eb1aa71553274918876211104bdbabe821ec446fcca98ee7e97c5bd15f2",
+    "objetivo-2/configuraciones/piloto-v1/tecnica-cgan.json": "c3f017f1194de1859d1c0e75238023e4da485ac62337ace3368d574439fa5192",
+    "objetivo-2/configuraciones/piloto-v1/tecnica-unet.json": "b08e56ddf5154bf4d80d42d2394cd6849502d72b787c16d0c77164a157824eef",
+    "objetivo-2/herramientas/ejecutar_piloto.py": "f726647d6dcf7ff28eeda92a6185abc6d96561805701657cfbe3d62b393d43dd",
+    "objetivo-2/herramientas/resumir_piloto.py": "f02ddb454845fcd2f25c7aec02c782b4005acbe3d6f5fda712e7771647ce14cf"
+  }
+}

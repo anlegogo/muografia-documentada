@@ -27,3 +27,5 @@ La cronología permanece en el [registro de cambios](CHANGELOG.md), la [bitácor
 ## Apertura del OE2 — revisión inicial
 
 Por autorización expresa de la dirección se incorpora la [revisión de la implementación estudiantil](objetivo-2/README.md). Existe una cWGAN-GP reutilizable y se comprobó la compatibilidad de 7.200 pares de entrenamiento/validación. La penalización del crítico, la normalización y la identidad de los datos se corrigieron en una [implementación derivada v1](objetivo-2/CORRECCIONES_V1.md), con 17 controles y reanudación exacta en una prueba técnica de entrenamiento. El OE2 permanece pendiente de protocolo y entrenamiento prolongado; no se declara desempeño final.
+
+El [piloto al 5 %](objetivo-2/PROTOCOLO_PILOTO_F05.md) está diseñado: comparación U-Net/cGAN, prueba técnica con reanudación y hasta 30 épocas antes de presupuestar la campaña principal. Se incluyen [instrucciones para SC3](objetivo-2/INSTRUCCIONES_PILOTO_SC3.md); la ejecución GPU está pendiente.

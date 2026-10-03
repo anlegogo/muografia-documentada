@@ -2,6 +2,9 @@
 
 ## Objetivo específico 2
 
+- [Protocolo del piloto al 5 %](../objetivo-2/PROTOCOLO_PILOTO_F05.md).
+- [Instrucciones de ejecución y entrega en SC3](../objetivo-2/INSTRUCCIONES_PILOTO_SC3.md).
+
 - [Correcciones v1, verificación y comandos de reproducción](../objetivo-2/CORRECCIONES_V1.md).
 
 - [Revisión de la implementación y pendientes OE2-P01 a OE2-P04](../objetivo-2/README.md).

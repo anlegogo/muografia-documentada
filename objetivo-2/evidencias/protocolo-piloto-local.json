@@ -1,0 +1,70 @@
+{
+  "stage": "tecnica",
+  "technical_checks_passed": true,
+  "same_contract": true,
+  "local_cpu_check_only": true,
+  "runs": [
+    {
+      "method": "unet",
+      "accepted": true,
+      "checks": {
+        "gpu": false,
+        "completed": true,
+        "epochs_contiguous": true,
+        "expected_epochs": true,
+        "validation_size": true,
+        "finite": true,
+        "baseline_finite": true,
+        "checkpoints": true,
+        "train_size": true,
+        "resume_exercised": true
+      },
+      "epochs": 2,
+      "best_val_ssim": 0.548026425048839,
+      "input_val_ssim": 0.7264292569619198,
+      "delta_ssim_vs_input": -0.17840283191308082,
+      "mean_epoch_seconds_excluding_first_if_possible": 15.54,
+      "peak_cuda_reserved_bytes": 0,
+      "manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+      "implementation_sha256": "f2dcc640e5b2917bab9b0876b4b46371961e0fa7c67703c3818c4693fc0b263a",
+      "normalization": {
+        "fit_split": "train",
+        "name": "train_log_bounded_v1",
+        "scale": 8.239329427901795,
+        "train_max": 3786
+      }
+    },
+    {
+      "method": "cgan",
+      "accepted": true,
+      "checks": {
+        "gpu": false,
+        "completed": true,
+        "epochs_contiguous": true,
+        "expected_epochs": true,
+        "validation_size": true,
+        "finite": true,
+        "baseline_finite": true,
+        "checkpoints": true,
+        "train_size": true,
+        "resume_exercised": true
+      },
+      "epochs": 2,
+      "best_val_ssim": 0.4411843290974695,
+      "input_val_ssim": 0.7264292569619198,
+      "delta_ssim_vs_input": -0.2852449278644503,
+      "mean_epoch_seconds_excluding_first_if_possible": 39.55,
+      "peak_cuda_reserved_bytes": 0,
+      "manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+      "implementation_sha256": "f2dcc640e5b2917bab9b0876b4b46371961e0fa7c67703c3818c4693fc0b263a",
+      "normalization": {
+        "fit_split": "train",
+        "name": "train_log_bounded_v1",
+        "scale": 8.239329427901795,
+        "train_max": 3786
+      }
+    }
+  ],
+  "quality_approved": false,
+  "note": "La aceptaci\u00f3n t\u00e9cnica no acredita calidad f\u00edsica ni autoriza la campa\u00f1a de 24 entrenamientos."
+}

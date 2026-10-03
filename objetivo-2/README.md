@@ -1,6 +1,6 @@
 # Objetivo específico 2: revisión de la implementación recibida
 
-**Estado al 2026-10-03: correcciones OE2-P01 a P03 implementadas y verificadas localmente.** Véase [correcciones v1, evidencia y reproducción](CORRECCIONES_V1.md). OE2-P04 continúa pendiente. El texto de revisión siguiente conserva los hallazgos del código histórico. La dirección autorizó expresamente esta revisión del OE2. El cierre del OE1 se mantiene; no se declara cumplido el OE2 ni se inicia una campaña de entrenamiento.
+**Estado al 2026-10-03: correcciones OE2-P01 a P03 implementadas y verificadas localmente.** Véase [correcciones v1, evidencia y reproducción](CORRECCIONES_V1.md). OE2-P04 tiene un [protocolo de piloto al 5 %](PROTOCOLO_PILOTO_F05.md) y [comandos para SC3](INSTRUCCIONES_PILOTO_SC3.md); su ejecución GPU y la campaña principal continúan pendientes. El texto de revisión siguiente conserva los hallazgos del código histórico. La dirección autorizó expresamente esta revisión del OE2. El cierre del OE1 se mantiene; no se declara cumplido el OE2 ni se inicia una campaña de entrenamiento.
 
 El objetivo consiste en diseñar e implementar una cGAN que transforme imágenes muográficas de baja estadística en imágenes de calidad comparable a las de alta estadística. La salida considerada es una imagen muográfica; esta revisión no acredita reconstrucción de densidad.
 
