@@ -1,0 +1,85 @@
+# Objetivo específico 2: revisión de la implementación recibida
+
+**Estado al 2026-10-03: implementación histórica reutilizable; adaptación al conjunto corregido pendiente.** La dirección autorizó expresamente esta revisión del OE2. El cierre del OE1 se mantiene; no se declara cumplido el OE2 ni se inicia una campaña de entrenamiento.
+
+El objetivo consiste en diseñar e implementar una cGAN que transforme imágenes muográficas de baja estadística en imágenes de calidad comparable a las de alta estadística. La salida considerada es una imagen muográfica; esta revisión no acredita reconstrucción de densidad.
+
+## Material y procedencia
+
+Se revisó el código publicado por los estudiantes en [muography-dl-reconstruction, b88fa57](https://github.com/Dp100131/muography-dl-reconstruction/tree/b88fa576494cb8a664c46b8c94c5918c5097d616): `scripts/training/`, `models/`, configuración `e17_final.json`, manifiestos de pesos y registros históricos. Tras consultar los remotos, no se encontraron diferencias en `scripts/training` respecto de la rama `oe1/stage1-instrumentation` (3315f82). Esto identifica la versión examinada, sin afirmar que no exista código adicional sin publicar o en otro repositorio.
+
+En la réplica, la rama estudiantil `oe1/justificacion-fisica-produccion` llegó a 800ab86 con documentación de representatividad y campaña. No se fusionó esa rama. Para la comprobación de entrada se utilizó la distribución local `drive-2026-10-03/dataset-v2`, previamente verificada durante el [cierre del OE1](../objetivo-1/CIERRE_OE1.md).
+
+## Qué se puede reutilizar
+
+| Componente | Resultado de la revisión |
+|---|---|
+| Arquitectura condicional | Existe una cWGAN-GP: generador U-Net y crítico que recibe entrada y candidata concatenadas. |
+| Configuración histórica seleccionada | `unet_dc_5`, 20.543.809 parámetros; crítico `patch_critic_70`; pérdida adversaria más L1. No confundir con el generador predeterminado `unet_p2p_6`. |
+| Entrenamiento | Existen optimizadores, semillas, registros, parada temprana y recuperación de estados. Son una base útil, sujeta a los pendientes siguientes. |
+| Datos corregidos | Las 15 geometrías de train/val conservan exactamente referencias y 7.200 pares al convertir al formato de entrenamiento; no se detectó pérdida por el cambio a uint16. |
+| Compatibilidad de red | Un par corregido de geo-train-01, fracción 0,05, atraviesa el generador y el crítico con valores finitos y dimensiones esperadas. Se usaron pesos aleatorios: no es una evaluación de calidad. |
+| Resultados anteriores | Hay pesos y métricas históricas. Corresponden al conjunto anterior y no acreditan desempeño sobre la campaña corregida. No se repitió aquí su evaluación. |
+
+Las particiones contienen 5.760 pares de entrenamiento, 1.440 de validación, 1.440 de prueba y 480 de generalización. Los pares de una misma geometría comparten referencia y no constituyen miles de escenarios independientes. En esta revisión no se abrieron imágenes de prueba ni generalización, ni se entrenó una red.
+
+## Hallazgos y pendientes
+
+### OE2-P01 — Agregación del crítico y penalización del gradiente
+
+**Estado: pendiente; debe resolverse antes del entrenamiento.** En `scripts/training/losses.py`, las pérdidas adversarias usan el promedio del mapa del crítico, mientras que `gradient_penalty` diferencia su suma mediante `grad_outputs=ones_like(scores)`.
+
+Para un mapa con P parches, la puntuación por muestra utilizada por la pérdida es
+
+\[
+C(x,y)=\frac{1}{P}\sum_{p=1}^{P}D_p(x,y).
+\]
+
+La implementación penaliza \(\|\nabla_y\sum_pD_p\|_2\), que equivale a \(P\|\nabla_y C\|_2\), en lugar de penalizar el gradiente de esa misma puntuación promedio. El mapa 30×30 tiene P=900. No es simplemente una constante multiplicativa de toda la pérdida: cambia el gradiente objetivo de la regularización.
+
+La prueba construye un crítico cuyo promedio tiene gradiente de norma uno. La penalización coherente es cero, pero la función publicada devuelve 808.201 para 30×30 y 38.025 para 14×14; con un único parche sí devuelve cero. Son valores de una prueba analítica, no pérdidas observadas en los entrenamientos históricos. La prueba histórica con crítico escalar no detecta esta diferencia.
+
+**Cierre requerido:** definir una puntuación escalar por muestra y emplearla consistentemente en pérdida y penalización; añadir una prueba con varios parches y registrar una nueva versión. Los pesos históricos no se convierten en pesos corregidos mediante un cambio de etiqueta.
+
+### OE2-P02 — Normalización dependiente de la referencia
+
+**Estado: pendiente; decisión metodológica antes del entrenamiento.** El modo seleccionado `ref_equivalent` calcula
+
+\[
+x=\frac{\log(1+n_{\mathrm{low}}/f)}{\log(1+\max n_{\mathrm{ref}})},\qquad
+y=\frac{\log(1+n_{\mathrm{ref}})}{\log(1+\max n_{\mathrm{ref}})}.
+\]
+
+La fracción f es conocida, pero el máximo de la referencia no está disponible cuando únicamente se recibe una imagen de baja estadística. El propio código describe esta escala como un oráculo. La prueba confirma que, manteniendo idéntica la imagen de entrada, cambiar la referencia cambia la entrada normalizada.
+
+Esto permite un experimento con información privilegiada si se declara expresamente, pero no demuestra una inferencia operativa. **Cierre requerido:** fijar una transformación disponible en inferencia, ajustada solo con entrenamiento o calculada desde la entrada, declarar su inversión y tratamiento del rango y aplicarla coherentemente en validación. La salida sigmoide exige revisar cualquier objetivo que pueda superar uno. El caso de referencia vacía produce valores no finitos; debe existir una política explícita, aunque no se observó ese caso en los shards examinados.
+
+### OE2-P03 — Identidad y selección del conjunto
+
+**Estado: pendiente; integración antes del entrenamiento.** El lector apunta a `dataset/shards` y `results/dataset/splits.json` del repositorio histórico. Para el diagnóstico se redirigieron estas rutas únicamente en memoria. Esto prueba compatibilidad de arreglos, no una integración de producción terminada.
+
+El checkpoint guarda configuración y commit, pero no vincula obligatoriamente el estado a las huellas de los datos. La protección contra una configuración diferente es útil, aunque no basta cuando cambian los archivos bajo las mismas rutas.
+
+**Cierre requerido:** parámetros explícitos para datos y particiones, verificación del manifiesto de la distribución, registro de huellas en configuración/checkpoint y rechazo de reanudación cuando cambia el conjunto. Debe recuperarse y fijarse también la versión del convertidor referido por `conversion-report.json`; ese informe identifica `analysis/convert_oe1_package.py` y su huella, pero no sustituye el código reproducible. La igualdad numérica de train/val ya está comprobada aquí.
+
+### OE2-P04 — Protocolo y evidencia sobre los datos corregidos
+
+**Estado: pendiente.** La existencia de modelos históricos reduce el trabajo de implementación, pero todavía se requiere un protocolo específico: fracciones, modelo por fracción o condicionamiento explícito por f, semillas, presupuesto, comparación con U-Net L1 y criterio de selección.
+
+La configuración histórica usa modelos separados por fracción; la imagen de baja estadística es la condición del crítico. No corresponde describirla como una única red condicionada explícitamente por f. El criterio `min_delta=0.001` afecta qué checkpoint se considera mejor: se debe distinguir mejora suficiente para paciencia de máximo absoluto de SSIM, o declarar expresamente el criterio adoptado.
+
+**Cierre requerido:** tras P01–P03, una prueba corta de entrenamiento, guardado y reanudación; después entrenamiento reproducible con train/val y valoración documentada. No se exige una nueva simulación Geant4 para iniciar estos trabajos. Test/generalization deben mantenerse fuera de la selección; la exposición histórica a geometrías del catálogo debe declararse y no presentarse como una reserva completamente nueva. La evaluación final comparativa no se certifica en esta auditoría.
+
+## Evidencia y reproducción
+
+El [diagnóstico JSON](evidencias/revision-2026-10-03.json) registra versiones, huellas del código, 15 shards, comparación de 90 vistas, paso por la red y pruebas matemáticas. El [script](herramientas/revisar_base.py) recibe rutas explícitas y abre únicamente train/val. Entorno de revisión: Python 3.12.14, PyTorch 2.6.0+cpu, NumPy 2.4.4; dos hilos, semilla 20261003. Esto no verifica CUDA ni el rendimiento en SC3.
+
+Desde la raíz de esta réplica, sustituyendo las rutas por las ubicaciones locales:
+
+```powershell
+python objetivo-2/herramientas/revisar_base.py --codigo ../tmp/revision-muography-dl-reconstruction --datos trabajo/drive-2026-10-03 --salida objetivo-2/evidencias/revision-2026-10-03.json
+```
+
+El script termina correctamente cuando reproduce los diagnósticos, incluidos los defectos actuales; no equivale a una aprobación del código para entrenar. Al corregir el código deberán cambiarse las expectativas y conservar esta evidencia del antes. Véase la [bitácora](BITACORA.md).
+
+**Secuencia recomendada:** resolver P01–P03 localmente, verificar un entrenamiento corto y su reanudación, fijar el protocolo P04 y solo entonces asignar un entrenamiento prolongado a SC3. El resultado de la revisión es una base aprovechable con correcciones concretas, no la necesidad de comenzar desde cero.

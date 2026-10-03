@@ -1,0 +1,181 @@
+{
+  "python": "3.12.14",
+  "torch": "2.6.0+cpu",
+  "numpy": "2.4.4",
+  "device": "cpu",
+  "seed": 20261003,
+  "source_sha256": {
+    "scripts/training/muography_dataset.py": "a8121c05e887faf0a153bdbd1b813b851dc7ed3847b9bd49f154ba91b8537f3f",
+    "scripts/training/losses.py": "ec71f56f5fb7507aee38751f084efe1b22106ada087a0695f3ab3d4e7b48f2ca",
+    "scripts/training/engine.py": "b32b792f2aee03805caf7ddb053ae661b8baf73bf3648e7e48ec4860914e67b0",
+    "scripts/training/configs/e17_final.json": "78917d38b75204edf145b154dd711ec89bdbf75606b8d7ee90e66fc9052bf2b5",
+    "models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+    "models/patch_critic.py": "41fbbb005fd152d3ddf10e50721ac855108907714e150632d1942275736b84d8"
+  },
+  "shards": [
+    {
+      "geometry": "geo-train-01",
+      "sha256": "4810faaacb7fa3196005ea30f5046a83d0c71262d82b27a9faf2a9b33041a5ba",
+      "views_equal_to_source": 6,
+      "pairs": 480,
+      "ref_max": 3764,
+      "low_max": 1944
+    },
+    {
+      "geometry": "geo-train-02",
+      "sha256": "ce5e7ef23841d85fa7621f1dae9020b99c9bd348e4b51db0909cde0945fb6259",
+      "views_equal_to_source": 6,
+      "pairs": 480,
+      "ref_max": 3717,
+      "low_max": 1956
+    },
+    {
+      "geometry": "geo-train-03",
+      "sha256": "f5eb1870c23ebf93e236f3d1b517961736b07af019772986d978ac1c16861757",
+      "views_equal_to_source": 6,
+      "pairs": 480,
+      "ref_max": 3736,
+      "low_max": 1946
+    },
+    {
+      "geometry": "geo-train-04",
+      "sha256": "23c89c2e852b7a6a9c4f110267ceaa1f449a5a2772ab312d15e9b334e6a49fe1",
+      "views_equal_to_source": 6,
+      "pairs": 480,
+      "ref_max": 3754,
+      "low_max": 1943
+    },
+    {
+      "geometry": "geo-train-05",
+      "sha256": "be50db82fcbc6c9683bae3fadce4d30fcfbc4c533603b558798d508b3051c02c",
+      "views_equal_to_source": 6,
+      "pairs": 480,
+      "ref_max": 3747,
+      "low_max": 1961
+    },
+    {
+      "geometry": "geo-train-06",
+      "sha256": "120e427d7d71e232056998247b38249a4692d285b63bf6c2e6cc593c2b0d97e4",
+      "views_equal_to_source": 6,
+      "pairs": 480,
+      "ref_max": 3731,
+      "low_max": 1932
+    },
+    {
+      "geometry": "geo-train-07",
+      "sha256": "b8204ea59e6e55d4f67ca86e1e8f4dd8c3231d39965982f2d07e97afd060c9fd",
+      "views_equal_to_source": 6,
+      "pairs": 480,
+      "ref_max": 3738,
+      "low_max": 1953
+    },
+    {
+      "geometry": "geo-train-08",
+      "sha256": "34e8d7a3cf506b55695f6b9716f71ad89a58c000b2cd9a209ff0d0a3fdfcb2d9",
+      "views_equal_to_source": 6,
+      "pairs": 480,
+      "ref_max": 3736,
+      "low_max": 1962
+    },
+    {
+      "geometry": "geo-train-09",
+      "sha256": "705e6e577513af85d354f1ee851239b0eaeb2d9f7fa88cb20ef92aee8739c786",
+      "views_equal_to_source": 6,
+      "pairs": 480,
+      "ref_max": 3735,
+      "low_max": 1927
+    },
+    {
+      "geometry": "geo-train-10",
+      "sha256": "5ba019f72b961b0627d4dc97c306e3cf297353b8987321f5a719e419e725109a",
+      "views_equal_to_source": 6,
+      "pairs": 480,
+      "ref_max": 3734,
+      "low_max": 1934
+    },
+    {
+      "geometry": "geo-train-11",
+      "sha256": "267fcaa0e2b0a9dfca5298de16bcceaed46dafa70a61babe7a644584c29884ca",
+      "views_equal_to_source": 6,
+      "pairs": 480,
+      "ref_max": 3786,
+      "low_max": 1950
+    },
+    {
+      "geometry": "geo-train-12",
+      "sha256": "49a30a827d5198ba0d215107ccf15b7d8572b15430e997a21c26d7e18970cc52",
+      "views_equal_to_source": 6,
+      "pairs": 480,
+      "ref_max": 3724,
+      "low_max": 1944
+    },
+    {
+      "geometry": "geo-val-01",
+      "sha256": "6528589a708105fc556a8d807d4eff60e1019cb884f83941e43b6b5961ffa698",
+      "views_equal_to_source": 6,
+      "pairs": 480,
+      "ref_max": 3732,
+      "low_max": 1960
+    },
+    {
+      "geometry": "geo-val-02",
+      "sha256": "c5bee7998bfa71c51a0caf26be785aada0a0715f52a07237571b459f2fe514c4",
+      "views_equal_to_source": 6,
+      "pairs": 480,
+      "ref_max": 3771,
+      "low_max": 1946
+    },
+    {
+      "geometry": "geo-val-03",
+      "sha256": "3b29e660be5500cc0e72e5c500588f7d8b8c3b46e34675326a0064604f114b1b",
+      "views_equal_to_source": 6,
+      "pairs": 480,
+      "ref_max": 3757,
+      "low_max": 1939
+    }
+  ],
+  "heldout_images_opened": false,
+  "splits_sha256": "f8c43826e19d24a5e6ee0eafdd3a4c799cb1f5c69f94b18f69fe9d7dabadef44",
+  "forward": {
+    "geometry": "geo-train-01",
+    "fraction": 0.05,
+    "sample": 0,
+    "random_weights": true,
+    "generator_shape": [
+      1,
+      1,
+      256,
+      256
+    ],
+    "critic_shape": [
+      1,
+      1,
+      30,
+      30
+    ],
+    "finite": true,
+    "generator_parameters": 20543809
+  },
+  "gradient_penalty": [
+    {
+      "patch_side": 1,
+      "published_gp": 0.0,
+      "gp_for_mean_score": 0.0
+    },
+    {
+      "patch_side": 14,
+      "published_gp": 38025.0,
+      "gp_for_mean_score": 0.0
+    },
+    {
+      "patch_side": 30,
+      "published_gp": 808201.0,
+      "gp_for_mean_score": 3.552713678800501e-15
+    }
+  ],
+  "normalization": {
+    "same_low_different_reference_changes_input": true,
+    "empty_reference_is_finite": false
+  },
+  "status": "diagnostic_completed_with_findings"
+}

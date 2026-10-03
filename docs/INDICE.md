@@ -1,5 +1,10 @@
 # Índice de documentación
 
+## Objetivo específico 2
+
+- [Revisión de la implementación y pendientes OE2-P01 a OE2-P04](../objetivo-2/README.md).
+- [Bitácora del OE2](../objetivo-2/BITACORA.md).
+
 ## Estado vigente y cierre documental
 
 - [Decisión y registro de cierre del OE1](../objetivo-1/CIERRE_OE1.md).

@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Revisión inicial del OE2 — 2026-10-03
+
+- Ampliación expresamente autorizada a revisión del OE2; se mantiene el cierre del OE1.
+- [Diagnóstico de implementación](objetivo-2/README.md): arquitectura reutilizable, compatibilidad de 7.200 pares y prueba de paso por generador/crítico; sin entrenamiento ni acceso a imágenes reservadas.
+- Se reproducen la discrepancia entre suma/promedio en GP y la dependencia de normalización respecto de la referencia. Se documentan cuatro pendientes con criterios de cierre, script reproducible, entorno y evidencia numérica.
+
 ## Cierre del OE1 por decisión de la dirección — 2026-10-03
 
 - Objetivo aprobado contrastado con el plan, 19 huellas de geometría verificadas y justificación de representatividad completada. Se corrige la identificación del caso homogéneo: geo-train-01; geo-gen-01 contiene anomalías.

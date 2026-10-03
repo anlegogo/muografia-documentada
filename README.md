@@ -22,4 +22,8 @@ El conjunto corregido de `f395570` se distingue del catálogo histórico conserv
 
 `objetivo-1/evidencias/` contiene las verificaciones; `objetivo-1/figuras/` los gráficos; `herramientas/` los procedimientos reproducibles. Los archivos grandes de trabajo local se guardan en `trabajo/`, fuera del historial Git. Consultar [procedencia](docs/PROCEDENCIA.md), [ficha actual](objetivo-1/FICHA_CONJUNTO_OE1.md) y [versiones locales](requirements-oe1-local.txt).
 
-La cronología permanece en el [registro de cambios](CHANGELOG.md), la [bitácora](objetivo-1/BITACORA.md) y los informes fechados. Se retiraron de esta entrada los avisos de preparación y recepción ya superados. El alcance continúa limitado al OE1; no se certifica un detector real ni se incorpora entrenamiento de redes.
+La cronología permanece en el [registro de cambios](CHANGELOG.md), la [bitácora](objetivo-1/BITACORA.md) y los informes fechados. Se retiraron de esta entrada los avisos de preparación y recepción ya superados. No se certifica un detector real.
+
+## Apertura del OE2 — revisión inicial
+
+Por autorización expresa de la dirección se incorpora la [revisión de la implementación estudiantil](objetivo-2/README.md). Existe una cWGAN-GP reutilizable y se comprobó la compatibilidad de 7.200 pares de entrenamiento/validación. Antes de entrenar con el conjunto corregido deben resolverse la penalización del crítico, la normalización y la identidad de los datos. El OE2 permanece pendiente; esta revisión no incluye una campaña de entrenamiento.
