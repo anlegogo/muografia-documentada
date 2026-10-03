@@ -1,5 +1,11 @@
 # Bitácora de la revisión del OE1
 
+## Revisión directa f395570 — 2026-10-03
+
+- Entradas recibidas por Git: fusión, imágenes y huellas. Se ejecutó evaluación local y regeneración binomial completa con NumPy 2.4.4.
+- [Resultados](REVISION_DATOS_F395570.md): 477 archivos íntegros, 114 referencias compatibles, 9.120 pares con contenido coincidente; 20.713/21.816 ROI con al menos 100 cuentas.
+- No se ejecutó transporte, no se descargó Drive y no se auditó el derivado dataset-v2. Siguiente paso: ficha final, copia de distribución e informe académico.
+
 ## Revisión de campaña e037d09 — 2026-10-03
 
 - Se revisan registros, inventarios, evaluación y cambios operativos de estudiantes. [Evidencia y límites](REVISION_CAMPANA_E037D09.md).

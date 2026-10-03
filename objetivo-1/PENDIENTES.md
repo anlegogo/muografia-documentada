@@ -1,5 +1,7 @@
 # Pendientes del OE1
 
+> Estado 2026-10-03, posterior a e037d09: [datos f395570 verificados](REVISION_DATOS_F395570.md). Recibidos los histogramas y NPZ, reproducida la evaluación y comprobados los 9.120 pares. Ya no se solicita su entrega ni generación. Permanecen la ficha/informe final, revisión de distribución y valoración académica de representatividad.
+
 > Actualización 2026-10-03: [campaña e037d09 revisada](REVISION_CAMPANA_E037D09.md). La ejecución está respaldada por registros y resúmenes. Siguiente entrega: histogramas fusionados y NPZ completos; después revisión directa, pares y ficha final. Las siete vistas bajo la meta se conservan; no se ordena transporte adicional.
 
 > Estado posterior: [preparación completa de las siete actividades](PREPARACION_CAMPANA_114.md). P-03: empaquetado del piloto y evaluación de campaña comprobados localmente. P-01/P-04: decidir presupuesto y meta de calidad, ejecutar y revisar las referencias finales. El piloto no es el escenario de mayor columna nominal.

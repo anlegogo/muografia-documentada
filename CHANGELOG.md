@@ -1,5 +1,10 @@
 # Registro de cambios
 
+## Revisión directa f395570 — 2026-10-03
+
+- 477 huellas y 114 matrices verificadas; evaluación completa reproducida desde píxeles.
+- 9.120 pares regenerados en memoria y 342 huellas de contenido coincidentes. [Informe](objetivo-1/REVISION_DATOS_F395570.md). Drive localizado, sin descarga ni auditoría de dataset-v2.
+
 ## Revisión de campaña e037d09 — 2026-10-03
 
 - Registros de 1.026 filas completadas verificados; 25 archivos íntegros, 1.710 intervalos recalculados y 107 pruebas de la rama satisfactorias.

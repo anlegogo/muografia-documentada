@@ -1,5 +1,7 @@
 # Muografía: documentación y seguimiento académico
 
+**Datos finales recibidos y reproducidos:** [revisión f395570](objetivo-1/REVISION_DATOS_F395570.md): 477 huellas verificadas, 114 referencias evaluadas desde píxeles y 9.120 pares regenerados con contenido coincidente. Pendiente consolidación documental y revisión de la copia de distribución; no se requiere otra campaña para estas comprobaciones.
+
 **Campaña reportada completa:** [revisión e037d09](objetivo-1/REVISION_CAMPANA_E037D09.md). Registros de 1.026 bloques terminados; 1.710 intervalos de borde recalculados y conformes; 107/114 vistas alcanzan la meta descriptiva de roca. Faltan los histogramas/NPZ para revisión directa y la generación de los 9.120 pares.
 
 **Preparación de campaña completada:** [siete actividades, criterios, presupuesto y guía de ejecución](objetivo-1/PREPARACION_CAMPANA_114.md). Comparación de 19 geometrías, manifiesto candidato de 114 vistas, 480 pares del piloto verificados y 106 pruebas satisfactorias. No se autoriza envío por esta preparación.

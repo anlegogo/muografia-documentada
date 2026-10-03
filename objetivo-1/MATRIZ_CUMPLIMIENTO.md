@@ -1,5 +1,7 @@
 # Matriz de cumplimiento del OE1
 
+> Actualización f395570: [114 referencias y 9.120 pares comprobados](REVISION_DATOS_F395570.md). Verificados integridad, niveles de conteo, particiones por geometría y evaluación desde píxeles. El porcentaje global de ROI con 100 cuentas es 94,944 %; se conservan las siete vistas bajo la meta individual. Cierre documental y académico pendiente.
+
 > Estado 2026-10-03: [campaña reportada y revisión de evidencia](REVISION_CAMPANA_E037D09.md). 114 referencias declaradas; intervalos de borde reproducidos desde conteos regionales. Pendiente verificación desde matrices, generación de pares y cierre documental; OE1 continúa abierto.
 
 > Preparación posterior: [plan de 114 vistas y criterios](PREPARACION_CAMPANA_114.md). Se verificaron 480 pares del piloto y 106 pruebas; se analizaron las 19 geometrías. La producción y aceptación del conjunto final siguen pendientes.
