@@ -52,13 +52,13 @@ Esta lista reúne las condiciones de aceptación del OE1 bajo el alcance adoptad
 
 | Criterio | Evidencia requerida | Estado y responsable siguiente |
 |---|---|---|
-| A-01 · alcance explícito | Decisión de la dirección y expresión de límites en la entrega. | **Verificado** en la definición y entrega; la incorporación al manuscrito final se revisa con A-02. |
-| A-02 · representatividad | Justificación de escenarios, fuente, geometría y transporte. | **Parcial:** síntesis preparada; pendiente valoración e incorporación al informe. No se exige equivalencia instrumental. |
+| A-01 · alcance explícito | Decisión de la dirección y expresión de límites en la entrega. | **Verificado:** alcance incorporado al informe de cierre. |
+| A-02 · representatividad | Justificación de escenarios, fuente, geometría y transporte. | **Verificado documentalmente y aceptado por la dirección para el alcance idealizado:** justificación de mecanismos y configuraciones integrada al informe. [Decisión de cierre](CIERRE_OE1.md). No se exige equivalencia instrumental. |
 | A-03 · receta reproducible | Versiones, tablas, geometrías, semillas, parámetros y huellas. | **Verificado documentalmente** para la campaña recibida; ficha consolidada, sin afirmar reconstrucción Geant4 local. |
 | A-04 · integración operativa | Registros de trabajos y posproceso SC3. | **Verificado** mediante registros de 1.026 filas completadas y coherencia de productos. |
 | A-05 · piloto y suficiencia | Evaluación según presupuesto y criterios registrados. | **Verificado:** piloto revisado; campaña con 1.710 bordes conformes y siete vistas bajo la meta descriptiva, conservadas conforme al acuerdo. |
 | A-06 · referencias finales | 114 referencias compatibles, íntegras y evaluadas. | **Verificado** desde los píxeles en f395570. |
 | A-07 · niveles de conteo | 9.120 pares reproducibles, uint32 y particiones por geometría. | **Verificado:** regeneración y 342 huellas de contenido coincidentes; referencia finita declarada. |
-| A-08 · entrega verificable | Datos recuperables, inventarios, comandos y ficha final. | **Parcial en cierre académico:** Git, reproducción y copia Drive verificados; ficha final preparada. Manuscrito final por consolidar. [Verificación de distribución](REVISION_DISTRIBUCION_DRIVE.md). |
+| A-08 · entrega verificable | Datos recuperables, inventarios, comandos y ficha final. | **Verificado:** Git, reproducción, Drive, ficha e informe del OE1 consolidados. [Verificación de distribución](REVISION_DISTRIBUCION_DRIVE.md) y [cierre](CIERRE_OE1.md). |
 
-Estado actualizado al 2026-10-03: [ficha del conjunto](FICHA_CONJUNTO_OE1.md), [síntesis y figuras](SINTESIS_RESULTADOS_OE1.md) y [revisión directa](REVISION_DATOS_F395570.md). La dirección revisará la evidencia de cierre. Ninguna prueba de software sustituye la evaluación del transporte y de la suficiencia estadística. La equivalencia con un instrumento real queda fuera de esta lista y requeriría un alcance adicional explícito.
+Estado actualizado al 2026-10-03: [ficha del conjunto](FICHA_CONJUNTO_OE1.md), [síntesis y figuras](SINTESIS_RESULTADOS_OE1.md) y [revisión directa](REVISION_DATOS_F395570.md). La dirección dispuso el cierre el 2026-10-03, dentro del alcance idealizado documentado. Ninguna prueba de software sustituye la evaluación del transporte y de la suficiencia estadística. La equivalencia con un instrumento real queda fuera de esta lista y requeriría un alcance adicional explícito.

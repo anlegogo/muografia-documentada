@@ -1,15 +1,15 @@
 # Muografía: documentación y seguimiento académico
 
-**Estado del OE1 — 2026-10-03:** se recibieron y verificaron 114 referencias de la campaña corregida y se reprodujo el contenido de 9.120 pares. La ficha, las figuras, la síntesis académica y un borrador descriptivo de 11 páginas están preparados. La copia de Drive ya se recuperó y verificó: 753 archivos y 2.291 controles satisfactorios. Quedan la incorporación al informe y la valoración académica de representatividad.
+**Estado del OE1 — 2026-10-03: cumplido y cerrado por decisión de la dirección bajo el alcance idealizado adoptado.** Datos, distribución, justificación e informe específico completos. [Registro de cierre](objetivo-1/CIERRE_OE1.md). No se requieren nuevas corridas para este alcance; no se declara aprobada la tesis completa.
 
 | Documento | Contenido |
 |---|---|
-| [Borrador académico del OE1](objetivo-1/manuscrito/README.md) | Texto en PDF y LaTeX, nomenclatura, formulación matemática y discusión. |
+| [Informe de cierre del OE1](objetivo-1/manuscrito/README.md) | Informe con figuras integradas, nomenclatura, formulación matemática y justificación. |
 | [Ficha del conjunto](objetivo-1/FICHA_CONJUNTO_OE1.md) | Datos, campos, receta, particiones, versiones, límites y reproducción. |
 | [Síntesis de resultados y figuras](objetivo-1/SINTESIS_RESULTADOS_OE1.md) | Texto para el informe y tres figuras exportables en PNG/PDF. |
 | [Definición y criterios de cierre](objetivo-1/DEFINICION_PRODUCTO_OE1.md) | Alcance adoptado y evidencia de A-01 a A-08. |
 | [Matriz de cumplimiento](objetivo-1/MATRIZ_CUMPLIMIENTO.md) | Aspectos verificados y límites de la conclusión. |
-| [Pendientes](objetivo-1/PENDIENTES.md) | P-01 a P-03 resueltos técnicamente; P-05 distribución resuelto; P-04 académico pendiente. |
+| [Pendientes](objetivo-1/PENDIENTES.md) | P-01 a P-05 resueltos dentro del alcance aceptado. |
 | [Revisión directa f395570](objetivo-1/REVISION_DATOS_F395570.md) | 477 huellas, evaluación desde píxeles y reproducción de 9.120 pares. |
 | [Distribución verificada](objetivo-1/REVISION_DISTRIBUCION_DRIVE.md) | Descarga independiente, integridad y procedimiento reproducible. |
 | [Índice documental](docs/INDICE.md) | Herramientas, protocolos y revisiones anteriores. |

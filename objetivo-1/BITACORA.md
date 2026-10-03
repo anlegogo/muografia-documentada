@@ -1,5 +1,13 @@
 # Bitácora de la revisión del OE1
 
+## Cierre del alcance idealizado — 2026-10-03, Colombia
+
+- Decisión: la dirección solicitó expresamente dejar el OE1 terminado y cerrado con la evidencia disponible. Se registra el cierre del objetivo, sin atribuir aprobación institucional o aceptación de estudiantes no recibidas.
+- Actividad: contraste del enunciado en el plan, verificación de las 19 geometrías, justificación de representatividad, incorporación de figuras y conclusión. Se corrigió una frase del borrador: el caso homogéneo es geo-train-01, no geo-gen-01.
+- Evidencia: [plan y catálogo](manuscrito/EVIDENCIA_CIERRE.json); [informe completo](manuscrito/INFORME_OE1.pdf); [validación](manuscrito/VALIDACION.json). Dieciocho controles satisfactorios, 15 páginas compiladas y revisadas. Se utilizó la instalación local de LaTeX tras fallo de entorno del compilador integrado.
+- Resultado: P-04 resuelto dentro del alcance aceptado; P-01 a P-05 sin tareas pendientes del OE1. [Cierre](CIERRE_OE1.md). La exposición convencional, las siete excepciones y la falta de equivalencia instrumental se mantienen como límites, no como pruebas realizadas.
+- La integración editorial a la tesis completa y su presentación no equivalen a una nueva campaña; OE2 y OE3 permanecen fuera del cierre. No se modificaron originales, recetas congeladas ni ramas estudiantiles.
+
 ## Preparación del borrador académico — 2026-10-03, Colombia
 
 - Actividad: preparación documental de la dirección a solicitud del usuario; redacción impersonal, descriptiva y con nomenclatura explícita. No se modifica la autoría de los resultados ni la entrega estudiantil.

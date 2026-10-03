@@ -1,46 +1,31 @@
-# Borrador académico del objetivo específico 1
+# Informe de cierre del objetivo específico 1
 
-Versión del 2026-10-03. Se preparó un texto descriptivo e impersonal que integra metodología, desarrollo matemático, resultados, discusión y una conclusión acotada del OE1. Conserva la distinción entre ejecución estudiantil en SC3 y revisión técnica de la dirección.
+**OE1 cumplido y cerrado por decisión de la dirección el 2026-10-03, dentro del alcance idealizado adoptado.** El texto integra el objetivo aprobado, la justificación de representatividad, metodología, ecuaciones, resultados, tres figuras, discusión y conclusión de cumplimiento.
 
-- [Leer el PDF, 11 páginas](BORRADOR_OE1.pdf).
-- [Fuente LaTeX editable](BORRADOR_OE1.tex).
-- [Validación numérica y editorial](VALIDACION.json): 18 controles satisfactorios y revisión visual de las once páginas.
+- [Informe en PDF, 15 páginas](INFORME_OE1.pdf).
+- [Fuente LaTeX editable](INFORME_OE1.tex).
+- [Decisión y registro de cierre](../CIERRE_OE1.md).
+- [Evidencia del plan y las 19 geometrías](EVIDENCIA_CIERRE.json).
+- [Validación numérica y editorial](VALIDACION.json).
 
-El PDF y el archivo LaTeX contienen el mismo borrador. Se propone una nomenclatura explícita compatible con los campos de datos y con el residuo del evaluador de bordes. La plantilla del informe no contenía una nomenclatura matemática desarrollada que pudiera reproducirse literalmente. Al integrar otros capítulos deberá conservarse esta correspondencia o realizarse un cambio global documentado de símbolos.
+La ejecución en SC3 se atribuye a los estudiantes; la revisión técnica y consolidación documental a la dirección. El cierre del objetivo no se presenta como aprobación institucional de la tesis. La incorporación de este informe al documento global y su presentación por los estudiantes no constituyen nuevas tareas de generación o verificación del OE1.
 
-| Parte del borrador | Destino en el informe |
-|---|---|
-| Alcance y tabla de símbolos | Introducción de la metodología del OE1 o lista de nomenclatura. |
-| Generación, fuente, transporte, malla, pares y particiones | Generación y preparación del conjunto sintético. |
-| Integridad y criterios de bordes y roca | Procedimiento de verificación, antes de presentar resultados. |
-| Cifras de campaña, excepciones y distribución | Resultados del OE1. |
-| Dependencia estadística, representatividad y límites físicos | Discusión. |
-| Conclusión propuesta | Balance del OE1, sujeto a revisión académica. |
+## Contenido y nomenclatura
 
-## Criterio matemático y nomenclatura
+La formulación reserva N para primarios transportados, C para cuentas de referencia, L para cuentas reducidas y X para columna de masa. Los índices de píxel corresponden a elevación y azimut, con centros y bordes diferenciados. Se formalizan el adelgazamiento binomial, sus momentos y dependencia, el contraste de bordes con corrección simultánea y la meta descriptiva de roca.
 
-Se reserva `N` para primarios transportados, `C` para conteos de referencia, `L` para conteos reducidos y `X` para columna de masa. Los índices `i` y `j` corresponden a elevación y azimut. Se definen expresamente los índices de geometría, vista, región y realización.
+La representatividad se justifica mediante edificios cónicos de distintas dimensiones, control homogéneo, déficits y excesos de masa, combinaciones y vistas. Se acepta para un estudio sintético controlado, sin afirmar cobertura estadística de volcanes reales. Se corrigió una frase del borrador: geo-train-01 es homogénea; geo-gen-01 contiene un conducto y dos cavidades. No se modificaron los datos.
 
-El texto desarrolla la ley binomial condicional, sus momentos y la dependencia inducida por la referencia compartida. Distingue el adelgazamiento de una nueva simulación con un presupuesto fijo menor. Formula el residuo de bordes, la corrección sobre 114 × 16 probabilidades y la condición de que el intervalo completo esté dentro de la tolerancia. Las probabilidades tabuladas se tratan como fijas; esa cobertura no incluye incertidumbre del modelo físico.
+Las tres figuras científicas están incorporadas en el PDF, con leyendas y referencias cruzadas. Las siete vistas bajo la meta del 90 %, el ruido de referencia, la fuente híbrida, el registro computacional y la exposición convencional se conservan explícitos. No se declara una reducción física de tiempo de adquisición ni desempeño de redes.
 
-Las tres figuras verificadas se enlazan desde el PDF, con sus leyendas propuestas, y permanecen disponibles en la [síntesis ilustrada](../SINTESIS_RESULTADOS_OE1.md). El documento autónomo no incorpora archivos gráficos externos: las figuras se insertarán al integrar el manuscrito. No se generaron resultados nuevos ni se reutilizaron cifras históricas como si correspondieran a esta campaña.
+## Verificación y reproducción editorial
 
-## Fuentes y límites editoriales
+Se contrastó el enunciado del plan (sección 4.2, página impresa 9), se verificaron las 19 huellas del catálogo contra la receta y se comprobaron cifras, coordenadas, excepciones e identidades estadísticas. Los 18 controles del texto anterior se repitieron satisfactoriamente sobre el informe. La evidencia adicional conserva los parámetros del catálogo y la huella del plan. Las 15 páginas se renderizaron para revisión visual.
 
-Se contrastaron la [receta](../contratos/receta-operativa-siete-actividades.json), el exportador angular, el empaquetador, los evaluadores, la [evaluación desde píxeles](../evidencias/revision-datos-f395570/evaluacion-local.json) y la [revisión de Drive](../REVISION_DISTRIBUCION_DRIVE.md). Las referencias del proyecto se fijan al commit `4529c49`. Se consultaron las fuentes oficiales de Geant4, EcoMug y el registro del artículo de Guan para las referencias bibliográficas; no se atribuye a esos antecedentes una validación de la fuente híbrida implementada.
-
-El ejemplo geométrico de `geo-train-06` conserva la huella de la receta. La tabla de excepciones y los valores globales se contrastaron con la evaluación. Las identidades estadísticas se desarrollan bajo las hipótesis declaradas; no representan ensayos físicos adicionales.
-
-La versión local de `Informe_Final_Muografia` permanece como plantilla. Este documento es un borrador de la dirección para revisión e incorporación, no una entrega redactada o aprobada por los estudiantes. P-04 y A-02 continúan abiertos. Deben revisarse la justificación de representatividad, el enunciado literal del plan y la concordancia con los capítulos que se incorporen posteriormente.
-
-## Compilación
-
-Se abrió la fuente en el editor de LaTeX. Su compilador integrado informó `Unable to find standard directories for platform`. Como alternativa se utilizó la instalación local existente de pdfLaTeX (TeX Live 2025), sin instalar dependencias. La compilación final no presenta referencias indefinidas ni cajas desbordadas; todas las páginas se renderizaron e inspeccionaron.
-
-Desde la raíz del repositorio, crear un directorio de salida y ejecutar hasta resolver las referencias cruzadas:
+El compilador integrado del editor no encontró sus directorios de entorno. Se utilizó pdfLaTeX de TeX Live 2025, ya instalado, con referencias resueltas y sin desbordamientos. No se instalaron dependencias. Desde la raíz del repositorio, crear una carpeta de salida y ejecutar hasta resolver las referencias:
 
 ```bash
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory=SALIDA objetivo-1/manuscrito/BORRADOR_OE1.tex
+pdflatex -interaction=nonstopmode -halt-on-error -output-directory=SALIDA objetivo-1/manuscrito/INFORME_OE1.tex
 ```
 
-El PDF se conserva junto a su fuente para lectura inmediata. Los auxiliares de compilación no forman parte de la entrega.
+La fuente requiere los tres PDF de objetivo-1/figuras/cierre-2026-10-03/, conservados en el repositorio. El borrador anterior se mantiene en el [historial 24c9066](https://github.com/anlegogo/muografia-documentada/tree/24c9066/objetivo-1/manuscrito); la versión vigente es este informe. No se mantienen versiones paralelas de cierre.

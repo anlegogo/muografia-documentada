@@ -4,6 +4,7 @@
 \usepackage[spanish,es-nodecimaldot]{babel}
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{amsmath,amssymb,booktabs,longtable,array}
+\usepackage{graphicx}\graphicspath{{muografia-documentada/objetivo-1/figuras/cierre-2026-10-03/}{../figuras/cierre-2026-10-03/}{objetivo-1/figuras/cierre-2026-10-03/}}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
 \setlength{\parskip}{0.45em}
@@ -13,17 +14,22 @@
 \newcommand{\Var}{\operatorname{Var}}
 \newcommand{\Cov}{\operatorname{Cov}}
 \newcommand{\ind}{\mathbf{1}}
-\title{Generación y verificación del conjunto sintético de muografía\\Borrador académico del objetivo específico 1}
+\title{Generación y verificación del conjunto sintético de muografía\\Informe de cierre del objetivo específico 1}
 \author{}
 \date{3 de octubre de 2026}
 \begin{document}
 \maketitle
 
-\noindent\textbf{Estado editorial.} Texto preparado para integrar las secciones de metodología, resultados, discusión y conclusiones correspondientes al OE1. Se sustenta en la campaña corregida de octubre de 2026 y en sus verificaciones. No constituye el informe final de los estudiantes ni una declaración de aprobación académica. La ejecución en SC3 corresponde a los estudiantes; la revisión local documentada corresponde al seguimiento de la dirección. Las referencias internas al final permiten distinguir la evidencia del proyecto de los antecedentes bibliográficos.
+\noindent\textbf{Estado del documento.} Informe de cierre del OE1 bajo el alcance idealizado adoptado por la dirección. El 3 de octubre de 2026 se solicitó expresamente consolidar y cerrar este objetivo con la evidencia disponible. Se integran la metodología, la justificación de representatividad, los resultados, las figuras y la conclusión de cumplimiento. La ejecución en SC3 corresponde a los estudiantes; la revisión local y la consolidación documental corresponden al seguimiento de la dirección. Este cierre no constituye aprobación institucional de la tesis ni validación de un detector real.
 
-\tableofcontents
+\begingroup\small\tableofcontents\endgroup\clearpage
 
 \section{Alcance y nomenclatura}
+
+El objetivo específico 1 del plan aprobado (sección 4.2, página 9) establece:
+\begin{quote}
+Generar un conjunto de datos sintéticos de imágenes muográficas por transmisión, con diferentes niveles de estadística de conteo, mediante simulación Monte Carlo que reproduzca escenarios representativos de exploración volcánica.
+\end{quote}
 
 El objetivo de esta etapa consistió en obtener un conjunto de imágenes sintéticas de muografía por transmisión que representara escenarios volcánicos idealizados y diferentes niveles de estadística de conteo. Para ello se articuló la definición de geometrías con el transporte Monte Carlo de muones, la formación de histogramas angulares y la construcción de realizaciones de menor conteo. El producto permite estudiar variaciones estadísticas sobre una familia controlada de escenarios; su alcance no comprende la reproducción de un volcán particular ni la respuesta completa de un instrumento de campo.
 
@@ -31,7 +37,7 @@ Conviene distinguir tres unidades del conjunto. Una \emph{geometría} especifica
 
 Se adopta la nomenclatura de la tabla siguiente. Los índices de píxel y de vista comienzan en cero para conservar la correspondencia con los archivos. Las cantidades sin unidades explícitas son adimensionales o conteos, según su definición.
 
-\begin{longtable}{p{0.22\textwidth}p{0.70\textwidth}}
+\begingroup\small\begin{longtable}{p{0.22\textwidth}p{0.70\textwidth}}
 \toprule Símbolo & Definición y correspondencia \\ \midrule
 \endhead
 $g$, $v$ & Identificador de geometría y vista $v\in\{0,\ldots,5\}$. \\
@@ -52,7 +58,7 @@ $e_{gvr}$, $d_{gvr}$ & Residuo normalizado y diferencia de ese residuo respecto 
 $Q_{gvq}$, $F_{gv}$ & Conteo de la ROI $q$ de roca y fracción de ROI de una vista con al menos 100 cuentas. \\
 $\alpha$, $\tau$ & Nivel de error familiar y tolerancia del contraste; $\alpha=0.05$, $\tau=0.01$. \\
 \bottomrule
-\end{longtable}
+\end{longtable}\endgroup
 
 Esta notación reserva $N$ para el presupuesto de transporte y $C$ para las cuentas registradas. Se evita utilizar indistintamente ambas cantidades: una partícula generada puede no llegar al plano, no superar el corte energético o quedar fuera de la ventana angular de registro. Asimismo, $X$ denota columna de masa y no intensidad de imagen.
 
@@ -77,6 +83,34 @@ Esta expresión fija el significado geométrico de radio y altura; la ubicación
 si la longitud se expresa en centímetros. Esta magnitud describe la masa por unidad de área atravesada a lo largo del camino considerado. No se identifica directamente con el valor de un píxel: la cuenta observada depende también de la distribución de energía y dirección de los muones, de su transporte y de la regla de selección.
 
 Por ejemplo, el catálogo de \texttt{geo-train-06} establece un radio basal de $509.7\,\mathrm m$, una altura de $416.3\,\mathrm m$ y una densidad de roca de $2.65\,\mathrm{g\,cm^{-3}}$. Incluye un conducto de radio $21.0\,\mathrm m$ y densidad $1.832\,\mathrm{g\,cm^{-3}}$, además de un cuerpo denso elipsoidal de $3.285\,\mathrm{g\,cm^{-3}}$. Estos valores ilustran la parametrización de un escenario y no deben extenderse a todo el catálogo. La configuración y sus huellas, no una figura esquemática, identifican el modelo utilizado.
+
+\subsection{Justificación de la representatividad dentro del alcance adoptado}
+
+La representatividad del conjunto se entiende como cobertura de mecanismos y configuraciones de contraste relevantes para un estudio sintético de transmisión, y no como representatividad estadística de una población de volcanes reales. Esta distinción relaciona el objetivo aprobado con el producto efectivamente generado: se seleccionan situaciones que permiten examinar variaciones de trayectoria, columna de masa y conteo bajo condiciones controladas.
+
+El catálogo verificado abarca radios basales de $509.7$ a $698.7\,\mathrm m$ y alturas de $356.2$ a $449.6\,\mathrm m$, con roca de fondo de $2.65\,\mathrm{g\,cm^{-3}}$. Incluye conductos de menor densidad, cavidades y cuerpos de mayor densidad, tanto aislados como combinados. Las cavidades son regiones de baja densidad asignada; no se presupone vacío perfecto. Esta construcción permite contrastar un fondo homogéneo con déficits y excesos de masa, y examinar cómo cambia su proyección al variar la vista. Los intervalos describen el catálogo, no rangos validados de una población geológica.
+
+La geometría homogénea es \texttt{geo-train-01}; \texttt{geo-gen-01}, reservada para generalización, contiene un conducto y dos cavidades. Se conserva esta identificación para evitar atribuir al caso reservado una condición de control homogéneo que no posee. Las diecinueve huellas de geometría coinciden con las registradas en la receta de producción.
+
+La pertinencia de las anomalías se interpreta a través de la columna de masa de la ecuación~\eqref{eq:columna}. Para un camino fijo y una región de longitud $\ell_a$ en la que se sustituye la densidad de fondo $\rho_0$ por $\rho_a$, el cambio nominal es
+\begin{equation}
+ \Delta X=(\rho_a-\rho_0)\ell_a.
+\end{equation}
+Con longitud en centímetros, $\Delta X$ queda en $\mathrm{g\,cm^{-2}}$. Su signo distingue déficits y excesos de masa; no convierte el conteo en una medición directa de densidad ni impone una relación lineal entre $\Delta X$ y la imagen. En el transporte intervienen además energía, dispersión y selección de llegada. La expresión justifica la diversidad de contrastes elegida, sin sustituir el cálculo Monte Carlo.
+
+\begin{center}
+\begin{tabular}{p{0.24\textwidth}p{0.33\textwidth}p{0.32\textwidth}}
+\toprule Componente & Papel en el diseño & Límite de interpretación\\\midrule
+Edificios cónicos y dimensiones variables & Variación controlada de caminos y columnas de masa. & No reproduce topografía ni estratigrafía de un volcán particular.\\
+Fondo homogéneo & Caso sin anomalías del catálogo. & No es una referencia de cielo abierto.\\
+Conductos y cavidades & Configuraciones de déficit de densidad. & No identifica composición ni estado geológico real.\\
+Cuerpos densos y combinaciones & Contrastes positivos y coexistencia de heterogeneidades. & No demuestra detectabilidad o separación de anomalías.\\
+Seis vistas por escenario & Cambio de proyección con la dirección de observación. & No son seis edificios independientes.\\
+Cuatro fracciones de conteo & Degradación estadística controlada. & No calibra exposición física del instrumento.\\\bottomrule
+\end{tabular}
+\end{center}
+
+La fuente tabulada, el transporte de primarios y el plano computacional fijan un mismo problema de generación para todas las vistas. Esa consistencia permite interpretar diferencias dentro del conjunto. La suficiencia de esta representatividad para el OE1 se acepta bajo el alcance idealizado adoptado por la dirección; no se extrapola a equivalencia experimental. Las limitaciones permanecen como parte de la conclusión y no como pruebas supuestamente realizadas.
 
 \subsection{Fuente de muones y configuración de transporte}
 
@@ -279,27 +313,29 @@ De acuerdo con el alcance adoptado, estos casos se conservaron sin descartar im�
 
 La recuperación independiente de Drive produjo 753 archivos y $1\,126\,769\,406$ bytes. Los 2.291 controles de distribución terminaron sin discrepancias: coincidieron las imágenes y los histogramas con Git, los contenidos numéricos de los pares y los manifiestos de la propia copia. También se comprobó la integridad y el contenido del derivado \texttt{dataset-v2}; esta última comprobación no constituye una auditoría del conversor ni una evaluación de aprendizaje profundo \cite{drive}.
 
-\subsection{Figuras preparadas para la integración al informe}
+\subsection{Visualización de los resultados}
 
-Las figuras verificadas se conservan en el repositorio como PNG y PDF. Este borrador autónomo enlaza esos archivos para que se incorporen al manuscrito definitivo conservando sus ejes, unidades y leyendas. Su ubicación sugerida es esta sección de resultados.
+Las figuras~\ref{fig:referencias}--\ref{fig:roca} se generaron desde los datos verificados. Se conservan sus escalas y coordenadas; no se emplearon imágenes ilustrativas como sustituto de resultados.
 
-\noindent\textbf{Figura 1. Referencias de distintas geometrías y vistas.}
-\href{https://github.com/anlegogo/muografia-documentada/blob/4529c49/objetivo-1/figuras/cierre-2026-10-03/01-referencias.pdf}{Archivo PDF}.
-Seis ejemplos del conjunto corregido, con conteos por píxel y coordenadas angulares. Se conserva una escala de color común logarítmica, lineal entre cero y una cuenta, sin suavizado. Los ejemplos muestran variación entre escenarios y casos bajo la meta de roca; no constituyen una muestra estadística representativa ni una reconstrucción de densidad.
-
-\noindent\textbf{Figura 2. Referencia y realizaciones de menor conteo.}
-\href{https://github.com/anlegogo/muografia-documentada/blob/4529c49/objetivo-1/figuras/cierre-2026-10-03/02-pares.pdf}{Archivo PDF}.
-Referencia de \texttt{geo-train-06}, vista 3, y primera realización de cada fracción, con semilla maestra 20260805. Las cuentas se muestran sin dividir por $f$. La disminución de intensidad y el aumento de fluctuaciones corresponden al adelgazamiento de una misma referencia finita; no representan nuevas corridas independientes de transporte.
-
-\noindent\textbf{Figura 3. Estadística de roca por vista.}
-\href{https://github.com/anlegogo/muografia-documentada/blob/4529c49/objetivo-1/figuras/cierre-2026-10-03/03-calidad-roca.pdf}{Archivo PDF}.
-Porcentaje de ROI con al menos 100 cuentas, con identificación de las siete vistas bajo la meta del $90\%$, y distribución global de supervivencia de conteos de ROI. La curva global utiliza las 21.816 ROI y su eje horizontal se limita al percentil 99.5 para facilitar la lectura. No debe interpretarse el porcentaje global como cumplimiento individual de cada vista.
+\begin{figure}[p]\centering
+\includegraphics[width=\textwidth]{01-referencias.pdf}
+\caption{Referencias de distintas geometrías y vistas. Seis ejemplos con conteos por píxel y coordenadas angulares, sin suavizado. La escala común es logarítmica y lineal entre cero y una cuenta. Incluyen casos bajo la meta de roca; no son una muestra estadística representativa ni mapas de densidad.}\label{fig:referencias}
+\end{figure}
+\begin{figure}[p]\centering
+\includegraphics[width=\textwidth]{02-pares.pdf}
+\caption{Referencia de \texttt{geo-train-06}, vista 3, y primera realización de cada fracción, con semilla maestra 20260805. Se muestran cuentas sin dividir por $f$. Los paneles comparten una referencia finita; no representan nuevas corridas independientes de transporte.}\label{fig:pares}
+\end{figure}
+\begin{figure}[p]\centering
+\includegraphics[width=\textwidth]{03-calidad-roca.pdf}
+\caption{Porcentaje de ROI con al menos 100 cuentas por vista y distribución global de supervivencia de conteos. Se identifican las siete vistas bajo el $90\%$. La curva utiliza las 21.816 ROI; el eje horizontal se limita al percentil 99.5. El indicador global no sustituye la evaluación individual.}\label{fig:roca}
+\end{figure}
+\clearpage
 
 \section{Discusión del alcance y las limitaciones}
 
 La evidencia reunida permite sostener que se obtuvo un conjunto sintético organizado y reproducible bajo una receta explícita. Su valor reside en disponer de geometrías identificadas, vistas comparables, referencias con conteos conservados y realizaciones reducidas con una ley estadística conocida. La separación por geometría mantiene la unidad del escenario al reservar datos y evita mezclar en particiones distintas variantes derivadas de la misma referencia.
 
-La representatividad es, sin embargo, acotada. Los conos y anomalías permiten estudiar respuestas de escenarios controlados, pero no incorporan por sí solos la complejidad topográfica, geológica y ambiental de un volcán concreto. La geometría homogénea reservada aporta un caso adicional definido por el catálogo; una sola geometría de generalización no demuestra desempeño general frente a toda una población de volcanes. La justificación académica debe valorar esta familia de escenarios en relación con el propósito computacional del trabajo.
+La representatividad es, sin embargo, acotada. Los conos y anomalías permiten estudiar respuestas de escenarios controlados, pero no incorporan por sí solos la complejidad topográfica, geológica y ambiental de un volcán concreto. La geometría reservada, que contiene un conducto y dos cavidades, aporta un caso adicional definido por el catálogo; una sola geometría de generalización no demuestra desempeño general frente a toda una población de volcanes. La justificación de representatividad desarrollada en este informe acota expresamente esta familia al propósito computacional del trabajo.
 
 La fuente híbrida constituye otra condición del alcance. Los antecedentes de Guan y EcoMug sustentan componentes de la generación, pero no validan automáticamente su combinación, las extrapolaciones utilizadas o la inyección dirigida de esta implementación. Del mismo modo, el uso de Geant4 identifica una infraestructura física de transporte, mientras que la decisión de conservar solo primarios y la selección de llegada definen un observable específico. La verificación de archivos no reemplaza la evaluación de esas decisiones.
 
@@ -309,20 +345,22 @@ En cuanto a la estadística, el presupuesto de 344 millones de primarios por vis
 
 La trazabilidad lograda permite localizar la receta, repetir el posproceso y recuperar la copia distribuida. Las huellas verifican integridad respecto de una referencia concreta; no certifican por sí mismas corrección física, fecha de creación o permanencia futura del enlace. La revisión local no recompiló ni reejecutó Geant4 y no examinó todos los bloques crudos de SC3 a partir de la copia de Drive. Las conclusiones sobre ejecución se apoyan en los registros y productos documentados.
 
-\section{Conclusión propuesta para el objetivo específico 1}
+\section{Conclusión de cumplimiento del objetivo específico 1}
 
 Se obtuvo un conjunto de imágenes sintéticas de muografía por transmisión para 19 escenarios volcánicos idealizados, observados desde seis vistas por escenario. La campaña produjo 114 referencias angulares de $256\times256$ píxeles a partir de 344 millones de primarios por vista. El adelgazamiento binomial con cuatro fracciones y veinte realizaciones por fracción permitió construir 9.120 pares de menor y mayor conteo, conservando su procedencia y su partición por geometría.
 
 La identidad entre histogramas y matrices, la reproducción de los pares y la recuperación íntegra de la distribución respaldan el producto técnico correspondiente al OE1. Los controles de bordes cumplieron la tolerancia adoptada, mientras que la meta descriptiva de roca se alcanzó en 107 de las 114 vistas; las siete excepciones se conservaron y documentaron. De esta manera, el conjunto permite continuar el estudio computacional de imágenes con diferentes estadísticas dentro del alcance definido.
 
-La conclusión se restringe a escenarios idealizados, conteos de primarios y exposición convencional. No implica mediciones de volcanes reales, equivalencia con un detector físico, una referencia sin ruido ni una reducción de tiempo de adquisición ya demostrada. La valoración final del cumplimiento académico requiere integrar esta evidencia al informe y examinar la justificación de representatividad. Con la información revisada no se identifica otra corrida de transporte necesaria para completar estas verificaciones del producto.
+La conclusión se restringe a escenarios idealizados, conteos de primarios y exposición convencional. No implica mediciones de volcanes reales, equivalencia con un detector físico, una referencia sin ruido ni una reducción de tiempo de adquisición ya demostrada. La evidencia técnica y la justificación de representatividad quedan integradas en este informe. Por decisión expresa de la dirección, se da por cumplido y cerrado el OE1 dentro del alcance idealizado adoptado, conservando las siete excepciones de conteo y las limitaciones descritas. No queda una corrida de transporte requerida para este cierre. Esta decisión no acredita resultados de OE2 u OE3 ni sustituye la evaluación institucional del trabajo de grado.
 
 \appendix
-\section{Correspondencia editorial con el informe}
+\section{Correspondencia con el objetivo y decisión de cierre}
 
-La sección~\ref{sec:metodologia} puede incorporarse en generación y preparación del conjunto de datos de la metodología existente. El procedimiento de verificación debe permanecer junto a la definición de los criterios; sus cifras observadas corresponden a Resultados y discusión. La conclusión propuesta se incorpora únicamente al balance del OE1. No se modifica ni se anticipa el contenido de los objetivos de diseño y evaluación de redes.
+El conjunto de imágenes sintéticas se acredita mediante 114 referencias; los distintos niveles de conteo mediante 9.120 pares; la generación Monte Carlo mediante la receta, los registros de SC3 y los productos de transporte; y la representatividad mediante la familia de mecanismos y configuraciones idealizadas justificada en este informe. La decisión de cierre conserva esa interpretación del objetivo, sin cambiar su enunciado ni introducir una validación instrumental no realizada.
 
-Antes de cerrar el manuscrito debe comprobarse que el enunciado literal del objetivo coincida con el plan aprobado, que la justificación de representatividad esté integrada y que las referencias de versión correspondan al conjunto utilizado en los capítulos posteriores. Este borrador describe el producto del OE1 sin atribuirle resultados de entrenamiento de la campaña histórica. Los nombres de archivos en código se conservan en inglés cuando forman parte del contrato de datos; la explicación y los símbolos se presentan de manera uniforme en español.
+Los criterios A-01 a A-08 y los pendientes P-01 a P-05 se consolidan en el registro de cierre del repositorio. Se conserva la atribución de la ejecución a los estudiantes y de la revisión a la dirección. La integración de este capítulo en la tesis completa y su presentación por los estudiantes son tareas editoriales y académicas del documento global; no constituyen nueva generación de datos pendiente del OE1.
+
+La nomenclatura distingue primarios, cuentas, columna de masa y exposición convencional. Debe conservarse esta correspondencia al incorporar el texto a otros capítulos. El cierre del OE1 no declara finalizados los objetivos de aprendizaje profundo o de evaluación de reducción de adquisición.
 
 \begin{thebibliography}{9}
 \bibitem{agostinelli2003} S. Agostinelli y colaboradores. \emph{Geant4---a simulation toolkit}. Nuclear Instruments and Methods in Physics Research A, 506, 250--303, 2003. \href{https://geant4.web.cern.ch/about/publications.html}{Referencia oficial de Geant4}.

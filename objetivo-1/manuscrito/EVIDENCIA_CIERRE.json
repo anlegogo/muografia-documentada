@@ -1,0 +1,588 @@
+{
+  "date": "2026-10-03",
+  "plan_file": "Plan_Final_Muografía.pdf",
+  "plan_sha256": "956e0a64b186f36325c7658ddde3e0584cb2436b56b5758551cbaccea8bccbde",
+  "printed_page": 9,
+  "section": "4.2, objetivo 1",
+  "objective": "Generar un conjunto de datos sintéticos de imágenes muográficas por transmisión, con diferentes niveles de estadística de conteo, mediante simulación Monte Carlo que reproduzca escenarios representativos de exploración volcánica.",
+  "catalog": [
+    {
+      "geometry": "geo-gen-01",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 619.2,
+        "height_m": 425.4,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "conduit",
+          "density_g_cm3": 1.831,
+          "params": {
+            "cx_m": -35.4,
+            "cy_m": -29.0,
+            "radius_m": 26.1,
+            "z0_m": 0.0,
+            "z1_m": 386.5
+          }
+        },
+        {
+          "kind": "cavity",
+          "density_g_cm3": 0.242,
+          "params": {
+            "cx_m": -98.4,
+            "cy_m": 49.1,
+            "cz_m": 187.3,
+            "radius_m": 40.9
+          }
+        },
+        {
+          "kind": "cavity",
+          "density_g_cm3": 0.048,
+          "params": {
+            "cx_m": -183.1,
+            "cy_m": -58.2,
+            "cz_m": 161.1,
+            "radius_m": 42.4
+          }
+        }
+      ],
+      "sha256": "f171aa214fda5243db6c5790f29e31cb68601d2b771bf36ca291a1673fd1166a"
+    },
+    {
+      "geometry": "geo-test-01",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 671.1,
+        "height_m": 428.0,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "conduit",
+          "density_g_cm3": 2.151,
+          "params": {
+            "cx_m": -33.6,
+            "cy_m": -2.1,
+            "radius_m": 30.3,
+            "z0_m": 0.0,
+            "z1_m": 360.1
+          }
+        },
+        {
+          "kind": "cavity",
+          "density_g_cm3": 0.454,
+          "params": {
+            "cx_m": -22.2,
+            "cy_m": -58.0,
+            "cz_m": 155.4,
+            "radius_m": 36.5
+          }
+        }
+      ],
+      "sha256": "66a46bb729eedf508ffb8e15bd8cf8c602e0f63141a3f8a2d9594597bd32c5e8"
+    },
+    {
+      "geometry": "geo-test-02",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 642.2,
+        "height_m": 415.9,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "dense_body",
+          "density_g_cm3": 3.09,
+          "params": {
+            "cx_m": -57.1,
+            "cy_m": 56.6,
+            "cz_m": 182.1,
+            "ax_m": 52.3,
+            "ay_m": 41.9,
+            "az_m": 39.6
+          }
+        }
+      ],
+      "sha256": "a61c7363caaffe807627f5235c58439e3c41838f1b82fa03e81c3298d9f6c723"
+    },
+    {
+      "geometry": "geo-test-03",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 518.5,
+        "height_m": 385.8,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "conduit",
+          "density_g_cm3": 1.914,
+          "params": {
+            "cx_m": 32.4,
+            "cy_m": -13.8,
+            "radius_m": 30.2,
+            "z0_m": 0.0,
+            "z1_m": 344.9
+          }
+        },
+        {
+          "kind": "cavity",
+          "density_g_cm3": 0.222,
+          "params": {
+            "cx_m": -47.5,
+            "cy_m": -35.3,
+            "cz_m": 193.1,
+            "radius_m": 24.1
+          }
+        },
+        {
+          "kind": "dense_body",
+          "density_g_cm3": 3.244,
+          "params": {
+            "cx_m": 140.8,
+            "cy_m": -12.9,
+            "cz_m": 59.8,
+            "ax_m": 74.2,
+            "ay_m": 55.3,
+            "az_m": 64.9
+          }
+        }
+      ],
+      "sha256": "c9db0081eb9bb0e6db9a8bc409f2e9f782bcbfc151057b6127cd5827555c6b8c"
+    },
+    {
+      "geometry": "geo-train-01",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 656.2,
+        "height_m": 359.1,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [],
+      "sha256": "ff3c69ab7e37b51c5d4e1318d298a9ddc35446367e6ea4abf5c322e3b86f07b1"
+    },
+    {
+      "geometry": "geo-train-02",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 549.7,
+        "height_m": 409.8,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "conduit",
+          "density_g_cm3": 1.92,
+          "params": {
+            "cx_m": 5.7,
+            "cy_m": -4.7,
+            "radius_m": 19.9,
+            "z0_m": 0.0,
+            "z1_m": 361.1
+          }
+        }
+      ],
+      "sha256": "abe49537a4e692a6df6ebf928342e8338b383b2b9e1f4e4ab2b8f0ba95d67526"
+    },
+    {
+      "geometry": "geo-train-03",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 573.7,
+        "height_m": 356.2,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "cavity",
+          "density_g_cm3": 0.267,
+          "params": {
+            "cx_m": -10.3,
+            "cy_m": -95.3,
+            "cz_m": 94.0,
+            "radius_m": 35.8
+          }
+        }
+      ],
+      "sha256": "757ff851126ae659d21fbaeaee1c4d60292e2b4d70b7fac04c0d1c88912f3a72"
+    },
+    {
+      "geometry": "geo-train-04",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 679.8,
+        "height_m": 387.2,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "dense_body",
+          "density_g_cm3": 3.022,
+          "params": {
+            "cx_m": 6.6,
+            "cy_m": -112.3,
+            "cz_m": 169.6,
+            "ax_m": 78.1,
+            "ay_m": 62.8,
+            "az_m": 40.7
+          }
+        }
+      ],
+      "sha256": "a7d30817a40e8d4a71d2e85e571b65c7459ce88eeb549c05e56211ed60a6a440"
+    },
+    {
+      "geometry": "geo-train-05",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 565.7,
+        "height_m": 386.0,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "conduit",
+          "density_g_cm3": 2.013,
+          "params": {
+            "cx_m": -2.4,
+            "cy_m": 20.4,
+            "radius_m": 28.2,
+            "z0_m": 0.0,
+            "z1_m": 325.8
+          }
+        },
+        {
+          "kind": "cavity",
+          "density_g_cm3": 0.335,
+          "params": {
+            "cx_m": -69.0,
+            "cy_m": 24.0,
+            "cz_m": 209.4,
+            "radius_m": 29.4
+          }
+        }
+      ],
+      "sha256": "09322cce8d7f40e4f68a6ef5400aa2aa722d3a68d107b1c3cce3977ef03b723c"
+    },
+    {
+      "geometry": "geo-train-06",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 509.7,
+        "height_m": 416.3,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "conduit",
+          "density_g_cm3": 1.832,
+          "params": {
+            "cx_m": 20.3,
+            "cy_m": -24.5,
+            "radius_m": 21.0,
+            "z0_m": 0.0,
+            "z1_m": 340.0
+          }
+        },
+        {
+          "kind": "dense_body",
+          "density_g_cm3": 3.285,
+          "params": {
+            "cx_m": 32.2,
+            "cy_m": -74.1,
+            "cz_m": 137.8,
+            "ax_m": 72.9,
+            "ay_m": 61.6,
+            "az_m": 64.6
+          }
+        }
+      ],
+      "sha256": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed"
+    },
+    {
+      "geometry": "geo-train-07",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 678.7,
+        "height_m": 429.2,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "cavity",
+          "density_g_cm3": 0.169,
+          "params": {
+            "cx_m": -27.7,
+            "cy_m": -140.1,
+            "cz_m": 154.9,
+            "radius_m": 48.0
+          }
+        },
+        {
+          "kind": "dense_body",
+          "density_g_cm3": 3.015,
+          "params": {
+            "cx_m": -42.1,
+            "cy_m": -11.0,
+            "cz_m": 189.0,
+            "ax_m": 70.3,
+            "ay_m": 65.8,
+            "az_m": 46.4
+          }
+        }
+      ],
+      "sha256": "f8e3a804871a6744e101384cbcc5b360063e9ba017122ea5a022119dc6d457d1"
+    },
+    {
+      "geometry": "geo-train-08",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 588.2,
+        "height_m": 413.4,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "conduit",
+          "density_g_cm3": 1.991,
+          "params": {
+            "cx_m": 37.2,
+            "cy_m": -23.0,
+            "radius_m": 35.4,
+            "z0_m": 0.0,
+            "z1_m": 320.2
+          }
+        },
+        {
+          "kind": "cavity",
+          "density_g_cm3": 0.468,
+          "params": {
+            "cx_m": -61.7,
+            "cy_m": 36.3,
+            "cz_m": 217.3,
+            "radius_m": 20.2
+          }
+        },
+        {
+          "kind": "dense_body",
+          "density_g_cm3": 3.256,
+          "params": {
+            "cx_m": 55.1,
+            "cy_m": 32.4,
+            "cz_m": 160.9,
+            "ax_m": 43.2,
+            "ay_m": 62.2,
+            "az_m": 57.2
+          }
+        }
+      ],
+      "sha256": "df859ca1ead6e4fca4cad0d877131167a47a4d6443ebed1ee3379189600f7601"
+    },
+    {
+      "geometry": "geo-train-09",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 549.4,
+        "height_m": 373.2,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "conduit",
+          "density_g_cm3": 1.884,
+          "params": {
+            "cx_m": -9.4,
+            "cy_m": -10.2,
+            "radius_m": 18.4,
+            "z0_m": 0.0,
+            "z1_m": 336.1
+          }
+        }
+      ],
+      "sha256": "35bf7e33e0b864f486fb881e29613b5687e40ef4794d91f05d6a9fa7dbf75288"
+    },
+    {
+      "geometry": "geo-train-10",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 648.7,
+        "height_m": 449.6,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "cavity",
+          "density_g_cm3": 0.464,
+          "params": {
+            "cx_m": -116.4,
+            "cy_m": -35.8,
+            "cz_m": 245.1,
+            "radius_m": 27.9
+          }
+        },
+        {
+          "kind": "cavity",
+          "density_g_cm3": 0.068,
+          "params": {
+            "cx_m": -148.2,
+            "cy_m": -51.6,
+            "cz_m": 174.6,
+            "radius_m": 45.7
+          }
+        }
+      ],
+      "sha256": "218c427d76f134eeafd211f5c2ae778a113fd3dedb6f2cc93bedca83a795a448"
+    },
+    {
+      "geometry": "geo-train-11",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 623.0,
+        "height_m": 419.8,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "conduit",
+          "density_g_cm3": 1.972,
+          "params": {
+            "cx_m": 2.8,
+            "cy_m": -13.4,
+            "radius_m": 22.7,
+            "z0_m": 0.0,
+            "z1_m": 391.8
+          }
+        },
+        {
+          "kind": "cavity",
+          "density_g_cm3": 0.327,
+          "params": {
+            "cx_m": -37.7,
+            "cy_m": 5.3,
+            "cz_m": 133.0,
+            "radius_m": 42.5
+          }
+        },
+        {
+          "kind": "cavity",
+          "density_g_cm3": 0.157,
+          "params": {
+            "cx_m": -27.2,
+            "cy_m": 125.1,
+            "cz_m": 203.2,
+            "radius_m": 48.9
+          }
+        }
+      ],
+      "sha256": "201b8e4e65de4538a44acae09c1e69ddd1179459bd8be645bdeac669ac43d77f"
+    },
+    {
+      "geometry": "geo-train-12",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 534.5,
+        "height_m": 411.9,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "dense_body",
+          "density_g_cm3": 3.159,
+          "params": {
+            "cx_m": 110.2,
+            "cy_m": -55.5,
+            "cz_m": 100.8,
+            "ax_m": 57.5,
+            "ay_m": 57.4,
+            "az_m": 39.5
+          }
+        }
+      ],
+      "sha256": "269a8f3959347c2713a4f8f563cf82092dc638f9633afbeafe5b26ca4fbcdc8d"
+    },
+    {
+      "geometry": "geo-val-01",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 698.7,
+        "height_m": 427.6,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "conduit",
+          "density_g_cm3": 2.071,
+          "params": {
+            "cx_m": 21.3,
+            "cy_m": -13.1,
+            "radius_m": 25.3,
+            "z0_m": 0.0,
+            "z1_m": 361.6
+          }
+        }
+      ],
+      "sha256": "71d4daf62362f81473403d57261fd293cfd687fb6f2998d46a142dfcbf29d6d7"
+    },
+    {
+      "geometry": "geo-val-02",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 664.0,
+        "height_m": 367.3,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "cavity",
+          "density_g_cm3": 0.208,
+          "params": {
+            "cx_m": 121.6,
+            "cy_m": 54.6,
+            "cz_m": 143.1,
+            "radius_m": 38.8
+          }
+        }
+      ],
+      "sha256": "f8376b4fe3262acb7523b605e2c2f9c8d9e5c36532c34e8bcc70d041f695b3bb"
+    },
+    {
+      "geometry": "geo-val-03",
+      "edifice": {
+        "shape": "cone",
+        "base_radius_m": 610.9,
+        "height_m": 425.4,
+        "rock_density_g_cm3": 2.65
+      },
+      "anomalies": [
+        {
+          "kind": "conduit",
+          "density_g_cm3": 1.85,
+          "params": {
+            "cx_m": -38.5,
+            "cy_m": 0.4,
+            "radius_m": 22.5,
+            "z0_m": 0.0,
+            "z1_m": 370.3
+          }
+        },
+        {
+          "kind": "dense_body",
+          "density_g_cm3": 3.014,
+          "params": {
+            "cx_m": 179.7,
+            "cy_m": 13.4,
+            "cz_m": 76.7,
+            "ax_m": 65.5,
+            "ay_m": 68.5,
+            "az_m": 34.5
+          }
+        }
+      ],
+      "sha256": "4a5eb9a461d4a084bd966a5cc48508556d279ffb8d9fda202e76e64619f0716d"
+    }
+  ],
+  "homogeneous": [
+    "geo-train-01"
+  ],
+  "direction_decision": "Cierre del OE1 solicitado expresamente por la dirección el 2026-10-03; alcance idealizado previamente adoptado. No equivale a aprobación institucional de la tesis."
+}

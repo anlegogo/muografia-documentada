@@ -2,7 +2,9 @@
 
 ## Estado vigente y cierre documental
 
-- [Borrador académico del OE1: PDF y LaTeX](../objetivo-1/manuscrito/README.md).
+- [Decisión y registro de cierre del OE1](../objetivo-1/CIERRE_OE1.md).
+
+- [Informe de cierre del OE1: PDF y LaTeX](../objetivo-1/manuscrito/README.md).
 
 - [Ficha del conjunto OE1](../objetivo-1/FICHA_CONJUNTO_OE1.md).
 - [Síntesis de resultados y figuras](../objetivo-1/SINTESIS_RESULTADOS_OE1.md).

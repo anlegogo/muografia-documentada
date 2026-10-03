@@ -1,7 +1,7 @@
 {
   "date": "2026-10-03",
   "source_commit": "4529c49",
-  "draft_sha256": "963c9464a3203b39facd077b946f536086721a328a1408bf4f8963b809e6701a",
+  "source_sha256": "3465a21fb5a0d0b3df8bbc85eb6c3580c12fca876f777c02d8d1e5d1bc925d67",
   "checks": {
     "cardinalidad": true,
     "siete_excepciones": true,
@@ -20,10 +20,19 @@
     "extremos_elevacion": true,
     "identidad_binomial_compuesta": true,
     "varianza_compuesta": true,
-    "latex_sin_desbordes_ni_referencias_indefinidas": true
+    "latex_sin_desbordes_ni_referencias_indefinidas": true,
+    "catalogo_19_huellas": true,
+    "caso_homogeneo": true,
+    "caso_generalizacion": true,
+    "rangos_dimensionales": true,
+    "objetivo_literal_incorporado": true
   },
   "all_passed": true,
-  "visual_review": "11 páginas renderizadas e inspeccionadas; tablas, fórmulas y márgenes legibles.",
+  "visual_review": "15 páginas renderizadas e inspeccionadas; tablas, fórmulas y márgenes legibles.",
   "compilation": "pdfLaTeX, TeX Live 2025; compilador integrado no disponible: Unable to find standard directories for platform.",
-  "limits": "Controles numéricos y editoriales del borrador; no equivalen a aprobación académica ni nueva simulación."
+  "limits": "Controles numéricos y editoriales. El cierre se registra por decisión de la dirección, no como resultado automático de estos controles.",
+  "pdf_sha256": "171bae4d244194a6714c84dab7a3f737ea825f29d177d448e862e59aa5df0f67",
+  "closure_evidence_sha256": "41205921da436d1b992c6622db282a31c1c7e1a8898090806614c6918e3e6b9f",
+  "documentation_links_checked": 132,
+  "broken_links": []
 }

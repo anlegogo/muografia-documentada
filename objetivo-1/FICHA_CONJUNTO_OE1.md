@@ -77,4 +77,4 @@ python herramientas/empaquetar_angular_v1.py "$DATOS/imagenes" \
 python herramientas/figuras_cierre_oe1.py --campana "$DATOS" --salida NUEVAS_FIGURAS
 ```
 
-Comprobar los hashes contra los inventarios de la entrega. El [procedimiento de revisión completa](REVISION_DATOS_F395570.md) especifica la comparación de contenido. Responsabilidad de ejecución original: estudiantes; preparación y verificación local: revisión de la dirección. La ficha consolida evidencia técnica, sin declarar concluida la valoración académica.
+Comprobar los hashes contra los inventarios de la entrega. El [procedimiento de revisión completa](REVISION_DATOS_F395570.md) especifica la comparación de contenido. Responsabilidad de ejecución original: estudiantes; preparación y verificación local: revisión de la dirección. La ficha consolida evidencia técnica, con cierre por decisión de la dirección dentro del alcance idealizado: [registro](CIERRE_OE1.md).

@@ -1,5 +1,12 @@
 # Registro de cambios
 
+## Cierre del OE1 por decisión de la dirección — 2026-10-03
+
+- Objetivo aprobado contrastado con el plan, 19 huellas de geometría verificadas y justificación de representatividad completada. Se corrige la identificación del caso homogéneo: geo-train-01; geo-gen-01 contiene anomalías.
+- Informe de cierre con ecuaciones, tres figuras integradas y conclusión de cumplimiento. PDF de 15 páginas, fuente editable y evidencia del plan/catálogo. [Informe](objetivo-1/manuscrito/README.md).
+- P-01 a P-05 resueltos dentro del alcance idealizado; A-01 a A-08 consolidados y decisión expresa de cierre registrada. Se conservan siete excepciones de conteo y límites físicos. No se solicita nueva campaña ni se declara aprobada la tesis completa. [Registro de cierre](objetivo-1/CIERRE_OE1.md).
+- 18 controles numéricos/editoriales repetidos, compilación local sin referencias indefinidas ni desbordes y revisión visual del documento. Datos y rama estudiantil sin cambios.
+
 ## Borrador académico del OE1 — 2026-10-03
 
 - Texto descriptivo e impersonal de 11 páginas en PDF y LaTeX: nomenclatura, metodología, adelgazamiento y dependencia, contraste de bordes, resultados, discusión y conclusión acotada. [Documento](objetivo-1/manuscrito/README.md).
