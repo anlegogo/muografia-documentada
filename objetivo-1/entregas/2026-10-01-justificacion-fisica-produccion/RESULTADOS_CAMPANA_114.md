@@ -69,4 +69,9 @@ Evidencia completa en [datos/sc3/campana-114/posproceso/](datos/sc3/campana-114/
 
 ## 4. Siguiente paso
 
-Formar los 9.120 pares con `empaquetar_angular_v1.py --salida` y NumPy 2.4.4 (la versión con la que se verificaron los 480 pares del piloto), convertirlos al formato de entrenamiento sin pérdida y reentrenar el modelo con estos datos.
+Los 9.120 pares ya están generados, reproducidos en una segunda máquina y verificados en su copia de Drive (secciones 3 y P-05). La revisión de la dirección ([REVISION_DATOS_F395570.md](../../REVISION_DATOS_F395570.md)) reprodujo además la evaluación desde los píxeles y el contenido de los pares. El trabajo restante del OE1 es documental:
+
+1. Incorporar al informe la [síntesis de resultados y sus figuras](../../SINTESIS_RESULTADOS_OE1.md) y la [ficha del conjunto](../../FICHA_CONJUNTO_OE1.md), con sus limitaciones.
+2. Justificar la representatividad de escenarios, fuente, geometría y transporte dentro del alcance idealizado (criterio A-02): [REPRESENTATIVIDAD_A02.md](REPRESENTATIVIDAD_A02.md).
+
+La conversión a `dataset-v2` y el reentrenamiento de modelos no forman parte del cierre del OE1.
