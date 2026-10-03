@@ -1,0 +1,1 @@
+python objetivo-2/herramientas/ejecutar_piloto.py --config tecnica-cgan --data-root /workspace/datos-oe1 --out-root /workspace/resultados-oe2 --stop-after-epoch 1 

@@ -1,0 +1,8 @@
+279758342 ./oe2-v1-piloto-f05-cgan-s2026100301/checkpoints/best.pt
+279758342 ./oe2-v1-piloto-f05-cgan-s2026100301/checkpoints/last.pt
+246595774 ./oe2-v1-piloto-f05-unet-s2026100301/checkpoints/best.pt
+246595774 ./oe2-v1-piloto-f05-unet-s2026100301/checkpoints/last.pt
+279758406 ./oe2-v1-tecnica-f05-cgan-s2026100301/checkpoints/best.pt
+279758406 ./oe2-v1-tecnica-f05-cgan-s2026100301/checkpoints/last.pt
+246595838 ./oe2-v1-tecnica-f05-unet-s2026100301/checkpoints/best.pt
+246595838 ./oe2-v1-tecnica-f05-unet-s2026100301/checkpoints/last.pt

@@ -1,0 +1,10 @@
+{
+  "python": "3.12.3",
+  "torch": "2.6.0+cu118",
+  "numpy": "2.4.4",
+  "cuda_runtime": "11.8",
+  "gpu": "NVIDIA L40S",
+  "runner_sha256": "f726647d6dcf7ff28eeda92a6185abc6d96561805701657cfbe3d62b393d43dd",
+  "cpu_test": false,
+  "config_name": "piloto-unet"
+}

@@ -1,0 +1,195 @@
+{
+  "split": "val",
+  "n_images": 360,
+  "fraction": 0.05,
+  "bootstrap": {
+    "unit": "reference (geometry, view)",
+    "replicates": 10000,
+    "seed": 20261003,
+    "interval": "percentile 95 %"
+  },
+  "checkpoints": {
+    "unet": {
+      "checkpoint": "/workspace/resultados-oe2/oe2-v1-piloto-f05-unet-s2026100301/checkpoints/best.pt",
+      "sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+      "best_epoch": 5,
+      "best_ssim": 0.8436712735984511
+    },
+    "cgan": {
+      "checkpoint": "/workspace/resultados-oe2/oe2-v1-piloto-f05-cgan-s2026100301/checkpoints/best.pt",
+      "sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+      "best_epoch": 5,
+      "best_ssim": 0.8227921659832462
+    }
+  },
+  "means": {
+    "ssim": {
+      "input": {
+        "mean": 0.7518121158353864,
+        "ci95": [
+          0.742344908521493,
+          0.7610756907914039
+        ],
+        "cluster_mean_sd": 0.020407909950265132,
+        "n_clusters": 18,
+        "clusters_positive": 18
+      },
+      "unet": {
+        "mean": 0.8436712735984511,
+        "ci95": [
+          0.8369881972735045,
+          0.8500334438410949
+        ],
+        "cluster_mean_sd": 0.014417291540172775,
+        "n_clusters": 18,
+        "clusters_positive": 18
+      },
+      "cgan": {
+        "mean": 0.8227921659832462,
+        "ci95": [
+          0.8149102990271436,
+          0.8306172931924666
+        ],
+        "cluster_mean_sd": 0.017928612936842725,
+        "n_clusters": 18,
+        "clusters_positive": 18
+      }
+    },
+    "psnr": {
+      "input": {
+        "mean": 24.16772800716849,
+        "ci95": [
+          23.96521712815219,
+          24.381635607290626
+        ],
+        "cluster_mean_sd": 0.4588875610245483,
+        "n_clusters": 18,
+        "clusters_positive": 18
+      },
+      "unet": {
+        "mean": 32.90369352399466,
+        "ci95": [
+          32.765213571956735,
+          33.04775100606486
+        ],
+        "cluster_mean_sd": 0.31877543763449384,
+        "n_clusters": 18,
+        "clusters_positive": 18
+      },
+      "cgan": {
+        "mean": 31.104120450540186,
+        "ci95": [
+          30.943825628764767,
+          31.26855350507413
+        ],
+        "cluster_mean_sd": 0.3587063526944394,
+        "n_clusters": 18,
+        "clusters_positive": 18
+      }
+    }
+  },
+  "paired_differences": {
+    "ssim": {
+      "unet_minus_input": {
+        "mean": 0.09185915776306482,
+        "ci95": [
+          0.08892962027375997,
+          0.09462294968766938
+        ],
+        "cluster_mean_sd": 0.006357482284529104,
+        "n_clusters": 18,
+        "clusters_positive": 18
+      },
+      "cgan_minus_input": {
+        "mean": 0.07098005014785981,
+        "ci95": [
+          0.06922695980125908,
+          0.07257147070030376
+        ],
+        "cluster_mean_sd": 0.0037361249904021483,
+        "n_clusters": 18,
+        "clusters_positive": 18
+      },
+      "cgan_minus_unet": {
+        "mean": -0.020879107615205013,
+        "ci95": [
+          -0.022564086249768446,
+          -0.019285965586659973
+        ],
+        "cluster_mean_sd": 0.003637940255695802,
+        "n_clusters": 18,
+        "clusters_positive": 0
+      }
+    },
+    "psnr": {
+      "unet_minus_input": {
+        "mean": 8.73596551682617,
+        "ci95": [
+          8.651728586720795,
+          8.817258198013173
+        ],
+        "cluster_mean_sd": 0.18347211210502554,
+        "n_clusters": 18,
+        "clusters_positive": 18
+      },
+      "cgan_minus_input": {
+        "mean": 6.936392443371696,
+        "ci95": [
+          6.86869058594073,
+          7.005222480630802
+        ],
+        "cluster_mean_sd": 0.15408851260085732,
+        "n_clusters": 18,
+        "clusters_positive": 18
+      },
+      "cgan_minus_unet": {
+        "mean": -1.7995730734544737,
+        "ci95": [
+          -1.8227491539254952,
+          -1.7754295201325487
+        ],
+        "cluster_mean_sd": 0.05258771935492962,
+        "n_clusters": 18,
+        "clusters_positive": 0
+      }
+    }
+  },
+  "by_geometry": {
+    "geo-val-01": {
+      "ssim": {
+        "input": 0.7269193613391872,
+        "unet": 0.8251656637662601,
+        "cgan": 0.7996182658347124
+      },
+      "psnr": {
+        "input": 23.77868901223319,
+        "unet": 32.55521926068055,
+        "cgan": 30.70827363123158
+      }
+    },
+    "geo-val-02": {
+      "ssim": {
+        "input": 0.7754386514900896,
+        "unet": 0.8590198319382891,
+        "cgan": 0.8415523865799543
+      },
+      "psnr": {
+        "input": 24.791902363554094,
+        "unet": 33.30143159152653,
+        "cgan": 31.55353425009405
+      }
+    },
+    "geo-val-03": {
+      "ssim": {
+        "input": 0.7530783346768821,
+        "unet": 0.8468283250908042,
+        "cgan": 0.8272058455350717
+      },
+      "psnr": {
+        "input": 23.932592645718177,
+        "unet": 32.8544297197769,
+        "cgan": 31.050553470294922
+      }
+    }
+  }
+}

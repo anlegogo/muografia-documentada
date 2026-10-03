@@ -1,0 +1,116 @@
+resumed oe2-v1-tecnica-f05-cgan-s2026100301 from epoch 1 (best val_ssim 0.4160 at epoch 1)
+{
+  "run_id": "oe2-v1-tecnica-f05-cgan-s2026100301",
+  "out_root": "/workspace/resultados-oe2",
+  "config": {
+    "run_id": "oe2-v1-tecnica-f05-cgan-s2026100301",
+    "generator": "unet_dc_5",
+    "critic": "patch_critic_70",
+    "fraction": 0.05,
+    "input_scaling": "train_log_bounded_v1",
+    "hflip": false,
+    "lambda_gp": 10.0,
+    "lambda_l1": 100.0,
+    "lambda_adv": 1.0,
+    "lr": 0.0001,
+    "betas": [
+      0.0,
+      0.9
+    ],
+    "n_critic": 5,
+    "batch": 4,
+    "epochs": 2,
+    "seed": 2026100301,
+    "early_stop": {
+      "metric": "val_ssim",
+      "patience": 8,
+      "min_delta": 0.001
+    },
+    "val_every": 1,
+    "sample_every": 0,
+    "overfit_n": null,
+    "max_iters": null,
+    "device": "cuda",
+    "smoke_train_pairs": 8,
+    "smoke_val_pairs": 8,
+    "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+    "implementation_sha256": "f2dcc640e5b2917bab9b0876b4b46371961e0fa7c67703c3818c4693fc0b263a",
+    "normalization": {
+      "fit_split": "train",
+      "name": "train_log_bounded_v1",
+      "scale": 8.239329427901795,
+      "train_max": 3786
+    }
+  },
+  "config_sha8": "34aea7e0",
+  "device": "cuda",
+  "git_commit": "unknown",
+  "generator_params": 20543809,
+  "critic_params": 2762817,
+  "train_pairs": 8,
+  "val_pairs": 8,
+  "iterations_per_epoch": 2,
+  "torch": "2.6.0+cu118"
+}
+{"epoch": 2, "global_step": 4, "iterations": 2, "w_est": 1.292229, "gp": 0.084956, "l1": 0.097612, "adv": 0.965308, "d_real": 0.807886, "d_fake": -0.484343, "grad_norm_g": 71.985629, "grad_norm_d": 58.721764, "out_std": 0.025738, "nyquist_ratio": 0.030102, "val_ssim": 0.4144, "val_ssim_std": 0.001, "val_psnr": 15.41, "val_psnr_std": 0.02, "val_n": 8, "train_batch_ssim": 0.4999, "train_ssim_mean": 0.4977, "train_val_gap": 0.0833, "epoch_seconds": 0.81}
+{
+  "summary": {
+    "run_id": "oe2-v1-tecnica-f05-cgan-s2026100301",
+    "status": "done",
+    "stop_reason": "epochs",
+    "out_root": "/workspace/resultados-oe2",
+    "config_sha8": "34aea7e0",
+    "best_val_ssim": 0.4160474953900447,
+    "best_epoch": 1,
+    "epochs_run": 1,
+    "last_epoch": 2,
+    "global_step": 4,
+    "overfit_n": null,
+    "wall_seconds": 1.1,
+    "git_commit": "unknown",
+    "config": {
+      "run_id": "oe2-v1-tecnica-f05-cgan-s2026100301",
+      "generator": "unet_dc_5",
+      "critic": "patch_critic_70",
+      "fraction": 0.05,
+      "input_scaling": "train_log_bounded_v1",
+      "hflip": false,
+      "lambda_gp": 10.0,
+      "lambda_l1": 100.0,
+      "lambda_adv": 1.0,
+      "lr": 0.0001,
+      "betas": [
+        0.0,
+        0.9
+      ],
+      "n_critic": 5,
+      "batch": 4,
+      "epochs": 2,
+      "seed": 2026100301,
+      "early_stop": {
+        "metric": "val_ssim",
+        "patience": 8,
+        "min_delta": 0.001
+      },
+      "val_every": 1,
+      "sample_every": 0,
+      "overfit_n": null,
+      "max_iters": null,
+      "device": "cuda",
+      "smoke_train_pairs": 8,
+      "smoke_val_pairs": 8,
+      "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+      "implementation_sha256": "f2dcc640e5b2917bab9b0876b4b46371961e0fa7c67703c3818c4693fc0b263a",
+      "normalization": {
+        "fit_split": "train",
+        "name": "train_log_bounded_v1",
+        "scale": 8.239329427901795,
+        "train_max": 3786
+      }
+    }
+  },
+  "elapsed_seconds": 1.7302004043012857,
+  "peak_cuda_allocated_bytes": 1962705920,
+  "peak_cuda_reserved_bytes": 2449473536,
+  "cpu_test": false
+}

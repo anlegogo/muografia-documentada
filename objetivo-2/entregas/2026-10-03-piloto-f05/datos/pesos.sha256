@@ -1,0 +1,8 @@
+e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0  ./oe2-v1-piloto-f05-cgan-s2026100301/checkpoints/best.pt
+66bb5e1db358875b0e940d2ae8a568b59272af3443729b493867588737c05b42  ./oe2-v1-piloto-f05-cgan-s2026100301/checkpoints/last.pt
+734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a  ./oe2-v1-piloto-f05-unet-s2026100301/checkpoints/best.pt
+7d70a9bc341d0b70e4eabd420e31d8613520fe19dadb009dad729468e9281e0e  ./oe2-v1-piloto-f05-unet-s2026100301/checkpoints/last.pt
+d667480cfe8a3bb17fa768b61bf1dcef5dd710f7454f852d16212ecf6c5cefb4  ./oe2-v1-tecnica-f05-cgan-s2026100301/checkpoints/best.pt
+9cf5aab6e5f446b30cd9fe670f12e754ba1c99a4c9e9e8a49b6f33a3b8982606  ./oe2-v1-tecnica-f05-cgan-s2026100301/checkpoints/last.pt
+a2971403b302aa48d12c5c23ce457c239af004820cba8ea59a350724fa8d6ca9  ./oe2-v1-tecnica-f05-unet-s2026100301/checkpoints/best.pt
+a2971403b302aa48d12c5c23ce457c239af004820cba8ea59a350724fa8d6ca9  ./oe2-v1-tecnica-f05-unet-s2026100301/checkpoints/last.pt

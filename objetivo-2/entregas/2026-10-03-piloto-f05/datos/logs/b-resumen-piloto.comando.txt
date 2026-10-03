@@ -1,0 +1,1 @@
+python objetivo-2/herramientas/resumir_piloto.py --stage piloto --out-root /workspace/resultados-oe2 --output /workspace/resultados-oe2/resumen-piloto.json 

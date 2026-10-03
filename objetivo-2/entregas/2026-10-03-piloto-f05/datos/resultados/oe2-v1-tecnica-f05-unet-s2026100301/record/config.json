@@ -1,0 +1,53 @@
+{
+  "run_id": "oe2-v1-tecnica-f05-unet-s2026100301",
+  "out_root": "/workspace/resultados-oe2",
+  "config": {
+    "run_id": "oe2-v1-tecnica-f05-unet-s2026100301",
+    "generator": "unet_dc_5",
+    "critic": null,
+    "fraction": 0.05,
+    "input_scaling": "train_log_bounded_v1",
+    "hflip": false,
+    "lambda_gp": 10.0,
+    "lambda_l1": 100.0,
+    "lambda_adv": 0.0,
+    "lr": 0.0001,
+    "betas": [
+      0.0,
+      0.9
+    ],
+    "n_critic": 5,
+    "batch": 4,
+    "epochs": 2,
+    "seed": 2026100301,
+    "early_stop": {
+      "metric": "val_ssim",
+      "patience": 8,
+      "min_delta": 0.001
+    },
+    "val_every": 1,
+    "sample_every": 0,
+    "overfit_n": null,
+    "max_iters": null,
+    "device": "cuda",
+    "smoke_train_pairs": 8,
+    "smoke_val_pairs": 8,
+    "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+    "implementation_sha256": "f2dcc640e5b2917bab9b0876b4b46371961e0fa7c67703c3818c4693fc0b263a",
+    "normalization": {
+      "fit_split": "train",
+      "name": "train_log_bounded_v1",
+      "scale": 8.239329427901795,
+      "train_max": 3786
+    }
+  },
+  "config_sha8": "bd70ff5a",
+  "device": "cuda",
+  "git_commit": "unknown",
+  "generator_params": 20543809,
+  "critic_params": 0,
+  "train_pairs": 8,
+  "val_pairs": 8,
+  "iterations_per_epoch": 2,
+  "torch": "2.6.0+cu118"
+}

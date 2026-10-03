@@ -1,0 +1,122 @@
+{
+  "run_id": "oe2-v1-piloto-f05-unet-s2026100301",
+  "out_root": "/workspace/resultados-oe2",
+  "config": {
+    "run_id": "oe2-v1-piloto-f05-unet-s2026100301",
+    "generator": "unet_dc_5",
+    "critic": null,
+    "fraction": 0.05,
+    "input_scaling": "train_log_bounded_v1",
+    "hflip": false,
+    "lambda_gp": 10.0,
+    "lambda_l1": 100.0,
+    "lambda_adv": 0.0,
+    "lr": 0.0001,
+    "betas": [
+      0.0,
+      0.9
+    ],
+    "n_critic": 5,
+    "batch": 4,
+    "epochs": 30,
+    "seed": 2026100301,
+    "early_stop": {
+      "metric": "val_ssim",
+      "patience": 8,
+      "min_delta": 0.001
+    },
+    "val_every": 1,
+    "sample_every": 5,
+    "overfit_n": null,
+    "max_iters": null,
+    "device": "cuda",
+    "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+    "implementation_sha256": "f2dcc640e5b2917bab9b0876b4b46371961e0fa7c67703c3818c4693fc0b263a",
+    "normalization": {
+      "fit_split": "train",
+      "name": "train_log_bounded_v1",
+      "scale": 8.239329427901795,
+      "train_max": 3786
+    }
+  },
+  "config_sha8": "d07016fb",
+  "device": "cuda",
+  "git_commit": "unknown",
+  "generator_params": 20543809,
+  "critic_params": 0,
+  "train_pairs": 1440,
+  "val_pairs": 360,
+  "iterations_per_epoch": 360,
+  "torch": "2.6.0+cu118"
+}
+{"epoch": 1, "global_step": 360, "iterations": 360, "w_est": 0.0, "gp": 0.0, "l1": 0.020049, "adv": 0.0, "d_real": 0.0, "d_fake": 0.0, "grad_norm_g": 57.122064, "grad_norm_d": 0.0, "out_std": 0.011245, "nyquist_ratio": 0.409013, "val_ssim": 0.8298, "val_ssim_std": 0.0206, "val_psnr": 31.14, "val_psnr_std": 1.22, "val_n": 360, "train_batch_ssim": 0.8623, "train_ssim_mean": 0.8278, "train_val_gap": -0.002, "epoch_seconds": 16.34}
+{"epoch": 2, "global_step": 720, "iterations": 360, "w_est": 0.0, "gp": 0.0, "l1": 0.011514, "adv": 0.0, "d_real": 0.0, "d_fake": 0.0, "grad_norm_g": 33.868398, "grad_norm_d": 0.0, "out_std": 0.015224, "nyquist_ratio": 0.231862, "val_ssim": 0.8383, "val_ssim_std": 0.0189, "val_psnr": 32.27, "val_psnr_std": 0.72, "val_n": 360, "train_batch_ssim": 0.8632, "train_ssim_mean": 0.8549, "train_val_gap": 0.0166, "epoch_seconds": 16.08}
+{"epoch": 3, "global_step": 1080, "iterations": 360, "w_est": 0.0, "gp": 0.0, "l1": 0.010532, "adv": 0.0, "d_real": 0.0, "d_fake": 0.0, "grad_norm_g": 32.937039, "grad_norm_d": 0.0, "out_std": 0.01206, "nyquist_ratio": 0.580871, "val_ssim": 0.8405, "val_ssim_std": 0.0161, "val_psnr": 32.37, "val_psnr_std": 0.49, "val_n": 360, "train_batch_ssim": 0.8606, "train_ssim_mean": 0.8583, "train_val_gap": 0.0178, "epoch_seconds": 15.99}
+{"epoch": 4, "global_step": 1440, "iterations": 360, "w_est": 0.0, "gp": 0.0, "l1": 0.010026, "adv": 0.0, "d_real": 0.0, "d_fake": 0.0, "grad_norm_g": 30.636108, "grad_norm_d": 0.0, "out_std": 0.013218, "nyquist_ratio": 0.611827, "val_ssim": 0.8427, "val_ssim_std": 0.0153, "val_psnr": 32.67, "val_psnr_std": 0.52, "val_n": 360, "train_batch_ssim": 0.8445, "train_ssim_mean": 0.8608, "train_val_gap": 0.0181, "epoch_seconds": 15.99}
+{"epoch": 5, "global_step": 1800, "iterations": 360, "w_est": 0.0, "gp": 0.0, "l1": 0.009704, "adv": 0.0, "d_real": 0.0, "d_fake": 0.0, "grad_norm_g": 28.518446, "grad_norm_d": 0.0, "out_std": 0.014598, "nyquist_ratio": 0.387088, "val_ssim": 0.8437, "val_ssim_std": 0.014, "val_psnr": 32.9, "val_psnr_std": 0.31, "val_n": 360, "train_batch_ssim": 0.86, "train_ssim_mean": 0.8581, "train_val_gap": 0.0144, "epoch_seconds": 16.06}
+{"epoch": 6, "global_step": 2160, "iterations": 360, "w_est": 0.0, "gp": 0.0, "l1": 0.009486, "adv": 0.0, "d_real": 0.0, "d_fake": 0.0, "grad_norm_g": 27.349994, "grad_norm_d": 0.0, "out_std": 0.008763, "nyquist_ratio": 0.432921, "val_ssim": 0.8435, "val_ssim_std": 0.013, "val_psnr": 32.9, "val_psnr_std": 0.29, "val_n": 360, "train_batch_ssim": 0.8681, "train_ssim_mean": 0.8629, "train_val_gap": 0.0194, "epoch_seconds": 16.24}
+{"epoch": 7, "global_step": 2520, "iterations": 360, "w_est": 0.0, "gp": 0.0, "l1": 0.009338, "adv": 0.0, "d_real": 0.0, "d_fake": 0.0, "grad_norm_g": 25.837125, "grad_norm_d": 0.0, "out_std": 0.015383, "nyquist_ratio": 0.482674, "val_ssim": 0.8437, "val_ssim_std": 0.0115, "val_psnr": 32.95, "val_psnr_std": 0.27, "val_n": 360, "train_batch_ssim": 0.8566, "train_ssim_mean": 0.8623, "train_val_gap": 0.0186, "epoch_seconds": 16.17}
+{"epoch": 8, "global_step": 2880, "iterations": 360, "w_est": 0.0, "gp": 0.0, "l1": 0.009206, "adv": 0.0, "d_real": 0.0, "d_fake": 0.0, "grad_norm_g": 25.492757, "grad_norm_d": 0.0, "out_std": 0.00693, "nyquist_ratio": 0.470112, "val_ssim": 0.8418, "val_ssim_std": 0.0111, "val_psnr": 32.52, "val_psnr_std": 0.34, "val_n": 360, "train_batch_ssim": 0.8738, "train_ssim_mean": 0.862, "train_val_gap": 0.0202, "epoch_seconds": 16.22}
+{"epoch": 9, "global_step": 3240, "iterations": 360, "w_est": 0.0, "gp": 0.0, "l1": 0.009089, "adv": 0.0, "d_real": 0.0, "d_fake": 0.0, "grad_norm_g": 22.613336, "grad_norm_d": 0.0, "out_std": 0.006557, "nyquist_ratio": 0.512389, "val_ssim": 0.8418, "val_ssim_std": 0.0103, "val_psnr": 32.4, "val_psnr_std": 0.34, "val_n": 360, "train_batch_ssim": 0.8628, "train_ssim_mean": 0.8614, "train_val_gap": 0.0196, "epoch_seconds": 16.24}
+{"epoch": 10, "global_step": 3600, "iterations": 360, "w_est": 0.0, "gp": 0.0, "l1": 0.009013, "adv": 0.0, "d_real": 0.0, "d_fake": 0.0, "grad_norm_g": 22.544275, "grad_norm_d": 0.0, "out_std": 0.010609, "nyquist_ratio": 0.597656, "val_ssim": 0.842, "val_ssim_std": 0.0103, "val_psnr": 32.78, "val_psnr_std": 0.27, "val_n": 360, "train_batch_ssim": 0.8602, "train_ssim_mean": 0.8602, "train_val_gap": 0.0182, "epoch_seconds": 16.26}
+{"epoch": 11, "global_step": 3960, "iterations": 360, "w_est": 0.0, "gp": 0.0, "l1": 0.008947, "adv": 0.0, "d_real": 0.0, "d_fake": 0.0, "grad_norm_g": 22.008268, "grad_norm_d": 0.0, "out_std": 0.013876, "nyquist_ratio": 0.584694, "val_ssim": 0.8425, "val_ssim_std": 0.0096, "val_psnr": 32.81, "val_psnr_std": 0.27, "val_n": 360, "train_batch_ssim": 0.8434, "train_ssim_mean": 0.8613, "train_val_gap": 0.0188, "epoch_seconds": 16.3}
+{"epoch": 12, "global_step": 4320, "iterations": 360, "w_est": 0.0, "gp": 0.0, "l1": 0.008895, "adv": 0.0, "d_real": 0.0, "d_fake": 0.0, "grad_norm_g": 21.003513, "grad_norm_d": 0.0, "out_std": 0.015618, "nyquist_ratio": 0.379913, "val_ssim": 0.8429, "val_ssim_std": 0.0104, "val_psnr": 32.82, "val_psnr_std": 0.19, "val_n": 360, "train_batch_ssim": 0.8676, "train_ssim_mean": 0.8601, "train_val_gap": 0.0172, "epoch_seconds": 16.18}
+{
+  "summary": {
+    "run_id": "oe2-v1-piloto-f05-unet-s2026100301",
+    "status": "done",
+    "stop_reason": "early_stop",
+    "out_root": "/workspace/resultados-oe2",
+    "config_sha8": "d07016fb",
+    "best_val_ssim": 0.8436712735984511,
+    "best_epoch": 5,
+    "epochs_run": 12,
+    "last_epoch": 12,
+    "global_step": 4320,
+    "overfit_n": null,
+    "wall_seconds": 200.6,
+    "git_commit": "unknown",
+    "config": {
+      "run_id": "oe2-v1-piloto-f05-unet-s2026100301",
+      "generator": "unet_dc_5",
+      "critic": null,
+      "fraction": 0.05,
+      "input_scaling": "train_log_bounded_v1",
+      "hflip": false,
+      "lambda_gp": 10.0,
+      "lambda_l1": 100.0,
+      "lambda_adv": 0.0,
+      "lr": 0.0001,
+      "betas": [
+        0.0,
+        0.9
+      ],
+      "n_critic": 5,
+      "batch": 4,
+      "epochs": 30,
+      "seed": 2026100301,
+      "early_stop": {
+        "metric": "val_ssim",
+        "patience": 8,
+        "min_delta": 0.001
+      },
+      "val_every": 1,
+      "sample_every": 5,
+      "overfit_n": null,
+      "max_iters": null,
+      "device": "cuda",
+      "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+      "implementation_sha256": "f2dcc640e5b2917bab9b0876b4b46371961e0fa7c67703c3818c4693fc0b263a",
+      "normalization": {
+        "fit_split": "train",
+        "name": "train_log_bounded_v1",
+        "scale": 8.239329427901795,
+        "train_max": 3786
+      }
+    }
+  },
+  "elapsed_seconds": 200.56975201517344,
+  "peak_cuda_allocated_bytes": 1887973888,
+  "peak_cuda_reserved_bytes": 2371878912,
+  "cpu_test": false
+}

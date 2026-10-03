@@ -1,0 +1,5 @@
+a1-tecnica-unet-corte exit=0
+a2-tecnica-unet-reanudacion exit=0
+a3-tecnica-cgan-corte exit=0
+a4-tecnica-cgan-reanudacion exit=0
+a5-resumen-tecnico exit=0

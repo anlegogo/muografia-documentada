@@ -1,0 +1,12 @@
+{
+  "n": 8,
+  "ssim_mean": 0.7264292569619198,
+  "psnr_mean": 23.77519308193571,
+  "manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+  "normalization": {
+    "fit_split": "train",
+    "name": "train_log_bounded_v1",
+    "scale": 8.239329427901795,
+    "train_max": 3786
+  }
+}

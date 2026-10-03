@@ -1,0 +1,100 @@
+1/123 dataset-v2/conversion-report.json OK
+2/123 dataset-v2/shards/geo-train-01.meta.json OK
+3/123 dataset-v2/shards/geo-train-01.npz OK
+4/123 dataset-v2/shards/geo-train-02.meta.json OK
+5/123 dataset-v2/shards/geo-train-02.npz OK
+6/123 dataset-v2/shards/geo-train-03.meta.json OK
+7/123 dataset-v2/shards/geo-train-03.npz OK
+8/123 dataset-v2/shards/geo-train-04.meta.json OK
+9/123 dataset-v2/shards/geo-train-04.npz OK
+10/123 dataset-v2/shards/geo-train-05.meta.json OK
+11/123 dataset-v2/shards/geo-train-05.npz OK
+12/123 dataset-v2/shards/geo-train-06.meta.json OK
+13/123 dataset-v2/shards/geo-train-06.npz OK
+14/123 dataset-v2/shards/geo-train-07.meta.json OK
+15/123 dataset-v2/shards/geo-train-07.npz OK
+16/123 dataset-v2/shards/geo-train-08.meta.json OK
+17/123 dataset-v2/shards/geo-train-08.npz OK
+18/123 dataset-v2/shards/geo-train-09.meta.json OK
+19/123 dataset-v2/shards/geo-train-09.npz OK
+20/123 dataset-v2/shards/geo-train-10.meta.json OK
+21/123 dataset-v2/shards/geo-train-10.npz OK
+22/123 dataset-v2/shards/geo-train-11.meta.json OK
+23/123 dataset-v2/shards/geo-train-11.npz OK
+24/123 dataset-v2/shards/geo-train-12.meta.json OK
+25/123 dataset-v2/shards/geo-train-12.npz OK
+26/123 dataset-v2/shards/geo-val-01.meta.json OK
+27/123 dataset-v2/shards/geo-val-01.npz OK
+28/123 dataset-v2/shards/geo-val-02.meta.json OK
+29/123 dataset-v2/shards/geo-val-02.npz OK
+30/123 dataset-v2/shards/geo-val-03.meta.json OK
+31/123 dataset-v2/shards/geo-val-03.npz OK
+32/123 dataset-v2/splits.json OK
+33/123 pares/geo-train-01_view0_pairs.npz OK
+34/123 pares/geo-train-01_view1_pairs.npz OK
+35/123 pares/geo-train-01_view2_pairs.npz OK
+36/123 pares/geo-train-01_view3_pairs.npz OK
+37/123 pares/geo-train-01_view4_pairs.npz OK
+38/123 pares/geo-train-01_view5_pairs.npz OK
+39/123 pares/geo-train-02_view0_pairs.npz OK
+40/123 pares/geo-train-02_view1_pairs.npz OK
+41/123 pares/geo-train-02_view2_pairs.npz OK
+42/123 pares/geo-train-02_view3_pairs.npz OK
+43/123 pares/geo-train-02_view4_pairs.npz OK
+44/123 pares/geo-train-02_view5_pairs.npz OK
+45/123 pares/geo-train-03_view0_pairs.npz OK
+46/123 pares/geo-train-03_view1_pairs.npz OK
+47/123 pares/geo-train-03_view2_pairs.npz OK
+48/123 pares/geo-train-03_view3_pairs.npz OK
+49/123 pares/geo-train-03_view4_pairs.npz OK
+50/123 pares/geo-train-03_view5_pairs.npz OK
+51/123 pares/geo-train-04_view0_pairs.npz OK
+52/123 pares/geo-train-04_view1_pairs.npz OK
+53/123 pares/geo-train-04_view2_pairs.npz OK
+54/123 pares/geo-train-04_view3_pairs.npz OK
+55/123 pares/geo-train-04_view4_pairs.npz OK
+56/123 pares/geo-train-04_view5_pairs.npz OK
+57/123 pares/geo-train-05_view0_pairs.npz OK
+58/123 pares/geo-train-05_view1_pairs.npz OK
+59/123 pares/geo-train-05_view2_pairs.npz OK
+60/123 pares/geo-train-05_view3_pairs.npz OK
+61/123 pares/geo-train-05_view4_pairs.npz OK
+62/123 pares/geo-train-05_view5_pairs.npz OK
+63/123 pares/geo-train-06_view0_pairs.npz OK
+64/123 pares/geo-train-06_view1_pairs.npz OK
+65/123 pares/geo-train-06_view2_pairs.npz OK
+66/123 pares/geo-train-06_view3_pairs.npz OK
+67/123 pares/geo-train-06_view4_pairs.npz OK
+68/123 pares/geo-train-06_view5_pairs.npz OK
+69/123 pares/geo-train-07_view0_pairs.npz OK
+70/123 pares/geo-train-07_view1_pairs.npz OK
+Traceback (most recent call last):
+  File "/workspace/venv/lib/python3.12/site-packages/gdown/download.py", line 480, in _get_download_response
+    url = get_url_from_gdrive_confirmation(contents)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/venv/lib/python3.12/site-packages/gdown/download.py", line 87, in get_url_from_gdrive_confirmation
+    raise FileURLRetrievalError(
+gdown.exceptions.FileURLRetrievalError: Cannot retrieve the public link of the file. You may need to change the permission to 'Anyone with the link', or have had many accesses. Check FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/fetch_data.py", line 17, in <module>
+    gdown.download(id=fid, output=str(dest), quiet=True)
+  File "/workspace/venv/lib/python3.12/site-packages/gdown/download.py", line 854, in download
+    res, url = _get_download_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/venv/lib/python3.12/site-packages/gdown/download.py", line 491, in _get_download_response
+    raise FileURLRetrievalError(message)
+gdown.exceptions.FileURLRetrievalError: Failed to retrieve file url:
+
+	Cannot retrieve the public link of the file. You may need to change
+	the permission to 'Anyone with the link', or have had many accesses.
+	Check FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.
+
+You may still be able to access the file from the browser:
+
+	https://drive.google.com/uc?id=1w5NqIdDwU0PYUZtG4Xz08bXChe4-XIx5
+
+but Gdown can't. Please check connections and permissions.
+EXIT=1

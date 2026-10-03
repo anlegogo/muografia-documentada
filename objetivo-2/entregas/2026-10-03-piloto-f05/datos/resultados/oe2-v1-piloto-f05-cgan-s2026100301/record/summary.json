@@ -1,0 +1,53 @@
+{
+  "run_id": "oe2-v1-piloto-f05-cgan-s2026100301",
+  "status": "done",
+  "stop_reason": "early_stop",
+  "out_root": "/workspace/resultados-oe2",
+  "config_sha8": "14a2e290",
+  "best_val_ssim": 0.8227921659832462,
+  "best_epoch": 5,
+  "epochs_run": 13,
+  "last_epoch": 13,
+  "global_step": 4680,
+  "overfit_n": null,
+  "wall_seconds": 1134.0,
+  "git_commit": "unknown",
+  "config": {
+    "run_id": "oe2-v1-piloto-f05-cgan-s2026100301",
+    "generator": "unet_dc_5",
+    "critic": "patch_critic_70",
+    "fraction": 0.05,
+    "input_scaling": "train_log_bounded_v1",
+    "hflip": false,
+    "lambda_gp": 10.0,
+    "lambda_l1": 100.0,
+    "lambda_adv": 1.0,
+    "lr": 0.0001,
+    "betas": [
+      0.0,
+      0.9
+    ],
+    "n_critic": 5,
+    "batch": 4,
+    "epochs": 30,
+    "seed": 2026100301,
+    "early_stop": {
+      "metric": "val_ssim",
+      "patience": 8,
+      "min_delta": 0.001
+    },
+    "val_every": 1,
+    "sample_every": 5,
+    "overfit_n": null,
+    "max_iters": null,
+    "device": "cuda",
+    "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+    "implementation_sha256": "f2dcc640e5b2917bab9b0876b4b46371961e0fa7c67703c3818c4693fc0b263a",
+    "normalization": {
+      "fit_split": "train",
+      "name": "train_log_bounded_v1",
+      "scale": 8.239329427901795,
+      "train_max": 3786
+    }
+  }
+}
