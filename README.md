@@ -1,9 +1,10 @@
 # Muografía: documentación y seguimiento académico
 
-**Estado del OE1 — 2026-10-03:** se recibieron y verificaron 114 referencias de la campaña corregida y se reprodujo el contenido de 9.120 pares. La ficha, las figuras y la síntesis académica están preparadas. La copia de Drive ya se recuperó y verificó: 753 archivos y 2.291 controles satisfactorios. Quedan la incorporación al informe y la valoración académica de representatividad.
+**Estado del OE1 — 2026-10-03:** se recibieron y verificaron 114 referencias de la campaña corregida y se reprodujo el contenido de 9.120 pares. La ficha, las figuras, la síntesis académica y un borrador descriptivo de 11 páginas están preparados. La copia de Drive ya se recuperó y verificó: 753 archivos y 2.291 controles satisfactorios. Quedan la incorporación al informe y la valoración académica de representatividad.
 
 | Documento | Contenido |
 |---|---|
+| [Borrador académico del OE1](objetivo-1/manuscrito/README.md) | Texto en PDF y LaTeX, nomenclatura, formulación matemática y discusión. |
 | [Ficha del conjunto](objetivo-1/FICHA_CONJUNTO_OE1.md) | Datos, campos, receta, particiones, versiones, límites y reproducción. |
 | [Síntesis de resultados y figuras](objetivo-1/SINTESIS_RESULTADOS_OE1.md) | Texto para el informe y tres figuras exportables en PNG/PDF. |
 | [Definición y criterios de cierre](objetivo-1/DEFINICION_PRODUCTO_OE1.md) | Alcance adoptado y evidencia de A-01 a A-08. |

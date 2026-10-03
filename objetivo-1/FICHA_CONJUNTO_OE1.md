@@ -50,7 +50,7 @@ El posproceso reportado en SC3 utilizó Python 3.13.13, NumPy 2.5.2 y SciPy 1.18
 - `events_transported`: N fijo de primarios; `nominal_in_window`: generación dentro de la ventana nominal. No equivalen al número detectado.
 - `exposure_days = -1`: ejecución con N fijo. `conventional_exposure_days = 30 × nominal_in_window / 36.034.069,911914065` es una etiqueta convencional; no son días calibrados de un detector real.
 
-El derivado `dataset-v2` y su conversión para entrenamiento quedan fuera de esta ficha: sus bytes no se han auditado en esta revisión del OE1.
+El derivado `dataset-v2` tuvo una comprobación posterior de integridad y contenido en la [revisión de Drive](REVISION_DISTRIBUCION_DRIVE.md); su conversión para entrenamiento y el desempeño de redes no se auditan en esta ficha.
 
 ## Calidad y excepciones
 

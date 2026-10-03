@@ -52,6 +52,8 @@ Fuentes internas: [ficha del conjunto](FICHA_CONJUNTO_OE1.md), [revisión de dat
 
 ## Incorporación al manuscrito y revisión pendiente
 
+Se preparó un [borrador desarrollado en PDF y LaTeX](manuscrito/README.md), con nomenclatura, ecuaciones y discusión. Es material para revisión e incorporación; no sustituye la entrega académica de estudiantes.
+
 En la revisión local del 2026-10-03 se encontró una plantilla `Informe_Final_Muografia`: metodología contiene guías de redacción y los capítulos de resultados y conclusiones están reservados, sin contenido. No se identificó un manuscrito actualizado en la entrega `cb57145`. Por tanto, este texto es material preparado para incorporación; no acredita que el informe de estudiantes ya esté actualizado ni permite dictaminar su coherencia integral.
 
 | Sección del informe | Incorporación requerida | Comprobación de la revisión académica |

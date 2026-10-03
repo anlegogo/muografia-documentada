@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Borrador académico del OE1 — 2026-10-03
+
+- Texto descriptivo e impersonal de 11 páginas en PDF y LaTeX: nomenclatura, metodología, adelgazamiento y dependencia, contraste de bordes, resultados, discusión y conclusión acotada. [Documento](objetivo-1/manuscrito/README.md).
+- 18 controles numéricos/editoriales satisfactorios; cifras, siete excepciones y coordenadas contrastadas con la evidencia. Compilación local y revisión visual de todas las páginas; el compilador integrado presentó un fallo de entorno.
+- P-04 continúa pendiente de valoración e incorporación al manuscrito estudiantil. Se corrigió en la ficha una frase desactualizada sobre la integridad de dataset-v2, ya comprobada en Drive; no se amplía el alcance a entrenamiento.
+
 ## Recuperación independiente de Drive — 2026-10-03
 
 - Descarga completa de 753 archivos (1.126.769.406 bytes); 2.291 controles satisfactorios. Coinciden las 477 huellas de fusión/imágenes, los 342 arreglos de pares y los inventarios de distribución.

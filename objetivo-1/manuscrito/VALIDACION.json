@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-03",
+  "source_commit": "4529c49",
+  "draft_sha256": "963c9464a3203b39facd077b946f536086721a328a1408bf4f8963b809e6701a",
+  "checks": {
+    "cardinalidad": true,
+    "siete_excepciones": true,
+    "tabla/geo-test-03/1": true,
+    "tabla/geo-test-03/5": true,
+    "tabla/geo-train-06/3": true,
+    "tabla/geo-train-09/1": true,
+    "tabla/geo-train-09/4": true,
+    "tabla/geo-train-09/5": true,
+    "tabla/geo-train-12/2": true,
+    "roi_global": true,
+    "borde_maximo": true,
+    "bonferroni": true,
+    "malla_azimut": true,
+    "malla_elevacion": true,
+    "extremos_elevacion": true,
+    "identidad_binomial_compuesta": true,
+    "varianza_compuesta": true,
+    "latex_sin_desbordes_ni_referencias_indefinidas": true
+  },
+  "all_passed": true,
+  "visual_review": "11 páginas renderizadas e inspeccionadas; tablas, fórmulas y márgenes legibles.",
+  "compilation": "pdfLaTeX, TeX Live 2025; compilador integrado no disponible: Unable to find standard directories for platform.",
+  "limits": "Controles numéricos y editoriales del borrador; no equivalen a aprobación académica ni nueva simulación."
+}

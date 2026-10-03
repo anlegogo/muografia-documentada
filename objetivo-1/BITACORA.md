@@ -1,5 +1,13 @@
 # Bitácora de la revisión del OE1
 
+## Preparación del borrador académico — 2026-10-03, Colombia
+
+- Actividad: preparación documental de la dirección a solicitud del usuario; redacción impersonal, descriptiva y con nomenclatura explícita. No se modifica la autoría de los resultados ni la entrega estudiantil.
+- Entradas: evidencia consolidada en 4529c49, receta, catálogo, exportador, empaquetador y evaluadores; estructura local del informe y referencias oficiales de Geant4/EcoMug/Guan.
+- Salida: [borrador de 11 páginas](manuscrito/README.md), PDF y LaTeX, con metodología, desarrollo estadístico, resultados, discusión y conclusión limitada al OE1. Las figuras existentes se enlazan con leyendas para su incorporación.
+- Verificación: 18 controles de cifras, malla, tabla de excepciones e identidades binomiales; compilación pdfLaTeX y revisión visual de once páginas. El compilador integrado no encontró sus directorios de entorno; se utilizó TeX Live 2025 ya instalado. [Registro](manuscrito/VALIDACION.json).
+- Pendiente P-04: valoración de representatividad e integración al manuscrito de estudiantes. El borrador no se presenta como informe aprobado ni como nueva simulación.
+
 ## Recuperación de Drive y preparación de revisión académica — 2026-10-03, Colombia
 
 - Actividad: comprobación independiente de la dirección; ejecución original y entrega por estudiantes. Referencias: f395570, actualización cb57145 y reporte de Reinaldo en 8fa667c.
