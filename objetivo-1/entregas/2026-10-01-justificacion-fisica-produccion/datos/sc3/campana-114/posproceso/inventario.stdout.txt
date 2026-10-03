@@ -1,0 +1,32 @@
+{
+  "schema": "oe1-package-review-v1",
+  "configuration_contract": "explicit-recipe-v2",
+  "physical_validation": false,
+  "expected_geometries": [
+    "geo-gen-01",
+    "geo-test-01",
+    "geo-test-02",
+    "geo-test-03",
+    "geo-train-01",
+    "geo-train-02",
+    "geo-train-03",
+    "geo-train-04",
+    "geo-train-05",
+    "geo-train-06",
+    "geo-train-07",
+    "geo-train-08",
+    "geo-train-09",
+    "geo-train-10",
+    "geo-train-11",
+    "geo-train-12",
+    "geo-val-01",
+    "geo-val-02",
+    "geo-val-03"
+  ],
+  "errors": [],
+  "missing": [],
+  "technical_complete": true,
+  "actual_references": 114,
+  "target_references": 114,
+  "target_pairs": 9120
+}

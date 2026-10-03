@@ -1,0 +1,3 @@
+734M	/home/dapintoo/muography-scratch/oe1-114-344M-publicados
+32M	/home/dapintoo/muography-scratch/oe1-114-344M-fusion
+11M	/home/dapintoo/muography-scratch/oe1-114-344M-imagenes

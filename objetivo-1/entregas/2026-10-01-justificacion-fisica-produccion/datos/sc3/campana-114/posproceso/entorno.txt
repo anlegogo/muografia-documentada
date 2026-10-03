@@ -1,0 +1,12 @@
+2026-10-03T09:50:30-0500
+node=guane.sc3.uis.edu.co
+
+Currently Loaded Modules:
+  1) gnu14/14.2.0   2) geant4/11.4.2
+
+ 
+
+python 3.13.13
+numpy 2.5.2
+scipy 1.18.1
+ ioserver:/home  19507M  20480M  20480M           85350       0       0        

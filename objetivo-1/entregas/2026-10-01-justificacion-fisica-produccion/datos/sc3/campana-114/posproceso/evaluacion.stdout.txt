@@ -1,0 +1,10 @@
+{
+  "schema": "oe1-campaign-114-review-v1",
+  "technical_complete": true,
+  "missing": [],
+  "errors": [],
+  "all_border_criteria_met": true,
+  "all_rock_descriptive_criteria_met": false,
+  "physical_validation": false,
+  "production_authorized": false
+}

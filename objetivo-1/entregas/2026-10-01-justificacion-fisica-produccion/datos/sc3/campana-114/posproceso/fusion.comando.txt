@@ -1,0 +1,1 @@
+/home/dapintoo/oe1-trabajo/entorno/python-oe1 herramientas/fusionar_bloques_angular.py --manifiesto /home/dapintoo/oe1-trabajo/campana-114-7c120ce/replica/objetivo-1/evidencias/preparacion-campana-114/manifiesto-114-344M.csv --salida /home/dapintoo/muography-scratch/oe1-114-344M-publicados --destino /home/dapintoo/muography-scratch/oe1-114-344M-fusion 

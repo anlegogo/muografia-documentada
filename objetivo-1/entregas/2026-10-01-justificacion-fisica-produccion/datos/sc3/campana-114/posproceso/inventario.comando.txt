@@ -1,0 +1,1 @@
+/home/dapintoo/oe1-trabajo/entorno/python-oe1 herramientas/empaquetar_angular_v1.py /home/dapintoo/muography-scratch/oe1-114-344M-imagenes --informe /home/dapintoo/oe1-trabajo/campana-114-7c120ce/posproceso/inventario-114-344M.json 
