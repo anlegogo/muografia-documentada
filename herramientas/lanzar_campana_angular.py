@@ -10,8 +10,24 @@ import json
 import os
 from pathlib import Path
 import subprocess
+from concurrent.futures import ProcessPoolExecutor
 from fusionar_bloques_angular import manifest_rows
 from operar_bloque_angular import existing, digest, prepare
+
+
+def _existing(args):
+    return existing(*args)
+
+
+def published(manifest,rows,destination):
+    """existing() for every row; OE1_VERIFICACION_PROCESOS>1 checks blocks in parallel.
+
+    Same verification and the same failure: the first exception is re-raised.
+    """
+    workers=int(os.environ.get('OE1_VERIFICACION_PROCESOS','1'))
+    if workers<=1:return [existing(manifest,row,destination) for row in rows]
+    with ProcessPoolExecutor(workers) as pool:
+        return list(pool.map(_existing,[(manifest,row,destination) for row in rows],chunksize=8))
 
 
 def launch(manifest,tree,scratch,destination,recipe,python,threads=24,max_jobs=4,submit=False,partition='legacy',time_limit='00:55:00',memory=None):
@@ -24,7 +40,9 @@ def launch(manifest,tree,scratch,destination,recipe,python,threads=24,max_jobs=4
         raise ValueError('memoria inválida')
     manifest,tree,scratch,destination,recipe,python=map(lambda p:Path(p).resolve(),(manifest,tree,scratch,destination,recipe,python))
     rows=manifest_rows(manifest)
-    script=Path(__file__).resolve().with_name('bloque_verificado_angular.sbatch')
+    # OE1_HERRAMIENTAS keeps the SLURM script and worker of an existing replica when this
+    # launcher runs from another directory; by default both sit next to the launcher.
+    script=Path(os.environ.get('OE1_HERRAMIENTAS',Path(__file__).resolve().parent)).resolve()/'bloque_verificado_angular.sbatch'
     worker=script.with_name('operar_bloque_angular.py')
     identity={'manifest':digest(manifest),'recipe':digest(recipe),'worker':digest(worker),'sbatch':digest(script),
               'destination':str(destination),'tree':str(tree),'scratch':str(scratch),'python':str(python),'threads':threads}
@@ -41,8 +59,8 @@ def launch(manifest,tree,scratch,destination,recipe,python,threads=24,max_jobs=4
         if any(len(x)!=2 for x in jobs):raise ValueError('respuesta de cola ilegible')
         queued={x[1].strip() for x in jobs};free=max(0,max_jobs-len(jobs))
         planned=[];blocked=[];verified=[]
-        for row in rows:
-            if existing(manifest,row,destination):verified.append(row['fila']);continue
+        for row,done in zip(rows,published(manifest,rows,destination)):
+            if done:verified.append(row['fila']);continue
             name=f"oe1-{cid[:12]}-{row['fila']}";record=state/(str(row['fila'])+'.json')
             if name in queued:continue
             if record.exists():blocked.append(row['fila']);continue
