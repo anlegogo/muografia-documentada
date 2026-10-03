@@ -1,0 +1,58 @@
+{
+  "sha256_ok": 110,
+  "sha256_mismatch": [],
+  "runs": {
+    "tecnica-unet": {
+      "epochs": 2,
+      "best_epoch": 2,
+      "best_ssim": 0.5478435823471869,
+      "stop_reason": "epochs",
+      "seconds": 2.362636061385274
+    },
+    "tecnica-cgan": {
+      "epochs": 2,
+      "best_epoch": 1,
+      "best_ssim": 0.4160474953900447,
+      "stop_reason": "epochs",
+      "seconds": 3.1503586284816265
+    },
+    "piloto-unet": {
+      "epochs": 12,
+      "best_epoch": 5,
+      "best_ssim": 0.8436712735984511,
+      "stop_reason": "early_stop",
+      "seconds": 200.56975201517344
+    },
+    "piloto-cgan": {
+      "epochs": 13,
+      "best_epoch": 5,
+      "best_ssim": 0.8227921659832462,
+      "stop_reason": "early_stop",
+      "seconds": 1134.0353247392923
+    }
+  },
+  "checks": {
+    "four_runs_match_config_and_mirrors": true,
+    "exit_codes_zero": 8,
+    "csv_means_differences_geometry_and_bootstrap_reproduced": true,
+    "baseline_360_recomputed": true
+  },
+  "weights_available": false,
+  "model_inference_repeated": false,
+  "archive_eol_differences": 67,
+  "git_ref": "c054225",
+  "baseline_max_absolute_error": 0.0,
+  "means": {
+    "ssim": {
+      "input": 0.7518121158353864,
+      "unet": 0.8436712735984511,
+      "cgan": 0.8227921659832462
+    },
+    "psnr": {
+      "input": 24.16772800716849,
+      "unet": 32.90369352399466,
+      "cgan": 31.104120450540186
+    }
+  },
+  "status": "records_checked_weights_pending"
+}

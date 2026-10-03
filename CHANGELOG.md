@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Revisión de entrega OE2 c054225 — 2026-10-03
+
+- 110 huellas Git verificadas, cuatro configuraciones y registros contrastados, baseline de 360 pares recalculado y estadísticas CSV reproducidas. [Revisión](objetivo-2/REVISION_PILOTO_C054225.md).
+- Ejecución GPU documentada en RunPod; no constituye prueba de SC3. Ambos modelos mejoran la entrada; U-Net supera a cGAN en SSIM/PSNR para esta semilla.
+- Se registran pesos aún sin enlace, posibles artefactos, alcance limitado del bootstrap por referencia y próximos controles antes de ampliar. No se fusiona la rama estudiantil.
+
 ## Diseño del piloto OE2 al 5 % — 2026-10-03
 
 - Protocolo con prueba técnica de dos épocas y piloto U-Net/cGAN de hasta 30 épocas; mismos pares, semilla y lote, con baseline de entrada y conjuntos reservados protegidos.

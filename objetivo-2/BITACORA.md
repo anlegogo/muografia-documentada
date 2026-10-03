@@ -27,3 +27,10 @@
 - Evidencia: [resumen técnico local](evidencias/protocolo-piloto-local.json), [protocolo](PROTOCOLO_PILOTO_F05.md) e [instrucciones](INSTRUCCIONES_PILOTO_SC3.md). Ambos métodos se ejecutan y reanudan en CPU para verificar comandos; esta comprobación no aprueba GPU ni calidad.
 - Próximo paso: estudiantes ejecutan A en SC3 y, si pasa, B con autonomía dentro de los límites definidos. Se requiere revisión de resultados antes de ampliar a otras fracciones y repeticiones.
 - Resultado local: veinte controles no GPU satisfactorios entre ambos métodos; se comprobó el rechazo de la entrega CPU como aceptación GPU y la coherencia de las cuatro configuraciones. Las dos redes aún empeoran el SSIM de entrada después de cuatro actualizaciones; se registra expresamente sin convertir la prueba técnica en evidencia de calidad. [Verificación del protocolo](evidencias/verificacion-protocolo-v1.json).
+
+## 2026-10-03 — Revisión de entrega c054225
+
+- Se consultó origin y se identificó la nueva rama oe2/piloto-f05. Se extrajo únicamente su entrega para revisión, sin fusión ni modificación de originales.
+- Se comprobaron 110 huellas contra objetos Git, configuraciones y registros de cuatro ejecuciones; se reprodujo el baseline de 360 pares y la estadística del CSV. Evidencia: [revisión-c054225.json](evidencias/revision-c054225.json).
+- Incidencias del procedimiento: la primera verificación de identidad usó codificación predeterminada de Windows y falló; UTF-8 explícito coincide con la identidad del ejecutor Linux. La extracción local convirtió a CRLF 67 archivos y produjo discrepancias aparentes de huella; los 110 objetos originales Git coinciden. Se mantuvieron los archivos recibidos y se añadió verificación directa del commit.
+- Resultado: evidencia técnica GPU RunPod coherente; se inspeccionaron tres figuras. Pendientes P04a–d documentados en la [revisión](REVISION_PILOTO_C054225.md). No se descargaron pesos inexistentes en la entrega ni se repitió inferencia; no se abrieron imágenes reservadas.

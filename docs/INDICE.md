@@ -2,6 +2,8 @@
 
 ## Objetivo específico 2
 
+- [Revisión de resultados del piloto c054225](../objetivo-2/REVISION_PILOTO_C054225.md).
+
 - [Protocolo del piloto al 5 %](../objetivo-2/PROTOCOLO_PILOTO_F05.md).
 - [Instrucciones de ejecución y entrega en SC3](../objetivo-2/INSTRUCCIONES_PILOTO_SC3.md).
 
