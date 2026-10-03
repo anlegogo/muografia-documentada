@@ -1,0 +1,70 @@
+{
+  "commit": "e037d09",
+  "summary_files_sha_verified": 25,
+  "views": 114,
+  "border_intervals_recomputed": 1710,
+  "max_border_interval_abs_pp": 0.9326959732990516,
+  "rock_goal_met": 107,
+  "below_rock_goal": [
+    [
+      "geo-test-03",
+      1,
+      0.8963963963963963
+    ],
+    [
+      "geo-test-03",
+      5,
+      0.8918918918918919
+    ],
+    [
+      "geo-train-06",
+      3,
+      0.8934426229508197
+    ],
+    [
+      "geo-train-09",
+      1,
+      0.8980582524271845
+    ],
+    [
+      "geo-train-09",
+      4,
+      0.8980582524271845
+    ],
+    [
+      "geo-train-09",
+      5,
+      0.8932038834951457
+    ],
+    [
+      "geo-train-12",
+      2,
+      0.8974358974358975
+    ]
+  ],
+  "raw_histograms_received": false,
+  "pairs_generated": false,
+  "limitations": [
+    "Recomputed intervals from reported region counts; not yet independently reconstructed from campaign histograms.",
+    "Fusion hash references consistent, but underlying 114 histograms and NPZ not included in this delivery."
+  ],
+  "scheduler": {
+    "jobs": 1029,
+    "completed": 1026,
+    "failed": 3,
+    "failed_rows": [
+      120,
+      121,
+      122
+    ],
+    "each_manifest_row_completed_once": true,
+    "allocated_thread_hours_including_failures": 2356.728888888889,
+    "start": "2026-10-02T18:10:27",
+    "end": "2026-10-03T09:48:49",
+    "node_counts": {
+      "exadell": 387,
+      "smexa": 642
+    }
+  },
+  "local_student_suite_tests_passed": 107
+}

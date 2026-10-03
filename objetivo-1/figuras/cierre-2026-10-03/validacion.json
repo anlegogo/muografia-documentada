@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-03",
+  "source_commit": "f395570",
+  "metrics_views_match_verified_evaluation": 114,
+  "global_roi": 21816,
+  "global_roi_ge100": 20713,
+  "rock_goal_met_views": 107,
+  "local_links_checked": 96,
+  "figures_png": 3,
+  "figures_pdf": 3,
+  "pair_example_content_hash_verified": true,
+  "new_transport": false,
+  "drive_reviewed": false,
+  "validation": "Executed figure generator; inspected all PNGs visually; checked metrics against verified campaign evaluation. No simulation or production code changed."
+}

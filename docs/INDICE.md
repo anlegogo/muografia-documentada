@@ -1,9 +1,18 @@
 # Índice de documentación
 
+## Estado vigente y cierre documental
+
+- [Ficha del conjunto OE1](../objetivo-1/FICHA_CONJUNTO_OE1.md).
+- [Síntesis de resultados y figuras](../objetivo-1/SINTESIS_RESULTADOS_OE1.md).
+- [Matriz consolidada](../objetivo-1/MATRIZ_CUMPLIMIENTO.md) y [pendientes](../objetivo-1/PENDIENTES.md).
+- [Revisión de los datos f395570](../objetivo-1/REVISION_DATOS_F395570.md).
+
+## Protocolos y antecedentes
+
 - [Entrega de las siete actividades](../objetivo-1/ENTREGA_SIETE_ACTIVIDADES.md).
-- [Definición propuesta del producto OE1](../objetivo-1/DEFINICION_PRODUCTO_OE1.md).
+- [Definición adoptada del producto OE1](../objetivo-1/DEFINICION_PRODUCTO_OE1.md).
 - [Referencias y diseño estadístico](../objetivo-1/DISENO_ESTADISTICO_Y_REFERENCIAS.md).
-- [Guía única de la siguiente etapa](../objetivo-1/GUIA_SIGUIENTE_ETAPA_OE1.md).
+- [Guía histórica de la etapa piloto](../objetivo-1/GUIA_SIGUIENTE_ETAPA_OE1.md).
 
 - [Revisión de integración SC3 y observable, entrega 01a9871](../objetivo-1/REVISION_INTEGRACION_OBSERVABLE_01A9871.md).
 

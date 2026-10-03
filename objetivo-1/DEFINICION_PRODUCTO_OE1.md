@@ -40,7 +40,7 @@ Los datos existentes no permiten medir una referencia de cielo a las elevaciones
 
 Si el informe pretende afirmar «estas imágenes son lo que mediría el detector de 1,2 m», entonces sí necesita demostrar la contribución de muones generados fuera del panel, fijar aceptación y resolución del instrumento y una referencia física compatible. C3 es una vía posible; [su diseño corregido](DISENO_ESTADISTICO_Y_REFERENCIAS.md) es condicional y no se ordena ejecutarlo por defecto.
 
-La decisión adoptada por la dirección es desarrollar el producto principal idealizado y dejar la equivalencia instrumental como extensión opcional. C3 no constituye un requisito de cierre de este alcance. Deben conservarse en el informe las limitaciones anteriores y la justificación de representatividad. La receta definitiva, los criterios estadísticos y el presupuesto del piloto requieren revisión específica antes de iniciar transporte.
+La decisión adoptada por la dirección es desarrollar el producto principal idealizado y dejar la equivalencia instrumental como extensión opcional. C3 no constituye un requisito de cierre de este alcance. Deben conservarse en el informe las limitaciones anteriores y la justificación de representatividad. El acuerdo posterior y la ejecución de la campaña quedaron documentados; el estado vigente se resume en los criterios de cierre y en la ficha del conjunto.
 
 ## Contrato listo para el flujo nuevo
 
@@ -52,13 +52,13 @@ Esta lista reúne las condiciones de aceptación del OE1 bajo el alcance adoptad
 
 | Criterio | Evidencia requerida | Estado y responsable siguiente |
 |---|---|---|
-| A-01 · alcance explícito | Decisión de la dirección e incorporación de producto y limitaciones al informe. | Alcance adoptado; estudiantes: actualizar el informe. |
-| A-02 · representatividad | Justificación de escenarios, fuente híbrida, geometrías y transporte, con límites de la referencia ideal. | Parcial; estudiantes documentan y dirección revisa. No se exige equivalencia instrumental. |
-| A-03 · receta reproducible | Código, entorno, tablas, geometrías, semillas, parámetros y huellas compatibles y congelados. | Ficha candidata disponible; estudiantes verifican trazabilidad y dirección revisa la versión definitiva. |
-| A-04 · integración operativa | Pruebas y plan de lanzamiento en SC3 con versiones, logs y códigos de salida. | Herramientas locales probadas; estudiantes comprueban el nuevo flujo sin nuevos muones. |
-| A-05 · piloto y suficiencia | Criterio de bordes, suficiencia de conteos en roca y presupuesto acordados antes de ejecutar; evaluación de seis vistas y tiempos reales. | Diseño conservador propuesto, pendiente de revisión y autorización específica. Los resultados inconclusos no cuentan como aceptación. |
-| A-06 · referencias finales | 114 referencias compatibles, inventario íntegro y evaluación conforme a los criterios acordados. | Pendiente de decidir y ejecutar la campaña después del piloto. |
-| A-07 · niveles de conteo | 9.120 pares reproducibles, uint32 sin saturación, semillas y particiones por geometría, dependencia de la referencia declarada. | Cadena preparada; pendiente de aplicarla a las referencias finales aceptadas. |
-| A-08 · entrega verificable | Datos recuperables, manifiestos, hashes, comandos y ficha final coherentes con el informe. | Documentación y herramientas disponibles; pendiente de auditoría del conjunto final. |
+| A-01 · alcance explícito | Decisión de la dirección y expresión de límites en la entrega. | **Verificado** en la definición y entrega; la incorporación al manuscrito final se revisa con A-02. |
+| A-02 · representatividad | Justificación de escenarios, fuente, geometría y transporte. | **Parcial:** síntesis preparada; pendiente valoración e incorporación al informe. No se exige equivalencia instrumental. |
+| A-03 · receta reproducible | Versiones, tablas, geometrías, semillas, parámetros y huellas. | **Verificado documentalmente** para la campaña recibida; ficha consolidada, sin afirmar reconstrucción Geant4 local. |
+| A-04 · integración operativa | Registros de trabajos y posproceso SC3. | **Verificado** mediante registros de 1.026 filas completadas y coherencia de productos. |
+| A-05 · piloto y suficiencia | Evaluación según presupuesto y criterios registrados. | **Verificado:** piloto revisado; campaña con 1.710 bordes conformes y siete vistas bajo la meta descriptiva, conservadas conforme al acuerdo. |
+| A-06 · referencias finales | 114 referencias compatibles, íntegras y evaluadas. | **Verificado** desde los píxeles en f395570. |
+| A-07 · niveles de conteo | 9.120 pares reproducibles, uint32 y particiones por geometría. | **Verificado:** regeneración y 342 huellas de contenido coincidentes; referencia finita declarada. |
+| A-08 · entrega verificable | Datos recuperables, inventarios, comandos y ficha final. | **Parcial:** Git y reproducción verificados; ficha final preparada. Copia Drive pendiente y manuscrito final por consolidar. |
 
-La dirección revisará la evidencia de cierre. Ninguna prueba de software sustituye la evaluación del transporte y de la suficiencia estadística. La equivalencia con un instrumento real queda fuera de esta lista y requeriría un alcance adicional explícito.
+Estado actualizado al 2026-10-03: [ficha del conjunto](FICHA_CONJUNTO_OE1.md), [síntesis y figuras](SINTESIS_RESULTADOS_OE1.md) y [revisión directa](REVISION_DATOS_F395570.md). La dirección revisará la evidencia de cierre. Ninguna prueba de software sustituye la evaluación del transporte y de la suficiencia estadística. La equivalencia con un instrumento real queda fuera de esta lista y requeriría un alcance adicional explícito.

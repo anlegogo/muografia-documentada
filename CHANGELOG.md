@@ -1,5 +1,21 @@
 # Registro de cambios
 
+## Cuatro entregables de cierre documental — 2026-10-03
+
+- Ficha final del conjunto y síntesis académica con límites explícitos. Tres figuras científicas en PNG/PDF, generadas desde histogramas y pares verificados.
+- README, índice, matriz, pendientes y criterios A-01 a A-08 consolidados; retirados avisos ya superados. Conservada la cronología en Git y bitácora.
+- 114 métricas de vista coinciden con la evaluación, 96 enlaces locales comprobados y figuras inspeccionadas. Drive permanece fuera de estos cuatro puntos. [Ficha](objetivo-1/FICHA_CONJUNTO_OE1.md) · [Síntesis y figuras](objetivo-1/SINTESIS_RESULTADOS_OE1.md).
+
+## Revisión directa f395570 — 2026-10-03
+
+- 477 huellas y 114 matrices verificadas; evaluación completa reproducida desde píxeles.
+- 9.120 pares regenerados en memoria y 342 huellas de contenido coincidentes. [Informe](objetivo-1/REVISION_DATOS_F395570.md). Drive localizado, sin descarga ni auditoría de dataset-v2.
+
+## Revisión de campaña e037d09 — 2026-10-03
+
+- Registros de 1.026 filas completadas verificados; 25 archivos íntegros, 1.710 intervalos recalculados y 107 pruebas de la rama satisfactorias.
+- Siete vistas bajo la meta descriptiva conservadas según acuerdo. Se solicitan matrices ya generadas para revisión directa; no se propone otra campaña. [Informe](objetivo-1/REVISION_CAMPANA_E037D09.md).
+
 ## Preparación completa de campaña — 2026-10-02
 
 - Siete actividades completadas: criterios explícitos, análisis de incertidumbre, comparación geométrica, evaluador de 114 vistas, manifiesto candidato, 480 pares y guía SC3.

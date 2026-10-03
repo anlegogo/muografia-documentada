@@ -1,5 +1,25 @@
 # Bitácora de la revisión del OE1
 
+## Cuatro entregables de cierre documental — 2026-10-03
+
+- Autorización: completar los primeros cuatro puntos propuestos (ficha, figuras, criterios y síntesis). La verificación de Drive era el quinto y no se ejecutó.
+- Entradas: matrices de f395570, evaluación reproducida y contenido de pares verificado. [Ficha](FICHA_CONJUNTO_OE1.md) y [síntesis](SINTESIS_RESULTADOS_OE1.md) redactadas en forma impersonal.
+- Se generaron tres figuras en PNG/PDF y se inspeccionaron visualmente. Las 114 métricas coinciden con la evaluación; huellas de datos y ejemplo de pares verificadas. [Registro](figuras/cierre-2026-10-03/validacion.json).
+- Se sustituyeron estados obsoletos en la entrada, matriz, pendientes y criterios, conservando IDs e historial. No se alteraron originales ni receta.
+- Una primera generación no pudo escribir la caché de fuentes fuera del espacio de trabajo; se regeneró usando MPLCONFIGDIR dentro de tmp, sin errores. No se ejecutó transporte ni entrenamiento. Pendiente incorporación al manuscrito, valoración académica y revisión separada de distribución.
+
+## Revisión directa f395570 — 2026-10-03
+
+- Entradas recibidas por Git: fusión, imágenes y huellas. Se ejecutó evaluación local y regeneración binomial completa con NumPy 2.4.4.
+- [Resultados](REVISION_DATOS_F395570.md): 477 archivos íntegros, 114 referencias compatibles, 9.120 pares con contenido coincidente; 20.713/21.816 ROI con al menos 100 cuentas.
+- No se ejecutó transporte, no se descargó Drive y no se auditó el derivado dataset-v2. Siguiente paso: ficha final, copia de distribución e informe académico.
+
+## Revisión de campaña e037d09 — 2026-10-03
+
+- Se revisan registros, inventarios, evaluación y cambios operativos de estudiantes. [Evidencia y límites](REVISION_CAMPANA_E037D09.md).
+- Se reproducen los intervalos regionales y pasan 107 pruebas locales; no se reciben aún matrices de campaña. No se fusiona la rama ni se ejecuta transporte.
+- Siguiente paso: compartir histogramas/NPZ existentes, validar desde píxeles y formar los 9.120 pares dentro del OE1.
+
 ## Preparación completa de campaña — 2026-10-02
 
 - Por autorización de la dirección se completan las [siete actividades](PREPARACION_CAMPANA_114.md), usando los histogramas `ccbdce0` y el catálogo congelado.
