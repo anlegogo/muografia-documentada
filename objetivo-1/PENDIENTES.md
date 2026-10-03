@@ -1,5 +1,7 @@
 # Pendientes del OE1
 
+> Actualización 2026-10-03: [campaña e037d09 revisada](REVISION_CAMPANA_E037D09.md). La ejecución está respaldada por registros y resúmenes. Siguiente entrega: histogramas fusionados y NPZ completos; después revisión directa, pares y ficha final. Las siete vistas bajo la meta se conservan; no se ordena transporte adicional.
+
 > Estado posterior: [preparación completa de las siete actividades](PREPARACION_CAMPANA_114.md). P-03: empaquetado del piloto y evaluación de campaña comprobados localmente. P-01/P-04: decidir presupuesto y meta de calidad, ejecutar y revisar las referencias finales. El piloto no es el escenario de mayor columna nominal.
 
 > Actualización posterior — 2026-10-02: [piloto ccbdce0 reproducido desde los histogramas](REVISION_HISTOGRAMAS_PILOTO_CCBDCE0.md). La entrega respalda el flujo ejecutado en SC3 y el criterio de bordes para seis vistas. Quedan el criterio de suficiencia en roca, el presupuesto y la decisión de campaña; 344 M es una propuesta. Los estados anteriores se conservan como antecedente.

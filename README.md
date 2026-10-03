@@ -1,5 +1,7 @@
 # Muografía: documentación y seguimiento académico
 
+**Campaña reportada completa:** [revisión e037d09](objetivo-1/REVISION_CAMPANA_E037D09.md). Registros de 1.026 bloques terminados; 1.710 intervalos de borde recalculados y conformes; 107/114 vistas alcanzan la meta descriptiva de roca. Faltan los histogramas/NPZ para revisión directa y la generación de los 9.120 pares.
+
 **Preparación de campaña completada:** [siete actividades, criterios, presupuesto y guía de ejecución](objetivo-1/PREPARACION_CAMPANA_114.md). Comparación de 19 geometrías, manifiesto candidato de 114 vistas, 480 pares del piloto verificados y 106 pruebas satisfactorias. No se autoriza envío por esta preparación.
 
 **Piloto recibido y reproducido:** [revisión de los histogramas ccbdce0](objetivo-1/REVISION_HISTOGRAMAS_PILOTO_CCBDCE0.md). Se verificaron las seis vistas, 27 huellas y 90 regiones de borde. Los 344 M por vista siguen siendo un presupuesto candidato; la campaña no queda autorizada por esta revisión.

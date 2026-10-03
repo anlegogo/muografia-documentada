@@ -1,5 +1,7 @@
 # Matriz de cumplimiento del OE1
 
+> Estado 2026-10-03: [campaña reportada y revisión de evidencia](REVISION_CAMPANA_E037D09.md). 114 referencias declaradas; intervalos de borde reproducidos desde conteos regionales. Pendiente verificación desde matrices, generación de pares y cierre documental; OE1 continúa abierto.
+
 > Preparación posterior: [plan de 114 vistas y criterios](PREPARACION_CAMPANA_114.md). Se verificaron 480 pares del piloto y 106 pruebas; se analizaron las 19 geometrías. La producción y aceptación del conjunto final siguen pendientes.
 
 > Actualización posterior — 2026-10-02: [piloto ccbdce0 reproducido desde los histogramas](REVISION_HISTOGRAMAS_PILOTO_CCBDCE0.md). La entrega respalda el flujo ejecutado en SC3 y el criterio de bordes para seis vistas. Quedan el criterio de suficiencia en roca, el presupuesto y la decisión de campaña; 344 M es una propuesta. Los estados anteriores se conservan como antecedente.

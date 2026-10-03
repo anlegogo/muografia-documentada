@@ -1,5 +1,11 @@
 # Bitácora de la revisión del OE1
 
+## Revisión de campaña e037d09 — 2026-10-03
+
+- Se revisan registros, inventarios, evaluación y cambios operativos de estudiantes. [Evidencia y límites](REVISION_CAMPANA_E037D09.md).
+- Se reproducen los intervalos regionales y pasan 107 pruebas locales; no se reciben aún matrices de campaña. No se fusiona la rama ni se ejecuta transporte.
+- Siguiente paso: compartir histogramas/NPZ existentes, validar desde píxeles y formar los 9.120 pares dentro del OE1.
+
 ## Preparación completa de campaña — 2026-10-02
 
 - Por autorización de la dirección se completan las [siete actividades](PREPARACION_CAMPANA_114.md), usando los histogramas `ccbdce0` y el catálogo congelado.

@@ -1,5 +1,10 @@
 # Registro de cambios
 
+## Revisión de campaña e037d09 — 2026-10-03
+
+- Registros de 1.026 filas completadas verificados; 25 archivos íntegros, 1.710 intervalos recalculados y 107 pruebas de la rama satisfactorias.
+- Siete vistas bajo la meta descriptiva conservadas según acuerdo. Se solicitan matrices ya generadas para revisión directa; no se propone otra campaña. [Informe](objetivo-1/REVISION_CAMPANA_E037D09.md).
+
 ## Preparación completa de campaña — 2026-10-02
 
 - Siete actividades completadas: criterios explícitos, análisis de incertidumbre, comparación geométrica, evaluador de 114 vistas, manifiesto candidato, 480 pares y guía SC3.
