@@ -1,5 +1,7 @@
 # Muografía: documentación y seguimiento académico
 
+**Preparación local E1:** el [diagnóstico espacial](objetivo-2/DIAGNOSTICO_ESPACIAL_CGAN.md) confirma que conservar el total del borde puede coexistir con errores píxel a píxel. Se verificaron un componente experimental y sus gradientes, sin actualizar pesos. Falta fijar el coeficiente e integrar y verificar la recuperación; todavía no está preparado para GPU. El OE2 permanece abierto.
+
 **OE2 — repetición cGAN revisada:** se verificaron los 55 binarios, la recuperación exacta de las tres parejas, las seis continuaciones y su inferencia. C1 reduce el sesgo regional en dos parejas y lo aumenta en la tercera; el error de borde empeora en las tres y ninguna satisface los ocho controles. La [revisión independiente](objetivo-2/REVISION_REPETICION_F6518FF.md) confirma dependencia de la semilla o compromiso. No se concede aceptación física ni se amplía la campaña; el siguiente paso es revisar el diseño científico y los criterios de aceptación. El OE2 permanece abierto.
 
 **Estado del OE1 — 2026-10-03: cumplido y cerrado por decisión de la dirección bajo el alcance idealizado adoptado.** Datos, distribución, justificación e informe específico completos. [Registro de cierre](objetivo-1/CIERRE_OE1.md). No se requieren nuevas corridas para este alcance; no se declara aprobada la tesis completa.

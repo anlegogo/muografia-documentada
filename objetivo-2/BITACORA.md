@@ -1,5 +1,16 @@
 # Bitácora del OE2
 
+## 2026-10-04 — Diagnóstico espacial y preparación E1
+
+- Fecha y zona horaria: 2026-10-04, America/Bogota.
+- Actividad autorizada por la dirección: avance local sobre los pendientes de la revisión; diagnóstico, componente experimental y comprobación de gradientes, sin entrenamiento.
+- Entradas: main 866e286, entrega f6518ff auditada, seis predicciones finales, referencias/máscaras verificadas y checkpoint original de época 5.
+- Procedimiento: descomposición de errores regionales, reproducción del error de borde, contraejemplo con la función original, nueve pruebas analíticas y cuatro cálculos de gradientes sobre train en modo evaluación.
+- Evidencia: [diagnóstico y comandos](DIAGNOSTICO_ESPACIAL_CGAN.md), tabla completa, JSON de diagnóstico, comprobaciones y sondeo.
+- Resultado: el error del total mejora, pero el espacial empeora en las tres parejas. El candidato detecta redistribuciones invisibles al total y sus gradientes son finitos; una muestra presenta oposición local al gradiente base. Cero pasos de optimizador, estados G/D idénticos y reservas sin abrir.
+- Limitaciones: diagnóstico posterior al ensayo, sin identificación causal completa ni validación de calidad del nuevo componente. Cuatro muestras individuales no sustituyen el entrenamiento ni permiten fijar un coeficiente óptimo. No se observaron fallos de ejecución.
+- Pendientes: E1-03, fijación prospectiva del coeficiente/diseño mediante train; E1-04, integración y recuperación CPU; E1-05, nueva aceptación GPU antes del ensayo. OE2 y aceptación física pendientes.
+
 ## 2026-10-04 — Revisión binaria y numérica de la repetición R1–R3
 
 - Actividad: auditoría independiente de la entrega f6518ff y de los archivos compartidos en Drive, sin entrenamiento nuevo.

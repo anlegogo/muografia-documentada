@@ -1,0 +1,172 @@
+{
+  "schema": "oe2-spatial-diagnosis-v1",
+  "review_date": "2026-10-04",
+  "base_commit": "866e286ae0b1aa59c17f5ae46cd248a75305e19a",
+  "exploratory": true,
+  "training_performed": false,
+  "weights_modified": false,
+  "heldout_opened": false,
+  "physical_acceptance": false,
+  "causal_attribution_established": false,
+  "rows": 468,
+  "views_per_pair": 18,
+  "realizations_per_view": 20,
+  "definitions": {
+    "absolute_net_bias": "mean_k(abs(sum_p residual_kp)/sum_p reference_p)",
+    "pixel_error": "mean_k(sum_p abs(residual_kp)/sum_p reference_p)",
+    "cancellation_gap": "pixel_error - absolute_net_bias; equals 2*mean_k(min(positive_sum_k,negative_magnitude_sum_k))/reference_sum",
+    "regional_log_loss": "mean_k(abs(log1p(mean_p prediction_kp)-log1p(mean_p reference_p)))"
+  },
+  "summary": {
+    "R1": {
+      "edge": {
+        "C0": {
+          "absolute_net_bias_mean": 0.019498204496164052,
+          "pixel_error_mean": 0.10881698010611604,
+          "cancellation_gap_mean": 0.089318775609952,
+          "regional_log_loss_mean": 0.019702094280152502
+        },
+        "C1": {
+          "absolute_net_bias_mean": 0.006253233366190899,
+          "pixel_error_mean": 0.11447540677582496,
+          "cancellation_gap_mean": 0.10822217340963407,
+          "regional_log_loss_mean": 0.006215337340232376
+        }
+      },
+      "delta_C1_minus_C0": {
+        "absolute_net_bias_mean": -0.013244971129973153,
+        "pixel_error_mean": 0.005658426669708921,
+        "cancellation_gap_mean": 0.018903397799682073,
+        "regional_log_loss_mean": -0.013486756939920127
+      },
+      "views": {
+        "pixel_error_worse": 17,
+        "net_bias_better_pixel_worse": 11,
+        "regional_loss_better_pixel_worse": 11
+      }
+    },
+    "R2": {
+      "edge": {
+        "C0": {
+          "absolute_net_bias_mean": 0.023879643154911787,
+          "pixel_error_mean": 0.10652113415661599,
+          "cancellation_gap_mean": 0.0826414910017042,
+          "regional_log_loss_mean": 0.02420698994614893
+        },
+        "C1": {
+          "absolute_net_bias_mean": 0.01061977404894516,
+          "pixel_error_mean": 0.11120601451858968,
+          "cancellation_gap_mean": 0.10058624046964451,
+          "regional_log_loss_mean": 0.010522761387604267
+        }
+      },
+      "delta_C1_minus_C0": {
+        "absolute_net_bias_mean": -0.013259869105966627,
+        "pixel_error_mean": 0.0046848803619736895,
+        "cancellation_gap_mean": 0.017944749467940307,
+        "regional_log_loss_mean": -0.013684228558544665
+      },
+      "views": {
+        "pixel_error_worse": 18,
+        "net_bias_better_pixel_worse": 17,
+        "regional_loss_better_pixel_worse": 17
+      }
+    },
+    "R3": {
+      "edge": {
+        "C0": {
+          "absolute_net_bias_mean": 0.04743925374307875,
+          "pixel_error_mean": 0.1088181064020146,
+          "cancellation_gap_mean": 0.06137885265893585,
+          "regional_log_loss_mean": 0.048616612756937044
+        },
+        "C1": {
+          "absolute_net_bias_mean": 0.024530906774823825,
+          "pixel_error_mean": 0.10966528853172189,
+          "cancellation_gap_mean": 0.08513438175689807,
+          "regional_log_loss_mean": 0.024794976224326356
+        }
+      },
+      "delta_C1_minus_C0": {
+        "absolute_net_bias_mean": -0.022908346968254927,
+        "pixel_error_mean": 0.0008471821297072885,
+        "cancellation_gap_mean": 0.02375552909796222,
+        "regional_log_loss_mean": -0.02382163653261069
+      },
+      "views": {
+        "pixel_error_worse": 12,
+        "net_bias_better_pixel_worse": 12,
+        "regional_loss_better_pixel_worse": 12
+      }
+    }
+  },
+  "counterexample": {
+    "reference": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "prediction": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "exact_loss": 8.881784197001252e-16,
+    "permuted_loss": 8.881784197001252e-16,
+    "relative_pixel_error": 1.6,
+    "same_total_counts": true
+  },
+  "audit_sha256": "efe188d3f3a2c7a6a508cd1aa5a62bd536905bf3d3c8160a34a24de3b3f65074",
+  "comparison_sha256": {
+    "R1\\evaluacion\\comparacion-cgan.json": "565d333e25378d8d29359efc2969db36708779d96bfe22505c0f972bc9f9057b",
+    "R2\\evaluacion\\comparacion-cgan.json": "15cabb4a950f73980a0a75e439d7afbee691b0bd7ae7fff3d3e44d633c945afc",
+    "R3\\evaluacion\\comparacion-cgan.json": "c89511c82ec92ab1b74cc145cd04446acef579bb9ad33adfc01c8bd4fb927e5f"
+  },
+  "script_sha256": "090ed604f516aa15db5130265690c4d2e847d5556d3d8168cc59eeeb131c7146",
+  "loss_source_sha256": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "torch": "2.6.0+cpu",
+    "device": "cpu"
+  },
+  "limits": [
+    "Post hoc diagnosis on repeatedly used validation set; no new acceptance thresholds.",
+    "Regional loss invariance does not establish the cause of the complete adversarial optimization.",
+    "Views and thinnings share geometries and references; not independent replication."
+  ]
+}

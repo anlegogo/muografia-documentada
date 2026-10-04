@@ -1,0 +1,26 @@
+{
+  "schema": "oe2-edge-component-checks-v1",
+  "date": "2026-10-04",
+  "tests_run": 9,
+  "passed": 9,
+  "failed": 0,
+  "exit_code": 0,
+  "command": "python objetivo-2/herramientas/test_perdida_espacial_borde.py -v",
+  "training_performed": false,
+  "gpu_ready": false,
+  "source_sha256": {
+    "perdida_espacial_borde_experimental.py": "0d3900f7359659666d32c282a24f5bc5abcf73eb09b9ecb88cc9b0695927a082",
+    "test_perdida_espacial_borde.py": "b97673407b41675132bfb61b3ce69564b228f5677d75862cf28c1f356f08bfc9"
+  },
+  "checks": [
+    "exact_solution",
+    "permutation_detected",
+    "known_bias",
+    "sample_weighting",
+    "gradient_finite_difference",
+    "outside_mask_excluded",
+    "reject_empty_support",
+    "reject_zero_reference",
+    "reject_invalid_range_and_overflow"
+  ]
+}

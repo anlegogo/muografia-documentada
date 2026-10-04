@@ -1,5 +1,7 @@
 # Índice de documentación
 
+- [Diagnóstico espacial cGAN y preparación experimental E1](../objetivo-2/DIAGNOSTICO_ESPACIAL_CGAN.md).
+
 - [Verificación independiente de la repetición cGAN R1–R3: binarios, inferencia y resultado científico](../objetivo-2/REVISION_REPETICION_F6518FF.md).
 
 - [Instrucciones y verificación local de la repetición cGAN R1–R3](../objetivo-2/INSTRUCCIONES_REPETICION_CGAN_F05.md).

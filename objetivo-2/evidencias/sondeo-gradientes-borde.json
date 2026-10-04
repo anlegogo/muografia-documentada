@@ -1,0 +1,88 @@
+{
+  "schema": "oe2-edge-gradient-probe-v1",
+  "date": "2026-10-04",
+  "mode": "eval with autograd; four individual train samples, not a training batch",
+  "training_performed": false,
+  "optimizer_steps": 0,
+  "weights_unchanged": true,
+  "val_images_opened": false,
+  "heldout_opened": false,
+  "gpu_ready": false,
+  "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+  "mask_manifest_sha256": "df720c9d64735fc02ac8d3147f8a230f7a8fdcec7530f9d16351c049c9413530",
+  "before_state_sha256": {
+    "G": "73c70580e066740a43283e3a3172c2758391e27bd6ee8518075711dd1a7f3916",
+    "D": "be1747d6be094ac51e5287f154e7ef16baf83523b341b5dcda6482729ca49a33"
+  },
+  "after_state_sha256": {
+    "G": "73c70580e066740a43283e3a3172c2758391e27bd6ee8518075711dd1a7f3916",
+    "D": "be1747d6be094ac51e5287f154e7ef16baf83523b341b5dcda6482729ca49a33"
+  },
+  "script_sha256": "5180716ddb0b0947a533ea544954d6074798d829f7d8016c2ac8f73f38e71c74",
+  "candidate_sha256": "0d3900f7359659666d32c282a24f5bc5abcf73eb09b9ecb88cc9b0695927a082",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "torch": "2.6.0+cpu",
+    "cuda": null,
+    "device": "cpu",
+    "gpu": null,
+    "threads": 2,
+    "deterministic": true
+  },
+  "samples": [
+    {
+      "sample": [
+        "geo-train-01",
+        0,
+        0
+      ],
+      "baseline_loss": -21.33867881160195,
+      "edge_loss": 0.1499911770112288,
+      "baseline_gradient_norm": 25.060400621425718,
+      "edge_gradient_norm": 6.1405556333621805,
+      "edge_to_baseline_gradient_ratio_weight_one": 0.24503022621722303,
+      "gradient_cosine": 0.3801133759306374
+    },
+    {
+      "sample": [
+        "geo-train-02",
+        0,
+        0
+      ],
+      "baseline_loss": -20.21869293450716,
+      "edge_loss": 0.14498622001005174,
+      "baseline_gradient_norm": 72.04201553590086,
+      "edge_gradient_norm": 8.199544970764746,
+      "edge_to_baseline_gradient_ratio_weight_one": 0.11381615172438712,
+      "gradient_cosine": 0.7053412531921274
+    },
+    {
+      "sample": [
+        "geo-train-04",
+        0,
+        0
+      ],
+      "baseline_loss": -22.028239243445814,
+      "edge_loss": 0.14312910623402525,
+      "baseline_gradient_norm": 40.41163326843343,
+      "edge_gradient_norm": 6.265732910944311,
+      "edge_to_baseline_gradient_ratio_weight_one": 0.15504775244604224,
+      "gradient_cosine": -0.11360733418667171
+    },
+    {
+      "sample": [
+        "geo-train-10",
+        0,
+        0
+      ],
+      "baseline_loss": -22.146029474830446,
+      "edge_loss": 0.1469812722444009,
+      "baseline_gradient_norm": 44.05765014202381,
+      "edge_gradient_norm": 9.4038925870825,
+      "edge_to_baseline_gradient_ratio_weight_one": 0.21344516915378384,
+      "gradient_cosine": 0.054782862791319685
+    }
+  ],
+  "limitation": "Local gradient directions at initial checkpoint, fixed eval mode and one sample at a time; no critic updates, optimizer, recovery or quality validation. Does not select a coefficient."
+}

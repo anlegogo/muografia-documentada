@@ -1,5 +1,12 @@
 # Registro de cambios
 
+## 2026-10-04 — Diagnóstico espacial y componente experimental E1
+
+- Se separó el error del total de cuentas y el error píxel a píxel en 468 combinaciones de la entrega R1–R3. En las tres parejas mejora el total del borde mientras empeora su distribución espacial.
+- Se comprobó la limitación de la pérdida regional mediante un contraejemplo y se implementó un componente espacial aislado con nueve controles satisfactorios.
+- Cuatro sondeos train con la red real verifican gradientes finitos y estados idénticos, sin pasos de optimizador. Se conserva la oposición local observada en una muestra.
+- Se documentan E1-01 a E1-05, evidencia y reproducción. Coeficiente, integración, recuperación y prueba GPU pendientes; sin autorización de campaña ni aceptación física. [Diagnóstico](objetivo-2/DIAGNOSTICO_ESPACIAL_CGAN.md).
+
 ## 2026-10-04 — Verificación independiente de la repetición cGAN R1–R3
 
 - Se verificaron los 55 binarios de Drive y los estados de los 18 checkpoints de la entrega f6518ff. Las tres recuperaciones técnicas conservan igualdad exacta.
