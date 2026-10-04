@@ -1,5 +1,15 @@
 # Bitácora de preparación del OE3
 
+## Preparación del complemento OE3-C1 — 2026-10-04, Colombia
+
+- Se fijan cuatro fracciones y ocho modelos congelados; se reutilizan 3.840 predicciones f05 y quedan 11.520 nuevas. No se entrena ni se simulan muones.
+- Se incorpora un benchmark operativo frente a la entrada al 50 %, declarado posterior a resultados conocidos; no se presenta como umbral original ni aceptación física. Se calcula el mínimo muestreado sin asumir monotonía.
+- Se implementan SNR/CNR locales con soporte y denominadores explícitos. El contraste de cuentas no se renombra como opacidad reconstruida.
+- Pasan ocho pruebas analíticas y dos de flujo. La comprobación real cGAN/CPU reproduce cuatro salidas f05 con diferencia máxima 2,3544e-6; se comprueban formas de otras fracciones sin métricas científicas.
+- El bloque f05 reproduce exactamente los resúmenes C2 y añade 9.774 filas locales. Se publican tablas, recibo e inventario; CUDA y las nuevas inferencias científicas siguen pendientes.
+- [Instrucciones para estudiantes](INSTRUCCIONES_COMPLEMENTO_OE3.md), incluyendo ejecución por modelo, integridad, reanudación y entrega. No se declara cierre del OE3 ni se inicia el informe final.
+
+
 ## Revisión directa de propuesta aprobada — 2026-10-04, Colombia
 
 - Se reabrió el PDF de 35 páginas, se extrajo su texto y se inspeccionaron visualmente las páginas PDF 26 y 29. Se registra SHA-256; queda superada la limitación de lectura anterior.
@@ -36,3 +46,4 @@
 - OE3-P01 verificado; OE3-P02 y P04 pendientes, P03 parcial. Se espera confirmar objetivo oficial y requisitos de calidad. Continúa redacción del manuscrito sin otra GPU.
 
 [Análisis y evidencia](README.md).
+

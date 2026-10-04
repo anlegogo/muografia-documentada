@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-04",
+  "config_sha256": "9b37bf59180a2625782dd54484de3c7189f3121ef886cda6f0298b929e87f9ef",
+  "baseline_rows": {
+    "images": 4320,
+    "regions": 1134,
+    "contrasts": 54,
+    "local_metrics": 9774,
+    "repeated_signal": 540
+  },
+  "c2_summaries_exact": true,
+  "maximum_summary_difference": 0,
+  "common_local_support_f05": {
+    "snr_local_intensity": 43,
+    "cnr_local_signed": 46,
+    "contrast_counts": 46
+  },
+  "local_geometry_ok_rows": 8688,
+  "analytic_tests_passed": 8,
+  "flow_tests_passed": 2,
+  "preflight": {
+    "data_files": 8,
+    "models": 8,
+    "arrays_opened": false,
+    "passed": true,
+    "existing_f05_images": 3840,
+    "reused_f05": true,
+    "registry_verified": true,
+    "complement_sha256": "9b37bf59180a2625782dd54484de3c7189f3121ef886cda6f0298b929e87f9ef",
+    "new_images_planned": 11520
+  },
+  "cuda_verified": false,
+  "full_multifraction_evaluation_executed": false,
+  "physical_equivalence": false,
+  "opacity_reconstructed": false
+}

@@ -1,0 +1,151 @@
+{
+  "schema": "oe3-complemento-v1",
+  "date": "2026-10-04",
+  "fractions": [
+    0.01,
+    0.05,
+    0.1,
+    0.5
+  ],
+  "new_fractions": [
+    0.01,
+    0.1,
+    0.5
+  ],
+  "models": [
+    "unet_original",
+    "cgan_original",
+    "B1_C0",
+    "B1_C1",
+    "B2_C0",
+    "B2_C1",
+    "B3_C0",
+    "B3_C1"
+  ],
+  "geometry_order": [
+    "geo-test-01",
+    "geo-test-02",
+    "geo-test-03",
+    "geo-gen-01"
+  ],
+  "ef01_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+  "registry_sha256": "ac3d58c48a5d18dd23cbbf1f3d57e526d5abe5557014fe559dc0783e29196afd",
+  "tool_sha256": {
+    "complemento_oe3.py": "3bbbce15d8d9f3b4723d8336cd8f03d922fef957be09db15e416cfac7f4861ac",
+    "metricas_locales_oe3.py": "00bb18d31ccf04de5fb0651a269dc2c57053cc10c81fa8f0cad6986ce19338ad"
+  },
+  "image_benchmark_fraction": 0.5,
+  "image_benchmark_thresholds": {
+    "geo-test-01": {
+      "0": {
+        "ssim": 0.9124822815414012,
+        "psnr": 32.670556253923685
+      },
+      "1": {
+        "ssim": 0.9120682172349036,
+        "psnr": 32.62453978548656
+      },
+      "2": {
+        "ssim": 0.9129282100566387,
+        "psnr": 32.624157102062235
+      },
+      "3": {
+        "ssim": 0.9123749302172423,
+        "psnr": 32.61741373853487
+      },
+      "4": {
+        "ssim": 0.9129885802994668,
+        "psnr": 32.663645554198645
+      },
+      "5": {
+        "ssim": 0.9133277033054232,
+        "psnr": 32.675384792013894
+      }
+    },
+    "geo-test-02": {
+      "0": {
+        "ssim": 0.9183710773405611,
+        "psnr": 32.76760375725518
+      },
+      "1": {
+        "ssim": 0.9200845918464601,
+        "psnr": 32.82021566633696
+      },
+      "2": {
+        "ssim": 0.9194922193701625,
+        "psnr": 32.815427162944275
+      },
+      "3": {
+        "ssim": 0.9190991632762998,
+        "psnr": 32.80538863417556
+      },
+      "4": {
+        "ssim": 0.9185190171730697,
+        "psnr": 32.7933222739742
+      },
+      "5": {
+        "ssim": 0.9194618819889724,
+        "psnr": 32.77545703317894
+      }
+    },
+    "geo-test-03": {
+      "0": {
+        "ssim": 0.9431026034874082,
+        "psnr": 33.88957566791742
+      },
+      "1": {
+        "ssim": 0.943149865873456,
+        "psnr": 33.82680589123848
+      },
+      "2": {
+        "ssim": 0.9434286215023041,
+        "psnr": 33.894524830630864
+      },
+      "3": {
+        "ssim": 0.9437443105036974,
+        "psnr": 33.89741998989485
+      },
+      "4": {
+        "ssim": 0.9430528788063883,
+        "psnr": 33.830188217884775
+      },
+      "5": {
+        "ssim": 0.9425299613301873,
+        "psnr": 33.818016811433694
+      }
+    },
+    "geo-gen-01": {
+      "0": {
+        "ssim": 0.9191431007069588,
+        "psnr": 32.72749268059576
+      },
+      "1": {
+        "ssim": 0.9194306183822214,
+        "psnr": 32.75544726525156
+      },
+      "2": {
+        "ssim": 0.9199089407696486,
+        "psnr": 32.76257854353257
+      },
+      "3": {
+        "ssim": 0.9204036952253044,
+        "psnr": 32.76491824347844
+      },
+      "4": {
+        "ssim": 0.9199110460648239,
+        "psnr": 32.77431534670461
+      },
+      "5": {
+        "ssim": 0.9191905269682229,
+        "psnr": 32.72652781575128
+      }
+    }
+  },
+  "threshold_source_csv_sha256": "024d5103627d176a645bfe4161f95d239f1d045b9413a7d2dcd0d812dddc0b74",
+  "threshold_rule": "Both SSIM and PSNR at least raw50 mean in every view, compared with full reference; descriptive benchmark, not absolute equivalence.",
+  "threshold_origin": "Defined after previous f05 and raw-curve results; fixed before additional fraction inference. Not original proposal thresholds.",
+  "smoke_max_abs_error": 0.0001,
+  "training_allowed": false,
+  "opacity_inversion_available": false,
+  "physical_equivalence_claim_allowed": false
+}

@@ -1,10 +1,12 @@
-# OE3: curvas descriptivas de exposición
+# OE3: evaluación de fracciones de entrada
+
+**Complemento OE3-C1 preparado — 2026-10-04:** se incorporan el [protocolo](PROTOCOLO_COMPLEMENTO_OE3.md), las [instrucciones para estudiantes](INSTRUCCIONES_COMPLEMENTO_OE3.md) y la [verificación local](VERIFICACION_COMPLEMENTO_OE3.md). Se reutiliza el bloque 5 % y se solicitan 11.520 inferencias al 1 %, 10 % y 50 % con los ocho modelos congelados. No hay entrenamiento ni nueva simulación. Esta indicación sustituye las rutas históricas sin GPU que aparecen más abajo, referidas exclusivamente al análisis descriptivo anterior. La evaluación multifracción completa está pendiente.
 
 **Revisión directa de la propuesta aprobada — 2026-10-04:** se verificaron las fases 3 y 4: requieren detectabilidad local (incluida SNR), evaluación de redes a distintas fracciones y umbrales de calidad predefinidos, sin valores operativos fijados en el PDF. El desglose al 5 % conserva su validez, pero no completa esos compromisos. [Revisión y pendientes OE3-P05/P06](../docs/REVISION_PROPUESTA_APROBADA.md). No se exige campaña de campo; se mantiene aplazada la redacción del informe final.
 
 **Desglose experimental ejecutado:** [comparación por vista y región](RESULTADO_EXPERIMENTAL_OE3.md). La cGAN al 5 % supera SSIM/PSNR de la entrada al 10 % en 24/24 vistas y 480/480 correspondencias, con deterioro de Q en 24/24 vistas. Se cuantifica una reducción descriptiva 2:1 de conteos bajo esas métricas; no un factor físico aceptado ni el máximo alcanzable. No se requiere otra GPU para reproducir este balance. La redacción del informe final se aplaza hasta concluir la revisión experimental, por indicación de la dirección.
 
-2026-10-04, Colombia. Análisis de la dirección sobre el catálogo ya disponible, posterior a la evaluación final del OE2. Base del repositorio: `1214307c525ace12c978ede5336fcf893abad7c7`. Se amplía la preparación del OE3 por solicitud de continuar el trabajo local; la redacción oficial del objetivo sigue pendiente de confirmación. No se declara su cumplimiento.
+2026-10-04, Colombia. Análisis de la dirección sobre el catálogo ya disponible, posterior a la evaluación final del OE2. Base del repositorio: `1214307c525ace12c978ede5336fcf893abad7c7`. Se amplía la preparación del OE3 por solicitud de continuar el trabajo local; la redacción oficial del objetivo quedó confirmada mediante la revisión directa de la propuesta. No se declara su cumplimiento.
 
 ## Pregunta y método
 
@@ -61,7 +63,7 @@ Las referencias son de alta estadística finita, con ruido; las imágenes reduci
 | OE3-P03: factor alcanzable | parcial | Desglose ejecutado: razón descriptiva 2:1 bajo SSIM/PSNR en todas las vistas; 10:1 no respaldado conjuntamente. Factor físico y máximo no demostrados. |
 | OE3-P04: manuscrito | pendiente | Aplazado por indicación de la dirección hasta culminar revisión experimental; no se solicita redacción a los estudiantes en esta etapa. |
 
-No se solicita otra campaña ni entrenamiento. La indicación anterior de incorporar el manuscrito queda aplazada por la dirección; primero se completa la revisión experimental. La dirección debe confirmar la formulación oficial y el criterio científico antes de afirmar un factor alcanzable; si no se demuestra bajo ese criterio, se reportará esa limitación. El cierre técnico de la entrega OE2 no cambia por este análisis.
+No se solicita otra campaña ni entrenamiento. La indicación anterior de incorporar el manuscrito queda aplazada por la dirección; primero se completa la revisión experimental. La formulación oficial ya fue confirmada; el criterio científico debe distinguirse del benchmark operativo del complemento antes de afirmar un factor alcanzable; si no se demuestra bajo ese criterio, se reportará esa limitación. El cierre técnico de la entrega OE2 no cambia por este análisis.
 
 ## Evidencia y reproducción
 
@@ -102,7 +104,8 @@ La revisión de criterio y la síntesis pueden realizarse con la evidencia conse
 
 ## Pendientes identificados en la propuesta
 
-- **OE3-P05, pendiente:** evaluación de redes con distintas fracciones de entrada; las curvas sin red no la sustituyen.
-- **OE3-P06, pendiente:** SNR local y correspondencia entre contraste de cuentas y contraste de opacidad.
+- **OE3-P05, preparado:** herramientas y prueba local disponibles; pendientes 11.520 inferencias nuevas y evaluación conjunta. Las curvas sin red no sustituyen esta ejecución.
+- **OE3-P06, parcial:** SNR/CNR definidos y calculados al 5 %; otras fracciones pendientes. El contraste de cuentas continúa identificado como indicador sustituto; no se ha reconstruido opacidad.
 
-Criterios de cierre y secuencia en la [revisión de propuesta](../docs/REVISION_PROPUESTA_APROBADA.md). P03 queda condicionado a estos análisis y P02; no se inicia automáticamente otra campaña.
+Criterios de cierre y secuencia en la [revisión de propuesta](../docs/REVISION_PROPUESTA_APROBADA.md). P03 queda condicionado a estos análisis y P02. El complemento autoriza inferencia de pesos existentes; el informe final sigue aplazado.
+

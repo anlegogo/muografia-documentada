@@ -1,5 +1,9 @@
 # Índice de documentación
 
+- [OE3-C1: protocolo de evaluación multifracción y métricas locales](../objetivo-3/PROTOCOLO_COMPLEMENTO_OE3.md).
+- [OE3-C1: comandos y entrega para estudiantes](../objetivo-3/INSTRUCCIONES_COMPLEMENTO_OE3.md).
+- [OE3-C1: verificación local y evidencia al 5 %](../objetivo-3/VERIFICACION_COMPLEMENTO_OE3.md).
+
 - [Propuesta aprobada: requisitos reales y pendientes experimentales OE2/OE3](REVISION_PROPUESTA_APROBADA.md).
 
 - [OE3: resultado experimental por vista/región y reducción descriptiva](../objetivo-3/RESULTADO_EXPERIMENTAL_OE3.md).
@@ -150,3 +154,4 @@ Los Markdown originales de los estudiantes permanecen dentro de `originales/`; s
 - [Guía operativa C0/C1 y evidencia local](../objetivo-2/INSTRUCCIONES_CONTINUACION_CGAN_F05.md): recuperación de G/D y dos optimizadores, aceptación GPU, evaluación por anomalía y entrega.
 
 - [Índice verificado de pesos y predicciones E1](../objetivo-2/INDICE_ARTEFACTOS_E1.md).
+

@@ -1,0 +1,3662 @@
+[
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 0,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 999,
+    "match_fraction": 0.9891089108910891,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.02621579273002132,
+        "absolute_error": 0.11579247744457874,
+        "sign_inversions": 9
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.02589356514628329,
+        "absolute_error": 0.06340487421441612,
+        "sign_inversions": 17
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.011160614631886173,
+        "absolute_error": 0.05359341761471541,
+        "sign_inversions": 13
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.024010076772171745,
+        "absolute_error": 0.061521385840304574,
+        "sign_inversions": 15
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.01378246539568762,
+        "absolute_error": 0.05129377446382044,
+        "sign_inversions": 13
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0038377622203703164,
+        "absolute_error": 0.04153330278559925,
+        "sign_inversions": 8
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.025308527088994733,
+        "absolute_error": 0.027220137595064316,
+        "sign_inversions": 4
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03402954427300095,
+        "absolute_error": 0.023422665885330346,
+        "sign_inversions": 3
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.022614836625665914,
+        "absolute_error": 0.060126145693798747,
+        "sign_inversions": 17
+      }
+    },
+    "reference_contrast": -0.037511309068132825
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 0,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 179,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.8361121285331506,
+        "absolute_error": 0.736240302970081,
+        "sign_inversions": 3
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.025812791594706473,
+        "absolute_error": 0.31582943714429634,
+        "sign_inversions": 4
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.015239470224897462,
+        "absolute_error": 0.32640275851410544,
+        "sign_inversions": 9
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.08772372959554357,
+        "absolute_error": 0.42936595833454644,
+        "sign_inversions": 18
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0247222219659367,
+        "absolute_error": 0.3169200067730661,
+        "sign_inversions": 6
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.020623818737389575,
+        "absolute_error": 0.32101841000161324,
+        "sign_inversions": 7
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.10558975020716295,
+        "absolute_error": 0.44723197894616573,
+        "sign_inversions": 20
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.1326458695664441,
+        "absolute_error": 0.47428809830544694,
+        "sign_inversions": 20
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.1926556360474229,
+        "absolute_error": 0.5342978647864258,
+        "sign_inversions": 20
+      }
+    },
+    "reference_contrast": 0.34164222873900285
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 1,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1011,
+    "match_fraction": 0.9882697947214076,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03379181696107752,
+        "absolute_error": 0.10622264542668244,
+        "sign_inversions": 10
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.039052532465060824,
+        "absolute_error": 0.06952872294125137,
+        "sign_inversions": 20
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.012892325062481363,
+        "absolute_error": 0.029760467166499632,
+        "sign_inversions": 8
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.05574444215439682,
+        "absolute_error": 0.08622063263058735,
+        "sign_inversions": 20
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.016774674165688896,
+        "absolute_error": 0.04725086464187944,
+        "sign_inversions": 16
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.0030688712080229165,
+        "absolute_error": 0.03600495090678667,
+        "sign_inversions": 10
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.008580001889541167,
+        "absolute_error": 0.03998332554975396,
+        "sign_inversions": 13
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.029538514437978253,
+        "absolute_error": 0.06001470491416879,
+        "sign_inversions": 17
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.003410446290937097,
+        "absolute_error": 0.030621085425689597,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": 0.030476190476190546
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 1,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 86,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 17,
+        "invalid_realizations": 3,
+        "contrast_mean": 0.8929498894031767,
+        "absolute_error": 1.3397399472420353,
+        "sign_inversions": 8
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.003798311154655043,
+        "absolute_error": 0.2414124168146937,
+        "sign_inversions": 11
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.07413741336838427,
+        "absolute_error": 0.20040907354556586,
+        "sign_inversions": 5
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.14753723090055684,
+        "absolute_error": 0.1187921001230198,
+        "sign_inversions": 1
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.2000091017211548,
+        "absolute_error": 0.09519379875055205,
+        "sign_inversions": 0
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.1500827673294316,
+        "absolute_error": 0.11463125370796387,
+        "sign_inversions": 2
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.18364520027307016,
+        "absolute_error": 0.10607000629744223,
+        "sign_inversions": 0
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.12055432884061687,
+        "absolute_error": 0.13125254379146697,
+        "sign_inversions": 2
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.1902261908320789,
+        "absolute_error": 0.13408066562562213,
+        "sign_inversions": 3
+      }
+    },
+    "reference_contrast": 0.24521072796934873
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 2,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 995,
+    "match_fraction": 0.9871031746031746,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03283220950700979,
+        "absolute_error": 0.07616115078457776,
+        "sign_inversions": 8
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.033602204564824864,
+        "absolute_error": 0.035544155963554855,
+        "sign_inversions": 20
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0031936984391966903,
+        "absolute_error": 0.030934180826038347,
+        "sign_inversions": 10
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.05586802488964219,
+        "absolute_error": 0.059650381887914494,
+        "sign_inversions": 19
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.009793335323358816,
+        "absolute_error": 0.026029543107308865,
+        "sign_inversions": 14
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.015027828312556802,
+        "absolute_error": 0.02405511489861183,
+        "sign_inversions": 15
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.006157530018305313,
+        "absolute_error": 0.01942963841729478,
+        "sign_inversions": 10
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.02803566317398165,
+        "absolute_error": 0.0353459012029804,
+        "sign_inversions": 17
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.006513968824569549,
+        "absolute_error": 0.02153763114321595,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.0019419513987299908
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 2,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 10,
+    "match_fraction": 1.0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 3,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1207,
+    "match_fraction": 0.9451840250587314,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.0378255601593342,
+        "absolute_error": 0.13411810801363083,
+        "sign_inversions": 8
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.002431430942727547,
+        "absolute_error": 0.043198169603634734,
+        "sign_inversions": 11
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.008711085421620857,
+        "absolute_error": 0.0523906758826627,
+        "sign_inversions": 13
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.025575043257117836,
+        "absolute_error": 0.06634178191802502,
+        "sign_inversions": 14
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0025292739300409152,
+        "absolute_error": 0.043992151081781325,
+        "sign_inversions": 9
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.0004066859966323666,
+        "absolute_error": 0.04203495075398149,
+        "sign_inversions": 10
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03435420468380025,
+        "absolute_error": 0.025459696400634828,
+        "sign_inversions": 2
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.059946210987305605,
+        "absolute_error": 0.02859282181942635,
+        "sign_inversions": 0
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.003032809569227157,
+        "absolute_error": 0.04609831869654305,
+        "sign_inversions": 12
+      }
+    },
+    "reference_contrast": -0.04076673866090719
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 3,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 205,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.3751368161400267,
+        "absolute_error": 0.4788258170986464,
+        "sign_inversions": 6
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.02094497728609329,
+        "absolute_error": 0.21634315830712705,
+        "sign_inversions": 6
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.09706428516554802,
+        "absolute_error": 0.16960530471954524,
+        "sign_inversions": 3
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.08571802329073411,
+        "absolute_error": 0.15236455181707212,
+        "sign_inversions": 4
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.02525357787728983,
+        "absolute_error": 0.26254171347051025,
+        "sign_inversions": 15
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.033271871351427625,
+        "absolute_error": 0.20401626424179273,
+        "sign_inversions": 8
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.04088685413595434,
+        "absolute_error": 0.19682960094831814,
+        "sign_inversions": 8
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.16527531610284257,
+        "absolute_error": 0.087300754878507,
+        "sign_inversions": 0
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.17039299695086768,
+        "absolute_error": 0.08689961859394468,
+        "sign_inversions": 0
+      }
+    },
+    "reference_contrast": 0.23728813559322037
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 4,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1024,
+    "match_fraction": 0.9884169884169884,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.025963681431759655,
+        "absolute_error": 0.09887378684283146,
+        "sign_inversions": 9
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.038328981461839585,
+        "absolute_error": 0.04587782693253226,
+        "sign_inversions": 20
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.010758635840329734,
+        "absolute_error": 0.031292568263947426,
+        "sign_inversions": 14
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03498401139714546,
+        "absolute_error": 0.04657782496674663,
+        "sign_inversions": 17
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.020880786214542722,
+        "absolute_error": 0.03706724413798464,
+        "sign_inversions": 16
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.00030964671164083747,
+        "absolute_error": 0.02276921103911052,
+        "sign_inversions": 11
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.023179861421944604,
+        "absolute_error": 0.02822688041278908,
+        "sign_inversions": 5
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.016587268483962903,
+        "absolute_error": 0.01994678123583148,
+        "sign_inversions": 4
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.016397893179764207,
+        "absolute_error": 0.019891107712504148,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": -0.007548845470692678
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 4,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 122,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.21758302559502915,
+        "absolute_error": 0.6055289570058333,
+        "sign_inversions": 12
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.01632402531728629,
+        "absolute_error": 0.07901515681575733,
+        "sign_inversions": 14
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.043154599859902346,
+        "absolute_error": 0.10867183831730212,
+        "sign_inversions": 13
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.18140459320990063,
+        "absolute_error": 0.24409572470837165,
+        "sign_inversions": 20
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.05137945807183092,
+        "absolute_error": 0.11407058957030196,
+        "sign_inversions": 16
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.02114198291166402,
+        "absolute_error": 0.08960242817095608,
+        "sign_inversions": 12
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.18298751775273567,
+        "absolute_error": 0.24567864925120678,
+        "sign_inversions": 20
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.09529108386698744,
+        "absolute_error": 0.15798221536545848,
+        "sign_inversions": 20
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.17399528567725467,
+        "absolute_error": 0.23668641717572575,
+        "sign_inversions": 20
+      }
+    },
+    "reference_contrast": 0.06269113149847105
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 5,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 871,
+    "match_fraction": 0.986409966024915,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.01611590490056547,
+        "absolute_error": 0.10024537349683023,
+        "sign_inversions": 9
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.04448907313055774,
+        "absolute_error": 0.0273922574394595,
+        "sign_inversions": 1
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.006708902509876197,
+        "absolute_error": 0.03736129374734697,
+        "sign_inversions": 8
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.054208255344561584,
+        "absolute_error": 0.04293481340009328,
+        "sign_inversions": 3
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.007596159421636145,
+        "absolute_error": 0.03228428776379499,
+        "sign_inversions": 7
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.004772316479325828,
+        "absolute_error": 0.03305538863768988,
+        "sign_inversions": 8
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.010573400933585992,
+        "absolute_error": 0.040939464765281944,
+        "sign_inversions": 12
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.0020901794110750214,
+        "absolute_error": 0.03717969237583328,
+        "sign_inversions": 9
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.004184931464763314,
+        "absolute_error": 0.034482171569347415,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.02548584493309125
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 5,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 34,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.10925047175047173,
+        "absolute_error": 0.6454346822767876,
+        "sign_inversions": 11
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.009720287708568975,
+        "absolute_error": 0.19393081402435838,
+        "sign_inversions": 13
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.23247552530179819,
+        "absolute_error": 0.4166860516175876,
+        "sign_inversions": 20
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.20007846878187596,
+        "absolute_error": 0.38428899509766534,
+        "sign_inversions": 20
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.2169399346533722,
+        "absolute_error": 0.40115046096916157,
+        "sign_inversions": 20
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.26146538874713865,
+        "absolute_error": 0.44567591506292803,
+        "sign_inversions": 20
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.026869229054523536,
+        "absolute_error": 0.21107975537031293,
+        "sign_inversions": 13
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.2703130897933487,
+        "absolute_error": 0.45452361610913805,
+        "sign_inversions": 20
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.10135187067570517,
+        "absolute_error": 0.28556239699149455,
+        "sign_inversions": 18
+      }
+    },
+    "reference_contrast": 0.18421052631578938
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-02",
+    "view": 0,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 273,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.06716999944188853,
+        "absolute_error": 0.27497898916543256,
+        "sign_inversions": 9
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.047865045125094284,
+        "absolute_error": 0.028673615178881885,
+        "sign_inversions": 2
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.013326801806320749,
+        "absolute_error": 0.0952289031241806,
+        "sign_inversions": 9
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.1766166721782359,
+        "absolute_error": 0.11662611950936479,
+        "sign_inversions": 0
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.14990199341360205,
+        "absolute_error": 0.08991144074473097,
+        "sign_inversions": 0
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.041189175474345224,
+        "absolute_error": 0.10117972814321632,
+        "sign_inversions": 13
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.06375022172972397,
+        "absolute_error": 0.03925026675986536,
+        "sign_inversions": 3
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.05946921197725363,
+        "absolute_error": 0.03745321690296453,
+        "sign_inversions": 2
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.08409604642526078,
+        "absolute_error": 0.04463990928264996,
+        "sign_inversions": 1
+      }
+    },
+    "reference_contrast": -0.0599905526688711
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-02",
+    "view": 1,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 378,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.10975513792540303,
+        "absolute_error": 0.1928155782657763,
+        "sign_inversions": 7
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.028684791297136913,
+        "absolute_error": 0.06023818935538944,
+        "sign_inversions": 18
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.014537725598111067,
+        "absolute_error": 0.07620500264025842,
+        "sign_inversions": 12
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.006381455877211372,
+        "absolute_error": 0.0543249301247001,
+        "sign_inversions": 10
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.040697399914553074,
+        "absolute_error": 0.0413626096220797,
+        "sign_inversions": 3
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.06240425970469312,
+        "absolute_error": 0.04763756985489422,
+        "sign_inversions": 1
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.07606652324378774,
+        "absolute_error": 0.10761992130204028,
+        "sign_inversions": 19
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.024124574684958662,
+        "absolute_error": 0.034493055564080104,
+        "sign_inversions": 5
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.003860066630365355,
+        "absolute_error": 0.0397909784750893,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": 0.031553398058252524
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-02",
+    "view": 2,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 439,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.005362423928195609,
+        "absolute_error": 0.226006093879497,
+        "sign_inversions": 9
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.04322280042207394,
+        "absolute_error": 0.02793092474166938,
+        "sign_inversions": 2
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.10259110608322228,
+        "absolute_error": 0.08487651675323739,
+        "sign_inversions": 3
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0506128420274,
+        "absolute_error": 0.08970674045633695,
+        "sign_inversions": 16
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.08276527726954011,
+        "absolute_error": 0.0566848482954414,
+        "sign_inversions": 1
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.11022342758214534,
+        "absolute_error": 0.07449780888748424,
+        "sign_inversions": 0
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.027313653815362732,
+        "absolute_error": 0.048510332203613345,
+        "sign_inversions": 8
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.017191553476550415,
+        "absolute_error": 0.04296824741523027,
+        "sign_inversions": 8
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.08496336917074405,
+        "absolute_error": 0.05302771854478587,
+        "sign_inversions": 0
+      }
+    },
+    "reference_contrast": -0.03909389842893696
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-02",
+    "view": 3,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 352,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.16581388247704765,
+        "absolute_error": 0.1605708429786116,
+        "sign_inversions": 3
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.1163210217236141,
+        "absolute_error": 0.03004828265827584,
+        "sign_inversions": 0
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.05148562586507632,
+        "absolute_error": 0.0683004665404238,
+        "sign_inversions": 6
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.14933797231439327,
+        "absolute_error": 0.0772183482756139,
+        "sign_inversions": 0
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0032472348931848693,
+        "absolute_error": 0.08893491728712523,
+        "sign_inversions": 8
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.06704053115466505,
+        "absolute_error": 0.15859880710467766,
+        "sign_inversions": 19
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.017288446556417526,
+        "absolute_error": 0.07550743413718328,
+        "sign_inversions": 8
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03843337309361521,
+        "absolute_error": 0.053692999429494306,
+        "sign_inversions": 3
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.02633705830935697,
+        "absolute_error": 0.06682625525755106,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.09155827595001265
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-02",
+    "view": 4,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 354,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.01525734085364559,
+        "absolute_error": 0.21363971822481248,
+        "sign_inversions": 12
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.02384216231234877,
+        "absolute_error": 0.029134933565693567,
+        "sign_inversions": 4
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03110893257108548,
+        "absolute_error": 0.0645560936916377,
+        "sign_inversions": 8
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.011277971372107265,
+        "absolute_error": 0.04469489652062886,
+        "sign_inversions": 10
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.06046253375968227,
+        "absolute_error": 0.059013570796240054,
+        "sign_inversions": 2
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.01663640471651483,
+        "absolute_error": 0.05885368624276758,
+        "sign_inversions": 14
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0718326664108388,
+        "absolute_error": 0.061491371737337694,
+        "sign_inversions": 1
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.018407288766502123,
+        "absolute_error": 0.04152502707828,
+        "sign_inversions": 14
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.02094623245953075,
+        "absolute_error": 0.027954828066201382,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": 0.012084592145015005
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-02",
+    "view": 5,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 311,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.45341968989555437,
+        "absolute_error": 0.7665744938989056,
+        "sign_inversions": 9
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.10988936699766043,
+        "absolute_error": 0.21687998933355127,
+        "sign_inversions": 19
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.23282061089382972,
+        "absolute_error": 0.3398112332297206,
+        "sign_inversions": 19
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.43995992879329854,
+        "absolute_error": 0.5469505511291894,
+        "sign_inversions": 20
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0637134689451833,
+        "absolute_error": 0.17070409128107414,
+        "sign_inversions": 16
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.022629694041116772,
+        "absolute_error": 0.13394232669154152,
+        "sign_inversions": 13
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.036082589641605385,
+        "absolute_error": 0.14307321197749623,
+        "sign_inversions": 14
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.34625965197168185,
+        "absolute_error": 0.4532502743075727,
+        "sign_inversions": 20
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.22061395781315554,
+        "absolute_error": 0.3276045801490464,
+        "sign_inversions": 19
+      }
+    },
+    "reference_contrast": -0.10699062233589085
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 0,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 462,
+    "match_fraction": 0.7107692307692308,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 0,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 0,
+    "match_fraction": 0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 0,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 202,
+    "match_fraction": 0.9665071770334929,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 1.5603696973088057,
+        "absolute_error": 1.9120586657597574,
+        "sign_inversions": 10
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.013933075691558622,
+        "absolute_error": 0.1225378000946125,
+        "sign_inversions": 10
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.40572520861770833,
+        "absolute_error": 0.44781519410392023,
+        "sign_inversions": 20
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.2280074913298741,
+        "absolute_error": 0.270097476816086,
+        "sign_inversions": 20
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.00924073763144232,
+        "absolute_error": 0.04279468802659723,
+        "sign_inversions": 9
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.3833460221334386,
+        "absolute_error": 0.4254360076196505,
+        "sign_inversions": 20
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.05256135184378245,
+        "absolute_error": 0.035712056109527254,
+        "sign_inversions": 2
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.046703196900943454,
+        "absolute_error": 0.09051255095989355,
+        "sign_inversions": 15
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.22115595158835513,
+        "absolute_error": 0.263245937074567,
+        "sign_inversions": 20
+      }
+    },
+    "reference_contrast": -0.0420899854862119
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 1,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1042,
+    "match_fraction": 0.939585211902615,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.09342215190706753,
+        "absolute_error": 0.06529939145971417,
+        "sign_inversions": 2
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.06405908321142761,
+        "absolute_error": 0.025109330538258878,
+        "sign_inversions": 0
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.053684697380560406,
+        "absolute_error": 0.058486164441296104,
+        "sign_inversions": 5
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.0016084025073756004,
+        "absolute_error": 0.0663796198777548,
+        "sign_inversions": 11
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.030022300547191065,
+        "absolute_error": 0.0434657719163697,
+        "sign_inversions": 5
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.019883080952223346,
+        "absolute_error": 0.05243237148587856,
+        "sign_inversions": 7
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.017008821950471337,
+        "absolute_error": 0.04898022832533661,
+        "sign_inversions": 7
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0707530451753727,
+        "absolute_error": 0.04101472096643863,
+        "sign_inversions": 3
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.031964792506304865,
+        "absolute_error": 0.041018346998997555,
+        "sign_inversions": 4
+      }
+    },
+    "reference_contrast": 0.06181578730759729
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 1,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 65,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.2645962518068087,
+        "absolute_error": 0.6226217993956491,
+        "sign_inversions": 11
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.008312952945853453,
+        "absolute_error": 0.1296180815369051,
+        "sign_inversions": 9
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.2688165640776057,
+        "absolute_error": 0.14979774272241245,
+        "sign_inversions": 1
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.24296046218964254,
+        "absolute_error": 0.10636654855322589,
+        "sign_inversions": 0
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.05936951174776439,
+        "absolute_error": 0.09012094961565117,
+        "sign_inversions": 6
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.04076227710565784,
+        "absolute_error": 0.17869331158841642,
+        "sign_inversions": 13
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.02091507170511256,
+        "absolute_error": 0.12166353639156653,
+        "sign_inversions": 8
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.14195195331286628,
+        "absolute_error": 0.27988298779562487,
+        "sign_inversions": 18
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.021164625380527834,
+        "absolute_error": 0.1590956598632864,
+        "sign_inversions": 12
+      }
+    },
+    "reference_contrast": -0.13793103448275856
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 1,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 761,
+    "match_fraction": 0.9608585858585859,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.08373374981273236,
+        "absolute_error": 0.18792904826589313,
+        "sign_inversions": 5
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.13803714076275683,
+        "absolute_error": 0.10908659707411812,
+        "sign_inversions": 1
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.07134969762408945,
+        "absolute_error": 0.1413069766367006,
+        "sign_inversions": 12
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.003939708522348961,
+        "absolute_error": 0.05679539412236771,
+        "sign_inversions": 13
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.028053813465433713,
+        "absolute_error": 0.037728773704105115,
+        "sign_inversions": 6
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.05619776986516221,
+        "absolute_error": 0.04112509323323939,
+        "sign_inversions": 3
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03865222263710909,
+        "absolute_error": 0.04239142698061884,
+        "sign_inversions": 5
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0845806657610367,
+        "absolute_error": 0.13521357715344182,
+        "sign_inversions": 20
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.14803531906285614,
+        "absolute_error": 0.09740240767045104,
+        "sign_inversions": 0
+      }
+    },
+    "reference_contrast": -0.05063291139240511
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 2,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1017,
+    "match_fraction": 0.9531396438612934,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.04859725985307982,
+        "absolute_error": 0.09523791551397842,
+        "sign_inversions": 8
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03395680734903414,
+        "absolute_error": 0.022763312860349234,
+        "sign_inversions": 3
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.036319957161108724,
+        "absolute_error": 0.04387053167192089,
+        "sign_inversions": 6
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.006270220714768393,
+        "absolute_error": 0.041140128645359895,
+        "sign_inversions": 11
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0357218358675012,
+        "absolute_error": 0.034331706585081743,
+        "sign_inversions": 3
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.02696727477587325,
+        "absolute_error": 0.0608128880553505,
+        "sign_inversions": 16
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.004970356171362994,
+        "absolute_error": 0.04155156061563611,
+        "sign_inversions": 11
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.04844807522215911,
+        "absolute_error": 0.030609541795803014,
+        "sign_inversions": 1
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.012527785641968502,
+        "absolute_error": 0.03441541767550451,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": 0.030144845748683258
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 2,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 70,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.05432494059486367,
+        "absolute_error": 0.3393988166629051,
+        "sign_inversions": 9
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.024397610112728906,
+        "absolute_error": 0.07316754800962542,
+        "sign_inversions": 6
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.2322273309514072,
+        "absolute_error": 0.3172357305088228,
+        "sign_inversions": 18
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.10640492432111845,
+        "absolute_error": 0.18513885908737074,
+        "sign_inversions": 16
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.04833434196441244,
+        "absolute_error": 0.1389640795428328,
+        "sign_inversions": 13
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.013243874459405058,
+        "absolute_error": 0.11395043128575692,
+        "sign_inversions": 12
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.05986308914973437,
+        "absolute_error": 0.14531514507261442,
+        "sign_inversions": 15
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.06984984734734045,
+        "absolute_error": 0.05411830185033224,
+        "sign_inversions": 1
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.1184647401838352,
+        "absolute_error": 0.1987589441137076,
+        "sign_inversions": 17
+      }
+    },
+    "reference_contrast": -0.07794676806083656
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 2,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 491,
+    "match_fraction": 0.9515503875968992,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03716122872060247,
+        "absolute_error": 0.3184207422982377,
+        "sign_inversions": 7
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.05788183379113514,
+        "absolute_error": 0.09777465251090252,
+        "sign_inversions": 6
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.20313812620229338,
+        "absolute_error": 0.2823278131267868,
+        "sign_inversions": 20
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.007764308705102358,
+        "absolute_error": 0.08695399562959583,
+        "sign_inversions": 10
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03061502492195963,
+        "absolute_error": 0.10980471184645309,
+        "sign_inversions": 14
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0011029025033383933,
+        "absolute_error": 0.08524352593496222,
+        "sign_inversions": 9
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.13858013090748647,
+        "absolute_error": 0.059986668337495705,
+        "sign_inversions": 0
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.22651335126728042,
+        "absolute_error": 0.3057030381917738,
+        "sign_inversions": 20
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.17289650375406285,
+        "absolute_error": 0.10145889385261456,
+        "sign_inversions": 0
+      }
+    },
+    "reference_contrast": -0.07918968692449346
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 3,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 525,
+    "match_fraction": 0.8386581469648562,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.021305607566997536,
+        "absolute_error": 0.0985391209403978,
+        "sign_inversions": 10
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.025442450084067352,
+        "absolute_error": 0.0397019783501463,
+        "sign_inversions": 16
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.004421623563779703,
+        "absolute_error": 0.03970055565453576,
+        "sign_inversions": 10
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03092061219225766,
+        "absolute_error": 0.046877499227042055,
+        "sign_inversions": 16
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.07012475141402516,
+        "absolute_error": 0.07890408621058084,
+        "sign_inversions": 19
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.02168777057948714,
+        "absolute_error": 0.04070545139978328,
+        "sign_inversions": 14
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.0966910736335183,
+        "absolute_error": 0.10547040843007398,
+        "sign_inversions": 20
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.05685691841096371,
+        "absolute_error": 0.06585279299256572,
+        "sign_inversions": 19
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.06067366526811722,
+        "absolute_error": 0.06945300006467288,
+        "sign_inversions": 20
+      }
+    },
+    "reference_contrast": 0.008779334796555682
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 3,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 8,
+    "match_fraction": 1.0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 3,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 30,
+    "match_fraction": 0.9375,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 15,
+        "invalid_realizations": 5,
+        "contrast_mean": 0.011111111111111072,
+        "absolute_error": 1.0054726368159204,
+        "sign_inversions": 8
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.00621980978659023,
+        "absolute_error": 0.2217539132767805,
+        "sign_inversions": 9
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.615715747662122,
+        "absolute_error": 0.8097455984083908,
+        "sign_inversions": 20
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.1747897199050918,
+        "absolute_error": 0.3688195706513605,
+        "sign_inversions": 19
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.3026023843742279,
+        "absolute_error": 0.49663223512049653,
+        "sign_inversions": 19
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.2890122666134901,
+        "absolute_error": 0.4830421173597589,
+        "sign_inversions": 20
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.3037558611148846,
+        "absolute_error": 0.11493064690929042,
+        "sign_inversions": 0
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 1.0291717657208745,
+        "absolute_error": 0.8351419149746059,
+        "sign_inversions": 0
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.04190199259620282,
+        "absolute_error": 0.17280299608265523,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.19402985074626877
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 4,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 958,
+    "match_fraction": 0.9503968253968254,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.028906788719444864,
+        "absolute_error": 0.054968601399284854,
+        "sign_inversions": 8
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.006046451572496464,
+        "absolute_error": 0.03210582236908309,
+        "sign_inversions": 10
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.031130835511879767,
+        "absolute_error": 0.04797038816258043,
+        "sign_inversions": 4
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0086801121267154,
+        "absolute_error": 0.04070225394011151,
+        "sign_inversions": 9
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.024482293952201167,
+        "absolute_error": 0.03077179839826491,
+        "sign_inversions": 5
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.017262595187118507,
+        "absolute_error": 0.03461866340853316,
+        "sign_inversions": 7
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0193913400984444,
+        "absolute_error": 0.03006317245394382,
+        "sign_inversions": 9
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.04126611499895773,
+        "absolute_error": 0.06676112113177712,
+        "sign_inversions": 17
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.02138104308204013,
+        "absolute_error": 0.0318208863189481,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": 0.02549500613281941
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 4,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 84,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.30885152755093975,
+        "absolute_error": 0.5420251512072944,
+        "sign_inversions": 10
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03889981456359438,
+        "absolute_error": 0.049982443184587486,
+        "sign_inversions": 3
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.021427588514472823,
+        "absolute_error": 0.07969304413432271,
+        "sign_inversions": 13
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.08264153508741187,
+        "absolute_error": 0.10398437962883986,
+        "sign_inversions": 16
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.13733938546447946,
+        "absolute_error": 0.14376891888792676,
+        "sign_inversions": 18
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.013992604475376697,
+        "absolute_error": 0.06723578658279634,
+        "sign_inversions": 11
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.09906454443635021,
+        "absolute_error": 0.12368280310049758,
+        "sign_inversions": 16
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.09909025881246165,
+        "absolute_error": 0.09978411097268511,
+        "sign_inversions": 1
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.04277875857504516,
+        "absolute_error": 0.07102640392828827,
+        "sign_inversions": 13
+      }
+    },
+    "reference_contrast": -0.002057613168724326
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 4,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 503,
+    "match_fraction": 0.9526515151515151,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.12965858913051478,
+        "absolute_error": 0.18653279848390797,
+        "sign_inversions": 5
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.10034727559175294,
+        "absolute_error": 0.20669032046330155,
+        "sign_inversions": 17
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.08569212811208846,
+        "absolute_error": 0.07098969327915315,
+        "sign_inversions": 4
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.01824357871152097,
+        "absolute_error": 0.08417359510563573,
+        "sign_inversions": 7
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.010294449137740585,
+        "absolute_error": 0.11120695584734874,
+        "sign_inversions": 10
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.035680670805771385,
+        "absolute_error": 0.13659317751537955,
+        "sign_inversions": 14
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.1532730447557323,
+        "absolute_error": 0.25418555146534055,
+        "sign_inversions": 20
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.14365206694301572,
+        "absolute_error": 0.05894964618554479,
+        "sign_inversions": 1
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.24071118257739657,
+        "absolute_error": 0.3416236892870047,
+        "sign_inversions": 20
+      }
+    },
+    "reference_contrast": -0.10091250670960816
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 5,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1088,
+    "match_fraction": 0.8940016433853739,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.06379525090059199,
+        "absolute_error": 0.06998173180238573,
+        "sign_inversions": 4
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.017765623988728087,
+        "absolute_error": 0.08015761229023036,
+        "sign_inversions": 16
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.007145104110644412,
+        "absolute_error": 0.0652976393212218,
+        "sign_inversions": 11
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.035559282328664774,
+        "absolute_error": 0.09795127063016705,
+        "sign_inversions": 13
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03334546327731022,
+        "absolute_error": 0.0957374515788125,
+        "sign_inversions": 16
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.020302714859501303,
+        "absolute_error": 0.08269470316100358,
+        "sign_inversions": 14
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03380036684185438,
+        "absolute_error": 0.09619235514335665,
+        "sign_inversions": 17
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.04925618319017339,
+        "absolute_error": 0.11164817149167565,
+        "sign_inversions": 18
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03971605478337438,
+        "absolute_error": 0.10210804308487667,
+        "sign_inversions": 16
+      }
+    },
+    "reference_contrast": 0.06239198830150228
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 5,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 77,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.5260291139642105,
+        "absolute_error": 0.5036728303663502,
+        "sign_inversions": 4
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03991384848059698,
+        "absolute_error": 0.12954775787421327,
+        "sign_inversions": 4
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.08429396748700134,
+        "absolute_error": 0.25375557384181163,
+        "sign_inversions": 15
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.07572509825665455,
+        "absolute_error": 0.24518670461146472,
+        "sign_inversions": 19
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.024972634547405965,
+        "absolute_error": 0.19443424090221623,
+        "sign_inversions": 14
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.04459059621653701,
+        "absolute_error": 0.12674658138259107,
+        "sign_inversions": 5
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.10178456524041497,
+        "absolute_error": 0.2712461715952251,
+        "sign_inversions": 19
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.1381265339547417,
+        "absolute_error": 0.061604674236765175,
+        "sign_inversions": 0
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.04628578165833215,
+        "absolute_error": 0.21574738801314233,
+        "sign_inversions": 14
+      }
+    },
+    "reference_contrast": 0.16946160635481022
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 5,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 814,
+    "match_fraction": 0.9621749408983451,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0031703563124863996,
+        "absolute_error": 0.1829043056726409,
+        "sign_inversions": 9
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.11197887053157611,
+        "absolute_error": 0.17268725715621808,
+        "sign_inversions": 17
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.04214513952969869,
+        "absolute_error": 0.06918371645499681,
+        "sign_inversions": 6
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0037221497334449572,
+        "absolute_error": 0.06393240777740802,
+        "sign_inversions": 9
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.02867864442241541,
+        "absolute_error": 0.09103343266433603,
+        "sign_inversions": 14
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0327587512723053,
+        "absolute_error": 0.09296900931626836,
+        "sign_inversions": 15
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.07919180555482257,
+        "absolute_error": 0.13940206359878565,
+        "sign_inversions": 20
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.11108754843319282,
+        "absolute_error": 0.05362628508412474,
+        "sign_inversions": 0
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.1340284152467317,
+        "absolute_error": 0.19423867329069477,
+        "sign_inversions": 20
+      }
+    },
+    "reference_contrast": -0.06021025804396307
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 0,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 775,
+    "match_fraction": 0.9872611464968153,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.05369453667436238,
+        "absolute_error": 0.06375734115340291,
+        "sign_inversions": 5
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.04500229247613641,
+        "absolute_error": 0.020135420745532005,
+        "sign_inversions": 0
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.026629556570245072,
+        "absolute_error": 0.0371571260705578,
+        "sign_inversions": 6
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.04792219008896858,
+        "absolute_error": 0.03126700708234356,
+        "sign_inversions": 1
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.002548649710973899,
+        "absolute_error": 0.0327704067552858,
+        "sign_inversions": 8
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.015999886296047233,
+        "absolute_error": 0.025615150542185345,
+        "sign_inversions": 5
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.026174050649322385,
+        "absolute_error": 0.058054667912337446,
+        "sign_inversions": 15
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.031092237174103438,
+        "absolute_error": 0.028861605961434493,
+        "sign_inversions": 4
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.004638903518535575,
+        "absolute_error": 0.03478639945909105,
+        "sign_inversions": 12
+      }
+    },
+    "reference_contrast": 0.031880617263015054
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 0,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 243,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0227726168742514,
+        "absolute_error": 0.3957788052929915,
+        "sign_inversions": 7
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03686884570484554,
+        "absolute_error": 0.03400436336058588,
+        "sign_inversions": 4
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03460942058470385,
+        "absolute_error": 0.06118008316165878,
+        "sign_inversions": 5
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.022021735443839258,
+        "absolute_error": 0.048215052465062844,
+        "sign_inversions": 7
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.11568634423410107,
+        "absolute_error": 0.06551923709053557,
+        "sign_inversions": 1
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.02300265492729812,
+        "absolute_error": 0.08084976322821202,
+        "sign_inversions": 14
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.08315286439624882,
+        "absolute_error": 0.043677106626296584,
+        "sign_inversions": 0
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.08117452849702705,
+        "absolute_error": 0.0447242613005633,
+        "sign_inversions": 1
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03420703097874121,
+        "absolute_error": 0.09067421244592264,
+        "sign_inversions": 15
+      }
+    },
+    "reference_contrast": -0.05646718146718144
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 0,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 54,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.632279836176895,
+        "absolute_error": 1.0718597742127156,
+        "sign_inversions": 8
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.032050895883357425,
+        "absolute_error": 0.10688822695928826,
+        "sign_inversions": 4
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.04196522965168938,
+        "absolute_error": 0.14637938502250258,
+        "sign_inversions": 7
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.36745050439977506,
+        "absolute_error": 0.22905764725691782,
+        "sign_inversions": 0
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.01019132119203175,
+        "absolute_error": 0.18284964533582987,
+        "sign_inversions": 11
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.04814443458398428,
+        "absolute_error": 0.18677664633963473,
+        "sign_inversions": 15
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.06839719299751816,
+        "absolute_error": 0.20679005014037535,
+        "sign_inversions": 17
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.2260838825282876,
+        "absolute_error": 0.1257469381515784,
+        "sign_inversions": 0
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.10498989850407137,
+        "absolute_error": 0.08151842595321776,
+        "sign_inversions": 3
+      }
+    },
+    "reference_contrast": 0.1383928571428572
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 1,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 906,
+    "match_fraction": 0.9847826086956522,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.000223499300108837,
+        "absolute_error": 0.07325531301226378,
+        "sign_inversions": 10
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.043097307565058585,
+        "absolute_error": 0.049574480247739916,
+        "sign_inversions": 20
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.007318482912473612,
+        "absolute_error": 0.03274731067347512,
+        "sign_inversions": 8
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.10946610977066093,
+        "absolute_error": 0.11762313218808829,
+        "sign_inversions": 19
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.04256345166262683,
+        "absolute_error": 0.050268481950943425,
+        "sign_inversions": 19
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.02361371683804981,
+        "absolute_error": 0.03617000735166227,
+        "sign_inversions": 16
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.046350083848583565,
+        "absolute_error": 0.05620565648779794,
+        "sign_inversions": 19
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.04094383169545941,
+        "absolute_error": 0.051375206205875365,
+        "sign_inversions": 18
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.035287674314439896,
+        "absolute_error": 0.04380255062767931,
+        "sign_inversions": 17
+      }
+    },
+    "reference_contrast": 0.006477172682681331
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 1,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 163,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.08119040559674115,
+        "absolute_error": 0.19249646592181932,
+        "sign_inversions": 6
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03752244034972884,
+        "absolute_error": 0.05136659382741522,
+        "sign_inversions": 2
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.040218813895274354,
+        "absolute_error": 0.13824769353472835,
+        "sign_inversions": 11
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0071327133388815415,
+        "absolute_error": 0.09884549329612301,
+        "sign_inversions": 8
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.06822658248010623,
+        "absolute_error": 0.15644946133194254,
+        "sign_inversions": 18
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.041677358952834365,
+        "absolute_error": 0.1299002378046707,
+        "sign_inversions": 17
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.09249807032611701,
+        "absolute_error": 0.03109898173343793,
+        "sign_inversions": 1
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.09220630930355675,
+        "absolute_error": 0.02635253481998843,
+        "sign_inversions": 0
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0074328671220595,
+        "absolute_error": 0.09565574597389584,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": -0.08822287885183633
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 1,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 113,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.49131202577900296,
+        "absolute_error": 0.9064618669948901,
+        "sign_inversions": 8
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.02237129537483421,
+        "absolute_error": 0.14544821845175732,
+        "sign_inversions": 11
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.04943440184646768,
+        "absolute_error": 0.1301564788837953,
+        "sign_inversions": 7
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.11286215402449244,
+        "absolute_error": 0.23593907710141554,
+        "sign_inversions": 18
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.14730137166537877,
+        "absolute_error": 0.10677543963284095,
+        "sign_inversions": 3
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.26972280065628407,
+        "absolute_error": 0.39279972373320715,
+        "sign_inversions": 20
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.06744045592226379,
+        "absolute_error": 0.1905173789991869,
+        "sign_inversions": 15
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.13000593437803792,
+        "absolute_error": 0.05056178534427698,
+        "sign_inversions": 1
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.054867738002857366,
+        "absolute_error": 0.17794466107978044,
+        "sign_inversions": 15
+      }
+    },
+    "reference_contrast": 0.12307692307692308
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 2,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 711,
+    "match_fraction": 0.9492656875834445,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.023158936593497347,
+        "absolute_error": 0.09949554231502447,
+        "sign_inversions": 10
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.003043963820242429,
+        "absolute_error": 0.04806394164624764,
+        "sign_inversions": 9
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.01792182297234878,
+        "absolute_error": 0.05745570506416696,
+        "sign_inversions": 10
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.007415433645192915,
+        "absolute_error": 0.05365611702114078,
+        "sign_inversions": 11
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.0002750733913871151,
+        "absolute_error": 0.05373696134537639,
+        "sign_inversions": 11
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.02893791178062328,
+        "absolute_error": 0.0766291047191648,
+        "sign_inversions": 16
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.006020494935693077,
+        "absolute_error": 0.05022642231699388,
+        "sign_inversions": 10
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.02730121429858709,
+        "absolute_error": 0.07594549780728156,
+        "sign_inversions": 15
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.009270024912456442,
+        "absolute_error": 0.046886232937547,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": 0.047691192938541516
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 2,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 119,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.11794318552905783,
+        "absolute_error": 0.30239059555324876,
+        "sign_inversions": 9
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03118572888067182,
+        "absolute_error": 0.06158545595874452,
+        "sign_inversions": 15
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.028904375678965238,
+        "absolute_error": 0.08517545844839074,
+        "sign_inversions": 10
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.01670019035393347,
+        "absolute_error": 0.06964112802737735,
+        "sign_inversions": 8
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.076092322958008,
+        "absolute_error": 0.0689100677908199,
+        "sign_inversions": 3
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.09577807578964533,
+        "absolute_error": 0.0783216336155061,
+        "sign_inversions": 1
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.049152573335577834,
+        "absolute_error": 0.06458459262228344,
+        "sign_inversions": 8
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0423936031647818,
+        "absolute_error": 0.05649236296847644,
+        "sign_inversions": 8
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.056914954307932565,
+        "absolute_error": 0.06411721105446297,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": 0.02686567164179099
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 2,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 346,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.17489398876010584,
+        "absolute_error": 0.2613521897608888,
+        "sign_inversions": 7
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.002463402498622169,
+        "absolute_error": 0.09822227054360103,
+        "sign_inversions": 12
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.006642106061060577,
+        "absolute_error": 0.11672623354710407,
+        "sign_inversions": 11
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.011220099394596528,
+        "absolute_error": 0.11190577243681972,
+        "sign_inversions": 11
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.030334411035145514,
+        "absolute_error": 0.13102008407736873,
+        "sign_inversions": 13
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.055092803811058674,
+        "absolute_error": 0.05992649193067005,
+        "sign_inversions": 4
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.04571967937908346,
+        "absolute_error": 0.14640535242130667,
+        "sign_inversions": 17
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0317689250430674,
+        "absolute_error": 0.07104590567076387,
+        "sign_inversions": 5
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.050852474824705764,
+        "absolute_error": 0.056708107781574736,
+        "sign_inversions": 3
+      }
+    },
+    "reference_contrast": 0.1006856730422232
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 3,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 768,
+    "match_fraction": 0.8787185354691075,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.05487725557466019,
+        "absolute_error": 0.05647179226166728,
+        "sign_inversions": 5
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.02894805749470087,
+        "absolute_error": 0.04422256010037559,
+        "sign_inversions": 3
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.05015588785832725,
+        "absolute_error": 0.03460305863284249,
+        "sign_inversions": 3
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.021519608803326408,
+        "absolute_error": 0.061642889185841564,
+        "sign_inversions": 7
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.028630105002883422,
+        "absolute_error": 0.052512250837859965,
+        "sign_inversions": 6
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.008588497123973571,
+        "absolute_error": 0.06507792354520385,
+        "sign_inversions": 11
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03599357514090969,
+        "absolute_error": 0.04496560250217575,
+        "sign_inversions": 4
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.012205046321607049,
+        "absolute_error": 0.06244072790357639,
+        "sign_inversions": 8
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.05516893129834487,
+        "absolute_error": 0.03934918980594061,
+        "sign_inversions": 3
+      }
+    },
+    "reference_contrast": 0.06979542719614917
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 3,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 182,
+    "match_fraction": 0.48404255319148937,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 3,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 281,
+    "match_fraction": 0.9493243243243243,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.07186274992441348,
+        "absolute_error": 0.21194450140464002,
+        "sign_inversions": 11
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03785898778181522,
+        "absolute_error": 0.07336841336841546,
+        "sign_inversions": 18
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.053270923589517086,
+        "absolute_error": 0.09284556718558244,
+        "sign_inversions": 8
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03943146472204039,
+        "absolute_error": 0.06539575260891901,
+        "sign_inversions": 6
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.05409613316317317,
+        "absolute_error": 0.06270410784937246,
+        "sign_inversions": 6
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.11011259177822508,
+        "absolute_error": 0.13890119265258083,
+        "sign_inversions": 19
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.18629454957730518,
+        "absolute_error": 0.2145147228100519,
+        "sign_inversions": 20
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.07232165223131107,
+        "absolute_error": 0.1102961875297062,
+        "sign_inversions": 16
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03776601269590862,
+        "absolute_error": 0.08432963754697034,
+        "sign_inversions": 16
+      }
+    },
+    "reference_contrast": 0.028220173232746726
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 4,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1001,
+    "match_fraction": 0.8985637342908438,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.04180807590516707,
+        "absolute_error": 0.13247347790371206,
+        "sign_inversions": 12
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.05946300302596499,
+        "absolute_error": 0.06770094033205257,
+        "sign_inversions": 20
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.030750706785226466,
+        "absolute_error": 0.05598836445247426,
+        "sign_inversions": 13
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.050193725191545455,
+        "absolute_error": 0.05843166249763303,
+        "sign_inversions": 19
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.00307879279834643,
+        "absolute_error": 0.023376461539224104,
+        "sign_inversions": 9
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.013417609924013552,
+        "absolute_error": 0.017827230090140023,
+        "sign_inversions": 6
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03994715282673151,
+        "absolute_error": 0.033174719110714686,
+        "sign_inversions": 1
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.017791659739395956,
+        "absolute_error": 0.02775002887775408,
+        "sign_inversions": 13
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.004877069902706204,
+        "absolute_error": 0.02132099255826934,
+        "sign_inversions": 13
+      }
+    },
+    "reference_contrast": -0.008237937306087573
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 4,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 70,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.20427386788032945,
+        "absolute_error": 0.400377636660881,
+        "sign_inversions": 9
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.05404451063534045,
+        "absolute_error": 0.04604720482174051,
+        "sign_inversions": 3
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.041108539202336036,
+        "absolute_error": 0.10033394790474795,
+        "sign_inversions": 9
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.04189371406709724,
+        "absolute_error": 0.061731746892864134,
+        "sign_inversions": 5
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.16552869502218823,
+        "absolute_error": 0.09606676382527601,
+        "sign_inversions": 0
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.10498853427161126,
+        "absolute_error": 0.18894843402098485,
+        "sign_inversions": 20
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.05638121027081165,
+        "absolute_error": 0.1403411100201852,
+        "sign_inversions": 16
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.04083356691052208,
+        "absolute_error": 0.12479346665989569,
+        "sign_inversions": 17
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.06320259836063932,
+        "absolute_error": 0.04874222706599473,
+        "sign_inversions": 2
+      }
+    },
+    "reference_contrast": 0.08395989974937357
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 4,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 197,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.00781536903196876,
+        "absolute_error": 0.14071895016706062,
+        "sign_inversions": 11
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.022098000609938412,
+        "absolute_error": 0.03369522564839101,
+        "sign_inversions": 18
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.02566988467332832,
+        "absolute_error": 0.06279605881179093,
+        "sign_inversions": 13
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.07058364599743622,
+        "absolute_error": 0.06294522095642989,
+        "sign_inversions": 2
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.04455109068045505,
+        "absolute_error": 0.04710229186654851,
+        "sign_inversions": 4
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.05363628630291613,
+        "absolute_error": 0.049359264013055335,
+        "sign_inversions": 2
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0769516051567843,
+        "absolute_error": 0.09163671655413015,
+        "sign_inversions": 19
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.07376533770638176,
+        "absolute_error": 0.07160738872870619,
+        "sign_inversions": 3
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.02098891481489632,
+        "absolute_error": 0.03872974578026191,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": -0.011473962930273585
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 5,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 745,
+    "match_fraction": 0.9300873907615481,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.0005762378312890504,
+        "absolute_error": 0.08098303896151555,
+        "sign_inversions": 11
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.024501086618131517,
+        "absolute_error": 0.031421540540344815,
+        "sign_inversions": 6
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.014259555773211308,
+        "absolute_error": 0.04343946445376702,
+        "sign_inversions": 8
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.00750764571181296,
+        "absolute_error": 0.024319127272358042,
+        "sign_inversions": 13
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.01827392879800462,
+        "absolute_error": 0.024652693883437677,
+        "sign_inversions": 6
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03118408071947908,
+        "absolute_error": 0.028697582506049556,
+        "sign_inversions": 3
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.008132260697422612,
+        "absolute_error": 0.022949909768823586,
+        "sign_inversions": 7
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.019676125469532364,
+        "absolute_error": 0.026299352799878432,
+        "sign_inversions": 6
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.012397651169425556,
+        "absolute_error": 0.02709377958277029,
+        "sign_inversions": 14
+      }
+    },
+    "reference_contrast": 0.007859323758905523
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 5,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 8,
+    "match_fraction": 1.0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 5,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 293,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.3549133777916855,
+        "absolute_error": 0.24556493900413584,
+        "sign_inversions": 2
+      },
+      "unet_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.02800857276396047,
+        "absolute_error": 0.2322976698744375,
+        "sign_inversions": 6
+      },
+      "cgan_original": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.07777448623520462,
+        "absolute_error": 0.18559402482389556,
+        "sign_inversions": 5
+      },
+      "B1_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.09746612209912625,
+        "absolute_error": 0.35777236473752416,
+        "sign_inversions": 19
+      },
+      "B1_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03622542152838506,
+        "absolute_error": 0.296531664166783,
+        "sign_inversions": 15
+      },
+      "B2_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.022598625430713053,
+        "absolute_error": 0.282904868069111,
+        "sign_inversions": 15
+      },
+      "B2_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.10778277800603124,
+        "absolute_error": 0.15252346463236674,
+        "sign_inversions": 0
+      },
+      "B3_C0": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03605522511369138,
+        "absolute_error": 0.22425101752470655,
+        "sign_inversions": 5
+      },
+      "B3_C1": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.023976352349882768,
+        "absolute_error": 0.28428259498828073,
+        "sign_inversions": 14
+      }
+    },
+    "reference_contrast": 0.26030624263839797
+  }
+]
