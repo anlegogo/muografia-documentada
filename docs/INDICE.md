@@ -1,5 +1,8 @@
 # Índice de documentación
 
+- [Revisión final OE2 y corrección C2](../objetivo-2/REVISION_EVALUACION_FINAL_C2.md).
+- [Síntesis OE2 y preparación OE3](../objetivo-2/SINTESIS_OE2_TRANSICION_OE3.md).
+
 - [Protocolo de evaluación final OE2 al 5 %](../objetivo-2/PROTOCOLO_EVALUACION_FINAL_OE2.md).
 - [Ejecución final con pesos existentes](../objetivo-2/INSTRUCCIONES_EVALUACION_FINAL_OE2.md).
 

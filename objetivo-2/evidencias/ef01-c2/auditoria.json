@@ -1,0 +1,154 @@
+{
+  "commit": "4e5945eefea1f799a4e2adee8858d98d604cf4ba",
+  "integrity": {
+    "binary_files": 32,
+    "binary_bytes": 1006637056,
+    "github_matching_receipts_and_manifests": 50,
+    "reserved_data_files": 8
+  },
+  "sections": {
+    "images": {
+      "max_numeric_difference": 0,
+      "nonnumeric_differences": 0
+    },
+    "regions": {
+      "max_numeric_difference": 4.440892098500626e-16,
+      "nonnumeric_differences": 0
+    },
+    "contrasts": {
+      "max_numeric_difference": 15,
+      "nonnumeric_differences": 0
+    }
+  },
+  "spotcheck": {
+    "unet_original": {
+      "images": 4,
+      "max_absolute_difference": 2.5480985641479492e-06,
+      "within_1e_4": true
+    },
+    "cgan_original": {
+      "images": 4,
+      "max_absolute_difference": 2.3543834686279297e-06,
+      "within_1e_4": true
+    },
+    "B1_C0": {
+      "images": 4,
+      "max_absolute_difference": 3.0249357223510742e-06,
+      "within_1e_4": true
+    },
+    "B1_C1": {
+      "images": 4,
+      "max_absolute_difference": 2.8908252716064453e-06,
+      "within_1e_4": true
+    },
+    "B2_C0": {
+      "images": 4,
+      "max_absolute_difference": 2.950429916381836e-06,
+      "within_1e_4": true
+    },
+    "B2_C1": {
+      "images": 4,
+      "max_absolute_difference": 4.127621650695801e-06,
+      "within_1e_4": true
+    },
+    "B3_C0": {
+      "images": 4,
+      "max_absolute_difference": 4.842877388000488e-06,
+      "within_1e_4": true
+    },
+    "B3_C1": {
+      "images": 4,
+      "max_absolute_difference": 3.6656856536865234e-06,
+      "within_1e_4": true
+    }
+  },
+  "details": {
+    "github_matches": 50,
+    "contrast_differences": [
+      {
+        "index": 8,
+        "geometry": "geo-test-01",
+        "view": 4,
+        "region": "anomalia_0_conduit",
+        "matched_pixels": 1024,
+        "reference_local": -0.008099411960501457,
+        "reference_submitted": -0.007548845470692678
+      },
+      {
+        "index": 9,
+        "geometry": "geo-test-01",
+        "view": 4,
+        "region": "anomalia_1_cavity",
+        "matched_pixels": 122,
+        "reference_local": 0.04511278195488733,
+        "reference_submitted": 0.06269113149847105
+      },
+      {
+        "index": 30,
+        "geometry": "geo-test-03",
+        "view": 4,
+        "region": "anomalia_0_conduit",
+        "matched_pixels": 958,
+        "reference_local": 0.02303019708954257,
+        "reference_submitted": 0.027971720897554286
+      },
+      {
+        "index": 31,
+        "geometry": "geo-test-03",
+        "view": 4,
+        "region": "anomalia_1_cavity",
+        "matched_pixels": 84,
+        "reference_local": -0.021519838601210428,
+        "reference_submitted": 0.02609308885754591
+      }
+    ],
+    "classifications_identical": true,
+    "image_rows": 4320,
+    "regions": 1134,
+    "test_contrast": {
+      "entrada": {
+        "local": 0.3341472615975685,
+        "submitted": 0.3366275882802058
+      },
+      "unet_original": {
+        "local": 0.09151234590878603,
+        "submitted": 0.09317175209188394
+      },
+      "cgan_original": {
+        "local": 0.13436260089322236,
+        "submitted": 0.13506592999765726
+      },
+      "B1_C0": {
+        "local": 0.13245667265246816,
+        "submitted": 0.13289904332125302
+      },
+      "B1_C1": {
+        "local": 0.1001370834531392,
+        "submitted": 0.10056982653324668
+      },
+      "B2_C0": {
+        "local": 0.11162254594475475,
+        "submitted": 0.11272055489746349
+      },
+      "B2_C1": {
+        "local": 0.10990438446227153,
+        "submitted": 0.10892499515255007
+      },
+      "B3_C0": {
+        "local": 0.11378186294538842,
+        "submitted": 0.11693553777740734
+      },
+      "B3_C1": {
+        "local": 0.1266782313837941,
+        "submitted": 0.12768658336296493
+      }
+    }
+  },
+  "verdict": "Integridad y predicciones verificadas; imagen y regiones reproducidas; contraste parcialmente no reproducible entre entornos. Conclusiones descriptivas globales sin cambio. No aceptación física ni equivalencia.",
+  "limits": [
+    "No se volvió a inferir el conjunto completo: muestra de cuatro imágenes por cada red; métricas sí recalculadas en las 3840 predicciones entregadas y 480 entradas.",
+    "La sensibilidad al desempate de controles se demostró; atribución exacta al entorno Linux frente a Windows pendiente.",
+    "Datos históricamente expuestos: evaluación descriptiva."
+  ],
+  "next": "Estabilizar y registrar índices de controles en una revisión explícita del evaluador, medir su efecto sobre todas las métricas de contraste con las predicciones existentes. No requiere entrenar ni repetir inferencia GPU."
+}

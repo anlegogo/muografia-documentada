@@ -1,0 +1,5 @@
+2026-10-04T17:22:26Z ETAPA0_INICIO
+2026-10-04T17:22:52Z ENTORNO_OK
+2026-10-04T17:23:15Z PESOS_OK verificados 8 de 8; fallos []
+Using Python 3.12.3 environment at: /workspace/venv
+2026-10-04T17:23:17Z ETAPA0_OK a2b53186634862bc724be3d332eeb2817c84cfe1 {"data_files": 8, "models": 8, "arrays_opened": false, "passed": true}

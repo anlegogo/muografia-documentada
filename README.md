@@ -1,6 +1,9 @@
 # Muografía: documentación y seguimiento académico
 
-**Siguiente ejecución: evaluación final OE2 al 5 %, sin reentrenar.** Ocho redes congeladas y entrada; 360 imágenes test y 120 de generalización por red. [Protocolo](objetivo-2/PROTOCOLO_EVALUACION_FINAL_OE2.md) · [Instrucciones](objetivo-2/INSTRUCCIONES_EVALUACION_FINAL_OE2.md). La reproducción del diagnóstico E1 deja de ser requisito. Ejecutor verificado localmente; resultados reservados pendientes.
+**Evaluación final al 5 % revisada; corrección C2 verificada.** Se recibieron y auditaron los ocho modelos y sus 3.840 predicciones. Las métricas de imagen/regiones se reproducen; el contraste queda corregido con índices registrados y comparación antes/después. [Revisión vigente](objetivo-2/REVISION_EVALUACION_FINAL_C2.md) · [Síntesis y siguiente paso](objetivo-2/SINTESIS_OE2_TRANSICION_OE3.md). No se requiere otra GPU. La implementación/evaluación está verificada; equivalencia física y alcance académico siguen delimitados, no se declara cumplimiento científico pleno.
+
+## Antecedentes conservados
+
 
 **E1 ejecutado y revisado:** 55 binarios íntegros, recuperación exacta en B1–B3 y 2.520 inferencias reproducidas. El borde mejora en todas las vistas, pero persiste sobreestimación interior en geometría 1; ninguna pareja cumple los nueve controles. [Revisión y diagnóstico](objetivo-2/REVISION_E1_804CE85.md) · [Consolidación E1 histórica, no bloqueante](objetivo-2/INSTRUCCIONES_CIERRE_E1.md). OE2 continúa abierto.
 

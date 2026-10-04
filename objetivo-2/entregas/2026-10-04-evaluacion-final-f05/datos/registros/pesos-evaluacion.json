@@ -1,0 +1,10 @@
+{
+ "unet_original": "/workspace/pesos/unet_original.pt",
+ "cgan_original": "/workspace/pesos/cgan_original.pt",
+ "B1_C0": "/workspace/pesos/B1_C0.pt",
+ "B1_C1": "/workspace/pesos/B1_C1.pt",
+ "B2_C0": "/workspace/pesos/B2_C0.pt",
+ "B2_C1": "/workspace/pesos/B2_C1.pt",
+ "B3_C0": "/workspace/pesos/B3_C0.pt",
+ "B3_C1": "/workspace/pesos/B3_C1.pt"
+}

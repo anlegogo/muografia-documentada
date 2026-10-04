@@ -1,0 +1,131 @@
+{
+  "identity": {
+    "protocol_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+    "model": "B2_C1",
+    "checkpoint_sha256": "1cd6e5eb5025793a191e1b6ee4f75fd21f988b62b9f286f16a8c8ac1ccb2b4b3",
+    "environment": {
+      "python": "3.12.3",
+      "numpy": "2.3.5",
+      "torch": "2.6.0+cu118",
+      "skimage": "0.26.0",
+      "cuda": "11.8"
+    },
+    "device": "cuda",
+    "gpu_name": "NVIDIA L40S",
+    "batch_size": 4,
+    "fraction": 0.05
+  },
+  "files": [
+    {
+      "geometry": "geo-test-01",
+      "identity": {
+        "protocol_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+        "model": "B2_C1",
+        "checkpoint_sha256": "1cd6e5eb5025793a191e1b6ee4f75fd21f988b62b9f286f16a8c8ac1ccb2b4b3",
+        "environment": {
+          "python": "3.12.3",
+          "numpy": "2.3.5",
+          "torch": "2.6.0+cu118",
+          "skimage": "0.26.0",
+          "cuda": "11.8"
+        },
+        "device": "cuda",
+        "gpu_name": "NVIDIA L40S",
+        "batch_size": 4,
+        "fraction": 0.05
+      },
+      "sha256": "d511cb0cfa102131071f8db4109571f318e945628ff587606a1719e0409807e4",
+      "shape": [
+        120,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "order": "view 0..5, realization 0..19"
+    },
+    {
+      "geometry": "geo-test-02",
+      "identity": {
+        "protocol_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+        "model": "B2_C1",
+        "checkpoint_sha256": "1cd6e5eb5025793a191e1b6ee4f75fd21f988b62b9f286f16a8c8ac1ccb2b4b3",
+        "environment": {
+          "python": "3.12.3",
+          "numpy": "2.3.5",
+          "torch": "2.6.0+cu118",
+          "skimage": "0.26.0",
+          "cuda": "11.8"
+        },
+        "device": "cuda",
+        "gpu_name": "NVIDIA L40S",
+        "batch_size": 4,
+        "fraction": 0.05
+      },
+      "sha256": "a328957c0f99678305c8b02d60b14efd57373fb025679c5a0edb9f4268612765",
+      "shape": [
+        120,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "order": "view 0..5, realization 0..19"
+    },
+    {
+      "geometry": "geo-test-03",
+      "identity": {
+        "protocol_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+        "model": "B2_C1",
+        "checkpoint_sha256": "1cd6e5eb5025793a191e1b6ee4f75fd21f988b62b9f286f16a8c8ac1ccb2b4b3",
+        "environment": {
+          "python": "3.12.3",
+          "numpy": "2.3.5",
+          "torch": "2.6.0+cu118",
+          "skimage": "0.26.0",
+          "cuda": "11.8"
+        },
+        "device": "cuda",
+        "gpu_name": "NVIDIA L40S",
+        "batch_size": 4,
+        "fraction": 0.05
+      },
+      "sha256": "3904910c3f70490acf81d4dc4accb13cb23587d60ad7c3108cace694aeffec36",
+      "shape": [
+        120,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "order": "view 0..5, realization 0..19"
+    },
+    {
+      "geometry": "geo-gen-01",
+      "identity": {
+        "protocol_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+        "model": "B2_C1",
+        "checkpoint_sha256": "1cd6e5eb5025793a191e1b6ee4f75fd21f988b62b9f286f16a8c8ac1ccb2b4b3",
+        "environment": {
+          "python": "3.12.3",
+          "numpy": "2.3.5",
+          "torch": "2.6.0+cu118",
+          "skimage": "0.26.0",
+          "cuda": "11.8"
+        },
+        "device": "cuda",
+        "gpu_name": "NVIDIA L40S",
+        "batch_size": 4,
+        "fraction": 0.05
+      },
+      "sha256": "c675d56f88cbd1fc4b20b6c0e22721ae33d2a1292b98883c02b697e20d2a5f4b",
+      "shape": [
+        120,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "order": "view 0..5, realization 0..19"
+    }
+  ],
+  "images": 480,
+  "elapsed_seconds_this_invocation": 3.485708786174655,
+  "training_performed": false
+}

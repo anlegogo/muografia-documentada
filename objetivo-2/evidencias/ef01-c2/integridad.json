@@ -1,0 +1,230 @@
+{
+  "files": [
+    {
+      "path": "B1_C0/geo-gen-01.npy",
+      "sha256": "a4bfebe23811ee9fe71cc2423c2bf15851810102068ea032e8c13a1b8e2f02db",
+      "bytes": 31457408,
+      "min": 7.331533652177313e-06,
+      "max": 0.5073539018630981
+    },
+    {
+      "path": "B1_C0/geo-test-01.npy",
+      "sha256": "53de1ced2d20c6beb07d5668d4a6670fee4e505ccdfbe4342d82e1d7cb07a61f",
+      "bytes": 31457408,
+      "min": 5.5606153182452545e-05,
+      "max": 0.5029335021972656
+    },
+    {
+      "path": "B1_C0/geo-test-02.npy",
+      "sha256": "cc75245c5aae7e70b3614cf6160bc4ef9ec2fdd2b4cae74f96c0ff24b8af70f7",
+      "bytes": 31457408,
+      "min": 9.944591511157341e-06,
+      "max": 0.505852460861206
+    },
+    {
+      "path": "B1_C0/geo-test-03.npy",
+      "sha256": "3b5f0c0aecea186b7995295a85f088dfcd2f6fd90ceef839c13f9586f1cd4b1f",
+      "bytes": 31457408,
+      "min": 8.180713848560117e-07,
+      "max": 0.517328679561615
+    },
+    {
+      "path": "B1_C1/geo-gen-01.npy",
+      "sha256": "78163755f3f190d130aaedfcbb9072b95e65ecc1c1df0c88a86c603a3c668ee6",
+      "bytes": 31457408,
+      "min": 6.672062227153219e-06,
+      "max": 0.506033718585968
+    },
+    {
+      "path": "B1_C1/geo-test-01.npy",
+      "sha256": "b975190137f68f7a28034495b38b40bd60d595a7aebdca2ef834d7c2c9fdb948",
+      "bytes": 31457408,
+      "min": 7.546191773144528e-05,
+      "max": 0.506432831287384
+    },
+    {
+      "path": "B1_C1/geo-test-02.npy",
+      "sha256": "a4bd6ea4ac66e12985a83e7fa4f5f7ebafb3d4f4bccfea3d4fc53bb0f39214e6",
+      "bytes": 31457408,
+      "min": 1.3183990631659981e-05,
+      "max": 0.5051552653312683
+    },
+    {
+      "path": "B1_C1/geo-test-03.npy",
+      "sha256": "11b444d94da6099b0093e5eeb9d16d285361420a4b44c7cf822865abf0c4b2e4",
+      "bytes": 31457408,
+      "min": 5.218395244810381e-07,
+      "max": 0.5143215656280518
+    },
+    {
+      "path": "B2_C0/geo-gen-01.npy",
+      "sha256": "4ca554c1c1839dff89c076b4dca3cb3c1ca4d686197fab9f6d52d8b3ba87ab64",
+      "bytes": 31457408,
+      "min": 8.39676613395568e-06,
+      "max": 0.5077999830245972
+    },
+    {
+      "path": "B2_C0/geo-test-01.npy",
+      "sha256": "048c9e570934aa4dc83aa70285cf0dd8127729d7548704df41f5e427cdfd226d",
+      "bytes": 31457408,
+      "min": 5.2442563173826784e-05,
+      "max": 0.5067630410194397
+    },
+    {
+      "path": "B2_C0/geo-test-02.npy",
+      "sha256": "8ca137e30e2d922aa1a5416f8f57bac0e1896f12a7073d8ca7ae1edcb8038baf",
+      "bytes": 31457408,
+      "min": 1.1102883036073763e-05,
+      "max": 0.5063775181770325
+    },
+    {
+      "path": "B2_C0/geo-test-03.npy",
+      "sha256": "f42ba5791d4d5164d3c02e2a4913d75b12b50b8efcdf789f888d9afc1e9b225b",
+      "bytes": 31457408,
+      "min": 2.0601667927167e-07,
+      "max": 0.5134838223457336
+    },
+    {
+      "path": "B2_C1/geo-gen-01.npy",
+      "sha256": "c675d56f88cbd1fc4b20b6c0e22721ae33d2a1292b98883c02b697e20d2a5f4b",
+      "bytes": 31457408,
+      "min": 9.750286153575871e-06,
+      "max": 0.5066176056861877
+    },
+    {
+      "path": "B2_C1/geo-test-01.npy",
+      "sha256": "d511cb0cfa102131071f8db4109571f318e945628ff587606a1719e0409807e4",
+      "bytes": 31457408,
+      "min": 1.2839407645515166e-05,
+      "max": 0.5047722458839417
+    },
+    {
+      "path": "B2_C1/geo-test-02.npy",
+      "sha256": "a328957c0f99678305c8b02d60b14efd57373fb025679c5a0edb9f4268612765",
+      "bytes": 31457408,
+      "min": 2.1600775653496385e-05,
+      "max": 0.5053439140319824
+    },
+    {
+      "path": "B2_C1/geo-test-03.npy",
+      "sha256": "3904910c3f70490acf81d4dc4accb13cb23587d60ad7c3108cace694aeffec36",
+      "bytes": 31457408,
+      "min": 4.523019754287816e-07,
+      "max": 0.5150324106216431
+    },
+    {
+      "path": "B3_C0/geo-gen-01.npy",
+      "sha256": "6f4640de05a4b3caefc69feaf72e1834e215f3859c14ea6de1b88f87d2c71580",
+      "bytes": 31457408,
+      "min": 1.1228713447053451e-05,
+      "max": 0.5085998177528381
+    },
+    {
+      "path": "B3_C0/geo-test-01.npy",
+      "sha256": "a34c3b55ada492e7602a1964e91df461a5ccfca8dccb4213829b0ebc87846184",
+      "bytes": 31457408,
+      "min": 9.830597991822287e-05,
+      "max": 0.5059140920639038
+    },
+    {
+      "path": "B3_C0/geo-test-02.npy",
+      "sha256": "a3b7c58c857a831d59e2c3b64fb29b0f244e431ab1074898ca51bb849e15bfac",
+      "bytes": 31457408,
+      "min": 2.7244084776612e-05,
+      "max": 0.5071415901184082
+    },
+    {
+      "path": "B3_C0/geo-test-03.npy",
+      "sha256": "e5a0d0543595beef73b2e1abb7a68eadb839baef3c3e608011056effadd0d92c",
+      "bytes": 31457408,
+      "min": 1.3594479923995095e-06,
+      "max": 0.5205672979354858
+    },
+    {
+      "path": "B3_C1/geo-gen-01.npy",
+      "sha256": "8d9a16e2c6cf958346888c326346f622273d274c3babdfd53ae3d7f8b652eecf",
+      "bytes": 31457408,
+      "min": 1.2900885849376209e-05,
+      "max": 0.5077925324440002
+    },
+    {
+      "path": "B3_C1/geo-test-01.npy",
+      "sha256": "499f56d0a071c0d8ad12b1992f57bb9a20ebf761c0a0dc4d8851822d6720029f",
+      "bytes": 31457408,
+      "min": 4.6348923206096515e-05,
+      "max": 0.5036439895629883
+    },
+    {
+      "path": "B3_C1/geo-test-02.npy",
+      "sha256": "fcfde4fc02bb01d32338ec5d50a9a05f4f72896f68c648318ca99ada50dcb0ab",
+      "bytes": 31457408,
+      "min": 2.4887236577342264e-05,
+      "max": 0.5060867071151733
+    },
+    {
+      "path": "B3_C1/geo-test-03.npy",
+      "sha256": "731dde21baf5a1ba7fa987ce418a681e44f1b7973f7d70da647a5c657b3fcec1",
+      "bytes": 31457408,
+      "min": 6.9902728228044e-07,
+      "max": 0.513183057308197
+    },
+    {
+      "path": "cgan_original/geo-gen-01.npy",
+      "sha256": "f33eb38fc86d1022f3428d8cd0a03ba07c77ddeb5abe6470a5aa233565a43924",
+      "bytes": 31457408,
+      "min": 0.00016480343765579164,
+      "max": 0.5109162330627441
+    },
+    {
+      "path": "cgan_original/geo-test-01.npy",
+      "sha256": "223890b6c0401a9e35208bdd97f2380c1a5f337b9bebd48b0bea4d413b267538",
+      "bytes": 31457408,
+      "min": 0.0005695847794413567,
+      "max": 0.5090898275375366
+    },
+    {
+      "path": "cgan_original/geo-test-02.npy",
+      "sha256": "f93b7f19d4f5ca1b057aad7f6373cda5733c7a70d06bdfa50baaeaec0ec1e03b",
+      "bytes": 31457408,
+      "min": 0.00014130283670965582,
+      "max": 0.5107132792472839
+    },
+    {
+      "path": "cgan_original/geo-test-03.npy",
+      "sha256": "49aee8509d2d2d21317fa6d6b7c17460414a070d42b9265f5a17717b0f2eb827",
+      "bytes": 31457408,
+      "min": 7.183844559222052e-07,
+      "max": 0.5172337889671326
+    },
+    {
+      "path": "unet_original/geo-gen-01.npy",
+      "sha256": "7ea25da6729c93a1ed6dbeeeed5251905adb62396ccae6fc14dbdde41c196bac",
+      "bytes": 31457408,
+      "min": 0.009670078754425049,
+      "max": 0.5010606050491333
+    },
+    {
+      "path": "unet_original/geo-test-01.npy",
+      "sha256": "3034652d1aafa46d9fdad03b783a360a8134a0adda87ffa16747fc2568511e12",
+      "bytes": 31457408,
+      "min": 0.01585792563855648,
+      "max": 0.5000801086425781
+    },
+    {
+      "path": "unet_original/geo-test-02.npy",
+      "sha256": "a6e9301df5ac616e46b338418e18e2928b68e9553bce8fbff58874b45ef6637f",
+      "bytes": 31457408,
+      "min": 0.011304780840873718,
+      "max": 0.5008480548858643
+    },
+    {
+      "path": "unet_original/geo-test-03.npy",
+      "sha256": "bc14d176f701a0c57d038557a57b812763a3adc7e2d2928db1147b2e6863af42",
+      "bytes": 31457408,
+      "min": 0.0002281938068335876,
+      "max": 0.5025463700294495
+    }
+  ],
+  "count": 32,
+  "bytes": 1006637056
+}

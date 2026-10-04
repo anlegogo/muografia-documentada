@@ -1,5 +1,15 @@
 # Registro de cambios
 
+## Evaluación final y corrección C2 — 2026-10-04, Colombia
+
+- Actividad de la dirección: auditoría de la entrega estudiantil 4e5945e, conservada sin modificar; no hubo nuevo entrenamiento.
+- Se verificaron 32 matrices (1.006.637.056 bytes), 50 recibos/manifiestos frente a Git y ocho archivos de referencias. Se reprodujeron 4.320 filas de imagen y 1.134 regionales; muestra CPU/GPU de 32 inferencias consistente.
+- Se identificó inestabilidad numérica en controles de contraste. C2 conserva el protocolo original, introduce desempate geométrico explícito y publica índices completos: cuatro pruebas, 162 comprobaciones de sensibilidad y reproducción exacta desde registro.
+- Se conserva comparación antes/después: ocho contrastes de referencia cambian y un control puntual B1/generalización pasa a favorable; las doce clasificaciones globales mantienen el compromiso. No se afirma equivalencia física ni 20× demostrado.
+- EF-02 y EF-03 verificados en el alcance indicado; EF-C2 verificado; EF-04 y OE2-P04 parciales por alcance académico/científico. Sigue incorporación al manuscrito y confirmación del OE3; no se pide otra corrida GPU.
+
+- [Revisión C2](objetivo-2/REVISION_EVALUACION_FINAL_C2.md).
+
 ## Preparación de evaluación final OE2 — 2026-10-04, Colombia
 
 - Por solicitud de la dirección, se sustituye la consolidación E1 como requisito bloqueante por inferencia final al 5 % con ocho redes existentes. No hay nuevo entrenamiento.
