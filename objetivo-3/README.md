@@ -1,5 +1,7 @@
 # OE3: curvas descriptivas de exposición
 
+**Revisión directa de la propuesta aprobada — 2026-10-04:** se verificaron las fases 3 y 4: requieren detectabilidad local (incluida SNR), evaluación de redes a distintas fracciones y umbrales de calidad predefinidos, sin valores operativos fijados en el PDF. El desglose al 5 % conserva su validez, pero no completa esos compromisos. [Revisión y pendientes OE3-P05/P06](../docs/REVISION_PROPUESTA_APROBADA.md). No se exige campaña de campo; se mantiene aplazada la redacción del informe final.
+
 **Desglose experimental ejecutado:** [comparación por vista y región](RESULTADO_EXPERIMENTAL_OE3.md). La cGAN al 5 % supera SSIM/PSNR de la entrada al 10 % en 24/24 vistas y 480/480 correspondencias, con deterioro de Q en 24/24 vistas. Se cuantifica una reducción descriptiva 2:1 de conteos bajo esas métricas; no un factor físico aceptado ni el máximo alcanzable. No se requiere otra GPU para reproducir este balance. La redacción del informe final se aplaza hasta concluir la revisión experimental, por indicación de la dirección.
 
 2026-10-04, Colombia. Análisis de la dirección sobre el catálogo ya disponible, posterior a la evaluación final del OE2. Base del repositorio: `1214307c525ace12c978ede5336fcf893abad7c7`. Se amplía la preparación del OE3 por solicitud de continuar el trabajo local; la redacción oficial del objetivo sigue pendiente de confirmación. No se declara su cumplimiento.
@@ -55,7 +57,7 @@ Las referencias son de alta estadística finita, con ruido; las imágenes reduci
 | Pendiente | Estado | Criterio |
 |---|---|---|
 | OE3-P01: curvas disponibles | verificado | Cuatro fracciones, todos los casos reservados, control f05 y código reproducible. |
-| OE3-P02: alcance y calidad aceptable | parcial | Alcance descriptivo SSIM/PSNR explicitado; tolerancia de uso físico y contraste definitivo con propuesta aprobada no resueltos por esta comparación. |
+| OE3-P02: alcance y calidad aceptable | parcial | Propuesta aprobada leída directamente; criterios operativos aún por justificar. No se fijan umbrales retrospectivos para asegurar aceptación. |
 | OE3-P03: factor alcanzable | parcial | Desglose ejecutado: razón descriptiva 2:1 bajo SSIM/PSNR en todas las vistas; 10:1 no respaldado conjuntamente. Factor físico y máximo no demostrados. |
 | OE3-P04: manuscrito | pendiente | Aplazado por indicación de la dirección hasta culminar revisión experimental; no se solicita redacción a los estudiantes en esta etapa. |
 
@@ -97,3 +99,10 @@ El trabajo puede continuar con los archivos disponibles y sin otra campaña GPU.
 4. **OE3-P04 — Redactar resultados y conclusión.** Integrar tablas, figuras, supuestos de flujo/detección y límites. Si los criterios difieren, informar factores o comparaciones por métrica, sin un único número que oculte deterioros. Si no puede demostrarse un factor bajo un criterio justificado, consignarlo como resultado del estudio.
 
 La revisión de criterio y la síntesis pueden realizarse con la evidencia conservada; la integración del manuscrito queda aplazada por indicación de la dirección. Cualquier nueva corrida dependería de una pregunta experimental específica que este análisis no pueda responder. La ruta anterior conserva la secuencia propuesta. Actualización: el desglose por vista/región y la comparación de las fracciones ya se ejecutaron en el registro enlazado al inicio; la tolerancia física y el informe final siguen pendientes.
+
+## Pendientes identificados en la propuesta
+
+- **OE3-P05, pendiente:** evaluación de redes con distintas fracciones de entrada; las curvas sin red no la sustituyen.
+- **OE3-P06, pendiente:** SNR local y correspondencia entre contraste de cuentas y contraste de opacidad.
+
+Criterios de cierre y secuencia en la [revisión de propuesta](../docs/REVISION_PROPUESTA_APROBADA.md). P03 queda condicionado a estos análisis y P02; no se inicia automáticamente otra campaña.

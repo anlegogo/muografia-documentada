@@ -1,5 +1,7 @@
 # Índice de documentación
 
+- [Propuesta aprobada: requisitos reales y pendientes experimentales OE2/OE3](REVISION_PROPUESTA_APROBADA.md).
+
 - [OE3: resultado experimental por vista/región y reducción descriptiva](../objetivo-3/RESULTADO_EXPERIMENTAL_OE3.md).
 
 - [Precisión de calidad comparable OE2 y tabla por geometría](../objetivo-2/CIERRE_OE2.md#precisión-sobre-calidad-comparable-y-continuidad-al-oe3).

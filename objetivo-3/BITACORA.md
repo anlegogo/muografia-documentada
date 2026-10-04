@@ -1,5 +1,14 @@
 # Bitácora de preparación del OE3
 
+## Revisión directa de propuesta aprobada — 2026-10-04, Colombia
+
+- Se reabrió el PDF de 35 páginas, se extrajo su texto y se inspeccionaron visualmente las páginas PDF 26 y 29. Se registra SHA-256; queda superada la limitación de lectura anterior.
+- Se verifican requisitos de SNR local, contraste de opacidad y evaluación de modelos a diferentes submuestreos. La fase 4 exige umbrales predefinidos, pero el PDF no fija sus valores operativos.
+- Se corrige la interpretación de cierre: 2:1 descriptivo al 5 % no completa la fase 4. Tampoco se exige medir tiempos en un detector real como condición original.
+- OE3-P02 parcial, fuente oficial ya verificada; P05/P06 pendientes. No hubo nuevas simulaciones, entrenamiento, inferencias ni redacción del informe final.
+
+[Revisión completa](../docs/REVISION_PROPUESTA_APROBADA.md).
+
 ## Desglose experimental OE3 por vista y región — 2026-10-04, Colombia
 
 - Actividad de revisión de la dirección: análisis de métricas conservadas, sin nueva simulación, entrenamiento ni inferencia. Se conserva la autoría estudiantil de las ejecuciones originales.

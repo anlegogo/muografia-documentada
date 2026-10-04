@@ -1,5 +1,7 @@
 # OE3: comparación por vista y región y reducción descriptiva de conteos
 
+**Revisión directa de la propuesta aprobada — 2026-10-04:** se verificaron las fases 3 y 4: requieren detectabilidad local (incluida SNR), evaluación de redes a distintas fracciones y umbrales de calidad predefinidos, sin valores operativos fijados en el PDF. El desglose al 5 % conserva su validez, pero no completa esos compromisos. [Revisión y pendientes OE3-P05/P06](../docs/REVISION_PROPUESTA_APROBADA.md). No se exige campaña de campo; se mantiene aplazada la redacción del informe final.
+
 Fecha de análisis: 2026-10-04, Colombia. Actividad de revisión de la dirección sobre resultados estudiantiles conservados. Este documento es un registro del análisis experimental, no un capítulo del informe final. No se realizaron nuevas simulaciones, entrenamientos ni inferencias.
 
 ## Pregunta y alcance

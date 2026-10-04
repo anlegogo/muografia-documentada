@@ -1,5 +1,7 @@
 # Cierre de la ejecución y de la síntesis documental del OE2
 
+**Revisión directa de la propuesta aprobada — 2026-10-04:** se verificaron las fases 3 y 4: requieren detectabilidad local (incluida SNR), evaluación de redes a distintas fracciones y umbrales de calidad predefinidos, sin valores operativos fijados en el PDF. El desglose al 5 % conserva su validez, pero no completa esos compromisos. [Revisión y pendientes OE3-P05/P06](../docs/REVISION_PROPUESTA_APROBADA.md). No se exige campaña de campo; se mantiene aplazada la redacción del informe final.
+
 Fecha de registro: 2026-10-04, Colombia. Se consolida el trabajo solicitado por la dirección a partir de evidencia existente. No se declara una nueva ejecución experimental, ni aprobación formal de tesis, ni equivalencia física.
 
 **Producto terminado:** [informe académico del OE2](manuscrito/INFORME_OE2.md), con formulación del objetivo, método, matemática, entrenamiento, comparación de ocho redes, dos figuras científicas, resultados por geometría y discusión. La [matriz](MATRIZ_CUMPLIMIENTO.md) vincula cada componente con evidencia.
