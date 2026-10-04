@@ -1,0 +1,287 @@
+[
+  {
+    "path": "continua/boundary-live.json",
+    "bytes": 108352,
+    "sha256": "d5265b16e62532eb5f1706059686973eb5739d0b0720bc01e39b2b4dea16974a"
+  },
+  {
+    "path": "continua/boundary-saved.json",
+    "bytes": 108352,
+    "sha256": "d5265b16e62532eb5f1706059686973eb5739d0b0720bc01e39b2b4dea16974a"
+  },
+  {
+    "path": "continua/completed.json",
+    "bytes": 108,
+    "sha256": "f0b1e63cff62fb4f82a0438382b447f6bdc0911d3ea077f3c2c86dc3bc6772ce"
+  },
+  {
+    "path": "continua/epoch1-validation.json",
+    "bytes": 73,
+    "sha256": "920c05cfd2814c3c2139a14275dfc0b88979f021790eb0d5ff693550b182484f"
+  },
+  {
+    "path": "continua/epoch1.pt",
+    "bytes": 279756678,
+    "sha256": "a7c0f0626fc4822a010e69f8f5f28fa94c9dfd73cd67bb7448d18460f7ec9be1"
+  },
+  {
+    "path": "continua/epoch2.pt",
+    "bytes": 279756678,
+    "sha256": "6e0d9b152304988087d49e858854f0e6644ae5ff9c3ffcb66a44d3676e7aa500"
+  },
+  {
+    "path": "continua/identity.json",
+    "bytes": 6237,
+    "sha256": "46905a6d1114cdd5a10518ba0cf948d06d1c20ba60ea9af4c53dbc8f2cdd6f43"
+  },
+  {
+    "path": "continua/indices-val.json",
+    "bytes": 323,
+    "sha256": "1dd2c2a6793615996d83f216aff84a13bc1f88f7eea8217731c79b66073fe104"
+  },
+  {
+    "path": "continua/predicciones-val.npy",
+    "bytes": 2097280,
+    "sha256": "1f157184d4df080e4ce43fd78c33294e2a034a7b9482711c69ab55e649ad256b"
+  },
+  {
+    "path": "continua/trace.jsonl",
+    "bytes": 394996,
+    "sha256": "33341e1d7f5b61bc30081ef2b3695e54ca27195101b754717de6febc200e5f22"
+  },
+  {
+    "path": "continua/validation.json",
+    "bytes": 73,
+    "sha256": "b03b7c76a00b757747e1a9d5a4b1607108965b5ecc11f778a5b6c1ed1db146ad"
+  },
+  {
+    "path": "continua-command.json",
+    "bytes": 371,
+    "sha256": "c6c11db51ae173063eba1e0f8e0d4592fb8d20cfa766a25f5493805152318f7f"
+  },
+  {
+    "path": "continua-exit.json",
+    "bytes": 21,
+    "sha256": "81868a6e94ffc0178bf833deb1c9013d9fab4ee95ddb876a5e8ec4f1d26376d2"
+  },
+  {
+    "path": "continua.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "diagnostico.json",
+    "bytes": 2298,
+    "sha256": "305b00163efe1fc6ab677dd403ee8a4ee03134ba6a14ed9ecd07287c3f088dca"
+  },
+  {
+    "path": "reanudada/boundary-live.json",
+    "bytes": 108352,
+    "sha256": "d5265b16e62532eb5f1706059686973eb5739d0b0720bc01e39b2b4dea16974a"
+  },
+  {
+    "path": "reanudada/completed.json",
+    "bytes": 109,
+    "sha256": "14e9e6712a6d15afa07221e2090eb560833786ebe50362c1ee02a7a4fc4f0c2f"
+  },
+  {
+    "path": "reanudada/epoch2.pt",
+    "bytes": 279756678,
+    "sha256": "951b6529c78628f20923f406b0ba3a1fa2bb1a351c170ab06854ee766eba5636"
+  },
+  {
+    "path": "reanudada/identity.json",
+    "bytes": 6237,
+    "sha256": "46905a6d1114cdd5a10518ba0cf948d06d1c20ba60ea9af4c53dbc8f2cdd6f43"
+  },
+  {
+    "path": "reanudada/indices-val.json",
+    "bytes": 323,
+    "sha256": "1dd2c2a6793615996d83f216aff84a13bc1f88f7eea8217731c79b66073fe104"
+  },
+  {
+    "path": "reanudada/predicciones-val.npy",
+    "bytes": 2097280,
+    "sha256": "136ac88195de587a22c4f35bcb5749c63f48b289bc4946dd07f63175ca551b65"
+  },
+  {
+    "path": "reanudada/restore-check.json",
+    "bytes": 5113,
+    "sha256": "217282dab5c6f87c55974c188a194496927f2ca35f1121493a96d22c51a51c51"
+  },
+  {
+    "path": "reanudada/trace.jsonl",
+    "bytes": 394993,
+    "sha256": "d5507680a9389fa98f8f3d8cf897ec4637f6f3ecfb5e9cdb3bf0199d44b7d3bd"
+  },
+  {
+    "path": "reanudada/validation.json",
+    "bytes": 73,
+    "sha256": "1a3ba2454162f5b7011c797c8b5ae048a467b07d47d0ff3430fb71cd00856df1"
+  },
+  {
+    "path": "reanudada-command.json",
+    "bytes": 446,
+    "sha256": "31c82d59434dd4712472c2d4b7f29eea4285c0b70ec490edcd97332b6c3a911d"
+  },
+  {
+    "path": "reanudada-exit.json",
+    "bytes": 21,
+    "sha256": "81868a6e94ffc0178bf833deb1c9013d9fab4ee95ddb876a5e8ec4f1d26376d2"
+  },
+  {
+    "path": "reanudada.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "recarga/boundary-live.json",
+    "bytes": 108352,
+    "sha256": "d5265b16e62532eb5f1706059686973eb5739d0b0720bc01e39b2b4dea16974a"
+  },
+  {
+    "path": "recarga/boundary-saved.json",
+    "bytes": 108352,
+    "sha256": "d5265b16e62532eb5f1706059686973eb5739d0b0720bc01e39b2b4dea16974a"
+  },
+  {
+    "path": "recarga/completed.json",
+    "bytes": 107,
+    "sha256": "d8246e18729f74d019d5d76044fb33cf4e225e7438b7eff3cb0cf70196d8ffc7"
+  },
+  {
+    "path": "recarga/epoch1-validation.json",
+    "bytes": 73,
+    "sha256": "920c05cfd2814c3c2139a14275dfc0b88979f021790eb0d5ff693550b182484f"
+  },
+  {
+    "path": "recarga/epoch1.pt",
+    "bytes": 279756678,
+    "sha256": "a7c0f0626fc4822a010e69f8f5f28fa94c9dfd73cd67bb7448d18460f7ec9be1"
+  },
+  {
+    "path": "recarga/epoch2.pt",
+    "bytes": 279756678,
+    "sha256": "6e0d9b152304988087d49e858854f0e6644ae5ff9c3ffcb66a44d3676e7aa500"
+  },
+  {
+    "path": "recarga/identity.json",
+    "bytes": 6237,
+    "sha256": "46905a6d1114cdd5a10518ba0cf948d06d1c20ba60ea9af4c53dbc8f2cdd6f43"
+  },
+  {
+    "path": "recarga/indices-val.json",
+    "bytes": 323,
+    "sha256": "1dd2c2a6793615996d83f216aff84a13bc1f88f7eea8217731c79b66073fe104"
+  },
+  {
+    "path": "recarga/predicciones-val.npy",
+    "bytes": 2097280,
+    "sha256": "1f157184d4df080e4ce43fd78c33294e2a034a7b9482711c69ab55e649ad256b"
+  },
+  {
+    "path": "recarga/restore-check.json",
+    "bytes": 5113,
+    "sha256": "217282dab5c6f87c55974c188a194496927f2ca35f1121493a96d22c51a51c51"
+  },
+  {
+    "path": "recarga/trace.jsonl",
+    "bytes": 394996,
+    "sha256": "33341e1d7f5b61bc30081ef2b3695e54ca27195101b754717de6febc200e5f22"
+  },
+  {
+    "path": "recarga/validation.json",
+    "bytes": 73,
+    "sha256": "b03b7c76a00b757747e1a9d5a4b1607108965b5ecc11f778a5b6c1ed1db146ad"
+  },
+  {
+    "path": "recarga-command.json",
+    "bytes": 369,
+    "sha256": "856858545153828e5bd5c1ffdd2e8579fba4b8bff0115bbcfb49f3767df00c79"
+  },
+  {
+    "path": "recarga-exit.json",
+    "bytes": 21,
+    "sha256": "81868a6e94ffc0178bf833deb1c9013d9fab4ee95ddb876a5e8ec4f1d26376d2"
+  },
+  {
+    "path": "recarga.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "repetida/boundary-live.json",
+    "bytes": 108352,
+    "sha256": "d5265b16e62532eb5f1706059686973eb5739d0b0720bc01e39b2b4dea16974a"
+  },
+  {
+    "path": "repetida/boundary-saved.json",
+    "bytes": 108352,
+    "sha256": "d5265b16e62532eb5f1706059686973eb5739d0b0720bc01e39b2b4dea16974a"
+  },
+  {
+    "path": "repetida/completed.json",
+    "bytes": 108,
+    "sha256": "3597d92df27feac841fc29a30005029416d6524d0f5989f195b8092dacad7bb5"
+  },
+  {
+    "path": "repetida/epoch1-validation.json",
+    "bytes": 73,
+    "sha256": "920c05cfd2814c3c2139a14275dfc0b88979f021790eb0d5ff693550b182484f"
+  },
+  {
+    "path": "repetida/epoch1.pt",
+    "bytes": 279756678,
+    "sha256": "a7c0f0626fc4822a010e69f8f5f28fa94c9dfd73cd67bb7448d18460f7ec9be1"
+  },
+  {
+    "path": "repetida/epoch2.pt",
+    "bytes": 279756678,
+    "sha256": "6e0d9b152304988087d49e858854f0e6644ae5ff9c3ffcb66a44d3676e7aa500"
+  },
+  {
+    "path": "repetida/identity.json",
+    "bytes": 6237,
+    "sha256": "46905a6d1114cdd5a10518ba0cf948d06d1c20ba60ea9af4c53dbc8f2cdd6f43"
+  },
+  {
+    "path": "repetida/indices-val.json",
+    "bytes": 323,
+    "sha256": "1dd2c2a6793615996d83f216aff84a13bc1f88f7eea8217731c79b66073fe104"
+  },
+  {
+    "path": "repetida/predicciones-val.npy",
+    "bytes": 2097280,
+    "sha256": "1f157184d4df080e4ce43fd78c33294e2a034a7b9482711c69ab55e649ad256b"
+  },
+  {
+    "path": "repetida/trace.jsonl",
+    "bytes": 394996,
+    "sha256": "33341e1d7f5b61bc30081ef2b3695e54ca27195101b754717de6febc200e5f22"
+  },
+  {
+    "path": "repetida/validation.json",
+    "bytes": 73,
+    "sha256": "b03b7c76a00b757747e1a9d5a4b1607108965b5ecc11f778a5b6c1ed1db146ad"
+  },
+  {
+    "path": "repetida-command.json",
+    "bytes": 371,
+    "sha256": "d5f0c8739a494465668ae9749f6875d3a791e95b24ba10d712368c573dac7ca0"
+  },
+  {
+    "path": "repetida-exit.json",
+    "bytes": 21,
+    "sha256": "81868a6e94ffc0178bf833deb1c9013d9fab4ee95ddb876a5e8ec4f1d26376d2"
+  },
+  {
+    "path": "repetida.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "request.json",
+    "bytes": 372,
+    "sha256": "cea1108d81cdb485d7dd6cc4793fee194e4b30b863bf610dd5a5e29da4ea9014"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  "/workspace/venv/bin/python",
+  "/workspace/repo/objetivo-2/herramientas/diagnosticar_recuperacion_cgan.py",
+  "--modo",
+  "continua",
+  "--rama",
+  "C0",
+  "--datos",
+  "/workspace/insumos",
+  "--mascaras",
+  "/workspace/trabajo/mascaras-ajuste-v1",
+  "--pesos",
+  "/workspace/insumos/pesos/cgan-best.pt",
+  "--salida",
+  "/workspace/diagnostico-cgan/C0/continua"
+]

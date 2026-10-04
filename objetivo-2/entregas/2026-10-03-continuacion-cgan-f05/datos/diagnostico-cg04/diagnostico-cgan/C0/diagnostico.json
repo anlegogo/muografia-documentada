@@ -1,0 +1,87 @@
+{
+  "schema": "oe2-cgan-resume-diagnostic-v1",
+  "arm": "C0",
+  "cpu_test": false,
+  "gpu_accepted": false,
+  "comparisons": {
+    "repetida": {
+      "boundary": {
+        "values_equal": true,
+        "different_values": [],
+        "metadata_equal": true,
+        "different_metadata": []
+      },
+      "first_difference": null,
+      "differing_events": 0,
+      "prediction_max_abs": 0.0,
+      "prediction_mean_abs": 0.0,
+      "validation_left": {
+        "n": 8,
+        "ssim": 0.8222093776973222,
+        "psnr": 30.929086892299473
+      },
+      "validation_right": {
+        "n": 8,
+        "ssim": 0.8222093776973222,
+        "psnr": 30.929086892299473
+      }
+    },
+    "recarga": {
+      "boundary": {
+        "values_equal": true,
+        "different_values": [],
+        "metadata_equal": true,
+        "different_metadata": []
+      },
+      "first_difference": null,
+      "differing_events": 0,
+      "prediction_max_abs": 0.0,
+      "prediction_mean_abs": 0.0,
+      "validation_left": {
+        "n": 8,
+        "ssim": 0.8222093776973222,
+        "psnr": 30.929086892299473
+      },
+      "validation_right": {
+        "n": 8,
+        "ssim": 0.8222093776973222,
+        "psnr": 30.929086892299473
+      }
+    },
+    "reanudada": {
+      "boundary": {
+        "values_equal": true,
+        "different_values": [],
+        "metadata_equal": true,
+        "different_metadata": []
+      },
+      "first_difference": {
+        "index": 6,
+        "event": "epoch2/batch0/D/gradients",
+        "values_equal": false,
+        "different_values": [
+          "/net.0.bias",
+          "/net.0.weight",
+          "/net.2.weight",
+          "/net.5.weight"
+        ],
+        "metadata_equal": true,
+        "different_metadata": []
+      },
+      "differing_events": 68,
+      "prediction_max_abs": 1.5698373317718506e-05,
+      "prediction_mean_abs": 2.711656662268691e-07,
+      "validation_left": {
+        "n": 8,
+        "ssim": 0.8222093776973222,
+        "psnr": 30.929086892299473
+      },
+      "validation_right": {
+        "n": 8,
+        "ssim": 0.8222097180625256,
+        "psnr": 30.929111291535662
+      }
+    }
+  },
+  "limitation": "Instrumentaci\u00f3n con copias CPU/sincronizaci\u00f3n; no sustituye la prueba t\u00e9cnica original ni demuestra una causa CUDA."
+}
