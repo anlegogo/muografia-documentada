@@ -1,5 +1,14 @@
 # Bitácora del OE2
 
+## 2026-10-04 — Valoración por vista y diseño prospectivo
+
+- Actividad autorizada por la dirección: examinar mejoras/deterioros con los datos disponibles, documentar valoración y diseñar repetición. Fecha: 2026-10-04 America/Bogota.
+- Entradas: evaluación CG-04c y predicciones iniciales verificadas. Se recalculó su detalle mediante analyze_predictions y se agregaron las 18 vistas, 24 anomalías y 23 contrastes comunes.
+- Evidencia: [valoración](VALORACION_COMPROMISO_CGAN_F05.md), JSON, CSV, figura PNG/PDF inspeccionada y analizador reproducible. Los promedios reconstruyen Q, SSIM, PSNR y cielo/borde con diferencias menores de 1e-12.
+- Resultado: mejora agregada C1/C0 con heterogeneidad, deterioro de borde en geo-val-02 y nueve inversiones de signo del contraste medio, varias con referencia cercana a cero. El cuerpo denso de geo-val-03/V1 merece seguimiento explícito. No se modifica la clasificación descriptiva anterior ni se concede aceptación física.
+- Decisión: C1 permanece como candidata para estudiar estabilidad de la continuación. Se fijaron tres semillas nuevas y seis continuaciones de cinco épocas, todas desde el mismo checkpoint inicial. Es un diseño condicionado, no una réplica desde cero ni confirmación independiente.
+- Límites y siguiente paso: una semilla previa, tres geometrías val observadas; sin nuevas inferencias, entrenamiento ni apertura de particiones reservadas. Adaptar y verificar localmente el ejecutor y sus identidades antes de enviar comandos de ejecución a estudiantes. La especificación permanece ready_for_gpu=false.
+
 ## 2026-10-04 — Auditoría de la entrega y binarios CG-04c
 
 - Fecha de revisión: 2026-10-04 America/Bogota; ejecución y publicación estudiantil del 2026-10-04 UTC. Actividad autorizada: verificar los archivos de Drive y la evaluación recibida.

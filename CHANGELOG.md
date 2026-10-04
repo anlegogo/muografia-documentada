@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## 2026-10-04 — Valoración del compromiso y diseño de repetición cGAN
+
+- Se analizaron las 18 vistas y 24 combinaciones de anomalía; se verificó la reproducción de resúmenes y se publicaron tabla CSV, evidencia JSON y figura PNG/PDF.
+- C1 mejora q en 15/18 vistas frente a C0, pero empeora borde en las seis vistas de geo-val-02 y SSIM/PSNR en las 18 frente al inicial. La valoración no concede aceptación física.
+- Se fijó un diseño de tres parejas nuevas, condicionado al mismo checkpoint inicial; integración de semillas y validación operativa pendientes. No se ejecutó entrenamiento. [Valoración y diseño](objetivo-2/VALORACION_COMPROMISO_CGAN_F05.md).
+
 ## 2026-10-04 — Verificación independiente de CG-04c y cinco épocas
 
 - Se descargaron y verificaron 13 binarios, 1.970.094.884 bytes. Se confirmó recuperación exacta desde cuatro checkpoints técnicos y consistencia de las dos continuaciones finales.

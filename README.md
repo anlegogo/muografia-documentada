@@ -1,6 +1,6 @@
 # Muografía: documentación y seguimiento académico
 
-**OE2 — entrega CG-04c verificada:** la [auditoría independiente](objetivo-2/REVISION_BINARIOS_CG04C.md) confirma los 13 binarios, recuperación exacta GPU y ambas continuaciones de cinco épocas. Se reprodujeron la evaluación y la inferencia. C1 mejora frente a C0, con un compromiso respecto del modelo inicial; aceptación física y cierre del OE2 siguen pendientes.
+**OE2 — valoración de C1 completada:** la [comparación por vista y anomalía](objetivo-2/VALORACION_COMPROMISO_CGAN_F05.md) confirma mejora agregada frente a C0 y deterioros localizados. Se diseñó una [repetición de tres parejas](objetivo-2/DISENO_REPETICION_CGAN_F05.md) para estudiar estabilidad, pendiente de integración operativa. No se acepta todavía la física ni se amplía la campaña; la recuperación y la entrega CG-04c permanecen verificadas.
 
 **Estado del OE1 — 2026-10-03: cumplido y cerrado por decisión de la dirección bajo el alcance idealizado adoptado.** Datos, distribución, justificación e informe específico completos. [Registro de cierre](objetivo-1/CIERRE_OE1.md). No se requieren nuevas corridas para este alcance; no se declara aprobada la tesis completa.
 

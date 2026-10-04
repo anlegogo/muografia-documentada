@@ -1,5 +1,8 @@
 # Índice de documentación
 
+- [Valoración del compromiso cGAN por vista y anomalía](../objetivo-2/VALORACION_COMPROMISO_CGAN_F05.md).
+- [Diseño de tres parejas nuevas de continuación cGAN](../objetivo-2/DISENO_REPETICION_CGAN_F05.md).
+
 - [Verificación independiente de pesos, recuperación e inferencia CG-04c](../objetivo-2/REVISION_BINARIOS_CG04C.md).
 
 - [CG-04c: corrección del gradiente y comprobación L40S](../objetivo-2/CORRECCION_GRADIENTES_CG04C.md).

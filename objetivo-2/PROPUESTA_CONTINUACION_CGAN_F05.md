@@ -1,5 +1,7 @@
 # Propuesta de continuación controlada de cGAN al 5 %
 
+**Actualización 2026-10-04:** CG-01/02 y la ejecución/evaluación CG-03 ya están [verificados](REVISION_BINARIOS_CG04C.md). La [valoración posterior](VALORACION_COMPROMISO_CGAN_F05.md) mantiene límites físicos y fija una repetición condicionada, aún pendiente de integración. Los estados de preparación siguientes se conservan como antecedente histórico.
+
 Fecha: 2026-10-03, Colombia. **Estado vigente: diseño implementado y recuperación exacta verificada en CPU. La comprobación GPU y el ensayo completo siguen pendientes.** La [guía operativa](INSTRUCCIONES_CONTINUACION_CGAN_F05.md) fija los comandos y condiciones de avance; se conservan a continuación la motivación y los parámetros del diseño.
 
 ## Motivo

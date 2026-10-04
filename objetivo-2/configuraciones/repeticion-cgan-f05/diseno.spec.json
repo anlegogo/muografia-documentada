@@ -1,0 +1,72 @@
+{
+  "schema": "oe2-cgan-repetition-design-v1",
+  "status": "design_only_implementation_pending",
+  "ready_for_gpu": false,
+  "created_date": "2026-10-04",
+  "question": "Estabilidad de la continuación C1 frente a C0 condicionada al checkpoint inicial",
+  "pairs": [
+    {
+      "pair": "R1",
+      "seed": 2026100401,
+      "arms": [
+        {
+          "arm": "C0",
+          "lambda_regional": 0
+        },
+        {
+          "arm": "C1",
+          "lambda_regional": 1
+        }
+      ]
+    },
+    {
+      "pair": "R2",
+      "seed": 2026100402,
+      "arms": [
+        {
+          "arm": "C0",
+          "lambda_regional": 0
+        },
+        {
+          "arm": "C1",
+          "lambda_regional": 1
+        }
+      ]
+    },
+    {
+      "pair": "R3",
+      "seed": 2026100403,
+      "arms": [
+        {
+          "arm": "C0",
+          "lambda_regional": 0
+        },
+        {
+          "arm": "C1",
+          "lambda_regional": 1
+        }
+      ]
+    }
+  ],
+  "historical_seed_excluded_from_prospective_pairs": 2026100303,
+  "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+  "inherit_design": "objetivo-2/PROPUESTA_CONTINUACION_CGAN_F05.md",
+  "epochs_per_run": 5,
+  "batch": 4,
+  "train_pairs": 1440,
+  "val_pairs": 360,
+  "gradient_policy": "wasserstein-then-weighted-gp-v1",
+  "reset_optimizers": true,
+  "n_critic": 5,
+  "reserved_splits_allowed": false,
+  "physical_acceptance": false,
+  "prospective_aggregate_consistency": "All eight existing checks in all three paired continuations; descriptive only",
+  "pilot_updates": {
+    "G": 10800,
+    "D": 54000
+  },
+  "technical_updates": {
+    "G": 48,
+    "D": 240
+  }
+}
