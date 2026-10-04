@@ -1,0 +1,25 @@
+Using Python 3.12.3 environment at: /workspace/venv
+continua/original: completada
+continua/repetida: completada
+continua/total: completada
+continua/wasserstein: completada
+continua/penalizacion: completada
+nueva/original: completada
+nueva/repetida: completada
+nueva/total: completada
+nueva/wasserstein: completada
+nueva/penalizacion: completada
+{"gpu_accepted": false, "comparisons": {"original": 4.172325134277344e-07, "repetida": 4.172325134277344e-07, "total": 4.172325134277344e-07, "wasserstein": 0.0, "penalizacion": 0.0}}
+continua/original: completada
+continua/repetida: completada
+continua/total: completada
+continua/wasserstein: completada
+continua/penalizacion: completada
+nueva/original: completada
+nueva/repetida: completada
+nueva/total: completada
+nueva/wasserstein: completada
+nueva/penalizacion: completada
+{"gpu_accepted": false, "comparisons": {"original": 4.246830940246582e-07, "repetida": 4.246830940246582e-07, "total": 4.246830940246582e-07, "wasserstein": 0.0, "penalizacion": 0.0}}
+CG04B_COMPLETO
+FIN=0

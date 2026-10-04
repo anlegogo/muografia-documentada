@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "objetivo-2/herramientas/aislar_gradientes_cgan.py",
+    "--rama",
+    "C1",
+    "--datos",
+    "/workspace/insumos",
+    "--mascaras",
+    "/workspace/trabajo/mascaras-ajuste-v1",
+    "--pesos",
+    "/workspace/insumos/pesos/cgan-best.pt",
+    "--salida",
+    "/workspace/cg04b/C1"
+  ],
+  "gpu_accepted": false
+}

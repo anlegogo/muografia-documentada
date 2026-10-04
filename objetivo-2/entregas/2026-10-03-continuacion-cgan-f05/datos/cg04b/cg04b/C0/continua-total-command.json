@@ -1,0 +1,18 @@
+[
+  "/workspace/venv/bin/python",
+  "/workspace/repo/objetivo-2/herramientas/aislar_gradientes_cgan.py",
+  "--rama",
+  "C0",
+  "--temperatura",
+  "continua",
+  "--componente",
+  "total",
+  "--salida",
+  "/workspace/cg04b/C0/continua/total",
+  "--datos",
+  "/workspace/insumos",
+  "--mascaras",
+  "/workspace/trabajo/mascaras-ajuste-v1",
+  "--pesos",
+  "/workspace/insumos/pesos/cgan-best.pt"
+]
