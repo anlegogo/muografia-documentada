@@ -59,4 +59,4 @@ La ruta queda delimitada a la **combinación de las dos contribuciones dentro de
 
 ## Archivos binarios
 
-Los 22 binarios (20 `gradientes.pt` y 2 `epoch1.pt`) suman 0,78 GB y no se versionan. Sus rutas, tamaños y huellas están en [binarios-drive.txt](datos/cg04b/binarios-drive.txt). Se descargaron del pod y se verificaron contra los inventarios `archivos.json`: 58 de 58 archivos en C0 y 58 de 58 en C1. Son archivos nuevos y no reemplazan los del diagnóstico CG-04. El enlace de Drive se agregará cuando se suban.
+Los 22 binarios (20 `gradientes.pt` y 2 `epoch1.pt`) suman 0,78 GB y no se versionan. Sus rutas, tamaños y huellas están en [binarios-drive.txt](datos/cg04b/binarios-drive.txt). Se descargaron del pod y se verificaron contra los inventarios `archivos.json`: 58 de 58 archivos en C0 y 58 de 58 en C1. Son archivos nuevos y no reemplazan los del diagnóstico CG-04. **Copia en Drive:** [carpeta cg04b](https://drive.google.com/drive/folders/1TgQNOXAHLg3JNfu4u3oV3feCqGdEwpNk), con las carpetas completas C0 y C1, registros y entorno (133 archivos, incluidos los 22 binarios listados).
