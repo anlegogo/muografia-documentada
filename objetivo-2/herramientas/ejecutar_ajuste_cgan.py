@@ -13,6 +13,7 @@ sys.path.insert(0,str(ROOT/'objetivo-2/implementacion/models'))
 sys.path.insert(0,str(ROOT/'objetivo-2/implementacion/scripts/training'))
 from patch_critic import build_critic
 from losses import critic_loss,generator_loss
+from gradientes_critico import GRADIENT_POLICY,critic_components,separated_critic_step
 
 CONFIG_SHA={'C0':'f3aed36bd5e23d76630501e0851a0e88b44d4023520850c67a2eb730c7b1effc','C1':'ab6d32814c92221da9fbe47fd54eb517e2136b36676efc2f10fea9762b635ee9'}
 
@@ -27,6 +28,7 @@ def sources():
     files=['herramientas/ejecutar_ajuste.py','herramientas/revisar_ajuste.py',
            'herramientas/evaluar_ajuste.py','herramientas/ejecutar_ajuste_cgan.py',
            'herramientas/revisar_ajuste_cgan.py','herramientas/evaluar_ajuste_cgan.py',
+           'herramientas/gradientes_critico.py',
            'implementacion/models/patch_critic.py','implementacion/scripts/training/losses.py']
     for name in files:
         p='objetivo-2/'+name
@@ -93,8 +95,9 @@ def train_step(G,D,og,od,batch,store,cfg,observer=None):
     acc={'d_real':0.,'d_fake':0.,'w_est':0.,'gp':0.,'total_d':0.,'grad_d':0.}
     for _ in range(cfg['n_critic']):
         od.zero_grad(set_to_none=True)
-        loss,parts=critic_loss(D,x,y,fake,cfg['lambda_gp'])
-        norm=checked_step(loss,D,od)
+        wasserstein,penalty,parts=critic_components(D,x,y,fake,cfg['lambda_gp'])
+        loss=wasserstein+penalty
+        norm=separated_critic_step(wasserstein,penalty,D,od)
         for k,v in {**parts,'total_d':float(loss.detach()),'grad_d':norm}.items():acc[k]+=v/cfg['n_critic']
     if observer:observer('after_d',G,D,og,od)
     # D participa en el gradiente respecto a fake, pero no acumula gradientes D.
@@ -113,7 +116,7 @@ def identity(cfg,arm,stage,store,device,initial):
     env.update(cudnn=torch.backends.cudnn.version(),cublas_workspace=os.environ['CUBLAS_WORKSPACE_CONFIG'],
                tf32=False,numpy_rng='MT19937',python_rng='MT19937')
     train=store.indices('train',cfg,stage);val=store.indices('val',cfg,stage)
-    i={'schema':'oe2-cgan-ajuste-run-v1','arm':arm,'stage':stage,'config':cfg,
+    i={'schema':'oe2-cgan-ajuste-run-v1','critic_gradient_policy':GRADIENT_POLICY,'arm':arm,'stage':stage,'config':cfg,
        'sources':sources(),'environment':env,'data_manifest_sha256':MANIFEST_SHA,
        'cache_sha256':store.identity,'train_indices_sha256':canonical(train),'val_indices_sha256':canonical(val),
        'initial_checkpoint_sha256':cfg['initial_checkpoint_sha256'],

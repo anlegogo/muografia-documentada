@@ -1,5 +1,12 @@
 # Registro de cambios
 
+## 2026-10-04 — Corrección candidata CG-04c
+
+- Se separó la derivación de Wasserstein y GP y se fijó su suma antes de un único paso Adam; se mantienen la pérdida, configuraciones y cinco pasos D por G.
+- La identidad registra la política y nuevas huellas; checkpoints y aceptaciones anteriores se rechazan. No se cambia el criterio exacto de recuperación.
+- Se verificaron 34 controles y cuatro ejecuciones completas CPU con recuperación exacta (16 G/80 D). [Guía y evidencia](objetivo-2/CORRECCION_GRADIENTES_CG04C.md).
+- Se prepararon comandos L40S y continuidad condicionada hacia cinco épocas/evaluación. La aceptación GPU, los resultados del piloto y el cierre del OE2 siguen pendientes.
+
 ## 2026-10-04 — Revisión independiente de CG-04b
 
 - Se verificaron 22 binarios, 780 598 748 bytes, estados e identidades; se reprodujeron 580 campos numéricos sin discrepancias respecto de la entrega.

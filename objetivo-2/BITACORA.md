@@ -1,5 +1,15 @@
 # Bitácora del OE2
 
+## 2026-10-04 — Preparación y validación CPU de CG-04c
+
+- Fecha y zona: 2026-10-04 America/Bogota. Actividad autorizada por la dirección: implementar la corrección propuesta tras revisar CG-04b.
+- Entradas: fuentes de 3410c65, checkpoint cGAN verificado, distribución y máscaras train/val conservadas. No se abrieron particiones reservadas.
+- Procedimiento: derivación separada W/GP, suma por parámetro y único paso Adam. Siete controles nuevos y ocho del diagnóstico; once de integración y ocho de artefactos. Cuatro ejecuciones técnicas completas en seis procesos CPU, con interrupción tras época 1 y recuperación en proceso nuevo.
+- Evidencia: [guía](CORRECCION_GRADIENTES_CG04C.md) y [JSON](evidencias/cg04c-validacion-cpu.json). Los 34 controles pasan; G, D, ambos optimizadores, RNG, historial y predicciones se recuperan exactamente en C0/C1. Total: 16 actualizaciones G y 80 D.
+- Incidencias de preparación: intento de construir la guía con un literal JavaScript falló por delimitadores; se guardó mediante parche sin afectar fuentes ni pruebas. La búsqueda amplia de fixtures encontró carpetas de dependencias sin acceso en sandbox; las rutas de los dos fixtures se localizaron y se verificaron en el entorno de pruebas autorizado. No hubo fallos numéricos en la batería definitiva.
+- Límites: CPU no acepta GPU; no se ejecutaron las cinco épocas. La suma ordenada es una corrección candidata y no demuestra la causa interna CUDA.
+- Próximo paso CG-04: estudiantes ejecutan la prueba técnica L40S con esta versión y salidas nuevas. Tras aceptación exacta y con recursos pueden continuar C0/C1 y evaluar; ante fallo se detienen y conservan evidencia. OE2 continúa abierto.
+
 ## 2026-10-04 — Revisión de la entrega CG-04b
 
 - Fecha de revisión: 2026-10-04 America/Bogota; ejecución estudiantil declarada del 2026-10-04 UTC.

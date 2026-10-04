@@ -1,5 +1,7 @@
 # Índice de documentación
 
+- [CG-04c: corrección del gradiente y comprobación L40S](../objetivo-2/CORRECCION_GRADIENTES_CG04C.md).
+
 - [Revisión independiente de los resultados GPU CG-04b](../objetivo-2/REVISION_BINARIOS_CG04B.md).
 
 - [CG-04b: separación de los gradientes del crítico](../objetivo-2/DIAGNOSTICO_GRADIENTES_CG04B.md).
