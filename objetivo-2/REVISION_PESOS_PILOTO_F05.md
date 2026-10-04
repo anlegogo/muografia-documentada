@@ -1,5 +1,7 @@
 # Verificación de pesos e inferencia del piloto al 5 %
 
+> **Continuación:** se completó la [evaluación de cuentas y contrastes con regiones geométricas](EVALUACION_GEOMETRICA_PILOTO_F05.md). Las franjas de este informe conservan su carácter exploratorio; el diagnóstico posterior no cierra la aceptación física.
+
 Fecha: 2026-10-03. Entrega estudiantil: [oe2/piloto-f05, fddd072](https://github.com/anlegogo/muografia-documentada/tree/fddd072172ebc6efa91708036c9b2775ea54b86b). Esta revisión complementa y actualiza la [revisión inicial c054225](REVISION_PILOTO_C054225.md).
 
 ## Resultado y alcance

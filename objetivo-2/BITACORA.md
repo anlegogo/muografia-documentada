@@ -41,3 +41,11 @@
 - Se reprodujeron 360 predicciones por modelo en CPU, dentro de tolerancias frente al CSV. Se inspeccionaron las 18 vistas y se calculó una exploración regional; no se abrieron imágenes reservadas. [Informe y límites](REVISION_PESOS_PILOTO_F05.md).
 - Incidencia local: fallos de lectura e índice Git ilegible; se completó el cálculo en un entorno aislado y la publicación mediante GitHub. No se reparó ni se reconstruyó el índice local.
 - P04b resuelto para inferencia de validación y P04a cubierto para los dos mejores pesos. P04c avanza como exploración; P04d continúa pendiente. No se autorizó ni se lanzó la campaña principal.
+
+## 2026-10-03 — Evaluación con regiones geométricas
+
+- Por autorización de la dirección se avanzó en el diagnóstico regional usando datos y pesos ya recibidos. Se fijaron máscaras y medidas sin seleccionar píxeles desde predicciones; la validación ya observada se declara exploratoria.
+- Se verificaron geometrías y shards, ocho pruebas analíticas y 2.304 rayos por integración numérica. Se produjeron 18 mapas de regiones, 234 registros región/método y 24 contrastes; figura inspeccionada. [Informe, evidencia y comandos](EVALUACION_GEOMETRICA_PILOTO_F05.md).
+- Resultado: reducción de error y conservación de cuentas no son equivalentes. Se documentan sesgos por región y cocientes indefinidos por cero cuentas, sin pseudoconteos ni exclusión silenciosa.
+- Incidencias: lectura local fallida, control de contraste cero y contador NumPy no serializable. Procedimientos corregidos y ejecutados completos en entorno aislado; Git local no reparado.
+- P04c: diagnóstico geométrico verificado, aceptación física parcial. P04d: diseñar ajuste acotado antes de ampliar. Sin nuevas simulaciones, entrenamiento ni acceso a test/generalization.

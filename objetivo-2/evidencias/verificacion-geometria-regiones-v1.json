@@ -1,0 +1,116 @@
+{
+  "analytic_tests": 8,
+  "success": true,
+  "numerical_step_m": 0.25,
+  "numerical_comparisons": [
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.21822564668480027
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.2174727077630223
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.2216344197950093
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.19775009639761265
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.2325138671279774
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.21822564668514133
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.22086351331779497
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.22196251382820265
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.21370287418972111
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.22243944277909122
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.1664834930259076
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.21362022889638865
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.20036116777748703
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.20409427454762863
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.23308271174698802
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.21000606522227372
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.2253598049599077
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "sampled_rays": 128,
+      "max_length_error_m": 0.2123091632743126
+    }
+  ],
+  "max_error_m": 0.23308271174698802
+}

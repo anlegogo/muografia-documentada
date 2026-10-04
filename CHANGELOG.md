@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Evaluación geométrica del piloto OE2 — 2026-10-03
+
+- Regiones derivadas del cono y anomalías para las 18 vistas de validación; 234 registros región/método y 24 contrastes con controles geométricos. [Informe](objetivo-2/EVALUACION_GEOMETRICA_PILOTO_F05.md).
+- Ocho pruebas analíticas y contraste de 2.304 rayos por integración independiente. Identidades de datos, geometrías y máscaras registradas.
+- U-Net presenta menor error absoluto, con subestimación regional de cuentas; cGAN reduce algunos sesgos de roca y anomalías, pero sobreestima más cielo. No se declara aceptación física ni se amplía entrenamiento.
+
 ## Pesos e inferencia del piloto OE2 — 2026-10-03
 
 - Dos mejores checkpoints descargados y verificados; 720 predicciones reproducidas sobre 360 pares val por modelo, dentro de tolerancia CPU/GPU. [Informe](objetivo-2/REVISION_PESOS_PILOTO_F05.md).

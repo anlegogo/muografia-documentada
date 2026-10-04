@@ -2,6 +2,8 @@
 
 ## Objetivo específico 2
 
+- [Evaluación geométrica de cuentas y contrastes del piloto](../objetivo-2/EVALUACION_GEOMETRICA_PILOTO_F05.md).
+
 - [Verificación independiente de pesos, inferencia y exploración regional del piloto](../objetivo-2/REVISION_PESOS_PILOTO_F05.md).
 
 - [Revisión de resultados del piloto c054225](../objetivo-2/REVISION_PILOTO_C054225.md).

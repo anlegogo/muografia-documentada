@@ -1,0 +1,6293 @@
+{
+  "schema": "oe2-regiones-geometricas-v1",
+  "protocol_sha256": "af543992beb301ed13f9c7b030fc32619ad8a0da20f25c760b07ddabeffd6577",
+  "source_code_sha256": "a52c4f07b76ebc627c4a1fd1768cffee1662a2861482896f1fd34140a6b67c92",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "heldout_opened": false,
+  "inputs": {
+    "data_contract_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+    "recipe_sha256": "db9e5caab4c599afc00430452bea190eb2f50b1fa6a49cc5f027f3a5e6659e90",
+    "unet-predicciones.npy": "c4e35ef07c46974b4847ec46ea60173c6f1a44e1c6f33f0639f2aea2e58ec9fc",
+    "cgan-predicciones.npy": "39d087f7eaa93cc85c874adfc84b6fffdd061c60e1f619842b09cd941ac8d091",
+    "geo-val-01.json": "71d4daf62362f81473403d57261fd293cfd687fb6f2998d46a142dfcbf29d6d7",
+    "dataset-v2/shards/geo-val-01.npz": "6528589a708105fc556a8d807d4eff60e1019cb884f83941e43b6b5961ffa698",
+    "dataset-v2/shards/geo-val-01.meta.json": "baaed3bee604aa8c55b0e5158a1a5cf2979e891da106d0adafa0880ea33e2fb2",
+    "geo-val-02.json": "f8376b4fe3262acb7523b605e2c2f9c8d9e5c36532c34e8bcc70d041f695b3bb",
+    "dataset-v2/shards/geo-val-02.npz": "c5bee7998bfa71c51a0caf26be785aada0a0715f52a07237571b459f2fe514c4",
+    "dataset-v2/shards/geo-val-02.meta.json": "7e6cbaf4d2c6f29e46ad915d3177b7ea15f5571b948d5727737f65fa0b08fb25",
+    "geo-val-03.json": "4a5eb9a461d4a084bd966a5cc48508556d279ffb8d9fda202e76e64619f0716d",
+    "dataset-v2/shards/geo-val-03.npz": "3b29e660be5500cc0e72e5c500588f7d8b8c3b46e34675326a0064604f114b1b",
+    "dataset-v2/shards/geo-val-03.meta.json": "045f44217643c4380092b86e96328428889a34ad85ec27b8759e217c96f09c01"
+  },
+  "regions": [
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 42426,
+      "reference_sum": 110636552.0,
+      "bias_relative": {
+        "mean": -5.6554546276894096e-05,
+        "min": -0.0012297201742151184,
+        "max": 0.000655732655153606
+      },
+      "mae_relative": {
+        "mean": 0.06738148076053564,
+        "min": 0.0667903677981577,
+        "max": 0.06785290994968823
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 42426,
+      "reference_sum": 110636552.0,
+      "bias_relative": {
+        "mean": 0.026289283483908098,
+        "min": 0.02461564912732745,
+        "max": 0.029099746749805356
+      },
+      "mae_relative": {
+        "mean": 0.029661764047516692,
+        "min": 0.028570110386783098,
+        "max": 0.03181384757190268
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 42426,
+      "reference_sum": 110636552.0,
+      "bias_relative": {
+        "mean": 0.1468430647055042,
+        "min": 0.1381398425143802,
+        "max": 0.1567992465079188
+      },
+      "mae_relative": {
+        "mean": 0.14690039381494835,
+        "min": 0.13821494713300533,
+        "max": 0.15684019106254476
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 17625,
+      "reference_sum": 61636.0,
+      "bias_relative": {
+        "mean": -0.0013952884677785704,
+        "min": -0.022973586864819262,
+        "max": 0.057498864300084364
+      },
+      "mae_relative": {
+        "mean": 1.2309997404114479,
+        "min": 1.213381789863067,
+        "max": 1.266467648776689
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 17625,
+      "reference_sum": 61636.0,
+      "bias_relative": {
+        "mean": -0.047256254417071555,
+        "min": -0.065134021036407,
+        "max": -0.018228500839450174
+      },
+      "mae_relative": {
+        "mean": 0.35281324632354816,
+        "min": 0.34911889360408593,
+        "max": 0.35593300278853934
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 17625,
+      "reference_sum": 61636.0,
+      "bias_relative": {
+        "mean": 0.028537974746059857,
+        "min": 0.002256604745817103,
+        "max": 0.05520431855707202
+      },
+      "mae_relative": {
+        "mean": 0.4584958086245715,
+        "min": 0.44724213211937935,
+        "max": 0.46881779119576467
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2326,
+      "reference_sum": 1081907.0,
+      "bias_relative": {
+        "mean": -0.00013032543462608153,
+        "min": -0.008879691137962874,
+        "max": 0.007406366720984336
+      },
+      "mae_relative": {
+        "mean": 0.11324448404530149,
+        "min": 0.10779946890074656,
+        "max": 0.11918676928793324
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2326,
+      "reference_sum": 1081907.0,
+      "bias_relative": {
+        "mean": 0.018299022096441655,
+        "min": 0.00945043303135111,
+        "max": 0.02668895659899831
+      },
+      "mae_relative": {
+        "mean": 0.07385805837367575,
+        "min": 0.07048405473410992,
+        "max": 0.0798893237647325
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2326,
+      "reference_sum": 1081907.0,
+      "bias_relative": {
+        "mean": 0.022900259674406658,
+        "min": 0.008429999039177677,
+        "max": 0.037208037400196674
+      },
+      "mae_relative": {
+        "mean": 0.15786079112766485,
+        "min": 0.15109735711697514,
+        "max": 0.16524446359181177
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "model": "entrada",
+      "pixels": 1017,
+      "reference_sum": 2936.0,
+      "bias_relative": {
+        "mean": 0.01975476839237057,
+        "min": -0.10762942779291552,
+        "max": 0.22615803814713897
+      },
+      "mae_relative": {
+        "mean": 1.4565054495912808,
+        "min": 1.3732970027247957,
+        "max": 1.5994550408719346
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "model": "unet",
+      "pixels": 1017,
+      "reference_sum": 2936.0,
+      "bias_relative": {
+        "mean": 0.04844941188260374,
+        "min": 0.006376119251497255,
+        "max": 0.0942517789520047
+      },
+      "mae_relative": {
+        "mean": 0.4113087693303248,
+        "min": 0.4021982371599522,
+        "max": 0.43333142297874383
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "model": "cgan",
+      "pixels": 1017,
+      "reference_sum": 2936.0,
+      "bias_relative": {
+        "mean": 0.0716726017567164,
+        "min": 0.02406485233889931,
+        "max": 0.18691842559521538
+      },
+      "mae_relative": {
+        "mean": 0.5430040474359161,
+        "min": 0.5159947513426597,
+        "max": 0.5865681698509894
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 42426,
+      "reference_sum": 110627149.0,
+      "bias_relative": {
+        "mean": -0.00014228876132385912,
+        "min": -0.0010792016343113028,
+        "max": 0.0009351321166199447
+      },
+      "mae_relative": {
+        "mean": 0.06734886117330927,
+        "min": 0.06697866723474905,
+        "max": 0.06780146707025778
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 42426,
+      "reference_sum": 110627149.0,
+      "bias_relative": {
+        "mean": 0.027318834397331175,
+        "min": 0.02557504906193618,
+        "max": 0.028728685812117707
+      },
+      "mae_relative": {
+        "mean": 0.030339490523615432,
+        "min": 0.02915905272867298,
+        "max": 0.03150964413133942
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 42426,
+      "reference_sum": 110627149.0,
+      "bias_relative": {
+        "mean": 0.15105639459518203,
+        "min": 0.142044818565724,
+        "max": 0.15956378384076178
+      },
+      "mae_relative": {
+        "mean": 0.15110625859787094,
+        "min": 0.1421096947713983,
+        "max": 0.15959875597477516
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 17764,
+      "reference_sum": 62677.0,
+      "bias_relative": {
+        "mean": 0.003908929910493482,
+        "min": -0.034733634347527804,
+        "max": 0.02876653317803979
+      },
+      "mae_relative": {
+        "mean": 1.2295674649392923,
+        "min": 1.2042854635671778,
+        "max": 1.245257430955534
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 17764,
+      "reference_sum": 62677.0,
+      "bias_relative": {
+        "mean": -0.043845207894546774,
+        "min": -0.06289608785447631,
+        "max": -0.02530030032806946
+      },
+      "mae_relative": {
+        "mean": 0.3541573156874469,
+        "min": 0.3512798813061347,
+        "max": 0.3584871306986461
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 17764,
+      "reference_sum": 62677.0,
+      "bias_relative": {
+        "mean": 0.02951982020626322,
+        "min": -0.0008942471416366535,
+        "max": 0.05477336831116919
+      },
+      "mae_relative": {
+        "mean": 0.46010486169368986,
+        "min": 0.4525854640338331,
+        "max": 0.46669184012135434
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2326,
+      "reference_sum": 1081799.0,
+      "bias_relative": {
+        "mean": 0.0008171573462352987,
+        "min": -0.007837870066435632,
+        "max": 0.009725466560793641
+      },
+      "mae_relative": {
+        "mean": 0.11420938640172526,
+        "min": 0.10603910707996587,
+        "max": 0.12170190580690128
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2326,
+      "reference_sum": 1081799.0,
+      "bias_relative": {
+        "mean": 0.02220638249959546,
+        "min": 0.014841323123910169,
+        "max": 0.0269614203787667
+      },
+      "mae_relative": {
+        "mean": 0.0736916698603578,
+        "min": 0.06940255927882881,
+        "max": 0.07997032424388072
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2326,
+      "reference_sum": 1081799.0,
+      "bias_relative": {
+        "mean": 0.02751497328638593,
+        "min": 0.01668536193613456,
+        "max": 0.03859780572130172
+      },
+      "mae_relative": {
+        "mean": 0.15703647496783846,
+        "min": 0.15180505904620242,
+        "max": 0.16556527677021346
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "region": "anomalia_0_conduit",
+      "model": "entrada",
+      "pixels": 994,
+      "reference_sum": 2869.0,
+      "bias_relative": {
+        "mean": -0.02370163820146392,
+        "min": -0.25409550365981176,
+        "max": 0.12931334959916346
+      },
+      "mae_relative": {
+        "mean": 1.4179505054025792,
+        "min": 1.2934820494945973,
+        "max": 1.532589752527013
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "region": "anomalia_0_conduit",
+      "model": "unet",
+      "pixels": 994,
+      "reference_sum": 2869.0,
+      "bias_relative": {
+        "mean": -0.005092732570619084,
+        "min": -0.0424591878849902,
+        "max": 0.020551168371118873
+      },
+      "mae_relative": {
+        "mean": 0.4235776363378836,
+        "min": 0.41263605640996015,
+        "max": 0.43404687596570235
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "region": "anomalia_0_conduit",
+      "model": "cgan",
+      "pixels": 994,
+      "reference_sum": 2869.0,
+      "bias_relative": {
+        "mean": -0.00045408217251293874,
+        "min": -0.0541317596792538,
+        "max": 0.06113662103038274
+      },
+      "mae_relative": {
+        "mean": 0.5520356703704061,
+        "min": 0.5194484241732246,
+        "max": 0.5862652708387278
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 42426,
+      "reference_sum": 110634203.0,
+      "bias_relative": {
+        "mean": -0.0001313156293989843,
+        "min": -0.0007612745219486961,
+        "max": 0.0007827326238342405
+      },
+      "mae_relative": {
+        "mean": 0.06728212341349807,
+        "min": 0.06683639235869941,
+        "max": 0.06774538792492589
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 42426,
+      "reference_sum": 110634203.0,
+      "bias_relative": {
+        "mean": 0.02624861001158483,
+        "min": 0.023970028432476313,
+        "max": 0.028548352852215977
+      },
+      "mae_relative": {
+        "mean": 0.029598348172866763,
+        "min": 0.028009720998058155,
+        "max": 0.03125924224688255
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 42426,
+      "reference_sum": 110634203.0,
+      "bias_relative": {
+        "mean": 0.14988183868939076,
+        "min": 0.14355111888361652,
+        "max": 0.15925859990972255
+      },
+      "mae_relative": {
+        "mean": 0.14992935170349034,
+        "min": 0.14358669190274545,
+        "max": 0.15929276710031098
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 17799,
+      "reference_sum": 62847.0,
+      "bias_relative": {
+        "mean": 0.0018298407242986938,
+        "min": -0.02429710248699222,
+        "max": 0.030757235826690217
+      },
+      "mae_relative": {
+        "mean": 1.232073129982338,
+        "min": 1.220153706620841,
+        "max": 1.2524543733193312
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 17799,
+      "reference_sum": 62847.0,
+      "bias_relative": {
+        "mean": -0.045874820705537694,
+        "min": -0.057622669288738146,
+        "max": -0.01485059987059202
+      },
+      "mae_relative": {
+        "mean": 0.35260738007345027,
+        "min": 0.34781400111643745,
+        "max": 0.3604922400948777
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 17799,
+      "reference_sum": 62847.0,
+      "bias_relative": {
+        "mean": 0.030937738754812483,
+        "min": 0.013990625736538545,
+        "max": 0.05209796478703072
+      },
+      "mae_relative": {
+        "mean": 0.45903519380270275,
+        "min": 0.45183932916562447,
+        "max": 0.4703761144410437
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2326,
+      "reference_sum": 1082241.0,
+      "bias_relative": {
+        "mean": -0.0005054327086111132,
+        "min": -0.006727706675315387,
+        "max": 0.005838810394357634
+      },
+      "mae_relative": {
+        "mean": 0.11404779526926072,
+        "min": 0.10729680357702212,
+        "max": 0.11937544410163725
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2326,
+      "reference_sum": 1082241.0,
+      "bias_relative": {
+        "mean": 0.021021397471576404,
+        "min": 0.014689541293464416,
+        "max": 0.02825410462938052
+      },
+      "mae_relative": {
+        "mean": 0.07197688675673235,
+        "min": 0.06618310462361825,
+        "max": 0.07529963430825828
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2326,
+      "reference_sum": 1082241.0,
+      "bias_relative": {
+        "mean": 0.028283894366967266,
+        "min": 0.022181171166309542,
+        "max": 0.04070989920275212
+      },
+      "mae_relative": {
+        "mean": 0.1568656082490161,
+        "min": 0.15052928058408946,
+        "max": 0.1634485694172593
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "region": "anomalia_0_conduit",
+      "model": "entrada",
+      "pixels": 876,
+      "reference_sum": 2345.0,
+      "bias_relative": {
+        "mean": -0.027718550106609806,
+        "min": -0.24946695095948826,
+        "max": 0.17697228144989338
+      },
+      "mae_relative": {
+        "mean": 1.4547547974413648,
+        "min": 1.3377398720682303,
+        "max": 1.5722814498933901
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "region": "anomalia_0_conduit",
+      "model": "unet",
+      "pixels": 876,
+      "reference_sum": 2345.0,
+      "bias_relative": {
+        "mean": 0.016142876602576406,
+        "min": -0.020717724045267453,
+        "max": 0.055561188691161716
+      },
+      "mae_relative": {
+        "mean": 0.4388147617792919,
+        "min": 0.4255753969745309,
+        "max": 0.46502179244786335
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "region": "anomalia_0_conduit",
+      "model": "cgan",
+      "pixels": 876,
+      "reference_sum": 2345.0,
+      "bias_relative": {
+        "mean": 0.03705826208916295,
+        "min": -0.023400392302867456,
+        "max": 0.09440195650936674
+      },
+      "mae_relative": {
+        "mean": 0.5721427590909889,
+        "min": 0.5324194298987426,
+        "max": 0.6022719648281325
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 42426,
+      "reference_sum": 110632173.0,
+      "bias_relative": {
+        "mean": 3.267584737759783e-05,
+        "min": -0.000855384084338649,
+        "max": 0.0005335428058526881
+      },
+      "mae_relative": {
+        "mean": 0.06733618167293885,
+        "min": 0.06697063610962428,
+        "max": 0.06774285270524334
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 42426,
+      "reference_sum": 110632173.0,
+      "bias_relative": {
+        "mean": 0.02636780142184008,
+        "min": 0.02461461310195834,
+        "max": 0.028155005748292137
+      },
+      "mae_relative": {
+        "mean": 0.02972086443742179,
+        "min": 0.028578941098918936,
+        "max": 0.03100152876938472
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 42426,
+      "reference_sum": 110632173.0,
+      "bias_relative": {
+        "mean": 0.1497582602686652,
+        "min": 0.14116959856444805,
+        "max": 0.15781229889292805
+      },
+      "mae_relative": {
+        "mean": 0.1498080341307167,
+        "min": 0.14123062175141743,
+        "max": 0.1578494359781925
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 17798,
+      "reference_sum": 62462.0,
+      "bias_relative": {
+        "mean": 0.0014568857865582274,
+        "min": -0.03013031923409433,
+        "max": 0.041913483397905925
+      },
+      "mae_relative": {
+        "mean": 1.2291088982101115,
+        "min": 1.2082866382760717,
+        "max": 1.2660177387851814
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 17798,
+      "reference_sum": 62462.0,
+      "bias_relative": {
+        "mean": -0.03768402685134369,
+        "min": -0.054376339333527555,
+        "max": -0.021515762220971586
+      },
+      "mae_relative": {
+        "mean": 0.35418075416201283,
+        "min": 0.3508507707382208,
+        "max": 0.35945390743563693
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 17798,
+      "reference_sum": 62462.0,
+      "bias_relative": {
+        "mean": 0.03254109486944839,
+        "min": 0.009422850223945374,
+        "max": 0.05385486420608385
+      },
+      "mae_relative": {
+        "mean": 0.4604279188306445,
+        "min": 0.45271700433925094,
+        "max": 0.4672788308350435
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2326,
+      "reference_sum": 1081712.0,
+      "bias_relative": {
+        "mean": 0.0008615971718904846,
+        "min": -0.003154259174345852,
+        "max": 0.00845696451550875
+      },
+      "mae_relative": {
+        "mean": 0.11285545505642906,
+        "min": 0.1090752436877838,
+        "max": 0.1193792802520449
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2326,
+      "reference_sum": 1081712.0,
+      "bias_relative": {
+        "mean": 0.021197017579442784,
+        "min": 0.009827212291590868,
+        "max": 0.028062714241927397
+      },
+      "mae_relative": {
+        "mean": 0.07452591857984119,
+        "min": 0.07119858928392239,
+        "max": 0.07971445417173324
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2326,
+      "reference_sum": 1081712.0,
+      "bias_relative": {
+        "mean": 0.027906337636489142,
+        "min": 0.014885230259926092,
+        "max": 0.03978346783727267
+      },
+      "mae_relative": {
+        "mean": 0.15899400131351799,
+        "min": 0.14825689142774154,
+        "max": 0.1674457752507076
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "region": "anomalia_0_conduit",
+      "model": "entrada",
+      "pixels": 877,
+      "reference_sum": 2345.0,
+      "bias_relative": {
+        "mean": -0.013646055437100211,
+        "min": -0.11300639658848614,
+        "max": 0.13432835820895522
+      },
+      "mae_relative": {
+        "mean": 1.471172707889126,
+        "min": 1.4127931769722815,
+        "max": 1.5791044776119403
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "region": "anomalia_0_conduit",
+      "model": "unet",
+      "pixels": 877,
+      "reference_sum": 2345.0,
+      "bias_relative": {
+        "mean": -0.009454232381942448,
+        "min": -0.03849034730222695,
+        "max": 0.03171492106840544
+      },
+      "mae_relative": {
+        "mean": 0.38858201415179466,
+        "min": 0.3768601654121309,
+        "max": 0.39938940708988513
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "region": "anomalia_0_conduit",
+      "model": "cgan",
+      "pixels": 877,
+      "reference_sum": 2345.0,
+      "bias_relative": {
+        "mean": 0.05229581310756476,
+        "min": -0.020126090851265002,
+        "max": 0.12772884274680713
+      },
+      "mae_relative": {
+        "mean": 0.555768354783448,
+        "min": 0.5151722629654134,
+        "max": 0.6094355966928211
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 42426,
+      "reference_sum": 110648176.0,
+      "bias_relative": {
+        "mean": -8.827077275995948e-05,
+        "min": -0.0006241042780497348,
+        "max": 0.0006879824209664333
+      },
+      "mae_relative": {
+        "mean": 0.06716832910105994,
+        "min": 0.06673673500049382,
+        "max": 0.06776453323550494
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 42426,
+      "reference_sum": 110648176.0,
+      "bias_relative": {
+        "mean": 0.027124111481696928,
+        "min": 0.024521766327698164,
+        "max": 0.028579549208728433
+      },
+      "mae_relative": {
+        "mean": 0.03022717538134815,
+        "min": 0.028418101885175552,
+        "max": 0.031469498306822975
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 42426,
+      "reference_sum": 110648176.0,
+      "bias_relative": {
+        "mean": 0.1532493435316354,
+        "min": 0.14123144632638437,
+        "max": 0.16003630517813736
+      },
+      "mae_relative": {
+        "mean": 0.15329619629230634,
+        "min": 0.14130736850684475,
+        "max": 0.16006886830647254
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 17762,
+      "reference_sum": 62526.0,
+      "bias_relative": {
+        "mean": 0.0053577711671944465,
+        "min": -0.04647666570706586,
+        "max": 0.03444966893772191
+      },
+      "mae_relative": {
+        "mean": 1.227726065956562,
+        "min": 1.1978057128234654,
+        "max": 1.2441864184499247
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 17762,
+      "reference_sum": 62526.0,
+      "bias_relative": {
+        "mean": -0.040107574912456936,
+        "min": -0.055712841400021806,
+        "max": -0.022068705554606792
+      },
+      "mae_relative": {
+        "mean": 0.35475101774100065,
+        "min": 0.35105963661804285,
+        "max": 0.359593817662385
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 17762,
+      "reference_sum": 62526.0,
+      "bias_relative": {
+        "mean": 0.03102974258697454,
+        "min": 0.011826794881457407,
+        "max": 0.06330027535427958
+      },
+      "mae_relative": {
+        "mean": 0.4602257514930585,
+        "min": 0.45484225957254604,
+        "max": 0.471315391758085
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2326,
+      "reference_sum": 1081464.0,
+      "bias_relative": {
+        "mean": -0.002001915921380647,
+        "min": -0.009139462802275435,
+        "max": 0.006413528328266128
+      },
+      "mae_relative": {
+        "mean": 0.11274013744331757,
+        "min": 0.10819037896776962,
+        "max": 0.11944549240658958
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2326,
+      "reference_sum": 1081464.0,
+      "bias_relative": {
+        "mean": 0.020893429134927224,
+        "min": 0.013301552323360465,
+        "max": 0.03032393294014909
+      },
+      "mae_relative": {
+        "mean": 0.07361963414479605,
+        "min": 0.0693033291658802,
+        "max": 0.07798126420560494
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2326,
+      "reference_sum": 1081464.0,
+      "bias_relative": {
+        "mean": 0.031043446640701765,
+        "min": 0.01450525341109857,
+        "max": 0.04191183694680902
+      },
+      "mae_relative": {
+        "mean": 0.15919291927665594,
+        "min": 0.14737095469404093,
+        "max": 0.1660592692379808
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "region": "anomalia_0_conduit",
+      "model": "entrada",
+      "pixels": 996,
+      "reference_sum": 2803.0,
+      "bias_relative": {
+        "mean": 0.025330003567606136,
+        "min": -0.07955761683910097,
+        "max": 0.17731002497324294
+      },
+      "mae_relative": {
+        "mean": 1.456296824830539,
+        "min": 1.400998929718159,
+        "max": 1.5144488048519444
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "region": "anomalia_0_conduit",
+      "model": "unet",
+      "pixels": 996,
+      "reference_sum": 2803.0,
+      "bias_relative": {
+        "mean": -0.020178430961128525,
+        "min": -0.053445024666000804,
+        "max": 0.008807010017509673
+      },
+      "mae_relative": {
+        "mean": 0.4243141033279823,
+        "min": 0.4138746946024622,
+        "max": 0.4312801109167946
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "region": "anomalia_0_conduit",
+      "model": "cgan",
+      "pixels": 996,
+      "reference_sum": 2803.0,
+      "bias_relative": {
+        "mean": 0.06091668143429342,
+        "min": -0.03205359397813755,
+        "max": 0.14185629105190153
+      },
+      "mae_relative": {
+        "mean": 0.5492783085338845,
+        "min": 0.5208454291426488,
+        "max": 0.5737159686802206
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 42426,
+      "reference_sum": 110645343.0,
+      "bias_relative": {
+        "mean": 9.296369572463614e-05,
+        "min": -0.0009258681587710384,
+        "max": 0.0006060535236444611
+      },
+      "mae_relative": {
+        "mean": 0.06734099328518509,
+        "min": 0.06699753282883311,
+        "max": 0.06777076013041054
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 42426,
+      "reference_sum": 110645343.0,
+      "bias_relative": {
+        "mean": 0.027226893897567005,
+        "min": 0.025513496522172295,
+        "max": 0.028350224904682468
+      },
+      "mae_relative": {
+        "mean": 0.030222573372082506,
+        "min": 0.02894412534236851,
+        "max": 0.03095706080722933
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 42426,
+      "reference_sum": 110645343.0,
+      "bias_relative": {
+        "mean": 0.15290318528140615,
+        "min": 0.14496536682661626,
+        "max": 0.1637421877595112
+      },
+      "mae_relative": {
+        "mean": 0.15294635942405974,
+        "min": 0.14502520757182008,
+        "max": 0.16376820972296527
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 17728,
+      "reference_sum": 62079.0,
+      "bias_relative": {
+        "mean": 0.004317079849868716,
+        "min": -0.024146651846840315,
+        "max": 0.03384397300214243
+      },
+      "mae_relative": {
+        "mean": 1.2366806810676718,
+        "min": 1.2113436105607371,
+        "max": 1.2576716764123133
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 17728,
+      "reference_sum": 62079.0,
+      "bias_relative": {
+        "mean": -0.04647040640901639,
+        "min": -0.07046862209842386,
+        "max": -0.020272862772749214
+      },
+      "mae_relative": {
+        "mean": 0.35193737701962463,
+        "min": 0.34792902441233226,
+        "max": 0.35593388959225564
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 17728,
+      "reference_sum": 62079.0,
+      "bias_relative": {
+        "mean": 0.024715763649787836,
+        "min": -0.00019934642987856445,
+        "max": 0.05634007904074621
+      },
+      "mae_relative": {
+        "mean": 0.458811882631953,
+        "min": 0.4521333967689294,
+        "max": 0.4678406096620038
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2326,
+      "reference_sum": 1081034.0,
+      "bias_relative": {
+        "mean": -0.00045511982046818144,
+        "min": -0.008652826830608473,
+        "max": 0.008201407171282309
+      },
+      "mae_relative": {
+        "mean": 0.1138393427033747,
+        "min": 0.1106181674211912,
+        "max": 0.11959660843229723
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2326,
+      "reference_sum": 1081034.0,
+      "bias_relative": {
+        "mean": 0.019659245166074348,
+        "min": 0.00985654227258709,
+        "max": 0.02649013159580101
+      },
+      "mae_relative": {
+        "mean": 0.07276643978849599,
+        "min": 0.0691779227787571,
+        "max": 0.07937798420060146
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2326,
+      "reference_sum": 1081034.0,
+      "bias_relative": {
+        "mean": 0.028290706526026964,
+        "min": 0.006924086202994213,
+        "max": 0.03772320804116044
+      },
+      "mae_relative": {
+        "mean": 0.15900617762347583,
+        "min": 0.1485837427670754,
+        "max": 0.16801644204417795
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "region": "anomalia_0_conduit",
+      "model": "entrada",
+      "pixels": 1018,
+      "reference_sum": 3131.0,
+      "bias_relative": {
+        "mean": -0.015330565314595975,
+        "min": -0.1440434366017247,
+        "max": 0.1561801341424465
+      },
+      "mae_relative": {
+        "mean": 1.4166400511018846,
+        "min": 1.3449377195784094,
+        "max": 1.5212392206962633
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "region": "anomalia_0_conduit",
+      "model": "unet",
+      "pixels": 1018,
+      "reference_sum": 3131.0,
+      "bias_relative": {
+        "mean": -0.036023949650649326,
+        "min": -0.057993323991863695,
+        "max": -0.0010168794736394782
+      },
+      "mae_relative": {
+        "mean": 0.3774418535623968,
+        "min": 0.3694992709530534,
+        "max": 0.3882631750217276
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "region": "anomalia_0_conduit",
+      "model": "cgan",
+      "pixels": 1018,
+      "reference_sum": 3131.0,
+      "bias_relative": {
+        "mean": 0.016718543200391456,
+        "min": -0.034748227531828435,
+        "max": 0.07767080659738029
+      },
+      "mae_relative": {
+        "mean": 0.5227514530460045,
+        "min": 0.49649073294918006,
+        "max": 0.5493535104846817
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 46346,
+      "reference_sum": 115295349.0,
+      "bias_relative": {
+        "mean": -2.6722673782790676e-05,
+        "min": -0.000727774370152607,
+        "max": 0.0006743637160940465
+      },
+      "mae_relative": {
+        "mean": 0.0686580895817402,
+        "min": 0.06825872047969601,
+        "max": 0.06916935565197864
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 46346,
+      "reference_sum": 115295349.0,
+      "bias_relative": {
+        "mean": 0.04615213060108315,
+        "min": 0.04431887081579847,
+        "max": 0.048261522226756295
+      },
+      "mae_relative": {
+        "mean": 0.047277927197890555,
+        "min": 0.045420688755579815,
+        "max": 0.049280058616125326
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 46346,
+      "reference_sum": 115295349.0,
+      "bias_relative": {
+        "mean": 0.08127360356736033,
+        "min": 0.07543192192803204,
+        "max": 0.08915330268679687
+      },
+      "mae_relative": {
+        "mean": 0.0825845176751843,
+        "min": 0.07700916652281516,
+        "max": 0.0901665787518184
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 14844,
+      "reference_sum": 52021.0,
+      "bias_relative": {
+        "mean": -0.0016724015301512857,
+        "min": -0.03731185482785798,
+        "max": 0.03688894869379673
+      },
+      "mae_relative": {
+        "mean": 1.2184656196536017,
+        "min": 1.1901539762788105,
+        "max": 1.2389419657446032
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 14844,
+      "reference_sum": 52021.0,
+      "bias_relative": {
+        "mean": -0.22299001866823595,
+        "min": -0.2487391766605861,
+        "max": -0.20176080367278773
+      },
+      "mae_relative": {
+        "mean": 0.38758979103452773,
+        "min": 0.37677409189022926,
+        "max": 0.40002213405706116
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 14844,
+      "reference_sum": 52021.0,
+      "bias_relative": {
+        "mean": -0.054200754141512375,
+        "min": -0.09264062673027927,
+        "max": -0.02210838771762967
+      },
+      "mae_relative": {
+        "mean": 0.43605003802214315,
+        "min": 0.42912379265067685,
+        "max": 0.4430324766172299
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2240,
+      "reference_sum": 833050.0,
+      "bias_relative": {
+        "mean": -0.000750255086729488,
+        "min": -0.008054738611127783,
+        "max": 0.009855350819278555
+      },
+      "mae_relative": {
+        "mean": 0.128569593661845,
+        "min": 0.12554348478482685,
+        "max": 0.13268591321049156
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2240,
+      "reference_sum": 833050.0,
+      "bias_relative": {
+        "mean": -0.0181506382693533,
+        "min": -0.028070836830890778,
+        "max": -0.007627418308811615
+      },
+      "mae_relative": {
+        "mean": 0.08048120409417488,
+        "min": 0.07580095977626755,
+        "max": 0.08477927382277803
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2240,
+      "reference_sum": 833050.0,
+      "bias_relative": {
+        "mean": -0.01496849891448214,
+        "min": -0.0298671224864993,
+        "max": 0.004744382735461955
+      },
+      "mae_relative": {
+        "mean": 0.14210966686115278,
+        "min": 0.13442375836101278,
+        "max": 0.1499725684590479
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "anomalia_0_cavity",
+      "model": "entrada",
+      "pixels": 354,
+      "reference_sum": 477.0,
+      "bias_relative": {
+        "mean": -0.002096436058700207,
+        "min": -0.32914046121593293,
+        "max": 0.3836477987421384
+      },
+      "mae_relative": {
+        "mean": 1.7545073375262052,
+        "min": 1.5157232704402517,
+        "max": 2.0817610062893084
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "anomalia_0_cavity",
+      "model": "unet",
+      "pixels": 354,
+      "reference_sum": 477.0,
+      "bias_relative": {
+        "mean": -0.2744158724842825,
+        "min": -0.30413937064671115,
+        "max": -0.22912030434233666
+      },
+      "mae_relative": {
+        "mean": 0.6734116937295614,
+        "min": 0.6527285806712461,
+        "max": 0.6914188209664971
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "anomalia_0_cavity",
+      "model": "cgan",
+      "pixels": 354,
+      "reference_sum": 477.0,
+      "bias_relative": {
+        "mean": -0.17693185037669426,
+        "min": -0.2624980643922397,
+        "max": -0.04521940407171869
+      },
+      "mae_relative": {
+        "mean": 0.838964050469866,
+        "min": 0.7897100385316795,
+        "max": 0.875956327960173
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 46346,
+      "reference_sum": 115291907.0,
+      "bias_relative": {
+        "mean": -4.272632943785031e-05,
+        "min": -0.0005810208343591715,
+        "max": 0.0005017958459131047
+      },
+      "mae_relative": {
+        "mean": 0.0684931675212901,
+        "min": 0.06786695791231903,
+        "max": 0.06887046286778828
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 46346,
+      "reference_sum": 115291907.0,
+      "bias_relative": {
+        "mean": 0.045899659704982484,
+        "min": 0.04327240529452467,
+        "max": 0.0473716950663576
+      },
+      "mae_relative": {
+        "mean": 0.04704285812429492,
+        "min": 0.044608955309392774,
+        "max": 0.04849547052108232
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 46346,
+      "reference_sum": 115291907.0,
+      "bias_relative": {
+        "mean": 0.07953618125880609,
+        "min": 0.07357562691522991,
+        "max": 0.08918585145717452
+      },
+      "mae_relative": {
+        "mean": 0.08091251925079171,
+        "min": 0.07535654817964076,
+        "max": 0.09009476891695076
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 14860,
+      "reference_sum": 52072.0,
+      "bias_relative": {
+        "mean": -0.003936856660009218,
+        "min": -0.04017514211092334,
+        "max": 0.04777999692733139
+      },
+      "mae_relative": {
+        "mean": 1.2154113535105238,
+        "min": 1.191081579351667,
+        "max": 1.2646335842679366
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 14860,
+      "reference_sum": 52072.0,
+      "bias_relative": {
+        "mean": -0.2230722193294214,
+        "min": -0.25048209254400133,
+        "max": -0.19759539880999857
+      },
+      "mae_relative": {
+        "mean": 0.3912811913930808,
+        "min": 0.3779099934965697,
+        "max": 0.4078037665984967
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 14860,
+      "reference_sum": 52072.0,
+      "bias_relative": {
+        "mean": -0.05365845499678812,
+        "min": -0.095362037220478,
+        "max": -0.02530397800126929
+      },
+      "mae_relative": {
+        "mean": 0.43730872112217567,
+        "min": 0.4319344335219171,
+        "max": 0.44490568887070175
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2240,
+      "reference_sum": 834015.0,
+      "bias_relative": {
+        "mean": 0.000711018386959467,
+        "min": -0.005221728625983945,
+        "max": 0.011876285198707457
+      },
+      "mae_relative": {
+        "mean": 0.12802107875757626,
+        "min": 0.12352655527778278,
+        "max": 0.13461748289898862
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2240,
+      "reference_sum": 834015.0,
+      "bias_relative": {
+        "mean": -0.016605893425113864,
+        "min": -0.024032309588257007,
+        "max": -0.005936506184209374
+      },
+      "mae_relative": {
+        "mean": 0.08195541009204269,
+        "min": 0.07556395827700457,
+        "max": 0.08803064705761235
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2240,
+      "reference_sum": 834015.0,
+      "bias_relative": {
+        "mean": -0.012569052881153476,
+        "min": -0.02438593077475459,
+        "max": -0.004823841236503991
+      },
+      "mae_relative": {
+        "mean": 0.14288462398043594,
+        "min": 0.13690535285976368,
+        "max": 0.15153926084144342
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "region": "anomalia_0_cavity",
+      "model": "entrada",
+      "pixels": 342,
+      "reference_sum": 496.0,
+      "bias_relative": {
+        "mean": -0.03629032258064516,
+        "min": -0.47580645161290325,
+        "max": 0.33064516129032256
+      },
+      "mae_relative": {
+        "mean": 1.7225806451612904,
+        "min": 1.3991935483870968,
+        "max": 2.0524193548387095
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "region": "anomalia_0_cavity",
+      "model": "unet",
+      "pixels": 342,
+      "reference_sum": 496.0,
+      "bias_relative": {
+        "mean": -0.33983264586134376,
+        "min": -0.4022243793973342,
+        "max": -0.29569295873845847
+      },
+      "mae_relative": {
+        "mean": 0.6236454390250494,
+        "min": 0.6057914308841527,
+        "max": 0.6476595570071628
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "region": "anomalia_0_cavity",
+      "model": "cgan",
+      "pixels": 342,
+      "reference_sum": 496.0,
+      "bias_relative": {
+        "mean": -0.22542783507131237,
+        "min": -0.33798256119676034,
+        "max": -0.15049287881632564
+      },
+      "mae_relative": {
+        "mean": 0.7783176220792163,
+        "min": 0.7339955387237179,
+        "max": 0.8155116980777207
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 46346,
+      "reference_sum": 115272957.0,
+      "bias_relative": {
+        "mean": -8.251718570904711e-05,
+        "min": -0.0006308244526077352,
+        "max": 0.0010674056014716444
+      },
+      "mae_relative": {
+        "mean": 0.06864213000105479,
+        "min": 0.06810651174672304,
+        "max": 0.06928101098334799
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 46346,
+      "reference_sum": 115272957.0,
+      "bias_relative": {
+        "mean": 0.04620685985530951,
+        "min": 0.044393840011291895,
+        "max": 0.048194967835445475
+      },
+      "mae_relative": {
+        "mean": 0.04729761836311544,
+        "min": 0.0456370355605606,
+        "max": 0.049197704077010844
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 46346,
+      "reference_sum": 115272957.0,
+      "bias_relative": {
+        "mean": 0.08148752325055618,
+        "min": 0.07607920372300456,
+        "max": 0.08812162163274896
+      },
+      "mae_relative": {
+        "mean": 0.08277096899100411,
+        "min": 0.07779112161616306,
+        "max": 0.08914373976379858
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 14997,
+      "reference_sum": 52369.0,
+      "bias_relative": {
+        "mean": -0.002215050888884646,
+        "min": -0.03454333670683038,
+        "max": 0.020069124863946228
+      },
+      "mae_relative": {
+        "mean": 1.2223242758120259,
+        "min": 1.2032500143214497,
+        "max": 1.2381943516202334
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 14997,
+      "reference_sum": 52369.0,
+      "bias_relative": {
+        "mean": -0.22135031774763753,
+        "min": -0.23868251821790956,
+        "max": -0.20473476355134157
+      },
+      "mae_relative": {
+        "mean": 0.3882422518174903,
+        "min": 0.3789061410596603,
+        "max": 0.3978259577634129
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 14997,
+      "reference_sum": 52369.0,
+      "bias_relative": {
+        "mean": -0.054504362262547866,
+        "min": -0.07826907500304146,
+        "max": -0.02986461534974378
+      },
+      "mae_relative": {
+        "mean": 0.4341310755961697,
+        "min": 0.42747204774081315,
+        "max": 0.43844970239094666
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2240,
+      "reference_sum": 834757.0,
+      "bias_relative": {
+        "mean": -0.00019406845345411902,
+        "min": -0.009699828812456799,
+        "max": 0.006616296718685797
+      },
+      "mae_relative": {
+        "mean": 0.127802462273452,
+        "min": 0.12284173717620817,
+        "max": 0.13348435532735875
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2240,
+      "reference_sum": 834757.0,
+      "bias_relative": {
+        "mean": -0.01802023494169911,
+        "min": -0.025070857808381627,
+        "max": -0.008794927893525937
+      },
+      "mae_relative": {
+        "mean": 0.07983040962347139,
+        "min": 0.07606072869424439,
+        "max": 0.08633978674072257
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2240,
+      "reference_sum": 834757.0,
+      "bias_relative": {
+        "mean": -0.013626444949628202,
+        "min": -0.03165140659308792,
+        "max": 0.0006849234212448175
+      },
+      "mae_relative": {
+        "mean": 0.14095218335853432,
+        "min": 0.13403487915738796,
+        "max": 0.1489494992298774
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "region": "anomalia_0_cavity",
+      "model": "entrada",
+      "pixels": 255,
+      "reference_sum": 219.0,
+      "bias_relative": {
+        "mean": -0.07305936073059362,
+        "min": -0.54337899543379,
+        "max": 0.7351598173515982
+      },
+      "mae_relative": {
+        "mean": 1.7479452054794522,
+        "min": 1.365296803652968,
+        "max": 2.3972602739726026
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "region": "anomalia_0_cavity",
+      "model": "unet",
+      "pixels": 255,
+      "reference_sum": 219.0,
+      "bias_relative": {
+        "mean": -0.2842755841576695,
+        "min": -0.3192662224784008,
+        "max": -0.2179766663334982
+      },
+      "mae_relative": {
+        "mean": 0.8474449714469605,
+        "min": 0.832875900363481,
+        "max": 0.8609935646385007
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "region": "anomalia_0_cavity",
+      "model": "cgan",
+      "pixels": 255,
+      "reference_sum": 219.0,
+      "bias_relative": {
+        "mean": -0.22826381417126873,
+        "min": -0.32739917023218834,
+        "max": -0.13619190806937823
+      },
+      "mae_relative": {
+        "mean": 1.0018941417854543,
+        "min": 0.9443321702336018,
+        "max": 1.0882526825808423
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 46346,
+      "reference_sum": 115284372.0,
+      "bias_relative": {
+        "mean": -6.956710489779133e-05,
+        "min": -0.0009202635028449476,
+        "max": 0.0007991369376588182
+      },
+      "mae_relative": {
+        "mean": 0.06866125878709736,
+        "min": 0.06820476933334901,
+        "max": 0.06923956700739975
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 46346,
+      "reference_sum": 115284372.0,
+      "bias_relative": {
+        "mean": 0.04632915034833539,
+        "min": 0.044277506475568856,
+        "max": 0.04767959887441922
+      },
+      "mae_relative": {
+        "mean": 0.04744848112448439,
+        "min": 0.04552977732702263,
+        "max": 0.048798981982075336
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 46346,
+      "reference_sum": 115284372.0,
+      "bias_relative": {
+        "mean": 0.08163458647603782,
+        "min": 0.07344144998778579,
+        "max": 0.09051169198072098
+      },
+      "mae_relative": {
+        "mean": 0.08293745088709241,
+        "min": 0.07515128128874922,
+        "max": 0.09150280262933796
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 15073,
+      "reference_sum": 52836.0,
+      "bias_relative": {
+        "mean": 0.0023468846998258757,
+        "min": -0.03702021349080173,
+        "max": 0.037171625406919526
+      },
+      "mae_relative": {
+        "mean": 1.2284389431448255,
+        "min": 1.2136422136422136,
+        "max": 1.2510409569233099
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 15073,
+      "reference_sum": 52836.0,
+      "bias_relative": {
+        "mean": -0.22416737304339254,
+        "min": -0.24962589837917146,
+        "max": -0.20859501322255058
+      },
+      "mae_relative": {
+        "mean": 0.3916181026661441,
+        "min": 0.3827801174107161,
+        "max": 0.4053181105488923
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 15073,
+      "reference_sum": 52836.0,
+      "bias_relative": {
+        "mean": -0.055793149294430765,
+        "min": -0.09181943594625587,
+        "max": -0.03746605289539682
+      },
+      "mae_relative": {
+        "mean": 0.4402495568710143,
+        "min": 0.42866101212338126,
+        "max": 0.4516590883282732
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2240,
+      "reference_sum": 833303.0,
+      "bias_relative": {
+        "mean": 0.0012972472197988008,
+        "min": -0.00849990939670204,
+        "max": 0.008036692535608295
+      },
+      "mae_relative": {
+        "mean": 0.12826414881501685,
+        "min": 0.12387930920685512,
+        "max": 0.1331292459045509
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2240,
+      "reference_sum": 833303.0,
+      "bias_relative": {
+        "mean": -0.016603309047952416,
+        "min": -0.02165808675273663,
+        "max": -0.010194620288569649
+      },
+      "mae_relative": {
+        "mean": 0.08124745997408057,
+        "min": 0.07566995758629283,
+        "max": 0.08872130423650522
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2240,
+      "reference_sum": 833303.0,
+      "bias_relative": {
+        "mean": -0.012726430333945818,
+        "min": -0.02492311181541653,
+        "max": 0.002318654146274401
+      },
+      "mae_relative": {
+        "mean": 0.14224229819448747,
+        "min": 0.13136348126395544,
+        "max": 0.15034967611401295
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "region": "anomalia_0_cavity",
+      "model": "entrada",
+      "pixels": 205,
+      "reference_sum": 152.0,
+      "bias_relative": {
+        "mean": 0.05921052631578948,
+        "min": -0.34210526315789475,
+        "max": 0.5789473684210527
+      },
+      "mae_relative": {
+        "mean": 1.8717105263157894,
+        "min": 1.5263157894736843,
+        "max": 2.3289473684210527
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "region": "anomalia_0_cavity",
+      "model": "unet",
+      "pixels": 205,
+      "reference_sum": 152.0,
+      "bias_relative": {
+        "mean": -0.4922937050813764,
+        "min": -0.5472159206448953,
+        "max": -0.448487789732085
+      },
+      "mae_relative": {
+        "mean": 0.895678956467373,
+        "min": 0.8864744842565583,
+        "max": 0.9095340692749558
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "region": "anomalia_0_cavity",
+      "model": "cgan",
+      "pixels": 205,
+      "reference_sum": 152.0,
+      "bias_relative": {
+        "mean": -0.3776270016184233,
+        "min": -0.44946657313556326,
+        "max": -0.3156449440831038
+      },
+      "mae_relative": {
+        "mean": 0.981511513947169,
+        "min": 0.9185064766435738,
+        "max": 1.028473045197075
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 46346,
+      "reference_sum": 115275837.0,
+      "bias_relative": {
+        "mean": 0.00010622347508958013,
+        "min": -0.0006917061031619315,
+        "max": 0.0007830175199682132
+      },
+      "mae_relative": {
+        "mean": 0.06863245156918704,
+        "min": 0.06803428371550233,
+        "max": 0.06913859146388154
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 46346,
+      "reference_sum": 115275837.0,
+      "bias_relative": {
+        "mean": 0.04561333318255972,
+        "min": 0.04325194978380575,
+        "max": 0.047362677727151435
+      },
+      "mae_relative": {
+        "mean": 0.04677159138171107,
+        "min": 0.04448479149986999,
+        "max": 0.04849918251381175
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 46346,
+      "reference_sum": 115275837.0,
+      "bias_relative": {
+        "mean": 0.07836165619032869,
+        "min": 0.07081117584071654,
+        "max": 0.0867695340545246
+      },
+      "mae_relative": {
+        "mean": 0.07981261995421254,
+        "min": 0.07274924098521615,
+        "max": 0.08785900793556933
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 15060,
+      "reference_sum": 52389.0,
+      "bias_relative": {
+        "mean": -0.009410372406421194,
+        "min": -0.039493023344595236,
+        "max": 0.025787856229361125
+      },
+      "mae_relative": {
+        "mean": 1.224814369428697,
+        "min": 1.205959266258184,
+        "max": 1.244631506613984
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 15060,
+      "reference_sum": 52389.0,
+      "bias_relative": {
+        "mean": -0.22539177635968038,
+        "min": -0.23458804616133003,
+        "max": -0.20851667402357754
+      },
+      "mae_relative": {
+        "mean": 0.3948846551072326,
+        "min": 0.38522095944953805,
+        "max": 0.40096814053864815
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 15060,
+      "reference_sum": 52389.0,
+      "bias_relative": {
+        "mean": -0.059499858502775525,
+        "min": -0.07686390997971154,
+        "max": -0.0431199136413234
+      },
+      "mae_relative": {
+        "mean": 0.4423728964690974,
+        "min": 0.4384020757211654,
+        "max": 0.4523520150649583
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2240,
+      "reference_sum": 834404.0,
+      "bias_relative": {
+        "mean": -0.0020577561948408683,
+        "min": -0.011677796367227386,
+        "max": 0.00941510347505525
+      },
+      "mae_relative": {
+        "mean": 0.12918442385223466,
+        "min": 0.12426114927541095,
+        "max": 0.1370295444413018
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2240,
+      "reference_sum": 834404.0,
+      "bias_relative": {
+        "mean": -0.01928588249894978,
+        "min": -0.027701941044961403,
+        "max": -0.012768585591457816
+      },
+      "mae_relative": {
+        "mean": 0.07962259488093351,
+        "min": 0.07300204720238462,
+        "max": 0.08338795118962215
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2240,
+      "reference_sum": 834404.0,
+      "bias_relative": {
+        "mean": -0.017532838318270464,
+        "min": -0.03342641865673311,
+        "max": -0.004234386826651665
+      },
+      "mae_relative": {
+        "mean": 0.1408765902411742,
+        "min": 0.13527784758786257,
+        "max": 0.14670707454692422
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "region": "anomalia_0_cavity",
+      "model": "entrada",
+      "pixels": 210,
+      "reference_sum": 148.0,
+      "bias_relative": {
+        "mean": 0.07432432432432431,
+        "min": -0.4594594594594595,
+        "max": 0.7567567567567568
+      },
+      "mae_relative": {
+        "mean": 1.8804054054054054,
+        "min": 1.4324324324324325,
+        "max": 2.4864864864864864
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "region": "anomalia_0_cavity",
+      "model": "unet",
+      "pixels": 210,
+      "reference_sum": 148.0,
+      "bias_relative": {
+        "mean": -0.3997877294770565,
+        "min": -0.4618334689455919,
+        "max": -0.3195830886784129
+      },
+      "mae_relative": {
+        "mean": 0.9008935748988005,
+        "min": 0.8851210846984454,
+        "max": 0.9165245258218835
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "region": "anomalia_0_cavity",
+      "model": "cgan",
+      "pixels": 210,
+      "reference_sum": 148.0,
+      "bias_relative": {
+        "mean": -0.28640698795662345,
+        "min": -0.41127995317833305,
+        "max": -0.15081310377566778
+      },
+      "mae_relative": {
+        "mean": 1.055217678403049,
+        "min": 0.9887372929797557,
+        "max": 1.1145546069251744
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 46346,
+      "reference_sum": 115288318.0,
+      "bias_relative": {
+        "mean": 0.00013075045469914827,
+        "min": -0.0007792463413335599,
+        "max": 0.0008812861681267654
+      },
+      "mae_relative": {
+        "mean": 0.06863288525035122,
+        "min": 0.06807156298351061,
+        "max": 0.06922690987650632
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 46346,
+      "reference_sum": 115288318.0,
+      "bias_relative": {
+        "mean": 0.04584217769700771,
+        "min": 0.04481737208769946,
+        "max": 0.046980246245923805
+      },
+      "mae_relative": {
+        "mean": 0.04697881678196323,
+        "min": 0.0458308566099124,
+        "max": 0.04811528005662359
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 46346,
+      "reference_sum": 115288318.0,
+      "bias_relative": {
+        "mean": 0.08185261807393333,
+        "min": 0.07534739714940329,
+        "max": 0.08861737388867608
+      },
+      "mae_relative": {
+        "mean": 0.08311606913860811,
+        "min": 0.0767699972155024,
+        "max": 0.08964265419750143
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 14969,
+      "reference_sum": 52161.0,
+      "bias_relative": {
+        "mean": 0.004696995839803685,
+        "min": -0.03069342995724775,
+        "max": 0.04024079292958341
+      },
+      "mae_relative": {
+        "mean": 1.2259945169762851,
+        "min": 1.2060926746036311,
+        "max": 1.2461609248288952
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 14969,
+      "reference_sum": 52161.0,
+      "bias_relative": {
+        "mean": -0.21968546588631943,
+        "min": -0.23442749594111706,
+        "max": -0.20068555215020448
+      },
+      "mae_relative": {
+        "mean": 0.3871324551498742,
+        "min": 0.37535189158822335,
+        "max": 0.3943413881496833
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 14969,
+      "reference_sum": 52161.0,
+      "bias_relative": {
+        "mean": -0.05047880626143732,
+        "min": -0.07744675474086987,
+        "max": -0.023694078804311795
+      },
+      "mae_relative": {
+        "mean": 0.4355426307805508,
+        "min": 0.42797619885389854,
+        "max": 0.4405586877585709
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2240,
+      "reference_sum": 834739.0,
+      "bias_relative": {
+        "mean": -0.0017310800142319935,
+        "min": -0.0076658692118135125,
+        "max": 0.007260952225785545
+      },
+      "mae_relative": {
+        "mean": 0.12862906848727568,
+        "min": 0.12353202617824253,
+        "max": 0.13460135443533847
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2240,
+      "reference_sum": 834739.0,
+      "bias_relative": {
+        "mean": -0.01897110605987946,
+        "min": -0.025585654133454677,
+        "max": -0.01309836768392205
+      },
+      "mae_relative": {
+        "mean": 0.08016292561500923,
+        "min": 0.07339803424140733,
+        "max": 0.08457029386081791
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2240,
+      "reference_sum": 834739.0,
+      "bias_relative": {
+        "mean": -0.012786416796812116,
+        "min": -0.023616920447812335,
+        "max": -0.0024879483498137607
+      },
+      "mae_relative": {
+        "mean": 0.14285294501440768,
+        "min": 0.13456798988630644,
+        "max": 0.14980624292766684
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "region": "anomalia_0_cavity",
+      "model": "entrada",
+      "pixels": 268,
+      "reference_sum": 298.0,
+      "bias_relative": {
+        "mean": 0.03691275167785235,
+        "min": -0.3959731543624161,
+        "max": 0.5436241610738255
+      },
+      "mae_relative": {
+        "mean": 1.835234899328859,
+        "min": 1.483221476510067,
+        "max": 2.2885906040268456
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "region": "anomalia_0_cavity",
+      "model": "unet",
+      "pixels": 268,
+      "reference_sum": 298.0,
+      "bias_relative": {
+        "mean": -0.37383540490952416,
+        "min": -0.4198501821855937,
+        "max": -0.3391881176364968
+      },
+      "mae_relative": {
+        "mean": 0.7353647366968658,
+        "min": 0.7231816888770637,
+        "max": 0.7461349436528809
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "region": "anomalia_0_cavity",
+      "model": "cgan",
+      "pixels": 268,
+      "reference_sum": 298.0,
+      "bias_relative": {
+        "mean": -0.26651543203927436,
+        "min": -0.3344000286080693,
+        "max": -0.15382335033678993
+      },
+      "mae_relative": {
+        "mean": 0.8813760815553057,
+        "min": 0.8001466196102298,
+        "max": 0.9590965590315907
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 44724,
+      "reference_sum": 112843335.0,
+      "bias_relative": {
+        "mean": 5.836410276247151e-05,
+        "min": -0.0006192213301742632,
+        "max": 0.001027309233637946
+      },
+      "mae_relative": {
+        "mean": 0.06810938545905258,
+        "min": 0.06757185083195211,
+        "max": 0.06845672365142345
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 44724,
+      "reference_sum": 112843335.0,
+      "bias_relative": {
+        "mean": 0.04880114090316515,
+        "min": 0.04732225568278419,
+        "max": 0.05099490673380108
+      },
+      "mae_relative": {
+        "mean": 0.04920065603391068,
+        "min": 0.047760554313571846,
+        "max": 0.05136327351921924
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 44724,
+      "reference_sum": 112843335.0,
+      "bias_relative": {
+        "mean": 0.14530068323588696,
+        "min": 0.13937897753690934,
+        "max": 0.15378639770079836
+      },
+      "mae_relative": {
+        "mean": 0.14544181623372332,
+        "min": 0.13956401752451536,
+        "max": 0.15392392196658633
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 14827,
+      "reference_sum": 66145.0,
+      "bias_relative": {
+        "mean": -0.007921989568372517,
+        "min": -0.04603522564063799,
+        "max": 0.030765741930607
+      },
+      "mae_relative": {
+        "mean": 1.1451795298208478,
+        "min": 1.1130244160556353,
+        "max": 1.169748280293295
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 14827,
+      "reference_sum": 66145.0,
+      "bias_relative": {
+        "mean": -0.2432904247697001,
+        "min": -0.2621038708189383,
+        "max": -0.22563103701450413
+      },
+      "mae_relative": {
+        "mean": 0.3711683403914604,
+        "min": 0.3602330803138683,
+        "max": 0.38312882289983036
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 14827,
+      "reference_sum": 66145.0,
+      "bias_relative": {
+        "mean": -0.12065237219468308,
+        "min": -0.13986436607781588,
+        "max": -0.09828828421435783
+      },
+      "mae_relative": {
+        "mean": 0.4054053675279947,
+        "min": 0.39836306871964694,
+        "max": 0.4148893652811446
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2392,
+      "reference_sum": 1036456.0,
+      "bias_relative": {
+        "mean": -0.00010227158702347236,
+        "min": -0.00642188380403992,
+        "max": 0.007703173120711347
+      },
+      "mae_relative": {
+        "mean": 0.1205978835570444,
+        "min": 0.1131258828160578,
+        "max": 0.12408630950083747
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2392,
+      "reference_sum": 1036456.0,
+      "bias_relative": {
+        "mean": -0.001403613248588532,
+        "min": -0.007099056090388138,
+        "max": 0.006088954272055565
+      },
+      "mae_relative": {
+        "mean": 0.06527314408165144,
+        "min": 0.061888741873811055,
+        "max": 0.06921266407686369
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2392,
+      "reference_sum": 1036456.0,
+      "bias_relative": {
+        "mean": 0.005632486760183533,
+        "min": -0.006269107118532685,
+        "max": 0.02006338102403923
+      },
+      "mae_relative": {
+        "mean": 0.13189625509869293,
+        "min": 0.12627884506017242,
+        "max": 0.14108577695401656
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "model": "entrada",
+      "pixels": 782,
+      "reference_sum": 2469.0,
+      "bias_relative": {
+        "mean": 0.024301336573511544,
+        "min": -0.10085054678007291,
+        "max": 0.23126771972458485
+      },
+      "mae_relative": {
+        "mean": 1.4467395706763873,
+        "min": 1.343458890238963,
+        "max": 1.5548805184285135
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "model": "unet",
+      "pixels": 782,
+      "reference_sum": 2469.0,
+      "bias_relative": {
+        "mean": -0.2332562439476121,
+        "min": -0.25710426392513996,
+        "max": -0.21079242679513452
+      },
+      "mae_relative": {
+        "mean": 0.4223514710935186,
+        "min": 0.407340084757999,
+        "max": 0.43795226603340537
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "model": "cgan",
+      "pixels": 782,
+      "reference_sum": 2469.0,
+      "bias_relative": {
+        "mean": -0.12483346524402042,
+        "min": -0.18663667021087424,
+        "max": -0.06887382502071905
+      },
+      "mae_relative": {
+        "mean": 0.5158809838668708,
+        "min": 0.485815078597917,
+        "max": 0.5390238868207815
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_1_dense_body",
+      "model": "entrada",
+      "pixels": 735,
+      "reference_sum": 297.0,
+      "bias_relative": {
+        "mean": 0.010101010101010097,
+        "min": -0.4612794612794613,
+        "max": 0.48148148148148145
+      },
+      "mae_relative": {
+        "mean": 1.863299663299663,
+        "min": 1.4646464646464648,
+        "max": 2.2861952861952863
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_1_dense_body",
+      "model": "unet",
+      "pixels": 735,
+      "reference_sum": 297.0,
+      "bias_relative": {
+        "mean": -0.6268931021398856,
+        "min": -0.6577874617262756,
+        "max": -0.5975186079842166
+      },
+      "mae_relative": {
+        "mean": 1.1088065574430677,
+        "min": 1.1001799434373285,
+        "max": 1.116359985110755
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_1_dense_body",
+      "model": "cgan",
+      "pixels": 735,
+      "reference_sum": 297.0,
+      "bias_relative": {
+        "mean": -0.32644913423336536,
+        "min": -0.46777130078342755,
+        "max": -0.21076122950621234
+      },
+      "mae_relative": {
+        "mean": 1.2108411189214174,
+        "min": 1.166731987417559,
+        "max": 1.2562557692079908
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 44724,
+      "reference_sum": 112830876.0,
+      "bias_relative": {
+        "mean": -8.648341966253987e-05,
+        "min": -0.0008277521482683517,
+        "max": 0.0006803456883557299
+      },
+      "mae_relative": {
+        "mean": 0.0681765645424928,
+        "min": 0.06739862588676525,
+        "max": 0.06854987104770861
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 44724,
+      "reference_sum": 112830876.0,
+      "bias_relative": {
+        "mean": 0.04866085747560426,
+        "min": 0.04714963826219134,
+        "max": 0.050675621441026227
+      },
+      "mae_relative": {
+        "mean": 0.049083338625944786,
+        "min": 0.04757242512016817,
+        "max": 0.05102885082746364
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 44724,
+      "reference_sum": 112830876.0,
+      "bias_relative": {
+        "mean": 0.14580191927212335,
+        "min": 0.14021555240567626,
+        "max": 0.15197584013771484
+      },
+      "mae_relative": {
+        "mean": 0.1459411304290259,
+        "min": 0.1403712045728565,
+        "max": 0.1520936395113274
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 14591,
+      "reference_sum": 64461.0,
+      "bias_relative": {
+        "mean": -0.004483331006344922,
+        "min": -0.027008578830610756,
+        "max": 0.019220924279797085
+      },
+      "mae_relative": {
+        "mean": 1.1604954933991096,
+        "min": 1.139588278183708,
+        "max": 1.1815981756410854
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 14591,
+      "reference_sum": 64461.0,
+      "bias_relative": {
+        "mean": -0.2403900711773003,
+        "min": -0.26194666456754795,
+        "max": -0.22950043008600637
+      },
+      "mae_relative": {
+        "mean": 0.36935251881173004,
+        "min": 0.3619311972809176,
+        "max": 0.383011485148497
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 14591,
+      "reference_sum": 64461.0,
+      "bias_relative": {
+        "mean": -0.11990653502092434,
+        "min": -0.1494818024414627,
+        "max": -0.10391710797597256
+      },
+      "mae_relative": {
+        "mean": 0.40990984500600136,
+        "min": 0.40460165771012013,
+        "max": 0.41755609955663425
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2392,
+      "reference_sum": 1034533.0,
+      "bias_relative": {
+        "mean": -0.0009791857775440706,
+        "min": -0.005154982972993612,
+        "max": 0.006231797342375739
+      },
+      "mae_relative": {
+        "mean": 0.12067106607522429,
+        "min": 0.11833841936409956,
+        "max": 0.1262163700916259
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2392,
+      "reference_sum": 1034533.0,
+      "bias_relative": {
+        "mean": -0.002252861625506923,
+        "min": -0.014004943572387405,
+        "max": 0.004983346222337273
+      },
+      "mae_relative": {
+        "mean": 0.06541723402784513,
+        "min": 0.06066779467557872,
+        "max": 0.06884209615017355
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2392,
+      "reference_sum": 1034533.0,
+      "bias_relative": {
+        "mean": 0.006345124745816072,
+        "min": -0.0040145481400457525,
+        "max": 0.021595948118747838
+      },
+      "mae_relative": {
+        "mean": 0.1318949945961459,
+        "min": 0.12080642196501895,
+        "max": 0.13624305249376292
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_0_conduit",
+      "model": "entrada",
+      "pixels": 798,
+      "reference_sum": 2697.0,
+      "bias_relative": {
+        "mean": -0.0014831294030404167,
+        "min": -0.19911012235817574,
+        "max": 0.14200964034111976
+      },
+      "mae_relative": {
+        "mean": 1.3823136818687431,
+        "min": 1.2573229514275122,
+        "max": 1.4946236559139785
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_0_conduit",
+      "model": "unet",
+      "pixels": 798,
+      "reference_sum": 2697.0,
+      "bias_relative": {
+        "mean": -0.25601785027569857,
+        "min": -0.2880076315499077,
+        "max": -0.23329357554032942
+      },
+      "mae_relative": {
+        "mean": 0.4200038097691062,
+        "min": 0.4091870372556023,
+        "max": 0.4362587886681564
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_0_conduit",
+      "model": "cgan",
+      "pixels": 798,
+      "reference_sum": 2697.0,
+      "bias_relative": {
+        "mean": -0.17177893584239717,
+        "min": -0.217255001819019,
+        "max": -0.10011679632927523
+      },
+      "mae_relative": {
+        "mean": 0.4800957413585306,
+        "min": 0.45308827280058783,
+        "max": 0.5074250463365252
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_1_dense_body",
+      "model": "entrada",
+      "pixels": 558,
+      "reference_sum": 257.0,
+      "bias_relative": {
+        "mean": 0.03501945525291829,
+        "min": -0.377431906614786,
+        "max": 0.6342412451361867
+      },
+      "mae_relative": {
+        "mean": 1.8785992217898826,
+        "min": 1.5369649805447472,
+        "max": 2.3618677042801557
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_1_dense_body",
+      "model": "unet",
+      "pixels": 558,
+      "reference_sum": 257.0,
+      "bias_relative": {
+        "mean": -0.6198070680978522,
+        "min": -0.6401995520550732,
+        "max": -0.5919954938612908
+      },
+      "mae_relative": {
+        "mean": 1.0738349040632251,
+        "min": 1.067891748380785,
+        "max": 1.0821310932619
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_1_dense_body",
+      "model": "cgan",
+      "pixels": 558,
+      "reference_sum": 257.0,
+      "bias_relative": {
+        "mean": -0.3670289690433539,
+        "min": -0.460343162852588,
+        "max": -0.24061300442546804
+      },
+      "mae_relative": {
+        "mean": 1.1409706830919406,
+        "min": 1.1018932427933696,
+        "max": 1.190234768176581
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 44724,
+      "reference_sum": 112840149.0,
+      "bias_relative": {
+        "mean": 2.9333530922579756e-06,
+        "min": -0.0006255663487292985,
+        "max": 0.0006853145860344442
+      },
+      "mae_relative": {
+        "mean": 0.06815834052115619,
+        "min": 0.06755050456376126,
+        "max": 0.06860684843654363
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 44724,
+      "reference_sum": 112840149.0,
+      "bias_relative": {
+        "mean": 0.04951238175473916,
+        "min": 0.04744219488475102,
+        "max": 0.05225361140532658
+      },
+      "mae_relative": {
+        "mean": 0.04991265965583494,
+        "min": 0.047905553600690154,
+        "max": 0.05258903817866159
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 44724,
+      "reference_sum": 112840149.0,
+      "bias_relative": {
+        "mean": 0.14901373467158932,
+        "min": 0.139692951814304,
+        "max": 0.1627524047296379
+      },
+      "mae_relative": {
+        "mean": 0.1491367704098096,
+        "min": 0.13985598556396112,
+        "max": 0.1628447962699926
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 14725,
+      "reference_sum": 62939.0,
+      "bias_relative": {
+        "mean": 0.007388105943850394,
+        "min": -0.03366751934412685,
+        "max": 0.04005465609558461
+      },
+      "mae_relative": {
+        "mean": 1.1784680404836425,
+        "min": 1.164158947552392,
+        "max": 1.1998442936811833
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 14725,
+      "reference_sum": 62939.0,
+      "bias_relative": {
+        "mean": -0.24042412053382334,
+        "min": -0.2609577448089529,
+        "max": -0.2248942265339379
+      },
+      "mae_relative": {
+        "mean": 0.37288956879241636,
+        "min": 0.36339914873127904,
+        "max": 0.38387801948257694
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 14725,
+      "reference_sum": 62939.0,
+      "bias_relative": {
+        "mean": -0.11438708985352095,
+        "min": -0.14557794414858546,
+        "max": -0.08769243485746922
+      },
+      "mae_relative": {
+        "mean": 0.4121380880772709,
+        "min": 0.4045708638315374,
+        "max": 0.4206111703778051
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2392,
+      "reference_sum": 1035377.0,
+      "bias_relative": {
+        "mean": 0.00015260141957953473,
+        "min": -0.004188812384281281,
+        "max": 0.00604900437232042
+      },
+      "mae_relative": {
+        "mean": 0.12156344983518082,
+        "min": 0.11821297942681748,
+        "max": 0.1248984669352323
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2392,
+      "reference_sum": 1035377.0,
+      "bias_relative": {
+        "mean": -0.0012147039047035897,
+        "min": -0.009376260749532695,
+        "max": 0.006205443825986764
+      },
+      "mae_relative": {
+        "mean": 0.0664170926237519,
+        "min": 0.06134913699941662,
+        "max": 0.07139401585599725
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2392,
+      "reference_sum": 1035377.0,
+      "bias_relative": {
+        "mean": 0.00751836011258414,
+        "min": -0.007155632059738903,
+        "max": 0.020534434643667537
+      },
+      "mae_relative": {
+        "mean": 0.1341791175812672,
+        "min": 0.1244467485895903,
+        "max": 0.14195050184930624
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "anomalia_0_conduit",
+      "model": "entrada",
+      "pixels": 831,
+      "reference_sum": 3432.0,
+      "bias_relative": {
+        "mean": 0.004370629370629368,
+        "min": -0.08508158508158509,
+        "max": 0.11305361305361306
+      },
+      "mae_relative": {
+        "mean": 1.2684149184149185,
+        "min": 1.194055944055944,
+        "max": 1.3275058275058276
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "anomalia_0_conduit",
+      "model": "unet",
+      "pixels": 831,
+      "reference_sum": 3432.0,
+      "bias_relative": {
+        "mean": -0.2627800020348132,
+        "min": -0.29402322066905423,
+        "max": -0.20276836792744837
+      },
+      "mae_relative": {
+        "mean": 0.39235413358285265,
+        "min": 0.3573810567254499,
+        "max": 0.41240990577912023
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "anomalia_0_conduit",
+      "model": "cgan",
+      "pixels": 831,
+      "reference_sum": 3432.0,
+      "bias_relative": {
+        "mean": -0.16864229380118098,
+        "min": -0.23244734572795597,
+        "max": -0.10880356996895027
+      },
+      "mae_relative": {
+        "mean": 0.4261993863925976,
+        "min": 0.4105485172558114,
+        "max": 0.4636740170754417
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "anomalia_1_dense_body",
+      "model": "entrada",
+      "pixels": 379,
+      "reference_sum": 163.0,
+      "bias_relative": {
+        "mean": -0.04294478527607361,
+        "min": -0.50920245398773,
+        "max": 0.8404907975460123
+      },
+      "mae_relative": {
+        "mean": 1.8226993865030674,
+        "min": 1.4294478527607362,
+        "max": 2.521472392638037
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "anomalia_1_dense_body",
+      "model": "unet",
+      "pixels": 379,
+      "reference_sum": 163.0,
+      "bias_relative": {
+        "mean": -0.6138649543291362,
+        "min": -0.641855551396785,
+        "max": -0.5508045751966506
+      },
+      "mae_relative": {
+        "mean": 1.102971094880519,
+        "min": 1.0973065209536348,
+        "max": 1.1138546920999617
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "anomalia_1_dense_body",
+      "model": "cgan",
+      "pixels": 379,
+      "reference_sum": 163.0,
+      "bias_relative": {
+        "mean": -0.3534299328456671,
+        "min": -0.4479505455658372,
+        "max": -0.24240026087229835
+      },
+      "mae_relative": {
+        "mean": 1.1863714937434262,
+        "min": 1.1231692109423295,
+        "max": 1.2499261762679006
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 44724,
+      "reference_sum": 112835699.0,
+      "bias_relative": {
+        "mean": 9.529785427216611e-05,
+        "min": -0.0009085688386616012,
+        "max": 0.0008575388893545118
+      },
+      "mae_relative": {
+        "mean": 0.06816184211346091,
+        "min": 0.06777029847619413,
+        "max": 0.0684945905284816
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 44724,
+      "reference_sum": 112835699.0,
+      "bias_relative": {
+        "mean": 0.04921583032395343,
+        "min": 0.04733692022532265,
+        "max": 0.05168985871490147
+      },
+      "mae_relative": {
+        "mean": 0.04961843734932831,
+        "min": 0.04776305162979185,
+        "max": 0.052054687775657686
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 44724,
+      "reference_sum": 112835699.0,
+      "bias_relative": {
+        "mean": 0.14747834522340125,
+        "min": 0.13949279167082762,
+        "max": 0.15895802242776624
+      },
+      "mae_relative": {
+        "mean": 0.1476084494575249,
+        "min": 0.1396602111391919,
+        "max": 0.15905534006482325
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 14967,
+      "reference_sum": 60039.0,
+      "bias_relative": {
+        "mean": 0.0005496427322240545,
+        "min": -0.04029047785606023,
+        "max": 0.030330285314545544
+      },
+      "mae_relative": {
+        "mean": 1.2093605822881792,
+        "min": 1.1929745665317544,
+        "max": 1.225853195422975
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 14967,
+      "reference_sum": 60039.0,
+      "bias_relative": {
+        "mean": -0.2492381480412637,
+        "min": -0.2627560267207565,
+        "max": -0.2335306341912365
+      },
+      "mae_relative": {
+        "mean": 0.38629890033418324,
+        "min": 0.3768295614042538,
+        "max": 0.3942440096720368
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 14967,
+      "reference_sum": 60039.0,
+      "bias_relative": {
+        "mean": -0.13269918284931814,
+        "min": -0.1492017137735005,
+        "max": -0.11792939986299583
+      },
+      "mae_relative": {
+        "mean": 0.42522208487465896,
+        "min": 0.4190072351722999,
+        "max": 0.4310739230891048
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2392,
+      "reference_sum": 1035848.0,
+      "bias_relative": {
+        "mean": -9.943543840409022e-05,
+        "min": -0.009642341347379152,
+        "max": 0.006672793691738556
+      },
+      "mae_relative": {
+        "mean": 0.12131596527675877,
+        "min": 0.11826445578888022,
+        "max": 0.12524810589970728
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2392,
+      "reference_sum": 1035848.0,
+      "bias_relative": {
+        "mean": -0.0021879300421096077,
+        "min": -0.008913631557862352,
+        "max": 0.006377919509765443
+      },
+      "mae_relative": {
+        "mean": 0.06598388554350404,
+        "min": 0.0633168779682159,
+        "max": 0.07016257638801222
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2392,
+      "reference_sum": 1035848.0,
+      "bias_relative": {
+        "mean": 0.007874893375700274,
+        "min": -0.0037276705488027842,
+        "max": 0.022744340858416964
+      },
+      "mae_relative": {
+        "mean": 0.1323475983348692,
+        "min": 0.12764885528437547,
+        "max": 0.13648402049383626
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "anomalia_0_conduit",
+      "model": "entrada",
+      "pixels": 848,
+      "reference_sum": 3613.0,
+      "bias_relative": {
+        "mean": 0.00193744810406864,
+        "min": -0.19734292831442016,
+        "max": 0.19568225851093274
+      },
+      "mae_relative": {
+        "mean": 1.2293108220315527,
+        "min": 1.1372820370882923,
+        "max": 1.3332410738998062
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "anomalia_0_conduit",
+      "model": "unet",
+      "pixels": 848,
+      "reference_sum": 3613.0,
+      "bias_relative": {
+        "mean": -0.21792697890528046,
+        "min": -0.2746126031090216,
+        "max": -0.19296747135832287
+      },
+      "mae_relative": {
+        "mean": 0.36365652768513346,
+        "min": 0.3460057476076693,
+        "max": 0.39905331702847374
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "anomalia_0_conduit",
+      "model": "cgan",
+      "pixels": 848,
+      "reference_sum": 3613.0,
+      "bias_relative": {
+        "mean": -0.09934172632331024,
+        "min": -0.18196794850673767,
+        "max": -0.04473419997108315
+      },
+      "mae_relative": {
+        "mean": 0.43486404868440065,
+        "min": 0.4118479466264842,
+        "max": 0.4619725997974488
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "anomalia_1_dense_body",
+      "model": "entrada",
+      "pixels": 324,
+      "reference_sum": 114.0,
+      "bias_relative": {
+        "mean": 0.13157894736842107,
+        "min": -0.47368421052631576,
+        "max": 1.105263157894737
+      },
+      "mae_relative": {
+        "mean": 1.9912280701754388,
+        "min": 1.4736842105263157,
+        "max": 2.824561403508772
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "anomalia_1_dense_body",
+      "model": "unet",
+      "pixels": 324,
+      "reference_sum": 114.0,
+      "bias_relative": {
+        "mean": -0.608487004950597,
+        "min": -0.6406674760535997,
+        "max": -0.5758110662736227
+      },
+      "mae_relative": {
+        "mean": 1.1353401348292582,
+        "min": 1.1271544231598383,
+        "max": 1.1431049374231153
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "anomalia_1_dense_body",
+      "model": "cgan",
+      "pixels": 324,
+      "reference_sum": 114.0,
+      "bias_relative": {
+        "mean": -0.2812979455943666,
+        "min": -0.46810741787702453,
+        "max": -0.14478685814234368
+      },
+      "mae_relative": {
+        "mean": 1.2647865755136813,
+        "min": 1.1792024867000832,
+        "max": 1.472152023743514
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 44724,
+      "reference_sum": 112858801.0,
+      "bias_relative": {
+        "mean": -4.340822298829845e-05,
+        "min": -0.0007937440341936647,
+        "max": 0.0007249678294916495
+      },
+      "mae_relative": {
+        "mean": 0.06816813515500665,
+        "min": 0.0675494948772316,
+        "max": 0.06858181135558936
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 44724,
+      "reference_sum": 112858801.0,
+      "bias_relative": {
+        "mean": 0.048865676986571724,
+        "min": 0.047200359137202365,
+        "max": 0.050740593861681484
+      },
+      "mae_relative": {
+        "mean": 0.04928714300337002,
+        "min": 0.04763801418715151,
+        "max": 0.051101363777683824
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 44724,
+      "reference_sum": 112858801.0,
+      "bias_relative": {
+        "mean": 0.14516192381702525,
+        "min": 0.13979822158183366,
+        "max": 0.15064352534992873
+      },
+      "mae_relative": {
+        "mean": 0.1453074224470911,
+        "min": 0.1399302167664694,
+        "max": 0.15077486201278736
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 14754,
+      "reference_sum": 62435.0,
+      "bias_relative": {
+        "mean": -0.00400416433090414,
+        "min": -0.03932089372947866,
+        "max": 0.03403539681268519
+      },
+      "mae_relative": {
+        "mean": 1.1745767598302235,
+        "min": 1.1524465444061824,
+        "max": 1.1999199167133818
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 14754,
+      "reference_sum": 62435.0,
+      "bias_relative": {
+        "mean": -0.23906037455741352,
+        "min": -0.2575054178217899,
+        "max": -0.21504032439034423
+      },
+      "mae_relative": {
+        "mean": 0.37370709412257413,
+        "min": 0.36116950500860895,
+        "max": 0.38431063750900607
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 14754,
+      "reference_sum": 62435.0,
+      "bias_relative": {
+        "mean": -0.11656394972572633,
+        "min": -0.13954096469510285,
+        "max": -0.0878577571954261
+      },
+      "mae_relative": {
+        "mean": 0.4154665924175295,
+        "min": 0.40530685808782957,
+        "max": 0.4224078886586725
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2392,
+      "reference_sum": 1034275.0,
+      "bias_relative": {
+        "mean": -0.0013081627226801383,
+        "min": -0.011674844697976843,
+        "max": 0.008068453747794349
+      },
+      "mae_relative": {
+        "mean": 0.1208776195886007,
+        "min": 0.11468033163326968,
+        "max": 0.12624398733412293
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2392,
+      "reference_sum": 1034275.0,
+      "bias_relative": {
+        "mean": -0.0013208495876556568,
+        "min": -0.008357651482617435,
+        "max": 0.005178264686589293
+      },
+      "mae_relative": {
+        "mean": 0.06555342588999871,
+        "min": 0.06297991564843856,
+        "max": 0.06807915563190471
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2392,
+      "reference_sum": 1034275.0,
+      "bias_relative": {
+        "mean": 0.005246073693691294,
+        "min": -0.007550659105539235,
+        "max": 0.015396452829090974
+      },
+      "mae_relative": {
+        "mean": 0.13092262722087894,
+        "min": 0.12300481106219964,
+        "max": 0.13645441807233688
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "anomalia_0_conduit",
+      "model": "entrada",
+      "pixels": 830,
+      "reference_sum": 3436.0,
+      "bias_relative": {
+        "mean": -0.03667054714784633,
+        "min": -0.14435389988358557,
+        "max": 0.059371362048894066
+      },
+      "mae_relative": {
+        "mean": 1.210128055878929,
+        "min": 1.132130384167637,
+        "max": 1.3108265424912688
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "anomalia_0_conduit",
+      "model": "unet",
+      "pixels": 830,
+      "reference_sum": 3436.0,
+      "bias_relative": {
+        "mean": -0.24660165345510193,
+        "min": -0.2768600062181619,
+        "max": -0.2048841360594965
+      },
+      "mae_relative": {
+        "mean": 0.39424000477860127,
+        "min": 0.36594614295458283,
+        "max": 0.4141716292470865
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "anomalia_0_conduit",
+      "model": "cgan",
+      "pixels": 830,
+      "reference_sum": 3436.0,
+      "bias_relative": {
+        "mean": -0.15835647092878027,
+        "min": -0.22231226757143546,
+        "max": -0.0819576928138924
+      },
+      "mae_relative": {
+        "mean": 0.4214126098719907,
+        "min": 0.40239427111220966,
+        "max": 0.4565028158097569
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "anomalia_1_dense_body",
+      "model": "entrada",
+      "pixels": 362,
+      "reference_sum": 144.0,
+      "bias_relative": {
+        "mean": 0.04166666666666665,
+        "min": -0.7222222222222222,
+        "max": 0.6666666666666666
+      },
+      "mae_relative": {
+        "mean": 1.8868055555555556,
+        "min": 1.25,
+        "max": 2.4305555555555554
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "anomalia_1_dense_body",
+      "model": "unet",
+      "pixels": 362,
+      "reference_sum": 144.0,
+      "bias_relative": {
+        "mean": -0.5937829155639134,
+        "min": -0.6171261679442741,
+        "max": -0.5575153164298001
+      },
+      "mae_relative": {
+        "mean": 1.1349988986855102,
+        "min": 1.1303287787302307,
+        "max": 1.1447112693547898
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "anomalia_1_dense_body",
+      "model": "cgan",
+      "pixels": 362,
+      "reference_sum": 144.0,
+      "bias_relative": {
+        "mean": -0.30864403877533825,
+        "min": -0.4440376374867188,
+        "max": -0.20155787094394623
+      },
+      "mae_relative": {
+        "mean": 1.2510549621188323,
+        "min": 1.1470345958144805,
+        "max": 1.3688950792025198
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "cielo",
+      "model": "entrada",
+      "pixels": 44724,
+      "reference_sum": 112845185.0,
+      "bias_relative": {
+        "mean": -8.39202842372051e-06,
+        "min": -0.0005461021664327104,
+        "max": 0.0006424288284874539
+      },
+      "mae_relative": {
+        "mean": 0.06807383407630553,
+        "min": 0.0675156232851229,
+        "max": 0.06858193373514342
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "cielo",
+      "model": "unet",
+      "pixels": 44724,
+      "reference_sum": 112845185.0,
+      "bias_relative": {
+        "mean": 0.04913635900721536,
+        "min": 0.047714705375549525,
+        "max": 0.05155654114018983
+      },
+      "mae_relative": {
+        "mean": 0.04956941592376764,
+        "min": 0.048161457766998976,
+        "max": 0.051948344823829005
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "cielo",
+      "model": "cgan",
+      "pixels": 44724,
+      "reference_sum": 112845185.0,
+      "bias_relative": {
+        "mean": 0.1468653431488806,
+        "min": 0.1381807793185398,
+        "max": 0.15401806818004535
+      },
+      "mae_relative": {
+        "mean": 0.14700522581113162,
+        "min": 0.138363522535699,
+        "max": 0.1541256947789753
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "roca_sin_anomalia",
+      "model": "entrada",
+      "pixels": 14637,
+      "reference_sum": 64658.0,
+      "bias_relative": {
+        "mean": -0.00399022549413839,
+        "min": -0.02873580995391135,
+        "max": 0.03250951158402673
+      },
+      "mae_relative": {
+        "mean": 1.1599863899285472,
+        "min": 1.148102322991741,
+        "max": 1.1865817068266882
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "roca_sin_anomalia",
+      "model": "unet",
+      "pixels": 14637,
+      "reference_sum": 64658.0,
+      "bias_relative": {
+        "mean": -0.24363157112288092,
+        "min": -0.2655132107889292,
+        "max": -0.23063254280897363
+      },
+      "mae_relative": {
+        "mean": 0.37120509153943415,
+        "min": 0.3612433019086839,
+        "max": 0.382760484929768
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "roca_sin_anomalia",
+      "model": "cgan",
+      "pixels": 14637,
+      "reference_sum": 64658.0,
+      "bias_relative": {
+        "mean": -0.124250204611778,
+        "min": -0.15163112294191813,
+        "max": -0.10890975478240945
+      },
+      "mae_relative": {
+        "mean": 0.40970653713749766,
+        "min": 0.4034665497789402,
+        "max": 0.4160380482513136
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "borde_cono",
+      "model": "entrada",
+      "pixels": 2392,
+      "reference_sum": 1034628.0,
+      "bias_relative": {
+        "mean": -0.0008360492853470038,
+        "min": -0.008126592359766023,
+        "max": 0.007279911233796108
+      },
+      "mae_relative": {
+        "mean": 0.12012307805317465,
+        "min": 0.11577301213576281,
+        "max": 0.12455491249028636
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "borde_cono",
+      "model": "unet",
+      "pixels": 2392,
+      "reference_sum": 1034628.0,
+      "bias_relative": {
+        "mean": -0.001979532182476645,
+        "min": -0.008344852656377445,
+        "max": 0.008025104264744936
+      },
+      "mae_relative": {
+        "mean": 0.06567444060017102,
+        "min": 0.06222737562111736,
+        "max": 0.0701462888177415
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "borde_cono",
+      "model": "cgan",
+      "pixels": 2392,
+      "reference_sum": 1034628.0,
+      "bias_relative": {
+        "mean": 0.00625271495153374,
+        "min": -0.0036079888480817497,
+        "max": 0.016094198997401974
+      },
+      "mae_relative": {
+        "mean": 0.13333707137041517,
+        "min": 0.12806375273670814,
+        "max": 0.1411143753590471
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "anomalia_0_conduit",
+      "model": "entrada",
+      "pixels": 798,
+      "reference_sum": 2748.0,
+      "bias_relative": {
+        "mean": -0.00509461426491994,
+        "min": -0.15574963609898107,
+        "max": 0.1572052401746725
+      },
+      "mae_relative": {
+        "mean": 1.3923944687045122,
+        "min": 1.2911208151382825,
+        "max": 1.4745269286754004
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "anomalia_0_conduit",
+      "model": "unet",
+      "pixels": 798,
+      "reference_sum": 2748.0,
+      "bias_relative": {
+        "mean": -0.24308962957937733,
+        "min": -0.27629540193528535,
+        "max": -0.21982029735211464
+      },
+      "mae_relative": {
+        "mean": 0.42078453400438753,
+        "min": 0.4089343856424997,
+        "max": 0.43705980653130355
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "anomalia_0_conduit",
+      "model": "cgan",
+      "pixels": 798,
+      "reference_sum": 2748.0,
+      "bias_relative": {
+        "mean": -0.16851810477256943,
+        "min": -0.23645310712580067,
+        "max": -0.1023826457184344
+      },
+      "mae_relative": {
+        "mean": 0.48967677790980924,
+        "min": 0.46563713171533405,
+        "max": 0.5065018375354329
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "anomalia_1_dense_body",
+      "model": "entrada",
+      "pixels": 524,
+      "reference_sum": 210.0,
+      "bias_relative": {
+        "mean": 0.014285714285714287,
+        "min": -0.42857142857142855,
+        "max": 0.6190476190476191
+      },
+      "mae_relative": {
+        "mean": 1.8661904761904762,
+        "min": 1.457142857142857,
+        "max": 2.4
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "anomalia_1_dense_body",
+      "model": "unet",
+      "pixels": 524,
+      "reference_sum": 210.0,
+      "bias_relative": {
+        "mean": -0.5348743014259263,
+        "min": -0.5688059813535573,
+        "max": -0.4970565230540389
+      },
+      "mae_relative": {
+        "mean": 1.1435818124665762,
+        "min": 1.134478959111874,
+        "max": 1.1514370075914768
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "anomalia_1_dense_body",
+      "model": "cgan",
+      "pixels": 524,
+      "reference_sum": 210.0,
+      "bias_relative": {
+        "mean": -0.28810854233914823,
+        "min": -0.47790494701443775,
+        "max": -0.2015254429594781
+      },
+      "mae_relative": {
+        "mean": 1.2500791987920088,
+        "min": 1.1253876034065884,
+        "max": 1.3196476164837643
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "candidate_pixels": 1017,
+      "matched_pixels": 1007,
+      "match_fraction": 0.9901671583087512,
+      "matched_indices_sha256": "d9ed059fd7883114bff00dfa16cf783b94b47b3f597eea55a6f8acf0c821dd9b",
+      "status": "estimable",
+      "reference_contrast": -0.042303172737955363,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.008115922250176632,
+            "min": -0.154228855721393,
+            "max": 0.2833827893175076
+          },
+          "error": {
+            "mean": 0.050419094988132,
+            "min": -0.11192568298343764,
+            "max": 0.32568596205546296
+          },
+          "absolute_error": {
+            "mean": 0.09489688674449355,
+            "min": 0.0004250001491228339,
+            "max": 0.32568596205546296
+          },
+          "same_sign_realizations": 9
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.05150327751917646,
+            "min": 0.01228308256950017,
+            "max": 0.08767578373947948
+          },
+          "error": {
+            "mean": 0.09380645025713183,
+            "min": 0.05458625530745553,
+            "max": 0.12997895647743485
+          },
+          "absolute_error": {
+            "mean": 0.09380645025713183,
+            "min": 0.05458625530745553,
+            "max": 0.12997895647743485
+          },
+          "same_sign_realizations": 0
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.0026406464172014366,
+            "min": -0.06866872366463916,
+            "max": 0.09243462892208187
+          },
+          "error": {
+            "mean": 0.0449438191551568,
+            "min": -0.0263655509266838,
+            "max": 0.13473780166003724
+          },
+          "absolute_error": {
+            "mean": 0.04767928205866879,
+            "min": 0.00098907810843607,
+            "max": 0.13473780166003724
+          },
+          "same_sign_realizations": 10
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "region": "anomalia_0_conduit",
+      "candidate_pixels": 994,
+      "matched_pixels": 984,
+      "match_fraction": 0.9899396378269618,
+      "matched_indices_sha256": "b72201c8b75ff0a062344e517d19b65f97b737afbe51c734e2d9bcd31a439f6f",
+      "status": "estimable",
+      "reference_contrast": 0.014215998302567368,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.009184827809939289,
+            "min": -0.2799461641991925,
+            "max": 0.3001605136436596
+          },
+          "error": {
+            "mean": -0.005031170492628079,
+            "min": -0.29416216250175986,
+            "max": 0.2859445153410922
+          },
+          "absolute_error": {
+            "mean": 0.12810350088737482,
+            "min": 0.004302520215951011,
+            "max": 0.29416216250175986
+          },
+          "same_sign_realizations": 11
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.05226582714770785,
+            "min": 0.02215318997743032,
+            "max": 0.09833204620720748
+          },
+          "error": {
+            "mean": 0.03804982884514048,
+            "min": 0.007937191674862953,
+            "max": 0.08411604790464011
+          },
+          "absolute_error": {
+            "mean": 0.03804982884514048,
+            "min": 0.007937191674862953,
+            "max": 0.08411604790464011
+          },
+          "same_sign_realizations": 20
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.0028394927100629354,
+            "min": -0.04560645765159932,
+            "max": 0.07229358346202774
+          },
+          "error": {
+            "mean": -0.011376505592504433,
+            "min": -0.05982245595416669,
+            "max": 0.058077585159460376
+          },
+          "absolute_error": {
+            "mean": 0.02890777432047025,
+            "min": 0.0017532337753141114,
+            "max": 0.05982245595416669
+          },
+          "same_sign_realizations": 9
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "region": "anomalia_0_conduit",
+      "candidate_pixels": 876,
+      "matched_pixels": 867,
+      "match_fraction": 0.9897260273972602,
+      "matched_indices_sha256": "84b9d868381dd2d8910562983b502a14340cb6a8340d5bb9d1688e2bd74c0c7f",
+      "status": "estimable",
+      "reference_contrast": 0.011216566005176842,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.0284150796283051,
+            "min": -0.28664921465968585,
+            "max": 0.3203463203463206
+          },
+          "error": {
+            "mean": -0.03963164563348194,
+            "min": -0.2978657806648627,
+            "max": 0.30912975434114376
+          },
+          "absolute_error": {
+            "mean": 0.09951555469675746,
+            "min": 0.0026999349888590096,
+            "max": 0.30912975434114376
+          },
+          "same_sign_realizations": 9
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.06382093441804323,
+            "min": 0.03720936334784075,
+            "max": 0.08630146913559988
+          },
+          "error": {
+            "mean": 0.052604368412866385,
+            "min": 0.02599279734266391,
+            "max": 0.07508490313042304
+          },
+          "absolute_error": {
+            "mean": 0.052604368412866385,
+            "min": 0.02599279734266391,
+            "max": 0.07508490313042304
+          },
+          "same_sign_realizations": 20
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.013150641257328594,
+            "min": -0.05543892707252729,
+            "max": 0.12455138943478539
+          },
+          "error": {
+            "mean": 0.0019340752521517512,
+            "min": -0.06665549307770413,
+            "max": 0.11333482342960854
+          },
+          "absolute_error": {
+            "mean": 0.03807395583025201,
+            "min": 0.00042145546073713014,
+            "max": 0.11333482342960854
+          },
+          "same_sign_realizations": 11
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "region": "anomalia_0_conduit",
+      "candidate_pixels": 877,
+      "matched_pixels": 868,
+      "match_fraction": 0.9897377423033067,
+      "matched_indices_sha256": "97cd8ffece0866cd197803fd9cc9c8f770d595d8c483a1851f6255eb716449ef",
+      "status": "estimable",
+      "reference_contrast": 0.02365985681857863,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.02428586476833531,
+            "min": -0.3112582781456954,
+            "max": 0.431924882629108
+          },
+          "error": {
+            "mean": 0.0006260079497566795,
+            "min": -0.33491813496427403,
+            "max": 0.40826502581052937
+          },
+          "absolute_error": {
+            "mean": 0.12909246253567958,
+            "min": 0.0003205390447904577,
+            "max": 0.40826502581052937
+          },
+          "same_sign_realizations": 11
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.04167797439818775,
+            "min": -0.08955023254714556,
+            "max": -0.001484376587960079
+          },
+          "error": {
+            "mean": -0.0653378312167664,
+            "min": -0.11321008936572419,
+            "max": -0.025144233406538707
+          },
+          "absolute_error": {
+            "mean": 0.0653378312167664,
+            "min": 0.025144233406538707,
+            "max": 0.11321008936572419
+          },
+          "same_sign_realizations": 0
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.017116121012473746,
+            "min": -0.053051704667320676,
+            "max": 0.09987669002544886
+          },
+          "error": {
+            "mean": -0.0065437358061048835,
+            "min": -0.0767115614858993,
+            "max": 0.07621683320687023
+          },
+          "absolute_error": {
+            "mean": 0.037528209391049464,
+            "min": 0.00044841857293209664,
+            "max": 0.0767115614858993
+          },
+          "same_sign_realizations": 12
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "region": "anomalia_0_conduit",
+      "candidate_pixels": 996,
+      "matched_pixels": 986,
+      "match_fraction": 0.9899598393574297,
+      "matched_indices_sha256": "18875d96184120e5b7a13db4105d451cf9261ce4cf2de5a1d747db9811025e97",
+      "status": "estimable",
+      "reference_contrast": -0.04883183917413747,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.05770175251115576,
+            "min": -0.20000000000000007,
+            "max": 0.20262390670553931
+          },
+          "error": {
+            "mean": -0.008869913337018281,
+            "min": -0.1511681608258626,
+            "max": 0.2514557458796768
+          },
+          "absolute_error": {
+            "mean": 0.062245346590399174,
+            "min": 0.0032127704912900956,
+            "max": 0.2514557458796768
+          },
+          "same_sign_realizations": 17
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.0614262593887779,
+            "min": -0.0928224821521747,
+            "max": -0.0326845921078559
+          },
+          "error": {
+            "mean": -0.012594420214640434,
+            "min": -0.04399064297803723,
+            "max": 0.016147247066281567
+          },
+          "absolute_error": {
+            "mean": 0.018008489720733954,
+            "min": 0.0019513174657079801,
+            "max": 0.04399064297803723
+          },
+          "same_sign_realizations": 20
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.009163888644013896,
+            "min": -0.07578579523973716,
+            "max": 0.10200908364490835
+          },
+          "error": {
+            "mean": 0.03966795053012358,
+            "min": -0.026953956065599693,
+            "max": 0.15084092281904582
+          },
+          "absolute_error": {
+            "mean": 0.043587899824941254,
+            "min": 0.004928334957306935,
+            "max": 0.15084092281904582
+          },
+          "same_sign_realizations": 12
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "region": "anomalia_0_conduit",
+      "candidate_pixels": 1018,
+      "matched_pixels": 1008,
+      "match_fraction": 0.9901768172888016,
+      "matched_indices_sha256": "c91910e7079245c1f2293d8aa4cb9005fd838b82a7e5907c340fd842e4e4674a",
+      "status": "estimable",
+      "reference_contrast": 0.0033337607385561796,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.020185958669949284,
+            "min": -0.2474747474747474,
+            "max": 0.3276397515527951
+          },
+          "error": {
+            "mean": -0.023519719408505464,
+            "min": -0.2508085082133036,
+            "max": 0.32430599081423894
+          },
+          "absolute_error": {
+            "mean": 0.12757059065358797,
+            "min": 0.004622420532370608,
+            "max": 0.32430599081423894
+          },
+          "same_sign_realizations": 6
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.04479283946098815,
+            "min": -0.08679431057011322,
+            "max": 0.018297369852273482
+          },
+          "error": {
+            "mean": -0.04812660019954433,
+            "min": -0.0901280713086694,
+            "max": 0.014963609113717302
+          },
+          "absolute_error": {
+            "mean": 0.04962296111091606,
+            "min": 0.014963609113717302,
+            "max": 0.0901280713086694
+          },
+          "same_sign_realizations": 1
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.003840280342515506,
+            "min": -0.07077113327995366,
+            "max": 0.06519352460936378
+          },
+          "error": {
+            "mean": -0.007174041081071686,
+            "min": -0.07410489401850984,
+            "max": 0.061859763870807605
+          },
+          "absolute_error": {
+            "mean": 0.03256373159006655,
+            "min": 0.006595490614114796,
+            "max": 0.07410489401850984
+          },
+          "same_sign_realizations": 10
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "anomalia_0_cavity",
+      "candidate_pixels": 354,
+      "matched_pixels": 354,
+      "match_fraction": 1.0,
+      "matched_indices_sha256": "afa38eadd181eaf5483b22bd1421527d70c08e6c9e61cd25eabfe248db522c85",
+      "status": "estimable",
+      "reference_contrast": 0.018795386586928586,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.12230316285296194,
+            "min": -0.32432432432432423,
+            "max": 0.9014084507042253
+          },
+          "error": {
+            "mean": 0.10350777626603336,
+            "min": -0.3431197109112528,
+            "max": 0.8826130641172967
+          },
+          "absolute_error": {
+            "mean": 0.29122954034278503,
+            "min": 0.012132448464617918,
+            "max": 0.8826130641172967
+          },
+          "same_sign_realizations": 12
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.09815396034883343,
+            "min": -0.15190530692519633,
+            "max": -0.03338289834343555
+          },
+          "error": {
+            "mean": -0.11694934693576205,
+            "min": -0.1707006935121249,
+            "max": -0.05217828493036414
+          },
+          "absolute_error": {
+            "mean": 0.11694934693576205,
+            "min": 0.05217828493036414,
+            "max": 0.1707006935121249
+          },
+          "same_sign_realizations": 0
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.018397069910716556,
+            "min": -0.12273573463711651,
+            "max": 0.17143679590828786
+          },
+          "error": {
+            "mean": -0.037192456497645146,
+            "min": -0.1415311212240451,
+            "max": 0.15264140932135928
+          },
+          "absolute_error": {
+            "mean": 0.08573203990364606,
+            "min": 0.009697420110289734,
+            "max": 0.15264140932135928
+          },
+          "same_sign_realizations": 7
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "region": "anomalia_0_cavity",
+      "candidate_pixels": 342,
+      "matched_pixels": 342,
+      "match_fraction": 1.0,
+      "matched_indices_sha256": "47b3cd8a9b2db89128d634ece62bd84da1575eb8ef5a08e5348b185a38b124b2",
+      "status": "estimable",
+      "reference_contrast": 0.14391143911439097,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.2000120472622438,
+            "min": -0.375,
+            "max": 1.7450980392156863
+          },
+          "error": {
+            "mean": 0.05610060814785282,
+            "min": -0.518911439114391,
+            "max": 1.6011866001012953
+          },
+          "absolute_error": {
+            "mean": 0.30490974903788515,
+            "min": 0.009934714731762773,
+            "max": 1.6011866001012953
+          },
+          "same_sign_realizations": 12
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.030428890060981144,
+            "min": -0.07490006469905941,
+            "max": 0.1150125295835196
+          },
+          "error": {
+            "mean": -0.11348254905340982,
+            "min": -0.21881150381345038,
+            "max": -0.028898909530871375
+          },
+          "absolute_error": {
+            "mean": 0.11348254905340982,
+            "min": 0.028898909530871375,
+            "max": 0.21881150381345038
+          },
+          "same_sign_realizations": 16
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.08168310080170704,
+            "min": -0.12889560868014005,
+            "max": 0.22661608534127087
+          },
+          "error": {
+            "mean": -0.06222833831268393,
+            "min": -0.272807047794531,
+            "max": 0.0827046462268799
+          },
+          "absolute_error": {
+            "mean": 0.08406231706026049,
+            "min": 0.002418006095834091,
+            "max": 0.272807047794531
+          },
+          "same_sign_realizations": 18
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "region": "anomalia_0_cavity",
+      "candidate_pixels": 255,
+      "matched_pixels": 255,
+      "match_fraction": 1.0,
+      "matched_indices_sha256": "45d12b01c63df82286da0a043acdcf2eb966fade19d698bdb65163666ded43b2",
+      "status": "estimable",
+      "reference_contrast": -0.009049773755656187,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.07319975946833986,
+            "min": -0.5833333333333333,
+            "max": 0.9000000000000001
+          },
+          "error": {
+            "mean": -0.06414998571268367,
+            "min": -0.5742835595776771,
+            "max": 0.9090497737556563
+          },
+          "absolute_error": {
+            "mean": 0.31012618827524424,
+            "min": 0.031777046482928895,
+            "max": 0.9090497737556563
+          },
+          "same_sign_realizations": 11
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.007337951796419629,
+            "min": -0.08015191937646371,
+            "max": 0.1343503942039932
+          },
+          "error": {
+            "mean": 0.0017118219592365592,
+            "min": -0.07110214562080752,
+            "max": 0.14340016795964938
+          },
+          "absolute_error": {
+            "mean": 0.045647534985690005,
+            "min": 0.008537281159260113,
+            "max": 0.14340016795964938
+          },
+          "same_sign_realizations": 13
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.04168902699377641,
+            "min": -0.2619203127596327,
+            "max": 0.14575075753532318
+          },
+          "error": {
+            "mean": -0.032639253238120225,
+            "min": -0.2528705390039765,
+            "max": 0.15480053129097937
+          },
+          "absolute_error": {
+            "mean": 0.10080042506609907,
+            "min": 0.001491682638737446,
+            "max": 0.2528705390039765
+          },
+          "same_sign_realizations": 13
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "region": "anomalia_0_cavity",
+      "candidate_pixels": 205,
+      "matched_pixels": 205,
+      "match_fraction": 1.0,
+      "matched_indices_sha256": "4ecf3526b7cab7221e44358c24d0b5dee770a9dc6a72b364bfbb82625863e0fb",
+      "status": "estimable",
+      "reference_contrast": 0.357142857142857,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.6195545961774029,
+            "min": -0.35897435897435903,
+            "max": 3.166666666666666
+          },
+          "error": {
+            "mean": 0.26241173903454595,
+            "min": -0.716117216117216,
+            "max": 2.8095238095238093
+          },
+          "absolute_error": {
+            "mean": 0.5186745756724586,
+            "min": 0.005791505791505669,
+            "max": 2.8095238095238093
+          },
+          "same_sign_realizations": 16
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.03176067811503907,
+            "min": -0.10064254950035023,
+            "max": 0.039409220537904854
+          },
+          "error": {
+            "mean": -0.38890353525789606,
+            "min": -0.4577854066432072,
+            "max": -0.31773363660495213
+          },
+          "absolute_error": {
+            "mean": 0.38890353525789606,
+            "min": 0.31773363660495213,
+            "max": 0.4577854066432072
+          },
+          "same_sign_realizations": 7
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.046472943859887164,
+            "min": -0.14349047313967056,
+            "max": 0.11063962227400026
+          },
+          "error": {
+            "mean": -0.40361580100274413,
+            "min": -0.5006333302825275,
+            "max": -0.24650323486885672
+          },
+          "absolute_error": {
+            "mean": 0.40361580100274413,
+            "min": 0.24650323486885672,
+            "max": 0.5006333302825275
+          },
+          "same_sign_realizations": 4
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "region": "anomalia_0_cavity",
+      "candidate_pixels": 210,
+      "matched_pixels": 210,
+      "match_fraction": 1.0,
+      "matched_indices_sha256": "4366fd980d6e4cb6b6272591de2291cf45264103b7d9ec505642820ccdbe0cf0",
+      "status": "estimable",
+      "reference_contrast": 0.30281690140845074,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.811856442274344,
+            "min": -0.5238095238095238,
+            "max": 1.7500000000000004
+          },
+          "error": {
+            "mean": 0.5090395408658931,
+            "min": -0.8266264252179746,
+            "max": 1.4471830985915497
+          },
+          "absolute_error": {
+            "mean": 0.7229468157078528,
+            "min": 0.01249432076328949,
+            "max": 1.4471830985915497
+          },
+          "same_sign_realizations": 16
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.10423954912875052,
+            "min": -0.024133759323865966,
+            "max": 0.2554482265424953
+          },
+          "error": {
+            "mean": -0.19857735227970022,
+            "min": -0.3269506607323167,
+            "max": -0.04736867486595542
+          },
+          "absolute_error": {
+            "mean": 0.19857735227970022,
+            "min": 0.04736867486595542,
+            "max": 0.3269506607323167
+          },
+          "same_sign_realizations": 19
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.14305011784253918,
+            "min": -0.11108280414184635,
+            "max": 0.39234402335418395
+          },
+          "error": {
+            "mean": -0.15976678356591154,
+            "min": -0.4138997055502971,
+            "max": 0.0895271219457332
+          },
+          "absolute_error": {
+            "mean": 0.18310406201913415,
+            "min": 0.03758125375334709,
+            "max": 0.4138997055502971
+          },
+          "same_sign_realizations": 17
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "region": "anomalia_0_cavity",
+      "candidate_pixels": 268,
+      "matched_pixels": 268,
+      "match_fraction": 1.0,
+      "matched_indices_sha256": "e959097f8619d7846007f682753e05c42ff75f610d9e5cdf97186494c68a6d1b",
+      "status": "estimable",
+      "reference_contrast": 0.17600631412786116,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.36837294406367316,
+            "min": -0.5108695652173912,
+            "max": 2.2258064516129035
+          },
+          "error": {
+            "mean": 0.192366629935812,
+            "min": -0.6868758793452524,
+            "max": 2.0498001374850423
+          },
+          "absolute_error": {
+            "mean": 0.3855930050717588,
+            "min": 0.00046427410743277164,
+            "max": 2.0498001374850423
+          },
+          "same_sign_realizations": 15
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.027741810466307824,
+            "min": -0.10933959318464448,
+            "max": 0.18023974693145717
+          },
+          "error": {
+            "mean": -0.14826450366155336,
+            "min": -0.28534590731250564,
+            "max": 0.0042334328035960045
+          },
+          "absolute_error": {
+            "mean": 0.14868784694191292,
+            "min": 0.0042334328035960045,
+            "max": 0.28534590731250564
+          },
+          "same_sign_realizations": 14
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.12876899759335447,
+            "min": -0.07847273286831724,
+            "max": 0.3047307930785832
+          },
+          "error": {
+            "mean": -0.047237316534506676,
+            "min": -0.2544790469961784,
+            "max": 0.12872447895072203
+          },
+          "absolute_error": {
+            "mean": 0.09197947070953522,
+            "min": 0.01608011400871945,
+            "max": 0.2544790469961784
+          },
+          "same_sign_realizations": 18
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "candidate_pixels": 530,
+      "matched_pixels": 522,
+      "match_fraction": 0.9849056603773585,
+      "matched_indices_sha256": "3e636fbba87b8208e00e6f14978e4592191717134d36def76712c3f2f914d1bc",
+      "status": "estimable",
+      "reference_contrast": -0.012117132278694043,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.007982012848578135,
+            "min": -0.23333333333333328,
+            "max": 0.2586206896551724
+          },
+          "error": {
+            "mean": 0.004135119430115908,
+            "min": -0.22121620105463924,
+            "max": 0.2707378219338664
+          },
+          "absolute_error": {
+            "mean": 0.12101098161124332,
+            "min": 0.021208041369603303,
+            "max": 0.2707378219338664
+          },
+          "same_sign_realizations": 10
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.0012751780287528548,
+            "min": -0.02294409512929918,
+            "max": 0.023664829032544077
+          },
+          "error": {
+            "mean": 0.010841954249941188,
+            "min": -0.010826962850605137,
+            "max": 0.03578196131123812
+          },
+          "absolute_error": {
+            "mean": 0.014675436033637523,
+            "min": 0.0008759364963334404,
+            "max": 0.03578196131123812
+          },
+          "same_sign_realizations": 12
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.013392181254224828,
+            "min": -0.03700097913132838,
+            "max": 0.07870028846479271
+          },
+          "error": {
+            "mean": 0.02550931353291887,
+            "min": -0.02488384685263434,
+            "max": 0.09081742074348675
+          },
+          "absolute_error": {
+            "mean": 0.03186886593394011,
+            "min": 0.00272659359517069,
+            "max": 0.09081742074348675
+          },
+          "same_sign_realizations": 8
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_1_dense_body",
+      "candidate_pixels": 403,
+      "matched_pixels": 403,
+      "match_fraction": 1.0,
+      "matched_indices_sha256": "b010b82bbe02221a55e436efc3b173f7c2359e124da58c4e78b0f71201226fb9",
+      "status": "estimable",
+      "reference_contrast": -0.06145251396648044,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.2537648296862357,
+            "min": -0.6376811594202898,
+            "max": 6.499999999999999
+          },
+          "error": {
+            "mean": 0.31521734365271614,
+            "min": -0.5762286454538094,
+            "max": 6.561452513966479
+          },
+          "absolute_error": {
+            "mean": 0.6128526315409774,
+            "min": 0.03367473618870276,
+            "max": 6.561452513966479
+          },
+          "same_sign_realizations": 14
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.03482944915278678,
+            "min": -0.09683683443150248,
+            "max": 0.03795457615765008
+          },
+          "error": {
+            "mean": 0.026623064813693652,
+            "min": -0.035384320465022046,
+            "max": 0.09940709012413051
+          },
+          "absolute_error": {
+            "mean": 0.036850138597188734,
+            "min": 0.002528441481863819,
+            "max": 0.09940709012413051
+          },
+          "same_sign_realizations": 17
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.0650872708577297,
+            "min": -0.37289288144608335,
+            "max": 0.10241479650930696
+          },
+          "error": {
+            "mean": -0.003634756891249252,
+            "min": -0.3114403674796029,
+            "max": 0.1638673104757874
+          },
+          "absolute_error": {
+            "mean": 0.11608221866736268,
+            "min": 0.005776051464159715,
+            "max": 0.3114403674796029
+          },
+          "same_sign_realizations": 11
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_0_conduit",
+      "candidate_pixels": 798,
+      "matched_pixels": 790,
+      "match_fraction": 0.9899749373433584,
+      "matched_indices_sha256": "5794528b5b053a294cbbf70adcd2a1f7bfeafe69c7782017bf327b6b715a3db8",
+      "status": "estimable",
+      "reference_contrast": 0.010119940029984953,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.02343265169163406,
+            "min": -0.1482649842271293,
+            "max": 0.22881355932203395
+          },
+          "error": {
+            "mean": 0.013312711661649107,
+            "min": -0.15838492425711426,
+            "max": 0.218693619292049
+          },
+          "absolute_error": {
+            "mean": 0.1041884905342673,
+            "min": 0.0027125326225774238,
+            "max": 0.218693619292049
+          },
+          "same_sign_realizations": 10
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.03309997433512722,
+            "min": -0.07488910694677764,
+            "max": 0.014611099578134112
+          },
+          "error": {
+            "mean": -0.043219914365112175,
+            "min": -0.08500904697676259,
+            "max": 0.0044911595481491595
+          },
+          "absolute_error": {
+            "mean": 0.043669030319927096,
+            "min": 0.0044911595481491595,
+            "max": 0.08500904697676259
+          },
+          "same_sign_realizations": 2
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.023818197343971288,
+            "min": -0.0983966854792574,
+            "max": 0.07536972705676392
+          },
+          "error": {
+            "mean": -0.03393813737395624,
+            "min": -0.10851662550924235,
+            "max": 0.06524978702677897
+          },
+          "absolute_error": {
+            "mean": 0.04940044646200557,
+            "min": 0.01157974325983202,
+            "max": 0.10851662550924235
+          },
+          "same_sign_realizations": 4
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_1_dense_body",
+      "candidate_pixels": 558,
+      "matched_pixels": 558,
+      "match_fraction": 1.0,
+      "matched_indices_sha256": "5a57cb2be13d88fcb3e6c2daaa839723d2e90e4e8395061100930d1c38d1ec94",
+      "status": "estimable",
+      "reference_contrast": -0.11256906077348061,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.14691125911610406,
+            "min": -0.4117647058823529,
+            "max": 1.307692307692308
+          },
+          "error": {
+            "mean": 0.25948031988958464,
+            "min": -0.2991956451088723,
+            "max": 1.4202613684657885
+          },
+          "absolute_error": {
+            "mean": 0.3286726444292973,
+            "min": 0.017865721835215065,
+            "max": 1.4202613684657885
+          },
+          "same_sign_realizations": 8
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.05021812114761404,
+            "min": -0.1510231888492184,
+            "max": 0.04787167850173013
+          },
+          "error": {
+            "mean": 0.062350939625866575,
+            "min": -0.03845412807573778,
+            "max": 0.16044073927521074
+          },
+          "absolute_error": {
+            "mean": 0.06619635243344035,
+            "min": 0.015582282233147171,
+            "max": 0.16044073927521074
+          },
+          "same_sign_realizations": 16
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.0018190478386130415,
+            "min": -0.17916174500700843,
+            "max": 0.19643818324804663
+          },
+          "error": {
+            "mean": 0.11438810861209366,
+            "min": -0.06659268423352782,
+            "max": 0.30900724402152724
+          },
+          "absolute_error": {
+            "mean": 0.1224161100113336,
+            "min": 0.0001523626965039826,
+            "max": 0.30900724402152724
+          },
+          "same_sign_realizations": 11
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "anomalia_0_conduit",
+      "candidate_pixels": 831,
+      "matched_pixels": 818,
+      "match_fraction": 0.9843561973525873,
+      "matched_indices_sha256": "64df8f1da318be41797d9905e63cff1ae627a6a17b909bd04473986ed475e48b",
+      "status": "estimable",
+      "reference_contrast": 0.04270958747861342,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.04418862444333878,
+            "min": -0.10514541387024623,
+            "max": 0.15281501340482584
+          },
+          "error": {
+            "mean": 0.001479036964725361,
+            "min": -0.14785500134885965,
+            "max": 0.11010542592621242
+          },
+          "absolute_error": {
+            "mean": 0.057069376418848614,
+            "min": 0.007807060052959391,
+            "max": 0.14785500134885965
+          },
+          "same_sign_realizations": 16
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.025863325226076244,
+            "min": -0.08191223376633017,
+            "max": 0.01692498710568735
+          },
+          "error": {
+            "mean": -0.06857291270468965,
+            "min": -0.12462182124494359,
+            "max": -0.02578460037292607
+          },
+          "absolute_error": {
+            "mean": 0.06857291270468965,
+            "min": 0.02578460037292607,
+            "max": 0.12462182124494359
+          },
+          "same_sign_realizations": 2
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.00816732759864745,
+            "min": -0.08695239957190348,
+            "max": 0.03544689986100025
+          },
+          "error": {
+            "mean": -0.050876915077260866,
+            "min": -0.1296619870505169,
+            "max": -0.007262687617613173
+          },
+          "absolute_error": {
+            "mean": 0.050876915077260866,
+            "min": 0.007262687617613173,
+            "max": 0.1296619870505169
+          },
+          "same_sign_realizations": 9
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "anomalia_1_dense_body",
+      "candidate_pixels": 379,
+      "matched_pixels": 379,
+      "match_fraction": 1.0,
+      "matched_indices_sha256": "0746d14c26ce5da92ddf50aa33e0ad64e3a73cc966efdbcadd8b233279c4051a",
+      "status": "estimable",
+      "reference_contrast": -0.010922330097087318,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.009716184491135848,
+            "min": -0.6363636363636364,
+            "max": 1.0454545454545454
+          },
+          "error": {
+            "mean": 0.02063851458822316,
+            "min": -0.625441306266549,
+            "max": 1.0563768755516327
+          },
+          "absolute_error": {
+            "mean": 0.33432843035339455,
+            "min": 0.010922330097087318,
+            "max": 1.0563768755516327
+          },
+          "same_sign_realizations": 11
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.01263101583362733,
+            "min": -0.11964263449997281,
+            "max": 0.15419982825080703
+          },
+          "error": {
+            "mean": -0.001708685736540011,
+            "min": -0.10872030440288549,
+            "max": 0.16512215834789434
+          },
+          "absolute_error": {
+            "mean": 0.05332718187921781,
+            "min": 0.004275212611419277,
+            "max": 0.16512215834789434
+          },
+          "same_sign_realizations": 14
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 9.26673671528766e-05,
+            "min": -0.2105797560707473,
+            "max": 0.202616739909254
+          },
+          "error": {
+            "mean": 0.011014997464240195,
+            "min": -0.19965742597365999,
+            "max": 0.2135390700063413
+          },
+          "absolute_error": {
+            "mean": 0.09717714920274816,
+            "min": 0.02357945890594726,
+            "max": 0.2135390700063413
+          },
+          "same_sign_realizations": 11
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "anomalia_0_conduit",
+      "candidate_pixels": 688,
+      "matched_pixels": 610,
+      "match_fraction": 0.8866279069767442,
+      "matched_indices_sha256": "a69efc68fdad5311a785dc4e4f4cdd8f319171d6ff03fb6e070e953b8150d708",
+      "status": "estimable",
+      "reference_contrast": -0.0429824561403509,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.07649907086735705,
+            "min": -0.22546012269938653,
+            "max": 0.16600790513833985
+          },
+          "error": {
+            "mean": -0.033516614727006136,
+            "min": -0.18247766655903563,
+            "max": 0.20899036127869075
+          },
+          "absolute_error": {
+            "mean": 0.1132029299748503,
+            "min": 0.012201490347943378,
+            "max": 0.20899036127869075
+          },
+          "same_sign_realizations": 14
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.0029311936455529764,
+            "min": -0.02626472850221606,
+            "max": 0.03257100677004776
+          },
+          "error": {
+            "mean": 0.04005126249479792,
+            "min": 0.01671772763813484,
+            "max": 0.07555346291039866
+          },
+          "absolute_error": {
+            "mean": 0.04005126249479792,
+            "min": 0.01671772763813484,
+            "max": 0.07555346291039866
+          },
+          "same_sign_realizations": 11
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.01617449157203283,
+            "min": -0.03516086634100146,
+            "max": 0.10203337605658014
+          },
+          "error": {
+            "mean": 0.05915694771238372,
+            "min": 0.007821589799349438,
+            "max": 0.14501583219693104
+          },
+          "absolute_error": {
+            "mean": 0.05915694771238372,
+            "min": 0.007821589799349438,
+            "max": 0.14501583219693104
+          },
+          "same_sign_realizations": 7
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "anomalia_1_dense_body",
+      "candidate_pixels": 90,
+      "matched_pixels": 90,
+      "match_fraction": 1.0,
+      "matched_indices_sha256": "e1879c18b3008e40245453e4f2f269888df852c5ccedcc297c29e5c289521a74",
+      "status": "estimable",
+      "reference_contrast": -0.3579766536964981,
+      "models": {
+        "entrada": {
+          "valid_realizations": 17,
+          "zero_control_realizations": 3,
+          "contrast": {
+            "mean": 0.8484425632998295,
+            "min": -0.84375,
+            "max": 8.999999999999998
+          },
+          "error": {
+            "mean": 1.2064192169963277,
+            "min": -0.4857733463035019,
+            "max": 9.357976653696497
+          },
+          "absolute_error": {
+            "mean": 1.34510942070427,
+            "min": 0.017023346303501996,
+            "max": 9.357976653696497
+          },
+          "same_sign_realizations": 8
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.0006009228106322983,
+            "min": -0.1513283865878643,
+            "max": 0.16250047627890485
+          },
+          "error": {
+            "mean": 0.3585775765071304,
+            "min": 0.20664826710863382,
+            "max": 0.520477129975403
+          },
+          "absolute_error": {
+            "mean": 0.3585775765071304,
+            "min": 0.20664826710863382,
+            "max": 0.520477129975403
+          },
+          "same_sign_realizations": 11
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.008802980987449915,
+            "min": -0.3624419539649538,
+            "max": 0.4030423937415464
+          },
+          "error": {
+            "mean": 0.34917367270904814,
+            "min": -0.0044653002684557075,
+            "max": 0.7610190474380445
+          },
+          "absolute_error": {
+            "mean": 0.3496202027358938,
+            "min": 0.0044653002684557075,
+            "max": 0.7610190474380445
+          },
+          "same_sign_realizations": 10
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "anomalia_0_conduit",
+      "candidate_pixels": 830,
+      "matched_pixels": 818,
+      "match_fraction": 0.9855421686746988,
+      "matched_indices_sha256": "6e07e2bfaa653f1841bb3e08aa4e6759f0be489294687dd561b0b8e10d22be38",
+      "status": "estimable",
+      "reference_contrast": 0.063485002541942,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.018877949478686724,
+            "min": -0.11764705882352955,
+            "max": 0.11668757841907151
+          },
+          "error": {
+            "mean": -0.044607053063255284,
+            "min": -0.18113206136547155,
+            "max": 0.05320257587712951
+          },
+          "absolute_error": {
+            "mean": 0.05305811613776201,
+            "min": 0.004503769297974358,
+            "max": 0.18113206136547155
+          },
+          "same_sign_realizations": 14
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.03325990759668192,
+            "min": -0.011928650358177806,
+            "max": 0.067728881900601
+          },
+          "error": {
+            "mean": -0.030225094945260083,
+            "min": -0.07541365290011981,
+            "max": 0.004243879358658997
+          },
+          "absolute_error": {
+            "mean": 0.030652055353136438,
+            "min": 2.5724720104536303e-05,
+            "max": 0.07541365290011981
+          },
+          "same_sign_realizations": 19
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.014414556475428431,
+            "min": -0.061339634766353957,
+            "max": 0.13042312678430057
+          },
+          "error": {
+            "mean": -0.049070446066513576,
+            "min": -0.12482463730829596,
+            "max": 0.06693812424235857
+          },
+          "absolute_error": {
+            "mean": 0.06062093445573976,
+            "min": 0.0005862690450215702,
+            "max": 0.12482463730829596
+          },
+          "same_sign_realizations": 11
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "anomalia_1_dense_body",
+      "candidate_pixels": 362,
+      "matched_pixels": 362,
+      "match_fraction": 1.0,
+      "matched_indices_sha256": "f8d4cb9e54c153e2cac430bc95490a6e27f96e0b5cd654dcc89753a991b402f4",
+      "status": "estimable",
+      "reference_contrast": -0.13875598086124408,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.06851787247548458,
+            "min": -0.7540983606557378,
+            "max": 0.875
+          },
+          "error": {
+            "mean": 0.0702381083857595,
+            "min": -0.6153423797944937,
+            "max": 1.013755980861244
+          },
+          "absolute_error": {
+            "mean": 0.4164294087774418,
+            "min": 0.04491748852651101,
+            "max": 1.013755980861244
+          },
+          "same_sign_realizations": 12
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.025480096334747755,
+            "min": -0.12563201517844658,
+            "max": 0.10109021787100003
+          },
+          "error": {
+            "mean": 0.11327588452649633,
+            "min": 0.0131239656827975,
+            "max": 0.2398461987322441
+          },
+          "absolute_error": {
+            "mean": 0.11327588452649633,
+            "min": 0.0131239656827975,
+            "max": 0.2398461987322441
+          },
+          "same_sign_realizations": 15
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.011484987285990001,
+            "min": -0.21698562877912086,
+            "max": 0.4206646057976926
+          },
+          "error": {
+            "mean": 0.12727099357525407,
+            "min": -0.07822964791787679,
+            "max": 0.5594205866589367
+          },
+          "absolute_error": {
+            "mean": 0.14565939288747884,
+            "min": 0.027478983779783417,
+            "max": 0.5594205866589367
+          },
+          "same_sign_realizations": 12
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "anomalia_0_conduit",
+      "candidate_pixels": 798,
+      "matched_pixels": 790,
+      "match_fraction": 0.9899749373433584,
+      "matched_indices_sha256": "6a451e0601e4efa8712e1a54be935b7cbbcb19b2f13729b17232590a7d8eb15a",
+      "status": "estimable",
+      "reference_contrast": -0.014635196212066881,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.011865211655524783,
+            "min": -0.19191919191919193,
+            "max": 0.23447204968944102
+          },
+          "error": {
+            "mean": 0.002769984556542099,
+            "min": -0.17728399570712505,
+            "max": 0.2491072459015079
+          },
+          "absolute_error": {
+            "mean": 0.07712661959156127,
+            "min": 0.002777739111316291,
+            "max": 0.2491072459015079
+          },
+          "same_sign_realizations": 12
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.027609069112824715,
+            "min": -0.014235191976772033,
+            "max": 0.06438381637764778
+          },
+          "error": {
+            "mean": 0.042244265324891596,
+            "min": 0.0004000042352948485,
+            "max": 0.07901901258971467
+          },
+          "absolute_error": {
+            "mean": 0.042244265324891596,
+            "min": 0.0004000042352948485,
+            "max": 0.07901901258971467
+          },
+          "same_sign_realizations": 2
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.011097392055674954,
+            "min": -0.07488161748456101,
+            "max": 0.06218767778995171
+          },
+          "error": {
+            "mean": 0.003537804156391927,
+            "min": -0.06024642127249413,
+            "max": 0.07682287400201859
+          },
+          "absolute_error": {
+            "mean": 0.03819239733337886,
+            "min": 0.0027211733641715474,
+            "max": 0.07682287400201859
+          },
+          "same_sign_realizations": 12
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "anomalia_1_dense_body",
+      "candidate_pixels": 524,
+      "matched_pixels": 524,
+      "match_fraction": 1.0,
+      "matched_indices_sha256": "455b4c55fb08aa95577d8dd36d57c7e7f74e1c32e2b4b355716c29911985d633",
+      "status": "estimable",
+      "reference_contrast": -0.14634146341463417,
+      "models": {
+        "entrada": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.016940166988331017,
+            "min": -0.45945945945945954,
+            "max": 1.391304347826087
+          },
+          "error": {
+            "mean": 0.12940129642630316,
+            "min": -0.3131179960448254,
+            "max": 1.5376458112407212
+          },
+          "absolute_error": {
+            "mean": 0.2753363824193277,
+            "min": 0.010538994278831648,
+            "max": 1.5376458112407212
+          },
+          "same_sign_realizations": 12
+        },
+        "unet": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.025657616691133443,
+            "min": -0.08210824542335915,
+            "max": 0.1576548104565576
+          },
+          "error": {
+            "mean": 0.17199908010576762,
+            "min": 0.06423321799127502,
+            "max": 0.30399627387119177
+          },
+          "absolute_error": {
+            "mean": 0.17199908010576762,
+            "min": 0.06423321799127502,
+            "max": 0.30399627387119177
+          },
+          "same_sign_realizations": 7
+        },
+        "cgan": {
+          "valid_realizations": 20,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.05226170431163869,
+            "min": -0.34790365901313736,
+            "max": 0.25500533716595775
+          },
+          "error": {
+            "mean": 0.09407975910299549,
+            "min": -0.2015621955985032,
+            "max": 0.4013468005805919
+          },
+          "absolute_error": {
+            "mean": 0.13624738381461535,
+            "min": 0.0018271191034966439,
+            "max": 0.4013468005805919
+          },
+          "same_sign_realizations": 13
+        }
+      }
+    }
+  ],
+  "masks": [
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "pixels": {
+        "cielo": 42426,
+        "roca_sin_anomalia": 17625,
+        "borde_cono": 2326,
+        "anomalia_0_conduit": 1017
+      },
+      "mask_content_sha256": {
+        "cielo": "03d9a6d7f23ad324b30861c247824f3dd5efb47256f9ac7fe21fbcbdb69f6144",
+        "roca_sin_anomalia": "269184b0643ba21e5786fbb91c59281a0038ab3803f1c0e0a5ac4770dd570310",
+        "borde_cono": "04e721d1cae18f89b066eb8788dde84546c7346cbb560a60651ae05c7efebefd",
+        "anomalia_0_conduit": "baca34433ee875e3d59e2d147330e152aa2661ae73acebb83aa8e0eacd9ce1d7"
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "pixels": {
+        "cielo": 42426,
+        "roca_sin_anomalia": 17764,
+        "borde_cono": 2326,
+        "anomalia_0_conduit": 994
+      },
+      "mask_content_sha256": {
+        "cielo": "03d9a6d7f23ad324b30861c247824f3dd5efb47256f9ac7fe21fbcbdb69f6144",
+        "roca_sin_anomalia": "d346d7b7e2c2e655f95c62d326dc2136a06f1be064bf38f734b9c5a90ac17187",
+        "borde_cono": "04e721d1cae18f89b066eb8788dde84546c7346cbb560a60651ae05c7efebefd",
+        "anomalia_0_conduit": "892db8c1b9e4722f99bd12eb48ca54f6e5317d549e17f478103001818d0e125e"
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "pixels": {
+        "cielo": 42426,
+        "roca_sin_anomalia": 17799,
+        "borde_cono": 2326,
+        "anomalia_0_conduit": 876
+      },
+      "mask_content_sha256": {
+        "cielo": "03d9a6d7f23ad324b30861c247824f3dd5efb47256f9ac7fe21fbcbdb69f6144",
+        "roca_sin_anomalia": "33555e60ba3462f01822e37952acb27b5f28058205f03dda2c0e9ed477bf2a05",
+        "borde_cono": "04e721d1cae18f89b066eb8788dde84546c7346cbb560a60651ae05c7efebefd",
+        "anomalia_0_conduit": "bb8375b2eb01a22d227b0dd6ee9881b899ee593769f458d150a0ff1994e2fc10"
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "pixels": {
+        "cielo": 42426,
+        "roca_sin_anomalia": 17798,
+        "borde_cono": 2326,
+        "anomalia_0_conduit": 877
+      },
+      "mask_content_sha256": {
+        "cielo": "03d9a6d7f23ad324b30861c247824f3dd5efb47256f9ac7fe21fbcbdb69f6144",
+        "roca_sin_anomalia": "6b895c1f92a2c0f0be189aefb6f626a0f6fb2de13de6f91a1baf699e72fb958f",
+        "borde_cono": "04e721d1cae18f89b066eb8788dde84546c7346cbb560a60651ae05c7efebefd",
+        "anomalia_0_conduit": "73487ac6bedb35f9e40f597ea12902153f3a64e8d8a499fc720035ff9a8c7bd7"
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "pixels": {
+        "cielo": 42426,
+        "roca_sin_anomalia": 17762,
+        "borde_cono": 2326,
+        "anomalia_0_conduit": 996
+      },
+      "mask_content_sha256": {
+        "cielo": "03d9a6d7f23ad324b30861c247824f3dd5efb47256f9ac7fe21fbcbdb69f6144",
+        "roca_sin_anomalia": "d27cdf3279569f08110e318763762d56c855ca6caf0c3e1f7e0b47b7c164f89f",
+        "borde_cono": "04e721d1cae18f89b066eb8788dde84546c7346cbb560a60651ae05c7efebefd",
+        "anomalia_0_conduit": "1f1cd99914a46f76e583c8835f2f1e1ada3d21cbd31d017a05d54b3be99b853b"
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "pixels": {
+        "cielo": 42426,
+        "roca_sin_anomalia": 17728,
+        "borde_cono": 2326,
+        "anomalia_0_conduit": 1018
+      },
+      "mask_content_sha256": {
+        "cielo": "03d9a6d7f23ad324b30861c247824f3dd5efb47256f9ac7fe21fbcbdb69f6144",
+        "roca_sin_anomalia": "b5e264865140907f04253a094eb812ff6f024ad919011ba5d7f43b76ad7d80c3",
+        "borde_cono": "04e721d1cae18f89b066eb8788dde84546c7346cbb560a60651ae05c7efebefd",
+        "anomalia_0_conduit": "bbffc8717e11fd0cb78e8e281450f94238fdef7782472ceb8318d128cc9d9dce"
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "pixels": {
+        "cielo": 46346,
+        "roca_sin_anomalia": 14844,
+        "borde_cono": 2240,
+        "anomalia_0_cavity": 354
+      },
+      "mask_content_sha256": {
+        "cielo": "e2c898b8ff1ee4d84f0fec5f326aee61641379e4adf6469d316c000e030aaf62",
+        "roca_sin_anomalia": "73e430bc3cc6de3f60b6817f3bd06243534ffdfef09f570d1bead82f0f4090cd",
+        "borde_cono": "7224d01ba9015ad69a7ef9f6734ba9c275d0d4dc69fca7e936c5e5363116eec3",
+        "anomalia_0_cavity": "62d28fe5f61da759e3cf8e1ec7f66470847b2dbd912affd30f540992410f99e6"
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "pixels": {
+        "cielo": 46346,
+        "roca_sin_anomalia": 14860,
+        "borde_cono": 2240,
+        "anomalia_0_cavity": 342
+      },
+      "mask_content_sha256": {
+        "cielo": "e2c898b8ff1ee4d84f0fec5f326aee61641379e4adf6469d316c000e030aaf62",
+        "roca_sin_anomalia": "9d45f3575fc2d92dc18fed9ab8c7fc0d50b7a126e7a85f6d7d391d3d658d5441",
+        "borde_cono": "7224d01ba9015ad69a7ef9f6734ba9c275d0d4dc69fca7e936c5e5363116eec3",
+        "anomalia_0_cavity": "7088ec3c6b44b38f139e6af2feb3e340d46c2a07282b3ad98c9de6babf83a766"
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "pixels": {
+        "cielo": 46346,
+        "roca_sin_anomalia": 14997,
+        "borde_cono": 2240,
+        "anomalia_0_cavity": 255
+      },
+      "mask_content_sha256": {
+        "cielo": "e2c898b8ff1ee4d84f0fec5f326aee61641379e4adf6469d316c000e030aaf62",
+        "roca_sin_anomalia": "d1829bfd9ea10b11adfbf96ed8cbeee401b37d356a18bd35b1a93285a0144561",
+        "borde_cono": "7224d01ba9015ad69a7ef9f6734ba9c275d0d4dc69fca7e936c5e5363116eec3",
+        "anomalia_0_cavity": "2042bc12d62994b67cc87116c7b1cb29a3718ed955381d40e359c0ae082e3da5"
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "pixels": {
+        "cielo": 46346,
+        "roca_sin_anomalia": 15073,
+        "borde_cono": 2240,
+        "anomalia_0_cavity": 205
+      },
+      "mask_content_sha256": {
+        "cielo": "e2c898b8ff1ee4d84f0fec5f326aee61641379e4adf6469d316c000e030aaf62",
+        "roca_sin_anomalia": "556139cc76618e59b07a59b650050b925fbbbfa0247ef27e933da377f2d2d5bd",
+        "borde_cono": "7224d01ba9015ad69a7ef9f6734ba9c275d0d4dc69fca7e936c5e5363116eec3",
+        "anomalia_0_cavity": "99a83e6d9345e4ca93e6b6e04cff224db85ed21b3a4c6f76d36e1f925b2e57cf"
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "pixels": {
+        "cielo": 46346,
+        "roca_sin_anomalia": 15060,
+        "borde_cono": 2240,
+        "anomalia_0_cavity": 210
+      },
+      "mask_content_sha256": {
+        "cielo": "e2c898b8ff1ee4d84f0fec5f326aee61641379e4adf6469d316c000e030aaf62",
+        "roca_sin_anomalia": "b0c82c19fc38b01d73f9c20f72982eb04472d7c6b6933fd896d0ebeb1820bcda",
+        "borde_cono": "7224d01ba9015ad69a7ef9f6734ba9c275d0d4dc69fca7e936c5e5363116eec3",
+        "anomalia_0_cavity": "6504a06136420374bc9283d5f354fb5f01b56f2e2b724c9c2befd5b92c8ddfde"
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "pixels": {
+        "cielo": 46346,
+        "roca_sin_anomalia": 14969,
+        "borde_cono": 2240,
+        "anomalia_0_cavity": 268
+      },
+      "mask_content_sha256": {
+        "cielo": "e2c898b8ff1ee4d84f0fec5f326aee61641379e4adf6469d316c000e030aaf62",
+        "roca_sin_anomalia": "4f8dfef2b30ff3dd682ffd0608f4f2fbaea92f676f73e1a5668fa8d0331db7b1",
+        "borde_cono": "7224d01ba9015ad69a7ef9f6734ba9c275d0d4dc69fca7e936c5e5363116eec3",
+        "anomalia_0_cavity": "de847628a33e4c9e180f53ac4c64e3e02565c5962fd9aba0e9dfbe32a97d778c"
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "pixels": {
+        "cielo": 44724,
+        "roca_sin_anomalia": 14827,
+        "borde_cono": 2392,
+        "anomalia_0_conduit": 782,
+        "anomalia_1_dense_body": 735
+      },
+      "mask_content_sha256": {
+        "cielo": "b2263bb7349d6573246841d3fdda9cef63e85708d0d2262bdb40f0c940a2aef1",
+        "roca_sin_anomalia": "9175e82a1cc6790c63be3515063c39a3c8293ac66451c1f383a607cd77adcf30",
+        "borde_cono": "0e0d8c65e6896b147eb71e4f9ae6a2a6376e84326e3c4d024f53b17c991d30eb",
+        "anomalia_0_conduit": "8d918162f2f5a3d05048294656880a094d8334d0ae6353607c2e9d94b7b17254",
+        "anomalia_1_dense_body": "7a1f3805193d0f94f704b8216ed163d762449a9cd5c6ea46c35fc53e61dd3a38"
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "pixels": {
+        "cielo": 44724,
+        "roca_sin_anomalia": 14591,
+        "borde_cono": 2392,
+        "anomalia_0_conduit": 798,
+        "anomalia_1_dense_body": 558
+      },
+      "mask_content_sha256": {
+        "cielo": "b2263bb7349d6573246841d3fdda9cef63e85708d0d2262bdb40f0c940a2aef1",
+        "roca_sin_anomalia": "792bc0e746d87d40719bc1b6d5192739fb1b0b768ae5039702c215283b76b3c5",
+        "borde_cono": "0e0d8c65e6896b147eb71e4f9ae6a2a6376e84326e3c4d024f53b17c991d30eb",
+        "anomalia_0_conduit": "5c7e6f4549a32abec381e8b4d54f49f0237060722686460aeed3e3a4ecff8265",
+        "anomalia_1_dense_body": "a168b4a89a291c2de41aae82fe93d05c1ff9f95fcfea70405a68181b2b223903"
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "pixels": {
+        "cielo": 44724,
+        "roca_sin_anomalia": 14725,
+        "borde_cono": 2392,
+        "anomalia_0_conduit": 831,
+        "anomalia_1_dense_body": 379
+      },
+      "mask_content_sha256": {
+        "cielo": "b2263bb7349d6573246841d3fdda9cef63e85708d0d2262bdb40f0c940a2aef1",
+        "roca_sin_anomalia": "f52d09a001d4d91bafd089d9f2956ad9af3a6ce22ccfaeeb28a1025fc290200a",
+        "borde_cono": "0e0d8c65e6896b147eb71e4f9ae6a2a6376e84326e3c4d024f53b17c991d30eb",
+        "anomalia_0_conduit": "731913abfae1318f36d0e124580b75a53d634f5b226659242f44588b780061a8",
+        "anomalia_1_dense_body": "ee82f726da6d74d6fccc924af3cb15a6ad6ac524b85ddbf42dcb1d60ddd21c59"
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "pixels": {
+        "cielo": 44724,
+        "roca_sin_anomalia": 14967,
+        "borde_cono": 2392,
+        "anomalia_0_conduit": 848,
+        "anomalia_1_dense_body": 324
+      },
+      "mask_content_sha256": {
+        "cielo": "b2263bb7349d6573246841d3fdda9cef63e85708d0d2262bdb40f0c940a2aef1",
+        "roca_sin_anomalia": "bd750b6415074696ce993b58f501be425e53b11da0768e447c19e43114b07e58",
+        "borde_cono": "0e0d8c65e6896b147eb71e4f9ae6a2a6376e84326e3c4d024f53b17c991d30eb",
+        "anomalia_0_conduit": "d36c42450abdaf51f6d8c494504eaeeb411323fb72b47333a613f1b210f384d8",
+        "anomalia_1_dense_body": "20d719e9df52af9972560da4fb577e491b2352a82bfb397c595a976a5c6583f2"
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "pixels": {
+        "cielo": 44724,
+        "roca_sin_anomalia": 14754,
+        "borde_cono": 2392,
+        "anomalia_0_conduit": 830,
+        "anomalia_1_dense_body": 362
+      },
+      "mask_content_sha256": {
+        "cielo": "b2263bb7349d6573246841d3fdda9cef63e85708d0d2262bdb40f0c940a2aef1",
+        "roca_sin_anomalia": "e4727bca57f04a9bf85550640737bbad463785ef57823e8d13602659d006ccd1",
+        "borde_cono": "0e0d8c65e6896b147eb71e4f9ae6a2a6376e84326e3c4d024f53b17c991d30eb",
+        "anomalia_0_conduit": "55a7b22e1433f6898a8d440fa74df78f83d5f63416ea68ae20c7fd2853025478",
+        "anomalia_1_dense_body": "af23ba4aa26dc86ecd9d5f548bb8433ecc8ab12e7d2a470727ec74889b1c48e8"
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "pixels": {
+        "cielo": 44724,
+        "roca_sin_anomalia": 14637,
+        "borde_cono": 2392,
+        "anomalia_0_conduit": 798,
+        "anomalia_1_dense_body": 524
+      },
+      "mask_content_sha256": {
+        "cielo": "b2263bb7349d6573246841d3fdda9cef63e85708d0d2262bdb40f0c940a2aef1",
+        "roca_sin_anomalia": "c26b2f7508cada931a1297156bd9d61afa5b2410e9632f80dd3ada7d022e7e3a",
+        "borde_cono": "0e0d8c65e6896b147eb71e4f9ae6a2a6376e84326e3c4d024f53b17c991d30eb",
+        "anomalia_0_conduit": "b8c403d32139f86fc91159cc4daaef7cd1bc21c7c223205fad1df1d96a0b5d47",
+        "anomalia_1_dense_body": "0fd3242747d0e6e285952ae3603c43a6f1ac73533dd0ef3f4ced67c762e16805"
+      }
+    }
+  ]
+}
