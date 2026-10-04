@@ -1,0 +1,436 @@
+{
+  "identity": {
+    "schema": "oe2-cgan-borde-run-v1",
+    "critic_gradient_policy": "wasserstein-then-weighted-gp-v1",
+    "arm": "C1",
+    "stage": "piloto",
+    "config": {
+      "schema": "oe2-cgan-borde-v1",
+      "fraction": 0.05,
+      "generator": "unet_dc_5",
+      "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+      "initial_epoch": 5,
+      "reset_optimizer": true,
+      "reset_rng": true,
+      "seed": 2026100413,
+      "optimizer": {
+        "name": "Adam",
+        "lr": 1e-05,
+        "betas": [
+          0,
+          0.9
+        ]
+      },
+      "batch": 4,
+      "epochs": 5,
+      "early_stopping": false,
+      "selected_epoch": 5,
+      "train_pairs": 1440,
+      "val_pairs": 360,
+      "train_split": "train",
+      "selection_split": "val",
+      "reserved_splits_allowed": false,
+      "hflip": false,
+      "augmentation": false,
+      "lambda_l1": 100,
+      "regional_loss": "mean_absolute_log1p_region_mean_counts",
+      "normalization_scale": 8.239329427901795,
+      "regional_families": [
+        "cielo",
+        "roca",
+        "borde",
+        "anomalias"
+      ],
+      "region_min_pixels": 20,
+      "region_family_equal_weight": true,
+      "lambda_regional": 1,
+      "gradient_clipping": false,
+      "amp": false,
+      "checkpoint_policy": "last each epoch plus final epoch 5; no best-SSIM selection",
+      "resume": "same arm, protocol and code identity only",
+      "stages": {
+        "technical": {
+          "epochs": 2,
+          "train_pairs": 8,
+          "val_pairs": 8,
+          "requires_gpu_before_pilot": true,
+          "train_indices": [
+            [
+              "geo-train-01",
+              0,
+              0
+            ],
+            [
+              "geo-train-01",
+              0,
+              1
+            ],
+            [
+              "geo-train-02",
+              0,
+              0
+            ],
+            [
+              "geo-train-02",
+              0,
+              1
+            ],
+            [
+              "geo-train-04",
+              0,
+              0
+            ],
+            [
+              "geo-train-04",
+              0,
+              1
+            ],
+            [
+              "geo-train-10",
+              0,
+              0
+            ],
+            [
+              "geo-train-10",
+              0,
+              1
+            ]
+          ],
+          "val_indices": [
+            [
+              "geo-val-01",
+              0,
+              0
+            ],
+            [
+              "geo-val-01",
+              0,
+              1
+            ],
+            [
+              "geo-val-02",
+              0,
+              0
+            ],
+            [
+              "geo-val-02",
+              0,
+              1
+            ],
+            [
+              "geo-val-03",
+              0,
+              0
+            ],
+            [
+              "geo-val-03",
+              0,
+              1
+            ],
+            [
+              "geo-val-03",
+              1,
+              0
+            ],
+            [
+              "geo-val-03",
+              1,
+              1
+            ]
+          ],
+          "interrupt_after_epoch": 1,
+          "pilot_initialization": "original epoch-5 checkpoint, never technical weights"
+        },
+        "pilot": {
+          "epochs": 5,
+          "train_pairs": 1440,
+          "val_pairs": 360
+        }
+      },
+      "mass_campaign_authorized": false,
+      "arm": "C1",
+      "run_id": "oe2-borde-f05-B3-C1",
+      "critic": "patch_critic_70",
+      "lambda_adv": 1,
+      "lambda_gp": 10,
+      "n_critic": 5,
+      "rng_policy": "torch CPU/CUDA; NumPy and Python stored; independent order per epoch",
+      "critic_fake_policy": "one no-grad train-mode G sample reused for five D steps; fresh G sample for G update",
+      "critic_frozen_during_generator_step": true,
+      "pair": "B3",
+      "lambda_edge": 0.629,
+      "experiment": "spatial-edge-v1",
+      "edge_loss": "mean_per_image_relative_absolute_count_error",
+      "coefficient_profile_sha256": "ef83277c56320c7b38d7d11efea4b74fd33663c7c54421b7432bf63818e9358c"
+    },
+    "pair": "B3",
+    "seed": 2026100413,
+    "sources": {
+      "objetivo-2/herramientas/datos_ajuste.py": "2c89d770cc3d7b4fee66c977ff89af8faf6ab6bbca3ed12fe1f2a98734aa167f",
+      "objetivo-2/herramientas/ejecutar_ajuste.py": "8d49980e4e1c4b96347c81203a820cc5784b57473079562decbedd747fe11abb",
+      "objetivo-2/herramientas/perdida_cuentas_regionales.py": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+      "objetivo-2/herramientas/evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524",
+      "objetivo-2/implementacion/models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+      "objetivo-2/implementacion/scripts/evaluation/metrics.py": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42",
+      "objetivo-2/herramientas/revisar_ajuste.py": "294e4291b3bd10d6c0f597c9145867c4ac7f33cfd0bdacd5c78c3c4cee5ea750",
+      "objetivo-2/herramientas/evaluar_ajuste.py": "f0840197c20ff848dd79bfe3385eabc4beeaff632da67c580961bb14c13e721b",
+      "objetivo-2/herramientas/ejecutar_borde_cgan.py": "5f7bd0f4b32934bcafc36c7e2f6737951b9bc93c838d7d4b7628c53e59e2d7b4",
+      "objetivo-2/herramientas/revisar_borde_cgan.py": "4d48df3062fd10a97875abfcc9e0182b4ee92b9af00cdc9a11078b548a00fae7",
+      "objetivo-2/herramientas/evaluar_borde_cgan.py": "987e29854401ef4b5cfc62f574532d49aaa516449181d96e6b40d65636e53324",
+      "objetivo-2/herramientas/gradientes_critico.py": "76024538c9df1ba43e4c3c549e806137f820322b6d25aa3ff37bfb6c417da8be",
+      "objetivo-2/implementacion/models/patch_critic.py": "41fbbb005fd152d3ddf10e50721ac855108907714e150632d1942275736b84d8",
+      "objetivo-2/implementacion/scripts/training/losses.py": "8d950c772d923a98343b8cda787b28567df7d2bbd09c62f50085efb13f96c0a5",
+      "objetivo-2/herramientas/perdida_espacial_borde_experimental.py": "0d3900f7359659666d32c282a24f5bc5abcf73eb09b9ecb88cc9b0695927a082",
+      "objetivo-2/herramientas/resumir_borde_cgan.py": "415ad0bb11c2a295ff073e52bb6deffbca866d999363e14dad15a3ffa52d746e"
+    },
+    "environment": {
+      "python": "3.12.3",
+      "numpy": "2.3.5",
+      "torch": "2.6.0+cu118",
+      "cuda": "11.8",
+      "device": "cuda:0",
+      "gpu": "NVIDIA L40S",
+      "threads": 2,
+      "deterministic": true,
+      "cudnn": 90100,
+      "cublas_workspace": ":4096:8",
+      "tf32": false,
+      "numpy_rng": "MT19937",
+      "python_rng": "MT19937"
+    },
+    "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+    "cache_sha256": "df720c9d64735fc02ac8d3147f8a230f7a8fdcec7530f9d16351c049c9413530",
+    "train_indices_sha256": "64c50dc04a45dd9268c4dbee3fb254d5dd95aed5185fa1c5f5d2e73996e8c7d6",
+    "val_indices_sha256": "debc775fdc6b0aea181c5f3dd9620014b1fd07bc72042a16dd2819c08a96ceaf",
+    "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+    "initial_generator_sha256": "73c70580e066740a43283e3a3172c2758391e27bd6ee8518075711dd1a7f3916",
+    "initial_critic_sha256": "be1747d6be094ac51e5287f154e7ef16baf83523b341b5dcda6482729ca49a33",
+    "epochs": 5
+  },
+  "completed": true,
+  "epoch": 5,
+  "selected_epoch": 5,
+  "resume_count": 0,
+  "history": [
+    {
+      "epoch": 1,
+      "steps_g": 360,
+      "steps_d": 1800,
+      "order_sha256": "4db4a633834da2983d9bae3fadf58cd996359f8970c6d22d443ff5a5fbe777b4",
+      "losses": {
+        "d_real": 19.55553045802645,
+        "d_fake": 18.37019028875563,
+        "w_est": 1.185340169270833,
+        "gp": 0.006116052578969776,
+        "total_d": -1.1241796423329242,
+        "grad_d": 10.697289445671721,
+        "l1": 0.011520873729346527,
+        "adv": -18.332862753338283,
+        "regional": 0.027526079403327023,
+        "edge": 0.09534617378642693,
+        "weighted_edge": 0.05997274331166257,
+        "total_g": -17.093276575963262,
+        "grad_g": 23.43294209162734
+      },
+      "family_losses": {
+        "0": 0.01633630318141831,
+        "1": 0.0287047121807131,
+        "2": 0.015855169509752694,
+        "3": 0.05169524738194022
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "validation": {
+        "n": 360,
+        "ssim": 0.8163498482392081,
+        "psnr": 30.689169988232656
+      },
+      "generator_sha256": "ef4852ce3ae85a4fcf81c5c9141de924a1b44ac52c36e5d3c704e2e07ee3121c",
+      "critic_sha256": "1eb46bdee34dd201064f74546245b428c0870b95eaf86b6f143709f5ebde1e4e",
+      "epoch_compute_seconds": 122.46467248536646
+    },
+    {
+      "epoch": 2,
+      "steps_g": 360,
+      "steps_d": 1800,
+      "order_sha256": "a16b2d4017ac4a576c7e3f51d1e829cf60ed7942cb63fb401d96ffd559775b09",
+      "losses": {
+        "d_real": 18.877202906078768,
+        "d_fake": 17.77594670931498,
+        "w_est": 1.1012561967637804,
+        "gp": 0.006730917996529671,
+        "total_d": -1.0339470175570913,
+        "grad_d": 12.686377425608024,
+        "l1": 0.011453609789411227,
+        "adv": -17.736922391255696,
+        "regional": 0.02379028232789602,
+        "edge": 0.08335192778821716,
+        "weighted_edge": 0.05242836257878864,
+        "total_g": -16.51534278909736,
+        "grad_g": 23.157191382164033
+      },
+      "family_losses": {
+        "0": 0.01274320674094145,
+        "1": 0.023798413834475594,
+        "2": 0.016778986583906814,
+        "3": 0.04395543794685432
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "validation": {
+        "n": 360,
+        "ssim": 0.8175520795199062,
+        "psnr": 30.75044602069049
+      },
+      "generator_sha256": "c9d774ceb4c5d94a77852207a41b299190d2d66d61e7a3f4493ae03b34242c29",
+      "critic_sha256": "6dfc5a2f5b77386b5a80f5afaf1dffc95e2bff485d86840411b2de4c802cb114",
+      "epoch_compute_seconds": 119.11919689644128
+    },
+    {
+      "epoch": 3,
+      "steps_g": 360,
+      "steps_d": 1800,
+      "order_sha256": "db0c9c3a726519f9699bc55176af3aa94ec1be8f304e7380d638883a208f38d8",
+      "losses": {
+        "d_real": 19.070322850545235,
+        "d_fake": 18.077647568384805,
+        "w_est": 0.9926752821604402,
+        "gp": 0.006459493470262415,
+        "total_d": -0.9280803477101849,
+        "grad_d": 14.974179304913156,
+        "l1": 0.011489131619843345,
+        "adv": -18.02258866628011,
+        "regional": 0.02391165046782702,
+        "edge": 0.07846263039851095,
+        "weighted_edge": 0.04935299452066338,
+        "total_g": -16.80041085768265,
+        "grad_g": 26.315632170145843
+      },
+      "family_losses": {
+        "0": 0.011962294098765697,
+        "1": 0.02425634579196709,
+        "2": 0.017278649907890967,
+        "3": 0.044343657313551575
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "validation": {
+        "n": 360,
+        "ssim": 0.814641476226039,
+        "psnr": 30.60984134777209
+      },
+      "generator_sha256": "006128203b9644b057adbb534609eac190dff1f985336bb835fb57d43b897449",
+      "critic_sha256": "eb7c84b9eaae42fcc4201b4060e50cd01e6bd69062e73eb53b75d028a17e3793",
+      "epoch_compute_seconds": 118.69878725986928
+    },
+    {
+      "epoch": 4,
+      "steps_g": 360,
+      "steps_d": 1800,
+      "order_sha256": "d535c0af8d4e112af0ef10b01bfc9c00faf061bd20e52a6477b4f7ef87556c9f",
+      "losses": {
+        "d_real": 19.138347747590803,
+        "d_fake": 18.22925835503472,
+        "w_est": 0.9090893925560845,
+        "gp": 0.00612664622029115,
+        "total_d": -0.8478229304982557,
+        "grad_d": 16.364777378998614,
+        "l1": 0.01147825286930634,
+        "adv": -18.170103353924222,
+        "regional": 0.02324411725566701,
+        "edge": 0.07492293407851378,
+        "weighted_edge": 0.047126525535385114,
+        "total_g": -16.9519074700443,
+        "grad_g": 29.352083628721957
+      },
+      "family_losses": {
+        "0": 0.012031703555634156,
+        "1": 0.023984706299745195,
+        "2": 0.015613167586638933,
+        "3": 0.04352952252832881
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "validation": {
+        "n": 360,
+        "ssim": 0.8162156232659246,
+        "psnr": 30.715461414240547
+      },
+      "generator_sha256": "ddad41c7a97cea6cde96911663ac0e98889683a4c59573197bcfe2e7e39e2a91",
+      "critic_sha256": "a843c6a51b5898783a1efa7c30e32c3d2f9a70c663e41c4231eccdffc2d80e94",
+      "epoch_compute_seconds": 119.22128074150532
+    },
+    {
+      "epoch": 5,
+      "steps_g": 360,
+      "steps_d": 1800,
+      "order_sha256": "b7df5cb04e6afe2deafef234a22c0cd6e69e0f6f5123aa6987376ba6c8b3f4a4",
+      "losses": {
+        "d_real": 19.044460647371093,
+        "d_fake": 18.188801063961456,
+        "w_est": 0.8556595834096274,
+        "gp": 0.005818931576715036,
+        "total_d": -0.7974702673488198,
+        "grad_d": 18.314817789458555,
+        "l1": 0.011459249074363874,
+        "adv": -18.132045851813423,
+        "regional": 0.023169422665015628,
+        "edge": 0.07235517839662041,
+        "weighted_edge": 0.04551140721147425,
+        "total_g": -16.91744011202736,
+        "grad_g": 32.58861812074453
+      },
+      "family_losses": {
+        "0": 0.012308604460516766,
+        "1": 0.02310254879865422,
+        "2": 0.015634194149294543,
+        "3": 0.043855892610727094
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "validation": {
+        "n": 360,
+        "ssim": 0.8147987002197116,
+        "psnr": 30.56162490624462
+      },
+      "generator_sha256": "e3adc2f380c50edb7daddd9adec0a9e32e4f57016465cf648f15e09e6126f906",
+      "critic_sha256": "2e5692a38e7749b2109af9e614cca77627c29b5095440c7895bafb83e0df5dbb",
+      "epoch_compute_seconds": 118.94790100120008
+    }
+  ],
+  "sessions": [
+    {
+      "first_epoch": 1,
+      "last_epoch": 5,
+      "compute_seconds": 600.5503786727786,
+      "peak_cuda_allocated_bytes": 1956782592
+    }
+  ],
+  "last_checkpoint_sha256": "5d03f8957506083605b65ba341ac21f053ea85379000f2c5c5b6dfb03e147724",
+  "last_save_seconds": 0.3332262737676501
+}

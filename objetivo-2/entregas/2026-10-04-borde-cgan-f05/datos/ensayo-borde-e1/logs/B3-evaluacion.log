@@ -1,0 +1,69 @@
+{
+  "stage": "piloto",
+  "decision": "compromiso_o_sin_mejora",
+  "anomaly_diagnostics": {
+    "rows": 24,
+    "worse_bias_vs_C0": 13,
+    "worse_bias_vs_initial": 6,
+    "physical_acceptance": false,
+    "note": "Salvaguarda descriptiva; no cambia retrospectivamente la regla de decisi\u00f3n ni acredita calidad en etapa t\u00e9cnica."
+  },
+  "summary": {
+    "entrada": {
+      "ssim": 0.7518121158353864,
+      "psnr": 24.16772800716849,
+      "Q_by_geometry": {
+        "geo-val-01": 0.011978948077161562,
+        "geo-val-02": 0.025514356976083424,
+        "geo-val-03": 0.016922050081937045
+      },
+      "Q": 0.018138451711727344,
+      "sky_mae": 0.06802366966581791,
+      "edge_mae": 0.12091980217515516,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.24644261860892383
+    },
+    "C0": {
+      "ssim": 0.815123629458897,
+      "psnr": 30.61215875396878,
+      "Q_by_geometry": {
+        "geo-val-01": 0.051544215943618646,
+        "geo-val-02": 0.04901318747887616,
+        "geo-val-03": 0.04997153396631174
+      },
+      "Q": 0.05017631246293552,
+      "sky_mae": 0.023433842851179006,
+      "edge_mae": 0.11052300891566896,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.08683965147889969
+    },
+    "C1": {
+      "ssim": 0.8147987002197116,
+      "psnr": 30.56162490624462,
+      "Q_by_geometry": {
+        "geo-val-01": 0.08766828942164384,
+        "geo-val-02": 0.035218382964692145,
+        "geo-val-03": 0.04169084621670992
+      },
+      "Q": 0.05485917286768197,
+      "sky_mae": 0.022695009964511577,
+      "edge_mae": 0.07084069878778441,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.0783379775695337
+    },
+    "inicial_cgan": {
+      "ssim": 0.8227914493773519,
+      "psnr": 31.10406039160106,
+      "Q_by_geometry": {
+        "geo-val-01": 0.03469973598861689,
+        "geo-val-02": 0.1574423520066559,
+        "geo-val-03": 0.17805622986597502
+      },
+      "Q": 0.1233994392870826,
+      "sky_mae": 0.1264756274688191,
+      "edge_mae": 0.14419176072733247,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.09066667921751101
+    }
+  }
+}

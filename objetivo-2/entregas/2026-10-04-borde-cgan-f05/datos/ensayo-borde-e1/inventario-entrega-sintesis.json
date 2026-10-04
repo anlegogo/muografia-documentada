@@ -1,0 +1,150 @@
+{
+  "schema": "oe2-cgan-borde-summary-v1",
+  "stage": "piloto",
+  "pairs": [
+    "B1",
+    "B2",
+    "B3"
+  ],
+  "seeds": {
+    "B1": 2026100411,
+    "B2": 2026100412,
+    "B3": 2026100413
+  },
+  "delta_definition": "C1 minus C0; negative favors Q/errors, positive favors SSIM/PSNR",
+  "paired_differences": {
+    "B1": {
+      "Q": -0.014310112565252976,
+      "sky_mae": 0.00011999381693744704,
+      "edge_mae": -0.04254807194688605,
+      "contrast_absolute_error": -0.029041501952649623,
+      "ssim": 6.137023890617765e-05,
+      "psnr": -0.009688535852014013
+    },
+    "B2": {
+      "Q": -0.006532948918902756,
+      "sky_mae": -0.0014817729944188382,
+      "edge_mae": -0.04218290868998363,
+      "contrast_absolute_error": 0.017728581193081405,
+      "ssim": 0.00038694403793204657,
+      "psnr": 0.06265768171024888
+    },
+    "B3": {
+      "Q": 0.004682860404746456,
+      "sky_mae": -0.0007388328866674287,
+      "edge_mae": -0.03968231012788455,
+      "contrast_absolute_error": -0.008501673909365987,
+      "ssim": -0.00032492923918547856,
+      "psnr": -0.05053384772416081
+    }
+  },
+  "descriptive_summary": {
+    "Q": {
+      "values": [
+        -0.014310112565252976,
+        -0.006532948918902756,
+        0.004682860404746456
+      ],
+      "median": -0.006532948918902756,
+      "min": -0.014310112565252976,
+      "max": 0.004682860404746456
+    },
+    "sky_mae": {
+      "values": [
+        0.00011999381693744704,
+        -0.0014817729944188382,
+        -0.0007388328866674287
+      ],
+      "median": -0.0007388328866674287,
+      "min": -0.0014817729944188382,
+      "max": 0.00011999381693744704
+    },
+    "edge_mae": {
+      "values": [
+        -0.04254807194688605,
+        -0.04218290868998363,
+        -0.03968231012788455
+      ],
+      "median": -0.04218290868998363,
+      "min": -0.04254807194688605,
+      "max": -0.03968231012788455
+    },
+    "contrast_absolute_error": {
+      "values": [
+        -0.029041501952649623,
+        0.017728581193081405,
+        -0.008501673909365987
+      ],
+      "median": -0.008501673909365987,
+      "min": -0.029041501952649623,
+      "max": 0.017728581193081405
+    },
+    "ssim": {
+      "values": [
+        6.137023890617765e-05,
+        0.00038694403793204657,
+        -0.00032492923918547856
+      ],
+      "median": 6.137023890617765e-05,
+      "min": -0.00032492923918547856,
+      "max": 0.00038694403793204657
+    },
+    "psnr": {
+      "values": [
+        -0.009688535852014013,
+        0.06265768171024888,
+        -0.05053384772416081
+      ],
+      "median": -0.009688535852014013,
+      "min": -0.05053384772416081,
+      "max": 0.06265768171024888
+    }
+  },
+  "checks_by_pair": {
+    "B1": {
+      "Q_reduced": true,
+      "edge_reduced": true,
+      "each_geometry_not_worse": false,
+      "sky_not_worse": false,
+      "edge_not_worse": true,
+      "contrast_support_unchanged": true,
+      "contrast_not_worse": true,
+      "ssim_not_worse": true,
+      "psnr_not_worse": false
+    },
+    "B2": {
+      "Q_reduced": true,
+      "edge_reduced": true,
+      "each_geometry_not_worse": false,
+      "sky_not_worse": true,
+      "edge_not_worse": true,
+      "contrast_support_unchanged": true,
+      "contrast_not_worse": false,
+      "ssim_not_worse": true,
+      "psnr_not_worse": true
+    },
+    "B3": {
+      "Q_reduced": false,
+      "edge_reduced": true,
+      "each_geometry_not_worse": false,
+      "sky_not_worse": true,
+      "edge_not_worse": true,
+      "contrast_support_unchanged": true,
+      "contrast_not_worse": true,
+      "ssim_not_worse": false,
+      "psnr_not_worse": false
+    }
+  },
+  "concordant_pairs": 0,
+  "pairs_reducing_Q": 2,
+  "decision": "dependencia_de_semilla_o_compromiso",
+  "physical_acceptance": false,
+  "heldout_opened": false,
+  "independent_from_scratch_training": false,
+  "limitations": "Tres continuaciones condicionadas al mismo checkpoint. Sin significaci\u00f3n ni aceptaci\u00f3n f\u00edsica; conservar tablas completas de vistas/anomal\u00edas.",
+  "evaluation_sha256": {
+    "B1": "a70a8eac36bbc1861cbc121c4a1aaeff91b0c3ab183a83246f791cc4a63c5796",
+    "B2": "c6719b105db22d72818bf8d86c0925c6ce5accf0cf3fb0841f1f794299ad9e3d",
+    "B3": "1081cb2d27fd1a55e049edb4b0fb7f3d3b9ee188643940cf8197ec7c441ceb7e"
+  }
+}

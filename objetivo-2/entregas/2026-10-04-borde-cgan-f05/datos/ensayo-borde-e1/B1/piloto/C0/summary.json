@@ -1,0 +1,436 @@
+{
+  "identity": {
+    "schema": "oe2-cgan-borde-run-v1",
+    "critic_gradient_policy": "wasserstein-then-weighted-gp-v1",
+    "arm": "C0",
+    "stage": "piloto",
+    "config": {
+      "schema": "oe2-cgan-borde-v1",
+      "fraction": 0.05,
+      "generator": "unet_dc_5",
+      "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+      "initial_epoch": 5,
+      "reset_optimizer": true,
+      "reset_rng": true,
+      "seed": 2026100411,
+      "optimizer": {
+        "name": "Adam",
+        "lr": 1e-05,
+        "betas": [
+          0,
+          0.9
+        ]
+      },
+      "batch": 4,
+      "epochs": 5,
+      "early_stopping": false,
+      "selected_epoch": 5,
+      "train_pairs": 1440,
+      "val_pairs": 360,
+      "train_split": "train",
+      "selection_split": "val",
+      "reserved_splits_allowed": false,
+      "hflip": false,
+      "augmentation": false,
+      "lambda_l1": 100,
+      "regional_loss": "mean_absolute_log1p_region_mean_counts",
+      "normalization_scale": 8.239329427901795,
+      "regional_families": [
+        "cielo",
+        "roca",
+        "borde",
+        "anomalias"
+      ],
+      "region_min_pixels": 20,
+      "region_family_equal_weight": true,
+      "lambda_regional": 1,
+      "gradient_clipping": false,
+      "amp": false,
+      "checkpoint_policy": "last each epoch plus final epoch 5; no best-SSIM selection",
+      "resume": "same arm, protocol and code identity only",
+      "stages": {
+        "technical": {
+          "epochs": 2,
+          "train_pairs": 8,
+          "val_pairs": 8,
+          "requires_gpu_before_pilot": true,
+          "train_indices": [
+            [
+              "geo-train-01",
+              0,
+              0
+            ],
+            [
+              "geo-train-01",
+              0,
+              1
+            ],
+            [
+              "geo-train-02",
+              0,
+              0
+            ],
+            [
+              "geo-train-02",
+              0,
+              1
+            ],
+            [
+              "geo-train-04",
+              0,
+              0
+            ],
+            [
+              "geo-train-04",
+              0,
+              1
+            ],
+            [
+              "geo-train-10",
+              0,
+              0
+            ],
+            [
+              "geo-train-10",
+              0,
+              1
+            ]
+          ],
+          "val_indices": [
+            [
+              "geo-val-01",
+              0,
+              0
+            ],
+            [
+              "geo-val-01",
+              0,
+              1
+            ],
+            [
+              "geo-val-02",
+              0,
+              0
+            ],
+            [
+              "geo-val-02",
+              0,
+              1
+            ],
+            [
+              "geo-val-03",
+              0,
+              0
+            ],
+            [
+              "geo-val-03",
+              0,
+              1
+            ],
+            [
+              "geo-val-03",
+              1,
+              0
+            ],
+            [
+              "geo-val-03",
+              1,
+              1
+            ]
+          ],
+          "interrupt_after_epoch": 1,
+          "pilot_initialization": "original epoch-5 checkpoint, never technical weights"
+        },
+        "pilot": {
+          "epochs": 5,
+          "train_pairs": 1440,
+          "val_pairs": 360
+        }
+      },
+      "mass_campaign_authorized": false,
+      "arm": "C0",
+      "run_id": "oe2-borde-f05-B1-C0",
+      "critic": "patch_critic_70",
+      "lambda_adv": 1,
+      "lambda_gp": 10,
+      "n_critic": 5,
+      "rng_policy": "torch CPU/CUDA; NumPy and Python stored; independent order per epoch",
+      "critic_fake_policy": "one no-grad train-mode G sample reused for five D steps; fresh G sample for G update",
+      "critic_frozen_during_generator_step": true,
+      "pair": "B1",
+      "lambda_edge": 0.0,
+      "experiment": "spatial-edge-v1",
+      "edge_loss": "mean_per_image_relative_absolute_count_error",
+      "coefficient_profile_sha256": "ef83277c56320c7b38d7d11efea4b74fd33663c7c54421b7432bf63818e9358c"
+    },
+    "pair": "B1",
+    "seed": 2026100411,
+    "sources": {
+      "objetivo-2/herramientas/datos_ajuste.py": "2c89d770cc3d7b4fee66c977ff89af8faf6ab6bbca3ed12fe1f2a98734aa167f",
+      "objetivo-2/herramientas/ejecutar_ajuste.py": "8d49980e4e1c4b96347c81203a820cc5784b57473079562decbedd747fe11abb",
+      "objetivo-2/herramientas/perdida_cuentas_regionales.py": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+      "objetivo-2/herramientas/evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524",
+      "objetivo-2/implementacion/models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+      "objetivo-2/implementacion/scripts/evaluation/metrics.py": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42",
+      "objetivo-2/herramientas/revisar_ajuste.py": "294e4291b3bd10d6c0f597c9145867c4ac7f33cfd0bdacd5c78c3c4cee5ea750",
+      "objetivo-2/herramientas/evaluar_ajuste.py": "f0840197c20ff848dd79bfe3385eabc4beeaff632da67c580961bb14c13e721b",
+      "objetivo-2/herramientas/ejecutar_borde_cgan.py": "5f7bd0f4b32934bcafc36c7e2f6737951b9bc93c838d7d4b7628c53e59e2d7b4",
+      "objetivo-2/herramientas/revisar_borde_cgan.py": "4d48df3062fd10a97875abfcc9e0182b4ee92b9af00cdc9a11078b548a00fae7",
+      "objetivo-2/herramientas/evaluar_borde_cgan.py": "987e29854401ef4b5cfc62f574532d49aaa516449181d96e6b40d65636e53324",
+      "objetivo-2/herramientas/gradientes_critico.py": "76024538c9df1ba43e4c3c549e806137f820322b6d25aa3ff37bfb6c417da8be",
+      "objetivo-2/implementacion/models/patch_critic.py": "41fbbb005fd152d3ddf10e50721ac855108907714e150632d1942275736b84d8",
+      "objetivo-2/implementacion/scripts/training/losses.py": "8d950c772d923a98343b8cda787b28567df7d2bbd09c62f50085efb13f96c0a5",
+      "objetivo-2/herramientas/perdida_espacial_borde_experimental.py": "0d3900f7359659666d32c282a24f5bc5abcf73eb09b9ecb88cc9b0695927a082",
+      "objetivo-2/herramientas/resumir_borde_cgan.py": "415ad0bb11c2a295ff073e52bb6deffbca866d999363e14dad15a3ffa52d746e"
+    },
+    "environment": {
+      "python": "3.12.3",
+      "numpy": "2.3.5",
+      "torch": "2.6.0+cu118",
+      "cuda": "11.8",
+      "device": "cuda:0",
+      "gpu": "NVIDIA L40S",
+      "threads": 2,
+      "deterministic": true,
+      "cudnn": 90100,
+      "cublas_workspace": ":4096:8",
+      "tf32": false,
+      "numpy_rng": "MT19937",
+      "python_rng": "MT19937"
+    },
+    "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+    "cache_sha256": "df720c9d64735fc02ac8d3147f8a230f7a8fdcec7530f9d16351c049c9413530",
+    "train_indices_sha256": "64c50dc04a45dd9268c4dbee3fb254d5dd95aed5185fa1c5f5d2e73996e8c7d6",
+    "val_indices_sha256": "debc775fdc6b0aea181c5f3dd9620014b1fd07bc72042a16dd2819c08a96ceaf",
+    "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+    "initial_generator_sha256": "73c70580e066740a43283e3a3172c2758391e27bd6ee8518075711dd1a7f3916",
+    "initial_critic_sha256": "be1747d6be094ac51e5287f154e7ef16baf83523b341b5dcda6482729ca49a33",
+    "epochs": 5
+  },
+  "completed": true,
+  "epoch": 5,
+  "selected_epoch": 5,
+  "resume_count": 0,
+  "history": [
+    {
+      "epoch": 1,
+      "steps_g": 360,
+      "steps_d": 1800,
+      "order_sha256": "1b3871f7daadcd50d797c5058d32ded8902436a31d598c7fe635671816573946",
+      "losses": {
+        "d_real": 19.575011266072583,
+        "d_fake": 18.395337972640988,
+        "w_est": 1.1796732934315997,
+        "gp": 0.0060846271309643865,
+        "total_d": -1.118827023307483,
+        "grad_d": 10.4680920884536,
+        "l1": 0.011558686297697325,
+        "adv": -18.349129083421495,
+        "regional": 0.02774402389299773,
+        "edge": 0.12350089604066149,
+        "weighted_edge": 0.0,
+        "total_g": -17.16551643653674,
+        "grad_g": 22.586610381030397
+      },
+      "family_losses": {
+        "0": 0.016793248328269797,
+        "1": 0.029108199853619808,
+        "2": 0.015441138753648402,
+        "3": 0.05226332675733613
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "validation": {
+        "n": 360,
+        "ssim": 0.817545463300833,
+        "psnr": 30.78196794960739
+      },
+      "generator_sha256": "163624811d37d27cb1dc278526d3d7125054e19ef0aefc904a044ddbe291f94e",
+      "critic_sha256": "b60ed63f647654755a5d703757c5c434e64dfccaf9f071db0c8f55f0b9849534",
+      "epoch_compute_seconds": 122.40274991467595
+    },
+    {
+      "epoch": 2,
+      "steps_g": 360,
+      "steps_d": 1800,
+      "order_sha256": "0ae9e54a98ecb37d0f7885e7ae886e24913133985e1b4037a6726a19378e3d96",
+      "losses": {
+        "d_real": 18.880325974358446,
+        "d_fake": 17.787659183078343,
+        "w_est": 1.0926667912801107,
+        "gp": 0.0067139482387008525,
+        "total_d": -1.0255273095435566,
+        "grad_d": 12.988765359566193,
+        "l1": 0.011473616279868617,
+        "adv": -17.758042425579497,
+        "regional": 0.024138230124020756,
+        "edge": 0.12024782832348999,
+        "weighted_edge": 0.0,
+        "total_g": -16.586542577837346,
+        "grad_g": 21.69798920198327
+      },
+      "family_losses": {
+        "0": 0.013152979101745949,
+        "1": 0.023385200271124108,
+        "2": 0.015414661454103197,
+        "3": 0.04705801531847007
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "validation": {
+        "n": 360,
+        "ssim": 0.816476922042681,
+        "psnr": 30.687553161069676
+      },
+      "generator_sha256": "2ec819fb4b33bc0c1f8360b7ad7f3d20135cca1719057dc6e5905e960610d3de",
+      "critic_sha256": "787e5d3ccffa120211d82104016463470618523a9290a8ccf1c4ba84ff5643d9",
+      "epoch_compute_seconds": 119.5442389799282
+    },
+    {
+      "epoch": 3,
+      "steps_g": 360,
+      "steps_d": 1800,
+      "order_sha256": "4db4a633834da2983d9bae3fadf58cd996359f8970c6d22d443ff5a5fbe777b4",
+      "losses": {
+        "d_real": 18.896640745798756,
+        "d_fake": 17.885700774722615,
+        "w_est": 1.010939971076117,
+        "gp": 0.006486984211426009,
+        "total_d": -0.9460701295402313,
+        "grad_d": 14.938734208131875,
+        "l1": 0.011466953057485322,
+        "adv": -17.828032710817126,
+        "regional": 0.02285665831790927,
+        "edge": 0.11607567399049618,
+        "weighted_edge": 0.0,
+        "total_g": -16.658480751231377,
+        "grad_g": 24.509799546391967
+      },
+      "family_losses": {
+        "0": 0.012009115848185979,
+        "1": 0.02232316863554269,
+        "2": 0.015526083263366294,
+        "3": 0.04399119984065802
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "validation": {
+        "n": 360,
+        "ssim": 0.8163130450673441,
+        "psnr": 30.630843373849316
+      },
+      "generator_sha256": "0853894c57987a4d3033b31bb0eb218bd4dff97c107a358aaa05bb741354d7da",
+      "critic_sha256": "e714d6e11573db3056bfe3645718a4f76a5fe3a4f7d8af13c0973b15f945132d",
+      "epoch_compute_seconds": 119.3739915881306
+    },
+    {
+      "epoch": 4,
+      "steps_g": 360,
+      "steps_d": 1800,
+      "order_sha256": "a16b2d4017ac4a576c7e3f51d1e829cf60ed7942cb63fb401d96ffd559775b09",
+      "losses": {
+        "d_real": 18.883514734903954,
+        "d_fake": 17.947951973809136,
+        "w_est": 0.9355627610948346,
+        "gp": 0.006334808239683602,
+        "total_d": -0.8722146788239484,
+        "grad_d": 17.178342114235093,
+        "l1": 0.011499041554311083,
+        "adv": -17.88774709171719,
+        "regional": 0.022819945105610827,
+        "edge": 0.11531364663041549,
+        "weighted_edge": 0.0,
+        "total_g": -16.715022956442134,
+        "grad_g": 28.893272426357967
+      },
+      "family_losses": {
+        "0": 0.01227381746114015,
+        "1": 0.023273822652029805,
+        "2": 0.015122564033096975,
+        "3": 0.04263833618933622
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "validation": {
+        "n": 360,
+        "ssim": 0.8159416477906443,
+        "psnr": 30.66088859443409
+      },
+      "generator_sha256": "1cd95e720039503b20e370df2e34325703615054ef48f8361624a2282da89b1f",
+      "critic_sha256": "d16252a250d9a32bfb56a1657e6caf383f793793131bc88a2ff28401a91ced0f",
+      "epoch_compute_seconds": 119.21708683483303
+    },
+    {
+      "epoch": 5,
+      "steps_g": 360,
+      "steps_d": 1800,
+      "order_sha256": "db0c9c3a726519f9699bc55176af3aa94ec1be8f304e7380d638883a208f38d8",
+      "losses": {
+        "d_real": 18.619811333550338,
+        "d_fake": 17.766281316545275,
+        "w_est": 0.8535300170050732,
+        "gp": 0.005778198597816096,
+        "total_d": -0.795748030543327,
+        "grad_d": 17.972284835548244,
+        "l1": 0.011485082288790081,
+        "adv": -17.71803035736084,
+        "regional": 0.02244080395221116,
+        "edge": 0.112665358147593,
+        "weighted_edge": 0.0,
+        "total_g": -16.5470813225635,
+        "grad_g": 30.834227544025346
+      },
+      "family_losses": {
+        "0": 0.012417276820571097,
+        "1": 0.023153140882579422,
+        "2": 0.015654100400103635,
+        "3": 0.04049380770046422
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "validation": {
+        "n": 360,
+        "ssim": 0.8157171620863355,
+        "psnr": 30.646298791462243
+      },
+      "generator_sha256": "c91456fb201076bcd501a5a4065e1f8644fccde9d702e9d1bd54db6719017a12",
+      "critic_sha256": "1a1b1dad69c3683f7761dc94589e221d8359db7376266b3a33a0f4c206c71355",
+      "epoch_compute_seconds": 119.17674974445254
+    }
+  ],
+  "sessions": [
+    {
+      "first_epoch": 1,
+      "last_epoch": 5,
+      "compute_seconds": 602.0584996473044,
+      "peak_cuda_allocated_bytes": 1956782592
+    }
+  ],
+  "last_checkpoint_sha256": "486f83398c5c61acf91b14c929872b97ff16231d0bca622ff0a75f246a014a81",
+  "last_save_seconds": 0.5473573599010706
+}

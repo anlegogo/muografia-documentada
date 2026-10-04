@@ -1,0 +1,9 @@
+objetivo-2/configuraciones/borde-cgan-v1/B1-C0.json identico_a_HEAD
+objetivo-2/configuraciones/borde-cgan-v1/B1-C1.json identico_a_HEAD
+objetivo-2/configuraciones/borde-cgan-v1/B2-C0.json identico_a_HEAD
+objetivo-2/configuraciones/borde-cgan-v1/B2-C1.json identico_a_HEAD
+objetivo-2/configuraciones/borde-cgan-v1/B3-C0.json identico_a_HEAD
+objetivo-2/configuraciones/borde-cgan-v1/B3-C1.json identico_a_HEAD
+objetivo-2/evidencias/diagnostico-espacial-cgan.json identico_a_HEAD
+objetivo-2/evidencias/perfil-gradientes-borde.json identico_a_HEAD
+objetivo-2/evidencias/sondeo-gradientes-borde.json identico_a_HEAD

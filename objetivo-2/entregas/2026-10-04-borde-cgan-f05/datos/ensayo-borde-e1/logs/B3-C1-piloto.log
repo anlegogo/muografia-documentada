@@ -1,0 +1,5 @@
+{"arm": "C1", "epoch": 1, "steps_g": 360, "steps_d": 1800, "validation": {"n": 360, "ssim": 0.8163498482392081, "psnr": 30.689169988232656}}
+{"arm": "C1", "epoch": 2, "steps_g": 360, "steps_d": 1800, "validation": {"n": 360, "ssim": 0.8175520795199062, "psnr": 30.75044602069049}}
+{"arm": "C1", "epoch": 3, "steps_g": 360, "steps_d": 1800, "validation": {"n": 360, "ssim": 0.814641476226039, "psnr": 30.60984134777209}}
+{"arm": "C1", "epoch": 4, "steps_g": 360, "steps_d": 1800, "validation": {"n": 360, "ssim": 0.8162156232659246, "psnr": 30.715461414240547}}
+{"arm": "C1", "epoch": 5, "steps_g": 360, "steps_d": 1800, "validation": {"n": 360, "ssim": 0.8147987002197116, "psnr": 30.56162490624462}}
