@@ -1,0 +1,92 @@
+{
+ "tolerancia_absoluta": 1e-12,
+ "secciones": {
+  "delivery_commit": {
+   "numericos": 0,
+   "no_numericos": 1,
+   "max_dif": 0.0,
+   "diferencias": 0,
+   "ejemplos": []
+  },
+  "source_predictions": {
+   "numericos": 0,
+   "no_numericos": 6,
+   "max_dif": 0.0,
+   "diferencias": 0,
+   "ejemplos": []
+  },
+  "regions_checked": {
+   "numericos": 1,
+   "no_numericos": 0,
+   "max_dif": 0.0,
+   "diferencias": 0,
+   "ejemplos": []
+  },
+  "regions": {
+   "numericos": 1512,
+   "no_numericos": 378,
+   "max_dif": 1.1102230246251565e-16,
+   "diferencias": 0,
+   "ejemplos": []
+  },
+  "distance_bands": {
+   "numericos": 1890,
+   "no_numericos": 1512,
+   "max_dif": 5.551115123125783e-17,
+   "diferencias": 0,
+   "ejemplos": []
+  },
+  "geo1_summary": {
+   "numericos": 102,
+   "no_numericos": 0,
+   "max_dif": 5.551115123125783e-17,
+   "diferencias": 0,
+   "ejemplos": []
+  },
+  "heldout_opened": {
+   "numericos": 0,
+   "no_numericos": 1,
+   "max_dif": 0.0,
+   "diferencias": 0,
+   "ejemplos": []
+  },
+  "training_performed": {
+   "numericos": 0,
+   "no_numericos": 1,
+   "max_dif": 0.0,
+   "diferencias": 0,
+   "ejemplos": []
+  },
+  "selection_performed": {
+   "numericos": 0,
+   "no_numericos": 1,
+   "max_dif": 0.0,
+   "diferencias": 0,
+   "ejemplos": []
+  },
+  "interpretation": {
+   "numericos": 0,
+   "no_numericos": 1,
+   "max_dif": 0.0,
+   "diferencias": 0,
+   "ejemplos": []
+  },
+  "bandas.csv": {
+   "numericos": 1890,
+   "no_numericos": 1512,
+   "max_dif": 5.551115123125783e-17,
+   "diferencias": 0,
+   "ejemplos": []
+  }
+ },
+ "conteos": {
+  "sesgos_comprobados": 252,
+  "filas_regionales": 126,
+  "filas_por_banda": 378
+ },
+ "script_sha256": {
+  "referencia": "eff73ab9f1268914ed43f298e29efe4a4f7f47e5ef3cf548531109991d6f1ddc",
+  "reproduccion": "eff73ab9f1268914ed43f298e29efe4a4f7f47e5ef3cf548531109991d6f1ddc"
+ },
+ "concordante": true
+}
