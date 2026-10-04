@@ -1,0 +1,77 @@
+{
+  "selection": "vista 0 y realización 0 de cada geometría; caso desfavorable por mayor Q agregado de cGAN original",
+  "cases": [
+    {
+      "geometry": "geo-test-01",
+      "view": 0,
+      "realization": 0,
+      "prediction_index": 0,
+      "fraction": 0.05
+    },
+    {
+      "geometry": "geo-test-02",
+      "view": 0,
+      "realization": 0,
+      "prediction_index": 0,
+      "fraction": 0.05
+    },
+    {
+      "geometry": "geo-test-03",
+      "view": 0,
+      "realization": 0,
+      "prediction_index": 0,
+      "fraction": 0.05
+    },
+    {
+      "geometry": "geo-gen-01",
+      "view": 0,
+      "realization": 0,
+      "prediction_index": 0,
+      "fraction": 0.05
+    }
+  ],
+  "worst_geometry": "geo-test-03",
+  "normalization_scale": 8.239329427901795,
+  "residual_limit": 0.3503120976960601,
+  "sources_sha256": {
+    "datos/geo-test-01.npz": "308e02931a73c52c28fd5191a3dbeedc311cd4733f910e632ee15c58947121a6",
+    "predicciones/unet_original/geo-test-01.npy": "3034652d1aafa46d9fdad03b783a360a8134a0adda87ffa16747fc2568511e12",
+    "predicciones/cgan_original/geo-test-01.npy": "223890b6c0401a9e35208bdd97f2380c1a5f337b9bebd48b0bea4d413b267538",
+    "predicciones/B1_C0/geo-test-01.npy": "53de1ced2d20c6beb07d5668d4a6670fee4e505ccdfbe4342d82e1d7cb07a61f",
+    "predicciones/B1_C1/geo-test-01.npy": "b975190137f68f7a28034495b38b40bd60d595a7aebdca2ef834d7c2c9fdb948",
+    "predicciones/B2_C0/geo-test-01.npy": "048c9e570934aa4dc83aa70285cf0dd8127729d7548704df41f5e427cdfd226d",
+    "predicciones/B2_C1/geo-test-01.npy": "d511cb0cfa102131071f8db4109571f318e945628ff587606a1719e0409807e4",
+    "predicciones/B3_C0/geo-test-01.npy": "a34c3b55ada492e7602a1964e91df461a5ccfca8dccb4213829b0ebc87846184",
+    "predicciones/B3_C1/geo-test-01.npy": "499f56d0a071c0d8ad12b1992f57bb9a20ebf761c0a0dc4d8851822d6720029f",
+    "datos/geo-test-02.npz": "eb158306576d7b8915053134b78ea082c01587ce8d859d195985ca0f1d2fb812",
+    "predicciones/unet_original/geo-test-02.npy": "a6e9301df5ac616e46b338418e18e2928b68e9553bce8fbff58874b45ef6637f",
+    "predicciones/cgan_original/geo-test-02.npy": "f93b7f19d4f5ca1b057aad7f6373cda5733c7a70d06bdfa50baaeaec0ec1e03b",
+    "predicciones/B1_C0/geo-test-02.npy": "cc75245c5aae7e70b3614cf6160bc4ef9ec2fdd2b4cae74f96c0ff24b8af70f7",
+    "predicciones/B1_C1/geo-test-02.npy": "a4bd6ea4ac66e12985a83e7fa4f5f7ebafb3d4f4bccfea3d4fc53bb0f39214e6",
+    "predicciones/B2_C0/geo-test-02.npy": "8ca137e30e2d922aa1a5416f8f57bac0e1896f12a7073d8ca7ae1edcb8038baf",
+    "predicciones/B2_C1/geo-test-02.npy": "a328957c0f99678305c8b02d60b14efd57373fb025679c5a0edb9f4268612765",
+    "predicciones/B3_C0/geo-test-02.npy": "a3b7c58c857a831d59e2c3b64fb29b0f244e431ab1074898ca51bb849e15bfac",
+    "predicciones/B3_C1/geo-test-02.npy": "fcfde4fc02bb01d32338ec5d50a9a05f4f72896f68c648318ca99ada50dcb0ab",
+    "datos/geo-test-03.npz": "bcb4b169267f36456e2c2cdbe6d21f8261c460ac7611370ca2a8ad98904d301a",
+    "predicciones/unet_original/geo-test-03.npy": "bc14d176f701a0c57d038557a57b812763a3adc7e2d2928db1147b2e6863af42",
+    "predicciones/cgan_original/geo-test-03.npy": "49aee8509d2d2d21317fa6d6b7c17460414a070d42b9265f5a17717b0f2eb827",
+    "predicciones/B1_C0/geo-test-03.npy": "3b5f0c0aecea186b7995295a85f088dfcd2f6fd90ceef839c13f9586f1cd4b1f",
+    "predicciones/B1_C1/geo-test-03.npy": "11b444d94da6099b0093e5eeb9d16d285361420a4b44c7cf822865abf0c4b2e4",
+    "predicciones/B2_C0/geo-test-03.npy": "f42ba5791d4d5164d3c02e2a4913d75b12b50b8efcdf789f888d9afc1e9b225b",
+    "predicciones/B2_C1/geo-test-03.npy": "3904910c3f70490acf81d4dc4accb13cb23587d60ad7c3108cace694aeffec36",
+    "predicciones/B3_C0/geo-test-03.npy": "e5a0d0543595beef73b2e1abb7a68eadb839baef3c3e608011056effadd0d92c",
+    "predicciones/B3_C1/geo-test-03.npy": "731dde21baf5a1ba7fa987ce418a681e44f1b7973f7d70da647a5c657b3fcec1",
+    "datos/geo-gen-01.npz": "4d724b8d943ad71cf0deca17bafa0edf2304f06f999794e63c6c74c200abb311",
+    "predicciones/unet_original/geo-gen-01.npy": "7ea25da6729c93a1ed6dbeeeed5251905adb62396ccae6fc14dbdde41c196bac",
+    "predicciones/cgan_original/geo-gen-01.npy": "f33eb38fc86d1022f3428d8cd0a03ba07c77ddeb5abe6470a5aa233565a43924",
+    "predicciones/B1_C0/geo-gen-01.npy": "a4bfebe23811ee9fe71cc2423c2bf15851810102068ea032e8c13a1b8e2f02db",
+    "predicciones/B1_C1/geo-gen-01.npy": "78163755f3f190d130aaedfcbb9072b95e65ecc1c1df0c88a86c603a3c668ee6",
+    "predicciones/B2_C0/geo-gen-01.npy": "4ca554c1c1839dff89c076b4dca3cb3c1ca4d686197fab9f6d52d8b3ba87ab64",
+    "predicciones/B2_C1/geo-gen-01.npy": "c675d56f88cbd1fc4b20b6c0e22721ae33d2a1292b98883c02b697e20d2a5f4b",
+    "predicciones/B3_C0/geo-gen-01.npy": "6f4640de05a4b3caefc69feaf72e1834e215f3859c14ea6de1b88f87d2c71580",
+    "predicciones/B3_C1/geo-gen-01.npy": "8d9a16e2c6cf958346888c326346f622273d274c3babdfd53ae3d7f8b652eecf"
+  },
+  "results_sha256": "b43f40026f4e3a19484fa1dcba824c2523b638e59b3ce2febc2ffeb1a5d18f3e",
+  "script_sha256": "9f8390399ab46b74b586dfab62ae6b6c55f81a0e5820d09f11761b8dd9138cc3",
+  "note": "Figuras descriptivas posteriores a la evaluación. Índices de píxel angular; sin remuestreo. Los residuos se expresan en T(c), no en cuentas ni densidad."
+}

@@ -1,5 +1,13 @@
 # Bitácora del OE2
 
+## Síntesis académica y cierre documental OE2 — 2026-10-04, Colombia
+
+- Se redactan método, resultados, discusión y conclusión delimitada con la evidencia C2 existente; no hay nuevo entrenamiento ni simulación.
+- Se generan e inspeccionan dos figuras desde matrices auditadas, con selección explícita y todas las continuaciones. Se añaden 18 resúmenes y 36 filas por geometría, su CSV y procedencia.
+- EF-04 queda preparado como producto documental. La calidad comparable permanece parcial; integración editorial OE2-D01 pendiente. No se adopta el umbral SSIM histórico retirado ni se declara equivalencia física.
+
+[Informe](manuscrito/INFORME_OE2.md) · [matriz](MATRIZ_CUMPLIMIENTO.md).
+
 ## Evaluación final y corrección C2 — 2026-10-04, Colombia
 
 - Actividad de la dirección: auditoría de la entrega estudiantil 4e5945e, conservada sin modificar; no hubo nuevo entrenamiento.

@@ -1,5 +1,13 @@
 # Registro de cambios
 
+## Síntesis académica y cierre documental OE2 — 2026-10-04, Colombia
+
+- Se redactan método, resultados, discusión y conclusión delimitada con la evidencia C2 existente; no hay nuevo entrenamiento ni simulación.
+- Se generan e inspeccionan dos figuras desde matrices auditadas, con selección explícita y todas las continuaciones. Se añaden 18 resúmenes y 36 filas por geometría, su CSV y procedencia.
+- EF-04 queda preparado como producto documental. La calidad comparable permanece parcial; integración editorial OE2-D01 pendiente. No se adopta el umbral SSIM histórico retirado ni se declara equivalencia física.
+
+[Informe](objetivo-2/manuscrito/INFORME_OE2.md).
+
 ## Curvas descriptivas de exposición — 2026-10-04, Colombia
 
 - Se calculan localmente cuatro fracciones de entrada sin red con los datos existentes y controles C2: 1.920 imágenes, 504 regiones y 216 contrastes. No hay nueva simulación, entrenamiento ni inferencia de redes.

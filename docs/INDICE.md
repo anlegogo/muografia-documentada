@@ -1,5 +1,9 @@
 # Índice de documentación
 
+- [Informe académico OE2, figuras y tablas](../objetivo-2/manuscrito/README.md).
+- [Matriz de cumplimiento OE2](../objetivo-2/MATRIZ_CUMPLIMIENTO.md).
+- [Cierre de ejecución y síntesis documental OE2](../objetivo-2/CIERRE_OE2.md).
+
 - [OE3: curvas descriptivas, evidencia y límites](../objetivo-3/README.md).
 - [Bitácora OE3](../objetivo-3/BITACORA.md).
 

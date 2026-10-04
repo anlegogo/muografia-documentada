@@ -14,9 +14,11 @@ La corrección numérica EF-01-C2 estabilizó la selección de controles de cont
 
 Se verificaron la implementación, el entrenamiento y la evaluación descriptiva al 5 % de conteos. La mejora de similitud y reducción de ruido no demuestra por sí sola equivalencia con alta estadística, porque persisten alteraciones de cuentas y no se había fijado un margen físico de equivalencia. El alcance se limita a referencias idealizadas y a un catálogo conocido, con exposición histórica de las escenas reservadas. Por ello no se afirma generalización a volcanes reales, equivalencia física, desempeño en otras fracciones ni validación experimental de un factor de reducción de adquisición.
 
-## Trabajo de estudiantes con continuidad
+## Síntesis preparada e integración editorial
 
-No se requiere otro entrenamiento, simulación ni inferencia para completar esta entrega. Se debe actualizar desde main conservando las ramas originales, incorporar la síntesis y las tablas C2 al manuscrito, corregir el conteo a doce comparaciones y explicar el compromiso entre similitud visual y conservación de cuentas. En B1/generalización debe actualizarse la interpretación específica de contraste, que cambia con C2. Se debe conservar la declaración de exposición previa y enlazar las evidencias. La siguiente entrega puede ser el manuscrito o capítulo actualizado, con identificación de cambios; no una repetición de la evaluación GPU.
+Se ha preparado el [informe académico completo](manuscrito/INFORME_OE2.md), con matemática, tablas C2, figuras, discusión, [matriz de cumplimiento](MATRIZ_CUMPLIMIENTO.md) y [registro de cierre documental](CIERRE_OE2.md). EF-04 ya cuenta con una conclusión delimitada redactada. La integración en el manuscrito oficial y su revisión editorial quedan registradas como OE2-D01. No se requiere que los estudiantes repitan el análisis ni ejecuten otra GPU para esta entrega.
+
+El cumplimiento científico de calidad comparable sigue siendo parcial; la elaboración del capítulo no cambia ese resultado. Las referencias posteriores a confirmación del texto oficial se conservan como antecedente de esta síntesis: el nuevo informe recupera la formulación de la revisión de propuesta, dejando explícito que no se pudo reabrir el PDF local en esta sesión.
 
 ## Preparación del objetivo 3
 

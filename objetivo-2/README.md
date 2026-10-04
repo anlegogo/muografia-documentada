@@ -1,5 +1,7 @@
 # Objetivo específico 2: revisión de la implementación recibida
 
+**Síntesis documental del OE2 preparada:** [informe académico](manuscrito/INFORME_OE2.md), [matriz de cumplimiento](MATRIZ_CUMPLIMIENTO.md) y [registro de cierre de ejecución](CIERRE_OE2.md). EF-02, EF-03 y la conclusión documental EF-04 completos. La calidad comparable mantiene alcance parcial; no se declara equivalencia física. Resta integración editorial en el manuscrito, sin nuevas corridas.
+
 **Evaluación final al 5 % revisada; corrección C2 verificada.** Se recibieron y auditaron los ocho modelos y sus 3.840 predicciones. Las métricas de imagen/regiones se reproducen; el contraste queda corregido con índices registrados y comparación antes/después. [Revisión vigente](REVISION_EVALUACION_FINAL_C2.md) · [Síntesis y siguiente paso](SINTESIS_OE2_TRANSICION_OE3.md). No se requiere otra GPU. La implementación/evaluación está verificada; equivalencia física y alcance académico siguen delimitados, no se declara cumplimiento científico pleno.
 
 ## Antecedentes conservados
