@@ -1,0 +1,235 @@
+{
+  "schema": "oe2-cgan-resume-diagnostic-cpu-evidence-v1",
+  "date": "2026-10-03 America/Bogota",
+  "gpu_accepted": false,
+  "unit_tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "arms": {
+    "C0": {
+      "environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "torch": "2.6.0+cpu",
+        "cuda": null,
+        "device": "cpu",
+        "gpu": null,
+        "threads": 2,
+        "deterministic": true,
+        "cudnn": null,
+        "cublas_workspace": ":4096:8",
+        "tf32": false,
+        "numpy_rng": "MT19937",
+        "python_rng": "MT19937"
+      },
+      "sources": {
+        "objetivo-2/herramientas/datos_ajuste.py": "2c89d770cc3d7b4fee66c977ff89af8faf6ab6bbca3ed12fe1f2a98734aa167f",
+        "objetivo-2/herramientas/ejecutar_ajuste.py": "8d49980e4e1c4b96347c81203a820cc5784b57473079562decbedd747fe11abb",
+        "objetivo-2/herramientas/perdida_cuentas_regionales.py": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+        "objetivo-2/herramientas/evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524",
+        "objetivo-2/implementacion/models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+        "objetivo-2/implementacion/scripts/evaluation/metrics.py": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42",
+        "objetivo-2/herramientas/revisar_ajuste.py": "294e4291b3bd10d6c0f597c9145867c4ac7f33cfd0bdacd5c78c3c4cee5ea750",
+        "objetivo-2/herramientas/evaluar_ajuste.py": "f0840197c20ff848dd79bfe3385eabc4beeaff632da67c580961bb14c13e721b",
+        "objetivo-2/herramientas/ejecutar_ajuste_cgan.py": "461ae0f28234452c792800387a6f3d6cf5592177fb146972420befe841ab5de2",
+        "objetivo-2/herramientas/revisar_ajuste_cgan.py": "7229b197add21e6d3d772c0285ded45ed75f7db725e066fb3abb6e05de6dd294",
+        "objetivo-2/herramientas/evaluar_ajuste_cgan.py": "0dc1a9a6d4334490d3a99ebf3a00e6ecfd7e4015712d18488134dc0a36b85ac3",
+        "objetivo-2/implementacion/models/patch_critic.py": "41fbbb005fd152d3ddf10e50721ac855108907714e150632d1942275736b84d8",
+        "objetivo-2/implementacion/scripts/training/losses.py": "8d950c772d923a98343b8cda787b28567df7d2bbd09c62f50085efb13f96c0a5"
+      },
+      "diagnostic_sha256": "f95ea93a101cd91b8a4bf5b76932bf76a8ad3f0f5699336ce82e3006351b61d9",
+      "comparison": {
+        "repetida": {
+          "boundary": {
+            "values_equal": true,
+            "different_values": [],
+            "metadata_equal": true,
+            "different_metadata": []
+          },
+          "first_difference": null,
+          "differing_events": 0,
+          "prediction_max_abs": 0,
+          "prediction_mean_abs": 0,
+          "validation_left": {
+            "n": 8,
+            "ssim": 0.8222233944364032,
+            "psnr": 30.930139913875244
+          },
+          "validation_right": {
+            "n": 8,
+            "ssim": 0.8222233944364032,
+            "psnr": 30.930139913875244
+          }
+        },
+        "recarga": {
+          "boundary": {
+            "values_equal": true,
+            "different_values": [],
+            "metadata_equal": true,
+            "different_metadata": []
+          },
+          "first_difference": null,
+          "differing_events": 0,
+          "prediction_max_abs": 0,
+          "prediction_mean_abs": 0,
+          "validation_left": {
+            "n": 8,
+            "ssim": 0.8222233944364032,
+            "psnr": 30.930139913875244
+          },
+          "validation_right": {
+            "n": 8,
+            "ssim": 0.8222233944364032,
+            "psnr": 30.930139913875244
+          }
+        },
+        "reanudada": {
+          "boundary": {
+            "values_equal": true,
+            "different_values": [],
+            "metadata_equal": true,
+            "different_metadata": []
+          },
+          "first_difference": null,
+          "differing_events": 0,
+          "prediction_max_abs": 0,
+          "prediction_mean_abs": 0,
+          "validation_left": {
+            "n": 8,
+            "ssim": 0.8222233944364032,
+            "psnr": 30.930139913875244
+          },
+          "validation_right": {
+            "n": 8,
+            "ssim": 0.8222233944364032,
+            "psnr": 30.930139913875244
+          }
+        }
+      },
+      "matches_original_uninstrumented_runner": {
+        "generator": true,
+        "critic": true,
+        "opt_g": true,
+        "opt_d": true,
+        "rng": true
+      },
+      "final_generator_sha256": "e1e3402a7458987af6ab0f06603e2bca2a7cf3932ef0c422edb589736dbb3f7e",
+      "final_critic_sha256": "58495d5a23aba4dfd21a8d47e3ec9b33eee83c74b6b187205119b23d55d03618"
+    },
+    "C1": {
+      "environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "torch": "2.6.0+cpu",
+        "cuda": null,
+        "device": "cpu",
+        "gpu": null,
+        "threads": 2,
+        "deterministic": true,
+        "cudnn": null,
+        "cublas_workspace": ":4096:8",
+        "tf32": false,
+        "numpy_rng": "MT19937",
+        "python_rng": "MT19937"
+      },
+      "sources": {
+        "objetivo-2/herramientas/datos_ajuste.py": "2c89d770cc3d7b4fee66c977ff89af8faf6ab6bbca3ed12fe1f2a98734aa167f",
+        "objetivo-2/herramientas/ejecutar_ajuste.py": "8d49980e4e1c4b96347c81203a820cc5784b57473079562decbedd747fe11abb",
+        "objetivo-2/herramientas/perdida_cuentas_regionales.py": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+        "objetivo-2/herramientas/evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524",
+        "objetivo-2/implementacion/models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+        "objetivo-2/implementacion/scripts/evaluation/metrics.py": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42",
+        "objetivo-2/herramientas/revisar_ajuste.py": "294e4291b3bd10d6c0f597c9145867c4ac7f33cfd0bdacd5c78c3c4cee5ea750",
+        "objetivo-2/herramientas/evaluar_ajuste.py": "f0840197c20ff848dd79bfe3385eabc4beeaff632da67c580961bb14c13e721b",
+        "objetivo-2/herramientas/ejecutar_ajuste_cgan.py": "461ae0f28234452c792800387a6f3d6cf5592177fb146972420befe841ab5de2",
+        "objetivo-2/herramientas/revisar_ajuste_cgan.py": "7229b197add21e6d3d772c0285ded45ed75f7db725e066fb3abb6e05de6dd294",
+        "objetivo-2/herramientas/evaluar_ajuste_cgan.py": "0dc1a9a6d4334490d3a99ebf3a00e6ecfd7e4015712d18488134dc0a36b85ac3",
+        "objetivo-2/implementacion/models/patch_critic.py": "41fbbb005fd152d3ddf10e50721ac855108907714e150632d1942275736b84d8",
+        "objetivo-2/implementacion/scripts/training/losses.py": "8d950c772d923a98343b8cda787b28567df7d2bbd09c62f50085efb13f96c0a5"
+      },
+      "diagnostic_sha256": "f95ea93a101cd91b8a4bf5b76932bf76a8ad3f0f5699336ce82e3006351b61d9",
+      "comparison": {
+        "repetida": {
+          "boundary": {
+            "values_equal": true,
+            "different_values": [],
+            "metadata_equal": true,
+            "different_metadata": []
+          },
+          "first_difference": null,
+          "differing_events": 0,
+          "prediction_max_abs": 0,
+          "prediction_mean_abs": 0,
+          "validation_left": {
+            "n": 8,
+            "ssim": 0.822067458226502,
+            "psnr": 30.908079302714945
+          },
+          "validation_right": {
+            "n": 8,
+            "ssim": 0.822067458226502,
+            "psnr": 30.908079302714945
+          }
+        },
+        "recarga": {
+          "boundary": {
+            "values_equal": true,
+            "different_values": [],
+            "metadata_equal": true,
+            "different_metadata": []
+          },
+          "first_difference": null,
+          "differing_events": 0,
+          "prediction_max_abs": 0,
+          "prediction_mean_abs": 0,
+          "validation_left": {
+            "n": 8,
+            "ssim": 0.822067458226502,
+            "psnr": 30.908079302714945
+          },
+          "validation_right": {
+            "n": 8,
+            "ssim": 0.822067458226502,
+            "psnr": 30.908079302714945
+          }
+        },
+        "reanudada": {
+          "boundary": {
+            "values_equal": true,
+            "different_values": [],
+            "metadata_equal": true,
+            "different_metadata": []
+          },
+          "first_difference": null,
+          "differing_events": 0,
+          "prediction_max_abs": 0,
+          "prediction_mean_abs": 0,
+          "validation_left": {
+            "n": 8,
+            "ssim": 0.822067458226502,
+            "psnr": 30.908079302714945
+          },
+          "validation_right": {
+            "n": 8,
+            "ssim": 0.822067458226502,
+            "psnr": 30.908079302714945
+          }
+        }
+      },
+      "matches_original_uninstrumented_runner": {
+        "generator": true,
+        "critic": true,
+        "opt_g": true,
+        "opt_d": true,
+        "rng": true
+      },
+      "final_generator_sha256": "9ada0127b374956aafd44449d1a0f2fcdf968cc3467972f9017e82481949f732",
+      "final_critic_sha256": "1dbbfe41abdafaa7ea9f3e6f7fc8a36534724c9d228a6a1b75993b5b84e7214c"
+    }
+  },
+  "limitations": [
+    "CPU únicamente; no reproduce ni resuelve la incidencia CUDA.",
+    "Copias CPU y sincronizaciones introducidas por la instrumentación."
+  ]
+}
