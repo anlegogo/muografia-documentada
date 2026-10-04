@@ -1,6 +1,6 @@
 # Ejecución de la continuación cGAN C0/C1 al 5 %
 
-**Actualización 2026-10-03 — CG-04:** ante el fallo de recuperación GPU reportado en `b0ad0b1`, no ejecutar las continuaciones de cinco épocas. Seguir primero el [diagnóstico dirigido](DIAGNOSTICO_RECUPERACION_CGAN.md). Se conserva el criterio exacto de aceptación; el diagnóstico no emite una autorización GPU.
+**Actualización 2026-10-03 — CG-04:** la recepción y auditoría de los binarios está completa. No ejecutar todavía las continuaciones de cinco épocas. El siguiente paso es la [separación de gradientes CG-04b](DIAGNOSTICO_GRADIENTES_CG04B.md). Se conserva el criterio exacto de aceptación; este diagnóstico no emite autorización GPU.
 
 Fecha: 2026-10-03, Colombia. **Estado: implementación y recuperación exacta verificadas en CPU; comprobación CUDA y ensayo de cinco épocas pendientes.**
 

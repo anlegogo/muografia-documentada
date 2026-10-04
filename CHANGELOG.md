@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## 2026-10-03 — Preparación de CG-04b
+
+- Se implementó una prueba independiente para separar gradientes Wasserstein y penalización, con controles original/repetida/total y procesos continuos/nuevos. No se alteraron el entrenamiento ni la aceptación GPU.
+- Se verificaron ocho controles matemáticos y funcionales y veinte procesos CPU con C0/C1; la evidencia cuantifica también el residuo de reconstrucción de la suma.
+- La [guía CG-04b](objetivo-2/DIAGNOSTICO_GRADIENTES_CG04B.md) fija propósito, ecuaciones, comandos, entregables y límites. CG-04 continúa parcial y la prueba L40S queda pendiente.
+
 ## 2026-10-03 — Auditoría independiente de binarios CG-04
 
 - Se descargaron y verificaron los 22 binarios (3 933 371 732 bytes), sus estados frente a las trazas y SSIM/PSNR contra referencias verificadas.
