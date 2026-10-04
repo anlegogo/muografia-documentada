@@ -38,6 +38,6 @@ El evento señalado delimita la siguiente comprobación: el backward de la pérd
 
 ## Archivos binarios
 
-Los 22 binarios (`epoch1.pt`, `epoch2.pt` y `predicciones-val.npy` de las ocho ejecuciones) suman 3,94 GB y no se versionan. Sus rutas, tamaños y huellas están en [binarios-drive.txt](datos/diagnostico-cg04/binarios-drive.txt). Se descargaron del pod y se verificaron contra los inventarios `archivos.json`: 57 de 57 archivos en C0 y 57 de 57 en C1. El enlace de Drive se agregará cuando se suban.
+Los 22 binarios (`epoch1.pt`, `epoch2.pt` y `predicciones-val.npy` de las ocho ejecuciones) suman 3,94 GB y no se versionan. Sus rutas, tamaños y huellas están en [binarios-drive.txt](datos/diagnostico-cg04/binarios-drive.txt). Se descargaron del pod y se verificaron contra los inventarios `archivos.json`: 57 de 57 archivos en C0 y 57 de 57 en C1. **Copia en Drive:** [carpeta diagnostico-cgan](https://drive.google.com/drive/folders/1Jjg7MofdRF4QpdcARYW1RvgUgrO8Y6I6), con las carpetas completas C0 y C1 (131 archivos, incluidos los 22 binarios listados). Las huellas se verifican descargando desde el enlace público; el resultado se registra en [verificacion-drive-cg04.json](datos/diagnostico-cg04/verificacion-drive-cg04.json).
 
 Los checkpoints y predicciones de la prueba técnica original no se conservaron: los pods de esos intentos se apagaron y solo se copiaron registros, historiales y JSON.
