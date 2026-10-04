@@ -1,5 +1,14 @@
 # Registro de cambios
 
+## 2026-10-03 — Implementación y verificación CPU de C0/C1
+
+- Por autorización de la dirección se implementó el diseño de continuación cGAN, conservando generador/crítico iniciales, cinco actualizaciones D por G, dos optimizadores nuevos y pérdida regional solo en G. No se modificó el motor histórico ni el ajuste U-Net.
+- Diecinueve controles satisfactorios; cuatro ejecuciones completas verifican recuperación exacta de G, D, ambos Adam, todos los RNG utilizados, registros y predicciones. Batería definitiva: 16 actualizaciones G/80 D; comprobación preliminar adicional: 2 G/10 D. [Guía](objetivo-2/INSTRUCCIONES_CONTINUACION_CGAN_F05.md) y [evidencia](objetivo-2/evidencias/integracion-cgan-ajuste-v1.json).
+- Se verificaron evaluación y figuras técnicas, tabla por anomalía frente a C0 y al modelo inicial, y ruta completa con fixtures del piloto anterior. El resultado técnico no acredita calidad: no se ejecutó el ensayo de cinco épocas.
+- Se conservaron el entorno temporal aislado y las fuentes originales verificadas desde objetos Git, corrigiendo diferencias de extracción antes de la batería definitiva. No se reparó el índice Git original ni se abrieron imágenes reservadas.
+- CG-01 verificado; CG-02 CPU verificado/GPU pendiente; CG-03 preparado bajo aceptación GPU y resultados pendientes. Próximo paso: estudiantes comprueban CUDA y, si se acepta y hay recursos disponibles, completan C0/C1 y entregan todos los resultados. OE2 continúa abierto.
+
+
 ## 2026-10-03 — Revisión independiente del ajuste a6aa6b8
 
 - Por autorización de la dirección se descargaron doce binarios de Drive y se verificaron tamaños/huellas; 137 textos coinciden con el inventario. Se auditaron seis checkpoints y se confirmó recuperación exacta en las cuatro ejecuciones técnicas. [Informe](objetivo-2/REVISION_AJUSTE_A6AA6B8.md).

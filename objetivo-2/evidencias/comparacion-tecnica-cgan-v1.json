@@ -1,0 +1,1767 @@
+{
+  "schema": "oe2-cgan-ajuste-comparison-v1",
+  "stage": "tecnica",
+  "quality_evaluation": false,
+  "heldout_opened": false,
+  "mask_manifest_sha256": "762b423a757da5dee2dcea58664a9b9ef34bba84db749d8fb2880e523ef9776d",
+  "images": [
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "realization": 0,
+      "model": "C0",
+      "ssim": 0.7996792475210744,
+      "psnr": 30.53502744137491
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "realization": 1,
+      "model": "C0",
+      "ssim": 0.7975888050763271,
+      "psnr": 30.516281025018625
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "realization": 0,
+      "model": "C1",
+      "ssim": 0.7994904902557607,
+      "psnr": 30.507376243383803
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "realization": 1,
+      "model": "C1",
+      "ssim": 0.7974166227343956,
+      "psnr": 30.490718078634572
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "realization": 0,
+      "model": "entrada",
+      "ssim": 0.7256979729579843,
+      "psnr": 23.772464014007113
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "realization": 1,
+      "model": "entrada",
+      "ssim": 0.7255028791151179,
+      "psnr": 23.756421053159094
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "realization": 0,
+      "model": "C0",
+      "ssim": 0.8395314008792718,
+      "psnr": 31.289751828382446
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "realization": 1,
+      "model": "C0",
+      "ssim": 0.8378651081655795,
+      "psnr": 31.29460491368271
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "realization": 0,
+      "model": "C1",
+      "ssim": 0.8393973610952603,
+      "psnr": 31.268573455551905
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "realization": 1,
+      "model": "C1",
+      "ssim": 0.8377411989708414,
+      "psnr": 31.270787869840845
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "realization": 0,
+      "model": "entrada",
+      "ssim": 0.7768080411143284,
+      "psnr": 24.743511684103616
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "realization": 1,
+      "model": "entrada",
+      "ssim": 0.7749687699530423,
+      "psnr": 24.835709687341577
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "realization": 0,
+      "model": "C0",
+      "ssim": 0.82584753155899,
+      "psnr": 30.94875403649025
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "realization": 1,
+      "model": "C0",
+      "ssim": 0.8274493052802081,
+      "psnr": 30.9642726760643
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "realization": 0,
+      "model": "C1",
+      "ssim": 0.8256844362134861,
+      "psnr": 30.929852769453486
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "realization": 1,
+      "model": "C1",
+      "ssim": 0.8272873038454597,
+      "psnr": 30.94310787504831
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "realization": 0,
+      "model": "entrada",
+      "ssim": 0.7529634685434727,
+      "psnr": 23.91078019360739
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "realization": 1,
+      "model": "entrada",
+      "ssim": 0.7549607329510627,
+      "psnr": 24.006943214241787
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "realization": 0,
+      "model": "C0",
+      "ssim": 0.8243312567975025,
+      "psnr": 30.917922335780105
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "realization": 1,
+      "model": "C0",
+      "ssim": 0.8254945002122718,
+      "psnr": 30.974505054208596
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "realization": 0,
+      "model": "C1",
+      "ssim": 0.8241752354721024,
+      "psnr": 30.899450675904916
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "realization": 1,
+      "model": "C1",
+      "ssim": 0.8253470172247095,
+      "psnr": 30.95476745390174
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "realization": 0,
+      "model": "entrada",
+      "ssim": 0.7539743552731707,
+      "psnr": 23.966507472803592
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "realization": 1,
+      "model": "entrada",
+      "ssim": 0.7536642346048411,
+      "psnr": 23.977631039692433
+    }
+  ],
+  "regions": [
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "cielo",
+      "family": 0,
+      "model": "entrada",
+      "pixels": 42426,
+      "reference_sum": 110636552.0,
+      "bias": {
+        "mean": 0.0002933750140731067,
+        "mean_absolute": 0.0002933750140731067,
+        "min": 0.00016023637468383866,
+        "max": 0.0004265136534623747
+      },
+      "mae": {
+        "mean": 0.06742989423603873,
+        "mean_absolute": 0.06742989423603873,
+        "min": 0.06724647384166492,
+        "max": 0.06761331463041256
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "cielo",
+      "family": 0,
+      "model": "C0",
+      "pixels": 42426,
+      "reference_sum": 110636552.0,
+      "bias": {
+        "mean": 0.04880814675496155,
+        "mean_absolute": 0.04880814675496155,
+        "min": 0.047306804553263,
+        "max": 0.05030948895666009
+      },
+      "mae": {
+        "mean": 0.050477752636823844,
+        "mean_absolute": 0.050477752636823844,
+        "min": 0.04914051391725591,
+        "max": 0.05181499135639179
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "cielo",
+      "family": 0,
+      "model": "C1",
+      "pixels": 42426,
+      "reference_sum": 110636552.0,
+      "bias": {
+        "mean": 0.047366646337931716,
+        "mean_absolute": 0.047366646337931716,
+        "min": 0.04586794771959092,
+        "max": 0.04886534495627251
+      },
+      "mae": {
+        "mean": 0.049151613241368214,
+        "mean_absolute": 0.049151613241368214,
+        "min": 0.047829527155109394,
+        "max": 0.05047369932762703
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "family": 1,
+      "model": "entrada",
+      "pixels": 17625,
+      "reference_sum": 61636.0,
+      "bias": {
+        "mean": -0.018917515737555974,
+        "mean_absolute": 0.018917515737555974,
+        "min": -0.022973586864819262,
+        "max": -0.014861444610292686
+      },
+      "mae": {
+        "mean": 1.215458498280226,
+        "mean_absolute": 1.215458498280226,
+        "min": 1.213381789863067,
+        "max": 1.2175352066973846
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "family": 1,
+      "model": "C0",
+      "pixels": 17625,
+      "reference_sum": 61636.0,
+      "bias": {
+        "mean": 0.036631835929294206,
+        "mean_absolute": 0.036631835929294206,
+        "min": 0.030076166718414427,
+        "max": 0.043187505140173985
+      },
+      "mae": {
+        "mean": 0.46758879460714076,
+        "mean_absolute": 0.46758879460714076,
+        "min": 0.4668002776096263,
+        "max": 0.4683773116046552
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "family": 1,
+      "model": "C1",
+      "pixels": 17625,
+      "reference_sum": 61636.0,
+      "bias": {
+        "mean": 0.0450613247599181,
+        "mean_absolute": 0.0450613247599181,
+        "min": 0.038509789584319075,
+        "max": 0.05161285993551713
+      },
+      "mae": {
+        "mean": 0.47104590688720677,
+        "mean_absolute": 0.47104590688720677,
+        "min": 0.4701009095130107,
+        "max": 0.47199090426140283
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "borde_cono",
+      "family": 2,
+      "model": "entrada",
+      "pixels": 2326,
+      "reference_sum": 1081907.0,
+      "bias": {
+        "mean": -0.002289475897651092,
+        "mean_absolute": 0.002930011544430344,
+        "min": -0.005219487442081436,
+        "max": 0.0006405356467792518
+      },
+      "mae": {
+        "mean": 0.11292652695656835,
+        "mean_absolute": 0.11292652695656835,
+        "min": 0.11224162520438448,
+        "max": 0.11361142870875224
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "borde_cono",
+      "family": 2,
+      "model": "C0",
+      "pixels": 2326,
+      "reference_sum": 1081907.0,
+      "bias": {
+        "mean": -0.009387468490145167,
+        "mean_absolute": 0.009387468490145167,
+        "min": -0.011375937828444616,
+        "max": -0.007398999151845717
+      },
+      "mae": {
+        "mean": 0.13806739499961082,
+        "mean_absolute": 0.13806739499961082,
+        "min": 0.13726875020298,
+        "max": 0.13886603979624165
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "borde_cono",
+      "family": 2,
+      "model": "C1",
+      "pixels": 2326,
+      "reference_sum": 1081907.0,
+      "bias": {
+        "mean": -0.0055604020376611015,
+        "mean_absolute": 0.0055604020376611015,
+        "min": -0.007572702809040913,
+        "max": -0.0035481012662812905
+      },
+      "mae": {
+        "mean": 0.1378214265879556,
+        "mean_absolute": 0.1378214265879556,
+        "min": 0.1370363419228911,
+        "max": 0.1386065112530201
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "family": 3,
+      "model": "entrada",
+      "pixels": 1017,
+      "reference_sum": 2936.0,
+      "bias": {
+        "mean": 0.02861035422343324,
+        "mean_absolute": 0.047683923705722074,
+        "min": -0.01907356948228883,
+        "max": 0.07629427792915532
+      },
+      "mae": {
+        "mean": 1.4516348773841963,
+        "mean_absolute": 1.4516348773841963,
+        "min": 1.423024523160763,
+        "max": 1.4802452316076293
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "family": 3,
+      "model": "C0",
+      "pixels": 1017,
+      "reference_sum": 2936.0,
+      "bias": {
+        "mean": 0.14837556204770444,
+        "mean_absolute": 0.14837556204770444,
+        "min": 0.12464405695448175,
+        "max": 0.17210706714092713
+      },
+      "mae": {
+        "mean": 0.5844568443756148,
+        "mean_absolute": 0.5844568443756148,
+        "min": 0.5828559274389565,
+        "max": 0.5860577613122733
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "family": 3,
+      "model": "C1",
+      "pixels": 1017,
+      "reference_sum": 2936.0,
+      "bias": {
+        "mean": 0.21938812599581597,
+        "mean_absolute": 0.21938812599581597,
+        "min": 0.19074308105899343,
+        "max": 0.24803317093263855
+      },
+      "mae": {
+        "mean": 0.6410805273853573,
+        "mean_absolute": 0.6410805273853573,
+        "min": 0.6385539626424281,
+        "max": 0.6436070921282865
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "cielo",
+      "family": 0,
+      "model": "entrada",
+      "pixels": 46346,
+      "reference_sum": 115295349.0,
+      "bias": {
+        "mean": -0.00016678036162586228,
+        "mean_absolute": 0.00016678036162586228,
+        "min": -0.00030069729872624784,
+        "max": -3.286342452547674e-05
+      },
+      "mae": {
+        "mean": 0.06853806392485096,
+        "mean_absolute": 0.06853806392485096,
+        "min": 0.06835449190582701,
+        "max": 0.0687216359438749
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "cielo",
+      "family": 0,
+      "model": "C0",
+      "pixels": 46346,
+      "reference_sum": 115295349.0,
+      "bias": {
+        "mean": 0.005560403484876964,
+        "mean_absolute": 0.005560403484876964,
+        "min": 0.0006857493789739209,
+        "max": 0.010435057590780008
+      },
+      "mae": {
+        "mean": 0.023284419455772226,
+        "mean_absolute": 0.023284419455772226,
+        "min": 0.022478587070470336,
+        "max": 0.02409025184107412
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "cielo",
+      "family": 0,
+      "model": "C1",
+      "pixels": 46346,
+      "reference_sum": 115295349.0,
+      "bias": {
+        "mean": 0.005586966218782335,
+        "mean_absolute": 0.005586966218782335,
+        "min": 0.0007121613941893551,
+        "max": 0.010461771043375314
+      },
+      "mae": {
+        "mean": 0.023296189833633622,
+        "mean_absolute": 0.023296189833633622,
+        "min": 0.022487554809802947,
+        "max": 0.024104824857464298
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "family": 1,
+      "model": "entrada",
+      "pixels": 14844,
+      "reference_sum": 52021.0,
+      "bias": {
+        "mean": 0.012475730954806712,
+        "mean_absolute": 0.01403279444839584,
+        "min": -0.0015570634935891275,
+        "max": 0.026508525403202553
+      },
+      "mae": {
+        "mean": 1.2244862651621462,
+        "mean_absolute": 1.2244862651621462,
+        "min": 1.2174506449318545,
+        "max": 1.2315218853924377
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "family": 1,
+      "model": "C0",
+      "pixels": 14844,
+      "reference_sum": 52021.0,
+      "bias": {
+        "mean": 0.004052864609422283,
+        "mean_absolute": 0.016735624653624027,
+        "min": -0.012682760044201744,
+        "max": 0.02078848926304631
+      },
+      "mae": {
+        "mean": 0.45340339274021346,
+        "mean_absolute": 0.45340339274021346,
+        "min": 0.45318288851785277,
+        "max": 0.45362389696257416
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "family": 1,
+      "model": "C1",
+      "pixels": 14844,
+      "reference_sum": 52021.0,
+      "bias": {
+        "mean": 0.016282066897624764,
+        "mean_absolute": 0.017157107529455817,
+        "min": -0.0008750406318310536,
+        "max": 0.03343917442708058
+      },
+      "mae": {
+        "mean": 0.45825595802469554,
+        "mean_absolute": 0.45825595802469554,
+        "min": 0.45749636611714456,
+        "max": 0.4590155499322466
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "borde_cono",
+      "family": 2,
+      "model": "entrada",
+      "pixels": 2240,
+      "reference_sum": 833050.0,
+      "bias": {
+        "mean": -0.0012604285457055399,
+        "mean_absolute": 0.0012604285457055399,
+        "min": -0.0017405918012124123,
+        "max": -0.0007802652901986675
+      },
+      "mae": {
+        "mean": 0.12921313246503813,
+        "mean_absolute": 0.12921313246503813,
+        "min": 0.1278386651461497,
+        "max": 0.13058759978392653
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "borde_cono",
+      "family": 2,
+      "model": "C0",
+      "pixels": 2240,
+      "reference_sum": 833050.0,
+      "bias": {
+        "mean": -0.024155538252119177,
+        "mean_absolute": 0.024155538252119177,
+        "min": -0.03205491707969767,
+        "max": -0.01625615942454069
+      },
+      "mae": {
+        "mean": 0.1345740280057931,
+        "mean_absolute": 0.1345740280057931,
+        "min": 0.13225263083262967,
+        "max": 0.13689542517895653
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "borde_cono",
+      "family": 2,
+      "model": "C1",
+      "pixels": 2240,
+      "reference_sum": 833050.0,
+      "bias": {
+        "mean": -0.01738360412135345,
+        "mean_absolute": 0.01738360412135345,
+        "min": -0.02539004657680456,
+        "max": -0.00937716166590234
+      },
+      "mae": {
+        "mean": 0.1345783940643262,
+        "mean_absolute": 0.1345783940643262,
+        "min": 0.13265485324265197,
+        "max": 0.13650193488600046
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "anomalia_0_cavity",
+      "family": 3,
+      "model": "entrada",
+      "pixels": 354,
+      "reference_sum": 477.0,
+      "bias": {
+        "mean": -0.03563941299790356,
+        "mean_absolute": 0.16771488469601675,
+        "min": -0.20335429769392033,
+        "max": 0.1320754716981132
+      },
+      "mae": {
+        "mean": 1.7044025157232703,
+        "mean_absolute": 1.7044025157232703,
+        "min": 1.5870020964360587,
+        "max": 1.821802935010482
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "anomalia_0_cavity",
+      "family": 3,
+      "model": "C0",
+      "pixels": 354,
+      "reference_sum": 477.0,
+      "bias": {
+        "mean": -0.0978716362582954,
+        "mean_absolute": 0.0978716362582954,
+        "min": -0.14694748790239065,
+        "max": -0.04879578461420015
+      },
+      "mae": {
+        "mean": 0.8584850246718392,
+        "mean_absolute": 0.8584850246718392,
+        "min": 0.8202564728396033,
+        "max": 0.8967135765040751
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "anomalia_0_cavity",
+      "family": 3,
+      "model": "C1",
+      "pixels": 354,
+      "reference_sum": 477.0,
+      "bias": {
+        "mean": -0.09740772969222546,
+        "mean_absolute": 0.09740772969222546,
+        "min": -0.1463276399869438,
+        "max": -0.04848781939750709
+      },
+      "mae": {
+        "mean": 0.860342566075655,
+        "mean_absolute": 0.860342566075655,
+        "min": 0.8214248367355929,
+        "max": 0.8992602954157171
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "cielo",
+      "family": 0,
+      "model": "entrada",
+      "pixels": 44724,
+      "reference_sum": 112843335.0,
+      "bias": {
+        "mean": 0.00022522375823082509,
+        "mean_absolute": 0.00032974920494861304,
+        "min": -0.00010452544671778798,
+        "max": 0.0005549729631794382
+      },
+      "mae": {
+        "mean": 0.06797440894493237,
+        "mean_absolute": 0.06797440894493237,
+        "min": 0.06757185083195211,
+        "max": 0.06837696705791263
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "cielo",
+      "family": 0,
+      "model": "C0",
+      "pixels": 44724,
+      "reference_sum": 112843335.0,
+      "bias": {
+        "mean": 0.06299548338773617,
+        "mean_absolute": 0.06299548338773617,
+        "min": 0.05674982642215902,
+        "max": 0.06924114035331332
+      },
+      "mae": {
+        "mean": 0.06383469337124176,
+        "mean_absolute": 0.06383469337124176,
+        "min": 0.05783135648273819,
+        "max": 0.06983803025974533
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "cielo",
+      "family": 0,
+      "model": "C1",
+      "pixels": 44724,
+      "reference_sum": 112843335.0,
+      "bias": {
+        "mean": 0.062460918710355987,
+        "mean_absolute": 0.062460918710355987,
+        "min": 0.05620540884123024,
+        "max": 0.06871642857948174
+      },
+      "mae": {
+        "mean": 0.06329835375738033,
+        "mean_absolute": 0.06329835375738033,
+        "min": 0.057286957614018016,
+        "max": 0.06930974990074264
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "family": 1,
+      "model": "entrada",
+      "pixels": 14827,
+      "reference_sum": 66145.0,
+      "bias": {
+        "mean": 0.007181192833925466,
+        "mean_absolute": 0.014513568674880944,
+        "min": -0.007332375840955477,
+        "max": 0.02169476150880641
+      },
+      "mae": {
+        "mean": 1.1505480384004838,
+        "mean_absolute": 1.1505480384004838,
+        "min": 1.1492478645400257,
+        "max": 1.151848212260942
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "family": 1,
+      "model": "C0",
+      "pixels": 14827,
+      "reference_sum": 66145.0,
+      "bias": {
+        "mean": -0.08663892431745701,
+        "mean_absolute": 0.08663892431745701,
+        "min": -0.10162424922313142,
+        "max": -0.0716535994117826
+      },
+      "mae": {
+        "mean": 0.4165215423390148,
+        "mean_absolute": 0.4165215423390148,
+        "min": 0.41608740483903617,
+        "max": 0.4169556798389934
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "roca_sin_anomalia",
+      "family": 1,
+      "model": "C1",
+      "pixels": 14827,
+      "reference_sum": 66145.0,
+      "bias": {
+        "mean": -0.07748955896726566,
+        "mean_absolute": 0.07748955896726566,
+        "min": -0.09273543445317854,
+        "max": -0.06224368348135277
+      },
+      "mae": {
+        "mean": 0.4183075079234332,
+        "mean_absolute": 0.4183075079234332,
+        "min": 0.4181760054215449,
+        "max": 0.4184390104253215
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "borde_cono",
+      "family": 2,
+      "model": "entrada",
+      "pixels": 2392,
+      "reference_sum": 1036456.0,
+      "bias": {
+        "mean": 0.004017536682695647,
+        "mean_absolute": 0.004017536682695647,
+        "min": 0.0035544200622119994,
+        "max": 0.004480653303179295
+      },
+      "mae": {
+        "mean": 0.12236505939470657,
+        "mean_absolute": 0.12236505939470657,
+        "min": 0.12222998371373218,
+        "max": 0.12250013507568097
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "borde_cono",
+      "family": 2,
+      "model": "C0",
+      "pixels": 2392,
+      "reference_sum": 1036456.0,
+      "bias": {
+        "mean": -0.0102230296401824,
+        "mean_absolute": 0.0102230296401824,
+        "min": -0.016608609423378752,
+        "max": -0.0038374498569860483
+      },
+      "mae": {
+        "mean": 0.11602579193305664,
+        "mean_absolute": 0.11602579193305664,
+        "min": 0.11518918224567262,
+        "max": 0.11686240162044065
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "borde_cono",
+      "family": 2,
+      "model": "C1",
+      "pixels": 2392,
+      "reference_sum": 1036456.0,
+      "bias": {
+        "mean": -0.00620946416798635,
+        "mean_absolute": 0.006354677294080778,
+        "min": -0.012564141462067129,
+        "max": 0.00014521312609442816
+      },
+      "mae": {
+        "mean": 0.11568565936170214,
+        "mean_absolute": 0.11568565936170214,
+        "min": 0.11489586556297868,
+        "max": 0.11647545316042561
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "family": 3,
+      "model": "entrada",
+      "pixels": 782,
+      "reference_sum": 2469.0,
+      "bias": {
+        "mean": 0.06520858647225597,
+        "mean_absolute": 0.06520858647225597,
+        "min": 0.0044552450384771165,
+        "max": 0.12596192790603483
+      },
+      "mae": {
+        "mean": 1.4941271769947346,
+        "mean_absolute": 1.4941271769947346,
+        "min": 1.4333738355609558,
+        "max": 1.5548805184285135
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "family": 3,
+      "model": "C0",
+      "pixels": 782,
+      "reference_sum": 2469.0,
+      "bias": {
+        "mean": -0.030704594240179496,
+        "mean_absolute": 0.030704594240179496,
+        "min": -0.05930496370602176,
+        "max": -0.0021042247743372367
+      },
+      "mae": {
+        "mean": 0.5651859108424783,
+        "mean_absolute": 0.5651859108424783,
+        "min": 0.5587932629209553,
+        "max": 0.5715785587640012
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "family": 3,
+      "model": "C1",
+      "pixels": 782,
+      "reference_sum": 2469.0,
+      "bias": {
+        "mean": 0.03729822847219201,
+        "mean_absolute": 0.03791272421416095,
+        "min": -0.0006144957419689327,
+        "max": 0.07521095268635296
+      },
+      "mae": {
+        "mean": 0.6241248895183626,
+        "mean_absolute": 0.6241248895183626,
+        "min": 0.6087373698367845,
+        "max": 0.6395124091999409
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_1_dense_body",
+      "family": 3,
+      "model": "entrada",
+      "pixels": 735,
+      "reference_sum": 297.0,
+      "bias": {
+        "mean": 0.27946127946127947,
+        "mean_absolute": 0.27946127946127947,
+        "min": 0.1447811447811448,
+        "max": 0.41414141414141414
+      },
+      "mae": {
+        "mean": 2.0942760942760943,
+        "mean_absolute": 2.0942760942760943,
+        "min": 1.9898989898989898,
+        "max": 2.1986531986531985
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_1_dense_body",
+      "family": 3,
+      "model": "C0",
+      "pixels": 735,
+      "reference_sum": 297.0,
+      "bias": {
+        "mean": -0.21953203732367757,
+        "mean_absolute": 0.21953203732367757,
+        "min": -0.22606344024015035,
+        "max": -0.2130006344072048
+      },
+      "mae": {
+        "mean": 1.233937103047784,
+        "mean_absolute": 1.233937103047784,
+        "min": 1.225367153189731,
+        "max": 1.2425070529058369
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_1_dense_body",
+      "family": 3,
+      "model": "C1",
+      "pixels": 735,
+      "reference_sum": 297.0,
+      "bias": {
+        "mean": -0.22239005272897477,
+        "mean_absolute": 0.22239005272897477,
+        "min": -0.22973708173595195,
+        "max": -0.21504302372199763
+      },
+      "mae": {
+        "mean": 1.2324375402513872,
+        "mean_absolute": 1.2324375402513872,
+        "min": 1.2230380679410966,
+        "max": 1.2418370125616778
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "cielo",
+      "family": 0,
+      "model": "entrada",
+      "pixels": 44724,
+      "reference_sum": 112830876.0,
+      "bias": {
+        "mean": -6.989221638233137e-05,
+        "mean_absolute": 0.00016316455789991386,
+        "min": -0.0002330567742822452,
+        "max": 9.327234151758248e-05
+      },
+      "mae": {
+        "mean": 0.0682628662742989,
+        "mean_absolute": 0.0682628662742989,
+        "min": 0.0680945701423075,
+        "max": 0.06843116240629028
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "cielo",
+      "family": 0,
+      "model": "C0",
+      "pixels": 44724,
+      "reference_sum": 112830876.0,
+      "bias": {
+        "mean": 0.06051540095693349,
+        "mean_absolute": 0.06051540095693349,
+        "min": 0.05660727041166652,
+        "max": 0.06442353150220045
+      },
+      "mae": {
+        "mean": 0.06140434246900241,
+        "mean_absolute": 0.06140434246900241,
+        "min": 0.05763580246199031,
+        "max": 0.06517288247601451
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "cielo",
+      "family": 0,
+      "model": "C1",
+      "pixels": 44724,
+      "reference_sum": 112830876.0,
+      "bias": {
+        "mean": 0.060017777133143144,
+        "mean_absolute": 0.060017777133143144,
+        "min": 0.05610460367405408,
+        "max": 0.06393095059223221
+      },
+      "mae": {
+        "mean": 0.060905299162038726,
+        "mean_absolute": 0.060905299162038726,
+        "min": 0.057134044572664924,
+        "max": 0.06467655375141253
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "roca_sin_anomalia",
+      "family": 1,
+      "model": "entrada",
+      "pixels": 14591,
+      "reference_sum": 64461.0,
+      "bias": {
+        "mean": -0.012891515800251314,
+        "mean_absolute": 0.012891515800251314,
+        "min": -0.02359566249360078,
+        "max": -0.002187369106901848
+      },
+      "mae": {
+        "mean": 1.1502303718527482,
+        "mean_absolute": 1.1502303718527482,
+        "min": 1.1500442127798203,
+        "max": 1.150416530925676
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "roca_sin_anomalia",
+      "family": 1,
+      "model": "C0",
+      "pixels": 14591,
+      "reference_sum": 64461.0,
+      "bias": {
+        "mean": -0.08088269929488567,
+        "mean_absolute": 0.08088269929488567,
+        "min": -0.08146661916196807,
+        "max": -0.0802987794278033
+      },
+      "mae": {
+        "mean": 0.42004307299206417,
+        "mean_absolute": 0.42004307299206417,
+        "min": 0.4191751474940187,
+        "max": 0.42091099849010966
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "roca_sin_anomalia",
+      "family": 1,
+      "model": "C1",
+      "pixels": 14591,
+      "reference_sum": 64461.0,
+      "bias": {
+        "mean": -0.06931002025807056,
+        "mean_absolute": 0.06931002025807056,
+        "min": -0.0704490325460621,
+        "max": -0.06817100797007902
+      },
+      "mae": {
+        "mean": 0.42416032913535023,
+        "mean_absolute": 0.42416032913535023,
+        "min": 0.42269085285114383,
+        "max": 0.42562980541955664
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "borde_cono",
+      "family": 2,
+      "model": "entrada",
+      "pixels": 2392,
+      "reference_sum": 1034533.0,
+      "bias": {
+        "mean": -0.00377271677172212,
+        "mean_absolute": 0.00377271677172212,
+        "min": -0.004613675929139041,
+        "max": -0.0029317576143051984
+      },
+      "mae": {
+        "mean": 0.12143063585211877,
+        "mean_absolute": 0.12143063585211877,
+        "min": 0.12033545570803444,
+        "max": 0.12252581599620312
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "borde_cono",
+      "family": 2,
+      "model": "C0",
+      "pixels": 2392,
+      "reference_sum": 1034533.0,
+      "bias": {
+        "mean": -0.021040769459298204,
+        "mean_absolute": 0.021040769459298204,
+        "min": -0.021430911188368627,
+        "max": -0.020650627730227786
+      },
+      "mae": {
+        "mean": 0.11811469131378921,
+        "mean_absolute": 0.11811469131378921,
+        "min": 0.11769062949778357,
+        "max": 0.11853875312979487
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "borde_cono",
+      "family": 2,
+      "model": "C1",
+      "pixels": 2392,
+      "reference_sum": 1034533.0,
+      "bias": {
+        "mean": -0.01713028134074179,
+        "mean_absolute": 0.01713028134074179,
+        "min": -0.017429138778422847,
+        "max": -0.016831423903060732
+      },
+      "mae": {
+        "mean": 0.11774409303525199,
+        "mean_absolute": 0.11774409303525199,
+        "min": 0.11734799584451513,
+        "max": 0.11814019022598883
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_0_conduit",
+      "family": 3,
+      "model": "entrada",
+      "pixels": 798,
+      "reference_sum": 2697.0,
+      "bias": {
+        "mean": -0.11753800519095291,
+        "mean_absolute": 0.11753800519095291,
+        "min": -0.19911012235817574,
+        "max": -0.03596588802373007
+      },
+      "mae": {
+        "mean": 1.3103448275862069,
+        "mean_absolute": 1.3103448275862069,
+        "min": 1.2573229514275122,
+        "max": 1.3633667037449018
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_0_conduit",
+      "family": 3,
+      "model": "C0",
+      "pixels": 798,
+      "reference_sum": 2697.0,
+      "bias": {
+        "mean": -0.1511382281548468,
+        "mean_absolute": 0.1511382281548468,
+        "min": -0.17528910793178093,
+        "max": -0.12698734837791265
+      },
+      "mae": {
+        "mean": 0.4751461513037578,
+        "mean_absolute": 0.4751461513037578,
+        "min": 0.4709511625997023,
+        "max": 0.4793411400078133
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_0_conduit",
+      "family": 3,
+      "model": "C1",
+      "pixels": 798,
+      "reference_sum": 2697.0,
+      "bias": {
+        "mean": -0.1436095138724571,
+        "mean_absolute": 0.1436095138724571,
+        "min": -0.1680497087074758,
+        "max": -0.11916931903743842
+      },
+      "mae": {
+        "mean": 0.4766833925697031,
+        "mean_absolute": 0.4766833925697031,
+        "min": 0.4719129422892468,
+        "max": 0.4814538428501594
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_1_dense_body",
+      "family": 3,
+      "model": "entrada",
+      "pixels": 558,
+      "reference_sum": 257.0,
+      "bias": {
+        "mean": -0.06614785992217898,
+        "mean_absolute": 0.1556420233463035,
+        "min": -0.22178988326848248,
+        "max": 0.08949416342412451
+      },
+      "mae": {
+        "mean": 1.7859922178988326,
+        "mean_absolute": 1.7859922178988326,
+        "min": 1.6536964980544746,
+        "max": 1.9182879377431907
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_1_dense_body",
+      "family": 3,
+      "model": "C0",
+      "pixels": 558,
+      "reference_sum": 257.0,
+      "bias": {
+        "mean": -0.30516860699948795,
+        "mean_absolute": 0.30516860699948795,
+        "min": -0.30891114978891143,
+        "max": -0.30142606421006446
+      },
+      "mae": {
+        "mean": 1.1782900336871187,
+        "mean_absolute": 1.1782900336871187,
+        "min": 1.1733584689774046,
+        "max": 1.1832215983968328
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_1_dense_body",
+      "family": 3,
+      "model": "C1",
+      "pixels": 558,
+      "reference_sum": 257.0,
+      "bias": {
+        "mean": -0.30875204459905203,
+        "mean_absolute": 0.30875204459905203,
+        "min": -0.31211676994371984,
+        "max": -0.3053873192543842
+      },
+      "mae": {
+        "mean": 1.1766383450048923,
+        "mean_absolute": 1.1766383450048923,
+        "min": 1.1712630152417984,
+        "max": 1.1820136747679864
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "matched_pixels": 1007,
+      "match_fraction": 0.9901671583087512,
+      "status": "estimable",
+      "reference_contrast": -0.042303172737955363,
+      "models": {
+        "entrada": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.04368061979648474,
+            "mean_absolute": 0.04368061979648474,
+            "min": 0.04347826086956519,
+            "max": 0.0438829787234043
+          },
+          "error": {
+            "mean": 0.0859837925344401,
+            "mean_absolute": 0.0859837925344401,
+            "min": 0.08578143360752055,
+            "max": 0.08618615146135966
+          }
+        },
+        "C0": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.04628887999843545,
+            "mean_absolute": 0.04628887999843545,
+            "min": 0.04201181042898905,
+            "max": 0.05056594956788185
+          },
+          "error": {
+            "mean": 0.08859205273639081,
+            "mean_absolute": 0.08859205273639081,
+            "min": 0.08431498316694441,
+            "max": 0.09286912230583722
+          }
+        },
+        "C1": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.10169713410148973,
+            "mean_absolute": 0.10169713410148973,
+            "min": 0.1001858628372887,
+            "max": 0.10320840536569076
+          },
+          "error": {
+            "mean": 0.1440003068394451,
+            "mean_absolute": 0.1440003068394451,
+            "min": 0.14248903557524406,
+            "max": 0.14551157810364612
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "anomalia_0_cavity",
+      "matched_pixels": 354,
+      "match_fraction": 1.0,
+      "status": "estimable",
+      "reference_contrast": 0.018795386586928586,
+      "models": {
+        "entrada": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.14298323036187127,
+            "mean_absolute": 0.22065313327449249,
+            "min": -0.07766990291262121,
+            "max": 0.36363636363636376
+          },
+          "error": {
+            "mean": 0.12418784377494269,
+            "mean_absolute": 0.22065313327449249,
+            "min": -0.0964652894995498,
+            "max": 0.34484097704943517
+          }
+        },
+        "C0": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.023325570816304597,
+            "mean_absolute": 0.08379846185413597,
+            "min": -0.06047289103783138,
+            "max": 0.10712403267044057
+          },
+          "error": {
+            "mean": 0.004530184229376011,
+            "mean_absolute": 0.08379846185413597,
+            "min": -0.07926827762475996,
+            "max": 0.08832864608351199
+          }
+        },
+        "C1": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.040058334448537125,
+            "mean_absolute": 0.07626500369326406,
+            "min": -0.11632333814180118,
+            "max": 0.03620666924472693
+          },
+          "error": {
+            "mean": -0.05885372103546571,
+            "mean_absolute": 0.07626500369326406,
+            "min": -0.13511872472872977,
+            "max": 0.017411282657798344
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "matched_pixels": 522,
+      "match_fraction": 0.9849056603773585,
+      "status": "estimable",
+      "reference_contrast": -0.012117132278694043,
+      "models": {
+        "entrada": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.0424763089882263,
+            "mean_absolute": 0.0747343735043553,
+            "min": -0.1172106824925816,
+            "max": 0.032258064516129004
+          },
+          "error": {
+            "mean": -0.030359176709532254,
+            "mean_absolute": 0.0747343735043553,
+            "min": -0.10509355021388755,
+            "max": 0.044375196794823046
+          }
+        },
+        "C0": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.05742594625450981,
+            "mean_absolute": 0.05742594625450981,
+            "min": 0.033682055442864955,
+            "max": 0.08116983706615466
+          },
+          "error": {
+            "mean": 0.06954307853320385,
+            "mean_absolute": 0.06954307853320385,
+            "min": 0.045799187721559,
+            "max": 0.0932869693448487
+          }
+        },
+        "C1": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.11744569271518523,
+            "mean_absolute": 0.11744569271518523,
+            "min": 0.10023238481287478,
+            "max": 0.1346590006174957
+          },
+          "error": {
+            "mean": 0.12956282499387928,
+            "mean_absolute": 0.12956282499387928,
+            "min": 0.11234951709156882,
+            "max": 0.14677613289618974
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_1_dense_body",
+      "matched_pixels": 403,
+      "match_fraction": 1.0,
+      "status": "estimable",
+      "reference_contrast": -0.06145251396648044,
+      "models": {
+        "entrada": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.16343167701863354,
+            "mean_absolute": 0.16343167701863354,
+            "min": -0.1964285714285715,
+            "max": -0.13043478260869557
+          },
+          "error": {
+            "mean": -0.1019791630521531,
+            "mean_absolute": 0.1019791630521531,
+            "min": -0.13497605746209107,
+            "max": -0.06898226864221513
+          }
+        },
+        "C0": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.09547673223065978,
+            "mean_absolute": 0.09547673223065978,
+            "min": -0.10655062534117699,
+            "max": -0.08440283912014257
+          },
+          "error": {
+            "mean": -0.03402421826417934,
+            "mean_absolute": 0.03402421826417934,
+            "min": -0.04509811137469655,
+            "max": -0.022950325153662132
+          }
+        },
+        "C1": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.09770214002282024,
+            "mean_absolute": 0.09770214002282024,
+            "min": -0.10945274491651547,
+            "max": -0.08595153512912501
+          },
+          "error": {
+            "mean": -0.0362496260563398,
+            "mean_absolute": 0.0362496260563398,
+            "min": -0.04800023095003503,
+            "max": -0.024499021162644574
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_0_conduit",
+      "matched_pixels": 790,
+      "match_fraction": 0.9899749373433584,
+      "status": "estimable",
+      "reference_contrast": 0.010119940029984953,
+      "models": {
+        "entrada": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.08978077825365405,
+            "mean_absolute": 0.08978077825365405,
+            "min": -0.1482649842271293,
+            "max": -0.03129657228017879
+          },
+          "error": {
+            "mean": -0.099900718283639,
+            "mean_absolute": 0.099900718283639,
+            "min": -0.15838492425711426,
+            "max": -0.041416512310163744
+          }
+        },
+        "C0": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.06920374530556284,
+            "mean_absolute": 0.06920374530556284,
+            "min": -0.08671974266953775,
+            "max": -0.051687747941587925
+          },
+          "error": {
+            "mean": -0.07932368533554779,
+            "mean_absolute": 0.07932368533554779,
+            "min": -0.0968396826995227,
+            "max": -0.06180768797157288
+          }
+        },
+        "C1": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.10033365804649819,
+            "mean_absolute": 0.10033365804649819,
+            "min": -0.12063646023440544,
+            "max": -0.08003085585859093
+          },
+          "error": {
+            "mean": -0.11045359807648314,
+            "mean_absolute": 0.11045359807648314,
+            "min": -0.1307564002643904,
+            "max": -0.09015079588857589
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_1_dense_body",
+      "matched_pixels": 558,
+      "match_fraction": 1.0,
+      "status": "estimable",
+      "reference_contrast": -0.11256906077348061,
+      "models": {
+        "entrada": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": 0.14777618364418937,
+            "mean_absolute": 0.5595408895265424,
+            "min": -0.4117647058823529,
+            "max": 0.7073170731707317
+          },
+          "error": {
+            "mean": 0.26034524441767,
+            "mean_absolute": 0.5595408895265424,
+            "min": -0.2991956451088723,
+            "max": 0.8198861339442123
+          }
+        },
+        "C0": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.11058786127656639,
+            "mean_absolute": 0.11058786127656639,
+            "min": -0.14032817164387124,
+            "max": -0.08084755090926155
+          },
+          "error": {
+            "mean": 0.001981199496914221,
+            "mean_absolute": 0.029740310367304845,
+            "min": -0.027759110870390624,
+            "max": 0.031721509864219066
+          }
+        },
+        "C1": {
+          "valid_realizations": 2,
+          "zero_control_realizations": 0,
+          "contrast": {
+            "mean": -0.1110131514040889,
+            "mean_absolute": 0.1110131514040889,
+            "min": -0.13941742760474385,
+            "max": -0.08260887520343396
+          },
+          "error": {
+            "mean": 0.0015559093693917059,
+            "mean_absolute": 0.028404276200654943,
+            "min": -0.026848366831263237,
+            "max": 0.02996018557004665
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "entrada": {
+      "ssim": 0.7523175568141276,
+      "psnr": 24.121246044869576,
+      "Q_by_geometry": {
+        "geo-val-01": 0.02376393498049461,
+        "geo-val-02": 0.024057571976355135,
+        "geo-val-03": 0.0710626435393776
+      },
+      "Q": 0.03962805016540912,
+      "sky_mae": 0.06805130834503023,
+      "edge_mae": 0.12148383866710796,
+      "common_contrasts": 6,
+      "contrast_absolute_error": 0.19046534502927037
+    },
+    "C0": {
+      "ssim": 0.8222233944364032,
+      "psnr": 30.930139913875244,
+      "Q_by_geometry": {
+        "geo-val-01": 0.09250369898849932,
+        "geo-val-02": 0.05096225043385884,
+        "geo-val-03": 0.13019833924285965
+      },
+      "Q": 0.0912214295550726,
+      "sky_mae": 0.04975030198321005,
+      "edge_mae": 0.12669547656306246,
+      "common_contrasts": 6,
+      "contrast_absolute_error": 0.06417030118179377
+    },
+    "C1": {
+      "ssim": 0.822067458226502,
+      "psnr": 30.908079302714945,
+      "Q_by_geometry": {
+        "geo-val-01": 0.13222472537786703,
+        "geo-val-02": 0.05684489829492511,
+        "geo-val-03": 0.12570612476541854
+      },
+      "Q": 0.10492524947940356,
+      "sky_mae": 0.04916286399860523,
+      "edge_mae": 0.12645739326230898,
+      "common_contrasts": 6,
+      "contrast_absolute_error": 0.08748927264334438
+    },
+    "inicial_cgan": {
+      "ssim": 0.8246656874446782,
+      "psnr": 31.078981731056338,
+      "Q_by_geometry": {
+        "geo-val-01": 0.041560519986824515,
+        "geo-val-02": 0.10599634866043758,
+        "geo-val-03": 0.179928313488967
+      },
+      "Q": 0.10916172737874304,
+      "sky_mae": 0.12908159415076287,
+      "edge_mae": 0.14147295890720082,
+      "common_contrasts": 6,
+      "contrast_absolute_error": 0.05897414100043233
+    }
+  },
+  "decision": "solo_comprobacion_tecnica_no_decision_de_calidad",
+  "physical_acceptance": false,
+  "anomaly_diagnostics": {
+    "rows": 6,
+    "worse_bias_vs_C0": 4,
+    "worse_bias_vs_initial": 1,
+    "physical_acceptance": false,
+    "note": "Salvaguarda descriptiva; no cambia retrospectivamente la regla de decisi\u00f3n ni acredita calidad en etapa t\u00e9cnica."
+  },
+  "checkpoint_sha256": {
+    "C0": "c3a67fa3011d235920a9a476c5db7c53b9f1ef29e488596db98585380fc50212",
+    "C1": "5de3ade4357d1feb9b2f9683314a338829e0c223d8a3189e6fc57f56f5e53807"
+  },
+  "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+  "initial_inference_device": "cpu",
+  "initial_predictions_sha256": "81170b795a114e2e59747d270f4905a8b264adc0eb33b1b38c6ba55a6baf8320"
+}

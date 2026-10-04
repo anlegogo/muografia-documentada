@@ -1,0 +1,217 @@
+{
+  "stage": "tecnica",
+  "quality_evaluation": false,
+  "rows": [
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "pixels": 1017,
+      "reference_sum": 2936.0,
+      "models": {
+        "entrada": {
+          "signed_bias": 0.02861035422343324,
+          "absolute_mean_bias": 0.02861035422343324,
+          "mean_absolute_bias": 0.047683923705722074,
+          "spatial_mae": 1.4516348773841963
+        },
+        "C0": {
+          "signed_bias": 0.14837556204770444,
+          "absolute_mean_bias": 0.14837556204770444,
+          "mean_absolute_bias": 0.14837556204770444,
+          "spatial_mae": 0.5844568443756148
+        },
+        "C1": {
+          "signed_bias": 0.21938812599581597,
+          "absolute_mean_bias": 0.21938812599581597,
+          "mean_absolute_bias": 0.21938812599581597,
+          "spatial_mae": 0.6410805273853573
+        },
+        "inicial_cgan": {
+          "signed_bias": 0.06650530792686853,
+          "absolute_mean_bias": 0.06650530792686853,
+          "mean_absolute_bias": 0.06650530792686853,
+          "spatial_mae": 0.541964913019624
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": true
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "anomalia_0_cavity",
+      "pixels": 354,
+      "reference_sum": 477.0,
+      "models": {
+        "entrada": {
+          "signed_bias": -0.03563941299790356,
+          "absolute_mean_bias": 0.03563941299790356,
+          "mean_absolute_bias": 0.16771488469601675,
+          "spatial_mae": 1.7044025157232703
+        },
+        "C0": {
+          "signed_bias": -0.0978716362582954,
+          "absolute_mean_bias": 0.0978716362582954,
+          "mean_absolute_bias": 0.0978716362582954,
+          "spatial_mae": 0.8584850246718392
+        },
+        "C1": {
+          "signed_bias": -0.09740772969222546,
+          "absolute_mean_bias": 0.09740772969222546,
+          "mean_absolute_bias": 0.09740772969222546,
+          "spatial_mae": 0.860342566075655
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.17191242211844796,
+          "absolute_mean_bias": 0.17191242211844796,
+          "mean_absolute_bias": 0.17191242211844796,
+          "spatial_mae": 0.827815797106668
+        }
+      },
+      "C1_bias_worse_than_C0": false,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "pixels": 782,
+      "reference_sum": 2469.0,
+      "models": {
+        "entrada": {
+          "signed_bias": 0.06520858647225597,
+          "absolute_mean_bias": 0.06520858647225597,
+          "mean_absolute_bias": 0.06520858647225597,
+          "spatial_mae": 1.4941271769947346
+        },
+        "C0": {
+          "signed_bias": -0.030704594240179496,
+          "absolute_mean_bias": 0.030704594240179496,
+          "mean_absolute_bias": 0.030704594240179496,
+          "spatial_mae": 0.5651859108424783
+        },
+        "C1": {
+          "signed_bias": 0.03729822847219201,
+          "absolute_mean_bias": 0.03729822847219201,
+          "mean_absolute_bias": 0.03791272421416095,
+          "spatial_mae": 0.6241248895183626
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.10319729996078947,
+          "absolute_mean_bias": 0.10319729996078947,
+          "mean_absolute_bias": 0.10319729996078947,
+          "spatial_mae": 0.527485447255051
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_1_dense_body",
+      "pixels": 735,
+      "reference_sum": 297.0,
+      "models": {
+        "entrada": {
+          "signed_bias": 0.27946127946127947,
+          "absolute_mean_bias": 0.27946127946127947,
+          "mean_absolute_bias": 0.27946127946127947,
+          "spatial_mae": 2.0942760942760943
+        },
+        "C0": {
+          "signed_bias": -0.21953203732367757,
+          "absolute_mean_bias": 0.21953203732367757,
+          "mean_absolute_bias": 0.21953203732367757,
+          "spatial_mae": 1.233937103047784
+        },
+        "C1": {
+          "signed_bias": -0.22239005272897477,
+          "absolute_mean_bias": 0.22239005272897477,
+          "mean_absolute_bias": 0.22239005272897477,
+          "spatial_mae": 1.2324375402513872
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.30617847585030755,
+          "absolute_mean_bias": 0.30617847585030755,
+          "mean_absolute_bias": 0.30617847585030755,
+          "spatial_mae": 1.190256842914692
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_0_conduit",
+      "pixels": 798,
+      "reference_sum": 2697.0,
+      "models": {
+        "entrada": {
+          "signed_bias": -0.11753800519095291,
+          "absolute_mean_bias": 0.11753800519095291,
+          "mean_absolute_bias": 0.11753800519095291,
+          "spatial_mae": 1.3103448275862069
+        },
+        "C0": {
+          "signed_bias": -0.1511382281548468,
+          "absolute_mean_bias": 0.1511382281548468,
+          "mean_absolute_bias": 0.1511382281548468,
+          "spatial_mae": 0.4751461513037578
+        },
+        "C1": {
+          "signed_bias": -0.1436095138724571,
+          "absolute_mean_bias": 0.1436095138724571,
+          "mean_absolute_bias": 0.1436095138724571,
+          "spatial_mae": 0.4766833925697031
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.1869220596654108,
+          "absolute_mean_bias": 0.1869220596654108,
+          "mean_absolute_bias": 0.1869220596654108,
+          "spatial_mae": 0.4685753602270315
+        }
+      },
+      "C1_bias_worse_than_C0": false,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_1_dense_body",
+      "pixels": 558,
+      "reference_sum": 257.0,
+      "models": {
+        "entrada": {
+          "signed_bias": -0.06614785992217898,
+          "absolute_mean_bias": 0.06614785992217898,
+          "mean_absolute_bias": 0.1556420233463035,
+          "spatial_mae": 1.7859922178988326
+        },
+        "C0": {
+          "signed_bias": -0.30516860699948795,
+          "absolute_mean_bias": 0.30516860699948795,
+          "mean_absolute_bias": 0.30516860699948795,
+          "spatial_mae": 1.1782900336871187
+        },
+        "C1": {
+          "signed_bias": -0.30875204459905203,
+          "absolute_mean_bias": 0.30875204459905203,
+          "mean_absolute_bias": 0.30875204459905203,
+          "spatial_mae": 1.1766383450048923
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.39482335455271494,
+          "absolute_mean_bias": 0.39482335455271494,
+          "mean_absolute_bias": 0.39482335455271494,
+          "spatial_mae": 1.1294662362787142
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": false
+    }
+  ],
+  "physical_acceptance": false
+}

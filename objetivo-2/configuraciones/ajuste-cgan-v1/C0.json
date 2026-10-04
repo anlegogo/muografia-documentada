@@ -1,0 +1,154 @@
+{
+  "schema": "oe2-cgan-ajuste-v1",
+  "fraction": 0.05,
+  "generator": "unet_dc_5",
+  "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+  "initial_epoch": 5,
+  "reset_optimizer": true,
+  "reset_rng": true,
+  "seed": 2026100303,
+  "optimizer": {
+    "name": "Adam",
+    "lr": 0.00001,
+    "betas": [
+      0,
+      0.9
+    ]
+  },
+  "batch": 4,
+  "epochs": 5,
+  "early_stopping": false,
+  "selected_epoch": 5,
+  "train_pairs": 1440,
+  "val_pairs": 360,
+  "train_split": "train",
+  "selection_split": "val",
+  "reserved_splits_allowed": false,
+  "hflip": false,
+  "augmentation": false,
+  "lambda_l1": 100,
+  "regional_loss": "mean_absolute_log1p_region_mean_counts",
+  "normalization_scale": 8.239329427901795,
+  "regional_families": [
+    "cielo",
+    "roca",
+    "borde",
+    "anomalias"
+  ],
+  "region_min_pixels": 20,
+  "region_family_equal_weight": true,
+  "lambda_regional": 0,
+  "gradient_clipping": false,
+  "amp": false,
+  "checkpoint_policy": "last each epoch plus final epoch 5; no best-SSIM selection",
+  "resume": "same arm, protocol and code identity only",
+  "stages": {
+    "technical": {
+      "epochs": 2,
+      "train_pairs": 8,
+      "val_pairs": 8,
+      "requires_gpu_before_pilot": true,
+      "train_indices": [
+        [
+          "geo-train-01",
+          0,
+          0
+        ],
+        [
+          "geo-train-01",
+          0,
+          1
+        ],
+        [
+          "geo-train-02",
+          0,
+          0
+        ],
+        [
+          "geo-train-02",
+          0,
+          1
+        ],
+        [
+          "geo-train-04",
+          0,
+          0
+        ],
+        [
+          "geo-train-04",
+          0,
+          1
+        ],
+        [
+          "geo-train-10",
+          0,
+          0
+        ],
+        [
+          "geo-train-10",
+          0,
+          1
+        ]
+      ],
+      "val_indices": [
+        [
+          "geo-val-01",
+          0,
+          0
+        ],
+        [
+          "geo-val-01",
+          0,
+          1
+        ],
+        [
+          "geo-val-02",
+          0,
+          0
+        ],
+        [
+          "geo-val-02",
+          0,
+          1
+        ],
+        [
+          "geo-val-03",
+          0,
+          0
+        ],
+        [
+          "geo-val-03",
+          0,
+          1
+        ],
+        [
+          "geo-val-03",
+          1,
+          0
+        ],
+        [
+          "geo-val-03",
+          1,
+          1
+        ]
+      ],
+      "interrupt_after_epoch": 1,
+      "pilot_initialization": "original epoch-5 checkpoint, never technical weights"
+    },
+    "pilot": {
+      "epochs": 5,
+      "train_pairs": 1440,
+      "val_pairs": 360
+    }
+  },
+  "mass_campaign_authorized": false,
+  "arm": "C0",
+  "run_id": "oe2-cgan-ajuste-f05-C0-s2026100303",
+  "critic": "patch_critic_70",
+  "lambda_adv": 1,
+  "lambda_gp": 10,
+  "n_critic": 5,
+  "rng_policy": "torch CPU/CUDA; NumPy and Python stored; independent order per epoch",
+  "critic_fake_policy": "one no-grad train-mode G sample reused for five D steps; fresh G sample for G update",
+  "critic_frozen_during_generator_step": true
+}

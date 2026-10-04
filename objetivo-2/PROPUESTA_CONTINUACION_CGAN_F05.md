@@ -1,6 +1,6 @@
 # Propuesta de continuación controlada de cGAN al 5 %
 
-Fecha: 2026-10-03, Colombia. **Estado: propuesta de diseño; ejecutor cGAN de este ajuste y comprobaciones técnicas pendientes. No es una orden de lanzamiento.**
+Fecha: 2026-10-03, Colombia. **Estado vigente: diseño implementado y recuperación exacta verificada en CPU. La comprobación GPU y el ensayo completo siguen pendientes.** La [guía operativa](INSTRUCCIONES_CONTINUACION_CGAN_F05.md) fija los comandos y condiciones de avance; se conservan a continuación la motivación y los parámetros del diseño.
 
 ## Motivo
 
@@ -44,10 +44,10 @@ No se abren test/generalization. La validación ya utilizada es exploratoria; el
 
 ## Preparación necesaria antes de delegar ejecución
 
-- **CG-01 — Pendiente:** implementar el ejecutor específico conservando pesos del crítico, identidades, estados de ambos optimizadores y todos los RNG. Añadir el término regional solo a la pérdida del generador. No reutilizar ejecutar_ajuste.py cambiando únicamente el nombre del checkpoint: ese ejecutor entrena U-Net sin crítico.
-- **CG-02 — Pendiente:** verificar en CPU control de coeficiente cero, gradientes, cinco pasos D/uno G, separación de actualizaciones, selección fija y recuperación exacta de G, D y ambos optimizadores. Después repetir la batería técnica en GPU.
-- **CG-03 — Pendiente:** tras las comprobaciones, publicar configuraciones efectivas y comandos, medir memoria/tiempos y ejecutar las dos continuaciones. Cualquier modificación del diseño se versionará antes de correr.
+- **CG-01 — Verificado en CPU:** se implementó el ejecutor descrito en la [guía y evidencia](INSTRUCCIONES_CONTINUACION_CGAN_F05.md). Requisito satisfecho: implementar el ejecutor específico conservando pesos del crítico, identidades, estados de ambos optimizadores y todos los RNG. Añadir el término regional solo a la pérdida del generador. No reutilizar ejecutar_ajuste.py cambiando únicamente el nombre del checkpoint: ese ejecutor entrena U-Net sin crítico.
+- **CG-02 — Parcial, CPU verificado/GPU pendiente:** diecinueve controles y cuatro ejecuciones completas acreditan pérdida, separación y recuperación exacta en CPU. Se conserva el requisito: verificar en CPU control de coeficiente cero, gradientes, cinco pasos D/uno G, separación de actualizaciones, selección fija y recuperación exacta de G, D y ambos optimizadores. Después repetir la batería técnica en GPU.
+- **CG-03 — Preparado para ejecución condicionada; resultados pendientes:** configuraciones y comandos publicados. Tras aceptar la comprobación GPU y medir recursos, ejecutar las dos continuaciones. Cualquier modificación del diseño se versionará antes de correr.
 
 La batería técnica propuesta conserva ocho pares train/val y dos épocas, con ejecución continua y recuperada por rama: 16 actualizaciones de G y 80 de D. El ensayo completo suma 3.600 actualizaciones de G y 18.000 de D entre ambas ramas. Se requiere una GPU por proceso; pueden ejecutarse secuencialmente. Los tiempos de U-Net no estiman el costo de cGAN con GP.
 
-No se requieren nuevas simulaciones ni una campaña de 24 entrenamientos para preparar este contraste. El siguiente trabajo corresponde a integración y pruebas locales; los estudiantes recibirán una instrucción de ejecución cuando esa preparación esté verificada.
+No se requieren nuevas simulaciones ni una campaña de 24 entrenamientos para preparar este contraste. La integración y las pruebas locales ya están verificadas. El siguiente trabajo corresponde a la prueba técnica GPU y, si se acepta y hay recursos disponibles, a las dos continuaciones conforme a la guía.
