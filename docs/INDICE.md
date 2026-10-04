@@ -1,5 +1,9 @@
 # Índice de documentación
 
+- [Revisión y diagnóstico del ensayo E1](../objetivo-2/REVISION_E1_804CE85.md).
+- [Instrucciones de consolidación E1, sin nueva GPU](../objetivo-2/INSTRUCCIONES_CIERRE_E1.md).
+- [Borrador de discusión E1](../objetivo-2/DISCUSION_E1_BORRADOR.md).
+
 - [Ensayo espacial E1: diseño, integración y verificación CPU](../objetivo-2/DISENO_BORDE_CGAN.md).
 - [Instrucciones GPU y entrega del ensayo E1](../objetivo-2/INSTRUCCIONES_BORDE_CGAN.md).
 
@@ -124,3 +128,5 @@ Los Markdown originales de los estudiantes permanecen dentro de `originales/`; s
 - [Propuesta de continuación cGAN](../objetivo-2/PROPUESTA_CONTINUACION_CGAN_F05.md): comparación C0/C1 implementada y comprobada en CPU; CUDA y resultados pendientes.
 
 - [Guía operativa C0/C1 y evidencia local](../objetivo-2/INSTRUCCIONES_CONTINUACION_CGAN_F05.md): recuperación de G/D y dos optimizadores, aceptación GPU, evaluación por anomalía y entrega.
+
+- [Índice verificado de pesos y predicciones E1](../objetivo-2/INDICE_ARTEFACTOS_E1.md).

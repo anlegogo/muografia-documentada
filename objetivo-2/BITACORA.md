@@ -1,5 +1,13 @@
 # Bitácora del OE2
 
+## Revisión y diagnóstico interior de E1 — 2026-10-04, Colombia
+
+- Actividad: auditoría independiente de la entrega estudiantil 804ce85 y diagnóstico local de predicciones, sin nuevo entrenamiento.
+- Evidencia: 55 binarios, 18 checkpoints, recuperación exacta B1–B3, 2.520 inferencias; 252 sesgos regionales y mapas de las seis vistas de geometría 1 por pareja.
+- Resultado: borde mejor en las 54 comparaciones; exceso interior persistente. E1-04/E1-05 verificados; criterio de nueve controles no satisfecho. Sin aceptación física ni apertura de reservas; OE2-P04 permanece parcial.
+- Se registra fe de erratas de tamaño/rutas sin alterar originales y se deja borrador de discusión.
+- Siguiente paso delegado: reproducción CPU y consolidación documental, sin otro entrenamiento GPU. [Revisión](REVISION_E1_804CE85.md) e [instrucciones](INSTRUCCIONES_CIERRE_E1.md).
+
 ## 2026-10-04 — Integración y comprobación local del ensayo E1
 
 - Actividad autorizada: completar la preparación local y dejar instrucciones autónomas para los estudiantes. Base: bc6ce8f; checkpoint original cGAN de época 5, datos y máscaras verificados.

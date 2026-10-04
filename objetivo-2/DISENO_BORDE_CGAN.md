@@ -1,5 +1,7 @@
 # Ensayo E1: integración del término espacial de borde
 
+**Actualización de estado — 2026-10-04:** E1 fue ejecutado y auditado en la entrega `804ce85`. E1-04 y E1-05 están verificados; el resultado científico es de compromiso. La [revisión](REVISION_E1_804CE85.md) y las [instrucciones de consolidación](INSTRUCCIONES_CIERRE_E1.md) sustituyen el encargo operativo. El texto siguiente conserva el diseño y la guía previos; sus menciones a ejecución pendiente son históricas. No repetir el ensayo.
+
 Fecha: 2026-10-04, America/Bogota. **Estado: verificado en CPU; pendiente de comprobación GPU.** Diseño fijado antes de recibir resultados nuevos de GPU. No se declara aceptación física ni cierre del OE2.
 
 ## Pregunta y variantes

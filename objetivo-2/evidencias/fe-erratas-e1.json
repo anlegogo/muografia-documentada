@@ -1,0 +1,53 @@
+{
+  "delivery_commit": "804ce85f1bcb1e00d0956ae6bef26e69dd50130a",
+  "originals_modified": false,
+  "bytes": {
+    "reported": 5952730120,
+    "verified": 5910537694,
+    "difference": 42192426
+  },
+  "logs": [
+    {
+      "inventory_path": "logs-locales/B1-piloto-consola.log",
+      "git_relative_path": "B1-piloto-consola.log",
+      "bytes": 48,
+      "sha256": "1dd4eeb9747d6181dc58eb1e5cba2155a523cb17a9e87d9cd99bb91b75918bb0"
+    },
+    {
+      "inventory_path": "logs-locales/B1-tecnica-consola.log",
+      "git_relative_path": "B1-tecnica-consola.log",
+      "bytes": 200,
+      "sha256": "d9e611490806958f12c5de5017a140ed91e6ac0e2653780b123b58bc3dd6bb1b"
+    },
+    {
+      "inventory_path": "logs-locales/B2-piloto-consola.log",
+      "git_relative_path": "B2-piloto-consola.log",
+      "bytes": 48,
+      "sha256": "12e159480ce7b14870c6b0e3261cca081508eb1ef1a3fb5572ffcb04237e752b"
+    },
+    {
+      "inventory_path": "logs-locales/B2-tecnica-consola.log",
+      "git_relative_path": "B2-tecnica-consola.log",
+      "bytes": 200,
+      "sha256": "20184871c20fbbae40a2dc13fe2e9821c29ae7eaf152d4b159964d2bc74e68cb"
+    },
+    {
+      "inventory_path": "logs-locales/B3-piloto-consola.log",
+      "git_relative_path": "B3-piloto-consola.log",
+      "bytes": 48,
+      "sha256": "bbe099b64deea22b598bea4f66532e1ef5f54423538d92bbef99042657558160"
+    },
+    {
+      "inventory_path": "logs-locales/B3-tecnica-consola.log",
+      "git_relative_path": "B3-tecnica-consola.log",
+      "bytes": 200,
+      "sha256": "ee3c61d361b7da61cfbd9abe8652513bf1b4d5284c83f8844198256fa5950ea7"
+    },
+    {
+      "inventory_path": "logs-locales/evaluacion-sintesis-consola.log",
+      "git_relative_path": "evaluacion-sintesis-consola.log",
+      "bytes": 101,
+      "sha256": "fa69571ca38064d79017a236797fd06b26ad209be159e75f1e624f080255fdd3"
+    }
+  ]
+}

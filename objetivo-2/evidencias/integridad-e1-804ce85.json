@@ -1,0 +1,445 @@
+{
+  "verified": [
+    {
+      "path": "B1/piloto/C0/predicciones-val.npy",
+      "sha256": "08a222323107deebb10cf40434b391316e233111d992c1e4635f40a7963321a0",
+      "bytes": 94371968,
+      "id": "1umgBpMuARvWLxDft67dv1DOE7O2bn-Yc",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B1/piloto/C1/last.pt",
+      "sha256": "9d627f2167369f74734c34837a4c13dcf25117485885428057776b04ed5d7687",
+      "bytes": 279766854,
+      "id": "1Q3ttkoyB6G5HBPZNVKwx9TCa385Y2ZUf",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B1/piloto/C0/last.pt",
+      "sha256": "486f83398c5c61acf91b14c929872b97ff16231d0bca622ff0a75f246a014a81",
+      "bytes": 279766854,
+      "id": "1JYHfQYtKpr7G8lC6zAz-g9CcVP5FRf69",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B1/tecnica/C0-continua/predicciones-val.npy",
+      "sha256": "6e961ed80e7de25e19a5ab19530c0f745e75df7524a1f85a41f37a89f4a0f7bb",
+      "bytes": 2097280,
+      "id": "117cRdPw-cs1fZmGNbZC0BqZwt3mXMwhp",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B1/piloto/C1/predicciones-val.npy",
+      "sha256": "82454f1159369ba3ceaf865916872f7af02058b35825305797e64a78c3462ede",
+      "bytes": 94371968,
+      "id": "1_yhXRFJDApXurqfwTLObi_kLSbLeXmfg",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B1/tecnica/C0-recuperada/predicciones-val.npy",
+      "sha256": "6e961ed80e7de25e19a5ab19530c0f745e75df7524a1f85a41f37a89f4a0f7bb",
+      "bytes": 2097280,
+      "id": "19Xg33CI2_WxAz1k2-mQiGN9Y7G2SjR-D",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B1/evaluacion/predicciones-cgan-inicial.npy",
+      "sha256": "95691a189ca1a71d0982bcf183edd07cb168f4aebb39a3a6422cb96b6718ffb1",
+      "bytes": 94371968,
+      "id": "1G0qLxMcY_szJHrogAlAZjTu3qD3yLDe4",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B1/tecnica/C0-continua/last.pt",
+      "sha256": "69e116bf892ac9a9dce20a24790db5b8f9070df773fa0e1e31f4a4ae132f3624",
+      "bytes": 279764806,
+      "id": "1HV2I3pbmAcHYO0YH-6wCwE2JyozAzqC0",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B1/tecnica/C1-continua/predicciones-val.npy",
+      "sha256": "3d01bd3108750783fc799c3ec3060de357532511f50e8d457dd113c4984564cb",
+      "bytes": 2097280,
+      "id": "1nCn5wMk6WUnk_b-DZnhkdL5gS5N-5xTE",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B1/tecnica/C1-recuperada/predicciones-val.npy",
+      "sha256": "3d01bd3108750783fc799c3ec3060de357532511f50e8d457dd113c4984564cb",
+      "bytes": 2097280,
+      "id": "1oqJ6FvAkyGIjecv_mw5IdUAIQZ7jSsy_",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B1/tecnica/C0-recuperada/last.pt",
+      "sha256": "d2233669df00f352f26d534cc127e3e65d41a3e68c3bb0862461d6f192f29444",
+      "bytes": 279765318,
+      "id": "1PcJB5nEvhyq9JK6yzL7kpjzi6AKNhazB",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B2/evaluacion/predicciones-cgan-inicial.npy",
+      "sha256": "95691a189ca1a71d0982bcf183edd07cb168f4aebb39a3a6422cb96b6718ffb1",
+      "bytes": 94371968,
+      "id": "1rPfDwlWyFXcaUYSvJJZRaDgc7uc8q8dn",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B1/tecnica/C1-recuperada/last.pt",
+      "sha256": "cc7fe741c47472e74daea2a993ea7d908640167bf364774d2a3b935deb8d8a83",
+      "bytes": 279765318,
+      "id": "1Jweyb4BL9KnSihbXyiDG3kDHYKx7MmDp",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B1/tecnica/C1-continua/last.pt",
+      "sha256": "a2cb6d722471a70e038655818e2c8118c54a45356878d328e65f085c6ea4ae31",
+      "bytes": 279764806,
+      "id": "1Vshr-5DsOGk1orQhZPyJMz6gbwWCt1AS",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B2/piloto/C0/predicciones-val.npy",
+      "sha256": "c24523ca49e996d63da7393fdc0921b669758e809f274a94dec5d255634fd185",
+      "bytes": 94371968,
+      "id": "153FXHOrWUOo-H-v1GZ3R13Yr65omY8f3",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B2/piloto/C0/last.pt",
+      "sha256": "d7a25a1bf4cac726cf638f27a9ff87e7672bd614ca949c1be43fac60fe1a2075",
+      "bytes": 279766918,
+      "id": "1xtoqXemb46-KAk19OQkSfA0alWeuXs7h",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B2/tecnica/C0-continua/predicciones-val.npy",
+      "sha256": "4ea6bccfb5d8f4b22f82fe88f4379bb97a0999963836ea7aac5e76b14623af24",
+      "bytes": 2097280,
+      "id": "1pFDM_6JvS05z5ZXk9IhhVBzgiDwn_C6v",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B2/piloto/C1/last.pt",
+      "sha256": "1cd6e5eb5025793a191e1b6ee4f75fd21f988b62b9f286f16a8c8ac1ccb2b4b3",
+      "bytes": 279766918,
+      "id": "1-A7A1neAz7RvqaXG_O0svGH4ikAunnSx",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B2/tecnica/C0-recuperada/predicciones-val.npy",
+      "sha256": "4ea6bccfb5d8f4b22f82fe88f4379bb97a0999963836ea7aac5e76b14623af24",
+      "bytes": 2097280,
+      "id": "1HQnwpuxoykwj5F8py2DERUyhg6F7yabv",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B2/piloto/C1/predicciones-val.npy",
+      "sha256": "ef7ba0a3b540a6d187ec555ef9cfa4c7e3cbad1acf8f0e03904e8742a421669d",
+      "bytes": 94371968,
+      "id": "1BoAEVh4K0PYyBAfnRS_Y7nh4PIMN6tSQ",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B2/tecnica/C0-continua/last.pt",
+      "sha256": "f8b58926606c10abcb6d150cb34129daf3489d3e1b00dabeac11681c381f03ca",
+      "bytes": 279764870,
+      "id": "1c_1w9eqMRJiqovx23tER2S4OAO_6Sd7j",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B2/tecnica/C1-continua/predicciones-val.npy",
+      "sha256": "09ff5380fd640a8b83e24f4b4c846de86ed9983a51c796392ce61856ebdde9c2",
+      "bytes": 2097280,
+      "id": "1_fPo_dITRL25j4rcp-bzEbmOprJyaG1G",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B2/tecnica/C1-recuperada/predicciones-val.npy",
+      "sha256": "09ff5380fd640a8b83e24f4b4c846de86ed9983a51c796392ce61856ebdde9c2",
+      "bytes": 2097280,
+      "id": "1Ryy78RTWG04xisAmI56UxJYWh2co_6F2",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B3/evaluacion/predicciones-cgan-inicial.npy",
+      "sha256": "95691a189ca1a71d0982bcf183edd07cb168f4aebb39a3a6422cb96b6718ffb1",
+      "bytes": 94371968,
+      "id": "15fQeWxp81UQ0IkyxcBNMvu3E4j4y3-Xe",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B2/tecnica/C0-recuperada/last.pt",
+      "sha256": "2edf515567bdb0770a1ad21cdfe058a53d22530da3bb814b7091028d7251f299",
+      "bytes": 279765382,
+      "id": "1MsdvksHsplmpZzNLnbTH9MopKpN8lNBt",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B3/piloto/C0/predicciones-val.npy",
+      "sha256": "e61c9f42d19e9d5fc981526910ef6b8c0f4f4b83f9e8d5e8957477203e5b5f6a",
+      "bytes": 94371968,
+      "id": "1i4Z36dnQxrs5c4_lOsyOx0Y5CD3mXaDu",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B2/tecnica/C1-recuperada/last.pt",
+      "sha256": "3217cd7639aa665db07b70ca92c93c77f935df88560793654b9274be268ade9c",
+      "bytes": 279765382,
+      "id": "1Pa5CimHlKoZwW3rvqsH-ebVUCcJPR6Af",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B2/tecnica/C1-continua/last.pt",
+      "sha256": "14c0ecb17e55d822e92e1dc179296855f5ffe52cd0da29fe982c0d3605510698",
+      "bytes": 279764870,
+      "id": "1dDXujJe6b6okEb-MjsslYNWrT7xke65C",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B3/piloto/C1/predicciones-val.npy",
+      "sha256": "88e1470345072f69b55158f35ab81af2bd7b672c12ced96a6361157e1a011d8a",
+      "bytes": 94371968,
+      "id": "1_P3F0PeI36CX4koRvJmjbbiJvuPmo4V_",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B3/tecnica/C0-continua/predicciones-val.npy",
+      "sha256": "cae824b21ba1d006dac579e22f0c1648d09eafed0fcfd14e8efc38bcae3ff5f6",
+      "bytes": 2097280,
+      "id": "1PBISUNaw0h6BPUdjYaqG-k4ETiIf3YaE",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B3/piloto/C1/last.pt",
+      "sha256": "5d03f8957506083605b65ba341ac21f053ea85379000f2c5c5b6dfb03e147724",
+      "bytes": 279766918,
+      "id": "1t1ZCFBmMMFq9bPpkRdccoFDeODeLdQoc",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B3/piloto/C0/last.pt",
+      "sha256": "ec406fd2688d42e1fab626b70a318dc25265ef21516d15394519b238b6586a82",
+      "bytes": 279766918,
+      "id": "1A2iAVNKmRgBVKKoCikZiCsP8gFW5uv42",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B3/tecnica/C0-recuperada/predicciones-val.npy",
+      "sha256": "cae824b21ba1d006dac579e22f0c1648d09eafed0fcfd14e8efc38bcae3ff5f6",
+      "bytes": 2097280,
+      "id": "17gSXvM6-DJaH2KJkIKeVX8ngFlFMVKmc",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B3/tecnica/C1-continua/predicciones-val.npy",
+      "sha256": "77b51504c9716d26a3c031f82cd0a05e85321c438858973bc16bf1312424ca64",
+      "bytes": 2097280,
+      "id": "1wkcFuNGR7IVGD_Ef5JMNPkDckUtgqE-U",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B3/tecnica/C0-recuperada/last.pt",
+      "sha256": "f08dcfb1569ff59f883410ada86038693d85e7a7ebaa582a060e812d6ace354a",
+      "bytes": 279765382,
+      "id": "1U-oHImlYbTJs4r_yPjOz5q_QS535KOuU",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B3/tecnica/C0-continua/last.pt",
+      "sha256": "303bd3c9639991e2b7be8c7ba7a6fe1b984e46146f49f2fc762c9366d0382b4e",
+      "bytes": 279764870,
+      "id": "1JHU4CoSgrOVjn2RiznuHxlfe_Xcb0Ea5",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B3/tecnica/C1-recuperada/predicciones-val.npy",
+      "sha256": "77b51504c9716d26a3c031f82cd0a05e85321c438858973bc16bf1312424ca64",
+      "bytes": 2097280,
+      "id": "1pY6BdvQy2RxtENcbpuY16Fqt96jg4ThP",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "mascaras-ajuste-v1/geo-train-01.npz",
+      "sha256": "fbae9d8febf20b64a00ed8127ebd40e5e57daf2d959755a25d2344e0a8e097e9",
+      "bytes": 10348,
+      "id": "1AG96LGBSmwYdp4uhlGQ3vhD6ox_5Z52d",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "mascaras-ajuste-v1/geo-train-02.npz",
+      "sha256": "47991f6209d54f44304dac30a682a89822281fc61c0af8820c932fe1033bd53c",
+      "bytes": 15235,
+      "id": "1SR6GFKBl4KqJriiU-BaAoZrZZXIevzW8",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "mascaras-ajuste-v1/geo-train-03.npz",
+      "sha256": "012f8e422fe58268411d933b5f03c60db9d583daa7e0397eed5f1fc0718e20b0",
+      "bytes": 12707,
+      "id": "1B4_hIBH5U7Wazu0nVkgxYh6ohJ6Peyx2",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "mascaras-ajuste-v1/geo-train-04.npz",
+      "sha256": "a5ce407b43215d208fecd03adda38fa16a7bef8fea4234a77e94653cddee4403",
+      "bytes": 11862,
+      "id": "1X6zLnIsPGa8mYnJYeD1ueP9VwuqzE353",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "mascaras-ajuste-v1/geo-train-05.npz",
+      "sha256": "800a418e22f4942a31a339318a18abfbbfc5dd88f77cc522810642a2e6952afa",
+      "bytes": 15284,
+      "id": "1bXscx4sS1oPcBbe4Xj_-MkpTeF4xPD4U",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "mascaras-ajuste-v1/geo-train-06.npz",
+      "sha256": "e2db7e3d6a1df4f904b2b687a0009f45813b245b8d4538a77966dea1f186bad0",
+      "bytes": 16313,
+      "id": "1Xu2Ef4nORASDphSNDPFR1g2LS-zSW5hB",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "mascaras-ajuste-v1/geo-train-07.npz",
+      "sha256": "f365b84a429eec14962c2d30179c6411702987d1e653309f903291c54633d314",
+      "bytes": 13726,
+      "id": "1WYdqHs5hdf8BgIMf6TNMnexXV_1P-vhR",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "mascaras-ajuste-v1/geo-train-08.npz",
+      "sha256": "51865bb23a98847b03535cff2db57fa08c50075c62977ad9fab6c8e11d2f8c09",
+      "bytes": 16007,
+      "id": "1hlVY-5E_oMsO33AHxVRpFDeyOXtTbAxo",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "mascaras-ajuste-v1/geo-train-09.npz",
+      "sha256": "cddaff5bf850da8c9df541957746007dce94c434157e5fe97f1b10fe19a476e0",
+      "bytes": 14318,
+      "id": "1GkeSV2pLQShE9h5Hr1ho8fn1tJVbTQmN",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "mascaras-ajuste-v1/geo-train-10.npz",
+      "sha256": "fee98f6ccef1e8e96f5ec2f8302a58cd75c8db4d8985015893cacd1a4dda1779",
+      "bytes": 14188,
+      "id": "1731X7olu4raUzzmtwsv2FBun94DzQ2PU",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "mascaras-ajuste-v1/geo-train-11.npz",
+      "sha256": "71939a3a1c23eb3806d715856ff115d03e90436ce27634f3e3c5577ef0bd9f68",
+      "bytes": 16265,
+      "id": "1QD09-Vxc-QXz_kFnfOvWY_GKGKvIULWy",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "mascaras-ajuste-v1/geo-train-12.npz",
+      "sha256": "2e7c97646bf36a2ecbc2f94426d05bdd3aa27643e7fb70fd6c156a5d89ed3f37",
+      "bytes": 14260,
+      "id": "1J-BQz5kUchYTs4D48giIoh4Si0MakFRr",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "mascaras-ajuste-v1/geo-val-01.npz",
+      "sha256": "514d8f7cb47346cbed65043f20298035c318f30a67fd82f14d481d1c7a7c0ce1",
+      "bytes": 12916,
+      "id": "1a0raArFoPGt1EajxGm1w4YSjpXugVgLB",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "mascaras-ajuste-v1/geo-val-02.npz",
+      "sha256": "24bfa5ec0275a306efb24ce2ab677c51aa1fc0be3cca71eaed648026365b7d9d",
+      "bytes": 11594,
+      "id": "1pv1ZqA1021uEuCqjMlcPnsjGoo49kisP",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "mascaras-ajuste-v1/geo-val-03.npz",
+      "sha256": "a2ab0d6b949638ba7cba840869d6935f9f8ff85029307f711170fb88b40c47e4",
+      "bytes": 15473,
+      "id": "1kGyN5TFIq48Y77OXs6WsfkXfuYF5ut0E",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "mascaras-ajuste-v1/manifest.json",
+      "sha256": "df720c9d64735fc02ac8d3147f8a230f7a8fdcec7530f9d16351c049c9413530",
+      "bytes": 29490,
+      "id": "165XTFX-LDrKhPQrZS5SeSnBE1vb22uzx",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B3/tecnica/C1-continua/last.pt",
+      "sha256": "2cf2d3e03de2b4094002b169fe097fc86ec4d3a2991a7bd0714748c9a87a322f",
+      "bytes": 279764870,
+      "id": "1cVYu6d6iyHfjkdV4Rk7no38rRRF9lQgG",
+      "ok": true,
+      "cached": false
+    },
+    {
+      "path": "B3/tecnica/C1-recuperada/last.pt",
+      "sha256": "e5051300668bf9cafe0593409a06b3631f8aa1e7d3a47a9ff668dbb6764bece9",
+      "bytes": 279765382,
+      "id": "1-MEgCaRr1aHrLe6lyk9ENT0OkydBJaZY",
+      "ok": true,
+      "cached": false
+    }
+  ],
+  "errors": []
+}

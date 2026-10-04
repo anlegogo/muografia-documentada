@@ -1,0 +1,881 @@
+{
+  "schema": "oe2-edge-independent-review-v1",
+  "review_date": "2026-10-04",
+  "delivery_commit": "804ce85f1bcb1e00d0956ae6bef26e69dd50130a",
+  "runtime_commit": "156d4f5699f500c692d466f56c48ca25bda79c0c",
+  "complete": true,
+  "gpu_execution_repeated_locally": false,
+  "training_performed": false,
+  "heldout_opened": false,
+  "physical_acceptance": false,
+  "technical_recovery": {
+    "B1": {
+      "exact_recovery": true,
+      "gpu_artifacts_verified": true,
+      "checkpoint_sha256": {
+        "C0-continua": "69e116bf892ac9a9dce20a24790db5b8f9070df773fa0e1e31f4a4ae132f3624",
+        "C0-recuperada": "d2233669df00f352f26d534cc127e3e65d41a3e68c3bb0862461d6f192f29444",
+        "C1-continua": "a2cb6d722471a70e038655818e2c8118c54a45356878d328e65f085c6ea4ae31",
+        "C1-recuperada": "cc7fe741c47472e74daea2a993ea7d908640167bf364774d2a3b935deb8d8a83"
+      },
+      "seed": 2026100411
+    },
+    "B2": {
+      "exact_recovery": true,
+      "gpu_artifacts_verified": true,
+      "checkpoint_sha256": {
+        "C0-continua": "f8b58926606c10abcb6d150cb34129daf3489d3e1b00dabeac11681c381f03ca",
+        "C0-recuperada": "2edf515567bdb0770a1ad21cdfe058a53d22530da3bb814b7091028d7251f299",
+        "C1-continua": "14c0ecb17e55d822e92e1dc179296855f5ffe52cd0da29fe982c0d3605510698",
+        "C1-recuperada": "3217cd7639aa665db07b70ca92c93c77f935df88560793654b9274be268ade9c"
+      },
+      "seed": 2026100412
+    },
+    "B3": {
+      "exact_recovery": true,
+      "gpu_artifacts_verified": true,
+      "checkpoint_sha256": {
+        "C0-continua": "303bd3c9639991e2b7be8c7ba7a6fe1b984e46146f49f2fc762c9366d0382b4e",
+        "C0-recuperada": "f08dcfb1569ff59f883410ada86038693d85e7a7ebaa582a060e812d6ace354a",
+        "C1-continua": "2cf2d3e03de2b4094002b169fe097fc86ec4d3a2991a7bd0714748c9a87a322f",
+        "C1-recuperada": "e5051300668bf9cafe0593409a06b3631f8aa1e7d3a47a9ff668dbb6764bece9"
+      },
+      "seed": 2026100413
+    }
+  },
+  "evaluation": {
+    "B1": {
+      "float_fields": 5334,
+      "max_abs_difference": 4.440892098500626e-16,
+      "summary": {
+        "entrada": {
+          "ssim": 0.7518121158353864,
+          "psnr": 24.16772800716849,
+          "Q_by_geometry": {
+            "geo-val-01": 0.011978948077161562,
+            "geo-val-02": 0.025514356976083424,
+            "geo-val-03": 0.016922050081937045
+          },
+          "Q": 0.018138451711727344,
+          "sky_mae": 0.06802366966581791,
+          "edge_mae": 0.12091980217515516,
+          "common_contrasts": 23,
+          "contrast_absolute_error": 0.24644261860892383
+        },
+        "C0": {
+          "ssim": 0.8157171620863355,
+          "psnr": 30.646298791462243,
+          "Q_by_geometry": {
+            "geo-val-01": 0.07576096111189909,
+            "geo-val-02": 0.051301708662229065,
+            "geo-val-03": 0.05992921705976037
+          },
+          "Q": 0.06233062894462951,
+          "sky_mae": 0.02478024881886909,
+          "edge_mae": 0.11145756015793401,
+          "common_contrasts": 23,
+          "contrast_absolute_error": 0.11567435585668283
+        },
+        "C1": {
+          "ssim": 0.8157785323252417,
+          "psnr": 30.63661025561023,
+          "Q_by_geometry": {
+            "geo-val-01": 0.08553949555095874,
+            "geo-val-02": 0.03139206636530249,
+            "geo-val-03": 0.027129987221868344
+          },
+          "Q": 0.04802051637937652,
+          "sky_mae": 0.024900242635806535,
+          "edge_mae": 0.06890948821104793,
+          "common_contrasts": 23,
+          "contrast_absolute_error": 0.08663285390403318
+        },
+        "inicial_cgan": {
+          "ssim": 0.8227914493773519,
+          "psnr": 31.10406039160106,
+          "Q_by_geometry": {
+            "geo-val-01": 0.03469973598861689,
+            "geo-val-02": 0.1574423520066559,
+            "geo-val-03": 0.178056229865975
+          },
+          "Q": 0.1233994392870826,
+          "sky_mae": 0.1264756274688191,
+          "edge_mae": 0.14419176072733247,
+          "common_contrasts": 23,
+          "contrast_absolute_error": 0.090666679217511
+        }
+      },
+      "decision_checks": {
+        "Q_reduced": true,
+        "each_geometry_not_worse": false,
+        "sky_not_worse": false,
+        "edge_not_worse": true,
+        "contrast_support_unchanged": true,
+        "contrast_not_worse": true,
+        "ssim_not_worse": true,
+        "psnr_not_worse": false,
+        "edge_reduced": true
+      },
+      "decision": "compromiso_o_sin_mejora",
+      "anomaly_diagnostics": {
+        "rows": 24,
+        "worse_bias_vs_C0": 9,
+        "worse_bias_vs_initial": 6,
+        "physical_acceptance": false,
+        "note": "Salvaguarda descriptiva; no cambia retrospectivamente la regla de decisi\u00f3n ni acredita calidad en etapa t\u00e9cnica."
+      }
+    },
+    "B2": {
+      "float_fields": 5334,
+      "max_abs_difference": 9.992007221626409e-16,
+      "summary": {
+        "entrada": {
+          "ssim": 0.7518121158353864,
+          "psnr": 24.16772800716849,
+          "Q_by_geometry": {
+            "geo-val-01": 0.011978948077161562,
+            "geo-val-02": 0.025514356976083424,
+            "geo-val-03": 0.016922050081937045
+          },
+          "Q": 0.018138451711727344,
+          "sky_mae": 0.06802366966581791,
+          "edge_mae": 0.12091980217515516,
+          "common_contrasts": 23,
+          "contrast_absolute_error": 0.24644261860892383
+        },
+        "C0": {
+          "ssim": 0.8145610566630404,
+          "psnr": 30.52563253766529,
+          "Q_by_geometry": {
+            "geo-val-01": 0.0875335327677848,
+            "geo-val-02": 0.047062167739504335,
+            "geo-val-03": 0.09975247536216221
+          },
+          "Q": 0.07811605862315045,
+          "sky_mae": 0.02467511027451797,
+          "edge_mae": 0.11262878227855226,
+          "common_contrasts": 23,
+          "contrast_absolute_error": 0.07824392802466254
+        },
+        "C1": {
+          "ssim": 0.8149480007009724,
+          "psnr": 30.58829021937554,
+          "Q_by_geometry": {
+            "geo-val-01": 0.10505847043815175,
+            "geo-val-02": 0.052213366565919614,
+            "geo-val-03": 0.057477492108671764
+          },
+          "Q": 0.07158310970424771,
+          "sky_mae": 0.023193337280099133,
+          "edge_mae": 0.07044587358856863,
+          "common_contrasts": 23,
+          "contrast_absolute_error": 0.09597250921774396
+        },
+        "inicial_cgan": {
+          "ssim": 0.8227914493773519,
+          "psnr": 31.10406039160106,
+          "Q_by_geometry": {
+            "geo-val-01": 0.03469973598861689,
+            "geo-val-02": 0.1574423520066559,
+            "geo-val-03": 0.178056229865975
+          },
+          "Q": 0.1233994392870826,
+          "sky_mae": 0.1264756274688191,
+          "edge_mae": 0.14419176072733247,
+          "common_contrasts": 23,
+          "contrast_absolute_error": 0.090666679217511
+        }
+      },
+      "decision_checks": {
+        "Q_reduced": true,
+        "each_geometry_not_worse": false,
+        "sky_not_worse": true,
+        "edge_not_worse": true,
+        "contrast_support_unchanged": true,
+        "contrast_not_worse": false,
+        "ssim_not_worse": true,
+        "psnr_not_worse": true,
+        "edge_reduced": true
+      },
+      "decision": "compromiso_o_sin_mejora",
+      "anomaly_diagnostics": {
+        "rows": 24,
+        "worse_bias_vs_C0": 12,
+        "worse_bias_vs_initial": 7,
+        "physical_acceptance": false,
+        "note": "Salvaguarda descriptiva; no cambia retrospectivamente la regla de decisi\u00f3n ni acredita calidad en etapa t\u00e9cnica."
+      }
+    },
+    "B3": {
+      "float_fields": 5334,
+      "max_abs_difference": 8.881784197001252e-16,
+      "summary": {
+        "entrada": {
+          "ssim": 0.7518121158353864,
+          "psnr": 24.16772800716849,
+          "Q_by_geometry": {
+            "geo-val-01": 0.011978948077161562,
+            "geo-val-02": 0.025514356976083424,
+            "geo-val-03": 0.016922050081937045
+          },
+          "Q": 0.018138451711727344,
+          "sky_mae": 0.06802366966581791,
+          "edge_mae": 0.12091980217515516,
+          "common_contrasts": 23,
+          "contrast_absolute_error": 0.24644261860892383
+        },
+        "C0": {
+          "ssim": 0.815123629458897,
+          "psnr": 30.61215875396878,
+          "Q_by_geometry": {
+            "geo-val-01": 0.051544215943618646,
+            "geo-val-02": 0.04901318747887616,
+            "geo-val-03": 0.04997153396631174
+          },
+          "Q": 0.05017631246293552,
+          "sky_mae": 0.023433842851179006,
+          "edge_mae": 0.11052300891566896,
+          "common_contrasts": 23,
+          "contrast_absolute_error": 0.08683965147889967
+        },
+        "C1": {
+          "ssim": 0.8147987002197116,
+          "psnr": 30.56162490624462,
+          "Q_by_geometry": {
+            "geo-val-01": 0.08766828942164386,
+            "geo-val-02": 0.035218382964692145,
+            "geo-val-03": 0.04169084621670992
+          },
+          "Q": 0.05485917286768197,
+          "sky_mae": 0.022695009964511577,
+          "edge_mae": 0.07084069878778441,
+          "common_contrasts": 23,
+          "contrast_absolute_error": 0.07833797756953374
+        },
+        "inicial_cgan": {
+          "ssim": 0.8227914493773519,
+          "psnr": 31.10406039160106,
+          "Q_by_geometry": {
+            "geo-val-01": 0.03469973598861689,
+            "geo-val-02": 0.1574423520066559,
+            "geo-val-03": 0.178056229865975
+          },
+          "Q": 0.1233994392870826,
+          "sky_mae": 0.1264756274688191,
+          "edge_mae": 0.14419176072733247,
+          "common_contrasts": 23,
+          "contrast_absolute_error": 0.090666679217511
+        }
+      },
+      "decision_checks": {
+        "Q_reduced": false,
+        "each_geometry_not_worse": false,
+        "sky_not_worse": true,
+        "edge_not_worse": true,
+        "contrast_support_unchanged": true,
+        "contrast_not_worse": true,
+        "ssim_not_worse": false,
+        "psnr_not_worse": false,
+        "edge_reduced": true
+      },
+      "decision": "compromiso_o_sin_mejora",
+      "anomaly_diagnostics": {
+        "rows": 24,
+        "worse_bias_vs_C0": 13,
+        "worse_bias_vs_initial": 6,
+        "physical_acceptance": false,
+        "note": "Salvaguarda descriptiva; no cambia retrospectivamente la regla de decisi\u00f3n ni acredita calidad en etapa t\u00e9cnica."
+      }
+    }
+  },
+  "inference": {
+    "B1/C0": {
+      "images": 360,
+      "reused_identical_initial_inference": false,
+      "pixel_max_abs": 8.702278137207031e-06,
+      "pixel_mean_abs": 5.527394093941664e-08,
+      "ssim_difference": 3.855959995746616e-11,
+      "psnr_difference": 8.701183773496268e-08,
+      "metrics_cpu": {
+        "n": 360,
+        "ssim": 0.8157171620477759,
+        "psnr": 30.64629887847408
+      }
+    },
+    "B1/C1": {
+      "images": 360,
+      "reused_identical_initial_inference": false,
+      "pixel_max_abs": 4.693865776062012e-06,
+      "pixel_mean_abs": 5.479637797444273e-08,
+      "ssim_difference": 6.550144870942631e-09,
+      "psnr_difference": 7.679911817604079e-08,
+      "metrics_cpu": {
+        "n": 360,
+        "ssim": 0.8157785257750968,
+        "psnr": 30.636610332409347
+      }
+    },
+    "B1/inicial_cgan": {
+      "images": 360,
+      "reused_identical_initial_inference": false,
+      "pixel_max_abs": 3.933906555175781e-06,
+      "pixel_mean_abs": 3.0729472839478394e-08,
+      "ssim_difference": 2.6228594851573916e-09,
+      "psnr_difference": 1.2691290862676397e-07,
+      "metrics_cpu": {
+        "n": 360,
+        "ssim": 0.8227914467544925,
+        "psnr": 31.10406026468815
+      }
+    },
+    "B2/C0": {
+      "images": 360,
+      "reused_identical_initial_inference": false,
+      "pixel_max_abs": 4.708766937255859e-06,
+      "pixel_mean_abs": 5.835487630317243e-08,
+      "ssim_difference": 9.074390128205323e-10,
+      "psnr_difference": 2.2497940577181907e-07,
+      "metrics_cpu": {
+        "n": 360,
+        "ssim": 0.8145610557556013,
+        "psnr": 30.525632762644697
+      }
+    },
+    "B2/C1": {
+      "images": 360,
+      "reused_identical_initial_inference": false,
+      "pixel_max_abs": 6.0498714447021484e-06,
+      "pixel_mean_abs": 5.7096759216022145e-08,
+      "ssim_difference": 3.4091138800818044e-09,
+      "psnr_difference": 3.0873760081817636e-07,
+      "metrics_cpu": {
+        "n": 360,
+        "ssim": 0.8149480041100863,
+        "psnr": 30.58829052811314
+      }
+    },
+    "B2/inicial_cgan": {
+      "images": 360,
+      "reused_identical_initial_inference": true,
+      "pixel_max_abs": 3.933906555175781e-06,
+      "pixel_mean_abs": 3.0729472839478394e-08,
+      "ssim_difference": 2.6228594851573916e-09,
+      "psnr_difference": 1.2691290862676397e-07,
+      "metrics_cpu": {
+        "n": 360,
+        "ssim": 0.8227914467544925,
+        "psnr": 31.10406026468815
+      }
+    },
+    "B3/C0": {
+      "images": 360,
+      "reused_identical_initial_inference": false,
+      "pixel_max_abs": 6.467103958129883e-06,
+      "pixel_mean_abs": 5.6815779024073057e-08,
+      "ssim_difference": 2.822021505366479e-10,
+      "psnr_difference": 2.6009679032767963e-07,
+      "metrics_cpu": {
+        "n": 360,
+        "ssim": 0.8151236291766949,
+        "psnr": 30.612159014065572
+      }
+    },
+    "B3/C1": {
+      "images": 360,
+      "reused_identical_initial_inference": false,
+      "pixel_max_abs": 7.808208465576172e-06,
+      "pixel_mean_abs": 5.605847942428811e-08,
+      "ssim_difference": 7.446430583257779e-09,
+      "psnr_difference": 2.51773357717866e-07,
+      "metrics_cpu": {
+        "n": 360,
+        "ssim": 0.8147987076661422,
+        "psnr": 30.56162515801798
+      }
+    },
+    "B3/inicial_cgan": {
+      "images": 360,
+      "reused_identical_initial_inference": true,
+      "pixel_max_abs": 3.933906555175781e-06,
+      "pixel_mean_abs": 3.0729472839478394e-08,
+      "ssim_difference": 2.6228594851573916e-09,
+      "psnr_difference": 1.2691290862676397e-07,
+      "metrics_cpu": {
+        "n": 360,
+        "ssim": 0.8227914467544925,
+        "psnr": 31.10406026468815
+      }
+    }
+  },
+  "tradeoff": {},
+  "integrity": {
+    "files": 55,
+    "bytes": 5910537694,
+    "all_sha256_and_sizes_match": true,
+    "manifest": [
+      {
+        "path": "B1/evaluacion/predicciones-cgan-inicial.npy",
+        "sha256": "95691a189ca1a71d0982bcf183edd07cb168f4aebb39a3a6422cb96b6718ffb1",
+        "bytes": 94371968
+      },
+      {
+        "path": "B1/piloto/C0/last.pt",
+        "sha256": "486f83398c5c61acf91b14c929872b97ff16231d0bca622ff0a75f246a014a81",
+        "bytes": 279766854
+      },
+      {
+        "path": "B1/piloto/C0/predicciones-val.npy",
+        "sha256": "08a222323107deebb10cf40434b391316e233111d992c1e4635f40a7963321a0",
+        "bytes": 94371968
+      },
+      {
+        "path": "B1/piloto/C1/last.pt",
+        "sha256": "9d627f2167369f74734c34837a4c13dcf25117485885428057776b04ed5d7687",
+        "bytes": 279766854
+      },
+      {
+        "path": "B1/piloto/C1/predicciones-val.npy",
+        "sha256": "82454f1159369ba3ceaf865916872f7af02058b35825305797e64a78c3462ede",
+        "bytes": 94371968
+      },
+      {
+        "path": "B1/tecnica/C0-continua/last.pt",
+        "sha256": "69e116bf892ac9a9dce20a24790db5b8f9070df773fa0e1e31f4a4ae132f3624",
+        "bytes": 279764806
+      },
+      {
+        "path": "B1/tecnica/C0-continua/predicciones-val.npy",
+        "sha256": "6e961ed80e7de25e19a5ab19530c0f745e75df7524a1f85a41f37a89f4a0f7bb",
+        "bytes": 2097280
+      },
+      {
+        "path": "B1/tecnica/C0-recuperada/last.pt",
+        "sha256": "d2233669df00f352f26d534cc127e3e65d41a3e68c3bb0862461d6f192f29444",
+        "bytes": 279765318
+      },
+      {
+        "path": "B1/tecnica/C0-recuperada/predicciones-val.npy",
+        "sha256": "6e961ed80e7de25e19a5ab19530c0f745e75df7524a1f85a41f37a89f4a0f7bb",
+        "bytes": 2097280
+      },
+      {
+        "path": "B1/tecnica/C1-continua/last.pt",
+        "sha256": "a2cb6d722471a70e038655818e2c8118c54a45356878d328e65f085c6ea4ae31",
+        "bytes": 279764806
+      },
+      {
+        "path": "B1/tecnica/C1-continua/predicciones-val.npy",
+        "sha256": "3d01bd3108750783fc799c3ec3060de357532511f50e8d457dd113c4984564cb",
+        "bytes": 2097280
+      },
+      {
+        "path": "B1/tecnica/C1-recuperada/last.pt",
+        "sha256": "cc7fe741c47472e74daea2a993ea7d908640167bf364774d2a3b935deb8d8a83",
+        "bytes": 279765318
+      },
+      {
+        "path": "B1/tecnica/C1-recuperada/predicciones-val.npy",
+        "sha256": "3d01bd3108750783fc799c3ec3060de357532511f50e8d457dd113c4984564cb",
+        "bytes": 2097280
+      },
+      {
+        "path": "B2/evaluacion/predicciones-cgan-inicial.npy",
+        "sha256": "95691a189ca1a71d0982bcf183edd07cb168f4aebb39a3a6422cb96b6718ffb1",
+        "bytes": 94371968
+      },
+      {
+        "path": "B2/piloto/C0/last.pt",
+        "sha256": "d7a25a1bf4cac726cf638f27a9ff87e7672bd614ca949c1be43fac60fe1a2075",
+        "bytes": 279766918
+      },
+      {
+        "path": "B2/piloto/C0/predicciones-val.npy",
+        "sha256": "c24523ca49e996d63da7393fdc0921b669758e809f274a94dec5d255634fd185",
+        "bytes": 94371968
+      },
+      {
+        "path": "B2/piloto/C1/last.pt",
+        "sha256": "1cd6e5eb5025793a191e1b6ee4f75fd21f988b62b9f286f16a8c8ac1ccb2b4b3",
+        "bytes": 279766918
+      },
+      {
+        "path": "B2/piloto/C1/predicciones-val.npy",
+        "sha256": "ef7ba0a3b540a6d187ec555ef9cfa4c7e3cbad1acf8f0e03904e8742a421669d",
+        "bytes": 94371968
+      },
+      {
+        "path": "B2/tecnica/C0-continua/last.pt",
+        "sha256": "f8b58926606c10abcb6d150cb34129daf3489d3e1b00dabeac11681c381f03ca",
+        "bytes": 279764870
+      },
+      {
+        "path": "B2/tecnica/C0-continua/predicciones-val.npy",
+        "sha256": "4ea6bccfb5d8f4b22f82fe88f4379bb97a0999963836ea7aac5e76b14623af24",
+        "bytes": 2097280
+      },
+      {
+        "path": "B2/tecnica/C0-recuperada/last.pt",
+        "sha256": "2edf515567bdb0770a1ad21cdfe058a53d22530da3bb814b7091028d7251f299",
+        "bytes": 279765382
+      },
+      {
+        "path": "B2/tecnica/C0-recuperada/predicciones-val.npy",
+        "sha256": "4ea6bccfb5d8f4b22f82fe88f4379bb97a0999963836ea7aac5e76b14623af24",
+        "bytes": 2097280
+      },
+      {
+        "path": "B2/tecnica/C1-continua/last.pt",
+        "sha256": "14c0ecb17e55d822e92e1dc179296855f5ffe52cd0da29fe982c0d3605510698",
+        "bytes": 279764870
+      },
+      {
+        "path": "B2/tecnica/C1-continua/predicciones-val.npy",
+        "sha256": "09ff5380fd640a8b83e24f4b4c846de86ed9983a51c796392ce61856ebdde9c2",
+        "bytes": 2097280
+      },
+      {
+        "path": "B2/tecnica/C1-recuperada/last.pt",
+        "sha256": "3217cd7639aa665db07b70ca92c93c77f935df88560793654b9274be268ade9c",
+        "bytes": 279765382
+      },
+      {
+        "path": "B2/tecnica/C1-recuperada/predicciones-val.npy",
+        "sha256": "09ff5380fd640a8b83e24f4b4c846de86ed9983a51c796392ce61856ebdde9c2",
+        "bytes": 2097280
+      },
+      {
+        "path": "B3/evaluacion/predicciones-cgan-inicial.npy",
+        "sha256": "95691a189ca1a71d0982bcf183edd07cb168f4aebb39a3a6422cb96b6718ffb1",
+        "bytes": 94371968
+      },
+      {
+        "path": "B3/piloto/C0/last.pt",
+        "sha256": "ec406fd2688d42e1fab626b70a318dc25265ef21516d15394519b238b6586a82",
+        "bytes": 279766918
+      },
+      {
+        "path": "B3/piloto/C0/predicciones-val.npy",
+        "sha256": "e61c9f42d19e9d5fc981526910ef6b8c0f4f4b83f9e8d5e8957477203e5b5f6a",
+        "bytes": 94371968
+      },
+      {
+        "path": "B3/piloto/C1/last.pt",
+        "sha256": "5d03f8957506083605b65ba341ac21f053ea85379000f2c5c5b6dfb03e147724",
+        "bytes": 279766918
+      },
+      {
+        "path": "B3/piloto/C1/predicciones-val.npy",
+        "sha256": "88e1470345072f69b55158f35ab81af2bd7b672c12ced96a6361157e1a011d8a",
+        "bytes": 94371968
+      },
+      {
+        "path": "B3/tecnica/C0-continua/last.pt",
+        "sha256": "303bd3c9639991e2b7be8c7ba7a6fe1b984e46146f49f2fc762c9366d0382b4e",
+        "bytes": 279764870
+      },
+      {
+        "path": "B3/tecnica/C0-continua/predicciones-val.npy",
+        "sha256": "cae824b21ba1d006dac579e22f0c1648d09eafed0fcfd14e8efc38bcae3ff5f6",
+        "bytes": 2097280
+      },
+      {
+        "path": "B3/tecnica/C0-recuperada/last.pt",
+        "sha256": "f08dcfb1569ff59f883410ada86038693d85e7a7ebaa582a060e812d6ace354a",
+        "bytes": 279765382
+      },
+      {
+        "path": "B3/tecnica/C0-recuperada/predicciones-val.npy",
+        "sha256": "cae824b21ba1d006dac579e22f0c1648d09eafed0fcfd14e8efc38bcae3ff5f6",
+        "bytes": 2097280
+      },
+      {
+        "path": "B3/tecnica/C1-continua/last.pt",
+        "sha256": "2cf2d3e03de2b4094002b169fe097fc86ec4d3a2991a7bd0714748c9a87a322f",
+        "bytes": 279764870
+      },
+      {
+        "path": "B3/tecnica/C1-continua/predicciones-val.npy",
+        "sha256": "77b51504c9716d26a3c031f82cd0a05e85321c438858973bc16bf1312424ca64",
+        "bytes": 2097280
+      },
+      {
+        "path": "B3/tecnica/C1-recuperada/last.pt",
+        "sha256": "e5051300668bf9cafe0593409a06b3631f8aa1e7d3a47a9ff668dbb6764bece9",
+        "bytes": 279765382
+      },
+      {
+        "path": "B3/tecnica/C1-recuperada/predicciones-val.npy",
+        "sha256": "77b51504c9716d26a3c031f82cd0a05e85321c438858973bc16bf1312424ca64",
+        "bytes": 2097280
+      },
+      {
+        "path": "mascaras-ajuste-v1/geo-train-01.npz",
+        "sha256": "fbae9d8febf20b64a00ed8127ebd40e5e57daf2d959755a25d2344e0a8e097e9",
+        "bytes": 10348
+      },
+      {
+        "path": "mascaras-ajuste-v1/geo-train-02.npz",
+        "sha256": "47991f6209d54f44304dac30a682a89822281fc61c0af8820c932fe1033bd53c",
+        "bytes": 15235
+      },
+      {
+        "path": "mascaras-ajuste-v1/geo-train-03.npz",
+        "sha256": "012f8e422fe58268411d933b5f03c60db9d583daa7e0397eed5f1fc0718e20b0",
+        "bytes": 12707
+      },
+      {
+        "path": "mascaras-ajuste-v1/geo-train-04.npz",
+        "sha256": "a5ce407b43215d208fecd03adda38fa16a7bef8fea4234a77e94653cddee4403",
+        "bytes": 11862
+      },
+      {
+        "path": "mascaras-ajuste-v1/geo-train-05.npz",
+        "sha256": "800a418e22f4942a31a339318a18abfbbfc5dd88f77cc522810642a2e6952afa",
+        "bytes": 15284
+      },
+      {
+        "path": "mascaras-ajuste-v1/geo-train-06.npz",
+        "sha256": "e2db7e3d6a1df4f904b2b687a0009f45813b245b8d4538a77966dea1f186bad0",
+        "bytes": 16313
+      },
+      {
+        "path": "mascaras-ajuste-v1/geo-train-07.npz",
+        "sha256": "f365b84a429eec14962c2d30179c6411702987d1e653309f903291c54633d314",
+        "bytes": 13726
+      },
+      {
+        "path": "mascaras-ajuste-v1/geo-train-08.npz",
+        "sha256": "51865bb23a98847b03535cff2db57fa08c50075c62977ad9fab6c8e11d2f8c09",
+        "bytes": 16007
+      },
+      {
+        "path": "mascaras-ajuste-v1/geo-train-09.npz",
+        "sha256": "cddaff5bf850da8c9df541957746007dce94c434157e5fe97f1b10fe19a476e0",
+        "bytes": 14318
+      },
+      {
+        "path": "mascaras-ajuste-v1/geo-train-10.npz",
+        "sha256": "fee98f6ccef1e8e96f5ec2f8302a58cd75c8db4d8985015893cacd1a4dda1779",
+        "bytes": 14188
+      },
+      {
+        "path": "mascaras-ajuste-v1/geo-train-11.npz",
+        "sha256": "71939a3a1c23eb3806d715856ff115d03e90436ce27634f3e3c5577ef0bd9f68",
+        "bytes": 16265
+      },
+      {
+        "path": "mascaras-ajuste-v1/geo-train-12.npz",
+        "sha256": "2e7c97646bf36a2ecbc2f94426d05bdd3aa27643e7fb70fd6c156a5d89ed3f37",
+        "bytes": 14260
+      },
+      {
+        "path": "mascaras-ajuste-v1/geo-val-01.npz",
+        "sha256": "514d8f7cb47346cbed65043f20298035c318f30a67fd82f14d481d1c7a7c0ce1",
+        "bytes": 12916
+      },
+      {
+        "path": "mascaras-ajuste-v1/geo-val-02.npz",
+        "sha256": "24bfa5ec0275a306efb24ce2ab677c51aa1fc0be3cca71eaed648026365b7d9d",
+        "bytes": 11594
+      },
+      {
+        "path": "mascaras-ajuste-v1/geo-val-03.npz",
+        "sha256": "a2ab0d6b949638ba7cba840869d6935f9f8ff85029307f711170fb88b40c47e4",
+        "bytes": 15473
+      },
+      {
+        "path": "mascaras-ajuste-v1/manifest.json",
+        "sha256": "df720c9d64735fc02ac8d3147f8a230f7a8fdcec7530f9d16351c049c9413530",
+        "bytes": 29490
+      }
+    ]
+  },
+  "masks_verified": {
+    "geometries": 15,
+    "arrays_equal_to_previous_verified_cache": true,
+    "compressed_file_identity_separately_verified": true
+  },
+  "sources": {
+    "objetivo-2/herramientas/datos_ajuste.py": "2c89d770cc3d7b4fee66c977ff89af8faf6ab6bbca3ed12fe1f2a98734aa167f",
+    "objetivo-2/herramientas/ejecutar_ajuste.py": "8d49980e4e1c4b96347c81203a820cc5784b57473079562decbedd747fe11abb",
+    "objetivo-2/herramientas/perdida_cuentas_regionales.py": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+    "objetivo-2/herramientas/evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524",
+    "objetivo-2/implementacion/models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+    "objetivo-2/implementacion/scripts/evaluation/metrics.py": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42",
+    "objetivo-2/herramientas/revisar_ajuste.py": "294e4291b3bd10d6c0f597c9145867c4ac7f33cfd0bdacd5c78c3c4cee5ea750",
+    "objetivo-2/herramientas/evaluar_ajuste.py": "f0840197c20ff848dd79bfe3385eabc4beeaff632da67c580961bb14c13e721b",
+    "objetivo-2/herramientas/ejecutar_borde_cgan.py": "5f7bd0f4b32934bcafc36c7e2f6737951b9bc93c838d7d4b7628c53e59e2d7b4",
+    "objetivo-2/herramientas/revisar_borde_cgan.py": "4d48df3062fd10a97875abfcc9e0182b4ee92b9af00cdc9a11078b548a00fae7",
+    "objetivo-2/herramientas/evaluar_borde_cgan.py": "987e29854401ef4b5cfc62f574532d49aaa516449181d96e6b40d65636e53324",
+    "objetivo-2/herramientas/gradientes_critico.py": "76024538c9df1ba43e4c3c549e806137f820322b6d25aa3ff37bfb6c417da8be",
+    "objetivo-2/implementacion/models/patch_critic.py": "41fbbb005fd152d3ddf10e50721ac855108907714e150632d1942275736b84d8",
+    "objetivo-2/implementacion/scripts/training/losses.py": "8d950c772d923a98343b8cda787b28567df7d2bbd09c62f50085efb13f96c0a5",
+    "objetivo-2/herramientas/perdida_espacial_borde_experimental.py": "0d3900f7359659666d32c282a24f5bc5abcf73eb09b9ecb88cc9b0695927a082",
+    "objetivo-2/herramientas/resumir_borde_cgan.py": "415ad0bb11c2a295ff073e52bb6deffbca866d999363e14dad15a3ffa52d746e"
+  },
+  "local_environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "torch": "2.6.0+cpu",
+    "cuda": null,
+    "device": "cpu",
+    "gpu": null,
+    "threads": 2,
+    "deterministic": true
+  },
+  "cache_sha256": "df720c9d64735fc02ac8d3147f8a230f7a8fdcec7530f9d16351c049c9413530",
+  "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+  "inference_tolerances": {
+    "pixel_max_abs": 0.0001,
+    "ssim": 1e-05,
+    "psnr_db": 0.001,
+    "scope": "CPU versus CUDA inference only; technical recovery requires exact equality."
+  },
+  "synthesis": {
+    "schema": "oe2-cgan-borde-summary-v1",
+    "stage": "piloto",
+    "pairs": [
+      "B1",
+      "B2",
+      "B3"
+    ],
+    "seeds": {
+      "B1": 2026100411,
+      "B2": 2026100412,
+      "B3": 2026100413
+    },
+    "delta_definition": "C1 minus C0; negative favors Q/errors, positive favors SSIM/PSNR",
+    "paired_differences": {
+      "B1": {
+        "Q": -0.014310112565252976,
+        "sky_mae": 0.00011999381693744704,
+        "edge_mae": -0.04254807194688605,
+        "contrast_absolute_error": -0.029041501952649623,
+        "ssim": 6.137023890617765e-05,
+        "psnr": -0.009688535852014013
+      },
+      "B2": {
+        "Q": -0.006532948918902756,
+        "sky_mae": -0.0014817729944188382,
+        "edge_mae": -0.04218290868998363,
+        "contrast_absolute_error": 0.017728581193081405,
+        "ssim": 0.00038694403793204657,
+        "psnr": 0.06265768171024888
+      },
+      "B3": {
+        "Q": 0.004682860404746456,
+        "sky_mae": -0.0007388328866674287,
+        "edge_mae": -0.03968231012788455,
+        "contrast_absolute_error": -0.008501673909365987,
+        "ssim": -0.00032492923918547856,
+        "psnr": -0.05053384772416081
+      }
+    },
+    "descriptive_summary": {
+      "Q": {
+        "values": [
+          -0.014310112565252976,
+          -0.006532948918902756,
+          0.004682860404746456
+        ],
+        "median": -0.006532948918902756,
+        "min": -0.014310112565252976,
+        "max": 0.004682860404746456
+      },
+      "sky_mae": {
+        "values": [
+          0.00011999381693744704,
+          -0.0014817729944188382,
+          -0.0007388328866674287
+        ],
+        "median": -0.0007388328866674287,
+        "min": -0.0014817729944188382,
+        "max": 0.00011999381693744704
+      },
+      "edge_mae": {
+        "values": [
+          -0.04254807194688605,
+          -0.04218290868998363,
+          -0.03968231012788455
+        ],
+        "median": -0.04218290868998363,
+        "min": -0.04254807194688605,
+        "max": -0.03968231012788455
+      },
+      "contrast_absolute_error": {
+        "values": [
+          -0.029041501952649623,
+          0.017728581193081405,
+          -0.008501673909365987
+        ],
+        "median": -0.008501673909365987,
+        "min": -0.029041501952649623,
+        "max": 0.017728581193081405
+      },
+      "ssim": {
+        "values": [
+          6.137023890617765e-05,
+          0.00038694403793204657,
+          -0.00032492923918547856
+        ],
+        "median": 6.137023890617765e-05,
+        "min": -0.00032492923918547856,
+        "max": 0.00038694403793204657
+      },
+      "psnr": {
+        "values": [
+          -0.009688535852014013,
+          0.06265768171024888,
+          -0.05053384772416081
+        ],
+        "median": -0.009688535852014013,
+        "min": -0.05053384772416081,
+        "max": 0.06265768171024888
+      }
+    },
+    "checks_by_pair": {
+      "B1": {
+        "Q_reduced": true,
+        "edge_reduced": true,
+        "each_geometry_not_worse": false,
+        "sky_not_worse": false,
+        "edge_not_worse": true,
+        "contrast_support_unchanged": true,
+        "contrast_not_worse": true,
+        "ssim_not_worse": true,
+        "psnr_not_worse": false
+      },
+      "B2": {
+        "Q_reduced": true,
+        "edge_reduced": true,
+        "each_geometry_not_worse": false,
+        "sky_not_worse": true,
+        "edge_not_worse": true,
+        "contrast_support_unchanged": true,
+        "contrast_not_worse": false,
+        "ssim_not_worse": true,
+        "psnr_not_worse": true
+      },
+      "B3": {
+        "Q_reduced": false,
+        "edge_reduced": true,
+        "each_geometry_not_worse": false,
+        "sky_not_worse": true,
+        "edge_not_worse": true,
+        "contrast_support_unchanged": true,
+        "contrast_not_worse": true,
+        "ssim_not_worse": false,
+        "psnr_not_worse": false
+      }
+    },
+    "concordant_pairs": 0,
+    "pairs_reducing_Q": 2,
+    "decision": "dependencia_de_semilla_o_compromiso",
+    "physical_acceptance": false,
+    "heldout_opened": false,
+    "independent_from_scratch_training": false,
+    "limitations": "Tres continuaciones condicionadas al mismo checkpoint. Sin significaci\u00f3n ni aceptaci\u00f3n f\u00edsica; conservar tablas completas de vistas/anomal\u00edas."
+  },
+  "synthesis_float_fields": 54,
+  "inference_images_computed": 2520
+}

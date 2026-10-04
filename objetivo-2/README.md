@@ -1,6 +1,6 @@
 # Objetivo específico 2: revisión de la implementación recibida
 
-**Ensayo de borde E1 preparado:** coeficiente 0,629 fijado con train, integración y recuperación CPU verificadas. El siguiente trabajo delegado es la prueba técnica GPU de B1–B3 y, si las tres pasan, las seis continuaciones de cinco épocas. [Diseño y evidencia](DISENO_BORDE_CGAN.md) · [Instrucciones](INSTRUCCIONES_BORDE_CGAN.md). Sin aceptación física ni cierre del OE2.
+**E1 ejecutado y revisado:** 55 binarios íntegros, recuperación exacta en B1–B3 y 2.520 inferencias reproducidas. El borde mejora en todas las vistas, pero persiste sobreestimación interior en geometría 1; ninguna pareja cumple los nueve controles. [Revisión y diagnóstico](REVISION_E1_804CE85.md) · [Siguiente entrega sin entrenamiento GPU](INSTRUCCIONES_CIERRE_E1.md). OE2 continúa abierto.
 
 **OE2 — repetición cGAN revisada:** se verificaron los 55 binarios, la recuperación exacta de las tres parejas, las seis continuaciones y su inferencia. C1 reduce el sesgo regional en dos parejas y lo aumenta en la tercera; el error de borde empeora en las tres y ninguna satisface los ocho controles. La [revisión independiente](REVISION_REPETICION_F6518FF.md) confirma dependencia de la semilla o compromiso. No se concede aceptación física ni se amplía la campaña; el siguiente paso es revisar el diseño científico y los criterios de aceptación. El OE2 permanece abierto.
 
@@ -68,7 +68,7 @@ El checkpoint guarda configuración y commit, pero no vincula obligatoriamente e
 
 ### OE2-P04 — Protocolo y evidencia sobre los datos corregidos
 
-**Estado: piloto recibido e inferencia independiente verificada; evaluación regional física y campaña principal pendientes.** La existencia de modelos históricos reduce el trabajo de implementación, pero todavía se requiere un protocolo específico: fracciones, modelo por fracción o condicionamiento explícito por f, semillas, presupuesto, comparación con U-Net L1 y criterio de selección.
+**Estado vigente: piloto, continuaciones y E1 verificados; diagnóstico regional realizado. Aceptación física y evaluación final pendientes.** La existencia de modelos históricos reduce el trabajo de implementación, pero todavía se requiere un protocolo específico: fracciones, modelo por fracción o condicionamiento explícito por f, semillas, presupuesto, comparación con U-Net L1 y criterio de selección.
 
 La configuración histórica usa modelos separados por fracción; la imagen de baja estadística es la condición del crítico. No corresponde describirla como una única red condicionada explícitamente por f. El criterio `min_delta=0.001` afecta qué checkpoint se considera mejor: se debe distinguir mejora suficiente para paciencia de máximo absoluto de SSIM, o declarar expresamente el criterio adoptado.
 

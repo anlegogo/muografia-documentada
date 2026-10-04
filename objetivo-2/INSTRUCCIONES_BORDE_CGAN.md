@@ -1,5 +1,7 @@
 # Instrucciones para ejecutar el ensayo de borde E1
 
+**Actualización de estado — 2026-10-04:** E1 fue ejecutado y auditado en la entrega `804ce85`. E1-04 y E1-05 están verificados; el resultado científico es de compromiso. La [revisión](REVISION_E1_804CE85.md) y las [instrucciones de consolidación](INSTRUCCIONES_CIERRE_E1.md) sustituyen el encargo operativo. El texto siguiente conserva el diseño y la guía previos; sus menciones a ejecución pendiente son históricas. No repetir el ensayo.
+
 **Estado: preparación local completa y verificada; pendiente de nueva aceptación GPU.** El trabajo delegado es comprobar esta versión en GPU y, si las tres parejas pasan, completar las seis continuaciones sin esperar otra aprobación entre parejas. No ampliar épocas, fracciones ni semillas. Consultar el [diseño](DISENO_BORDE_CGAN.md).
 
 ## Qué se busca
