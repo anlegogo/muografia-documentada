@@ -1,6 +1,8 @@
 # Muografía: documentación y seguimiento académico
 
-**E1 ejecutado y revisado:** 55 binarios íntegros, recuperación exacta en B1–B3 y 2.520 inferencias reproducidas. El borde mejora en todas las vistas, pero persiste sobreestimación interior en geometría 1; ninguna pareja cumple los nueve controles. [Revisión y diagnóstico](objetivo-2/REVISION_E1_804CE85.md) · [Siguiente entrega sin entrenamiento GPU](objetivo-2/INSTRUCCIONES_CIERRE_E1.md). OE2 continúa abierto.
+**Siguiente ejecución: evaluación final OE2 al 5 %, sin reentrenar.** Ocho redes congeladas y entrada; 360 imágenes test y 120 de generalización por red. [Protocolo](objetivo-2/PROTOCOLO_EVALUACION_FINAL_OE2.md) · [Instrucciones](objetivo-2/INSTRUCCIONES_EVALUACION_FINAL_OE2.md). La reproducción del diagnóstico E1 deja de ser requisito. Ejecutor verificado localmente; resultados reservados pendientes.
+
+**E1 ejecutado y revisado:** 55 binarios íntegros, recuperación exacta en B1–B3 y 2.520 inferencias reproducidas. El borde mejora en todas las vistas, pero persiste sobreestimación interior en geometría 1; ninguna pareja cumple los nueve controles. [Revisión y diagnóstico](objetivo-2/REVISION_E1_804CE85.md) · [Consolidación E1 histórica, no bloqueante](objetivo-2/INSTRUCCIONES_CIERRE_E1.md). OE2 continúa abierto.
 
 **OE2 — repetición cGAN revisada:** se verificaron los 55 binarios, la recuperación exacta de las tres parejas, las seis continuaciones y su inferencia. C1 reduce el sesgo regional en dos parejas y lo aumenta en la tercera; el error de borde empeora en las tres y ninguna satisface los ocho controles. La [revisión independiente](objetivo-2/REVISION_REPETICION_F6518FF.md) confirma dependencia de la semilla o compromiso. No se concede aceptación física ni se amplía la campaña; el siguiente paso es revisar el diseño científico y los criterios de aceptación. El OE2 permanece abierto.
 

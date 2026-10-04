@@ -1,0 +1,10 @@
+{
+  "unet_original": "/ruta/al/checkpoint/unet_original.pt",
+  "cgan_original": "/ruta/al/checkpoint/cgan_original.pt",
+  "B1_C0": "/ruta/al/checkpoint/B1_C0.pt",
+  "B1_C1": "/ruta/al/checkpoint/B1_C1.pt",
+  "B2_C0": "/ruta/al/checkpoint/B2_C0.pt",
+  "B2_C1": "/ruta/al/checkpoint/B2_C1.pt",
+  "B3_C0": "/ruta/al/checkpoint/B3_C0.pt",
+  "B3_C1": "/ruta/al/checkpoint/B3_C1.pt"
+}

@@ -1,5 +1,14 @@
 # Bitácora del OE2
 
+## Preparación de evaluación final OE2 — 2026-10-04, Colombia
+
+- Por solicitud de la dirección, se sustituye la consolidación E1 como requisito bloqueante por inferencia final al 5 % con ocho redes existentes. No hay nuevo entrenamiento.
+- Se fijan ocho pesos, cuatro geometrías reservadas y sus ocho archivos de distribución; 480 imágenes por red, 3.840 predicciones. Protocolo y fuentes se registran antes de desempeño reservado.
+- Verificación local: cinco pruebas de contratos, siete controles de flujo sintético, ocho pesos/32 inferencias de validación y 441 campos de métricas contrastados. No se calcularon resultados reservados localmente.
+- Se corrigió una aserción de igualdad decimal en la prueba sintética (0,1 frente a su representación binaria); el ejecutor no se modificó para cambiar ese resultado. Se representa PSNR infinito explícitamente en casos perfectos.
+- EF-01 preparado; EF-02/03 pendientes de ejecución y auditoría. OE2-P04 sigue parcial; no se afirma equivalencia física ni desempeño en otras fracciones.
+- [Protocolo](PROTOCOLO_EVALUACION_FINAL_OE2.md) y [tarea delegada](INSTRUCCIONES_EVALUACION_FINAL_OE2.md).
+
 ## Revisión y diagnóstico interior de E1 — 2026-10-04, Colombia
 
 - Actividad: auditoría independiente de la entrega estudiantil 804ce85 y diagnóstico local de predicciones, sin nuevo entrenamiento.

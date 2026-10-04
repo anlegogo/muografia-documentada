@@ -1,5 +1,8 @@
 # Índice de documentación
 
+- [Protocolo de evaluación final OE2 al 5 %](../objetivo-2/PROTOCOLO_EVALUACION_FINAL_OE2.md).
+- [Ejecución final con pesos existentes](../objetivo-2/INSTRUCCIONES_EVALUACION_FINAL_OE2.md).
+
 - [Revisión y diagnóstico del ensayo E1](../objetivo-2/REVISION_E1_804CE85.md).
 - [Instrucciones de consolidación E1, sin nueva GPU](../objetivo-2/INSTRUCCIONES_CIERRE_E1.md).
 - [Borrador de discusión E1](../objetivo-2/DISCUSION_E1_BORRADOR.md).

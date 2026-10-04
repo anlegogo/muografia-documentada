@@ -1,0 +1,68 @@
+{
+  "heldout_opened": false,
+  "training_performed": false,
+  "protocol_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "torch": "2.6.0+cpu",
+    "skimage": "0.26.0",
+    "cuda": null
+  },
+  "inference": {
+    "unet_original": {
+      "images": 4,
+      "pixel_max_abs": 0.0,
+      "within_1e_4": true
+    },
+    "cgan_original": {
+      "images": 4,
+      "pixel_max_abs": 0.0,
+      "within_1e_4": true
+    },
+    "B1_C0": {
+      "images": 4,
+      "pixel_max_abs": 4.0531158447265625e-06,
+      "within_1e_4": true
+    },
+    "B1_C1": {
+      "images": 4,
+      "pixel_max_abs": 2.637505531311035e-06,
+      "within_1e_4": true
+    },
+    "B2_C0": {
+      "images": 4,
+      "pixel_max_abs": 2.9206275939941406e-06,
+      "within_1e_4": true
+    },
+    "B2_C1": {
+      "images": 4,
+      "pixel_max_abs": 4.991888999938965e-06,
+      "within_1e_4": true
+    },
+    "B3_C0": {
+      "images": 4,
+      "pixel_max_abs": 5.3942203521728516e-06,
+      "within_1e_4": true
+    },
+    "B3_C1": {
+      "images": 4,
+      "pixel_max_abs": 3.7997961044311523e-06,
+      "within_1e_4": true
+    }
+  },
+  "metrics": {
+    "B1": {
+      "fields": 147,
+      "max_difference": 2.7755575615628914e-17
+    },
+    "B2": {
+      "fields": 147,
+      "max_difference": 2.7755575615628914e-17
+    },
+    "B3": {
+      "fields": 147,
+      "max_difference": 5.551115123125783e-17
+    }
+  }
+}

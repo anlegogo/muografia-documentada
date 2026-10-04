@@ -1,5 +1,7 @@
 # Siguiente entrega: consolidación y discusión de E1
 
+**Actualización de prioridad — 2026-10-04:** la dirección solicitó avanzar directamente. Reproducir el diagnóstico y consolidar E1 ya no son requisitos previos. Ejecutar la [evaluación final](INSTRUCCIONES_EVALUACION_FINAL_OE2.md); la redacción puede avanzar en paralelo. La prohibición anterior de abrir reservas queda sustituida únicamente para el bloque congelado EF-01. Se conserva debajo la guía histórica.
+
 Fecha: 2026-10-04. **La ejecución GPU de E1 y su auditoría terminaron.** Esta guía sustituye el encargo de ejecutar E1; no solicita otro entrenamiento ni requiere alquilar GPU. Véase la [revisión y diagnóstico](REVISION_E1_804CE85.md).
 
 ## Propósito

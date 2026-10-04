@@ -1,0 +1,13 @@
+{
+  "synthetic_only": true,
+  "heldout_images_opened": false,
+  "checks": [
+    "480 predictions",
+    "skip completed exports",
+    "reject different identity",
+    "full evaluation 960 rows including input",
+    "homogeneous Q undefined",
+    "reject corrupted resume",
+    "reject corrupted evaluation"
+  ]
+}
