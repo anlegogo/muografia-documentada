@@ -1,0 +1,40 @@
+unet_original geo-test-01 120 predicciones
+unet_original geo-test-02 120 predicciones
+unet_original geo-test-03 120 predicciones
+unet_original geo-gen-01 120 predicciones
+2026-10-04T17:23:44Z MODELO_OK unet_original
+cgan_original geo-test-01 120 predicciones
+cgan_original geo-test-02 120 predicciones
+cgan_original geo-test-03 120 predicciones
+cgan_original geo-gen-01 120 predicciones
+2026-10-04T17:24:03Z MODELO_OK cgan_original
+B1_C0 geo-test-01 120 predicciones
+B1_C0 geo-test-02 120 predicciones
+B1_C0 geo-test-03 120 predicciones
+B1_C0 geo-gen-01 120 predicciones
+2026-10-04T17:24:25Z MODELO_OK B1_C0
+B1_C1 geo-test-01 120 predicciones
+B1_C1 geo-test-02 120 predicciones
+B1_C1 geo-test-03 120 predicciones
+B1_C1 geo-gen-01 120 predicciones
+2026-10-04T17:24:42Z MODELO_OK B1_C1
+B2_C0 geo-test-01 120 predicciones
+B2_C0 geo-test-02 120 predicciones
+B2_C0 geo-test-03 120 predicciones
+B2_C0 geo-gen-01 120 predicciones
+2026-10-04T17:24:50Z MODELO_OK B2_C0
+B2_C1 geo-test-01 120 predicciones
+B2_C1 geo-test-02 120 predicciones
+B2_C1 geo-test-03 120 predicciones
+B2_C1 geo-gen-01 120 predicciones
+2026-10-04T17:24:57Z MODELO_OK B2_C1
+B3_C0 geo-test-01 120 predicciones
+B3_C0 geo-test-02 120 predicciones
+B3_C0 geo-test-03 120 predicciones
+B3_C0 geo-gen-01 120 predicciones
+2026-10-04T17:25:15Z MODELO_OK B3_C0
+B3_C1 geo-test-01 120 predicciones
+B3_C1 geo-test-02 120 predicciones
+B3_C1 geo-test-03 120 predicciones
+B3_C1 geo-gen-01 120 predicciones
+2026-10-04T17:25:33Z MODELO_OK B3_C1
