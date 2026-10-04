@@ -1,4 +1,4 @@
-90bf6f6d983e769bc7951d9f80d5a4fc0fa6c24952e087a2e2a86cb6cbe88a68 *./DIAGNOSTICO_CG04.md
+6ba2caa5224d68d5679bb26e578f6d0615c034d70af24eb2d131580d7a3c4d18 *./DIAGNOSTICO_CG04.md
 dc88fa1ca79caf830133bc39e3834678dfc7681b4861622d13c0956d816cd58f *./INCIDENCIA_RECUPERACION_GPU.md
 71001c6fc136beb17e724ee163f2903a19c3b1687ddd50ab7fb66827c964e832 *./PROPUESTA_TOLERANCIA_RECUPERACION.md
 e0c5c4f3f4aba6ef67dc9a53f91b5dd8b45ddbb61962126c1e0da12c7a43eb5d *./datos/diagnostico-cg04/binarios-drive.txt
@@ -108,6 +108,7 @@ f50c92968c75a7e53a263918ac82616b640cc0bc9603734571d6b53c039dcc56 *./datos/diagno
 df720c9d64735fc02ac8d3147f8a230f7a8fdcec7530f9d16351c049c9413530 *./datos/diagnostico-cg04/manifiesto-mascaras.json
 78f866566c1fbf7e686732a716153c0c47445b2e44d6857f66633c6171a1d816 *./datos/diagnostico-cg04/mascaras.log
 a9628fd7f8591bcb930fb18026c99c23554113ef0eb34e042912e9fe6eeb7a36 *./datos/diagnostico-cg04/python-torch.txt
+ef9bd710dd3fca8a79045c80dee4dbebeb0f4d15892608da0fae86523f7b6dd9 *./datos/diagnostico-cg04/verificacion-drive-cg04.json
 52f2e79952191d623ed1076f750200dfb4ed7ed2330fa1459f8ae19c68f5bc92 *./datos/intento-1/commit-codigo.txt
 0ced8338620fbae39a87704f68af55e93d91d13a6087b5993bd5792dc9277e22 *./datos/intento-1/datos.log
 3699c61c6bb08a79bfc9e5ba2aff4330bb5c694a1f5f20be2bf1240d8b7d966a *./datos/intento-1/diagnostico-C0-continua-2.log

@@ -1,0 +1,118 @@
+{
+ "carpeta": "https://drive.google.com/drive/folders/1Jjg7MofdRF4QpdcARYW1RvgUgrO8Y6I6",
+ "acceso": "enlace publico sin sesion",
+ "verificados": 22,
+ "total": 22,
+ "archivos": {
+  "C0/continua/epoch1.pt": {
+   "ok": true,
+   "bytes": 279756678,
+   "sha256": "a7c0f0626fc4822a010e69f8f5f28fa94c9dfd73cd67bb7448d18460f7ec9be1"
+  },
+  "C0/continua/epoch2.pt": {
+   "ok": true,
+   "bytes": 279756678,
+   "sha256": "6e0d9b152304988087d49e858854f0e6644ae5ff9c3ffcb66a44d3676e7aa500"
+  },
+  "C0/continua/predicciones-val.npy": {
+   "ok": true,
+   "bytes": 2097280,
+   "sha256": "1f157184d4df080e4ce43fd78c33294e2a034a7b9482711c69ab55e649ad256b"
+  },
+  "C0/reanudada/epoch2.pt": {
+   "ok": true,
+   "bytes": 279756678,
+   "sha256": "951b6529c78628f20923f406b0ba3a1fa2bb1a351c170ab06854ee766eba5636"
+  },
+  "C0/reanudada/predicciones-val.npy": {
+   "ok": true,
+   "bytes": 2097280,
+   "sha256": "136ac88195de587a22c4f35bcb5749c63f48b289bc4946dd07f63175ca551b65"
+  },
+  "C0/recarga/epoch1.pt": {
+   "ok": true,
+   "bytes": 279756678,
+   "sha256": "a7c0f0626fc4822a010e69f8f5f28fa94c9dfd73cd67bb7448d18460f7ec9be1"
+  },
+  "C0/recarga/epoch2.pt": {
+   "ok": true,
+   "bytes": 279756678,
+   "sha256": "6e0d9b152304988087d49e858854f0e6644ae5ff9c3ffcb66a44d3676e7aa500"
+  },
+  "C0/recarga/predicciones-val.npy": {
+   "ok": true,
+   "bytes": 2097280,
+   "sha256": "1f157184d4df080e4ce43fd78c33294e2a034a7b9482711c69ab55e649ad256b"
+  },
+  "C0/repetida/epoch1.pt": {
+   "ok": true,
+   "bytes": 279756678,
+   "sha256": "a7c0f0626fc4822a010e69f8f5f28fa94c9dfd73cd67bb7448d18460f7ec9be1"
+  },
+  "C0/repetida/epoch2.pt": {
+   "ok": true,
+   "bytes": 279756678,
+   "sha256": "6e0d9b152304988087d49e858854f0e6644ae5ff9c3ffcb66a44d3676e7aa500"
+  },
+  "C0/repetida/predicciones-val.npy": {
+   "ok": true,
+   "bytes": 2097280,
+   "sha256": "1f157184d4df080e4ce43fd78c33294e2a034a7b9482711c69ab55e649ad256b"
+  },
+  "C1/continua/epoch1.pt": {
+   "ok": true,
+   "bytes": 279756678,
+   "sha256": "222c2e526e3b39f11a63c8ee90a74d7adf9fece6e96922387c2a6d8f2d1bed63"
+  },
+  "C1/continua/epoch2.pt": {
+   "ok": true,
+   "bytes": 279756678,
+   "sha256": "674ce5c43cf1b8de1b66fef4c6e63c043e55085fa3843297a4827250e6d333fb"
+  },
+  "C1/continua/predicciones-val.npy": {
+   "ok": true,
+   "bytes": 2097280,
+   "sha256": "627791087270826f3da9d68ddf40c5e9000fc749bc71bb2d2d154eb4f42f6ccc"
+  },
+  "C1/reanudada/epoch2.pt": {
+   "ok": true,
+   "bytes": 279756678,
+   "sha256": "b46d3c78e537999a2ccfd2dc977a504f6fbcce01a1ca93121eab2c1d83379280"
+  },
+  "C1/reanudada/predicciones-val.npy": {
+   "ok": true,
+   "bytes": 2097280,
+   "sha256": "6e8d13d40e71f7b0c92656b506f25e2c86c56fbf29052386c35baaac33e89d92"
+  },
+  "C1/recarga/epoch1.pt": {
+   "ok": true,
+   "bytes": 279756678,
+   "sha256": "222c2e526e3b39f11a63c8ee90a74d7adf9fece6e96922387c2a6d8f2d1bed63"
+  },
+  "C1/recarga/epoch2.pt": {
+   "ok": true,
+   "bytes": 279756678,
+   "sha256": "674ce5c43cf1b8de1b66fef4c6e63c043e55085fa3843297a4827250e6d333fb"
+  },
+  "C1/recarga/predicciones-val.npy": {
+   "ok": true,
+   "bytes": 2097280,
+   "sha256": "627791087270826f3da9d68ddf40c5e9000fc749bc71bb2d2d154eb4f42f6ccc"
+  },
+  "C1/repetida/epoch1.pt": {
+   "ok": true,
+   "bytes": 279756678,
+   "sha256": "222c2e526e3b39f11a63c8ee90a74d7adf9fece6e96922387c2a6d8f2d1bed63"
+  },
+  "C1/repetida/epoch2.pt": {
+   "ok": true,
+   "bytes": 279756678,
+   "sha256": "674ce5c43cf1b8de1b66fef4c6e63c043e55085fa3843297a4827250e6d333fb"
+  },
+  "C1/repetida/predicciones-val.npy": {
+   "ok": true,
+   "bytes": 2097280,
+   "sha256": "627791087270826f3da9d68ddf40c5e9000fc749bc71bb2d2d154eb4f42f6ccc"
+  }
+ }
+}
