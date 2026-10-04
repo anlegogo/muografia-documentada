@@ -5,11 +5,12 @@ import numpy as np
 import torch
 from datos_ajuste import read_json,digest,canonical,atomic_json
 from ejecutar_ajuste import state_digest
-from ejecutar_ajuste_cgan import spec,sources,configure,GRADIENT_POLICY
+from ejecutar_ajuste_cgan import spec,sources,configure,GRADIENT_POLICY,PAIR_SEEDS
 from revisar_ajuste import finite,equal_state
 
 def validate_state(c):
-    i=c['identity'];cfg=spec(i['arm']);epochs=2 if i['stage']=='tecnica' else 5
+    i=c['identity'];cfg=spec(i['arm'],i.get('pair'));epochs=2 if i['stage']=='tecnica' else 5
+    if i.get('seed')!=cfg['seed'] or i.get('pair')!=cfg.get('pair'):raise ValueError('Identidad pareja/semilla incompatible')
     if i.get('critic_gradient_policy')!=GRADIENT_POLICY:raise ValueError('Política de gradiente incompatible')
     if i['schema']!='oe2-cgan-ajuste-run-v1' or i['stage'] not in ('tecnica','piloto') or i['config']!=cfg or i['epochs']!=epochs or i['sources']!=sources():raise ValueError('Identidad cGAN incompatible')
     n=2 if i['stage']=='tecnica' else 360
@@ -29,9 +30,10 @@ def validate_state(c):
     if i['environment']['device'].startswith('cuda') and not c['rng']['cuda']:raise ValueError('Falta RNG CUDA')
     return c
 
-def load_completed(path,arm,stage):
+def load_completed(path,arm,stage,pair=None):
     path=Path(path);c=torch.load(path/'last.pt',map_location='cpu',weights_only=True);validate_state(c)
     i=c['identity']
+    if i.get('pair')!=pair:raise ValueError('Pareja incompatible')
     if i['arm']!=arm or i['stage']!=stage or c['epoch']!=i['epochs']:raise ValueError('Rama/etapa incorrecta o incompleta')
     s=read_json(path/'summary.json')
     if not s['completed'] or s['identity']!=i or s['epoch']!=c['epoch'] or s['history']!=c['history'] or s['last_checkpoint_sha256']!=digest(path/'last.pt') or s['resume_count']!=c['resume_count']:raise ValueError('Resumen incompatible')
@@ -40,17 +42,17 @@ def load_completed(path,arm,stage):
         if ex[key]!=digest(path/name):raise ValueError('Archivo de exportación alterado')
     keys=read_json(path/'indices-val.json')
     if canonical(keys)!=i['val_indices_sha256']:raise ValueError('Índices incorrectos')
-    if stage=='tecnica' and keys!=spec(arm)['stages']['technical']['val_indices']:raise ValueError('Muestras técnicas incorrectas')
+    if stage=='tecnica' and keys!=spec(arm,pair)['stages']['technical']['val_indices']:raise ValueError('Muestras técnicas incorrectas')
     z=np.load(path/'predicciones-val.npy',mmap_mode='r',allow_pickle=False)
     if z.shape!=(8 if stage=='tecnica' else 360,256,256) or z.dtype!=np.float32 or not np.isfinite(z).all() or np.any((z<0)|(z>=1)):raise ValueError('Predicciones fuera de contrato')
     return c
 
-def audit_technical(paths,require_gpu=False):
+def audit_technical(paths,require_gpu=False,pair=None):
     expected={a+'-'+mode for a in ['C0','C1'] for mode in ['continua','recuperada']}
     if set(paths)!=expected:raise ValueError('Se requieren cuatro ejecuciones cGAN')
-    states={k:load_completed(v,k.split('-')[0],'tecnica') for k,v in paths.items()}
+    states={k:load_completed(v,k.split('-')[0],'tecnica',pair) for k,v in paths.items()}
     identities=[v['identity'] for v in states.values()]
-    for key in ['initial_checkpoint_sha256','initial_generator_sha256','initial_critic_sha256','sources','environment','cache_sha256','data_manifest_sha256','train_indices_sha256','val_indices_sha256']:
+    for key in ['pair','seed','initial_checkpoint_sha256','initial_generator_sha256','initial_critic_sha256','sources','environment','cache_sha256','data_manifest_sha256','train_indices_sha256','val_indices_sha256']:
         if any(i[key]!=identities[0][key] for i in identities):raise ValueError('Pruebas no pareadas: '+key)
     for arm in ['C0','C1']:
         x=states[arm+'-continua'];y=states[arm+'-recuperada']
@@ -63,17 +65,18 @@ def audit_technical(paths,require_gpu=False):
     if [x['order_sha256'] for x in states['C0-continua']['history']]!=[x['order_sha256'] for x in states['C1-continua']['history']]:raise ValueError('Orden C0/C1 distinto')
     gpu=all(i['environment']['device'].startswith('cuda') and i['environment']['gpu'] for i in identities)
     if require_gpu and not gpu:raise ValueError('La evidencia CPU no acepta GPU')
-    return {'schema':'oe2-cgan-ajuste-gate-v1','technical_checks_passed':True,'gpu_accepted':bool(gpu),'exact_recovery':True,
+    return {'schema':'oe2-cgan-ajuste-gate-v1','pair':pair,'seed':identities[0]['seed'],'technical_checks_passed':True,'gpu_accepted':bool(gpu),'exact_recovery':True,
             'runs':{k:str(Path(v).resolve()) for k,v in paths.items()},'identities':identities,
             'checkpoint_sha256':{k:digest(Path(v)/'last.pt') for k,v in paths.items()}}
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--pareja',choices=list(PAIR_SEEDS))
     for arm in ['C0','C1']:
         for mode in ['continua','recuperada']:p.add_argument('--'+arm+'-'+mode,type=Path,required=True)
     p.add_argument('--exigir-gpu',action='store_true');p.add_argument('--salida',type=Path,required=True)
     a=p.parse_args();configure()
     paths={arm+'-'+mode:getattr(a,arm+'_'+mode) for arm in ['C0','C1'] for mode in ['continua','recuperada']}
-    r=audit_technical(paths,a.exigir_gpu);a.salida.parent.mkdir(parents=True,exist_ok=True);atomic_json(a.salida,r)
+    r=audit_technical(paths,a.exigir_gpu,a.pareja);a.salida.parent.mkdir(parents=True,exist_ok=True);atomic_json(a.salida,r)
     print(json.dumps({'passed':True,'gpu_accepted':r['gpu_accepted'],'exact_recovery':True}))
 

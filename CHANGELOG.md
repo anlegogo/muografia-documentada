@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## 2026-10-04 — Integración y verificación de la repetición cGAN
+
+- Se implementaron las seis configuraciones R1–R3, identidad de pareja/semilla, aceptación por pareja y síntesis sin selección retrospectiva. Se conserva la formulación y el diseño prospectivo.
+- Cincuenta controles satisfactorios y doce ejecuciones CPU completas verifican recuperación exacta en las tres parejas (48 G/240 D); evaluaciones técnicas y síntesis comprobadas. [Guía y evidencia](objetivo-2/INSTRUCCIONES_REPETICION_CGAN_F05.md).
+- Preparados los comandos GPU, las seis continuaciones de cinco épocas y su entrega. Las aceptaciones históricas no habilitan esta versión. No se ejecutaron nuevas continuaciones de cinco épocas, CUDA ni imágenes reservadas; aceptación física y OE2 pendientes.
+
 ## 2026-10-04 — Valoración del compromiso y diseño de repetición cGAN
 
 - Se analizaron las 18 vistas y 24 combinaciones de anomalía; se verificó la reproducción de resúmenes y se publicaron tabla CSV, evidencia JSON y figura PNG/PDF.

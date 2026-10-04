@@ -1,5 +1,7 @@
 # Índice de documentación
 
+- [Instrucciones y verificación local de la repetición cGAN R1–R3](../objetivo-2/INSTRUCCIONES_REPETICION_CGAN_F05.md).
+
 - [Valoración del compromiso cGAN por vista y anomalía](../objetivo-2/VALORACION_COMPROMISO_CGAN_F05.md).
 - [Diseño de tres parejas nuevas de continuación cGAN](../objetivo-2/DISENO_REPETICION_CGAN_F05.md).
 

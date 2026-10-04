@@ -1,0 +1,116 @@
+{
+  "schema": "oe2-cgan-repetition-summary-v1",
+  "stage": "tecnica",
+  "pairs": [
+    "R1",
+    "R2",
+    "R3"
+  ],
+  "seeds": {
+    "R1": 2026100401,
+    "R2": 2026100402,
+    "R3": 2026100403
+  },
+  "delta_definition": "C1 minus C0; negative favors Q/errors, positive favors SSIM/PSNR",
+  "paired_differences": {
+    "R1": {
+      "Q": 0.013584139573302498,
+      "sky_mae": -0.0007194114534832333,
+      "edge_mae": -0.00011489889626198346,
+      "contrast_absolute_error": 0.023852989880418,
+      "ssim": -0.00012890500839335406,
+      "psnr": -0.018016764939336127
+    },
+    "R2": {
+      "Q": 0.0074685808279831845,
+      "sky_mae": 0.0005176104431945938,
+      "edge_mae": 0.0005569205652330156,
+      "contrast_absolute_error": 0.01535605208295849,
+      "ssim": -9.973926619033513e-05,
+      "psnr": -0.012675902962222096
+    },
+    "R3": {
+      "Q": 0.00854532736226743,
+      "sky_mae": -0.00040977402841526483,
+      "edge_mae": -2.5798780159985713e-05,
+      "contrast_absolute_error": 0.023054194274010245,
+      "ssim": -0.00015486527955133056,
+      "psnr": -0.02035241924801312
+    }
+  },
+  "descriptive_summary": {
+    "Q": {
+      "values": [
+        0.013584139573302498,
+        0.0074685808279831845,
+        0.00854532736226743
+      ],
+      "median": 0.00854532736226743,
+      "min": 0.0074685808279831845,
+      "max": 0.013584139573302498
+    },
+    "sky_mae": {
+      "values": [
+        -0.0007194114534832333,
+        0.0005176104431945938,
+        -0.00040977402841526483
+      ],
+      "median": -0.00040977402841526483,
+      "min": -0.0007194114534832333,
+      "max": 0.0005176104431945938
+    },
+    "edge_mae": {
+      "values": [
+        -0.00011489889626198346,
+        0.0005569205652330156,
+        -2.5798780159985713e-05
+      ],
+      "median": -2.5798780159985713e-05,
+      "min": -0.00011489889626198346,
+      "max": 0.0005569205652330156
+    },
+    "contrast_absolute_error": {
+      "values": [
+        0.023852989880418,
+        0.01535605208295849,
+        0.023054194274010245
+      ],
+      "median": 0.023054194274010245,
+      "min": 0.01535605208295849,
+      "max": 0.023852989880418
+    },
+    "ssim": {
+      "values": [
+        -0.00012890500839335406,
+        -9.973926619033513e-05,
+        -0.00015486527955133056
+      ],
+      "median": -0.00012890500839335406,
+      "min": -0.00015486527955133056,
+      "max": -9.973926619033513e-05
+    },
+    "psnr": {
+      "values": [
+        -0.018016764939336127,
+        -0.012675902962222096,
+        -0.02035241924801312
+      ],
+      "median": -0.018016764939336127,
+      "min": -0.02035241924801312,
+      "max": -0.012675902962222096
+    }
+  },
+  "checks_by_pair": {},
+  "concordant_pairs": null,
+  "pairs_reducing_Q": 0,
+  "decision": "solo_comprobacion_tecnica",
+  "physical_acceptance": false,
+  "heldout_opened": false,
+  "independent_from_scratch_training": false,
+  "limitations": "Tres continuaciones condicionadas al mismo checkpoint. Sin significación ni aceptación física; conservar tablas completas de vistas/anomalías.",
+  "evaluation_sha256": {
+    "R1": "b9135cc07476fda69d8978672fbb842c41be6f071569b6a0e5954df2b264989e",
+    "R2": "aa5dc048be25d7712eb3244e570cbff34416a2e1c7b764a6a2f1b0a1fce50580",
+    "R3": "d880295acd5104bd4ded7f9c399cf5a336b4d628b286f29b1e0e5024d25423f8"
+  }
+}

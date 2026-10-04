@@ -1,6 +1,6 @@
 # Diseño de repetición de la continuación cGAN al 5 %
 
-Fecha: 2026-10-04, America/Bogota. **Estado: diseño científico fijado; integración operativa de semillas y verificación del ejecutor pendientes. No constituye todavía una orden de ejecución.** Se deriva de la [valoración por vista y anomalía](VALORACION_COMPROMISO_CGAN_F05.md). No se lanza entrenamiento en esta preparación.
+Fecha: 2026-10-04, America/Bogota. **Estado: diseño implementado y verificado en CPU; preparado para la comprobación GPU con las [instrucciones de repetición](INSTRUCCIONES_REPETICION_CGAN_F05.md). Las seis continuaciones nuevas siguen pendientes.** Se deriva de la [valoración por vista y anomalía](VALORACION_COMPROMISO_CGAN_F05.md). Se ejecutó entrenamiento técnico local para comprobar recuperación; no se ejecutaron las continuaciones de cinco épocas.
 
 ## Pregunta y alcance
 
@@ -34,7 +34,7 @@ Se informarán las tres diferencias individuales, su mediana y rango. Como regla
 - **Resultado dependiente de la semilla o compromiso:** alguna pareja no satisface todos los controles, aunque otras sí. Se conservan todas las parejas y se identifica qué medida cambia de dirección.
 - **Ausencia de reducción consistente de Q:** informar cuántas parejas reducen Q y cuáles no. No se sustituye una semilla por otra favorable.
 
-No se emplean las 360 imágenes, 18 vistas o veinte realizaciones como si fueran repeticiones independientes de entrenamiento. Con tres parejas y tres geometrías observadas, no se proclama significación ni se calculan intervalos que aparenten una base confirmatoria. La media y el rango por semilla son descripciones del ensayo condicionado.
+No se emplean las 360 imágenes, 18 vistas o veinte realizaciones como si fueran repeticiones independientes de entrenamiento. Con tres parejas y tres geometrías observadas, no se proclama significación ni se calculan intervalos que aparenten una base confirmatoria. La mediana y el rango entre semillas son descripciones del ensayo condicionado.
 
 ## Salvaguardas físicas predefinidas
 
@@ -44,15 +44,13 @@ Registrar especialmente los hallazgos exploratorios, sin excluir los demás: las
 
 Si los ocho controles agregados se repiten pero persisten deterioros locales relevantes, la conclusión será «ventaja agregada repetida con limitaciones físicas persistentes». No se certifica físicamente el modelo por una votación de semillas. Antes de una campaña confirmatoria deberán definirse tolerancias físicas justificadas por el uso previsto y el alcance de la tesis; estas no se deducen de los resultados presentes.
 
-## Preparación operativa pendiente
+## Preparación operativa verificada en CPU
 
-El ejecutor vigente comprueba configuraciones con huellas fijas e incluye una sola semilla. **No editar a mano C0.json/C1.json ni pasar un parámetro de semilla que no existe.** El [JSON de diseño](configuraciones/repeticion-cgan-f05/diseno.spec.json) es una especificación no ejecutable (`ready_for_gpu: false`).
+Se implementaron seis configuraciones versionadas y selección mediante `--pareja R1/R2/R3` en ejecutor, revisor y evaluador. Pareja y semilla forman parte de la identidad; no se admiten configuraciones alteradas ni aceptaciones de otra pareja. El [JSON de diseño](configuraciones/repeticion-cgan-f05/diseno.spec.json) sigue siendo descriptivo; `ready_for_gpu: true` significa preparado para **comprobación técnica GPU**, no GPU aceptada.
 
-Se debe implementar un mecanismo versionado para las seis configuraciones, identificadores de pareja y semilla en checkpoints, selección de configuración en ejecutor/revisor/evaluador, y aceptación compatible por pareja. La auditoría actual asume los nombres C0/C1 y sus configuraciones originales; no se reutiliza sin adaptar esos contratos.
+La [evidencia local](evidencias/integracion-repeticion-cgan-v1.json) registra 50 controles y doce ejecuciones CPU completas, con recuperación exacta de las tres parejas (48 G/240 D). Se verificaron también las tres evaluaciones técnicas y la síntesis pareada. La función matemática y la política CG-04c permanecen; cambia la identidad operativa del ensayo.
 
-Antes de delegar: controles de rechazo de mezcla de semillas/configuraciones, igualdad de fuentes e inicialización, emparejamiento de índices, contadores y selección de época; después batería CPU continua/recuperada para las tres parejas. En GPU se requiere la misma batería de dos épocas por pareja (12 ejecuciones técnicas en total, con 18 lanzamientos por las recuperaciones). No se utiliza la aceptación de la versión anterior para saltar esa comprobación. No se modifica el criterio exacto de recuperación.
-
-Tras esa preparación, el encargo podrá dar autonomía para completar las tres parejas y su evaluación si pasan las comprobaciones y hay recursos. Ante fallo técnico se conserva la evidencia y se detiene la pareja; no se compensa con más épocas ni se cambia el diseño. La inspección intermedia no debe detener parejas posteriores por un resultado científico desfavorable.
+Las [instrucciones vigentes](INSTRUCCIONES_REPETICION_CGAN_F05.md) permiten comprobar las tres parejas en GPU y, tras aceptación exacta por pareja y con recursos disponibles, completar las seis continuaciones y su evaluación. No se utiliza la aceptación de la versión anterior para saltar esa comprobación. La inspección intermedia no debe detener parejas posteriores por un resultado científico desfavorable; ante fallo técnico se conserva la evidencia y se detiene la secuencia.
 
 ## Presupuesto y entrega
 
@@ -62,4 +60,4 @@ Como referencia de planificación, las dos continuaciones recibidas registraron 
 
 Entregar seis checkpoints finales y predicciones, sus registros completos, aceptaciones técnicas por pareja, manifiestos de huellas/tamaños y enlaces de Drive, evaluación por semilla y síntesis pareada sin selección de la mejor semilla. Conservar fallos, tiempos y memoria. Los binarios grandes no se versionan en Git.
 
-El trabajo posterior a este diseño corresponde primero a integración y verificación local. La campaña principal, otras fracciones, entrenamiento desde cero y apertura de test/generalization permanecen fuera de este ensayo.
+La integración y verificación local quedaron completadas. El siguiente trabajo corresponde a la comprobación GPU y las continuaciones condicionadas a su aceptación. La campaña principal, otras fracciones, entrenamiento desde cero y apertura de test/generalization permanecen fuera de este ensayo.

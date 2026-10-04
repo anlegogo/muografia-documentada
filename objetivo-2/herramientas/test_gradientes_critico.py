@@ -61,7 +61,7 @@ class Tests(unittest.TestCase):
         self.assertFalse(o.state)
     def test_old_gradient_policy_rejected(self):
         import revisar_ajuste_cgan as r
-        c={'identity':{'arm':'C0','stage':'tecnica'}}
+        c={'identity':{'arm':'C0','stage':'tecnica','seed':2026100303}}
         with self.assertRaisesRegex(ValueError,'Política'):r.validate_state(c)
 
 if __name__=='__main__':unittest.main()

@@ -1,5 +1,14 @@
 # Bitácora del OE2
 
+## 2026-10-04 — Repetición cGAN integrada y comprobada localmente
+
+- Fecha y zona: 2026-10-04, America/Bogota. Actividad autorizada por la dirección: adaptar y verificar el diseño de tres parejas; sin lanzamiento GPU.
+- Entradas: main 2468ae8, checkpoint original cGAN de época 5, distribución y caché de máscaras ya verificadas. Se conservan las tres semillas fijadas antes de ejecutar.
+- Procedimiento: selección versionada de pareja en ejecutor/revisor/evaluador; controles de contratos y gradientes; doce ejecuciones de las redes completas en CPU, continuas y recuperadas; evaluaciones de las tres parejas y síntesis.
+- Evidencia: [integración-repetición-v1](evidencias/integracion-repeticion-cgan-v1.json), 50 controles satisfactorios, recuperación exacta en las tres parejas, 48 G/240 D. Se rechazan mezcla de parejas, corrupción de estados y aceptación CPU para piloto GPU. La exportación se recupera sin reentrenar.
+- Entorno: copia temporal aislada y dependencias locales de PyTorch, sin reparación del índice Git original. Una lectura del comprobador de publicación requirió explicitar UTF-8 en Windows; se corrigió y la comprobación posterior pasó, sin modificar las fuentes de entrenamiento. Los comandos Python se comprobaron localmente; Bash/CUDA quedan para el equipo GPU. Los resultados técnicos de ocho muestras no acreditan calidad.
+- Siguiente paso: [guía completa para los estudiantes](INSTRUCCIONES_REPETICION_CGAN_F05.md), con tres aceptaciones GPU obligatorias, seis continuaciones, tablas por vista/anomalía y síntesis. La aceptación física y el OE2 siguen pendientes; no se abrieron test/generalization ni se contactó a estudiantes.
+
 ## 2026-10-04 — Valoración por vista y diseño prospectivo
 
 - Actividad autorizada por la dirección: examinar mejoras/deterioros con los datos disponibles, documentar valoración y diseñar repetición. Fecha: 2026-10-04 America/Bogota.

@@ -17,10 +17,17 @@ from gradientes_critico import GRADIENT_POLICY,critic_components,separated_criti
 
 CONFIG_SHA={'C0':'f3aed36bd5e23d76630501e0851a0e88b44d4023520850c67a2eb730c7b1effc','C1':'ab6d32814c92221da9fbe47fd54eb517e2136b36676efc2f10fea9762b635ee9'}
 
-def spec(arm):
+PAIR_SEEDS={'R1':2026100401,'R2':2026100402,'R3':2026100403}
+
+def spec(arm,pair=None):
     c=read_json(ROOT/'objetivo-2/configuraciones/ajuste-cgan-v1'/f'{arm}.json')
     if canonical(c)!=CONFIG_SHA[arm]:raise ValueError('Configuración cGAN alterada o desconocida')
-    return c
+    if pair is None:return c
+    if pair not in PAIR_SEEDS:raise ValueError('Pareja desconocida')
+    expected={**c,'pair':pair,'seed':PAIR_SEEDS[pair],'run_id':f'oe2-cgan-repeticion-f05-{pair}-{arm}-s{PAIR_SEEDS[pair]}'}
+    candidate=read_json(ROOT/'objetivo-2/configuraciones/repeticion-cgan-f05'/f'{pair}-{arm}.json')
+    if canonical(candidate)!=canonical(expected):raise ValueError('Configuración de repetición alterada')
+    return candidate
 
 def sources():
     import hashlib
@@ -117,7 +124,7 @@ def identity(cfg,arm,stage,store,device,initial):
                tf32=False,numpy_rng='MT19937',python_rng='MT19937')
     train=store.indices('train',cfg,stage);val=store.indices('val',cfg,stage)
     i={'schema':'oe2-cgan-ajuste-run-v1','critic_gradient_policy':GRADIENT_POLICY,'arm':arm,'stage':stage,'config':cfg,
-       'sources':sources(),'environment':env,'data_manifest_sha256':MANIFEST_SHA,
+       'pair':cfg.get('pair'),'seed':cfg['seed'],'sources':sources(),'environment':env,'data_manifest_sha256':MANIFEST_SHA,
        'cache_sha256':store.identity,'train_indices_sha256':canonical(train),'val_indices_sha256':canonical(val),
        'initial_checkpoint_sha256':cfg['initial_checkpoint_sha256'],
        'initial_generator_sha256':state_digest(initial[0]),'initial_critic_sha256':state_digest(initial[1]),
@@ -141,10 +148,11 @@ def gate_check(path,i):
     from revisar_ajuste_cgan import audit_technical
     gate=read_json(path)
     if gate.get('schema')!='oe2-cgan-ajuste-gate-v1' or not gate.get('gpu_accepted'):raise ValueError('Falta aceptación GPU cGAN')
-    current=audit_technical(gate['runs'],require_gpu=True)
+    if gate.get('pair')!=i.get('pair') or gate.get('seed')!=i['seed']:raise ValueError('Aceptación de otra pareja/semilla')
+    current=audit_technical(gate['runs'],require_gpu=True,pair=i.get('pair'))
     if current['checkpoint_sha256']!=gate['checkpoint_sha256']:raise ValueError('Cambió evidencia GPU')
     for item in current['identities']:
-        for key in ['environment','cache_sha256','sources','initial_checkpoint_sha256']:
+        for key in ['pair','seed','environment','cache_sha256','sources','initial_checkpoint_sha256']:
             if item[key]!=i[key]:raise ValueError('Evidencia GPU incompatible: '+key)
 
 def run(args):
@@ -153,7 +161,7 @@ def run(args):
     if args.cpu_test and args.etapa!='tecnica':raise ValueError('CPU solo para etapa técnica')
     if not args.cpu_test and not torch.cuda.is_available():raise RuntimeError('CUDA no disponible')
     device=torch.device('cpu' if args.cpu_test else 'cuda:0')
-    cfg=spec(args.rama);store=Store(args.datos,args.mascaras)
+    cfg=spec(args.rama,getattr(args,'pareja',None));store=Store(args.datos,args.mascaras)
     initial=load_initial(args.pesos,cfg,store);i,train,val=identity(cfg,args.rama,args.etapa,store,device,initial)
     epochs=i['epochs']
     if args.parar_tras is not None and not 1<=args.parar_tras<=epochs:raise ValueError('Época de parada inválida')
@@ -222,6 +230,7 @@ def run(args):
 
 def parser():
     p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--pareja',choices=list(PAIR_SEEDS))
     p.add_argument('--rama',choices=['C0','C1'],required=True);p.add_argument('--etapa',choices=['tecnica','piloto'],required=True)
     for n in ['datos','mascaras','pesos','salida']:p.add_argument('--'+n,type=Path,required=True)
     p.add_argument('--cpu-test',action='store_true');p.add_argument('--reanudar',action='store_true')

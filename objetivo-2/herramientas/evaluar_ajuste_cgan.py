@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np
 import torch
 from datos_ajuste import Store,read_json,atomic_json,digest,canonical
-from ejecutar_ajuste_cgan import configure,spec,load_initial,build_generator,evaluate
+from ejecutar_ajuste_cgan import configure,spec,load_initial,build_generator,evaluate,PAIR_SEEDS,sources
 from revisar_ajuste_cgan import load_completed
 from evaluar_ajuste import analyze_predictions
 
@@ -64,20 +64,25 @@ def figures(store,keys,pred,initial,out,stage):
 def run(a):
     configure();store=Store(a.datos,a.mascaras)
     paths={'C0':a.control,'C1':a.regional}
-    states={arm:load_completed(path,arm,a.etapa) for arm,path in paths.items()}
-    for key in ['environment','sources','cache_sha256','data_manifest_sha256','train_indices_sha256','val_indices_sha256','initial_generator_sha256','initial_critic_sha256']:
+    pair=getattr(a,'pareja',None)
+    cfg=spec('C0',pair)
+    states={arm:load_completed(path,arm,a.etapa,pair) for arm,path in paths.items()}
+    for key in ['pair','seed','environment','sources','cache_sha256','data_manifest_sha256','train_indices_sha256','val_indices_sha256','initial_generator_sha256','initial_critic_sha256']:
         if states['C0']['identity'][key]!=states['C1']['identity'][key]:raise ValueError('Comparación no pareada: '+key)
     if states['C0']['identity']['cache_sha256']!=store.identity:raise ValueError('Caché distinta de la usada en entrenamiento')
     keys=read_json(a.control/'indices-val.json')
-    expected=store.indices('val',spec('C0'),a.etapa)
+    expected=store.indices('val',cfg,a.etapa)
     if keys!=[list(x) for x in expected] or keys!=read_json(a.regional/'indices-val.json'):raise ValueError('Muestras incorrectas')
     device=torch.device(a.dispositivo)
     if device.type=='cuda' and not torch.cuda.is_available():raise RuntimeError('CUDA no disponible')
-    initial_states=load_initial(a.pesos,spec('C0'),store)
-    G=build_generator(spec('C0')['generator']).to(device);G.load_state_dict(initial_states[0],strict=True)
+    initial_states=load_initial(a.pesos,cfg,store)
+    G=build_generator(cfg['generator']).to(device);G.load_state_dict(initial_states[0],strict=True)
     _,initial,_=evaluate(G,store,expected,device);del G,initial_states,states
     pred={arm:np.load(path/'predicciones-val.npy',mmap_mode='r',allow_pickle=False) for arm,path in paths.items()}
     result,rows=tables(store,keys,pred,initial,a.etapa)
+    result['pair']=pair;result['seed']=cfg['seed'];result['sources']=sources()
+    result['environment']=read_json(a.control/'identity.json')['environment']
+    result['run_paths']={arm:str(path.resolve()) for arm,path in paths.items()}
     result['checkpoint_sha256']={arm:digest(path/'last.pt') for arm,path in paths.items()}
     result['initial_checkpoint_sha256']=digest(a.pesos)
     result['initial_inference_device']=str(device)
@@ -91,6 +96,7 @@ def run(a):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--pareja',choices=list(PAIR_SEEDS))
     for n in ['datos','mascaras','pesos','control','regional','salida']:p.add_argument('--'+n,type=Path,required=True)
     p.add_argument('--etapa',choices=['tecnica','piloto'],required=True);p.add_argument('--dispositivo',choices=['cpu','cuda'],default='cpu')
     p.add_argument('--figuras',action='store_true');run(p.parse_args())
