@@ -119,7 +119,7 @@ No se versionan. Las 32 matrices de predicciones (8 modelos × 4 geometrías, 12
 - **Verificación en Drive:** la copia se verificó contra `binarios.sha256`: 32 de 32. El enlace público lista los 32 archivos sin sesión iniciada, y una descarga pública de `binarios.sha256` y de dos matrices coincide con sus huellas ([verificacion-drive-binarios.json](datos/verificacion-drive-binarios.json)).
 - **Identidades y recibos:** los recibos por geometría, las identidades y los `completed.json` de los ocho modelos están en [datos/evaluacion-final-f05/](datos/evaluacion-final-f05/).
 
-**Copia de distribución:** [carpeta de Drive oe2-evaluacion-final-f05](https://drive.google.com/drive/folders/1UfRJTnuwYfgql5SJdklM2Cp-P0ychaAA), con la estructura `<modelo>/<geometría>.npy`, `binarios.sha256`, `binarios.tamanos.txt` y `LEEME.txt`.
+**Copia de distribución:** [carpeta de Drive oe2-evaluacion-final-f05](https://drive.google.com/drive/folders/1UfRJTnuwYfgql5SJdklM2Cp-P0ychaAA), con la estructura `<modelo>/<geometría>.npy`, junto con las identidades, los recibos y `completed.json` de cada modelo (48 JSON idénticos a los de la rama), `binarios.sha256`, `binarios.tamanos.txt` y `LEEME.txt`.
 
 ## 6. Reproducción
 
