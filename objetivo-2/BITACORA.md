@@ -1,5 +1,14 @@
 # Bitácora del OE2
 
+## 2026-10-04 — Revisión de la entrega CG-04b
+
+- Fecha de revisión: 2026-10-04 America/Bogota; ejecución estudiantil declarada del 2026-10-04 UTC.
+- Actividad autorizada: revisar la actualización estudiantil 0f6ec2f y sus archivos Drive.
+- Procedimiento: descarga de 22 binarios, verificación SHA-256/tamaños, carga restringida CPU, recálculo con compare_all y contraste de estados e identidades. No se ejecutó CUDA localmente ni entrenamiento.
+- Evidencia: [informe](REVISION_BINARIOS_CG04B.md) y [JSON independiente](evidencias/revision-binarios-cg04b.json). Los 580 valores recalculados coinciden; componentes aislados exactos, gradiente conjunto discrepante.
+- Incidencia documental: confirmados finales mixtos en la evidencia CG-04; normalizados a LF con igualdad semántica del JSON. Sin cambios en fuentes del entrenamiento.
+- Pendiente CG-04: preparar una corrección controlada y validar la recuperación completa en GPU antes de las continuaciones. No se identifica todavía un kernel causal ni se acepta tolerancia numérica.
+
 ## 2026-10-03 — Separación de gradientes CG-04b
 
 - Fecha y zona: 2026-10-03 America/Bogota; UTC del 2026-10-04.

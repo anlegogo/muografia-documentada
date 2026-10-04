@@ -1,5 +1,7 @@
 # Índice de documentación
 
+- [Revisión independiente de los resultados GPU CG-04b](../objetivo-2/REVISION_BINARIOS_CG04B.md).
+
 - [CG-04b: separación de los gradientes del crítico](../objetivo-2/DIAGNOSTICO_GRADIENTES_CG04B.md).
 
 - [Revisión independiente de los binarios CG-04](../objetivo-2/REVISION_BINARIOS_CG04.md).
