@@ -83,3 +83,7 @@ python objetivo-2/herramientas/revisar_base.py --codigo ../tmp/revision-muograph
 El script termina correctamente cuando reproduce los diagnósticos, incluidos los defectos actuales; no equivale a una aprobación del código para entrenar. Al corregir el código deberán cambiarse las expectativas y conservar esta evidencia del antes. Véase la [bitácora](BITACORA.md).
 
 **Secuencia vigente:** P01–P03 corregidos, piloto GPU recibido y pesos seleccionados verificados sobre val. Las regiones geométricas y el diagnóstico de calibración están verificados. Diseñar un ajuste acotado y criterios de aceptación antes de ampliar entrenamientos. El resultado de la revisión es una base aprovechable con correcciones concretas, no la necesidad de comenzar desde cero.
+
+## Diseño del ajuste de cuentas
+
+Se preparó el [ensayo A/B de continuación de U-Net](DISENO_AJUSTE_CUENTAS_F05.md), con cinco épocas por rama y selección fija de la época final. Nueve pruebas matemáticas y retropropagación con pesos reales verifican el componente de pérdida; no se acredita aún integración, recuperación ni ejecución GPU. Los pendientes Ajuste-01 a Ajuste-03 distinguen esos pasos. OE2-P04d avanza en el diseño acotado, pero la campaña principal sigue pendiente.

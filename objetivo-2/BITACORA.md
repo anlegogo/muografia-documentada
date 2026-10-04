@@ -49,3 +49,10 @@
 - Resultado: reducción de error y conservación de cuentas no son equivalentes. Se documentan sesgos por región y cocientes indefinidos por cero cuentas, sin pseudoconteos ni exclusión silenciosa.
 - Incidencias: lectura local fallida, control de contraste cero y contador NumPy no serializable. Procedimientos corregidos y ejecutados completos en entorno aislado; Git local no reparado.
 - P04c: diagnóstico geométrico verificado, aceptación física parcial. P04d: diseñar ajuste acotado antes de ampliar. Sin nuevas simulaciones, entrenamiento ni acceso a test/generalization.
+
+## 2026-10-03 — Diseño del ajuste acotado de cuentas
+
+- Se atendió la autorización de la dirección para preparar el siguiente ensayo. Se fijaron control y variante regional, datos, pesos iniciales, semilla, cinco épocas y evaluación pareada. [Diseño y estados](DISENO_AJUSTE_CUENTAS_F05.md).
+- Se implementó el componente de pérdida regional y se verificaron nueve casos matemáticos. Se comprobó gradiente regional y total finito sobre los 20.543.809 parámetros con dos pares de entrenamiento; cero pasos de optimizador y pesos idénticos al checkpoint.
+- Incidencias: utilidad de gradientes dependiente de SymPy ausente, sustituida por diferencias finitas explícitas; lectura de geometría corregida a UTF-8. Verificaciones finales satisfactorias.
+- Estado: diseño/componentes verificados. Ajuste-01 integración, Ajuste-02 CPU/GPU con recuperación y Ajuste-03 piloto pareado pendientes. No se presenta el componente como ejecutor de entrenamiento ni se requiere nueva simulación Geant4.

@@ -1,0 +1,26 @@
+{
+  "schema": "oe2-adjustment-design-check-v1",
+  "torch": "2.6.0+cpu",
+  "device": "cpu",
+  "tests": 9,
+  "passed": true,
+  "specification_checks": {
+    "identical_except": [
+      "arm",
+      "lambda_regional",
+      "run_id"
+    ],
+    "pilot_updates_per_arm": 1800,
+    "pilot_total_updates": 3600,
+    "gpu_training_ready": false
+  },
+  "source_sha256": {
+    "perdida_cuentas_regionales.py": "41bc25bfa9419494b96e070cd032798c382f1601585a5ccb203fd0f2db44fdce",
+    "verificar_diseno_ajuste.py": "b123f98669a79b46f73aa888108ecbedc1d97e1030722dea5abe2af93f615ab8"
+  },
+  "spec_sha256": {
+    "ajuste-control.spec.json": "9d2c206fff21580a32f4a97dcb4136a95b69e4255fa680ddfe028fac3dda60da",
+    "ajuste-regional.spec.json": "b5bd8095bc256031462081d35adcd0714a031b0c3bda2be79fc569185d9bd117"
+  },
+  "scope": "mathematics and specifications only; no trainer integration or CUDA test"
+}

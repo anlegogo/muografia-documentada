@@ -2,6 +2,8 @@
 
 ## Objetivo específico 2
 
+- [Diseño del ajuste acotado de conservación de cuentas](../objetivo-2/DISENO_AJUSTE_CUENTAS_F05.md).
+
 - [Evaluación geométrica de cuentas y contrastes del piloto](../objetivo-2/EVALUACION_GEOMETRICA_PILOTO_F05.md).
 
 - [Verificación independiente de pesos, inferencia y exploración regional del piloto](../objetivo-2/REVISION_PESOS_PILOTO_F05.md).

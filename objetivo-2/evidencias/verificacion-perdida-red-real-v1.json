@@ -1,0 +1,81 @@
+{
+  "schema": "oe2-adjustment-real-data-gradient-v1",
+  "device": "cpu",
+  "torch": "2.6.0+cpu",
+  "numpy": "2.3.5",
+  "split": "train",
+  "geometry": "geo-train-06",
+  "view": 0,
+  "realizations": [
+    0,
+    1
+  ],
+  "model_mode": "eval_with_gradients",
+  "optimizer_steps": 0,
+  "parameter_count": 20543809,
+  "parameters_unchanged": true,
+  "loss_total": 1.0546172223635089,
+  "loss_l1": 0.009257121942937374,
+  "loss_regional": 0.12890505414680342,
+  "parameter_gradient_norm": 40.37737337642838,
+  "finite_gradients": true,
+  "support": [
+    {
+      "valid_regions": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "valid_families": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "valid_regions": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "valid_families": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "regions": [
+    "cielo",
+    "roca_sin_anomalia",
+    "borde_cono",
+    "anomalia_0_conduit",
+    "anomalia_1_dense_body"
+  ],
+  "region_pixels": {
+    "cielo": 48282,
+    "roca_sin_anomalia": 11030,
+    "borde_cono": 2348,
+    "anomalia_0_conduit": 740,
+    "anomalia_1_dense_body": 891
+  },
+  "heldout_opened": false,
+  "inputs_sha256": {
+    "geometry": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+    "shard": "120e427d7d71e232056998247b38249a4692d285b63bf6c2e6cc593c2b0d97e4",
+    "weights": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+    "manifest": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+    "geometry_source": "a52c4f07b76ebc627c4a1fd1768cffee1662a2861482896f1fd34140a6b67c92",
+    "generator_source": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+    "loss_source": "41bc25bfa9419494b96e070cd032798c382f1601585a5ccb203fd0f2db44fdce",
+    "check_source": "8e617aba1ab089f0adb9744533e6b76531ed27c2531649337872297b38bd9aba"
+  },
+  "limit": "single train geometry; no optimizer, resumption, GPU or quality acceptance",
+  "regional_parameter_gradient_norm": 7.481474455659961
+}

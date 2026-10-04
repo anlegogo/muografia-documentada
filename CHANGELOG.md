@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Diseño del ajuste de cuentas OE2 — 2026-10-03
+
+- Comparación acotada A/B: mismo checkpoint U-Net inicial, cinco épocas adicionales por rama y selección fija de la época final. [Diseño](objetivo-2/DISENO_AJUSTE_CUENTAS_F05.md).
+- Componente regional estable mediante logsumexp, ponderación por familias y nueve comprobaciones matemáticas. Retropropagación finita en la U-Net completa con dos pares train; pesos sin modificaciones.
+- Especificaciones marcadas como diseño no ejecutable en GPU: integración y prueba de recuperación pendientes. No se entrena, no se cambia el motor v1 y no se abre test/generalization.
+
 ## Evaluación geométrica del piloto OE2 — 2026-10-03
 
 - Regiones derivadas del cono y anomalías para las 18 vistas de validación; 234 registros región/método y 24 contrastes con controles geométricos. [Informe](objetivo-2/EVALUACION_GEOMETRICA_PILOTO_F05.md).
