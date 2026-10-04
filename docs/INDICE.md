@@ -2,6 +2,8 @@
 
 ## Objetivo específico 2
 
+- [Verificación independiente de pesos, inferencia y exploración regional del piloto](../objetivo-2/REVISION_PESOS_PILOTO_F05.md).
+
 - [Revisión de resultados del piloto c054225](../objetivo-2/REVISION_PILOTO_C054225.md).
 
 - [Protocolo del piloto al 5 %](../objetivo-2/PROTOCOLO_PILOTO_F05.md).

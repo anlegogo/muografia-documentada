@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Pesos e inferencia del piloto OE2 — 2026-10-03
+
+- Dos mejores checkpoints descargados y verificados; 720 predicciones reproducidas sobre 360 pares val por modelo, dentro de tolerancia CPU/GPU. [Informe](objetivo-2/REVISION_PESOS_PILOTO_F05.md).
+- Exploración de 18 vistas y cuatro bandas de elevación: U-Net supera a cGAN en SSIM/PSNR; quedan sesgos de cuentas y evaluación física pendiente. La zona candidata mantiene contraste positivo en U-Net de época 5, matizando la alerta visual anterior.
+- Se publican procedimientos y evidencia JSON, sin pesos ni predicciones voluminosas. No se abre test/generalization, no se entrena ni se fusiona la rama estudiantil.
+
 ## Revisión de entrega OE2 c054225 — 2026-10-03
 
 - 110 huellas Git verificadas, cuatro configuraciones y registros contrastados, baseline de 360 pares recalculado y estadísticas CSV reproducidas. [Revisión](objetivo-2/REVISION_PILOTO_C054225.md).

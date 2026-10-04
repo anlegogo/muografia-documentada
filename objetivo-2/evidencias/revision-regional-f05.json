@@ -1,0 +1,1904 @@
+{
+  "bands": [
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.035511012930580454,
+      "normalized_bias": 0.011694400078799077,
+      "counts_relative_sum_bias": 0.0720180582436068
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.008009878913977942,
+      "normalized_bias": 0.001559290028007413,
+      "counts_relative_sum_bias": 0.04105457639704584
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0010347754750463427,
+      "normalized_bias": 0.0009628603024528521,
+      "counts_relative_sum_bias": 0.030168160603173847
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0007136951179180417,
+      "normalized_bias": 0.00043729945880260755,
+      "counts_relative_sum_bias": 0.014186533629616879
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.04151205315027651,
+      "normalized_bias": 0.007444132935162046,
+      "counts_relative_sum_bias": 0.08469747904601761
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.01179925467816648,
+      "normalized_bias": 0.0028891092636234273,
+      "counts_relative_sum_bias": 0.12011504681764609
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.004160699643802023,
+      "normalized_bias": 0.004153366456622122,
+      "counts_relative_sum_bias": 0.14130335719792755
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.004337992332065772,
+      "normalized_bias": 0.0042857963343282054,
+      "counts_relative_sum_bias": 0.1513376578710025
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03524652068223618,
+      "normalized_bias": 0.011702007257652108,
+      "counts_relative_sum_bias": 0.07444977068610324
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.008188163982207092,
+      "normalized_bias": 0.001650656172883174,
+      "counts_relative_sum_bias": 0.04118100989167916
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0010582561432140793,
+      "normalized_bias": 0.0009866575508849329,
+      "counts_relative_sum_bias": 0.03097168998118619
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0007355860802752956,
+      "normalized_bias": 0.00048347111137962337,
+      "counts_relative_sum_bias": 0.015710606568148294
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.04128780937450387,
+      "normalized_bias": 0.007362215731403959,
+      "counts_relative_sum_bias": 0.09042616673756225
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.012069447840007647,
+      "normalized_bias": 0.002963297388335178,
+      "counts_relative_sum_bias": 0.12282796682704325
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.004263160807729696,
+      "normalized_bias": 0.004255801907430372,
+      "counts_relative_sum_bias": 0.14507626104509588
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.004467558077233864,
+      "normalized_bias": 0.004417675323434816,
+      "counts_relative_sum_bias": 0.15636853731871947
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.035458968927873494,
+      "normalized_bias": 0.011589338099330576,
+      "counts_relative_sum_bias": 0.07125717771418165
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.007958165666515978,
+      "normalized_bias": 0.0015013897897129178,
+      "counts_relative_sum_bias": 0.04079776117228467
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0010313497207928859,
+      "normalized_bias": 0.0009562269316416214,
+      "counts_relative_sum_bias": 0.02996893612038402
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0007138194297284261,
+      "normalized_bias": 0.0004433094981087706,
+      "counts_relative_sum_bias": 0.014381769868741068
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.041267602228767644,
+      "normalized_bias": 0.007272234663882998,
+      "counts_relative_sum_bias": 0.08680751849552455
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.011829588311386294,
+      "normalized_bias": 0.002853204476879015,
+      "counts_relative_sum_bias": 0.1226195745675586
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0042339709726927025,
+      "normalized_bias": 0.004226889049762148,
+      "counts_relative_sum_bias": 0.14401213207392677
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.004427934556612896,
+      "normalized_bias": 0.004378531334327031,
+      "counts_relative_sum_bias": 0.15486490233875888
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.035517772075458046,
+      "normalized_bias": 0.011937306151474323,
+      "counts_relative_sum_bias": 0.0736590541356346
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.008057295365682775,
+      "normalized_bias": 0.0016753134133285763,
+      "counts_relative_sum_bias": 0.04117382299884901
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0010303137324635826,
+      "normalized_bias": 0.000955098866597459,
+      "counts_relative_sum_bias": 0.02995883454067322
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0007201014138248751,
+      "normalized_bias": 0.00045021201711371357,
+      "counts_relative_sum_bias": 0.014597466437142749
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.0412958984966374,
+      "normalized_bias": 0.007555058631932908,
+      "counts_relative_sum_bias": 0.08924340419199195
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.012011773133658801,
+      "normalized_bias": 0.0029226154674195136,
+      "counts_relative_sum_bias": 0.12249110832804076
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.004224267822076766,
+      "normalized_bias": 0.004217535574752751,
+      "counts_relative_sum_bias": 0.14370918749177966
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0044320721941721215,
+      "normalized_bias": 0.004383601022692361,
+      "counts_relative_sum_bias": 0.15504178669120397
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03551457242984708,
+      "normalized_bias": 0.012569998467426102,
+      "counts_relative_sum_bias": 0.0727557717431593
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.008040501827807115,
+      "normalized_bias": 0.0014536544023709482,
+      "counts_relative_sum_bias": 0.04129735681649942
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0010534763582556595,
+      "normalized_bias": 0.0009840525995851363,
+      "counts_relative_sum_bias": 0.03087501621926601
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0007315636074458398,
+      "normalized_bias": 0.00047378857452186427,
+      "counts_relative_sum_bias": 0.015385484532545632
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.041232628876252106,
+      "normalized_bias": 0.008126853706291801,
+      "counts_relative_sum_bias": 0.09008433728053769
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.011947113309845915,
+      "normalized_bias": 0.002832609568070784,
+      "counts_relative_sum_bias": 0.12530746315638544
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0043257106498804845,
+      "normalized_bias": 0.004319985153312752,
+      "counts_relative_sum_bias": 0.1474387102584691
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.004520450345079044,
+      "normalized_bias": 0.0044738296054622016,
+      "counts_relative_sum_bias": 0.1585052698408009
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.034946864193102146,
+      "normalized_bias": 0.011464673969832839,
+      "counts_relative_sum_bias": 0.07178492564472091
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.007989678066582176,
+      "normalized_bias": 0.0015112320259446869,
+      "counts_relative_sum_bias": 0.04171178158428958
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0010526754146973076,
+      "normalized_bias": 0.0009845280164872117,
+      "counts_relative_sum_bias": 0.030890198910746902
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.000730795774198341,
+      "normalized_bias": 0.00047455017671265646,
+      "counts_relative_sum_bias": 0.015418445401660989
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.04115702674251484,
+      "normalized_bias": 0.007078668098101782,
+      "counts_relative_sum_bias": 0.08791966898349592
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.01191831873124638,
+      "normalized_bias": 0.0028767863805511883,
+      "counts_relative_sum_bias": 0.12544759403357475
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.004313639893620563,
+      "normalized_bias": 0.004306438915135851,
+      "counts_relative_sum_bias": 0.1469360157767274
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0045056472485789445,
+      "normalized_bias": 0.004455367112640234,
+      "counts_relative_sum_bias": 0.15782485268062188
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.031684087392665594,
+      "normalized_bias": -0.0035082452279131524,
+      "counts_relative_sum_bias": 0.00986229510745158
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.004826673693497365,
+      "normalized_bias": -0.0010114088791080354,
+      "counts_relative_sum_bias": 0.03159031895712149
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0014911479549597918,
+      "normalized_bias": 0.0014759811471907673,
+      "counts_relative_sum_bias": 0.04789973628902344
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0014870770258669569,
+      "normalized_bias": 0.0014507905084239435,
+      "counts_relative_sum_bias": 0.048309891278992705
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.037095881619723235,
+      "normalized_bias": -0.0028668394329304896,
+      "counts_relative_sum_bias": 0.012844817992332433
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.0055502916727523605,
+      "normalized_bias": 0.0008112645484378157,
+      "counts_relative_sum_bias": 0.04451024059375057
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.002693086077839948,
+      "normalized_bias": 0.0026894350005153755,
+      "counts_relative_sum_bias": 0.08877583609329472
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.002687169961731295,
+      "normalized_bias": 0.002660350888599333,
+      "counts_relative_sum_bias": 0.09119006908182113
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03155430702700551,
+      "normalized_bias": -0.003626309430808014,
+      "counts_relative_sum_bias": 0.008753206109131636
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.004958786917291466,
+      "normalized_bias": -0.0008722286242451544,
+      "counts_relative_sum_bias": 0.031377947951712344
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0014914430759842483,
+      "normalized_bias": 0.0014763153743256184,
+      "counts_relative_sum_bias": 0.047875072714918095
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0014786674983756683,
+      "normalized_bias": 0.0014396467673858254,
+      "counts_relative_sum_bias": 0.04791306786095098
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03712827805740102,
+      "normalized_bias": -0.002978961016261891,
+      "counts_relative_sum_bias": 0.011736455418490057
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.005663265773622509,
+      "normalized_bias": 0.0009818112454419309,
+      "counts_relative_sum_bias": 0.04343717732638499
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0026480792658390845,
+      "normalized_bias": 0.002644460578208505,
+      "counts_relative_sum_bias": 0.08716170620543937
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.002632558631355604,
+      "normalized_bias": 0.002604585190084295,
+      "counts_relative_sum_bias": 0.08918064555645135
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03148330040573202,
+      "normalized_bias": -0.0031349548135374246,
+      "counts_relative_sum_bias": 0.009246929876782889
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.00487486240235273,
+      "normalized_bias": -0.0008810943834608994,
+      "counts_relative_sum_bias": 0.03162133602144137
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0014934580563981798,
+      "normalized_bias": 0.0014789911168501032,
+      "counts_relative_sum_bias": 0.04795231286018007
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.001490449336854027,
+      "normalized_bias": 0.0014524881542236038,
+      "counts_relative_sum_bias": 0.048357410056249335
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03661081267518191,
+      "normalized_bias": -0.0024035576131912623,
+      "counts_relative_sum_bias": 0.011782833767407005
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.0056597126845351845,
+      "normalized_bias": 0.0008536274903273036,
+      "counts_relative_sum_bias": 0.044873018981467144
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.002698749702617408,
+      "normalized_bias": 0.0026956948579519137,
+      "counts_relative_sum_bias": 0.08892813531168126
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.002692618775447066,
+      "normalized_bias": 0.0026665174271108772,
+      "counts_relative_sum_bias": 0.0913973198415397
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03143350073886554,
+      "normalized_bias": -0.0036269818799681843,
+      "counts_relative_sum_bias": 0.00862547639364601
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.0048741309133926115,
+      "normalized_bias": -0.0008875827169207934,
+      "counts_relative_sum_bias": 0.03172480185786605
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0014971902684522416,
+      "normalized_bias": 0.001481170833494096,
+      "counts_relative_sum_bias": 0.04805119014648063
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0014955685796167362,
+      "normalized_bias": 0.0014574086631958991,
+      "counts_relative_sum_bias": 0.04852227106056369
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03689932868866922,
+      "normalized_bias": -0.002892739873982876,
+      "counts_relative_sum_bias": 0.012179281415663707
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.0056147136713429946,
+      "normalized_bias": 0.0009317979833679817,
+      "counts_relative_sum_bias": 0.045242245813344
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0027023507962150506,
+      "normalized_bias": 0.002698381854815514,
+      "counts_relative_sum_bias": 0.08905452323934519
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0026956510144206785,
+      "normalized_bias": 0.0026677687806162496,
+      "counts_relative_sum_bias": 0.09143768565092945
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.031672644884567454,
+      "normalized_bias": -0.0035963063223810577,
+      "counts_relative_sum_bias": 0.008166283712915102
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.004895677995014903,
+      "normalized_bias": -0.0009721913651779053,
+      "counts_relative_sum_bias": 0.03131509616819453
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0014840207214857656,
+      "normalized_bias": 0.0014687051867476764,
+      "counts_relative_sum_bias": 0.04758985965088353
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.001464850818593435,
+      "normalized_bias": 0.0014268731558877534,
+      "counts_relative_sum_bias": 0.04748421515388438
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03708991615101401,
+      "normalized_bias": -0.0028044729996808937,
+      "counts_relative_sum_bias": 0.010614120667067255
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.005604963710609318,
+      "normalized_bias": 0.0007014990231064937,
+      "counts_relative_sum_bias": 0.04206889099882336
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0026155162199492685,
+      "normalized_bias": 0.0026116790319101633,
+      "counts_relative_sum_bias": 0.08602015090989672
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0025993937986916278,
+      "normalized_bias": 0.0025707286348370163,
+      "counts_relative_sum_bias": 0.08798553601519234
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.031161031491883713,
+      "normalized_bias": -0.0034247232153615885,
+      "counts_relative_sum_bias": 0.008808892695802538
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.004796353209890973,
+      "normalized_bias": -0.0008676650361568514,
+      "counts_relative_sum_bias": 0.03152733009395749
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0014891971883951621,
+      "normalized_bias": 0.0014721205850338629,
+      "counts_relative_sum_bias": 0.047700776522225014
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0014748139848214975,
+      "normalized_bias": 0.001435599981654847,
+      "counts_relative_sum_bias": 0.04777584853228158
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.036547431766897565,
+      "normalized_bias": -0.002680085212932756,
+      "counts_relative_sum_bias": 0.013244095993413552
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.005616742571357157,
+      "normalized_bias": 0.0009510401088501643,
+      "counts_relative_sum_bias": 0.04575251198289808
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0027152134083781227,
+      "normalized_bias": 0.002711555371600425,
+      "counts_relative_sum_bias": 0.08945424330867159
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0026952351602811805,
+      "normalized_bias": 0.002667801888914725,
+      "counts_relative_sum_bias": 0.09143862777889462
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03299733045238198,
+      "normalized_bias": -0.006580720898229903,
+      "counts_relative_sum_bias": 0.052582731359609
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.0074853842164994385,
+      "normalized_bias": -0.002303323364171173,
+      "counts_relative_sum_bias": 0.04453923930812877
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0015838277282808101,
+      "normalized_bias": 0.001571454017127972,
+      "counts_relative_sum_bias": 0.05061645061167017
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.001400660313370788,
+      "normalized_bias": 0.0013527020170879874,
+      "counts_relative_sum_bias": 0.04490467406883622
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03862616108675533,
+      "normalized_bias": -0.008446037256481015,
+      "counts_relative_sum_bias": 0.050672443836973294
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.009549852038736822,
+      "normalized_bias": 0.0005055079917810062,
+      "counts_relative_sum_bias": 0.1067553614476199
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.004301076628737724,
+      "normalized_bias": 0.004299700116414451,
+      "counts_relative_sum_bias": 0.1462174824042412
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0044179917224093255,
+      "normalized_bias": 0.0043918362808692945,
+      "counts_relative_sum_bias": 0.15511035655464908
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.032403620239123784,
+      "normalized_bias": -0.0063014417575308805,
+      "counts_relative_sum_bias": 0.052676603874512756
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.007505752819533039,
+      "normalized_bias": -0.002316842957955748,
+      "counts_relative_sum_bias": 0.04421804922343734
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0015897068388098646,
+      "normalized_bias": 0.0015779556172852024,
+      "counts_relative_sum_bias": 0.050819491960836655
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0013909009937898569,
+      "normalized_bias": 0.001342072006280398,
+      "counts_relative_sum_bias": 0.04455169445369944
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.038303817713753116,
+      "normalized_bias": -0.007967028907321119,
+      "counts_relative_sum_bias": 0.05209618994243509
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.009713387563304376,
+      "normalized_bias": 0.00036325593303259925,
+      "counts_relative_sum_bias": 0.10742977510203132
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.004321484511203853,
+      "normalized_bias": 0.004319952555142241,
+      "counts_relative_sum_bias": 0.14693834871739203
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.004425823657990169,
+      "normalized_bias": 0.00440017668308243,
+      "counts_relative_sum_bias": 0.15543610537673566
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03280115516639781,
+      "normalized_bias": -0.006711589890307948,
+      "counts_relative_sum_bias": 0.05384795277291534
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.007368170064228107,
+      "normalized_bias": -0.0022111856517042436,
+      "counts_relative_sum_bias": 0.04454363208568497
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0016125483128493667,
+      "normalized_bias": 0.0016007400971948331,
+      "counts_relative_sum_bias": 0.051621851904823005
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0014192662151534092,
+      "normalized_bias": 0.0013708748014114197,
+      "counts_relative_sum_bias": 0.04552685302755043
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03830360201483847,
+      "normalized_bias": -0.008303744749748678,
+      "counts_relative_sum_bias": 0.055949146627954464
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.009599229558266198,
+      "normalized_bias": 0.0006029132432260956,
+      "counts_relative_sum_bias": 0.11016350550855389
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.004404968574392634,
+      "normalized_bias": 0.004403596316581573,
+      "counts_relative_sum_bias": 0.15007333432773234
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.004509564547715168,
+      "normalized_bias": 0.004484027662853779,
+      "counts_relative_sum_bias": 0.1586419149640056
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03286889777584627,
+      "normalized_bias": -0.0067229797754177565,
+      "counts_relative_sum_bias": 0.05293786146747573
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.0074883020205400285,
+      "normalized_bias": -0.002066058441651763,
+      "counts_relative_sum_bias": 0.04443550362257752
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0016034250752983432,
+      "normalized_bias": 0.0015919518390466326,
+      "counts_relative_sum_bias": 0.051273013271704734
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0014115307204871936,
+      "normalized_bias": 0.0013612170272026107,
+      "counts_relative_sum_bias": 0.0452001605739619
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03857893844937318,
+      "normalized_bias": -0.008414092199280795,
+      "counts_relative_sum_bias": 0.05285616687985
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.009685324637542594,
+      "normalized_bias": 0.000669317178166352,
+      "counts_relative_sum_bias": 0.10870672276126456
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.004365326430415227,
+      "normalized_bias": 0.004364018187326255,
+      "counts_relative_sum_bias": 0.14854323922360005
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.004469850148696792,
+      "normalized_bias": 0.004443544022829838,
+      "counts_relative_sum_bias": 0.1570872452770465
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03295241559372179,
+      "normalized_bias": -0.006536452679689793,
+      "counts_relative_sum_bias": 0.0526928928311534
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.007445996478166244,
+      "normalized_bias": -0.0020160431783043387,
+      "counts_relative_sum_bias": 0.04466408249126582
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0015971386007674775,
+      "normalized_bias": 0.0015856074128160857,
+      "counts_relative_sum_bias": 0.051041101469630146
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0013952521679160112,
+      "normalized_bias": 0.0013467685293634308,
+      "counts_relative_sum_bias": 0.04469134272578698
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03857293040436164,
+      "normalized_bias": -0.008320892478666905,
+      "counts_relative_sum_bias": 0.05072308990241898
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.00957442923809099,
+      "normalized_bias": 0.0006666484891180935,
+      "counts_relative_sum_bias": 0.10681975185105809
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.004309034751281645,
+      "normalized_bias": 0.0043075757777652195,
+      "counts_relative_sum_bias": 0.14645536278647187
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.004408522290655581,
+      "normalized_bias": 0.004382662229871016,
+      "counts_relative_sum_bias": 0.1547434336889678
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "model": "unet",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.03257270683062456,
+      "normalized_bias": -0.006718778677898563,
+      "counts_relative_sum_bias": 0.0519438472454503
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "model": "unet",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.007486819516125215,
+      "normalized_bias": -0.0022770206468167757,
+      "counts_relative_sum_bias": 0.044375453176526074
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "model": "unet",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.0016071768897300061,
+      "normalized_bias": 0.0015944156340553088,
+      "counts_relative_sum_bias": 0.05137205848995275
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "model": "unet",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.0014060198178831847,
+      "normalized_bias": 0.0013576384428548875,
+      "counts_relative_sum_bias": 0.04507668336354878
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "model": "cgan",
+      "elevation_quarter": 0,
+      "elevation_bounds_deg": [
+        1.911764705882353,
+        13.205882352941178
+      ],
+      "normalized_mae": 0.0384788939938671,
+      "normalized_bias": -0.008476695331875606,
+      "counts_relative_sum_bias": 0.05226393564797341
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "model": "cgan",
+      "elevation_quarter": 1,
+      "elevation_bounds_deg": [
+        13.205882352941178,
+        24.5
+      ],
+      "normalized_mae": 0.009645673066134425,
+      "normalized_bias": 0.00043654778855414106,
+      "counts_relative_sum_bias": 0.1078840814679634
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "model": "cgan",
+      "elevation_quarter": 2,
+      "elevation_bounds_deg": [
+        24.5,
+        35.794117647058826
+      ],
+      "normalized_mae": 0.004353900185025865,
+      "normalized_bias": 0.004352613650691324,
+      "counts_relative_sum_bias": 0.14814716212228438
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "model": "cgan",
+      "elevation_quarter": 3,
+      "elevation_bounds_deg": [
+        35.794117647058826,
+        47.088235294117645
+      ],
+      "normalized_mae": 0.004454443124352883,
+      "normalized_bias": 0.004428381928878162,
+      "counts_relative_sum_bias": 0.15651162964218246
+    }
+  ],
+  "candidate_spot": {
+    "location": "geo-val-01/view0",
+    "center_row_col": [
+      62,
+      132
+    ],
+    "core_radius": 4,
+    "ring_radii": [
+      8,
+      12
+    ],
+    "status": "exploratorio seleccionado a partir de figura previa; no es ROI f\u00edsica validada",
+    "reference_contrast": 0.017086117004448315,
+    "unet": {
+      "contrast_mean": 0.019065434113144875,
+      "contrast_min": 0.011012092232704163,
+      "contrast_max": 0.028967782855033875,
+      "negative_realizations": 0
+    },
+    "cgan": {
+      "contrast_mean": -0.0012220025528222322,
+      "contrast_min": -0.013119116425514221,
+      "contrast_max": 0.012639686465263367,
+      "negative_realizations": 11
+    }
+  },
+  "note": "M\u00e9tricas exploratorias en val; no certifican densidad ni preservaci\u00f3n de anomal\u00edas.",
+  "test_opened": false
+}

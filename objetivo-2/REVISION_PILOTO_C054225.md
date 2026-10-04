@@ -1,5 +1,7 @@
 # Revisión del piloto OE2 al 5 % — c054225
 
+> **Actualización 2026-10-03:** ya se recibieron y verificaron los dos pesos seleccionados y se reprodujo su inferencia. Véase la [revisión posterior](REVISION_PESOS_PILOTO_F05.md), que también matiza la alerta visual de la zona candidata. El texto siguiente conserva el estado histórico de la primera revisión.
+
 **2026-10-03. Resultado: registros del piloto coherentes y ejecución GPU documentada; calidad física e inferencia independiente pendientes.** No procede ampliar automáticamente a la campaña de 24 entrenamientos.
 
 Se revisó la rama `oe2/piloto-f05`, commit c054225, con la [entrega estudiantil](https://github.com/anlegogo/muografia-documentada/blob/c054225/objetivo-2/entregas/2026-10-03-piloto-f05/RESULTADOS_PILOTO_F05.md). La rama solo añade la entrega, sin modificar el código del protocolo. No se fusionó en `main`; esta revisión conserva su procedencia.

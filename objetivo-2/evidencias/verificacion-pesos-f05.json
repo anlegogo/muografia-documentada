@@ -1,0 +1,53 @@
+{
+  "device": "cpu",
+  "torch": "2.6.0+cpu",
+  "numpy": "2.3.5",
+  "python": "3.12.14",
+  "n": 360,
+  "heldout_images_opened": false,
+  "models": {
+    "unet": {
+      "sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+      "bytes": 246595774,
+      "epoch": 5,
+      "contract_matches": true,
+      "configuration_matches": true,
+      "best_ssim_checkpoint": 0.8436712735984511,
+      "means": {
+        "ssim": 0.8436712357269776,
+        "psnr": 32.90365411810153
+      },
+      "max_abs_difference_csv": {
+        "ssim": 6.880087852767502e-07,
+        "psnr": 9.285061577912757e-05
+      },
+      "range": [
+        0.007197936996817589,
+        0.501926839351654
+      ],
+      "within_tolerance": true
+    },
+    "cgan": {
+      "sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+      "bytes": 279758342,
+      "epoch": 5,
+      "contract_matches": true,
+      "configuration_matches": true,
+      "best_ssim_checkpoint": 0.8227921659832462,
+      "means": {
+        "ssim": 0.8227914467544925,
+        "psnr": 31.10406026468815
+      },
+      "max_abs_difference_csv": {
+        "ssim": 3.836282379765521e-06,
+        "psnr": 0.0001776141038938306
+      },
+      "range": [
+        7.934660243336111e-05,
+        0.512223482131958
+      ],
+      "within_tolerance": true
+    }
+  },
+  "status": "passed"
+}

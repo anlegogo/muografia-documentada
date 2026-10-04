@@ -1,6 +1,6 @@
 # Objetivo específico 2: revisión de la implementación recibida
 
-**Estado al 2026-10-03: correcciones OE2-P01 a P03 implementadas y verificadas localmente.** Véase [correcciones v1, evidencia y reproducción](CORRECCIONES_V1.md). OE2-P04 tiene un [protocolo de piloto al 5 %](PROTOCOLO_PILOTO_F05.md) y [comandos para SC3](INSTRUCCIONES_PILOTO_SC3.md); se recibió y [revisó el piloto ejecutado en GPU RunPod](REVISION_PILOTO_C054225.md). Los pesos para inferencia independiente, la evaluación regional y la campaña principal continúan pendientes. El texto de revisión siguiente conserva los hallazgos del código histórico. La dirección autorizó expresamente esta revisión del OE2. El cierre del OE1 se mantiene; no se declara cumplido el OE2 ni se inicia una campaña de entrenamiento.
+**Estado al 2026-10-03: correcciones OE2-P01 a P03 implementadas y verificadas localmente.** Véase [correcciones v1, evidencia y reproducción](CORRECCIONES_V1.md). OE2-P04 tiene un [protocolo de piloto al 5 %](PROTOCOLO_PILOTO_F05.md) y [comandos para SC3](INSTRUCCIONES_PILOTO_SC3.md); se recibió y [revisó el piloto ejecutado en GPU RunPod](REVISION_PILOTO_C054225.md). Los [dos pesos seleccionados y su inferencia fueron verificados](REVISION_PESOS_PILOTO_F05.md) en los 360 pares de validación. La exploración regional se completó como diagnóstico; siguen pendientes los criterios físicos y la campaña principal. El texto de revisión siguiente conserva los hallazgos del código histórico. La dirección autorizó expresamente esta revisión del OE2. El cierre del OE1 se mantiene; no se declara cumplido el OE2 ni se inicia una campaña de entrenamiento.
 
 El objetivo consiste en diseñar e implementar una cGAN que transforme imágenes muográficas de baja estadística en imágenes de calidad comparable a las de alta estadística. La salida considerada es una imagen muográfica; esta revisión no acredita reconstrucción de densidad.
 
@@ -64,7 +64,7 @@ El checkpoint guarda configuración y commit, pero no vincula obligatoriamente e
 
 ### OE2-P04 — Protocolo y evidencia sobre los datos corregidos
 
-**Estado: pendiente.** La existencia de modelos históricos reduce el trabajo de implementación, pero todavía se requiere un protocolo específico: fracciones, modelo por fracción o condicionamiento explícito por f, semillas, presupuesto, comparación con U-Net L1 y criterio de selección.
+**Estado: piloto recibido e inferencia independiente verificada; evaluación regional física y campaña principal pendientes.** La existencia de modelos históricos reduce el trabajo de implementación, pero todavía se requiere un protocolo específico: fracciones, modelo por fracción o condicionamiento explícito por f, semillas, presupuesto, comparación con U-Net L1 y criterio de selección.
 
 La configuración histórica usa modelos separados por fracción; la imagen de baja estadística es la condición del crítico. No corresponde describirla como una única red condicionada explícitamente por f. El criterio `min_delta=0.001` afecta qué checkpoint se considera mejor: se debe distinguir mejora suficiente para paciencia de máximo absoluto de SSIM, o declarar expresamente el criterio adoptado.
 
@@ -82,4 +82,4 @@ python objetivo-2/herramientas/revisar_base.py --codigo ../tmp/revision-muograph
 
 El script termina correctamente cuando reproduce los diagnósticos, incluidos los defectos actuales; no equivale a una aprobación del código para entrenar. Al corregir el código deberán cambiarse las expectativas y conservar esta evidencia del antes. Véase la [bitácora](BITACORA.md).
 
-**Secuencia vigente:** P01–P03 corregidos y prueba corta de reanudación completada; fijar el protocolo P04 y comprobar GPU antes de asignar un entrenamiento prolongado a SC3. El resultado de la revisión es una base aprovechable con correcciones concretas, no la necesidad de comenzar desde cero.
+**Secuencia vigente:** P01–P03 corregidos, piloto GPU recibido y pesos seleccionados verificados sobre val. Establecer regiones y criterios físicos, analizar calibración y decidir ajustes antes de ampliar entrenamientos. El resultado de la revisión es una base aprovechable con correcciones concretas, no la necesidad de comenzar desde cero.

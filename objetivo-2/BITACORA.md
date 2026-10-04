@@ -34,3 +34,10 @@
 - Se comprobaron 110 huellas contra objetos Git, configuraciones y registros de cuatro ejecuciones; se reprodujo el baseline de 360 pares y la estadística del CSV. Evidencia: [revisión-c054225.json](evidencias/revision-c054225.json).
 - Incidencias del procedimiento: la primera verificación de identidad usó codificación predeterminada de Windows y falló; UTF-8 explícito coincide con la identidad del ejecutor Linux. La extracción local convirtió a CRLF 67 archivos y produjo discrepancias aparentes de huella; los 110 objetos originales Git coinciden. Se mantuvieron los archivos recibidos y se añadió verificación directa del commit.
 - Resultado: evidencia técnica GPU RunPod coherente; se inspeccionaron tres figuras. Pendientes P04a–d documentados en la [revisión](REVISION_PILOTO_C054225.md). No se descargaron pesos inexistentes en la entrega ni se repitió inferencia; no se abrieron imágenes reservadas.
+
+## 2026-10-03 — Pesos publicados y revisión independiente
+
+- Se revisó el enlace de la entrega fddd072 y se descargaron los dos mejores checkpoints. Coinciden tamaños, SHA-256, configuraciones, contrato y época seleccionada (5).
+- Se reprodujeron 360 predicciones por modelo en CPU, dentro de tolerancias frente al CSV. Se inspeccionaron las 18 vistas y se calculó una exploración regional; no se abrieron imágenes reservadas. [Informe y límites](REVISION_PESOS_PILOTO_F05.md).
+- Incidencia local: fallos de lectura e índice Git ilegible; se completó el cálculo en un entorno aislado y la publicación mediante GitHub. No se reparó ni se reconstruyó el índice local.
+- P04b resuelto para inferencia de validación y P04a cubierto para los dos mejores pesos. P04c avanza como exploración; P04d continúa pendiente. No se autorizó ni se lanzó la campaña principal.
