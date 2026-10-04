@@ -1,5 +1,7 @@
 # Muografía: documentación y seguimiento académico
 
+**Preparación OE3:** [curvas descriptivas de exposición](objetivo-3/README.md) calculadas con 1 %, 5 %, 10 % y 50 % de conteos existentes. Comparaciones visuales y físicas separadas; sin factor efectivo de adquisición demostrado ni nuevas corridas.
+
 **Evaluación final al 5 % revisada; corrección C2 verificada.** Se recibieron y auditaron los ocho modelos y sus 3.840 predicciones. Las métricas de imagen/regiones se reproducen; el contraste queda corregido con índices registrados y comparación antes/después. [Revisión vigente](objetivo-2/REVISION_EVALUACION_FINAL_C2.md) · [Síntesis y siguiente paso](objetivo-2/SINTESIS_OE2_TRANSICION_OE3.md). No se requiere otra GPU. La implementación/evaluación está verificada; equivalencia física y alcance académico siguen delimitados, no se declara cumplimiento científico pleno.
 
 ## Antecedentes conservados

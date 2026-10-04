@@ -1,0 +1,47 @@
+[
+  {
+    "path": "objetivo-3/README.md",
+    "bytes": 8603,
+    "sha256": "0a674679ca0c855016e95866ea4d9d10b9892bf549ec6b1d1db7c28fa3fbe9a0"
+  },
+  {
+    "path": "objetivo-3/herramientas/curvas_exposicion_descriptivas.py",
+    "bytes": 7226,
+    "sha256": "61b391d7428f363b85362c9de374dd4252f69e406e5e726869c52306d905b606"
+  },
+  {
+    "path": "objetivo-3/herramientas/test_curvas_exposicion_descriptivas.py",
+    "bytes": 901,
+    "sha256": "5be713d5e76f4bb043ef68726f104f63d846b6aadb15e1917067c59a0a810e08"
+  },
+  {
+    "path": "objetivo-3/herramientas/figura_curvas.py",
+    "bytes": 2162,
+    "sha256": "9e05e0a1a2148e3d823d8ee459e7d01519deed643fe85c6178bcf6254ae387dd"
+  },
+  {
+    "path": "objetivo-3/evidencias/curvas-v1/curvas.json",
+    "bytes": 43637,
+    "sha256": "2ded187589a1f6af4b1e485c094ae257aa5a6c80008efe9758632d085fe57534"
+  },
+  {
+    "path": "objetivo-3/evidencias/curvas-v1/imagenes.csv",
+    "bytes": 140499,
+    "sha256": "024d5103627d176a645bfe4161f95d239f1d045b9413a7d2dcd0d812dddc0b74"
+  },
+  {
+    "path": "objetivo-3/evidencias/curvas-v1/regiones.csv",
+    "bytes": 286959,
+    "sha256": "0cac499640244069746f511dc2a53eac8a4bb1705ddd4907fe389c0000e59c1c"
+  },
+  {
+    "path": "objetivo-3/evidencias/curvas-v1/contrastes.json",
+    "bytes": 103069,
+    "sha256": "823c16e2362464c9ba8b78ec6102591fe08d75cfb46961a7c0018eb54be566b5"
+  },
+  {
+    "path": "objetivo-3/evidencias/curvas-v1/curvas-exposicion.svg",
+    "bytes": 146544,
+    "sha256": "abbda3ec04adf286d701b8888dc1e30bea0056273dca8ac1ce2291ad5921c40a"
+  }
+]

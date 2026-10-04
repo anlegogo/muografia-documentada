@@ -1,5 +1,7 @@
 # Síntesis del OE2 y transición al OE3
 
+**Actualización:** la comparación descriptiva de las cuatro fracciones ya se realizó y se conserva en [curvas del OE3](../objetivo-3/README.md). No implica un factor de reducción aceptado ni cambia las conclusiones C2.
+
 2026-10-04, Colombia. Documento de la dirección derivado de la [revisión EF-01-C2](REVISION_EVALUACION_FINAL_C2.md). No sustituye la redacción oficial de los objetivos ni declara resultados experimentales nuevos.
 
 ## Texto propuesto para resultados y discusión
@@ -24,6 +26,6 @@ Para flujo estable y condiciones de detección iguales, la esperanza de conteos 
 
 Determinar un factor alcanzable requiere especificar calidad aceptable. No se escogerá después de observar los resultados un umbral que garantice 20×. Deben separarse: reducción nominal de conteos, equivalencia descriptiva según SSIM/PSNR y aceptación física según cuentas/contraste. Si ninguna condición satisface el criterio acordado, se reportará que no se ha demostrado el factor bajo ese criterio.
 
-El trabajo siguiente puede comenzar localmente con curvas descriptivas de la entrada para las fracciones ya disponibles (0,01; 0,05; 0,10; 0,50), comparadas con los modelos f05. Esas curvas no demuestran que el modelo funcione cuando recibe otra fracción, ni permiten extrapolar un máximo más allá de los puntos estudiados. La referencia de alta estadística también tiene ruido. Las veinte realizaciones no reemplazan geometrías independientes. Antes de nuevas corridas, se definirá el alcance de esa comparación y cualquier margen científico con justificación externa o de aplicación, dejando explícito qué decisiones son posteriores a esta evaluación.
+Se completó localmente el análisis de curvas descriptivas de la entrada para las fracciones ya disponibles (0,01; 0,05; 0,10; 0,50), comparadas con los modelos f05. Esas curvas no demuestran que el modelo funcione cuando recibe otra fracción, ni permiten extrapolar un máximo más allá de los puntos estudiados. La referencia de alta estadística también tiene ruido. Las veinte realizaciones no reemplazan geometrías independientes. Antes de nuevas corridas, se definirá el alcance de esa comparación y cualquier margen científico con justificación externa o de aplicación, dejando explícito qué decisiones son posteriores a esta evaluación.
 
 La incorporación del capítulo y la confirmación del objetivo 3 son los siguientes pasos de coordinación. No se programa una campaña adicional ni se solicita GPU en esta revisión.

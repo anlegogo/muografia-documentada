@@ -1,5 +1,8 @@
 # Índice de documentación
 
+- [OE3: curvas descriptivas, evidencia y límites](../objetivo-3/README.md).
+- [Bitácora OE3](../objetivo-3/BITACORA.md).
+
 - [Revisión final OE2 y corrección C2](../objetivo-2/REVISION_EVALUACION_FINAL_C2.md).
 - [Síntesis OE2 y preparación OE3](../objetivo-2/SINTESIS_OE2_TRANSICION_OE3.md).
 

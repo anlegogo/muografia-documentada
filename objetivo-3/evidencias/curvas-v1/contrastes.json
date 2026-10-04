@@ -1,0 +1,3890 @@
+[
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-01",
+    "view": 0,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 999,
+    "match_fraction": 0.9891089108910891,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.1385317964660238,
+        "absolute_error": 0.36432348492046374,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": -0.037511309068132825
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-01",
+    "view": 0,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 179,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 15,
+        "invalid_realizations": 5,
+        "contrast_mean": 0.44132855871986304,
+        "absolute_error": 1.0218050818331323,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": 0.34164222873900285
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-01",
+    "view": 1,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1011,
+    "match_fraction": 0.9882697947214076,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.025382166285264525,
+        "absolute_error": 0.17576558215007204,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": 0.030476190476190546
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-01",
+    "view": 1,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 86,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 9,
+        "invalid_realizations": 11,
+        "contrast_mean": -0.25505050505050497,
+        "absolute_error": 0.9653527613297729,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": 0.24521072796934873
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-01",
+    "view": 2,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 995,
+    "match_fraction": 0.9871031746031746,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.052559727464148644,
+        "absolute_error": 0.2029170868067475,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": 0.0019419513987299908
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-01",
+    "view": 2,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 10,
+    "match_fraction": 1.0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-01",
+    "view": 3,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1207,
+    "match_fraction": 0.9451840250587314,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.13387750802546955,
+        "absolute_error": 0.17410673402498975,
+        "sign_inversions": 4
+      }
+    },
+    "reference_contrast": -0.04076673866090719
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-01",
+    "view": 3,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 205,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 1.8672799422799418,
+        "absolute_error": 1.982962188470663,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": 0.23728813559322037
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-01",
+    "view": 4,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1024,
+    "match_fraction": 0.9884169884169884,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.07881842815236181,
+        "absolute_error": 0.24595720452521957,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": -0.007548845470692678
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-01",
+    "view": 4,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 122,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 18,
+        "invalid_realizations": 2,
+        "contrast_mean": -0.2929894179894179,
+        "absolute_error": 0.6958946167661765,
+        "sign_inversions": 15
+      }
+    },
+    "reference_contrast": 0.06269113149847105
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-01",
+    "view": 5,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 871,
+    "match_fraction": 0.986409966024915,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.02128063358923445,
+        "absolute_error": 0.21923022747263915,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": 0.02548584493309125
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-01",
+    "view": 5,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 34,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 7,
+        "invalid_realizations": 13,
+        "contrast_mean": 0.07142857142857142,
+        "absolute_error": 1.5789473684210527,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": 0.18421052631578938
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-02",
+    "view": 0,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 273,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.099878291857781,
+        "absolute_error": 0.6580420667947459,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": -0.0599905526688711
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-02",
+    "view": 1,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 378,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0695778822589295,
+        "absolute_error": 0.2905274906524797,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.031553398058252524
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-02",
+    "view": 2,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 439,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.46457752068950225,
+        "absolute_error": 0.8534514084027499,
+        "sign_inversions": 11
+      }
+    },
+    "reference_contrast": -0.03909389842893696
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-02",
+    "view": 3,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 352,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.170081053698628,
+        "absolute_error": 0.43105427959878917,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": 0.09155827595001265
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-02",
+    "view": 4,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 354,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.4322578609578037,
+        "absolute_error": 0.7303713663284247,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.012084592145015005
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-02",
+    "view": 5,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 311,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 19,
+        "invalid_realizations": 1,
+        "contrast_mean": 0.06402313733295241,
+        "absolute_error": 0.5747463498223059,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": -0.10699062233589085
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 0,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 462,
+    "match_fraction": 0.7107692307692308,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 0,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 0,
+    "match_fraction": 0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 0,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 202,
+    "match_fraction": 0.9665071770334929,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 17,
+        "invalid_realizations": 3,
+        "contrast_mean": -0.13045806557917286,
+        "absolute_error": 0.8125729047417366,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": -0.0420899854862119
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 1,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1042,
+    "match_fraction": 0.939585211902615,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.10148332955512326,
+        "absolute_error": 0.15928725798433363,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": 0.06181578730759729
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 1,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 65,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 15,
+        "invalid_realizations": 5,
+        "contrast_mean": -0.17955501288834622,
+        "absolute_error": 0.8785571601663558,
+        "sign_inversions": 4
+      }
+    },
+    "reference_contrast": -0.13793103448275856
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 1,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 761,
+    "match_fraction": 0.9608585858585859,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.299559472402806,
+        "absolute_error": 0.8153375579781953,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": -0.05063291139240511
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 2,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1017,
+    "match_fraction": 0.9531396438612934,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.1778938105519874,
+        "absolute_error": 0.2523020306378956,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": 0.030144845748683258
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 2,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 70,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 19,
+        "invalid_realizations": 1,
+        "contrast_mean": 0.91796894196275,
+        "absolute_error": 1.4457826423211537,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": -0.07794676806083656
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 2,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 491,
+    "match_fraction": 0.9515503875968992,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.09227040760473929,
+        "absolute_error": 0.6756960858736164,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": -0.07918968692449346
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 3,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 525,
+    "match_fraction": 0.8386581469648562,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.321407696830581,
+        "absolute_error": 0.43257450837951666,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": 0.008779334796555682
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 3,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 8,
+    "match_fraction": 1.0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 3,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 30,
+    "match_fraction": 0.9375,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 5,
+        "invalid_realizations": 15,
+        "contrast_mean": -1.0,
+        "absolute_error": 1.1940298507462688,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": 0.19402985074626877
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 4,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 958,
+    "match_fraction": 0.9503968253968254,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.05157610588247097,
+        "absolute_error": 0.17791692672684728,
+        "sign_inversions": 11
+      }
+    },
+    "reference_contrast": 0.02549500613281941
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 4,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 84,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 17,
+        "invalid_realizations": 3,
+        "contrast_mean": 0.21651174686823943,
+        "absolute_error": 0.747940225753668,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": -0.002057613168724326
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 4,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 503,
+    "match_fraction": 0.9526515151515151,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.016860380116959083,
+        "absolute_error": 0.4685461494327369,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": -0.10091250670960816
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 5,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1088,
+    "match_fraction": 0.8940016433853739,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.15187618835054034,
+        "absolute_error": 0.2657506666132437,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.06239198830150228
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 5,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 77,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 19,
+        "invalid_realizations": 1,
+        "contrast_mean": 0.45206055870875816,
+        "absolute_error": 0.9097482734628739,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": 0.16946160635481022
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-test-03",
+    "view": 5,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 814,
+    "match_fraction": 0.9621749408983451,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.6776843188142089,
+        "absolute_error": 1.0076818340789657,
+        "sign_inversions": 11
+      }
+    },
+    "reference_contrast": -0.06021025804396307
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 0,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 775,
+    "match_fraction": 0.9872611464968153,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.023122080715433917,
+        "absolute_error": 0.20863140445889278,
+        "sign_inversions": 13
+      }
+    },
+    "reference_contrast": 0.031880617263015054
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 0,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 243,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 17,
+        "invalid_realizations": 3,
+        "contrast_mean": -0.356021705493053,
+        "absolute_error": 0.5565449333782487,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": -0.05646718146718144
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 0,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 54,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 14,
+        "invalid_realizations": 6,
+        "contrast_mean": -0.49404761904761907,
+        "absolute_error": 0.9938350340136054,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": 0.1383928571428572
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 1,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 906,
+    "match_fraction": 0.9847826086956522,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.08669712273255506,
+        "absolute_error": 0.21618110789944534,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": 0.006477172682681331
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 1,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 163,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.08571143119449554,
+        "absolute_error": 0.5241691468216809,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": -0.08822287885183633
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 1,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 113,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 10,
+        "invalid_realizations": 10,
+        "contrast_mean": -0.2376984126984127,
+        "absolute_error": 0.8313614163614164,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": 0.12307692307692308
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 2,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 711,
+    "match_fraction": 0.9492656875834445,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.06980800239584063,
+        "absolute_error": 0.19058247018275462,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": 0.047691192938541516
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 2,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 119,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 19,
+        "invalid_realizations": 1,
+        "contrast_mean": 0.025531633644045117,
+        "absolute_error": 0.6299005356530101,
+        "sign_inversions": 13
+      }
+    },
+    "reference_contrast": 0.02686567164179099
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 2,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 346,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.9311787627225625,
+        "absolute_error": 1.1057813841788122,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": 0.1006856730422232
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 3,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 768,
+    "match_fraction": 0.8787185354691075,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03279499464156159,
+        "absolute_error": 0.1447299847997489,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": 0.06979542719614917
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 3,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 182,
+    "match_fraction": 0.48404255319148937,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 3,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 281,
+    "match_fraction": 0.9493243243243243,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 19,
+        "invalid_realizations": 1,
+        "contrast_mean": 2.0284368955666334,
+        "absolute_error": 2.2672899360286336,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": 0.028220173232746726
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 4,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1001,
+    "match_fraction": 0.8985637342908438,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03996786069825452,
+        "absolute_error": 0.1669336777947879,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": -0.008237937306087573
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 4,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 70,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.6999620477561654,
+        "absolute_error": 1.2807283145131443,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": 0.08395989974937357
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 4,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 197,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.12030058819723966,
+        "absolute_error": 0.47207583872699227,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": -0.011473962930273585
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 5,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 745,
+    "match_fraction": 0.9300873907615481,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.05211046656329586,
+        "absolute_error": 0.19694828217130383,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": 0.007859323758905523
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 5,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 8,
+    "match_fraction": 1.0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.01,
+    "geometry": "geo-gen-01",
+    "view": 5,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 293,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 1.5810653158175536,
+        "absolute_error": 1.754220231967994,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": 0.26030624263839797
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 0,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 999,
+    "match_fraction": 0.9891089108910891,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.02621579273002132,
+        "absolute_error": 0.11579247744457874,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": -0.037511309068132825
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 0,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 179,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.8361121285331506,
+        "absolute_error": 0.736240302970081,
+        "sign_inversions": 3
+      }
+    },
+    "reference_contrast": 0.34164222873900285
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 1,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1011,
+    "match_fraction": 0.9882697947214076,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03379181696107752,
+        "absolute_error": 0.10622264542668244,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": 0.030476190476190546
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 1,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 86,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 17,
+        "invalid_realizations": 3,
+        "contrast_mean": 0.8929498894031767,
+        "absolute_error": 1.3397399472420353,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.24521072796934873
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 2,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 995,
+    "match_fraction": 0.9871031746031746,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03283220950700979,
+        "absolute_error": 0.07616115078457776,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.0019419513987299908
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 2,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 10,
+    "match_fraction": 1.0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 3,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1207,
+    "match_fraction": 0.9451840250587314,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.0378255601593342,
+        "absolute_error": 0.13411810801363083,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": -0.04076673866090719
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 3,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 205,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.3751368161400267,
+        "absolute_error": 0.4788258170986464,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": 0.23728813559322037
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 4,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1024,
+    "match_fraction": 0.9884169884169884,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.025963681431759655,
+        "absolute_error": 0.09887378684283146,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": -0.007548845470692678
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 4,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 122,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.21758302559502915,
+        "absolute_error": 0.6055289570058333,
+        "sign_inversions": 12
+      }
+    },
+    "reference_contrast": 0.06269113149847105
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 5,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 871,
+    "match_fraction": 0.986409966024915,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.01611590490056547,
+        "absolute_error": 0.10024537349683023,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": 0.02548584493309125
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-01",
+    "view": 5,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 34,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.10925047175047173,
+        "absolute_error": 0.6454346822767876,
+        "sign_inversions": 11
+      }
+    },
+    "reference_contrast": 0.18421052631578938
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-02",
+    "view": 0,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 273,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.06716999944188853,
+        "absolute_error": 0.27497898916543256,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": -0.0599905526688711
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-02",
+    "view": 1,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 378,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.10975513792540303,
+        "absolute_error": 0.1928155782657763,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": 0.031553398058252524
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-02",
+    "view": 2,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 439,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.005362423928195609,
+        "absolute_error": 0.226006093879497,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": -0.03909389842893696
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-02",
+    "view": 3,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 352,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.16581388247704765,
+        "absolute_error": 0.1605708429786116,
+        "sign_inversions": 3
+      }
+    },
+    "reference_contrast": 0.09155827595001265
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-02",
+    "view": 4,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 354,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.01525734085364559,
+        "absolute_error": 0.21363971822481248,
+        "sign_inversions": 12
+      }
+    },
+    "reference_contrast": 0.012084592145015005
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-02",
+    "view": 5,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 311,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.45341968989555437,
+        "absolute_error": 0.7665744938989056,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": -0.10699062233589085
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 0,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 462,
+    "match_fraction": 0.7107692307692308,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 0,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 0,
+    "match_fraction": 0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 0,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 202,
+    "match_fraction": 0.9665071770334929,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 1.5603696973088057,
+        "absolute_error": 1.9120586657597574,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": -0.0420899854862119
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 1,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1042,
+    "match_fraction": 0.939585211902615,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.09342215190706753,
+        "absolute_error": 0.06529939145971417,
+        "sign_inversions": 2
+      }
+    },
+    "reference_contrast": 0.06181578730759729
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 1,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 65,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.2645962518068087,
+        "absolute_error": 0.6226217993956491,
+        "sign_inversions": 11
+      }
+    },
+    "reference_contrast": -0.13793103448275856
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 1,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 761,
+    "match_fraction": 0.9608585858585859,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.08373374981273236,
+        "absolute_error": 0.18792904826589313,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": -0.05063291139240511
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 2,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1017,
+    "match_fraction": 0.9531396438612934,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.04859725985307982,
+        "absolute_error": 0.09523791551397842,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.030144845748683258
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 2,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 70,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.05432494059486367,
+        "absolute_error": 0.3393988166629051,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": -0.07794676806083656
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 2,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 491,
+    "match_fraction": 0.9515503875968992,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03716122872060247,
+        "absolute_error": 0.3184207422982377,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": -0.07918968692449346
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 3,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 525,
+    "match_fraction": 0.8386581469648562,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.021305607566997536,
+        "absolute_error": 0.0985391209403978,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": 0.008779334796555682
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 3,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 8,
+    "match_fraction": 1.0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 3,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 30,
+    "match_fraction": 0.9375,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 15,
+        "invalid_realizations": 5,
+        "contrast_mean": 0.011111111111111072,
+        "absolute_error": 1.0054726368159204,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.19402985074626877
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 4,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 958,
+    "match_fraction": 0.9503968253968254,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.028906788719444864,
+        "absolute_error": 0.054968601399284854,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.02549500613281941
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 4,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 84,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.30885152755093975,
+        "absolute_error": 0.5420251512072944,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": -0.002057613168724326
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 4,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 503,
+    "match_fraction": 0.9526515151515151,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.12965858913051478,
+        "absolute_error": 0.18653279848390797,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": -0.10091250670960816
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 5,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1088,
+    "match_fraction": 0.8940016433853739,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.06379525090059199,
+        "absolute_error": 0.06998173180238573,
+        "sign_inversions": 4
+      }
+    },
+    "reference_contrast": 0.06239198830150228
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 5,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 77,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.5260291139642105,
+        "absolute_error": 0.5036728303663502,
+        "sign_inversions": 4
+      }
+    },
+    "reference_contrast": 0.16946160635481022
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-test-03",
+    "view": 5,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 814,
+    "match_fraction": 0.9621749408983451,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0031703563124863996,
+        "absolute_error": 0.1829043056726409,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": -0.06021025804396307
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 0,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 775,
+    "match_fraction": 0.9872611464968153,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.05369453667436238,
+        "absolute_error": 0.06375734115340291,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": 0.031880617263015054
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 0,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 243,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0227726168742514,
+        "absolute_error": 0.3957788052929915,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": -0.05646718146718144
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 0,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 54,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.632279836176895,
+        "absolute_error": 1.0718597742127156,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.1383928571428572
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 1,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 906,
+    "match_fraction": 0.9847826086956522,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.000223499300108837,
+        "absolute_error": 0.07325531301226378,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": 0.006477172682681331
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 1,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 163,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.08119040559674115,
+        "absolute_error": 0.19249646592181932,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": -0.08822287885183633
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 1,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 113,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.49131202577900296,
+        "absolute_error": 0.9064618669948901,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.12307692307692308
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 2,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 711,
+    "match_fraction": 0.9492656875834445,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.023158936593497347,
+        "absolute_error": 0.09949554231502447,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": 0.047691192938541516
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 2,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 119,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.11794318552905783,
+        "absolute_error": 0.30239059555324876,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": 0.02686567164179099
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 2,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 346,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.17489398876010584,
+        "absolute_error": 0.2613521897608888,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": 0.1006856730422232
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 3,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 768,
+    "match_fraction": 0.8787185354691075,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.05487725557466019,
+        "absolute_error": 0.05647179226166728,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": 0.06979542719614917
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 3,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 182,
+    "match_fraction": 0.48404255319148937,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 3,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 281,
+    "match_fraction": 0.9493243243243243,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.07186274992441348,
+        "absolute_error": 0.21194450140464002,
+        "sign_inversions": 11
+      }
+    },
+    "reference_contrast": 0.028220173232746726
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 4,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1001,
+    "match_fraction": 0.8985637342908438,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.04180807590516707,
+        "absolute_error": 0.13247347790371206,
+        "sign_inversions": 12
+      }
+    },
+    "reference_contrast": -0.008237937306087573
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 4,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 70,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.20427386788032945,
+        "absolute_error": 0.400377636660881,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": 0.08395989974937357
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 4,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 197,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.00781536903196876,
+        "absolute_error": 0.14071895016706062,
+        "sign_inversions": 11
+      }
+    },
+    "reference_contrast": -0.011473962930273585
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 5,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 745,
+    "match_fraction": 0.9300873907615481,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.0005762378312890504,
+        "absolute_error": 0.08098303896151555,
+        "sign_inversions": 11
+      }
+    },
+    "reference_contrast": 0.007859323758905523
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 5,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 8,
+    "match_fraction": 1.0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.05,
+    "geometry": "geo-gen-01",
+    "view": 5,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 293,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.3549133777916855,
+        "absolute_error": 0.24556493900413584,
+        "sign_inversions": 2
+      }
+    },
+    "reference_contrast": 0.26030624263839797
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-01",
+    "view": 0,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 999,
+    "match_fraction": 0.9891089108910891,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.02578105659576751,
+        "absolute_error": 0.0885602604090617,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": -0.037511309068132825
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-01",
+    "view": 0,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 179,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.3676743830422559,
+        "absolute_error": 0.28241447822284826,
+        "sign_inversions": 3
+      }
+    },
+    "reference_contrast": 0.34164222873900285
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-01",
+    "view": 1,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1011,
+    "match_fraction": 0.9882697947214076,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.07242446907819076,
+        "absolute_error": 0.08870870962100444,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": 0.030476190476190546
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-01",
+    "view": 1,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 86,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.5967011765948007,
+        "absolute_error": 0.7068788000530171,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": 0.24521072796934873
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-01",
+    "view": 2,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 995,
+    "match_fraction": 0.9871031746031746,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.009465176458003304,
+        "absolute_error": 0.06253921204796957,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": 0.0019419513987299908
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-01",
+    "view": 2,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 10,
+    "match_fraction": 1.0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-01",
+    "view": 3,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1207,
+    "match_fraction": 0.9451840250587314,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.05466903752724186,
+        "absolute_error": 0.06835525993594019,
+        "sign_inversions": 4
+      }
+    },
+    "reference_contrast": -0.04076673866090719
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-01",
+    "view": 3,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 205,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.23465910731423906,
+        "absolute_error": 0.25808694476383304,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": 0.23728813559322037
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-01",
+    "view": 4,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1024,
+    "match_fraction": 0.9884169884169884,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.019578947902058896,
+        "absolute_error": 0.06355747022127134,
+        "sign_inversions": 12
+      }
+    },
+    "reference_contrast": -0.007548845470692678
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-01",
+    "view": 4,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 122,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.23882219201588364,
+        "absolute_error": 0.3070495996401012,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": 0.06269113149847105
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-01",
+    "view": 5,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 871,
+    "match_fraction": 0.986409966024915,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03210663546230884,
+        "absolute_error": 0.044458343281615235,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": 0.02548584493309125
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-01",
+    "view": 5,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 34,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.6920919207603992,
+        "absolute_error": 0.8972929998745218,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": 0.18421052631578938
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-02",
+    "view": 0,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 273,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.06056038688276026,
+        "absolute_error": 0.16404909950168856,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": -0.0599905526688711
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-02",
+    "view": 1,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 378,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03799479494004317,
+        "absolute_error": 0.12984963904668817,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": 0.031553398058252524
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-02",
+    "view": 2,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 439,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.06300814955144537,
+        "absolute_error": 0.11690164320151317,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": -0.03909389842893696
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-02",
+    "view": 3,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 352,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.14091448479805432,
+        "absolute_error": 0.13846170514960496,
+        "sign_inversions": 4
+      }
+    },
+    "reference_contrast": 0.09155827595001265
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-02",
+    "view": 4,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 354,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.0028638733414259876,
+        "absolute_error": 0.12036322867550057,
+        "sign_inversions": 13
+      }
+    },
+    "reference_contrast": 0.012084592145015005
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-02",
+    "view": 5,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 311,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.06951867538915861,
+        "absolute_error": 0.21726389082226963,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": -0.10699062233589085
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 0,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 462,
+    "match_fraction": 0.7107692307692308,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 0,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 0,
+    "match_fraction": 0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 0,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 202,
+    "match_fraction": 0.9665071770334929,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.13795684247383178,
+        "absolute_error": 0.4226407107888087,
+        "sign_inversions": 11
+      }
+    },
+    "reference_contrast": -0.0420899854862119
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 1,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1042,
+    "match_fraction": 0.939585211902615,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0609195305553827,
+        "absolute_error": 0.04588684191760977,
+        "sign_inversions": 4
+      }
+    },
+    "reference_contrast": 0.06181578730759729
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 1,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 65,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.06315058547634542,
+        "absolute_error": 0.3318425011002596,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": -0.13793103448275856
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 1,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 761,
+    "match_fraction": 0.9608585858585859,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.04009005973540946,
+        "absolute_error": 0.16962863085218544,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": -0.05063291139240511
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 2,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1017,
+    "match_fraction": 0.9531396438612934,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.022677604267334554,
+        "absolute_error": 0.07233452415238524,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.030144845748683258
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 2,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 70,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.0020981843730475736,
+        "absolute_error": 0.259127904734055,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": -0.07794676806083656
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 2,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 491,
+    "match_fraction": 0.9515503875968992,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.10198108963022293,
+        "absolute_error": 0.15499109868847954,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": -0.07918968692449346
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 3,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 525,
+    "match_fraction": 0.8386581469648562,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.004245429724922622,
+        "absolute_error": 0.09042302062715363,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": 0.008779334796555682
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 3,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 8,
+    "match_fraction": 1.0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 3,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 30,
+    "match_fraction": 0.9375,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 19,
+        "invalid_realizations": 1,
+        "contrast_mean": 1.0231622409600247,
+        "absolute_error": 1.6184978794903548,
+        "sign_inversions": 11
+      }
+    },
+    "reference_contrast": 0.19402985074626877
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 4,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 958,
+    "match_fraction": 0.9503968253968254,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.028766692543163074,
+        "absolute_error": 0.06081121988889417,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.02549500613281941
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 4,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 84,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.11993785001847282,
+        "absolute_error": 0.22680476145336176,
+        "sign_inversions": 13
+      }
+    },
+    "reference_contrast": -0.002057613168724326
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 4,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 503,
+    "match_fraction": 0.9526515151515151,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.07326407170520013,
+        "absolute_error": 0.1649694045460007,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": -0.10091250670960816
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 5,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1088,
+    "match_fraction": 0.8940016433853739,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.07723509747227594,
+        "absolute_error": 0.05091434889207665,
+        "sign_inversions": 4
+      }
+    },
+    "reference_contrast": 0.06239198830150228
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 5,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 77,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.30832720145908327,
+        "absolute_error": 0.24294333730818912,
+        "sign_inversions": 3
+      }
+    },
+    "reference_contrast": 0.16946160635481022
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-test-03",
+    "view": 5,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 814,
+    "match_fraction": 0.9621749408983451,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.038190150748465775,
+        "absolute_error": 0.17575304303807984,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": -0.06021025804396307
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 0,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 775,
+    "match_fraction": 0.9872611464968153,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0261866525268896,
+        "absolute_error": 0.06652372592544838,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": 0.031880617263015054
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 0,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 243,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.015236154139624685,
+        "absolute_error": 0.26426589413508417,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": -0.05646718146718144
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 0,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 54,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.4464472511723586,
+        "absolute_error": 0.6078847719848792,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": 0.1383928571428572
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 1,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 906,
+    "match_fraction": 0.9847826086956522,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.013055762680929024,
+        "absolute_error": 0.0698588928634496,
+        "sign_inversions": 11
+      }
+    },
+    "reference_contrast": 0.006477172682681331
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 1,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 163,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.04788065586357108,
+        "absolute_error": 0.16914010217001316,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": -0.08822287885183633
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 1,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 113,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.265098153649428,
+        "absolute_error": 0.4589497837416743,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.12307692307692308
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 2,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 711,
+    "match_fraction": 0.9492656875834445,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.046485957539600546,
+        "absolute_error": 0.07542953932275942,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": 0.047691192938541516
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 2,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 119,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.013467296596647055,
+        "absolute_error": 0.15990079542362773,
+        "sign_inversions": 11
+      }
+    },
+    "reference_contrast": 0.02686567164179099
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 2,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 346,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.00887757068813556,
+        "absolute_error": 0.16325895873040291,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": 0.1006856730422232
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 3,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 768,
+    "match_fraction": 0.8787185354691075,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.0920725613647928,
+        "absolute_error": 0.04709482289027946,
+        "sign_inversions": 0
+      }
+    },
+    "reference_contrast": 0.06979542719614917
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 3,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 182,
+    "match_fraction": 0.48404255319148937,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 3,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 281,
+    "match_fraction": 0.9493243243243243,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.12364458249030053,
+        "absolute_error": 0.1742166600698108,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": 0.028220173232746726
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 4,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1001,
+    "match_fraction": 0.8985637342908438,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.02582525541897036,
+        "absolute_error": 0.0734999112245212,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": -0.008237937306087573
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 4,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 70,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.2146518076191398,
+        "absolute_error": 0.24875552406551135,
+        "sign_inversions": 4
+      }
+    },
+    "reference_contrast": 0.08395989974937357
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 4,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 197,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.030533942971954286,
+        "absolute_error": 0.10774373617043467,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": -0.011473962930273585
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 5,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 745,
+    "match_fraction": 0.9300873907615481,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.02458360279981107,
+        "absolute_error": 0.06443805917501645,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": 0.007859323758905523
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 5,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 8,
+    "match_fraction": 1.0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.1,
+    "geometry": "geo-gen-01",
+    "view": 5,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 293,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.344449038764303,
+        "absolute_error": 0.2241707574059124,
+        "sign_inversions": 4
+      }
+    },
+    "reference_contrast": 0.26030624263839797
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-01",
+    "view": 0,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 999,
+    "match_fraction": 0.9891089108910891,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03404102857632123,
+        "absolute_error": 0.019889954303036063,
+        "sign_inversions": 2
+      }
+    },
+    "reference_contrast": -0.037511309068132825
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-01",
+    "view": 0,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 179,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.3407265364763287,
+        "absolute_error": 0.11802295160295181,
+        "sign_inversions": 0
+      }
+    },
+    "reference_contrast": 0.34164222873900285
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-01",
+    "view": 1,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1011,
+    "match_fraction": 0.9882697947214076,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.029975045740517153,
+        "absolute_error": 0.02368326516587515,
+        "sign_inversions": 2
+      }
+    },
+    "reference_contrast": 0.030476190476190546
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-01",
+    "view": 1,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 86,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.19529769989110596,
+        "absolute_error": 0.20410753403756238,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": 0.24521072796934873
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-01",
+    "view": 2,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 995,
+    "match_fraction": 0.9871031746031746,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.0003215481818742705,
+        "absolute_error": 0.017654032509593548,
+        "sign_inversions": 11
+      }
+    },
+    "reference_contrast": 0.0019419513987299908
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-01",
+    "view": 2,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 10,
+    "match_fraction": 1.0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-01",
+    "view": 3,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1207,
+    "match_fraction": 0.9451840250587314,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.033512515657874095,
+        "absolute_error": 0.025013600073671094,
+        "sign_inversions": 3
+      }
+    },
+    "reference_contrast": -0.04076673866090719
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-01",
+    "view": 3,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 205,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.2656312936603084,
+        "absolute_error": 0.09208313891102642,
+        "sign_inversions": 0
+      }
+    },
+    "reference_contrast": 0.23728813559322037
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-01",
+    "view": 4,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1024,
+    "match_fraction": 0.9884169884169884,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.010499388533542953,
+        "absolute_error": 0.014588562197757981,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": -0.007548845470692678
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-01",
+    "view": 4,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 122,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.08127329829716164,
+        "absolute_error": 0.07894954357008757,
+        "sign_inversions": 2
+      }
+    },
+    "reference_contrast": 0.06269113149847105
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-01",
+    "view": 5,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 871,
+    "match_fraction": 0.986409966024915,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.029553301476620737,
+        "absolute_error": 0.020815641611114315,
+        "sign_inversions": 2
+      }
+    },
+    "reference_contrast": 0.02548584493309125
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-01",
+    "view": 5,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 34,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.23678401736331747,
+        "absolute_error": 0.21348245611995678,
+        "sign_inversions": 3
+      }
+    },
+    "reference_contrast": 0.18421052631578938
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-02",
+    "view": 0,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 273,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.04541995127428149,
+        "absolute_error": 0.04596330519347237,
+        "sign_inversions": 3
+      }
+    },
+    "reference_contrast": -0.0599905526688711
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-02",
+    "view": 1,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 378,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.02304015387594944,
+        "absolute_error": 0.026142926145972873,
+        "sign_inversions": 4
+      }
+    },
+    "reference_contrast": 0.031553398058252524
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-02",
+    "view": 2,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 439,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.020660523297775884,
+        "absolute_error": 0.04305225235688434,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": -0.03909389842893696
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-02",
+    "view": 3,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 352,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.08095444794124745,
+        "absolute_error": 0.04620890721059275,
+        "sign_inversions": 2
+      }
+    },
+    "reference_contrast": 0.09155827595001265
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-02",
+    "view": 4,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 354,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.004297652825109832,
+        "absolute_error": 0.04080815926542063,
+        "sign_inversions": 11
+      }
+    },
+    "reference_contrast": 0.012084592145015005
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-02",
+    "view": 5,
+    "region": "anomalia_0_dense_body",
+    "matched_pixels": 311,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.12895640833170458,
+        "absolute_error": 0.05947606499061,
+        "sign_inversions": 1
+      }
+    },
+    "reference_contrast": -0.10699062233589085
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 0,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 462,
+    "match_fraction": 0.7107692307692308,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 0,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 0,
+    "match_fraction": 0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 0,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 202,
+    "match_fraction": 0.9665071770334929,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.022098959633448146,
+        "absolute_error": 0.10794868339669683,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": -0.0420899854862119
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 1,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1042,
+    "match_fraction": 0.939585211902615,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.05930992913237808,
+        "absolute_error": 0.014209547685917544,
+        "sign_inversions": 0
+      }
+    },
+    "reference_contrast": 0.06181578730759729
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 1,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 65,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.14442079749415998,
+        "absolute_error": 0.07612661849642059,
+        "sign_inversions": 1
+      }
+    },
+    "reference_contrast": -0.13793103448275856
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 1,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 761,
+    "match_fraction": 0.9608585858585859,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.061788164207878936,
+        "absolute_error": 0.05574542910193545,
+        "sign_inversions": 4
+      }
+    },
+    "reference_contrast": -0.05063291139240511
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 2,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1017,
+    "match_fraction": 0.9531396438612934,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.02489148360214604,
+        "absolute_error": 0.0191864488651781,
+        "sign_inversions": 3
+      }
+    },
+    "reference_contrast": 0.030144845748683258
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 2,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 70,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.03237558976549367,
+        "absolute_error": 0.09526637473703249,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": -0.07794676806083656
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 2,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 491,
+    "match_fraction": 0.9515503875968992,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.09081189210681603,
+        "absolute_error": 0.05422006822875949,
+        "sign_inversions": 1
+      }
+    },
+    "reference_contrast": -0.07918968692449346
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 3,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 525,
+    "match_fraction": 0.8386581469648562,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.009570550295231045,
+        "absolute_error": 0.0272663055414247,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.008779334796555682
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 3,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 8,
+    "match_fraction": 1.0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 3,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 30,
+    "match_fraction": 0.9375,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.1623696416743036,
+        "absolute_error": 0.3614467324464695,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": 0.19402985074626877
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 4,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 958,
+    "match_fraction": 0.9503968253968254,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.028271861323261906,
+        "absolute_error": 0.015203534129681173,
+        "sign_inversions": 1
+      }
+    },
+    "reference_contrast": 0.02549500613281941
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 4,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 84,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.006432684343066647,
+        "absolute_error": 0.05696461844781113,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": -0.002057613168724326
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 4,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 503,
+    "match_fraction": 0.9526515151515151,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.103256713675836,
+        "absolute_error": 0.05692875451224942,
+        "sign_inversions": 2
+      }
+    },
+    "reference_contrast": -0.10091250670960816
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 5,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1088,
+    "match_fraction": 0.8940016433853739,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.06652150441296946,
+        "absolute_error": 0.014866276451121319,
+        "sign_inversions": 0
+      }
+    },
+    "reference_contrast": 0.06239198830150228
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 5,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 77,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.20085486215464518,
+        "absolute_error": 0.09694850483754337,
+        "sign_inversions": 0
+      }
+    },
+    "reference_contrast": 0.16946160635481022
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-test-03",
+    "view": 5,
+    "region": "anomalia_2_dense_body",
+    "matched_pixels": 814,
+    "match_fraction": 0.9621749408983451,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.08118146342474522,
+        "absolute_error": 0.040667896023482225,
+        "sign_inversions": 0
+      }
+    },
+    "reference_contrast": -0.06021025804396307
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 0,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 775,
+    "match_fraction": 0.9872611464968153,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03532340398395031,
+        "absolute_error": 0.01927132802197961,
+        "sign_inversions": 1
+      }
+    },
+    "reference_contrast": 0.031880617263015054
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 0,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 243,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.0809023099617966,
+        "absolute_error": 0.07443713376285672,
+        "sign_inversions": 5
+      }
+    },
+    "reference_contrast": -0.05646718146718144
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 0,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 54,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.18761338451511472,
+        "absolute_error": 0.1713292465029499,
+        "sign_inversions": 4
+      }
+    },
+    "reference_contrast": 0.1383928571428572
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 1,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 906,
+    "match_fraction": 0.9847826086956522,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.00319382596290167,
+        "absolute_error": 0.020775004324228057,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": 0.006477172682681331
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 1,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 163,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.09725797570569177,
+        "absolute_error": 0.04948956568768099,
+        "sign_inversions": 1
+      }
+    },
+    "reference_contrast": -0.08822287885183633
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 1,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 113,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.09691814228380176,
+        "absolute_error": 0.1393080764982661,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": 0.12307692307692308
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 2,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 711,
+    "match_fraction": 0.9492656875834445,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.058859038171848864,
+        "absolute_error": 0.019622557526800543,
+        "sign_inversions": 0
+      }
+    },
+    "reference_contrast": 0.047691192938541516
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 2,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 119,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03645790953204926,
+        "absolute_error": 0.038554098921805405,
+        "sign_inversions": 7
+      }
+    },
+    "reference_contrast": 0.02686567164179099
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 2,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 346,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.11652429448796844,
+        "absolute_error": 0.050311111270589404,
+        "sign_inversions": 0
+      }
+    },
+    "reference_contrast": 0.1006856730422232
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 3,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 768,
+    "match_fraction": 0.8787185354691075,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.06944767553638545,
+        "absolute_error": 0.01836577610930329,
+        "sign_inversions": 0
+      }
+    },
+    "reference_contrast": 0.06979542719614917
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 3,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 182,
+    "match_fraction": 0.48404255319148937,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 3,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 281,
+    "match_fraction": 0.9493243243243243,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.03208815417436996,
+        "absolute_error": 0.04317881152160599,
+        "sign_inversions": 6
+      }
+    },
+    "reference_contrast": 0.028220173232746726
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 4,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 1001,
+    "match_fraction": 0.8985637342908438,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.004285570601973071,
+        "absolute_error": 0.022861512422131407,
+        "sign_inversions": 9
+      }
+    },
+    "reference_contrast": -0.008237937306087573
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 4,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 70,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.09146924696392351,
+        "absolute_error": 0.08547491391672364,
+        "sign_inversions": 3
+      }
+    },
+    "reference_contrast": 0.08395989974937357
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 4,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 197,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": -0.0017460489989907179,
+        "absolute_error": 0.04651364757683439,
+        "sign_inversions": 10
+      }
+    },
+    "reference_contrast": -0.011473962930273585
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 5,
+    "region": "anomalia_0_conduit",
+    "matched_pixels": 745,
+    "match_fraction": 0.9300873907615481,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.008353555376349209,
+        "absolute_error": 0.016287097756345202,
+        "sign_inversions": 8
+      }
+    },
+    "reference_contrast": 0.007859323758905523
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 5,
+    "region": "anomalia_1_cavity",
+    "matched_pixels": 8,
+    "match_fraction": 1.0,
+    "status": "insufficient_geometry",
+    "models": {}
+  },
+  {
+    "fraction": 0.5,
+    "geometry": "geo-gen-01",
+    "view": 5,
+    "region": "anomalia_2_cavity",
+    "matched_pixels": 293,
+    "match_fraction": 1.0,
+    "status": "estimable",
+    "models": {
+      "entrada": {
+        "valid_realizations": 20,
+        "invalid_realizations": 0,
+        "contrast_mean": 0.21356298443647267,
+        "absolute_error": 0.09212466369138743,
+        "sign_inversions": 0
+      }
+    },
+    "reference_contrast": 0.26030624263839797
+  }
+]
