@@ -1,0 +1,136 @@
+{
+  "identity": {
+    "complement_sha256": "9b37bf59180a2625782dd54484de3c7189f3121ef886cda6f0298b929e87f9ef",
+    "ef01_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+    "model": "B1_C0",
+    "fraction": 0.1,
+    "checkpoint_sha256": "486f83398c5c61acf91b14c929872b97ff16231d0bca622ff0a75f246a014a81",
+    "batch_size": 4,
+    "environment": {
+      "python": "3.12.3",
+      "numpy": "2.3.5",
+      "torch": "2.6.0+cu118",
+      "skimage": "0.26.0",
+      "cuda": "11.8"
+    },
+    "device": "cuda:0",
+    "gpu_name": "NVIDIA L40S"
+  },
+  "files": [
+    {
+      "geometry": "geo-test-01",
+      "identity": {
+        "complement_sha256": "9b37bf59180a2625782dd54484de3c7189f3121ef886cda6f0298b929e87f9ef",
+        "ef01_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+        "model": "B1_C0",
+        "fraction": 0.1,
+        "checkpoint_sha256": "486f83398c5c61acf91b14c929872b97ff16231d0bca622ff0a75f246a014a81",
+        "batch_size": 4,
+        "environment": {
+          "python": "3.12.3",
+          "numpy": "2.3.5",
+          "torch": "2.6.0+cu118",
+          "skimage": "0.26.0",
+          "cuda": "11.8"
+        },
+        "device": "cuda:0",
+        "gpu_name": "NVIDIA L40S"
+      },
+      "sha256": "c99243d7744a923a440108c83a4f3f7ffd027d385701d8c4020b2a7ffd9cc153",
+      "shape": [
+        120,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "order": "view*20+realization"
+    },
+    {
+      "geometry": "geo-test-02",
+      "identity": {
+        "complement_sha256": "9b37bf59180a2625782dd54484de3c7189f3121ef886cda6f0298b929e87f9ef",
+        "ef01_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+        "model": "B1_C0",
+        "fraction": 0.1,
+        "checkpoint_sha256": "486f83398c5c61acf91b14c929872b97ff16231d0bca622ff0a75f246a014a81",
+        "batch_size": 4,
+        "environment": {
+          "python": "3.12.3",
+          "numpy": "2.3.5",
+          "torch": "2.6.0+cu118",
+          "skimage": "0.26.0",
+          "cuda": "11.8"
+        },
+        "device": "cuda:0",
+        "gpu_name": "NVIDIA L40S"
+      },
+      "sha256": "41f15877f3fff322cab7e83234d301feb7fd271cb80264090bafbe4f38405d6c",
+      "shape": [
+        120,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "order": "view*20+realization"
+    },
+    {
+      "geometry": "geo-test-03",
+      "identity": {
+        "complement_sha256": "9b37bf59180a2625782dd54484de3c7189f3121ef886cda6f0298b929e87f9ef",
+        "ef01_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+        "model": "B1_C0",
+        "fraction": 0.1,
+        "checkpoint_sha256": "486f83398c5c61acf91b14c929872b97ff16231d0bca622ff0a75f246a014a81",
+        "batch_size": 4,
+        "environment": {
+          "python": "3.12.3",
+          "numpy": "2.3.5",
+          "torch": "2.6.0+cu118",
+          "skimage": "0.26.0",
+          "cuda": "11.8"
+        },
+        "device": "cuda:0",
+        "gpu_name": "NVIDIA L40S"
+      },
+      "sha256": "d0f5664fa808eb3518003042609efb4ac13da44b646818087381e4fb6800a4ee",
+      "shape": [
+        120,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "order": "view*20+realization"
+    },
+    {
+      "geometry": "geo-gen-01",
+      "identity": {
+        "complement_sha256": "9b37bf59180a2625782dd54484de3c7189f3121ef886cda6f0298b929e87f9ef",
+        "ef01_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+        "model": "B1_C0",
+        "fraction": 0.1,
+        "checkpoint_sha256": "486f83398c5c61acf91b14c929872b97ff16231d0bca622ff0a75f246a014a81",
+        "batch_size": 4,
+        "environment": {
+          "python": "3.12.3",
+          "numpy": "2.3.5",
+          "torch": "2.6.0+cu118",
+          "skimage": "0.26.0",
+          "cuda": "11.8"
+        },
+        "device": "cuda:0",
+        "gpu_name": "NVIDIA L40S"
+      },
+      "sha256": "fb57ed2cd3911044003631f94023551a68361b1badaf19580acd8847252adbce",
+      "shape": [
+        120,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "order": "view*20+realization"
+    }
+  ],
+  "images": 480,
+  "elapsed_seconds_this_invocation": 4.777803105302155,
+  "training_performed": false
+}

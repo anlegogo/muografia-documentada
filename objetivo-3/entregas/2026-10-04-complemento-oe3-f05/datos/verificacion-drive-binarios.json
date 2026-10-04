@@ -1,0 +1,53 @@
+{
+ "fecha_utc": "2026-10-04T23:54:27Z",
+ "enlace": "https://drive.google.com/drive/folders/12RB9qJ32WjUWGFBQRxuvIiZ7szTM9IbO",
+ "carpeta_id": "12RB9qJ32WjUWGFBQRxuvIiZ7szTM9IbO",
+ "metodo": "listado embeddedfolderview recursivo sin sesión y descarga pública drive.usercontent con SHA-256",
+ "archivos_visibles": 298,
+ "npy_esperados": 96,
+ "npy_visibles": 96,
+ "manifiesto_visibles_sin_ocultos": 286,
+ "manifiesto_sin_ocultos": 286,
+ "descargas_de_prueba": [
+  {
+   "archivo": "binarios.sha256",
+   "bytes": 9288,
+   "sha256": "c27c496da4b6a8321532f512633467246efd045d5ddeb1a131b4528fd7196451",
+   "coincide": true,
+   "segundos": 1.1
+  },
+  {
+   "archivo": "f001/unet_original/geo-test-01.npy",
+   "bytes": 31457408,
+   "sha256": "c09f9d4f1a39079f178b5b9ebdbacebaffcfc8919a5a8058fa8273419948852a",
+   "coincide": true,
+   "segundos": 5.7
+  },
+  {
+   "archivo": "f050/B3_C1/geo-gen-01.npy",
+   "bytes": 31457408,
+   "sha256": "cea1cfc3b172ad8e24c2f5aa31ec7d7d0cb008a8803781457348532354bdbc24",
+   "coincide": true,
+   "segundos": 5.8
+  },
+  {
+   "archivo": "informe/resultado.json",
+   "bytes": 123340,
+   "sha256": "225b5b23d3a7241500a83f3547760f7c121db1af518074118141875854270782",
+   "coincide": true,
+   "segundos": 1.3
+  }
+ ],
+ "verificacion_completa": true,
+ "archivos_lock_del_manifiesto": [
+  ".B1_C0.lock",
+  ".B1_C1.lock",
+  ".B2_C0.lock",
+  ".B2_C1.lock",
+  ".B3_C0.lock",
+  ".B3_C1.lock",
+  ".cgan_original.lock",
+  ".unet_original.lock"
+ ],
+ "nota": "298 archivos visibles = 294 del manifiesto de salida (incluidos 8 archivos .lock vacíos del bloqueo exclusivo por modelo) + binarios.sha256, binarios.tamanos.txt, LEEME.txt y manifiesto.sha256."
+}

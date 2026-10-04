@@ -1,0 +1,136 @@
+{
+  "identity": {
+    "complement_sha256": "9b37bf59180a2625782dd54484de3c7189f3121ef886cda6f0298b929e87f9ef",
+    "ef01_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+    "model": "unet_original",
+    "fraction": 0.01,
+    "checkpoint_sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+    "batch_size": 4,
+    "environment": {
+      "python": "3.12.3",
+      "numpy": "2.3.5",
+      "torch": "2.6.0+cu118",
+      "skimage": "0.26.0",
+      "cuda": "11.8"
+    },
+    "device": "cuda:0",
+    "gpu_name": "NVIDIA L40S"
+  },
+  "files": [
+    {
+      "geometry": "geo-test-01",
+      "identity": {
+        "complement_sha256": "9b37bf59180a2625782dd54484de3c7189f3121ef886cda6f0298b929e87f9ef",
+        "ef01_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+        "model": "unet_original",
+        "fraction": 0.01,
+        "checkpoint_sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+        "batch_size": 4,
+        "environment": {
+          "python": "3.12.3",
+          "numpy": "2.3.5",
+          "torch": "2.6.0+cu118",
+          "skimage": "0.26.0",
+          "cuda": "11.8"
+        },
+        "device": "cuda:0",
+        "gpu_name": "NVIDIA L40S"
+      },
+      "sha256": "c09f9d4f1a39079f178b5b9ebdbacebaffcfc8919a5a8058fa8273419948852a",
+      "shape": [
+        120,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "order": "view*20+realization"
+    },
+    {
+      "geometry": "geo-test-02",
+      "identity": {
+        "complement_sha256": "9b37bf59180a2625782dd54484de3c7189f3121ef886cda6f0298b929e87f9ef",
+        "ef01_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+        "model": "unet_original",
+        "fraction": 0.01,
+        "checkpoint_sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+        "batch_size": 4,
+        "environment": {
+          "python": "3.12.3",
+          "numpy": "2.3.5",
+          "torch": "2.6.0+cu118",
+          "skimage": "0.26.0",
+          "cuda": "11.8"
+        },
+        "device": "cuda:0",
+        "gpu_name": "NVIDIA L40S"
+      },
+      "sha256": "1818dc09db778a237f5678d4d5964aa59e2ef256af75ad38d9e1363da7fa6e7b",
+      "shape": [
+        120,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "order": "view*20+realization"
+    },
+    {
+      "geometry": "geo-test-03",
+      "identity": {
+        "complement_sha256": "9b37bf59180a2625782dd54484de3c7189f3121ef886cda6f0298b929e87f9ef",
+        "ef01_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+        "model": "unet_original",
+        "fraction": 0.01,
+        "checkpoint_sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+        "batch_size": 4,
+        "environment": {
+          "python": "3.12.3",
+          "numpy": "2.3.5",
+          "torch": "2.6.0+cu118",
+          "skimage": "0.26.0",
+          "cuda": "11.8"
+        },
+        "device": "cuda:0",
+        "gpu_name": "NVIDIA L40S"
+      },
+      "sha256": "e8cd15e1155e3d2ed0214dd0f58f3940c4f360f3112cfa006f1f92eeb02f4d21",
+      "shape": [
+        120,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "order": "view*20+realization"
+    },
+    {
+      "geometry": "geo-gen-01",
+      "identity": {
+        "complement_sha256": "9b37bf59180a2625782dd54484de3c7189f3121ef886cda6f0298b929e87f9ef",
+        "ef01_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+        "model": "unet_original",
+        "fraction": 0.01,
+        "checkpoint_sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+        "batch_size": 4,
+        "environment": {
+          "python": "3.12.3",
+          "numpy": "2.3.5",
+          "torch": "2.6.0+cu118",
+          "skimage": "0.26.0",
+          "cuda": "11.8"
+        },
+        "device": "cuda:0",
+        "gpu_name": "NVIDIA L40S"
+      },
+      "sha256": "becbf0e8e75c45c3130c63ce4e7c766d58b56d3025ca963b30451b8ec8275046",
+      "shape": [
+        120,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "order": "view*20+realization"
+    }
+  ],
+  "images": 480,
+  "elapsed_seconds_this_invocation": 4.968505952041596,
+  "training_performed": false
+}

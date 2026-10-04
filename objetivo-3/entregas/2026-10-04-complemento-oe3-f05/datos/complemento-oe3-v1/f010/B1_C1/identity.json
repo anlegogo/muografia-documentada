@@ -1,0 +1,17 @@
+{
+  "complement_sha256": "9b37bf59180a2625782dd54484de3c7189f3121ef886cda6f0298b929e87f9ef",
+  "ef01_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+  "model": "B1_C1",
+  "fraction": 0.1,
+  "checkpoint_sha256": "9d627f2167369f74734c34837a4c13dcf25117485885428057776b04ed5d7687",
+  "batch_size": 4,
+  "environment": {
+    "python": "3.12.3",
+    "numpy": "2.3.5",
+    "torch": "2.6.0+cu118",
+    "skimage": "0.26.0",
+    "cuda": "11.8"
+  },
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA L40S"
+}

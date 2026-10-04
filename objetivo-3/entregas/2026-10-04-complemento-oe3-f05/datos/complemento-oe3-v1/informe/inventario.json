@@ -1,0 +1,32 @@
+[
+  {
+    "path": "contrastes.json",
+    "sha256": "a3d4bfdf15352de8e6d190147337703f6dc42b2f73fac00f9321f068d28b719d",
+    "bytes": 437306
+  },
+  {
+    "path": "imagenes.csv",
+    "sha256": "80e097907bffb3664666156e722b7a31371244803feab13728136555ea907871",
+    "bytes": 1264974
+  },
+  {
+    "path": "metricas_locales.csv",
+    "sha256": "dba482d0c16e6aa7974662971f3b09d92c3dd4bfd6843a49b24b30236c1ab0b8",
+    "bytes": 7411817
+  },
+  {
+    "path": "regiones.csv",
+    "sha256": "d75834e146aef2096ece9a5716e2d0d33276933e50273104053b79f917ae85b4",
+    "bytes": 2507524
+  },
+  {
+    "path": "resultado.json",
+    "sha256": "225b5b23d3a7241500a83f3547760f7c121db1af518074118141875854270782",
+    "bytes": 123340
+  },
+  {
+    "path": "snr_repeticiones.json",
+    "sha256": "69fe252c2fabd49a5f1f3815a04b8acccfd73d21b60c65ac6bf9a3f8fd826420",
+    "bytes": 649405
+  }
+]

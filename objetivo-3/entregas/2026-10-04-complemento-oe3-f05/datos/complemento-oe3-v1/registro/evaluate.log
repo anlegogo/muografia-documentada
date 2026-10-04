@@ -1,0 +1,17 @@
+Evaluación 0.01 geo-test-01
+Evaluación 0.01 geo-test-02
+Evaluación 0.01 geo-test-03
+Evaluación 0.01 geo-gen-01
+Evaluación 0.05 geo-test-01
+Evaluación 0.05 geo-test-02
+Evaluación 0.05 geo-test-03
+Evaluación 0.05 geo-gen-01
+Evaluación 0.1 geo-test-01
+Evaluación 0.1 geo-test-02
+Evaluación 0.1 geo-test-03
+Evaluación 0.1 geo-gen-01
+Evaluación 0.5 geo-test-01
+Evaluación 0.5 geo-test-02
+Evaluación 0.5 geo-test-03
+Evaluación 0.5 geo-gen-01
+{"images": 17280, "regions": 4536, "contrasts": 216, "local_metrics": 39096, "repeated_signal": 2160}

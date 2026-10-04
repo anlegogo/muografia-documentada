@@ -1,0 +1,9 @@
+1/8 pesos/unet_original.pt OK
+2/8 pesos/cgan_original.pt OK
+3/8 pesos/B1_C0.pt OK
+4/8 pesos/B1_C1.pt OK
+5/8 pesos/B2_C0.pt OK
+6/8 pesos/B2_C1.pt OK
+7/8 pesos/B3_C0.pt OK
+8/8 pesos/B3_C1.pt OK
+verificados 8 de 8; fallos []

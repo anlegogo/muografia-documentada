@@ -1,0 +1,11 @@
+{
+  "data_files": 8,
+  "models": 8,
+  "arrays_opened": false,
+  "passed": true,
+  "existing_f05_images": 3840,
+  "reused_f05": true,
+  "registry_verified": true,
+  "complement_sha256": "9b37bf59180a2625782dd54484de3c7189f3121ef886cda6f0298b929e87f9ef",
+  "new_images_planned": 11520
+}

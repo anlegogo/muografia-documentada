@@ -1,0 +1,28 @@
+{
+  "geometry": "geo-test-03",
+  "identity": {
+    "complement_sha256": "9b37bf59180a2625782dd54484de3c7189f3121ef886cda6f0298b929e87f9ef",
+    "ef01_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+    "model": "B3_C1",
+    "fraction": 0.5,
+    "checkpoint_sha256": "5d03f8957506083605b65ba341ac21f053ea85379000f2c5c5b6dfb03e147724",
+    "batch_size": 4,
+    "environment": {
+      "python": "3.12.3",
+      "numpy": "2.3.5",
+      "torch": "2.6.0+cu118",
+      "skimage": "0.26.0",
+      "cuda": "11.8"
+    },
+    "device": "cuda:0",
+    "gpu_name": "NVIDIA L40S"
+  },
+  "sha256": "36bfd621a8e55a167fdaa8e59edd2cba5e334b13ec70ab581ea2a4ad84379e18",
+  "shape": [
+    120,
+    256,
+    256
+  ],
+  "dtype": "float32",
+  "order": "view*20+realization"
+}
