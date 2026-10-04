@@ -1,0 +1,2 @@
+{"arm": "C0", "epoch": 1, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8239971254361382, "psnr": 31.046593777844265}}
+{"arm": "C0", "epoch": 2, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8224464585351812, "psnr": 30.946621905258752}}

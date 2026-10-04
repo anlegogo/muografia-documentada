@@ -1,0 +1,420 @@
+{
+  "identity": {
+    "schema": "oe2-cgan-ajuste-run-v1",
+    "critic_gradient_policy": "wasserstein-then-weighted-gp-v1",
+    "arm": "C0",
+    "stage": "piloto",
+    "config": {
+      "schema": "oe2-cgan-ajuste-v1",
+      "fraction": 0.05,
+      "generator": "unet_dc_5",
+      "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+      "initial_epoch": 5,
+      "reset_optimizer": true,
+      "reset_rng": true,
+      "seed": 2026100401,
+      "optimizer": {
+        "name": "Adam",
+        "lr": 1e-05,
+        "betas": [
+          0,
+          0.9
+        ]
+      },
+      "batch": 4,
+      "epochs": 5,
+      "early_stopping": false,
+      "selected_epoch": 5,
+      "train_pairs": 1440,
+      "val_pairs": 360,
+      "train_split": "train",
+      "selection_split": "val",
+      "reserved_splits_allowed": false,
+      "hflip": false,
+      "augmentation": false,
+      "lambda_l1": 100,
+      "regional_loss": "mean_absolute_log1p_region_mean_counts",
+      "normalization_scale": 8.239329427901795,
+      "regional_families": [
+        "cielo",
+        "roca",
+        "borde",
+        "anomalias"
+      ],
+      "region_min_pixels": 20,
+      "region_family_equal_weight": true,
+      "lambda_regional": 0,
+      "gradient_clipping": false,
+      "amp": false,
+      "checkpoint_policy": "last each epoch plus final epoch 5; no best-SSIM selection",
+      "resume": "same arm, protocol and code identity only",
+      "stages": {
+        "technical": {
+          "epochs": 2,
+          "train_pairs": 8,
+          "val_pairs": 8,
+          "requires_gpu_before_pilot": true,
+          "train_indices": [
+            [
+              "geo-train-01",
+              0,
+              0
+            ],
+            [
+              "geo-train-01",
+              0,
+              1
+            ],
+            [
+              "geo-train-02",
+              0,
+              0
+            ],
+            [
+              "geo-train-02",
+              0,
+              1
+            ],
+            [
+              "geo-train-04",
+              0,
+              0
+            ],
+            [
+              "geo-train-04",
+              0,
+              1
+            ],
+            [
+              "geo-train-10",
+              0,
+              0
+            ],
+            [
+              "geo-train-10",
+              0,
+              1
+            ]
+          ],
+          "val_indices": [
+            [
+              "geo-val-01",
+              0,
+              0
+            ],
+            [
+              "geo-val-01",
+              0,
+              1
+            ],
+            [
+              "geo-val-02",
+              0,
+              0
+            ],
+            [
+              "geo-val-02",
+              0,
+              1
+            ],
+            [
+              "geo-val-03",
+              0,
+              0
+            ],
+            [
+              "geo-val-03",
+              0,
+              1
+            ],
+            [
+              "geo-val-03",
+              1,
+              0
+            ],
+            [
+              "geo-val-03",
+              1,
+              1
+            ]
+          ],
+          "interrupt_after_epoch": 1,
+          "pilot_initialization": "original epoch-5 checkpoint, never technical weights"
+        },
+        "pilot": {
+          "epochs": 5,
+          "train_pairs": 1440,
+          "val_pairs": 360
+        }
+      },
+      "mass_campaign_authorized": false,
+      "arm": "C0",
+      "run_id": "oe2-cgan-repeticion-f05-R1-C0-s2026100401",
+      "critic": "patch_critic_70",
+      "lambda_adv": 1,
+      "lambda_gp": 10,
+      "n_critic": 5,
+      "rng_policy": "torch CPU/CUDA; NumPy and Python stored; independent order per epoch",
+      "critic_fake_policy": "one no-grad train-mode G sample reused for five D steps; fresh G sample for G update",
+      "critic_frozen_during_generator_step": true,
+      "pair": "R1"
+    },
+    "pair": "R1",
+    "seed": 2026100401,
+    "sources": {
+      "objetivo-2/herramientas/datos_ajuste.py": "2c89d770cc3d7b4fee66c977ff89af8faf6ab6bbca3ed12fe1f2a98734aa167f",
+      "objetivo-2/herramientas/ejecutar_ajuste.py": "8d49980e4e1c4b96347c81203a820cc5784b57473079562decbedd747fe11abb",
+      "objetivo-2/herramientas/perdida_cuentas_regionales.py": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+      "objetivo-2/herramientas/evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524",
+      "objetivo-2/implementacion/models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+      "objetivo-2/implementacion/scripts/evaluation/metrics.py": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42",
+      "objetivo-2/herramientas/revisar_ajuste.py": "294e4291b3bd10d6c0f597c9145867c4ac7f33cfd0bdacd5c78c3c4cee5ea750",
+      "objetivo-2/herramientas/evaluar_ajuste.py": "f0840197c20ff848dd79bfe3385eabc4beeaff632da67c580961bb14c13e721b",
+      "objetivo-2/herramientas/ejecutar_ajuste_cgan.py": "7b576308ccf1c0bd1cb96cb1a735b24639d2118309cbc0f58b861bb38403339c",
+      "objetivo-2/herramientas/revisar_ajuste_cgan.py": "35cdb9df7d11e5d93a8434b51a214bf98e42cb9614a2df15f67f1faf38c27eb7",
+      "objetivo-2/herramientas/evaluar_ajuste_cgan.py": "54416d10d9662b0d5ebf30330ebeb78076c474eb6c6afec62d6abcff1e08439a",
+      "objetivo-2/herramientas/gradientes_critico.py": "76024538c9df1ba43e4c3c549e806137f820322b6d25aa3ff37bfb6c417da8be",
+      "objetivo-2/implementacion/models/patch_critic.py": "41fbbb005fd152d3ddf10e50721ac855108907714e150632d1942275736b84d8",
+      "objetivo-2/implementacion/scripts/training/losses.py": "8d950c772d923a98343b8cda787b28567df7d2bbd09c62f50085efb13f96c0a5"
+    },
+    "environment": {
+      "python": "3.12.3",
+      "numpy": "2.3.5",
+      "torch": "2.6.0+cu118",
+      "cuda": "11.8",
+      "device": "cuda:0",
+      "gpu": "NVIDIA L40S",
+      "threads": 2,
+      "deterministic": true,
+      "cudnn": 90100,
+      "cublas_workspace": ":4096:8",
+      "tf32": false,
+      "numpy_rng": "MT19937",
+      "python_rng": "MT19937"
+    },
+    "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+    "cache_sha256": "df720c9d64735fc02ac8d3147f8a230f7a8fdcec7530f9d16351c049c9413530",
+    "train_indices_sha256": "64c50dc04a45dd9268c4dbee3fb254d5dd95aed5185fa1c5f5d2e73996e8c7d6",
+    "val_indices_sha256": "debc775fdc6b0aea181c5f3dd9620014b1fd07bc72042a16dd2819c08a96ceaf",
+    "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+    "initial_generator_sha256": "73c70580e066740a43283e3a3172c2758391e27bd6ee8518075711dd1a7f3916",
+    "initial_critic_sha256": "be1747d6be094ac51e5287f154e7ef16baf83523b341b5dcda6482729ca49a33",
+    "epochs": 5
+  },
+  "completed": true,
+  "epoch": 5,
+  "selected_epoch": 5,
+  "resume_count": 0,
+  "history": [
+    {
+      "epoch": 1,
+      "steps_g": 360,
+      "steps_d": 1800,
+      "order_sha256": "e9865291317c374bd9aba542ff15f75abd04f939ec039c125be4e44a7b510290",
+      "losses": {
+        "d_real": 19.488364402982928,
+        "d_fake": 18.355425046284985,
+        "w_est": 1.1329393566979304,
+        "gp": 0.005870477165149677,
+        "total_d": -1.0742345858944793,
+        "grad_d": 10.765789104863057,
+        "l1": 0.011594603306406902,
+        "adv": -18.307043663660686,
+        "regional": 0.030777065961111752,
+        "total_g": -17.147583331002128,
+        "grad_g": 20.051443429903635
+      },
+      "family_losses": {
+        "0": 0.017822036424252015,
+        "1": 0.034692383288348096,
+        "2": 0.014848205807239263,
+        "3": 0.058714589068554535
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "validation": {
+        "n": 360,
+        "ssim": 0.8160851319349326,
+        "psnr": 30.707835370080232
+      },
+      "generator_sha256": "d72b738c5ab214d177979518d26f0045dae3935e604ad20345810fcc38ce0f84",
+      "critic_sha256": "79a7c7a8698e84804e887b3ef5efb6c028808aa9777753312531f4eb836e31c0",
+      "epoch_compute_seconds": 120.47318098135293
+    },
+    {
+      "epoch": 2,
+      "steps_g": 360,
+      "steps_d": 1800,
+      "order_sha256": "9ab4f7d740b740245976143dcdd5efadc7e469303efa187038da26e35e4b05a5",
+      "losses": {
+        "d_real": 18.889970496495575,
+        "d_fake": 17.838075117535066,
+        "w_est": 1.051895378960503,
+        "gp": 0.006250959090735293,
+        "total_d": -0.9893857882089091,
+        "grad_d": 12.97862471697069,
+        "l1": 0.011502557545382944,
+        "adv": -17.787574990590414,
+        "regional": 0.026543684471101843,
+        "total_g": -16.63731927341885,
+        "grad_g": 19.23172958970827
+      },
+      "family_losses": {
+        "0": 0.013765712347010033,
+        "1": 0.02656095445503399,
+        "2": 0.017470716605947442,
+        "3": 0.05079526442886862
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "validation": {
+        "n": 360,
+        "ssim": 0.8166208609117416,
+        "psnr": 30.749789473773163
+      },
+      "generator_sha256": "9ac880226caa4ed7f5f3aeede2bafd6ea13cd9b792628f0a305a53c934c9ee23",
+      "critic_sha256": "8d06b6205dcf43c641ee4a87b51f4489e7456aa5dac7831fc7e8eac225fab0a0",
+      "epoch_compute_seconds": 117.53696557506919
+    },
+    {
+      "epoch": 3,
+      "steps_g": 360,
+      "steps_d": 1800,
+      "order_sha256": "f4e1defc8051a385e4ee16d69a075e268d7ac5fee0e5d6a0ee4bb13edc72affb",
+      "losses": {
+        "d_real": 19.044699077606193,
+        "d_fake": 18.131636394924588,
+        "w_est": 0.913062682681613,
+        "gp": 0.006009816076588729,
+        "total_d": -0.8529645216464996,
+        "grad_d": 15.503532948233024,
+        "l1": 0.01155853942812731,
+        "adv": -18.078397046195136,
+        "regional": 0.034788435827877634,
+        "total_g": -16.922543064753214,
+        "grad_g": 22.367357886649664
+      },
+      "family_losses": {
+        "0": 0.013164992533846205,
+        "1": 0.05086405937252239,
+        "2": 0.02293475773693904,
+        "3": 0.05489221982949061
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "validation": {
+        "n": 360,
+        "ssim": 0.814833161879088,
+        "psnr": 30.66937028086415
+      },
+      "generator_sha256": "311e2e8b8dd34b173dce9cc811a4cd49fc6070c58106335e0fdfaf5e5f7a6d4c",
+      "critic_sha256": "e2815c544d186f1cd414bb4ec9f5075583ec0dce9cbc026d56844dbf7d7f8ffc",
+      "epoch_compute_seconds": 117.28853755816817
+    },
+    {
+      "epoch": 4,
+      "steps_g": 360,
+      "steps_d": 1800,
+      "order_sha256": "bcdfef18cd48f9f55e01b8c031b3a28ca791e2cfd4fccf8a53fbf0779686ae09",
+      "losses": {
+        "d_real": 18.881079138649834,
+        "d_fake": 18.043352411058212,
+        "w_est": 0.8377267275916206,
+        "gp": 0.005597976759575735,
+        "total_d": -0.7817469601995416,
+        "grad_d": 16.859002736255388,
+        "l1": 0.011513178544636403,
+        "adv": -17.990798309114243,
+        "regional": 0.02724791075386307,
+        "total_g": -16.839480495452882,
+        "grad_g": 27.216002887661595
+      },
+      "family_losses": {
+        "0": 0.013650501560198548,
+        "1": 0.025518358822166493,
+        "2": 0.022260285208503604,
+        "3": 0.04942891833428365
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "validation": {
+        "n": 360,
+        "ssim": 0.8144348981763048,
+        "psnr": 30.57313777803248
+      },
+      "generator_sha256": "293e17765d1a30a58b06b82bc2f7cda60985e9a817032e59b3d0054fb663c300",
+      "critic_sha256": "830681d8247906302be7359567a6b5dd6b5d72125490921b448c18355e9fcbab",
+      "epoch_compute_seconds": 117.01527418754995
+    },
+    {
+      "epoch": 5,
+      "steps_g": 360,
+      "steps_d": 1800,
+      "order_sha256": "adc158516102f3c01b80c23df6109eaa6f0674c31bc6e4396ca4e3a5d63883ad",
+      "losses": {
+        "d_real": 18.92511873139273,
+        "d_fake": 18.116790166430984,
+        "w_est": 0.8083285649617505,
+        "gp": 0.005175283389954632,
+        "total_d": -0.7565757311052741,
+        "grad_d": 16.99328609280984,
+        "l1": 0.011536052411732575,
+        "adv": -18.053008084827,
+        "regional": 0.02805957045727718,
+        "total_g": -16.899402867423163,
+        "grad_g": 29.271808541648745
+      },
+      "family_losses": {
+        "0": 0.013713028303673528,
+        "1": 0.026497997852862738,
+        "2": 0.019993850694445602,
+        "3": 0.05461490783039708
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "validation": {
+        "n": 360,
+        "ssim": 0.8142033137078304,
+        "psnr": 30.50296074856557
+      },
+      "generator_sha256": "9d83fdd396f3e2970cd2cca46c731577e8c66dc804115979f0541acb8e3bd312",
+      "critic_sha256": "36dd40533f24b2e97755068eb77025b90f8d13e7dd551462440a4c348b63cc2d",
+      "epoch_compute_seconds": 116.92066082917154
+    }
+  ],
+  "sessions": [
+    {
+      "first_epoch": 1,
+      "last_epoch": 5,
+      "compute_seconds": 590.8143861815333,
+      "peak_cuda_allocated_bytes": 1956782592
+    }
+  ],
+  "last_checkpoint_sha256": "3f40f591bb12195ae6fb991afa3e709e55973c6342998a52ed3128d98bf464a9",
+  "last_save_seconds": 0.22914322279393673
+}

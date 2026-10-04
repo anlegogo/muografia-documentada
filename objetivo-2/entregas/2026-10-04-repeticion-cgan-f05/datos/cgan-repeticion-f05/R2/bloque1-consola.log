@@ -1,0 +1,9 @@
+{"arm": "C0", "epoch": 1, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8236897338796781, "psnr": 31.027643516934425}}
+{"arm": "C0", "epoch": 2, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8221164592051835, "psnr": 30.92037190263479}}
+{"arm": "C0", "epoch": 1, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8236897338796781, "psnr": 31.027643516934425}}
+{"arm": "C0", "epoch": 2, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8221164592051835, "psnr": 30.92037190263479}}
+{"arm": "C1", "epoch": 1, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8235846026298063, "psnr": 31.016302141969796}}
+{"arm": "C1", "epoch": 2, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8220109413162486, "psnr": 30.90705495042115}}
+{"arm": "C1", "epoch": 1, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8235846026298063, "psnr": 31.016302141969796}}
+{"arm": "C1", "epoch": 2, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8220109413162486, "psnr": 30.90705495042115}}
+{"passed": true, "gpu_accepted": true, "exact_recovery": true}

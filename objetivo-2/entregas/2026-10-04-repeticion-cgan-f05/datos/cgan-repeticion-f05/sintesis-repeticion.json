@@ -1,0 +1,147 @@
+{
+  "schema": "oe2-cgan-repetition-summary-v1",
+  "stage": "piloto",
+  "pairs": [
+    "R1",
+    "R2",
+    "R3"
+  ],
+  "seeds": {
+    "R1": 2026100401,
+    "R2": 2026100402,
+    "R3": 2026100403
+  },
+  "delta_definition": "C1 minus C0; negative favors Q/errors, positive favors SSIM/PSNR",
+  "paired_differences": {
+    "R1": {
+      "Q": -0.0813029175898988,
+      "sky_mae": -0.004206932201722621,
+      "edge_mae": 0.005658426669708921,
+      "contrast_absolute_error": -0.05366808299348827,
+      "ssim": 0.002277374101615215,
+      "psnr": 0.16404476245363497
+    },
+    "R2": {
+      "Q": -0.008655098998797614,
+      "sky_mae": 0.0005928957265636317,
+      "edge_mae": 0.0046848803619736895,
+      "contrast_absolute_error": -0.017181081066626067,
+      "ssim": 0.0005452906757600351,
+      "psnr": 0.10639318750940419
+    },
+    "R3": {
+      "Q": 0.018285190326328492,
+      "sky_mae": 0.0024238048943843044,
+      "edge_mae": 0.0008471821297072885,
+      "contrast_absolute_error": 0.0038334536374322603,
+      "ssim": -0.0020854290563384614,
+      "psnr": -0.15997368951183333
+    }
+  },
+  "descriptive_summary": {
+    "Q": {
+      "values": [
+        -0.0813029175898988,
+        -0.008655098998797614,
+        0.018285190326328492
+      ],
+      "median": -0.008655098998797614,
+      "min": -0.0813029175898988,
+      "max": 0.018285190326328492
+    },
+    "sky_mae": {
+      "values": [
+        -0.004206932201722621,
+        0.0005928957265636317,
+        0.0024238048943843044
+      ],
+      "median": 0.0005928957265636317,
+      "min": -0.004206932201722621,
+      "max": 0.0024238048943843044
+    },
+    "edge_mae": {
+      "values": [
+        0.005658426669708921,
+        0.0046848803619736895,
+        0.0008471821297072885
+      ],
+      "median": 0.0046848803619736895,
+      "min": 0.0008471821297072885,
+      "max": 0.005658426669708921
+    },
+    "contrast_absolute_error": {
+      "values": [
+        -0.05366808299348827,
+        -0.017181081066626067,
+        0.0038334536374322603
+      ],
+      "median": -0.017181081066626067,
+      "min": -0.05366808299348827,
+      "max": 0.0038334536374322603
+    },
+    "ssim": {
+      "values": [
+        0.002277374101615215,
+        0.0005452906757600351,
+        -0.0020854290563384614
+      ],
+      "median": 0.0005452906757600351,
+      "min": -0.0020854290563384614,
+      "max": 0.002277374101615215
+    },
+    "psnr": {
+      "values": [
+        0.16404476245363497,
+        0.10639318750940419,
+        -0.15997368951183333
+      ],
+      "median": 0.10639318750940419,
+      "min": -0.15997368951183333,
+      "max": 0.16404476245363497
+    }
+  },
+  "checks_by_pair": {
+    "R1": {
+      "Q_reduced": true,
+      "each_geometry_not_worse": true,
+      "sky_not_worse": true,
+      "edge_not_worse": false,
+      "contrast_support_unchanged": true,
+      "contrast_not_worse": true,
+      "ssim_not_worse": true,
+      "psnr_not_worse": true
+    },
+    "R2": {
+      "Q_reduced": true,
+      "each_geometry_not_worse": false,
+      "sky_not_worse": false,
+      "edge_not_worse": false,
+      "contrast_support_unchanged": true,
+      "contrast_not_worse": true,
+      "ssim_not_worse": true,
+      "psnr_not_worse": true
+    },
+    "R3": {
+      "Q_reduced": false,
+      "each_geometry_not_worse": false,
+      "sky_not_worse": false,
+      "edge_not_worse": false,
+      "contrast_support_unchanged": true,
+      "contrast_not_worse": false,
+      "ssim_not_worse": false,
+      "psnr_not_worse": false
+    }
+  },
+  "concordant_pairs": 0,
+  "pairs_reducing_Q": 2,
+  "decision": "dependencia_de_semilla_o_compromiso",
+  "physical_acceptance": false,
+  "heldout_opened": false,
+  "independent_from_scratch_training": false,
+  "limitations": "Tres continuaciones condicionadas al mismo checkpoint. Sin significaci\u00f3n ni aceptaci\u00f3n f\u00edsica; conservar tablas completas de vistas/anomal\u00edas.",
+  "evaluation_sha256": {
+    "R1": "565d333e25378d8d29359efc2969db36708779d96bfe22505c0f972bc9f9057b",
+    "R2": "15cabb4a950f73980a0a75e439d7afbee691b0bd7ae7fff3d3e44d633c945afc",
+    "R3": "c89511c82ec92ab1b74cc145cd04446acef579bb9ad33adfc01c8bd4fb927e5f"
+  }
+}

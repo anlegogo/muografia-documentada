@@ -1,0 +1,847 @@
+{
+  "stage": "piloto",
+  "quality_evaluation": true,
+  "rows": [
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "pixels": 1017,
+      "reference_sum": 2936.0,
+      "models": {
+        "entrada": {
+          "signed_bias": 0.01975476839237057,
+          "absolute_mean_bias": 0.01975476839237057,
+          "mean_absolute_bias": 0.07425068119891008,
+          "spatial_mae": 1.4565054495912808
+        },
+        "C0": {
+          "signed_bias": 0.19224692883578937,
+          "absolute_mean_bias": 0.19224692883578937,
+          "mean_absolute_bias": 0.19224692883578937,
+          "spatial_mae": 0.5821715129777728
+        },
+        "C1": {
+          "signed_bias": 0.14334740604867854,
+          "absolute_mean_bias": 0.14334740604867854,
+          "mean_absolute_bias": 0.14334740604867854,
+          "spatial_mae": 0.5587714472392027
+        },
+        "inicial_cgan": {
+          "signed_bias": 0.0716724124346291,
+          "absolute_mean_bias": 0.0716724124346291,
+          "mean_absolute_bias": 0.0716724124346291,
+          "spatial_mae": 0.543003940577863
+        }
+      },
+      "C1_bias_worse_than_C0": false,
+      "C1_bias_worse_than_initial": true
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "region": "anomalia_0_conduit",
+      "pixels": 994,
+      "reference_sum": 2869.0,
+      "models": {
+        "entrada": {
+          "signed_bias": -0.02370163820146392,
+          "absolute_mean_bias": 0.02370163820146392,
+          "mean_absolute_bias": 0.0717671662600209,
+          "spatial_mae": 1.4179505054025792
+        },
+        "C0": {
+          "signed_bias": 0.12846633531194934,
+          "absolute_mean_bias": 0.12846633531194934,
+          "mean_absolute_bias": 0.12846633531194934,
+          "spatial_mae": 0.575527870256181
+        },
+        "C1": {
+          "signed_bias": 0.1414349491730636,
+          "absolute_mean_bias": 0.1414349491730636,
+          "mean_absolute_bias": 0.1414349491730636,
+          "spatial_mae": 0.5641132733768857
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.00045418952841296407,
+          "absolute_mean_bias": 0.00045418952841296407,
+          "mean_absolute_bias": 0.026305324928761503,
+          "spatial_mae": 0.5520356268106946
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": true
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "region": "anomalia_0_conduit",
+      "pixels": 876,
+      "reference_sum": 2345.0,
+      "models": {
+        "entrada": {
+          "signed_bias": -0.027718550106609806,
+          "absolute_mean_bias": 0.027718550106609806,
+          "mean_absolute_bias": 0.07654584221748402,
+          "spatial_mae": 1.4547547974413648
+        },
+        "C0": {
+          "signed_bias": 0.1541208450744228,
+          "absolute_mean_bias": 0.1541208450744228,
+          "mean_absolute_bias": 0.1541208450744228,
+          "spatial_mae": 0.6279683553468924
+        },
+        "C1": {
+          "signed_bias": 0.10051019194066987,
+          "absolute_mean_bias": 0.10051019194066987,
+          "mean_absolute_bias": 0.10051019194066987,
+          "spatial_mae": 0.5734760953367516
+        },
+        "inicial_cgan": {
+          "signed_bias": 0.03705800248106963,
+          "absolute_mean_bias": 0.03705800248106963,
+          "mean_absolute_bias": 0.04151553894422442,
+          "spatial_mae": 0.572142666004538
+        }
+      },
+      "C1_bias_worse_than_C0": false,
+      "C1_bias_worse_than_initial": true
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "region": "anomalia_0_conduit",
+      "pixels": 877,
+      "reference_sum": 2345.0,
+      "models": {
+        "entrada": {
+          "signed_bias": -0.013646055437100211,
+          "absolute_mean_bias": 0.013646055437100211,
+          "mean_absolute_bias": 0.062473347547974414,
+          "spatial_mae": 1.471172707889126
+        },
+        "C0": {
+          "signed_bias": 0.12711523606962463,
+          "absolute_mean_bias": 0.12711523606962463,
+          "mean_absolute_bias": 0.12711523606962463,
+          "spatial_mae": 0.5971016781797419
+        },
+        "C1": {
+          "signed_bias": 0.09849024444732825,
+          "absolute_mean_bias": 0.09849024444732825,
+          "mean_absolute_bias": 0.09849024444732825,
+          "spatial_mae": 0.5639540410555979
+        },
+        "inicial_cgan": {
+          "signed_bias": 0.05229569359621407,
+          "absolute_mean_bias": 0.05229569359621407,
+          "mean_absolute_bias": 0.05430831406696013,
+          "spatial_mae": 0.5557683265521333
+        }
+      },
+      "C1_bias_worse_than_C0": false,
+      "C1_bias_worse_than_initial": true
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "region": "anomalia_0_conduit",
+      "pixels": 996,
+      "reference_sum": 2803.0,
+      "models": {
+        "entrada": {
+          "signed_bias": 0.025330003567606136,
+          "absolute_mean_bias": 0.025330003567606136,
+          "mean_absolute_bias": 0.05330003567606136,
+          "spatial_mae": 1.456296824830539
+        },
+        "C0": {
+          "signed_bias": 0.1454504490834015,
+          "absolute_mean_bias": 0.1454504490834015,
+          "mean_absolute_bias": 0.1454504490834015,
+          "spatial_mae": 0.5981421396150846
+        },
+        "C1": {
+          "signed_bias": 0.12838125393071714,
+          "absolute_mean_bias": 0.12838125393071714,
+          "mean_absolute_bias": 0.12838125393071714,
+          "spatial_mae": 0.568530574166101
+        },
+        "inicial_cgan": {
+          "signed_bias": 0.060916512875503245,
+          "absolute_mean_bias": 0.060916512875503245,
+          "mean_absolute_bias": 0.06412187818683732,
+          "spatial_mae": 0.5492782352326864
+        }
+      },
+      "C1_bias_worse_than_C0": false,
+      "C1_bias_worse_than_initial": true
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "region": "anomalia_0_conduit",
+      "pixels": 1018,
+      "reference_sum": 3131.0,
+      "models": {
+        "entrada": {
+          "signed_bias": -0.015330565314595975,
+          "absolute_mean_bias": 0.015330565314595975,
+          "mean_absolute_bias": 0.06710316192909614,
+          "spatial_mae": 1.4166400511018846
+        },
+        "C0": {
+          "signed_bias": 0.09802588410082838,
+          "absolute_mean_bias": 0.09802588410082838,
+          "mean_absolute_bias": 0.09802588410082838,
+          "spatial_mae": 0.5367153072659007
+        },
+        "C1": {
+          "signed_bias": 0.06677768441193893,
+          "absolute_mean_bias": 0.06677768441193893,
+          "mean_absolute_bias": 0.06677768441193893,
+          "spatial_mae": 0.5055816558009878
+        },
+        "inicial_cgan": {
+          "signed_bias": 0.016718419657811335,
+          "absolute_mean_bias": 0.016718419657811335,
+          "mean_absolute_bias": 0.028247590438272192,
+          "spatial_mae": 0.5227513928933097
+        }
+      },
+      "C1_bias_worse_than_C0": false,
+      "C1_bias_worse_than_initial": true
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "region": "anomalia_0_cavity",
+      "pixels": 354,
+      "reference_sum": 477.0,
+      "models": {
+        "entrada": {
+          "signed_bias": -0.002096436058700207,
+          "absolute_mean_bias": 0.002096436058700207,
+          "mean_absolute_bias": 0.17547169811320756,
+          "spatial_mae": 1.7545073375262052
+        },
+        "C0": {
+          "signed_bias": 0.09545851140684858,
+          "absolute_mean_bias": 0.09545851140684858,
+          "mean_absolute_bias": 0.09545851140684858,
+          "spatial_mae": 0.9495580472388448
+        },
+        "C1": {
+          "signed_bias": 0.021242665786500865,
+          "absolute_mean_bias": 0.021242665786500865,
+          "mean_absolute_bias": 0.03157164093324723,
+          "spatial_mae": 0.9027338609722273
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.17693178370466886,
+          "absolute_mean_bias": 0.17693178370466886,
+          "mean_absolute_bias": 0.17693178370466886,
+          "spatial_mae": 0.8389640733352343
+        }
+      },
+      "C1_bias_worse_than_C0": false,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "region": "anomalia_0_cavity",
+      "pixels": 342,
+      "reference_sum": 496.0,
+      "models": {
+        "entrada": {
+          "signed_bias": -0.03629032258064516,
+          "absolute_mean_bias": 0.03629032258064516,
+          "mean_absolute_bias": 0.16129032258064518,
+          "spatial_mae": 1.7225806451612904
+        },
+        "C0": {
+          "signed_bias": -0.10917736372188439,
+          "absolute_mean_bias": 0.10917736372188439,
+          "mean_absolute_bias": 0.10917736372188439,
+          "spatial_mae": 0.7673305769047708
+        },
+        "C1": {
+          "signed_bias": -0.07288755426144894,
+          "absolute_mean_bias": 0.07288755426144894,
+          "mean_absolute_bias": 0.07288755426144894,
+          "spatial_mae": 0.8102578463905197
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.22542775148381827,
+          "absolute_mean_bias": 0.22542775148381827,
+          "mean_absolute_bias": 0.22542775148381827,
+          "spatial_mae": 0.7783176247346628
+        }
+      },
+      "C1_bias_worse_than_C0": false,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "region": "anomalia_0_cavity",
+      "pixels": 255,
+      "reference_sum": 219.0,
+      "models": {
+        "entrada": {
+          "signed_bias": -0.07305936073059362,
+          "absolute_mean_bias": 0.07305936073059362,
+          "mean_absolute_bias": 0.2497716894977169,
+          "spatial_mae": 1.7479452054794522
+        },
+        "C0": {
+          "signed_bias": -0.028278093749615214,
+          "absolute_mean_bias": 0.028278093749615214,
+          "mean_absolute_bias": 0.03949688241312391,
+          "spatial_mae": 1.0989785718262994
+        },
+        "C1": {
+          "signed_bias": 0.0466439775364445,
+          "absolute_mean_bias": 0.0466439775364445,
+          "mean_absolute_bias": 0.05115753769153438,
+          "spatial_mae": 1.2028730486684363
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.22826375316050762,
+          "absolute_mean_bias": 0.22826375316050762,
+          "mean_absolute_bias": 0.22826375316050762,
+          "spatial_mae": 1.0018941303392592
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "region": "anomalia_0_cavity",
+      "pixels": 205,
+      "reference_sum": 152.0,
+      "models": {
+        "entrada": {
+          "signed_bias": 0.05921052631578948,
+          "absolute_mean_bias": 0.05921052631578948,
+          "mean_absolute_bias": 0.23552631578947364,
+          "spatial_mae": 1.8717105263157894
+        },
+        "C0": {
+          "signed_bias": -0.06317195027255454,
+          "absolute_mean_bias": 0.06317195027255454,
+          "mean_absolute_bias": 0.06317195027255454,
+          "spatial_mae": 1.1535236826718356
+        },
+        "C1": {
+          "signed_bias": -0.007442605879871245,
+          "absolute_mean_bias": 0.007442605879871245,
+          "mean_absolute_bias": 0.028218893056450846,
+          "spatial_mae": 1.2331384117741397
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.3776269251512683,
+          "absolute_mean_bias": 0.3776269251512683,
+          "mean_absolute_bias": 0.3776269251512683,
+          "spatial_mae": 0.9815114651328305
+        }
+      },
+      "C1_bias_worse_than_C0": false,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "region": "anomalia_0_cavity",
+      "pixels": 210,
+      "reference_sum": 148.0,
+      "models": {
+        "entrada": {
+          "signed_bias": 0.07432432432432431,
+          "absolute_mean_bias": 0.07432432432432431,
+          "mean_absolute_bias": 0.2824324324324325,
+          "spatial_mae": 1.8804054054054054
+        },
+        "C0": {
+          "signed_bias": -0.04603480396933555,
+          "absolute_mean_bias": 0.04603480396933555,
+          "mean_absolute_bias": 0.050877539888403156,
+          "spatial_mae": 1.1851545580878498
+        },
+        "C1": {
+          "signed_bias": 0.04940471457200429,
+          "absolute_mean_bias": 0.04940471457200429,
+          "mean_absolute_bias": 0.05384626198005232,
+          "spatial_mae": 1.2065717006215713
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.2864068635234411,
+          "absolute_mean_bias": 0.2864068635234411,
+          "mean_absolute_bias": 0.2864068635234411,
+          "spatial_mae": 1.055217730419494
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "region": "anomalia_0_cavity",
+      "pixels": 268,
+      "reference_sum": 298.0,
+      "models": {
+        "entrada": {
+          "signed_bias": 0.03691275167785235,
+          "absolute_mean_bias": 0.03691275167785235,
+          "mean_absolute_bias": 0.19261744966442954,
+          "spatial_mae": 1.835234899328859
+        },
+        "C0": {
+          "signed_bias": -0.0773935889264142,
+          "absolute_mean_bias": 0.0773935889264142,
+          "mean_absolute_bias": 0.0773935889264142,
+          "spatial_mae": 1.0184185517899236
+        },
+        "C1": {
+          "signed_bias": -0.08359175251988385,
+          "absolute_mean_bias": 0.08359175251988385,
+          "mean_absolute_bias": 0.08359175251988385,
+          "spatial_mae": 0.9147743020897596
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.2665153916466673,
+          "absolute_mean_bias": 0.2665153916466673,
+          "mean_absolute_bias": 0.2665153916466673,
+          "spatial_mae": 0.8813760901768758
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_0_conduit",
+      "pixels": 782,
+      "reference_sum": 2469.0,
+      "models": {
+        "entrada": {
+          "signed_bias": 0.024301336573511544,
+          "absolute_mean_bias": 0.024301336573511544,
+          "mean_absolute_bias": 0.07014985824220332,
+          "spatial_mae": 1.4467395706763873
+        },
+        "C0": {
+          "signed_bias": 0.025560325562965325,
+          "absolute_mean_bias": 0.025560325562965325,
+          "mean_absolute_bias": 0.03085875575354628,
+          "spatial_mae": 0.5102520533403984
+        },
+        "C1": {
+          "signed_bias": 0.009523538007205182,
+          "absolute_mean_bias": 0.009523538007205182,
+          "mean_absolute_bias": 0.020516658976410862,
+          "spatial_mae": 0.5149686381442063
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.1248336501399833,
+          "absolute_mean_bias": 0.1248336501399833,
+          "mean_absolute_bias": 0.1248336501399833,
+          "spatial_mae": 0.515880923999263
+        }
+      },
+      "C1_bias_worse_than_C0": false,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "region": "anomalia_1_dense_body",
+      "pixels": 735,
+      "reference_sum": 297.0,
+      "models": {
+        "entrada": {
+          "signed_bias": 0.010101010101010097,
+          "absolute_mean_bias": 0.010101010101010097,
+          "mean_absolute_bias": 0.19158249158249155,
+          "spatial_mae": 1.863299663299663
+        },
+        "C0": {
+          "signed_bias": -0.009489417992997521,
+          "absolute_mean_bias": 0.009489417992997521,
+          "mean_absolute_bias": 0.026348872931055523,
+          "spatial_mae": 1.3859189927253592
+        },
+        "C1": {
+          "signed_bias": 0.22510896100115377,
+          "absolute_mean_bias": 0.22510896100115377,
+          "mean_absolute_bias": 0.22510896100115377,
+          "spatial_mae": 1.5088959903682402
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.32644905551521375,
+          "absolute_mean_bias": 0.32644905551521375,
+          "mean_absolute_bias": 0.32644905551521375,
+          "spatial_mae": 1.2108411594423627
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_0_conduit",
+      "pixels": 798,
+      "reference_sum": 2697.0,
+      "models": {
+        "entrada": {
+          "signed_bias": -0.0014831294030404167,
+          "absolute_mean_bias": 0.0014831294030404167,
+          "mean_absolute_bias": 0.07241379310344828,
+          "spatial_mae": 1.3823136818687431
+        },
+        "C0": {
+          "signed_bias": 0.0005851894070841004,
+          "absolute_mean_bias": 0.0005851894070841004,
+          "mean_absolute_bias": 0.02302347162435402,
+          "spatial_mae": 0.5155557607657983
+        },
+        "C1": {
+          "signed_bias": 0.022034379684691036,
+          "absolute_mean_bias": 0.022034379684691036,
+          "mean_absolute_bias": 0.028282919056217826,
+          "spatial_mae": 0.49760565096321213
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.1717790231348709,
+          "absolute_mean_bias": 0.1717790231348709,
+          "mean_absolute_bias": 0.1717790231348709,
+          "spatial_mae": 0.48009574048740233
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "region": "anomalia_1_dense_body",
+      "pixels": 558,
+      "reference_sum": 257.0,
+      "models": {
+        "entrada": {
+          "signed_bias": 0.03501945525291829,
+          "absolute_mean_bias": 0.03501945525291829,
+          "mean_absolute_bias": 0.2101167315175097,
+          "spatial_mae": 1.8785992217898826
+        },
+        "C0": {
+          "signed_bias": 0.2516816694976435,
+          "absolute_mean_bias": 0.2516816694976435,
+          "mean_absolute_bias": 0.2516816694976435,
+          "spatial_mae": 1.5977458652686494
+        },
+        "C1": {
+          "signed_bias": 0.28276722623875217,
+          "absolute_mean_bias": 0.28276722623875217,
+          "mean_absolute_bias": 0.28276722623875217,
+          "spatial_mae": 1.5899961125966156
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.36702892730488845,
+          "absolute_mean_bias": 0.36702892730488845,
+          "mean_absolute_bias": 0.36702892730488845,
+          "spatial_mae": 1.1409706880977828
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "anomalia_0_conduit",
+      "pixels": 831,
+      "reference_sum": 3432.0,
+      "models": {
+        "entrada": {
+          "signed_bias": 0.004370629370629368,
+          "absolute_mean_bias": 0.004370629370629368,
+          "mean_absolute_bias": 0.04236596736596737,
+          "spatial_mae": 1.2684149184149185
+        },
+        "C0": {
+          "signed_bias": 0.006786311881568727,
+          "absolute_mean_bias": 0.006786311881568727,
+          "mean_absolute_bias": 0.033533743473066514,
+          "spatial_mae": 0.4631534635007137
+        },
+        "C1": {
+          "signed_bias": 0.023513413474265867,
+          "absolute_mean_bias": 0.023513413474265867,
+          "mean_absolute_bias": 0.03732937887896384,
+          "spatial_mae": 0.4507347789649009
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.16864242946639754,
+          "absolute_mean_bias": 0.16864242946639754,
+          "mean_absolute_bias": 0.16864242946639754,
+          "spatial_mae": 0.426199408713266
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "region": "anomalia_1_dense_body",
+      "pixels": 379,
+      "reference_sum": 163.0,
+      "models": {
+        "entrada": {
+          "signed_bias": -0.04294478527607361,
+          "absolute_mean_bias": 0.04294478527607361,
+          "mean_absolute_bias": 0.252760736196319,
+          "spatial_mae": 1.8226993865030674
+        },
+        "C0": {
+          "signed_bias": 0.1322044160001206,
+          "absolute_mean_bias": 0.1322044160001206,
+          "mean_absolute_bias": 0.1322044160001206,
+          "spatial_mae": 1.4792401549935963
+        },
+        "C1": {
+          "signed_bias": 0.42740786614358556,
+          "absolute_mean_bias": 0.42740786614358556,
+          "mean_absolute_bias": 0.42740786614358556,
+          "spatial_mae": 1.7611421586156641
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.353429860996101,
+          "absolute_mean_bias": 0.353429860996101,
+          "mean_absolute_bias": 0.353429860996101,
+          "spatial_mae": 1.1863715086802904
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": true
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "anomalia_0_conduit",
+      "pixels": 848,
+      "reference_sum": 3613.0,
+      "models": {
+        "entrada": {
+          "signed_bias": 0.00193744810406864,
+          "absolute_mean_bias": 0.00193744810406864,
+          "mean_absolute_bias": 0.05460835870467755,
+          "spatial_mae": 1.2293108220315527
+        },
+        "C0": {
+          "signed_bias": 0.0572236543280487,
+          "absolute_mean_bias": 0.0572236543280487,
+          "mean_absolute_bias": 0.0572236543280487,
+          "spatial_mae": 0.4247276162620423
+        },
+        "C1": {
+          "signed_bias": 0.04456642483293709,
+          "absolute_mean_bias": 0.04456642483293709,
+          "mean_absolute_bias": 0.046361710083937406,
+          "spatial_mae": 0.43562221787259753
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.09934188481677486,
+          "absolute_mean_bias": 0.09934188481677486,
+          "mean_absolute_bias": 0.09934188481677486,
+          "spatial_mae": 0.43486398305630036
+        }
+      },
+      "C1_bias_worse_than_C0": false,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "region": "anomalia_1_dense_body",
+      "pixels": 324,
+      "reference_sum": 114.0,
+      "models": {
+        "entrada": {
+          "signed_bias": 0.13157894736842107,
+          "absolute_mean_bias": 0.13157894736842107,
+          "mean_absolute_bias": 0.3473684210526315,
+          "spatial_mae": 1.9912280701754388
+        },
+        "C0": {
+          "signed_bias": 0.13205536356907482,
+          "absolute_mean_bias": 0.13205536356907482,
+          "mean_absolute_bias": 0.13205536356907482,
+          "spatial_mae": 1.6234847951727112
+        },
+        "C1": {
+          "signed_bias": 0.3654011953482535,
+          "absolute_mean_bias": 0.3654011953482535,
+          "mean_absolute_bias": 0.3654011953482535,
+          "spatial_mae": 1.7532094375013483
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.28129785938494084,
+          "absolute_mean_bias": 0.28129785938494084,
+          "mean_absolute_bias": 0.28129785938494084,
+          "spatial_mae": 1.2647866481889782
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": true
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "anomalia_0_conduit",
+      "pixels": 830,
+      "reference_sum": 3436.0,
+      "models": {
+        "entrada": {
+          "signed_bias": -0.03667054714784633,
+          "absolute_mean_bias": 0.03667054714784633,
+          "mean_absolute_bias": 0.04947613504074506,
+          "spatial_mae": 1.210128055878929
+        },
+        "C0": {
+          "signed_bias": 0.0302532793359304,
+          "absolute_mean_bias": 0.0302532793359304,
+          "mean_absolute_bias": 0.03706166644451844,
+          "spatial_mae": 0.45432987129513613
+        },
+        "C1": {
+          "signed_bias": 0.04781312233729771,
+          "absolute_mean_bias": 0.04781312233729771,
+          "mean_absolute_bias": 0.04857376251170139,
+          "spatial_mae": 0.4564366014332597
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.15835657177294937,
+          "absolute_mean_bias": 0.15835657177294937,
+          "mean_absolute_bias": 0.15835657177294937,
+          "spatial_mae": 0.4214126056696247
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "region": "anomalia_1_dense_body",
+      "pixels": 362,
+      "reference_sum": 144.0,
+      "models": {
+        "entrada": {
+          "signed_bias": 0.04166666666666665,
+          "absolute_mean_bias": 0.04166666666666665,
+          "mean_absolute_bias": 0.3111111111111111,
+          "spatial_mae": 1.8868055555555556
+        },
+        "C0": {
+          "signed_bias": 0.26501537653453083,
+          "absolute_mean_bias": 0.26501537653453083,
+          "mean_absolute_bias": 0.26501537653453083,
+          "spatial_mae": 1.6568454694685724
+        },
+        "C1": {
+          "signed_bias": 0.46970652597691587,
+          "absolute_mean_bias": 0.46970652597691587,
+          "mean_absolute_bias": 0.46970652597691587,
+          "spatial_mae": 1.677652186843278
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.30864398229492523,
+          "absolute_mean_bias": 0.30864398229492523,
+          "mean_absolute_bias": 0.30864398229492523,
+          "spatial_mae": 1.2510550209505606
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": true
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "anomalia_0_conduit",
+      "pixels": 798,
+      "reference_sum": 2748.0,
+      "models": {
+        "entrada": {
+          "signed_bias": -0.00509461426491994,
+          "absolute_mean_bias": 0.00509461426491994,
+          "mean_absolute_bias": 0.07016011644832605,
+          "spatial_mae": 1.3923944687045122
+        },
+        "C0": {
+          "signed_bias": 0.017103565277673143,
+          "absolute_mean_bias": 0.017103565277673143,
+          "mean_absolute_bias": 0.03300940761751728,
+          "spatial_mae": 0.5304465248580656
+        },
+        "C1": {
+          "signed_bias": 0.0426037043248446,
+          "absolute_mean_bias": 0.0426037043248446,
+          "mean_absolute_bias": 0.045709380030314675,
+          "spatial_mae": 0.5108354167743671
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.16851821757011318,
+          "absolute_mean_bias": 0.16851821757011318,
+          "mean_absolute_bias": 0.16851821757011318,
+          "spatial_mae": 0.4896767734377295
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": false
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "region": "anomalia_1_dense_body",
+      "pixels": 524,
+      "reference_sum": 210.0,
+      "models": {
+        "entrada": {
+          "signed_bias": 0.014285714285714287,
+          "absolute_mean_bias": 0.014285714285714287,
+          "mean_absolute_bias": 0.2333333333333333,
+          "spatial_mae": 1.8661904761904762
+        },
+        "C0": {
+          "signed_bias": 0.39938505900699817,
+          "absolute_mean_bias": 0.39938505900699817,
+          "mean_absolute_bias": 0.39938505900699817,
+          "spatial_mae": 1.6792359485169677
+        },
+        "C1": {
+          "signed_bias": 0.6235011909331141,
+          "absolute_mean_bias": 0.6235011909331141,
+          "mean_absolute_bias": 0.6235011909331141,
+          "spatial_mae": 1.927492610244037
+        },
+        "inicial_cgan": {
+          "signed_bias": -0.2881084588801561,
+          "absolute_mean_bias": 0.2881084588801561,
+          "mean_absolute_bias": 0.2881084588801561,
+          "spatial_mae": 1.2500792545857426
+        }
+      },
+      "C1_bias_worse_than_C0": true,
+      "C1_bias_worse_than_initial": true
+    }
+  ],
+  "physical_acceptance": false
+}

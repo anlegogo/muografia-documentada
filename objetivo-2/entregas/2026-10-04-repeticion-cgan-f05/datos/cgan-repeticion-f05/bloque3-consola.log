@@ -1,0 +1,211 @@
+{
+  "stage": "piloto",
+  "decision": "compromiso",
+  "anomaly_diagnostics": {
+    "rows": 24,
+    "worse_bias_vs_C0": 4,
+    "worse_bias_vs_initial": 7,
+    "physical_acceptance": false,
+    "note": "Salvaguarda descriptiva; no cambia retrospectivamente la regla de decisi\u00f3n ni acredita calidad en etapa t\u00e9cnica."
+  },
+  "summary": {
+    "entrada": {
+      "ssim": 0.7518121158353864,
+      "psnr": 24.16772800716849,
+      "Q_by_geometry": {
+        "geo-val-01": 0.011978948077161562,
+        "geo-val-02": 0.025514356976083424,
+        "geo-val-03": 0.016922050081937045
+      },
+      "Q": 0.018138451711727344,
+      "sky_mae": 0.06802366966581791,
+      "edge_mae": 0.12091980217515516,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.24644261860892383
+    },
+    "C0": {
+      "ssim": 0.8142033137078304,
+      "psnr": 30.50296074856557,
+      "Q_by_geometry": {
+        "geo-val-01": 0.18552743666832153,
+        "geo-val-02": 0.051919999109839216,
+        "geo-val-03": 0.17779122849655432
+      },
+      "Q": 0.13841288809157168,
+      "sky_mae": 0.027663120525057483,
+      "edge_mae": 0.10881698010611604,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.14071583419319336
+    },
+    "C1": {
+      "ssim": 0.8164806878094456,
+      "psnr": 30.667005511019205,
+      "Q_by_geometry": {
+        "geo-val-01": 0.07215129520072608,
+        "geo-val-02": 0.04099546433592871,
+        "geo-val-03": 0.058183151968363864
+      },
+      "Q": 0.05710997050167288,
+      "sky_mae": 0.02345618832333486,
+      "edge_mae": 0.11447540677582496,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.08704775119970509
+    },
+    "inicial_cgan": {
+      "ssim": 0.8227914493773519,
+      "psnr": 31.10406039160106,
+      "Q_by_geometry": {
+        "geo-val-01": 0.03469973598861689,
+        "geo-val-02": 0.1574423520066559,
+        "geo-val-03": 0.17805622986597502
+      },
+      "Q": 0.1233994392870826,
+      "sky_mae": 0.1264756274688191,
+      "edge_mae": 0.14419176072733247,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.09066667921751101
+    }
+  }
+}
+{"view_counts": {"C0": {"Q": {"better": 15, "worse": 3, "equal": 0}, "ssim": {"better": 15, "worse": 3, "equal": 0}, "psnr": {"better": 17, "worse": 1, "equal": 0}, "sky_mae": {"better": 12, "worse": 6, "equal": 0}, "edge_mae": {"better": 1, "worse": 17, "equal": 0}}, "inicial_cgan": {"Q": {"better": 12, "worse": 6, "equal": 0}, "ssim": {"better": 1, "worse": 17, "equal": 0}, "psnr": {"better": 0, "worse": 18, "equal": 0}, "sky_mae": {"better": 18, "worse": 0, "equal": 0}, "edge_mae": {"better": 18, "worse": 0, "equal": 0}}, "entrada": {"Q": {"better": 3, "worse": 15, "equal": 0}, "ssim": {"better": 18, "worse": 0, "equal": 0}, "psnr": {"better": 18, "worse": 0, "equal": 0}, "sky_mae": {"better": 18, "worse": 0, "equal": 0}, "edge_mae": {"better": 13, "worse": 5, "equal": 0}}}, "worst_anomalies": [{"geometry": "geo-val-03", "view": 5, "region": "anomalia_1_dense_body", "pixels": 524, "reference_sum": 210.0, "signed_bias": 0.3935859577691172, "delta_absolute_bias_vs_C0": -0.34581020307493326, "delta_absolute_bias_vs_initial": 0.10547749888896107}, {"geometry": "geo-val-03", "view": 2, "region": "anomalia_1_dense_body", "pixels": 379, "reference_sum": 163.0, "signed_bias": 0.21407347999038207, "delta_absolute_bias_vs_C0": -0.2554961444327528, "delta_absolute_bias_vs_initial": -0.13935638100571895}, {"geometry": "geo-val-03", "view": 4, "region": "anomalia_1_dense_body", "pixels": 362, "reference_sum": 144.0, "signed_bias": 0.1965940835187991, "delta_absolute_bias_vs_C0": -0.27175902346376624, "delta_absolute_bias_vs_initial": -0.11204989877612614}, {"geometry": "geo-val-03", "view": 1, "region": "anomalia_1_dense_body", "pixels": 558, "reference_sum": 257.0, "signed_bias": 0.1675684641365307, "delta_absolute_bias_vs_C0": -0.32091596681528356, "delta_absolute_bias_vs_initial": -0.19946046316835775}, {"geometry": "geo-val-02", "view": 3, "region": "anomalia_0_cavity", "pixels": 205, "reference_sum": 152.0, "signed_bias": -0.14825999777747, "delta_absolute_bias_vs_C0": 0.00397623383158463, "delta_absolute_bias_vs_initial": -0.22936692737379827}, {"geometry": "geo-val-01", "view": 4, "region": "anomalia_0_conduit", "pixels": 996, "reference_sum": 2803.0, "signed_bias": 0.11678947201559978, "delta_absolute_bias_vs_C0": -0.005128211694048465, "delta_absolute_bias_vs_initial": 0.05587295914009653}, {"geometry": "geo-val-02", "view": 1, "region": "anomalia_0_cavity", "pixels": 342, "reference_sum": 496.0, "signed_bias": -0.10838274051687251, "delta_absolute_bias_vs_C0": 0.09403147546134384, "delta_absolute_bias_vs_initial": -0.11704501096694576}, {"geometry": "geo-val-03", "view": 3, "region": "anomalia_1_dense_body", "pixels": 324, "reference_sum": 114.0, "signed_bias": 0.10759551493134085, "delta_absolute_bias_vs_C0": -0.1772440727416521, "delta_absolute_bias_vs_initial": -0.1737023444536}]}
+{
+  "stage": "piloto",
+  "decision": "compromiso",
+  "anomaly_diagnostics": {
+    "rows": 24,
+    "worse_bias_vs_C0": 14,
+    "worse_bias_vs_initial": 10,
+    "physical_acceptance": false,
+    "note": "Salvaguarda descriptiva; no cambia retrospectivamente la regla de decisi\u00f3n ni acredita calidad en etapa t\u00e9cnica."
+  },
+  "summary": {
+    "entrada": {
+      "ssim": 0.7518121158353864,
+      "psnr": 24.16772800716849,
+      "Q_by_geometry": {
+        "geo-val-01": 0.011978948077161562,
+        "geo-val-02": 0.025514356976083424,
+        "geo-val-03": 0.016922050081937045
+      },
+      "Q": 0.018138451711727344,
+      "sky_mae": 0.06802366966581791,
+      "edge_mae": 0.12091980217515516,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.24644261860892383
+    },
+    "C0": {
+      "ssim": 0.815680064394668,
+      "psnr": 30.530101118529547,
+      "Q_by_geometry": {
+        "geo-val-01": 0.13527971424486981,
+        "geo-val-02": 0.08187972740799732,
+        "geo-val-03": 0.0918320973903439
+      },
+      "Q": 0.10299717968107035,
+      "sky_mae": 0.02574824472926031,
+      "edge_mae": 0.10652113415661599,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.09539261642305606
+    },
+    "C1": {
+      "ssim": 0.816225355070428,
+      "psnr": 30.63649430603895,
+      "Q_by_geometry": {
+        "geo-val-01": 0.10896860263374064,
+        "geo-val-02": 0.03909652169412202,
+        "geo-val-03": 0.13496111771895553
+      },
+      "Q": 0.09434208068227273,
+      "sky_mae": 0.02634114045582394,
+      "edge_mae": 0.11120601451858968,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.07821153535643
+    },
+    "inicial_cgan": {
+      "ssim": 0.8227914493773519,
+      "psnr": 31.10406039160106,
+      "Q_by_geometry": {
+        "geo-val-01": 0.03469973598861689,
+        "geo-val-02": 0.1574423520066559,
+        "geo-val-03": 0.17805622986597502
+      },
+      "Q": 0.1233994392870826,
+      "sky_mae": 0.1264756274688191,
+      "edge_mae": 0.14419176072733247,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.09066667921751101
+    }
+  }
+}
+{"view_counts": {"C0": {"Q": {"better": 12, "worse": 6, "equal": 0}, "ssim": {"better": 12, "worse": 6, "equal": 0}, "psnr": {"better": 17, "worse": 1, "equal": 0}, "sky_mae": {"better": 6, "worse": 12, "equal": 0}, "edge_mae": {"better": 0, "worse": 18, "equal": 0}}, "inicial_cgan": {"Q": {"better": 11, "worse": 7, "equal": 0}, "ssim": {"better": 0, "worse": 18, "equal": 0}, "psnr": {"better": 0, "worse": 18, "equal": 0}, "sky_mae": {"better": 18, "worse": 0, "equal": 0}, "edge_mae": {"better": 18, "worse": 0, "equal": 0}}, "entrada": {"Q": {"better": 2, "worse": 16, "equal": 0}, "ssim": {"better": 18, "worse": 0, "equal": 0}, "psnr": {"better": 18, "worse": 0, "equal": 0}, "sky_mae": {"better": 18, "worse": 0, "equal": 0}, "edge_mae": {"better": 12, "worse": 6, "equal": 0}}}, "worst_anomalies": [{"geometry": "geo-val-03", "view": 5, "region": "anomalia_1_dense_body", "pixels": 524, "reference_sum": 210.0, "signed_bias": 0.6235011909331141, "delta_absolute_bias_vs_C0": 0.2241161319261159, "delta_absolute_bias_vs_initial": 0.33539273205295794}, {"geometry": "geo-val-03", "view": 4, "region": "anomalia_1_dense_body", "pixels": 362, "reference_sum": 144.0, "signed_bias": 0.46970652597691587, "delta_absolute_bias_vs_C0": 0.20469114944238503, "delta_absolute_bias_vs_initial": 0.16106254368199063}, {"geometry": "geo-val-03", "view": 2, "region": "anomalia_1_dense_body", "pixels": 379, "reference_sum": 163.0, "signed_bias": 0.42740786614358556, "delta_absolute_bias_vs_C0": 0.29520345014346494, "delta_absolute_bias_vs_initial": 0.07397800514748454}, {"geometry": "geo-val-03", "view": 3, "region": "anomalia_1_dense_body", "pixels": 324, "reference_sum": 114.0, "signed_bias": 0.3654011953482535, "delta_absolute_bias_vs_C0": 0.23334583177917867, "delta_absolute_bias_vs_initial": 0.08410333596331265}, {"geometry": "geo-val-03", "view": 1, "region": "anomalia_1_dense_body", "pixels": 558, "reference_sum": 257.0, "signed_bias": 0.28276722623875217, "delta_absolute_bias_vs_C0": 0.03108555674110869, "delta_absolute_bias_vs_initial": -0.08426170106613629}, {"geometry": "geo-val-03", "view": 0, "region": "anomalia_1_dense_body", "pixels": 735, "reference_sum": 297.0, "signed_bias": 0.22510896100115377, "delta_absolute_bias_vs_C0": 0.21561954300815625, "delta_absolute_bias_vs_initial": -0.10134009451405998}, {"geometry": "geo-val-01", "view": 0, "region": "anomalia_0_conduit", "pixels": 1017, "reference_sum": 2936.0, "signed_bias": 0.14334740604867854, "delta_absolute_bias_vs_C0": -0.04889952278711082, "delta_absolute_bias_vs_initial": 0.07167499361404944}, {"geometry": "geo-val-01", "view": 1, "region": "anomalia_0_conduit", "pixels": 994, "reference_sum": 2869.0, "signed_bias": 0.1414349491730636, "delta_absolute_bias_vs_C0": 0.012968613861114253, "delta_absolute_bias_vs_initial": 0.14098075964465062}]}
+{
+  "stage": "piloto",
+  "decision": "sin_mejora_del_indicador_principal",
+  "anomaly_diagnostics": {
+    "rows": 24,
+    "worse_bias_vs_C0": 14,
+    "worse_bias_vs_initial": 10,
+    "physical_acceptance": false,
+    "note": "Salvaguarda descriptiva; no cambia retrospectivamente la regla de decisi\u00f3n ni acredita calidad en etapa t\u00e9cnica."
+  },
+  "summary": {
+    "entrada": {
+      "ssim": 0.7518121158353864,
+      "psnr": 24.16772800716849,
+      "Q_by_geometry": {
+        "geo-val-01": 0.011978948077161562,
+        "geo-val-02": 0.025514356976083424,
+        "geo-val-03": 0.016922050081937045
+      },
+      "Q": 0.018138451711727344,
+      "sky_mae": 0.06802366966581791,
+      "edge_mae": 0.12091980217515516,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.24644261860892383
+    },
+    "C0": {
+      "ssim": 0.8169415810413785,
+      "psnr": 30.705660234318273,
+      "Q_by_geometry": {
+        "geo-val-01": 0.06847067110490711,
+        "geo-val-02": 0.03960361335767666,
+        "geo-val-03": 0.06806875890913702
+      },
+      "Q": 0.0587143477905736,
+      "sky_mae": 0.02414936005013049,
+      "edge_mae": 0.1088181064020146,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.09939599113149815
+    },
+    "C1": {
+      "ssim": 0.81485615198504,
+      "psnr": 30.54568654480644,
+      "Q_by_geometry": {
+        "geo-val-01": 0.08006131471461539,
+        "geo-val-02": 0.04143002206670076,
+        "geo-val-03": 0.1095072775693901
+      },
+      "Q": 0.07699953811690209,
+      "sky_mae": 0.026573164944514796,
+      "edge_mae": 0.10966528853172189,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.10322944476893041
+    },
+    "inicial_cgan": {
+      "ssim": 0.8227914493773519,
+      "psnr": 31.10406039160106,
+      "Q_by_geometry": {
+        "geo-val-01": 0.03469973598861689,
+        "geo-val-02": 0.1574423520066559,
+        "geo-val-03": 0.17805622986597502
+      },
+      "Q": 0.1233994392870826,
+      "sky_mae": 0.1264756274688191,
+      "edge_mae": 0.14419176072733247,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.09066667921751101
+    }
+  }
+}
+{"view_counts": {"C0": {"Q": {"better": 6, "worse": 12, "equal": 0}, "ssim": {"better": 3, "worse": 15, "equal": 0}, "psnr": {"better": 0, "worse": 18, "equal": 0}, "sky_mae": {"better": 12, "worse": 6, "equal": 0}, "edge_mae": {"better": 6, "worse": 12, "equal": 0}}, "inicial_cgan": {"Q": {"better": 12, "worse": 6, "equal": 0}, "ssim": {"better": 0, "worse": 18, "equal": 0}, "psnr": {"better": 0, "worse": 18, "equal": 0}, "sky_mae": {"better": 18, "worse": 0, "equal": 0}, "edge_mae": {"better": 18, "worse": 0, "equal": 0}}, "entrada": {"Q": {"better": 2, "worse": 16, "equal": 0}, "ssim": {"better": 18, "worse": 0, "equal": 0}, "psnr": {"better": 18, "worse": 0, "equal": 0}, "sky_mae": {"better": 18, "worse": 0, "equal": 0}, "edge_mae": {"better": 18, "worse": 0, "equal": 0}}}, "worst_anomalies": [{"geometry": "geo-val-03", "view": 4, "region": "anomalia_1_dense_body", "pixels": 362, "reference_sum": 144.0, "signed_bias": 0.5467483765619441, "delta_absolute_bias_vs_C0": 0.49000798530666373, "delta_absolute_bias_vs_initial": 0.23810439426701885}, {"geometry": "geo-val-03", "view": 5, "region": "anomalia_1_dense_body", "pixels": 524, "reference_sum": 210.0, "signed_bias": 0.5320707651821659, "delta_absolute_bias_vs_C0": 0.28672029627878975, "delta_absolute_bias_vs_initial": 0.24396230630200977}, {"geometry": "geo-val-03", "view": 3, "region": "anomalia_1_dense_body", "pixels": 324, "reference_sum": 114.0, "signed_bias": 0.4314624927910148, "delta_absolute_bias_vs_C0": 0.40005273086951326, "delta_absolute_bias_vs_initial": 0.15016463340607394}, {"geometry": "geo-val-03", "view": 2, "region": "anomalia_1_dense_body", "pixels": 379, "reference_sum": 163.0, "signed_bias": 0.380526771457538, "delta_absolute_bias_vs_C0": 0.15815461301488284, "delta_absolute_bias_vs_initial": 0.027096910461436974}, {"geometry": "geo-val-03", "view": 0, "region": "anomalia_1_dense_body", "pixels": 735, "reference_sum": 297.0, "signed_bias": 0.2744104295823038, "delta_absolute_bias_vs_C0": 0.26396763891581093, "delta_absolute_bias_vs_initial": -0.05203862593290992}, {"geometry": "geo-val-03", "view": 1, "region": "anomalia_1_dense_body", "pixels": 558, "reference_sum": 257.0, "signed_bias": 0.20058431435585314, "delta_absolute_bias_vs_C0": 0.055205358311484265, "delta_absolute_bias_vs_initial": -0.16644461294903531}, {"geometry": "geo-val-02", "view": 2, "region": "anomalia_0_cavity", "pixels": 255, "reference_sum": 219.0, "signed_bias": 0.1675987061950909, "delta_absolute_bias_vs_C0": 0.10987785942543155, "delta_absolute_bias_vs_initial": -0.06066504696541672}, {"geometry": "geo-val-01", "view": 0, "region": "anomalia_0_conduit", "pixels": 1017, "reference_sum": 2936.0, "signed_bias": 0.16074180912779054, "delta_absolute_bias_vs_C0": 0.02453600557329433, "delta_absolute_bias_vs_initial": 0.08906939669316144}]}
+dependencia_de_semilla_o_compromiso

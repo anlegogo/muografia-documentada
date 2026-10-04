@@ -1,0 +1,11 @@
+2026-10-04T07:26:18Z ETAPA1_INICIO
+2026-10-04T07:26:18Z TECNICA_LANZADA R1 GPU0
+2026-10-04T07:26:18Z TECNICA_LANZADA R2 GPU1
+2026-10-04T07:26:18Z TECNICA_LANZADA R3 GPU2
+2026-10-04T07:27:12Z TECNICA_FIN R1 rc=0 {"passed": true, "gpu_accepted": true, "exact_recovery": true}
+2026-10-04T07:27:13Z TECNICA_FIN R2 rc=0 {"passed": true, "gpu_accepted": true, "exact_recovery": true}
+2026-10-04T07:27:13Z TECNICA_FIN R3 rc=0 {"passed": true, "gpu_accepted": true, "exact_recovery": true}
+/workspace/trabajo/cgan-repeticion-f05/R1/aceptacion-gpu.json gpu_accepted True exact_recovery True
+/workspace/trabajo/cgan-repeticion-f05/R2/aceptacion-gpu.json gpu_accepted True exact_recovery True
+/workspace/trabajo/cgan-repeticion-f05/R3/aceptacion-gpu.json gpu_accepted True exact_recovery True
+2026-10-04T07:27:13Z ETAPA1_ACEPTADA_TRES
