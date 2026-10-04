@@ -1,0 +1,13 @@
+94371968 ./evaluacion-piloto/predicciones-cgan-inicial.npy
+279766086 ./piloto/C0/last.pt
+94371968 ./piloto/C0/predicciones-val.npy
+279766086 ./piloto/C1/last.pt
+94371968 ./piloto/C1/predicciones-val.npy
+279764166 ./tecnica/C0-continua/last.pt
+2097280 ./tecnica/C0-continua/predicciones-val.npy
+279764678 ./tecnica/C0-recuperada/last.pt
+2097280 ./tecnica/C0-recuperada/predicciones-val.npy
+279764166 ./tecnica/C1-continua/last.pt
+2097280 ./tecnica/C1-continua/predicciones-val.npy
+279764678 ./tecnica/C1-recuperada/last.pt
+2097280 ./tecnica/C1-recuperada/predicciones-val.npy

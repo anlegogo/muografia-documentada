@@ -1,0 +1,92 @@
+Using CPython 3.12.3 interpreter at: /usr/local/bin/python
+Creating virtual environment at: venv
+Activate with: source venv/bin/activate
+Using Python 3.12.3 environment at: venv
+Resolved 38 packages in 343ms
+Downloading nvidia-curand-cu11 (55.4MiB)
+Downloading triton (158.9MiB)
+Downloading nvidia-cuda-cupti-cu11 (12.5MiB)
+Downloading nvidia-cuda-nvrtc-cu11 (22.1MiB)
+Downloading nvidia-nccl-cu11 (141.0MiB)
+Downloading sympy (5.9MiB)
+Downloading torch (809.3MiB)
+Downloading fonttools (5.1MiB)
+Downloading numpy (15.8MiB)
+Downloading scikit-image (12.9MiB)
+Downloading kiwisolver (1.4MiB)
+Downloading scipy (33.7MiB)
+Downloading pillow (6.6MiB)
+Downloading matplotlib (9.6MiB)
+Downloading networkx (1.6MiB)
+Downloading nvidia-cudnn-cu11 (633.2MiB)
+Downloading nvidia-cufft-cu11 (160.6MiB)
+Downloading nvidia-cusparse-cu11 (194.7MiB)
+Downloading nvidia-cublas-cu11 (398.5MiB)
+Downloading nvidia-cusolver-cu11 (122.3MiB)
+ Downloading kiwisolver
+ Downloading nvidia-cuda-cupti-cu11
+ Downloading nvidia-cuda-nvrtc-cu11
+ Downloading fonttools
+ Downloading triton
+ Downloading networkx
+ Downloading pillow
+ Downloading nvidia-curand-cu11
+ Downloading nvidia-cusolver-cu11
+ Downloading nvidia-nccl-cu11
+ Downloading nvidia-cufft-cu11
+ Downloading nvidia-cusparse-cu11
+ Downloading matplotlib
+ Downloading scikit-image
+ Downloading numpy
+ Downloading nvidia-cublas-cu11
+ Downloading sympy
+ Downloading nvidia-cudnn-cu11
+ Downloading scipy
+ Downloading torch
+Prepared 38 packages in 30.09s
+Installed 38 packages in 572ms
+ + contourpy==1.4.0
+ + cycler==0.12.1
+ + filelock==3.16.1
+ + fonttools==4.66.1
+ + fsspec==2026.9.0
+ + imageio==2.38.0
+ + jinja2==3.1.6
+ + kiwisolver==1.5.1
+ + lazy-loader==0.6
+ + markupsafe==3.0.4
+ + matplotlib==3.11.1
+ + mpmath==1.3.0
+ + networkx==3.4.2
+ + numpy==2.3.5
+ + nvidia-cublas-cu11==11.11.3.6
+ + nvidia-cuda-cupti-cu11==11.8.87
+ + nvidia-cuda-nvrtc-cu11==11.8.89
+ + nvidia-cuda-runtime-cu11==11.8.89
+ + nvidia-cudnn-cu11==9.1.0.70
+ + nvidia-cufft-cu11==10.9.0.58
+ + nvidia-curand-cu11==10.3.0.86
+ + nvidia-cusolver-cu11==11.4.1.48
+ + nvidia-cusparse-cu11==11.7.5.86
+ + nvidia-nccl-cu11==2.21.5
+ + nvidia-nvtx-cu11==11.8.86
+ + packaging==26.3
+ + pillow==12.3.0
+ + pyparsing==3.3.3
+ + python-dateutil==2.9.0.post0
+ + scikit-image==0.26.0
+ + scipy==1.18.1
+ + setuptools==84.0.0
+ + six==1.17.0
+ + sympy==1.13.1
+ + tifffile==2026.9.20
+ + torch==2.6.0+cu118
+ + triton==3.2.0
+ + typing-extensions==4.16.0
+Using Python 3.12.3 environment at: venv
+python 3.12.3
+torch 2.6.0+cu118 cuda 11.8 cudnn 90100
+numpy 2.3.5 scipy 1.18.1 skimage 0.26.0 matplotlib 3.11.1 filelock 3.16.1
+gpus ['NVIDIA L40S'] capability (8, 9)
+smoke 1.0
+ENTORNO_OK

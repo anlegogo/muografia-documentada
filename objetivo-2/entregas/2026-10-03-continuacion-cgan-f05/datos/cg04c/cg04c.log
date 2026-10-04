@@ -1,0 +1,92 @@
+Using Python 3.12.3 environment at: /workspace/venv
+{"arm": "C0", "epoch": 1, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8237550640608814, "psnr": 31.032487450219776}}
+{"arm": "C0", "epoch": 2, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8222085719296275, "psnr": 30.929071782559845}}
+{"arm": "C0", "epoch": 1, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8237550640608814, "psnr": 31.032487450219776}}
+{"arm": "C0", "epoch": 2, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8222085719296275, "psnr": 30.929071782559845}}
+{"arm": "C1", "epoch": 1, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8236059703030254, "psnr": 31.016931900493027}}
+{"arm": "C1", "epoch": 2, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8220473900880124, "psnr": 30.906613047247983}}
+{"arm": "C1", "epoch": 1, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8236059703030254, "psnr": 31.016931900493027}}
+{"arm": "C1", "epoch": 2, "steps_g": 2, "steps_d": 10, "validation": {"n": 8, "ssim": 0.8220473900880124, "psnr": 30.906613047247983}}
+{"passed": true, "gpu_accepted": true, "exact_recovery": true}
+ACEPTACION_GPU_OK
+{"arm": "C0", "epoch": 1, "steps_g": 360, "steps_d": 1800, "validation": {"n": 360, "ssim": 0.8161794442289255, "psnr": 30.72418056949299}}
+{"arm": "C0", "epoch": 2, "steps_g": 360, "steps_d": 1800, "validation": {"n": 360, "ssim": 0.8165795608040279, "psnr": 30.69545933126787}}
+{"arm": "C0", "epoch": 3, "steps_g": 360, "steps_d": 1800, "validation": {"n": 360, "ssim": 0.8157773579413168, "psnr": 30.661118178168604}}
+{"arm": "C0", "epoch": 4, "steps_g": 360, "steps_d": 1800, "validation": {"n": 360, "ssim": 0.8138125458331135, "psnr": 30.535450249297728}}
+{"arm": "C0", "epoch": 5, "steps_g": 360, "steps_d": 1800, "validation": {"n": 360, "ssim": 0.8148675478845345, "psnr": 30.571782661012772}}
+{"arm": "C1", "epoch": 1, "steps_g": 360, "steps_d": 1800, "validation": {"n": 360, "ssim": 0.8165949930951074, "psnr": 30.729629940804745}}
+{"arm": "C1", "epoch": 2, "steps_g": 360, "steps_d": 1800, "validation": {"n": 360, "ssim": 0.8168310777597411, "psnr": 30.725566624775258}}
+{"arm": "C1", "epoch": 3, "steps_g": 360, "steps_d": 1800, "validation": {"n": 360, "ssim": 0.8167258400677121, "psnr": 30.674568751612934}}
+{"arm": "C1", "epoch": 4, "steps_g": 360, "steps_d": 1800, "validation": {"n": 360, "ssim": 0.813983073636758, "psnr": 30.532770613354387}}
+{"arm": "C1", "epoch": 5, "steps_g": 360, "steps_d": 1800, "validation": {"n": 360, "ssim": 0.8156978491958564, "psnr": 30.645711152316522}}
+{
+  "stage": "piloto",
+  "decision": "mejora_concordante_descriptiva",
+  "anomaly_diagnostics": {
+    "rows": 24,
+    "worse_bias_vs_C0": 8,
+    "worse_bias_vs_initial": 5,
+    "physical_acceptance": false,
+    "note": "Salvaguarda descriptiva; no cambia retrospectivamente la regla de decisi\u00f3n ni acredita calidad en etapa t\u00e9cnica."
+  },
+  "summary": {
+    "entrada": {
+      "ssim": 0.7518121158353864,
+      "psnr": 24.16772800716849,
+      "Q_by_geometry": {
+        "geo-val-01": 0.011978948077161562,
+        "geo-val-02": 0.025514356976083424,
+        "geo-val-03": 0.016922050081937045
+      },
+      "Q": 0.018138451711727344,
+      "sky_mae": 0.06802366966581791,
+      "edge_mae": 0.12091980217515516,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.24644261860892383
+    },
+    "C0": {
+      "ssim": 0.8148675478845345,
+      "psnr": 30.571782661012772,
+      "Q_by_geometry": {
+        "geo-val-01": 0.11118196793019366,
+        "geo-val-02": 0.04011512733261638,
+        "geo-val-03": 0.06482902579195828
+      },
+      "Q": 0.07204204035158944,
+      "sky_mae": 0.02830002538188474,
+      "edge_mae": 0.11278490250755363,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.10519356569254701
+    },
+    "C1": {
+      "ssim": 0.8156978491958564,
+      "psnr": 30.645711152316522,
+      "Q_by_geometry": {
+        "geo-val-01": 0.06647220832078353,
+        "geo-val-02": 0.023772486973493878,
+        "geo-val-03": 0.05271559894434035
+      },
+      "Q": 0.047653431412872586,
+      "sky_mae": 0.022380659982335502,
+      "edge_mae": 0.11264863490702919,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.09130464463921545
+    },
+    "inicial_cgan": {
+      "ssim": 0.8227914493773519,
+      "psnr": 31.10406039160106,
+      "Q_by_geometry": {
+        "geo-val-01": 0.03469973598861689,
+        "geo-val-02": 0.1574423520066559,
+        "geo-val-03": 0.17805622986597502
+      },
+      "Q": 0.1233994392870826,
+      "sky_mae": 0.1264756274688191,
+      "edge_mae": 0.14419176072733247,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.09066667921751101
+    }
+  }
+}
+CG04C_COMPLETO
+FIN=0
