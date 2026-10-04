@@ -1,5 +1,7 @@
 # Muografía: documentación y seguimiento académico
 
+**OE2 — incidencia de recuperación CUDA:** las continuaciones C0/C1 permanecen pendientes. Se preparó un [diagnóstico dirigido](objetivo-2/DIAGNOSTICO_RECUPERACION_CGAN.md) para localizar la primera diferencia al reanudar. No se flexibiliza la aceptación.
+
 **Estado del OE1 — 2026-10-03: cumplido y cerrado por decisión de la dirección bajo el alcance idealizado adoptado.** Datos, distribución, justificación e informe específico completos. [Registro de cierre](objetivo-1/CIERRE_OE1.md). No se requieren nuevas corridas para este alcance; no se declara aprobada la tesis completa.
 
 | Documento | Contenido |

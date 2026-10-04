@@ -1,5 +1,7 @@
 # Índice de documentación
 
+- [Diagnóstico de recuperación cGAN en CUDA (CG-04)](../objetivo-2/DIAGNOSTICO_RECUPERACION_CGAN.md).
+
 ## Objetivo específico 2
 
 - [Diseño del ajuste acotado de conservación de cuentas](../objetivo-2/DISENO_AJUSTE_CUENTAS_F05.md).

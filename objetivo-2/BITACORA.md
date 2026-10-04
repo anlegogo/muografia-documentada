@@ -1,5 +1,15 @@
 # Bitácora del OE2
 
+## 2026-10-03 — Preparación del diagnóstico CG-04
+
+- Fecha y zona horaria: 2026-10-03, America/Bogota. La incidencia estudiantil declara la misma fecha; parte de los registros utiliza UTC del 2026-10-04.
+- Actividad autorizada por la dirección: revisión de la entrega `b0ad0b1` y preparación de diagnóstico sin modificar herramientas originales.
+- Entradas: código `04b2e46`, checkpoint cGAN original y subconjunto técnico train/val; no se abrió test.
+- Procedimiento: procesos independientes continua/repetida/recarga/reanudada; comprobación inmediata de restauración; huellas de forwards, gradientes, pasos Adam y RNG en época 2.
+- Evidencia: [guía y criterios](DIAGNOSTICO_RECUPERACION_CGAN.md), [validación CPU](evidencias/diagnostico-recuperacion-cgan-cpu.json), siete pruebas de detección, batería C0/C1 comparada con la ejecución original sin instrumentación.
+- Resultado y limitaciones: preparación funcional verificada en CPU; incidencia L40S sin resolver. Las copias y sincronizaciones del diagnóstico pueden cambiar el comportamiento observado. No se acepta la tolerancia propuesta ni se habilita el piloto.
+- Pendiente CG-04: ejecutar el diagnóstico GPU, compartir estados binarios y auditar el primer evento diferente.
+
 ## 2026-10-03 — Revisión inicial autorizada por la dirección
 
 - Actividad: revisión del código publicado por los estudiantes y diagnóstico local de compatibilidad con dataset-v2. Se conserva la autoría estudiantil de la implementación y simulación; la revisión se incorpora como seguimiento de la dirección.

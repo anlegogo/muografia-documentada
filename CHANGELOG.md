@@ -1,5 +1,12 @@
 # Registro de cambios
 
+## 2026-10-03 — Diagnóstico dirigido de recuperación cGAN
+
+- Se revisó la entrega estudiantil `b0ad0b1`: 97 huellas verificadas y código registrado coincidente con `04b2e46`. La causa CUDA permanece sin demostrar; faltan enlaces a los estados binarios nuevos.
+- Se incorporó una herramienta independiente para controles continuos, recarga y reanudación en procesos separados, con huellas de estados y trazas de operaciones; no se modificaron entrenamiento, pérdidas ni aceptación.
+- Se verificaron siete pruebas de detección y la batería CPU C0/C1, con comparación frente al ejecutor original sin instrumentación. La evidencia enlazada en la [guía](objetivo-2/DIAGNOSTICO_RECUPERACION_CGAN.md) delimita este control local.
+- CG-04 permanece pendiente de ejecución y auditoría GPU; las continuaciones de cinco épocas siguen suspendidas.
+
 ## 2026-10-03 — Implementación y verificación CPU de C0/C1
 
 - Por autorización de la dirección se implementó el diseño de continuación cGAN, conservando generador/crítico iniciales, cinco actualizaciones D por G, dos optimizadores nuevos y pérdida regional solo en G. No se modificó el motor histórico ni el ajuste U-Net.
