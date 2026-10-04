@@ -111,7 +111,7 @@ No se versionan. Se calcularon las huellas y tamaños de los seis `last.pt` (cua
 | `piloto/A/last.pt` | `f82680767c5c84d573a5d3a44a074a0540cf06502ca51469483890e640d3638d` |
 | `piloto/B/last.pt` | `9788ccea4639ddeec317548d314703ec3badffa322983224fac6575db30d811e` |
 
-La copia de distribución en Drive se registrará con su enlace y su verificación.
+**Copia de distribución:** [carpeta de Drive oe2-ajuste-cuentas-f05-binarios](https://drive.google.com/drive/folders/1pdXdTSdE2tl5Jiaxn7WqC_yXWQswxl_e), con los doce archivos, `binarios.sha256`, `binarios.tamanos.txt` y un `LEEME.txt`. Los doce archivos se descargaron desde el enlace público, sin sesión iniciada, y sus huellas coinciden con las de esta entrega: 12 de 12 ([verificacion-drive-binarios.json](datos/verificacion-drive-binarios.json)).
 
 ## 8. Reproducción
 

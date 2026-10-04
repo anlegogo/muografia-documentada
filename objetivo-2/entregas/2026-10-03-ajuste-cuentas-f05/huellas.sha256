@@ -1,4 +1,4 @@
-7a9f1031f40ce4087aa9298feddeb3051f78294bf3204c12e4ce833a843e3c97 *./RESULTADOS_AJUSTE_CUENTAS_F05.md
+a14288afe339b59b5f9808c8b9d5966275de4819094fd7ee25edbc684aa5041c *./RESULTADOS_AJUSTE_CUENTAS_F05.md
 34249a79332704a4fafb403d402274d84aced1206d8bc1395215829955cfd104 *./datos/aceptacion-gpu.json
 45b708fa35a0dc0cdb32c07a919344a7d1e228660351d9d9ccb693e27cd02ea4 *./datos/analisis-complementario/cuentas-complementario.json
 4296ce1a6cdc54bd2047d1bdfbaef9d3fea0f432876153a2a2ff4fe2922dc7b9 *./datos/analisis-complementario/cuentas-por-imagen.csv
@@ -131,6 +131,7 @@ ba7105851cf37ad56f4f2670d64cf80f59a143816ce02d36028e3736368c0c07 *./datos/tecnic
 1dd2c2a6793615996d83f216aff84a13bc1f88f7eea8217731c79b66073fe104 *./datos/tecnica/B-recuperada/indices-val.json
 6cfaf3f123cfa14492452047da1d5dcd0cee970f00e3d7307cd114df74373c15 *./datos/tecnica/B-recuperada/last-session.json
 15aa9adc2a1ae5edad47a9f2cb28aa3f30dfe347b3feacf0a563a65855361c31 *./datos/tecnica/B-recuperada/summary.json
+43da769476914a4bfb610cafc8eb4d4e6cb6397deb5997bec6ca1ac52d969c73 *./datos/verificacion-drive-binarios.json
 628adf888f10ce71ffe602394617ddd68ca22cac1530cabcef1a0729bcd90c23 *./figuras/comparacion-metricas.pdf
 9868866dacbbab87d2a3e44bed53857f8408a2eaa1e64f09b6daf4a2ad835423 *./figuras/curvas-ajuste.pdf
 644006966d469041c604c64bd97de6ba6c653534938af0604f606fe352942e38 *./figuras/error-cuentas.pdf

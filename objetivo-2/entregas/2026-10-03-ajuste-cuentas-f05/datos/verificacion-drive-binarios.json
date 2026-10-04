@@ -1,0 +1,66 @@
+{
+ "carpeta": "https://drive.google.com/drive/folders/1pdXdTSdE2tl5Jiaxn7WqC_yXWQswxl_e",
+ "acceso": "enlace publico sin sesion",
+ "archivos": {
+  "piloto/A/last.pt": {
+   "ok": true,
+   "bytes": 246593406,
+   "sha256": "f82680767c5c84d573a5d3a44a074a0540cf06502ca51469483890e640d3638d"
+  },
+  "piloto/A/predicciones-val.npy": {
+   "ok": true,
+   "bytes": 94371968,
+   "sha256": "fc5bdc8dd0fb086046223076d5e3e7eea14c8472ddd8b1a04ef7224be5c5ff99"
+  },
+  "piloto/B/last.pt": {
+   "ok": true,
+   "bytes": 246593406,
+   "sha256": "9788ccea4639ddeec317548d314703ec3badffa322983224fac6575db30d811e"
+  },
+  "piloto/B/predicciones-val.npy": {
+   "ok": true,
+   "bytes": 94371968,
+   "sha256": "4744652429ebe1a285c26b85d0043dc4811112c5adf7360e9a5abf0388674415"
+  },
+  "tecnica/A-continua/last.pt": {
+   "ok": true,
+   "bytes": 246591998,
+   "sha256": "beca101ad3893d14abc2802a51ac078512517d042897cc2cd3aaa5ced5236365"
+  },
+  "tecnica/A-continua/predicciones-val.npy": {
+   "ok": true,
+   "bytes": 2097280,
+   "sha256": "b0778688b2f1e1d657f7e92515c88afcd4cdd92907c6f04d0a34896d2c098604"
+  },
+  "tecnica/A-recuperada/last.pt": {
+   "ok": true,
+   "bytes": 246592382,
+   "sha256": "027f2e374f9ae29ee0d55abb8c393a85d5ef9c801117ac6a811768f21c4ef756"
+  },
+  "tecnica/A-recuperada/predicciones-val.npy": {
+   "ok": true,
+   "bytes": 2097280,
+   "sha256": "b0778688b2f1e1d657f7e92515c88afcd4cdd92907c6f04d0a34896d2c098604"
+  },
+  "tecnica/B-continua/last.pt": {
+   "ok": true,
+   "bytes": 246591998,
+   "sha256": "8e7b8b0534eba6235a9bb02ddd35d7a78cee09a8f28c09f3e18a60bff8ecee84"
+  },
+  "tecnica/B-continua/predicciones-val.npy": {
+   "ok": true,
+   "bytes": 2097280,
+   "sha256": "d38ac6020abaa854b781f596db83c2cb140107bfaf595567faf3561436eac7af"
+  },
+  "tecnica/B-recuperada/last.pt": {
+   "ok": true,
+   "bytes": 246592446,
+   "sha256": "4a4b3cc1f5956909e5cade75b76b548f46c9549258d3156450509930a49f2da2"
+  },
+  "tecnica/B-recuperada/predicciones-val.npy": {
+   "ok": true,
+   "bytes": 2097280,
+   "sha256": "d38ac6020abaa854b781f596db83c2cb140107bfaf595567faf3561436eac7af"
+  }
+ }
+}
