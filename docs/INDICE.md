@@ -1,5 +1,9 @@
 # Índice de documentación
 
+- [CG-04b: separación de los gradientes del crítico](../objetivo-2/DIAGNOSTICO_GRADIENTES_CG04B.md).
+
+- [Revisión independiente de los binarios CG-04](../objetivo-2/REVISION_BINARIOS_CG04.md).
+
 - [Diagnóstico de recuperación cGAN en CUDA (CG-04)](../objetivo-2/DIAGNOSTICO_RECUPERACION_CGAN.md).
 
 ## Objetivo específico 2

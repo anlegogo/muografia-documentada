@@ -1,5 +1,24 @@
 # Bitácora del OE2
 
+## 2026-10-03 — Separación de gradientes CG-04b
+
+- Fecha y zona: 2026-10-03 America/Bogota; UTC del 2026-10-04.
+- Actividad autorizada por la dirección: preparar la comprobación de las contribuciones al gradiente del crítico tras la auditoría de binarios CG-04.
+- Entradas: checkpoint cGAN original y subconjunto técnico train/val. Se conserva semilla, cinco D por G durante la época 1 y penalización 10; test permanece reservado.
+- Procedimiento: cinco mediciones independientes por cada condición continua/nueva en C0/C1. El lote de época 2 se deriva sin aplicar pasos de optimización. Se comparan identidad, estado, RNG, forwards, pérdida y gradientes; la suma se calcula offline.
+- Evidencia: [guía](DIAGNOSTICO_GRADIENTES_CG04B.md), [validación CPU](evidencias/cg04b-validacion-cpu.json) y pruebas de la herramienta. Veinte procesos CPU y ocho controles funcionales/matemáticos completados.
+- Límites: la suma offline no reproduce el orden interno de acumulación CUDA. No se concedió aceptación ni se modificó la tolerancia.
+- Pendiente CG-04: ejecutar CG-04b en L40S y revisar los componentes y controles antes de proponer una corrección.
+
+## 2026-10-03 — Auditoría de los binarios CG-04
+
+- Fecha: 2026-10-03 America/Bogota; descarga y revisión en UTC del 2026-10-04.
+- Actividad autorizada por la dirección: contraste independiente de binarios, huellas de estados y métricas del diagnóstico estudiantil.
+- Entradas: trazas `c45a1a1`, inventario Drive `65ab85c`, 22 binarios y tres shards val verificados; test sin abrir.
+- Procedimiento: SHA-256 y tamaños; carga restringida PyTorch en CPU; comparación de redes, Adam y RNG; reconstrucción de referencias y recálculo SSIM/PSNR.
+- Evidencia y resultado: [revisión](REVISION_BINARIOS_CG04.md) y [JSON](evidencias/revision-binarios-cg04.json). Los 22 archivos son íntegros y las métricas concuerdan; la discrepancia posterior a reanudar está confirmada.
+- Limitaciones y siguiente paso: no se reprodujo CUDA localmente; CG-04 permanece parcial. Aislar las contribuciones al gradiente del crítico antes de proponer corrección o tolerancia.
+
 ## 2026-10-03 — Preparación del diagnóstico CG-04
 
 - Fecha y zona horaria: 2026-10-03, America/Bogota. La incidencia estudiantil declara la misma fecha; parte de los registros utiliza UTC del 2026-10-04.
