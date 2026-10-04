@@ -5,11 +5,12 @@ import numpy as np
 import torch
 from datos_ajuste import read_json,digest,canonical,atomic_json
 from ejecutar_ajuste import state_digest
-from ejecutar_ajuste_cgan import spec,sources,configure
+from ejecutar_ajuste_cgan import spec,sources,configure,GRADIENT_POLICY
 from revisar_ajuste import finite,equal_state
 
 def validate_state(c):
     i=c['identity'];cfg=spec(i['arm']);epochs=2 if i['stage']=='tecnica' else 5
+    if i.get('critic_gradient_policy')!=GRADIENT_POLICY:raise ValueError('Política de gradiente incompatible')
     if i['schema']!='oe2-cgan-ajuste-run-v1' or i['stage'] not in ('tecnica','piloto') or i['config']!=cfg or i['epochs']!=epochs or i['sources']!=sources():raise ValueError('Identidad cGAN incompatible')
     n=2 if i['stage']=='tecnica' else 360
     if not 1<=c['epoch']<=epochs or [h['epoch'] for h in c['history']]!=list(range(1,c['epoch']+1)):raise ValueError('Historial incompleto')

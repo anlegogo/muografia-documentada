@@ -1,14 +1,14 @@
 # Ejecución de la continuación cGAN C0/C1 al 5 %
 
-**Actualización 2026-10-03 — CG-04:** la recepción y auditoría de los binarios está completa. No ejecutar todavía las continuaciones de cinco épocas. El siguiente paso es la [separación de gradientes CG-04b](DIAGNOSTICO_GRADIENTES_CG04B.md). Se conserva el criterio exacto de aceptación; este diagnóstico no emite autorización GPU.
+**Actualización 2026-10-04 — CG-04c:** se implementó la [derivación separada y suma ordenada de gradientes](CORRECCION_GRADIENTES_CG04C.md), verificada mediante 34 controles y recuperación exacta de C0/C1 en CPU. El siguiente paso es repetir la etapa técnica en L40S con salidas nuevas y esta versión. Solo si el auditor GPU aprueba la recuperación exacta podrán ejecutarse las cinco épocas y la evaluación descritas aquí. No reutilizar checkpoints ni aceptaciones de versiones anteriores.
 
 Fecha: 2026-10-03, Colombia. **Estado: implementación y recuperación exacta verificadas en CPU; comprobación CUDA y ensayo de cinco épocas pendientes.**
 
 La [propuesta de diseño](PROPUESTA_CONTINUACION_CGAN_F05.md) queda implementada sin cambios en sus parámetros científicos. La comparación pregunta si el término regional aporta algo a una cGAN que también continúa entrenándose. No se presupone mejora ni se declara cumplido el OE2.
 
-## Qué quedó verificado
+## Verificación histórica de la integración inicial
 
-La [evidencia local](evidencias/integracion-cgan-ajuste-v1.json) registra:
+La evidencia de esta sección corresponde a la integración previa; la validación vigente de CG-04c está en [su guía y evidencia](CORRECCION_GRADIENTES_CG04C.md). La [evidencia histórica](evidencias/integracion-cgan-ajuste-v1.json) registra:
 
 - Diecinueve controles satisfactorios: pérdida/gradiente C0 idénticos al original, gradiente regional C1, GP del promedio de parches, separación de actualizaciones, proporción cinco pasos D/uno G, estados aleatorios y rechazo de cambios incompatibles.
 - Cuatro ejecuciones de las redes completas: C0 y C1, cada una continua e interrumpida/recuperada. Coinciden exactamente generador, crítico, ambos optimizadores, RNG de Torch CPU/CUDA según dispositivo, NumPy y Python, registros numéricos y predicciones.
