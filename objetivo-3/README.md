@@ -82,3 +82,16 @@ python objetivo-3/herramientas/figura_curvas.py \
 ```
 
 El adaptador de fracción pasa n_f·(0,05/f) al evaluador histórico, que divide por 0,05, y verifica numéricamente su equivalencia con n_f/f. No altera los archivos originales. Se conserva el caso completo del 5 % como control positivo. El informe incluye huellas y entorno; diferencias de finales de línea en copias de JSON pueden cambiar su huella documental sin cambiar los valores. Las fuentes congeladas y el registro de controles sí se verifican con las huellas exigidas por EF-01-C2.
+
+## Ruta de continuidad desde el OE2
+
+Actualización documental: 2026-10-04, Colombia. Se incorpora la [precisión del balance OE2](../objetivo-2/CIERRE_OE2.md#precisión-sobre-calidad-comparable-y-continuidad-al-oe3), que documenta mejora de SSIM/PSNR de la cGAN al 5 % frente a la entrada al 10 % en el promedio de las cuatro geometrías. Este avance no demuestra equivalencia con la referencia completa ni cierra automáticamente OE3.
+
+El trabajo puede continuar con los archivos disponibles y sin otra campaña GPU. Se propone la siguiente secuencia para los pendientes ya registrados:
+
+1. **OE3-P02 — Delimitar calidad y alcance.** Contrastar la formulación comunicada del objetivo con la propuesta aprobada y sus métricas. Distinguir calidad de imagen según SSIM/PSNR de conservación regional y contraste. No imponer una condición nueva como si fuera original ni adoptar un margen retrospectivo para asegurar éxito. Si no hay margen fundamentado, mantener una comparación descriptiva explícita.
+2. **OE3-P03 — Completar el desglose.** Las curvas por fracción y geometría ya existen. Sintetizar resultados por vista y región, manteniendo todos los modelos y casos desfavorables. Los análisis adicionales sobre esos resultados son posteriores a su observación; no constituyen una nueva reserva independiente ni deben usar las veinte realizaciones como geometrías independientes.
+3. **OE3-P03 — Informar la reducción respaldada por cada indicador.** Comparar la salida al 5 % con las entradas existentes al 10 % y al 50 %, usando la misma referencia, normalización y soporte común de contraste. La razón nominal 10/5 = 2 acompaña una mejora descriptiva de SSIM/PSNR; no representa por sí sola un factor de adquisición físicamente aceptado. No interpolar un máximo entre fracciones ni convertir automáticamente 1/0,05 = 20 en factor alcanzado.
+4. **OE3-P04 — Redactar resultados y conclusión.** Integrar tablas, figuras, supuestos de flujo/detección y límites. Si los criterios difieren, informar factores o comparaciones por métrica, sin un único número que oculte deterioros. Si no puede demostrarse un factor bajo un criterio justificado, consignarlo como resultado del estudio.
+
+La revisión de criterio y la síntesis pueden realizarse con la evidencia conservada; a los estudiantes les corresponde integrar y revisar el manuscrito. Cualquier nueva corrida dependería de una pregunta experimental específica que este análisis no pueda responder. Esta ruta es una propuesta de continuidad; no marca como ejecutados sus análisis adicionales.

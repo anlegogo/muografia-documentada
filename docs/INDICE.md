@@ -1,5 +1,8 @@
 # Índice de documentación
 
+- [Precisión de calidad comparable OE2 y tabla por geometría](../objetivo-2/CIERRE_OE2.md#precisión-sobre-calidad-comparable-y-continuidad-al-oe3).
+- [Ruta de continuidad del OE3 con evidencia existente](../objetivo-3/README.md#ruta-de-continuidad-desde-el-oe2).
+
 - [Informe académico OE2, figuras y tablas](../objetivo-2/manuscrito/README.md).
 - [Matriz de cumplimiento OE2](../objetivo-2/MATRIZ_CUMPLIMIENTO.md).
 - [Cierre de ejecución y síntesis documental OE2](../objetivo-2/CIERRE_OE2.md).

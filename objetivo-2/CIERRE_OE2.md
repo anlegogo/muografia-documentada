@@ -24,3 +24,22 @@ Las evidencias pueden utilizarse desde ahora para la discusión del OE3. Las cur
 - [Revisión vigente](REVISION_EVALUACION_FINAL_C2.md), [tablas derivadas](manuscrito/TABLAS_OE2.md) y [procedencia de figuras](manuscrito/figuras/procedencia-figuras.json).
 
 La redacción de objetivo se recuperó de la revisión documental previa y se contrastó con el alcance del repositorio; el PDF aprobado local no pudo reabrirse en esta sesión. Se conserva esta limitación de trazabilidad documental sin inventar un criterio de aceptación ni bloquear la síntesis de resultados verificados.
+
+## Precisión sobre calidad comparable y continuidad al OE3
+
+Anotación de revisión: 2026-10-04, Colombia; fuentes leídas en `166be6ff09b60341fde084d433266b94b6e832cc`. Se precisa la interpretación, sin cambiar modelos, métricas ni aceptación. El objetivo plantea calidad comparable de imágenes: no establece literalmente equivalencia física completa como condición independiente. No se añade retrospectivamente esa condición al objetivo. A la vez, la calidad para uso muográfico requiere discutir las alteraciones de cuentas y no permite omitirlas al presentar la mejora de similitud.
+
+Se verificó en las [curvas disponibles](../objetivo-3/evidencias/curvas-v1/curvas.json) y los [resultados C2](evidencias/ef01-c2/resultados.json) que la cGAN original alimentada con el 5 % de conteos supera en SSIM y PSNR a la entrada sin red al 10 %, en el promedio de cada una de las cuatro geometrías. Ambas métricas comparan cada imagen con la misma referencia de alta estadística; no comparan directamente entre sí la salida de la red y la entrada al 10 %.
+
+| Geometría | SSIM cGAN 5 % | SSIM entrada 10 % | PSNR cGAN 5 % [dB] | PSNR entrada 10 % [dB] |
+|---|---:|---:|---:|---:|
+| geo-test-01 | 0.809504 | 0.766729 | 30.899515 | 25.240011 |
+| geo-test-02 | 0.823321 | 0.782241 | 31.106504 | 25.468370 |
+| geo-test-03 | 0.869662 | 0.840262 | 31.503588 | 26.458123 |
+| geo-gen-01 | 0.825228 | 0.783422 | 31.047417 | 25.349330 |
+
+**Conclusión respaldada:** el modelo mejora la similitud de imágenes de baja estadística y, según SSIM y PSNR, supera imágenes sin procesar con el doble de conteos en los escenarios evaluados. Esta mejora no garantiza conservación equivalente de los conteos regionales. La cGAN permanece por debajo de la entrada al 50 % en SSIM y PSNR agregados, tanto en prueba como en generalización.
+
+Es una comparación descriptiva posterior a la evaluación, no una prueba estadística de equivalencia, un resultado por cada imagen individual ni una demostración de calidad equivalente a la referencia completa. La comparación de promedios no modifica por sí sola el estado parcial de calidad comparable de la matriz. Determinar su alcance académico exige contrastar la definición de calidad con la propuesta aprobada, sin elegir después un umbral que garantice éxito.
+
+Se propone continuar con el OE3 utilizando las predicciones y curvas existentes. No es necesario esperar una afirmación de éxito pleno del OE2 para evaluar el desempeño y los límites del factor de adquisición. La [ruta de trabajo del OE3](../objetivo-3/README.md#ruta-de-continuidad-desde-el-oe2) separa mejora de similitud, conservación regional y reducción nominal. No se solicita otra GPU para este análisis.
