@@ -83,7 +83,7 @@ Los pesos no se versionan en Git. Huellas y tamaños de los ocho archivos: [peso
 | `oe2-v1-piloto-f05-unet-s2026100301/checkpoints/best.pt` | 246.595.774 | `734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a` |
 | `oe2-v1-piloto-f05-cgan-s2026100301/checkpoints/best.pt` | 279.758.342 | `e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0` |
 
-Los ocho archivos (`best.pt` y `last.pt` de las cuatro ejecuciones) se copiaron desde el pod a almacenamiento local y se verificaron allí: 8 de 8 huellas coinciden. El enlace de distribución se agregará cuando se suban a Drive.
+Los ocho archivos (`best.pt` y `last.pt` de las cuatro ejecuciones) se copiaron desde el pod a almacenamiento local y se verificaron allí: 8 de 8 huellas coinciden. **Copia de distribución:** [carpeta de Drive oe2-piloto-f05-pesos](https://drive.google.com/drive/folders/18pOGXzN2lEhKfxJlpcC4GuTujkNyA-ix), con los ocho pesos, `pesos.sha256`, `pesos.tamanos.txt` y un `LEEME.txt`. Los ocho archivos se descargaron desde el enlace público, sin sesión iniciada, y sus huellas coinciden con las de esta entrega: 8 de 8 ([verificacion-drive-pesos.json](datos/verificacion-drive-pesos.json)).
 
 ## 7. Lectura según el protocolo
 

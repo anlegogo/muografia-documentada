@@ -1,4 +1,4 @@
-f1aa528e11b5ae08ef07bf9e40650c9467740f98172d808f1bb296592ec174cb *./RESULTADOS_PILOTO_F05.md
+0f907e1e0929247490f939ec9aa9596a7aebfd1258cd0b543b959d16b7fe98d5 *./RESULTADOS_PILOTO_F05.md
 d030edb1c2a1d30809e44e59ec0c1e12d9d93ce813f568b2a4ddc7e5556da4b1 *./datos/analisis-val/analisis-val.json
 5ba425efe0b43c8afc57d3ddc17bc138e7fbb9209736cf2ea8c5472e06f59852 *./datos/analisis-val/metricas-por-imagen-val.csv
 f47ced11f717c762fec3685c99b048261fa6a3209b6c013835bcbc42992a556e *./datos/commit-codigo.txt
@@ -100,6 +100,7 @@ e2e17a87c70252f0965265de9248781c8763170118b98f16bbd2f7dded50f92c *./datos/result
 f527132e4034d1dcacfaaa33b6aa154b7decb25f140bc31d08a6219635341c35 *./datos/resultados/resumen-piloto.json
 c1ab8ef5080c72dd691cf9484f0c3b2fe60bbb6d2a8534cb295c963f258db0e3 *./datos/resultados/resumen-tecnico.json
 dbc4834cf792a4a03b060c6a66268bfc738d363d6c4c1389c14e81672584ea00 *./datos/setup.log
+2fd68c05c7fdf43ea719dcf1f3dd044c0ee652b1c7df77aa58d81343fca03329 *./datos/verificacion-drive-pesos.json
 670f6e839830e8d42da08fbaa01f1f93a591fa378e81c58f9d64584cd68fd51c *./figuras/curvas-perdidas.pdf
 7eb566d31d48ae481a14bb42c26417f8743d6eef5b1b43faa17e434155727fea *./figuras/curvas-validacion.pdf
 9be12d2280f47e7d7427f6cf82074e6277b571c0af05c3feaf040e0e4c2f8299 *./verificacion/analizar_piloto_val.py
