@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/repo/objetivo-2/herramientas/revisar_ajuste_cgan.py", line 76, in <module>
+    r=audit_technical(paths,a.exigir_gpu);a.salida.parent.mkdir(parents=True,exist_ok=True);atomic_json(a.salida,r)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/repo/objetivo-2/herramientas/revisar_ajuste_cgan.py", line 58, in audit_technical
+    if not equal_state(x[key],y[key]):raise ValueError('Recuperación distinta: '+key)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Recuperación distinta: generator

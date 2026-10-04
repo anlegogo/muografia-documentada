@@ -1,0 +1,9 @@
+01-mascaras exit=0 03:12:14
+02-tecnica-C0-continua exit=0 03:12:29
+03-tecnica-C0-corte exit=0 03:12:38
+04-tecnica-C0-reanudacion exit=0 03:12:48
+02-tecnica-C1-continua exit=0 03:12:58
+03-tecnica-C1-corte exit=0 03:13:07
+04-tecnica-C1-reanudacion exit=0 03:13:17
+05-aceptacion-gpu exit=1 03:13:23
+FIN=1

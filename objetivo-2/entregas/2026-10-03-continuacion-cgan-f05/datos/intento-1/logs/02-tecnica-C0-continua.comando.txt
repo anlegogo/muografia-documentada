@@ -1,0 +1,1 @@
+python objetivo-2/herramientas/ejecutar_ajuste_cgan.py --rama C0 --etapa tecnica --datos /workspace/insumos --mascaras /workspace/trabajo/mascaras-ajuste-v1 --pesos /workspace/insumos/pesos/cgan-best.pt --salida /workspace/trabajo/cgan-ajuste-v1/tecnica/C0-continua 
