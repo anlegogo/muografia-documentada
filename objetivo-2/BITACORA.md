@@ -1,5 +1,15 @@
 # Bitácora del OE2
 
+## 2026-10-04 — Integración y comprobación local del ensayo E1
+
+- Actividad autorizada: completar la preparación local y dejar instrucciones autónomas para los estudiantes. Base: bc6ce8f; checkpoint original cGAN de época 5, datos y máscaras verificados.
+- Coeficiente: regla de presupuesto de gradiente registrada antes de perfilar doce lotes train; resultado 0,629. Ningún peso se modificó durante el perfil y no se usó val para elegirlo.
+- Procedimiento: integración separada, controles de contratos, orquestación y equivalencia; doce ejecuciones CPU completas con interrupción y recuperación; comparación de estados, evaluación técnica, síntesis e inventario. Soporte del borde verificado en las 90 vistas train/val.
+- Evidencia y comandos: [diseño](DISENO_BORDE_CGAN.md), [guía](INSTRUCCIONES_BORDE_CGAN.md) y JSON enlazados. Se preservan las entregas históricas.
+- Resultado: E1-03 y E1-04 verificados en alcance local; ejecución técnica no equivale a aceptación de calidad. Cero pilotos de cinco épocas y cero ejecuciones CUDA en esta preparación.
+- Incidencias resueltas: lectura UTF-8 del generador local de archivos; creación explícita de la carpeta del orquestador en el control con procesos simulados. La evidencia registra los controles finales.
+- Siguiente paso: E1-05, prueba técnica en GPU y, solo después de aceptación de las tres parejas, seis continuaciones, evaluación común y entrega íntegra. OE2 y aceptación física pendientes.
+
 ## 2026-10-04 — Diagnóstico espacial y preparación E1
 
 - Fecha y zona horaria: 2026-10-04, America/Bogota.

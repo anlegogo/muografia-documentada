@@ -1,0 +1,1395 @@
+{
+  "schema": "oe2-edge-integration-review-v1",
+  "date": "2026-10-04",
+  "base_commit": "bc6ce8f85298b8ee9ef227175baec46e271c884c",
+  "complete": true,
+  "training_scope": "technical CPU only, full generator and critic, eight train/eight val, two epochs",
+  "pilot_training_performed": false,
+  "gpu_execution_performed": false,
+  "gpu_accepted": false,
+  "ready_for_new_gpu_check": true,
+  "physical_acceptance": false,
+  "heldout_opened": false,
+  "lambda_edge": 0.629,
+  "profile_sha256": "ef83277c56320c7b38d7d11efea4b74fd33663c7c54421b7432bf63818e9358c",
+  "support_sha256": "0c167a0c3af6e949b7afa26e76a1219c42c152a6d10519b1e570dc033ec395f8",
+  "contracts": {
+    "tests": 18,
+    "passed": true,
+    "log": "test_changed_seed_or_extra_field_rejected (__main__.Contracts.test_changed_seed_or_extra_field_rejected) ... ok\ntest_cli_pair_not_free_seed (__main__.Contracts.test_cli_pair_not_free_seed) ... ok\ntest_cross_pair_gate_rejected_before_audit (__main__.Contracts.test_cross_pair_gate_rejected_before_audit) ... ok\ntest_fixed_pairs_and_science (__main__.Contracts.test_fixed_pairs_and_science) ... ok\ntest_old_gate_rejected_before_audit (__main__.Contracts.test_old_gate_rejected_before_audit) ... ok\ntest_seed_identity_rejected_before_state (__main__.Contracts.test_seed_identity_rejected_before_state) ... ok\ntest_unknown_pair (__main__.Contracts.test_unknown_pair) ... ok\ntest_historical_gpu_gate_rejected (__main__.Objective.test_historical_gpu_gate_rejected) ... ok\ntest_positive_component_changes_gradient (__main__.Objective.test_positive_component_changes_gradient) ... ok\ntest_zero_full_training_step_matches_historical (__main__.Objective.test_zero_full_training_step_matches_historical) ... ok\ntest_zero_weight_matches_historical_C1_exactly (__main__.Objective.test_zero_weight_matches_historical_C1_exactly) ... ok\ntest_all_pairs_and_median (__main__.Summary.test_all_pairs_and_median) ... ok\ntest_changed_baseline_rejected (__main__.Summary.test_changed_baseline_rejected) ... ok\ntest_false_reported_acceptance_rejected (__main__.Summary.test_false_reported_acceptance_rejected) ... ok\ntest_missing_pair_rejected (__main__.Summary.test_missing_pair_rejected) ... ok\ntest_nonfinite_rejected (__main__.Summary.test_nonfinite_rejected) ... ok\ntest_unfavorable_pair_kept (__main__.Summary.test_unfavorable_pair_kept) ... ok\ntest_wrong_seed_rejected (__main__.Summary.test_wrong_seed_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.936s\n\nOK\n\n"
+  },
+  "orchestration": {
+    "tests": 7,
+    "passed": true,
+    "log": "test_cpu_pilot_rejected (__main__.Workflow.test_cpu_pilot_rejected) ... ok\ntest_different_gpu_environment_prevents_pilot (__main__.Workflow.test_different_gpu_environment_prevents_pilot) ... ok\ntest_existing_technical_folder_rejected (__main__.Workflow.test_existing_technical_folder_rejected) ... ok\ntest_failure_stops_before_gate (__main__.Workflow.test_failure_stops_before_gate) ... ok\ntest_missing_any_gate_prevents_pilot (__main__.Workflow.test_missing_any_gate_prevents_pilot) ... ok\ntest_old_gate_prevents_pilot (__main__.Workflow.test_old_gate_prevents_pilot) ... ok\ntest_technical_order_and_gate (__main__.Workflow.test_technical_order_and_gate) ... B1-C0-continua-inicio completado\nB1-C0-recuperada-inicio completado\nB1-C0-recuperada-fin completado\nB1-C1-continua-inicio completado\nB1-C1-recuperada-inicio completado\nB1-C1-recuperada-fin completado\nok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.032s\n\nOK\n\n"
+  },
+  "artifact_tests": {
+    "tests": 10,
+    "passed": true,
+    "failures": 0,
+    "errors": 0,
+    "gpu_accepted": false,
+    "log": "test_all_three_recoveries (__main__.Artifacts.test_all_three_recoveries) ... ok\ntest_completed_resume_rejected (__main__.Artifacts.test_completed_resume_rejected) ... ok\ntest_corrupt_critic_rejected (__main__.Artifacts.test_corrupt_critic_rejected) ... ok\ntest_corrupt_optimizer_rejected (__main__.Artifacts.test_corrupt_optimizer_rejected) ... ok\ntest_cpu_gate_cannot_accept_gpu (__main__.Artifacts.test_cpu_gate_cannot_accept_gpu) ... ok\ntest_cpu_pilot_rejected (__main__.Artifacts.test_cpu_pilot_rejected) ... ok\ntest_current_sources_and_pairing (__main__.Artifacts.test_current_sources_and_pairing) ... ok\ntest_export_reproduces_without_training (__main__.Artifacts.test_export_reproduces_without_training) ... ok\ntest_mixed_pair_rejected (__main__.Artifacts.test_mixed_pair_rejected) ... ok\ntest_wrong_pair_resume_does_not_modify_checkpoint (__main__.Artifacts.test_wrong_pair_resume_does_not_modify_checkpoint) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 34.304s\n\nOK\n"
+  },
+  "total_tests": 35,
+  "technical_runs": 12,
+  "updates": {
+    "G": 48,
+    "D": 240
+  },
+  "pairs": {
+    "B1": {
+      "seed": 2026100411,
+      "exact_recovery": true,
+      "gpu_accepted": false,
+      "checkpoint_sha256": {
+        "C0-continua": "479a790a651575c23e4cb7f4e46f09e4ace1d51975940e8eb8771278775dd0ea",
+        "C0-recuperada": "c76175be7f7288cfdc2902397ba37fcee50e6b5170177486938205b05334280d",
+        "C1-continua": "bcad9e8d10268c5aaa0c58cf5e4af9b18499a42a184563d08a4fd0db2042e943",
+        "C1-recuperada": "f83980d523a18d31d7153e4b720209c9d5a7348a408f5634b6658902cea8fa8f"
+      }
+    },
+    "B2": {
+      "seed": 2026100412,
+      "exact_recovery": true,
+      "gpu_accepted": false,
+      "checkpoint_sha256": {
+        "C0-continua": "85b5fbd52d8b18135565cea3d3ce22857aa1615e26d09df50a2461176262b368",
+        "C0-recuperada": "fac98127713111d012be3cb71d3064641d3f87c34843ba7868d64afeb3f1344b",
+        "C1-continua": "fc8e9be086b37b335f0e833de728f9bfa524993da9bc2a24c1145746a0d2ca30",
+        "C1-recuperada": "559e7ae16bd137fb7e9fecbf2cc88a0fbdea586f7626a082206dcb0e5b4a649a"
+      }
+    },
+    "B3": {
+      "seed": 2026100413,
+      "exact_recovery": true,
+      "gpu_accepted": false,
+      "checkpoint_sha256": {
+        "C0-continua": "bcfa4bfaa29425a9cf689de198f6cb07e357ec01352990482364d8ecff93f796",
+        "C0-recuperada": "413c714e21703cc67e96d7e244db26b4e55e80b44a73c0044cb3f654d145c941",
+        "C1-continua": "f19636ffdda53beba786d239e3cdd90613bfceb32f436c856f57f7e4320e4696",
+        "C1-recuperada": "4e4e70e0739a045e03cf2537c231b41b15df11f6570db1bb8e5f1dbe094fc9c8"
+      }
+    }
+  },
+  "runs": [
+    {
+      "pair": "B1",
+      "arm": "C0",
+      "mode": "continua",
+      "history": [
+        {
+          "epoch": 1,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "61f7d9beb24467646881d0993b622ec575fc7cf67334e7428fc025167cdb3f95",
+          "losses": {
+            "d_real": 23.568715286254882,
+            "d_fake": 22.570785331726075,
+            "w_est": 0.9979299545288085,
+            "gp": 0.005242239532526582,
+            "total_d": -0.9455075621604918,
+            "grad_d": 59.29148430255818,
+            "l1": 0.013253395445644855,
+            "adv": -22.35014533996582,
+            "regional": 0.06905114605045577,
+            "edge": 0.1433872996186002,
+            "weighted_edge": 0.0,
+            "total_g": -20.955754876593588,
+            "grad_g": 53.82514325497515
+          },
+          "family_losses": {
+            "0": 0.10429880674335124,
+            "1": 0.05254747749729072,
+            "2": 0.017741474280124514,
+            "3": 0.12044971612248907
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8238275952462943,
+            "psnr": 31.030066734006727
+          },
+          "generator_sha256": "3f90cdafffa23bf0604e658c9f3fde9857b88c2214d4f9f925c5a0b23d889add",
+          "critic_sha256": "31bbde119149accbde3ca4081d2331f03dfd7cc0122683a1c34038f4a8442201",
+          "epoch_compute_seconds": 28.167966299995896
+        },
+        {
+          "epoch": 2,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "b0c22dfc00247e8229c8b0edc770b566f3644063eb57f703594675912a84825b",
+          "losses": {
+            "d_real": 23.212313079833987,
+            "d_fake": 21.809588241577146,
+            "w_est": 1.402724838256836,
+            "gp": 0.0035157435340806838,
+            "total_d": -1.3675674080848694,
+            "grad_d": 33.1258237674263,
+            "l1": 0.012673948891460896,
+            "adv": -21.59937858581543,
+            "regional": 0.04726361661880788,
+            "edge": 0.13566953951276897,
+            "weighted_edge": 0.0,
+            "total_g": -20.284719949665373,
+            "grad_g": 64.78589703744737
+          },
+          "family_losses": {
+            "0": 0.06661174178868112,
+            "1": 0.036823881572844275,
+            "2": 0.02730655917722591,
+            "3": 0.06896563544106575
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8222946485428873,
+            "psnr": 30.92447327802092
+          },
+          "generator_sha256": "8953e02334fe961f3c15d31788b4af58281caf0c1b0b02aecc7d396f2da3816e",
+          "critic_sha256": "1f1187c8c44af95b72acc312dc884b58c27d7fa4881db977e77b57d94eb14b50",
+          "epoch_compute_seconds": 27.015279900006135
+        }
+      ],
+      "checkpoint_sha256": "479a790a651575c23e4cb7f4e46f09e4ace1d51975940e8eb8771278775dd0ea",
+      "predictions_sha256": "37855ec6e82c1b65b6dc9ef7bdfb664dea5882d8fc4619b8e2f4f64e842b29e2",
+      "config_sha256": "f3ea86953acceedb23132e10efc5c5eccd6a2770acb9654be4fc3b78f69a8dd1"
+    },
+    {
+      "pair": "B1",
+      "arm": "C0",
+      "mode": "recuperada",
+      "history": [
+        {
+          "epoch": 1,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "61f7d9beb24467646881d0993b622ec575fc7cf67334e7428fc025167cdb3f95",
+          "losses": {
+            "d_real": 23.568715286254882,
+            "d_fake": 22.570785331726075,
+            "w_est": 0.9979299545288085,
+            "gp": 0.005242239532526582,
+            "total_d": -0.9455075621604918,
+            "grad_d": 59.29148430255818,
+            "l1": 0.013253395445644855,
+            "adv": -22.35014533996582,
+            "regional": 0.06905114605045577,
+            "edge": 0.1433872996186002,
+            "weighted_edge": 0.0,
+            "total_g": -20.955754876593588,
+            "grad_g": 53.82514325497515
+          },
+          "family_losses": {
+            "0": 0.10429880674335124,
+            "1": 0.05254747749729072,
+            "2": 0.017741474280124514,
+            "3": 0.12044971612248907
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8238275952462943,
+            "psnr": 31.030066734006727
+          },
+          "generator_sha256": "3f90cdafffa23bf0604e658c9f3fde9857b88c2214d4f9f925c5a0b23d889add",
+          "critic_sha256": "31bbde119149accbde3ca4081d2331f03dfd7cc0122683a1c34038f4a8442201",
+          "epoch_compute_seconds": 30.144476000001305
+        },
+        {
+          "epoch": 2,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "b0c22dfc00247e8229c8b0edc770b566f3644063eb57f703594675912a84825b",
+          "losses": {
+            "d_real": 23.212313079833987,
+            "d_fake": 21.809588241577146,
+            "w_est": 1.402724838256836,
+            "gp": 0.0035157435340806838,
+            "total_d": -1.3675674080848694,
+            "grad_d": 33.1258237674263,
+            "l1": 0.012673948891460896,
+            "adv": -21.59937858581543,
+            "regional": 0.04726361661880788,
+            "edge": 0.13566953951276897,
+            "weighted_edge": 0.0,
+            "total_g": -20.284719949665373,
+            "grad_g": 64.78589703744737
+          },
+          "family_losses": {
+            "0": 0.06661174178868112,
+            "1": 0.036823881572844275,
+            "2": 0.02730655917722591,
+            "3": 0.06896563544106575
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8222946485428873,
+            "psnr": 30.92447327802092
+          },
+          "generator_sha256": "8953e02334fe961f3c15d31788b4af58281caf0c1b0b02aecc7d396f2da3816e",
+          "critic_sha256": "1f1187c8c44af95b72acc312dc884b58c27d7fa4881db977e77b57d94eb14b50",
+          "epoch_compute_seconds": 38.811547500001325
+        }
+      ],
+      "checkpoint_sha256": "c76175be7f7288cfdc2902397ba37fcee50e6b5170177486938205b05334280d",
+      "predictions_sha256": "37855ec6e82c1b65b6dc9ef7bdfb664dea5882d8fc4619b8e2f4f64e842b29e2",
+      "config_sha256": "f3ea86953acceedb23132e10efc5c5eccd6a2770acb9654be4fc3b78f69a8dd1"
+    },
+    {
+      "pair": "B1",
+      "arm": "C1",
+      "mode": "continua",
+      "history": [
+        {
+          "epoch": 1,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "61f7d9beb24467646881d0993b622ec575fc7cf67334e7428fc025167cdb3f95",
+          "losses": {
+            "d_real": 23.56878032684326,
+            "d_fake": 22.571340370178223,
+            "w_est": 0.9974399566650392,
+            "gp": 0.005239665228873491,
+            "total_d": -0.9450433075428009,
+            "grad_d": 59.16986900596184,
+            "l1": 0.013244356960058212,
+            "adv": -22.351594924926758,
+            "regional": 0.06862365727387781,
+            "edge": 0.141705267187441,
+            "weighted_edge": 0.0891326130609004,
+            "total_g": -20.869403420522154,
+            "grad_g": 56.462313158081685
+          },
+          "family_losses": {
+            "0": 0.10403987078142674,
+            "1": 0.05232805893869741,
+            "2": 0.01628922614411943,
+            "3": 0.12038295153043026
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8238576433029016,
+            "psnr": 31.031451577677466
+          },
+          "generator_sha256": "945042d078a72135ce1edc6284e67955471ac90cf6705223b6c656b8284c3e97",
+          "critic_sha256": "386ddae924b58a9463e1f977a8f586785b22b367396d76fbcd029b0d04f3a380",
+          "epoch_compute_seconds": 35.714942400001746
+        },
+        {
+          "epoch": 2,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "b0c22dfc00247e8229c8b0edc770b566f3644063eb57f703594675912a84825b",
+          "losses": {
+            "d_real": 23.214664649963375,
+            "d_fake": 21.81190586090088,
+            "w_est": 1.4027587890625002,
+            "gp": 0.003514522593468428,
+            "total_d": -1.3676135420799256,
+            "grad_d": 33.08523856518959,
+            "l1": 0.012659892905503511,
+            "adv": -21.60297966003418,
+            "regional": 0.04589857826475544,
+            "edge": 0.13071361112758167,
+            "weighted_edge": 0.08221886139924889,
+            "total_g": -20.20887291678131,
+            "grad_g": 64.09967108404318
+          },
+          "family_losses": {
+            "0": 0.06627616143994075,
+            "1": 0.036979129512336895,
+            "2": 0.02213216507911331,
+            "3": 0.06946540241571948
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8223354641525515,
+            "psnr": 30.925128978912177
+          },
+          "generator_sha256": "5d0fd0fc01901d18c9c5b7544928993bef8075ddd7358ff4832e501718d74f1a",
+          "critic_sha256": "46d5f8eb0cf187cf9c57d478d8882d36c3b569b32bd2a6a194a883b30f87be30",
+          "epoch_compute_seconds": 37.61747119999927
+        }
+      ],
+      "checkpoint_sha256": "bcad9e8d10268c5aaa0c58cf5e4af9b18499a42a184563d08a4fd0db2042e943",
+      "predictions_sha256": "aa1feb9a6bd4d9ec18205c3a44ca6a0e247a94e06876e61d2cc0bb762bc43be5",
+      "config_sha256": "3ffe70026c53211529dd10664406cceea7f06337377ec2b09c2f68a3c9802ad2"
+    },
+    {
+      "pair": "B1",
+      "arm": "C1",
+      "mode": "recuperada",
+      "history": [
+        {
+          "epoch": 1,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "61f7d9beb24467646881d0993b622ec575fc7cf67334e7428fc025167cdb3f95",
+          "losses": {
+            "d_real": 23.56878032684326,
+            "d_fake": 22.571340370178223,
+            "w_est": 0.9974399566650392,
+            "gp": 0.005239665228873491,
+            "total_d": -0.9450433075428009,
+            "grad_d": 59.16986900596184,
+            "l1": 0.013244356960058212,
+            "adv": -22.351594924926758,
+            "regional": 0.06862365727387781,
+            "edge": 0.141705267187441,
+            "weighted_edge": 0.0891326130609004,
+            "total_g": -20.869403420522154,
+            "grad_g": 56.462313158081685
+          },
+          "family_losses": {
+            "0": 0.10403987078142674,
+            "1": 0.05232805893869741,
+            "2": 0.01628922614411943,
+            "3": 0.12038295153043026
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8238576433029016,
+            "psnr": 31.031451577677466
+          },
+          "generator_sha256": "945042d078a72135ce1edc6284e67955471ac90cf6705223b6c656b8284c3e97",
+          "critic_sha256": "386ddae924b58a9463e1f977a8f586785b22b367396d76fbcd029b0d04f3a380",
+          "epoch_compute_seconds": 37.738934599998174
+        },
+        {
+          "epoch": 2,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "b0c22dfc00247e8229c8b0edc770b566f3644063eb57f703594675912a84825b",
+          "losses": {
+            "d_real": 23.214664649963375,
+            "d_fake": 21.81190586090088,
+            "w_est": 1.4027587890625002,
+            "gp": 0.003514522593468428,
+            "total_d": -1.3676135420799256,
+            "grad_d": 33.08523856518959,
+            "l1": 0.012659892905503511,
+            "adv": -21.60297966003418,
+            "regional": 0.04589857826475544,
+            "edge": 0.13071361112758167,
+            "weighted_edge": 0.08221886139924889,
+            "total_g": -20.20887291678131,
+            "grad_g": 64.09967108404318
+          },
+          "family_losses": {
+            "0": 0.06627616143994075,
+            "1": 0.036979129512336895,
+            "2": 0.02213216507911331,
+            "3": 0.06946540241571948
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8223354641525515,
+            "psnr": 30.925128978912177
+          },
+          "generator_sha256": "5d0fd0fc01901d18c9c5b7544928993bef8075ddd7358ff4832e501718d74f1a",
+          "critic_sha256": "46d5f8eb0cf187cf9c57d478d8882d36c3b569b32bd2a6a194a883b30f87be30",
+          "epoch_compute_seconds": 37.78831849999551
+        }
+      ],
+      "checkpoint_sha256": "f83980d523a18d31d7153e4b720209c9d5a7348a408f5634b6658902cea8fa8f",
+      "predictions_sha256": "aa1feb9a6bd4d9ec18205c3a44ca6a0e247a94e06876e61d2cc0bb762bc43be5",
+      "config_sha256": "3ffe70026c53211529dd10664406cceea7f06337377ec2b09c2f68a3c9802ad2"
+    },
+    {
+      "pair": "B2",
+      "arm": "C0",
+      "mode": "continua",
+      "history": [
+        {
+          "epoch": 1,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "b0c22dfc00247e8229c8b0edc770b566f3644063eb57f703594675912a84825b",
+          "losses": {
+            "d_real": 23.453163528442385,
+            "d_fake": 22.56796054840088,
+            "w_est": 0.8852029800415039,
+            "gp": 0.006192299677059055,
+            "total_d": -0.8232799857854842,
+            "grad_d": 60.11986119842443,
+            "l1": 0.013248559087514877,
+            "adv": -22.34806728363037,
+            "regional": 0.0708141434874624,
+            "edge": 0.14300491176687724,
+            "weighted_edge": 0.0,
+            "total_g": -20.95239733569955,
+            "grad_g": 42.68172586492948
+          },
+          "family_losses": {
+            "0": 0.10393287554593122,
+            "1": 0.044974103122577824,
+            "2": 0.028916959810720178,
+            "3": 0.12664254451833437
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8237857002958309,
+            "psnr": 31.031244941683195
+          },
+          "generator_sha256": "da93eff411cfc49ba58e30e8bbe4e4555908453becf934a70d4a62e4714e45ac",
+          "critic_sha256": "b8e733b8f5a31709a5d3ef92cfcf36072375024009f66c970100499e2e43bae6",
+          "epoch_compute_seconds": 37.603777300006186
+        },
+        {
+          "epoch": 2,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "a27e487609184c8807da136a013c2cd38acfa7ff85b41772d9e10b27e7465721",
+          "losses": {
+            "d_real": 23.279494094848634,
+            "d_fake": 21.954152297973632,
+            "w_est": 1.325341796875,
+            "gp": 0.004131928726565093,
+            "total_d": -1.2840225100517273,
+            "grad_d": 35.45886466819458,
+            "l1": 0.012706868350505829,
+            "adv": -21.726686477661133,
+            "regional": 0.04588353843741875,
+            "edge": 0.13718587398381593,
+            "weighted_edge": 0.0,
+            "total_g": -20.41011583595223,
+            "grad_g": 57.47344000192801
+          },
+          "family_losses": {
+            "0": 0.06871812288794876,
+            "1": 0.038575959797176596,
+            "2": 0.016873474405773914,
+            "3": 0.07168099698175245
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8222307431975576,
+            "psnr": 30.923577795281165
+          },
+          "generator_sha256": "9eb0460005f53f9fdda3d53f37005cea85675145e7a5f7eb9424eb337fce6081",
+          "critic_sha256": "60a4ca5662fa2ba096b0109be28059e9e3452a0bc7d0b50dce908b7ee7a0f599",
+          "epoch_compute_seconds": 36.11170310000307
+        }
+      ],
+      "checkpoint_sha256": "85b5fbd52d8b18135565cea3d3ce22857aa1615e26d09df50a2461176262b368",
+      "predictions_sha256": "c252a672fbc6fd6f1d9ceb7627e259f2d20cf0c2a5e4beb53401e9da6f938b97",
+      "config_sha256": "08126bbbb68033608b9352def5805ef89d2f324d610350a3f816686bcad578de"
+    },
+    {
+      "pair": "B2",
+      "arm": "C0",
+      "mode": "recuperada",
+      "history": [
+        {
+          "epoch": 1,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "b0c22dfc00247e8229c8b0edc770b566f3644063eb57f703594675912a84825b",
+          "losses": {
+            "d_real": 23.453163528442385,
+            "d_fake": 22.56796054840088,
+            "w_est": 0.8852029800415039,
+            "gp": 0.006192299677059055,
+            "total_d": -0.8232799857854842,
+            "grad_d": 60.11986119842443,
+            "l1": 0.013248559087514877,
+            "adv": -22.34806728363037,
+            "regional": 0.0708141434874624,
+            "edge": 0.14300491176687724,
+            "weighted_edge": 0.0,
+            "total_g": -20.95239733569955,
+            "grad_g": 42.68172586492948
+          },
+          "family_losses": {
+            "0": 0.10393287554593122,
+            "1": 0.044974103122577824,
+            "2": 0.028916959810720178,
+            "3": 0.12664254451833437
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8237857002958309,
+            "psnr": 31.031244941683195
+          },
+          "generator_sha256": "da93eff411cfc49ba58e30e8bbe4e4555908453becf934a70d4a62e4714e45ac",
+          "critic_sha256": "b8e733b8f5a31709a5d3ef92cfcf36072375024009f66c970100499e2e43bae6",
+          "epoch_compute_seconds": 38.24871219999477
+        },
+        {
+          "epoch": 2,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "a27e487609184c8807da136a013c2cd38acfa7ff85b41772d9e10b27e7465721",
+          "losses": {
+            "d_real": 23.279494094848634,
+            "d_fake": 21.954152297973632,
+            "w_est": 1.325341796875,
+            "gp": 0.004131928726565093,
+            "total_d": -1.2840225100517273,
+            "grad_d": 35.45886466819458,
+            "l1": 0.012706868350505829,
+            "adv": -21.726686477661133,
+            "regional": 0.04588353843741875,
+            "edge": 0.13718587398381593,
+            "weighted_edge": 0.0,
+            "total_g": -20.41011583595223,
+            "grad_g": 57.47344000192801
+          },
+          "family_losses": {
+            "0": 0.06871812288794876,
+            "1": 0.038575959797176596,
+            "2": 0.016873474405773914,
+            "3": 0.07168099698175245
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8222307431975576,
+            "psnr": 30.923577795281165
+          },
+          "generator_sha256": "9eb0460005f53f9fdda3d53f37005cea85675145e7a5f7eb9424eb337fce6081",
+          "critic_sha256": "60a4ca5662fa2ba096b0109be28059e9e3452a0bc7d0b50dce908b7ee7a0f599",
+          "epoch_compute_seconds": 38.27889100000175
+        }
+      ],
+      "checkpoint_sha256": "fac98127713111d012be3cb71d3064641d3f87c34843ba7868d64afeb3f1344b",
+      "predictions_sha256": "c252a672fbc6fd6f1d9ceb7627e259f2d20cf0c2a5e4beb53401e9da6f938b97",
+      "config_sha256": "08126bbbb68033608b9352def5805ef89d2f324d610350a3f816686bcad578de"
+    },
+    {
+      "pair": "B2",
+      "arm": "C1",
+      "mode": "continua",
+      "history": [
+        {
+          "epoch": 1,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "b0c22dfc00247e8229c8b0edc770b566f3644063eb57f703594675912a84825b",
+          "losses": {
+            "d_real": 23.452278518676756,
+            "d_fake": 22.566613960266118,
+            "w_est": 0.8856645584106446,
+            "gp": 0.006196446507237852,
+            "total_d": -0.8237001031637191,
+            "grad_d": 60.20634095619967,
+            "l1": 0.013249807059764862,
+            "adv": -22.345927238464355,
+            "regional": 0.07159549079875346,
+            "edge": 0.1422623039907148,
+            "weighted_edge": 0.08948298921015961,
+            "total_g": -20.859868022676636,
+            "grad_g": 45.57042376355697
+          },
+          "family_losses": {
+            "0": 0.10398999704827983,
+            "1": 0.044986657443192024,
+            "2": 0.03143867250174015,
+            "3": 0.12667864595781697
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.823798805435072,
+            "psnr": 31.03083181720579
+          },
+          "generator_sha256": "a6b0067aeb178d4951a9576b495219ceede4cbb40d4f122a5048d97bd61b9396",
+          "critic_sha256": "eb1cc32d3d1d4a7248a9f8fd57ae56b8d5ffdd525bb97572553713202205f82d",
+          "epoch_compute_seconds": 38.52845949999755
+        },
+        {
+          "epoch": 2,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "a27e487609184c8807da136a013c2cd38acfa7ff85b41772d9e10b27e7465721",
+          "losses": {
+            "d_real": 23.276395416259767,
+            "d_fake": 21.948780632019044,
+            "w_est": 1.3276147842407227,
+            "gp": 0.004139764612773433,
+            "total_d": -1.2862171292304994,
+            "grad_d": 35.54341626523889,
+            "l1": 0.012705645523965359,
+            "adv": -21.71959686279297,
+            "regional": 0.04676154626626535,
+            "edge": 0.13267610234605492,
+            "weighted_edge": 0.08345326837566855,
+            "total_g": -20.318817968866366,
+            "grad_g": 59.029377355412365
+          },
+          "family_losses": {
+            "0": 0.0689525863092495,
+            "1": 0.03863020260674971,
+            "2": 0.018605642384460497,
+            "3": 0.07267134694838699
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8222824448127846,
+            "psnr": 30.92488249716233
+          },
+          "generator_sha256": "818609fa6659545cd9c9949edc2e31863f119648a4ea2bbd099760b895cfc787",
+          "critic_sha256": "608694492fee92fab7ae28cd23093159475cdc9a0a1a60e1a82b706ac08884bb",
+          "epoch_compute_seconds": 37.81875469999795
+        }
+      ],
+      "checkpoint_sha256": "fc8e9be086b37b335f0e833de728f9bfa524993da9bc2a24c1145746a0d2ca30",
+      "predictions_sha256": "b47974a2a4b28d41b353cae07ef7e42bc5280cdfd505399fbebd58760fdd7224",
+      "config_sha256": "93de0a38cadbd276354bce45733e249015d6327e1874ae4dde6798e93893be2b"
+    },
+    {
+      "pair": "B2",
+      "arm": "C1",
+      "mode": "recuperada",
+      "history": [
+        {
+          "epoch": 1,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "b0c22dfc00247e8229c8b0edc770b566f3644063eb57f703594675912a84825b",
+          "losses": {
+            "d_real": 23.452278518676756,
+            "d_fake": 22.566613960266118,
+            "w_est": 0.8856645584106446,
+            "gp": 0.006196446507237852,
+            "total_d": -0.8237001031637191,
+            "grad_d": 60.20634095619967,
+            "l1": 0.013249807059764862,
+            "adv": -22.345927238464355,
+            "regional": 0.07159549079875346,
+            "edge": 0.1422623039907148,
+            "weighted_edge": 0.08948298921015961,
+            "total_g": -20.859868022676636,
+            "grad_g": 45.57042376355697
+          },
+          "family_losses": {
+            "0": 0.10398999704827983,
+            "1": 0.044986657443192024,
+            "2": 0.03143867250174015,
+            "3": 0.12667864595781697
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.823798805435072,
+            "psnr": 31.03083181720579
+          },
+          "generator_sha256": "a6b0067aeb178d4951a9576b495219ceede4cbb40d4f122a5048d97bd61b9396",
+          "critic_sha256": "eb1cc32d3d1d4a7248a9f8fd57ae56b8d5ffdd525bb97572553713202205f82d",
+          "epoch_compute_seconds": 37.636397100002796
+        },
+        {
+          "epoch": 2,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "a27e487609184c8807da136a013c2cd38acfa7ff85b41772d9e10b27e7465721",
+          "losses": {
+            "d_real": 23.276395416259767,
+            "d_fake": 21.948780632019044,
+            "w_est": 1.3276147842407227,
+            "gp": 0.004139764612773433,
+            "total_d": -1.2862171292304994,
+            "grad_d": 35.54341626523889,
+            "l1": 0.012705645523965359,
+            "adv": -21.71959686279297,
+            "regional": 0.04676154626626535,
+            "edge": 0.13267610234605492,
+            "weighted_edge": 0.08345326837566855,
+            "total_g": -20.318817968866366,
+            "grad_g": 59.029377355412365
+          },
+          "family_losses": {
+            "0": 0.0689525863092495,
+            "1": 0.03863020260674971,
+            "2": 0.018605642384460497,
+            "3": 0.07267134694838699
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8222824448127846,
+            "psnr": 30.92488249716233
+          },
+          "generator_sha256": "818609fa6659545cd9c9949edc2e31863f119648a4ea2bbd099760b895cfc787",
+          "critic_sha256": "608694492fee92fab7ae28cd23093159475cdc9a0a1a60e1a82b706ac08884bb",
+          "epoch_compute_seconds": 37.68857190000563
+        }
+      ],
+      "checkpoint_sha256": "559e7ae16bd137fb7e9fecbf2cc88a0fbdea586f7626a082206dcb0e5b4a649a",
+      "predictions_sha256": "b47974a2a4b28d41b353cae07ef7e42bc5280cdfd505399fbebd58760fdd7224",
+      "config_sha256": "93de0a38cadbd276354bce45733e249015d6327e1874ae4dde6798e93893be2b"
+    },
+    {
+      "pair": "B3",
+      "arm": "C0",
+      "mode": "continua",
+      "history": [
+        {
+          "epoch": 1,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "a27e487609184c8807da136a013c2cd38acfa7ff85b41772d9e10b27e7465721",
+          "losses": {
+            "d_real": 23.468301582336426,
+            "d_fake": 22.595276069641116,
+            "w_est": 0.8730255126953125,
+            "gp": 0.005508103803731501,
+            "total_d": -0.8179444730281831,
+            "grad_d": 60.144468725645986,
+            "l1": 0.013245936948806047,
+            "adv": -22.395421981811523,
+            "regional": 0.06632871511161191,
+            "edge": 0.1431966208410428,
+            "weighted_edge": 0.0,
+            "total_g": -21.004499722693566,
+            "grad_g": 45.000869951999164
+          },
+          "family_losses": {
+            "0": 0.10367616196840013,
+            "1": 0.04608257667044463,
+            "2": 0.018862875798965062,
+            "3": 0.11592251318099693
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8238523908951805,
+            "psnr": 31.033056731439288
+          },
+          "generator_sha256": "cbfb8139edf494e89d990e1cd952b3d143f939b7203dbd3cab6da7385dae11a4",
+          "critic_sha256": "f69286f51394b35311c27339bcf138817b8e9605ecd8b96b0844e95f470f0539",
+          "epoch_compute_seconds": 37.45592739999847
+        },
+        {
+          "epoch": 2,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "73cba21842c6e23a42235b5c351ca12af0d1b0e4a75711e56e96dc783d8bc748",
+          "losses": {
+            "d_real": 23.22593402862549,
+            "d_fake": 21.88222942352295,
+            "w_est": 1.3437046051025392,
+            "gp": 0.005050277640111745,
+            "total_d": -1.2932018280029298,
+            "grad_d": 38.119100745316885,
+            "l1": 0.012701008934527636,
+            "adv": -21.59520721435547,
+            "regional": 0.049072875014346165,
+            "edge": 0.13732673409330348,
+            "weighted_edge": 0.0,
+            "total_g": -20.27603279209991,
+            "grad_g": 61.08598731498489
+          },
+          "family_losses": {
+            "0": 0.06980392554308423,
+            "1": 0.04289588143799733,
+            "2": 0.016427912696210134,
+            "3": 0.07927267771588975
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8223249118356614,
+            "psnr": 30.926676825077188
+          },
+          "generator_sha256": "7bd7061e14a5a8925de66363a781b4594808b737f06f27fdf3d2bca5f92f1f2b",
+          "critic_sha256": "20d4de6b5748c46eeccf517b51ccbd78ab1cc56d2792dff071ffae993e313105",
+          "epoch_compute_seconds": 36.13003970000136
+        }
+      ],
+      "checkpoint_sha256": "bcfa4bfaa29425a9cf689de198f6cb07e357ec01352990482364d8ecff93f796",
+      "predictions_sha256": "bbb2aa00808c26a293243fb5ef910ae9d6206f41a5250f0bdfd38fa7362f6160",
+      "config_sha256": "0aff37930e1a94dc91e1d409c02f8ddf883f862b31709f17904d2e04a9c9b98d"
+    },
+    {
+      "pair": "B3",
+      "arm": "C0",
+      "mode": "recuperada",
+      "history": [
+        {
+          "epoch": 1,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "a27e487609184c8807da136a013c2cd38acfa7ff85b41772d9e10b27e7465721",
+          "losses": {
+            "d_real": 23.468301582336426,
+            "d_fake": 22.595276069641116,
+            "w_est": 0.8730255126953125,
+            "gp": 0.005508103803731501,
+            "total_d": -0.8179444730281831,
+            "grad_d": 60.144468725645986,
+            "l1": 0.013245936948806047,
+            "adv": -22.395421981811523,
+            "regional": 0.06632871511161191,
+            "edge": 0.1431966208410428,
+            "weighted_edge": 0.0,
+            "total_g": -21.004499722693566,
+            "grad_g": 45.000869951999164
+          },
+          "family_losses": {
+            "0": 0.10367616196840013,
+            "1": 0.04608257667044463,
+            "2": 0.018862875798965062,
+            "3": 0.11592251318099693
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8238523908951805,
+            "psnr": 31.033056731439288
+          },
+          "generator_sha256": "cbfb8139edf494e89d990e1cd952b3d143f939b7203dbd3cab6da7385dae11a4",
+          "critic_sha256": "f69286f51394b35311c27339bcf138817b8e9605ecd8b96b0844e95f470f0539",
+          "epoch_compute_seconds": 38.271051499999885
+        },
+        {
+          "epoch": 2,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "73cba21842c6e23a42235b5c351ca12af0d1b0e4a75711e56e96dc783d8bc748",
+          "losses": {
+            "d_real": 23.22593402862549,
+            "d_fake": 21.88222942352295,
+            "w_est": 1.3437046051025392,
+            "gp": 0.005050277640111745,
+            "total_d": -1.2932018280029298,
+            "grad_d": 38.119100745316885,
+            "l1": 0.012701008934527636,
+            "adv": -21.59520721435547,
+            "regional": 0.049072875014346165,
+            "edge": 0.13732673409330348,
+            "weighted_edge": 0.0,
+            "total_g": -20.27603279209991,
+            "grad_g": 61.08598731498489
+          },
+          "family_losses": {
+            "0": 0.06980392554308423,
+            "1": 0.04289588143799733,
+            "2": 0.016427912696210134,
+            "3": 0.07927267771588975
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8223249118356614,
+            "psnr": 30.926676825077188
+          },
+          "generator_sha256": "7bd7061e14a5a8925de66363a781b4594808b737f06f27fdf3d2bca5f92f1f2b",
+          "critic_sha256": "20d4de6b5748c46eeccf517b51ccbd78ab1cc56d2792dff071ffae993e313105",
+          "epoch_compute_seconds": 37.763361299999815
+        }
+      ],
+      "checkpoint_sha256": "413c714e21703cc67e96d7e244db26b4e55e80b44a73c0044cb3f654d145c941",
+      "predictions_sha256": "bbb2aa00808c26a293243fb5ef910ae9d6206f41a5250f0bdfd38fa7362f6160",
+      "config_sha256": "0aff37930e1a94dc91e1d409c02f8ddf883f862b31709f17904d2e04a9c9b98d"
+    },
+    {
+      "pair": "B3",
+      "arm": "C1",
+      "mode": "continua",
+      "history": [
+        {
+          "epoch": 1,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "a27e487609184c8807da136a013c2cd38acfa7ff85b41772d9e10b27e7465721",
+          "losses": {
+            "d_real": 23.467451667785646,
+            "d_fake": 22.59390163421631,
+            "w_est": 0.8735500335693359,
+            "gp": 0.005513189057819545,
+            "total_d": -0.8184181511402131,
+            "grad_d": 60.30865561945864,
+            "l1": 0.013241765554994345,
+            "adv": -22.39237403869629,
+            "regional": 0.06693882573338744,
+            "edge": 0.14171932130072507,
+            "weighted_edge": 0.08914145309815606,
+            "total_g": -20.91211697153467,
+            "grad_g": 47.11350937453199
+          },
+          "family_losses": {
+            "0": 0.10357839719063167,
+            "1": 0.04606971479287253,
+            "2": 0.020607102689504275,
+            "3": 0.1164407949830732
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8238958517918991,
+            "psnr": 31.033985840973184
+          },
+          "generator_sha256": "7a939e3948b2aff9c6d3e7c20dc2c84a3fdc34d7d619461d275e538b77bff7c0",
+          "critic_sha256": "70befa472f928eeac6b328cdb95678fb06d4e08175d538199915f0a98ea81593",
+          "epoch_compute_seconds": 38.18299549999938
+        },
+        {
+          "epoch": 2,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "73cba21842c6e23a42235b5c351ca12af0d1b0e4a75711e56e96dc783d8bc748",
+          "losses": {
+            "d_real": 23.227442359924318,
+            "d_fake": 21.881026840209962,
+            "w_est": 1.3464155197143555,
+            "gp": 0.005056969413999468,
+            "total_d": -1.2958458304405212,
+            "grad_d": 38.033339555118225,
+            "l1": 0.012695556040853262,
+            "adv": -21.596022605895996,
+            "regional": 0.049231186251127115,
+            "edge": 0.13225696545589616,
+            "weighted_edge": 0.08318963127175868,
+            "total_g": -20.194045742840885,
+            "grad_g": 63.1856323383045
+          },
+          "family_losses": {
+            "0": 0.06996088070791018,
+            "1": 0.04272518939398123,
+            "2": 0.016755921191921708,
+            "3": 0.07916888878142758
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8224092564409968,
+            "psnr": 30.929513702409658
+          },
+          "generator_sha256": "95416d63c17bbc282b652c37a0639e9e6bd1a14ec9b4fd2563e43902a11f0659",
+          "critic_sha256": "6968ff22c654149f07e9e0bc156b94f5ea9c6d881703d767f11b2d8f4a5cf755",
+          "epoch_compute_seconds": 37.03283299999748
+        }
+      ],
+      "checkpoint_sha256": "f19636ffdda53beba786d239e3cdd90613bfceb32f436c856f57f7e4320e4696",
+      "predictions_sha256": "a1e2c7bc7a3e26b465597a7a7a2e6b518a67c0eb7fff06c6a3db0c498d461cba",
+      "config_sha256": "84debc900c56dfc3037c0678d205a1b642bc96ed5f234632136225c0f0499d82"
+    },
+    {
+      "pair": "B3",
+      "arm": "C1",
+      "mode": "recuperada",
+      "history": [
+        {
+          "epoch": 1,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "a27e487609184c8807da136a013c2cd38acfa7ff85b41772d9e10b27e7465721",
+          "losses": {
+            "d_real": 23.467451667785646,
+            "d_fake": 22.59390163421631,
+            "w_est": 0.8735500335693359,
+            "gp": 0.005513189057819545,
+            "total_d": -0.8184181511402131,
+            "grad_d": 60.30865561945864,
+            "l1": 0.013241765554994345,
+            "adv": -22.39237403869629,
+            "regional": 0.06693882573338744,
+            "edge": 0.14171932130072507,
+            "weighted_edge": 0.08914145309815606,
+            "total_g": -20.91211697153467,
+            "grad_g": 47.11350937453199
+          },
+          "family_losses": {
+            "0": 0.10357839719063167,
+            "1": 0.04606971479287253,
+            "2": 0.020607102689504275,
+            "3": 0.1164407949830732
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8238958517918991,
+            "psnr": 31.033985840973184
+          },
+          "generator_sha256": "7a939e3948b2aff9c6d3e7c20dc2c84a3fdc34d7d619461d275e538b77bff7c0",
+          "critic_sha256": "70befa472f928eeac6b328cdb95678fb06d4e08175d538199915f0a98ea81593",
+          "epoch_compute_seconds": 36.20779909999692
+        },
+        {
+          "epoch": 2,
+          "steps_g": 2,
+          "steps_d": 10,
+          "order_sha256": "73cba21842c6e23a42235b5c351ca12af0d1b0e4a75711e56e96dc783d8bc748",
+          "losses": {
+            "d_real": 23.227442359924318,
+            "d_fake": 21.881026840209962,
+            "w_est": 1.3464155197143555,
+            "gp": 0.005056969413999468,
+            "total_d": -1.2958458304405212,
+            "grad_d": 38.033339555118225,
+            "l1": 0.012695556040853262,
+            "adv": -21.596022605895996,
+            "regional": 0.049231186251127115,
+            "edge": 0.13225696545589616,
+            "weighted_edge": 0.08318963127175868,
+            "total_g": -20.194045742840885,
+            "grad_g": 63.1856323383045
+          },
+          "family_losses": {
+            "0": 0.06996088070791018,
+            "1": 0.04272518939398123,
+            "2": 0.016755921191921708,
+            "3": 0.07916888878142758
+          },
+          "family_samples": {
+            "0": 8,
+            "1": 8,
+            "2": 8,
+            "3": 6
+          },
+          "valid_regions_total": 32,
+          "validation": {
+            "n": 8,
+            "ssim": 0.8224092564409968,
+            "psnr": 30.929513702409658
+          },
+          "generator_sha256": "95416d63c17bbc282b652c37a0639e9e6bd1a14ec9b4fd2563e43902a11f0659",
+          "critic_sha256": "6968ff22c654149f07e9e0bc156b94f5ea9c6d881703d767f11b2d8f4a5cf755",
+          "epoch_compute_seconds": 28.082530400002724
+        }
+      ],
+      "checkpoint_sha256": "4e4e70e0739a045e03cf2537c231b41b15df11f6570db1bb8e5f1dbe094fc9c8",
+      "predictions_sha256": "a1e2c7bc7a3e26b465597a7a7a2e6b518a67c0eb7fff06c6a3db0c498d461cba",
+      "config_sha256": "84debc900c56dfc3037c0678d205a1b642bc96ed5f234632136225c0f0499d82"
+    }
+  ],
+  "technical_synthesis": {
+    "schema": "oe2-cgan-borde-summary-v1",
+    "stage": "tecnica",
+    "pairs": [
+      "B1",
+      "B2",
+      "B3"
+    ],
+    "seeds": {
+      "B1": 2026100411,
+      "B2": 2026100412,
+      "B3": 2026100413
+    },
+    "delta_definition": "C1 minus C0; negative favors Q/errors, positive favors SSIM/PSNR",
+    "paired_differences": {
+      "B1": {
+        "Q": 0.0007146980925769181,
+        "sky_mae": -9.698604310586639e-05,
+        "edge_mae": -0.004768330906653073,
+        "contrast_absolute_error": 0.00036888427420428416,
+        "ssim": 4.0815609664290875e-05,
+        "psnr": 0.0006557008912579931
+      },
+      "B2": {
+        "Q": 0.0007099407510133271,
+        "sky_mae": 0.000793312676035815,
+        "edge_mae": -0.00515452750608722,
+        "contrast_absolute_error": 0.0003729191940104182,
+        "ssim": 5.1701615226940056e-05,
+        "psnr": 0.0013047018811640498
+      },
+      "B3": {
+        "Q": -0.0002135197381661208,
+        "sky_mae": 4.5264048240609145e-05,
+        "edge_mae": -0.00597557801622739,
+        "contrast_absolute_error": -0.0004429096856357756,
+        "ssim": 8.43446053354624e-05,
+        "psnr": 0.002836877332470067
+      }
+    },
+    "descriptive_summary": {
+      "Q": {
+        "values": [
+          0.0007146980925769181,
+          0.0007099407510133271,
+          -0.0002135197381661208
+        ],
+        "median": 0.0007099407510133271,
+        "min": -0.0002135197381661208,
+        "max": 0.0007146980925769181
+      },
+      "sky_mae": {
+        "values": [
+          -9.698604310586639e-05,
+          0.000793312676035815,
+          4.5264048240609145e-05
+        ],
+        "median": 4.5264048240609145e-05,
+        "min": -9.698604310586639e-05,
+        "max": 0.000793312676035815
+      },
+      "edge_mae": {
+        "values": [
+          -0.004768330906653073,
+          -0.00515452750608722,
+          -0.00597557801622739
+        ],
+        "median": -0.00515452750608722,
+        "min": -0.00597557801622739,
+        "max": -0.004768330906653073
+      },
+      "contrast_absolute_error": {
+        "values": [
+          0.00036888427420428416,
+          0.0003729191940104182,
+          -0.0004429096856357756
+        ],
+        "median": 0.00036888427420428416,
+        "min": -0.0004429096856357756,
+        "max": 0.0003729191940104182
+      },
+      "ssim": {
+        "values": [
+          4.0815609664290875e-05,
+          5.1701615226940056e-05,
+          8.43446053354624e-05
+        ],
+        "median": 5.1701615226940056e-05,
+        "min": 4.0815609664290875e-05,
+        "max": 8.43446053354624e-05
+      },
+      "psnr": {
+        "values": [
+          0.0006557008912579931,
+          0.0013047018811640498,
+          0.002836877332470067
+        ],
+        "median": 0.0013047018811640498,
+        "min": 0.0006557008912579931,
+        "max": 0.002836877332470067
+      }
+    },
+    "checks_by_pair": {},
+    "concordant_pairs": null,
+    "pairs_reducing_Q": 1,
+    "decision": "solo_comprobacion_tecnica",
+    "physical_acceptance": false,
+    "heldout_opened": false,
+    "independent_from_scratch_training": false,
+    "limitations": "Tres continuaciones condicionadas al mismo checkpoint. Sin significaci\u00f3n ni aceptaci\u00f3n f\u00edsica; conservar tablas completas de vistas/anomal\u00edas.",
+    "evaluation_sha256": {
+      "B1": "2c4acc2181c85b036861412dccba3e527bc535d3663a6df2127069527a433ad3",
+      "B2": "16d471e8c504bed1a1ad9d87ad485eccd04519f7089b97b0ff259f1d2ab5240a",
+      "B3": "ce9f007821fd6661cccaba2f476cd4608f0c0a30d13b7d4740a8569e92770887"
+    }
+  },
+  "inventory_summary": {
+    "schema": "oe2-edge-delivery-inventory-v1",
+    "stage": "tecnica",
+    "physical_acceptance": false,
+    "technical_gates": {
+      "B1": {
+        "exact_recovery": true,
+        "gpu_accepted": false
+      },
+      "B2": {
+        "exact_recovery": true,
+        "gpu_accepted": false
+      },
+      "B3": {
+        "exact_recovery": true,
+        "gpu_accepted": false
+      }
+    },
+    "binary_files": 43,
+    "total_bytes": 3389371861
+  },
+  "sources": {
+    "objetivo-2/herramientas/datos_ajuste.py": "2c89d770cc3d7b4fee66c977ff89af8faf6ab6bbca3ed12fe1f2a98734aa167f",
+    "objetivo-2/herramientas/ejecutar_ajuste.py": "8d49980e4e1c4b96347c81203a820cc5784b57473079562decbedd747fe11abb",
+    "objetivo-2/herramientas/perdida_cuentas_regionales.py": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+    "objetivo-2/herramientas/evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524",
+    "objetivo-2/implementacion/models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+    "objetivo-2/implementacion/scripts/evaluation/metrics.py": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42",
+    "objetivo-2/herramientas/revisar_ajuste.py": "294e4291b3bd10d6c0f597c9145867c4ac7f33cfd0bdacd5c78c3c4cee5ea750",
+    "objetivo-2/herramientas/evaluar_ajuste.py": "f0840197c20ff848dd79bfe3385eabc4beeaff632da67c580961bb14c13e721b",
+    "objetivo-2/herramientas/ejecutar_borde_cgan.py": "5f7bd0f4b32934bcafc36c7e2f6737951b9bc93c838d7d4b7628c53e59e2d7b4",
+    "objetivo-2/herramientas/revisar_borde_cgan.py": "4d48df3062fd10a97875abfcc9e0182b4ee92b9af00cdc9a11078b548a00fae7",
+    "objetivo-2/herramientas/evaluar_borde_cgan.py": "987e29854401ef4b5cfc62f574532d49aaa516449181d96e6b40d65636e53324",
+    "objetivo-2/herramientas/gradientes_critico.py": "76024538c9df1ba43e4c3c549e806137f820322b6d25aa3ff37bfb6c417da8be",
+    "objetivo-2/implementacion/models/patch_critic.py": "41fbbb005fd152d3ddf10e50721ac855108907714e150632d1942275736b84d8",
+    "objetivo-2/implementacion/scripts/training/losses.py": "8d950c772d923a98343b8cda787b28567df7d2bbd09c62f50085efb13f96c0a5",
+    "objetivo-2/herramientas/perdida_espacial_borde_experimental.py": "0d3900f7359659666d32c282a24f5bc5abcf73eb09b9ecb88cc9b0695927a082",
+    "objetivo-2/herramientas/resumir_borde_cgan.py": "415ad0bb11c2a295ff073e52bb6deffbca866d999363e14dad15a3ffa52d746e"
+  },
+  "auxiliary_sources": {
+    "objetivo-2/herramientas/ejecutar_borde_cgan.py": "5f7bd0f4b32934bcafc36c7e2f6737951b9bc93c838d7d4b7628c53e59e2d7b4",
+    "objetivo-2/herramientas/evaluar_borde_cgan.py": "987e29854401ef4b5cfc62f574532d49aaa516449181d96e6b40d65636e53324",
+    "objetivo-2/herramientas/inventariar_entrega_borde.py": "cadab52992153ac975af838f6c85d8103154a1a9705df5e1e4730a0f79fdca38",
+    "objetivo-2/herramientas/orquestar_borde_cgan.py": "714d0a8ab72e60e1140ce6deaa8dd2a7c5a5aff65e8f001bcd2fd1f284ff551b",
+    "objetivo-2/herramientas/perdida_espacial_borde_experimental.py": "0d3900f7359659666d32c282a24f5bc5abcf73eb09b9ecb88cc9b0695927a082",
+    "objetivo-2/herramientas/perfilar_gradientes_borde_cgan.py": "87bc41f2195e68a2b076a2ae4bb1c2041636641db81075fa330aced847c335ba",
+    "objetivo-2/herramientas/resumir_borde_cgan.py": "415ad0bb11c2a295ff073e52bb6deffbca866d999363e14dad15a3ffa52d746e",
+    "objetivo-2/herramientas/revisar_borde_cgan.py": "4d48df3062fd10a97875abfcc9e0182b4ee92b9af00cdc9a11078b548a00fae7",
+    "objetivo-2/herramientas/sondear_gradientes_borde_cgan.py": "5180716ddb0b0947a533ea544954d6074798d829f7d8016c2ac8f73f38e71c74",
+    "objetivo-2/herramientas/test_artefactos_borde_cgan.py": "0cc4300e817e8c81bf4a0673a4d95fe9ce9049ac3bdb72f3443c5bfe1c69bfee",
+    "objetivo-2/herramientas/test_integracion_borde_cgan.py": "ec9aa94b61bff9a789698e08ba2f742e72e47a56ba1dec1321f0edc3427a6135",
+    "objetivo-2/herramientas/test_orquestacion_borde_cgan.py": "65428a2eb4ccc2452019303812dfc33cb049670c3ee87cbe638ec2b6a980df8e",
+    "objetivo-2/herramientas/test_perdida_espacial_borde.py": "b97673407b41675132bfb61b3ce69564b228f5677d75862cf28c1f356f08bfc9",
+    "objetivo-2/herramientas/verificar_soporte_borde.py": "0574be7562f715ade69347a2ab1d31342254762aef7a073fd5cb38f60a154bac"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "torch": "2.6.0+cpu",
+    "cuda": null,
+    "device": "cpu",
+    "gpu": null,
+    "threads": 2,
+    "deterministic": true
+  },
+  "incidents_resolved": [
+    "UTF-8 explicit read in local source generator",
+    "Explicit parent creation in orchestration test with mocked subprocess"
+  ],
+  "limitations": [
+    "No local CUDA acceptance or five-epoch pilot.",
+    "Train profile fixed at initial checkpoint in eval mode, not an optimized coefficient.",
+    "Nine prospective descriptive checks do not define absolute physical acceptance."
+  ]
+}

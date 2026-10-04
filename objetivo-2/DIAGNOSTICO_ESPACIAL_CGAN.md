@@ -1,5 +1,7 @@
 # Diagnóstico espacial y preparación del ajuste E1
 
+**Actualización:** E1-03 y E1-04 se completaron en la [integración verificada](DISENO_BORDE_CGAN.md). El [siguiente trabajo es GPU](INSTRUCCIONES_BORDE_CGAN.md). El texto siguiente conserva el diagnóstico y el estado anterior a esa integración; sus menciones de falta de integración son históricas.
+
 Fecha de revisión: 2026-10-04, America/Bogota. Base: 866e286, posterior a la entrega f6518ff. **Estado: diagnóstico y componente experimental verificados localmente; integración y ensayo pendientes. No preparado para GPU.**
 
 ## Pregunta y alcance

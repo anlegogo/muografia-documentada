@@ -1,5 +1,8 @@
 # Índice de documentación
 
+- [Ensayo espacial E1: diseño, integración y verificación CPU](../objetivo-2/DISENO_BORDE_CGAN.md).
+- [Instrucciones GPU y entrega del ensayo E1](../objetivo-2/INSTRUCCIONES_BORDE_CGAN.md).
+
 - [Diagnóstico espacial cGAN y preparación experimental E1](../objetivo-2/DIAGNOSTICO_ESPACIAL_CGAN.md).
 
 - [Verificación independiente de la repetición cGAN R1–R3: binarios, inferencia y resultado científico](../objetivo-2/REVISION_REPETICION_F6518FF.md).

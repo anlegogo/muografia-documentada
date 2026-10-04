@@ -1,5 +1,12 @@
 # Registro de cambios
 
+## 2026-10-04 — Preparación ejecutable del ensayo espacial E1
+
+- Se fijó lambda_borde=0,629 mediante una regla anterior al perfil de doce lotes train (48 imágenes), sin ajustar con val. Se conservan los pesos iniciales.
+- Se integraron configuraciones B1–B3 y herramientas separadas, equivalencia exacta del control, recuperación y rechazo de identidades incompatibles. Se verificaron doce ejecuciones técnicas CPU, evaluaciones, síntesis y controles de artefactos.
+- Se preparó el orquestador que exige las tres aceptaciones GPU nuevas antes del piloto, evaluación común e inventario de entrega. El ensayo conserva ocho controles y añade reducción estricta del borde.
+- Se delegan prueba GPU y seis continuaciones de cinco épocas, condicionadas a la aceptación técnica; no se ejecutaron aquí ni se concede aceptación física. [Diseño y evidencia](objetivo-2/DISENO_BORDE_CGAN.md).
+
 ## 2026-10-04 — Diagnóstico espacial y componente experimental E1
 
 - Se separó el error del total de cuentas y el error píxel a píxel en 468 combinaciones de la entrega R1–R3. En las tres parejas mejora el total del borde mientras empeora su distribución espacial.

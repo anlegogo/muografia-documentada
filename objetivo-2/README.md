@@ -1,6 +1,6 @@
 # Objetivo específico 2: revisión de la implementación recibida
 
-**Preparación local E1:** el [diagnóstico espacial](DIAGNOSTICO_ESPACIAL_CGAN.md) confirma que conservar el total del borde puede coexistir con errores píxel a píxel. Se verificaron un componente experimental y sus gradientes, sin actualizar pesos. Falta fijar el coeficiente e integrar y verificar la recuperación; todavía no está preparado para GPU. El OE2 permanece abierto.
+**Ensayo de borde E1 preparado:** coeficiente 0,629 fijado con train, integración y recuperación CPU verificadas. El siguiente trabajo delegado es la prueba técnica GPU de B1–B3 y, si las tres pasan, las seis continuaciones de cinco épocas. [Diseño y evidencia](DISENO_BORDE_CGAN.md) · [Instrucciones](INSTRUCCIONES_BORDE_CGAN.md). Sin aceptación física ni cierre del OE2.
 
 **OE2 — repetición cGAN revisada:** se verificaron los 55 binarios, la recuperación exacta de las tres parejas, las seis continuaciones y su inferencia. C1 reduce el sesgo regional en dos parejas y lo aumenta en la tercera; el error de borde empeora en las tres y ninguna satisface los ocho controles. La [revisión independiente](REVISION_REPETICION_F6518FF.md) confirma dependencia de la semilla o compromiso. No se concede aceptación física ni se amplía la campaña; el siguiente paso es revisar el diseño científico y los criterios de aceptación. El OE2 permanece abierto.
 

@@ -1,0 +1,645 @@
+{
+  "schema": "oe2-edge-support-v1",
+  "views": 90,
+  "train_views": 72,
+  "val_views": 18,
+  "training_performed": false,
+  "heldout_opened": false,
+  "coefficient_fitted_here": false,
+  "minimum_pixels": 2228,
+  "minimum_reference_sum": 768684,
+  "cache_sha256": "df720c9d64735fc02ac8d3147f8a230f7a8fdcec7530f9d16351c049c9413530",
+  "script_sha256": "0574be7562f715ade69347a2ab1d31342254762aef7a073fd5cb38f60a154bac",
+  "rows": [
+    {
+      "split": "train",
+      "geometry": "geo-train-01",
+      "view": 0,
+      "pixels": 2228,
+      "reference_sum": 792019
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-01",
+      "view": 1,
+      "pixels": 2228,
+      "reference_sum": 793442
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-01",
+      "view": 2,
+      "pixels": 2228,
+      "reference_sum": 791941
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-01",
+      "view": 3,
+      "pixels": 2228,
+      "reference_sum": 792179
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-01",
+      "view": 4,
+      "pixels": 2228,
+      "reference_sum": 795084
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-01",
+      "view": 5,
+      "pixels": 2228,
+      "reference_sum": 792714
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-02",
+      "view": 0,
+      "pixels": 2422,
+      "reference_sum": 947025
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-02",
+      "view": 1,
+      "pixels": 2422,
+      "reference_sum": 948959
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-02",
+      "view": 2,
+      "pixels": 2422,
+      "reference_sum": 947740
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-02",
+      "view": 3,
+      "pixels": 2422,
+      "reference_sum": 947186
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-02",
+      "view": 4,
+      "pixels": 2422,
+      "reference_sum": 947976
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-02",
+      "view": 5,
+      "pixels": 2422,
+      "reference_sum": 949080
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-03",
+      "view": 0,
+      "pixels": 2290,
+      "reference_sum": 769369
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-03",
+      "view": 1,
+      "pixels": 2290,
+      "reference_sum": 769472
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-03",
+      "view": 2,
+      "pixels": 2290,
+      "reference_sum": 769428
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-03",
+      "view": 3,
+      "pixels": 2290,
+      "reference_sum": 770055
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-03",
+      "view": 4,
+      "pixels": 2290,
+      "reference_sum": 768815
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-03",
+      "view": 5,
+      "pixels": 2290,
+      "reference_sum": 768684
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-04",
+      "view": 0,
+      "pixels": 2264,
+      "reference_sum": 897537
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-04",
+      "view": 1,
+      "pixels": 2264,
+      "reference_sum": 899038
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-04",
+      "view": 2,
+      "pixels": 2264,
+      "reference_sum": 896489
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-04",
+      "view": 3,
+      "pixels": 2264,
+      "reference_sum": 896932
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-04",
+      "view": 4,
+      "pixels": 2264,
+      "reference_sum": 899442
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-04",
+      "view": 5,
+      "pixels": 2264,
+      "reference_sum": 897968
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-05",
+      "view": 0,
+      "pixels": 2356,
+      "reference_sum": 864392
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-05",
+      "view": 1,
+      "pixels": 2356,
+      "reference_sum": 864670
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-05",
+      "view": 2,
+      "pixels": 2356,
+      "reference_sum": 864429
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-05",
+      "view": 3,
+      "pixels": 2356,
+      "reference_sum": 865032
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-05",
+      "view": 4,
+      "pixels": 2356,
+      "reference_sum": 863892
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-05",
+      "view": 5,
+      "pixels": 2356,
+      "reference_sum": 861997
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-06",
+      "view": 0,
+      "pixels": 2348,
+      "reference_sum": 931234
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-06",
+      "view": 1,
+      "pixels": 2348,
+      "reference_sum": 931264
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-06",
+      "view": 2,
+      "pixels": 2348,
+      "reference_sum": 929235
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-06",
+      "view": 3,
+      "pixels": 2348,
+      "reference_sum": 932367
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-06",
+      "view": 4,
+      "pixels": 2348,
+      "reference_sum": 931171
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-06",
+      "view": 5,
+      "pixels": 2348,
+      "reference_sum": 931420
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-07",
+      "view": 0,
+      "pixels": 2342,
+      "reference_sum": 1076017
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-07",
+      "view": 1,
+      "pixels": 2342,
+      "reference_sum": 1075452
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-07",
+      "view": 2,
+      "pixels": 2342,
+      "reference_sum": 1076943
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-07",
+      "view": 3,
+      "pixels": 2342,
+      "reference_sum": 1078195
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-07",
+      "view": 4,
+      "pixels": 2342,
+      "reference_sum": 1077771
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-07",
+      "view": 5,
+      "pixels": 2342,
+      "reference_sum": 1075087
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-08",
+      "view": 0,
+      "pixels": 2392,
+      "reference_sum": 974878
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-08",
+      "view": 1,
+      "pixels": 2392,
+      "reference_sum": 973123
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-08",
+      "view": 2,
+      "pixels": 2392,
+      "reference_sum": 975329
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-08",
+      "view": 3,
+      "pixels": 2392,
+      "reference_sum": 974097
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-08",
+      "view": 4,
+      "pixels": 2392,
+      "reference_sum": 972416
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-08",
+      "view": 5,
+      "pixels": 2392,
+      "reference_sum": 973234
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-09",
+      "view": 0,
+      "pixels": 2336,
+      "reference_sum": 807602
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-09",
+      "view": 1,
+      "pixels": 2336,
+      "reference_sum": 807534
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-09",
+      "view": 2,
+      "pixels": 2336,
+      "reference_sum": 806986
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-09",
+      "view": 3,
+      "pixels": 2336,
+      "reference_sum": 807820
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-09",
+      "view": 4,
+      "pixels": 2336,
+      "reference_sum": 806021
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-09",
+      "view": 5,
+      "pixels": 2336,
+      "reference_sum": 807578
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-10",
+      "view": 0,
+      "pixels": 2406,
+      "reference_sum": 1140496
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-10",
+      "view": 1,
+      "pixels": 2406,
+      "reference_sum": 1142467
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-10",
+      "view": 2,
+      "pixels": 2406,
+      "reference_sum": 1138263
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-10",
+      "view": 3,
+      "pixels": 2406,
+      "reference_sum": 1138793
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-10",
+      "view": 4,
+      "pixels": 2406,
+      "reference_sum": 1139297
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-10",
+      "view": 5,
+      "pixels": 2406,
+      "reference_sum": 1140871
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-11",
+      "view": 0,
+      "pixels": 2376,
+      "reference_sum": 1018795
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-11",
+      "view": 1,
+      "pixels": 2376,
+      "reference_sum": 1020361
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-11",
+      "view": 2,
+      "pixels": 2376,
+      "reference_sum": 1018384
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-11",
+      "view": 3,
+      "pixels": 2376,
+      "reference_sum": 1018162
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-11",
+      "view": 4,
+      "pixels": 2376,
+      "reference_sum": 1017834
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-11",
+      "view": 5,
+      "pixels": 2376,
+      "reference_sum": 1017730
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-12",
+      "view": 0,
+      "pixels": 2412,
+      "reference_sum": 942506
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-12",
+      "view": 1,
+      "pixels": 2412,
+      "reference_sum": 942950
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-12",
+      "view": 2,
+      "pixels": 2412,
+      "reference_sum": 940600
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-12",
+      "view": 3,
+      "pixels": 2412,
+      "reference_sum": 942273
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-12",
+      "view": 4,
+      "pixels": 2412,
+      "reference_sum": 940585
+    },
+    {
+      "split": "train",
+      "geometry": "geo-train-12",
+      "view": 5,
+      "pixels": 2412,
+      "reference_sum": 941262
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-01",
+      "view": 0,
+      "pixels": 2326,
+      "reference_sum": 1081907
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-01",
+      "view": 1,
+      "pixels": 2326,
+      "reference_sum": 1081799
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-01",
+      "view": 2,
+      "pixels": 2326,
+      "reference_sum": 1082241
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-01",
+      "view": 3,
+      "pixels": 2326,
+      "reference_sum": 1081712
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-01",
+      "view": 4,
+      "pixels": 2326,
+      "reference_sum": 1081464
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-01",
+      "view": 5,
+      "pixels": 2326,
+      "reference_sum": 1081034
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-02",
+      "view": 0,
+      "pixels": 2240,
+      "reference_sum": 833050
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-02",
+      "view": 1,
+      "pixels": 2240,
+      "reference_sum": 834015
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-02",
+      "view": 2,
+      "pixels": 2240,
+      "reference_sum": 834757
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-02",
+      "view": 3,
+      "pixels": 2240,
+      "reference_sum": 833303
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-02",
+      "view": 4,
+      "pixels": 2240,
+      "reference_sum": 834404
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-02",
+      "view": 5,
+      "pixels": 2240,
+      "reference_sum": 834739
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-03",
+      "view": 0,
+      "pixels": 2392,
+      "reference_sum": 1036456
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-03",
+      "view": 1,
+      "pixels": 2392,
+      "reference_sum": 1034533
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-03",
+      "view": 2,
+      "pixels": 2392,
+      "reference_sum": 1035377
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-03",
+      "view": 3,
+      "pixels": 2392,
+      "reference_sum": 1035848
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-03",
+      "view": 4,
+      "pixels": 2392,
+      "reference_sum": 1034275
+    },
+    {
+      "split": "val",
+      "geometry": "geo-val-03",
+      "view": 5,
+      "pixels": 2392,
+      "reference_sum": 1034628
+    }
+  ]
+}

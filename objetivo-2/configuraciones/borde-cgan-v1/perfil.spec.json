@@ -1,0 +1,12 @@
+{
+  "schema": "oe2-edge-profile-design-v1",
+  "baseline_commit": "bc6ce8f85298b8ee9ef227175baec46e271c884c",
+  "created_before_profile": true,
+  "samples": "12 train geometries; each batch: views 0,1,3,5, realization 0",
+  "batch": 4,
+  "mode": "eval with gradients; frozen initial G and D; no optimizer",
+  "rule": "lambda=floor(1000*min(1,0.1/median(r),0.25/max(r)))/1000 where r=norm(edge gradient)/norm(C1 gradient). Reject zero or nonfinite ratios or lambda=0.",
+  "rationale": "Engineering gradient budget: target at most 10% of median baseline and 25% in any sampled batch. Not a physical acceptance tolerance or an optimal coefficient.",
+  "validation_not_used": true,
+  "physical_acceptance": false
+}

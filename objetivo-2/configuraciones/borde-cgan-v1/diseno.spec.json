@@ -1,0 +1,28 @@
+{
+  "schema": "oe2-edge-experiment-design-v1",
+  "status": "cpu_verified_gpu_check_pending",
+  "ready_for_gpu_check": true,
+  "gpu_accepted": false,
+  "physical_acceptance": false,
+  "lambda_regional": 1,
+  "lambda_edge": 0.629,
+  "control_lambda_edge": 0,
+  "pairs": {
+    "B1": 2026100411,
+    "B2": 2026100412,
+    "B3": 2026100413
+  },
+  "pilot_epochs": 5,
+  "pilot_updates": {
+    "G": 10800,
+    "D": 54000
+  },
+  "technical_updates": {
+    "G": 48,
+    "D": 240
+  },
+  "selection": "fixed fifth additional epoch",
+  "acceptance": "nine descriptive checks in all three pairs; not physical acceptance",
+  "heldout_allowed": false,
+  "instructions": "objetivo-2/INSTRUCCIONES_BORDE_CGAN.md"
+}

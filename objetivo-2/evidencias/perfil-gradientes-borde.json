@@ -1,0 +1,400 @@
+{
+  "schema": "oe2-edge-gradient-profile-v1",
+  "date": "2026-10-04",
+  "mode": "eval with autograd; twelve train batches in eval mode",
+  "training_performed": false,
+  "optimizer_steps": 0,
+  "weights_unchanged": true,
+  "val_images_opened": false,
+  "heldout_opened": false,
+  "gpu_ready": false,
+  "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+  "mask_manifest_sha256": "df720c9d64735fc02ac8d3147f8a230f7a8fdcec7530f9d16351c049c9413530",
+  "before_state_sha256": {
+    "G": "73c70580e066740a43283e3a3172c2758391e27bd6ee8518075711dd1a7f3916",
+    "D": "be1747d6be094ac51e5287f154e7ef16baf83523b341b5dcda6482729ca49a33"
+  },
+  "after_state_sha256": {
+    "G": "73c70580e066740a43283e3a3172c2758391e27bd6ee8518075711dd1a7f3916",
+    "D": "be1747d6be094ac51e5287f154e7ef16baf83523b341b5dcda6482729ca49a33"
+  },
+  "script_sha256": "87bc41f2195e68a2b076a2ae4bb1c2041636641db81075fa330aced847c335ba",
+  "candidate_sha256": "0d3900f7359659666d32c282a24f5bc5abcf73eb09b9ecb88cc9b0695927a082",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "torch": "2.6.0+cpu",
+    "cuda": null,
+    "device": "cpu",
+    "gpu": null,
+    "threads": 2,
+    "deterministic": true
+  },
+  "samples": [
+    {
+      "batch": [
+        [
+          "geo-train-01",
+          0,
+          0
+        ],
+        [
+          "geo-train-01",
+          1,
+          0
+        ],
+        [
+          "geo-train-01",
+          3,
+          0
+        ],
+        [
+          "geo-train-01",
+          5,
+          0
+        ]
+      ],
+      "baseline_loss": -21.339100055184595,
+      "edge_loss": 0.14365894297783052,
+      "baseline_gradient_norm": 23.868456593654425,
+      "edge_gradient_norm": 5.4577645447196526,
+      "edge_to_baseline_gradient_ratio_weight_one": 0.22866013658254855,
+      "gradient_cosine": 0.34889612348722276
+    },
+    {
+      "batch": [
+        [
+          "geo-train-02",
+          0,
+          0
+        ],
+        [
+          "geo-train-02",
+          1,
+          0
+        ],
+        [
+          "geo-train-02",
+          3,
+          0
+        ],
+        [
+          "geo-train-02",
+          5,
+          0
+        ]
+      ],
+      "baseline_loss": -20.325720321225347,
+      "edge_loss": 0.14501950637517375,
+      "baseline_gradient_norm": 59.58203527268432,
+      "edge_gradient_norm": 8.423814131741748,
+      "edge_to_baseline_gradient_ratio_weight_one": 0.14138177880613098,
+      "gradient_cosine": 0.772987924304087
+    },
+    {
+      "batch": [
+        [
+          "geo-train-03",
+          0,
+          0
+        ],
+        [
+          "geo-train-03",
+          1,
+          0
+        ],
+        [
+          "geo-train-03",
+          3,
+          0
+        ],
+        [
+          "geo-train-03",
+          5,
+          0
+        ]
+      ],
+      "baseline_loss": -19.338919573250262,
+      "edge_loss": 0.14156761691061387,
+      "baseline_gradient_norm": 74.3994774187962,
+      "edge_gradient_norm": 5.116881980379129,
+      "edge_to_baseline_gradient_ratio_weight_one": 0.06877577851220776,
+      "gradient_cosine": 0.621178578046691
+    },
+    {
+      "batch": [
+        [
+          "geo-train-04",
+          0,
+          0
+        ],
+        [
+          "geo-train-04",
+          1,
+          0
+        ],
+        [
+          "geo-train-04",
+          3,
+          0
+        ],
+        [
+          "geo-train-04",
+          5,
+          0
+        ]
+      ],
+      "baseline_loss": -22.019855826290353,
+      "edge_loss": 0.14117758115393883,
+      "baseline_gradient_norm": 37.52556599029091,
+      "edge_gradient_norm": 6.619980317022875,
+      "edge_to_baseline_gradient_ratio_weight_one": 0.17641253748806027,
+      "gradient_cosine": -0.130569553363107
+    },
+    {
+      "batch": [
+        [
+          "geo-train-05",
+          0,
+          0
+        ],
+        [
+          "geo-train-05",
+          1,
+          0
+        ],
+        [
+          "geo-train-05",
+          3,
+          0
+        ],
+        [
+          "geo-train-05",
+          5,
+          0
+        ]
+      ],
+      "baseline_loss": -20.150267628509663,
+      "edge_loss": 0.13695910830956382,
+      "baseline_gradient_norm": 66.3101875683638,
+      "edge_gradient_norm": 7.063938909330731,
+      "edge_to_baseline_gradient_ratio_weight_one": 0.1065287125307559,
+      "gradient_cosine": 0.7330837024032865
+    },
+    {
+      "batch": [
+        [
+          "geo-train-06",
+          0,
+          0
+        ],
+        [
+          "geo-train-06",
+          1,
+          0
+        ],
+        [
+          "geo-train-06",
+          3,
+          0
+        ],
+        [
+          "geo-train-06",
+          5,
+          0
+        ]
+      ],
+      "baseline_loss": -19.205851804171512,
+      "edge_loss": 0.15657607312371363,
+      "baseline_gradient_norm": 84.31963232058509,
+      "edge_gradient_norm": 8.352428862766502,
+      "edge_to_baseline_gradient_ratio_weight_one": 0.09905675146934209,
+      "gradient_cosine": 0.7234415386926721
+    },
+    {
+      "batch": [
+        [
+          "geo-train-07",
+          0,
+          0
+        ],
+        [
+          "geo-train-07",
+          1,
+          0
+        ],
+        [
+          "geo-train-07",
+          3,
+          0
+        ],
+        [
+          "geo-train-07",
+          5,
+          0
+        ]
+      ],
+      "baseline_loss": -22.28586758723862,
+      "edge_loss": 0.15135674994932283,
+      "baseline_gradient_norm": 47.3004511429849,
+      "edge_gradient_norm": 8.896980542229299,
+      "edge_to_baseline_gradient_ratio_weight_one": 0.18809504618327103,
+      "gradient_cosine": 0.056719637880523414
+    },
+    {
+      "batch": [
+        [
+          "geo-train-08",
+          0,
+          0
+        ],
+        [
+          "geo-train-08",
+          1,
+          0
+        ],
+        [
+          "geo-train-08",
+          3,
+          0
+        ],
+        [
+          "geo-train-08",
+          5,
+          0
+        ]
+      ],
+      "baseline_loss": -21.312947046857253,
+      "edge_loss": 0.13234522188663275,
+      "baseline_gradient_norm": 43.752691766298824,
+      "edge_gradient_norm": 6.907124113475175,
+      "edge_to_baseline_gradient_ratio_weight_one": 0.15786740962976573,
+      "gradient_cosine": 0.8070331788983061
+    },
+    {
+      "batch": [
+        [
+          "geo-train-09",
+          0,
+          0
+        ],
+        [
+          "geo-train-09",
+          1,
+          0
+        ],
+        [
+          "geo-train-09",
+          3,
+          0
+        ],
+        [
+          "geo-train-09",
+          5,
+          0
+        ]
+      ],
+      "baseline_loss": -19.095150682138577,
+      "edge_loss": 0.13948132878940647,
+      "baseline_gradient_norm": 84.70618103564696,
+      "edge_gradient_norm": 5.100831195724022,
+      "edge_to_baseline_gradient_ratio_weight_one": 0.06021793372525478,
+      "gradient_cosine": 0.6373689133096798
+    },
+    {
+      "batch": [
+        [
+          "geo-train-10",
+          0,
+          0
+        ],
+        [
+          "geo-train-10",
+          1,
+          0
+        ],
+        [
+          "geo-train-10",
+          3,
+          0
+        ],
+        [
+          "geo-train-10",
+          5,
+          0
+        ]
+      ],
+      "baseline_loss": -22.166118639640334,
+      "edge_loss": 0.1482674417605553,
+      "baseline_gradient_norm": 42.87490385672536,
+      "edge_gradient_norm": 9.254271204111994,
+      "edge_to_baseline_gradient_ratio_weight_one": 0.21584354416366508,
+      "gradient_cosine": 0.06297455911196193
+    },
+    {
+      "batch": [
+        [
+          "geo-train-11",
+          0,
+          0
+        ],
+        [
+          "geo-train-11",
+          1,
+          0
+        ],
+        [
+          "geo-train-11",
+          3,
+          0
+        ],
+        [
+          "geo-train-11",
+          5,
+          0
+        ]
+      ],
+      "baseline_loss": -21.93988747898065,
+      "edge_loss": 0.13134384966174661,
+      "baseline_gradient_norm": 27.959978381789316,
+      "edge_gradient_norm": 6.7461220870927665,
+      "edge_to_baseline_gradient_ratio_weight_one": 0.24127780053959555,
+      "gradient_cosine": 0.5064334689029698
+    },
+    {
+      "batch": [
+        [
+          "geo-train-12",
+          0,
+          0
+        ],
+        [
+          "geo-train-12",
+          1,
+          0
+        ],
+        [
+          "geo-train-12",
+          3,
+          0
+        ],
+        [
+          "geo-train-12",
+          5,
+          0
+        ]
+      ],
+      "baseline_loss": -19.93548697693865,
+      "edge_loss": 0.15729604257550076,
+      "baseline_gradient_norm": 57.656716595103845,
+      "edge_gradient_norm": 9.207574602362026,
+      "edge_to_baseline_gradient_ratio_weight_one": 0.15969647850436083,
+      "gradient_cosine": 0.7928974422960492
+    }
+  ],
+  "limitation": "Twelve train batches, eval mode at initial checkpoint, no optimizer or critic updates. Engineering coefficient, not optimized on val or a physical acceptance tolerance.",
+  "selected_lambda": 0.629,
+  "ratio_median": 0.15878194406706328,
+  "ratio_max": 0.24127780053959555,
+  "profile_design_sha256": "853bf54549d107241db96f9273d47cff1aeb9e46102ec3fa76ef5b7ee436490a"
+}
