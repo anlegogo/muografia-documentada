@@ -1,5 +1,7 @@
 # Objetivo específico 2: revisión de la implementación recibida
 
+**CG-04, actualización:** [binarios y métricas verificados independientemente](REVISION_BINARIOS_CG04.md). La recepción está completa; la recuperación exacta en proceso CUDA nuevo continúa pendiente.
+
 **CG-04 — pendiente GPU:** se documentó la incidencia de recuperación de C0/C1 y se preparó el [diagnóstico de estados y operaciones](DIAGNOSTICO_RECUPERACION_CGAN.md). La continuación de cinco épocas permanece pendiente de resolver este control.
 
 **Estado al 2026-10-03: correcciones OE2-P01 a P03 implementadas y verificadas localmente.** Véase [correcciones v1, evidencia y reproducción](CORRECCIONES_V1.md). OE2-P04 tiene un [protocolo de piloto al 5 %](PROTOCOLO_PILOTO_F05.md) y [comandos para SC3](INSTRUCCIONES_PILOTO_SC3.md); se recibió y [revisó el piloto ejecutado en GPU RunPod](REVISION_PILOTO_C054225.md). Los [dos pesos seleccionados y su inferencia fueron verificados](REVISION_PESOS_PILOTO_F05.md) en los 360 pares de validación. La [evaluación geométrica](EVALUACION_GEOMETRICA_PILOTO_F05.md) cuantifica sesgos de cuentas y conservación de contrastes: el diagnóstico está verificado; la aceptación física y la campaña principal siguen pendientes. El texto de revisión siguiente conserva los hallazgos del código histórico. La dirección autorizó expresamente esta revisión del OE2. El cierre del OE1 se mantiene; no se declara cumplido el OE2 ni se inicia una campaña de entrenamiento.

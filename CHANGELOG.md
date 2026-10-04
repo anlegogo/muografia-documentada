@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## 2026-10-03 — Auditoría independiente de binarios CG-04
+
+- Se descargaron y verificaron los 22 binarios (3 933 371 732 bytes), sus estados frente a las trazas y SSIM/PSNR contra referencias verificadas.
+- Se confirmó recuperación de los valores registrados y divergencia posterior de gradientes del crítico en proceso CUDA nuevo; C1 presenta diferencia máxima de pesos G de 4,1216612e-5.
+- Se documentaron evidencia, límites y siguiente comprobación en la [revisión CG-04](objetivo-2/REVISION_BINARIOS_CG04.md). La aceptación GPU y las continuaciones permanecen pendientes.
+
 ## 2026-10-03 — Diagnóstico dirigido de recuperación cGAN
 
 - Se revisó la entrega estudiantil `b0ad0b1`: 97 huellas verificadas y código registrado coincidente con `04b2e46`. La causa CUDA permanece sin demostrar; faltan enlaces a los estados binarios nuevos.
