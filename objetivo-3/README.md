@@ -1,5 +1,7 @@
 # OE3: curvas descriptivas de exposición
 
+**Desglose experimental ejecutado:** [comparación por vista y región](RESULTADO_EXPERIMENTAL_OE3.md). La cGAN al 5 % supera SSIM/PSNR de la entrada al 10 % en 24/24 vistas y 480/480 correspondencias, con deterioro de Q en 24/24 vistas. Se cuantifica una reducción descriptiva 2:1 de conteos bajo esas métricas; no un factor físico aceptado ni el máximo alcanzable. No se requiere otra GPU para reproducir este balance. La redacción del informe final se aplaza hasta concluir la revisión experimental, por indicación de la dirección.
+
 2026-10-04, Colombia. Análisis de la dirección sobre el catálogo ya disponible, posterior a la evaluación final del OE2. Base del repositorio: `1214307c525ace12c978ede5336fcf893abad7c7`. Se amplía la preparación del OE3 por solicitud de continuar el trabajo local; la redacción oficial del objetivo sigue pendiente de confirmación. No se declara su cumplimiento.
 
 ## Pregunta y método
@@ -53,11 +55,11 @@ Las referencias son de alta estadística finita, con ruido; las imágenes reduci
 | Pendiente | Estado | Criterio |
 |---|---|---|
 | OE3-P01: curvas disponibles | verificado | Cuatro fracciones, todos los casos reservados, control f05 y código reproducible. |
-| OE3-P02: alcance y calidad aceptable | pendiente | Confirmar el objetivo oficial y justificar requisitos de aplicación o referencia científica; separar criterio visual y conservación física. |
-| OE3-P03: factor alcanzable | parcial | Comparaciones nominales y cruces discretos disponibles; no existe factor físico aceptado ni máximo demostrado. |
-| OE3-P04: manuscrito | pendiente | Incorporar curvas, límites, definición temporal y conclusión según el criterio acordado. |
+| OE3-P02: alcance y calidad aceptable | parcial | Alcance descriptivo SSIM/PSNR explicitado; tolerancia de uso físico y contraste definitivo con propuesta aprobada no resueltos por esta comparación. |
+| OE3-P03: factor alcanzable | parcial | Desglose ejecutado: razón descriptiva 2:1 bajo SSIM/PSNR en todas las vistas; 10:1 no respaldado conjuntamente. Factor físico y máximo no demostrados. |
+| OE3-P04: manuscrito | pendiente | Aplazado por indicación de la dirección hasta culminar revisión experimental; no se solicita redacción a los estudiantes en esta etapa. |
 
-No se solicita otra campaña ni entrenamiento. Los estudiantes pueden incorporar al manuscrito la comparación descriptiva y las tablas C2. La dirección debe confirmar la formulación oficial y el criterio científico antes de afirmar un factor alcanzable; si no se demuestra bajo ese criterio, se reportará esa limitación. El cierre técnico de la entrega OE2 no cambia por este análisis.
+No se solicita otra campaña ni entrenamiento. La indicación anterior de incorporar el manuscrito queda aplazada por la dirección; primero se completa la revisión experimental. La dirección debe confirmar la formulación oficial y el criterio científico antes de afirmar un factor alcanzable; si no se demuestra bajo ese criterio, se reportará esa limitación. El cierre técnico de la entrega OE2 no cambia por este análisis.
 
 ## Evidencia y reproducción
 
@@ -94,4 +96,4 @@ El trabajo puede continuar con los archivos disponibles y sin otra campaña GPU.
 3. **OE3-P03 — Informar la reducción respaldada por cada indicador.** Comparar la salida al 5 % con las entradas existentes al 10 % y al 50 %, usando la misma referencia, normalización y soporte común de contraste. La razón nominal 10/5 = 2 acompaña una mejora descriptiva de SSIM/PSNR; no representa por sí sola un factor de adquisición físicamente aceptado. No interpolar un máximo entre fracciones ni convertir automáticamente 1/0,05 = 20 en factor alcanzado.
 4. **OE3-P04 — Redactar resultados y conclusión.** Integrar tablas, figuras, supuestos de flujo/detección y límites. Si los criterios difieren, informar factores o comparaciones por métrica, sin un único número que oculte deterioros. Si no puede demostrarse un factor bajo un criterio justificado, consignarlo como resultado del estudio.
 
-La revisión de criterio y la síntesis pueden realizarse con la evidencia conservada; a los estudiantes les corresponde integrar y revisar el manuscrito. Cualquier nueva corrida dependería de una pregunta experimental específica que este análisis no pueda responder. Esta ruta es una propuesta de continuidad; no marca como ejecutados sus análisis adicionales.
+La revisión de criterio y la síntesis pueden realizarse con la evidencia conservada; la integración del manuscrito queda aplazada por indicación de la dirección. Cualquier nueva corrida dependería de una pregunta experimental específica que este análisis no pueda responder. La ruta anterior conserva la secuencia propuesta. Actualización: el desglose por vista/región y la comparación de las fracciones ya se ejecutaron en el registro enlazado al inicio; la tolerancia física y el informe final siguen pendientes.

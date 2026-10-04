@@ -1,5 +1,7 @@
 # Muografía: documentación y seguimiento académico
 
+**Desglose experimental ejecutado:** [comparación por vista y región](objetivo-3/RESULTADO_EXPERIMENTAL_OE3.md). La cGAN al 5 % supera SSIM/PSNR de la entrada al 10 % en 24/24 vistas y 480/480 correspondencias, con deterioro de Q en 24/24 vistas. Se cuantifica una reducción descriptiva 2:1 de conteos bajo esas métricas; no un factor físico aceptado ni el máximo alcanzable. No se requiere otra GPU para reproducir este balance. La redacción del informe final se aplaza hasta concluir la revisión experimental, por indicación de la dirección.
+
 **Síntesis documental del OE2 preparada:** [informe académico](objetivo-2/manuscrito/INFORME_OE2.md), [matriz de cumplimiento](objetivo-2/MATRIZ_CUMPLIMIENTO.md) y [registro de cierre de ejecución](objetivo-2/CIERRE_OE2.md). EF-02, EF-03 y la conclusión documental EF-04 completos. La calidad comparable mantiene alcance parcial; no se declara equivalencia física. Resta integración editorial en el manuscrito, sin nuevas corridas.
 
 **Preparación OE3:** [curvas descriptivas de exposición](objetivo-3/README.md) calculadas con 1 %, 5 %, 10 % y 50 % de conteos existentes. Comparaciones visuales y físicas separadas; sin factor efectivo de adquisición demostrado ni nuevas corridas.

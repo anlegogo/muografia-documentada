@@ -1,5 +1,15 @@
 # Bitácora de preparación del OE3
 
+## Desglose experimental OE3 por vista y región — 2026-10-04, Colombia
+
+- Actividad de revisión de la dirección: análisis de métricas conservadas, sin nueva simulación, entrenamiento ni inferencia. Se conserva la autoría estudiantil de las ejecuciones originales.
+- Siete fuentes contrastadas con Git; 78 agregados reproducidos, control f05 y cuatro pruebas satisfactorios. Mismo resumen desde CSV originales y recalculados C2. Se publican 768 filas de vista, 4.032 regionales y 1.024 de contraste, código, huellas y figura inspeccionada.
+- cGAN frente a entrada al 10 %: mejora SSIM/PSNR en 24/24 vistas y 480/480 correspondencias; Q empeora en 24/24. Contraste favorable en 21/22 vistas de soporte común. No se trata a las realizaciones como réplicas geométricas independientes.
+- Se respalda una razón descriptiva 2:1 de conteos bajo SSIM/PSNR; no equivalencia física, máximo alcanzable ni tiempo medido. No se escoge una semilla por tres vistas favorables de B3_C1.
+- OE3-P02 y P03 parciales; desglose completado. OE3-P04 se aplaza por indicación de la dirección: primero concluir revisión experimental. Siguiente decisión: alcance de calidad aceptado, sin otra corrida automática.
+
+[Resultado experimental](RESULTADO_EXPERIMENTAL_OE3.md).
+
 ## Calidad comparable y continuidad OE2–OE3 — 2026-10-04, Colombia
 
 - Actividad de revisión de la dirección: contraste de la síntesis C2 y curvas existentes, leídas desde 166be6ff09b60341fde084d433266b94b6e832cc; no se entrenó, infirió ni simuló.

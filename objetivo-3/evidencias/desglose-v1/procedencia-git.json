@@ -1,0 +1,33 @@
+{
+  "base_commit": "d45470b7867f18817f8c4b9ca500397b45c78d2e",
+  "source_git_objects": {
+    "imagenes.csv": {
+      "path": "objetivo-2/entregas/2026-10-04-evaluacion-final-f05/datos/evaluacion-final-f05/informe-v1/imagenes.csv",
+      "sha": "72b85bb7e4e32502d7576ba97891f3497cddbb71"
+    },
+    "regiones.csv": {
+      "path": "objetivo-2/entregas/2026-10-04-evaluacion-final-f05/datos/evaluacion-final-f05/informe-v1/regiones.csv",
+      "sha": "bff17ba7123e8433cacbab8618ba60fdc3b8a825"
+    },
+    "evaluacion-final.json": {
+      "path": "objetivo-2/evidencias/ef01-c2/resultados.json",
+      "sha": "a0d1da6b56492822edd1d9f76a74f1bc28c3665a"
+    },
+    "raw-curvas.json": {
+      "path": "objetivo-3/evidencias/curvas-v1/curvas.json",
+      "sha": "aed720cb0653835fb15183974720ffe5bb5192c0"
+    },
+    "raw-imagenes.csv": {
+      "path": "objetivo-3/evidencias/curvas-v1/imagenes.csv",
+      "sha": "aae40ce35f6a86b2fa4d4ddd71b68c7b11a193b6"
+    },
+    "raw-regiones.csv": {
+      "path": "objetivo-3/evidencias/curvas-v1/regiones.csv",
+      "sha": "344f0c5a70a163921016e62b42db0fb3c951e9df"
+    },
+    "raw-contrastes.json": {
+      "path": "objetivo-3/evidencias/curvas-v1/contrastes.json",
+      "sha": "021dea6de33880ab5e1576f068a79b12d6de8d59"
+    }
+  }
+}

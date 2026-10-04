@@ -1,5 +1,7 @@
 # Índice de documentación
 
+- [OE3: resultado experimental por vista/región y reducción descriptiva](../objetivo-3/RESULTADO_EXPERIMENTAL_OE3.md).
+
 - [Precisión de calidad comparable OE2 y tabla por geometría](../objetivo-2/CIERRE_OE2.md#precisión-sobre-calidad-comparable-y-continuidad-al-oe3).
 - [Ruta de continuidad del OE3 con evidencia existente](../objetivo-3/README.md#ruta-de-continuidad-desde-el-oe2).
 
