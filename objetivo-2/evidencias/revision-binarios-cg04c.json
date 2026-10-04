@@ -1,0 +1,1062 @@
+{
+  "schema": "oe2-cg04c-independent-review-v1",
+  "review_date": "2026-10-04",
+  "delivery_commit": "1ec1c242f7899c76b34e0f0f2bd02f1063775568",
+  "integrity": [
+    {
+      "path": "evaluacion-piloto/predicciones-cgan-inicial.npy",
+      "bytes": 94371968,
+      "sha256": "95691a189ca1a71d0982bcf183edd07cb168f4aebb39a3a6422cb96b6718ffb1",
+      "drive_id": "161-B0z2ODnttmk_Ha_5-gu1EAscHCx2a",
+      "ok": true
+    },
+    {
+      "path": "tecnica/C0-continua/predicciones-val.npy",
+      "bytes": 2097280,
+      "sha256": "97151b3a8931be797b81d333a5f62a25540c645f3d1570eed18dbeb74f768cce",
+      "drive_id": "1W1OSKc53pwp3uuckkuajbrbR4e_CWK-X",
+      "ok": true
+    },
+    {
+      "path": "tecnica/C0-continua/last.pt",
+      "bytes": 279764166,
+      "sha256": "2065700a41ad98725d71b8119080f61ca53067afd458b40994f1c731f81d5e31",
+      "drive_id": "1SiwceZT6NOz4HPeQsTMmfx8Pf2t1zvee",
+      "ok": true
+    },
+    {
+      "path": "tecnica/C1-continua/predicciones-val.npy",
+      "bytes": 2097280,
+      "sha256": "d5d1eb3ee737d771387de07f9882155cf8639a341547a8148375c3631e7fe73d",
+      "drive_id": "1EU1KMTnYD7I1wo5iz4T8rLwU_maS_4vi",
+      "ok": true
+    },
+    {
+      "path": "tecnica/C1-continua/last.pt",
+      "bytes": 279764166,
+      "sha256": "3e39e77109b2b9edf225ca7d5bfad8b2078f428a7f0d7a1b1002d0a3e9095bb9",
+      "drive_id": "1FjCFxA2xx4w2aGo6TAuD0klPT_fWlDzN",
+      "ok": true
+    },
+    {
+      "path": "tecnica/C0-recuperada/predicciones-val.npy",
+      "bytes": 2097280,
+      "sha256": "97151b3a8931be797b81d333a5f62a25540c645f3d1570eed18dbeb74f768cce",
+      "drive_id": "1WFDSlql32ogw1L7TMY5H2DbuHE2STeT6",
+      "ok": true
+    },
+    {
+      "path": "tecnica/C0-recuperada/last.pt",
+      "bytes": 279764678,
+      "sha256": "b0d95e4cf1a5af7b3f11b4c1a96a7839e5b54fe2000c3dd5ef5843601247667c",
+      "drive_id": "1WYCEeQih0r8MuTQnXAD3r7lzd-MdfNV-",
+      "ok": true
+    },
+    {
+      "path": "piloto/C0/predicciones-val.npy",
+      "bytes": 94371968,
+      "sha256": "bf3d594062e01322223a998dc1cef9abb1a82e740b505f90559c92f6abd62c76",
+      "drive_id": "1A8Tm8Xox0Gdq5OPBhxNov3LaaNErv9Oo",
+      "ok": true
+    },
+    {
+      "path": "piloto/C0/last.pt",
+      "bytes": 279766086,
+      "sha256": "3932944c02a7eff67aee6d2a18c09bb591b109b67f0386e4a8e72d3263756ae1",
+      "drive_id": "1U4gSbXXw6uzobEfAwq5V1UoqLjS1rwUh",
+      "ok": true
+    },
+    {
+      "path": "piloto/C1/predicciones-val.npy",
+      "bytes": 94371968,
+      "sha256": "6ab7f1ee986336c87f4c1dfbcc30b7ce5ada8093d423c8de605cc068ad15df90",
+      "drive_id": "1BZlgcmy1jipFL_D8fBaUjBqvzEBYWecG",
+      "ok": true
+    },
+    {
+      "path": "piloto/C1/last.pt",
+      "bytes": 279766086,
+      "sha256": "a93c35459b4cbe30e935c8c6ee72918fa7366f92a1a97dd5c4fbcd71968caa3d",
+      "drive_id": "1xYPT1xYRfuebOaN3zt_h-qscl21uHsY9",
+      "ok": true
+    },
+    {
+      "path": "tecnica/C1-recuperada/predicciones-val.npy",
+      "bytes": 2097280,
+      "sha256": "d5d1eb3ee737d771387de07f9882155cf8639a341547a8148375c3631e7fe73d",
+      "drive_id": "1QT6jzODsQd8M83LYOdCc-m--V-8Tq0Wn",
+      "ok": true
+    },
+    {
+      "path": "tecnica/C1-recuperada/last.pt",
+      "bytes": 279764678,
+      "sha256": "1b3e1bb5fd0cbd67660cff65a9cdbc6a9cbc5f78fc4bc9cb6c20fd7069c88d52",
+      "drive_id": "1Og7rZDPdvdtVegExTYAadsq1HRmKBkCl",
+      "ok": true
+    }
+  ],
+  "technical_gpu_artifacts_verified": true,
+  "exact_recovery": true,
+  "gate": {
+    "schema": "oe2-cgan-ajuste-gate-v1",
+    "technical_checks_passed": true,
+    "gpu_accepted": true,
+    "exact_recovery": true,
+    "runs": {
+      "C0-continua": "C:\\Users\\Usuari\\AppData\\Local\\Temp\\oe2-cg04c-revision\\entrega\\datos\\tecnica\\C0-continua",
+      "C0-recuperada": "C:\\Users\\Usuari\\AppData\\Local\\Temp\\oe2-cg04c-revision\\entrega\\datos\\tecnica\\C0-recuperada",
+      "C1-continua": "C:\\Users\\Usuari\\AppData\\Local\\Temp\\oe2-cg04c-revision\\entrega\\datos\\tecnica\\C1-continua",
+      "C1-recuperada": "C:\\Users\\Usuari\\AppData\\Local\\Temp\\oe2-cg04c-revision\\entrega\\datos\\tecnica\\C1-recuperada"
+    },
+    "identities": [
+      {
+        "schema": "oe2-cgan-ajuste-run-v1",
+        "critic_gradient_policy": "wasserstein-then-weighted-gp-v1",
+        "arm": "C0",
+        "stage": "tecnica",
+        "config": {
+          "schema": "oe2-cgan-ajuste-v1",
+          "fraction": 0.05,
+          "generator": "unet_dc_5",
+          "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+          "initial_epoch": 5,
+          "reset_optimizer": true,
+          "reset_rng": true,
+          "seed": 2026100303,
+          "optimizer": {
+            "name": "Adam",
+            "lr": 0.00001,
+            "betas": [
+              0,
+              0.9
+            ]
+          },
+          "batch": 4,
+          "epochs": 5,
+          "early_stopping": false,
+          "selected_epoch": 5,
+          "train_pairs": 1440,
+          "val_pairs": 360,
+          "train_split": "train",
+          "selection_split": "val",
+          "reserved_splits_allowed": false,
+          "hflip": false,
+          "augmentation": false,
+          "lambda_l1": 100,
+          "regional_loss": "mean_absolute_log1p_region_mean_counts",
+          "normalization_scale": 8.239329427901795,
+          "regional_families": [
+            "cielo",
+            "roca",
+            "borde",
+            "anomalias"
+          ],
+          "region_min_pixels": 20,
+          "region_family_equal_weight": true,
+          "lambda_regional": 0,
+          "gradient_clipping": false,
+          "amp": false,
+          "checkpoint_policy": "last each epoch plus final epoch 5; no best-SSIM selection",
+          "resume": "same arm, protocol and code identity only",
+          "stages": {
+            "technical": {
+              "epochs": 2,
+              "train_pairs": 8,
+              "val_pairs": 8,
+              "requires_gpu_before_pilot": true,
+              "train_indices": [
+                [
+                  "geo-train-01",
+                  0,
+                  0
+                ],
+                [
+                  "geo-train-01",
+                  0,
+                  1
+                ],
+                [
+                  "geo-train-02",
+                  0,
+                  0
+                ],
+                [
+                  "geo-train-02",
+                  0,
+                  1
+                ],
+                [
+                  "geo-train-04",
+                  0,
+                  0
+                ],
+                [
+                  "geo-train-04",
+                  0,
+                  1
+                ],
+                [
+                  "geo-train-10",
+                  0,
+                  0
+                ],
+                [
+                  "geo-train-10",
+                  0,
+                  1
+                ]
+              ],
+              "val_indices": [
+                [
+                  "geo-val-01",
+                  0,
+                  0
+                ],
+                [
+                  "geo-val-01",
+                  0,
+                  1
+                ],
+                [
+                  "geo-val-02",
+                  0,
+                  0
+                ],
+                [
+                  "geo-val-02",
+                  0,
+                  1
+                ],
+                [
+                  "geo-val-03",
+                  0,
+                  0
+                ],
+                [
+                  "geo-val-03",
+                  0,
+                  1
+                ],
+                [
+                  "geo-val-03",
+                  1,
+                  0
+                ],
+                [
+                  "geo-val-03",
+                  1,
+                  1
+                ]
+              ],
+              "interrupt_after_epoch": 1,
+              "pilot_initialization": "original epoch-5 checkpoint, never technical weights"
+            },
+            "pilot": {
+              "epochs": 5,
+              "train_pairs": 1440,
+              "val_pairs": 360
+            }
+          },
+          "mass_campaign_authorized": false,
+          "arm": "C0",
+          "run_id": "oe2-cgan-ajuste-f05-C0-s2026100303",
+          "critic": "patch_critic_70",
+          "lambda_adv": 1,
+          "lambda_gp": 10,
+          "n_critic": 5,
+          "rng_policy": "torch CPU/CUDA; NumPy and Python stored; independent order per epoch",
+          "critic_fake_policy": "one no-grad train-mode G sample reused for five D steps; fresh G sample for G update",
+          "critic_frozen_during_generator_step": true
+        },
+        "sources": {
+          "objetivo-2/herramientas/datos_ajuste.py": "2c89d770cc3d7b4fee66c977ff89af8faf6ab6bbca3ed12fe1f2a98734aa167f",
+          "objetivo-2/herramientas/ejecutar_ajuste.py": "8d49980e4e1c4b96347c81203a820cc5784b57473079562decbedd747fe11abb",
+          "objetivo-2/herramientas/perdida_cuentas_regionales.py": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+          "objetivo-2/herramientas/evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524",
+          "objetivo-2/implementacion/models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+          "objetivo-2/implementacion/scripts/evaluation/metrics.py": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42",
+          "objetivo-2/herramientas/revisar_ajuste.py": "294e4291b3bd10d6c0f597c9145867c4ac7f33cfd0bdacd5c78c3c4cee5ea750",
+          "objetivo-2/herramientas/evaluar_ajuste.py": "f0840197c20ff848dd79bfe3385eabc4beeaff632da67c580961bb14c13e721b",
+          "objetivo-2/herramientas/ejecutar_ajuste_cgan.py": "2147a4b58442567104c40a4ba0b91e8ce4dafd62c61dee740b28bc237d8428a1",
+          "objetivo-2/herramientas/revisar_ajuste_cgan.py": "777b19cf697b4d32c2e74997500ca67f71c29507238dfb838de3cec188b0f424",
+          "objetivo-2/herramientas/evaluar_ajuste_cgan.py": "0dc1a9a6d4334490d3a99ebf3a00e6ecfd7e4015712d18488134dc0a36b85ac3",
+          "objetivo-2/herramientas/gradientes_critico.py": "76024538c9df1ba43e4c3c549e806137f820322b6d25aa3ff37bfb6c417da8be",
+          "objetivo-2/implementacion/models/patch_critic.py": "41fbbb005fd152d3ddf10e50721ac855108907714e150632d1942275736b84d8",
+          "objetivo-2/implementacion/scripts/training/losses.py": "8d950c772d923a98343b8cda787b28567df7d2bbd09c62f50085efb13f96c0a5"
+        },
+        "environment": {
+          "python": "3.12.3",
+          "numpy": "2.3.5",
+          "torch": "2.6.0+cu118",
+          "cuda": "11.8",
+          "device": "cuda:0",
+          "gpu": "NVIDIA L40S",
+          "threads": 2,
+          "deterministic": true,
+          "cudnn": 90100,
+          "cublas_workspace": ":4096:8",
+          "tf32": false,
+          "numpy_rng": "MT19937",
+          "python_rng": "MT19937"
+        },
+        "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+        "cache_sha256": "df720c9d64735fc02ac8d3147f8a230f7a8fdcec7530f9d16351c049c9413530",
+        "train_indices_sha256": "9da8b884e0130f5b84965bd41b25af63c0bee9785917d7b4793269710a2d9871",
+        "val_indices_sha256": "3b1b5b5b5309c45fd8a8099bfe7fee91902a1054fd09138bed4478e7fe6d3824",
+        "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+        "initial_generator_sha256": "73c70580e066740a43283e3a3172c2758391e27bd6ee8518075711dd1a7f3916",
+        "initial_critic_sha256": "be1747d6be094ac51e5287f154e7ef16baf83523b341b5dcda6482729ca49a33",
+        "epochs": 2
+      },
+      {
+        "schema": "oe2-cgan-ajuste-run-v1",
+        "critic_gradient_policy": "wasserstein-then-weighted-gp-v1",
+        "arm": "C0",
+        "stage": "tecnica",
+        "config": {
+          "schema": "oe2-cgan-ajuste-v1",
+          "fraction": 0.05,
+          "generator": "unet_dc_5",
+          "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+          "initial_epoch": 5,
+          "reset_optimizer": true,
+          "reset_rng": true,
+          "seed": 2026100303,
+          "optimizer": {
+            "name": "Adam",
+            "lr": 0.00001,
+            "betas": [
+              0,
+              0.9
+            ]
+          },
+          "batch": 4,
+          "epochs": 5,
+          "early_stopping": false,
+          "selected_epoch": 5,
+          "train_pairs": 1440,
+          "val_pairs": 360,
+          "train_split": "train",
+          "selection_split": "val",
+          "reserved_splits_allowed": false,
+          "hflip": false,
+          "augmentation": false,
+          "lambda_l1": 100,
+          "regional_loss": "mean_absolute_log1p_region_mean_counts",
+          "normalization_scale": 8.239329427901795,
+          "regional_families": [
+            "cielo",
+            "roca",
+            "borde",
+            "anomalias"
+          ],
+          "region_min_pixels": 20,
+          "region_family_equal_weight": true,
+          "lambda_regional": 0,
+          "gradient_clipping": false,
+          "amp": false,
+          "checkpoint_policy": "last each epoch plus final epoch 5; no best-SSIM selection",
+          "resume": "same arm, protocol and code identity only",
+          "stages": {
+            "technical": {
+              "epochs": 2,
+              "train_pairs": 8,
+              "val_pairs": 8,
+              "requires_gpu_before_pilot": true,
+              "train_indices": [
+                [
+                  "geo-train-01",
+                  0,
+                  0
+                ],
+                [
+                  "geo-train-01",
+                  0,
+                  1
+                ],
+                [
+                  "geo-train-02",
+                  0,
+                  0
+                ],
+                [
+                  "geo-train-02",
+                  0,
+                  1
+                ],
+                [
+                  "geo-train-04",
+                  0,
+                  0
+                ],
+                [
+                  "geo-train-04",
+                  0,
+                  1
+                ],
+                [
+                  "geo-train-10",
+                  0,
+                  0
+                ],
+                [
+                  "geo-train-10",
+                  0,
+                  1
+                ]
+              ],
+              "val_indices": [
+                [
+                  "geo-val-01",
+                  0,
+                  0
+                ],
+                [
+                  "geo-val-01",
+                  0,
+                  1
+                ],
+                [
+                  "geo-val-02",
+                  0,
+                  0
+                ],
+                [
+                  "geo-val-02",
+                  0,
+                  1
+                ],
+                [
+                  "geo-val-03",
+                  0,
+                  0
+                ],
+                [
+                  "geo-val-03",
+                  0,
+                  1
+                ],
+                [
+                  "geo-val-03",
+                  1,
+                  0
+                ],
+                [
+                  "geo-val-03",
+                  1,
+                  1
+                ]
+              ],
+              "interrupt_after_epoch": 1,
+              "pilot_initialization": "original epoch-5 checkpoint, never technical weights"
+            },
+            "pilot": {
+              "epochs": 5,
+              "train_pairs": 1440,
+              "val_pairs": 360
+            }
+          },
+          "mass_campaign_authorized": false,
+          "arm": "C0",
+          "run_id": "oe2-cgan-ajuste-f05-C0-s2026100303",
+          "critic": "patch_critic_70",
+          "lambda_adv": 1,
+          "lambda_gp": 10,
+          "n_critic": 5,
+          "rng_policy": "torch CPU/CUDA; NumPy and Python stored; independent order per epoch",
+          "critic_fake_policy": "one no-grad train-mode G sample reused for five D steps; fresh G sample for G update",
+          "critic_frozen_during_generator_step": true
+        },
+        "sources": {
+          "objetivo-2/herramientas/datos_ajuste.py": "2c89d770cc3d7b4fee66c977ff89af8faf6ab6bbca3ed12fe1f2a98734aa167f",
+          "objetivo-2/herramientas/ejecutar_ajuste.py": "8d49980e4e1c4b96347c81203a820cc5784b57473079562decbedd747fe11abb",
+          "objetivo-2/herramientas/perdida_cuentas_regionales.py": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+          "objetivo-2/herramientas/evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524",
+          "objetivo-2/implementacion/models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+          "objetivo-2/implementacion/scripts/evaluation/metrics.py": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42",
+          "objetivo-2/herramientas/revisar_ajuste.py": "294e4291b3bd10d6c0f597c9145867c4ac7f33cfd0bdacd5c78c3c4cee5ea750",
+          "objetivo-2/herramientas/evaluar_ajuste.py": "f0840197c20ff848dd79bfe3385eabc4beeaff632da67c580961bb14c13e721b",
+          "objetivo-2/herramientas/ejecutar_ajuste_cgan.py": "2147a4b58442567104c40a4ba0b91e8ce4dafd62c61dee740b28bc237d8428a1",
+          "objetivo-2/herramientas/revisar_ajuste_cgan.py": "777b19cf697b4d32c2e74997500ca67f71c29507238dfb838de3cec188b0f424",
+          "objetivo-2/herramientas/evaluar_ajuste_cgan.py": "0dc1a9a6d4334490d3a99ebf3a00e6ecfd7e4015712d18488134dc0a36b85ac3",
+          "objetivo-2/herramientas/gradientes_critico.py": "76024538c9df1ba43e4c3c549e806137f820322b6d25aa3ff37bfb6c417da8be",
+          "objetivo-2/implementacion/models/patch_critic.py": "41fbbb005fd152d3ddf10e50721ac855108907714e150632d1942275736b84d8",
+          "objetivo-2/implementacion/scripts/training/losses.py": "8d950c772d923a98343b8cda787b28567df7d2bbd09c62f50085efb13f96c0a5"
+        },
+        "environment": {
+          "python": "3.12.3",
+          "numpy": "2.3.5",
+          "torch": "2.6.0+cu118",
+          "cuda": "11.8",
+          "device": "cuda:0",
+          "gpu": "NVIDIA L40S",
+          "threads": 2,
+          "deterministic": true,
+          "cudnn": 90100,
+          "cublas_workspace": ":4096:8",
+          "tf32": false,
+          "numpy_rng": "MT19937",
+          "python_rng": "MT19937"
+        },
+        "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+        "cache_sha256": "df720c9d64735fc02ac8d3147f8a230f7a8fdcec7530f9d16351c049c9413530",
+        "train_indices_sha256": "9da8b884e0130f5b84965bd41b25af63c0bee9785917d7b4793269710a2d9871",
+        "val_indices_sha256": "3b1b5b5b5309c45fd8a8099bfe7fee91902a1054fd09138bed4478e7fe6d3824",
+        "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+        "initial_generator_sha256": "73c70580e066740a43283e3a3172c2758391e27bd6ee8518075711dd1a7f3916",
+        "initial_critic_sha256": "be1747d6be094ac51e5287f154e7ef16baf83523b341b5dcda6482729ca49a33",
+        "epochs": 2
+      },
+      {
+        "schema": "oe2-cgan-ajuste-run-v1",
+        "critic_gradient_policy": "wasserstein-then-weighted-gp-v1",
+        "arm": "C1",
+        "stage": "tecnica",
+        "config": {
+          "schema": "oe2-cgan-ajuste-v1",
+          "fraction": 0.05,
+          "generator": "unet_dc_5",
+          "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+          "initial_epoch": 5,
+          "reset_optimizer": true,
+          "reset_rng": true,
+          "seed": 2026100303,
+          "optimizer": {
+            "name": "Adam",
+            "lr": 0.00001,
+            "betas": [
+              0,
+              0.9
+            ]
+          },
+          "batch": 4,
+          "epochs": 5,
+          "early_stopping": false,
+          "selected_epoch": 5,
+          "train_pairs": 1440,
+          "val_pairs": 360,
+          "train_split": "train",
+          "selection_split": "val",
+          "reserved_splits_allowed": false,
+          "hflip": false,
+          "augmentation": false,
+          "lambda_l1": 100,
+          "regional_loss": "mean_absolute_log1p_region_mean_counts",
+          "normalization_scale": 8.239329427901795,
+          "regional_families": [
+            "cielo",
+            "roca",
+            "borde",
+            "anomalias"
+          ],
+          "region_min_pixels": 20,
+          "region_family_equal_weight": true,
+          "lambda_regional": 1,
+          "gradient_clipping": false,
+          "amp": false,
+          "checkpoint_policy": "last each epoch plus final epoch 5; no best-SSIM selection",
+          "resume": "same arm, protocol and code identity only",
+          "stages": {
+            "technical": {
+              "epochs": 2,
+              "train_pairs": 8,
+              "val_pairs": 8,
+              "requires_gpu_before_pilot": true,
+              "train_indices": [
+                [
+                  "geo-train-01",
+                  0,
+                  0
+                ],
+                [
+                  "geo-train-01",
+                  0,
+                  1
+                ],
+                [
+                  "geo-train-02",
+                  0,
+                  0
+                ],
+                [
+                  "geo-train-02",
+                  0,
+                  1
+                ],
+                [
+                  "geo-train-04",
+                  0,
+                  0
+                ],
+                [
+                  "geo-train-04",
+                  0,
+                  1
+                ],
+                [
+                  "geo-train-10",
+                  0,
+                  0
+                ],
+                [
+                  "geo-train-10",
+                  0,
+                  1
+                ]
+              ],
+              "val_indices": [
+                [
+                  "geo-val-01",
+                  0,
+                  0
+                ],
+                [
+                  "geo-val-01",
+                  0,
+                  1
+                ],
+                [
+                  "geo-val-02",
+                  0,
+                  0
+                ],
+                [
+                  "geo-val-02",
+                  0,
+                  1
+                ],
+                [
+                  "geo-val-03",
+                  0,
+                  0
+                ],
+                [
+                  "geo-val-03",
+                  0,
+                  1
+                ],
+                [
+                  "geo-val-03",
+                  1,
+                  0
+                ],
+                [
+                  "geo-val-03",
+                  1,
+                  1
+                ]
+              ],
+              "interrupt_after_epoch": 1,
+              "pilot_initialization": "original epoch-5 checkpoint, never technical weights"
+            },
+            "pilot": {
+              "epochs": 5,
+              "train_pairs": 1440,
+              "val_pairs": 360
+            }
+          },
+          "mass_campaign_authorized": false,
+          "arm": "C1",
+          "run_id": "oe2-cgan-ajuste-f05-C1-s2026100303",
+          "critic": "patch_critic_70",
+          "lambda_adv": 1,
+          "lambda_gp": 10,
+          "n_critic": 5,
+          "rng_policy": "torch CPU/CUDA; NumPy and Python stored; independent order per epoch",
+          "critic_fake_policy": "one no-grad train-mode G sample reused for five D steps; fresh G sample for G update",
+          "critic_frozen_during_generator_step": true
+        },
+        "sources": {
+          "objetivo-2/herramientas/datos_ajuste.py": "2c89d770cc3d7b4fee66c977ff89af8faf6ab6bbca3ed12fe1f2a98734aa167f",
+          "objetivo-2/herramientas/ejecutar_ajuste.py": "8d49980e4e1c4b96347c81203a820cc5784b57473079562decbedd747fe11abb",
+          "objetivo-2/herramientas/perdida_cuentas_regionales.py": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+          "objetivo-2/herramientas/evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524",
+          "objetivo-2/implementacion/models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+          "objetivo-2/implementacion/scripts/evaluation/metrics.py": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42",
+          "objetivo-2/herramientas/revisar_ajuste.py": "294e4291b3bd10d6c0f597c9145867c4ac7f33cfd0bdacd5c78c3c4cee5ea750",
+          "objetivo-2/herramientas/evaluar_ajuste.py": "f0840197c20ff848dd79bfe3385eabc4beeaff632da67c580961bb14c13e721b",
+          "objetivo-2/herramientas/ejecutar_ajuste_cgan.py": "2147a4b58442567104c40a4ba0b91e8ce4dafd62c61dee740b28bc237d8428a1",
+          "objetivo-2/herramientas/revisar_ajuste_cgan.py": "777b19cf697b4d32c2e74997500ca67f71c29507238dfb838de3cec188b0f424",
+          "objetivo-2/herramientas/evaluar_ajuste_cgan.py": "0dc1a9a6d4334490d3a99ebf3a00e6ecfd7e4015712d18488134dc0a36b85ac3",
+          "objetivo-2/herramientas/gradientes_critico.py": "76024538c9df1ba43e4c3c549e806137f820322b6d25aa3ff37bfb6c417da8be",
+          "objetivo-2/implementacion/models/patch_critic.py": "41fbbb005fd152d3ddf10e50721ac855108907714e150632d1942275736b84d8",
+          "objetivo-2/implementacion/scripts/training/losses.py": "8d950c772d923a98343b8cda787b28567df7d2bbd09c62f50085efb13f96c0a5"
+        },
+        "environment": {
+          "python": "3.12.3",
+          "numpy": "2.3.5",
+          "torch": "2.6.0+cu118",
+          "cuda": "11.8",
+          "device": "cuda:0",
+          "gpu": "NVIDIA L40S",
+          "threads": 2,
+          "deterministic": true,
+          "cudnn": 90100,
+          "cublas_workspace": ":4096:8",
+          "tf32": false,
+          "numpy_rng": "MT19937",
+          "python_rng": "MT19937"
+        },
+        "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+        "cache_sha256": "df720c9d64735fc02ac8d3147f8a230f7a8fdcec7530f9d16351c049c9413530",
+        "train_indices_sha256": "9da8b884e0130f5b84965bd41b25af63c0bee9785917d7b4793269710a2d9871",
+        "val_indices_sha256": "3b1b5b5b5309c45fd8a8099bfe7fee91902a1054fd09138bed4478e7fe6d3824",
+        "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+        "initial_generator_sha256": "73c70580e066740a43283e3a3172c2758391e27bd6ee8518075711dd1a7f3916",
+        "initial_critic_sha256": "be1747d6be094ac51e5287f154e7ef16baf83523b341b5dcda6482729ca49a33",
+        "epochs": 2
+      },
+      {
+        "schema": "oe2-cgan-ajuste-run-v1",
+        "critic_gradient_policy": "wasserstein-then-weighted-gp-v1",
+        "arm": "C1",
+        "stage": "tecnica",
+        "config": {
+          "schema": "oe2-cgan-ajuste-v1",
+          "fraction": 0.05,
+          "generator": "unet_dc_5",
+          "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+          "initial_epoch": 5,
+          "reset_optimizer": true,
+          "reset_rng": true,
+          "seed": 2026100303,
+          "optimizer": {
+            "name": "Adam",
+            "lr": 0.00001,
+            "betas": [
+              0,
+              0.9
+            ]
+          },
+          "batch": 4,
+          "epochs": 5,
+          "early_stopping": false,
+          "selected_epoch": 5,
+          "train_pairs": 1440,
+          "val_pairs": 360,
+          "train_split": "train",
+          "selection_split": "val",
+          "reserved_splits_allowed": false,
+          "hflip": false,
+          "augmentation": false,
+          "lambda_l1": 100,
+          "regional_loss": "mean_absolute_log1p_region_mean_counts",
+          "normalization_scale": 8.239329427901795,
+          "regional_families": [
+            "cielo",
+            "roca",
+            "borde",
+            "anomalias"
+          ],
+          "region_min_pixels": 20,
+          "region_family_equal_weight": true,
+          "lambda_regional": 1,
+          "gradient_clipping": false,
+          "amp": false,
+          "checkpoint_policy": "last each epoch plus final epoch 5; no best-SSIM selection",
+          "resume": "same arm, protocol and code identity only",
+          "stages": {
+            "technical": {
+              "epochs": 2,
+              "train_pairs": 8,
+              "val_pairs": 8,
+              "requires_gpu_before_pilot": true,
+              "train_indices": [
+                [
+                  "geo-train-01",
+                  0,
+                  0
+                ],
+                [
+                  "geo-train-01",
+                  0,
+                  1
+                ],
+                [
+                  "geo-train-02",
+                  0,
+                  0
+                ],
+                [
+                  "geo-train-02",
+                  0,
+                  1
+                ],
+                [
+                  "geo-train-04",
+                  0,
+                  0
+                ],
+                [
+                  "geo-train-04",
+                  0,
+                  1
+                ],
+                [
+                  "geo-train-10",
+                  0,
+                  0
+                ],
+                [
+                  "geo-train-10",
+                  0,
+                  1
+                ]
+              ],
+              "val_indices": [
+                [
+                  "geo-val-01",
+                  0,
+                  0
+                ],
+                [
+                  "geo-val-01",
+                  0,
+                  1
+                ],
+                [
+                  "geo-val-02",
+                  0,
+                  0
+                ],
+                [
+                  "geo-val-02",
+                  0,
+                  1
+                ],
+                [
+                  "geo-val-03",
+                  0,
+                  0
+                ],
+                [
+                  "geo-val-03",
+                  0,
+                  1
+                ],
+                [
+                  "geo-val-03",
+                  1,
+                  0
+                ],
+                [
+                  "geo-val-03",
+                  1,
+                  1
+                ]
+              ],
+              "interrupt_after_epoch": 1,
+              "pilot_initialization": "original epoch-5 checkpoint, never technical weights"
+            },
+            "pilot": {
+              "epochs": 5,
+              "train_pairs": 1440,
+              "val_pairs": 360
+            }
+          },
+          "mass_campaign_authorized": false,
+          "arm": "C1",
+          "run_id": "oe2-cgan-ajuste-f05-C1-s2026100303",
+          "critic": "patch_critic_70",
+          "lambda_adv": 1,
+          "lambda_gp": 10,
+          "n_critic": 5,
+          "rng_policy": "torch CPU/CUDA; NumPy and Python stored; independent order per epoch",
+          "critic_fake_policy": "one no-grad train-mode G sample reused for five D steps; fresh G sample for G update",
+          "critic_frozen_during_generator_step": true
+        },
+        "sources": {
+          "objetivo-2/herramientas/datos_ajuste.py": "2c89d770cc3d7b4fee66c977ff89af8faf6ab6bbca3ed12fe1f2a98734aa167f",
+          "objetivo-2/herramientas/ejecutar_ajuste.py": "8d49980e4e1c4b96347c81203a820cc5784b57473079562decbedd747fe11abb",
+          "objetivo-2/herramientas/perdida_cuentas_regionales.py": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+          "objetivo-2/herramientas/evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524",
+          "objetivo-2/implementacion/models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+          "objetivo-2/implementacion/scripts/evaluation/metrics.py": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42",
+          "objetivo-2/herramientas/revisar_ajuste.py": "294e4291b3bd10d6c0f597c9145867c4ac7f33cfd0bdacd5c78c3c4cee5ea750",
+          "objetivo-2/herramientas/evaluar_ajuste.py": "f0840197c20ff848dd79bfe3385eabc4beeaff632da67c580961bb14c13e721b",
+          "objetivo-2/herramientas/ejecutar_ajuste_cgan.py": "2147a4b58442567104c40a4ba0b91e8ce4dafd62c61dee740b28bc237d8428a1",
+          "objetivo-2/herramientas/revisar_ajuste_cgan.py": "777b19cf697b4d32c2e74997500ca67f71c29507238dfb838de3cec188b0f424",
+          "objetivo-2/herramientas/evaluar_ajuste_cgan.py": "0dc1a9a6d4334490d3a99ebf3a00e6ecfd7e4015712d18488134dc0a36b85ac3",
+          "objetivo-2/herramientas/gradientes_critico.py": "76024538c9df1ba43e4c3c549e806137f820322b6d25aa3ff37bfb6c417da8be",
+          "objetivo-2/implementacion/models/patch_critic.py": "41fbbb005fd152d3ddf10e50721ac855108907714e150632d1942275736b84d8",
+          "objetivo-2/implementacion/scripts/training/losses.py": "8d950c772d923a98343b8cda787b28567df7d2bbd09c62f50085efb13f96c0a5"
+        },
+        "environment": {
+          "python": "3.12.3",
+          "numpy": "2.3.5",
+          "torch": "2.6.0+cu118",
+          "cuda": "11.8",
+          "device": "cuda:0",
+          "gpu": "NVIDIA L40S",
+          "threads": 2,
+          "deterministic": true,
+          "cudnn": 90100,
+          "cublas_workspace": ":4096:8",
+          "tf32": false,
+          "numpy_rng": "MT19937",
+          "python_rng": "MT19937"
+        },
+        "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+        "cache_sha256": "df720c9d64735fc02ac8d3147f8a230f7a8fdcec7530f9d16351c049c9413530",
+        "train_indices_sha256": "9da8b884e0130f5b84965bd41b25af63c0bee9785917d7b4793269710a2d9871",
+        "val_indices_sha256": "3b1b5b5b5309c45fd8a8099bfe7fee91902a1054fd09138bed4478e7fe6d3824",
+        "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+        "initial_generator_sha256": "73c70580e066740a43283e3a3172c2758391e27bd6ee8518075711dd1a7f3916",
+        "initial_critic_sha256": "be1747d6be094ac51e5287f154e7ef16baf83523b341b5dcda6482729ca49a33",
+        "epochs": 2
+      }
+    ],
+    "checkpoint_sha256": {
+      "C0-continua": "2065700a41ad98725d71b8119080f61ca53067afd458b40994f1c731f81d5e31",
+      "C0-recuperada": "b0d95e4cf1a5af7b3f11b4c1a96a7839e5b54fe2000c3dd5ef5843601247667c",
+      "C1-continua": "3e39e77109b2b9edf225ca7d5bfad8b2078f428a7f0d7a1b1002d0a3e9095bb9",
+      "C1-recuperada": "1b3e1bb5fd0cbd67660cff65a9cdbc6a9cbc5f78fc4bc9cb6c20fd7069c88d52"
+    }
+  },
+  "gpu_execution_repeated_locally": false,
+  "heldout_opened": false,
+  "masks": {
+    "semantic_equal": true,
+    "local_manifest_sha256": "762b423a757da5dee2dcea58664a9b9ef34bba84db749d8fb2880e523ef9776d",
+    "delivery_manifest_sha256": "df720c9d64735fc02ac8d3147f8a230f7a8fdcec7530f9d16351c049c9413530",
+    "comparison_ignores_only_compressed_npz_hash": true
+  },
+  "evaluation_recomputed": {
+    "float_fields": 5334,
+    "max_abs_difference": 1.7763568394002505e-15,
+    "summary": {
+      "entrada": {
+        "ssim": 0.7518121158353864,
+        "psnr": 24.16772800716849,
+        "Q_by_geometry": {
+          "geo-val-01": 0.011978948077161562,
+          "geo-val-02": 0.025514356976083424,
+          "geo-val-03": 0.016922050081937045
+        },
+        "Q": 0.018138451711727344,
+        "sky_mae": 0.06802366966581791,
+        "edge_mae": 0.12091980217515516,
+        "common_contrasts": 23,
+        "contrast_absolute_error": 0.24644261860892383
+      },
+      "C0": {
+        "ssim": 0.8148675478845345,
+        "psnr": 30.571782661012772,
+        "Q_by_geometry": {
+          "geo-val-01": 0.11118196793019365,
+          "geo-val-02": 0.04011512733261638,
+          "geo-val-03": 0.06482902579195828
+        },
+        "Q": 0.07204204035158944,
+        "sky_mae": 0.02830002538188474,
+        "edge_mae": 0.11278490250755363,
+        "common_contrasts": 23,
+        "contrast_absolute_error": 0.10519356569254701
+      },
+      "C1": {
+        "ssim": 0.8156978491958564,
+        "psnr": 30.645711152316522,
+        "Q_by_geometry": {
+          "geo-val-01": 0.06647220832078353,
+          "geo-val-02": 0.023772486973493875,
+          "geo-val-03": 0.05271559894434035
+        },
+        "Q": 0.047653431412872586,
+        "sky_mae": 0.022380659982335502,
+        "edge_mae": 0.11264863490702919,
+        "common_contrasts": 23,
+        "contrast_absolute_error": 0.09130464463921545
+      },
+      "inicial_cgan": {
+        "ssim": 0.8227914493773519,
+        "psnr": 31.10406039160106,
+        "Q_by_geometry": {
+          "geo-val-01": 0.03469973598861689,
+          "geo-val-02": 0.1574423520066559,
+          "geo-val-03": 0.178056229865975
+        },
+        "Q": 0.1233994392870826,
+        "sky_mae": 0.1264756274688191,
+        "edge_mae": 0.14419176072733247,
+        "common_contrasts": 23,
+        "contrast_absolute_error": 0.090666679217511
+      }
+    },
+    "decision_checks": {
+      "Q_reduced": true,
+      "each_geometry_not_worse": true,
+      "sky_not_worse": true,
+      "edge_not_worse": true,
+      "contrast_support_unchanged": true,
+      "contrast_not_worse": true,
+      "ssim_not_worse": true,
+      "psnr_not_worse": true
+    },
+    "decision": "mejora_concordante_descriptiva",
+    "anomaly_diagnostics": {
+      "rows": 24,
+      "worse_bias_vs_C0": 8,
+      "worse_bias_vs_initial": 5,
+      "physical_acceptance": false,
+      "note": "Salvaguarda descriptiva; no cambia retrospectivamente la regla de decisión ni acredita calidad en etapa técnica."
+    },
+    "physical_acceptance": false
+  },
+  "inference": {
+    "C0": {
+      "images": 360,
+      "pixel_max_abs": 0.000008612871170043945,
+      "pixel_mean_abs": 5.875917719864508e-8,
+      "metrics_cpu": {
+        "n": 360,
+        "ssim": 0.8148675496428073,
+        "psnr": 30.57178293013104
+      },
+      "ssim_difference": 1.7582727496190387e-9,
+      "psnr_difference": 2.691182672265313e-7
+    },
+    "C1": {
+      "images": 360,
+      "pixel_max_abs": 0.000007897615432739258,
+      "pixel_mean_abs": 5.60887692011091e-8,
+      "metrics_cpu": {
+        "n": 360,
+        "ssim": 0.8156978535697722,
+        "psnr": 30.64571124882885
+      },
+      "ssim_difference": 4.373915785116367e-9,
+      "psnr_difference": 9.651232701912704e-8
+    },
+    "inicial_cgan": {
+      "images": 360,
+      "pixel_max_abs": 0.000003933906555175781,
+      "pixel_mean_abs": 3.0729472839478394e-8,
+      "metrics_cpu": {
+        "n": 360,
+        "ssim": 0.8227914467544925,
+        "psnr": 31.10406026468815
+      },
+      "ssim_difference": 2.6228594851573916e-9,
+      "psnr_difference": 1.2691290862676397e-7
+    }
+  },
+  "inference_tolerances": {
+    "pixel_max_abs": 0.0001,
+    "ssim": 0.00001,
+    "psnr_db": 0.001,
+    "scope": "Solo inferencia CPU frente a CUDA; recuperación técnica exige igualdad exacta."
+  },
+  "initial_checkpoint_sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+  "audit_procedure": {
+    "script_sha256": "837fbbe2b3d43efa9dab35ddb202f9449c4159d16f70cd24641a907560cc4f94",
+    "local_script": "C:/Users/Usuari/AppData/Local/Temp/oe2-cg04c-revision/verificar.py",
+    "scientific_code_commit": "4fc3bd5aab9f8c3623742d356e31896407278870",
+    "functions": [
+      "revisar_ajuste_cgan.audit_technical(require_gpu=True)",
+      "revisar_ajuste_cgan.load_completed",
+      "evaluar_ajuste_cgan.tables",
+      "ejecutar_ajuste_cgan.evaluate"
+    ],
+    "note": "Carga de estados GPU en CPU; no ejecución CUDA local. Inferencia CPU de 360 imágenes por modelo."
+  }
+}

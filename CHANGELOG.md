@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## 2026-10-04 — Verificación independiente de CG-04c y cinco épocas
+
+- Se descargaron y verificaron 13 binarios, 1.970.094.884 bytes. Se confirmó recuperación exacta desde cuatro checkpoints técnicos y consistencia de las dos continuaciones finales.
+- Se reprodujeron 5.334 valores de evaluación y 1.080 inferencias CPU de C0, C1 y cGAN inicial. [Informe y evidencia](objetivo-2/REVISION_BINARIOS_CG04C.md).
+- CG-04 queda cerrado para el entorno entregado; las cinco épocas están verificadas. Se conserva la clasificación descriptiva, sin aceptación física ni cierre del OE2. No se inicia la campaña principal.
+
 ## 2026-10-04 — Corrección candidata CG-04c
 
 - Se separó la derivación de Wasserstein y GP y se fijó su suma antes de un único paso Adam; se mantienen la pérdida, configuraciones y cinco pasos D por G.

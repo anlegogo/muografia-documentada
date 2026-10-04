@@ -1,5 +1,15 @@
 # Bitácora del OE2
 
+## 2026-10-04 — Auditoría de la entrega y binarios CG-04c
+
+- Fecha de revisión: 2026-10-04 America/Bogota; ejecución y publicación estudiantil del 2026-10-04 UTC. Actividad autorizada: verificar los archivos de Drive y la evaluación recibida.
+- Entradas: entrega 1ec1c24, 13 binarios, referencias train/val y máscaras verificadas. Fuentes científicas fijadas en 4fc3bd5.
+- Procedimiento: tamaños/SHA-256, auditoría restringida de seis checkpoints, igualdad exacta de recuperación, recálculo de 5.334 campos y 1.080 inferencias CPU. [Informe](REVISION_BINARIOS_CG04C.md) y [evidencia](evidencias/revision-binarios-cg04c.json).
+- Incidencia: el script local pasó inicialmente índices como tuplas; se corrigió a listas según contrato del evaluador, sin cambiar contenido ni orden. La comparación de máscaras separó huellas de contenedores comprimidos de contenido y metadatos.
+- Resultado: CG-02 GPU y CG-03 ejecución/evaluación verificados; CG-04 cerrado en el entorno recibido. Se reproduce mejora descriptiva de C1 frente a C0 con compromisos frente al inicial. La aceptación física permanece pendiente.
+- Límites: una semilla, tres geometrías val; no se repitió CUDA localmente ni se abrieron test/generalization. El controlador GPU cambió respecto de CG-04b, por lo que no se atribuye causalidad aislada a la corrección.
+- Siguiente decisión: valorar el compromiso físico y fijar repetición/comparación antes de ampliar. No se requieren nuevas corridas para suplir archivos de esta entrega.
+
 ## 2026-10-04 — Preparación y validación CPU de CG-04c
 
 - Fecha y zona: 2026-10-04 America/Bogota. Actividad autorizada por la dirección: implementar la corrección propuesta tras revisar CG-04b.

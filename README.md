@@ -1,6 +1,6 @@
 # Muografía: documentación y seguimiento académico
 
-**OE2 — CG-04c preparado:** se implementó la [corrección de acumulación del gradiente](objetivo-2/CORRECCION_GRADIENTES_CG04C.md), con 34 controles satisfactorios y recuperación exacta de C0/C1 en CPU. Falta la comprobación técnica en L40S; únicamente tras aceptación GPU exacta pueden continuar las cinco épocas. CG-04 permanece parcial y el OE2 abierto.
+**OE2 — entrega CG-04c verificada:** la [auditoría independiente](objetivo-2/REVISION_BINARIOS_CG04C.md) confirma los 13 binarios, recuperación exacta GPU y ambas continuaciones de cinco épocas. Se reprodujeron la evaluación y la inferencia. C1 mejora frente a C0, con un compromiso respecto del modelo inicial; aceptación física y cierre del OE2 siguen pendientes.
 
 **Estado del OE1 — 2026-10-03: cumplido y cerrado por decisión de la dirección bajo el alcance idealizado adoptado.** Datos, distribución, justificación e informe específico completos. [Registro de cierre](objetivo-1/CIERRE_OE1.md). No se requieren nuevas corridas para este alcance; no se declara aprobada la tesis completa.
 

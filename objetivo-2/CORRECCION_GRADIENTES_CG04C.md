@@ -1,5 +1,7 @@
 # CG-04c: corrección del gradiente y validación GPU
 
+**Actualización posterior a la entrega — 2026-10-04:** la [verificación independiente](REVISION_BINARIOS_CG04C.md) confirma la aceptación técnica GPU y ambas continuaciones de cinco épocas. Los apartados siguientes conservan el procedimiento y el estado de su preparación como antecedente; no constituyen un encargo de repetir el ensayo. CG-04 está cerrado para el entorno recibido y la aceptación física del OE2 sigue pendiente.
+
 Fecha: 2026-10-04, America/Bogota. **Implementación candidata; la aceptación L40S sigue pendiente.** Se busca recuperar exactamente un entrenamiento interrumpido antes de ejecutar las cinco épocas C0/C1.
 
 ## Cambio y fundamento

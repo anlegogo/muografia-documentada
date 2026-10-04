@@ -1,5 +1,7 @@
 # Índice de documentación
 
+- [Verificación independiente de pesos, recuperación e inferencia CG-04c](../objetivo-2/REVISION_BINARIOS_CG04C.md).
+
 - [CG-04c: corrección del gradiente y comprobación L40S](../objetivo-2/CORRECCION_GRADIENTES_CG04C.md).
 
 - [Revisión independiente de los resultados GPU CG-04b](../objetivo-2/REVISION_BINARIOS_CG04B.md).
