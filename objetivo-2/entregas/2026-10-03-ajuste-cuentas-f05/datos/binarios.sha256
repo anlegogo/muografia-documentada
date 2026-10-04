@@ -1,0 +1,12 @@
+f82680767c5c84d573a5d3a44a074a0540cf06502ca51469483890e640d3638d  ./piloto/A/last.pt
+fc5bdc8dd0fb086046223076d5e3e7eea14c8472ddd8b1a04ef7224be5c5ff99  ./piloto/A/predicciones-val.npy
+9788ccea4639ddeec317548d314703ec3badffa322983224fac6575db30d811e  ./piloto/B/last.pt
+4744652429ebe1a285c26b85d0043dc4811112c5adf7360e9a5abf0388674415  ./piloto/B/predicciones-val.npy
+beca101ad3893d14abc2802a51ac078512517d042897cc2cd3aaa5ced5236365  ./tecnica/A-continua/last.pt
+b0778688b2f1e1d657f7e92515c88afcd4cdd92907c6f04d0a34896d2c098604  ./tecnica/A-continua/predicciones-val.npy
+027f2e374f9ae29ee0d55abb8c393a85d5ef9c801117ac6a811768f21c4ef756  ./tecnica/A-recuperada/last.pt
+b0778688b2f1e1d657f7e92515c88afcd4cdd92907c6f04d0a34896d2c098604  ./tecnica/A-recuperada/predicciones-val.npy
+8e7b8b0534eba6235a9bb02ddd35d7a78cee09a8f28c09f3e18a60bff8ecee84  ./tecnica/B-continua/last.pt
+d38ac6020abaa854b781f596db83c2cb140107bfaf595567faf3561436eac7af  ./tecnica/B-continua/predicciones-val.npy
+4a4b3cc1f5956909e5cade75b76b548f46c9549258d3156450509930a49f2da2  ./tecnica/B-recuperada/last.pt
+d38ac6020abaa854b781f596db83c2cb140107bfaf595567faf3561436eac7af  ./tecnica/B-recuperada/predicciones-val.npy

@@ -1,0 +1,14 @@
+01-mascaras exit=0 02:03:20
+02-tecnica-A-continua exit=0 02:03:34
+03-tecnica-A-corte exit=0 02:03:42
+04-tecnica-A-reanudacion exit=0 02:03:51
+02-tecnica-B-continua exit=0 02:04:01
+03-tecnica-B-corte exit=0 02:04:09
+04-tecnica-B-reanudacion exit=0 02:04:19
+05-aceptacion-gpu exit=0 02:04:25
+06-piloto-A exit=0 02:07:29
+06-piloto-B exit=0 02:10:34
+07-evaluacion exit=0 02:10:45
+08-figuras-director exit=0 02:11:01
+09-analisis-complementario exit=0 02:11:19
+LANZAMIENTO_COMPLETO

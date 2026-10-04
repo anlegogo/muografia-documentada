@@ -1,0 +1,1 @@
+python /workspace/analizar_cuentas.py --datos /workspace/insumos --mascaras /workspace/trabajo/mascaras-ajuste-v1 --pesos /workspace/insumos/pesos/unet-best.pt --control /workspace/trabajo/ajuste-cuentas-v1/piloto/A --regional /workspace/trabajo/ajuste-cuentas-v1/piloto/B --salida /workspace/trabajo/ajuste-cuentas-v1/analisis-complementario 

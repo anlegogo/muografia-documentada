@@ -1,0 +1,12 @@
+246593406 ./piloto/A/last.pt
+94371968 ./piloto/A/predicciones-val.npy
+246593406 ./piloto/B/last.pt
+94371968 ./piloto/B/predicciones-val.npy
+246591998 ./tecnica/A-continua/last.pt
+2097280 ./tecnica/A-continua/predicciones-val.npy
+246592382 ./tecnica/A-recuperada/last.pt
+2097280 ./tecnica/A-recuperada/predicciones-val.npy
+246591998 ./tecnica/B-continua/last.pt
+2097280 ./tecnica/B-continua/predicciones-val.npy
+246592446 ./tecnica/B-recuperada/last.pt
+2097280 ./tecnica/B-recuperada/predicciones-val.npy

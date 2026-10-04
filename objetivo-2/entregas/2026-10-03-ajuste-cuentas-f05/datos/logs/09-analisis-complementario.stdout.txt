@@ -1,0 +1,98 @@
+{
+ "summary_abs": {
+  "entrada": {
+   "total_rel_error": 0.0003,
+   "rel_error_cielo": 0.0003,
+   "rel_error_roca": 0.0148,
+   "rel_error_borde": 0.0035,
+   "rel_error_anomalias": 0.1136,
+   "ssim": 0.7518,
+   "psnr": 24.1677
+  },
+  "inicial": {
+   "total_rel_error": 0.039,
+   "rel_error_cielo": 0.0406,
+   "rel_error_roca": 0.1696,
+   "rel_error_borde": 0.014,
+   "rel_error_anomalias": 0.2168,
+   "ssim": 0.8437,
+   "psnr": 32.9037
+  },
+  "A": {
+   "total_rel_error": 0.0089,
+   "rel_error_cielo": 0.009,
+   "rel_error_roca": 0.0322,
+   "rel_error_borde": 0.0076,
+   "rel_error_anomalias": 0.129,
+   "ssim": 0.843,
+   "psnr": 32.8188
+  },
+  "B": {
+   "total_rel_error": 0.0032,
+   "rel_error_cielo": 0.0034,
+   "rel_error_roca": 0.0201,
+   "rel_error_borde": 0.011,
+   "rel_error_anomalias": 0.1115,
+   "ssim": 0.8431,
+   "psnr": 32.7686
+  }
+ },
+ "paired": {
+  "total_rel_error": {
+   "statistic": "|B|-|A|",
+   "mean": -0.005738899561792251,
+   "ci95": [
+    -0.013963925462499725,
+    -0.001399319902825363
+   ]
+  },
+  "rel_error_cielo": {
+   "statistic": "|B|-|A|",
+   "mean": -0.00564087793682048,
+   "ci95": [
+    -0.013685666602196217,
+    -0.0011661883458903442
+   ]
+  },
+  "rel_error_roca": {
+   "statistic": "|B|-|A|",
+   "mean": -0.012119503124570215,
+   "ci95": [
+    -0.02420393583549884,
+    0.002793902726438772
+   ]
+  },
+  "rel_error_borde": {
+   "statistic": "|B|-|A|",
+   "mean": 0.0034761075562682923,
+   "ci95": [
+    0.001207546530292925,
+    0.007020327774169689
+   ]
+  },
+  "rel_error_anomalias": {
+   "statistic": "|B|-|A|",
+   "mean": -0.017553001649038755,
+   "ci95": [
+    -0.030659506180667484,
+    -0.0024452695177789997
+   ]
+  },
+  "ssim": {
+   "statistic": "B-A",
+   "mean": 9.355937110237462e-05,
+   "ci95": [
+    -0.0015767135588211933,
+    0.000979440965874066
+   ]
+  },
+  "psnr": {
+   "statistic": "B-A",
+   "mean": -0.050204676771587936,
+   "ci95": [
+    -0.12102502487055294,
+    -0.0035453456778355994
+   ]
+  }
+ }
+}

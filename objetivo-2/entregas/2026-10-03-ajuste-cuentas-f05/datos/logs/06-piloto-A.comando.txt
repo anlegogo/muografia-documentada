@@ -1,0 +1,1 @@
+python objetivo-2/herramientas/ejecutar_ajuste.py --rama A --etapa piloto --datos /workspace/insumos --mascaras /workspace/trabajo/mascaras-ajuste-v1 --pesos /workspace/insumos/pesos/unet-best.pt --salida /workspace/trabajo/ajuste-cuentas-v1/piloto/A --aceptacion-gpu /workspace/trabajo/ajuste-cuentas-v1/aceptacion-gpu.json 

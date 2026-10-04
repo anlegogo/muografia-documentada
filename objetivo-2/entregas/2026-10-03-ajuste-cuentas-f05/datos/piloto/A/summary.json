@@ -1,0 +1,355 @@
+{
+  "identity": {
+    "schema": "oe2-ajuste-run-v1",
+    "arm": "A",
+    "stage": "piloto",
+    "config": {
+      "schema": "oe2-ajuste-ejecucion-v1",
+      "fraction": 0.05,
+      "generator": "unet_dc_5",
+      "initial_checkpoint_sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+      "initial_epoch": 5,
+      "reset_optimizer": true,
+      "reset_rng": true,
+      "seed": 2026100302,
+      "optimizer": {
+        "name": "Adam",
+        "lr": 1e-05,
+        "betas": [
+          0,
+          0.9
+        ]
+      },
+      "batch": 4,
+      "epochs": 5,
+      "early_stopping": false,
+      "selected_epoch": 5,
+      "train_pairs": 1440,
+      "val_pairs": 360,
+      "train_split": "train",
+      "selection_split": "val",
+      "reserved_splits_allowed": false,
+      "hflip": false,
+      "augmentation": false,
+      "lambda_l1": 100,
+      "regional_loss": "mean_absolute_log1p_region_mean_counts",
+      "normalization_scale": 8.239329427901795,
+      "regional_families": [
+        "cielo",
+        "roca",
+        "borde",
+        "anomalias"
+      ],
+      "region_min_pixels": 20,
+      "region_family_equal_weight": true,
+      "lambda_regional": 0,
+      "gradient_clipping": false,
+      "amp": false,
+      "checkpoint_policy": "last each epoch plus final epoch 5; no best-SSIM selection",
+      "resume": "same arm, protocol and code identity only",
+      "stages": {
+        "technical": {
+          "epochs": 2,
+          "train_pairs": 8,
+          "val_pairs": 8,
+          "requires_gpu_before_pilot": true,
+          "train_indices": [
+            [
+              "geo-train-01",
+              0,
+              0
+            ],
+            [
+              "geo-train-01",
+              0,
+              1
+            ],
+            [
+              "geo-train-02",
+              0,
+              0
+            ],
+            [
+              "geo-train-02",
+              0,
+              1
+            ],
+            [
+              "geo-train-04",
+              0,
+              0
+            ],
+            [
+              "geo-train-04",
+              0,
+              1
+            ],
+            [
+              "geo-train-10",
+              0,
+              0
+            ],
+            [
+              "geo-train-10",
+              0,
+              1
+            ]
+          ],
+          "val_indices": [
+            [
+              "geo-val-01",
+              0,
+              0
+            ],
+            [
+              "geo-val-01",
+              0,
+              1
+            ],
+            [
+              "geo-val-02",
+              0,
+              0
+            ],
+            [
+              "geo-val-02",
+              0,
+              1
+            ],
+            [
+              "geo-val-03",
+              0,
+              0
+            ],
+            [
+              "geo-val-03",
+              0,
+              1
+            ],
+            [
+              "geo-val-03",
+              1,
+              0
+            ],
+            [
+              "geo-val-03",
+              1,
+              1
+            ]
+          ],
+          "interrupt_after_epoch": 1,
+          "pilot_initialization": "original epoch-5 checkpoint, never technical weights"
+        },
+        "pilot": {
+          "epochs": 5,
+          "train_pairs": 1440,
+          "val_pairs": 360
+        }
+      },
+      "mass_campaign_authorized": false,
+      "arm": "A-control",
+      "run_id": "oe2-ajuste-f05-A-s2026100302"
+    },
+    "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+    "cache_sha256": "df720c9d64735fc02ac8d3147f8a230f7a8fdcec7530f9d16351c049c9413530",
+    "sources": {
+      "objetivo-2/herramientas/datos_ajuste.py": "2c89d770cc3d7b4fee66c977ff89af8faf6ab6bbca3ed12fe1f2a98734aa167f",
+      "objetivo-2/herramientas/ejecutar_ajuste.py": "8d49980e4e1c4b96347c81203a820cc5784b57473079562decbedd747fe11abb",
+      "objetivo-2/herramientas/perdida_cuentas_regionales.py": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+      "objetivo-2/herramientas/evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524",
+      "objetivo-2/implementacion/models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+      "objetivo-2/implementacion/scripts/evaluation/metrics.py": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42"
+    },
+    "environment": {
+      "python": "3.12.3",
+      "numpy": "2.3.5",
+      "torch": "2.6.0+cu118",
+      "cuda": "11.8",
+      "device": "cuda:0",
+      "gpu": "NVIDIA L40S",
+      "threads": 2,
+      "deterministic": true
+    },
+    "train_indices_sha256": "64c50dc04a45dd9268c4dbee3fb254d5dd95aed5185fa1c5f5d2e73996e8c7d6",
+    "val_indices_sha256": "debc775fdc6b0aea181c5f3dd9620014b1fd07bc72042a16dd2819c08a96ceaf",
+    "epochs": 5,
+    "initial_checkpoint_sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+    "initial_generator_sha256": "0c8a57db54e006ac85536fd59f4bb71113bc85f4dc8b6f358adaef0a5757d909"
+  },
+  "completed": true,
+  "epoch": 5,
+  "selected_epoch": 5,
+  "resume_count": 0,
+  "history": [
+    {
+      "epoch": 1,
+      "steps": 360,
+      "order_sha256": "fe9b528f204764bb3c2e59bfe6ff125f96562e6031a27ff7192cd2d1a35d3a89",
+      "losses": {
+        "l1": 0.008715804068682094,
+        "regional": 0.03282608052806359,
+        "total": 0.8715804070234299
+      },
+      "family_losses": {
+        "0": 0.00519610693286857,
+        "1": 0.03270588226898461,
+        "2": 0.007643130632410234,
+        "3": 0.09261935566573944
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "gradient_norm_mean": 6.204529027688316,
+      "gradient_norm_max": 34.53402767933368,
+      "validation": {
+        "n": 360,
+        "ssim": 0.8433638185717862,
+        "psnr": 32.8477618237358
+      },
+      "epoch_compute_seconds": 38.34357434883714,
+      "generator_sha256": "b624218d2f7bdd8fa5a164aa9515ee22944bf4e878fb64ba59772c27ca1969b2"
+    },
+    {
+      "epoch": 2,
+      "steps": 360,
+      "order_sha256": "5633584a024da59c443864e5626af73d844d9983e5c132a83e8b364c7dc2888c",
+      "losses": {
+        "l1": 0.008633966027345095,
+        "regional": 0.03038225969109319,
+        "total": 0.8633966028690339
+      },
+      "family_losses": {
+        "0": 0.004791778227004419,
+        "1": 0.029681949562615644,
+        "2": 0.0067520349876623725,
+        "3": 0.086690503682752
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "gradient_norm_mean": 6.546466415406634,
+      "gradient_norm_max": 19.08484930930277,
+      "validation": {
+        "n": 360,
+        "ssim": 0.8432558054509027,
+        "psnr": 32.82836417249177
+      },
+      "epoch_compute_seconds": 33.458484556525946,
+      "generator_sha256": "07121efc73432fda3e786ea043f7b1253a6cca058760dbbb11b446875981f7d5"
+    },
+    {
+      "epoch": 3,
+      "steps": 360,
+      "order_sha256": "df871e03ee7f388d1020350209023643d343ce7500708040a9436cd1ad28f80a",
+      "losses": {
+        "l1": 0.008595174441062328,
+        "regional": 0.030054490095536363,
+        "total": 0.8595174440079265
+      },
+      "family_losses": {
+        "0": 0.004808714271629393,
+        "1": 0.029788950262340012,
+        "2": 0.006473056019183464,
+        "3": 0.08524366518065947
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "gradient_norm_mean": 6.70014870333614,
+      "gradient_norm_max": 21.87374779749215,
+      "validation": {
+        "n": 360,
+        "ssim": 0.8433878310156947,
+        "psnr": 32.86508315641366
+      },
+      "epoch_compute_seconds": 33.51073654741049,
+      "generator_sha256": "553f09d1b3a69b5b447de5bda3e30b19e88825d50bd4757a28242f46507aae4b"
+    },
+    {
+      "epoch": 4,
+      "steps": 360,
+      "order_sha256": "7171d1125c6ea421e337e6753e349d99ef0190da677451fc8b25f460bc8d1d71",
+      "losses": {
+        "l1": 0.008566469606012105,
+        "regional": 0.02996846716440602,
+        "total": 0.856646959318055
+      },
+      "family_losses": {
+        "0": 0.0046126327790338715,
+        "1": 0.030550078453061045,
+        "2": 0.006424667541620039,
+        "3": 0.08416596159941689
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "gradient_norm_mean": 6.527404252890326,
+      "gradient_norm_max": 18.42712981499834,
+      "validation": {
+        "n": 360,
+        "ssim": 0.8432325640208962,
+        "psnr": 32.8521642847463
+      },
+      "epoch_compute_seconds": 33.26908293738961,
+      "generator_sha256": "035add8d07cc81c98fe41c68c41bc72cf6f0d8f5c64345bf95611d25ecf335e1"
+    },
+    {
+      "epoch": 5,
+      "steps": 360,
+      "order_sha256": "90bda4639ca94fac734944ad2b7bf6746effb1b0f97ebd743fc6d697cc33e24e",
+      "losses": {
+        "l1": 0.008544585747747786,
+        "regional": 0.029798441219409656,
+        "total": 0.8544585757785373
+      },
+      "family_losses": {
+        "0": 0.004770086106904556,
+        "1": 0.030955655553943664,
+        "2": 0.006215742519125568,
+        "3": 0.08294501527964221
+      },
+      "family_samples": {
+        "0": 1440,
+        "1": 1440,
+        "2": 1440,
+        "3": 1320
+      },
+      "valid_regions_total": 6600,
+      "gradient_norm_mean": 6.85730297495177,
+      "gradient_norm_max": 19.176702701119336,
+      "validation": {
+        "n": 360,
+        "ssim": 0.8429705315445634,
+        "psnr": 32.81882753780392
+      },
+      "epoch_compute_seconds": 33.62892720475793,
+      "generator_sha256": "7a6988d3f740a46a23fa0f2f9d4e1db624b0355a106c98ef5fcc18cc5538bac7"
+    }
+  ],
+  "sessions": [
+    {
+      "first_epoch": 1,
+      "last_epoch": 5,
+      "compute_elapsed_seconds": 174.07705241441727,
+      "peak_cuda_allocated_bytes": 1891251712
+    }
+  ],
+  "last_checkpoint_sha256": "f82680767c5c84d573a5d3a44a074a0540cf06502ca51469483890e640d3638d",
+  "last_save_seconds": 0.36258430033922195
+}

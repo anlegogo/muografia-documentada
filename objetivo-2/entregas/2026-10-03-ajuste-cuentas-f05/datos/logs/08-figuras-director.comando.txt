@@ -1,0 +1,1 @@
+python objetivo-2/herramientas/visualizar_ajuste.py --datos /workspace/insumos --mascaras /workspace/trabajo/mascaras-ajuste-v1 --control /workspace/trabajo/ajuste-cuentas-v1/piloto/A --regional /workspace/trabajo/ajuste-cuentas-v1/piloto/B --etapa piloto --salida /workspace/trabajo/ajuste-cuentas-v1/figuras-piloto 
