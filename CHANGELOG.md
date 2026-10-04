@@ -1,5 +1,14 @@
 # Registro de cambios
 
+## 2026-10-03 — Integración y recuperación del ajuste A/B
+
+- Por autorización de la dirección se completaron lector, máscaras train/val, ejecutor, recuperación, auditor GPU, evaluación regional y figuras. Se conservan el diseño científico, el código histórico y las entregas estudiantiles. [Guía vigente](objetivo-2/INSTRUCCIONES_AJUSTE_CUENTAS_F05.md).
+- Se verificaron 90 mapas, 30 archivos de datos/metadatos y conservación de las 78 máscaras regionales val previas. Trece controles funcionales, nueve de pérdida y ocho geométricos satisfactorios. Las cuatro ejecuciones técnicas de red completa reproducen exactamente estados y predicciones al recuperar; 16 actualizaciones de la batería y cuatro preliminares. [Evidencia consolidada](objetivo-2/evidencias/integracion-ajuste-v1.json).
+- La regresión del evaluador usa 720 predicciones anteriores: diferencia cero en 468 valores regionales y reproducción de 24 contrastes. No son resultados de un nuevo piloto. Se generaron figuras técnicas y se inspeccionó su presentación.
+- Incidencias: índice Git original ilegible, dependencias de Adam ausentes y betas con tipos mixtos. Se utilizó copia aislada, dependencias locales y conversión explícita a flotantes; la batería definitiva pasó. No se reparó el índice original.
+- Ajuste-01 verificado; Ajuste-02 CPU verificado/GPU pendiente; Ajuste-03 pendiente. No se ejecutó piloto de cinco épocas ni se abrieron imágenes test/generalization. Próximo paso: comprobar CUDA y ejecutar A/B con aceptación técnica; no se declara mejora física ni cierre del OE2.
+
+
 ## Diseño del ajuste de cuentas OE2 — 2026-10-03
 
 - Comparación acotada A/B: mismo checkpoint U-Net inicial, cinco épocas adicionales por rama y selección fija de la época final. [Diseño](objetivo-2/DISENO_AJUSTE_CUENTAS_F05.md).

@@ -39,7 +39,7 @@ def regional_log_count_loss(z,reference,masks,families,scale,min_pixels=20):
             valid.append(r)
         if not by_family:raise ValueError('imagen sin regiones con soporte')
         per_image.append(torch.stack([torch.stack(v).mean() for v in by_family.values()]).mean())
-        support.append({'valid_regions':valid,'valid_families':sorted(by_family)})
+        support.append({'valid_regions':valid,'valid_families':sorted(by_family),'family_losses':{str(f):float(torch.stack(v).mean().detach()) for f,v in by_family.items()}})
     value=torch.stack(per_image).mean()
     if not torch.isfinite(value):raise ValueError('pérdida regional no finita')
     return value,support

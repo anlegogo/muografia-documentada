@@ -89,3 +89,7 @@
 | [Plantilla de entrega](../objetivo-1/PLANTILLA_ENTREGA_OE1.md) | ¿Cómo reportar los resultados? |
 
 Los Markdown originales de los estudiantes permanecen dentro de `originales/`; sus enlaces históricos se conservan y pueden apuntar a archivos del repositorio de trabajo no entregados. No son enlaces nuevos de la guía.
+
+## Ejecución del ajuste de cuentas — 2026-10-03
+
+- [Guía operativa y comprobaciones locales del ajuste A/B](../objetivo-2/INSTRUCCIONES_AJUSTE_CUENTAS_F05.md): integración, recuperación, puerta de aceptación GPU, evaluación y entrega.

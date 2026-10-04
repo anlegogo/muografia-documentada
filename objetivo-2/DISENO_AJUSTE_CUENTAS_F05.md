@@ -1,6 +1,6 @@
 # Diseño del ajuste acotado de conservación de cuentas
 
-Fecha: 2026-10-03, Colombia. **Estado: diseño y componente de pérdida verificados en CPU; integración en el ejecutor y comprobación GPU pendientes.** No se han realizado los nuevos entrenamientos. Las especificaciones de este documento no son configuraciones aceptadas por el ejecutor del piloto v1.
+Fecha: 2026-10-03, Colombia. **Estado vigente: integración y entrenamiento técnico con recuperación verificados en CPU; comprobación GPU y piloto A/B pendientes.** La [guía operativa](INSTRUCCIONES_AJUSTE_CUENTAS_F05.md) contiene los comandos del nuevo ejecutor y la evidencia. No se ha realizado el ensayo completo de cinco épocas. Las especificaciones históricas no son configuraciones del ejecutor del piloto v1.
 
 ## Problema y pregunta
 
@@ -36,7 +36,7 @@ Las dos [especificaciones A](configuraciones/ajuste-cuentas-v1/ajuste-control.sp
 
 ## Término de pérdida
 
-Las máscaras se obtienen de geometría y coordenadas mediante las reglas del diagnóstico regional: cielo, roca sin anomalía, borde del cono y núcleos de anomalías con longitud mínima de 20 m y erosión de un píxel. Su preparación debe ampliarse y verificarse sobre las 12 geometrías de train; no se reutilizan máscaras de val como si pertenecieran a train.
+Las máscaras se obtienen de geometría y coordenadas mediante las reglas del diagnóstico regional: cielo, roca sin anomalía, borde del cono y núcleos de anomalías con longitud mínima de 20 m y erosión de un píxel. Su preparación ya se amplió y verificó sobre las 12 geometrías de train y las tres de val; no se reutilizan máscaras de val como si pertenecieran a train.
 
 Para cada región \(R\), \(z_p\) es la salida normalizada del generador y \(c_p\) la referencia de cuentas de entrenamiento. Se define
 
@@ -111,21 +111,23 @@ Se comparan valores sin redondear. Diferencias pequeñas no se consideran eviden
 
 ## Etapas y presupuesto
 
-**Ajuste-01 — Integración del ejecutor: pendiente.** Debe añadirse una interfaz explícita que entregue, junto a cada imagen, sus cuentas de referencia, identificador de geometría/vista y máscaras correspondientes. No se adivinará la geometría a partir de la imagen ni se buscarán máscaras usando valores predichos. El cálculo de máscaras actual requiere adaptar el caso de catálogo sin anomalías, además de recorrer train; esos casos deben comprobarse antes del lanzamiento.
+**Ajuste-01 — Integración del ejecutor: verificado en CPU.** La [evidencia de integración](evidencias/integracion-ajuste-v1.json) y el [manifiesto de máscaras](evidencias/manifiesto-mascaras-ajuste-v1.json) acreditan los requisitos siguientes, conservados como criterio de cierre. Debe añadirse una interfaz explícita que entregue, junto a cada imagen, sus cuentas de referencia, identificador de geometría/vista y máscaras correspondientes. No se adivinará la geometría a partir de la imagen ni se buscarán máscaras usando valores predichos. El cálculo de máscaras actual requiere adaptar el caso de catálogo sin anomalías, además de recorrer train; esos casos deben comprobarse antes del lanzamiento.
 
 La implementación deberá rechazar campos desconocidos, identidades incompatibles, carga cruzada A/B y mezcla de datos. Se conservarán las huellas de código, geometrías, máscaras, protocolo, configuración y pesos iniciales. El código v1 y las entregas estudiantiles no se sustituyen silenciosamente.
 
-**Ajuste-02 — Prueba técnica CPU y GPU con recuperación: pendiente.** Ocho pares train y ocho val, lote cuatro y dos épocas por rama. Las listas de geometría/vista/realización están fijadas en los JSON. Train incluye caso homogéneo, conducto, cuerpo denso y dos cavidades. Se interrumpe al terminar la primera época y se reanuda la segunda. La prueba debe contrastarse con la ejecución continua, sin duplicar pasos ni perder estados. Con peso regional cero debe conservarse el resultado y el gradiente de la pérdida original.
+**Ajuste-02 — Prueba técnica CPU y GPU con recuperación: parcial.** Recuperación exacta verificada en CPU; GPU pendiente. Se conserva el procedimiento requerido: Ocho pares train y ocho val, lote cuatro y dos épocas por rama. Las listas de geometría/vista/realización están fijadas en los JSON. Train incluye caso homogéneo, conducto, cuerpo denso y dos cavidades. Se interrumpe al terminar la primera época y se reanuda la segunda. La prueba debe contrastarse con la ejecución continua, sin duplicar pasos ni perder estados. Con peso regional cero debe conservarse el resultado y el gradiente de la pérdida original.
 
 Se requieren optimización finita, correcta correspondencia máscara/muestra, igualdad de inicialización y orden de datos A/B, conservación/reanudación del optimizador y del RNG, rechazo de cambio de rama/configuración y registro del entorno. La comprobación GPU todavía no está realizada.
 
-**Ajuste-03 — Comparación breve: pendiente.** Tras cerrar la integración y la prueba técnica, se ejecutan cinco épocas por rama desde los pesos originales de época 5, nunca desde los pesos de la prueba técnica. Son 360 lotes por época, 1.800 actualizaciones por rama y 3.600 en total. La etapa técnica añade ocho actualizaciones entre las dos ramas. Son actualizaciones de red, no transportes de muones ni nuevas corridas Geant4.
+**Ajuste-03 — Comparación breve: pendiente.** Tras cerrar la integración y la prueba técnica, se ejecutan cinco épocas por rama desde los pesos originales de época 5, nunca desde los pesos de la prueba técnica. Son 360 lotes por época, 1.800 actualizaciones por rama y 3.600 en total. Las dos ejecuciones técnicas recuperadas suman ocho actualizaciones; sus dos referencias continuas añaden otras ocho. La batería completa requiere 16 actualizaciones, aclaración del presupuesto inicial de ocho. Son actualizaciones de red, no transportes de muones ni nuevas corridas Geant4.
 
 No se promete una duración de pared a partir del piloto previo: el término regional agrega cómputo y utiliza operaciones en doble precisión para estabilidad. Se medirá tiempo y memoria en la prueba técnica, y se estimará la duración antes de asignar GPU. Las ramas pueden ejecutarse secuencialmente en una GPU. No se contratan recursos ni se reserva SC3 en esta preparación.
 
 La entrega de A/B debe incluir especificaciones efectivas, registros completos, checkpoint inicial identificado, last/final con huella, estados de recuperación, predicciones val, tabla por imagen/región, resumen y figuras. Los pesos grandes se distribuyen por Drive con hashes; no se incorporan a Git.
 
-## Comprobaciones locales realizadas
+## Comprobaciones iniciales del diseño
+
+Este apartado conserva la evidencia anterior a la integración. La comprobación posterior del bucle completo y la recuperación se documenta en la [guía vigente](INSTRUCCIONES_AJUSTE_CUENTAS_F05.md).
 
 Se implementó el [componente de pérdida](herramientas/perdida_cuentas_regionales.py) sin modificar el motor v1. Se superaron nueve pruebas: solución exacta, sesgo conocido, referencias cero, equivalencia del control de peso cero, gradiente por diferencias finitas, ponderación por familias, soporte insuficiente, rechazo de rango inválido y estabilidad cerca de uno. [Evidencia](evidencias/verificacion-diseno-ajuste-v1.json).
 
@@ -146,4 +148,4 @@ python objetivo-2/herramientas/comprobar_perdida_con_pesos.py --repo . --datos t
 
 El directorio de salida debe existir. Los parámetros opcionales torch-dir, insumos y modulos permiten repetir el procedimiento en un entorno aislado con copias verificadas, como se hizo en esta revisión. Los comandos anteriores verifican el diseño y la retropropagación; no entrenan.
 
-No hay todavía un comando de lanzamiento del ajuste. Elaborarlo y verificarlo pertenece a Ajuste-01/Ajuste-02. Por tanto, el diseño está documentado y comprobado en su componente matemático, pero aún no corresponde enviar a los estudiantes una orden de ejecutar los dos entrenamientos.
+El lanzamiento ya dispone de [comandos verificados en CPU](INSTRUCCIONES_AJUSTE_CUENTAS_F05.md). Los JSON ejecucion-A.json y ejecucion-B.json son configuraciones del nuevo ejecutor; las especificaciones anteriores se conservan como antecedente. Antes del piloto se exige la comprobación técnica en GPU y la aceptación generada por el revisor.

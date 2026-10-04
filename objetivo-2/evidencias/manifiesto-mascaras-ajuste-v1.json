@@ -1,0 +1,1001 @@
+{
+  "schema": "oe2-ajuste-masks-v1",
+  "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+  "normalization": {
+    "fit_split": "train",
+    "name": "train_log_bounded_v1",
+    "scale": 8.239329427901795,
+    "train_max": 3786
+  },
+  "splits": {
+    "train": [
+      "geo-train-01",
+      "geo-train-02",
+      "geo-train-03",
+      "geo-train-04",
+      "geo-train-05",
+      "geo-train-06",
+      "geo-train-07",
+      "geo-train-08",
+      "geo-train-09",
+      "geo-train-10",
+      "geo-train-11",
+      "geo-train-12"
+    ],
+    "val": [
+      "geo-val-01",
+      "geo-val-02",
+      "geo-val-03"
+    ]
+  },
+  "geometry_protocol": {
+    "schema": "oe2-regiones-geometricas-v1",
+    "date": "2026-10-03",
+    "split": "val",
+    "fraction": 0.05,
+    "methods": [
+      "entrada",
+      "unet",
+      "cgan"
+    ],
+    "detector_distance_m": 1000,
+    "detector_height_m": 1.5,
+    "ray_max_m": 3000,
+    "cone_top_radius_m": 0.1,
+    "anomaly_min_length_m": 20,
+    "core_erosion_pixels": 1,
+    "rock_sky_margin_pixels": 2,
+    "control_same_elevation": true,
+    "control_cone_length_relative_tolerance": 0.05,
+    "control_donors_per_pixel": 5,
+    "min_matched_pixels": 20,
+    "min_match_fraction": 0.8,
+    "normalization_scale": 8.239329427901795,
+    "selection": "fixed before regional metrics; previous validation outputs already observed",
+    "decision": "descriptive comparison only; no physical acceptance thresholds established"
+  },
+  "geometries": {
+    "geo-train-01": {
+      "geometry_sha256": "ff3c69ab7e37b51c5d4e1318d298a9ddc35446367e6ea4abf5c322e3b86f07b1",
+      "mask_file": "geo-train-01.npz",
+      "mask_sha256": "8ca6157e5e1281e8ea80494fe55f621c0368bd920252c1fa5461666892ce13ef",
+      "content_sha256": "92d78df91c8ecb2c2e9ea1a082e5765e76b5f4fbf0ce75f9d1bb2204b3780110",
+      "names": [
+        "cielo",
+        "roca_sin_anomalia",
+        "borde_cono"
+      ],
+      "families": [
+        0,
+        1,
+        2
+      ],
+      "pixels_by_view": [
+        {
+          "cielo": 46942,
+          "roca_sin_anomalia": 14944,
+          "borde_cono": 2228
+        },
+        {
+          "cielo": 46942,
+          "roca_sin_anomalia": 14944,
+          "borde_cono": 2228
+        },
+        {
+          "cielo": 46942,
+          "roca_sin_anomalia": 14944,
+          "borde_cono": 2228
+        },
+        {
+          "cielo": 46942,
+          "roca_sin_anomalia": 14944,
+          "borde_cono": 2228
+        },
+        {
+          "cielo": 46942,
+          "roca_sin_anomalia": 14944,
+          "borde_cono": 2228
+        },
+        {
+          "cielo": 46942,
+          "roca_sin_anomalia": 14944,
+          "borde_cono": 2228
+        }
+      ]
+    },
+    "geo-train-02": {
+      "geometry_sha256": "abe49537a4e692a6df6ebf928342e8338b383b2b9e1f4e4ab2b8f0ba95d67526",
+      "mask_file": "geo-train-02.npz",
+      "mask_sha256": "757dd28cc5bdcfc22a8f5eec188d341f6f1e51d9616434c2de61180e7f298f3c",
+      "content_sha256": "9e861830c6b708b01a07d5742df7b79e2b4dbc0de0974c36e797fe3f39a38e3d",
+      "names": [
+        "cielo",
+        "roca_sin_anomalia",
+        "borde_cono",
+        "anomalia_0_conduit"
+      ],
+      "families": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "pixels_by_view": [
+        {
+          "cielo": 47226,
+          "roca_sin_anomalia": 12939,
+          "borde_cono": 2422,
+          "anomalia_0_conduit": 598
+        },
+        {
+          "cielo": 47226,
+          "roca_sin_anomalia": 12951,
+          "borde_cono": 2422,
+          "anomalia_0_conduit": 594
+        },
+        {
+          "cielo": 47226,
+          "roca_sin_anomalia": 13057,
+          "borde_cono": 2422,
+          "anomalia_0_conduit": 687
+        },
+        {
+          "cielo": 47226,
+          "roca_sin_anomalia": 12955,
+          "borde_cono": 2422,
+          "anomalia_0_conduit": 591
+        },
+        {
+          "cielo": 47226,
+          "roca_sin_anomalia": 12950,
+          "borde_cono": 2422,
+          "anomalia_0_conduit": 597
+        },
+        {
+          "cielo": 47226,
+          "roca_sin_anomalia": 12938,
+          "borde_cono": 2422,
+          "anomalia_0_conduit": 698
+        }
+      ]
+    },
+    "geo-train-03": {
+      "geometry_sha256": "757ff851126ae659d21fbaeaee1c4d60292e2b4d70b7fac04c0d1c88912f3a72",
+      "mask_file": "geo-train-03.npz",
+      "mask_sha256": "78057c2de854f5c22d12a26d268494452de980ffbabd482e363f4450e7ae0c63",
+      "content_sha256": "46dd72bc026e3e99cf4ae41fe5b5589bed3f7b1409436fa4f450eb949671856e",
+      "names": [
+        "cielo",
+        "roca_sin_anomalia",
+        "borde_cono",
+        "anomalia_0_cavity"
+      ],
+      "families": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "pixels_by_view": [
+        {
+          "cielo": 48988,
+          "roca_sin_anomalia": 12282,
+          "borde_cono": 2290,
+          "anomalia_0_cavity": 211
+        },
+        {
+          "cielo": 48988,
+          "roca_sin_anomalia": 12341,
+          "borde_cono": 2290,
+          "anomalia_0_cavity": 179
+        },
+        {
+          "cielo": 48988,
+          "roca_sin_anomalia": 12326,
+          "borde_cono": 2290,
+          "anomalia_0_cavity": 184
+        },
+        {
+          "cielo": 48988,
+          "roca_sin_anomalia": 12276,
+          "borde_cono": 2290,
+          "anomalia_0_cavity": 226
+        },
+        {
+          "cielo": 48988,
+          "roca_sin_anomalia": 12191,
+          "borde_cono": 2290,
+          "anomalia_0_cavity": 270
+        },
+        {
+          "cielo": 48988,
+          "roca_sin_anomalia": 12212,
+          "borde_cono": 2290,
+          "anomalia_0_cavity": 264
+        }
+      ]
+    },
+    "geo-train-04": {
+      "geometry_sha256": "a7d30817a40e8d4a71d2e85e571b65c7459ce88eeb549c05e56211ed60a6a440",
+      "mask_file": "geo-train-04.npz",
+      "mask_sha256": "70a3fd0346b24c0233c0689cb3f6a333df24987ee9867c0684aeaf3293f6d30c",
+      "content_sha256": "963e1b94f7465987961896c7d570d16b51e7d853f80793536e1d7d21a0908783",
+      "names": [
+        "cielo",
+        "roca_sin_anomalia",
+        "borde_cono",
+        "anomalia_0_dense_body"
+      ],
+      "families": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "pixels_by_view": [
+        {
+          "cielo": 44978,
+          "roca_sin_anomalia": 15992,
+          "borde_cono": 2264,
+          "anomalia_0_dense_body": 539
+        },
+        {
+          "cielo": 44978,
+          "roca_sin_anomalia": 16012,
+          "borde_cono": 2264,
+          "anomalia_0_dense_body": 515
+        },
+        {
+          "cielo": 44978,
+          "roca_sin_anomalia": 16018,
+          "borde_cono": 2264,
+          "anomalia_0_dense_body": 503
+        },
+        {
+          "cielo": 44978,
+          "roca_sin_anomalia": 16016,
+          "borde_cono": 2264,
+          "anomalia_0_dense_body": 521
+        },
+        {
+          "cielo": 44978,
+          "roca_sin_anomalia": 15694,
+          "borde_cono": 2264,
+          "anomalia_0_dense_body": 762
+        },
+        {
+          "cielo": 44978,
+          "roca_sin_anomalia": 15668,
+          "borde_cono": 2264,
+          "anomalia_0_dense_body": 777
+        }
+      ]
+    },
+    "geo-train-05": {
+      "geometry_sha256": "09322cce8d7f40e4f68a6ef5400aa2aa722d3a68d107b1c3cce3977ef03b723c",
+      "mask_file": "geo-train-05.npz",
+      "mask_sha256": "79083fa78349a9d9d3b4ba7e4d9b302a3041021954a61dc3c8ff75a5830c84aa",
+      "content_sha256": "906040b95c6a2005caae46aa0dd983385e5d129b7c1afc772e8c4bf0b9c39a42",
+      "names": [
+        "cielo",
+        "roca_sin_anomalia",
+        "borde_cono",
+        "anomalia_0_conduit",
+        "anomalia_1_cavity"
+      ],
+      "families": [
+        0,
+        1,
+        2,
+        3,
+        3
+      ],
+      "pixels_by_view": [
+        {
+          "cielo": 47826,
+          "roca_sin_anomalia": 12198,
+          "borde_cono": 2356,
+          "anomalia_0_conduit": 892,
+          "anomalia_1_cavity": 112
+        },
+        {
+          "cielo": 47826,
+          "roca_sin_anomalia": 11869,
+          "borde_cono": 2356,
+          "anomalia_0_conduit": 1088,
+          "anomalia_1_cavity": 124
+        },
+        {
+          "cielo": 47826,
+          "roca_sin_anomalia": 11834,
+          "borde_cono": 2356,
+          "anomalia_0_conduit": 1094,
+          "anomalia_1_cavity": 145
+        },
+        {
+          "cielo": 47826,
+          "roca_sin_anomalia": 12158,
+          "borde_cono": 2356,
+          "anomalia_0_conduit": 902,
+          "anomalia_1_cavity": 153
+        },
+        {
+          "cielo": 47826,
+          "roca_sin_anomalia": 11906,
+          "borde_cono": 2356,
+          "anomalia_0_conduit": 878,
+          "anomalia_1_cavity": 130
+        },
+        {
+          "cielo": 47826,
+          "roca_sin_anomalia": 11965,
+          "borde_cono": 2356,
+          "anomalia_0_conduit": 876,
+          "anomalia_1_cavity": 111
+        }
+      ]
+    },
+    "geo-train-06": {
+      "geometry_sha256": "c8f6c1352af1f7564356cffbd98e26fd6a5881e5ece15a0ab6f2ed60c8ea26ed",
+      "mask_file": "geo-train-06.npz",
+      "mask_sha256": "c931d63959fd3c8b7dd2a643e96285974f6be660e0573fbb76efc1bfcb8e3a3e",
+      "content_sha256": "cc7527b061002e2d8d229420cfbed6d5a2fe6ef8b83dab9f8ca2ecd2db657c7d",
+      "names": [
+        "cielo",
+        "roca_sin_anomalia",
+        "borde_cono",
+        "anomalia_0_conduit",
+        "anomalia_1_dense_body"
+      ],
+      "families": [
+        0,
+        1,
+        2,
+        3,
+        3
+      ],
+      "pixels_by_view": [
+        {
+          "cielo": 48282,
+          "roca_sin_anomalia": 11030,
+          "borde_cono": 2348,
+          "anomalia_0_conduit": 740,
+          "anomalia_1_dense_body": 891
+        },
+        {
+          "cielo": 48282,
+          "roca_sin_anomalia": 11230,
+          "borde_cono": 2348,
+          "anomalia_0_conduit": 643,
+          "anomalia_1_dense_body": 859
+        },
+        {
+          "cielo": 48282,
+          "roca_sin_anomalia": 11365,
+          "borde_cono": 2348,
+          "anomalia_0_conduit": 629,
+          "anomalia_1_dense_body": 804
+        },
+        {
+          "cielo": 48282,
+          "roca_sin_anomalia": 11226,
+          "borde_cono": 2348,
+          "anomalia_0_conduit": 636,
+          "anomalia_1_dense_body": 772
+        },
+        {
+          "cielo": 48282,
+          "roca_sin_anomalia": 10979,
+          "borde_cono": 2348,
+          "anomalia_0_conduit": 658,
+          "anomalia_1_dense_body": 1041
+        },
+        {
+          "cielo": 48282,
+          "roca_sin_anomalia": 10910,
+          "borde_cono": 2348,
+          "anomalia_0_conduit": 672,
+          "anomalia_1_dense_body": 1131
+        }
+      ]
+    },
+    "geo-train-07": {
+      "geometry_sha256": "f8e3a804871a6744e101384cbcc5b360063e9ba017122ea5a022119dc6d457d1",
+      "mask_file": "geo-train-07.npz",
+      "mask_sha256": "9a0fc553cb4aca57575c0f5334dab107db58ed22afcf15a62ac7476b976eef72",
+      "content_sha256": "746aa3cdb6b955df1173d48f74e3af6e2b0488b14050a8d33ff49a5db83a1e7f",
+      "names": [
+        "cielo",
+        "roca_sin_anomalia",
+        "borde_cono",
+        "anomalia_0_cavity",
+        "anomalia_1_dense_body"
+      ],
+      "families": [
+        0,
+        1,
+        2,
+        3,
+        3
+      ],
+      "pixels_by_view": [
+        {
+          "cielo": 42812,
+          "roca_sin_anomalia": 17294,
+          "borde_cono": 2342,
+          "anomalia_0_cavity": 410,
+          "anomalia_1_dense_body": 576
+        },
+        {
+          "cielo": 42812,
+          "roca_sin_anomalia": 17490,
+          "borde_cono": 2342,
+          "anomalia_0_cavity": 334,
+          "anomalia_1_dense_body": 617
+        },
+        {
+          "cielo": 42812,
+          "roca_sin_anomalia": 17497,
+          "borde_cono": 2342,
+          "anomalia_0_cavity": 351,
+          "anomalia_1_dense_body": 678
+        },
+        {
+          "cielo": 42812,
+          "roca_sin_anomalia": 17057,
+          "borde_cono": 2342,
+          "anomalia_0_cavity": 456,
+          "anomalia_1_dense_body": 689
+        },
+        {
+          "cielo": 42812,
+          "roca_sin_anomalia": 17159,
+          "borde_cono": 2342,
+          "anomalia_0_cavity": 601,
+          "anomalia_1_dense_body": 712
+        },
+        {
+          "cielo": 42812,
+          "roca_sin_anomalia": 17424,
+          "borde_cono": 2342,
+          "anomalia_0_cavity": 558,
+          "anomalia_1_dense_body": 641
+        }
+      ]
+    },
+    "geo-train-08": {
+      "geometry_sha256": "df859ca1ead6e4fca4cad0d877131167a47a4d6443ebed1ee3379189600f7601",
+      "mask_file": "geo-train-08.npz",
+      "mask_sha256": "748e0712ece37117b057df1ff55eea85f083ab5a8f6fd872e3dd353690cb4db6",
+      "content_sha256": "6b9af52955857d78a6eb6a9420be746b4ca4a9c47e1d4f3d3b099137e2483be2",
+      "names": [
+        "cielo",
+        "roca_sin_anomalia",
+        "borde_cono",
+        "anomalia_0_conduit",
+        "anomalia_1_cavity",
+        "anomalia_2_dense_body"
+      ],
+      "families": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        3
+      ],
+      "pixels_by_view": [
+        {
+          "cielo": 45926,
+          "roca_sin_anomalia": 12869,
+          "borde_cono": 2392,
+          "anomalia_0_conduit": 1377,
+          "anomalia_1_cavity": 33,
+          "anomalia_2_dense_body": 786
+        },
+        {
+          "cielo": 45926,
+          "roca_sin_anomalia": 13426,
+          "borde_cono": 2392,
+          "anomalia_0_conduit": 1318,
+          "anomalia_1_cavity": 40,
+          "anomalia_2_dense_body": 610
+        },
+        {
+          "cielo": 45926,
+          "roca_sin_anomalia": 13294,
+          "borde_cono": 2392,
+          "anomalia_0_conduit": 1184,
+          "anomalia_1_cavity": 48,
+          "anomalia_2_dense_body": 557
+        },
+        {
+          "cielo": 45926,
+          "roca_sin_anomalia": 13114,
+          "borde_cono": 2392,
+          "anomalia_0_conduit": 1184,
+          "anomalia_1_cavity": 47,
+          "anomalia_2_dense_body": 618
+        },
+        {
+          "cielo": 45926,
+          "roca_sin_anomalia": 13472,
+          "borde_cono": 2392,
+          "anomalia_0_conduit": 1324,
+          "anomalia_1_cavity": 40,
+          "anomalia_2_dense_body": 492
+        },
+        {
+          "cielo": 45926,
+          "roca_sin_anomalia": 13073,
+          "borde_cono": 2392,
+          "anomalia_0_conduit": 1382,
+          "anomalia_1_cavity": 35,
+          "anomalia_2_dense_body": 534
+        }
+      ]
+    },
+    "geo-train-09": {
+      "geometry_sha256": "35bf7e33e0b864f486fb881e29613b5687e40ef4794d91f05d6a9fa7dbf75288",
+      "mask_file": "geo-train-09.npz",
+      "mask_sha256": "6eda1ecb09cb1d348802ec5dd4a57ad557fc5778eb1f85d4fbc4df7b61065ba9",
+      "content_sha256": "dfcc0222c7497036a3b88156bd06f3824c89231a4d173599039de50d5388afb7",
+      "names": [
+        "cielo",
+        "roca_sin_anomalia",
+        "borde_cono",
+        "anomalia_0_conduit"
+      ],
+      "families": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "pixels_by_view": [
+        {
+          "cielo": 48874,
+          "roca_sin_anomalia": 11593,
+          "borde_cono": 2336,
+          "anomalia_0_conduit": 455
+        },
+        {
+          "cielo": 48874,
+          "roca_sin_anomalia": 11603,
+          "borde_cono": 2336,
+          "anomalia_0_conduit": 476
+        },
+        {
+          "cielo": 48874,
+          "roca_sin_anomalia": 11593,
+          "borde_cono": 2336,
+          "anomalia_0_conduit": 546
+        },
+        {
+          "cielo": 48874,
+          "roca_sin_anomalia": 11575,
+          "borde_cono": 2336,
+          "anomalia_0_conduit": 463
+        },
+        {
+          "cielo": 48874,
+          "roca_sin_anomalia": 11569,
+          "borde_cono": 2336,
+          "anomalia_0_conduit": 558
+        },
+        {
+          "cielo": 48874,
+          "roca_sin_anomalia": 11585,
+          "borde_cono": 2336,
+          "anomalia_0_conduit": 552
+        }
+      ]
+    },
+    "geo-train-10": {
+      "geometry_sha256": "218c427d76f134eeafd211f5c2ae778a113fd3dedb6f2cc93bedca83a795a448",
+      "mask_file": "geo-train-10.npz",
+      "mask_sha256": "5b2cfc3eb97e50c4eaf025ca8e4da7a3e7fb1a3c630a89aeb0a5bb381468484c",
+      "content_sha256": "bbad79abccfde23cd1278ca58fb566da1930438f3d6880fc7098876493d53efd",
+      "names": [
+        "cielo",
+        "roca_sin_anomalia",
+        "borde_cono",
+        "anomalia_0_cavity",
+        "anomalia_1_cavity"
+      ],
+      "families": [
+        0,
+        1,
+        2,
+        3,
+        3
+      ],
+      "pixels_by_view": [
+        {
+          "cielo": 42538,
+          "roca_sin_anomalia": 18355,
+          "borde_cono": 2406,
+          "anomalia_0_cavity": 85,
+          "anomalia_1_cavity": 284
+        },
+        {
+          "cielo": 42538,
+          "roca_sin_anomalia": 18331,
+          "borde_cono": 2406,
+          "anomalia_0_cavity": 89,
+          "anomalia_1_cavity": 302
+        },
+        {
+          "cielo": 42538,
+          "roca_sin_anomalia": 18127,
+          "borde_cono": 2406,
+          "anomalia_0_cavity": 117,
+          "anomalia_1_cavity": 404
+        },
+        {
+          "cielo": 42538,
+          "roca_sin_anomalia": 17945,
+          "borde_cono": 2406,
+          "anomalia_0_cavity": 149,
+          "anomalia_1_cavity": 554
+        },
+        {
+          "cielo": 42538,
+          "roca_sin_anomalia": 18009,
+          "borde_cono": 2406,
+          "anomalia_0_cavity": 135,
+          "anomalia_1_cavity": 509
+        },
+        {
+          "cielo": 42538,
+          "roca_sin_anomalia": 18229,
+          "borde_cono": 2406,
+          "anomalia_0_cavity": 102,
+          "anomalia_1_cavity": 359
+        }
+      ]
+    },
+    "geo-train-11": {
+      "geometry_sha256": "201b8e4e65de4538a44acae09c1e69ddd1179459bd8be645bdeac669ac43d77f",
+      "mask_file": "geo-train-11.npz",
+      "mask_sha256": "561e64415c3e2d326f06bd31b2c89bbc1a4ebddd6c0caba4a578de14d5a37a1c",
+      "content_sha256": "4388c95be882a710064e0ee1ed7bf8915d2ef10753e24e4d30821cbf6b044fd6",
+      "names": [
+        "cielo",
+        "roca_sin_anomalia",
+        "borde_cono",
+        "anomalia_0_conduit",
+        "anomalia_1_cavity",
+        "anomalia_2_cavity"
+      ],
+      "families": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        3
+      ],
+      "pixels_by_view": [
+        {
+          "cielo": 44670,
+          "roca_sin_anomalia": 14421,
+          "borde_cono": 2376,
+          "anomalia_0_conduit": 867,
+          "anomalia_1_cavity": 307,
+          "anomalia_2_cavity": 423
+        },
+        {
+          "cielo": 44670,
+          "roca_sin_anomalia": 14044,
+          "borde_cono": 2376,
+          "anomalia_0_conduit": 854,
+          "anomalia_1_cavity": 318,
+          "anomalia_2_cavity": 562
+        },
+        {
+          "cielo": 44670,
+          "roca_sin_anomalia": 14430,
+          "borde_cono": 2376,
+          "anomalia_0_conduit": 852,
+          "anomalia_1_cavity": 351,
+          "anomalia_2_cavity": 606
+        },
+        {
+          "cielo": 44670,
+          "roca_sin_anomalia": 14308,
+          "borde_cono": 2376,
+          "anomalia_0_conduit": 861,
+          "anomalia_1_cavity": 361,
+          "anomalia_2_cavity": 476
+        },
+        {
+          "cielo": 44670,
+          "roca_sin_anomalia": 14435,
+          "borde_cono": 2376,
+          "anomalia_0_conduit": 872,
+          "anomalia_1_cavity": 341,
+          "anomalia_2_cavity": 373
+        },
+        {
+          "cielo": 44670,
+          "roca_sin_anomalia": 14658,
+          "borde_cono": 2376,
+          "anomalia_0_conduit": 876,
+          "anomalia_1_cavity": 317,
+          "anomalia_2_cavity": 355
+        }
+      ]
+    },
+    "geo-train-12": {
+      "geometry_sha256": "269a8f3959347c2713a4f8f563cf82092dc638f9633afbeafe5b26ca4fbcdc8d",
+      "mask_file": "geo-train-12.npz",
+      "mask_sha256": "80b4a9ac7ee1afb8b1d566a7d09e90c8e0c77efa43c1ad3f18ac99db862b491c",
+      "content_sha256": "047f4c18ab6de145292a7fd2c85a2b015a81705be971445f43563978ded8ef0e",
+      "names": [
+        "cielo",
+        "roca_sin_anomalia",
+        "borde_cono",
+        "anomalia_0_dense_body"
+      ],
+      "families": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "pixels_by_view": [
+        {
+          "cielo": 47634,
+          "roca_sin_anomalia": 13002,
+          "borde_cono": 2412,
+          "anomalia_0_dense_body": 576
+        },
+        {
+          "cielo": 47634,
+          "roca_sin_anomalia": 13183,
+          "borde_cono": 2412,
+          "anomalia_0_dense_body": 449
+        },
+        {
+          "cielo": 47634,
+          "roca_sin_anomalia": 13299,
+          "borde_cono": 2412,
+          "anomalia_0_dense_body": 357
+        },
+        {
+          "cielo": 47634,
+          "roca_sin_anomalia": 13311,
+          "borde_cono": 2412,
+          "anomalia_0_dense_body": 353
+        },
+        {
+          "cielo": 47634,
+          "roca_sin_anomalia": 13190,
+          "borde_cono": 2412,
+          "anomalia_0_dense_body": 432
+        },
+        {
+          "cielo": 47634,
+          "roca_sin_anomalia": 13024,
+          "borde_cono": 2412,
+          "anomalia_0_dense_body": 573
+        }
+      ]
+    },
+    "geo-val-01": {
+      "geometry_sha256": "71d4daf62362f81473403d57261fd293cfd687fb6f2998d46a142dfcbf29d6d7",
+      "mask_file": "geo-val-01.npz",
+      "mask_sha256": "8a69c6987fe8279607177f83522755dbc96cde26b1c4dbf0082ae62dccda7e5a",
+      "content_sha256": "74e6001d40384f321260da8262b253b82eee4d7cfe692385b195d2e54add042f",
+      "names": [
+        "cielo",
+        "roca_sin_anomalia",
+        "borde_cono",
+        "anomalia_0_conduit"
+      ],
+      "families": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "pixels_by_view": [
+        {
+          "cielo": 42426,
+          "roca_sin_anomalia": 17625,
+          "borde_cono": 2326,
+          "anomalia_0_conduit": 1017
+        },
+        {
+          "cielo": 42426,
+          "roca_sin_anomalia": 17764,
+          "borde_cono": 2326,
+          "anomalia_0_conduit": 994
+        },
+        {
+          "cielo": 42426,
+          "roca_sin_anomalia": 17799,
+          "borde_cono": 2326,
+          "anomalia_0_conduit": 876
+        },
+        {
+          "cielo": 42426,
+          "roca_sin_anomalia": 17798,
+          "borde_cono": 2326,
+          "anomalia_0_conduit": 877
+        },
+        {
+          "cielo": 42426,
+          "roca_sin_anomalia": 17762,
+          "borde_cono": 2326,
+          "anomalia_0_conduit": 996
+        },
+        {
+          "cielo": 42426,
+          "roca_sin_anomalia": 17728,
+          "borde_cono": 2326,
+          "anomalia_0_conduit": 1018
+        }
+      ]
+    },
+    "geo-val-02": {
+      "geometry_sha256": "f8376b4fe3262acb7523b605e2c2f9c8d9e5c36532c34e8bcc70d041f695b3bb",
+      "mask_file": "geo-val-02.npz",
+      "mask_sha256": "383c1864d6dd3f105ef35184df78d082bcaeb1faa8f16e4ac3af0247dab0c230",
+      "content_sha256": "525994c9d9ee2e7fc1dc1baf98448612fc8e1765511a8c30289ba4969476b491",
+      "names": [
+        "cielo",
+        "roca_sin_anomalia",
+        "borde_cono",
+        "anomalia_0_cavity"
+      ],
+      "families": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "pixels_by_view": [
+        {
+          "cielo": 46346,
+          "roca_sin_anomalia": 14844,
+          "borde_cono": 2240,
+          "anomalia_0_cavity": 354
+        },
+        {
+          "cielo": 46346,
+          "roca_sin_anomalia": 14860,
+          "borde_cono": 2240,
+          "anomalia_0_cavity": 342
+        },
+        {
+          "cielo": 46346,
+          "roca_sin_anomalia": 14997,
+          "borde_cono": 2240,
+          "anomalia_0_cavity": 255
+        },
+        {
+          "cielo": 46346,
+          "roca_sin_anomalia": 15073,
+          "borde_cono": 2240,
+          "anomalia_0_cavity": 205
+        },
+        {
+          "cielo": 46346,
+          "roca_sin_anomalia": 15060,
+          "borde_cono": 2240,
+          "anomalia_0_cavity": 210
+        },
+        {
+          "cielo": 46346,
+          "roca_sin_anomalia": 14969,
+          "borde_cono": 2240,
+          "anomalia_0_cavity": 268
+        }
+      ]
+    },
+    "geo-val-03": {
+      "geometry_sha256": "4a5eb9a461d4a084bd966a5cc48508556d279ffb8d9fda202e76e64619f0716d",
+      "mask_file": "geo-val-03.npz",
+      "mask_sha256": "5f2e149d805f9f8ede6afb95dbba348914b6368f569ade0adfda6904a9c68e70",
+      "content_sha256": "05a9cb311b0d9c7eac36863730e04b944497e9449b37f5f8708a7def3a7da7c7",
+      "names": [
+        "cielo",
+        "roca_sin_anomalia",
+        "borde_cono",
+        "anomalia_0_conduit",
+        "anomalia_1_dense_body"
+      ],
+      "families": [
+        0,
+        1,
+        2,
+        3,
+        3
+      ],
+      "pixels_by_view": [
+        {
+          "cielo": 44724,
+          "roca_sin_anomalia": 14827,
+          "borde_cono": 2392,
+          "anomalia_0_conduit": 782,
+          "anomalia_1_dense_body": 735
+        },
+        {
+          "cielo": 44724,
+          "roca_sin_anomalia": 14591,
+          "borde_cono": 2392,
+          "anomalia_0_conduit": 798,
+          "anomalia_1_dense_body": 558
+        },
+        {
+          "cielo": 44724,
+          "roca_sin_anomalia": 14725,
+          "borde_cono": 2392,
+          "anomalia_0_conduit": 831,
+          "anomalia_1_dense_body": 379
+        },
+        {
+          "cielo": 44724,
+          "roca_sin_anomalia": 14967,
+          "borde_cono": 2392,
+          "anomalia_0_conduit": 848,
+          "anomalia_1_dense_body": 324
+        },
+        {
+          "cielo": 44724,
+          "roca_sin_anomalia": 14754,
+          "borde_cono": 2392,
+          "anomalia_0_conduit": 830,
+          "anomalia_1_dense_body": 362
+        },
+        {
+          "cielo": 44724,
+          "roca_sin_anomalia": 14637,
+          "borde_cono": 2392,
+          "anomalia_0_conduit": 798,
+          "anomalia_1_dense_body": 524
+        }
+      ]
+    }
+  },
+  "data_files": {
+    "dataset-v2/shards/geo-train-01.npz": "4810faaacb7fa3196005ea30f5046a83d0c71262d82b27a9faf2a9b33041a5ba",
+    "dataset-v2/shards/geo-train-01.meta.json": "31384114f1659945b9e13fd3ca0e101f16b6d4c4f6425a1c687cf304beedf423",
+    "dataset-v2/shards/geo-train-02.npz": "ce5e7ef23841d85fa7621f1dae9020b99c9bd348e4b51db0909cde0945fb6259",
+    "dataset-v2/shards/geo-train-02.meta.json": "2b6068ed97c7fc7913b7447ba09c0d6230333f10ae4a30a0ffed9ee81b43fe94",
+    "dataset-v2/shards/geo-train-03.npz": "f5eb1870c23ebf93e236f3d1b517961736b07af019772986d978ac1c16861757",
+    "dataset-v2/shards/geo-train-03.meta.json": "a77865558eac6016a40f679fae0a3d3a83a5aca3c6295c07fac2dca5eae50788",
+    "dataset-v2/shards/geo-train-04.npz": "23c89c2e852b7a6a9c4f110267ceaa1f449a5a2772ab312d15e9b334e6a49fe1",
+    "dataset-v2/shards/geo-train-04.meta.json": "1ca1294a1357da4916c7a84f8c365a729abe6d18465bfe97d48876999e6baccc",
+    "dataset-v2/shards/geo-train-05.npz": "be50db82fcbc6c9683bae3fadce4d30fcfbc4c533603b558798d508b3051c02c",
+    "dataset-v2/shards/geo-train-05.meta.json": "b896e61b27859230a5727d984a9b2b095b111afc676c16c448475b7e633ef9e6",
+    "dataset-v2/shards/geo-train-06.npz": "120e427d7d71e232056998247b38249a4692d285b63bf6c2e6cc593c2b0d97e4",
+    "dataset-v2/shards/geo-train-06.meta.json": "694c40e1e23c36af235239287c2670b901ebaf5cd1b38085516c2d08154bca3b",
+    "dataset-v2/shards/geo-train-07.npz": "b8204ea59e6e55d4f67ca86e1e8f4dd8c3231d39965982f2d07e97afd060c9fd",
+    "dataset-v2/shards/geo-train-07.meta.json": "439914e2d0f02ef83355258f23bd3ac822e149b1fe5de59a94586521b5acdd82",
+    "dataset-v2/shards/geo-train-08.npz": "34e8d7a3cf506b55695f6b9716f71ad89a58c000b2cd9a209ff0d0a3fdfcb2d9",
+    "dataset-v2/shards/geo-train-08.meta.json": "014d287a6c4e67e566807988bcb8d8c7aeab974335ecb27807a82b02abecc8fc",
+    "dataset-v2/shards/geo-train-09.npz": "705e6e577513af85d354f1ee851239b0eaeb2d9f7fa88cb20ef92aee8739c786",
+    "dataset-v2/shards/geo-train-09.meta.json": "ae36b2e77d50bd3833fbf86a7ad785ce096c558200523b9f3ffbe6110bc870d6",
+    "dataset-v2/shards/geo-train-10.npz": "5ba019f72b961b0627d4dc97c306e3cf297353b8987321f5a719e419e725109a",
+    "dataset-v2/shards/geo-train-10.meta.json": "7d6ecddda03959f39a19ebc89311ad2dfb55943d23efba6b941f7ef02a068936",
+    "dataset-v2/shards/geo-train-11.npz": "267fcaa0e2b0a9dfca5298de16bcceaed46dafa70a61babe7a644584c29884ca",
+    "dataset-v2/shards/geo-train-11.meta.json": "1fb9b50d93ac7980ddc0505cd275c787425712824570daafaee8005bdeeabbb6",
+    "dataset-v2/shards/geo-train-12.npz": "49a30a827d5198ba0d215107ccf15b7d8572b15430e997a21c26d7e18970cc52",
+    "dataset-v2/shards/geo-train-12.meta.json": "f60d8ccc0521a085785ce9fda1fc41c317079a505b98eb77e246fdb93d80ad79",
+    "dataset-v2/shards/geo-val-01.npz": "6528589a708105fc556a8d807d4eff60e1019cb884f83941e43b6b5961ffa698",
+    "dataset-v2/shards/geo-val-01.meta.json": "baaed3bee604aa8c55b0e5158a1a5cf2979e891da106d0adafa0880ea33e2fb2",
+    "dataset-v2/shards/geo-val-02.npz": "c5bee7998bfa71c51a0caf26be785aada0a0715f52a07237571b459f2fe514c4",
+    "dataset-v2/shards/geo-val-02.meta.json": "7e6cbaf4d2c6f29e46ad915d3177b7ea15f5571b948d5727737f65fa0b08fb25",
+    "dataset-v2/shards/geo-val-03.npz": "3b29e660be5500cc0e72e5c500588f7d8b8c3b46e34675326a0064604f114b1b",
+    "dataset-v2/shards/geo-val-03.meta.json": "045f44217643c4380092b86e96328428889a34ad85ec27b8759e217c96f09c01"
+  },
+  "builder_sources": {
+    "datos_ajuste.py": "2c89d770cc3d7b4fee66c977ff89af8faf6ab6bbca3ed12fe1f2a98734aa167f",
+    "evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524"
+  },
+  "heldout_opened": false,
+  "max_regions": 6
+}

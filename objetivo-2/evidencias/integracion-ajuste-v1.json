@@ -1,0 +1,899 @@
+{
+  "schema": "oe2-integration-local-review-v1",
+  "date": "2026-10-03",
+  "technical_checks_passed": true,
+  "gpu_accepted": false,
+  "exact_recovery": true,
+  "checkpoint_sha256": {
+    "A-continua": "1d9924cb3e72ac25f1302d54073ae2ac590b81d01f33cb84e313c22bfd80aefa",
+    "A-recuperada": "e65de328d1f826aae356c8cb3d334b366aa885e93aba1c8783e8d396bed8f321",
+    "B-continua": "bbd871a518a63a748db3bea22a5565e2cd7a78ca19b5621390f0b24d88291b04",
+    "B-recuperada": "301f409c94ad9a6d1d37388898205df67601943a66fcf928a9b62beaf1d5f2a5"
+  },
+  "identities": [
+    {
+      "schema": "oe2-ajuste-run-v1",
+      "arm": "A",
+      "stage": "tecnica",
+      "config": {
+        "schema": "oe2-ajuste-ejecucion-v1",
+        "fraction": 0.05,
+        "generator": "unet_dc_5",
+        "initial_checkpoint_sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+        "initial_epoch": 5,
+        "reset_optimizer": true,
+        "reset_rng": true,
+        "seed": 2026100302,
+        "optimizer": {
+          "name": "Adam",
+          "lr": 1e-05,
+          "betas": [
+            0,
+            0.9
+          ]
+        },
+        "batch": 4,
+        "epochs": 5,
+        "early_stopping": false,
+        "selected_epoch": 5,
+        "train_pairs": 1440,
+        "val_pairs": 360,
+        "train_split": "train",
+        "selection_split": "val",
+        "reserved_splits_allowed": false,
+        "hflip": false,
+        "augmentation": false,
+        "lambda_l1": 100,
+        "regional_loss": "mean_absolute_log1p_region_mean_counts",
+        "normalization_scale": 8.239329427901795,
+        "regional_families": [
+          "cielo",
+          "roca",
+          "borde",
+          "anomalias"
+        ],
+        "region_min_pixels": 20,
+        "region_family_equal_weight": true,
+        "lambda_regional": 0,
+        "gradient_clipping": false,
+        "amp": false,
+        "checkpoint_policy": "last each epoch plus final epoch 5; no best-SSIM selection",
+        "resume": "same arm, protocol and code identity only",
+        "stages": {
+          "technical": {
+            "epochs": 2,
+            "train_pairs": 8,
+            "val_pairs": 8,
+            "requires_gpu_before_pilot": true,
+            "train_indices": [
+              [
+                "geo-train-01",
+                0,
+                0
+              ],
+              [
+                "geo-train-01",
+                0,
+                1
+              ],
+              [
+                "geo-train-02",
+                0,
+                0
+              ],
+              [
+                "geo-train-02",
+                0,
+                1
+              ],
+              [
+                "geo-train-04",
+                0,
+                0
+              ],
+              [
+                "geo-train-04",
+                0,
+                1
+              ],
+              [
+                "geo-train-10",
+                0,
+                0
+              ],
+              [
+                "geo-train-10",
+                0,
+                1
+              ]
+            ],
+            "val_indices": [
+              [
+                "geo-val-01",
+                0,
+                0
+              ],
+              [
+                "geo-val-01",
+                0,
+                1
+              ],
+              [
+                "geo-val-02",
+                0,
+                0
+              ],
+              [
+                "geo-val-02",
+                0,
+                1
+              ],
+              [
+                "geo-val-03",
+                0,
+                0
+              ],
+              [
+                "geo-val-03",
+                0,
+                1
+              ],
+              [
+                "geo-val-03",
+                1,
+                0
+              ],
+              [
+                "geo-val-03",
+                1,
+                1
+              ]
+            ],
+            "interrupt_after_epoch": 1,
+            "pilot_initialization": "original epoch-5 checkpoint, never technical weights"
+          },
+          "pilot": {
+            "epochs": 5,
+            "train_pairs": 1440,
+            "val_pairs": 360
+          }
+        },
+        "mass_campaign_authorized": false,
+        "arm": "A-control",
+        "run_id": "oe2-ajuste-f05-A-s2026100302"
+      },
+      "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+      "cache_sha256": "762b423a757da5dee2dcea58664a9b9ef34bba84db749d8fb2880e523ef9776d",
+      "sources": {
+        "objetivo-2/herramientas/datos_ajuste.py": "2c89d770cc3d7b4fee66c977ff89af8faf6ab6bbca3ed12fe1f2a98734aa167f",
+        "objetivo-2/herramientas/ejecutar_ajuste.py": "8d49980e4e1c4b96347c81203a820cc5784b57473079562decbedd747fe11abb",
+        "objetivo-2/herramientas/perdida_cuentas_regionales.py": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+        "objetivo-2/herramientas/evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524",
+        "objetivo-2/implementacion/models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+        "objetivo-2/implementacion/scripts/evaluation/metrics.py": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42"
+      },
+      "environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "torch": "2.6.0+cpu",
+        "cuda": null,
+        "device": "cpu",
+        "gpu": null,
+        "threads": 2,
+        "deterministic": true
+      },
+      "train_indices_sha256": "9da8b884e0130f5b84965bd41b25af63c0bee9785917d7b4793269710a2d9871",
+      "val_indices_sha256": "3b1b5b5b5309c45fd8a8099bfe7fee91902a1054fd09138bed4478e7fe6d3824",
+      "epochs": 2,
+      "initial_checkpoint_sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+      "initial_generator_sha256": "0c8a57db54e006ac85536fd59f4bb71113bc85f4dc8b6f358adaef0a5757d909"
+    },
+    {
+      "schema": "oe2-ajuste-run-v1",
+      "arm": "A",
+      "stage": "tecnica",
+      "config": {
+        "schema": "oe2-ajuste-ejecucion-v1",
+        "fraction": 0.05,
+        "generator": "unet_dc_5",
+        "initial_checkpoint_sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+        "initial_epoch": 5,
+        "reset_optimizer": true,
+        "reset_rng": true,
+        "seed": 2026100302,
+        "optimizer": {
+          "name": "Adam",
+          "lr": 1e-05,
+          "betas": [
+            0,
+            0.9
+          ]
+        },
+        "batch": 4,
+        "epochs": 5,
+        "early_stopping": false,
+        "selected_epoch": 5,
+        "train_pairs": 1440,
+        "val_pairs": 360,
+        "train_split": "train",
+        "selection_split": "val",
+        "reserved_splits_allowed": false,
+        "hflip": false,
+        "augmentation": false,
+        "lambda_l1": 100,
+        "regional_loss": "mean_absolute_log1p_region_mean_counts",
+        "normalization_scale": 8.239329427901795,
+        "regional_families": [
+          "cielo",
+          "roca",
+          "borde",
+          "anomalias"
+        ],
+        "region_min_pixels": 20,
+        "region_family_equal_weight": true,
+        "lambda_regional": 0,
+        "gradient_clipping": false,
+        "amp": false,
+        "checkpoint_policy": "last each epoch plus final epoch 5; no best-SSIM selection",
+        "resume": "same arm, protocol and code identity only",
+        "stages": {
+          "technical": {
+            "epochs": 2,
+            "train_pairs": 8,
+            "val_pairs": 8,
+            "requires_gpu_before_pilot": true,
+            "train_indices": [
+              [
+                "geo-train-01",
+                0,
+                0
+              ],
+              [
+                "geo-train-01",
+                0,
+                1
+              ],
+              [
+                "geo-train-02",
+                0,
+                0
+              ],
+              [
+                "geo-train-02",
+                0,
+                1
+              ],
+              [
+                "geo-train-04",
+                0,
+                0
+              ],
+              [
+                "geo-train-04",
+                0,
+                1
+              ],
+              [
+                "geo-train-10",
+                0,
+                0
+              ],
+              [
+                "geo-train-10",
+                0,
+                1
+              ]
+            ],
+            "val_indices": [
+              [
+                "geo-val-01",
+                0,
+                0
+              ],
+              [
+                "geo-val-01",
+                0,
+                1
+              ],
+              [
+                "geo-val-02",
+                0,
+                0
+              ],
+              [
+                "geo-val-02",
+                0,
+                1
+              ],
+              [
+                "geo-val-03",
+                0,
+                0
+              ],
+              [
+                "geo-val-03",
+                0,
+                1
+              ],
+              [
+                "geo-val-03",
+                1,
+                0
+              ],
+              [
+                "geo-val-03",
+                1,
+                1
+              ]
+            ],
+            "interrupt_after_epoch": 1,
+            "pilot_initialization": "original epoch-5 checkpoint, never technical weights"
+          },
+          "pilot": {
+            "epochs": 5,
+            "train_pairs": 1440,
+            "val_pairs": 360
+          }
+        },
+        "mass_campaign_authorized": false,
+        "arm": "A-control",
+        "run_id": "oe2-ajuste-f05-A-s2026100302"
+      },
+      "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+      "cache_sha256": "762b423a757da5dee2dcea58664a9b9ef34bba84db749d8fb2880e523ef9776d",
+      "sources": {
+        "objetivo-2/herramientas/datos_ajuste.py": "2c89d770cc3d7b4fee66c977ff89af8faf6ab6bbca3ed12fe1f2a98734aa167f",
+        "objetivo-2/herramientas/ejecutar_ajuste.py": "8d49980e4e1c4b96347c81203a820cc5784b57473079562decbedd747fe11abb",
+        "objetivo-2/herramientas/perdida_cuentas_regionales.py": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+        "objetivo-2/herramientas/evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524",
+        "objetivo-2/implementacion/models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+        "objetivo-2/implementacion/scripts/evaluation/metrics.py": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42"
+      },
+      "environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "torch": "2.6.0+cpu",
+        "cuda": null,
+        "device": "cpu",
+        "gpu": null,
+        "threads": 2,
+        "deterministic": true
+      },
+      "train_indices_sha256": "9da8b884e0130f5b84965bd41b25af63c0bee9785917d7b4793269710a2d9871",
+      "val_indices_sha256": "3b1b5b5b5309c45fd8a8099bfe7fee91902a1054fd09138bed4478e7fe6d3824",
+      "epochs": 2,
+      "initial_checkpoint_sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+      "initial_generator_sha256": "0c8a57db54e006ac85536fd59f4bb71113bc85f4dc8b6f358adaef0a5757d909"
+    },
+    {
+      "schema": "oe2-ajuste-run-v1",
+      "arm": "B",
+      "stage": "tecnica",
+      "config": {
+        "schema": "oe2-ajuste-ejecucion-v1",
+        "fraction": 0.05,
+        "generator": "unet_dc_5",
+        "initial_checkpoint_sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+        "initial_epoch": 5,
+        "reset_optimizer": true,
+        "reset_rng": true,
+        "seed": 2026100302,
+        "optimizer": {
+          "name": "Adam",
+          "lr": 1e-05,
+          "betas": [
+            0,
+            0.9
+          ]
+        },
+        "batch": 4,
+        "epochs": 5,
+        "early_stopping": false,
+        "selected_epoch": 5,
+        "train_pairs": 1440,
+        "val_pairs": 360,
+        "train_split": "train",
+        "selection_split": "val",
+        "reserved_splits_allowed": false,
+        "hflip": false,
+        "augmentation": false,
+        "lambda_l1": 100,
+        "regional_loss": "mean_absolute_log1p_region_mean_counts",
+        "normalization_scale": 8.239329427901795,
+        "regional_families": [
+          "cielo",
+          "roca",
+          "borde",
+          "anomalias"
+        ],
+        "region_min_pixels": 20,
+        "region_family_equal_weight": true,
+        "lambda_regional": 1,
+        "gradient_clipping": false,
+        "amp": false,
+        "checkpoint_policy": "last each epoch plus final epoch 5; no best-SSIM selection",
+        "resume": "same arm, protocol and code identity only",
+        "stages": {
+          "technical": {
+            "epochs": 2,
+            "train_pairs": 8,
+            "val_pairs": 8,
+            "requires_gpu_before_pilot": true,
+            "train_indices": [
+              [
+                "geo-train-01",
+                0,
+                0
+              ],
+              [
+                "geo-train-01",
+                0,
+                1
+              ],
+              [
+                "geo-train-02",
+                0,
+                0
+              ],
+              [
+                "geo-train-02",
+                0,
+                1
+              ],
+              [
+                "geo-train-04",
+                0,
+                0
+              ],
+              [
+                "geo-train-04",
+                0,
+                1
+              ],
+              [
+                "geo-train-10",
+                0,
+                0
+              ],
+              [
+                "geo-train-10",
+                0,
+                1
+              ]
+            ],
+            "val_indices": [
+              [
+                "geo-val-01",
+                0,
+                0
+              ],
+              [
+                "geo-val-01",
+                0,
+                1
+              ],
+              [
+                "geo-val-02",
+                0,
+                0
+              ],
+              [
+                "geo-val-02",
+                0,
+                1
+              ],
+              [
+                "geo-val-03",
+                0,
+                0
+              ],
+              [
+                "geo-val-03",
+                0,
+                1
+              ],
+              [
+                "geo-val-03",
+                1,
+                0
+              ],
+              [
+                "geo-val-03",
+                1,
+                1
+              ]
+            ],
+            "interrupt_after_epoch": 1,
+            "pilot_initialization": "original epoch-5 checkpoint, never technical weights"
+          },
+          "pilot": {
+            "epochs": 5,
+            "train_pairs": 1440,
+            "val_pairs": 360
+          }
+        },
+        "mass_campaign_authorized": false,
+        "arm": "B-regional",
+        "run_id": "oe2-ajuste-f05-B-s2026100302"
+      },
+      "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+      "cache_sha256": "762b423a757da5dee2dcea58664a9b9ef34bba84db749d8fb2880e523ef9776d",
+      "sources": {
+        "objetivo-2/herramientas/datos_ajuste.py": "2c89d770cc3d7b4fee66c977ff89af8faf6ab6bbca3ed12fe1f2a98734aa167f",
+        "objetivo-2/herramientas/ejecutar_ajuste.py": "8d49980e4e1c4b96347c81203a820cc5784b57473079562decbedd747fe11abb",
+        "objetivo-2/herramientas/perdida_cuentas_regionales.py": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+        "objetivo-2/herramientas/evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524",
+        "objetivo-2/implementacion/models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+        "objetivo-2/implementacion/scripts/evaluation/metrics.py": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42"
+      },
+      "environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "torch": "2.6.0+cpu",
+        "cuda": null,
+        "device": "cpu",
+        "gpu": null,
+        "threads": 2,
+        "deterministic": true
+      },
+      "train_indices_sha256": "9da8b884e0130f5b84965bd41b25af63c0bee9785917d7b4793269710a2d9871",
+      "val_indices_sha256": "3b1b5b5b5309c45fd8a8099bfe7fee91902a1054fd09138bed4478e7fe6d3824",
+      "epochs": 2,
+      "initial_checkpoint_sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+      "initial_generator_sha256": "0c8a57db54e006ac85536fd59f4bb71113bc85f4dc8b6f358adaef0a5757d909"
+    },
+    {
+      "schema": "oe2-ajuste-run-v1",
+      "arm": "B",
+      "stage": "tecnica",
+      "config": {
+        "schema": "oe2-ajuste-ejecucion-v1",
+        "fraction": 0.05,
+        "generator": "unet_dc_5",
+        "initial_checkpoint_sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+        "initial_epoch": 5,
+        "reset_optimizer": true,
+        "reset_rng": true,
+        "seed": 2026100302,
+        "optimizer": {
+          "name": "Adam",
+          "lr": 1e-05,
+          "betas": [
+            0,
+            0.9
+          ]
+        },
+        "batch": 4,
+        "epochs": 5,
+        "early_stopping": false,
+        "selected_epoch": 5,
+        "train_pairs": 1440,
+        "val_pairs": 360,
+        "train_split": "train",
+        "selection_split": "val",
+        "reserved_splits_allowed": false,
+        "hflip": false,
+        "augmentation": false,
+        "lambda_l1": 100,
+        "regional_loss": "mean_absolute_log1p_region_mean_counts",
+        "normalization_scale": 8.239329427901795,
+        "regional_families": [
+          "cielo",
+          "roca",
+          "borde",
+          "anomalias"
+        ],
+        "region_min_pixels": 20,
+        "region_family_equal_weight": true,
+        "lambda_regional": 1,
+        "gradient_clipping": false,
+        "amp": false,
+        "checkpoint_policy": "last each epoch plus final epoch 5; no best-SSIM selection",
+        "resume": "same arm, protocol and code identity only",
+        "stages": {
+          "technical": {
+            "epochs": 2,
+            "train_pairs": 8,
+            "val_pairs": 8,
+            "requires_gpu_before_pilot": true,
+            "train_indices": [
+              [
+                "geo-train-01",
+                0,
+                0
+              ],
+              [
+                "geo-train-01",
+                0,
+                1
+              ],
+              [
+                "geo-train-02",
+                0,
+                0
+              ],
+              [
+                "geo-train-02",
+                0,
+                1
+              ],
+              [
+                "geo-train-04",
+                0,
+                0
+              ],
+              [
+                "geo-train-04",
+                0,
+                1
+              ],
+              [
+                "geo-train-10",
+                0,
+                0
+              ],
+              [
+                "geo-train-10",
+                0,
+                1
+              ]
+            ],
+            "val_indices": [
+              [
+                "geo-val-01",
+                0,
+                0
+              ],
+              [
+                "geo-val-01",
+                0,
+                1
+              ],
+              [
+                "geo-val-02",
+                0,
+                0
+              ],
+              [
+                "geo-val-02",
+                0,
+                1
+              ],
+              [
+                "geo-val-03",
+                0,
+                0
+              ],
+              [
+                "geo-val-03",
+                0,
+                1
+              ],
+              [
+                "geo-val-03",
+                1,
+                0
+              ],
+              [
+                "geo-val-03",
+                1,
+                1
+              ]
+            ],
+            "interrupt_after_epoch": 1,
+            "pilot_initialization": "original epoch-5 checkpoint, never technical weights"
+          },
+          "pilot": {
+            "epochs": 5,
+            "train_pairs": 1440,
+            "val_pairs": 360
+          }
+        },
+        "mass_campaign_authorized": false,
+        "arm": "B-regional",
+        "run_id": "oe2-ajuste-f05-B-s2026100302"
+      },
+      "data_manifest_sha256": "80db70d75e5ef2c40955881a87dd46b767137c24cb72dc1aa458a71c1efd8b03",
+      "cache_sha256": "762b423a757da5dee2dcea58664a9b9ef34bba84db749d8fb2880e523ef9776d",
+      "sources": {
+        "objetivo-2/herramientas/datos_ajuste.py": "2c89d770cc3d7b4fee66c977ff89af8faf6ab6bbca3ed12fe1f2a98734aa167f",
+        "objetivo-2/herramientas/ejecutar_ajuste.py": "8d49980e4e1c4b96347c81203a820cc5784b57473079562decbedd747fe11abb",
+        "objetivo-2/herramientas/perdida_cuentas_regionales.py": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+        "objetivo-2/herramientas/evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524",
+        "objetivo-2/implementacion/models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+        "objetivo-2/implementacion/scripts/evaluation/metrics.py": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42"
+      },
+      "environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "torch": "2.6.0+cpu",
+        "cuda": null,
+        "device": "cpu",
+        "gpu": null,
+        "threads": 2,
+        "deterministic": true
+      },
+      "train_indices_sha256": "9da8b884e0130f5b84965bd41b25af63c0bee9785917d7b4793269710a2d9871",
+      "val_indices_sha256": "3b1b5b5b5309c45fd8a8099bfe7fee91902a1054fd09138bed4478e7fe6d3824",
+      "epochs": 2,
+      "initial_checkpoint_sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+      "initial_generator_sha256": "0c8a57db54e006ac85536fd59f4bb71113bc85f4dc8b6f358adaef0a5757d909"
+    }
+  ],
+  "tests": {
+    "integration": {
+      "schema": "oe2-adjustment-integration-tests-v1",
+      "tests": 13,
+      "passed": true,
+      "failures": 0,
+      "errors": 0,
+      "heldout_opened": false,
+      "device": "cpu",
+      "scope": "functional and negative checks; no GPU approval"
+    },
+    "loss": {
+      "schema": "oe2-adjustment-design-check-v1",
+      "torch": "2.6.0+cpu",
+      "device": "cpu",
+      "tests": 9,
+      "passed": true,
+      "specification_checks": {
+        "identical_except": [
+          "arm",
+          "lambda_regional",
+          "run_id"
+        ],
+        "pilot_updates_per_arm": 1800,
+        "pilot_total_updates": 3600,
+        "gpu_training_ready": false
+      },
+      "source_sha256": {
+        "perdida_cuentas_regionales.py": "a76dc5f844cd759b8a9486ba35daee1668437cdfbaed4a7ccf7dacce550d5c43",
+        "verificar_diseno_ajuste.py": "b123f98669a79b46f73aa888108ecbedc1d97e1030722dea5abe2af93f615ab8"
+      },
+      "spec_sha256": {
+        "ajuste-control.spec.json": "9d2c206fff21580a32f4a97dcb4136a95b69e4255fa680ddfe028fac3dda60da",
+        "ajuste-regional.spec.json": "b5bd8095bc256031462081d35adcd0714a031b0c3bda2be79fc569185d9bd117"
+      },
+      "scope": "mathematics and specifications only; no trainer integration or CUDA test"
+    },
+    "geometry": {
+      "analytic_tests": 8,
+      "success": true,
+      "numerical_step_m": 0.25,
+      "numerical_comparisons": [
+        {
+          "geometry": "geo-val-01",
+          "view": 0,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.21822564668480027
+        },
+        {
+          "geometry": "geo-val-01",
+          "view": 1,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.2174727077630223
+        },
+        {
+          "geometry": "geo-val-01",
+          "view": 2,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.2216344197950093
+        },
+        {
+          "geometry": "geo-val-01",
+          "view": 3,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.19775009639761265
+        },
+        {
+          "geometry": "geo-val-01",
+          "view": 4,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.2325138671279774
+        },
+        {
+          "geometry": "geo-val-01",
+          "view": 5,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.21822564668514133
+        },
+        {
+          "geometry": "geo-val-02",
+          "view": 0,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.22086351331779497
+        },
+        {
+          "geometry": "geo-val-02",
+          "view": 1,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.22196251382820265
+        },
+        {
+          "geometry": "geo-val-02",
+          "view": 2,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.21370287418972111
+        },
+        {
+          "geometry": "geo-val-02",
+          "view": 3,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.22243944277909122
+        },
+        {
+          "geometry": "geo-val-02",
+          "view": 4,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.1664834930259076
+        },
+        {
+          "geometry": "geo-val-02",
+          "view": 5,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.21362022889638865
+        },
+        {
+          "geometry": "geo-val-03",
+          "view": 0,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.20036116777748703
+        },
+        {
+          "geometry": "geo-val-03",
+          "view": 1,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.20409427454762863
+        },
+        {
+          "geometry": "geo-val-03",
+          "view": 2,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.23308271174698802
+        },
+        {
+          "geometry": "geo-val-03",
+          "view": 3,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.21000606522227372
+        },
+        {
+          "geometry": "geo-val-03",
+          "view": 4,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.2253598049599077
+        },
+        {
+          "geometry": "geo-val-03",
+          "view": 5,
+          "sampled_rays": 128,
+          "max_length_error_m": 0.2123091632743126
+        }
+      ],
+      "max_error_m": 0.23308271174698802
+    },
+    "evaluation_regression": {
+      "schema": "oe2-adjustment-evaluator-regression-v1",
+      "passed": true,
+      "regional_values_compared": 468,
+      "max_difference": 0.0,
+      "contrast_cases_compared": 24,
+      "common_contrasts": 23,
+      "prediction_images_compared": 720,
+      "invalid_indices_rejected": 2,
+      "input_sha256": {
+        "A": "c4e35ef07c46974b4847ec46ea60173c6f1a44e1c6f33f0639f2aea2e58ec9fc",
+        "B": "39d087f7eaa93cc85c874adfc84b6fffdd061c60e1f619842b09cd941ac8d091"
+      },
+      "new_pilot_run": false,
+      "heldout_opened": false,
+      "note": "A/B labels used internally as fixtures for old U-Net/cGAN arrays; no new training result or selection is claimed"
+    }
+  },
+  "full_pilot_run": false,
+  "heldout_opened": false,
+  "validated_technical_optimizer_steps": 16,
+  "additional_preliminary_steps": 4,
+  "note": "Review evidence only; this file is not a GPU execution gate. Masks contain 90 train/val views; 30 tests plus exact recovery and evaluator regression."
+}

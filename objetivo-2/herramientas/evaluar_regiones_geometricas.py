@@ -77,7 +77,7 @@ def rays(az,el,view,cfg):
 def masks(g,o,d,cfg):
     ed=g['edifice'];con=cone_interval(o,d,ed['base_radius_m'],ed['height_m'],cfg['cone_top_radius_m'])
     L=length(con);aa=[clipped_length(con,anomaly_interval(o,d,a)) for a in g['anomalies']]
-    any_an=np.logical_or.reduce([x>0 for x in aa])
+    any_an=np.logical_or.reduce([x>0 for x in aa]) if aa else np.zeros_like(L,dtype=bool)
     margin=cfg['rock_sky_margin_pixels'];cone=L>0
     regions={'cielo':morphology(~cone,margin,True),'roca_sin_anomalia':morphology(cone,margin,True)&~morphology(any_an,margin,False), 'borde_cono':morphology(cone,margin,False)&~morphology(cone,margin,True)}
     for i,(a,l) in enumerate(zip(g['anomalies'],aa)):

@@ -56,3 +56,11 @@
 - Se implementó el componente de pérdida regional y se verificaron nueve casos matemáticos. Se comprobó gradiente regional y total finito sobre los 20.543.809 parámetros con dos pares de entrenamiento; cero pasos de optimizador y pesos idénticos al checkpoint.
 - Incidencias: utilidad de gradientes dependiente de SymPy ausente, sustituida por diferencias finitas explícitas; lectura de geometría corregida a UTF-8. Verificaciones finales satisfactorias.
 - Estado: diseño/componentes verificados. Ajuste-01 integración, Ajuste-02 CPU/GPU con recuperación y Ajuste-03 piloto pareado pendientes. No se presenta el componente como ejecutor de entrenamiento ni se requiere nueva simulación Geant4.
+
+## 2026-10-03 — Integración y recuperación del ajuste A/B
+
+- Por autorización de la dirección se completaron lector, máscaras train/val, ejecutor, recuperación, auditor GPU, evaluación regional y figuras. Se conservan el diseño científico, el código histórico y las entregas estudiantiles. [Guía vigente](INSTRUCCIONES_AJUSTE_CUENTAS_F05.md).
+- Se verificaron 90 mapas, 30 archivos de datos/metadatos y conservación de las 78 máscaras regionales val previas. Trece controles funcionales, nueve de pérdida y ocho geométricos satisfactorios. Las cuatro ejecuciones técnicas de red completa reproducen exactamente estados y predicciones al recuperar; 16 actualizaciones de la batería y cuatro preliminares. [Evidencia consolidada](evidencias/integracion-ajuste-v1.json).
+- La regresión del evaluador usa 720 predicciones anteriores: diferencia cero en 468 valores regionales y reproducción de 24 contrastes. No son resultados de un nuevo piloto. Se generaron figuras técnicas y se inspeccionó su presentación.
+- Incidencias: índice Git original ilegible, dependencias de Adam ausentes y betas con tipos mixtos. Se utilizó copia aislada, dependencias locales y conversión explícita a flotantes; la batería definitiva pasó. No se reparó el índice original.
+- Ajuste-01 verificado; Ajuste-02 CPU verificado/GPU pendiente; Ajuste-03 pendiente. No se ejecutó piloto de cinco épocas ni se abrieron imágenes test/generalization. Próximo paso: comprobar CUDA y ejecutar A/B con aceptación técnica; no se declara mejora física ni cierre del OE2.
