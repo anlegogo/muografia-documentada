@@ -47,7 +47,7 @@ Se revisó el [índice de artefactos finales](../../INDICE_ARTEFACTOS_E1.md) de 
 |---|---|
 | 1. Rama nueva y commit base | `oe2/cierre-documental-e1` desde `bd44272`; 804ce85 conservada |
 | 2. Reproducción CPU del diagnóstico | Concordante: 252/126/378, diferencia máxima 1,11×10⁻¹⁶ |
-| 3. `DISCUSION_E1.md` | [Redactada](DISCUSION_E1.md), con las tres parejas, las excepciones por vista y los límites |
+| 3. `DISCUSION_E1.md` | [Redactada](DISCUSION_E1.md): tres parejas, las 54 vistas (anexo), las 72 filas de anomalías y los límites |
 | 4. Fe de erratas | Reconocida en la sección 2 |
 | 5. Índice de artefactos | Coincidente y accesible sin sesión |
 | 6. Publicación | Textos, JSON, CSV, figuras y registro de comparación en Git; pesos y predicciones en Drive |

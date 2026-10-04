@@ -3,7 +3,7 @@
 2026-10-04, Colombia. Consolidación del ensayo E1 según las [instrucciones de cierre](../../INSTRUCCIONES_CIERRE_E1.md). Se parte del [borrador de la dirección](../../DISCUSION_E1_BORRADOR.md), de la [revisión independiente](../../REVISION_E1_804CE85.md) y de la entrega [804ce85](https://github.com/anlegogo/muografia-documentada/tree/804ce85f1bcb1e00d0956ae6bef26e69dd50130a/objetivo-2/entregas/2026-10-04-borde-cgan-f05).
 
 - Las cifras regionales provienen del diagnóstico reproducido en esta entrega ([registro de cierre](REGISTRO_CIERRE_E1.md)).
-- Las cifras por vista provienen del [análisis de las 54 comparaciones](../../evidencias/vistas-e1.json).
+- Las cifras por vista provienen del [análisis de las 54 comparaciones](../../evidencias/vistas-e1.json); la tabla completa está en el anexo y las 72 filas de anomalías en [anomalias-e1.csv](datos/anomalias-e1.csv).
 - No se realizó entrenamiento nuevo, no se modificaron coeficientes, semillas, épocas ni criterios, y no se abrieron test ni generalización.
 
 Este documento describe un ensayo acotado. No declara el cierre del OE2 ni una aceptación física.
@@ -74,6 +74,15 @@ Para localizar el exceso, cada región se dividió en tres bandas según la dist
 
 Los mapas reproducidos de las seis vistas por pareja ([B1](datos/reproduccion/mapas-B1-geo1.png), [B2](datos/reproduccion/mapas-B2-geo1.png), [B3](datos/reproduccion/mapas-B3-geo1.png)) muestran el error medio de C0, el de C1 y su diferencia, con el contorno del conducto. La escala es simétrica logarítmica, lineal entre −1 y +1 cuenta.
 
+## 3b. Anomalías
+
+En cada pareja se evaluaron 24 combinaciones de vista y anomalía: el conducto de `geo-val-01`, la cavidad de `geo-val-02`, y el conducto y el cuerpo denso de `geo-val-03`, cada uno en seis vistas. Las 72 filas, con soporte, cuentas de referencia y sesgo firmado de la cGAN inicial, C0 y C1, están en [anomalias-e1.csv](datos/anomalias-e1.csv).
+
+- **Frente a C0:** C1 aumentó la magnitud del sesgo medio en 9 de 24 combinaciones en B1, 12 en B2 y 13 en B3.
+- **Frente a la cGAN inicial:** la aumentó en 6, 7 y 6 combinaciones.
+- **Por anomalía, el patrón cambia entre parejas.** En B1, los deterioros frente a C0 se concentraron en el conducto de `geo-val-03` (6 de 6 vistas) y en el conducto de `geo-val-01` (3 de 6). En B2 y B3 aparecieron en el conducto de `geo-val-01` (6 de 6), en la cavidad de `geo-val-02` (3 de 6) y en algunas vistas de `geo-val-03`.
+- **El cuerpo denso de `geo-val-03` concentra los mayores sesgos firmados de C1** en las tres parejas: +17,7 % en B1 (V5; C0: +27,3 %), +32,3 % en B2 (V2; C0: +30,7 %) y +25,7 % en B3 (V5; C0: +22,0 %). Las referencias son de 163 a 210 cuentas, en 379 a 524 píxeles.
+
 ## 4. Interpretación
 
 Los indicadores del ensayo miden propiedades distintas, lo que explica que una mejora del borde coexista con un exceso de cuentas en otras regiones:
@@ -98,3 +107,64 @@ Los porcentajes de este documento se refieren a cuentas respecto de referencias 
 ## 6. Conclusión
 
 E1 aporta evidencia de una mejora específica y repetida: el término espacial reduce el error del borde en todas las vistas de las tres parejas. También muestra un compromiso persistente, porque la conservación de cuentas empeora en `geo-val-01` en las tres parejas y los demás indicadores cambian de dirección según la semilla. El resultado permite presentar en el informe del OE2 una comparación explícita de ventajas y limitaciones. La demostración de calidad comparable a la alta estadística y la evaluación final siguen pendientes de un protocolo y de un criterio científico fijados por la dirección antes de abrir las particiones reservadas.
+
+## Anexo. Las 54 comparaciones por vista
+
+C1 frente a C0 en cada vista. Q y borde en porcentaje; las diferencias, en puntos porcentuales (negativo favorece a C1). Fuente: [vistas-e1.json](../../evidencias/vistas-e1.json), tabulado en [vistas-e1.csv](datos/vistas-e1.csv) con [tabular_vistas_anomalias.py](verificacion/tabular_vistas_anomalias.py).
+
+| Pareja | Geometría | Vista | Q C0 → C1 (%) | Δ Q (pp) | Borde C0 → C1 (%) | Δ borde (pp) |
+|---|---|---:|---:|---:|---:|---:|
+| B1 | `geo-val-01` | V0 | 10,517 → 10,926 | +0,409 | 11,699 → 7,044 | -4,655 |
+| B1 | `geo-val-01` | V1 | 9,083 → 8,964 | -0,119 | 11,636 → 6,849 | -4,786 |
+| B1 | `geo-val-01` | V2 | 8,856 → 8,537 | -0,319 | 11,680 → 6,946 | -4,734 |
+| B1 | `geo-val-01` | V3 | 5,433 → 8,097 | +2,664 | 11,789 → 7,034 | -4,755 |
+| B1 | `geo-val-01` | V4 | 7,341 → 8,918 | +1,577 | 11,613 → 6,852 | -4,761 |
+| B1 | `geo-val-01` | V5 | 4,227 → 5,882 | +1,655 | 11,732 → 6,902 | -4,829 |
+| B1 | `geo-val-02` | V0 | 5,344 → 0,935 | -4,408 | 11,579 → 7,055 | -4,523 |
+| B1 | `geo-val-02` | V1 | 6,576 → 4,875 | -1,701 | 11,485 → 7,087 | -4,398 |
+| B1 | `geo-val-02` | V2 | 4,313 → 3,122 | -1,191 | 11,319 → 6,986 | -4,333 |
+| B1 | `geo-val-02` | V3 | 3,692 → 1,959 | -1,734 | 11,362 → 7,061 | -4,301 |
+| B1 | `geo-val-02` | V4 | 5,928 → 4,926 | -1,002 | 11,387 → 6,964 | -4,424 |
+| B1 | `geo-val-02` | V5 | 4,928 → 3,018 | -1,910 | 11,335 → 7,062 | -4,274 |
+| B1 | `geo-val-03` | V0 | 2,511 → 2,277 | -0,234 | 10,329 → 6,759 | -3,570 |
+| B1 | `geo-val-03` | V1 | 6,479 → 1,492 | -4,988 | 10,102 → 6,567 | -3,535 |
+| B1 | `geo-val-03` | V2 | 6,464 → 1,828 | -4,636 | 10,431 → 6,738 | -3,693 |
+| B1 | `geo-val-03` | V3 | 6,984 → 2,646 | -4,339 | 10,348 → 6,681 | -3,667 |
+| B1 | `geo-val-03` | V4 | 5,523 → 2,066 | -3,457 | 10,368 → 6,690 | -3,678 |
+| B1 | `geo-val-03` | V5 | 7,997 → 5,970 | -2,027 | 10,431 → 6,760 | -3,670 |
+| B2 | `geo-val-01` | V0 | 9,772 → 11,983 | +2,211 | 11,925 → 7,100 | -4,825 |
+| B2 | `geo-val-01` | V1 | 7,712 → 10,801 | +3,089 | 11,807 → 7,026 | -4,781 |
+| B2 | `geo-val-01` | V2 | 8,025 → 10,826 | +2,801 | 11,826 → 7,012 | -4,814 |
+| B2 | `geo-val-01` | V3 | 9,341 → 10,018 | +0,677 | 11,913 → 7,176 | -4,736 |
+| B2 | `geo-val-01` | V4 | 10,691 → 11,414 | +0,723 | 11,791 → 7,025 | -4,766 |
+| B2 | `geo-val-01` | V5 | 6,979 → 7,993 | +1,014 | 11,968 → 7,092 | -4,876 |
+| B2 | `geo-val-02` | V0 | 4,940 → 2,976 | -1,964 | 11,527 → 7,451 | -4,076 |
+| B2 | `geo-val-02` | V1 | 5,937 → 3,853 | -2,084 | 11,394 → 7,463 | -3,931 |
+| B2 | `geo-val-02` | V2 | 7,575 → 4,933 | -2,641 | 11,310 → 7,409 | -3,902 |
+| B2 | `geo-val-02` | V3 | 4,443 → 8,106 | +3,663 | 11,401 → 7,481 | -3,921 |
+| B2 | `geo-val-02` | V4 | 1,606 → 2,710 | +1,105 | 11,268 → 7,286 | -3,982 |
+| B2 | `geo-val-02` | V5 | 3,738 → 8,749 | +5,012 | 11,257 → 7,375 | -3,882 |
+| B2 | `geo-val-03` | V0 | 5,902 → 4,757 | -1,146 | 10,546 → 6,635 | -3,910 |
+| B2 | `geo-val-03` | V1 | 9,992 → 4,301 | -5,690 | 10,340 → 6,504 | -3,836 |
+| B2 | `geo-val-03` | V2 | 10,765 → 9,635 | -1,130 | 10,704 → 6,755 | -3,949 |
+| B2 | `geo-val-03` | V3 | 9,152 → 2,109 | -7,043 | 10,586 → 6,616 | -3,970 |
+| B2 | `geo-val-03` | V4 | 10,455 → 4,826 | -5,628 | 10,552 → 6,669 | -3,883 |
+| B2 | `geo-val-03` | V5 | 13,585 → 8,858 | -4,727 | 10,616 → 6,729 | -3,887 |
+| B3 | `geo-val-01` | V0 | 7,434 → 11,120 | +3,686 | 11,398 → 7,136 | -4,263 |
+| B3 | `geo-val-01` | V1 | 5,647 → 9,392 | +3,745 | 11,228 → 6,903 | -4,325 |
+| B3 | `geo-val-01` | V2 | 5,551 → 10,757 | +5,206 | 11,319 → 7,015 | -4,304 |
+| B3 | `geo-val-01` | V3 | 4,322 → 7,689 | +3,367 | 11,446 → 7,057 | -4,389 |
+| B3 | `geo-val-01` | V4 | 5,343 → 8,291 | +2,948 | 11,298 → 6,876 | -4,422 |
+| B3 | `geo-val-01` | V5 | 2,630 → 5,352 | +2,722 | 11,407 → 6,961 | -4,446 |
+| B3 | `geo-val-02` | V0 | 0,400 → 0,955 | +0,555 | 11,548 → 7,411 | -4,136 |
+| B3 | `geo-val-02` | V1 | 8,524 → 3,889 | -4,635 | 11,394 → 7,389 | -4,005 |
+| B3 | `geo-val-02` | V2 | 2,671 → 3,508 | +0,837 | 11,197 → 7,338 | -3,859 |
+| B3 | `geo-val-02` | V3 | 10,177 → 4,689 | -5,488 | 11,376 → 7,401 | -3,975 |
+| B3 | `geo-val-02` | V4 | 3,893 → 4,451 | +0,558 | 11,258 → 7,356 | -3,902 |
+| B3 | `geo-val-02` | V5 | 3,742 → 3,638 | -0,104 | 11,218 → 7,399 | -3,820 |
+| B3 | `geo-val-03` | V0 | 1,352 → 2,808 | +1,457 | 10,448 → 6,951 | -3,498 |
+| B3 | `geo-val-03` | V1 | 5,684 → 2,523 | -3,161 | 10,231 → 6,810 | -3,421 |
+| B3 | `geo-val-03` | V2 | 7,649 → 3,498 | -4,152 | 10,616 → 6,882 | -3,734 |
+| B3 | `geo-val-03` | V3 | 2,254 → 2,986 | +0,733 | 10,510 → 6,888 | -3,621 |
+| B3 | `geo-val-03` | V4 | 6,347 → 5,711 | -0,636 | 10,462 → 6,813 | -3,649 |
+| B3 | `geo-val-03` | V5 | 6,698 → 7,489 | +0,791 | 10,587 → 6,926 | -3,661 |
