@@ -64,3 +64,12 @@
 - La regresión del evaluador usa 720 predicciones anteriores: diferencia cero en 468 valores regionales y reproducción de 24 contrastes. No son resultados de un nuevo piloto. Se generaron figuras técnicas y se inspeccionó su presentación.
 - Incidencias: índice Git original ilegible, dependencias de Adam ausentes y betas con tipos mixtos. Se utilizó copia aislada, dependencias locales y conversión explícita a flotantes; la batería definitiva pasó. No se reparó el índice original.
 - Ajuste-01 verificado; Ajuste-02 CPU verificado/GPU pendiente; Ajuste-03 pendiente. No se ejecutó piloto de cinco épocas ni se abrieron imágenes test/generalization. Próximo paso: comprobar CUDA y ejecutar A/B con aceptación técnica; no se declara mejora física ni cierre del OE2.
+
+## 2026-10-03 — Revisión independiente del ajuste a6aa6b8
+
+- Por autorización de la dirección se descargaron doce binarios de Drive y se verificaron tamaños/huellas; 137 textos coinciden con el inventario. Se auditaron seis checkpoints y se confirmó recuperación exacta en las cuatro ejecuciones técnicas. [Informe](REVISION_AJUSTE_A6AA6B8.md).
+- Se reprodujeron 720 inferencias CPU, con diferencias máximas de píxel inferiores a 3,83×10^-6. El recálculo de 7.974 valores de evaluación discrepa como máximo 4,45×10^-16. Se verificaron 5.400 errores de cuentas, 168 estadísticas y 21 valores del bootstrap. [Evidencia](evidencias/revision-ajuste-a6aa6b8.json).
+- Resultado: compromiso confirmado. B mejora Q en 15/18 vistas y empeora el error de borde en 18/18; el sesgo medio del cuerpo denso es −70,23 %, frente a −59,96 % inicial. Se generó e inspeccionó una figura de las 18 vistas.
+- Incidencias resueltas en la revisión: dispositivo D: con errores, descarga temporal HTTP 403 y diferencias de representación textual; se trabajó en carpeta temporal C:, descarga pública por IDs y comparación de huellas. Las máscaras coinciden en contenido aunque sus NPZ comprimidos difieren. Una copia cGAN incompleta se descartó; se verificó la copia confirmada con generador y crítico.
+- Ajuste-02 y la ejecución/evaluación de Ajuste-03 verificados; aceptación física y OE2 pendientes. Se documenta la [propuesta C0/C1 para cGAN](PROPUESTA_CONTINUACION_CGAN_F05.md), sin presentarla como lista para GPU. Próximo paso: integrar y verificar ese ejecutor antes de delegar entrenamiento.
+- No se entrenó, no se fusionó la rama estudiantil ni se abrieron imágenes reservadas. Se mantiene el cierre del OE1.

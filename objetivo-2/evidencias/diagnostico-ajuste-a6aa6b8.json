@@ -1,0 +1,626 @@
+{
+  "schema": "oe2-adjustment-regional-diagnostic-v1",
+  "initial_predictions_sha256": "c4e35ef07c46974b4847ec46ea60173c6f1a44e1c6f33f0639f2aea2e58ec9fc",
+  "initial_predictions_source": "Inferencia CPU verificada del checkpoint U-Net de \u00e9poca 5; reutilizada sin entrenamiento",
+  "heldout_opened": false,
+  "summary": {
+    "initial": {
+      "ssim": 0.8436712357269776,
+      "psnr": 32.90365411810153,
+      "Q_by_geometry": {
+        "geo-val-01": 0.033048327103291045,
+        "geo-val-02": 0.29175817608382837,
+        "geo-val-03": 0.33206046354624824
+      },
+      "Q": 0.2189556555777892,
+      "sky_mae": 0.04218106441669263,
+      "edge_mae": 0.07322543525280742,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.08744311716483119
+    },
+    "A": {
+      "ssim": 0.8429705315445634,
+      "psnr": 32.81882753780392,
+      "Q_by_geometry": {
+        "geo-val-01": 0.02731033798521289,
+        "geo-val-02": 0.1395344040361517,
+        "geo-val-03": 0.23175272976566155
+      },
+      "Q": 0.13286582392900873,
+      "sky_mae": 0.017774382484799782,
+      "edge_mae": 0.05138463283854347,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.08680070879027418
+    },
+    "B": {
+      "ssim": 0.8430640909156656,
+      "psnr": 32.76862286103233,
+      "Q_by_geometry": {
+        "geo-val-01": 0.026526988964963076,
+        "geo-val-02": 0.11789505053763172,
+        "geo-val-03": 0.19273591612429242
+      },
+      "Q": 0.11238598520896241,
+      "sky_mae": 0.01686416797596265,
+      "edge_mae": 0.0569886886250941,
+      "common_contrasts": 23,
+      "contrast_absolute_error": 0.08344589470904776
+    }
+  },
+  "families": {
+    "inicial": {
+      "0": {
+        "signed_bias_mean": 0.040600616251914176,
+        "absolute_mean_bias": 0.040600616251914176,
+        "mae_mean": 0.04218106441669263
+      },
+      "1": {
+        "signed_bias_mean": -0.16966278735705786,
+        "absolute_mean_bias": 0.16966278735705786,
+        "mae_mean": 0.37254539178706847
+      },
+      "2": {
+        "signed_bias_mean": 0.00029332995078160996,
+        "absolute_mean_bias": 0.013404058265669266,
+        "mae_mean": 0.07322543525280742
+      },
+      "3": {
+        "signed_bias_mean": -0.3011658209898169,
+        "absolute_mean_bias": 0.30654851169691527,
+        "mae_mean": 0.6772250997515017
+      }
+    },
+    "A": {
+      "0": {
+        "signed_bias_mean": -0.009020484084994236,
+        "absolute_mean_bias": 0.009020484084994236,
+        "mae_mean": 0.017774382484799782
+      },
+      "1": {
+        "signed_bias_mean": -0.012848475955028194,
+        "absolute_mean_bias": 0.032151141191139196,
+        "mae_mean": 0.3356955503076484
+      },
+      "2": {
+        "signed_bias_mean": -0.007479555727525644,
+        "absolute_mean_bias": 0.007479555727525644,
+        "mae_mean": 0.05138463283854347
+      },
+      "3": {
+        "signed_bias_mean": -0.2693049542491066,
+        "absolute_mean_bias": 0.28095287444951417,
+        "mae_mean": 0.6343074672400499
+      }
+    },
+    "B": {
+      "0": {
+        "signed_bias_mean": 0.0033135851994861246,
+        "absolute_mean_bias": 0.0033135851994861246,
+        "mae_mean": 0.01686416797596265
+      },
+      "1": {
+        "signed_bias_mean": 0.004503684733654634,
+        "absolute_mean_bias": 0.016721241251745195,
+        "mae_mean": 0.339976584986174
+      },
+      "2": {
+        "signed_bias_mean": -0.011030166836983457,
+        "absolute_mean_bias": 0.011030166836983457,
+        "mae_mean": 0.0569886886250941
+      },
+      "3": {
+        "signed_bias_mean": -0.23955527858932676,
+        "absolute_mean_bias": 0.2489794549636485,
+        "mae_mean": 0.6417901018241158
+      }
+    }
+  },
+  "by_view": [
+    {
+      "geometry": "geo-val-01",
+      "view": 0,
+      "models": {
+        "inicial": {
+          "Q": 0.04785283314983765,
+          "edge_mae": 0.07385805837367575,
+          "anomalies": {
+            "anomalia_0_conduit": 0.04844941188260374
+          }
+        },
+        "A": {
+          "Q": 0.038357404563439765,
+          "edge_mae": 0.05221181897968946,
+          "anomalies": {
+            "anomalia_0_conduit": 0.050969983199835575
+          }
+        },
+        "B": {
+          "Q": 0.03323494794115059,
+          "edge_mae": 0.058202632367054294,
+          "anomalies": {
+            "anomalia_0_conduit": 0.03744155466452791
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 1,
+      "models": {
+        "inicial": {
+          "Q": 0.024468970232582928,
+          "edge_mae": 0.0736916698603578,
+          "anomalies": {
+            "anomalia_0_conduit": -0.005092732570619084
+          }
+        },
+        "A": {
+          "Q": 0.022269660854060416,
+          "edge_mae": 0.0502585687968389,
+          "anomalies": {
+            "anomalia_0_conduit": -0.014225026292665796
+          }
+        },
+        "B": {
+          "Q": 0.022568629341873536,
+          "edge_mae": 0.05647493448019163,
+          "anomalies": {
+            "anomalia_0_conduit": -0.012666425533002476
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 2,
+      "models": {
+        "inicial": {
+          "Q": 0.03100884865405705,
+          "edge_mae": 0.07197688675673235,
+          "anomalies": {
+            "anomalia_0_conduit": 0.016142876602576406
+          }
+        },
+        "A": {
+          "Q": 0.017943183067372227,
+          "edge_mae": 0.05110272768475145,
+          "anomalies": {
+            "anomalia_0_conduit": 0.007599393121145583
+          }
+        },
+        "B": {
+          "Q": 0.016114234372296365,
+          "edge_mae": 0.05711522765945778,
+          "anomalies": {
+            "anomalia_0_conduit": -0.0015429916860944515
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 3,
+      "models": {
+        "inicial": {
+          "Q": 0.02356912961664307,
+          "edge_mae": 0.07452591857984119,
+          "anomalies": {
+            "anomalia_0_conduit": -0.009454232381942448
+          }
+        },
+        "A": {
+          "Q": 0.03330324597399828,
+          "edge_mae": 0.0514699139301107,
+          "anomalies": {
+            "anomalia_0_conduit": 0.031105900471428603
+          }
+        },
+        "B": {
+          "Q": 0.0358644741552534,
+          "edge_mae": 0.05795583996234086,
+          "anomalies": {
+            "anomalia_0_conduit": 0.034018098764085555
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 4,
+      "models": {
+        "inicial": {
+          "Q": 0.03014300293679273,
+          "edge_mae": 0.07361963414479605,
+          "anomalies": {
+            "anomalia_0_conduit": -0.020178430961128525
+          }
+        },
+        "A": {
+          "Q": 0.034330454044640815,
+          "edge_mae": 0.0510577419437835,
+          "anomalies": {
+            "anomalia_0_conduit": 0.039101621582301946
+          }
+        },
+        "B": {
+          "Q": 0.036604390483635056,
+          "edge_mae": 0.05705976524506125,
+          "anomalies": {
+            "anomalia_0_conduit": 0.04010466071262091
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-01",
+      "view": 5,
+      "models": {
+        "inicial": {
+          "Q": 0.041247178029832854,
+          "edge_mae": 0.07276643978849599,
+          "anomalies": {
+            "anomalia_0_conduit": -0.036023949650649326
+          }
+        },
+        "A": {
+          "Q": 0.017658079407765856,
+          "edge_mae": 0.050260178168412065,
+          "anomalies": {
+            "anomalia_0_conduit": 0.010998144030178205
+          }
+        },
+        "B": {
+          "Q": 0.014775257495569509,
+          "edge_mae": 0.056282925440609734,
+          "anomalies": {
+            "anomalia_0_conduit": 0.0015258023506271377
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 0,
+      "models": {
+        "inicial": {
+          "Q": 0.24870294557625922,
+          "edge_mae": 0.08048120409417488,
+          "anomalies": {
+            "anomalia_0_cavity": -0.2744158724842825
+          }
+        },
+        "A": {
+          "Q": 0.0736924905219074,
+          "edge_mae": 0.0552945381687722,
+          "anomalies": {
+            "anomalia_0_cavity": -0.11764640776060989
+          }
+        },
+        "B": {
+          "Q": 0.05056332786174785,
+          "edge_mae": 0.06082541462978255,
+          "anomalies": {
+            "anomalia_0_cavity": -0.09392265568379901
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 1,
+      "models": {
+        "inicial": {
+          "Q": 0.28145243259538255,
+          "edge_mae": 0.08195541009204269,
+          "anomalies": {
+            "anomalia_0_cavity": -0.33983264586134376
+          }
+        },
+        "A": {
+          "Q": 0.11577754250566903,
+          "edge_mae": 0.055974120037258504,
+          "anomalies": {
+            "anomalia_0_cavity": -0.20606980886765683
+          }
+        },
+        "B": {
+          "Q": 0.10431569555437123,
+          "edge_mae": 0.06125695935281404,
+          "anomalies": {
+            "anomalia_0_cavity": -0.20587797043915373
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 2,
+      "models": {
+        "inicial": {
+          "Q": 0.25281295095265355,
+          "edge_mae": 0.07983040962347139,
+          "anomalies": {
+            "anomalia_0_cavity": -0.2842755841576695
+          }
+        },
+        "A": {
+          "Q": 0.0832706185254624,
+          "edge_mae": 0.05487528496650089,
+          "anomalies": {
+            "anomalia_0_cavity": -0.14254799366272225
+          }
+        },
+        "B": {
+          "Q": 0.06641781452021749,
+          "edge_mae": 0.0596094868683365,
+          "anomalies": {
+            "anomalia_0_cavity": -0.13110180495754542
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 3,
+      "models": {
+        "inicial": {
+          "Q": 0.35823053906238445,
+          "edge_mae": 0.08124745997408057,
+          "anomalies": {
+            "anomalia_0_cavity": -0.4922937050813764
+          }
+        },
+        "A": {
+          "Q": 0.2342809626301115,
+          "edge_mae": 0.05580892735936599,
+          "anomalies": {
+            "anomalia_0_cavity": -0.43912697211075374
+          }
+        },
+        "B": {
+          "Q": 0.216996726752336,
+          "edge_mae": 0.06095411255021267,
+          "anomalies": {
+            "anomalia_0_cavity": -0.42684975230424554
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 4,
+      "models": {
+        "inicial": {
+          "Q": 0.31258975291836844,
+          "edge_mae": 0.07962259488093351,
+          "anomalies": {
+            "anomalia_0_cavity": -0.3997877294770565
+          }
+        },
+        "A": {
+          "Q": 0.19084584023442736,
+          "edge_mae": 0.05491186374512326,
+          "anomalies": {
+            "anomalia_0_cavity": -0.3543989566750711
+          }
+        },
+        "B": {
+          "Q": 0.15469355003727528,
+          "edge_mae": 0.05959399024860912,
+          "anomalies": {
+            "anomalia_0_cavity": -0.30376322964530994
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-02",
+      "view": 5,
+      "models": {
+        "inicial": {
+          "Q": 0.2967604353979218,
+          "edge_mae": 0.08016292561500923,
+          "anomalies": {
+            "anomalia_0_cavity": -0.37383540490952416
+          }
+        },
+        "A": {
+          "Q": 0.1393389697993326,
+          "edge_mae": 0.055296516670250526,
+          "anomalies": {
+            "anomalia_0_cavity": -0.2522390454449089
+          }
+        },
+        "B": {
+          "Q": 0.11438318849984241,
+          "edge_mae": 0.0601781622587104,
+          "anomalies": {
+            "anomalia_0_cavity": -0.22550438411388943
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 0,
+      "models": {
+        "inicial": {
+          "Q": 0.33668254890672444,
+          "edge_mae": 0.06527314408165144,
+          "anomalies": {
+            "anomalia_0_conduit": -0.2332562439476121,
+            "anomalia_1_dense_body": -0.6268931021398856
+          }
+        },
+        "A": {
+          "Q": 0.22944670488090232,
+          "edge_mae": 0.048065213150310045,
+          "anomalies": {
+            "anomalia_0_conduit": -0.07230259245900346,
+            "anomalia_1_dense_body": -0.766203841107014
+          }
+        },
+        "B": {
+          "Q": 0.15537862588404397,
+          "edge_mae": 0.054075706219699635,
+          "anomalies": {
+            "anomalia_0_conduit": -0.052640738209037766,
+            "anomalia_1_dense_body": -0.5423701524527779
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 1,
+      "models": {
+        "inicial": {
+          "Q": 0.33915126518203786,
+          "edge_mae": 0.06541723402784513,
+          "anomalies": {
+            "anomalia_0_conduit": -0.25601785027569857,
+            "anomalia_1_dense_body": -0.6198070680978522
+          }
+        },
+        "A": {
+          "Q": 0.22504103123109584,
+          "edge_mae": 0.04722668336874527,
+          "anomalies": {
+            "anomalia_0_conduit": -0.07227876619167536,
+            "anomalia_1_dense_body": -0.7503564104093923
+          }
+        },
+        "B": {
+          "Q": 0.1924491739917807,
+          "edge_mae": 0.052898619251002546,
+          "anomalies": {
+            "anomalia_0_conduit": -0.037115751333387834,
+            "anomalia_1_dense_body": -0.7087626948890084
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 2,
+      "models": {
+        "inicial": {
+          "Q": 0.33937329935789906,
+          "edge_mae": 0.0664170926237519,
+          "anomalies": {
+            "anomalia_0_conduit": -0.2627800020348132,
+            "anomalia_1_dense_body": -0.6138649543291362
+          }
+        },
+        "A": {
+          "Q": 0.2309806913594507,
+          "edge_mae": 0.04782979570704473,
+          "anomalies": {
+            "anomalia_0_conduit": -0.06734259781059584,
+            "anomalia_1_dense_body": -0.775869060680023
+          }
+        },
+        "B": {
+          "Q": 0.19876743089724977,
+          "edge_mae": 0.052994489872952924,
+          "anomalies": {
+            "anomalia_0_conduit": -0.0374195855876321,
+            "anomalia_1_dense_body": -0.7301397108835814
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 3,
+      "models": {
+        "inicial": {
+          "Q": 0.3312225699846012,
+          "edge_mae": 0.06598388554350404,
+          "anomalies": {
+            "anomalia_0_conduit": -0.21792697890528046,
+            "anomalia_1_dense_body": -0.608487004950597
+          }
+        },
+        "A": {
+          "Q": 0.23772268168171823,
+          "edge_mae": 0.04805675871463989,
+          "anomalies": {
+            "anomalia_0_conduit": -0.02946855180063309,
+            "anomalia_1_dense_body": -0.8259305228528776
+          }
+        },
+        "B": {
+          "Q": 0.21213868122748175,
+          "edge_mae": 0.054201352225216506,
+          "anomalies": {
+            "anomalia_0_conduit": -0.008942460360273305,
+            "anomalia_1_dense_body": -0.7990712369714799
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 4,
+      "models": {
+        "inicial": {
+          "Q": 0.3296263295334606,
+          "edge_mae": 0.06555342588999871,
+          "anomalies": {
+            "anomalia_0_conduit": -0.24660165345510193,
+            "anomalia_1_dense_body": -0.5937829155639134
+          }
+        },
+        "A": {
+          "Q": 0.24062377230301832,
+          "edge_mae": 0.04761752587356557,
+          "anomalies": {
+            "anomalia_0_conduit": -0.08367938370840548,
+            "anomalia_1_dense_body": -0.8104812675387176
+          }
+        },
+        "B": {
+          "Q": 0.20665455254480067,
+          "edge_mae": 0.05297187497460122,
+          "anomalies": {
+            "anomalia_0_conduit": -0.05399213925911547,
+            "anomalia_1_dense_body": -0.7575513352729594
+          }
+        }
+      }
+    },
+    {
+      "geometry": "geo-val-03",
+      "view": 5,
+      "models": {
+        "inicial": {
+          "Q": 0.3163067683127664,
+          "edge_mae": 0.06567444060017102,
+          "anomalies": {
+            "anomalia_0_conduit": -0.24308962957937733,
+            "anomalia_1_dense_body": -0.5348743014259263
+          }
+        },
+        "A": {
+          "Q": 0.22670149713778412,
+          "edge_mae": 0.0476052138286195,
+          "anomalies": {
+            "anomalia_0_conduit": -0.08661160972052843,
+            "anomalia_1_dense_body": -0.7363151292901946
+          }
+        },
+        "B": {
+          "Q": 0.1910270322003979,
+          "edge_mae": 0.053144901645040155,
+          "anomalies": {
+            "anomalia_0_conduit": -0.05717463513119834,
+            "anomalia_1_dense_body": -0.6760071479222117
+          }
+        }
+      }
+    }
+  ],
+  "views_Q_improved_B_vs_A": 15,
+  "views_edge_worse_B_vs_A": 18
+}

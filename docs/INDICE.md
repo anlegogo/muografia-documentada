@@ -93,3 +93,8 @@ Los Markdown originales de los estudiantes permanecen dentro de `originales/`; s
 ## Ejecución del ajuste de cuentas — 2026-10-03
 
 - [Guía operativa y comprobaciones locales del ajuste A/B](../objetivo-2/INSTRUCCIONES_AJUSTE_CUENTAS_F05.md): integración, recuperación, puerta de aceptación GPU, evaluación y entrega.
+
+## Revisión del ajuste U-Net y continuación cGAN — 2026-10-03
+
+- [Auditoría independiente de a6aa6b8](../objetivo-2/REVISION_AJUSTE_A6AA6B8.md): doce binarios, recuperación, inferencia, diagnóstico por vista y límites físicos.
+- [Propuesta de continuación cGAN](../objetivo-2/PROPUESTA_CONTINUACION_CGAN_F05.md): comparación C0/C1 planteada; integración y pruebas pendientes antes del lanzamiento.

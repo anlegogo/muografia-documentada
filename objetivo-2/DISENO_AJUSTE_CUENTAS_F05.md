@@ -1,5 +1,8 @@
 # Diseño del ajuste acotado de conservación de cuentas
 
+**Actualización posterior — 2026-10-03:** el ensayo U-Net de esta guía ya fue ejecutado y su entrega a6aa6b8 fue [revisada independientemente](REVISION_AJUSTE_A6AA6B8.md). Ajuste-01 y Ajuste-02 verificados; Ajuste-03 completado, con resultado de compromiso y sin aceptación física. Los estados de preparación y comandos siguientes se conservan como antecedente y reproducción; no constituyen un encargo de repetir el ensayo. La [propuesta cGAN](PROPUESTA_CONTINUACION_CGAN_F05.md) aún requiere integración y pruebas.
+
+
 Fecha: 2026-10-03, Colombia. **Estado vigente: integración y entrenamiento técnico con recuperación verificados en CPU; comprobación GPU y piloto A/B pendientes.** La [guía operativa](INSTRUCCIONES_AJUSTE_CUENTAS_F05.md) contiene los comandos del nuevo ejecutor y la evidencia. No se ha realizado el ensayo completo de cinco épocas. Las especificaciones históricas no son configuraciones del ejecutor del piloto v1.
 
 ## Problema y pregunta
