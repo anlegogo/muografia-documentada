@@ -2,7 +2,7 @@
 73b7558ed111ef50f6b9d9af42e0ac969c393b58492ab9a072f4db25bb8c071d *./DIAGNOSTICO_CG04B.md
 dc88fa1ca79caf830133bc39e3834678dfc7681b4861622d13c0956d816cd58f *./INCIDENCIA_RECUPERACION_GPU.md
 71001c6fc136beb17e724ee163f2903a19c3b1687ddd50ab7fb66827c964e832 *./PROPUESTA_TOLERANCIA_RECUPERACION.md
-c6f3f32c676b400ff3f8c20a83040ee5f7157fcb9c5ed1148d729c18477f33b4 *./RESULTADOS_CG04C.md
+36b0d214a5e4e039fa8782deb34dfd30f903b7065b52f1c902260bdc01a5c942 *./RESULTADOS_CG04C.md
 3e6c2f36f6e49e7022747ffb45196f2cd1f21c373c08a4bdee454d511d9bb6e6 *./datos/cg04b/binarios-drive.txt
 e6579caccc78e6f940c23f1837cdc4170ab372c68291e04bd9eea3d2794ee568 *./datos/cg04b/cg04b.log
 e4267bd1f53b0cc1860d4a245a3e31cd103f2196b0bbe480eca68e2fe6f60264 *./datos/cg04b/cg04b/C0-consola.log
@@ -180,6 +180,7 @@ bc747ea95eec70662b2774474a9aca5fbfd6ef28a95a77ab3f4b81e2e64f53ba *./datos/cg04c/
 f4cad076a5f4739e50c01dfe860210ac405b6994107342d0f1728a3d1f2c560e *./datos/cg04c/instalar.log
 df720c9d64735fc02ac8d3147f8a230f7a8fdcec7530f9d16351c049c9413530 *./datos/cg04c/manifiesto-mascaras.json
 78f866566c1fbf7e686732a716153c0c47445b2e44d6857f66633c6171a1d816 *./datos/cg04c/mascaras.log
+66397bf1f03433dc593d820226ccb28b027ad2df2ac8af00254fbc7a8cb38540 *./datos/cg04c/verificacion-drive-cg04c.json
 e0c5c4f3f4aba6ef67dc9a53f91b5dd8b45ddbb61962126c1e0da12c7a43eb5d *./datos/diagnostico-cg04/binarios-drive.txt
 0ced8338620fbae39a87704f68af55e93d91d13a6087b5993bd5792dc9277e22 *./datos/diagnostico-cg04/datos.log
 3905670d1ce073c151a583ce22c94f8c1060c3111aa9ab6c5a969fccf44303ad *./datos/diagnostico-cg04/diagnostico-cgan/C0-consola.log
