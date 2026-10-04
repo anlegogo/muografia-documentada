@@ -1,5 +1,7 @@
 # Diseño de repetición de la continuación cGAN al 5 %
 
+**Actualización de la revisión — 2026-10-04:** la entrega R1–R3 fue [verificada independientemente](REVISION_REPETICION_F6518FF.md). Las seis continuaciones se completaron; ninguna pareja satisface los ocho controles. Este documento conserva el diseño y los comandos del ensayo realizado, no constituye una instrucción para repetirlo. Los estados de preparación que siguen son históricos. La aceptación física y el cierre del OE2 siguen pendientes.
+
 Fecha: 2026-10-04, America/Bogota. **Estado: diseño implementado y verificado en CPU; preparado para la comprobación GPU con las [instrucciones de repetición](INSTRUCCIONES_REPETICION_CGAN_F05.md). Las seis continuaciones nuevas siguen pendientes.** Se deriva de la [valoración por vista y anomalía](VALORACION_COMPROMISO_CGAN_F05.md). Se ejecutó entrenamiento técnico local para comprobar recuperación; no se ejecutaron las continuaciones de cinco épocas.
 
 ## Pregunta y alcance

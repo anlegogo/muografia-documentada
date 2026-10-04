@@ -1,5 +1,15 @@
 # Bitácora del OE2
 
+## 2026-10-04 — Revisión binaria y numérica de la repetición R1–R3
+
+- Actividad: auditoría independiente de la entrega f6518ff y de los archivos compartidos en Drive, sin entrenamiento nuevo.
+- Entradas: 55 binarios (5.910.526.686 bytes), 193 textos fijados por objeto Git, checkpoint inicial y caché de máscaras previamente verificados. Se recuperaron 30 archivos train/val por errores de lectura de la copia antigua; sus huellas coinciden con el contrato.
+- Verificación: igualdad exacta de las tres recuperaciones técnicas; seis continuaciones completas; evaluación regional, diagnóstico por anomalía, síntesis e inferencia CPU de 2.520 imágenes. El modelo inicial se infiere una vez y se contrasta con sus tres exportaciones.
+- Resultado: ninguna pareja cumple los ocho controles. C1 reduce Q en R1 y R2, lo aumenta en R3 y empeora el borde en las tres. La clasificación es dependencia de la semilla o compromiso.
+- Evidencia y reproducción: [informe independiente](REVISION_REPETICION_F6518FF.md), [evidencia JSON](evidencias/revision-repeticion-f6518ff.json) y herramientas enlazadas en el informe.
+- Límites: revisión local CPU de artefactos producidos en L40S; sin nueva ejecución CUDA, sin entrenamiento desde cero y sin apertura de test/generalization. La aceptación física y el OE2 permanecen pendientes.
+- Siguiente paso: revisar la hipótesis de ajuste y justificar criterios físicos prospectivos antes de solicitar entrenamiento adicional; no repetir selectivamente semillas ni ampliar automáticamente la campaña.
+
 ## 2026-10-04 — Repetición cGAN integrada y comprobada localmente
 
 - Fecha y zona: 2026-10-04, America/Bogota. Actividad autorizada por la dirección: adaptar y verificar el diseño de tres parejas; sin lanzamiento GPU.

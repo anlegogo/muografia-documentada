@@ -1,6 +1,6 @@
 {
   "schema": "oe2-cgan-repetition-design-v1",
-  "status": "implemented_cpu_verified_gpu_pending",
+  "status": "completed_independently_reviewed_no_physical_acceptance",
   "ready_for_gpu": true,
   "created_date": "2026-10-04",
   "question": "Estabilidad de la continuación C1 frente a C0 condicionada al checkpoint inicial",
@@ -69,9 +69,11 @@
     "G": 48,
     "D": 240
   },
-  "gpu_accepted": false,
+  "gpu_accepted": true,
   "executable_config": false,
-  "readiness_scope": "Only GPU technical validation; each pilot requires its matching GPU acceptance.",
+  "readiness_scope": "Completed delivery f6518ff on its recorded L40S environment; not a new execution order or acceptance for a different environment.",
   "instructions": "objetivo-2/INSTRUCCIONES_REPETICION_CGAN_F05.md",
-  "local_evidence": "objetivo-2/evidencias/integracion-repeticion-cgan-v1.json"
+  "local_evidence": "objetivo-2/evidencias/integracion-repeticion-cgan-v1.json",
+  "delivery_commit": "f6518ff2aceb695129bfd8773ce58f6479395def",
+  "independent_review": "objetivo-2/REVISION_REPETICION_F6518FF.md"
 }

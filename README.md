@@ -1,6 +1,6 @@
 # Muografía: documentación y seguimiento académico
 
-**OE2 — repetición cGAN preparada para GPU:** se integraron tres parejas con semillas fijadas y se verificó recuperación exacta en CPU mediante doce ejecuciones y 50 controles. Las [instrucciones vigentes](objetivo-2/INSTRUCCIONES_REPETICION_CGAN_F05.md) permiten comprobar GPU y, tras aceptación de las tres parejas, completar seis continuaciones de cinco épocas y su síntesis. Se conserva el [diseño condicionado al mismo checkpoint](objetivo-2/DISENO_REPETICION_CGAN_F05.md); las nuevas continuaciones, la aceptación física y el cierre del OE2 siguen pendientes.
+**OE2 — repetición cGAN revisada:** se verificaron los 55 binarios, la recuperación exacta de las tres parejas, las seis continuaciones y su inferencia. C1 reduce el sesgo regional en dos parejas y lo aumenta en la tercera; el error de borde empeora en las tres y ninguna satisface los ocho controles. La [revisión independiente](objetivo-2/REVISION_REPETICION_F6518FF.md) confirma dependencia de la semilla o compromiso. No se concede aceptación física ni se amplía la campaña; el siguiente paso es revisar el diseño científico y los criterios de aceptación. El OE2 permanece abierto.
 
 **Estado del OE1 — 2026-10-03: cumplido y cerrado por decisión de la dirección bajo el alcance idealizado adoptado.** Datos, distribución, justificación e informe específico completos. [Registro de cierre](objetivo-1/CIERRE_OE1.md). No se requieren nuevas corridas para este alcance; no se declara aprobada la tesis completa.
 

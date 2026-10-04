@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## 2026-10-04 — Verificación independiente de la repetición cGAN R1–R3
+
+- Se verificaron los 55 binarios de Drive y los estados de los 18 checkpoints de la entrega f6518ff. Las tres recuperaciones técnicas conservan igualdad exacta.
+- Se reprodujeron las evaluaciones, los diagnósticos por vista/anomalía, la síntesis y 2.520 inferencias CPU. Se publican el verificador, la evidencia y una figura reproducible en PNG/PDF.
+- Ninguna pareja satisface los ocho controles: Q mejora en dos de tres y el error de borde empeora en las tres. La entrega técnica queda verificada; no se concede aceptación física ni cierre del OE2. [Revisión completa](objetivo-2/REVISION_REPETICION_F6518FF.md).
+
 ## 2026-10-04 — Integración y verificación de la repetición cGAN
 
 - Se implementaron las seis configuraciones R1–R3, identidad de pareja/semilla, aceptación por pareja y síntesis sin selección retrospectiva. Se conserva la formulación y el diseño prospectivo.

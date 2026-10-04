@@ -1,5 +1,7 @@
 # Instrucciones para repetir la continuación cGAN al 5 %
 
+**Actualización de la revisión — 2026-10-04:** la entrega R1–R3 fue [verificada independientemente](REVISION_REPETICION_F6518FF.md). Las seis continuaciones se completaron; ninguna pareja satisface los ocho controles. Este documento conserva el diseño y los comandos del ensayo realizado, no constituye una instrucción para repetirlo. Los estados de preparación que siguen son históricos. La aceptación física y el cierre del OE2 siguen pendientes.
+
 Fecha: 2026-10-04, America/Bogota. **Estado: integración y recuperación exacta verificadas en CPU; preparada la comprobación GPU de esta versión.** Las cinco épocas de las tres parejas nuevas todavía no se han ejecutado. Se mantiene abierto el OE2 y no se concede aceptación física.
 
 ## Propósito y alcance
