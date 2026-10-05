@@ -1,5 +1,13 @@
 # Bitácora de preparación del OE3
 
+## Publicación editorial — 2026-10-04, Colombia
+
+Actividad: incorporación de la versión corregida por solicitud de la dirección.
+
+Se incorpora la versión LaTeX corregida del informe completo en `informe-final/latex/`, con figuras vectoriales, fuentes editables, datos de las figuras, PDF compilado y ZIP para Overleaf. Se conservan sin cambios los datos experimentales y los capítulos 2 y 5. La compilación local produjo 90 páginas, sin referencias indefinidas ni desbordamientos; las cuatro figuras corregidas se regeneraron y verificaron como vectoriales. No se realizaron nuevas corridas. La inversión de opacidad se delimita como extensión futura, no como requisito adicional de los objetivos aprobados. La publicación no sustituye la aprobación académica.
+
+Evidencia: [registro de correcciones y verificaciones](../informe-final/latex/LEEME_CORRECCIONES_FINALES.txt). Procedimiento: importación del ZIP corregido y comparación byte por byte de sus 121 archivos. Siguiente paso: revisión de los autores y aprobación académica; no se reabren experimentos.
+
 ## Integración editorial — 2026-10-04, Colombia
 
 Por autorización de la dirección se integran metodología, resultados, discusión y conclusiones de los tres objetivos en [informe-final](../informe-final/README.md). Se generan tres tablas desde la síntesis auditada, se enlazan seis figuras conservadas y se documentan nomenclatura y contraste con la propuesta. OE3-P04 queda con núcleo experimental integrado; la maquetación institucional y revisión de autores continúan separadas. No se ejecuta cómputo científico nuevo ni se cambia el balance parcial. Evidencia: FUENTES.json y VERIFICACION.json del informe.

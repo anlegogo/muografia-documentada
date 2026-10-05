@@ -1,0 +1,34 @@
+% Anexos de la propuesta de capítulos (2026-10-04).
+\renewcommand{\appendixname}{Anexo}
+
+\chapter{Protocolo propuesto para estimar el factor de reducción}
+\label{chap:anexo-protocolo}
+
+Este anexo detalla un protocolo posible para la línea de entrenamiento con varias fracciones descrita en la \cref{sec:trabajo-futuro}. Es una propuesta que no se ejecutó en este trabajo. Su finalidad es que la determinación del factor de reducción se realice con criterios fijados antes de evaluar y sobre escenas no inspeccionadas, y que el resultado, favorable o no, se informe completo. La regla de decisión es la del \cref{alg:met-factor}, con las Ecuaciones~\eqref{eq:met-aceptadas} a~\eqref{eq:met-factor}. El \cref{alg:anexo-protocolo} resume las entradas, las salidas y los pasos.
+
+\begin{algorithm}[htbp]\small
+\caption{Protocolo prospectivo propuesto para estimar el factor de reducción.}\label{alg:anexo-protocolo}
+\begin{algorithmic}[1]
+\Require Cadena verificada de simulación y submuestreo; rejilla de fracciones de entrada; criterios de aceptación de SSIM y PSNR justificados por la aplicación o por una referencia externa; número de repeticiones de entrenamiento.
+\Ensure Conjunto de fracciones aceptadas por modelo y partición; fracción mínima y factor asociado, o su condición de no determinados; registro completo de comparaciones y variabilidad entre repeticiones.
+\State Registrar criterios, rejilla, métricas, particiones y número de repeticiones antes de generar escenas nuevas.
+\State Generar geometrías nuevas de prueba y de generalización con la cadena verificada y mantenerlas sin inspeccionar.
+\For{cada repetición independiente}
+\State Inicializar los pesos con una semilla registrada.
+\State Entrenar con entradas de varias fracciones y seleccionar los pesos solo con validación.
+\State Congelar los pesos y registrar sus huellas.
+\EndFor
+\For{cada modelo, fracción y vista de las escenas nuevas}
+\State Calcular SSIM y PSNR por realización frente a la referencia y promediarlos por vista.
+\State Calcular la conservación regional y los indicadores locales como evidencia complementaria.
+\EndFor
+\For{cada modelo y cada partición}
+\State Aplicar la regla del \cref{alg:met-factor} con los criterios registrados.
+\If{el conjunto de fracciones aceptadas está vacío}
+\State Informar la fracción mínima y el factor como no determinados.
+\Else
+\State Informar la fracción mínima y el factor asociado.
+\EndIf
+\EndFor
+\State Informar la variabilidad entre repeticiones sin seleccionar la más favorable.
+\end{algorithmic}\end{algorithm}

@@ -1,5 +1,7 @@
 # Muografía: documentación y seguimiento académico
 
+**Informe LaTeX corregido — 2026-10-04:** [proyecto editable](informe-final/latex/README.md) · [PDF compilado](informe-final/latex/main.pdf) · [ZIP para Overleaf](informe-final/latex/Trabajo_de_Grado_Muografia_corregido.zip). Se publica el documento completo revisado; el informe en Markdown se conserva como antecedente de integración.
+
 **Informe integrado — 2026-10-04:** [metodología, resultados, discusión y conclusiones](informe-final/README.md) redactados y revisados, con seis figuras y tablas trazables. La integración del núcleo experimental está completa en Markdown; resta adaptación institucional y revisión de autores. El cumplimiento científico parcial de OE2/OE3 se conserva.
 
 **Estado vigente del OE3 — 2026-10-04:** [cierre experimental y documental](objetivo-3/CIERRE_OE3.md). Evaluación finalizada; cumplimiento científico parcial. No se demuestra un factor de reducción bajo el benchmark y no se reconstruyó opacidad cuantitativa. No quedan nuevas corridas asignadas; resta la integración del informe final. Las notas inferiores conservan la cronología y no reabren encargos superados.

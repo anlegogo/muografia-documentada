@@ -1,0 +1,23 @@
+CORRECCIONES FINALES DEL INFORME DE MUOGRAFÍA
+
+Cambios aplicados
+- Introducción: se corrigieron una repetición, una mayúscula tras punto y un fragmento redundante de la justificación.
+- Resumen y abstract: se explicitó que las métricas citadas corresponden a entradas al 5 % de los conteos.
+- Figuras 3.9, 4.4, 4.7 y 4.8: se sustituyeron las instrucciones pegadas en las leyendas por descripciones finales.
+- Figura 3.9: se separó la ruta de SSIM/PSNR por vista del análisis complementario; Q se obtiene después del promedio de sesgos regionales entre realizaciones.
+- Figura 4.4: se separaron los nombres de geometría de los ejes; se documentaron vista 0, realización 0 y escala común.
+- Figura 4.7: se distinguieron las seis continuaciones mediante color, marcador y trazado; se conservaron todos los modelos y puntos evaluados.
+- Figura 4.8: se aumentó la legibilidad de etiquetas y se redistribuyó la nota inferior; se conservaron 48 registros elegibles, las advertencias de material y las seis exclusiones sin asignarles cero.
+- Capítulo 4: se aclaró que la inversión de opacidad es una extensión futura; se retiró una instrucción editorial que permanecía en el texto.
+- Tabla 3.1: se ajustó la alineación para evitar espacios excesivos. Se actualizaron las instrucciones del proyecto y se retiró la inclusión forzada de referencias de la plantilla, ya citadas en el cuerpo.
+
+Verificaciones
+- Compilación completa con pdfLaTeX, Biber y pasadas posteriores: correcta.
+- PDF final: 90 páginas, inspección visual completa y de detalle de las figuras corregidas.
+- Sin referencias/citas indefinidas, desbordamientos ni cajas de texto insuficientemente llenas. Persiste únicamente el aviso inocuo de compatibilidad sobre showhyphens.
+- Las cuatro figuras regeneradas son PDF vectoriales sin imágenes raster incrustadas, con fuentes incrustadas.
+- Los archivos de datos de las figuras coinciden byte por byte con el respaldo anterior a las correcciones. No se ejecutaron entrenamientos ni evaluaciones científicas nuevas.
+- Los capítulos 2 y 5 se conservaron sin modificaciones.
+
+Entrega
+El ZIP corregido contiene el proyecto LaTeX, figuras, fuentes editables, datos y documentación. main.pdf se entrega aparte y no es necesario subirlo a Overleaf. El ZIP original descargado no se sobrescribió. El respaldo previo está en ../correcciones_finales/respaldo/.

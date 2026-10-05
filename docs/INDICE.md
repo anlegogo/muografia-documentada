@@ -1,5 +1,7 @@
 # Índice de documentación
 
+- [Informe completo en LaTeX: versión corregida, figuras y fuentes editables](../informe-final/latex/README.md).
+
 - [Informe integrado de los tres objetivos: capítulos, figuras, nomenclatura y revisión de coherencia](../informe-final/README.md).
 
 - [OE3: cierre experimental, balance de cumplimiento y disposición de pendientes](../objetivo-3/CIERRE_OE3.md).

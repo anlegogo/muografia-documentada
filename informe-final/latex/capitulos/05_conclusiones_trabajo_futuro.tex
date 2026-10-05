@@ -1,0 +1,68 @@
+\chapter{Conclusiones y trabajo futuro}
+\label{chap:conclusiones}
+% Versión 2 (2026-10-04): ajustada según las observaciones de la dirección. Conclusiones
+% directas por objetivo, trabajo futuro condicional como continuación y protocolo detallado
+% en el anexo. Todas las cifras proceden del capítulo 4 (main 9558099).
+% Nombre de cleveref para algoritmos, que la plantilla no define.
+\crefname{algorithm}{algoritmo}{algoritmos}\Crefname{algorithm}{Algoritmo}{Algoritmos}
+
+Este capítulo resume, para cada objetivo, lo que se logró y lo que no pudo demostrarse con la evidencia del \cref{chap:resultados}, y presenta posibles líneas de investigación que darían continuidad al trabajo. Los objetivos se cumplieron de forma parcial: las actividades de los tres objetivos se ejecutaron y revisaron, pero el alcance de las afirmaciones del segundo y del tercero quedó delimitado por los resultados.
+
+\section{Conclusión del primer objetivo específico}
+\label{sec:conc-oe1}
+
+Se generó el conjunto de datos sintéticos que el primer objetivo formuló, dentro del alcance idealizado adoptado. La simulación en Geant4 de diecinueve escenarios volcánicos produjo 114 referencias de alta estadística y, por submuestreo binomial, 9\,120 pares de entrada y referencia con cuatro fracciones de conteo, particionados por geometría completa. Las 1\,710 regiones de borde cumplieron el criterio fijado antes de la campaña y 107 de las 114 vistas alcanzaron la meta descriptiva de conteo en roca; las siete restantes se conservaron como excepciones (\cref{sec:res-oe1}).
+
+No se demostró la equivalencia de estas imágenes con las de un instrumento real. El conjunto representa mecanismos y configuraciones de una familia idealizada, no un volcán particular; registra muones primarios sin fondo ni respuesta de detector, su exposición es una escala convencional y no se repitió la campaña de transporte de forma independiente.
+
+\section{Conclusión del segundo objetivo específico}
+\label{sec:conc-oe2}
+
+Se diseñó, implementó, entrenó y evaluó el modelo generativo condicional que el segundo objetivo formuló. Con el 5\,\% de los conteos, la cGAN aumentó en prueba el SSIM de 0,7643 a 0,8342 y el PSNR de 24,258 a 31,170~dB respecto de la entrada, con el mismo patrón en generalización (\cref{tab:res-f05}). La U-Net entrenada solo con $\mathcal L_1$ alcanzó valores mayores, de modo que no se observó una ventaja general de similitud atribuible a la componente adversaria bajo las configuraciones evaluadas.
+
+La calidad comparable a la de alta estadística quedó respaldada solo de forma parcial. La mejora de similitud coexistió con un aumento del sesgo regional de cuentas, que en prueba pasó de 1,832\,\% en la entrada a 14,566\,\% con la cGAN. Las continuaciones con pérdidas regional y espacial redujeron ese sesgo y el error de borde, pero ninguna configuración mejoró simultáneamente todos los indicadores, y las doce comparaciones predeclaradas se clasificaron como compromiso o deterioro (\cref{sec:res-oe2}). El experimento no identificó una causa única de esos sesgos. La conclusión corresponde a una evaluación descriptiva sobre datos potencialmente expuestos y a referencias idealizadas.
+
+\section{Conclusión del tercer objetivo específico}
+\label{sec:conc-oe3}
+
+Se evaluó el desempeño de los ocho modelos con entradas al 1, 5, 10 y 50\,\% de los conteos y se aplicó a toda la rejilla el criterio por vista fijado antes de las nuevas inferencias, que exigía alcanzar a la vez el SSIM y el PSNR de la entrada sin red al 50\,\%. Con ese criterio no se logró demostrar un factor de reducción del tiempo de adquisición: ninguna de las 768 combinaciones de modelo, fracción y vista cumplió ambas condiciones, y la fracción mínima y el factor asociado quedaron no determinados (\cref{tab:res-benchmark}).
+
+Los demás resultados de la evaluación no modifican esa conclusión. La cGAN al 5\,\% superó en similitud a la entrada sin red al 10\,\% en las veinticuatro vistas reservadas, pero con mayor sesgo regional; esa relación de dos a uno es una comparación descriptiva y no un factor de reducción. La razón nominal de veinte describe solo la reducción de conteos de la entrada. Al 50\,\%, las ocho redes presentaron menor similitud que al 5\,\% y que la entrada sin red con esa fracción (\cref{sec:res-oe3}). En los indicadores locales disminuyeron los errores de SNR y de contraste, pero aumentaron el error de CNR y las inversiones de signo (\cref{sec:res-locales}). No se realizó una inversión de las predicciones a opacidad. Se evaluó, por tanto, el desempeño de los modelos y se delimitó su aplicabilidad; se observaron mejoras de similitud a baja estadística, pero no se demostró un factor de reducción bajo el criterio adoptado ni equivalencia cuantitativa de opacidad.
+
+\section{Conclusión general}
+\label{sec:conc-general}
+
+El objetivo general, desarrollar y validar un esquema de reconstrucción muográfica asistido por aprendizaje profundo para reducir el tiempo efectivo de adquisición, evaluando la mejora en calidad y detectabilidad de estructuras internas, se cumplió de forma parcial. Se desarrolló una cadena completa y verificable, desde la simulación hasta la evaluación multifracción, y se cuantificó que aumentar la similitud global y preservar las cuentas regionales resultaron propiedades distintas: las redes mejoraron la similitud a baja estadística y, al mismo tiempo, alteraron cuentas en regiones relevantes para la interpretación. La validación del esquema como medio para reducir el tiempo de adquisición no se alcanzó, porque ningún modelo cumplió el criterio adoptado y la relación entre conteos y tiempo se mantuvo idealizada.
+
+Respecto de las estructuras internas, los indicadores locales se calcularon en regiones cuya ubicación se conocía a partir de la geometría de cada escenario. Ese diseño permitió estudiar cómo se comportan la intensidad, el contraste y su signo en esas regiones, pero no demuestra que el modelo detecte o localice anomalías desconocidas. El resultado negativo del criterio principal se conserva como parte de la evidencia; no equivale a un factor nulo ni a la imposibilidad de que otra arquitectura, otro entrenamiento u otro conjunto reduzcan los conteos con calidad útil.
+
+\section{Trabajo futuro}
+\label{sec:trabajo-futuro}
+
+Las líneas que siguen se proponen como continuación posible del trabajo y no como tareas pendientes de este estudio, cuyos resultados se presentaron en el \cref{chap:resultados}. Ninguna de ellas garantiza un resultado favorable; cada una exigiría una pregunta, un protocolo y unos criterios propios, declarados antes de evaluar nuevos casos. La \cref{tab:con-lineas} relaciona cada limitación identificada con una línea de investigación posible y con lo que esta permitiría evaluar.
+
+\begin{table}[htbp]\centering\footnotesize
+\caption[Limitaciones identificadas y posibles líneas de investigación]{Limitaciones identificadas en el estudio y posibles líneas de investigación posteriores. Las líneas son propuestas y no resultados del trabajo.}\label{tab:con-lineas}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}\toprule
+Componente & Limitación identificada & Línea posible & Qué permitiría evaluar\\\midrule
+Criterio y reserva & Criterio fijado después de resultados históricos; escenas reservadas con exposición previa. & Criterios declarados de antemano y escenas nuevas sin inspeccionar. & Desempeño en una evaluación confirmatoria.\\
+Factor de reducción & Ninguna combinación cumplió el criterio; redes entrenadas solo al 5\,\%. & Entrenamiento con varias fracciones y repeticiones independientes. & Si existe una fracción aceptada bajo criterios previos.\\
+Conservación de cuentas & Sesgo regional mayor que el de la entrada en todas las redes. & Pérdidas acordes con el modelo de conteo. & El compromiso entre similitud y conservación.\\
+Anomalías & Indicadores calculados en regiones de ubicación conocida. & Evaluación sin información de ubicación. & La detección de anomalías no informadas.\\
+Opacidad & Sin modelo de respuesta ni inversión de las predicciones. & Inversión de opacidad con un modelo de respuesta. & La relación entre cuentas predichas y opacidad.\\
+Instrumento real & Primarios sin fondo ni detector; exposición convencional. & Simulación instrumental y adquisiciones de campo. & La reducción efectiva del tiempo de adquisición.\\\bottomrule
+\end{tabularx}\end{table}
+
+Como condición común, se propone fijar antes de cualquier evaluación nueva los criterios de aceptación de SSIM y PSNR, justificados por la aplicación o por una referencia externa, y generar escenas de reserva después de fijar el protocolo, manteniéndolas sin inspeccionar hasta la evaluación final~\parencite{kaufman2012}. Esta medida no cambiaría el resultado obtenido, pero permitiría que una evaluación posterior tuviera carácter confirmatorio y que incluyera varias geometrías de generalización.
+
+Se propone investigar el entrenamiento con varias fracciones de entrada, con repeticiones independientes desde la inicialización. Sería útil porque los modelos del estudio se entrenaron solo al 5\,\% y su evaluación con otras fracciones midió transferencia; esta línea permitiría evaluar si un modelo adaptado a cada nivel de conteo alcanza el criterio en alguna fracción. Podría mejorar el desempeño en otras fracciones, pero no garantiza un factor de reducción aceptable. El \cref{alg:anexo-protocolo}, incluido en el anexo~\ref{chap:anexo-protocolo}, describe un protocolo posible.
+
+Se propone investigar pérdidas basadas en la verosimilitud del proceso de conteo y restricciones de conservación regional. Sería útil porque las pérdidas empleadas no imponían la conservación exacta de las cuentas; una hipótesis compatible con los resultados, que el estudio no comprobó, es que esa propiedad de las pérdidas contribuya al sesgo observado. Esta línea permitiría evaluar si es posible reducir el sesgo sin la pérdida de similitud que se observó en las continuaciones.
+
+Se propone evaluar las anomalías sin proporcionar su ubicación, con escenas cuya estructura no se informe al evaluador. Sería útil porque los indicadores del estudio dependen de regiones conocidas; esta línea permitiría estimar si las imágenes mejoradas facilitan la detección y la localización de estructuras desconocidas.
+
+Como investigación posterior, la inversión de las predicciones a opacidad requeriría un modelo de respuesta que relacione los conteos con el flujo, la opacidad y la detección, validado en un conjunto distinto del usado para ajustarlo. Permitiría evaluar si las cuentas predichas conservan la información de opacidad que el contraste de cuentas no expresa por sí solo.
+
+También como investigación posterior, la validación con un instrumento real incluiría la simulación del fondo y de la respuesta de un detector, la topografía de un volcán concreto y adquisiciones de campo de exposición prolongada, que podrían dividirse en intervalos más cortos para obtener pares de baja y alta estadística~\parencite{lesparre2010,lechmann2021}. Esta línea permitiría evaluar si la mejora observada en datos sintéticos se mantiene con datos reales y medir una reducción efectiva del tiempo de adquisición.
+
+\FloatBarrier

@@ -1,5 +1,7 @@
 # Informe integrado de metodología, resultados y conclusiones
 
+**Versión institucional vigente:** [proyecto LaTeX corregido](latex/README.md), [PDF compilado](latex/main.pdf) y [ZIP para Overleaf](latex/Trabajo_de_Grado_Muografia_corregido.zip). Los archivos Markdown de esta carpeta se conservan como antecedente. El [registro editorial](latex/LEEME_CORRECCIONES_FINALES.txt) describe los cambios y la validación.
+
 Versión: 2026-10-04, Colombia. Integración editorial sobre la revisión experimental cerrada. Se preservan las fuentes originales, los resultados desfavorables y la atribución a los estudiantes de sus ejecuciones. No se han realizado nuevas simulaciones, entrenamientos ni inferencias para redactar estos capítulos.
 
 ## Resumen

@@ -1,0 +1,21 @@
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\label{pre:abstract}
+
+\begingroup
+\setstretch{1.1}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.7em}
+
+% Traducción de trabajo del título; revisar junto con el abstract definitivo.
+\textbf{Title:} Deep learning-assisted transmission muographic reconstruction through predictive enhancement of low-statistics images for volcanic exploration.\footnote{Undergraduate thesis, research modality.}
+
+\textbf{Authors:} \AutorUno; \AutorDos.\footnote{Universidad Industrial de Santander. Faculty of Physical and Mechanical Engineering. School of Systems Engineering and Informatics. Supervisor: \DirectorNombre, PhD candidate. Co-supervisor: \CodirectorNombre, PhD.}
+
+\textbf{Description:}
+
+Transmission muography makes it possible to study the interior of a volcano from the attenuation of the cosmic-ray muon flux, but the low natural flux produces low-statistics images, dominated by counting noise, that only reach an interpretable quality with exposures of weeks or months. The purpose of this work was to assess whether deep learning can enhance these images to a quality comparable to that of high statistics and thereby reduce the required acquisition time. A computational study was carried out: idealized volcanic scenarios were defined, muon transport through them was simulated with the Monte Carlo method, and pairs of low- and high-statistics images with different count fractions were generated. With these pairs, a conditional generative adversarial network was trained and compared with a U-Net and with variants aimed at conserving the counts. The networks increased the similarity to the reference images: with inputs at 5\,\% of the counts on the test set, the structural similarity index rose from 0.7643 for the input to 0.8342 with the generative network. However, alterations in the regional counts persisted, with their bias increasing from 1.832 to 14.566\,\%, and the local anomaly indicators showed mixed results. Under the adopted criterion, no acquisition-time reduction factor was demonstrated. The results correspond to synthetic scenarios and lack field validation.
+
+\textbf{Keywords:} transmission muography, volcanic exploration, deep learning, Monte Carlo simulation, generative adversarial networks.
+
+\endgroup

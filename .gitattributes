@@ -19,3 +19,6 @@ objetivo-1/evidencias/piloto-propuesto-siete-actividades/*.csv text eol=lf
 # This new manifest has a frozen SHA used by the pilot evaluator on all hosts.
 objetivo-1/evidencias/piloto-propuesto-siete-actividades/*.csv text eol=lf
 objetivo-1/evidencias/preparacion-campana-114/*.csv text eol=lf
+
+# Entrega LaTeX: conservar bytes para comparar con el ZIP publicado.
+informe-final/latex/** -text

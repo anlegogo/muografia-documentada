@@ -1,0 +1,14 @@
+# Paquetes de Python para regenerar las figuras de los capítulos 2, 3 y 4
+# Versiones de la entrega original (Python 3.14.3).
+# Las cuatro figuras corregidas se regeneraron también con Python 3.12 y TeX Live 2025.
+numpy==2.5.3
+matplotlib==3.11.2
+cmcrameri==1.10
+
+# Requisitos del sistema (no instalables con pip):
+#   - LaTeX con pdfLaTeX (TeX Live 2023+ o MiKTeX; se usó MiKTeX 25.12). Se necesita para
+#     las fuentes .tex (TikZ/PGFPlots) y para el texto de las figuras de Matplotlib
+#     (backend PGF y usetex). Paquetes: standalone, tikz, pgfplots, babel (spanish),
+#     lmodern, amsmath, amssymb, bm, icomma, fontenc, inputenc.
+#   - Opcional, para la comprobación vectorial de generar_figuras.py: Poppler
+#     (pdfimages, pdffonts).

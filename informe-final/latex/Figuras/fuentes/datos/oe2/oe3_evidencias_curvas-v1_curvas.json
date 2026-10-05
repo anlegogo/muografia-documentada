@@ -1,0 +1,1355 @@
+{
+  "analysis": "post-hoc descriptive exposure grid",
+  "protocol_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+  "script_sha256": "61b391d7428f363b85362c9de374dd4252f69e406e5e726869c52306d905b606",
+  "registry_sha256": "ac3d58c48a5d18dd23cbbf1f3d57e526d5abe5557014fe559dc0783e29196afd",
+  "c2_report_sha256": "b43f40026f4e3a19484fa1dcba824c2523b638e59b3ce2febc2ffeb1a5d18f3e",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "torch": "2.6.0+cpu",
+    "skimage": "0.26.0",
+    "cuda": null
+  },
+  "data_sha256": {
+    "dataset-v2/shards/geo-gen-01.meta.json": "587614f36cab5089e5bd806a0a0ea7a884cba8288a4f05a686727306914d75d9",
+    "dataset-v2/shards/geo-gen-01.npz": "4d724b8d943ad71cf0deca17bafa0edf2304f06f999794e63c6c74c200abb311",
+    "dataset-v2/shards/geo-test-01.meta.json": "a0dbb8447e9c6c5b4f8d078e4237abb522c67ae123fe49c7502e077ad25ddd7c",
+    "dataset-v2/shards/geo-test-01.npz": "308e02931a73c52c28fd5191a3dbeedc311cd4733f910e632ee15c58947121a6",
+    "dataset-v2/shards/geo-test-02.meta.json": "6e697e4788f5a6d6d777042c1e22d27e19d4e9565a7795280769cfd6c3ff6a94",
+    "dataset-v2/shards/geo-test-02.npz": "eb158306576d7b8915053134b78ea082c01587ce8d859d195985ca0f1d2fb812",
+    "dataset-v2/shards/geo-test-03.meta.json": "6109dbb52583dc244b87189cd99406d17a5f8d4c9b7f2a9582afe45fae58f344",
+    "dataset-v2/shards/geo-test-03.npz": "bcb4b169267f36456e2c2cdbe6d21f8261c460ac7611370ca2a8ad98904d301a"
+  },
+  "fractions": [
+    0.01,
+    0.05,
+    0.1,
+    0.5
+  ],
+  "curves": {
+    "test": {
+      "0.01": {
+        "by_geometry": {
+          "geo-test-01": {
+            "images": 120,
+            "ssim": 0.6714665172378383,
+            "psnr": 22.29400165448256,
+            "perfect_matches": 0,
+            "rock_abs_bias": 0.0038646708230416784,
+            "Q": 0.031027512554492275,
+            "Q_status": "complete",
+            "invalid_regions": 0,
+            "common_contrasts": 7,
+            "contrast_absolute_error": 0.48075178691011355,
+            "sky_mae": 0.1542073399831679,
+            "edge_mae": 0.26300731923730936
+          },
+          "geo-test-02": {
+            "images": 120,
+            "ssim": 0.6853405641642364,
+            "psnr": 22.47742034536758,
+            "perfect_matches": 0,
+            "rock_abs_bias": 0.00850200263288868,
+            "Q": 0.027077467752464106,
+            "Q_status": "complete",
+            "invalid_regions": 0,
+            "common_contrasts": 5,
+            "contrast_absolute_error": 0.5926893223554378,
+            "sky_mae": 0.15526580443076357,
+            "edge_mae": 0.27423223696514754
+          },
+          "geo-test-03": {
+            "images": 120,
+            "ssim": 0.730940081468019,
+            "psnr": 22.840210911536783,
+            "perfect_matches": 0,
+            "rock_abs_bias": 0.008114841341596056,
+            "Q": 0.02880224117718651,
+            "Q_status": "complete",
+            "invalid_regions": 0,
+            "common_contrasts": 9,
+            "contrast_absolute_error": 0.4727881130783724,
+            "sky_mae": 0.1589687081511454,
+            "edge_mae": 0.30646021185703365
+          }
+        },
+        "common_contrasts": 21,
+        "contrast_absolute_error": 0.503990577993016,
+        "ssim_macro": 0.6959157209566978,
+        "psnr_macro": 22.537210970462308,
+        "Q_macro": 0.02896907382804763
+      },
+      "0.05": {
+        "by_geometry": {
+          "geo-test-01": {
+            "images": 120,
+            "ssim": 0.732797328902614,
+            "psnr": 23.811865807177263,
+            "perfect_matches": 0,
+            "rock_abs_bias": 0.0037068288207442106,
+            "Q": 0.01892983628576592,
+            "Q_status": "complete",
+            "invalid_regions": 0,
+            "common_contrasts": 7,
+            "contrast_absolute_error": 0.15860562272968257,
+            "sky_mae": 0.06751125785380713,
+            "edge_mae": 0.11573268963085859
+          },
+          "geo-test-02": {
+            "images": 120,
+            "ssim": 0.7489506603818616,
+            "psnr": 24.042641260498833,
+            "perfect_matches": 0,
+            "rock_abs_bias": 0.0020455447319236326,
+            "Q": 0.016834631478704114,
+            "Q_status": "complete",
+            "invalid_regions": 0,
+            "common_contrasts": 5,
+            "contrast_absolute_error": 0.21360224450282597,
+            "sky_mae": 0.06799888071420918,
+            "edge_mae": 0.1204343992639509
+          },
+          "geo-test-03": {
+            "images": 120,
+            "ssim": 0.8111770004988874,
+            "psnr": 24.918052394181156,
+            "perfect_matches": 0,
+            "rock_abs_bias": 0.0033642150799394325,
+            "Q": 0.019198495606283554,
+            "Q_status": "complete",
+            "invalid_regions": 0,
+            "common_contrasts": 9,
+            "contrast_absolute_error": 0.13997929509293786,
+            "sky_mae": 0.06964006159725215,
+            "edge_mae": 0.13528544029966205
+          }
+        },
+        "common_contrasts": 21,
+        "contrast_absolute_error": 0.16371734464087373,
+        "ssim_macro": 0.7643083299277876,
+        "psnr_macro": 24.257519820619084,
+        "Q_macro": 0.018320987790251198
+      },
+      "0.1": {
+        "by_geometry": {
+          "geo-test-01": {
+            "images": 120,
+            "ssim": 0.7667294316799131,
+            "psnr": 25.240010637940365,
+            "perfect_matches": 0,
+            "rock_abs_bias": 0.002897739517861721,
+            "Q": 0.01645175208896569,
+            "Q_status": "complete",
+            "invalid_regions": 0,
+            "common_contrasts": 7,
+            "contrast_absolute_error": 0.09632374289724223,
+            "sky_mae": 0.046499718399429346,
+            "edge_mae": 0.07992137440150043
+          },
+          "geo-test-02": {
+            "images": 120,
+            "ssim": 0.7822405536842308,
+            "psnr": 25.468370237084937,
+            "perfect_matches": 0,
+            "rock_abs_bias": 0.0015467481212995688,
+            "Q": 0.011212215469793493,
+            "Q_status": "complete",
+            "invalid_regions": 0,
+            "common_contrasts": 5,
+            "contrast_absolute_error": 0.13392506311499908,
+            "sky_mae": 0.04680438424976372,
+            "edge_mae": 0.08295210264293339
+          },
+          "geo-test-03": {
+            "images": 120,
+            "ssim": 0.840262312748562,
+            "psnr": 26.45812278290753,
+            "perfect_matches": 0,
+            "rock_abs_bias": 0.0025821225410614665,
+            "Q": 0.01234523644128147,
+            "Q_status": "complete",
+            "invalid_regions": 0,
+            "common_contrasts": 9,
+            "contrast_absolute_error": 0.10952357028920721,
+            "sky_mae": 0.047943276501651956,
+            "edge_mae": 0.09310984591361815
+          }
+        },
+        "common_contrasts": 21,
+        "contrast_absolute_error": 0.11093350706945504,
+        "ssim_macro": 0.7964107660375687,
+        "psnr_macro": 25.72216788597761,
+        "Q_macro": 0.013336401333346884
+      },
+      "0.5": {
+        "by_geometry": {
+          "geo-test-01": {
+            "images": 120,
+            "ssim": 0.9126949871091792,
+            "psnr": 32.645949537703316,
+            "perfect_matches": 0,
+            "rock_abs_bias": 0.0007448636862757075,
+            "Q": 0.004044911113688543,
+            "Q_status": "complete",
+            "invalid_regions": 0,
+            "common_contrasts": 7,
+            "contrast_absolute_error": 0.030532599253153513,
+            "sky_mae": 0.015498521874846254,
+            "edge_mae": 0.02662492995893226
+          },
+          "geo-test-02": {
+            "images": 120,
+            "ssim": 0.9191713251659209,
+            "psnr": 32.79623575464419,
+            "perfect_matches": 0,
+            "rock_abs_bias": 0.0007482064123052293,
+            "Q": 0.004346366840767977,
+            "Q_status": "complete",
+            "invalid_regions": 0,
+            "common_contrasts": 5,
+            "contrast_absolute_error": 0.04043511003446859,
+            "sky_mae": 0.015603611167102259,
+            "edge_mae": 0.027730927582848203
+          },
+          "geo-test-03": {
+            "images": 120,
+            "ssim": 0.9431680402505737,
+            "psnr": 33.85942190150001,
+            "perfect_matches": 0,
+            "rock_abs_bias": 0.0006724617977261776,
+            "Q": 0.0047081737320633895,
+            "Q_status": "complete",
+            "invalid_regions": 0,
+            "common_contrasts": 9,
+            "contrast_absolute_error": 0.03314380672663882,
+            "sky_mae": 0.015984229604465234,
+            "edge_mae": 0.03106028553816714
+          }
+        },
+        "common_contrasts": 21,
+        "contrast_absolute_error": 0.03400942883257939,
+        "ssim_macro": 0.9250114508418913,
+        "psnr_macro": 33.100535731282505,
+        "Q_macro": 0.004366483895506636
+      }
+    },
+    "generalization": {
+      "0.01": {
+        "by_geometry": {
+          "geo-gen-01": {
+            "images": 120,
+            "ssim": 0.6851349001306223,
+            "psnr": 22.29851452702787,
+            "perfect_matches": 0,
+            "rock_abs_bias": 0.007452749275347966,
+            "Q": 0.030665995306450367,
+            "Q_status": "complete",
+            "invalid_regions": 0,
+            "common_contrasts": 11,
+            "contrast_absolute_error": 0.5691801675923234,
+            "sky_mae": 0.15543171551252863,
+            "edge_mae": 0.2732437298760006
+          }
+        },
+        "common_contrasts": 11,
+        "contrast_absolute_error": 0.5691801675923234,
+        "ssim_macro": 0.6851349001306223,
+        "psnr_macro": 22.29851452702787,
+        "Q_macro": 0.030665995306450367
+      },
+      "0.05": {
+        "by_geometry": {
+          "geo-gen-01": {
+            "images": 120,
+            "ssim": 0.7501848134710687,
+            "psnr": 23.903636279746205,
+            "perfect_matches": 0,
+            "rock_abs_bias": 0.003190467518432591,
+            "Q": 0.010926709733176597,
+            "Q_status": "complete",
+            "invalid_regions": 0,
+            "common_contrasts": 11,
+            "contrast_absolute_error": 0.1588133351929429,
+            "sky_mae": 0.06810593422171113,
+            "edge_mae": 0.12000204933072961
+          }
+        },
+        "common_contrasts": 11,
+        "contrast_absolute_error": 0.1588133351929429,
+        "ssim_macro": 0.7501848134710687,
+        "psnr_macro": 23.903636279746205,
+        "Q_macro": 0.010926709733176597
+      },
+      "0.1": {
+        "by_geometry": {
+          "geo-gen-01": {
+            "images": 120,
+            "ssim": 0.7834223675918748,
+            "psnr": 25.349330062511253,
+            "perfect_matches": 0,
+            "rock_abs_bias": 0.0019020188090451537,
+            "Q": 0.008948161380675166,
+            "Q_status": "complete",
+            "invalid_regions": 0,
+            "common_contrasts": 11,
+            "contrast_absolute_error": 0.11908309363124991,
+            "sky_mae": 0.04682984814418887,
+            "edge_mae": 0.08297082032828823
+          }
+        },
+        "common_contrasts": 11,
+        "contrast_absolute_error": 0.11908309363124991,
+        "ssim_macro": 0.7834223675918748,
+        "psnr_macro": 25.349330062511253,
+        "Q_macro": 0.008948161380675166
+      },
+      "0.5": {
+        "by_geometry": {
+          "geo-gen-01": {
+            "images": 120,
+            "ssim": 0.9196646546861965,
+            "psnr": 32.751879982552374,
+            "perfect_matches": 0,
+            "rock_abs_bias": 0.00040783563256780505,
+            "Q": 0.004493793766062702,
+            "Q_status": "complete",
+            "invalid_regions": 0,
+            "common_contrasts": 11,
+            "contrast_absolute_error": 0.040099743482182176,
+            "sky_mae": 0.015612634404570643,
+            "edge_mae": 0.027769842663524582
+          }
+        },
+        "common_contrasts": 11,
+        "contrast_absolute_error": 0.040099743482182176,
+        "ssim_macro": 0.9196646546861965,
+        "psnr_macro": 32.751879982552374,
+        "Q_macro": 0.004493793766062702
+      }
+    }
+  },
+  "model_comparisons_on_common_contrast_support": {
+    "test": {
+      "entrada": {
+        "common_contrasts": 21,
+        "contrast_absolute_error": 0.16371734464087373
+      },
+      "unet_original": {
+        "common_contrasts": 21,
+        "contrast_absolute_error": 0.06968533307211876
+      },
+      "cgan_original": {
+        "common_contrasts": 21,
+        "contrast_absolute_error": 0.07682087474855648
+      },
+      "B1_C0": {
+        "common_contrasts": 21,
+        "contrast_absolute_error": 0.07062326534775383
+      },
+      "B1_C1": {
+        "common_contrasts": 21,
+        "contrast_absolute_error": 0.06996912638876429
+      },
+      "B2_C0": {
+        "common_contrasts": 21,
+        "contrast_absolute_error": 0.07006817461938147
+      },
+      "B2_C1": {
+        "common_contrasts": 21,
+        "contrast_absolute_error": 0.07279483359903642
+      },
+      "B3_C0": {
+        "common_contrasts": 21,
+        "contrast_absolute_error": 0.0653007030331082
+      },
+      "B3_C1": {
+        "common_contrasts": 21,
+        "contrast_absolute_error": 0.07359214889071837
+      }
+    },
+    "generalization": {
+      "entrada": {
+        "common_contrasts": 11,
+        "contrast_absolute_error": 0.1588133351929429
+      },
+      "unet_original": {
+        "common_contrasts": 11,
+        "contrast_absolute_error": 0.06570434984798888
+      },
+      "cgan_original": {
+        "common_contrasts": 11,
+        "contrast_absolute_error": 0.07864445345177731
+      },
+      "B1_C0": {
+        "common_contrasts": 11,
+        "contrast_absolute_error": 0.09455823032428783
+      },
+      "B1_C1": {
+        "common_contrasts": 11,
+        "contrast_absolute_error": 0.0876806837800042
+      },
+      "B2_C0": {
+        "common_contrasts": 11,
+        "contrast_absolute_error": 0.08736875405389982
+      },
+      "B2_C1": {
+        "common_contrasts": 11,
+        "contrast_absolute_error": 0.07523478213275182
+      },
+      "B3_C0": {
+        "common_contrasts": 11,
+        "contrast_absolute_error": 0.07188388481453281
+      },
+      "B3_C1": {
+        "common_contrasts": 11,
+        "contrast_absolute_error": 0.06703250605102777
+      }
+    }
+  },
+  "common_contrast_keys": [
+    [
+      "geo-gen-01",
+      0,
+      "anomalia_0_conduit"
+    ],
+    [
+      "geo-gen-01",
+      1,
+      "anomalia_0_conduit"
+    ],
+    [
+      "geo-gen-01",
+      1,
+      "anomalia_1_cavity"
+    ],
+    [
+      "geo-gen-01",
+      2,
+      "anomalia_0_conduit"
+    ],
+    [
+      "geo-gen-01",
+      2,
+      "anomalia_2_cavity"
+    ],
+    [
+      "geo-gen-01",
+      3,
+      "anomalia_0_conduit"
+    ],
+    [
+      "geo-gen-01",
+      4,
+      "anomalia_0_conduit"
+    ],
+    [
+      "geo-gen-01",
+      4,
+      "anomalia_1_cavity"
+    ],
+    [
+      "geo-gen-01",
+      4,
+      "anomalia_2_cavity"
+    ],
+    [
+      "geo-gen-01",
+      5,
+      "anomalia_0_conduit"
+    ],
+    [
+      "geo-gen-01",
+      5,
+      "anomalia_2_cavity"
+    ],
+    [
+      "geo-test-01",
+      0,
+      "anomalia_0_conduit"
+    ],
+    [
+      "geo-test-01",
+      1,
+      "anomalia_0_conduit"
+    ],
+    [
+      "geo-test-01",
+      2,
+      "anomalia_0_conduit"
+    ],
+    [
+      "geo-test-01",
+      3,
+      "anomalia_0_conduit"
+    ],
+    [
+      "geo-test-01",
+      3,
+      "anomalia_1_cavity"
+    ],
+    [
+      "geo-test-01",
+      4,
+      "anomalia_0_conduit"
+    ],
+    [
+      "geo-test-01",
+      5,
+      "anomalia_0_conduit"
+    ],
+    [
+      "geo-test-02",
+      0,
+      "anomalia_0_dense_body"
+    ],
+    [
+      "geo-test-02",
+      1,
+      "anomalia_0_dense_body"
+    ],
+    [
+      "geo-test-02",
+      2,
+      "anomalia_0_dense_body"
+    ],
+    [
+      "geo-test-02",
+      3,
+      "anomalia_0_dense_body"
+    ],
+    [
+      "geo-test-02",
+      4,
+      "anomalia_0_dense_body"
+    ],
+    [
+      "geo-test-03",
+      1,
+      "anomalia_0_conduit"
+    ],
+    [
+      "geo-test-03",
+      1,
+      "anomalia_2_dense_body"
+    ],
+    [
+      "geo-test-03",
+      2,
+      "anomalia_0_conduit"
+    ],
+    [
+      "geo-test-03",
+      2,
+      "anomalia_2_dense_body"
+    ],
+    [
+      "geo-test-03",
+      3,
+      "anomalia_0_conduit"
+    ],
+    [
+      "geo-test-03",
+      4,
+      "anomalia_0_conduit"
+    ],
+    [
+      "geo-test-03",
+      4,
+      "anomalia_2_dense_body"
+    ],
+    [
+      "geo-test-03",
+      5,
+      "anomalia_0_conduit"
+    ],
+    [
+      "geo-test-03",
+      5,
+      "anomalia_2_dense_body"
+    ]
+  ],
+  "grid_crossings": {
+    "test": {
+      "unet_original": {
+        "ssim_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "ssim_by_geometry": {
+          "geo-test-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-02": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-03": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        },
+        "psnr_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "psnr_by_geometry": {
+          "geo-test-01": {
+            "status": "above_grid_maximum",
+            "lower_grid_fraction": 0.5,
+            "upper_grid_fraction": null
+          },
+          "geo-test-02": {
+            "status": "above_grid_maximum",
+            "lower_grid_fraction": 0.5,
+            "upper_grid_fraction": null
+          },
+          "geo-test-03": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        }
+      },
+      "cgan_original": {
+        "ssim_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "ssim_by_geometry": {
+          "geo-test-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-02": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-03": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        },
+        "psnr_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "psnr_by_geometry": {
+          "geo-test-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-02": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-03": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        }
+      },
+      "B1_C0": {
+        "ssim_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "ssim_by_geometry": {
+          "geo-test-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-02": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-03": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        },
+        "psnr_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "psnr_by_geometry": {
+          "geo-test-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-02": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-03": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        }
+      },
+      "B1_C1": {
+        "ssim_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "ssim_by_geometry": {
+          "geo-test-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-02": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-03": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        },
+        "psnr_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "psnr_by_geometry": {
+          "geo-test-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-02": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-03": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        }
+      },
+      "B2_C0": {
+        "ssim_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "ssim_by_geometry": {
+          "geo-test-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-02": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-03": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        },
+        "psnr_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "psnr_by_geometry": {
+          "geo-test-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-02": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-03": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        }
+      },
+      "B2_C1": {
+        "ssim_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "ssim_by_geometry": {
+          "geo-test-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-02": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-03": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        },
+        "psnr_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "psnr_by_geometry": {
+          "geo-test-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-02": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-03": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        }
+      },
+      "B3_C0": {
+        "ssim_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "ssim_by_geometry": {
+          "geo-test-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-02": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-03": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        },
+        "psnr_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "psnr_by_geometry": {
+          "geo-test-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-02": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-03": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        }
+      },
+      "B3_C1": {
+        "ssim_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "ssim_by_geometry": {
+          "geo-test-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-02": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-03": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        },
+        "psnr_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "psnr_by_geometry": {
+          "geo-test-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-02": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          },
+          "geo-test-03": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        }
+      }
+    },
+    "generalization": {
+      "unet_original": {
+        "ssim_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "ssim_by_geometry": {
+          "geo-gen-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        },
+        "psnr_macro": {
+          "status": "above_grid_maximum",
+          "lower_grid_fraction": 0.5,
+          "upper_grid_fraction": null
+        },
+        "psnr_by_geometry": {
+          "geo-gen-01": {
+            "status": "above_grid_maximum",
+            "lower_grid_fraction": 0.5,
+            "upper_grid_fraction": null
+          }
+        }
+      },
+      "cgan_original": {
+        "ssim_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "ssim_by_geometry": {
+          "geo-gen-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        },
+        "psnr_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "psnr_by_geometry": {
+          "geo-gen-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        }
+      },
+      "B1_C0": {
+        "ssim_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "ssim_by_geometry": {
+          "geo-gen-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        },
+        "psnr_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "psnr_by_geometry": {
+          "geo-gen-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        }
+      },
+      "B1_C1": {
+        "ssim_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "ssim_by_geometry": {
+          "geo-gen-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        },
+        "psnr_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "psnr_by_geometry": {
+          "geo-gen-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        }
+      },
+      "B2_C0": {
+        "ssim_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "ssim_by_geometry": {
+          "geo-gen-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        },
+        "psnr_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "psnr_by_geometry": {
+          "geo-gen-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        }
+      },
+      "B2_C1": {
+        "ssim_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "ssim_by_geometry": {
+          "geo-gen-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        },
+        "psnr_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "psnr_by_geometry": {
+          "geo-gen-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        }
+      },
+      "B3_C0": {
+        "ssim_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "ssim_by_geometry": {
+          "geo-gen-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        },
+        "psnr_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "psnr_by_geometry": {
+          "geo-gen-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        }
+      },
+      "B3_C1": {
+        "ssim_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "ssim_by_geometry": {
+          "geo-gen-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        },
+        "psnr_macro": {
+          "status": "within_grid",
+          "lower_grid_fraction": 0.1,
+          "upper_grid_fraction": 0.5,
+          "lower_nominal_ratio_to_f05": 2.0,
+          "upper_nominal_ratio_to_f05": 10.0
+        },
+        "psnr_by_geometry": {
+          "geo-gen-01": {
+            "status": "within_grid",
+            "lower_grid_fraction": 0.1,
+            "upper_grid_fraction": 0.5,
+            "lower_nominal_ratio_to_f05": 2.0,
+            "upper_nominal_ratio_to_f05": 10.0
+          }
+        }
+      }
+    }
+  },
+  "validation": {
+    "f05_matches_c2": true,
+    "image_records": 1920,
+    "region_records": 504,
+    "contrast_records": 216
+  },
+  "no_interpolation": true,
+  "no_training": true,
+  "no_new_simulation": true,
+  "effective_time_reduction_demonstrated": false,
+  "limitations": [
+    "Known synthetic catalog; historical exposure; descriptive only",
+    "Repeated realizations are not independent geometries",
+    "Finite noisy high-count reference; low counts derived from that reference",
+    "Crossings depend on metric and sampled grid; not a physical equivalence margin",
+    "f05 models only; no inference at other fractions"
+  ]
+}

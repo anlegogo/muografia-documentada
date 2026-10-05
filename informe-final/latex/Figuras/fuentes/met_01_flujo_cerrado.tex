@@ -1,0 +1,77 @@
+% met_01_flujo_cerrado — Secuencia experimental y separación de las particiones.
+% Fuente editable (TikZ). Sustento: muografia-documentada, main 9558099 (protocolos EF-01 y
+% OE3-C1, cierre del OE3). Compilar con: pdflatex met_01_flujo_cerrado.tex
+% Diagrama sin resultados ni porcentajes de cumplimiento. Paleta Paul Tol "bright"; los
+% objetivos se distinguen también en grises por el trazo del borde (continuo, discontinuo,
+% punteado).
+\documentclass[12pt,border=2pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{babel,positioning,arrows.meta,calc}
+\definecolor{tolgreen}{HTML}{228833}
+\definecolor{tolblue}{HTML}{4477AA}
+\definecolor{tolpurple}{HTML}{AA3377}
+\definecolor{tolred}{HTML}{EE6677}
+\begin{document}
+\scriptsize
+\hyphenpenalty=10000 \exhyphenpenalty=10000
+\begin{tikzpicture}[
+  >={Stealth[length=1.8mm]},
+  caja/.style={draw=#1!85!black, fill=#1!10, rounded corners=1.5pt, line width=0.6pt,
+               text width=24mm, minimum height=12mm, align=center, inner sep=1.6pt},
+  oe1/.style={caja=tolgreen},
+  oe2/.style={caja=tolblue, dashed},
+  oe3/.style={caja=tolpurple, densely dotted, line width=0.85pt},
+  flecha/.style={->, line width=0.6pt, draw=black!75},
+  roja/.style={->, line width=0.7pt, draw=tolred!85!black},
+  rot/.style={font=\tiny, text=black!75, align=center}
+]
+\def\dx{27.5mm}
+% ---------------- Fila 1: OE1 -------------------------------------------------
+\node[oe1] (cat) at (0,0) {Catálogo de 19 geometrías y fuente de muones};
+\node[oe1] (g4)  at (\dx,0) {Transporte en Geant4 por bloques};
+\node[oe1] (ref) at (2*\dx,0) {114 referencias: 19 geometrías por 6 vistas};
+\node[oe1] (sub) at (3*\dx,0) {Submuestreo binomial: 4 fracciones y 20 realizaciones};
+\node[oe1] (par) at (4*\dx,0) {Partición por geometría: 12 / 3 / 3 / 1};
+\foreach \a/\b in {cat/g4, g4/ref, ref/sub, sub/par} \draw[flecha] (\a) -- (\b);
+
+% ---------------- Fila 2: OE2 y OE3 ------------------------------------------
+\def\yb{-29mm}
+\node[oe2] (esc)  at (0,\yb) {Escala $s$ ajustada solo con entrenamiento};
+\node[oe2] (ent)  at (\dx,\yb) {Entrenamiento al 5\,\% y selección con validación};
+\node[oe2] (cong) at (2*\dx,\yb) {Ocho modelos congelados, identificados por huella};
+\node[oe2] (ef)   at (3*\dx,\yb) {Evaluación EF-01 con entrada al 5\,\%};
+\node[oe3, text width=27mm] (c1)   at (4*\dx,\yb) {OE3-C1: mismos ocho pesos con entrada al 1, 5, 10 y 50\,\%; bloque 5\,\% reutilizado};
+\foreach \a/\b in {esc/ent, ent/cong, cong/ef, ef/c1} \draw[flecha] (\a) -- (\b);
+
+% ---------------- Fila 3: salidas del OE3 -------------------------------------
+\def\yc{-50mm}
+\node[oe3] (cur)  at (3*\dx,\yc) {Curvas descriptivas de la entrada sin red en cuatro fracciones};
+\node[oe3, text width=27mm] (crit) at (4*\dx,\yc) {Métricas locales y criterio conjunto por vista: SSIM y PSNR frente a la entrada sin red al 50\,\%};
+\draw[flecha] (c1) -- (crit);
+\draw[flecha] (ef) -- node[rot, left] {mismas entradas\\y regiones} (cur);
+
+% ---------------- Partición: entrenamiento/validación y reservas --------------
+\def\ycan{-12mm}
+\draw[flecha] ($(par.south)+(-6mm,0)$) -- ($(par.south)+(-6mm,-10.5mm)$) -| (esc.north);
+\node[rot, anchor=south] at ($(ent.north)+(0,7.6mm)$) {entrenamiento y validación};
+\draw[roja] ($(par.south)+(6mm,0)$) -- ($(par.south)+(6mm,-6.5mm)$) -| ($(ef.north)+(5mm,0)$);
+\node[rot, text=tolred!80!black, anchor=south] at ($(ef.north)+(5mm,8.6mm)$) {prueba y generalización};
+
+% frontera: las particiones reservadas no ajustan escala ni pesos
+\coordinate (fx) at ($(cong.east)!0.5!(ef.west)$);
+\draw[tolred!85!black, line width=1.1pt, dash pattern=on 3.2pt off 1.6pt]
+  ($(fx)+(0,9mm)$) -- ($(fx)+(0,-29mm)$);
+\node[rot, text=tolred!80!black, text width=30mm, anchor=north east] at ($(fx)+(-1.5mm,-14mm)$)
+  {Frontera: prueba y generalización solo se evalúan; no ajustan la escala ni los pesos};
+
+% ---------------- Leyenda -------------------------------------------------------
+\node[oe1, text width=11mm, minimum height=4.5mm, font=\tiny] (l1) at (0,\yc) {OE1};
+\node[oe2, text width=11mm, minimum height=4.5mm, font=\tiny, right=2mm of l1] (l2) {OE2};
+\node[oe3, text width=11mm, minimum height=4.5mm, font=\tiny, right=2mm of l2] (l3) {OE3};
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,83 @@
+% met_09_evaluacion_multifraccion — Diseño de la evaluación multifracción y del criterio de reducción.
+% Fuente editable (TikZ). Sustento: muografia-documentada, PROTOCOLO_COMPLEMENTO_OE3.md y
+% configuraciones/complemento-v1.json (main 9558099). Reemplaza el esquema histórico met_09,
+% que mostraba las redes solo al 5 %. Esquema sin resultados ni curvas simuladas.
+% Compilar con: pdflatex met_09_evaluacion_multifraccion.tex
+\documentclass[12pt,border=2pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{babel,positioning,arrows.meta,calc}
+\definecolor{tolblue}{HTML}{4477AA}
+\definecolor{tolpurple}{HTML}{AA3377}
+\definecolor{tolgreen}{HTML}{228833}
+\begin{document}
+\scriptsize
+\hyphenpenalty=10000 \exhyphenpenalty=10000
+\begin{tikzpicture}[
+  >={Stealth[length=1.8mm]},
+  caja/.style={draw=#1!85!black, fill=#1!10, rounded corners=1.5pt, line width=0.6pt,
+               align=center, inner sep=1.6pt},
+  ent/.style={caja=tolgreen, text width=22mm, minimum height=10mm},
+  red/.style={caja=tolblue, dashed, text width=22mm, minimum height=10mm},
+  oe3/.style={caja=tolpurple, densely dotted, line width=0.85pt},
+  flecha/.style={->, line width=0.6pt, draw=black!75},
+  rot/.style={font=\tiny, text=black!75, align=center}
+]
+\def\dx{27mm}
+% ---------- Entrenamiento (separado de la evaluación) ----------------------------
+\node[caja=tolblue, text width=24mm, minimum height=14mm] (train) at (-31mm,-17mm)
+  {Entrenamiento y ajuste \textbf{solo al 5\,\%} (entrenamiento y validación)};
+\node[caja=tolblue, text width=24mm, minimum height=10mm, below=6mm of train] (pesos)
+  {Ocho pesos congelados (U-Net, cGAN y seis continuaciones)};
+\draw[flecha] (train) -- (pesos);
+
+% ---------- Columnas de entrada: 1, 5, 10 y 50 % ---------------------------------
+\foreach \i/\f in {0/1, 1/5, 2/10, 3/50} {
+  \node[ent] (e\i) at (\i*\dx,0) {Entrada al \f\,\%\\[1pt] $T(L/f)$, $s$ sin reajustar};
+  \node[red, below=6mm of e\i] (m\i) {Mismos ocho modelos congelados};
+  \draw[flecha] (e\i) -- (m\i);
+}
+% números de predicciones
+\node[rot, below=0.6mm of m0, text width=24mm] (n0) {3\,840 predicciones nuevas};
+\node[rot, below=0.6mm of m1, text width=24mm] (n1) {3\,840 reutilizadas de EF-01};
+\node[rot, below=0.6mm of m2, text width=24mm] (n2) {3\,840 predicciones nuevas};
+\node[rot, below=0.6mm of m3, text width=24mm] (n3) {3\,840 predicciones nuevas};
+\node[rot, anchor=south] at ($(e1.north)!0.5!(e2.north)+(0,1.5mm)$)
+  {Evaluación en cuatro fracciones: 11\,520 predicciones nuevas y 3\,840 reutilizadas};
+\draw[flecha, dashed] (pesos.east) -- ++(3mm,0) |- (m0.west);
+
+% ---------- Referencia común y métricas ------------------------------------------
+\node[caja=tolgreen, text width=40mm, minimum height=8mm] (refc) at (1.5*\dx,-43mm)
+  {Comparación con la referencia común $C$ de alta estadística};
+\foreach \i/\x in {0/-15mm, 1/-5mm, 2/5mm, 3/15mm} \draw[flecha] (n\i.south) -- ($(refc.north)+(\x,0)$);
+\node[oe3, text width=58mm, minimum height=9mm, below=5mm of refc] (met)
+  {SSIM y PSNR por realización $\rightarrow$ promedio de las veinte realizaciones de cada vista};
+\draw[flecha] (refc) -- (met);
+\node[oe3, text width=24mm, align=center, below=7mm of pesos] (q)
+  {Análisis complementario:\\ sesgos regionales por realización $\rightarrow$ promedio de sesgos $\rightarrow Q$.\\ Indicadores locales con su soporte y agregación propios.};
+\draw[flecha] (refc.west) -- ++(-5mm,0) -- ++(0,-7mm) -| (q.north);
+
+% ---------- Criterio conjunto por vista ------------------------------------------
+\node[oe3, text width=72mm, minimum height=12mm, below=5mm of met] (crit)
+  {Dos condiciones simultáneas en \textbf{cada} vista $v$:\\
+   $\mathrm{SSIM}(m,f,v)\geq\mathrm{SSIM}(\text{entrada sin red},\,0{,}50,\,v)$ y\\
+   $\mathrm{PSNR}(m,f,v)\geq\mathrm{PSNR}(\text{entrada sin red},\,0{,}50,\,v)$};
+\node[oe3, text width=72mm, minimum height=7mm, below=4mm of crit] (todas)
+  {Fracción aceptada en una partición solo si cumple en todas sus vistas};
+\draw[flecha] (met) -- (crit);
+\draw[flecha] (crit) -- (todas);
+\node[rot, anchor=west, text width=20mm] at ($(todas.east)+(2mm,0)$) {Prueba y generalización se evalúan por separado};
+
+% ---------- Decisión ---------------------------------------------------------------
+\node[oe3, text width=34mm, minimum height=10mm, below left=6mm and -22mm of todas] (si)
+  {Hay fracciones aceptadas:\\ $f_{\min}$ y $R=0{,}50/f_{\min}$};
+\node[oe3, text width=34mm, minimum height=10mm, below right=6mm and -22mm of todas] (no)
+  {No hay fracciones aceptadas: $f_{\min}$ y $R$ no determinados};
+\draw[flecha] (todas.south) -- ++(0,-2.5mm) -| (si.north);
+\draw[flecha] (todas.south) -- ++(0,-2.5mm) -| (no.north);
+\end{tikzpicture}
+\end{document}

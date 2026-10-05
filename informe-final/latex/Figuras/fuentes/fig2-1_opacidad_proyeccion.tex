@@ -1,0 +1,102 @@
+% Figura 2.1 — La imagen muográfica por transmisión como proyección (esquema sin escala).
+% Fuente editable (TikZ). Compilar con:  pdflatex fig2-1_opacidad_proyeccion.tex
+% (a) Cada dirección de observación (acimut alpha, elevación eta) integra la densidad a lo
+%     largo de un trayecto: X = integral de rho(l) dl. Un píxel resume todo el trayecto.
+% Notación igual a la del capítulo 3 (alpha, eta, X, rho, l, L).
+% (b) Ambigüedad espesor-densidad: tres columnas con la misma opacidad
+%     X = 1,06e5 g/cm2: 400 m de roca de 2,65 g/cm3; 530 m de 2,00 g/cm3;
+%     450 m con una cavidad de 50 m y 400 m de roca de 2,65 g/cm3.
+% Paleta Paul Tol "bright", igual que las figuras del capítulo 3.
+\documentclass[12pt,border=2pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{babel,arrows.meta,calc,intersections,decorations.pathreplacing}
+
+\definecolor{tolblue}{HTML}{4477AA}
+\definecolor{tolgreen}{HTML}{228833}
+\definecolor{tolyellow}{HTML}{CCBB44}
+\definecolor{tolred}{HTML}{EE6677}
+\definecolor{tolpurple}{HTML}{AA3377}
+\definecolor{tolgrey}{HTML}{BBBBBB}
+
+\begin{document}
+\footnotesize
+\begin{tikzpicture}[>={Stealth[length=2mm]}, etiqueta/.style={font=\scriptsize, text=black, align=center, inner sep=1pt}]
+
+% =========================== (a) Trayectos y proyección ===========================
+\begin{scope}[scale=0.72]
+  \coordinate (det) at (5.4,0.12);
+  % Terreno y edificio
+  \draw[black!45, line width=0.5pt] (-3.3,0) -- (6.3,0);
+  \filldraw[name path=cono, fill=tolgrey!40, draw=black!70, line width=0.6pt] (-3,0) -- (0,2.6) -- (3,0) -- cycle;
+  % Conducto de baja densidad y cuerpo denso
+  \filldraw[fill=tolblue!45, draw=tolblue!80!black, line width=0.4pt] (0.3,1.0) circle (0.32);
+  \filldraw[fill=tolred!55, draw=tolred!80!black, line width=0.4pt] (-0.85,0.48) ellipse (0.42 and 0.24);
+  \node[etiqueta, text=tolblue!80!black, anchor=west] at (0.72,0.62) {conducto};
+  \node[etiqueta, text=tolred!70!black] at (-2.3,-0.32) {cuerpo denso};
+  \draw[tolred!70!black, line width=0.3pt] (-1.75,-0.22) -- (-1.1,0.32);
+
+  % Trayecto por cielo abierto (referencia)
+  \draw[tolgreen!80!black, line width=0.5pt, dash pattern=on 2pt off 1.5pt] (-1.0,4.2) -- (det);
+  \node[etiqueta, text=tolgreen!60!black, anchor=south] at (-1.0,4.2) {cielo abierto};
+
+  % Trayecto inferior, a través del cuerpo denso
+  \draw[black!55, line width=0.4pt] (-3.3,0.536) -- (det);
+
+  % Trayecto principal, a través del conducto
+  \path[name path=rayo] (det) -- (-3.3,1.86);
+  \path[name intersections={of=cono and rayo, sort by=rayo}]
+    (intersection-1) coordinate (entra)
+    (intersection-2) coordinate (sale);
+  \draw[tolblue!85!black, line width=0.4pt, dash pattern=on 1.5pt off 1.5pt] (-3.3,1.86) -- (sale);
+  \draw[tolblue!85!black, line width=1.0pt] (sale) -- (entra);
+  \draw[tolblue!85!black, line width=0.4pt, dash pattern=on 1.5pt off 1.5pt] (entra) -- (det);
+  \fill[tolblue!85!black] (entra) circle (1.3pt) (sale) circle (1.3pt);
+  % Longitud del recorrido en la roca
+  \draw[decorate, decoration={brace, amplitude=4pt, raise=3pt}, black!70, line width=0.4pt] (sale) -- (entra)
+    node[midway, above=7pt, sloped, etiqueta] {$L$};
+  \node[etiqueta, anchor=west] at (3.2,3.55) {$X(\alpha,\eta)=\displaystyle\int_{0}^{L}\rho(l)\,\mathrm{d}l$};
+
+  % Detector
+  \fill[tolred!85!black] ($(det)+(-0.07,-0.12)$) rectangle ($(det)+(0.07,0.22)$);
+  \node[etiqueta, anchor=north] at ($(det)+(0,-0.15)$) {detector};
+  \node[etiqueta, anchor=north west, align=left] at (3.2,3.05) {cada dirección $(\alpha,\eta)$\\ es un píxel de la imagen;\\ $L$: recorrido en la roca};
+  \node[font=\small\bfseries] at (-3.2,4.3) {(a)};
+\end{scope}
+
+% =========================== (b) Ambigüedad espesor-densidad ===========================
+\begin{scope}[xshift=6.55cm, yshift=0.1cm]
+  \def\w{0.75}
+  % Columna 1: 400 m de roca de 2,65 g/cm3
+  \filldraw[fill=tolgrey!85, draw=black!70, line width=0.5pt] (0,0) rectangle (\w,2.4);
+  % Columna 2: 530 m de roca de 2,00 g/cm3
+  \filldraw[fill=tolgrey!35, draw=black!70, line width=0.5pt] (1.8,0) rectangle ({1.8+\w},3.18);
+  % Columna 3: 450 m con una cavidad de 50 m y 400 m de roca de 2,65 g/cm3
+  \filldraw[fill=tolgrey!85, draw=black!70, line width=0.5pt] (3.6,0) rectangle ({3.6+\w},2.7);
+  \filldraw[fill=white, draw=tolblue!80!black, line width=0.5pt] (3.6,1.2) rectangle ({3.6+\w},1.5);
+
+  % Muones incidentes y transmitidos
+  \foreach \x/\top in {0/2.4, 1.8/3.18, 3.6/2.7} {
+    \draw[->, tolpurple, line width=0.6pt] ({\x+0.5*\w},{\top+0.65}) -- ({\x+0.5*\w},{\top+0.08});
+    \draw[->, tolpurple, line width=0.6pt] ({\x+0.5*\w},-0.08) -- ({\x+0.5*\w},-0.5);
+    \fill[tolred!85!black] ({\x+0.5*\w-0.22},-0.62) rectangle ({\x+0.5*\w+0.22},-0.54);
+  }
+
+  % Rótulos de cada columna
+  \node[etiqueta, anchor=north] at ({0.5*\w},-0.7) {$400$~m\\ $2{,}65$~g\,cm$^{-3}$};
+  \node[etiqueta, anchor=north] at ({1.8+0.5*\w},-0.7) {$530$~m\\ $2{,}00$~g\,cm$^{-3}$};
+  \node[etiqueta, anchor=north] at ({3.6+0.5*\w},-0.7) {$450$~m,\\ cavidad\\ de $50$~m};
+  \node[etiqueta, text=tolblue!80!black, anchor=west] at ({3.6+\w+0.08},1.35) {cavidad};
+
+  % Opacidad común
+  \draw[black!60, line width=0.3pt] (-0.1,-1.9) -- (4.45,-1.9);
+  \node[etiqueta] at (2.17,-2.25) {misma opacidad, $X=1{,}06\times10^{5}$~g\,cm$^{-2}$:\\ mismo conteo esperado en el detector};
+  \node[etiqueta, text=tolpurple] at (2.17,4.2) {flujo incidente};
+  \node[font=\small\bfseries] at (-0.35,4.2) {(b)};
+\end{scope}
+\end{tikzpicture}
+\end{document}

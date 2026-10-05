@@ -1,0 +1,53 @@
+% Figura 2.2 — Estadística de conteo de Poisson: media sobre desviación estándar y ruido relativo.
+% Fuente editable (PGFPlots). Compilar con:  pdflatex fig2-2_ruido_conteo.tex
+% Notación del capítulo 3: lambda es la tasa de conteo y t la exposición; mu = lambda t.
+% Curvas analíticas para un conteo de Poisson con valor esperado mu (en el código, x = mu):
+%   relación señal-ruido SNR = sqrt(lambda); ruido relativo = 1/sqrt(lambda).
+% Ilustración: cuadruplicar lambda (100 -> 400) duplica la relación señal-ruido (10 -> 20)
+% y reduce el ruido relativo a la mitad (10 % -> 5 %). No contiene datos del proyecto.
+% Paleta Paul Tol "bright", igual que las figuras del capítulo 3.
+\documentclass[12pt,border=2pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\usetikzlibrary{babel,arrows.meta}
+
+\definecolor{tolblue}{HTML}{4477AA}
+\definecolor{tolred}{HTML}{EE6677}
+\definecolor{tolgrey}{HTML}{BBBBBB}
+
+\begin{document}
+\footnotesize
+\begin{tikzpicture}[>={Stealth[length=1.8mm]}]
+\begin{loglogaxis}[
+  width=9.6cm, height=6.4cm,
+  xmin=1, xmax=1e6, ymin=1e-3, ymax=1e3,
+  xlabel={Número esperado de cuentas, $\mu=\lambda t$},
+  ylabel={Magnitud adimensional},
+  grid=major, grid style={tolgrey!60, line width=0.25pt},
+  axis line style={line width=0.5pt},
+  tick style={line width=0.5pt},
+  tick label style={font=\scriptsize},
+  label style={font=\footnotesize},
+  legend style={font=\scriptsize, draw=black!40, at={(0.03,0.97)}, anchor=north west, cells={anchor=west}},
+  legend cell align=left,
+]
+  \addplot[tolblue, line width=1.0pt, domain=1:1e6, samples=60] {sqrt(x)};
+  \addlegendentry{media sobre desviación estándar, $\sqrt{\mu}$}
+  \addplot[tolred, line width=1.0pt, dash pattern=on 4pt off 2pt, domain=1:1e6, samples=60] {1/sqrt(x)};
+  \addlegendentry{ruido relativo, $1/\sqrt{\mu}$}
+
+  % Ilustración: cuadruplicar la exposición duplica la relación señal-ruido
+  \addplot[only marks, mark=*, mark size=1.4pt, tolblue] coordinates {(100,10) (400,20)};
+  \addplot[only marks, mark=*, mark size=1.4pt, tolred] coordinates {(100,0.1) (400,0.05)};
+  \draw[->, black!70, line width=0.4pt] (axis cs:100,5) -- (axis cs:400,5)
+    node[midway, below, font=\scriptsize] {$\times4$ exposición};
+  \node[font=\scriptsize, anchor=north west, text=tolblue!85!black] at (axis cs:470,19) {$10\to20$};
+  \node[font=\scriptsize, anchor=north east, text=tolred!85!black] at (axis cs:330,0.045) {10\,\% $\to$ 5\,\%};
+\end{loglogaxis}
+\end{tikzpicture}
+\end{document}

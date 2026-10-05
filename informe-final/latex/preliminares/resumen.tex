@@ -1,0 +1,20 @@
+\chapter*{Resumen}
+\addcontentsline{toc}{chapter}{Resumen}
+\label{pre:resumen}
+
+\begingroup
+\setstretch{1.1}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.7em}
+
+\textbf{Título:} \TituloTrabajo\footnote{Trabajo de grado, modalidad Trabajo de Investigación.}
+
+\textbf{Autores:} \AutorUno; \AutorDos.\footnote{\Facultad. \Escuela. Director: \DirectorNombre, \DirectorTitulo Codirector: \CodirectorNombre, \CodirectorTitulo}
+
+\textbf{Descripción:}
+
+La muografía por transmisión permite estudiar el interior de un volcán a partir de la atenuación del flujo de muones cósmicos, pero el bajo flujo natural produce imágenes de baja estadística, dominadas por el ruido de conteo, que solo alcanzan una calidad interpretable con exposiciones de semanas o meses. El propósito del trabajo fue evaluar si el aprendizaje profundo puede mejorar esas imágenes hasta una calidad comparable a la de alta estadística y, con ello, reducir el tiempo de adquisición necesario. Se realizó un estudio computacional: se definieron escenarios volcánicos idealizados, se simuló mediante el método de Monte Carlo el transporte de muones a través de ellos y se generaron pares de imágenes de baja y alta estadística con distintas fracciones de conteo. Con esos pares se entrenó una red generativa antagónica condicional, que se comparó con una red U-Net y con variantes orientadas a conservar las cuentas. Las redes aumentaron la similitud con las imágenes de referencia: con entradas al 5\,\% de los conteos en el conjunto de prueba, el índice de similitud estructural pasó de 0,7643 en la entrada a 0,8342 con la red generativa. Sin embargo, persistieron alteraciones en las cuentas regionales, cuyo sesgo aumentó de 1,832 a 14,566\,\%, y los indicadores locales de las anomalías mostraron resultados mixtos. Bajo el criterio adoptado, no se demostró un factor de reducción del tiempo de adquisición. Los resultados corresponden a escenarios sintéticos y no cuentan con validación de campo.
+
+\textbf{Palabras clave:} muografía por transmisión, exploración volcánica, aprendizaje profundo, simulación Monte Carlo, redes generativas antagónicas.
+
+\endgroup
