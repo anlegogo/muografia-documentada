@@ -9,14 +9,14 @@ Se construyó con lo documentado en este repositorio y se presenta para recibir 
   - El único ajuste es de referencias cruzadas en el capítulo 3: la opacidad y la esperanza del conteo remiten a sus ecuaciones del capítulo 2 en lugar de repetirlas.
 - **Base en este repositorio:** la rama parte de `main` en `f0b8037`.
 
-**Documento compilado:** [Propuesta_Capitulos_Tesis.pdf](Propuesta_Capitulos_Tesis.pdf), 86 páginas.
+**Documento compilado:** [Propuesta_Capitulos_Tesis.pdf](Propuesta_Capitulos_Tesis.pdf), 87 páginas.
 
 ## Contenido y estado por capítulo
 
 | Parte | Contenido | Estado |
 |---|---|---|
-| Resumen y abstract | Descripción del trabajo y resultados | **Ajustados (2026-10-04)** al resultado de la evaluación multifracción, al factor no demostrado y al alcance sobre anomalías |
-| 1. Introducción | Problema, justificación, objetivos (texto literal de la propuesta aprobada), alcance y estructura | **Ajustada (2026-10-04)** con el mismo criterio que el capítulo 5: OE3 evaluado en cuatro fracciones sin factor demostrado, sin causa atribuida, y anomalías evaluadas en regiones de ubicación conocida |
+| Resumen y abstract | Texto continuo en el orden del README de la plantilla: problema, objetivo y método, resultados (EF-01-C2 y OE3-C1) y conclusión con su alcance. El abstract es su traducción fiel | **Completos, versión final de los autores.** Sin corchetes de plantilla y una página cada uno. Las cifras coinciden con el capítulo 4 y con las evidencias de `main`. Mismo alcance que el capítulo 5 |
+| 1. Introducción | Estructura indicada por la dirección: contexto y planteamiento del problema; justificación; objetivos (texto literal del plan de trabajo de grado); alcance del trabajo; organización del documento | **Completa, versión 2.** Sin resultados. La reducción del tiempo de adquisición se presenta como el propósito investigado. El alcance declara un estudio computacional, sin adquisición de campo ni inversión de opacidad validada, con anomalías en regiones de ubicación conocida y la partición 12/3/3/1 frente a la 70/15/15 del plan. Única cita nueva en el texto: `cohen2018`, que ya figuraba en el bib (DOI 10.1007/978-3-030-00928-1_60, verificado) |
 | 2. Marco teórico | Muones y su paso por la materia; imagen por transmisión (opacidad, proyección, no unicidad); estadística de conteo (Poisson, adelgazamiento binomial, Clopper–Pearson, Bonferroni, compresión logarítmica); simulación con Geant4 y EcoMug; aprendizaje profundo (U-Net, GAN condicional, crítico de parches, Wasserstein y penalización del gradiente); métricas de similitud y de conservación; estado del arte | **Completo, versión 2.** Contiene solo los conceptos que usa el capítulo 3, en el orden en que los necesita y con su misma notación. Tiene tres figuras vectoriales con fuente en `Figuras/fuentes/` |
 | 3. Metodología | Texto de la dirección en Overleaf | **Completo** (dirección) |
 | 4. Resultados y discusión | Texto de la dirección en Overleaf | **Completo** (dirección) |
@@ -35,7 +35,7 @@ Se construyó con lo documentado en este repositorio y se presenta para recibir 
 8. **Tabla 5.1 legible:** tabularx con cuatro columnas de ancho controlado, booktabs y texto conciso.
 9. **Última página:** el capítulo termina en una página con contenido suficiente.
 
-Con el mismo criterio se ajustaron el alcance de la introducción, el resumen y el abstract.
+Con el mismo criterio se redactaron después la introducción completa, el resumen y el abstract.
 
 ## Capítulo 2: criterio y conceptos
 
@@ -69,7 +69,7 @@ Desde esta carpeta, con pdfLaTeX y Biber: pdfLaTeX → Biber → pdfLaTeX → pd
 latexmk -pdf main.tex
 ```
 
-El resultado son 86 páginas, sin errores, sin referencias o citas indefinidas y sin cajas desbordadas. Las figuras de los capítulos 2, 3 y 4 están en `Figuras/`, todas en PDF vectorial.
+El resultado son 87 páginas, sin errores, sin referencias o citas indefinidas y sin cajas desbordadas; ningún capítulo termina en una página con una sola línea. Las figuras de los capítulos 2, 3 y 4 están en `Figuras/`, todas en PDF vectorial.
 
 Sus fuentes están en `Figuras/fuentes/`: un `.tex` o `.py` por figura con el mismo nombre que su PDF, junto con los datos verificados por SHA-256, `generar_figuras.py`, `requirements.txt` y `README.md`. Para regenerar las 20 figuras y comprobar que son vectoriales:
 
