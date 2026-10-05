@@ -1,0 +1,2 @@
+cortes_oe2.npz: cortes de imagen extraídos de las matrices auditadas de EF-01 tras verificar las 36 huellas del registro de procedencia de la dirección (revisión 166be6f).
+oe2_evidencias_ef01-c2_resultados.json y oe3_evidencias_curvas-v1_curvas.json: copias de anlegogo/muografia-documentada, origin/main 08cdc0c.

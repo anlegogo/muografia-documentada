@@ -3,4 +3,6 @@
 figuras-fuentes/oe1-v3/datos/** -text
 figuras-fuentes/oe2-v4/fuentes/** -text
 figuras-fuentes/cap3-metodologia/fuentes/_codigo_director/** -text
+Figuras/fuentes/datos/** -text
+Figuras/fuentes/_codigo_director/** -text
 Propuesta_Capitulos_Tesis.pdf binary

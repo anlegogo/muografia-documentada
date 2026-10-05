@@ -55,10 +55,16 @@ Desde esta carpeta, con pdfLaTeX y Biber: pdfLaTeX → Biber → pdfLaTeX → pd
 latexmk -pdf main.tex
 ```
 
-El resultado son 89 páginas, sin errores, sin referencias o citas indefinidas y sin cajas desbordadas. Las figuras están en `Figuras/`, todas en PDF vectorial.
+El resultado son 89 páginas, sin errores, sin referencias o citas indefinidas y sin cajas desbordadas. Las figuras de los capítulos 2, 3 y 4 están en `Figuras/`, todas en PDF vectorial.
 
-- **Capítulo 2:** fuentes en `Figuras/fuentes/`: archivos TikZ y PGFPlots, `generar_figuras.py`, `requirements.txt` y `README.md`. Para regenerarlas y comprobar que son vectoriales, ejecutar `python Figuras/fuentes/generar_figuras.py`.
-- **Capítulos 3 y 4:** sus figuras están en `Figuras/`. Sus fuentes se organizarán con la misma estructura; las históricas siguen en `figuras-fuentes/`.
+Sus fuentes están en `Figuras/fuentes/`: un `.tex` o `.py` por figura con el mismo nombre que su PDF, junto con los datos verificados por SHA-256, `generar_figuras.py`, `requirements.txt` y `README.md`. Para regenerar las 20 figuras y comprobar que son vectoriales:
+
+```bash
+pip install -r Figuras/fuentes/requirements.txt
+python Figuras/fuentes/generar_figuras.py
+```
+
+Regeneradas así en una copia aparte, las 20 coinciden píxel a píxel con los PDF publicados. La carpeta `figuras-fuentes/` conserva como antecedente las fuentes de versiones anteriores (`fig3-*`, `fig4-*`) y las tablas del OE2.
 
 ## Puntos que requieren decisión de la dirección
 

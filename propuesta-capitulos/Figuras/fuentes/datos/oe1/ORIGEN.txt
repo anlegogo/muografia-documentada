@@ -1,0 +1,4 @@
+Campaña de 114 vistas (OE1), entrega f395570 de anlegogo/muografia-documentada.
+imagenes/: subconjunto de referencias usadas por met_03, met_08 y res_01 (huellas en imagenes.sha256).
+evaluacion-114-344M.json: evaluación de bordes y roca (res_02).
+pares/geo-train-06_view3_pairs.npz: pares de la vista usada por met_03 y met_04; copia de Drive (datos-oe1-campana-114), idéntica en contenido: met_04 verifica las huellas de contenido de counts_ref, low_counts y fractions (la huella del archivo depende de la compresión).
