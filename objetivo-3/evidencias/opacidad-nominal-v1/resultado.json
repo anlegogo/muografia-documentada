@@ -1,0 +1,27 @@
+{
+  "ef01_sha256": "ed2eb47d6a066056576be1e9abca2a637fa88cd0f79f72f4d64753480e132848",
+  "registry_sha256": "ac3d58c48a5d18dd23cbbf1f3d57e526d5abe5557014fe559dc0783e29196afd",
+  "code_sha256": "9340848c24288aa892a75d6c7469e40e5d2921afc6ffdedbec2363df502627b0",
+  "geometry_sources": {
+    "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-test-01.json": "66a46bb729eedf508ffb8e15bd8cf8c602e0f63141a3f8a2d9594597bd32c5e8",
+    "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-test-02.json": "a61c7363caaffe807627f5235c58439e3c41838f1b82fa03e81c3298d9f6c723",
+    "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-test-03.json": "c9db0081eb9bb0e6db9a8bc409f2e9f782bcbfc151057b6127cd5827555c6b8c",
+    "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-gen-01.json": "f171aa214fda5243db6c5790f29e31cb68601d2b771bf36ca291a1673fd1166a"
+  },
+  "rows": 54,
+  "eligible_rows": 48,
+  "analytic_formula_checks": 4,
+  "registry_replay_verified": true,
+  "overlap_excluded_verified": true,
+  "donors_without_anomalies_verified": true,
+  "maximum_opacity_decomposition_residual_g_cm2": 1.000444171950221e-10,
+  "eligible_density_term_range_g_cm2": [
+    -17242.013650704128,
+    5616.1998822647165
+  ],
+  "eligible_control_changes_sign_of_density_term": 0,
+  "eligible_material_override_rows": 6,
+  "opacity_from_network_reconstructed": false,
+  "transport_calibration_performed": false,
+  "scope": "Opacidad nominal del edificio sobre rayos rectos centrales del JSON; no trayectoria individual de muones, no aire exterior ni inversión de cuentas. Filas rho<0.05 marcadas por sustitución de material: no se presentan como opacidad efectiva Geant4."
+}

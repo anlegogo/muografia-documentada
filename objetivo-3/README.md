@@ -1,5 +1,7 @@
 # OE3: evaluación de fracciones de entrada
 
+**Avance local OE3-P06:** se calculó la [opacidad nominal del catálogo sobre el soporte C2](OPACIDAD_NOMINAL_Y_ALCANCE.md): 54 filas, 48 elegibles. Se separan efecto de densidad y diferencia de longitud del control, y se marca la sustitución por aire de una cavidad en el constructor. No es opacidad reconstruida por la red; P06 continúa parcial.
+
 **Revisión vigente del complemento OE3-C1:** se verificaron las 96 matrices nuevas y se reprodujo la evaluación multifracción. Ningún modelo satisface conjuntamente SSIM/PSNR del referente sin red al 50 % en las fracciones estudiadas; no se demuestra un factor de reducción bajo ese benchmark. SNR/CNR y contraste de cuentas evaluados; la opacidad cuantitativa continúa delimitada. [Auditoría y balance](REVISION_COMPLEMENTO_OE3_C1.md). No se encarga otro entrenamiento por este resultado negativo.
 
 **Registro de preparación OE3-C1, previo a la entrega — 2026-10-04:** se incorporan el [protocolo](PROTOCOLO_COMPLEMENTO_OE3.md), las [instrucciones para estudiantes](INSTRUCCIONES_COMPLEMENTO_OE3.md) y la [verificación local](VERIFICACION_COMPLEMENTO_OE3.md). Se reutiliza el bloque 5 % y se solicitan 11.520 inferencias al 1 %, 10 % y 50 % con los ocho modelos congelados. No hay entrenamiento ni nueva simulación. Esta indicación sustituye las rutas históricas sin GPU que aparecen más abajo, referidas exclusivamente al análisis descriptivo anterior. La evaluación multifracción fue recibida y auditada posteriormente; véase la revisión vigente al inicio.
@@ -110,5 +112,6 @@ La revisión de criterio y la síntesis pueden realizarse con la evidencia conse
 - **OE3-P06, parcial:** SNR/CNR y contraste de cuentas calculados y revisados en las cuatro fracciones. El contraste de cuentas continúa identificado como indicador sustituto; no se ha reconstruido opacidad.
 
 Criterios de cierre y secuencia en la [revisión de propuesta](../docs/REVISION_PROPUESTA_APROBADA.md). P03 queda condicionado a estos análisis y P02. El complemento autoriza inferencia de pesos existentes; el informe final sigue aplazado.
+
 
 

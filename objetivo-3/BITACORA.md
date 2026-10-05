@@ -1,5 +1,14 @@
 # Bitácora de preparación del OE3
 
+## Diagnóstico nominal de opacidad — 2026-10-04, Colombia
+
+- Se calculan 54 registros geométricos del soporte C2, 48 elegibles, con densidades del JSON y rayos rectos centrales. No se entrena ni se ejecuta transporte.
+- Se verifica el registro, la exclusión de solapamientos y cuatro casos analíticos de unidades/composición. La diferencia de opacidad entre objetivo y control se separa en densidad y longitud.
+- Se marcan seis filas de geo-gen-01/anomalía 2: el catálogo declara 0,048 g/cm³ y el constructor versionado sustituye rho<0,05 por G4_AIR. No se inventa densidad efectiva ni se altera la campaña.
+- Se documenta la diferencia entre referencia nominal conocida y opacidad reconstruida a partir de cuentas. OE3-P06 avanza pero permanece parcial; primero se revisan trazabilidad de materiales y respuesta/calibración antes de solicitar cómputo nuevo.
+- [Método, evidencia, incidencias y límites](OPACIDAD_NOMINAL_Y_ALCANCE.md).
+
+
 ## Auditoría de la entrega OE3-C1 — 2026-10-04, Colombia
 
 - Se conserva e incorpora la entrega de estudiantes `5c3b0ee`, ejecutada con código `39d8fd3` en una L40S. Se descargan 298 archivos de Drive y se verifican los 294 del manifiesto y 96 matrices (3.019.911.168 bytes; 11.520 predicciones nuevas).
@@ -56,5 +65,6 @@
 - OE3-P01 verificado; OE3-P02 y P04 pendientes, P03 parcial. Se espera confirmar objetivo oficial y requisitos de calidad. Continúa redacción del manuscrito sin otra GPU.
 
 [Análisis y evidencia](README.md).
+
 
 

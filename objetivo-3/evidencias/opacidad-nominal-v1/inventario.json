@@ -1,0 +1,12 @@
+[
+  {
+    "path": "opacidad_nominal.csv",
+    "sha256": "f444c2620b40fc3895aa98952b283b613b6814dd36aade4bda4a1b08614d221d",
+    "bytes": 14596
+  },
+  {
+    "path": "resultado.json",
+    "sha256": "f49055217b36f67ca9dd3b7427ff38d196ef91aecf48fc9f2c19ded5356e4d4f",
+    "bytes": 1763
+  }
+]
