@@ -1,5 +1,7 @@
 # Muografía: documentación y seguimiento académico
 
+**Estado vigente del OE3 — 2026-10-04:** [cierre experimental y documental](objetivo-3/CIERRE_OE3.md). Evaluación finalizada; cumplimiento científico parcial. No se demuestra un factor de reducción bajo el benchmark y no se reconstruyó opacidad cuantitativa. No quedan nuevas corridas asignadas; resta la integración del informe final. Las notas inferiores conservan la cronología y no reabren encargos superados.
+
 **Revisión vigente del complemento OE3-C1:** se verificaron las 96 matrices nuevas y se reprodujo la evaluación multifracción. Ningún modelo satisface conjuntamente SSIM/PSNR del referente sin red al 50 % en las fracciones estudiadas; no se demuestra un factor de reducción bajo ese benchmark. SNR/CNR y contraste de cuentas evaluados; la opacidad cuantitativa continúa delimitada. [Auditoría y balance](objetivo-3/REVISION_COMPLEMENTO_OE3_C1.md). No se encarga otro entrenamiento por este resultado negativo.
 
 **Desglose experimental ejecutado:** [comparación por vista y región](objetivo-3/RESULTADO_EXPERIMENTAL_OE3.md). La cGAN al 5 % supera SSIM/PSNR de la entrada al 10 % en 24/24 vistas y 480/480 correspondencias, con deterioro de Q en 24/24 vistas. Se cuantifica una reducción descriptiva 2:1 de conteos bajo esas métricas; no un factor físico aceptado ni el máximo alcanzable. No se requiere otra GPU para reproducir este balance. La redacción del informe final se aplaza hasta concluir la revisión experimental, por indicación de la dirección.

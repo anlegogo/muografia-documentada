@@ -1,5 +1,12 @@
 # Registro de cambios
 
+## Cierre experimental del OE3 — 2026-10-04, Colombia
+
+- Se consolida el registro de cierre, con evidencia, definición del factor y disposición de OE3-P01 a P06.
+- Se diferencia ejecución terminada de cumplimiento científico parcial: benchmark negativo y opacidad no reconstruida.
+- Se retiran como encargos vigentes las rutas anteriores de nuevas corridas; la integración editorial continúa pendiente.
+- No se modifican datos, pesos, criterios ni resultados; se actualizan README, índice y revisión de propuesta.
+
 ## Diagnóstico nominal de opacidad — 2026-10-04, Colombia
 
 - Se calculan 54 registros geométricos del soporte C2, 48 elegibles, con densidades del JSON y rayos rectos centrales. No se entrena ni se ejecuta transporte.

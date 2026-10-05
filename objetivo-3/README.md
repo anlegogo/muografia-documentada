@@ -1,5 +1,7 @@
 # OE3: evaluación de fracciones de entrada
 
+**Estado vigente — 2026-10-04:** [cierre experimental y documental](CIERRE_OE3.md). Evaluación terminada con resultado negativo del benchmark; cumplimiento científico parcial y limitación de opacidad explícita. No quedan corridas asignadas. OE3-P04 corresponde a la integración editorial pendiente. Este cierre prevalece sobre las rutas históricas que se conservan más abajo.
+
 **Avance local OE3-P06:** se calculó la [opacidad nominal del catálogo sobre el soporte C2](OPACIDAD_NOMINAL_Y_ALCANCE.md): 54 filas, 48 elegibles. Se separan efecto de densidad y diferencia de longitud del control, y se marca la sustitución por aire de una cavidad en el constructor. No es opacidad reconstruida por la red; P06 continúa parcial.
 
 **Revisión vigente del complemento OE3-C1:** se verificaron las 96 matrices nuevas y se reprodujo la evaluación multifracción. Ningún modelo satisface conjuntamente SSIM/PSNR del referente sin red al 50 % en las fracciones estudiadas; no se demuestra un factor de reducción bajo ese benchmark. SNR/CNR y contraste de cuentas evaluados; la opacidad cuantitativa continúa delimitada. [Auditoría y balance](REVISION_COMPLEMENTO_OE3_C1.md). No se encarga otro entrenamiento por este resultado negativo.

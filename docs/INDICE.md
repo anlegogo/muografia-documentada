@@ -1,5 +1,7 @@
 # Índice de documentación
 
+- [OE3: cierre experimental, balance de cumplimiento y disposición de pendientes](../objetivo-3/CIERRE_OE3.md).
+
 - [OE3: opacidad nominal del catálogo, controles y límites de inversión](../objetivo-3/OPACIDAD_NOMINAL_Y_ALCANCE.md).
 
 - [OE3-C1: auditoría de Drive, reproducción y resultado del benchmark](../objetivo-3/REVISION_COMPLEMENTO_OE3_C1.md).

@@ -1,5 +1,9 @@
 # Bitácora de preparación del OE3
 
+## Cierre experimental y documental — 2026-10-04, Colombia
+
+Por solicitud de la dirección se consolida el [cierre](CIERRE_OE3.md) sobre main `d7c865a`. Se revisan la auditoría OE3-C1, la opacidad nominal y el alcance/receta adoptados del OE1. No se ejecutan nuevas inferencias ni simulaciones. Se registra evaluación terminada, benchmark negativo y cumplimiento científico parcial; se conservan nulos f_min y R. P02/P03/P06 se disponen con sus limitaciones, sin declararlos verificados por cierre administrativo. P04 sigue como integración editorial. Se actualizan entradas e índice; originales y datos permanecen intactos.
+
 ## Diagnóstico nominal de opacidad — 2026-10-04, Colombia
 
 - Se calculan 54 registros geométricos del soporte C2, 48 elegibles, con densidades del JSON y rayos rectos centrales. No se entrena ni se ejecuta transporte.

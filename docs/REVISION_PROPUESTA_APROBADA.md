@@ -1,5 +1,7 @@
 # Revisión directa de la propuesta aprobada: alcance de OE2 y OE3
 
+**Disposición final — 2026-10-04:** el [cierre experimental del OE3](../objetivo-3/CIERRE_OE3.md) consolida la evaluación concluida y las desviaciones respecto de la propuesta. El cumplimiento científico permanece parcial; el benchmark da resultado negativo y la opacidad no se reconstruyó. Los pendientes históricos inferiores se interpretan con esa disposición, sin encargo de nuevas corridas.
+
 **Actualización posterior al complemento OE3-C1:** la evaluación multifracción y las métricas SNR/CNR ya fueron ejecutadas y auditadas. El benchmark no se satisface; no se demuestra un factor bajo esa regla. La distinción entre contraste de cuentas y opacidad permanece. [Estado vigente y evidencia](../objetivo-3/REVISION_COMPLEMENTO_OE3_C1.md). Las tablas inferiores conservan los pendientes identificados en la lectura inicial de la propuesta.
 
 Fecha de revisión: 2026-10-04, Colombia. Se volvió a abrir y leer directamente `Plan_trabajo_grado.pdf`, fuente aprobada identificada por la dirección. Se extrajo el texto de sus 35 páginas y se inspeccionaron visualmente las páginas PDF 26 y 29. No se editó ni reexportó el PDF.
