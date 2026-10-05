@@ -1,0 +1,6 @@
+# Copias de evidencia y datos de figuras: se conservan los bytes exactos,
+# porque sus huellas SHA-256 se verifican antes de regenerar las figuras.
+figuras-fuentes/oe1-v3/datos/** -text
+figuras-fuentes/oe2-v4/fuentes/** -text
+figuras-fuentes/cap3-metodologia/fuentes/_codigo_director/** -text
+Propuesta_Capitulos_Tesis.pdf binary

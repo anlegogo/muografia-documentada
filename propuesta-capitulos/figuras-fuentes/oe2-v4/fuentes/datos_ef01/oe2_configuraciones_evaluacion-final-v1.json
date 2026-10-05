@@ -1,0 +1,139 @@
+{
+  "schema": "oe2-final-evaluation-v1",
+  "date": "2026-10-04",
+  "scope": "Final descriptive evaluation at fraction 0.05 of frozen existing models; no retraining, density reconstruction or absolute equivalence claim. Known synthetic catalogue; previous OE1 integrity/physics inspections disclosed.",
+  "normalization_scale": 8.239329427901795,
+  "fraction": 0.05,
+  "models": {
+    "unet_original": {
+      "sha256": "734bc5dc1aa4cdc16a3fa0b6de2d58da7575c5bd0b1fe342bc266283f0e8e57a",
+      "origin": "piloto original, best epoch 5"
+    },
+    "cgan_original": {
+      "sha256": "e54d51f758a9dcb88d65ba74369907f8d09f071d5085814d01ca2aa2958a57e0",
+      "origin": "piloto original, best epoch 5"
+    },
+    "B1_C0": {
+      "sha256": "486f83398c5c61acf91b14c929872b97ff16231d0bca622ff0a75f246a014a81",
+      "origin": "E1, fifth additional epoch",
+      "pair": "B1",
+      "arm": "C0",
+      "drive_id": "1JYHfQYtKpr7G8lC6zAz-g9CcVP5FRf69"
+    },
+    "B1_C1": {
+      "sha256": "9d627f2167369f74734c34837a4c13dcf25117485885428057776b04ed5d7687",
+      "origin": "E1, fifth additional epoch",
+      "pair": "B1",
+      "arm": "C1",
+      "drive_id": "1Q3ttkoyB6G5HBPZNVKwx9TCa385Y2ZUf"
+    },
+    "B2_C0": {
+      "sha256": "d7a25a1bf4cac726cf638f27a9ff87e7672bd614ca949c1be43fac60fe1a2075",
+      "origin": "E1, fifth additional epoch",
+      "pair": "B2",
+      "arm": "C0",
+      "drive_id": "1xtoqXemb46-KAk19OQkSfA0alWeuXs7h"
+    },
+    "B2_C1": {
+      "sha256": "1cd6e5eb5025793a191e1b6ee4f75fd21f988b62b9f286f16a8c8ac1ccb2b4b3",
+      "origin": "E1, fifth additional epoch",
+      "pair": "B2",
+      "arm": "C1",
+      "drive_id": "1-A7A1neAz7RvqaXG_O0svGH4ikAunnSx"
+    },
+    "B3_C0": {
+      "sha256": "ec406fd2688d42e1fab626b70a318dc25265ef21516d15394519b238b6586a82",
+      "origin": "E1, fifth additional epoch",
+      "pair": "B3",
+      "arm": "C0",
+      "drive_id": "1A2iAVNKmRgBVKKoCikZiCsP8gFW5uv42"
+    },
+    "B3_C1": {
+      "sha256": "5d03f8957506083605b65ba341ac21f053ea85379000f2c5c5b6dfb03e147724",
+      "origin": "E1, fifth additional epoch",
+      "pair": "B3",
+      "arm": "C1",
+      "drive_id": "1t1ZCFBmMMFq9bPpkRdccoFDeODeLdQoc"
+    }
+  },
+  "splits": {
+    "test": [
+      "geo-test-01",
+      "geo-test-02",
+      "geo-test-03"
+    ],
+    "generalization": [
+      "geo-gen-01"
+    ]
+  },
+  "geometry_order": [
+    "geo-test-01",
+    "geo-test-02",
+    "geo-test-03",
+    "geo-gen-01"
+  ],
+  "geometry_files": {
+    "geo-test-01": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-test-01.json",
+    "geo-test-02": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-test-02.json",
+    "geo-test-03": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-test-03.json",
+    "geo-gen-01": "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-gen-01.json"
+  },
+  "data_sha256": {
+    "dataset-v2/shards/geo-gen-01.meta.json": "587614f36cab5089e5bd806a0a0ea7a884cba8288a4f05a686727306914d75d9",
+    "dataset-v2/shards/geo-gen-01.npz": "4d724b8d943ad71cf0deca17bafa0edf2304f06f999794e63c6c74c200abb311",
+    "dataset-v2/shards/geo-test-01.meta.json": "a0dbb8447e9c6c5b4f8d078e4237abb522c67ae123fe49c7502e077ad25ddd7c",
+    "dataset-v2/shards/geo-test-01.npz": "308e02931a73c52c28fd5191a3dbeedc311cd4733f910e632ee15c58947121a6",
+    "dataset-v2/shards/geo-test-02.meta.json": "6e697e4788f5a6d6d777042c1e22d27e19d4e9565a7795280769cfd6c3ff6a94",
+    "dataset-v2/shards/geo-test-02.npz": "eb158306576d7b8915053134b78ea082c01587ce8d859d195985ca0f1d2fb812",
+    "dataset-v2/shards/geo-test-03.meta.json": "6109dbb52583dc244b87189cd99406d17a5f8d4c9b7f2a9582afe45fae58f344",
+    "dataset-v2/shards/geo-test-03.npz": "bcb4b169267f36456e2c2cdbe6d21f8261c460ac7611370ca2a8ad98904d301a"
+  },
+  "source_sha256": {
+    "objetivo-2/implementacion/models/unet_generator.py": "a58b592d8fbd60fecb626d619479621de7996e4c359a638a66f58a1da94e582f",
+    "objetivo-2/implementacion/scripts/evaluation/metrics.py": "3e31022397b9c573795597d5d21f84a9bf08f5c1c7c76ef6c04a2a8fd6f28c42",
+    "objetivo-2/herramientas/evaluar_regiones_geometricas.py": "e9d36af400da34338dd27fb2c6325797ad9e5f65ed724d04bd9d22369e994524",
+    "objetivo-1/contratos/receta-operativa-siete-actividades.json": "db9e5caab4c599afc00430452bea190eb2f50b1fa6a49cc5f027f3a5e6659e90",
+    "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-test-01.json": "66a46bb729eedf508ffb8e15bd8cf8c602e0f63141a3f8a2d9594597bd32c5e8",
+    "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-test-02.json": "a61c7363caaffe807627f5235c58439e3c41838f1b82fa03e81c3298d9f6c723",
+    "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-test-03.json": "c9db0081eb9bb0e6db9a8bc409f2e9f782bcbfc151057b6127cd5827555c6b8c",
+    "objetivo-1/originales/scripts/simulation/geometry_catalog/geometries/geo-gen-01.json": "f171aa214fda5243db6c5790f29e31cb68601d2b771bf36ca291a1673fd1166a"
+  },
+  "runner_sha256": "a077e137af6bfd8a85d4e5c3fcb73787262ca01688739eb15ce1dfba9918f102",
+  "regional_protocol": {
+    "schema": "oe2-regiones-geometricas-v1",
+    "date": "2026-10-03",
+    "split": "test_and_generalization",
+    "fraction": 0.05,
+    "methods": [
+      "entrada",
+      "unet_original",
+      "cgan_original",
+      "B1_C0",
+      "B1_C1",
+      "B2_C0",
+      "B2_C1",
+      "B3_C0",
+      "B3_C1"
+    ],
+    "detector_distance_m": 1000,
+    "detector_height_m": 1.5,
+    "ray_max_m": 3000,
+    "cone_top_radius_m": 0.1,
+    "anomaly_min_length_m": 20,
+    "core_erosion_pixels": 1,
+    "rock_sky_margin_pixels": 2,
+    "control_same_elevation": true,
+    "control_cone_length_relative_tolerance": 0.05,
+    "control_donors_per_pixel": 5,
+    "min_matched_pixels": 20,
+    "min_match_fraction": 0.8,
+    "normalization_scale": 8.239329427901795,
+    "selection": "Geometric rules inherited unchanged from validation protocol; no metric-driven ROI selection.",
+    "decision": "descriptive comparison only; no physical acceptance thresholds established"
+  },
+  "images_per_model": 480,
+  "total_network_predictions": 3840,
+  "automatic_selection": false,
+  "physical_acceptance": false,
+  "equivalence_claim": false
+}

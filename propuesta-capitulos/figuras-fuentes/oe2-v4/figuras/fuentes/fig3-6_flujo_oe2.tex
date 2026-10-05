@@ -1,0 +1,81 @@
+% Figura 3.6 — Desarrollo y evaluación del modelo (OE2) y análisis descriptivo de
+% exposición (OE3). Fuente editable (TikZ). Mismo estilo que la figura 3.1.
+% Sustento: objetivo-2 (protocolos, diseños y revisiones) y objetivo-3/README.md de
+% muografia-documentada, origin/main 08cdc0c.
+% Compilar con:  pdflatex fig3-6_flujo_oe2.tex   (salida vectorial, fuentes incrustadas)
+\documentclass[12pt,border=2pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{babel,positioning,arrows.meta,calc,fit,backgrounds}
+
+\definecolor{tolblue}{HTML}{4477AA}
+\definecolor{tolcyan}{HTML}{66CCEE}
+\definecolor{tolgreen}{HTML}{228833}
+\definecolor{tolyellow}{HTML}{CCBB44}
+\definecolor{tolred}{HTML}{EE6677}
+\definecolor{tolpurple}{HTML}{AA3377}
+\definecolor{tolgrey}{HTML}{BBBBBB}
+
+\begin{document}
+\footnotesize
+\begin{tikzpicture}[
+  node distance=5mm and 5mm,
+  >={Stealth[length=2.2mm]},
+  etapa/.style={draw=#1!85!black, fill=#1!12, rounded corners=2pt, line width=0.6pt,
+                minimum width=62mm, minimum height=10mm, align=center, inner sep=2.5pt},
+  insumo/.style={draw=#1!85!black, fill=#1!12, rounded corners=2pt, line width=0.6pt,
+                 minimum width=40mm, minimum height=10mm, align=center, inner sep=2.5pt},
+  producto/.style={font=\scriptsize\itshape, text=black!70, align=right},
+  flecha/.style={->, line width=0.7pt, draw=black!75},
+  apoyo/.style={->, line width=0.6pt, draw=black!55, dashed}
+]
+% ---- Insumos -----------------------------------------------------------------
+\node[insumo=tolgreen] (pares) {{\bfseries Conjunto del OE1}\\[1pt] pares con $f=0{,}05$; 12/3/3/1 geometrías};
+\node[insumo=tolgreen, right=8mm of pares] (codigo) {{\bfseries Implementación v1}\\[1pt] penalización y normalización corregidas};
+
+% ---- Cadena principal ----------------------------------------------------------
+\node[etapa=tolblue, below=10mm of $(pares.south)!0.5!(codigo.south)$] (piloto)
+  {{\bfseries Piloto al 5\,\%}\\[1pt] U-Net con L1 y cGAN desde cero; época 5 en validación};
+\node[etapa=tolcyan, below=of piloto] (ajustes)
+  {{\bfseries Ajustes por continuación}\\[1pt] término regional; repetición con tres semillas};
+\node[etapa=tolcyan, below=of ajustes] (borde)
+  {{\bfseries Ensayo de borde E1}\\[1pt] tres parejas C0/C1 con término espacial de borde};
+\node[etapa=tolpurple, below=of borde] (contrato)
+  {{\bfseries Protocolo EF-01 y declaración de procedencia}\\[1pt] ocho redes congeladas por huella SHA-256};
+\node[etapa=tolyellow, below=of contrato] (ef01)
+  {{\bfseries Evaluación final en prueba y generalización}\\[1pt] 3\,840 predicciones; doce comparaciones};
+\node[etapa=tolyellow, below=of ef01] (c2)
+  {{\bfseries Corrección numérica C2 del contraste}\\[1pt] controles con tolerancia de $10^{-8}$~m registrados};
+\node[etapa=tolred, below=of c2] (curvas)
+  {{\bfseries Curvas descriptivas de exposición (OE3)}\\[1pt] entrada sin red al 1, 5, 10 y 50\,\%};
+
+% ---- Restricción de particiones (apoyo) ---------------------------------------
+\node[insumo=tolgrey, dashed, right=8mm of ajustes, minimum width=27mm, text width=26mm]
+  (val) {{\bfseries Solo}\\ {\bfseries validación}\\[1pt] prueba y generalización cerradas};
+\node[insumo=tolgrey, dashed, right=8mm of c2, minimum width=27mm, text width=26mm]
+  (verif) {{\bfseries Reproducción independiente}\\[1pt] métricas recalculadas en procesador};
+
+% ---- Flechas ------------------------------------------------------------------------
+\draw[flecha] (pares.south) -- ++(0,-3.5mm) -| ($(piloto.north)+(-12mm,0)$);
+\draw[flecha] (codigo.south) -- ++(0,-3.5mm) -| ($(piloto.north)+(12mm,0)$);
+\foreach \a/\b in {piloto/ajustes, ajustes/borde, borde/contrato, contrato/ef01, ef01/c2, c2/curvas}
+  \draw[flecha] (\a) -- (\b);
+\draw[apoyo] (val.north) |- (piloto.east);
+\draw[apoyo] (val.south) |- (borde.east);
+\draw[apoyo] (verif.north) |- (ef01.east);
+\draw[apoyo] (verif.south) |- (curvas.east);
+
+% ---- Productos que enlazan las etapas ---------------------------------------------
+\node[producto, left=4mm of piloto] {pesos de la\\ U-Net y la cGAN};
+\node[producto, left=4mm of ajustes] {variantes C0/C1\\ y controles};
+\node[producto, left=4mm of borde] {seis continuaciones\\ y coeficiente de borde};
+\node[producto, left=4mm of contrato] {contrato ejecutable\\ y procedencia};
+\node[producto, left=4mm of ef01] {métricas por imagen,\\ región y contraste};
+\node[producto, left=4mm of c2] {registro de controles\\ e índices};
+\node[producto, left=4mm of curvas] {razones nominales\\ y cruces discretos};
+\end{tikzpicture}
+\end{document}

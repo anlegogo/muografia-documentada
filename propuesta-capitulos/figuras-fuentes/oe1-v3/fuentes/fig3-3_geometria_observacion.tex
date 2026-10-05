@@ -1,0 +1,102 @@
+% Figura 3.3 — Geometría de observación de la campaña de 114 vistas (esquema sin escala).
+% Fuente editable (TikZ). Compilar con:  pdflatex fig3-3_geometria_observacion.tex
+% Parámetros representados (receta operativa de la campaña): panel de 1,2 m x 1,2 m a
+% d = 1 000 m del eje y 1,5 m de altura; plano de conteo de 600 m x 600 m centrado en el
+% panel; inyección 1 m antes de la entrada en la roca a lo largo de la trayectoria
+% nominal (1 m antes del panel si la trayectoria no cruza roca); registro si E_k > 3 GeV;
+% generación en un acimut relativo de +-35 grados y conteo en +-30 grados; vistas cada
+% 60 grados. Paleta Paul Tol "bright".
+\documentclass[12pt,border=2pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{babel,arrows.meta,calc,angles,quotes,intersections}
+
+\definecolor{tolblue}{HTML}{4477AA}
+\definecolor{tolgreen}{HTML}{228833}
+\definecolor{tolyellow}{HTML}{CCBB44}
+\definecolor{tolred}{HTML}{EE6677}
+\definecolor{tolpurple}{HTML}{AA3377}
+\definecolor{tolgrey}{HTML}{BBBBBB}
+
+\begin{document}
+\footnotesize
+\begin{tikzpicture}[>={Stealth[length=2mm]}, etiqueta/.style={font=\scriptsize, text=black, align=left, inner sep=1pt}]
+
+% =========================== (a) Vista lateral ===========================
+\begin{scope}[scale=0.78]
+  \def\R{2.3}\def\H{1.75}\def\D{5.6}\def\E{13.0}
+  \coordinate (panel) at (\D,0.05);
+  % Punto lejano de la trayectoria nominal, sobre el cielo
+  \coordinate (lejos) at ({\D-8.6}, {0.05+8.6*tan(\E)});
+
+  % Terreno y edificio
+  \draw[black!45, line width=0.5pt] (-3.3,0) -- (\D,0);
+  \filldraw[name path=cono, fill=tolgrey!40, draw=black!70, line width=0.6pt] (-\R,0) -- (0,\H) -- (\R,0) -- cycle;
+  \filldraw[fill=tolblue!45, draw=tolblue!80!black, line width=0.4pt] (0.42,0.55) circle (0.2);
+  \node[etiqueta] at (-1.15,0.35) {edificio};
+  \draw[dash pattern=on 2pt off 2pt, black!55] (0,-0.05) -- (0,2.25) node[right, etiqueta] {eje};
+
+  % Trayectoria nominal y punto de inyección (1 m antes de entrar en la roca)
+  \path[name path=rayo] (panel) -- (lejos);
+  \path[name intersections={of=cono and rayo, sort by=rayo}] (intersection-2) coordinate (entrada);
+  \coordinate (inyeccion) at ($(entrada)!-0.28cm!(panel)$);
+  \draw[tolblue!85!black, line width=0.4pt, dash pattern=on 1.5pt off 1.5pt] (lejos) -- (inyeccion);
+  \draw[tolblue!85!black, line width=0.9pt, ->] (inyeccion) -- (panel);
+  \fill[tolgreen!80!black] (inyeccion) circle (1.8pt);
+  \node[etiqueta, anchor=north east, text=tolgreen!60!black] at ($(inyeccion)+(-0.08,-0.04)$) {inyección 1~m\\ antes de la roca};
+  \node[font=\scriptsize, text=tolblue!85!black, rotate=-\E, below=1pt] at ($(entrada)!0.30!(panel)$) {trayectoria nominal};
+
+  % Plano de conteo (vertical, centrado en el panel) y panel
+  \fill[tolyellow!55] ($(panel)+(-0.045,-1.0)$) rectangle ($(panel)+(0.045,1.0)$);
+  \draw[tolyellow!70!black, line width=0.4pt] ($(panel)+(-0.045,-1.0)$) rectangle ($(panel)+(0.045,1.0)$);
+  \draw[tolred!85!black, line width=2.4pt] ($(panel)+(0,-0.12)$) -- ($(panel)+(0,0.12)$);
+  \node[etiqueta, right] at ($(panel)+(0.12,0.80)$) {plano de conteo\\ $600\times600$~m;\\ registro si $E_k>3$~GeV};
+  \node[etiqueta, right] at ($(panel)+(0.12,-0.30)$) {panel nominal\\ $1{,}2\times1{,}2$~m};
+
+  % Muon desviado por dispersión múltiple, registrado fuera del panel
+  \draw[tolpurple, line width=0.6pt, dashed, ->]
+    ($(entrada)!0.45!(panel)$) .. controls ($(entrada)!0.70!(panel)+(0,0.18)$) and ($(panel)+(-1.1,0.60)$) .. ($(panel)+(-0.05,0.60)$);
+  \node[font=\scriptsize, text=tolpurple, above] at ($(entrada)!0.72!(panel)+(0,0.36)$) {muon desviado};
+
+  % Ángulo de elevación
+  \coordinate (atras) at ($(panel)+(-1,0)$);
+  \pic[draw, black!70, angle radius=8mm, angle eccentricity=1.3, "$e$"] {angle=entrada--panel--atras};
+
+  % Cota de la distancia del panel al eje
+  \def\yc{-0.5}
+  \draw[black!65, |<->|, line width=0.4pt] (0,\yc) -- (\D,\yc) node[midway, below, text=black, font=\scriptsize] {$d=1\,000$~m};
+\end{scope}
+
+% =========================== (b) Vista en planta ==========================
+\begin{scope}[shift={(10.05,0.40)}, scale=0.66]
+  \def\Rp{0.75}\def\Dp{1.85}
+  % Ventana de generación (+-35°) y ventana de conteo (+-30°) de la vista 0
+  \fill[tolgreen!12] (\Dp,0) -- ++(145:2.85) arc (145:215:2.85) -- cycle;
+  \fill[tolblue!18] (\Dp,0) -- ++(150:2.85) arc (150:210:2.85) -- cycle;
+  \draw[tolblue!60, line width=0.3pt] (\Dp,0) -- ++(150:2.85) (\Dp,0) -- ++(210:2.85);
+  \draw[tolgreen!60!black, line width=0.3pt, dash pattern=on 1.5pt off 1.5pt] (\Dp,0) -- ++(145:2.85) (\Dp,0) -- ++(215:2.85);
+  % Edificio y órbita de las vistas
+  \filldraw[fill=tolgrey!40, draw=black!70, line width=0.6pt] (0,0) circle (\Rp);
+  \fill[black!70] (0,0) circle (0.8pt);
+  \draw[black!45, line width=0.3pt, dash pattern=on 2pt off 2pt] (0,0) circle (\Dp);
+  \foreach \v in {0,...,5}{
+    \pgfmathsetmacro{\ang}{60*\v}
+    \begin{scope}[shift={(\ang:\Dp)}, rotate=\ang]
+      \fill[tolred!85!black] (-0.05,-0.14) rectangle (0.05,0.14);
+    \end{scope}
+    \node[font=\scriptsize] at (\ang:{\Dp+0.55}) {$v=\v$};
+  }
+  \node[font=\scriptsize, text=tolblue!80!black] at (-0.15,1.05) {$\pm30^{\circ}$};
+  \node[font=\scriptsize, text=tolgreen!55!black] at (-0.55,-1.30) {$\pm35^{\circ}$};
+  \draw[black!65, |<->|, line width=0.4pt] (0,0) -- (-60:\Dp) node[pos=0.55, right, text=black, font=\scriptsize] {$d$};
+\end{scope}
+
+\node[font=\scriptsize] at (1.3,-1.6) {(a) Vista lateral};
+\node[font=\scriptsize] at (10.05,-1.6) {(b) Vista en planta};
+
+\end{tikzpicture}
+\end{document}

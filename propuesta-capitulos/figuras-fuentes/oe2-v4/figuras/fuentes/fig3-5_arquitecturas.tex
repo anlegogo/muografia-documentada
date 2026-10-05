@@ -1,0 +1,90 @@
+% Figura 3.5 — Arquitectura del generador U-Net (unet_dc_5) y del crítico PatchGAN
+% (patch_critic_70) de la implementación v1 del OE2. Fuente editable (TikZ).
+% Datos: objetivo-2/implementacion/models/unet_generator.py y patch_critic.py
+% (muografia-documentada, origin/main 08cdc0c).
+% Compilar con:  pdflatex fig3-5_arquitecturas.tex   (salida vectorial, fuentes incrustadas)
+% Tipografía idéntica a la del libro (Latin Modern, T1). Paleta Paul Tol "bright".
+\documentclass[12pt,border=2pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{babel,positioning,arrows.meta,calc,fit,backgrounds}
+
+\definecolor{tolblue}{HTML}{4477AA}
+\definecolor{tolcyan}{HTML}{66CCEE}
+\definecolor{tolgreen}{HTML}{228833}
+\definecolor{tolyellow}{HTML}{CCBB44}
+\definecolor{tolred}{HTML}{EE6677}
+\definecolor{tolpurple}{HTML}{AA3377}
+\definecolor{tolgrey}{HTML}{BBBBBB}
+
+\begin{document}
+\footnotesize
+\begin{tikzpicture}[
+  >={Stealth[length=2mm]},
+  bloque/.style={draw=#1!85!black, fill=#1!14, rounded corners=1.5pt, line width=0.6pt,
+                 minimum width=18.5mm, minimum height=8mm, align=center, inner sep=1.2pt},
+  capa/.style={draw=#1!85!black, fill=#1!14, rounded corners=1.5pt, line width=0.6pt,
+               minimum width=13.4mm, align=center, inner sep=1pt, font=\scriptsize},
+  dato/.style={draw=black!60, fill=black!5, rounded corners=1.5pt, line width=0.5pt,
+               minimum width=13mm, minimum height=8mm, align=center, inner sep=1.2pt},
+  baja/.style={->, line width=0.8pt, draw=tolred!85!black},
+  sube/.style={->, line width=0.8pt, draw=tolgreen!85!black},
+  salto/.style={->, line width=0.6pt, draw=black!55, dashed},
+  flecha/.style={->, line width=0.6pt, draw=black!75},
+  rotulo/.style={font=\scriptsize, text=black!75}
+]
+% ============================ (a) Generador U-Net ============================
+\def\dy{1.2}
+\def\dx{0.62}
+\def\W{8.6}
+\foreach \i/\c/\r in {1/64/256, 2/128/128, 3/256/64, 4/512/32} {
+  \node[bloque=tolblue] (e\i) at ({(\i-1)*\dx}, {-(\i-1)*\dy}) {B.~doble\\ $\c\times\r^2$};
+  \node[bloque=tolcyan] (d\i) at ({\W-(\i-1)*\dx}, {-(\i-1)*\dy}) {B.~doble\\ $\c\times\r^2$};
+  \draw[salto] (e\i.east) -- node[rotulo, above, pos=0.5] {concatenación} (d\i.west);
+}
+\node[bloque=tolpurple] (cu) at ({\W/2}, {-4*\dy}) {Cuello: B.~doble\\ $512\times16^2$};
+\foreach \i/\j in {1/2, 2/3, 3/4} {
+  \draw[baja] (e\i.south) -- (e\i.south |- e\j.north);
+  \draw[sube] (d\j.north) -- (d\j.north |- d\i.south);
+}
+\draw[baja] (e4.south) |- (cu.west);
+\draw[sube] (cu.east) -| (d4.south);
+\node[dato, above=5mm of e1] (xin) {Entrada $x$: $1\times256^2$};
+\node[dato, above=5mm of d1] (yout) {Salida $\hat y$: $1\times256^2$};
+\draw[flecha] (xin) -- (e1);
+\draw[flecha] (d1) -- node[rotulo, left, font=\tiny, align=right] {conv.~$1\times1$\\ y sigmoide} (yout);
+\node[rotulo, below=0.8mm of cu, align=center] {B.~doble: 2 $\times$ [conv.~$3\times3$, normalización por instancia, LeakyReLU (0,2)]};
+\begin{scope}[shift={(-0.6,-6.0)}]
+  \draw[baja] (0,0) -- (0.6,0) node[right, rotulo, text=black] {agrupamiento máx.~$2\times2$};
+  \draw[sube] (4.4,0) -- (5.0,0) node[right, rotulo, text=black] {transpuesta $2\times2$, paso 2};
+  \draw[salto] (9.3,0) -- (9.9,0) node[right, rotulo, text=black] {salto};
+\end{scope}
+\node[font=\small\bfseries, anchor=west] at (-1.6,2.15) {(a)};
+\node[anchor=west, font=\small] at (-0.95,2.15) {Generador U-Net (20\,543\,809 parámetros)};
+
+% ============================ (b) Crítico PatchGAN ===========================
+\begin{scope}[shift={(0.25,-8.1)}]
+  \node[dato] (bx) at (-1.5,0.55) {Entrada $x$\\ $1\times256^2$};
+  \node[dato] (bu) at (-1.5,-0.55) {Candidata $u$\\ $1\times256^2$};
+  \node[draw=black!60, circle, inner sep=0.6pt, font=\scriptsize] (cat) at (-0.25,0) {$\oplus$};
+  \draw[flecha] (bx.east) -- (cat);
+  \draw[flecha] (bu.east) -- (cat);
+  \node[capa=tolyellow, minimum height=15mm, right=2.2mm of cat] (c1) {conv.~$4\times4$/2\\ $64\times128^2$};
+  \node[capa=tolyellow, minimum height=12.5mm, right=1.2mm of c1] (c2) {conv.~$4\times4$/2\\ NI\\ $128\times64^2$};
+  \node[capa=tolyellow, minimum height=10.5mm, right=1.2mm of c2] (c3) {conv.~$4\times4$/2\\ NI\\ $256\times32^2$};
+  \node[capa=tolyellow, minimum height=9mm, right=1.2mm of c3] (c4) {conv.~$4\times4$/1\\ NI\\ $512\times31^2$};
+  \node[capa=tolred, minimum height=8mm, right=1.2mm of c4] (c5) {conv.~$4\times4$/1\\ $D_p$: $1\times30^2$};
+  \node[dato, right=10mm of c5, minimum width=11mm] (s) {$S_\phi(x,u)$\\ escalar};
+  \draw[flecha] (cat) -- (c1);
+  \foreach \a/\b in {c1/c2, c2/c3, c3/c4, c4/c5} \draw[flecha] (\a) -- (\b);
+  \draw[flecha] (c5) -- node[rotulo, above, font=\tiny] {promedio} node[rotulo, below, font=\tiny] {900 parches} (s);
+  \node[rotulo, below=2.5mm of c3, align=center] {LeakyReLU (0,2) tras las capas 1 a 4; NI: normalización por instancia;\\ campo receptivo de cada parche: $70\times70$ píxeles};
+  \node[font=\small\bfseries, anchor=west] at (-2.3,1.45) {(b)};
+  \node[anchor=west, font=\small] at (-1.65,1.45) {Crítico PatchGAN condicional (2\,762\,817 parámetros)};
+\end{scope}
+\end{tikzpicture}
+\end{document}

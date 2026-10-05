@@ -1,0 +1,80 @@
+% Figura 3.1 — Cadena de generación y verificación del conjunto de datos del OE1
+% (campaña de 114 vistas). Fuente editable (TikZ).
+% Compilar con:  pdflatex fig3-1_flujo_oe1.tex   (salida vectorial, fuentes incrustadas)
+% Tipografía idéntica a la del libro (Latin Modern, T1). Paleta Paul Tol "bright".
+\documentclass[12pt,border=2pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{babel,positioning,arrows.meta,calc,fit,backgrounds}
+
+\definecolor{tolblue}{HTML}{4477AA}
+\definecolor{tolcyan}{HTML}{66CCEE}
+\definecolor{tolgreen}{HTML}{228833}
+\definecolor{tolyellow}{HTML}{CCBB44}
+\definecolor{tolred}{HTML}{EE6677}
+\definecolor{tolpurple}{HTML}{AA3377}
+\definecolor{tolgrey}{HTML}{BBBBBB}
+
+\begin{document}
+\footnotesize
+\begin{tikzpicture}[
+  node distance=5.5mm and 5mm,
+  >={Stealth[length=2.2mm]},
+  etapa/.style={draw=#1!85!black, fill=#1!12, rounded corners=2pt, line width=0.6pt,
+                minimum width=60mm, minimum height=10mm, align=center, inner sep=2.5pt},
+  insumo/.style={draw=#1!85!black, fill=#1!12, rounded corners=2pt, line width=0.6pt,
+                 minimum width=44mm, minimum height=10mm, align=center, inner sep=2.5pt},
+  producto/.style={font=\scriptsize\itshape, text=black!70, align=right},
+  flecha/.style={->, line width=0.7pt, draw=black!75},
+  apoyo/.style={->, line width=0.6pt, draw=black!55, dashed}
+]
+
+% ---- Insumos ---------------------------------------------------------------
+\node[insumo=tolgreen] (catalogo) {{\bfseries Catálogo de escenarios}\\[1pt]
+  19 geometrías; construcción corregida};
+\node[insumo=tolgreen, right=8mm of catalogo] (fuente) {{\bfseries Fuente de muones}\\[1pt]
+  dirección: Guan; momento: EcoMug};
+
+% ---- Cadena principal -------------------------------------------------------
+\node[etapa=tolcyan, below=10mm of $(catalogo.south)!0.5!(fuente.south)$] (ensayos)
+  {{\bfseries Ensayos y controles previos}\\[1pt] corrección geométrica, malla angular, observable, piloto};
+\node[etapa=tolblue, below=of ensayos] (campana)
+  {{\bfseries Campaña en Geant4 11.4.2}\\[1pt] 114 vistas $\times$ $3{,}44\times10^{8}$ primarios; 1\,026 bloques};
+\node[etapa=tolblue, below=of campana] (fusion)
+  {{\bfseries Publicación verificada y fusión}\\[1pt] 114 histogramas con $E_k>3$~GeV};
+\node[etapa=tolpurple, below=of fusion] (calidad)
+  {{\bfseries Evaluación de calidad}\\[1pt] bordes ($\pm1$~pp) y suficiencia en roca};
+\node[etapa=tolyellow, below=of calidad] (pares)
+  {{\bfseries Exportación y adelgazamiento binomial}\\[1pt] 4 fracciones $\times$ 20 realizaciones por vista};
+\node[etapa=tolyellow, below=of pares] (particion)
+  {{\bfseries Partición por geometría}\\[1pt] 12 / 3 / 3 / 1 geometrías};
+\node[etapa=tolred, below=of particion] (conjunto)
+  {{\bfseries Conjunto sintético del OE1}\\[1pt] 114 referencias y 9\,120 pares};
+
+% ---- Verificación independiente (apoyo) -------------------------------------
+\node[insumo=tolgrey, dashed, right=9mm of calidad, minimum width=27mm, text width=26mm]
+  (verificacion) {{\bfseries Verificación independiente}\\[1pt] huellas de archivo\\ y de contenido};
+
+% ---- Flechas -------------------------------------------------------------------
+\draw[flecha] (catalogo.south) -- ++(0,-3.5mm) -| ($(ensayos.north)+(-12mm,0)$);
+\draw[flecha] (fuente.south) -- ++(0,-3.5mm) -| ($(ensayos.north)+(12mm,0)$);
+\foreach \a/\b in {ensayos/campana, campana/fusion, fusion/calidad, calidad/pares, pares/particion, particion/conjunto}
+  \draw[flecha] (\a) -- (\b);
+\draw[apoyo] (verificacion.north) |- (fusion.east);
+\draw[apoyo] (verificacion.south) |- (pares.east);
+\draw[apoyo] (verificacion.south) |- (conjunto.east);
+
+% ---- Productos que enlazan las etapas ------------------------------------------
+\node[producto, left=4mm of ensayos] {receta y\\ manifiesto congelados};
+\node[producto, left=4mm of campana] {bloques con\\ semilla y recibo};
+\node[producto, left=4mm of fusion] {histogramas,\\ metadatos y huellas};
+\node[producto, left=4mm of calidad] {informe de\\ evaluación};
+\node[producto, left=4mm of pares] {80 pares por vista,\\ uint32 sin recorte};
+\node[producto, left=4mm of particion] {inventario\\ y huellas};
+
+\end{tikzpicture}
+\end{document}

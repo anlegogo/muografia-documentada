@@ -1,0 +1,5 @@
+Copias obtenidas con git show desde anlegogo/muografia-documentada, origin/main = 08cdc0c (2026-10-04 14:17).
+oe2_evidencias_ef01-c2_resultados.json = objetivo-2/evidencias/ef01-c2/resultados.json
+oe2_evidencias_ef01-c2_comparacion.json = objetivo-2/evidencias/ef01-c2/comparacion.json
+oe3_evidencias_curvas-v1_curvas.json = objetivo-3/evidencias/curvas-v1/curvas.json
+oe2_evaluacion-final-v1.json = objetivo-2/entregas/2026-10-04-evaluacion-final-f05/datos/evaluacion-final-f05/informe-v1/evaluacion-final.json

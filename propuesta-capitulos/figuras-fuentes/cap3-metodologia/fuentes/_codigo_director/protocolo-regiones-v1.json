@@ -1,0 +1,26 @@
+{
+  "schema": "oe2-regiones-geometricas-v1",
+  "date": "2026-10-03",
+  "split": "val",
+  "fraction": 0.05,
+  "methods": [
+    "entrada",
+    "unet",
+    "cgan"
+  ],
+  "detector_distance_m": 1000,
+  "detector_height_m": 1.5,
+  "ray_max_m": 3000,
+  "cone_top_radius_m": 0.1,
+  "anomaly_min_length_m": 20,
+  "core_erosion_pixels": 1,
+  "rock_sky_margin_pixels": 2,
+  "control_same_elevation": true,
+  "control_cone_length_relative_tolerance": 0.05,
+  "control_donors_per_pixel": 5,
+  "min_matched_pixels": 20,
+  "min_match_fraction": 0.8,
+  "normalization_scale": 8.239329427901795,
+  "selection": "fixed before regional metrics; previous validation outputs already observed",
+  "decision": "descriptive comparison only; no physical acceptance thresholds established"
+}

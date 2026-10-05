@@ -1,0 +1,73 @@
+\documentclass[12pt,a4paper,oneside,openany]{book}
+
+% Configuración general y datos editables del documento.
+\input{settings}
+\input{datos}
+
+\begin{document}
+
+% -----------------------------------------------------------------------------
+% Páginas iniciales sin numeración
+% -----------------------------------------------------------------------------
+\hypersetup{pageanchor=false}
+\pagenumbering{gobble}
+\pagestyle{empty}
+\input{preliminares/portada}
+\input{preliminares/contraportada}
+\hypersetup{pageanchor=true}
+
+% Si se requieren, activar las líneas siguientes.
+% \input{preliminares/dedicatoria}
+% \input{preliminares/agradecimientos}
+
+% -----------------------------------------------------------------------------
+% Elementos preliminares con numeración romana
+% -----------------------------------------------------------------------------
+\frontmatter
+\pagenumbering{Roman}
+\pagestyle{plain}
+
+\tableofcontents
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Índice de tablas}
+\listoftables
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Índice de figuras}
+\listoffigures
+
+% Activar cuando la cantidad de siglas justifique una lista independiente.
+% \input{preliminares/lista_abreviaturas}
+
+\input{preliminares/resumen} % Completar al finalizar los capítulos.
+\input{preliminares/abstract} % Traducción fiel del resumen definitivo.
+
+% -----------------------------------------------------------------------------
+% Cuerpo principal con numeración arábiga
+% -----------------------------------------------------------------------------
+\mainmatter
+\pagestyle{plain}
+
+\input{capitulos/01_introduccion}
+\input{capitulos/02_marco_teorico}
+\input{capitulos/03_metodologia}
+\input{capitulos/04_resultados_discusion}
+\input{capitulos/05_conclusiones_trabajo_futuro}
+
+% -----------------------------------------------------------------------------
+% Referencias y anexos
+% -----------------------------------------------------------------------------
+% Bibliografía inicial de la plantilla: visible aunque aún no haya citas.
+% Retirar este nocite cuando el texto tenga sus citas definitivas.
+\nocite{bonomi2020,pagano2021,agostinelli2003,ronneberger2015,gulrajani2017,isola2017,wang2004}
+\imprimirreferencias
+
+% Los anexos se ubican después de las referencias. El archivo puede permanecer
+% vacío mientras no existan anexos aprobados para el documento.
+\appendix
+\input{anexos/anexos}
+
+\end{document}
