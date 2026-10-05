@@ -1,5 +1,7 @@
 # Muografía: documentación y seguimiento académico
 
+**Informe integrado — 2026-10-04:** [metodología, resultados, discusión y conclusiones](informe-final/README.md) redactados y revisados, con seis figuras y tablas trazables. La integración del núcleo experimental está completa en Markdown; resta adaptación institucional y revisión de autores. El cumplimiento científico parcial de OE2/OE3 se conserva.
+
 **Estado vigente del OE3 — 2026-10-04:** [cierre experimental y documental](objetivo-3/CIERRE_OE3.md). Evaluación finalizada; cumplimiento científico parcial. No se demuestra un factor de reducción bajo el benchmark y no se reconstruyó opacidad cuantitativa. No quedan nuevas corridas asignadas; resta la integración del informe final. Las notas inferiores conservan la cronología y no reabren encargos superados.
 
 **Revisión vigente del complemento OE3-C1:** se verificaron las 96 matrices nuevas y se reprodujo la evaluación multifracción. Ningún modelo satisface conjuntamente SSIM/PSNR del referente sin red al 50 % en las fracciones estudiadas; no se demuestra un factor de reducción bajo ese benchmark. SNR/CNR y contraste de cuentas evaluados; la opacidad cuantitativa continúa delimitada. [Auditoría y balance](objetivo-3/REVISION_COMPLEMENTO_OE3_C1.md). No se encarga otro entrenamiento por este resultado negativo.

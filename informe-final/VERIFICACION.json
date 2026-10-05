@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-04",
+  "status": "verificado",
+  "checks": {
+    "links": {
+      "count": 50,
+      "broken": []
+    },
+    "metrics_source_rows": 72,
+    "benchmark": {
+      "rows": 768,
+      "passes_both": 0
+    },
+    "dataset_arithmetic": {
+      "views": 114,
+      "pairs": 9120,
+      "primaries": 39216000000,
+      "partition_geometry_sum": 19
+    },
+    "prediction_arithmetic": {
+      "new": 11520,
+      "reused": 3840
+    },
+    "figures": 6,
+    "tables": {
+      "f05_rows": 18,
+      "cgan_multifraction_rows": 8,
+      "local_rows": 4
+    },
+    "scope": "Editorial consistency and source-to-table generation; no new scientific evaluation or rendering"
+  }
+}

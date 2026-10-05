@@ -1,5 +1,7 @@
 # Cierre experimental y documental del objetivo específico 3
 
+**Actualización editorial posterior:** el [núcleo del informe final](../informe-final/README.md) ya integra metodología, resultados, discusión y conclusiones. P04 deja de estar pendiente en esa parte; la adaptación institucional y revisión por autores permanecen. Este avance documental no modifica el balance científico de este cierre. La tabla inferior conserva la disposición de la fecha de cierre experimental.
+
 Fecha: 2026-10-04, Colombia. Base revisada: `d7c865a78a30f030ba0633bbc50fb0b6155e2143`.
 
 **Estado vigente: ejecución y revisión experimental cerradas; cumplimiento científico parcial, con resultado negativo para el benchmark y limitaciones explícitas.** Se atiende la solicitud de la dirección de concluir el trabajo realizable con la evidencia disponible. No se declara cumplimiento pleno de la propuesta, aprobación institucional ni demostración de un factor físico positivo.

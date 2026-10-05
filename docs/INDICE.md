@@ -1,5 +1,7 @@
 # Índice de documentación
 
+- [Informe integrado de los tres objetivos: capítulos, figuras, nomenclatura y revisión de coherencia](../informe-final/README.md).
+
 - [OE3: cierre experimental, balance de cumplimiento y disposición de pendientes](../objetivo-3/CIERRE_OE3.md).
 
 - [OE3: opacidad nominal del catálogo, controles y límites de inversión](../objetivo-3/OPACIDAD_NOMINAL_Y_ALCANCE.md).

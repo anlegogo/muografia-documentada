@@ -1,5 +1,9 @@
 # Bitácora de preparación del OE3
 
+## Integración editorial — 2026-10-04, Colombia
+
+Por autorización de la dirección se integran metodología, resultados, discusión y conclusiones de los tres objetivos en [informe-final](../informe-final/README.md). Se generan tres tablas desde la síntesis auditada, se enlazan seis figuras conservadas y se documentan nomenclatura y contraste con la propuesta. OE3-P04 queda con núcleo experimental integrado; la maquetación institucional y revisión de autores continúan separadas. No se ejecuta cómputo científico nuevo ni se cambia el balance parcial. Evidencia: FUENTES.json y VERIFICACION.json del informe.
+
 ## Cierre experimental y documental — 2026-10-04, Colombia
 
 Por solicitud de la dirección se consolida el [cierre](CIERRE_OE3.md) sobre main `d7c865a`. Se revisan la auditoría OE3-C1, la opacidad nominal y el alcance/receta adoptados del OE1. No se ejecutan nuevas inferencias ni simulaciones. Se registra evaluación terminada, benchmark negativo y cumplimiento científico parcial; se conservan nulos f_min y R. P02/P03/P06 se disponen con sus limitaciones, sin declararlos verificados por cierre administrativo. P04 sigue como integración editorial. Se actualizan entradas e índice; originales y datos permanecen intactos.

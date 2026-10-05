@@ -1,5 +1,12 @@
 # Registro de cambios
 
+## Informe integrado y revisión de coherencia — 2026-10-04, Colombia
+
+- Se redactan metodología, resultados, discusión y conclusiones, con seis figuras existentes y tres tablas de la síntesis auditada.
+- Se añaden nomenclatura, trazabilidad de fuentes y revisión de coherencia con la propuesta.
+- Se mantiene el benchmark negativo, la distinción entre cuentas y opacidad y el cumplimiento científico parcial de OE2/OE3.
+- No se modifican datos, pesos ni entregas de estudiantes; queda preparada la integración experimental para la edición institucional.
+
 ## Cierre experimental del OE3 — 2026-10-04, Colombia
 
 - Se consolida el registro de cierre, con evidencia, definición del factor y disposición de OE3-P01 a P06.

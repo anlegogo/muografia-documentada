@@ -1,0 +1,93 @@
+{
+  "schema": "muografia-integracion-editorial-v1",
+  "date": "2026-10-04",
+  "base_tree_sha": "f0b803743b22bd8d7cea90aa4cb4af8803281c18",
+  "scientific_reexecution": false,
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "git_blob_sha": "f038d1295027c820aece6a388ebe354b472bdab3"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "git_blob_sha": "13d3a1a578defc5fb96865199ee6867edcb2b2da"
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "ab3d94abbe09e7dea5c9ac49af0dca809ff4d87d"
+    },
+    {
+      "path": "docs/INDICE.md",
+      "git_blob_sha": "366b293968760134e54728691df940071c9486f3"
+    },
+    {
+      "path": "docs/REVISION_PROPUESTA_APROBADA.md",
+      "git_blob_sha": "8692bbb3e7161a32d63d2501255066942ce3e80c"
+    },
+    {
+      "path": "objetivo-1/FICHA_CONJUNTO_OE1.md",
+      "git_blob_sha": "591623c4671112feef6ba4322a5feeba0f3788d5"
+    },
+    {
+      "path": "objetivo-1/SINTESIS_RESULTADOS_OE1.md",
+      "git_blob_sha": "eab9d1b336364d2e0479ddf7178009323fef4251"
+    },
+    {
+      "path": "objetivo-1/figuras/cierre-2026-10-03/01-referencias.png",
+      "git_blob_sha": "321be4231292870dc4a922390ccf66d42f0a4e51"
+    },
+    {
+      "path": "objetivo-1/figuras/cierre-2026-10-03/02-pares.png",
+      "git_blob_sha": "bd29abe5b5a00ac6552af0da682a6a2c878c1753"
+    },
+    {
+      "path": "objetivo-1/figuras/cierre-2026-10-03/03-calidad-roca.png",
+      "git_blob_sha": "f8384d54dd351f06b07627c1319e224e04ecbbc0"
+    },
+    {
+      "path": "objetivo-2/manuscrito/INFORME_OE2.md",
+      "git_blob_sha": "bf9df97e2caed7b363f96f3debb03dd0585dc2e0"
+    },
+    {
+      "path": "objetivo-2/manuscrito/TABLAS_OE2.md",
+      "git_blob_sha": "8c971f4d1044b7a168e1a5c35802064afd150313"
+    },
+    {
+      "path": "objetivo-2/manuscrito/figuras/caso-desfavorable.png",
+      "git_blob_sha": "cbdeeade6b3c19f2644ba9f6dd21d2a9e51d90d6"
+    },
+    {
+      "path": "objetivo-2/manuscrito/figuras/comparacion-fija.png",
+      "git_blob_sha": "87f123d3a40016ab605c8eb21bcc3e4011e975af"
+    },
+    {
+      "path": "objetivo-3/BITACORA.md",
+      "git_blob_sha": "4bc3732cfda4177ec2292240372cac266585d4ba"
+    },
+    {
+      "path": "objetivo-3/CIERRE_OE3.md",
+      "git_blob_sha": "e525f9b0e293d6f1c1291662ba15a0a7935af1fa"
+    },
+    {
+      "path": "objetivo-3/PROTOCOLO_COMPLEMENTO_OE3.md",
+      "git_blob_sha": "acd6cd7e9ecc2fdadaf1c78347a34fe216266a2f"
+    },
+    {
+      "path": "objetivo-3/REVISION_COMPLEMENTO_OE3_C1.md",
+      "git_blob_sha": "fd846b9621992a21bb847164c1043953e4c58a08"
+    },
+    {
+      "path": "objetivo-3/evidencias/revision-complemento-c1/benchmark_por_vista.csv",
+      "git_blob_sha": "46bcb366ffff7d90efe5f64baa2ed3124525a906"
+    },
+    {
+      "path": "objetivo-3/evidencias/revision-complemento-c1/curvas-complemento.svg",
+      "git_blob_sha": "5e8f0fb421a7c6eb3ce4ccf5397cdc1a736515e5"
+    },
+    {
+      "path": "objetivo-3/evidencias/revision-complemento-c1/sintesis_metricas.csv",
+      "git_blob_sha": "e0f8b213957d3095eb3fac4b8f6a76b503cd6894"
+    }
+  ],
+  "proposal_sha256": "7404530659aab451897ac1eb0be05c8fe7ce9b5c96b0131b18fc638684d51084"
+}
