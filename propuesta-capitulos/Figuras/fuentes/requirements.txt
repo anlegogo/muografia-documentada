@@ -1,0 +1,9 @@
+# Figuras del capítulo 2: no requieren paquetes de Python externos.
+# generar_figuras.py usa solo la biblioteca estándar (Python >= 3.9).
+#
+# Requisitos del sistema (no instalables con pip):
+#   - pdfLaTeX (TeX Live 2023+ o MiKTeX) con las clases y paquetes:
+#       standalone, tikz (bibliotecas arrows.meta, calc, intersections,
+#       decorations.pathreplacing, positioning, babel), pgfplots (compat 1.16),
+#       babel (spanish), lmodern, amsmath, amssymb, bm, fontenc, inputenc
+#   - Opcional, para la comprobación vectorial: Poppler (pdfimages, pdffonts)

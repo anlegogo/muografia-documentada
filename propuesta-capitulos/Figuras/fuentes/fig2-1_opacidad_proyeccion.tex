@@ -1,7 +1,8 @@
 % Figura 2.1 — La imagen muográfica por transmisión como proyección (esquema sin escala).
 % Fuente editable (TikZ). Compilar con:  pdflatex fig2-1_opacidad_proyeccion.tex
-% (a) Cada dirección de observación (acimut, elevación) integra la densidad a lo largo
-%     de un trayecto: X = integral de rho dl. Un píxel de la imagen resume todo el trayecto.
+% (a) Cada dirección de observación (acimut alpha, elevación eta) integra la densidad a lo
+%     largo de un trayecto: X = integral de rho(l) dl. Un píxel resume todo el trayecto.
+% Notación igual a la del capítulo 3 (alpha, eta, X, rho, l, L).
 % (b) Ambigüedad espesor-densidad: tres columnas con la misma opacidad
 %     X = 1,06e5 g/cm2: 400 m de roca de 2,65 g/cm3; 530 m de 2,00 g/cm3;
 %     450 m con una cavidad de 50 m y 400 m de roca de 2,65 g/cm3.
@@ -58,12 +59,12 @@
   % Longitud del recorrido en la roca
   \draw[decorate, decoration={brace, amplitude=4pt, raise=3pt}, black!70, line width=0.4pt] (sale) -- (entra)
     node[midway, above=7pt, sloped, etiqueta] {$L$};
-  \node[etiqueta, anchor=west] at (3.2,3.55) {$X(\alpha,e)=\displaystyle\int_{L}\rho\,\mathrm{d}\ell$};
+  \node[etiqueta, anchor=west] at (3.2,3.55) {$X(\alpha,\eta)=\displaystyle\int_{0}^{L}\rho(l)\,\mathrm{d}l$};
 
   % Detector
   \fill[tolred!85!black] ($(det)+(-0.07,-0.12)$) rectangle ($(det)+(0.07,0.22)$);
   \node[etiqueta, anchor=north] at ($(det)+(0,-0.15)$) {detector};
-  \node[etiqueta, anchor=north west, align=left] at (3.2,3.05) {cada dirección $(\alpha,e)$\\ es un píxel de la imagen;\\ $L$: recorrido en la roca};
+  \node[etiqueta, anchor=north west, align=left] at (3.2,3.05) {cada dirección $(\alpha,\eta)$\\ es un píxel de la imagen;\\ $L$: recorrido en la roca};
   \node[font=\small\bfseries] at (-3.2,4.3) {(a)};
 \end{scope}
 

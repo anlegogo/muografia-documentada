@@ -5,30 +5,47 @@
 Se construyó con lo documentado en este repositorio y se presenta para recibir observaciones. No reemplaza ninguna entrega ni modifica `main`, `originales/`, `objetivo-*/` ni las entregas previas.
 
 - **Plantilla:** `main.tex` y `settings.tex` son los de la dirección, sin cambios.
-- **Origen:** manuscrito de los autores en `muography-thesis`, rama `docs/caps-1-2`, commit `be8dc79`.
+- **Capítulos 3 y 4:** copias de los que la dirección integró en Overleaf el 2026-10-04 (`main` `9558099`).
+  - El único ajuste es de referencias cruzadas en el capítulo 3: la opacidad y la esperanza del conteo remiten a sus ecuaciones del capítulo 2 en lugar de repetirlas.
 - **Base en este repositorio:** la rama parte de `main` en `f0b8037`.
 
-**Documento compilado:** [Propuesta_Capitulos_Tesis.pdf](Propuesta_Capitulos_Tesis.pdf), 75 páginas.
+**Documento compilado:** [Propuesta_Capitulos_Tesis.pdf](Propuesta_Capitulos_Tesis.pdf), 89 páginas.
 
 ## Contenido y estado por capítulo
 
 | Parte | Contenido | Estado |
 |---|---|---|
-| Resumen y abstract | Descripción del trabajo y resultados con las cifras C2 | **Completo** respecto de OE1 y OE2. Falta añadir el resultado del complemento OE3-C1 y el cierre del OE3 |
-| 1. Introducción | Problema, justificación, objetivos (texto literal de la propuesta aprobada), alcance y estructura | **Completo** |
-| 2. Marco teórico | Capítulo reservado: título y secciones §2.1–2.8, sin contenido | **Retirado de esta propuesta**, según el orden indicado por la dirección: primero los capítulos 3 y 4, luego el 5 y, con esos tres, el 2. Se retiraron sus dos figuras; sus fuentes se conservan en `figuras-fuentes/cap2/` |
-| 3. Metodología | OE1 (campaña de 114 vistas); OE2 (implementación v1, U-Net y crítico PatchGAN, WGAN-GP con las correcciones OE2-P01 y CG-04c, ensayos de desarrollo y protocolo EF-01 con la corrección C2); OE3 (factor nominal y curvas descriptivas) | **Parcial.** Completo hasta `d45470b`. No describe el protocolo del complemento OE3-C1. **Debe conciliarse con el capítulo 3 que la dirección montó en Overleaf el 2026-10-04**, con recuadros `met_01` a `met_09`: las nueve figuras `met_*` están en `Figuras/`, con sus fuentes, pero aún no se insertan en el texto, que conserva las figuras `fig3-*` |
-| 4. Resultados y discusión | Capítulo reservado: título y secciones de OE1, OE2 y OE3, sin contenido | **Retirado de esta propuesta.** Queda pendiente de integrarse a partir del informe de la dirección (`informe-final/04_RESULTADOS.md` y `05_DISCUSION_CONCLUSIONES.md`, `main` `9558099`). Se conservan las etiquetas de sección para que las referencias de los demás capítulos se resuelvan, y se retiraron sus ocho figuras |
-| 5. Conclusiones y trabajo futuro | Capítulo reservado: título y secciones (conclusiones por objetivo, conclusión general y trabajo futuro), sin contenido | **Retirado de esta propuesta.** Queda pendiente de integrarse a partir del informe de la dirección (`informe-final/05_DISCUSION_CONCLUSIONES.md`, `main` `9558099`). Se conservan las etiquetas de sección para que las referencias de los demás capítulos se resuelvan |
+| Resumen y abstract | Descripción del trabajo y resultados con las cifras C2 | **Por actualizar.** Falta añadir el complemento OE3-C1 y el cierre del OE3 |
+| 1. Introducción | Problema, justificación, objetivos (texto literal de la propuesta aprobada), alcance y estructura | **Por conciliar.** El alcance todavía dice que las redes se evaluaron con una sola fracción; la evaluación multifracción OE3-C1 lo modificó |
+| 2. Marco teórico | Muones y su paso por la materia; imagen por transmisión (opacidad, proyección, no unicidad); estadística de conteo (Poisson, adelgazamiento binomial, Clopper–Pearson, Bonferroni, compresión logarítmica); simulación con Geant4 y EcoMug; aprendizaje profundo (U-Net, GAN condicional, crítico de parches, Wasserstein y penalización del gradiente); métricas de similitud y de conservación; estado del arte | **Completo, versión 2.** Contiene solo los conceptos que usa el capítulo 3, en el orden en que los necesita y con su misma notación. Tiene tres figuras vectoriales con fuente en `Figuras/fuentes/` |
+| 3. Metodología | Texto de la dirección en Overleaf | **Completo** (dirección) |
+| 4. Resultados y discusión | Texto de la dirección en Overleaf | **Completo** (dirección) |
+| 5. Conclusiones y trabajo futuro | Conclusiones por objetivo con cumplimiento parcial; conclusión general; trabajo futuro como plan para completar lo propuesto | **Propuesta de los autores** sobre los capítulos 3 y 4 |
 | Anexos | — | **Pendiente** |
 
-## Evidencia en que se sustenta cada objetivo (commits de este repositorio)
+## Capítulo 2: criterio y conceptos
 
-| Objetivo | Incorporado en la propuesta | Publicado después y aún no incorporado |
-|---|---|---|
-| OE1 | Síntesis de resultados del OE1 (`4529c49`); entrega de la campaña (`f395570`); rama de entrega `oe1/justificacion-fisica-produccion` (`800ab86`) | — |
-| OE2 | Evaluación final y corrección C2 (`1214307`); informe académico y matriz de cumplimiento (`166be6f`); precisión sobre calidad comparable (`d45470b`) | — |
-| OE3 | Curvas descriptivas de exposición (`08cdc0c`); comparación por geometría (`d45470b`) | Desglose por vista (`4a74e55`); revisión de la propuesta (`f1094d7`); protocolo OE3-C1 (`39d8fd3`); entrega y auditoría OE3-C1 (`5c3b0ee`, `64ca8b2`); opacidad nominal (`d7c865a`); cierre del OE3 (`f0b8037`) |
+El capítulo explica el fundamento y deja el procedimiento al capítulo 3. No adelanta decisiones ni resultados. Cada concepto se incluyó porque el capítulo 3 lo usa sin explicar su fundamento:
+
+- **Física del muón:** flujo, dependencia cenital y parametrización de Guan; pérdida de energía y energía mínima; dispersión múltiple.
+- **Imagen por transmisión:** opacidad como integral de línea; transmisión; proyección frente a volumen; no unicidad espesor–densidad; diferencia entre contraste de cuentas y opacidad.
+- **Estadística de conteo:** proceso de Poisson y E[N(t)] = λt; ruido relativo; referencia finita; adelgazamiento binomial; intervalos de Clopper–Pearson; corrección de Bonferroni; compresión logarítmica.
+- **Simulación:** Monte Carlo con Geant4; lista de física; corte de producción frente a umbral de registro; materiales de referencia; EcoMug; brecha entre simulación y realidad.
+- **Aprendizaje profundo:**
+  - aprendizaje supervisado y Adam; validación y fuga de información;
+  - redes convolucionales y campo receptivo; U-Net;
+  - pérdida L1; GAN condicional y crítico de parches;
+  - distancia de Wasserstein y penalización del gradiente.
+- **Métricas:** MSE, PSNR y SSIM; compromiso entre distorsión y percepción; sesgo regional y error espacial; borde; contraste y signo; indicadores locales.
+
+Respecto de la versión 1 se retiró lo que el capítulo 3 no usa:
+- el tiempo de detección de una anomalía;
+- el riesgo de alucinación;
+- la inversión conjunta con gravimetría;
+- la fórmula de Highland;
+- el detalle de aplicaciones volcánicas, que queda resumido en el estado del arte.
+
+Todas las referencias del capítulo tienen DOI o identificador arXiv verificados. La única nueva es `goodfellow2014` (arXiv:1406.2661). Se añadieron también `repositorioMuografia2026` y `propuestaCapitulos2026`, que citan los capítulos 3 y 4 de la dirección.
 
 ## Cómo compilar
 
@@ -38,23 +55,13 @@ Desde esta carpeta, con pdfLaTeX y Biber: pdfLaTeX → Biber → pdfLaTeX → pd
 latexmk -pdf main.tex
 ```
 
-El resultado son 75 páginas, sin errores ni referencias o citas indefinidas. Las figuras están en `Figuras/` en PDF vectorial. Sus fuentes (TikZ, Matplotlib y PGFPlots) y los datos verificados por SHA-256 están en `figuras-fuentes/`:
+El resultado son 89 páginas, sin errores, sin referencias o citas indefinidas y sin cajas desbordadas. Las figuras están en `Figuras/`, todas en PDF vectorial.
 
-| Carpeta | Contenido | README |
-|---|---|---|
-| `cap2/` | Figuras del capítulo 2 | `figuras-fuentes/cap2/README.md` |
-| `oe1-v3/` | Figuras del OE1 | `figuras-fuentes/oe1-v3/README.md` |
-| `oe2-v4/` | Figuras y tablas del OE2 y del OE3 | `figuras-fuentes/oe2-v4/figuras/README.md` |
-| `cap3-metodologia/` | Figuras `met_*` | `figuras-fuentes/cap3-metodologia/README.md` |
-
-Los datos de figuras se conservan con sus bytes exactos (ver `.gitattributes`). El historial de cambios del texto está en `figuras-fuentes/oe2-v4/REGISTRO_CAMBIOS.md`.
+- **Capítulo 2:** fuentes en `Figuras/fuentes/`: archivos TikZ y PGFPlots, `generar_figuras.py`, `requirements.txt` y `README.md`. Para regenerarlas y comprobar que son vectoriales, ejecutar `python Figuras/fuentes/generar_figuras.py`.
+- **Capítulos 3 y 4:** sus figuras están en `Figuras/`. Sus fuentes se organizarán con la misma estructura; las históricas siguen en `figuras-fuentes/`.
 
 ## Puntos que requieren decisión de la dirección
 
 1. **Declaración de uso de herramientas de IA.** El documento no contiene ninguna. Se solicita indicar si debe incluirse y dónde: en los preliminares, en la metodología o en un anexo.
 2. **`\nocite` en `main.tex`.** La plantilla conserva un `\nocite` de siete referencias con la indicación de retirarlo cuando el texto tenga sus citas definitivas. Las siete ya se citan en el texto. Como `main.tex` es de la dirección, no se modificó.
-3. **Criterio de calidad para el factor de reducción.** El texto informa el factor nominal 1/f = 20, las razones nominales y las comparaciones descriptivas, y declara que el factor alcanzable no está demostrado. Se solicita confirmar cómo debe presentarse en el libro:
-   - el benchmark operativo del complemento OE3-C1 (referente sin red al 50 %, con resultado nulo);
-   - la comparación descriptiva 2:1 frente a la entrada al 10 %;
-   - u otro criterio.
-4. **Hallazgo del contraste de Geant4.** El contraste de Geant4 resultó unas diez veces más débil que el del motor analítico. No se incluyó en el libro y queda a decisión de la dirección.
+3. **Ajuste de referencias cruzadas en el capítulo 3.** Para no repetir ecuaciones del capítulo 2, la opacidad y la esperanza del conteo del capítulo 3 remiten a sus ecuaciones del capítulo 2. Si la dirección prefiere conservarlas en el capítulo 3, se revierte sin otros efectos.
