@@ -1,5 +1,7 @@
 # Revisión directa de la propuesta aprobada: alcance de OE2 y OE3
 
+**Actualización posterior al complemento OE3-C1:** la evaluación multifracción y las métricas SNR/CNR ya fueron ejecutadas y auditadas. El benchmark no se satisface; no se demuestra un factor bajo esa regla. La distinción entre contraste de cuentas y opacidad permanece. [Estado vigente y evidencia](../objetivo-3/REVISION_COMPLEMENTO_OE3_C1.md). Las tablas inferiores conservan los pendientes identificados en la lectura inicial de la propuesta.
+
 Fecha de revisión: 2026-10-04, Colombia. Se volvió a abrir y leer directamente `Plan_trabajo_grado.pdf`, fuente aprobada identificada por la dirección. Se extrajo el texto de sus 35 páginas y se inspeccionaron visualmente las páginas PDF 26 y 29. No se editó ni reexportó el PDF.
 
 **Identidad del archivo:** 2.784.610 bytes; SHA-256 `7404530659aab451897ac1eb0be05c8fe7ce9b5c96b0131b18fc638684d51084`. La paginación impresa difiere en dos unidades del índice físico del PDF. Esta lectura supera la limitación de acceso registrada en las revisiones anteriores; sus notas se conservan como antecedentes. Base de evidencia experimental consultada: `4a74e55ec9e9ea53442b57252718e1866eac7b04`.
@@ -62,3 +64,4 @@ La posibilidad expresada anteriormente de fundamentar el cierre únicamente con 
 **Secuencia recomendada:** preparar primero un protocolo acotado de estos pendientes y sus controles; completar lo calculable con datos/predicciones existentes; delegar únicamente la inferencia adicional que resulte necesaria. No se solicita otra simulación Geant4 ni se inicia entrenamiento por esta revisión. Una nueva evaluación no borra la exposición histórica del catálogo ni convierte automáticamente una decisión posterior en criterio prospectivo.
 
 La revisión presente no ejecuta SNR ni inferencias multifracción. Deja identificado el trabajo faltante contra la propuesta real, conservando el resultado útil ya obtenido.
+

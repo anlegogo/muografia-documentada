@@ -1,0 +1,32 @@
+[
+  {
+    "path": "benchmark_por_vista.csv",
+    "bytes": 83002,
+    "sha256": "ec74ba507384e3acd45b8134908d83764f731d33b4e2ae9514b001afffa80901"
+  },
+  {
+    "path": "curvas-complemento.svg",
+    "bytes": 172086,
+    "sha256": "1c1e7d4ac5d40830febb192fda2d8cb5841ee47ceb8f070b412834df732d05b5"
+  },
+  {
+    "path": "integridad.json",
+    "bytes": 78649,
+    "sha256": "e9a8d573183d4ae41135e8dd46e011b311fc91fb8df619757ad62161073f0ef4"
+  },
+  {
+    "path": "metodo_sintesis.json",
+    "bytes": 8739,
+    "sha256": "acef7ec1ac59ee4be3cc073e08cde342997528e2520a2bcadf063560c2b644b3"
+  },
+  {
+    "path": "reproduccion.json",
+    "bytes": 2887,
+    "sha256": "99fde21e6136788bd9208f6cf82be67dfb83fccd8b3a2fcd198773973ab6bf12"
+  },
+  {
+    "path": "sintesis_metricas.csv",
+    "bytes": 18542,
+    "sha256": "1ecf048c96d03431d3ff01bc8f01198fa93f6200ccb626c72ca18d056f7dc47e"
+  }
+]

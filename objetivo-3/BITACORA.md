@@ -1,5 +1,15 @@
 # Bitácora de preparación del OE3
 
+## Auditoría de la entrega OE3-C1 — 2026-10-04, Colombia
+
+- Se conserva e incorpora la entrega de estudiantes `5c3b0ee`, ejecutada con código `39d8fd3` en una L40S. Se descargan 298 archivos de Drive y se verifican los 294 del manifiesto y 96 matrices (3.019.911.168 bytes; 11.520 predicciones nuevas).
+- La dirección reproduce la evaluación en CPU usando los datos originales y las predicciones recibidas, sin otra inferencia ni entrenamiento. Se comparan todas las tablas y JSON numéricos, conservando diferencias de entorno y exclusiones.
+- El benchmark se revisa también por vista: no se satisface conjuntamente SSIM/PSNR en las 768 combinaciones modelo/fracción/vista. El mínimo y el factor permanecen nulos; no se cambian umbrales para obtener éxito.
+- Se publica síntesis de anomalías sobre soporte común, figura, scripts y evidencia de reproducción. El contraste de cuentas no acredita reconstrucción de opacidad.
+- OE3-P05 verificado; P06 parcial por interpretación de opacidad, P03 con resultado negativo bajo el benchmark y sin factor físico positivo. P04 continúa aplazado. No se recomienda otra GPU por el solo hecho del resultado desfavorable.
+- [Revisión y siguiente decisión metodológica](REVISION_COMPLEMENTO_OE3_C1.md).
+
+
 ## Preparación del complemento OE3-C1 — 2026-10-04, Colombia
 
 - Se fijan cuatro fracciones y ocho modelos congelados; se reutilizan 3.840 predicciones f05 y quedan 11.520 nuevas. No se entrena ni se simulan muones.
@@ -46,4 +56,5 @@
 - OE3-P01 verificado; OE3-P02 y P04 pendientes, P03 parcial. Se espera confirmar objetivo oficial y requisitos de calidad. Continúa redacción del manuscrito sin otra GPU.
 
 [Análisis y evidencia](README.md).
+
 

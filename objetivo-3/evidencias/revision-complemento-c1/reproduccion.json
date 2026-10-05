@@ -1,0 +1,84 @@
+{
+  "delivery_commit": "5c3b0ee6cc305d13b34f70b19c82c63489794206",
+  "code_commit": "39d8fd3e398a540ea42e025fce8c42fa25986dfa",
+  "numeric_tolerance": {
+    "absolute": 1e-10,
+    "relative": 1e-10
+  },
+  "tolerance_purpose": "comparación numérica entre entornos; no aceptación científica",
+  "all_tables_and_json_match": true,
+  "numeric_equal": 607018,
+  "numeric_different": 59243,
+  "maximum_absolute_difference": 7.105427357601002e-15,
+  "maximum_scaled_difference": 2.55351295663786e-15,
+  "largest_differences": [
+    {
+      "path": "metricas_locales.csv/2017/snr_local_intensity",
+      "absolute_difference": 7.105427357601002e-15,
+      "scaled_difference": 5.383798180521538e-16
+    },
+    {
+      "path": "metricas_locales.csv/2019/snr_local_intensity",
+      "absolute_difference": 7.105427357601002e-15,
+      "scaled_difference": 4.4221033572783263e-16
+    },
+    {
+      "path": "metricas_locales.csv/2026/snr_local_intensity",
+      "absolute_difference": 7.105427357601002e-15,
+      "scaled_difference": 3.860433039023488e-16
+    },
+    {
+      "path": "snr_repeticiones.json/358/snr_contrast_repeated_signed",
+      "absolute_difference": 6.217248937900877e-15,
+      "scaled_difference": 1.2202502835321531e-15
+    },
+    {
+      "path": "snr_repeticiones.json/1854/snr_contrast_repeated_signed",
+      "absolute_difference": 5.329070518200751e-15,
+      "scaled_difference": 8.976011775167876e-16
+    },
+    {
+      "path": "metricas_locales.csv/11794/snr_local_intensity",
+      "absolute_difference": 5.329070518200751e-15,
+      "scaled_difference": 5.139509742889059e-16
+    },
+    {
+      "path": "snr_repeticiones.json/142/snr_contrast_repeated_signed",
+      "absolute_difference": 4.440892098500626e-15,
+      "scaled_difference": 1.6362863517774782e-15
+    },
+    {
+      "path": "snr_repeticiones.json/1376/snr_contrast_repeated_signed",
+      "absolute_difference": 4.440892098500626e-15,
+      "scaled_difference": 8.403695975327132e-16
+    },
+    {
+      "path": "snr_repeticiones.json/1686/snr_contrast_repeated_signed",
+      "absolute_difference": 4.440892098500626e-15,
+      "scaled_difference": 1.0831253310985732e-15
+    },
+    {
+      "path": "snr_repeticiones.json/1835/snr_contrast_repeated_signed",
+      "absolute_difference": 4.440892098500626e-15,
+      "scaled_difference": 8.801960939511075e-16
+    }
+  ],
+  "reported_environment": {
+    "python": "3.12.3",
+    "numpy": "2.3.5",
+    "torch": "2.6.0+cu118",
+    "skimage": "0.26.0",
+    "cuda": "11.8"
+  },
+  "reproduced_environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "torch": "2.6.0+cpu",
+    "skimage": "0.26.0",
+    "cuda": null
+  },
+  "new_inference_performed": false,
+  "new_training_performed": false,
+  "benchmark_model_fraction_views": 768,
+  "views_passing_both": 0
+}

@@ -1,5 +1,7 @@
 # Índice de documentación
 
+- [OE3-C1: auditoría de Drive, reproducción y resultado del benchmark](../objetivo-3/REVISION_COMPLEMENTO_OE3_C1.md).
+
 - [OE3-C1: protocolo de evaluación multifracción y métricas locales](../objetivo-3/PROTOCOLO_COMPLEMENTO_OE3.md).
 - [OE3-C1: comandos y entrega para estudiantes](../objetivo-3/INSTRUCCIONES_COMPLEMENTO_OE3.md).
 - [OE3-C1: verificación local y evidencia al 5 %](../objetivo-3/VERIFICACION_COMPLEMENTO_OE3.md).
@@ -154,4 +156,5 @@ Los Markdown originales de los estudiantes permanecen dentro de `originales/`; s
 - [Guía operativa C0/C1 y evidencia local](../objetivo-2/INSTRUCCIONES_CONTINUACION_CGAN_F05.md): recuperación de G/D y dos optimizadores, aceptación GPU, evaluación por anomalía y entrega.
 
 - [Índice verificado de pesos y predicciones E1](../objetivo-2/INDICE_ARTEFACTOS_E1.md).
+
 

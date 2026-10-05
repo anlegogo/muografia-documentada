@@ -1,6 +1,8 @@
 # OE3: evaluación de fracciones de entrada
 
-**Complemento OE3-C1 preparado — 2026-10-04:** se incorporan el [protocolo](PROTOCOLO_COMPLEMENTO_OE3.md), las [instrucciones para estudiantes](INSTRUCCIONES_COMPLEMENTO_OE3.md) y la [verificación local](VERIFICACION_COMPLEMENTO_OE3.md). Se reutiliza el bloque 5 % y se solicitan 11.520 inferencias al 1 %, 10 % y 50 % con los ocho modelos congelados. No hay entrenamiento ni nueva simulación. Esta indicación sustituye las rutas históricas sin GPU que aparecen más abajo, referidas exclusivamente al análisis descriptivo anterior. La evaluación multifracción completa está pendiente.
+**Revisión vigente del complemento OE3-C1:** se verificaron las 96 matrices nuevas y se reprodujo la evaluación multifracción. Ningún modelo satisface conjuntamente SSIM/PSNR del referente sin red al 50 % en las fracciones estudiadas; no se demuestra un factor de reducción bajo ese benchmark. SNR/CNR y contraste de cuentas evaluados; la opacidad cuantitativa continúa delimitada. [Auditoría y balance](REVISION_COMPLEMENTO_OE3_C1.md). No se encarga otro entrenamiento por este resultado negativo.
+
+**Registro de preparación OE3-C1, previo a la entrega — 2026-10-04:** se incorporan el [protocolo](PROTOCOLO_COMPLEMENTO_OE3.md), las [instrucciones para estudiantes](INSTRUCCIONES_COMPLEMENTO_OE3.md) y la [verificación local](VERIFICACION_COMPLEMENTO_OE3.md). Se reutiliza el bloque 5 % y se solicitan 11.520 inferencias al 1 %, 10 % y 50 % con los ocho modelos congelados. No hay entrenamiento ni nueva simulación. Esta indicación sustituye las rutas históricas sin GPU que aparecen más abajo, referidas exclusivamente al análisis descriptivo anterior. La evaluación multifracción fue recibida y auditada posteriormente; véase la revisión vigente al inicio.
 
 **Revisión directa de la propuesta aprobada — 2026-10-04:** se verificaron las fases 3 y 4: requieren detectabilidad local (incluida SNR), evaluación de redes a distintas fracciones y umbrales de calidad predefinidos, sin valores operativos fijados en el PDF. El desglose al 5 % conserva su validez, pero no completa esos compromisos. [Revisión y pendientes OE3-P05/P06](../docs/REVISION_PROPUESTA_APROBADA.md). No se exige campaña de campo; se mantiene aplazada la redacción del informe final.
 
@@ -104,8 +106,9 @@ La revisión de criterio y la síntesis pueden realizarse con la evidencia conse
 
 ## Pendientes identificados en la propuesta
 
-- **OE3-P05, preparado:** herramientas y prueba local disponibles; pendientes 11.520 inferencias nuevas y evaluación conjunta. Las curvas sin red no sustituyen esta ejecución.
-- **OE3-P06, parcial:** SNR/CNR definidos y calculados al 5 %; otras fracciones pendientes. El contraste de cuentas continúa identificado como indicador sustituto; no se ha reconstruido opacidad.
+- **OE3-P05, verificado:** 11.520 inferencias nuevas recibidas y evaluación conjunta reproducida; véase la auditoría vigente.
+- **OE3-P06, parcial:** SNR/CNR y contraste de cuentas calculados y revisados en las cuatro fracciones. El contraste de cuentas continúa identificado como indicador sustituto; no se ha reconstruido opacidad.
 
 Criterios de cierre y secuencia en la [revisión de propuesta](../docs/REVISION_PROPUESTA_APROBADA.md). P03 queda condicionado a estos análisis y P02. El complemento autoriza inferencia de pesos existentes; el informe final sigue aplazado.
+
 
