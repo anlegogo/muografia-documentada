@@ -9,19 +9,33 @@ Se construyó con lo documentado en este repositorio y se presenta para recibir 
   - El único ajuste es de referencias cruzadas en el capítulo 3: la opacidad y la esperanza del conteo remiten a sus ecuaciones del capítulo 2 en lugar de repetirlas.
 - **Base en este repositorio:** la rama parte de `main` en `f0b8037`.
 
-**Documento compilado:** [Propuesta_Capitulos_Tesis.pdf](Propuesta_Capitulos_Tesis.pdf), 89 páginas.
+**Documento compilado:** [Propuesta_Capitulos_Tesis.pdf](Propuesta_Capitulos_Tesis.pdf), 86 páginas.
 
 ## Contenido y estado por capítulo
 
 | Parte | Contenido | Estado |
 |---|---|---|
-| Resumen y abstract | Descripción del trabajo y resultados con las cifras C2 | **Por actualizar.** Falta añadir el complemento OE3-C1 y el cierre del OE3 |
-| 1. Introducción | Problema, justificación, objetivos (texto literal de la propuesta aprobada), alcance y estructura | **Por conciliar.** El alcance todavía dice que las redes se evaluaron con una sola fracción; la evaluación multifracción OE3-C1 lo modificó |
+| Resumen y abstract | Descripción del trabajo y resultados | **Ajustados (2026-10-04)** al resultado de la evaluación multifracción, al factor no demostrado y al alcance sobre anomalías |
+| 1. Introducción | Problema, justificación, objetivos (texto literal de la propuesta aprobada), alcance y estructura | **Ajustada (2026-10-04)** con el mismo criterio que el capítulo 5: OE3 evaluado en cuatro fracciones sin factor demostrado, sin causa atribuida, y anomalías evaluadas en regiones de ubicación conocida |
 | 2. Marco teórico | Muones y su paso por la materia; imagen por transmisión (opacidad, proyección, no unicidad); estadística de conteo (Poisson, adelgazamiento binomial, Clopper–Pearson, Bonferroni, compresión logarítmica); simulación con Geant4 y EcoMug; aprendizaje profundo (U-Net, GAN condicional, crítico de parches, Wasserstein y penalización del gradiente); métricas de similitud y de conservación; estado del arte | **Completo, versión 2.** Contiene solo los conceptos que usa el capítulo 3, en el orden en que los necesita y con su misma notación. Tiene tres figuras vectoriales con fuente en `Figuras/fuentes/` |
 | 3. Metodología | Texto de la dirección en Overleaf | **Completo** (dirección) |
 | 4. Resultados y discusión | Texto de la dirección en Overleaf | **Completo** (dirección) |
-| 5. Conclusiones y trabajo futuro | Conclusiones por objetivo con cumplimiento parcial; conclusión general; trabajo futuro como plan para completar lo propuesto | **Propuesta de los autores** sobre los capítulos 3 y 4 |
-| Anexos | — | **Pendiente** |
+| 5. Conclusiones y trabajo futuro | Conclusiones directas por objetivo (logrado y no demostrado); conclusión general con el alcance sobre anomalías; trabajo futuro como posibles líneas de continuación | **Versión 2 (2026-10-04)**, ajustada según las observaciones de la dirección |
+| Anexo A | Protocolo propuesto para estimar el factor de reducción (pseudocódigo con entradas, salidas y pasos) | **Nuevo.** Se referencia desde la sección 5.5 |
+
+## Cambios del capítulo 5 según las observaciones de la dirección
+
+1. **Conclusiones por objetivo:** cada una dice qué se logró y qué no se demostró, solo con los resultados principales. El detalle remite al capítulo 4.
+2. **OE3:** la evaluación se realizó, pero con el criterio adoptado no se demostró un factor de reducción. Se dice así, sin compensarlo con trabajo futuro.
+3. **Inversión de opacidad e instrumento real:** se presentan como investigación posterior, no como tareas pendientes.
+4. **Trabajo futuro en condicional:** «se propone investigar», «permitiría evaluar», «no garantiza».
+5. **Tabla 5.1:** la columna «Causa de la brecha» pasa a «Limitación identificada». Las explicaciones no comprobadas se presentan como hipótesis.
+6. **Anomalías:** la conclusión general precisa que los indicadores se calcularon en regiones de ubicación conocida y que no demuestran la detección ni la localización de anomalías desconocidas.
+7. **Líneas de trabajo futuro:** cada una tiene un párrafo breve (qué, por qué, qué permitiría evaluar). El algoritmo pasó al anexo A.
+8. **Tabla 5.1 legible:** tabularx con cuatro columnas de ancho controlado, booktabs y texto conciso.
+9. **Última página:** el capítulo termina en una página con contenido suficiente.
+
+Con el mismo criterio se ajustaron el alcance de la introducción, el resumen y el abstract.
 
 ## Capítulo 2: criterio y conceptos
 
@@ -55,7 +69,7 @@ Desde esta carpeta, con pdfLaTeX y Biber: pdfLaTeX → Biber → pdfLaTeX → pd
 latexmk -pdf main.tex
 ```
 
-El resultado son 89 páginas, sin errores, sin referencias o citas indefinidas y sin cajas desbordadas. Las figuras de los capítulos 2, 3 y 4 están en `Figuras/`, todas en PDF vectorial.
+El resultado son 86 páginas, sin errores, sin referencias o citas indefinidas y sin cajas desbordadas. Las figuras de los capítulos 2, 3 y 4 están en `Figuras/`, todas en PDF vectorial.
 
 Sus fuentes están en `Figuras/fuentes/`: un `.tex` o `.py` por figura con el mismo nombre que su PDF, junto con los datos verificados por SHA-256, `generar_figuras.py`, `requirements.txt` y `README.md`. Para regenerar las 20 figuras y comprobar que son vectoriales:
 
