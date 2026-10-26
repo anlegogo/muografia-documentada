@@ -8,15 +8,23 @@ Repositorio de código, evidencia experimental y documentación del trabajo de g
 | Director | Andrés Leonardo González Gómez |
 | Codirector | Jaime Enrique Meneses Fonseca |
 
-**Balance del trabajo:** se construyó y auditó un conjunto sintético y se evaluaron U-Net y cGAN/cWGAN-GP. Se observaron mejoras de similitud de imagen, acompañadas de alteraciones regionales de conteos. **No se demostró un factor de reducción frente al referente sin red al 50 % bajo el criterio adoptado, ni se reconstruyó opacidad cuantitativa.** La evaluación experimental está cerrada; los registros técnicos conservan el cumplimiento científico parcial de OE2/OE3.
+## Propósito y alcance
 
-La dirección informó que el trabajo ya fue sustentado. Esta actualización documental del 26 de octubre de 2026 no certifica una calificación ni modifica las conclusiones experimentales. Las instrucciones fechadas que se conservan en el repositorio son antecedentes y procedimientos de reproducción, no encargos pendientes de nuevas corridas.
+La muografía por transmisión estudia la estructura interna de objetos extensos a partir de los muones cósmicos que los atraviesan. Cuando se registran pocos eventos, las imágenes presentan fluctuaciones de conteo que dificultan su interpretación. Este trabajo estudia si el aprendizaje profundo permite mejorar esas imágenes en escenarios volcánicos sintéticos, tomando como referencia imágenes con mayor estadística.
 
-## Lectura y estructura
+El repositorio reúne los datos documentados, las implementaciones, los procedimientos de evaluación y el informe académico. Permite examinar el método, consultar sus resultados y reproducir distintos niveles del análisis, desde figuras basadas en métricas archivadas hasta inferencia con modelos entrenados.
 
-- [Informe completo: fuentes LaTeX e instrucciones](informe-final/latex/README.md), [PDF disponible](informe-final/latex/main.pdf) y [paquete para Overleaf](informe-final/latex/Trabajo_de_Grado_Muografia_corregido.zip). La versión archivada fue incorporada el 4 de octubre de 2026; no se presume que sea idéntica al ejemplar presentado en la sustentación.
-- [Informe integrado en Markdown](informe-final/README.md): metodología, resultados, discusión y conclusiones.
-- [Índice documental](docs/INDICE.md), [procedencia](docs/PROCEDENCIA.md) y [registro de cambios](CHANGELOG.md).
+**Resultado principal:** U-Net y la red generativa adversaria condicional mejoraron la similitud de imagen, pero también alteraron los conteos regionales. **No se demostró un factor de reducción de adquisición frente al referente sin red al 50 % bajo el criterio adoptado, ni se reconstruyó opacidad cuantitativa.** Estos resultados delimitan el alcance del método en los escenarios y condiciones estudiados.
+
+## Guía de consulta
+
+- **Comprender el estudio:** consultar el [informe en PDF](informe-final/latex/main.pdf), versión archivada el 4 de octubre de 2026, o los capítulos de [metodología, resultados, discusión y conclusiones en Markdown](informe-final/README.md).
+- **Consultar las fuentes del informe:** acceder al [proyecto LaTeX](informe-final/latex/README.md) y al [paquete para Overleaf](informe-final/latex/Trabajo_de_Grado_Muografia_corregido.zip).
+- **Explorar los resultados:** revisar las tablas de este README y sus enlaces a las evaluaciones completas.
+- **Reproducir el análisis:** comenzar por la ejecución rápida sin GPU y continuar, si se dispone de los insumos, con la evaluación de predicciones y modelos.
+- **Examinar la trazabilidad:** consultar el [índice documental](docs/INDICE.md), la [procedencia de los materiales](docs/PROCEDENCIA.md) y el [registro de cambios](CHANGELOG.md).
+
+Las carpetas se organizan por objetivo específico: **OE1**, generación del conjunto sintético; **OE2**, desarrollo y evaluación de modelos; **OE3**, comparación entre estadísticas de conteo y análisis de reducción de adquisición.
 
 | Ruta | Contenido |
 |---|---|
@@ -26,14 +34,14 @@ La dirección informó que el trabajo ya fue sustentado. Esta actualización doc
 | `objetivo-2/herramientas/` | Pilotos, ajustes, inferencia y evaluación final al 5 % |
 | `objetivo-3/herramientas/` | Curvas de conteos, métricas locales y evaluación multifracción |
 | `objetivo-*/evidencias/` | Informes, tablas, inventarios y huellas de las revisiones |
-| `objetivo-*/entregas/` y `objetivo-1/originales/` | Entregas recibidas y antecedentes que deben conservarse |
+| `objetivo-*/entregas/` y `objetivo-1/originales/` | Materiales originales y versiones históricas para trazabilidad |
 | `trabajo/` | Destino local recomendado para insumos y salidas; excluido de Git |
 
-## Qué se implementó
+## Método y conjunto de datos
 
-El flujo experimental comprende simulación de transporte con Geant4 y una fuente basada en Guan/EcoMug, construcción de imágenes de conteos direccionales, adelgazamiento binomial y aprendizaje supervisado. La implementación de aprendizaje incluida utiliza **Python/PyTorch**; la mención de MATLAB entre los recursos de la propuesta no describe el entorno de estos ejecutores.
+El flujo experimental comprende simulación de transporte con Geant4 y una fuente basada en Guan/EcoMug, construcción de imágenes de conteos direccionales, adelgazamiento binomial y aprendizaje supervisado. La implementación de aprendizaje utiliza **Python/PyTorch**. Se comparan una U-Net y una red generativa adversaria condicional de Wasserstein con penalización de gradiente (**cWGAN-GP**, identificada como cGAN en las tablas y archivos).
 
-El [conjunto corregido del OE1](objetivo-1/FICHA_CONJUNTO_OE1.md) contiene:
+El [conjunto sintético documentado](objetivo-1/FICHA_CONJUNTO_OE1.md) contiene:
 
 - 19 geometrías cónicas idealizadas, seis vistas por geometría y 114 referencias de 256 × 256 píxeles.
 - 344 millones de primarios por vista y 39.216.000.000 en toda la campaña.
@@ -46,7 +54,7 @@ Se evaluaron ocho modelos: `unet_original`, `cgan_original` y seis continuacione
 
 ### Calidad de imagen y sesgo regional al 5 %
 
-Valores de la [evaluación corregida C2](objetivo-2/evidencias/ef01-c2/resultados.json), redondeados para lectura. SSIM y PSNR se calculan respecto de la referencia de alta estadística. Q resume sesgo regional de cuentas y no es error de densidad; un valor menor es preferible.
+Valores de la [evaluación con corrección numérica C2](objetivo-2/evidencias/ef01-c2/resultados.json), redondeados para lectura. El índice de similitud estructural (**SSIM**) y la relación señal-ruido de pico (**PSNR**) comparan cada imagen con la referencia de alta estadística; valores mayores indican mayor similitud según estas métricas. **Q** resume sesgo regional de cuentas y no es error de densidad; un valor menor es preferible.
 
 | Partición | Método | SSIM ↑ | PSNR [dB] ↑ | Q [%] ↓ |
 |---|---|---:|---:|---:|
@@ -62,13 +70,13 @@ La prueba comprende tres geometrías y 360 imágenes por método; generalizació
 ### Reducción de conteos y alcance
 
 - La cGAN original al 5 % superó SSIM y PSNR de la entrada sin red al 10 % en las 24 vistas y 480 correspondencias evaluadas; Q empeoró en las 24 vistas. La razón 2:1 es una **comparación descriptiva de conteos**, no un factor físico aceptado.
-- El complemento evaluó los ocho modelos en cuatro fracciones. Se reutilizaron 3.840 predicciones al 5 % y se añadieron 11.520, contenidas en 96 matrices nuevas.
+- La evaluación multifracción incluyó los ocho modelos en cuatro fracciones. Se reutilizaron 3.840 predicciones al 5 % y se añadieron 11.520, contenidas en 96 matrices nuevas.
 - Ninguna de las 768 comparaciones modelo/fracción/vista satisfizo conjuntamente SSIM y PSNR del referente sin red al 50 %. El mínimo aceptado y el factor de reducción quedan **no demostrados**, no iguales a cero o a uno.
-- Se calcularon SNR, CNR y contraste de cuentas; no se demostró conservación uniforme de las anomalías ni una inversión cuantitativa de opacidad.
+- Se calcularon la relación señal-ruido local (SNR), la relación contraste-ruido (CNR) y el contraste de cuentas; no se demostró conservación uniforme de las anomalías ni una inversión cuantitativa de opacidad.
 
-El benchmark se declaró después de conocer resultados históricos y antes de las inferencias nuevas; no es un umbral numérico original de la propuesta. Fuentes: [comparación descriptiva](objetivo-3/RESULTADO_EXPERIMENTAL_OE3.md), [auditoría del complemento](objetivo-3/REVISION_COMPLEMENTO_OE3_C1.md) y [cierre OE3](objetivo-3/CIERRE_OE3.md).
+El criterio de comparación (*benchmark*) exige alcanzar simultáneamente SSIM y PSNR del referente sin red al 50 %, usando medias de veinte realizaciones por vista. Se definió después de conocer resultados históricos y antes de las inferencias multifracción; no constituye un umbral prospectivo independiente. Fuentes: [comparación descriptiva](objetivo-3/RESULTADO_EXPERIMENTAL_OE3.md), [evaluación multifracción](objetivo-3/REVISION_COMPLEMENTO_OE3_C1.md) y [definición del criterio y alcance de las conclusiones](objetivo-3/CIERRE_OE3.md).
 
-El OE1 se cerró dentro del alcance idealizado: 1.710 regiones de borde cumplieron el criterio adoptado y 107/114 vistas alcanzaron la meta descriptiva de roca. Se conservan las siete excepciones en la [ficha del conjunto](objetivo-1/FICHA_CONJUNTO_OE1.md).
+En la evaluación del conjunto sintético, 1.710 regiones de borde cumplieron el criterio adoptado y 107/114 vistas alcanzaron la meta descriptiva de roca. Se conservan las siete excepciones en la [ficha del conjunto](objetivo-1/FICHA_CONJUNTO_OE1.md).
 
 ## Preparación del entorno
 
@@ -87,7 +95,7 @@ Activación:
 - Linux/Bash: `source .venv/bin/activate`
 - Windows/PowerShell: `.\.venv\Scripts\Activate.ps1`
 
-La revisión local de estos ejemplos utilizó Python 3.12.14, NumPy 2.4.4, Matplotlib 3.11.1, SciPy 1.18.1, scikit-image 0.26.0 y PyTorch 2.6.0+cpu. Se utilizó un entorno existente; **no se verificó una instalación nueva desde cero**.
+Los ejemplos se comprobaron en un entorno con Python 3.12.14, NumPy 2.4.4, Matplotlib 3.11.1, SciPy 1.18.1, scikit-image 0.26.0 y PyTorch 2.6.0+cpu. Se utilizó un entorno existente; **no se verificó una instalación nueva desde cero**.
 
 Para análisis y figuras:
 
@@ -122,7 +130,7 @@ python objetivo-3/herramientas/test_comparar_exposiciones_oe3.py
 python objetivo-3/herramientas/test_complemento_oe3.py
 ```
 
-Estos tres archivos completaron 16 pruebas en la revisión de este README. No requieren pesos ni simulación Geant4.
+Estos tres archivos agrupan 16 pruebas de controles de contraste, comparaciones y métricas locales. Su ejecución fue satisfactoria en el entorno documentado; no requieren pesos ni simulación Geant4.
 
 Las cinco pruebas adicionales del evaluador EF-01 necesitan el módulo de métricas en `PYTHONPATH`. En Linux/Bash:
 
@@ -137,11 +145,11 @@ $env:PYTHONPATH = 'objetivo-2/implementacion/scripts/evaluation'
 python objetivo-2/herramientas/test_evaluacion_final_oe2.py
 ```
 
-Requieren permiso de escritura en la carpeta temporal del sistema. Las cinco pruebas pasaron con esa ruta configurada. El comando directo sin `PYTHONPATH` falló por no encontrar `metrics`; se documenta la configuración necesaria sin modificar el código científico.
+Estas cinco pruebas se comprobaron con la ruta indicada y requieren permiso de escritura en la carpeta temporal del sistema. Si aparece `ModuleNotFoundError: No module named 'metrics'`, comprobar que `PYTHONPATH` apunte a la carpeta de evaluación y que el comando se ejecute desde la raíz del repositorio.
 
 ## Reproducción con datos y pesos externos
 
-Clonar este repositorio **no descarga todos los datos, pesos ni predicciones**. Se deben recuperar las distribuciones indicadas en los documentos siguientes y verificar sus tamaños y SHA-256. El acceso actual a esas carpetas externas no se volvió a comprobar en esta revisión editorial; las auditorías enlazadas registran las verificaciones de octubre de 2026.
+Clonar este repositorio **no descarga todos los datos, pesos ni predicciones**. Se deben recuperar las distribuciones indicadas en los documentos siguientes y verificar sus tamaños y SHA-256. Las auditorías enlazadas documentan verificaciones realizadas en octubre de 2026; la disponibilidad actual de cada distribución externa debe comprobarse antes de iniciar la reproducción.
 
 | Insumo | Referencia y ubicación esperada |
 |---|---|
@@ -162,7 +170,7 @@ Con los insumos anteriores, adaptar las cuatro rutas absolutas del comando:
 python objetivo-2/herramientas/controles_contraste_v2.py --repo . --data /ruta/insumos --weights /ruta/pesos-evaluacion.json --predictions /ruta/evaluacion-final-f05 --report /ruta/nueva/revision-c2 --registry-in objetivo-2/evidencias/ef01-c2/controles.json
 ```
 
-Genera el informe `evaluacion-final.json`, tablas y registro de controles usando índices C2. No entrena. La reevaluación completa no se repitió para editar este README; su evidencia histórica está en la [revisión C2](objetivo-2/REVISION_EVALUACION_FINAL_C2.md).
+Genera el informe `evaluacion-final.json`, tablas y registro de controles usando los índices C2, sin entrenar modelos. La [documentación de la corrección C2](objetivo-2/REVISION_EVALUACION_FINAL_C2.md) describe el procedimiento y la evidencia de la reevaluación completa realizada en octubre de 2026. La ejecución rápida anterior no reproduce esa evaluación completa.
 
 ### Repetir inferencia o entrenamiento
 
@@ -185,7 +193,7 @@ Genera el informe `evaluacion-final.json`, tablas y registro de controles usando
 
 ## Procedencia, atribución y licencia
 
-Las ejecuciones estudiantiles, revisiones posteriores y correcciones se distinguen en sus registros. Los documentos históricos se conservan para trazabilidad; sus cifras superadas no deben mezclarse con el conjunto corregido y C2. Véanse [procedencia](docs/PROCEDENCIA.md), [cierre OE1](objetivo-1/CIERRE_OE1.md), [cierre OE2](objetivo-2/CIERRE_OE2.md) y [cierre OE3](objetivo-3/CIERRE_OE3.md).
+Los registros distinguen la generación de datos, el entrenamiento, las evaluaciones y las correcciones numéricas. Para citar resultados deben identificarse la versión del conjunto, el modelo y el protocolo de evaluación. Los valores de versiones anteriores no deben combinarse con los del conjunto corregido y C2. La trazabilidad puede consultarse en [procedencia](docs/PROCEDENCIA.md) y en las síntesis de [datos](objetivo-1/CIERRE_OE1.md), [modelos](objetivo-2/CIERRE_OE2.md) y [evaluación de adquisición](objetivo-3/CIERRE_OE3.md).
 
-No se identificó un archivo de licencia general en la raíz revisada. La visibilidad pública no otorga por sí misma una licencia de reutilización; su elección corresponde a los titulares. Deben conservarse las atribuciones y condiciones de componentes de terceros. Los cambios de visibilidad y permisos de las distribuciones externas son independientes de esta actualización del README.
+El repositorio no incluye actualmente un archivo de licencia general en su raíz. El acceso al contenido no implica una autorización general de reutilización; deben consultarse los permisos correspondientes y conservarse las atribuciones y condiciones de los componentes de terceros. Las distribuciones externas de datos y pesos tienen permisos de acceso propios.
 
