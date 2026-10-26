@@ -1,5 +1,14 @@
 # Registro de cambios
 
+## README para consulta y reproducción — 2026-10-26, Colombia
+
+Por solicitud de la dirección se reorganiza la entrada del repositorio para su preparación pública: autores, alcance, resultados C2, benchmark negativo, limitaciones y rutas de ejecución. Se separan métricas archivadas, reevaluación, inferencia, entrenamiento y transporte; los avisos operativos antiguos quedan referidos a sus documentos históricos. La dirección informó la sustentación; no se registra fecha del acto, calificación ni aprobación no aportadas.
+
+Se revisó la base `e6f139e406d47c07a210dc87e08314271bc5dcf4`. En una extracción de fuentes versionadas se regeneró la figura de curvas y pasaron 21 pruebas (4 de controles C2, 4 de comparaciones, 8 de métricas locales y 5 de EF-01). La prueba EF-01 falló inicialmente por permisos temporales y ausencia de `metrics` en la ruta de importación; pasó con acceso temporal y `PYTHONPATH` configurado, sin alterar las fuentes. Entorno existente: Python 3.12.14, NumPy 2.4.4, PyTorch 2.6.0+cpu, scikit-image 0.26.0, Matplotlib 3.11.1, SciPy 1.18.1 y filelock 3.32.3.
+
+No se repitieron simulaciones, entrenamiento ni inferencia completa; no se verificó una instalación nueva ni acceso actual a Drive. No se modificaron datos, pesos, protocolos o entregas. Siguiente paso: revisar la actualización documental y resolver acceso externo/licencia antes de una distribución reutilizable. No se cambia la visibilidad del repositorio.
+
+
 ## Publicación del informe LaTeX corregido — 2026-10-04, Colombia
 
 Se incorpora la versión LaTeX corregida del informe completo en `informe-final/latex/`, con figuras vectoriales, fuentes editables, datos de las figuras, PDF compilado y ZIP para Overleaf. Se conservan sin cambios los datos experimentales y los capítulos 2 y 5. La compilación local produjo 90 páginas, sin referencias indefinidas ni desbordamientos; las cuatro figuras corregidas se regeneraron y verificaron como vectoriales. No se realizaron nuevas corridas. La inversión de opacidad se delimita como extensión futura, no como requisito adicional de los objetivos aprobados. La publicación no sustituye la aprobación académica.
@@ -503,6 +512,7 @@ Se incorpora la versión LaTeX corregida del informe completo en `informe-final/
 - Se incluyen datos y logs en disco, excluidos del historial Git.
 - Se incorpora un verificador de integridad de solo lectura sobre originales.
 - No se modifica código científico ni se ejecuta una nueva campaña. No se incorporan OE2/OE3.
+
 
 
 

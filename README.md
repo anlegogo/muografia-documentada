@@ -1,57 +1,191 @@
-# Muografía: documentación y seguimiento académico
+# Muografía por transmisión asistida por aprendizaje profundo
 
-**Informe LaTeX corregido — 2026-10-04:** [proyecto editable](informe-final/latex/README.md) · [PDF compilado](informe-final/latex/main.pdf) · [ZIP para Overleaf](informe-final/latex/Trabajo_de_Grado_Muografia_corregido.zip). Se publica el documento completo revisado; el informe en Markdown se conserva como antecedente de integración.
+Repositorio de código, evidencia experimental y documentación del trabajo de grado **«Reconstrucción muográfica por transmisión asistida por aprendizaje profundo mediante mejora predictiva de imágenes de baja estadística para exploración volcánica»**, del programa de Ingeniería de Sistemas de la Universidad Industrial de Santander (UIS), vinculado al Grupo de Óptica y Tratamiento de Señales (GOTS).
 
-**Informe integrado — 2026-10-04:** [metodología, resultados, discusión y conclusiones](informe-final/README.md) redactados y revisados, con seis figuras y tablas trazables. La integración del núcleo experimental está completa en Markdown; resta adaptación institucional y revisión de autores. El cumplimiento científico parcial de OE2/OE3 se conserva.
-
-**Estado vigente del OE3 — 2026-10-04:** [cierre experimental y documental](objetivo-3/CIERRE_OE3.md). Evaluación finalizada; cumplimiento científico parcial. No se demuestra un factor de reducción bajo el benchmark y no se reconstruyó opacidad cuantitativa. No quedan nuevas corridas asignadas; resta la integración del informe final. Las notas inferiores conservan la cronología y no reabren encargos superados.
-
-**Revisión vigente del complemento OE3-C1:** se verificaron las 96 matrices nuevas y se reprodujo la evaluación multifracción. Ningún modelo satisface conjuntamente SSIM/PSNR del referente sin red al 50 % en las fracciones estudiadas; no se demuestra un factor de reducción bajo ese benchmark. SNR/CNR y contraste de cuentas evaluados; la opacidad cuantitativa continúa delimitada. [Auditoría y balance](objetivo-3/REVISION_COMPLEMENTO_OE3_C1.md). No se encarga otro entrenamiento por este resultado negativo.
-
-**Desglose experimental ejecutado:** [comparación por vista y región](objetivo-3/RESULTADO_EXPERIMENTAL_OE3.md). La cGAN al 5 % supera SSIM/PSNR de la entrada al 10 % en 24/24 vistas y 480/480 correspondencias, con deterioro de Q en 24/24 vistas. Se cuantifica una reducción descriptiva 2:1 de conteos bajo esas métricas; no un factor físico aceptado ni el máximo alcanzable. No se requiere otra GPU para reproducir este balance. La redacción del informe final se aplaza hasta concluir la revisión experimental, por indicación de la dirección.
-
-**Síntesis documental del OE2 preparada:** [informe académico](objetivo-2/manuscrito/INFORME_OE2.md), [matriz de cumplimiento](objetivo-2/MATRIZ_CUMPLIMIENTO.md) y [registro de cierre de ejecución](objetivo-2/CIERRE_OE2.md). EF-02, EF-03 y la conclusión documental EF-04 completos. La calidad comparable mantiene alcance parcial; no se declara equivalencia física. Resta integración editorial en el manuscrito, sin nuevas corridas.
-
-**Preparación OE3:** [curvas descriptivas de exposición](objetivo-3/README.md) calculadas con 1 %, 5 %, 10 % y 50 % de conteos existentes. Comparaciones visuales y físicas separadas; sin factor efectivo de adquisición demostrado ni nuevas corridas.
-
-**Evaluación final al 5 % revisada; corrección C2 verificada.** Se recibieron y auditaron los ocho modelos y sus 3.840 predicciones. Las métricas de imagen/regiones se reproducen; el contraste queda corregido con índices registrados y comparación antes/después. [Revisión vigente](objetivo-2/REVISION_EVALUACION_FINAL_C2.md) · [Síntesis y siguiente paso](objetivo-2/SINTESIS_OE2_TRANSICION_OE3.md). No se requiere otra GPU. La implementación/evaluación está verificada; equivalencia física y alcance académico siguen delimitados, no se declara cumplimiento científico pleno.
-
-## Antecedentes conservados
-
-
-**E1 ejecutado y revisado:** 55 binarios íntegros, recuperación exacta en B1–B3 y 2.520 inferencias reproducidas. El borde mejora en todas las vistas, pero persiste sobreestimación interior en geometría 1; ninguna pareja cumple los nueve controles. [Revisión y diagnóstico](objetivo-2/REVISION_E1_804CE85.md) · [Consolidación E1 histórica, no bloqueante](objetivo-2/INSTRUCCIONES_CIERRE_E1.md). OE2 continúa abierto.
-
-**OE2 — repetición cGAN revisada:** se verificaron los 55 binarios, la recuperación exacta de las tres parejas, las seis continuaciones y su inferencia. C1 reduce el sesgo regional en dos parejas y lo aumenta en la tercera; el error de borde empeora en las tres y ninguna satisface los ocho controles. La [revisión independiente](objetivo-2/REVISION_REPETICION_F6518FF.md) confirma dependencia de la semilla o compromiso. No se concede aceptación física ni se amplía la campaña; el siguiente paso es revisar el diseño científico y los criterios de aceptación. El OE2 permanece abierto.
-
-**Estado del OE1 — 2026-10-03: cumplido y cerrado por decisión de la dirección bajo el alcance idealizado adoptado.** Datos, distribución, justificación e informe específico completos. [Registro de cierre](objetivo-1/CIERRE_OE1.md). No se requieren nuevas corridas para este alcance; no se declara aprobada la tesis completa.
-
-| Documento | Contenido |
+| Responsabilidad | Integrantes |
 |---|---|
-| [Informe de cierre del OE1](objetivo-1/manuscrito/README.md) | Informe con figuras integradas, nomenclatura, formulación matemática y justificación. |
-| [Ficha del conjunto](objetivo-1/FICHA_CONJUNTO_OE1.md) | Datos, campos, receta, particiones, versiones, límites y reproducción. |
-| [Síntesis de resultados y figuras](objetivo-1/SINTESIS_RESULTADOS_OE1.md) | Texto para el informe y tres figuras exportables en PNG/PDF. |
-| [Definición y criterios de cierre](objetivo-1/DEFINICION_PRODUCTO_OE1.md) | Alcance adoptado y evidencia de A-01 a A-08. |
-| [Matriz de cumplimiento](objetivo-1/MATRIZ_CUMPLIMIENTO.md) | Aspectos verificados y límites de la conclusión. |
-| [Pendientes](objetivo-1/PENDIENTES.md) | P-01 a P-05 resueltos dentro del alcance aceptado. |
-| [Revisión directa f395570](objetivo-1/REVISION_DATOS_F395570.md) | 477 huellas, evaluación desde píxeles y reproducción de 9.120 pares. |
-| [Distribución verificada](objetivo-1/REVISION_DISTRIBUCION_DRIVE.md) | Descarga independiente, integridad y procedimiento reproducible. |
-| [Índice documental](docs/INDICE.md) | Herramientas, protocolos y revisiones anteriores. |
+| Autores | Reinaldo Cárdenas Tirado y Daniel Andrés Pinto Ortega |
+| Director | Andrés Leonardo González Gómez |
+| Codirector | Jaime Enrique Meneses Fonseca |
 
-La campaña contiene 19 escenarios idealizados con seis vistas, 344 millones de primarios por vista y 39.216 millones en total. Cumplen el criterio 1.710 regiones de borde; 107/114 vistas alcanzan la meta descriptiva de roca. Se conservan las siete excepciones y el 94,944 % global de ROI con al menos 100 cuentas no sustituye los indicadores individuales.
+**Balance del trabajo:** se construyó y auditó un conjunto sintético y se evaluaron U-Net y cGAN/cWGAN-GP. Se observaron mejoras de similitud de imagen, acompañadas de alteraciones regionales de conteos. **No se demostró un factor de reducción frente al referente sin red al 50 % bajo el criterio adoptado, ni se reconstruyó opacidad cuantitativa.** La evaluación experimental está cerrada; los registros técnicos conservan el cumplimiento científico parcial de OE2/OE3.
 
-## Datos y versiones
+La dirección informó que el trabajo ya fue sustentado. Esta actualización documental del 26 de octubre de 2026 no certifica una calificación ni modifica las conclusiones experimentales. Las instrucciones fechadas que se conservan en el repositorio son antecedentes y procedimientos de reproducción, no encargos pendientes de nuevas corridas.
 
-El conjunto corregido de `f395570` se distingue del catálogo histórico conservado en `objetivo-1/originales/`. Los históricos no se convierten en referencias finales por renombrarlos. Las entregas estudiantiles permanecen en su rama; esta documentación las revisa sin fusionarlas automáticamente.
+## Lectura y estructura
 
-`objetivo-1/evidencias/` contiene las verificaciones; `objetivo-1/figuras/` los gráficos; `herramientas/` los procedimientos reproducibles. Los archivos grandes de trabajo local se guardan en `trabajo/`, fuera del historial Git. Consultar [procedencia](docs/PROCEDENCIA.md), [ficha actual](objetivo-1/FICHA_CONJUNTO_OE1.md) y [versiones locales](requirements-oe1-local.txt).
+- [Informe completo: fuentes LaTeX e instrucciones](informe-final/latex/README.md), [PDF disponible](informe-final/latex/main.pdf) y [paquete para Overleaf](informe-final/latex/Trabajo_de_Grado_Muografia_corregido.zip). La versión archivada fue incorporada el 4 de octubre de 2026; no se presume que sea idéntica al ejemplar presentado en la sustentación.
+- [Informe integrado en Markdown](informe-final/README.md): metodología, resultados, discusión y conclusiones.
+- [Índice documental](docs/INDICE.md), [procedencia](docs/PROCEDENCIA.md) y [registro de cambios](CHANGELOG.md).
 
-La cronología permanece en el [registro de cambios](CHANGELOG.md), la [bitácora](objetivo-1/BITACORA.md) y los informes fechados. Se retiraron de esta entrada los avisos de preparación y recepción ya superados. No se certifica un detector real.
+| Ruta | Contenido |
+|---|---|
+| `objetivo-1/` | Simulación, datos sintéticos, receta, correcciones y auditorías de integridad |
+| `herramientas/` | Análisis, empaquetado y controles del conjunto sintético |
+| `objetivo-2/implementacion/` | Implementación derivada de entrenamiento y evaluación |
+| `objetivo-2/herramientas/` | Pilotos, ajustes, inferencia y evaluación final al 5 % |
+| `objetivo-3/herramientas/` | Curvas de conteos, métricas locales y evaluación multifracción |
+| `objetivo-*/evidencias/` | Informes, tablas, inventarios y huellas de las revisiones |
+| `objetivo-*/entregas/` y `objetivo-1/originales/` | Entregas recibidas y antecedentes que deben conservarse |
+| `trabajo/` | Destino local recomendado para insumos y salidas; excluido de Git |
 
-## Apertura del OE2 — revisión inicial
+## Qué se implementó
 
-Por autorización expresa de la dirección se incorpora la [revisión de la implementación estudiantil](objetivo-2/README.md). Existe una cWGAN-GP reutilizable y se comprobó la compatibilidad de 7.200 pares de entrenamiento/validación. La penalización del crítico, la normalización y la identidad de los datos se corrigieron en una [implementación derivada v1](objetivo-2/CORRECCIONES_V1.md), con 17 controles y reanudación exacta en una prueba técnica de entrenamiento. El OE2 permanece pendiente de protocolo y entrenamiento prolongado; no se declara desempeño final.
+El flujo experimental comprende simulación de transporte con Geant4 y una fuente basada en Guan/EcoMug, construcción de imágenes de conteos direccionales, adelgazamiento binomial y aprendizaje supervisado. La implementación de aprendizaje incluida utiliza **Python/PyTorch**; la mención de MATLAB entre los recursos de la propuesta no describe el entorno de estos ejecutores.
 
-El [piloto al 5 %](objetivo-2/PROTOCOLO_PILOTO_F05.md) está diseñado: comparación U-Net/cGAN, prueba técnica con reanudación y hasta 30 épocas antes de presupuestar la campaña principal. Se incluyen [instrucciones para SC3](objetivo-2/INSTRUCCIONES_PILOTO_SC3.md); la [entrega GPU RunPod fue revisada](objetivo-2/REVISION_PILOTO_C054225.md): ambas redes mejoran la entrada y U-Net supera a cGAN en las métricas de este piloto. La [verificación independiente de los pesos](objetivo-2/REVISION_PESOS_PILOTO_F05.md) reproduce las métricas de ambos modelos en 360 pares de validación. La [evaluación con regiones geométricas](objetivo-2/EVALUACION_GEOMETRICA_PILOTO_F05.md) detecta sesgos de cuentas distintos entre cielo, roca y anomalías. La aceptación física permanece pendiente; se diseñó el ajuste acotado antes de ampliar.
+El [conjunto corregido del OE1](objetivo-1/FICHA_CONJUNTO_OE1.md) contiene:
 
-El [ajuste acotado de conservación de cuentas](objetivo-2/DISENO_AJUSTE_CUENTAS_F05.md) está diseñado: dos continuaciones pareadas de U-Net y un término regional verificado en CPU. La integración y la recuperación exacta ya se verificaron mediante entrenamiento técnico en CPU. La [entrega de las dos continuaciones fue revisada independientemente](objetivo-2/REVISION_AJUSTE_A6AA6B8.md): doce binarios íntegros, recuperación exacta y 720 inferencias reproducidas. El resultado es un compromiso: menor sesgo regional, con deterioro de borde/PSNR frente al control y sesgo persistente en el cuerpo denso. Se documenta una [propuesta de continuación cGAN](objetivo-2/PROPUESTA_CONTINUACION_CGAN_F05.md), ya implementada y verificada en CPU. La [entrega CG-04c y sus cinco épocas ya se verificaron](objetivo-2/REVISION_BINARIOS_CG04C.md). Su valoración motivó la repetición de tres parejas indicada al inicio; no se presenta el ensayo anterior como pendiente.
+- 19 geometrías cónicas idealizadas, seis vistas por geometría y 114 referencias de 256 × 256 píxeles.
+- 344 millones de primarios por vista y 39.216.000.000 en toda la campaña.
+- Fracciones de conteos 1 %, 5 %, 10 % y 50 %, con veinte realizaciones por fracción: 9.120 pares.
+- Partición por geometría: 12 de entrenamiento, 3 de validación, 3 de prueba y 1 de generalización. Todas las vistas y realizaciones de una geometría permanecen juntas.
+
+Se evaluaron ocho modelos: `unet_original`, `cgan_original` y seis continuaciones cGAN `B1_C0`, `B1_C1`, `B2_C0`, `B2_C1`, `B3_C0`, `B3_C1`. Se entrenaron o continuaron al 5 %; la evaluación posterior en otras fracciones **no equivale a entrenamiento multifracción**.
+
+## Resultados obtenidos
+
+### Calidad de imagen y sesgo regional al 5 %
+
+Valores de la [evaluación corregida C2](objetivo-2/evidencias/ef01-c2/resultados.json), redondeados para lectura. SSIM y PSNR se calculan respecto de la referencia de alta estadística. Q resume sesgo regional de cuentas y no es error de densidad; un valor menor es preferible.
+
+| Partición | Método | SSIM ↑ | PSNR [dB] ↑ | Q [%] ↓ |
+|---|---|---:|---:|---:|
+| Prueba | Entrada sin red | 0,764308 | 24,257520 | 1,8321 |
+| Prueba | U-Net original | 0,854477 | 33,073913 | 22,3881 |
+| Prueba | cGAN original | 0,834162 | 31,169869 | 14,5661 |
+| Generalización | Entrada sin red | 0,750185 | 23,903636 | 1,0927 |
+| Generalización | U-Net original | 0,845414 | 32,883414 | 26,5053 |
+| Generalización | cGAN original | 0,825228 | 31,047417 | 16,9586 |
+
+La prueba comprende tres geometrías y 360 imágenes por método; generalización, una geometría y 120 imágenes. Las veinte realizaciones de una vista no son geometrías independientes. La tabla muestra las bases originales; los seis modelos adicionales y sus compromisos están en las [tablas completas de los ocho modelos](objetivo-2/manuscrito/TABLAS_OE2.md). Una mejora de SSIM/PSNR no acredita conservación regional de cuentas.
+
+### Reducción de conteos y alcance
+
+- La cGAN original al 5 % superó SSIM y PSNR de la entrada sin red al 10 % en las 24 vistas y 480 correspondencias evaluadas; Q empeoró en las 24 vistas. La razón 2:1 es una **comparación descriptiva de conteos**, no un factor físico aceptado.
+- El complemento evaluó los ocho modelos en cuatro fracciones. Se reutilizaron 3.840 predicciones al 5 % y se añadieron 11.520, contenidas en 96 matrices nuevas.
+- Ninguna de las 768 comparaciones modelo/fracción/vista satisfizo conjuntamente SSIM y PSNR del referente sin red al 50 %. El mínimo aceptado y el factor de reducción quedan **no demostrados**, no iguales a cero o a uno.
+- Se calcularon SNR, CNR y contraste de cuentas; no se demostró conservación uniforme de las anomalías ni una inversión cuantitativa de opacidad.
+
+El benchmark se declaró después de conocer resultados históricos y antes de las inferencias nuevas; no es un umbral numérico original de la propuesta. Fuentes: [comparación descriptiva](objetivo-3/RESULTADO_EXPERIMENTAL_OE3.md), [auditoría del complemento](objetivo-3/REVISION_COMPLEMENTO_OE3_C1.md) y [cierre OE3](objetivo-3/CIERRE_OE3.md).
+
+El OE1 se cerró dentro del alcance idealizado: 1.710 regiones de borde cumplieron el criterio adoptado y 107/114 vistas alcanzaron la meta descriptiva de roca. Se conservan las siete excepciones en la [ficha del conjunto](objetivo-1/FICHA_CONJUNTO_OE1.md).
+
+## Preparación del entorno
+
+Los comandos deben ejecutarse desde la raíz del repositorio. Para clonar se requiere Git y, mientras el repositorio sea privado, acceso autorizado:
+
+```bash
+git clone https://github.com/anlegogo/muografia-documentada.git
+cd muografia-documentada
+git rev-parse HEAD
+git status --short
+python -m venv .venv
+```
+
+Activación:
+
+- Linux/Bash: `source .venv/bin/activate`
+- Windows/PowerShell: `.\.venv\Scripts\Activate.ps1`
+
+La revisión local de estos ejemplos utilizó Python 3.12.14, NumPy 2.4.4, Matplotlib 3.11.1, SciPy 1.18.1, scikit-image 0.26.0 y PyTorch 2.6.0+cpu. Se utilizó un entorno existente; **no se verificó una instalación nueva desde cero**.
+
+Para análisis y figuras:
+
+```bash
+python -m pip install -r requirements-oe1-local.txt
+```
+
+Para las pruebas y evaluadores de aprendizaje, añadir:
+
+```bash
+python -m pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+python -m pip install scikit-image==0.26.0 filelock==3.32.3
+```
+
+Estas instrucciones preparan CPU. El entrenamiento e inferencia GPU requieren una instalación de PyTorch compatible con CUDA y el equipo; no instalar la variante CPU para una corrida GPU. Conservar `python --version`, `python -m pip freeze`, versión CUDA y dispositivo junto a cada ejecución. Los [requisitos CPU históricos](objetivo-2/requirements-cpu-verificado.txt) no son un entorno universal ni incluyen Geant4.
+
+## Ejecución rápida: sin GPU ni datos externos
+
+### Regenerar una figura desde las métricas archivadas
+
+```bash
+python objetivo-3/herramientas/figura_curvas.py --curves objetivo-3/evidencias/curvas-v1/curvas.json --models objetivo-2/evidencias/ef01-c2/resultados.json --output-dir trabajo/reproduccion-readme/curvas
+```
+
+Produce `curvas-exposicion.svg` y `curvas-exposicion.png` en el destino indicado. Este comando se comprobó sobre los archivos versionados de la base `e6f139e`. **Representa métricas ya calculadas**: no repite inferencia ni prueba de nuevo su validez física. Las líneas son descriptivas y los puntos de las redes corresponden al 5 %; no deben interpretarse como las predicciones multifracción del complemento.
+
+### Ejecutar controles pequeños
+
+```bash
+python objetivo-2/herramientas/test_controles_contraste_v2.py
+python objetivo-3/herramientas/test_comparar_exposiciones_oe3.py
+python objetivo-3/herramientas/test_complemento_oe3.py
+```
+
+Estos tres archivos completaron 16 pruebas en la revisión de este README. No requieren pesos ni simulación Geant4.
+
+Las cinco pruebas adicionales del evaluador EF-01 necesitan el módulo de métricas en `PYTHONPATH`. En Linux/Bash:
+
+```bash
+PYTHONPATH=objetivo-2/implementacion/scripts/evaluation python objetivo-2/herramientas/test_evaluacion_final_oe2.py
+```
+
+En Windows/PowerShell:
+
+```powershell
+$env:PYTHONPATH = 'objetivo-2/implementacion/scripts/evaluation'
+python objetivo-2/herramientas/test_evaluacion_final_oe2.py
+```
+
+Requieren permiso de escritura en la carpeta temporal del sistema. Las cinco pruebas pasaron con esa ruta configurada. El comando directo sin `PYTHONPATH` falló por no encontrar `metrics`; se documenta la configuración necesaria sin modificar el código científico.
+
+## Reproducción con datos y pesos externos
+
+Clonar este repositorio **no descarga todos los datos, pesos ni predicciones**. Se deben recuperar las distribuciones indicadas en los documentos siguientes y verificar sus tamaños y SHA-256. El acceso actual a esas carpetas externas no se volvió a comprobar en esta revisión editorial; las auditorías enlazadas registran las verificaciones de octubre de 2026.
+
+| Insumo | Referencia y ubicación esperada |
+|---|---|
+| Datos OE1 | [Ficha y recuperación](objetivo-1/FICHA_CONJUNTO_OE1.md), [distribución verificada](objetivo-1/REVISION_DISTRIBUCION_DRIVE.md). Para inferencia: `DATA/dataset-v2/shards/`, cuatro shards test/gen y sus metadatos |
+| Pesos originales | [Evaluación final: preparación](objetivo-2/INSTRUCCIONES_EVALUACION_FINAL_OE2.md) |
+| Seis pesos B1–B3 | [Índice de artefactos E1](objetivo-2/INDICE_ARTEFACTOS_E1.md) |
+| JSON de rutas de pesos | Copia local de [pesos-evaluacion-final-ejemplo.json](objetivo-2/configuraciones/pesos-evaluacion-final-ejemplo.json), con ocho rutas reales |
+| Predicciones al 5 % | [Distribución y revisión C2](objetivo-2/REVISION_EVALUACION_FINAL_C2.md): 32 NPY, recibos, identidades y `completed.json`; aproximadamente 1,01 GB solo en matrices |
+| Predicciones multifracción | [Complemento OE3](objetivo-3/INSTRUCCIONES_COMPLEMENTO_OE3.md) y [auditoría](objetivo-3/REVISION_COMPLEMENTO_OE3_C1.md): 96 NPY adicionales, aproximadamente 3,02 GB |
+
+Usar directorios nuevos de salida y conservar fuentes, finales de línea, protocolos y manifiestos: los ejecutores verifican sus huellas. No reemplazar hashes para sortear discrepancias.
+
+### Reevaluar las predicciones al 5 % con la corrección C2
+
+Con los insumos anteriores, adaptar las cuatro rutas absolutas del comando:
+
+```bash
+python objetivo-2/herramientas/controles_contraste_v2.py --repo . --data /ruta/insumos --weights /ruta/pesos-evaluacion.json --predictions /ruta/evaluacion-final-f05 --report /ruta/nueva/revision-c2 --registry-in objetivo-2/evidencias/ef01-c2/controles.json
+```
+
+Genera el informe `evaluacion-final.json`, tablas y registro de controles usando índices C2. No entrena. La reevaluación completa no se repitió para editar este README; su evidencia histórica está en la [revisión C2](objetivo-2/REVISION_EVALUACION_FINAL_C2.md).
+
+### Repetir inferencia o entrenamiento
+
+- **Inferencia al 5 %:** seguir [preflight, infer y evaluate de EF-01](objetivo-2/INSTRUCCIONES_EVALUACION_FINAL_OE2.md). Para citar contrastes finales, aplicar después el corrector C2 anterior.
+- **Inferencia multifracción:** seguir [OE3-C1](objetivo-3/INSTRUCCIONES_COMPLEMENTO_OE3.md), que exige datos, ocho pesos, predicciones completas al 5 % y registro C2. Ejecutar `preflight`, `smoke`, `infer` y finalmente `evaluate`, sin cambiar pesos o fracciones.
+- **Entrenamiento desde cero:** seguir [piloto U-Net/cGAN](objetivo-2/INSTRUCCIONES_PILOTO_SC3.md), incluidas interrupción/reanudación y comprobación técnica antes de las 30 épocas máximas. El ejecutor requiere CUDA salvo prueba CPU explícita. El piloto no reproduce por sí solo las seis continuaciones; sus protocolos están en el [índice](docs/INDICE.md).
+- **Datos reducidos:** la [ficha OE1](objetivo-1/FICHA_CONJUNTO_OE1.md#recuperación-y-reproducción) incluye comandos para evaluar histogramas y regenerar pares. Fijar NumPy 2.4.4 para la reproducción local de contenido documentada.
+- **Transporte Geant4:** consultar [receta efectiva](objetivo-1/contratos/receta-operativa-siete-actividades.json) y [reproducción OE1](objetivo-1/REPRODUCCION.md). Se reportó Geant4 11.4.2, GCC 14.2.0 y FTFP_BERT en SC3. No se ofrece aquí una ejecución portátil de toda la campaña ni se certifica reconstrucción local exacta del binario de producción. Los scripts de clúster necesitan adaptación y no deben ejecutarse dentro de los originales preservados.
+
+## Limitaciones y uso de los resultados
+
+1. **Escenarios sintéticos e idealizados.** No son imágenes medidas en volcanes ni validación de un detector real. La fuente híbrida, transporte solo de primarios, cielo ideal y plano computacional de registro limitan la interpretación instrumental.
+2. **Exposición convencional.** Las fracciones expresan conteos relativos. Las etiquetas de días no son tiempos calibrados de adquisición física; 5 % no demuestra automáticamente una reducción de 20 veces.
+3. **Dependencia estadística.** Las referencias contienen ruido y las realizaciones reducidas derivan de esas referencias. Las vistas y realizaciones no sustituyen una mayor diversidad de geometrías.
+4. **Reservas potencialmente expuestas.** Aunque los ocho modelos no se entrenaron ni seleccionaron con test/gen según la declaración recibida, las mismas escenas se conocían de una etapa anterior. La evaluación es descriptiva, no confirmatoria independiente. Véase [procedencia de reservas](objetivo-2/entregas/2026-10-04-evaluacion-final-f05/PROCEDENCIA_RESERVAS.md).
+5. **Calidad visual y fidelidad física distintas.** Persisten sesgos regionales y compromisos entre métricas. No se acredita preservación general de detectabilidad ni reconstrucción de densidad/opacidad.
+6. **Benchmark posterior y rejilla limitada.** El resultado negativo aplica al criterio y fracciones evaluados; no demuestra imposibilidad para cualquier modelo. No se interpoló un factor favorable.
+7. **Materiales de producción.** El [diagnóstico de opacidad nominal](objetivo-3/OPACIDAD_NOMINAL_Y_ALCANCE.md) registra una discrepancia entre la densidad nominal 0,048 g/cm³ y el reemplazo por G4_AIR para valores menores de 0,05 en el constructor conservado. No se acredita la densidad efectiva del binario ejecutado.
+8. **Reproducción condicionada.** Las distribuciones externas, versiones y huellas son necesarias. Pasar pruebas unitarias no equivale a repetir la campaña, el entrenamiento o la validación física.
+
+## Procedencia, atribución y licencia
+
+Las ejecuciones estudiantiles, revisiones posteriores y correcciones se distinguen en sus registros. Los documentos históricos se conservan para trazabilidad; sus cifras superadas no deben mezclarse con el conjunto corregido y C2. Véanse [procedencia](docs/PROCEDENCIA.md), [cierre OE1](objetivo-1/CIERRE_OE1.md), [cierre OE2](objetivo-2/CIERRE_OE2.md) y [cierre OE3](objetivo-3/CIERRE_OE3.md).
+
+No se identificó un archivo de licencia general en la raíz revisada. La visibilidad pública no otorga por sí misma una licencia de reutilización; su elección corresponde a los titulares. Deben conservarse las atribuciones y condiciones de componentes de terceros. Los cambios de visibilidad y permisos de las distribuciones externas son independientes de esta actualización del README.
 

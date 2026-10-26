@@ -1,5 +1,14 @@
 # Bitácora del OE2
 
+## README para consulta y reproducción — 2026-10-26, Colombia
+
+Por solicitud de la dirección se reorganiza la entrada del repositorio para su preparación pública: autores, alcance, resultados C2, benchmark negativo, limitaciones y rutas de ejecución. Se separan métricas archivadas, reevaluación, inferencia, entrenamiento y transporte; los avisos operativos antiguos quedan referidos a sus documentos históricos. La dirección informó la sustentación; no se registra fecha del acto, calificación ni aprobación no aportadas.
+
+Se revisó la base `e6f139e406d47c07a210dc87e08314271bc5dcf4`. En una extracción de fuentes versionadas se regeneró la figura de curvas y pasaron 21 pruebas (4 de controles C2, 4 de comparaciones, 8 de métricas locales y 5 de EF-01). La prueba EF-01 falló inicialmente por permisos temporales y ausencia de `metrics` en la ruta de importación; pasó con acceso temporal y `PYTHONPATH` configurado, sin alterar las fuentes. Entorno existente: Python 3.12.14, NumPy 2.4.4, PyTorch 2.6.0+cpu, scikit-image 0.26.0, Matplotlib 3.11.1, SciPy 1.18.1 y filelock 3.32.3.
+
+No se repitieron simulaciones, entrenamiento ni inferencia completa; no se verificó una instalación nueva ni acceso actual a Drive. No se modificaron datos, pesos, protocolos o entregas. Siguiente paso: revisar la actualización documental y resolver acceso externo/licencia antes de una distribución reutilizable. No se cambia la visibilidad del repositorio.
+
+
 ## Publicación editorial — 2026-10-04, Colombia
 
 Actividad: incorporación de la versión corregida por solicitud de la dirección.
@@ -240,3 +249,4 @@ Evidencia: [registro de correcciones y verificaciones](../informe-final/latex/LE
 - Se verificaron evaluación y figuras técnicas, tabla por anomalía frente a C0 y al modelo inicial, y ruta completa con fixtures del piloto anterior. El resultado técnico no acredita calidad: no se ejecutó el ensayo de cinco épocas.
 - Se conservaron el entorno temporal aislado y las fuentes originales verificadas desde objetos Git, corrigiendo diferencias de extracción antes de la batería definitiva. No se reparó el índice Git original ni se abrieron imágenes reservadas.
 - CG-01 verificado; CG-02 CPU verificado/GPU pendiente; CG-03 preparado bajo aceptación GPU y resultados pendientes. Próximo paso: estudiantes comprueban CUDA y, si se acepta y hay recursos disponibles, completan C0/C1 y entregan todos los resultados. OE2 continúa abierto.
+

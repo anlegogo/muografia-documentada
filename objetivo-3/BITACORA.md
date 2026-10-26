@@ -1,5 +1,14 @@
 # Bitácora de preparación del OE3
 
+## README para consulta y reproducción — 2026-10-26, Colombia
+
+Por solicitud de la dirección se reorganiza la entrada del repositorio para su preparación pública: autores, alcance, resultados C2, benchmark negativo, limitaciones y rutas de ejecución. Se separan métricas archivadas, reevaluación, inferencia, entrenamiento y transporte; los avisos operativos antiguos quedan referidos a sus documentos históricos. La dirección informó la sustentación; no se registra fecha del acto, calificación ni aprobación no aportadas.
+
+Se revisó la base `e6f139e406d47c07a210dc87e08314271bc5dcf4`. En una extracción de fuentes versionadas se regeneró la figura de curvas y pasaron 21 pruebas (4 de controles C2, 4 de comparaciones, 8 de métricas locales y 5 de EF-01). La prueba EF-01 falló inicialmente por permisos temporales y ausencia de `metrics` en la ruta de importación; pasó con acceso temporal y `PYTHONPATH` configurado, sin alterar las fuentes. Entorno existente: Python 3.12.14, NumPy 2.4.4, PyTorch 2.6.0+cpu, scikit-image 0.26.0, Matplotlib 3.11.1, SciPy 1.18.1 y filelock 3.32.3.
+
+No se repitieron simulaciones, entrenamiento ni inferencia completa; no se verificó una instalación nueva ni acceso actual a Drive. No se modificaron datos, pesos, protocolos o entregas. Siguiente paso: revisar la actualización documental y resolver acceso externo/licencia antes de una distribución reutilizable. No se cambia la visibilidad del repositorio.
+
+
 ## Publicación editorial — 2026-10-04, Colombia
 
 Actividad: incorporación de la versión corregida por solicitud de la dirección.
@@ -81,6 +90,7 @@ Por solicitud de la dirección se consolida el [cierre](CIERRE_OE3.md) sobre mai
 - OE3-P01 verificado; OE3-P02 y P04 pendientes, P03 parcial. Se espera confirmar objetivo oficial y requisitos de calidad. Continúa redacción del manuscrito sin otra GPU.
 
 [Análisis y evidencia](README.md).
+
 
 
 
