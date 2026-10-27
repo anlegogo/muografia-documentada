@@ -1,5 +1,9 @@
 # Registro de cambios
 
+## Licencias por material y avisos de terceros — 2026-10-26, Colombia
+
+Se incorpora el alcance de Apache-2.0, CC BY 4.0 y GPL-3.0-or-later, con textos completos y avisos de EcoMug, nlohmann/json y Geant4. La dirección confirmó autorización de los autores y ausencia de restricciones institucionales conocidas. Se documentan las comprobaciones parciales de acceso externo y los pendientes de publicación en [licencias y preparación](docs/LICENCIAS_Y_PUBLICACION.md). Se conservan las bitácoras por instrucción expresa de la dirección, así como originales, código, binarios y resultados. No se modifica la visibilidad del repositorio.
+
 ## README para consulta y reproducción — 2026-10-26, Colombia
 
 Por solicitud de la dirección se reorganiza la entrada del repositorio para su preparación pública: autores, alcance, resultados C2, benchmark negativo, limitaciones y rutas de ejecución. Se separan métricas archivadas, reevaluación, inferencia, entrenamiento y transporte; los avisos operativos antiguos quedan referidos a sus documentos históricos. La dirección informó la sustentación; no se registra fecha del acto, calificación ni aprobación no aportadas.
