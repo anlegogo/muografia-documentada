@@ -25,12 +25,12 @@ La asignación se refiere a los artefactos del proyecto identificados por sus í
 | ID | Estado | Evidencia y criterio de cierre |
 |---|---|---|
 | PUB-L1 | Confirmado por la dirección | Autorización de autores y ausencia de restricciones institucionales conocidas, según declaración recibida el 2026-10-26. |
-| PUB-L2 | Preparado | Textos de GPL v3, Apache-2.0, CC BY 4.0 y MIT; alcance por materiales y avisos de terceros. Revisar e integrar la propuesta antes de declarar la preparación concluida. |
+| PUB-L2 | Revisado | Textos de GPL v3, Apache-2.0, CC BY 4.0 y MIT; alcance por materiales y avisos de terceros revisados en la propuesta #3. |
 | PUB-L3 | Pendiente | Identificar versión/huella y modificaciones de EcoMug realmente usadas en UIS; el Makefile original utiliza una rama mutable. No impide conservar la licencia ya declarada por la copia archivada, pero limita la reproducción exacta. |
 | PUB-L4 | Parcial | El código de entrenamiento revisado no mostró llamadas a descarga de pesos preentrenados externos. Confirmar la procedencia completa de los ocho checkpoints antes de presentarla como auditada. |
 | PUB-D1 | Parcial | Se listaron anónimamente las cinco carpetas y se descargó un archivo pequeño de verificación/manifiesto por carpeta. No se descargaron ni verificaron íntegramente todos los datos y pesos. |
 | PUB-D2 | Pendiente | Acompañar las distribuciones de Drive de los avisos y textos aplicables, sin reemplazar binarios ni cambiar sus hashes. |
-| PUB-R1 | Pendiente | Completar revisión de materiales ajenos del informe y de información personal/credenciales en archivos e historial antes del cambio de visibilidad. No se declara una auditoría exhaustiva concluida. |
+| PUB-R1 | Revisado con alcance explícito | Se completaron los controles documentados en [revisión previa a publicación](REVISION_PUBLICACION.md): historial y cambios remotos, contenedores ZIP/NPZ, PDF, procedencia y datos identificativos. No se identificaron credenciales ni impedimentos concretos en el alcance examinado; no constituye certificación exhaustiva. |
 
 La publicación puede comunicar limitaciones de reproducción pendientes; no debe presentar verificaciones parciales como completas. La licencia de datos y pesos no implica validación física, mejora general de calidad ni demostración de un factor de reducción de adquisición.
 

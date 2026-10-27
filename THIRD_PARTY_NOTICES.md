@@ -36,3 +36,7 @@ El uso de Geant4 no supone respaldo de la colaboración a las conclusiones cient
 Las dependencias instaladas mediante los archivos de requisitos y los paquetes LaTeX conservan sus respectivas licencias. La licencia del repositorio no concede derechos adicionales sobre ellas. Antes de distribuir un entorno, ejecutable o contenedor que las incluya se deben incorporar los avisos y fuentes que correspondan.
 
 Las referencias bibliográficas no equivalen a permisos de reproducción de figuras o textos ajenos. Los logotipos institucionales y las marcas no se licencian como material propio. Para reutilizar un elemento externo debe acudirse a su titular o a la licencia aplicable.
+
+## Logotipo institucional
+
+El archivo `informe-final/latex/Figuras/logo_uis.pdf` y sus copias en el paquete histórico corresponden a la Universidad Industrial de Santander y proceden de la plantilla académica. Se conservan en ese contexto, fuera de la licencia CC BY del material propio. No se concede autorización para reutilizar la marca ni se afirma respaldo institucional a los resultados. Véase la [revisión previa a publicación](docs/REVISION_PUBLICACION.md).
